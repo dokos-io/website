@@ -1,14 +1,13 @@
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import type { NavigationTree } from '#ui-pro/types'
 
-const localePath = useLocalePath()
-
 const navMap = {
     'title': 'label',
     '_path': 'to'
 }
 
 export default function mapContentLocaleNavigation(navigation: NavItem[], rootNavigation?: NavItem[]): NavigationTree[] {
+    const localePath = useLocalePath()
     return navigation.map((navLink) => {
         const link = {} as NavigationTree
         for (const key in navLink) {
