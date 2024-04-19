@@ -2,7 +2,7 @@ title: Dokos - Free and open-source business applications
 description: Dokos is a free and open-source applications for businesses
 navigation: false
 hero:
-  title: Discover Dokos
+  title: Discover <span class="text-primary">Dokos</span>
   description: Free and open-source applications to power your business
   headline:
     label: Dokos is an adaptation of ERPNext
@@ -70,7 +70,7 @@ sections:
         icon: i-simple-icons-frappe
     links:
       - label: Explore components
-        to: /docs
+        to: /en/docs
         color: gray
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
@@ -91,7 +91,7 @@ sections:
         icon: i-heroicons-chart-bar
     links:
       - label: Learn more
-        to: /docs
+        to: /en/docs
         color: gray
         icon: i-heroicons-arrow-right-20-solid
         trailing: true

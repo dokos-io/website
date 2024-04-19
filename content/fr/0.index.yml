@@ -38,7 +38,7 @@ sections:
         icon: i-heroicons-lock-closed
     links:
       - label: Explore components
-        to: /docs
+        to: /en/docs
         color: gray
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
@@ -59,7 +59,7 @@ sections:
         icon: i-heroicons-chart-bar
     links:
       - label: Learn more
-        to: /docs
+        to: /en/docs
         color: gray
         icon: i-heroicons-arrow-right-20-solid
         trailing: true

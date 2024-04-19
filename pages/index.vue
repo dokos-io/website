@@ -19,7 +19,7 @@ useSeoMeta({
 
 <template>
   <div v-if="page">
-    <ULandingHero :title="page.hero.title" :description="page.hero.description" :links="page.hero.links" orientation="horizontal" :ui="{ base: 'relative z-[1]', container: 'max-w-4xl' }" class="mb-[calc(var(--header-height)*2)]">
+    <ULandingHero :description="page.hero.description" :links="page.hero.links" orientation="horizontal" :ui="{ base: 'relative z-[1]', container: 'max-w-4xl' }" class="mb-[calc(var(--header-height)*2)]">
         <template #headline>
         <UBadge v-if="page.hero.headline" variant="subtle" size="lg" class="relative rounded-full font-semibold">
           <NuxtLink :to="page.hero.headline.to" target="_blank" class="focus:outline-none" tabindex="-1">
@@ -30,6 +30,10 @@ useSeoMeta({
 
           <UIcon v-if="page.hero.headline.icon" :name="page.hero.headline.icon" class="ml-1 w-4 h-4 pointer-events-none" />
         </UBadge>
+      </template>
+
+      <template #title>
+        <span v-html="page.hero.title"></span>
       </template>
 
       <template #default>
@@ -50,7 +54,7 @@ useSeoMeta({
 
     </ULandingHero>
 
-    <ULandingSection>
+    <ULandingSection class="z-10">
       <template #title>
         <span v-html="page.presentation.title" />
       </template>
