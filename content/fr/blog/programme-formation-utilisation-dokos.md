@@ -4,9 +4,13 @@ title: "Webinaire - Apprendre à utiliser Dokos"
 year: 26 novembre 2022
 date: "2021-11-26"
 id: "formation-utilisation-2022"
+badge:
+  label: 'Actualités'
 description: |
     Un programme de plusieurs modules pour découvrir l'utilisation de Dokos. Gratuit et accessible pour tous.
 author: Nicolas Tissot
+image:
+  src: '/blog/formation-utilisation-2022/_main.jpg'
 ---
 
 L’équipe Dokos vous prépare pour la rentrée 2022 un programme de formation pour vous accompagner dans l’utilisation du logiciel.

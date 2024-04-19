@@ -13,8 +13,6 @@ const { data: posts } = await useAsyncData('posts', () => queryContent<BlogPost>
   .sort({ date: -1 })
   .find())
 
-console.log(posts)
-
 useSeoMeta({
   title: page.value.title,
   ogTitle: page.value.title,

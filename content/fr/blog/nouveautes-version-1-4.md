@@ -4,9 +4,13 @@ title: Nouveautés de la version 1.4
 year: 26 avril 2020
 date: '2020-04-26'
 id: 'version-1-4'
+badge:
+  label: 'Actualités'
 description: |
   Amortissement linéaire sur 360 jours, démo traduite en français, vue en carte et conservation des données lors d'un renommage au menu de la v1.4
 author: Charles-Henri Decultot
+image:
+  src: '/blog/version-1-4/_main.jpg'
 ---
 
 Nous sommes heureux de vous proposer une mise à jour mineure de Dokos pour patienter pendant que nous travaillons à une mise à jour majeure pour les mois qui viennent.

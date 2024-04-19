@@ -4,9 +4,13 @@ title: Dokos, le nouvel ERP open-source
 year: 24 octobre 2019
 date: '2019-10-24'
 id: 'dokos-launch'
+badge:
+  label: 'Actualités'
 description: |
   Nous sommes heureux de vous annoncer le lancement de Dokos, une plateforme de gestion open-source pour les PME à destination des entreprises françaises et européennes.
 author: Charles-Henri Decultot
+image:
+  src: '/blog/dokos-launch/_main.jpg'
 ---
 
 Après de longs mois de travail, la première version officielle de Dokos est enfin disponible et utilisable en production.

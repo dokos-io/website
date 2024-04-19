@@ -4,9 +4,13 @@ title: New functionalities in version 1.2
 year: 19th December 2019
 date: '2019-12-19'
 id: 'version-1-2'
+badge:
+  label: 'News'
 description: |
   Import your bank statements in OFX format, discover the new calendar and synchronize your events and item bookings with Google Agenda.
 author: Charles-Henri Decultot
+image:
+  src: '/blog/version-1-2/_main.jpg'
 ---
 
 With a few days left before the holiday season, here a new improvements, we hope, you'll find very useful.

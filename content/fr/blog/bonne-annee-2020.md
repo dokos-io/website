@@ -4,9 +4,13 @@ title: Bonne année 2020
 year: 31 décembre 2019
 date: '2019-12-31'
 id: 'new-year-2020'
+badge:
+  label: 'Actualités'
 description: |
   Toute l'équipe de Dokos vous souhaite une excellente année 2020 ! 🎊
 author: Charles-Henri Decultot
+image:
+  src: '/blog/new-year-2020/_main.jpg'
 ---
 
 L'année s'achève, il est temps de faire un petit point avant d'entamer une nouvelle décennie qui s'annonce palpitante !  

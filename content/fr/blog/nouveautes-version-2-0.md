@@ -4,9 +4,13 @@ title: Nouveautés de la version 2.0 de Dokos
 year: 17 juin 2021
 date: "2021-06-17"
 id: "version-2-0"
+badge:
+  label: 'Actualités'
 description: |
     Comparaison des devis de fournisseurs, intégrations WooCommerce, LinkedIn, Twitter, YouTube, bilan comptable selon les normes françaises, congés automatisés, planification de production
 author: Nicolas Tissot
+image:
+  src: '/blog/version-2-0/_main.jpg'
 ---
 
 Pour cette nouvelle version de Dokos, de nombreux changements ont été apportés à l'ensemble des modules notamment au niveau de l'interface utilisateur.

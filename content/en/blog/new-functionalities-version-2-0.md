@@ -4,9 +4,13 @@ title: New functionalities in version 2.0
 year:  June 17, 2021
 date: '2021-06-17'
 id: 'version-2-0'
+badge:
+  label: 'News'
 description: |
     Supplier quote comparison, WooCommerce, LinkedIn, Twitter, YouTube integrations, French accounting standards, automated vacations, production planning
 author: Nicolas Tissot
+image:
+  src: '/blog/version-2-0/_main.jpg'
 ---
 
 For this new version of Dokos, many changes have been made to all the modules, especially in the user interface.

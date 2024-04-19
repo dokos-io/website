@@ -4,9 +4,13 @@ title: Nouveautés de la version 1.2
 year: 19 décembre 2019
 date: '2019-12-19'
 id: 'version-1-2'
+badge:
+  label: 'Actualités'
 description: |
   Importez vos relevés bancaires au format OFX, découvrez le nouveau calendrier et synchronisez vos événements et réservations d'articles avec Google Agenda.
 author: Charles-Henri Decultot
+image:
+  src: '/blog/version-1-2/_main.jpg'
 ---
 
 A quelques jours des fêtes de fin d'années, voici quelques améliorations qui, nous l'espérons, vous serons fort utiles.

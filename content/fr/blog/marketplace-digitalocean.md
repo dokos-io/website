@@ -4,9 +4,13 @@ title: Dokos est disponible sur la marketplace DigitalOcean
 year: 12 Février 2020
 date: '2020-02-12'
 id: 'digitalocean-marketplace'
+badge:
+  label: 'Actualités'
 description: |
   Dokos est disponible gratuitement sur la marketplace de DigitalOcean ! 🎉
 author: Charles-Henri Decultot
+image:
+  src: '/blog/digitalocean-marketplace/_main.jpg'
 ---
 
 Dans l'optique de continuer à faciliter l'usage de _Dokos_ et notamment son installation, nous proposons désormais une image installable en 1 click sur la plateforme DigitalOcean.

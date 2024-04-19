@@ -4,9 +4,13 @@ title: Publication de la version 4.0 de Dokos
 year:  30 novembre 2023
 date: "2023-11-30"
 id: "version-4-0"
+badge:
+  label: 'Actualités'
 description: |
     Découvrez les nouveautés de la version 4 de Dokos.
 author: Charles-Henri Decultot
+image:
+  src: '/blog/version-4-0/_main.jpg'
 ---
 
 Nous sommes ravi de vous annoncer que la version 4 de Dokos a été publiée et est désormais officiellement disponible. 

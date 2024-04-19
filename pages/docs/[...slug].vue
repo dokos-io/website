@@ -6,10 +6,6 @@ const {
   params: { slug },
 } = useRoute();
 const { locale } = useI18n()
-console.log(slug)
-
-console.log(route.path)
-queryContent("/docs").find().then(r => console.log(r))
 
 const { data: page } = await useAsyncData(route.path, () => queryContent("/docs").where({ _locale: locale.value, _path: `/docs/${(slug as string[]).join("/")}`}).findOne())
 if (!page.value) {

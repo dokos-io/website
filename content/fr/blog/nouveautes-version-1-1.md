@@ -4,9 +4,13 @@ title: Nouveautés de la version 1.1
 year: 06 novembre 2019
 date: '2019-11-06'
 id: 'version-1-1'
+badge:
+  label: 'Actualités'
 description: |
   Scripts Python, centre de notifications, sauts de page dans les formats d'impressions, portail pour les prises de rendez-vous... découvrez les nouveautés de la version 1.1
 author: Charles-Henri Decultot
+image:
+  src: '/blog/version-1-1/_main.jpg'
 ---
 
 La première mise à jour mineure de _dokos_ apporte déjà quelques nouvelles fonctionnalités très attendues.

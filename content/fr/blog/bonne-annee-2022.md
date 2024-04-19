@@ -4,9 +4,13 @@ title: Bonne année 2022
 year: 31 décembre 2021
 date: '2021-12-31'
 id: 'new-year-2022'
+badge:
+  label: 'Actualités'
 description: |
   Toute l'équipe Dokos vous souhaite une excellente année 2022 ! 🎊
 author: Charles-Henri Decultot
+image:
+  src: '/blog/new-year-2022/_main.jpg'
 ---
 
 Avant de se projeter vers une année 2022 qui s'annonce palpitante, nous souhaitons remercier tous les utilisateurs, clients, partenaires et contributeurs au projet Dokos.  

@@ -1,3 +1,7 @@
+---
+toc: true
+---
+
 ## 1 Site Presentation
 
 In compliance with the provisions in clauses 6-III and 19 of the law for confidence in the digital economy, we inform you of the following:  

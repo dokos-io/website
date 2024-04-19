@@ -4,9 +4,13 @@ title: Nouveautés de la version 2.2 de Dokos
 year: 8 octobre 2021
 date: "2021-10-08"
 id: "version-2-2"
+badge:
+  label: 'Actualités'
 description: |
     Des nouveautés sur la gestion des abonnements et des nouvelles intégrations avec des outils collaboratifs.
 author: Nicolas Tissot
+image:
+  src: '/blog/version-2-2/_main.jpg'
 ---
 
 Pour cette nouvelle mise à jour de Dokos, des petits changements sont à noter comme des améliorations sur la gestion des abonnements et de nouveaux outils collaboratifs qui peuvent être connectés.

@@ -4,9 +4,13 @@ title: Nouveautés de la version 2.1 de Dokos
 year: 8 septembre 2021
 date: "2021-09-08"
 id: "version-2-1"
+badge:
+  label: 'Actualités'
 description: |
     Des nouveautés et mises à jour sur Dokos : Compatibilité, Achats, Framework Dodock, RH, Projets, Ventes et stocks.
 author: Nicolas Tissot
+image:
+  src: '/blog/version-2-1/_main.jpg'
 ---
 
 Pour cette nouvelle mise à jour de Dokos, quelques changements sont à noter sur plusieurs modules dont la comptabilité, les ventes, les achats, les stocks, les projets et les Ressources Humaines. 

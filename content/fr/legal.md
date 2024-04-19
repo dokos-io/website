@@ -1,3 +1,8 @@
+---
+toc: true
+title: Mentions Légales
+---
+
 ## 1\. PRÉSENTATION DU SITE
 
 Conformément aux dispositions des articles 6-III et 19 de la loi pour la Confiance dans l'Économie Numérique, nous vous informons que :  

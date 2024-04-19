@@ -1,3 +1,7 @@
+---
+toc: true
+---
+
 ### Last updated: January 1st, 2024
 
 # How we protect your privacy on dokos.io and when you use our services

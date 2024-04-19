@@ -4,9 +4,13 @@ title: New functionalities in version 1.1
 year: 6th November 2019
 date: '2019-11-06'
 id: 'version-1-1'
+badge:
+  label: 'News'
 description: |
   Server scripts, notification center, page breaks in print formats, bookings portal,... discover the new features in version 1.1
 author: Charles-Henri Decultot
+image:
+  src: '/blog/version-1-1/_main.jpg'
 ---
 
 The first minor update to _dokos_ adds already a few long awaited features.

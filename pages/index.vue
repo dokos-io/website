@@ -19,10 +19,8 @@ useSeoMeta({
 
 <template>
   <div v-if="page">
-    <ULandingHero :title="page.hero.title" :description="page.hero.description" :links="page.hero.links">
-      <div class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" />
-
-      <template #headline>
+    <ULandingHero :title="page.hero.title" :description="page.hero.description" :links="page.hero.links" orientation="horizontal" :ui="{ base: 'relative z-[1]', container: 'max-w-4xl' }" class="mb-[calc(var(--header-height)*2)]">
+        <template #headline>
         <UBadge v-if="page.hero.headline" variant="subtle" size="lg" class="relative rounded-full font-semibold">
           <NuxtLink :to="page.hero.headline.to" target="_blank" class="focus:outline-none" tabindex="-1">
             <span class="absolute inset-0" aria-hidden="true" />
@@ -33,10 +31,38 @@ useSeoMeta({
           <UIcon v-if="page.hero.headline.icon" :name="page.hero.headline.icon" class="ml-1 w-4 h-4 pointer-events-none" />
         </UBadge>
       </template>
+
+      <template #default>
+        <ULandingGrid>
+          <UDashboardCard
+            v-for="(card, index) in page.hero.cards"
+            class="col-span-6 row-span-2 z-10"
+            :title="card.title"
+            :description="card.description"
+            :icon="card.icon"
+            :links="card.links"
+          />
+        </ULandingGrid>
+        <ClientOnly>
+          <HomeTetris />
+        </ClientOnly>
+      </template>
+
     </ULandingHero>
 
-    <ULandingSection class="!pt-0">
-      <Placeholder />
+    <ULandingSection>
+      <template #title>
+        <span v-html="page.presentation.title" />
+      </template>
+      <ULandingGrid>
+        <ULandingCard
+          v-for="(feature, index) in page.presentation.features"
+          class="col-span-6 row-span-2"
+          :icon="feature.icon"
+          :title="feature.title"
+          :description="feature.description"
+        />
+      </ULandingGrid>
     </ULandingSection>
 
     <ULandingSection
@@ -46,6 +72,7 @@ useSeoMeta({
       :description="section.description"
       :align="section.align"
       :features="section.features"
+      :links="section.links"
     >
       <Placeholder />
     </ULandingSection>
@@ -69,19 +96,3 @@ useSeoMeta({
     </ULandingSection>
   </div>
 </template>
-
-<style scoped>
-.landing-grid {
-  background-size: 100px 100px;
-  background-image:
-    linear-gradient(to right, rgb(var(--color-gray-200)) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(var(--color-gray-200)) 1px, transparent 1px);
-}
-.dark {
-  .landing-grid {
-    background-image:
-      linear-gradient(to right, rgb(var(--color-gray-800)) 1px, transparent 1px),
-      linear-gradient(to bottom, rgb(var(--color-gray-800)) 1px, transparent 1px);
-  }
-}
-</style>

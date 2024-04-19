@@ -4,9 +4,13 @@ title: New functionalities in version 1.4
 year: 26st April 2020
 date: '2020-04-26'
 id: 'version-1-4'
+badge:
+  label: 'News'
 description: |
   Linear depreciation over 360 days, demo translated in french, map view and data conservation when a document is renamed are available in v1.4.
 author: Charles-Henri Decultot
+image:
+  src: '/blog/version-1-4/_main.jpg'
 ---
 
 We are happy to offer you a minor Dokos update to wait while we work on a major udpate in the coming months.  

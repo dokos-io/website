@@ -1,7 +1,7 @@
 export default defineAppConfig({
   ui: {
     primary: 'sky',
-    gray: 'cool',
+    gray: 'slate',
     button: {
       rounded: 'rounded-full',
       default: {
@@ -30,5 +30,8 @@ export default defineAppConfig({
         wrapper: 'lg:py-24'
       }
     }
+  },
+  colorMode: {
+    preference: 'dark'
   }
 })

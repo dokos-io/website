@@ -4,9 +4,13 @@ title: Découvrez la chaîne Youtube
 year: 26 janvier 2022
 date: "2022-01-26"
 id: "chanel-youtube"
+badge:
+  label: 'Actualités'
 description: |
     Découvrez la chaîne Youtube. Des vidéos pour vous accompagner dans l'utilisation de Dokos, des actualités et bien plus.
 author: Nicolas Tissot
+image:
+  src: '/blog/chanel-youtube/_main.jpg'
 ---
 
 Depuis maintenant 2 mois une chaîne Youtube a été mise en place pour vous partager des vidéos types Tutoriels pour vous accompagner dans l'utilisation de Dokos. 

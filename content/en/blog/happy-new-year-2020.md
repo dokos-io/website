@@ -4,9 +4,13 @@ title: Happy new year 2020
 year: 31 december 2019
 date: '2019-12-31'
 id: 'new-year-2020'
+badge:
+  label: 'News'
 description: |
   Happy new year from the Dokos team ! 🎊
 author: Charles-Henri Decultot
+image:
+  src: '/blog/new-year-2020/_main.jpg'
 ---
 
 As the year comes to an end, it's time to make a quick update before the start of a new exciting decade !  

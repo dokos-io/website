@@ -4,9 +4,13 @@ title: Journées d'outillage à l'Hermitage
 year: 23 septembre 2020
 date: '2020-09-23'
 id: 'install-party-hermitage'
+badge:
+  label: 'Actualités'
 description: |
   La Compagnie des Tiers-Lieux et l'Hermitage organisent deux journées - 5 et 6 novembre 2020 - consacrées à l'outillage des tiers-lieux pendant lesquelles vous pouvez venir découvrir Dokos.
 author: Charles-Henri Decultot
+image:
+  src: '/blog/install-party-hermitage/_main.jpg'
 ---
 
 La Compagnie des Tiers-Lieux organise deux journées (5-6 novembre 2020) de configuration et prise en main d'outils adaptés à l'activité de tiers-lieux. Nous proposerons notamment plusieurs sessions dédiées à la mise en place et à l'utilisation de Dokos.  

@@ -4,9 +4,13 @@ title: Intégration avec Agicap
 year: 18 septembre 2023
 date: '2023-09-18'
 id: 'agicap-integration'
+badge:
+  label: 'Actualités'
 description: |
   Intégrez Dokos et Agicap pour générez des prévisionnels de trésorerie fiables.
 author: Charles-Henri Decultot
+image:
+  src: '/blog/agicap-integration/_main.jpg'
 ---
 
 # Intégration avec Agicap

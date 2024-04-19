@@ -4,9 +4,13 @@ title: New functionalities in version 2.2
 year: october 8, 2021
 date: "2021-10-08"
 id: "version-2-2"
+badge:
+  label: 'News'
 description: |
     New features on subscription management and new integrations with collaborative tools.
 author: Nicolas Tissot
+image:
+  src: '/blog/version-2-2/_main.jpg'
 ---
 
 For this new update of Dokos, small changes are to be noted like improvements on the management of subscriptions and new collaborative tools that can be connected.

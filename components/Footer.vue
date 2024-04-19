@@ -1,87 +1,101 @@
 <script setup lang="ts">
+
+const { t } = useI18n({
+  useScope: 'local'
+})
+
+const localePath = useLocalePath()
+
 const links = [{
-  label: 'Resources',
+  label: t('resources'),
   children: [{
-    label: 'Help center'
+    label: t('documentation'),
+    to: "https://doc.dokos.io"
   }, {
-    label: 'Docs'
+    label: t('forum'),
+    to: "https://community.dokos.io"
   }, {
-    label: 'Roadmap'
-  }, {
-    label: 'Changelog'
+    label: t('gitlab'),
+    to: "https://gitlab.com/dokos"
   }]
 }, {
-  label: 'Features',
+  label: t('ecosystem'),
   children: [{
-    label: 'Affiliates'
+    label: t('partners'),
+    to: localePath('/partners')
   }, {
-    label: 'Portal'
-  }, {
-    label: 'Jobs'
-  }, {
-    label: 'Sponsors'
+    label: t('frappeverse'),
+    to: "https://frappe.io"
   }]
 }, {
-  label: 'Company',
+  label: t('company'),
   children: [{
-    label: 'About'
+    label: t('about'),
+    to: localePath('/about')
   }, {
-    label: 'Pricing'
+    label: t('termsandconditions'),
+    to: localePath('/termsandconditions')
   }, {
-    label: 'Careers'
+    label: t('securityandprivacy'),
+    to: localePath('/securityandprivacy')
   }, {
-    label: 'Blog'
+    label: t('legal'),
+    to: localePath('/legal')
   }]
 }]
 
-const toast = useToast()
-
-const email = ref('')
-const loading = ref(false)
-
-function onSubmit () {
-  loading.value = true
-
-  setTimeout(() => {
-    toast.add({
-      title: 'Subscribed!',
-      description: 'You\'ve been subscribed to our newsletter.'
-    })
-
-    loading.value = false
-  }, 1000)
-}
 </script>
 
 <template>
   <UFooter>
     <template #top>
-      <UFooterColumns :links="links">
-        <template #right>
-          <form @submit.prevent="onSubmit">
-            <UFormGroup label="Subscribe to our newsletter" :ui="{ container: 'mt-3' }">
-              <UInput v-model="email" type="email" placeholder="Enter your email" :ui="{ icon: { trailing: { pointer: '' } } }" required size="xl" autocomplete="off" class="max-w-sm" input-class="rounded-full">
-                <template #trailing>
-                  <UButton type="submit" size="xs" color="primary" :label="loading ? 'Subscribing' : 'Subscribe'" :loading="loading" />
-                </template>
-              </UInput>
-            </UFormGroup>
-          </form>
-        </template>
-      </UFooterColumns>
+      <UFooterColumns :links="links" />
     </template>
 
     <template #left>
       <p class="text-gray-500 dark:text-gray-400 text-sm">
-        Copyright © {{ new Date().getFullYear() }}. All rights reserved.
+        Dokos SAS © {{ new Date().getFullYear() }}. {{ t("all_rights_reserved") }}.
       </p>
     </template>
-
     <template #right>
-      <LangSwitcher />
-      <UColorModeButton size="sm" />
-
-      <UButton to="https://github.com/nuxt-ui-pro/saas" target="_blank" icon="i-simple-icons-github" aria-label="GitHub" color="gray" variant="ghost" />
+      <p class="text-gray-500 dark:text-gray-400 text-sm">
+        <NuxtLink to="https://nuxt.com" target="_blank">{{ t("built_with") }}.</NuxtLink>
+      </p>
     </template>
   </UFooter>
 </template>
+
+<i18n lang="yaml">
+  en:
+    all_rights_reserved: "All rights reserved"
+    resources: Resources
+    documentation: Documentation
+    forum: "Community Forum"
+    company: Company
+    ecosystem: "Eco-system"
+    partners: Partners
+    about: About Us
+    services: Services
+    termsandconditions: Terms and Conditions
+    securityandprivacy: Security and Privacy
+    legal: Legal Mentions
+    frappeverse: Frappe Applications
+    gitlab: Gitlab
+    built_with: Website built with Nuxt and Nuxt UI
+  fr:
+    all_rights_reserved: "Tous droits réservés"
+    resources: Ressources
+    documentation: Documentation
+    forum: "Forum Communautaire"
+    company: Société
+    ecosystem: "Eco-système"
+    partners: Partenaires
+    about: Notre Equipe
+    services: Services
+    termsandconditions: Conditions Générales de Ventes
+    securityandprivacy: Sécurité et Confidentialité
+    legal: Mentions Légales
+    frappeverse: Applications Frappe
+    gitlab: Gitlab
+    built_with: Site créé avec Nuxt et Nuxt UI
+</i18n>

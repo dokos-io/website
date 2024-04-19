@@ -4,9 +4,13 @@ title: New functionalities in version 1.3
 year: 1st March 2020
 date: '2020-03-01'
 id: 'version-1-3'
+badge:
+  label: 'News'
 description: |
   Reconcile your bank statements with your transactions, allow your leads/customers to book an appointment online and add new customized fields in your point of sale amongst the novelties of this version 1.3
 author: Charles-Henri Decultot
+image:
+  src: '/blog/version-1-3/_main.jpg'
 ---
 
 ## Bank Reconciliation

@@ -4,9 +4,13 @@ title: Dokos, the new open-source ERP
 year: 24th October 2019
 date: '2019-10-24'
 id: 'dokos-launch'
+badge:
+  label: 'News'
 description: |
   We are pleased to announce the official launch of Dokos, an open-source business platform for french and european SMEs.
 author: Charles-Henri Decultot
+image:
+  src: '/blog/dokos-launch/_main.jpg'
 ---
 
 After several months of work, the first official version of Dokos is finally available and ready for production.

@@ -4,9 +4,13 @@ title: New functionalities in version 2.1
 year:  September 8, 2021
 date: '2021-09-08'
 id: 'version-2-1'
+badge:
+  label: 'News'
 description: |
     New features and updates on Dokos: Compatibility, Purchasing, Dodock Framework, HR, Projects, Sales and Inventory.
 author: Nicolas Tissot
+image:
+  src: '/blog/version-2-1/_main.jpg'
 ---
 
 For this new update of Dokos, some changes are to be noted on several modules including accounting, sales, purchases, inventory, projects and Human Resources. 

@@ -1,4 +1,7 @@
-**Conditions Générales de Vente**
+---
+toc: true
+title: Conditions Générales de Vente
+---
 
 En vous abonnant aux services de Dokos (les "Services") fournis par DOKOS SAS, vous (le "Client") acceptez d'être lié par les conditions générales suivantes (le "Contrat").
 
