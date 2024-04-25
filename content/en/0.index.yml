@@ -35,7 +35,7 @@ hero:
       description: You made 265 sales this month.
 
 presentation:
-  title: Powerful features to go from zéro <br><span class="text-primary">to the moon</span>
+  title: Powerful features to go from zero <br><span class="text-primary">to the moon</span>
   features:
     - title: Enterprise Resource Planning
       description: Dokos is a complete enterprise resource planning software

@@ -1,7 +1,7 @@
 ---
 toc: true
 description: "Dernière mise à jour: 1<sup>er</sup> Janvier 2024"
-title: Protection de vos données
+title: Sécurité & Protection de vos données
 ---
 
 # La protection de vos données sur dokos.io et quand vous utilisez nos services

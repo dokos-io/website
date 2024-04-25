@@ -1,8 +1,8 @@
 ---
 toc: true
+description: "Last updated: January 1st, 2024"
+title: Security & Data Protection
 ---
-
-### Last updated: January 1st, 2024
 
 # How we protect your privacy on dokos.io and when you use our services
 

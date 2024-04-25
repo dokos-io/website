@@ -2,7 +2,8 @@
     <Transition appear name="fade">
         <div :style="{
             '--cell': `${width / cols}px`,
-            '--rows': rows - 1
+            '--rows': rows - 1,
+            'z-index': -1
         }">
             <div ref="el" class="absolute inset-0 grid justify-center auto-rows-[--cell] -space-y-px">
                 <div v-for="(row, rowIndex) in grid" :key="rowIndex"
