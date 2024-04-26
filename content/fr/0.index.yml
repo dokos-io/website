@@ -1,41 +1,73 @@
-title: Nuxt UI Pro - SaaS template
-description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
+title: Dokos - Free and open-source business applications
+description: Dokos is a free and open-source applications for businesses
 navigation: false
 hero:
-  title: Construisez votre site SaaS en quelques secondes
-  description: This template demonstrates most of Nuxt UI Pro's components. It's a great starting point to build your own SaaS.
+  title: Découvrez <span class="text-primary">Dokos</span>
+  description: Free and open-source applications to power your business
   headline:
-    label: Made with Nuxt UI Pro
-    to: https://ui.nuxt.com/pro
+    label: Dokos is an adaptation of ERPNext
+    to: https://erpnext.com
     icon: i-heroicons-arrow-top-right-on-square-20-solid
+    target: _blank
   links:
-    - label: Get started
-      to: /fr/docs
+    - label: Documentation
+      icon: i-ic-outline-library-books
       size: xl
       color: black
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-    - label: Use this template
-      icon: i-simple-icons-github
+      to: https://doc.dokos.io
+      target: _blank
+    - label: Online Demo
+      to: https://demo.dokos.cloud
       size: xl
       color: gray
-      to: https://github.com/nuxt-ui-pro/saas
+      icon: i-heroicons-play-circle-16-solid
+      trailing: false
       target: _blank
+  cards:
+    - title: Top countries
+      description: You have 12,000 users from 150 countries.
+      icon: i-ic-outline-waterfall-chart
+    - title: Recent sales
+      description: You made 265 sales this month.
+    - title: Recent sales
+      description: You made 265 sales this month.
+    - title: Recent sales
+      description: You made 265 sales this month.
+
+presentation:
+  title: Powerful features to go from zero <br><span class="text-primary">to the moon</span>
+  features:
+    - title: Enterprise Resource Planning
+      description: Dokos is a complete enterprise resource planning software
+      icon: i-ic-outline-waterfall-chart
+    - title: Fully Customizable
+      description: Everything in Dokos can be fully customized to tailor your business needs
+      icon: i-ic-outline-dashboard-customize
+    - title: Low-code Framework
+      description: Dodock is the full web framework powering Dokos and its eco-system of applications
+      icon: i-ic-outline-code-off
+    - title: Fully available API
+      description: Everything in Dokos is accessible through an API to allow any type of external integration
+      icon: i-ic-outline-api
+    - title: Business Intelligence
+      description: Dokos is delivered with a set of business intelligence tools to create value out of your data
+      icon: i-ic-outline-auto-graph
+
 sections:
-  - title: The power of our service
-    description: Aliqua labore laboris fugiat. Reprehenderit exercitation eu commodo. Officia nostrud sit et aliqua ea ex sunt minim incididunt sunt.
-    id: features
+  - title: The power of open-source
+    description: Dokos is a free and open-source software and will always remain
+    id: opensource
     align: left
     features:
-      - name: Easy to use
-        description: Id laborum laboris duis nostrud excepteur ut velit.
-        icon: i-heroicons-cog
-      - name: Reliable
-        description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
-        icon: i-heroicons-check
-      - name: Secure
-        description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing.
+      - name: No vendor lock-in
+        description: You are guaranteed to be completely independant from a single software vendor
         icon: i-heroicons-lock-closed
+      - name: No licence fees
+        description: Your are free to use it... completely for free. We also provide paid services if you need help to host or use Dokos
+        icon: i-heroicons-credit-card
+      - name: Based on Frappe/ERPNext
+        description: Dokos is based on the wonderful Frappe and ERPNext softwares and their ecosystem of applications
+        icon: i-simple-icons-frappe
     links:
       - label: Explore components
         to: /en/docs
@@ -135,10 +167,11 @@ testimonials:
           src: https://i.pravatar.cc/120?img=9
           loading: lazy
 cta:
-  title: Get started today
-  description: Nisi mollit id aliquip sunt est laborum sit sit.
+  title: Get started with Dokos
+  description: Learn more about Dokos and its eco-system on our documentation website
   links:
-    - label: Buy now
+    - label: Read the documentation
       size: xl
-      color: black
-      to: /fr/pricing
+      color: sky
+      to: https://doc.dokos.io
+      target: _blank

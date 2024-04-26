@@ -1,9 +1,9 @@
-title: Tarifs
-description: Tarifs Dokos Cloud.
+title: Pricing
+description: Dokos Cloud pricing.
 navigation.icon: i-heroicons-credit-card
 hero:
-  title: Offres d'hébergement sur Dokos Cloud
-  description: Vous souhaitez que nous hébergions votre site Dokos ? On est là pour vous aider.
+  title: Dokos Cloud hosting offers
+  description: You want us to host a Dokos site for you ? We got you covered.
   align: center
 plans:
   - title: Discovery

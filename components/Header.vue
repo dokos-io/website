@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import type { NavItem } from '@nuxt/content/dist/runtime/types'
-
-const navigation = inject<Ref<NavItem[]>>('navigation', ref([]))
 
 const localePath = useLocalePath()
+
+const route = useRoute()
 
 const { t } = useI18n({
   useScope: 'local'
@@ -15,13 +14,13 @@ const links = [{
   children: [
     {
       label: t('selling'),
-      to: '/selling',
+      to: localePath('/selling'),
       icon: 'i-heroicons-ticket',
       description: 'A simple pricing, for solo developers or teams.'
     },
     {
       label: t('buying'),
-      to: '/selling',
+      to: localePath('/selling'),
       icon: 'i-heroicons-ticket',
       description: 'A simple pricing, for solo developers or teams.'
     }
@@ -47,9 +46,14 @@ const links = [{
     }
   ]
 }, {
-  label: 'Pricing',
+  label: t('applications'),
   to: localePath('/pricing'),
   icon: 'i-heroicons-ticket',
+},
+{
+  label: t('news'),
+  to: localePath('/blog'),
+  icon: 'i-heroicons-newspaper',
 }]
 
 </script>
@@ -69,7 +73,7 @@ const links = [{
     </template>
 
     <template #right>
-      <LangSwitcher />
+      <LangSwitcher v-if='!route.matched.some(p => p.path.includes("/blog/:slug()"))'/>
       <UColorModeButton size="sm" />
 
       <UButton to="https://gitlab.com/dokos" target="_blank" icon="i-simple-icons-gitlab" aria-label="Gitlab" color="gray" variant="ghost" />
@@ -85,6 +89,8 @@ en:
   documentation: Documentation
   installation: Installation
   applications: Applications
+  pricing: Pricing
+  news: News
 fr:
   features: Fonctionnalités
   selling: Selling
@@ -92,4 +98,6 @@ fr:
   documentation: Documentation
   installation: Installation
   applications: Applications
+  pricing: Tarifs
+  news: Actualités
 </i18n>

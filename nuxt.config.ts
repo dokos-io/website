@@ -50,7 +50,7 @@ export default defineNuxtConfig({
     langDir: 'lang',
     strategy: "prefix",
     detectBrowserLanguage: false,
-    defaultLocale: "en",
+    defaultLocale: "en"
   },
   content: {
     locales:[

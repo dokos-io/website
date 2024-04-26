@@ -27,6 +27,7 @@ defineOgImage({
 })
 
 const localePath = useLocalePath()
+
 </script>
 
 <template>
