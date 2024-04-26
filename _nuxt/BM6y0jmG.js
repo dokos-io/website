@@ -1,0 +1,1 @@
+import{s as u,u as f}from"./C-F1gjmX.js";function h(r){var t;return(t=r._dir)!=null&&t.title?r._dir.title:u(r._dir).map(i=>f(i)).join(" ")}function n(r,t){return!r||!t?[]:r.reduce((i,e)=>{var s;return(s=t._path)!=null&&s.startsWith(e._path)&&e.children&&(i.push(e),i.push(...n(e.children,t))),i},[])}export{h as a,n as f};
