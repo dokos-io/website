@@ -54,45 +54,54 @@ useSeoMeta({
 
     </ULandingHero>
 
-    <ULandingSection class="z-10">
+    <ULandingSection>
       <template #title>
-        <span v-html="page.presentation.title" />
+        <span v-html="page.features.title" />
       </template>
-      <ULandingGrid>
-        <ULandingCard
-          v-for="(feature, index) in page.presentation.features"
-          class="col-span-6 row-span-2"
-          :icon="feature.icon"
-          :title="feature.title"
-          :description="feature.description"
-        />
-      </ULandingGrid>
+      <template #description>
+        <span v-html="page.features.description" />
+      </template>
+      <UPageGrid>
+        <ULandingCard v-for="(item, index) in page.features.items" :key="index" v-bind="item" />
+      </UPageGrid>
+
+      <ULandingLogos :title="page.integrations.title" :ui="{images: 'justify-center'}">
+        <UIcon v-for="icon in page.integrations.icons" :key="icon" :name="icon" class="w-10 h-10 flex-shrink-0 text-gray-500 dark:text-gray-400" />
+        <NuxtImg v-for="image in page.integrations.images" :key="image" :src="image" class="max-h-10"/>
+      </ULandingLogos>
     </ULandingSection>
+
 
     <ULandingSection
       v-for="(section, index) in page.sections"
       :key="index"
-      :title="section.title"
-      :description="section.description"
       :align="section.align"
       :features="section.features"
       :links="section.links"
     >
-      <Placeholder />
+      <template #title>
+        <span v-html="section.title" />
+      </template>
+      <template #description>
+        <span v-html="section.description" />
+      </template>
+      <NuxtImg :src="section.image" />
     </ULandingSection>
 
-    <ULandingSection :title="page.features.title" :description="page.features.description">
-      <UPageGrid>
-        <ULandingCard v-for="(item, index) in page.features.items" :key="index" v-bind="item" />
-      </UPageGrid>
-    </ULandingSection>
-
-    <ULandingSection :headline="page.testimonials.headline" :title="page.testimonials.title" :description="page.testimonials.description">
-      <UPageColumns class="xl:columns-4">
-        <div v-for="(testimonial, index) in page.testimonials.items" :key="index" class="break-inside-avoid">
-          <ULandingTestimonial v-bind="testimonial" class="bg-gray-100/50 dark:bg-gray-800/50" />
-        </div>
-      </UPageColumns>
+    <ULandingSection :links="page.applications.links">
+      <template #title>
+        <span v-html="page.applications.title" />
+      </template>
+      <template #description>
+        <span v-html="page.applications.description" />
+      </template>
+      <ULandingGrid>
+        <ULandingCard class="col-span-4 row-span-3" v-for="(item, index) in page.applications.items" :key="index" v-bind="item">
+          <template #icon>
+            <NuxtImg :src="'/frappe/' + item.icon" class="max-h-10"/>
+          </template>
+        </ULandingCard>
+      </ULandingGrid>
     </ULandingSection>
 
     <ULandingSection>

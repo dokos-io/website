@@ -98,27 +98,120 @@ sections:
         size: md
         class: ml-8
 features:
-  title: Why choose our service?
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  title: Des modules pour <span class="text-primary">tous vos besoins</span>
+  description: Avec plus 
   items:
-    - title: Easy to use
-      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
-      icon: i-heroicons-cog
-    - title: Reliable
-      description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
-      icon: i-heroicons-check
-    - title: Secure
-      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
-      icon: i-heroicons-lock-closed
-    - title: Fast
-      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
-      icon: i-heroicons-rocket-launch
-    - title: Affordable
-      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
-      icon: i-heroicons-currency-dollar
-    - title: Scalable
-      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
-      icon: i-heroicons-chart-bar
+    - title: CRM
+      description: Gestion de la prospection
+      icon:  i-carbon-chart-relationship
+      to: https://doc.dokos.io/dokos/crm
+      target: "_blank"
+    - title: Ventes
+      description: Gestion du flux commercial
+      icon: i-ep-sell
+      to: https://doc.dokos.io/dokos/ventes
+      target: "_blank"
+    - title: Achats
+      description: Gestion des achats
+      icon: i-icon-park-outline-buy
+      to: https://doc.dokos.io/dokos/achats
+      target: "_blank"
+    - title: Comptabilité
+      description: Saisie de la comptabilité et états financiers
+      icon: i-uil-balance-scale
+      to: https://doc.dokos.io/dokos/comptabilite
+      target: "_blank"
+    - title: Projets
+      description: Suivi des projets et des temps
+      icon: i-eos-icons-project-outlined
+      to: https://doc.dokos.io/dokos/projets
+      target: "_blank"
+    - title: Stocks
+      description: Gestion des niveaux et des valorisations de stock
+      icon: i-vaadin-stock
+      to: https://doc.dokos.io/dokos/stocks
+      target: "_blank"
+    - title: Production
+      description: De l'achat des matières premières à la création de produits finis
+      icon: i-fluent-manufacturer-24-regular
+      to: https://doc.dokos.io/dokos/production
+      target: "_blank"
+    - title: 'Qualité'
+      description: Création de processus et suivi de la qualité
+      icon: i-carbon-rule-data-quality
+      to: 'https://doc.dokos.io/dokos/qualite'
+      target: "_blank"
+    - title: 'Support'
+      description: Outil de gestion de ticket pour le support client
+      icon: 'i-ri-customer-service-2-line'
+      to: 'https://doc.dokos.io/dokos/support'
+      target: "_blank"
+    - title: Administration d'un lieu
+      description: Gestion de réservations de ressources, création de contrats, génération d'abonnements, crédits de réservation et événements
+      icon: 'i-material-symbols-location-on-outline-rounded'
+      to: 'https://doc.dokos.io/dokos/lieu'
+      target: "_blank"
+    - title: Ressources Humaines
+      description: Gestion des congés, notes de frais, recrutement, quarts et présence, performance 
+      icon: 'i-mdi-human-capacity-increase'
+      to: 'https://doc.dokos.io/dokos/hrms'
+      target: "_blank"
+    - title: Portail web & e-commerce
+      description: Vente de produits/services, réservations de ressources en ligne et création d'un portail client/fournisseur
+      icon: 'i-gg-website'
+      to: 'https://doc.dokos.io/dokos/e-commerce'
+      target: "_blank"
+    - title: 'OCR'
+      description: 'Reconnaissance automatique des factures et notes de frais'
+      icon: 'i-mdi-ocr'
+      to: 'https://doc.dokos.io/integrations'
+      target: "_blank"
+    - title: 'Paiements en ligne'
+      description: 'Collecte de paiements en ligne'
+      icon: 'i-ic-twotone-payments'
+      to: 'https://doc.dokos.io/integrations/payments'
+      target: "_blank"
+    - title: Intégrations
+      description: Sauvegarde externalisées, services Google, e-commerce, connecteurs no-code
+      icon: i-mdi-connection
+      to: 'https://doc.dokos.io/integrations'
+      target: "_blank"
+
+applications:
+  title: Compatible avec l'ecosystème <span class="text-primary">Frappe</span>
+  description: Dokos est développé pour rester compatible avec les applications créées par Frappe Technologies et la communauté Frappe/ERPNext.
+  links:
+    - label: Voir toutes les applications Frappe
+      icon: i-simple-icons-frappe
+      size: xl
+      color: black
+      to: https://frappe.io
+      target: _blank
+  items:
+    - title: Frappe Insights
+      description: Un outil de BI
+      icon: insights.svg
+      to: 'https://frappe.io/products/insights'
+    - title: Frappe CRM
+      description: Un outil de CRM
+      icon: crm.svg
+      to: 'https://frappe.io/products/crm'
+    - title: Frappe Helpdesk
+      description: Un outil de support
+      icon: helpdesk.png
+      to: 'https://frappedesk.com'
+    - title: Frappe Builder
+      description: Un outil de création de sites web
+      icon: builder.svg
+      to: 'https://frappe.io/products/builder'
+    - title: Frappe Wiki
+      description: Un wiki d'entreprise
+      icon: wiki.png
+      to: 'https://github.com/frappe/wiki'
+    - title: Frappe Print Designer
+      description: Un outil de création de formats d'impression
+      icon: print-designer.svg
+      to: 'https://github.com/frappe/print_designer'
 testimonials:
   headline: Testimonials
   title: What our customers are saying.

@@ -1,11 +1,11 @@
-title: Dokos - Free and open-source business applications
-description: Dokos is a free and open-source applications for businesses
+title: Dokos - Plateforme libre et open-source pour propulser votre entreprise
+description: Dokos est une plateforme libre et open-source de gestion d'entreprise
 navigation: false
 hero:
   title: Découvrez <span class="text-primary">Dokos</span>
-  description: Free and open-source applications to power your business
+  description: Applications libres et open-source pour propulser votre entreprise
   headline:
-    label: Dokos is an adaptation of ERPNext
+    label: Dokos est une adaptation d'ERPNext
     to: https://erpnext.com
     icon: i-heroicons-arrow-top-right-on-square-20-solid
     target: _blank
@@ -16,7 +16,7 @@ hero:
       color: black
       to: https://doc.dokos.io
       target: _blank
-    - label: Online Demo
+    - label: Essayez Dokos
       to: https://demo.dokos.cloud
       size: xl
       color: gray
@@ -24,153 +24,282 @@ hero:
       trailing: false
       target: _blank
   cards:
-    - title: Top countries
-      description: You have 12,000 users from 150 countries.
-      icon: i-ic-outline-waterfall-chart
-    - title: Recent sales
-      description: You made 265 sales this month.
-    - title: Recent sales
-      description: You made 265 sales this month.
-    - title: Recent sales
-      description: You made 265 sales this month.
+    - title: 15+
+      description: Modules de base
+      icon: i-mdi-puzzle-plus
+    - title: 10+
+      description: Applications complémentaires
+      icon: i-icon-park-outline-application-menu
+    - title: 100+
+      description: Entreprises utilisatrices
+      icon: i-octicon-organization-24
+    - title: 100%
+      description: Libre et Open-source
+      icon: i-mdi-open-source-initiative
 
-presentation:
-  title: Powerful features to go from zero <br><span class="text-primary">to the moon</span>
-  features:
-    - title: Enterprise Resource Planning
-      description: Dokos is a complete enterprise resource planning software
-      icon: i-ic-outline-waterfall-chart
-    - title: Fully Customizable
-      description: Everything in Dokos can be fully customized to tailor your business needs
-      icon: i-ic-outline-dashboard-customize
-    - title: Low-code Framework
-      description: Dodock is the full web framework powering Dokos and its eco-system of applications
-      icon: i-ic-outline-code-off
-    - title: Fully available API
-      description: Everything in Dokos is accessible through an API to allow any type of external integration
-      icon: i-ic-outline-api
-    - title: Business Intelligence
-      description: Dokos is delivered with a set of business intelligence tools to create value out of your data
-      icon: i-ic-outline-auto-graph
+features:
+  title: Une boîte à outils pour <span class="text-primary">tous vos besoins</span>
+  description: Avec plus 15 modules de base, Dokos permet de gérer des entreprises ou associations dans la majorité des secteurs d'activités
+  items:
+    - title: CRM
+      description: Gestion de la prospection
+      icon:  i-carbon-chart-relationship
+      to: https://doc.dokos.io/dokos/crm
+      target: "_blank"
+    - title: Ventes
+      description: Gestion du flux commercial
+      icon: i-ep-sell
+      to: https://doc.dokos.io/dokos/ventes
+      target: "_blank"
+    - title: Achats
+      description: Gestion des achats
+      icon: i-icon-park-outline-buy
+      to: https://doc.dokos.io/dokos/achats
+      target: "_blank"
+    - title: Comptabilité
+      description: Saisie de la comptabilité et états financiers
+      icon: i-uil-balance-scale
+      to: https://doc.dokos.io/dokos/comptabilite
+      target: "_blank"
+    - title: Projets
+      description: Suivi des projets et des temps
+      icon: i-eos-icons-project-outlined
+      to: https://doc.dokos.io/dokos/projets
+      target: "_blank"
+    - title: Stocks
+      description: Gestion des niveaux et des valorisations de stock
+      icon: i-vaadin-stock
+      to: https://doc.dokos.io/dokos/stocks
+      target: "_blank"
+    - title: Production
+      description: De l'achat des matières premières à la création de produits finis
+      icon: i-fluent-manufacturer-24-regular
+      to: https://doc.dokos.io/dokos/production
+      target: "_blank"
+    - title: 'Qualité'
+      description: Création de processus et suivi de la qualité
+      icon: i-carbon-rule-data-quality
+      to: 'https://doc.dokos.io/dokos/qualite'
+      target: "_blank"
+    - title: 'Support'
+      description: Outil de gestion de ticket pour le support client
+      icon: 'i-ri-customer-service-2-line'
+      to: 'https://doc.dokos.io/dokos/support'
+      target: "_blank"
+    - title: Réservations de ressources
+      description: Création de contrats, génération d'abonnements, crédits de réservation et événements
+      icon: 'i-material-symbols-location-on-outline-rounded'
+      to: 'https://doc.dokos.io/dokos/lieu'
+      target: "_blank"
+    - title: Ressources Humaines
+      description: Gestion des congés, notes de frais, recrutement, quarts et présence, performance 
+      icon: 'i-mdi-human-capacity-increase'
+      to: 'https://doc.dokos.io/dokos/hrms'
+      target: "_blank"
+    - title: Portail web & e-commerce
+      description: Vente de produits/services, réservations de ressources en ligne et création d'un portail client/fournisseur
+      icon: 'i-gg-website'
+      to: 'https://doc.dokos.io/dokos/e-commerce'
+      target: "_blank"
+    - title: 'OCR'
+      description: 'Reconnaissance automatique des factures et notes de frais'
+      icon: 'i-mdi-ocr'
+      to: 'https://doc.dokos.io/integrations'
+      target: "_blank"
+    - title: 'Paiements en ligne'
+      description: 'Collecte de paiements en ligne'
+      icon: 'i-ic-twotone-payments'
+      to: 'https://doc.dokos.io/integrations/payments'
+      target: "_blank"
+    - title: Intégrations
+      description: Sauvegarde externalisées, services Google, e-commerce, connecteurs no-code
+      icon: i-mdi-connection
+      to: 'https://doc.dokos.io/integrations'
+      target: "_blank"
+
+integrations:
+  title: Intégré avec le reste de vos applications
+  icons:
+    - i-logos-woocommerce-icon
+    - i-logos-stripe
+    - i-logos-paypal
+    - i-logos-zapier
+    - i-logos-google-calendar
+    - i-logos-google-drive
+    - i-logos-google-maps
+    - i-logos-dropbox
+    - i-simple-icons-amazons3
+    - i-cib-nextcloud
+  images:
+    - /home/gocardless.png
+
 
 sections:
-  - title: The power of open-source
-    description: Dokos is a free and open-source software and will always remain
+  - title: Une <span class="text-primary">version européenne</span> d'ERPNext
+    description: Dokos est un <i>fork</i> d'ERPNext qui a pour objectif d'être mieux adapté aux spécificités et habitudes françaises et européennes
+    image: /home/gdpr.svg
+    id: enterprise
+    align: left
+    features:
+      - name: Une adaptation locale
+        description: Les fonctionnalités, les traductions et l'interface utilisateur sont adaptées en fonction des retours de nos utilisateurs français et européens
+        icon: i-circle-flags-european-union
+      - name: Une compatibilité réglementaire
+        description: Les modules ayant un impact réglementaire font l'objet d'un traitement spécifique pour permettre leur utilisation en France
+        icon: i-octicon-law
+      - name: Une liberté éditoriale
+        description: Dokos suit les évolutions d'ERPNext mais dispose d'une identité propre. Certaines fonctionnalités ne sont pas conservées et d'autres sont disponibles uniquement dans Dokos
+        icon: i-material-symbols-editor-choice-outline-rounded
+    links:
+      - label: Comparaison avec ERPNext
+        to: https://doc.dokos.io/dokos/comparaison-erpnext
+        color: gray
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+        size: md
+        class: ml-8
+        target: _blank
+  - title: Un <span class="text-primary">logiciel d'entreprise</span> puissant
+    description: "Dokos est adapté à tout type d'entreprises, de la PME à la multinationale"
+    image: /home/business.svg
+    id: enterprise
+    align: right
+    features:
+      - name: Mode multisociété
+        description: Dokos permet nativement de gérer plusieurs entreprises ou associations. Et ce n'est pas une option payante...
+        icon: i-material-symbols-add-home-work-outline
+      - name: Workflows de validation
+        description: Définissez vos workflows, connectez-vous en SSO, disposez d'un logiciel conçu pour les entreprises
+        icon: i-octicon-workflow-16
+      - name: Editeur low-code
+        description: Personnalisez votre logiciel ou créez de nouveaux flux simplement grâce aux éditeurs low-code intégrés
+        icon: i-heroicons-code-bracket-square
+    links:
+      - label: Toutes les fonctionnaltés d'entreprise
+        to: https://doc.dokos.io/dodock
+        color: gray
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+        size: md
+        class: ml-8
+        target: _blank
+  - title: Une <span class="text-primary">plateforme</span> qui grandit avec vous
+    id: platform
+    description: Investissez dans un ERP qui peut accompagner toutes les phases de croissance de votre entreprise
+    image: /home/growing.svg
+    align: left
+    features:
+      - name: Robuste et scalable
+        description: Dokos est bâti sur des fondamentaux techniques et fonctionnels solides et a déjà fait ses preuves dans des entreprises exigeantes
+        icon: i-iconoir-scale-frame-enlarge
+      - name: Entièrement personnalisable
+        description: Ses options de personnalisations sont quasiment infinies et son modèle applicatif garanti leur évolutivité
+        icon: i-material-symbols-dashboard-customize-outline
+      - name: Des experts pour vous accompagner
+        description: Bénéficiez d'un écosystème de partenaires et de l'expertise reconnue de l'équipe de développement à tout moment
+        icon: i-material-symbols-contact-support-outline-rounded
+    links:
+      - label: Partenaires
+        to: /fr/partners
+        color: gray
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+        size: md
+        class: ml-8
+      - label: Services
+        to: /fr/services
+        color: gray
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+        size: md
+        class: ml-8
+  - title: Gardez le <span class="text-primary">contrôle</span>
+    description: Dokos est un logiciel libre et open-source et le restera toujours
+    image: /home/security.svg
+    id: control
+    align: right
+    features:
+      - name: Propriété des données
+        description: Vous restez propriétaires de vos données en tout circonstances. Plusieurs outils intégrés permettent de sauvegarder et exporter vos données à tout moment
+        icon: i-material-symbols-data-loss-prevention-outline
+      - name: Sécurité & Souveraineté
+        description: Développé en France, sous licence libre, et hébergé où vous le souhaitez, Dokos vous permet de garder la maîtrise d'un élément central de votre infrastructure informatique
+        icon: i-material-symbols-security-rounded
+      - name: SaaS ou auto-hébergement
+        description: Vous pouvez choisir d'héberger Dokos chez un tiers ou bien sur vos serveurs. Et vous pouvez transférer vos données de l'un à l'autre si vous changez d'avis
+        icon: i-material-symbols-cloud-sync-outline-rounded
+    links:
+      - label: Installer Dokos
+        to: https://doc.dokos.io/dodock
+        color: gray
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+        size: md
+        class: ml-8
+      - label: Dokos Cloud
+        to: https://dokos.cloud
+        color: gray
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+        size: md
+        class: ml-8
+  - title: La <span class="text-primary">force</span> de l'open-source
+    description: Dokos est un logiciel libre et open-source et le restera toujours
+    image: /home/open-source.svg
     id: opensource
     align: left
     features:
-      - name: No vendor lock-in
-        description: You are guaranteed to be completely independant from a single software vendor
+      - name: Libre choix du fournisseur
+        description: Vous n'avez aucune dépendance vis-à-vis d'un éditeur de logiciel ou d'un intégrateur spécifique
         icon: i-heroicons-lock-closed
-      - name: No licence fees
-        description: Your are free to use it... completely for free. We also provide paid services if you need help to host or use Dokos
+      - name: Aucun frais de licence
+        description: Vous êtes libres de l'utiliser sans aucun frais de licence. Nous proposons des services payants si vous avez besoin d'aide pour l'héberger ou l'utiliser
         icon: i-heroicons-credit-card
       - name: Based on Frappe/ERPNext
-        description: Dokos is based on the wonderful Frappe and ERPNext softwares and their ecosystem of applications
+        description: Dokos est basé sur les logiciels Frappe et ERPNext et leur écosystème d'applications incroyables
         icon: i-simple-icons-frappe
-    links:
-      - label: Explore components
-        to: /en/docs
-        color: gray
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
-  - title: The speed of our service
-    description: Cillum sint enim excepteur ut deserunt qui nisi in deserunt in. Deserunt aliquip quis aliquip eu quis ex velit velit nostrud sit.
-    align: right
-    features:
-      - name: Fast
-        description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod.
-        icon: i-heroicons-rocket-launch
-      - name: Affordable
-        description: Reprehenderit fugiat elit in do ipsum ut pariatur.
-        icon: i-heroicons-currency-dollar
-      - name: Scalable
-        description: Lorem deserunt et eiusmod. Ea in consectetur minim officia.
-        icon: i-heroicons-chart-bar
-    links:
-      - label: Learn more
-        to: /en/docs
-        color: gray
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
-features:
-  title: Why choose our service?
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  items:
-    - title: Easy to use
-      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
-      icon: i-heroicons-cog
-    - title: Reliable
-      description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
-      icon: i-heroicons-check
-    - title: Secure
-      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
-      icon: i-heroicons-lock-closed
-    - title: Fast
-      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
-      icon: i-heroicons-rocket-launch
-    - title: Affordable
-      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
-      icon: i-heroicons-currency-dollar
-    - title: Scalable
-      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
-      icon: i-heroicons-chart-bar
-testimonials:
-  headline: Testimonials
-  title: What our customers are saying.
-  description: Proident sunt exercitation minim laborum enim laboris labore esse.
-  items:
-    - quote: Nostrud tempor sunt fugiat. Dolor in sint dolore labore non occaecat adipisicing Lorem labore ullamco enim excepteur. In fugiat Lorem sit velit id veniam esse eiusmod non ea voluptate cupidatat reprehenderit ullamco dolore. Mollit laborum occaecat aliquip.
-      author:
-        name: Rose Roberson
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=1
-          loading: lazy
-    - quote: Eiusmod dolor aute ut nulla pariatur officia consequat aute amet exercitation.
-      author:
-        name: Chace Rodgers
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=7
-          loading: lazy
-    - quote: Id duis velit enim officia ad nisi incididunt magna ex dolor minim deserunt dolor. Esse incididunt cillum nostrud esse do quis amet labore amet nulla eiusmod amet nulla Lorem. Incididunt ex voluptate irure officia laboris ea proident est qui.
-      author:
-        name: Cornelius Sheppard
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=3
-          loading: lazy
-    - quote: Velit consectetur in adipisicing culpa eiusmod commodo eu ex dolore. Officia irure nisi dolor dolore velit fugiat. Aliqua sint aliqua aute elit eu sunt.
-      author:
-        name: Destinee Woods
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=5
-          loading: lazy
-    - quote: Proident quis deserunt qui ex exercitation veniam id Lorem est cupidatat ipsum irure aliquip ad.
-      author:
-        name: Kaleb Mccormick
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=8
-          loading: lazy
-    - quote: Magna officia quis ea ea in officia non voluptate ipsum culpa do labore sunt. Aute est dolore commodo sint officia ad laboris dolor magna aliquip exercitation tempor commodo.
-      author:
-        name: Jazmin Mccall
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=9
-          loading: lazy
-cta:
-  title: Get started with Dokos
-  description: Learn more about Dokos and its eco-system on our documentation website
+
+applications:
+  title: Compatible avec l'écosystème <span class="text-primary">Frappe</span>
+  description: Dokos est développé pour rester compatible avec les applications créées par Frappe Technologies et la communauté Frappe/ERPNext.
   links:
-    - label: Read the documentation
+    - label: Voir toutes les applications Frappe
+      icon: i-simple-icons-frappe
+      size: xl
+      color: black
+      to: https://frappe.io
+      target: _blank
+  items:
+    - title: Frappe Insights
+      description: Un outil de BI
+      icon: insights.svg
+      to: 'https://frappe.io/products/insights'
+    - title: Frappe CRM
+      description: Un outil de CRM
+      icon: crm.svg
+      to: 'https://frappe.io/products/crm'
+    - title: Frappe Helpdesk
+      description: Un outil de support
+      icon: helpdesk.png
+      to: 'https://frappedesk.com'
+    - title: Frappe Builder
+      description: Un outil de création de sites web
+      icon: builder.svg
+      to: 'https://frappe.io/products/builder'
+    - title: Frappe Wiki
+      description: Un wiki d'entreprise
+      icon: wiki.png
+      to: 'https://github.com/frappe/wiki'
+    - title: Frappe Print Designer
+      description: Un outil de création de formats d'impression
+      icon: print-designer.svg
+      to: 'https://github.com/frappe/print_designer'
+
+cta:
+  title: Démarrer avec Dokos
+  description: Accédez à toutes nos ressources pour en savoir plus sur Dokos et son écosystème  
+  links:
+    - label: Lire la documentation
       size: xl
       color: sky
       to: https://doc.dokos.io

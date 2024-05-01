@@ -616,10 +616,66 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-json/carbon@^1.1.32":
+  version "1.1.32"
+  resolved "https://registry.yarnpkg.com/@iconify-json/carbon/-/carbon-1.1.32.tgz#e2a1a5afac5f5a505952f1197ba3371167491c22"
+  integrity sha512-9X8wVI7AmcnjTyOdDoCgyNwcFL9lb++nacDS2yLANTc27F4y9Q8pJIfUVsakR4KcGqSSBCyXwEmBDeopeTZFqA==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/cib@^1.1.8":
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/@iconify-json/cib/-/cib-1.1.8.tgz#21159bd535bdef079a0346c567e557c026bd2067"
+  integrity sha512-wL7uxAq8pC9la11dRSHUrz4g4cNLhoR8VC/rnmTcswER/vICNgUYt7vNs0VVaGjC6G1dTY+iyKS4ooRCXChsqw==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/circle-flags@^1.1.47":
+  version "1.1.47"
+  resolved "https://registry.yarnpkg.com/@iconify-json/circle-flags/-/circle-flags-1.1.47.tgz#0401d061d4ad215e9287d9df024c2e87140a52eb"
+  integrity sha512-dG57yMC82w9lU0X5Sy7toAIWV5VuyoBM14KihPvYLPYqHgzR9GOfEaIn6BvFt0d5NtiMSzaDnFZY5rrAcI6q3A==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/eos-icons@^1.1.10":
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/@iconify-json/eos-icons/-/eos-icons-1.1.10.tgz#182e9ac4596948d9428243deb09d295f163e1581"
+  integrity sha512-sLkaMSrzHgATDFpVYs3/ymeNxR8CtkZCh1Ds9fYxjfhNmXArofbWhHwANqM4Sw9XNbMJq/Z5yxJ5BPTYqjhRcA==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/ep@^1.1.15":
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/@iconify-json/ep/-/ep-1.1.15.tgz#174397b62ae6aad104194d612b605946e360754c"
+  integrity sha512-96JBJQrJhxYy+j+KE5lqyE+Y6O+06fVUdMaHJ1Rb9+bbOjI1tw6EwYl9H4SB6Hkf7zB80VX6GgG0yH0Z0c8K1Q==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/fluent@^1.1.53":
+  version "1.1.53"
+  resolved "https://registry.yarnpkg.com/@iconify-json/fluent/-/fluent-1.1.53.tgz#f423364d88f4694d46072edce88cc85450ea7f61"
+  integrity sha512-3bgfkjTw3rjtuT1fFy433k3Ws5GGsT+/4C1JSF6EzHuH6dwJ2pyiNAUP5I4ufCZH7MGQoEt9txdvRIMJK6rtIg==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/gg@^1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@iconify-json/gg/-/gg-1.1.9.tgz#0800b3479a11d871fbc704f217fe24d5480a426a"
+  integrity sha512-gj4XlLoYR645g4WWMzv2+E5EBIbqnyOLlKL+9MPjb05fSDqYb6BRG2ICn68hIWOtcMS/UPNJQ5M8/Y2FgWD72g==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/heroicons@^1.1.20":
   version "1.1.20"
   resolved "https://registry.yarnpkg.com/@iconify-json/heroicons/-/heroicons-1.1.20.tgz#e2c536224bd0ff922e824579cdab40a18b0477da"
   integrity sha512-puNt1al/rDw8Rb5x8sfk20UA8AQjMskLMh63nSUBj+8I0lQ7LtX+0Qn8wow2xTXTEsynJ9xXLD8Aat53e0qi8A==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/heroicons@^1.1.21":
+  version "1.1.21"
+  resolved "https://registry.yarnpkg.com/@iconify-json/heroicons/-/heroicons-1.1.21.tgz#66cecd08ecc57322c4bd8547f56a446944d03eb9"
+  integrity sha512-A+3L4KN+TjH3V8fQ2N2dkOOnLLxMgMBzO8RDT0P9YL+YzvLMIbe/lkDLSB8NB8x0DKWmkvTimoo1l4DKMwi7Zg==
   dependencies:
     "@iconify/types" "*"
 
@@ -630,10 +686,45 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-json/icon-park-outline@^1.1.15":
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/@iconify-json/icon-park-outline/-/icon-park-outline-1.1.15.tgz#060467b424db9556fe37d9495571921c3e206dd3"
+  integrity sha512-jQbk/ETARyYPjX6HolkdjSLJHsNCfSBfYUqcUQLXYK/1tfuVnQsUdWG2IM2a7VBpxJtrK7r4n1iwPOFaZ5T46g==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/iconoir@^1.1.44":
+  version "1.1.44"
+  resolved "https://registry.yarnpkg.com/@iconify-json/iconoir/-/iconoir-1.1.44.tgz#753b36abee9ecedee5fb06e5c89924319de25f6d"
+  integrity sha512-XZZ6+nIgS3BUWTmIvZ1Um/TZcUsOEVDGOTZ50hihoTWYjfLLmPlxS/jxrTTpjJO/98wbyiDz4WOXFGqBrXMLPw==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/logos@^1.1.42":
   version "1.1.42"
   resolved "https://registry.yarnpkg.com/@iconify-json/logos/-/logos-1.1.42.tgz#85f62457ea54b727752b1fed8071847d17f28da1"
   integrity sha512-/f+frtPm3m3Z30oy8Pk+QqRDkbmAiIaWGPl5CmsCXm15MVfvw9a/V/gD7WzdyuSGAZcFuQaqbHXj92y/n+2ifg==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/material-symbols@^1.1.79":
+  version "1.1.79"
+  resolved "https://registry.yarnpkg.com/@iconify-json/material-symbols/-/material-symbols-1.1.79.tgz#cb86d3db06634f064aa630a36a2f60e962943eaf"
+  integrity sha512-/OvCxrxPQ/qncjGAPZkNk6LEpVX1nIK6e6BhMsbXMT5pEpnrePsRsVOYsiB8bJn3x67HP8zBrxZSYisDCKf8ow==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/mdi@^1.1.66":
+  version "1.1.66"
+  resolved "https://registry.yarnpkg.com/@iconify-json/mdi/-/mdi-1.1.66.tgz#eb48d02d5438ee545519dfb9f265ee1944faeaa9"
+  integrity sha512-7KPF2RVUUWav/hXCM8Ti/smqu3cmgePJpiX9CSkldiL+80+eBRBeKlc4vPOc9jhAItlqIU1vKsbKoPP0JIfgbg==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/octicon@^1.1.54":
+  version "1.1.54"
+  resolved "https://registry.yarnpkg.com/@iconify-json/octicon/-/octicon-1.1.54.tgz#4565cfa54f6eb68d5539a2356f6a65a790cd5274"
+  integrity sha512-1sKH5THuE9pMg7r4e/31vHaHJMBU32QdDLBt0riKt+4NXhEkF39AMxITGREagO4TeCw6ygqDgouj9ZE2y0l+Tg==
   dependencies:
     "@iconify/types" "*"
 
@@ -655,6 +746,20 @@
   version "1.1.110"
   resolved "https://registry.yarnpkg.com/@iconify-json/tabler/-/tabler-1.1.110.tgz#81ad0dd7a3af40c98dd889a9efe614565191c1d5"
   integrity sha512-+0TbyNeQpFI2r+bjtbazGrpGskI3c9NTii/6HhWTS+/d5+PiLs6+wWJW0M9AU2ykew7zdMKB2WtyczFyjYzZIQ==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/uil@^1.1.8":
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/@iconify-json/uil/-/uil-1.1.8.tgz#c5daee15bc07eb945f3d22e3f9e3eae1d34775d1"
+  integrity sha512-zkWB8XImzb1gfi5kN9xAfDXF5OqzxbKvtZq9xRUplEWEJYOoDB1RpbbQpCwJQ41j8Nf0ag0LFJr++qhYmvxftQ==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/vaadin@^1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@iconify-json/vaadin/-/vaadin-1.1.9.tgz#43ad5ceeb98eaf1627b084508e5aedada30c5fb4"
+  integrity sha512-Ty+082mPgp/p3gVnY3p14fZz/bimxJJeSfB6DgOD60cCoSEw2yXYb2HcUzx1B+xeGbEKDrWdLoqfasFOpnl7AA==
   dependencies:
     "@iconify/types" "*"
 

@@ -46,7 +46,7 @@ const links = [{
     }
   ]
 }, {
-  label: t('applications'),
+  label: t('pricing'),
   to: localePath('/pricing'),
   icon: 'i-heroicons-ticket',
 },
@@ -61,7 +61,8 @@ const links = [{
 <template>
   <UHeader :links="links">
     <template #logo>
-      Dokos <UBadge label="Project" variant="subtle" class="mb-0.5" />
+      <img width="40px" src="/dokos_logo_rect.svg">
+      <UBadge label="Project" variant="subtle" class="mb-0.5" />
     </template>
 
     <template #center>
