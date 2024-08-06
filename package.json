@@ -38,13 +38,13 @@
     "@nuxt/ui-pro": "^1.1.0",
     "@nuxtjs/i18n": "^8.3.0",
     "@vueuse/nuxt": "^10.9.0",
-    "nuxt": "^3.11.2",
     "nuxt-og-image": "^2.2.4"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxthq/studio": "^1.0.13",
     "eslint": "^8.57.0",
+    "nuxt": "^3.12.4",
     "vue-tsc": "^2.0.7"
   },
   "version": "0.0.0",
