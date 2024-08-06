@@ -3,7 +3,7 @@ toc: true
 title: Mentions Légales
 ---
 
-## 1\. PRÉSENTATION DU SITE
+## 1\. Présentation du site
 
 Conformément aux dispositions des articles 6-III et 19 de la loi pour la Confiance dans l'Économie Numérique, nous vous informons que :  
 
@@ -18,7 +18,7 @@ RCS : 824 710 776 R.C.S Nancy
 
 * Le prestataire assurant l'hébergement du site est : [Netlify](https://www.netlify.com/)
 
-## 2\. LIMITATION DE RESPONSABILITÉ
+## 2\. Limitation de responsabilité
 
 L'utilisateur reconnaît avoir pris connaissance des présentes conditions d'utilisation et s'engage à les respecter.  
 
@@ -30,7 +30,7 @@ www.dokos.io ne saurait garantir l'exactitude, la complétude, l'actualité des 
 En conséquence, l'utilisateur reconnaît utiliser ces informations sous sa responsabilité exclusive.  
 Le site utilise la technologie JavaScript.
 
-## 3\. COOKIES
+## 3\. Cookies
 
 L'utilisateur est informé que lors de ses visites sur le site, un cookie peut s'installer automatiquement sur son logiciel de navigation.  
 
@@ -40,7 +40,7 @@ Le paramétrage du logiciel de navigation permet d'informer de la présence de c
 Les utilisateurs du site internet www.dokos.io sont tenus de respecter les dispositions de la loi n°78-17 du 6 janvier 1978 modifiée, relative à l'informatique, aux fichiers et aux libertés, dont la violation est passible de sanctions pénales.  
 Ils doivent notamment s'abstenir, s'agissant des informations à caractère personnel auxquelles ils accèdent ou pourraient accéder, de toute collecte, de toute utilisation détournée d'une manière générale, de tout acte susceptible de porter atteinte à la vie privée ou à la réputation des personnes.
 
-## 4\. PROPRIÉTÉ INTELLECTUELLE
+## 4\. Propriété Intellectuelle
 
 Les bases de données produites et figurant sur le site web www.dokos.io sont protégées par les dispositions de la loi du 1er juillet 1998 portant transposition dans le Code de la propriété intellectuelle de la directive du 11 mars 1996 relative à la protection juridique des bases de données.  
 

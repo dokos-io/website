@@ -1,1 +1,3 @@
-# About us
+---
+title: Notre équipe
+---

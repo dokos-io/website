@@ -728,6 +728,13 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-json/ph@^1.1.12":
+  version "1.1.12"
+  resolved "https://registry.yarnpkg.com/@iconify-json/ph/-/ph-1.1.12.tgz#4f857844b109713571af6ec981c41675e16fee46"
+  integrity sha512-m+rXTW084YaQQHT+F8TxdkCoAh+i/5MWRoSuPmxCWPlxwMAaLT/QfyVsbEiV95HM5806U/jKpBV6F1b7Pmr3Vg==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/ri@^1.1.20":
   version "1.1.20"
   resolved "https://registry.yarnpkg.com/@iconify-json/ri/-/ri-1.1.20.tgz#6621dfc91fa119c1b941a0685d213f22480157ca"

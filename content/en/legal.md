@@ -1,8 +1,9 @@
 ---
 toc: true
+title: Legal Mentions
 ---
 
-## 1 Site Presentation
+## 1. Site Presentation
 
 In compliance with the provisions in clauses 6-III and 19 of the law for confidence in the digital economy, we inform you of the following:  
 
@@ -17,7 +18,7 @@ RCS : 824 710 776 R.C.S Nancy
 
 * Website hosting provider : [Netlify](https://www.netlify.com/)
 
-## 2 Limitation of liability
+## 2. Limitation of liability
 
 The user acknowledge having read the present notice and undertake to respect it.
 

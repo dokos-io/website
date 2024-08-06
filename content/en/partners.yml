@@ -1,110 +1,12 @@
-title: Pricing
-description: Dokos Cloud pricing.
-navigation.icon: i-heroicons-credit-card
-hero:
-  title: Dokos Cloud hosting offers
-  description: You want us to host a Dokos site for you ? We got you covered.
-  align: center
-plans:
-  - title: Discovery
-    description: Starter plan for small organizations.
-    price:
-      month: 19€
-    align: top
-    button:
-      label: Get Started
-      color: white
-    features:
-      - Managed hosting and maintenance
-      - Access to all modules
-      - Unlimited users
-      - Community Forum
-      - 500 documents created/month
-      - 200 outgoing emails/month *
-      - 1 GB file storage included **
-  - title: Bootstrap
-    description: Standard plan for small organizations.
-    price:
-      month: 49€
-    align: top
-    button:
-      label: Get Started
-      color: white
-    features:
-      - Everything in Discovery
-      - 1500 documents created/month
-      - 500 outgoing emails/month *
-      - 2 GB file storage included **
-  - title: Startup
-    description: Plan with dedicated support for small to medium organizations.
-    price:
-      month: 99€
-    highlight: true
-    align: top
-    button:
-      label: Get Started
-      color: black
-    features:
-      - Everything in Boostrap
-      - Email support for 2 users
-      - 3000 documents created/month
-      - 1000 outgoing emails/month *
-      - 10 GB file storage included **
-  - title: Premium
-    description: A premium plan for large teams.
-    price:
-      month: 199€
-    align: top
-    button:
-      label: Get Started
-      color: white
-    features:
-      - Everything in Startup
-      - Email support for 3 users
-      - Custom domain name
-      - Custom fonts installation
-      - 8000 documents created/month
-      - 1500 outgoing emails/month *
-      - 50 GB file storage included **
-logos:
-  title: Runs on trusted infrastructure providers
-  icons:
-    - i-simple-icons-hetzner
-    - i-simple-icons-ovh
-
-services:
-  title: Looking for services ?
-  description: "We provide also dedicated training, customizations, developments or support services"
-  icon: i-heroicons-rocket-launch-16-solid
-  to: "/en/services"
-
-selfhost:
-  title: Looking to self host Dokos ?
-  description: "Dokos is free and open-source software. Read the documentation for self-host"
-  icon: i-heroicons-academic-cap-16-solid
-  to: "https://doc.dokos.io/dodock/installation"
-  target: "_blank"
-
-faq:
-  title: Frequently asked questions
-  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
-  items:
-    - label: What is included in the hosting offer ?
-      content: The hosting offer includes the hosting of your site in the European Union, the evolutive maintenance of your application, as well as a storage space, a number of monthly emails and a level of support depending on the formula you choose. 
-      defaultOpen: true
-    - label: Why do you charge based on the number of documents created and not per user ?
-      content: Our experience shows that your usage of the software, and therefore your hosting needs, do not depend on the number of users. You may want to give access to your accountant or to users with very limited permissions and we understand that you would not want to be fully charged for these types of users.
-    - label: What does 1 created document in Dokos represent ?
-      content: Every time you create a new customer or a new quotation it counts as a new created document. We do exclude all technical document, such as logs, or incoming emails from the number of created documents. You can see the details of all created document in your customer account.
-    - label: Why is there a limit on the number of emails sent from Dokos ?
-      content: Our hosting offers do include a pre-configured email integration with our email provider. You can always change the setup to integrate your own email provider with Dokos and avoid this limit.
-    - label: What happens if I reach my file storage limit ?
-      content: You can keep your current plan rate and we will only propose you an additional file storage extension. Each additional 10GB is charged 5€/month.
-    - label: What if my usage goes above my current plan limit ?
-      content: Your site will still be available. If your usage is above the limit for several months in a row we will contact you to discuss about your upgrade options.
-    - label: Can I switch to a self hosted instance after some time on Dokos Cloud ?
-      content: Yes, you can always download all your data (database + files) and migrate them to a self hosted instance. We would be happy to provide you support if needed. You can also switch back to Dokos Cloud anytime.
-    - label: Do your offer support ?
-      content: Yes, email support is included in the Startup and Premium plans. For lower plans, you can ask any question on the community forum and we will be happy to help you.
-    - label: What if I have more questions ?
-      content: We'd be happy to answer them. Just send us an email at hello@dokos.io
+title: Dokos Partners
+navigation.title: Partners
+description: Are you looking for a trusted partner with a strong functional and technical expertise with Dokos ? Consult our partners catalog and find a partner near you with the right set of skills.
+head.title: Dokos Partners
+head.description: Consult our partners catalog and find a partner near you with the right set of skills.
+navigation.icon: i-ph-handshake-duotone
+links:
+  - label: 'Become a partner'
+    to: 'mailto:hello@dokos.io'
+    color: black
+    size: 'lg'
+    target: '_blank'

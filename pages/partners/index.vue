@@ -1,8 +1,12 @@
 <script setup lang="ts">
-const route = useRoute()
-const { filteredAgencies, fetchList, services, regions } = useEnterpriseAgencies()
 
-const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
+const { locale } = useI18n()
+const localePath = useLocalePath()
+
+const { Partners, fetchList } = usePartners()
+
+
+const { data: page } = await useAsyncData('partners', () => queryContent('/partners').where({ _locale: locale.value}).findOne())
 
 const title = page.value.head?.title || page.value.title
 const description = page.value.head?.description || page.value.description
@@ -14,8 +18,8 @@ useSeoMeta({
   ogTitle: `${title} · Enterprise`
 })
 
-defineOgImageComponent('Docs', {
-  headline: 'Enterprise'
+const { t } = useI18n({
+  useScope: 'local'
 })
 
 await fetchList()
@@ -26,17 +30,12 @@ await fetchList()
     <UPageHero v-bind="page" />
 
     <UPage id="smooth" class="pt-20 -mt-20">
-      <template #left>
-        <UAside>
-          <UNavigationTree :links="[{ label: 'Technical Expertise', disabled: true, children: services }, { label: 'Locations', disabled: true, children: regions }]" />
-        </UAside>
-      </template>
-
       <UPageBody>
-        <UPageGrid v-if="filteredAgencies?.length">
+        <UPageGrid v-if="Partners?.length">
           <UPageCard
-            v-for="(agency, index) in filteredAgencies"
+            v-for="(agency, index) in Partners"
             :key="index"
+            :to="localePath(agency._path)"
             :title="agency.title"
             :description="agency.description"
             :ui="{
@@ -56,23 +55,15 @@ await fetchList()
           </UPageCard>
         </UPageGrid>
 
-        <EmptyCard v-else label="No agency matches your criteria for now.">
-          <UButton
-            label="Clear filters"
-            color="white"
-            trailing-icon="i-ph-x-circle"
-            size="md"
-            @click="$router.replace({ query: {} })"
-          />
-          <UButton
-            to="https://docs.google.com/forms/d/e/1FAIpQLSf85qskit5QqmGJcruGkGF0U7240Bh9MeN0pHB18UiOMWC8dA/viewform"
-            target="_blank"
-            color="black"
-            size="md"
-            label="Submit my agency"
-          />
-        </EmptyCard>
+        <EmptyCard v-else :label="t('empty_page')" />
       </UPageBody>
     </UPage>
   </UContainer>
 </template>
+
+<i18n lang="yaml">
+  en:
+      empty_page: "We don't have any english speaking partner yet."
+  fr:
+      empty_page: "Nous n'avons pas encore de partenaire francophone."
+</i18n>

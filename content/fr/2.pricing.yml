@@ -7,104 +7,91 @@ hero:
   align: center
 plans:
   - title: Discovery
-    description: Starter plan for small organizations.
+    description: Hébergement seul pour les petites organisations.
     price:
       month: 19€
     align: top
-    button:
-      label: Get Started
-      color: white
     features:
-      - Managed hosting and maintenance
-      - Access to all modules
-      - Unlimited users
-      - Community Forum
-      - 500 documents created/month
-      - 200 outgoing emails/month *
-      - 1 GB file storage included **
+      - Hébergement et maintenance
+      - Accès à tous les modules
+      - Utilisateurs illimités
+      - Forum communautaire
+      - 1 heure CPU
+      - 0.5 GB de base de données
+      - 5 GB de stockage
   - title: Bootstrap
-    description: Standard plan for small organizations.
+    description: Hébergement seul sans support pour les petites organisations.
     price:
       month: 49€
     align: top
-    button:
-      label: Get Started
-      color: white
     features:
-      - Everything in Discovery
-      - 1500 documents created/month
-      - 500 outgoing emails/month *
-      - 2 GB file storage included **
+      - Tous les avantages du forfait Discovery
+      - 2 heure CPU
+      - 1 GB de base de données
+      - 5 GB de stockage
   - title: Startup
-    description: Plan with dedicated support for small to medium organizations.
+    description: Hébergement avec support pour les petites et moyennes organisations.
     price:
       month: 99€
     highlight: true
     align: top
-    button:
-      label: Get Started
-      color: black
     features:
-      - Everything in Boostrap
-      - Email support for 2 users
-      - 3000 documents created/month
-      - 1000 outgoing emails/month *
-      - 10 GB file storage included **
+      - Tous les avantages du forfait Bootstrap
+      - Support par email pour 2 personnes
+      - 4 heure CPU
+      - 2 GB de base de données
+      - 25 GB de stockage
   - title: Premium
-    description: A premium plan for large teams.
+    description: Offre premium pour les équipes plus larges.
     price:
       month: 199€
     align: top
-    button:
-      label: Get Started
-      color: white
     features:
-      - Everything in Startup
-      - Email support for 3 users
-      - Custom domain name
-      - Custom fonts installation
-      - 8000 documents created/month
-      - 1500 outgoing emails/month *
-      - 50 GB file storage included **
+      - Tous les avantages du forfait Startup
+      - Support par email pour 3 personnes
+      - Nom de domaine personnalisé
+      - 4 heure CPU
+      - 3 GB de base de données
+      - 50 GB de stockage
 logos:
-  title: Runs on trusted infrastructure providers
+  title: Hébergé chez des fournisseurs d'infrastructure de confiance
   icons:
     - i-simple-icons-hetzner
     - i-simple-icons-ovh
 
 services:
-  title: Looking for services ?
-  description: "We provide also dedicated training, customizations, developments or support services"
+  title: Vous avez besoin d'accompagnement ?
+  description: "Nous proposons aussi des formations dédiées, des personnalisations, des développements ou des services de support"
   icon: i-heroicons-rocket-launch-16-solid
-  to: "/en/services"
+  to: "/fr/services"
 
 selfhost:
-  title: Looking to self host Dokos ?
-  description: "Dokos is free and open-source software. Read the documentation for self-host"
+  title: Vous souhaitez auto-héberger Dokos ?
+  description: "Dokos est un logiciel libre et open-source. Nous vous proposons une documentation pour héberger vous-même le logiciel"
   icon: i-heroicons-academic-cap-16-solid
   to: "https://doc.dokos.io/dodock/installation"
   target: "_blank"
 
 faq:
-  title: Frequently asked questions
-  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
+  title: Questions fréquentes
+  description: ""
   items:
-    - label: What is included in the hosting offer ?
-      content: The hosting offer includes the hosting of your site in the European Union, the evolutive maintenance of your application, as well as a storage space, a number of monthly emails and a level of support depending on the formula you choose. 
+    - label: Qu'est-ce qui est compris dans la formule d'hébergement ?
+      content: La formule d'hébergement comprend l'hébergement de votre site dans l'Union Européenne, la maintenance évolutive de votre application, ainsi qu'un espace de stockage, un nombre d'emails par mois et un certain niveau de support en fonction de la formule que vous choisissez. 
       defaultOpen: true
-    - label: Why do you charge based on the number of documents created and not per user ?
-      content: Our experience shows that your usage of the software, and therefore your hosting needs, do not depend on the number of users. You may want to give access to your accountant or to users with very limited permissions and we understand that you would not want to be fully charged for these types of users.
-    - label: What does 1 created document in Dokos represent ?
-      content: Every time you create a new customer or a new quotation it counts as a new created document. We do exclude all technical document, such as logs, or incoming emails from the number of created documents. You can see the details of all created document in your customer account.
-    - label: Why is there a limit on the number of emails sent from Dokos ?
-      content: Our hosting offers do include a pre-configured email integration with our email provider. You can always change the setup to integrate your own email provider with Dokos and avoid this limit.
-    - label: What happens if I reach my file storage limit ?
-      content: You can keep your current plan rate and we will only propose you an additional file storage extension. Each additional 10GB is charged 5€/month.
-    - label: What if my usage goes above my current plan limit ?
-      content: Your site will still be available. If your usage is above the limit for several months in a row we will contact you to discuss about your upgrade options.
-    - label: Can I switch to a self hosted instance after some time on Dokos Cloud ?
-      content: Yes, you can always download all your data (database + files) and migrate them to a self hosted instance. We would be happy to provide you support if needed. You can also switch back to Dokos Cloud anytime.
+    - label: Pourquoi facturez-vous en fonction du nombre de documents créés et non par utilisateur ?
+      content: Notre expérience montre que votre usage du logiciel et par conséquent vos besoins d'hébergement, ne dépendent pas du nombre d'utilisateurs. Vous pouvez vouloir donner accès à votre comptable ou à des utilisateurs avec très peu d'autorisations et nous comprenons que vous ne souhaitez pas payer un abonnement complet pour ces types utilisateurs.
+    - label: Que représente 1 document créé dans Dokos ?
+      content: Chaque fois que vous crééz un nouveau client ou un nouveau devis, cela compte comme un document créé. Nous excluons les documents techniques, comme les logs, ou les emails entrants du nombre de documents créés. Vous pouvez voir votre décompte de documents créés sur votre compte client.
+    - label: Pourquoi il y a-t-il une limite d'envoi d'emails depuis Dokos ?
+      content: Notre offre d'hébergement inclus une intégration pré-configurée avec notre fournisseur d'email. Vous pouvez toujours modifier le paramétrage pour intégrer votre propre fournisseur d'emails dans Dokos et ne pas tenir compte de cette limite.
+    - label: Que se passe-t-il si j'atteins ma limite de stockage de fichiers ?
+      content: Vous pouvez garder votre forfait et nous vous proposerons une option de stockage supplémentaire. Chaque tranche de 10Go supplémentaire est facturée 5€/mois.
+    - label: Que se passe-t-il si mon usage dépasse la limite de mon forfait ?
+      content: Votre site sera toujours accessible. Si votre usage dépasse la limite pendant plusieurs mois d'affilée, nous vous contacterons pour discuter de vos options pour passer à un forfait adapté.
+    - label: Puis-je passer à un auto-hébergement après quelques temps sur le Cloud Dokos ?
+      content: Oui, vous pouvez toujours télécharger toutes vos données (base de données + fichiers) et les migrer sur votre propre serveur. Nous serons heureux de vous fournir le support dont vous avez besoin. Et vous pouvez toujours revenir sur le Cloud Dokos si vous le souhaitez.
     - label: Do your offer support ?
       content: Yes, email support is included in the Startup and Premium plans. For lower plans, you can ask any question on the community forum and we will be happy to help you.
-    - label: What if I have more questions ?
-      content: We'd be happy to answer them. Just send us an email at hello@dokos.io
+    - label: Et si j'ai d'autres questions ?
+      content: Nous serons ravis d'y répondre. Envoyez nous juste un email à hello@dokos.io

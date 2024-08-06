@@ -11,9 +11,6 @@ plans:
     price:
       month: 19€
     align: top
-    button:
-      label: Get Started
-      color: white
     features:
       - Managed hosting and maintenance
       - Access to all modules
@@ -27,9 +24,6 @@ plans:
     price:
       month: 49€
     align: top
-    button:
-      label: Get Started
-      color: white
     features:
       - Everything in Discovery
       - 1500 documents created/month
@@ -41,9 +35,6 @@ plans:
       month: 99€
     highlight: true
     align: top
-    button:
-      label: Get Started
-      color: black
     features:
       - Everything in Boostrap
       - Email support for 2 users
@@ -55,9 +46,6 @@ plans:
     price:
       month: 199€
     align: top
-    button:
-      label: Get Started
-      color: white
     features:
       - Everything in Startup
       - Email support for 3 users
@@ -87,7 +75,7 @@ selfhost:
 
 faq:
   title: Frequently asked questions
-  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
+  description: ""
   items:
     - label: What is included in the hosting offer ?
       content: The hosting offer includes the hosting of your site in the European Union, the evolutive maintenance of your application, as well as a storage space, a number of monthly emails and a level of support depending on the formula you choose. 

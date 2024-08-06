@@ -28,10 +28,10 @@ hero:
       description: Modules de base
       icon: i-mdi-puzzle-plus
     - title: 10+
-      description: Applications complémentaires
+      description: Applications
       icon: i-icon-park-outline-application-menu
     - title: 100+
-      description: Entreprises utilisatrices
+      description: Entreprises
       icon: i-octicon-organization-24
     - title: 100%
       description: Libre et Open-source
@@ -106,8 +106,8 @@ features:
       icon: 'i-mdi-ocr'
       to: 'https://doc.dokos.io/integrations'
       target: "_blank"
-    - title: 'Paiements en ligne'
-      description: 'Collecte de paiements en ligne'
+    - title: Paiements
+      description: Collecte de paiements en ligne via carte bancaire, prélèvement SEPA, Paypal et autres passerelles de paiements...
       icon: 'i-ic-twotone-payments'
       to: 'https://doc.dokos.io/integrations/payments'
       target: "_blank"
@@ -132,7 +132,6 @@ integrations:
     - i-cib-nextcloud
   images:
     - /home/gocardless.png
-
 
 sections:
   - title: Une <span class="text-primary">version européenne</span> d'ERPNext
@@ -214,7 +213,7 @@ sections:
         size: md
         class: ml-8
   - title: Gardez le <span class="text-primary">contrôle</span>
-    description: Dokos est un logiciel libre et open-source et le restera toujours
+    description: Soyez certain de ne pas être enfermé avec un éditeur ou un prestataire de service
     image: /home/security.svg
     id: control
     align: right
@@ -223,7 +222,7 @@ sections:
         description: Vous restez propriétaires de vos données en tout circonstances. Plusieurs outils intégrés permettent de sauvegarder et exporter vos données à tout moment
         icon: i-material-symbols-data-loss-prevention-outline
       - name: Sécurité & Souveraineté
-        description: Développé en France, sous licence libre, et hébergé où vous le souhaitez, Dokos vous permet de garder la maîtrise d'un élément central de votre infrastructure informatique
+        description: Développé en Inde et en France, sous licence libre, et hébergé où vous le souhaitez, Dokos vous permet de garder la maîtrise d'un élément central de votre infrastructure informatique
         icon: i-material-symbols-security-rounded
       - name: SaaS ou auto-hébergement
         description: Vous pouvez choisir d'héberger Dokos chez un tiers ou bien sur vos serveurs. Et vous pouvez transférer vos données de l'un à l'autre si vous changez d'avis
@@ -255,7 +254,7 @@ sections:
       - name: Aucun frais de licence
         description: Vous êtes libres de l'utiliser sans aucun frais de licence. Nous proposons des services payants si vous avez besoin d'aide pour l'héberger ou l'utiliser
         icon: i-heroicons-credit-card
-      - name: Based on Frappe/ERPNext
+      - name: Dérivé de Frappe/ERPNext
         description: Dokos est basé sur les logiciels Frappe et ERPNext et leur écosystème d'applications incroyables
         icon: i-simple-icons-frappe
 

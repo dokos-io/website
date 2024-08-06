@@ -6,43 +6,45 @@ const { t } = useI18n({
 
 const localePath = useLocalePath()
 
-const links = [{
-  label: t('resources'),
-  children: [{
-    label: t('documentation'),
-    to: "https://doc.dokos.io"
+const links = computed(() => {
+  return [{
+    label: t('resources'),
+    children: [{
+      label: t('documentation'),
+      to: "https://doc.dokos.io"
+    }, {
+      label: t('forum'),
+      to: "https://community.dokos.io"
+    }, {
+      label: t('gitlab'),
+      to: "https://gitlab.com/dokos"
+    }]
   }, {
-    label: t('forum'),
-    to: "https://community.dokos.io"
+    label: t('ecosystem'),
+    children: [{
+      label: t('partners'),
+      to: localePath('/partners')
+    }, {
+      label: t('frappeverse'),
+      to: "https://frappe.io"
+    }]
   }, {
-    label: t('gitlab'),
-    to: "https://gitlab.com/dokos"
+    label: t('company'),
+    children: [{
+      label: t('about'),
+      to: localePath('/about')
+    }, {
+      label: t('termsandconditions'),
+      to: localePath('/termsandconditions')
+    }, {
+      label: t('securityandprivacy'),
+      to: localePath('/securityandprivacy')
+    }, {
+      label: t('legal'),
+      to: localePath('/legal')
+    }]
   }]
-}, {
-  label: t('ecosystem'),
-  children: [{
-    label: t('partners'),
-    to: localePath('/partners')
-  }, {
-    label: t('frappeverse'),
-    to: "https://frappe.io"
-  }]
-}, {
-  label: t('company'),
-  children: [{
-    label: t('about'),
-    to: localePath('/about')
-  }, {
-    label: t('termsandconditions'),
-    to: localePath('/termsandconditions')
-  }, {
-    label: t('securityandprivacy'),
-    to: localePath('/securityandprivacy')
-  }, {
-    label: t('legal'),
-    to: localePath('/legal')
-  }]
-}]
+});
 
 </script>
 
