@@ -1283,6 +1283,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify/json@npm:^2.2.234":
+  version: 2.2.234
+  resolution: "@iconify/json@npm:2.2.234"
+  dependencies:
+    "@iconify/types": "npm:*"
+    pathe: "npm:^1.1.2"
+  checksum: 10c0/2c2a7dbef83def6b57275db92c1eb2f90e35dbecf7f51e7ce17fdbaca8f6ca7a32dab08950b472ef71ca3a7d60c48e61aa7cd530e3dee7105ba403434ab2b5bc
+  languageName: node
+  linkType: hard
+
 "@iconify/types@npm:*, @iconify/types@npm:^2.0.0":
   version: 2.0.0
   resolution: "@iconify/types@npm:2.0.0"
@@ -10039,6 +10049,7 @@ __metadata:
     "@iconify-json/simple-icons": "npm:^1.1.112"
     "@iconify-json/uil": "npm:^1.1.9"
     "@iconify-json/vaadin": "npm:^1.1.10"
+    "@iconify/json": "npm:^2.2.234"
     "@nuxt/content": "npm:^2.13.2"
     "@nuxt/eslint-config": "npm:^0.5.0"
     "@nuxt/fonts": "npm:^0.7.1"
