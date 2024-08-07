@@ -61,7 +61,7 @@ const links = computed(() => {
 </script>
 
 <template>
-  <UHeader :links="links">
+  <UHeader :links="links" :to="localePath('/')">
     <template #logo>
       <img width="40px" src="/dokos_logo_rect.svg">
       <UBadge :label="t('badge_label')" variant="subtle" class="mb-0.5" />
