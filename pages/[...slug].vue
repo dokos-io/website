@@ -55,7 +55,7 @@ const headline = computed(() => findPageHeadline(page.value!))
                 <UContentSurround :surround="surround" />
             </UPageBody>
 
-            <template v-if="page.toc !== false" #right>
+            <template v-if="page.toc === true" #right>
                 <UContentToc :title="t('toc')" :links="page.body?.toc?.links" />
             </template>
         </UPage>
