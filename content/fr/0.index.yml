@@ -3,9 +3,9 @@ description: Dokos est une plateforme libre et open-source de gestion d'entrepri
 navigation: false
 hero:
   title: Découvrez <span class="text-primary">Dokos</span>
-  description: Applications libres et open-source pour propulser votre entreprise
+  description: Propulsez votre entreprise avec des applications libres et open-source, centralisées en un seul endroit 
   headline:
-    label: Dokos est une adaptation d'ERPNext
+    label: Une adaptation d'ERPNext'
     to: https://erpnext.com
     icon: i-heroicons-arrow-top-right-on-square-20-solid
     target: _blank
@@ -38,8 +38,8 @@ hero:
       icon: i-mdi-open-source-initiative
 
 features:
-  title: Une boîte à outils pour <span class="text-primary">tous vos besoins</span>
-  description: Avec plus 15 modules de base, Dokos permet de gérer des entreprises ou associations dans la majorité des secteurs d'activités
+  title: La boîte à outils complète pour <span class="text-primary">tous vos besoins</span>
+  description: Transformez votre gestion avec Dokos. Plus de 15 modules essentiels pour optimiser votre entreprise ou associations, quel que soit le secteur.
   items:
     - title: CRM
       description: Gestion de la prospection
