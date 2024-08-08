@@ -49,7 +49,7 @@ export default defineNuxtConfig({
       }
     ],
     langDir: 'lang',
-    strategy: "prefix",
+    strategy: "prefix_and_default",
     detectBrowserLanguage: false,
     defaultLocale: "en"
   },
