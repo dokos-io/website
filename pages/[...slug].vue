@@ -7,16 +7,16 @@ const {
 } = useRoute();
 const { locale } = useI18n()
 
-const { data: page } = await useAsyncData(route.path, () => queryContent("/").where({ _locale: locale.value, _path: `/${(slug as string[]).join("/")}` }).findOne())
+const { data: page } = await useAsyncData(route.path, () => queryContent(`/${locale.value}/${(slug as string[]).join("/")}` ).findOne())
 if (!page.value) {
     throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
-const { data: surround } = await useAsyncData(`${route.path}-surround`, () => queryContent('/')
+const { data: surround } = await useAsyncData(`${route.path}-surround`, () => queryContent(`/${locale.value}`)
     .where({ _extension: 'md', navigation: { $ne: false } })
     .where({ _locale: locale.value })
     .only(['title', 'description', '_path'])
-    .findSurround(withoutTrailingSlash(route.path))
+    .findSurround(`/${locale.value}`)
     , { default: () => [] })
 
 useSeoMeta({

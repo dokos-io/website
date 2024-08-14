@@ -6,7 +6,7 @@ const localePath = useLocalePath()
 const { Partners, fetchList } = usePartners()
 
 
-const { data: page } = await useAsyncData('partners', () => queryContent('/partners').where({ _locale: locale.value}).findOne())
+const { data: page } = await useAsyncData('partners', () => queryContent(`/${locale.value}/partners`).findOne())
 
 const title = page.value.head?.title || page.value.title
 const description = page.value.head?.description || page.value.description

@@ -12,7 +12,7 @@ export const usePartners = () => {
     }
 
     try {
-      const data = await queryContent('/partners').where({ _locale: locale.value}).where({ _extension: 'md' }).find()
+      const data = await queryContent(`/${locale.value}/partners`).where({ _extension: 'md' }).find()
 
       partners.value = data.map(partner => ({
         ...partner,

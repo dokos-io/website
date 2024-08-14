@@ -74,7 +74,7 @@ const links = computed(() => {
     documentation: Documentation
     forum: "Community Forum"
     company: Company
-    ecosystem: "Eco-system"
+    ecosystem: "Ecosystem"
     partners: Partners
     about: About Us
     services: Services
@@ -88,9 +88,9 @@ const links = computed(() => {
     all_rights_reserved: "Tous droits réservés"
     resources: Ressources
     documentation: Documentation
-    forum: "Forum Communautaire"
+    forum: Forum Communautaire
     company: Société
-    ecosystem: "Eco-système"
+    ecosystem: Ecosystème
     partners: Partenaires
     about: Notre Equipe
     services: Services

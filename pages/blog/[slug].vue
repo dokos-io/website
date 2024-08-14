@@ -11,17 +11,17 @@ const { locale } = useI18n()
 const path_without_locale = route
 path_without_locale.path.replace(`/^(/${locale}\.)/,"")`, '')
 
-const { data: post } = await useAsyncData(path_without_locale.path, () => queryContent<BlogPost>("/blog").where({ _locale: locale.value, _path: `/blog/${slug}` }).findOne())
+const { data: post } = await useAsyncData(`/${locale.value}/blog/${slug}`, () => queryContent<BlogPost>(`/${locale.value}/blog/${slug}`).findOne())
 if (!post.value) {
   throw createError({ statusCode: 404, statusMessage: 'Post not found', fatal: true })
 }
 
-const { data: surround } = await useAsyncData(`${path_without_locale.path}-surround`, () => queryContent('/blog')
+const { data: surround } = await useAsyncData(`/${locale.value}/blog/${slug}-surround`, () => queryContent(`/${locale.value}/blog`)
   .where({ _extension: 'md' })
   .where({ _locale: locale.value})
   .without(['body', 'excerpt'])
   .sort({ date: -1 })
-  .findSurround(withoutTrailingSlash(path_without_locale.path))
+  .findSurround(`/${locale.value}/blog/${slug}`)
 , { default: () => [] })
 
 const title = post.value.head?.title || post.value.title

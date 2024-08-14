@@ -2,14 +2,13 @@
 import type { BlogPost } from '~/types'
 
 const { locale } = useI18n()
-const { data: page } = await useAsyncData('blog', () => queryContent('/blog').where({ _locale: locale.value}).findOne())
+const { data: page } = await useAsyncData('blog', () => queryContent(`/${locale.value}/blog`).findOne())
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
-const { data: posts } = await useAsyncData('posts', () => queryContent<BlogPost>('/blog')
+const { data: posts } = await useAsyncData('posts', () => queryContent<BlogPost>(`/${locale.value}/blog`)
   .where({ _extension: 'md' })
-  .where({ _locale: locale.value})
   .sort({ date: -1 })
   .find())
 

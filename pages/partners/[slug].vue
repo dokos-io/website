@@ -12,7 +12,7 @@ const localePath = useLocalePath()
 const path_without_locale = route
 path_without_locale.path.replace(`/^(/${locale}\.)/,"")`, '')
 
-const { data: partner } = await useAsyncData(path_without_locale.path, () => queryContent<Partner>("/partners").where({ _locale: locale.value,  _path: `/partners/${slug}`}).findOne())
+const { data: partner } = await useAsyncData(path_without_locale.path, () => queryContent<Partner>(`/${locale.value}/partners/${slug}`).findOne())
 
 if (!partner.value) {
   throw createError({ statusCode: 404, statusMessage: 'Partner not found', fatal: true })

@@ -2,7 +2,7 @@
 
 const { locale } = useI18n()
 
-const { data: page } = await useAsyncData('pricing', () => queryContent('/pricing').where({ _locale: locale.value}).findOne())
+const { data: page } = await useAsyncData('pricing', () => queryContent(`/${locale.value}/pricing`).findOne())
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
