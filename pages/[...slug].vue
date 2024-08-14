@@ -14,7 +14,6 @@ if (!page.value) {
 
 const { data: surround } = await useAsyncData(`${route.path}-surround`, () => queryContent(`/${locale.value}`)
     .where({ _extension: 'md', navigation: { $ne: false } })
-    .where({ _locale: locale.value })
     .only(['title', 'description', '_path'])
     .findSurround(`/${locale.value}`)
     , { default: () => [] })

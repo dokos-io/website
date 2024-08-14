@@ -8,9 +8,6 @@ const {
 } = useRoute();
 const { locale } = useI18n()
 
-const path_without_locale = route
-path_without_locale.path.replace(`/^(/${locale}\.)/,"")`, '')
-
 const { data: post } = await useAsyncData(`/${locale.value}/blog/${slug}`, () => queryContent<BlogPost>(`/${locale.value}/blog/${slug}`).findOne())
 if (!post.value) {
   throw createError({ statusCode: 404, statusMessage: 'Post not found', fatal: true })
@@ -18,7 +15,6 @@ if (!post.value) {
 
 const { data: surround } = await useAsyncData(`/${locale.value}/blog/${slug}-surround`, () => queryContent(`/${locale.value}/blog`)
   .where({ _extension: 'md' })
-  .where({ _locale: locale.value})
   .without(['body', 'excerpt'])
   .sort({ date: -1 })
   .findSurround(`/${locale.value}/blog/${slug}`)
