@@ -244,20 +244,21 @@ sections:
         description: Dokos est basé sur les logiciels Frappe et ERPNext et leur écosystème d'applications incroyables
         icon: i-simple-icons-frappe
   - title: Un accompagnement  <span class="text-primary">personnalisé</span>
-    description: Profitez d'un accompagnement sur mesure et personnalisé
+    description: Profitez d'un support sur mesure et entièrement adapté à vos besoins
     image: /home/security.svg
     id: control
     align: right
     features:
       - name: Un partenariat de confiance
-        description: Chaque entreprise est unique. Nous nous adaptons à chacune de vos spécificités pour répondre au mieux à vos besoins. 
+        description: Chaque entreprise est unique. Nous nous adaptons à chacune de vos spécificités pour répondre au mieux à vos besoins pour un coût juste et maitrisé. 
         icon: i-material-symbols-data-loss-prevention-outline
       - name: Autodidacte
-        description: Nous vous offrons toutes les cartes pour votre autonomie
+        description: Nous vous offrons toutes les cartes pour votre autonomie. Configuration, personnalisation, automatisation, conseils de gestion, ..., seul ou accompagné, à vous de choisir. 
         icon: i-material-symbols-security-rounded
       - name: Une communauté engagée
-        description: Rejoindre Dokos, 
-        icon: i-material-symbols-cloud-sync-outline-rounded
+        description: Adhérer à Dokos, c'est s'inscrire au sein d'une communauté engagée et bienveillante, avoir accès à un réseau de partenaires et une équipe respecteuse et disponible. 
+        icon:
+          i-material-symbols-cloud-sync-outline-rounded
     links:
       - label: Installer Dokos
         to: https://doc.dokos.io/dodock
@@ -310,8 +311,8 @@ applications:
       to: 'https://github.com/frappe/print_designer'
 
 cta:
-  title: Démarrer avec Dokos
-  description: Accédez à toutes nos ressources pour en savoir plus sur Dokos et son écosystème  
+  title: Et si vous démarriez avec Dokos ?
+  description: Choisir Dokos, c'est faire le choix d'un logiciel français, puissant, libre et adapté à chacun de vos besoins. 
   links:
     - label: Lire la documentation
       size: xl
