@@ -1,42 +1,28 @@
-title: Dokos - Plateforme libre et open-source pour propulser votre entreprise
-description: Dokos est une plateforme libre et open-source de gestion d'entreprise
+title: Dokos - Une Plateforme 100 % libre et éthique pour accompagner la réussite de votre entreprise
+description: La seule plateforme libre et open-source complète et puissante de gestion d'entreprise
 navigation: false
 hero:
-  title: Découvrez <span class="text-primary">Dokos</span>
-  description: Propulsez votre entreprise avec des applications libres et open-source, centralisées en un seul endroit 
+  title: Votre allié quotidien au service de votre <span class="text-primary">réussite</span>
+  description: La seule plateforme 100% libre, éthique et puissante qui réunit tous vos besoins en un seul endroit
   headline:
-    label: Une adaptation d'ERPNext'
+    label: Une adaptation française d'ERPNext'
     to: https://erpnext.com
     icon: i-heroicons-arrow-top-right-on-square-20-solid
     target: _blank
   links:
-    - label: Documentation
-      icon: i-ic-outline-library-books
-      size: xl
-      color: black
-      to: https://doc.dokos.io
-      target: _blank
     - label: Essayez Dokos
       to: https://demo.dokos.cloud
       size: xl
-      color: gray
+      color: black
       icon: i-heroicons-play-circle-16-solid
       trailing: false
       target: _blank
-  cards:
-    - title: 15+
-      description: Modules de base
-      icon: i-mdi-puzzle-plus
-    - title: 10+
-      description: Applications
-      icon: i-icon-park-outline-application-menu
-    - title: 100+
-      description: Entreprises
-      icon: i-octicon-organization-24
-    - title: 100%
-      description: Libre et Open-source
-      icon: i-mdi-open-source-initiative
-
+    - label: Documentation
+      icon: i-ic-outline-library-books
+      size: xl
+      color: gray
+      to: https://doc.dokos.io
+      target: _blank
 features:
   title: La boîte à outils complète pour <span class="text-primary">tous vos besoins</span>
   description: Transformez votre gestion avec Dokos. Plus de 15 modules essentiels pour optimiser votre entreprise ou associations, quel que soit le secteur.
@@ -118,7 +104,7 @@ features:
       target: "_blank"
 
 integrations:
-  title: Intégré avec le reste de vos applications
+  title: Nous simplifions votre quotidien avec les intégrations
   icons:
     - i-logos-woocommerce-icon
     - i-logos-stripe
@@ -134,7 +120,7 @@ integrations:
     - /home/gocardless.png
 
 sections:
-  - title: Une <span class="text-primary">version européenne</span> d'ERPNext
+  - title: Une <span class="text-primary">version française</span> d'ERPNext
     description: Dokos est un <i>fork</i> d'ERPNext qui a pour objectif d'être mieux adapté aux spécificités et habitudes françaises et européennes
     image: /home/gdpr.svg
     id: enterprise
@@ -222,7 +208,7 @@ sections:
         description: Vous restez propriétaires de vos données en tout circonstances. Plusieurs outils intégrés permettent de sauvegarder et exporter vos données à tout moment
         icon: i-material-symbols-data-loss-prevention-outline
       - name: Sécurité & Souveraineté
-        description: Développé en Inde et en France, sous licence libre, et hébergé où vous le souhaitez, Dokos vous permet de garder la maîtrise d'un élément central de votre infrastructure informatique
+        description: Développé en France et en Inde, sous licence libre, et hébergé où vous le souhaitez, Dokos vous permet de garder la maîtrise d'un élément central de votre infrastructure informatique
         icon: i-material-symbols-security-rounded
       - name: SaaS ou auto-hébergement
         description: Vous pouvez choisir d'héberger Dokos chez un tiers ou bien sur vos serveurs. Et vous pouvez transférer vos données de l'un à l'autre si vous changez d'avis
@@ -257,7 +243,36 @@ sections:
       - name: Dérivé de Frappe/ERPNext
         description: Dokos est basé sur les logiciels Frappe et ERPNext et leur écosystème d'applications incroyables
         icon: i-simple-icons-frappe
-
+  - title: Un accompagnement  <span class="text-primary">personnalisé</span>
+    description: Profitez d'un accompagnement sur mesure et personnalisé
+    image: /home/security.svg
+    id: control
+    align: right
+    features:
+      - name: Un partenariat de confiance
+        description: Chaque entreprise est unique. Nous nous adaptons à chacune de vos spécificités pour répondre au mieux à vos besoins. 
+        icon: i-material-symbols-data-loss-prevention-outline
+      - name: Autodidacte
+        description: Nous vous offrons toutes les cartes pour votre autonomie
+        icon: i-material-symbols-security-rounded
+      - name: Une communauté engagée
+        description: Rejoindre Dokos, 
+        icon: i-material-symbols-cloud-sync-outline-rounded
+    links:
+      - label: Installer Dokos
+        to: https://doc.dokos.io/dodock
+        color: gray
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+        size: md
+        class: ml-8
+      - label: Dokos Cloud
+        to: https://dokos.cloud
+        color: gray
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+        size: md
+        class: ml-8
 applications:
   title: Compatible avec l'écosystème <span class="text-primary">Frappe</span>
   description: Dokos est développé pour rester compatible avec les applications créées par Frappe Technologies et la communauté Frappe/ERPNext.
