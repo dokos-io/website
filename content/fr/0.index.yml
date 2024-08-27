@@ -3,11 +3,12 @@ description: La seule plateforme libre et open-source complète et puissante de 
 navigation: false
 hero:
   title: Votre allié quotidien au service de votre <span class="text-primary">réussite</span>
-  description: La seule plateforme 100% libre, éthique et puissante qui réunit tous vos besoins en un seul endroit
+  description: La seule plateforme 100% <span class="font-semibold">libre</span>, éthique et puissante qui réunit tous vos besoins en un seul endroit
   headline:
     label: Une adaptation française d'ERPNext'
     to: https://erpnext.com
-    icon: i-heroicons-arrow-top-right-on-square-20-solid
+    left_icon: i-flag-bl-4x3
+    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
     target: _blank
   links:
     - label: Essayez Dokos
@@ -23,6 +24,21 @@ hero:
       color: gray
       to: https://doc.dokos.io
       target: _blank
+  cards:
+    - title: 15+
+      description: Modules de base
+      icon: i-mdi-puzzle-plus
+    - title: 10+
+      description: Applications
+      icon: i-icon-park-outline-application-menu
+    - title: 100+
+      description: Entreprises
+      icon: i-octicon-organization-24
+    - title: 100%
+      description: Libre et Open-source
+      icon: i-mdi-open-source-initiative
+
+
 features:
   title: La boîte à outils complète pour <span class="text-primary">tous vos besoins</span>
   description: Transformez votre gestion avec Dokos. Plus de 15 modules essentiels pour optimiser votre entreprise ou associations, quel que soit le secteur.

@@ -19,17 +19,18 @@ useSeoMeta({
 
 <template>
   <div v-if="page">
-    <ULandingHero :description="page.hero.description" :links="page.hero.links" orientation="horizontal"
+    <ULandingHero :links="page.hero.links" orientation="vertical"
       :ui="{ base: 'relative z-[1]', container: 'max-w-4xl' }" class="mb-[calc(var(--header-height)*2)]">
       <template #headline>
         <UBadge v-if="page.hero.headline" variant="subtle" size="lg" class="relative rounded-full font-semibold">
+          <UIcon v-if="page.hero.headline.left_icon" :name="page.hero.headline.left_icon" class="mr-1 w-4 h-4 pointer-events-none" />
           <NuxtLink :to="page.hero.headline.to" target="_blank" class="focus:outline-none" tabindex="-1">
             <span class="absolute inset-0" aria-hidden="true" />
           </NuxtLink>
 
           {{ page.hero.headline.label }}
 
-          <UIcon v-if="page.hero.headline.icon" :name="page.hero.headline.icon"
+          <UIcon v-if="page.hero.headline.right_icon" :name="page.hero.headline.right_icon"
             class="ml-1 w-4 h-4 pointer-events-none" />
         </UBadge>
       </template>
@@ -38,17 +39,30 @@ useSeoMeta({
         <span v-html="page.hero.title"></span>
       </template>
 
+      <template #description>
+        <span v-html="page.hero.description"></span>
+      </template>
+
       <template #default>
         <ULandingGrid>
-          <UDashboardCard v-for="(card, index) in page.hero.cards" class="col-span-6 row-span-2 z-10"
+          <UDashboardCard v-for="(card, index) in page.hero.cards" class="col-span-3 row-span-2 z-10"
             :title="card.title" :description="card.description" :icon="card.icon" :links="card.links" />
         </ULandingGrid>
+
         <ClientOnly>
           <HomeTetris />
         </ClientOnly>
       </template>
 
     </ULandingHero>
+
+    <ULandingSection>
+      <ULandingLogos :title="page.integrations.title" :ui="{ images: 'justify-center' }">
+          <UIcon v-for="icon in page.integrations.icons" :key="icon" :name="icon"
+            class="w-10 h-10 flex-shrink-0 text-gray-500 dark:text-gray-400" />
+          <NuxtImg v-for="image in page.integrations.images" :key="image" :src="image" class="max-h-10" />
+        </ULandingLogos>
+    </ULandingSection>
 
     <ULandingSection>
       <template #title>
@@ -60,12 +74,6 @@ useSeoMeta({
       <UPageGrid :ui="{ wrapper: 'sm:grid-cols-3 xl:grid-cols-4' }">
         <ULandingCard v-for="(item, index) in page.features.items" :key="index" v-bind="item" orientation="vertical" />
       </UPageGrid>
-
-      <ULandingLogos :title="page.integrations.title" :ui="{ images: 'justify-center' }">
-        <UIcon v-for="icon in page.integrations.icons" :key="icon" :name="icon"
-          class="w-10 h-10 flex-shrink-0 text-gray-500 dark:text-gray-400" />
-        <NuxtImg v-for="image in page.integrations.images" :key="image" :src="image" class="max-h-10" />
-      </ULandingLogos>
     </ULandingSection>
 
 
