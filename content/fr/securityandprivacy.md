@@ -150,12 +150,13 @@ Ils nous aident avec différents services :
 Lorsque nous partageons des données avec ces fournisseurs de service, nous nous assurons qu'ils les traitent en conformité avec les lois concernant la protection des données, et que ce traitement qu'ils réalisent pour nous est limité à notre besoin spécifique et couvert par un contrat de traitement des données spécifique.
 
 Voici la liste des fournisseurs de service avec lesquels nous travaillons actuellement, la raison de leur utilisation et les types de données que nous partageons avec eux. C’est sous-traitant sont sous contrat avec Dokos Sas, conformément à l’article 28 du RGPD, incluant des obligations spécifiques en matière de sécurité et confidentialité.
-| **FOURNISSEUR DE SERVICE** | **RAISON**                    | **DONNÉES PARTAGÉES**                                                                                                                                       |
-|----------------------------|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Stripe** (Conformité PCI-DSS) | Sécurité & Confidentialité    | Partagé avec Stripe : Détails des commandes (montant, description, référence), Nom et email des clients.<br>Enregistré uniquement par Stripe : Information de carte de crédit. |
-| **GoCardless Ltd**          | Sécurité & Confidentialité    | Partagé avec GoCardless : Détails des commandes (montant, description, référence), Nom et email des clients.<br>Enregistré uniquement par GoCardless : Information de mandats SEPA. |
-| **Hetzner GmbH**            | Sécurité & Confidentialité    | Hébergé chez Hetzner GmbH : Données de production de dokos.io et ses services affiliés, dont les bases de données clients.                                   |
-| **OVHcloud**                | Sécurité & Confidentialité    | Hébergé chez OVHcloud GmbH : Données de production de dokos.io et ses services affiliés, dont les bases de données clients.                                  |
+
+| **FOURNISSEUR DE SERVICE**      | **RAISON**                 | **DONNÉES PARTAGÉES**                                                                                                                                                              |
+| ------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Stripe** (Conformité PCI-DSS) | Sécurité & Confidentialité | Partagé avec Stripe : Détails des commandes (montant, description, référence), Nom et email des clients.:brEnregistré uniquement par Stripe : Information de carte de crédit.      |
+| **GoCardless Ltd**              | Sécurité & Confidentialité | Partagé avec GoCardless : Détails des commandes (montant, description, référence), Nom et email des clients.:brEnregistré uniquement par GoCardless : Information de mandats SEPA. |
+| **Hetzner GmbH**                | Sécurité & Confidentialité | Hébergé chez Hetzner GmbH : Données de production de dokos.io et ses services affiliés, dont les bases de données clients.                                                         |
+| **OVHcloud**                    | Sécurité & Confidentialité | Hébergé chez OVHcloud GmbH : Données de production de dokos.io et ses services affiliés, dont les bases de données clients.                                                        |
 
 \---
 
