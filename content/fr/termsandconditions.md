@@ -5,17 +5,17 @@ title: Conditions Générales de Vente
 
 En vous abonnant aux services de Dokos (les "Services") fournis par DOKOS SAS, vous (le "Client") acceptez d'être lié par les conditions générales suivantes (le "Contrat").
 
-Ces services sont applicables à l’hébergement du logiciel suivant (le “Logiciel): Dokos  
+Ces services sont applicables à l’hébergement du logiciel suivant (le “Logiciel): Dokos
 
 ## **1 Durée du Contrat**
 
-La durée du présent contrat (la "Durée") est au minimum d'un mois et telle que spécifiée par écrit à la signature du Contrat, à compter de la date de la signature. Celui-ci est automatiquement reconduit pour une même durée, à moins que l'une des parties n’envoie à l'autre partie un préavis écrit de résiliation, par email ou lettre recommandée, et au moins 30 jours avant la date d'échéance du contrat.  
+La durée du présent contrat (la "Durée") est au minimum d'un mois et telle que spécifiée par écrit à la signature du Contrat, à compter de la date de la signature. Celui-ci est automatiquement reconduit pour une même durée, à moins que l'une des parties n’envoie à l'autre partie un préavis écrit de résiliation, par email ou lettre recommandée, et au moins 30 jours avant la date d'échéance du contrat.
 
 ## **2 Définitions**
 
 > _Documents créés_
 
-Désigne l'ensemble des documents créés par l'utilisateur ou le Logiciel dans le cadre de l'usage du Logiciel.  
+Désigne l'ensemble des documents créés par l'utilisateur ou le Logiciel dans le cadre de l'usage du Logiciel.:br
 Cela exclut la création des documents techniques suivants: "Communication", "Email Queue", "Patch Log", "Notification Log", "Scheduled Job Log", "Energy Point Log", "Event Sync Log", "Event Update Log", "Activity Log", "View Log", "Access Log", "Error Log", "Version", "Comment", "Error Snapshot", "Route History", "Renamed Document", "File", "List Filter"
 
 > _Bug_
@@ -25,15 +25,15 @@ Désigne toute défaillance du Logiciel qui se traduit par un arrêt complet, un
 ## **3 Accès au Logiciel via l’hébergement fourni par DOKOS SAS**
 
 Pour toute la durée du présent Contrat, DOKOS SAS octroie au Client un accès au Logiciel via sa plateforme cloud.
-La plateforme cloud est hébergée et entièrement gérée par DOKOS SAS et accédée à distance par le Client.  
+La plateforme cloud est hébergée et entièrement gérée par DOKOS SAS et accédée à distance par le Client.
 
 Le Client accepte de prendre toutes les mesures nécessaires pour garantir l'exécution sans aucune modification de la partie du Logiciel qui vérifie la validité de l'utilisation du Logiciel et accepte que DOKOS SAS recueille des statistiques à cet effet, y compris mais sans s'y limiter, l'exécution du Logiciel et le nombre d'Utilisateurs.
 
-DOKOS SAS s'engage à ne pas divulguer à une tierce partie d'informations chiffrées personnelles ou spécifiques sans le consentement du Client, et à traiter toutes les données recueillies en respectant sa politique officielle de confidentialité, disponible à l’adresse: https://dokos.io/securityandprivacy  
+DOKOS SAS s'engage à ne pas divulguer à une tierce partie d'informations chiffrées personnelles ou spécifiques sans le consentement du Client, et à traiter toutes les données recueillies en respectant sa politique officielle de confidentialité, disponible à l’adresse: <https://dokos.io/securityandprivacy>
 
-À l'expiration ou la résiliation de ce Contrat, cet accès est immédiatement révoqué et le Client accepte de cesser toute utilisation du Logiciel via les services d’hébergement fournis DOKOS SAS.  
+À l'expiration ou la résiliation de ce Contrat, cet accès est immédiatement révoqué et le Client accepte de cesser toute utilisation du Logiciel via les services d’hébergement fournis DOKOS SAS.
 
-Si le Client devait enfreindre les dispositions de la présente section, il accepte de payer à DOKOS SAS des frais supplémentaires équivalents à 300 % du tarif en vigueur applicable correspondant à l'usage réel du logiciel.  
+Si le Client devait enfreindre les dispositions de la présente section, il accepte de payer à DOKOS SAS des frais supplémentaires équivalents à 300 % du tarif en vigueur applicable correspondant à l'usage réel du logiciel.
 
 ## **4 Services**
 
@@ -47,9 +47,9 @@ Ce service ne peut en aucun cas consister en une intervention sur le logiciel, u
 
 ### **4.2 Mises à jour logicielles**
 
-Pour la durée de ce Contrat, DOKOS SAS s’engage à mettre à jour le Logiciel hébergés sur sa plateforme à fréquence régulière, avec un minimum d'une fois par trimestre.  
+Pour la durée de ce Contrat, DOKOS SAS s’engage à mettre à jour le Logiciel hébergés sur sa plateforme à fréquence régulière, avec un minimum d'une fois par trimestre.
 
-Si la correction d’une faille de sécurité est déployée, DOKOS SAS s’engage à mettre à jour le logiciel hébergé sur sa plateforme dans un délai de cinq jours ouvrés, sauf demande écrite contraire du Client.  
+Si la correction d’une faille de sécurité est déployée, DOKOS SAS s’engage à mettre à jour le logiciel hébergé sur sa plateforme dans un délai de cinq jours ouvrés, sauf demande écrite contraire du Client.
 
 ## **5 Tarifs et Taxes**
 
@@ -60,6 +60,7 @@ Les tarifs standards pour le contrat d'abonnement à l’hébergement du Logicie
 Pendant la durée du contrat, si le Client créé plus de documents que spécifié au moment de la signature du présent Contrat, le Client accepte de payer un supplément équivalent au tarif en vigueur applicable (au début du Contrat) pour les documents supplémentaires créés, pour le reste de la durée.
 
 Les tarifs en vigueur au 01 mars 2021 sont :
+
 - 49€ HT/Mois pour le forfait bootstrap, incluant jusqu'à 1500 documents créés/mois.
 - 99€ HT/Mois pour le forfait startup, incluant jusqu'à 3000 documents créés/mois.
 - 199€ HT/Mois pour le forfait premium, incluant jusqu'à 8000 documents créés/mois.
