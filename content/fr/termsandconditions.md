@@ -153,6 +153,9 @@ Le Client accepte de / d':
 - Désigner 1 personne de contact représentant le Client pour toute la durée du contrat ;
 - Prendre toute mesure raisonnable pour garantir la sécurité de ses comptes utilisateur, y compris en choisissant un mot de passe sûr et en ne le communiquant à personne;
 - Faire une utilisation raisonnable des Services d'Hébergement, à l'exclusion de toute activité illégale ou abusive;
+- Communiquer en temps utile à Dokos Sas toute information et document de toute nature nécessaire à l'exécution de ses Prestations.
+- Contrôler l’exactitude des informations et données fournies à Dokos SAS.
+- Concernant le site WEB, le Client est le producteur et le représentant légal des données de toute nature stockées et diffusées sur son service et s’engage à disposer de toutes les autorisations nécessaires pour leur stockage et leur diffusion.Le Client reconnaît assumer seul la responsabilité éditoriale prévue par la loi du 30 Septembre 1986 relative à la liberté de la communication audiovisuelle et s’engage à satisfaire à l’obligation de déclaration préalable prévue par ladite loi et le décret du 17 Avril 1987.
 
 Lorsque le Client choisit l’Auto-Hébergement, il accepte aussi de:
 
