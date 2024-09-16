@@ -63,7 +63,7 @@ Le Client accepte de prendre toutes les mesures nécessaires pour garantir l'ex�
 
 DOKOS SAS s'engage à ne pas divulguer à une tierce partie d'informations chiffrées personnelles ou spécifiques sans le consentement du Client, et à traiter toutes les données recueillies en respectant sa politique officielle de confidentialité, disponible à l’adresse: <https://dokos.io/securityandprivacy>
 
-À l'expiration ou la résiliation de ce Contrat, cet accès est immédiatement révoqué et le Client accepte de cesser toute utilisation du Logiciel via les services d’hébergement fournis par DOKOS SAS. A tout moment, chaque utilisateur peut sauvegarder, récupérer ses données personnelles par une porcédure simple et rapide détaillée dans notre documentation : lien
+À l'expiration ou la résiliation de ce Contrat, cet accès est immédiatement révoqué et le Client accepte de cesser toute utilisation du Logiciel via les services d’hébergement fournis par DOKOS SAS. A tout moment, chaque utilisateur peut sauvegarder, récupérer ses données personnelles par une procédure simple et rapide détaillée dans notre documentation : lien
 
 Les données sont fournies dans un format standardisé et ouvert (ex : CSV, XML), permettant au Client de les réutiliser dans d’autres systèmes. Cette récupération de données sera effectuée sans frais supplémentaires, à moins que des services spécifiques, comme l’assistance technique pour la migration des données, ne soient expressément demandés par le Client. Dans ce cas, ces services feront l’objet d’une facturation distincte.
 
@@ -128,7 +128,13 @@ Les tarifs en vigueur au 01 septembre 2024 (affichés hors TVA) :
 | **499€ HT/Mois** | 4h de CPU   | 1 GB                | 40 GB        | Support premium (SLA : Anomalie bloquante 8H) |
 | **999€ HT/Mois** | 6h de CPU   | 1 GB                | 100 GB       | Support premium (SLA : Anomalie bloquante 4H) |
 
-#### 5.2 Taxes et impôts
+### 5.2 **Modification des prix en cours de contrat**
+
+Dokos SAS se réserve également le droit de modifier les prix en cas d’évolution significative des conditions économiques ou législatives, telles qu’une augmentation des coûts de production, de main-d'œuvre, des fluctuations des indices de référence ou des modifications de la réglementation applicable.
+
+Dans cette hypothèse, le Client sera informé par écrit avec un préavis de **60 jours**. Si le Client n’accepte pas cette modification, il pourra résilier le contrat sans pénalité en adressant une notification écrite dans un délai de **30 jours**suivant la réception de l’avis de modification. À défaut, les nouveaux prix seront réputés acceptés par le Client et prendront effet à la date précisée dans l’avis de modification.
+
+### 5.3 Taxes et impôts
 
 Tous les frais et tarifs sont indiqués hors taxes et hors impôts, frais et charges fédérales, provinciales, locales ou autres taxes gouvernementales applicables (collectivement, les "Taxes").
 
@@ -156,7 +162,7 @@ Lorsque le Client choisit l’Auto-Hébergement, il accepte aussi de:
 
 Sauf si l'autre partie donne son consentement par écrit, chaque partie, ses sociétés affiliées et ses représentants conviennent de ne pas solliciter ou offrir un emploi à tout employé de l'autre partie qui est impliqué dans l'exécution ou l'utilisation des Services en vertu du présent Contrat, pendant la Durée du Contrat et pendant une période de 12 mois à compter de la date de résiliation ou de l'expiration du présent Contrat.
 
-Cette clause vise uniquement à protéger les intérêts légitimes de Dokos SAS en évitant la déstabilisations de ses effectifs.
+Cette clause vise uniquement à protéger les intérêts légitimes de Dokos SAS en évitant la déstabilisation de ses effectifs.
 
 En cas de violation des conditions de la présente section qui conduirait à la démission dudit employé à cette fin, la partie ayant enfreint ces dispositions accepte de payer à l'autre partie un montant forfaitaire de 30 000,00 euros (€) (trente mille euros).
 
