@@ -212,9 +212,9 @@ En outre, DOKOS SAS peut résilier le contrat immédiatement dans le cas où le 
 
 Les données sont fournies dans un format standardisé et ouvert (ex : CSV, XML), permettant au Client de les réutiliser dans d’autres systèmes. Cette récupération de données sera effectuée sans frais supplémentaires, à moins que des services spécifiques, comme l’assistance technique pour la migration des données, ne soient expressément demandés par le Client. Dans ce cas, ces services feront l’objet d’une facturation distincte.
 
-## **7. Limitations de garantie et de responsabilité**
+## 7 Limitations de garantie et de responsabilité
 
-### 7.1. Garantie
+### 7.1 Garantie
 
 Pendant la durée du présent contrat, DOKOS SAS s'engage de déployer les efforts raisonnables sur le plan commercial pour exécuter les Services conformément aux normes du secteur généralement acceptées à condition que :
 
@@ -224,25 +224,39 @@ Pendant la durée du présent contrat, DOKOS SAS s'engage de déployer les effor
 
 La reprise de l'exécution des Services par DOKOS SAS sans frais supplémentaires constitue la seule et unique réparation pour le Client et la seule obligation de DOKOS SAS pour toute violation de cette garantie.
 
-### 7.2. Limitation de garantie
+### 7.2 Limitation de garantie
 
 Mis à part les dispositions expresses du présent Contrat, aucune des parties ne donne de garantie d'aucune sorte, expresse, implicite, légale ou autre, et chaque partie décline expressément toutes garanties implicites, y compris toute garantie implicite de qualité marchande, d'adéquation à un usage particulier ou de non-contrefaçon, dans les limites autorisées par la loi en vigueur.
 
 DOKOS SAS ne garantit pas que le Logiciel soit conforme à toute loi ou réglementation locale ou internationale.
 
-### 7.3. Limitation de responsabilité
-
-Dokos SAS est assurée pour couvrir les conséquences de sa responsabilité civile professionnelle. La responsabilité de Dokos SAS est limitée à une obligation de moyens, sauf stipulation contraire expresse. En aucun cas, Dokos SAS ne pourra être tenue responsable des dommages indirects, tels que la perte de chiffre d’affaires ou de clientèle.
+### 7.3 Limitation de responsabilité
 
 Dans la limite autorisée par la loi, la responsabilité globale de chaque partie, ainsi que de ses filiales, découlant ou liée au présent Contrat ne dépassera pas 50% du montant total réglé par le Client en vertu du présent Contrat au cours des 12 mois précédant la date de l'événement donnant lieu à une telle réclamation. Des réclamations multiples n'augmenteront pas cette limite.
 
-Les parties et leurs filiales ne pourront en aucun cas être tenues responsables des dommages indirects, spéciaux, accessoires ou consécutifs de quelque nature que ce soit, y compris, mais sans s'y limiter, la perte de revenus, perte de profits, perte d’économies, perte commerciale ou toute autre perte financière, les coûts relatifs à l'arrêt ou au retard, la perte ou altération des données, découlant ou en relation avec le présent Contrat, quelle que soit la forme de l'action, qu'elle soit fondée sur une obligation contractuelle, délictuelle (y compris la stricte négligence) ou fondée sur toute autre règle de droit ou d'équité, même si la partie ou ses filiales ont été informées du risque de tels dommages, ou si le recours proposé par la partie ou ses filiales n'atteint pas son but essentiel.
+Dokos Sas et ses filiales ne pourront en aucun cas être tenus responsables des dommages indirects, spéciaux, accessoires ou consécutifs de quelque nature que ce soit, y compris, mais sans s'y limiter, la perte de revenus, perte de profits, perte d’économies, perte commerciale ou toute autre perte financière, les coûts relatifs à l'arrêt ou au retard, la perte ou altération des données, découlant ou en relation avec le présent Contrat, quelle que soit la forme de l'action, qu'elle soit fondée sur une obligation contractuelle, délictuelle (y compris la stricte négligence) ou fondée sur toute autre règle de droit ou d'équité, même si la partie ou ses filiales ont été informées du risque de tels dommages, ou si le recours proposé par la partie ou ses filiales n'atteint pas son but essentiel.
 
-Dokos Sas s'engage à justifier de cette assurance à la première demande écrite du Client.
+Dokos Sas ne saurait être tenu responsable dans les cas suivants : 
 
-### 7.4. Force Majeure
+a) Faute, négligence, omission ou défaillance du Client ; 
+
+b) Force majeure, telle que définie par l'article 1218 du Code civil ; 
+
+c) Fait d'un tiers sur lequel le Prestataire n'a aucun pouvoir de contrôle et de surveillance ;
+
+d) Utilisation des résultats des prestations et/ou logiciels par le Client d'une manière non conforme au Contrat ; 
+
+e) Défaillance des systèmes d'information, réseaux ou tout autre système tiers utilisé par le Client.
+
+### 7.4 Force Majeure
 
 Aucune des parties ne sera tenue pour responsable envers l'autre partie de tout retard ou manquement d'exécution en vertu du présent Contrat, si ce manquement ou retard est causé par une réglementation gouvernementale, un incendie, une grève, une guerre, une inondation, un accident, une épidémie, un embargo, la saisie d'une usine ou d'un produit dans son intégralité ou en partie par un gouvernement ou une autorité publique, ou toute (s) autre (s) cause (s), qu’elle (s) soit (soient) de nature similaire ou différente, pour autant que cette cause soit hors du contrôle raisonnable de la partie concernée, et tant qu'une telle cause existe.
+
+Le cas de force majeure suspend les obligations nées du contrat pendant toute la durée de son existence. Toutefois, si le cas de force majeure avait une durée d'existence supérieure à 30 jours consécutifs, il ouvrirait droit à la résiliation de plein droit du présent contrat par l'une ou l'autre des parties huit jours après l'envoi d'une lettre recommandée avec avis de réception notifiant cette décision.
+
+### 7.5 Assurance 
+
+Dokos SAS s'engage à maintenir en vigueur une assurance responsabilité civile professionnelle couvrant les dommages qui pourraient survenir à l'occasion de l'exécution des prestations. Le Prestataire s'engage à fournir une attestation d'assurance à la première demande écrite du Client.
 
 ## 8. Dispositions générales
 
@@ -250,7 +264,7 @@ Aucune des parties ne sera tenue pour responsable envers l'autre partie de tout 
 
 Les parties conviennent que les lois françaises seront applicables en cas de litige découlant ou en relation avec le présent Contrat, sans tenir compte des règles ou dispositions en matière de compétence législative ou de conflit de lois. Dans la mesure où une poursuite ou procédure judiciaire ou administrative serait autorisée ci-avant, les parties conviennent de se soumettre à la compétence exclusive du tribunal de Nancy (France) aux fins de la procédure de tout litige.
 
-#### 8.2. Divisibilité
+### 8.2. Divisibilité
 
 Dans le cas où une ou plusieurs des dispositions du présent contrat ou toute autre application de celles-ci se trouvent non valables, illégales ou non exécutoires, la validité, la légalité et le caractère exécutoire des autres dispositions du présent contrat et toute application de celles-ci ne doivent en aucun cas en être affectés ou compromis. Les parties s'engagent à remplacer toute disposition non valable, illégale ou non exécutoire du présent contrat par une disposition valable ayant les mêmes effets et objectifs.
 
