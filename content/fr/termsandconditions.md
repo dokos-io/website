@@ -232,9 +232,13 @@ DOKOS SAS ne garantit pas que le Logiciel soit conforme à toute loi ou régleme
 
 ### 7.3. Limitation de responsabilité
 
+Dokos SAS est assurée pour couvrir les conséquences de sa responsabilité civile professionnelle. La responsabilité de Dokos SAS est limitée à une obligation de moyens, sauf stipulation contraire expresse. En aucun cas, Dokos SAS ne pourra être tenue responsable des dommages indirects, tels que la perte de chiffre d’affaires ou de clientèle.
+
 Dans la limite autorisée par la loi, la responsabilité globale de chaque partie, ainsi que de ses filiales, découlant ou liée au présent Contrat ne dépassera pas 50% du montant total réglé par le Client en vertu du présent Contrat au cours des 12 mois précédant la date de l'événement donnant lieu à une telle réclamation. Des réclamations multiples n'augmenteront pas cette limite.
 
 Les parties et leurs filiales ne pourront en aucun cas être tenues responsables des dommages indirects, spéciaux, accessoires ou consécutifs de quelque nature que ce soit, y compris, mais sans s'y limiter, la perte de revenus, perte de profits, perte d’économies, perte commerciale ou toute autre perte financière, les coûts relatifs à l'arrêt ou au retard, la perte ou altération des données, découlant ou en relation avec le présent Contrat, quelle que soit la forme de l'action, qu'elle soit fondée sur une obligation contractuelle, délictuelle (y compris la stricte négligence) ou fondée sur toute autre règle de droit ou d'équité, même si la partie ou ses filiales ont été informées du risque de tels dommages, ou si le recours proposé par la partie ou ses filiales n'atteint pas son but essentiel.
+
+Dokos Sas s'engage à justifier de cette assurance à la première demande écrite du Client.
 
 ### 7.4. Force Majeure
 
