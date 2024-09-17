@@ -1,8 +1,7 @@
-# CONDITIONS GÉNÉRALES D'HÉBERGEMENT
-
-**Note : Version 1, 16\_09\_2024**
-
-\---
+---
+title: CONDITIONS GÉNÉRALES D'HÉBERGEMENT
+description: Version 1, 16-09-2024
+---
 
 ## **1 – OBJET**
 
@@ -60,7 +59,7 @@ La durée initiale du présent contrat est fixée à un (1) mois calendaire, ren
 
 **Résiliation :**
 
-Le Client peut résilier le contrat à tout moment, sous réserve de fournir un préavis écrit de trente (30) jours avant la fin de la période mensuelle en cours, soit par courrier recommandé avec accusé de réception, soit par email à l'adresse : help\@dokos.io. La résiliation prendra effet à la fin du mois suivant la réception du préavis. En cas de résiliation, aucun remboursement partiel ne sera effectué pour la période déjà facturée.
+Le Client peut résilier le contrat à tout moment, sous réserve de fournir un préavis écrit de trente (30) jours avant la fin de la période mensuelle en cours, soit par courrier recommandé avec accusé de réception, soit par email à l'adresse : <help@dokos.io>. La résiliation prendra effet à la fin du mois suivant la réception du préavis. En cas de résiliation, aucun remboursement partiel ne sera effectué pour la période déjà facturée.
 
 Dans le cas où l'une des parties ne remplit pas ses obligations découlant du présent contrat, et si une telle violation n’est pas résolue dans les 30 jours civils à compter de la notification écrite de cette violation, le présent contrat peut être résilié immédiatement par la partie qui n'a pas commis la violation.
 
@@ -105,7 +104,7 @@ En outre, Dokos SAS peut résilier le contrat immédiatement dans le cas où le 
 
 \---
 
-### 9 – **** TRAÇABILITÉ
+### 9 – \*\*\*\* TRAÇABILITÉ
 
 Dokos SAS s’engage à mettre en œuvre les infrastructures de traçabilité nécessaires au suivi des connexions concernant les accès à l’infrastructure des personnes habilitées (administrateurs, éditeurs et autres tiers).
 
@@ -156,7 +155,7 @@ La responsabilité de Dokos Sas ne peut être engagée qu’en réparation d’u
 
 Contrat.
 
-### 10 – **** CONFIDENTIALITÉ – SECRET PROFESSIONNEL – LOCALISATION ET SÉCURITÉ PHYSIQUE DES
+### 10 – \*\*\*\* CONFIDENTIALITÉ – SECRET PROFESSIONNEL – LOCALISATION ET SÉCURITÉ PHYSIQUE DES
 
 ### INFRASTRUCTURES ET DU SERVICE
 
@@ -180,17 +179,17 @@ Dokos SAS s’engage à prendre toutes les mesures nécessaires au respect de la
 
 Les bases de données des clients sont hébergées par l’intermédiaire de Hetzner GmbH ( ALLEMAGNE ) et/ou OVH SAS ( FRANCE ) au sein de l'Union Européenne.
 
-### 11– **** FORCE MAJEURE 
+### 11– \*\*\*\* FORCE MAJEURE 
 
 Aucune des parties ne sera tenue pour responsable envers l'autre partie de tout retard ou manquement d'exécution en vertu du présent Contrat, si ce manquement ou retard est causé par une réglementation gouvernementale, un incendie, une grève, une guerre, une inondation, un accident, une épidémie, un embargo, la saisie d'une usine ou d'un produit dans son intégralité ou en partie par un gouvernement ou une autorité publique, ou toute (s) autre (s) cause (s), qu’elle (s) soit (soient) de nature similaire ou différente, pour autant que cette cause soit hors du contrôle raisonnable de la partie concernée, et tant qu'une telle cause existe.
 
 Le cas de force majeure suspend les obligations nées du contrat pendant toute la durée de son existence. Toutefois, si le cas de force majeure avait une durée d'existence supérieure à 30 jours consécutifs, il ouvrirait droit à la résiliation de plein droit du présent contrat par l'une ou l'autre des parties huit jours après l'envoi d'une lettre recommandée avec avis de réception notifiant cette décision.
 
-### 12 – **** CONDITIONS D’EXPLOITATION
+### 12 – \*\*\*\* CONDITIONS D’EXPLOITATION
 
 Le Client reconnaît par les présentes que les fluctuations de la bande passante et les aléas du fournisseur d’accès sont des éléments pouvant entraîner une discontinuité dans les prestations offertes par Dokos Sas, et extérieures à ses moyens techniques.
 
-### 13 – **** OBLIGATIONS DU CLIENT
+### 13 – \*\*\*\* OBLIGATIONS DU CLIENT
 
 **13.1. – Information – Collaboration**
 
@@ -210,7 +209,7 @@ Le Client s’engage :
 
 Le Client est le seul responsable des dommages et préjudices directs ou indirects, matériels ou immatériels du fait de son utilisation du service d’hébergement et s’engage à indemniser Dokos SAS contre toute demande, réclamation et/ou condamnation à des dommages et intérêts, dont Dokos Sas pourrait être l’objet dès lors que celles-ci auraient pour cause l’utilisation par le Client du service fourni.
 
-### 13.3 – **** Contenu du/des sites internet
+### 13.3 – \*\*\*\* Contenu du/des sites internet
 
 Le Client est le producteur et le représentant légal des données de toute nature stockées et diffusées sur son service et s’engage à disposer de toutes les autorisations nécessaires pour leur stockage et leur diffusion.
 
@@ -218,7 +217,7 @@ Le Client reconnaît assumer seul la responsabilité éditoriale prévue par la 
 
 Le Client s’oblige à procéder à toute déclaration de traitement d’informations nominatives telles que prévues par la loi « informatique, fichiers et liberté du 6 Janvier 1978 et, plus généralement, à satisfaire aux obligations édictées par ladite loi, notamment en assurant la sécurité de ces données.
 
-### 14 – **** LOI APPLICABLE – COMPETENCE JURIDICTIONNELLE
+### 14 – \*\*\*\* LOI APPLICABLE – COMPETENCE JURIDICTIONNELLE
 
 Le Contrat est soumis au droit français.
 
@@ -230,7 +229,7 @@ En raison de son caractère intuitu personae, le Contrat d’Hébergement ne peu
 
 l'autre Partie.
 
-### 16– **** ELECTION DE DOMICILE
+### 16– \*\*\*\* ELECTION DE DOMICILE
 
 Les deux Parties font élection de leur domicile à leur adresse indiquée dans le Contrat. Tout changement de domiciliation ne sera
 
