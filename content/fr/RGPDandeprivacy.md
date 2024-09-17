@@ -1,6 +1,7 @@
-Nos engagements envers le RGPD et ePrivacy
-
-# Politique de confidentialité et de protection des données de Dokos
+---
+title: Politique de confidentialité et de protection des données de Dokos
+description: Nos engagements envers le RGPD et ePrivacy
+---
 
 ## Nos engagements RGPD
 
