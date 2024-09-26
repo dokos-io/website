@@ -104,7 +104,7 @@ En outre, Dokos SAS peut résilier le contrat immédiatement dans le cas où le 
 
 \---
 
-### 9 – \*\*\*\* TRAÇABILITÉ
+## **8 - TRAÇABILITÉ**
 
 Dokos SAS s’engage à mettre en œuvre les infrastructures de traçabilité nécessaires au suivi des connexions concernant les accès à l’infrastructure des personnes habilitées (administrateurs, éditeurs et autres tiers).
 
@@ -112,7 +112,7 @@ Dokos Sas  assure la traçabilité de l’ensemble des actions réalisées au t
 
 \---
 
-## **8 – RESPONSABILITÉ ET ASSURANCES**
+## **9 – RESPONSABILITÉ ET ASSURANCES**
 
 Dokos SAS est assurée pour couvrir les conséquences de sa responsabilité civile professionnelle.
 
@@ -131,33 +131,23 @@ Les Parties sont assurées pour les conséquences de leur responsabilité civile
 
 Dokos SAS ne saurait être responsable :
 
-\- de la faute, négligence, omission et/ou défaillance du Client, notamment dans la transmission à Dokos SAS des données et/ou des programmes informatiques fournis, mauvaise utilisation de ses matériels ou logiciels, formation insuffisante de son personnel, non-respect des conseils donnés, etc. et causant en totalité le préjudice subi par le Client ;
-
-\- de la force majeure, événements et/ou incidents définis par l’article 1218 du Code civil indépendants de la volonté de Dokos SAS, au sens de la jurisprudence des cours et tribunaux français, tels que visés au paragraphe « Force majeure » ci- après.
-
-\- de la faute, négligence ou omission d'un tiers, d’un partenaire Dokos autre que ses éventuels sous-traitants sur lequel Dokos SAS n'a aucun pouvoir de contrôle et de surveillance, répondant à la définition légale du fait d'un tiers ;
-
-\- de l'utilisation faite par le Client, des résultats des Logiciels et/ou Prestations, en particulier contraires aux termes du Contrat, sauf si cette responsabilité résulte d'une mauvaise exécution des Prestations par Dokos SAS ;
-
-\- du contenu de l’ensemble des informations et/ou données qui lui sont remises par le Client ;
-
-\- de la disponibilité, du fonctionnement irrégulier ou régulier, du dysfonctionnement ou de la maintenance des applications du Client, des systèmes d’information du Client, ainsi que des matériels, logiciels, systèmes de télécommunication, réseaux ou de tout autre système tiers utilisé par le Client ou fourni par un tiers pour l’utilisation des Prestations et/ou des Logiciels qui n’entrent pas dans le périmètre du Contrat dans la limite desdites interventions et/ou suivant des interventions du Client et/ou de tiers sur ledit périmètre ;
-
-\- de l’interruption par Dokos SAS de la fourniture de tout ou partie des Prestations du fait du non-respect par le Client de ses obligations contractuelles prévues au Contrat et/ou en cas de demande d’une autorité compétente ;
-
-\- de destruction partielle ou totale des informations transmises et/ou stockées à la suite d’erreurs imputables directement et/ou indirectement au Client ;
-
-\- de manière générale de l’utilisation faite par le Client du résultat des Prestations et des conséquences de l’exploitation du résultat des Prestations concernant ses choix en matière de gestion de ses systèmes d’information.
+- de la faute, négligence, omission et/ou défaillance du Client, notamment dans la transmission à Dokos SAS des données et/ou des programmes informatiques fournis, mauvaise utilisation de ses matériels ou logiciels, formation insuffisante de son personnel, non-respect des conseils donnés, etc. et causant en totalité le préjudice subi par le Client ;
+- de la force majeure, événements et/ou incidents définis par l’article 1218 du Code civil indépendants de la volonté de Dokos SAS, au sens de la jurisprudence des cours et tribunaux français, tels que visés au paragraphe « Force majeure » ci- après.
+- de la faute, négligence ou omission d'un tiers, d’un partenaire Dokos autre que ses éventuels sous-traitants sur lequel Dokos SAS n'a aucun pouvoir de contrôle et de surveillance, répondant à la définition légale du fait d'un tiers ;
+- de l'utilisation faite par le Client, des résultats des Logiciels et/ou Prestations, en particulier contraires aux termes du Contrat, sauf si cette responsabilité résulte d'une mauvaise exécution des Prestations par Dokos SAS ;
+- du contenu de l’ensemble des informations et/ou données qui lui sont remises par le Client ;
+- de la disponibilité, du fonctionnement irrégulier ou régulier, du dysfonctionnement ou de la maintenance des applications du Client, des systèmes d’information du Client, ainsi que des matériels, logiciels, systèmes de télécommunication, réseaux ou de tout autre système tiers utilisé par le Client ou fourni par un tiers pour l’utilisation des Prestations et/ou des Logiciels qui n’entrent pas dans le périmètre du Contrat dans la limite desdites interventions et/ou suivant des interventions du Client et/ou de tiers sur ledit périmètre ;
+- de l’interruption par Dokos SAS de la fourniture de tout ou partie des Prestations du fait du non-respect par le Client de ses obligations contractuelles prévues au Contrat et/ou en cas de demande d’une autorité compétente ;
+- de destruction partielle ou totale des informations transmises et/ou stockées à la suite d’erreurs imputables directement et/ou indirectement au Client ;
+- de manière générale de l’utilisation faite par le Client du résultat des Prestations et des conséquences de l’exploitation du résultat des Prestations concernant ses choix en matière de gestion de ses systèmes d’information.
 
 Dokos SAS ne prend d’engagement contractuel que vis-à-vis du Client et ne prend aucun engagement vis-à-vis des tiers.
 
-La responsabilité de Dokos Sas ne peut être engagée qu’en réparation d’un préjudice réel, personnel et certain, subi par le Client, à l’exclusion de tout préjudice indirect tels que la perte de chiffre d’affaires, de Clientèle, de préjudice d’image subi par le Client en raison de l’exécution ou de l’inexécution du Contrat, que la possibilité de tels dommages ait pu être raisonnablement prévue ou non dans le cadre du
+La responsabilité de Dokos Sas ne peut être engagée qu’en réparation d’un préjudice réel, personnel et certain, subi par le Client, à l’exclusion de tout préjudice indirect tels que la perte de chiffre d’affaires, de Clientèle, de préjudice d’image subi par le Client en raison de l’exécution ou de l’inexécution du Contrat, que la possibilité de tels dommages ait pu être raisonnablement prévue ou non dans le cadre du contrat.
 
-Contrat.
+\---
 
-### 10 – \*\*\*\* CONFIDENTIALITÉ – SECRET PROFESSIONNEL – LOCALISATION ET SÉCURITÉ PHYSIQUE DES
-
-### INFRASTRUCTURES ET DU SERVICE
+## **10 – CONFIDENTIALITÉ – SECRET PROFESSIONNEL – LOCALISATION ET SÉCURITÉ PHYSIQUE DES INFRASTRUCTURES ET DU SERVICE**
 
 Au sein du présent accord, sont considérées comme confidentielles toutes les informations orales ou écrites, transmises sous forme de
 
@@ -165,13 +155,10 @@ données, de documents, ou toute autre forme, hébergées, obtenues ou produites
 
 Dokos SAS s'engage :
 
-\- à respecter la confidentialité des données hébergées, transmises ou produites ;
-
-\- à tenir pour strictement confidentielles, à ne pas publier, ni divulguer ces informations à des tiers, y compris ses filiales ou les entreprises liées à lui par des intérêts financiers ;
-
-\- à n'utiliser lesdites informations que dans le cadre strictement défini pour la prestation, à l'exception de toute autre utilisation ;
-
-\- à ne communiquer lesdites informations qu'aux seules personnes physiques ou morales qui auraient directement besoin de les connaître dans le cadre de l'exécution du service : dans ce cas, Dokos SAS devra informer lesdites personnes du caractère strictement confidentiel desdites informations et obtiendra d'elles un engagement au respect de la présente confidentialité.
+- à respecter la confidentialité des données hébergées, transmises ou produites ;
+- à tenir pour strictement confidentielles, à ne pas publier, ni divulguer ces informations à des tiers, y compris ses filiales ou les entreprises liées à lui par des intérêts financiers ;
+- à n'utiliser lesdites informations que dans le cadre strictement défini pour la prestation, à l'exception de toute autre utilisation ;
+- à ne communiquer lesdites informations qu'aux seules personnes physiques ou morales qui auraient directement besoin de les connaître dans le cadre de l'exécution du service : dans ce cas, Dokos SAS devra informer lesdites personnes du caractère strictement confidentiel desdites informations et obtiendra d'elles un engagement au respect de la présente confidentialité.
 
 Dokos SAS ne divulgue aucune information relative à la prestation à des tiers, sauf autorisation formelle et écrite du Client.
 
@@ -179,37 +166,39 @@ Dokos SAS s’engage à prendre toutes les mesures nécessaires au respect de la
 
 Les bases de données des clients sont hébergées par l’intermédiaire de Hetzner GmbH ( ALLEMAGNE ) et/ou OVH SAS ( FRANCE ) au sein de l'Union Européenne.
 
-### 11– \*\*\*\* FORCE MAJEURE 
+\---
+
+## 11– FORCE MAJEURE
 
 Aucune des parties ne sera tenue pour responsable envers l'autre partie de tout retard ou manquement d'exécution en vertu du présent Contrat, si ce manquement ou retard est causé par une réglementation gouvernementale, un incendie, une grève, une guerre, une inondation, un accident, une épidémie, un embargo, la saisie d'une usine ou d'un produit dans son intégralité ou en partie par un gouvernement ou une autorité publique, ou toute (s) autre (s) cause (s), qu’elle (s) soit (soient) de nature similaire ou différente, pour autant que cette cause soit hors du contrôle raisonnable de la partie concernée, et tant qu'une telle cause existe.
 
 Le cas de force majeure suspend les obligations nées du contrat pendant toute la durée de son existence. Toutefois, si le cas de force majeure avait une durée d'existence supérieure à 30 jours consécutifs, il ouvrirait droit à la résiliation de plein droit du présent contrat par l'une ou l'autre des parties huit jours après l'envoi d'une lettre recommandée avec avis de réception notifiant cette décision.
 
-### 12 – \*\*\*\* CONDITIONS D’EXPLOITATION
+\---
+
+## 12 – CONDITIONS D’EXPLOITATION
 
 Le Client reconnaît par les présentes que les fluctuations de la bande passante et les aléas du fournisseur d’accès sont des éléments pouvant entraîner une discontinuité dans les prestations offertes par Dokos Sas, et extérieures à ses moyens techniques.
 
-### 13 – \*\*\*\* OBLIGATIONS DU CLIENT
+\---
 
-**13.1. – Information – Collaboration**
+## 13 – OBLIGATIONS DU CLIENT
+
+### **13.1. – Information – Collaboration**
 
 Le Client s’engage :
 
-\- Communiquer en temps utile à Dokos Sas toute information et document de toute nature nécessaire à l'exécution de ses Prestations.
+- Communiquer en temps utile à Dokos Sas toute information et document de toute nature nécessaire à l'exécution de ses Prestations.
+- Contrôler l’exactitude des informations et données fournies à Dokos SAS.
+- Effectuer l’ensemble des formalités qui lui incombent sur un plan légal et réglementaire et notamment au titre de l’exploitation de fichiers et données dont il est propriétaire.
+- En concertation avec Dokos SAS, à favoriser la bonne coopération entre les collaborateurs de Dokos SAS et l’ensemble de son personnel concerné.
+- À honorer ses factures dans les délais prévus au Contrat.
 
-\- Contrôler l’exactitude des informations et données fournies à Dokos SAS.
-
-\- Effectuer l’ensemble des formalités qui lui incombent sur un plan légal et réglementaire et notamment au titre de l’exploitation de fichiers et données dont il est propriétaire.
-
-\- En concertation avec Dokos SAS, à favoriser la bonne coopération entre les collaborateurs de Dokos SAS et l’ensemble de son personnel concerné.
-
-\- À honorer ses factures dans les délais prévus au Contrat.
-
-**13.2 – Dommages et préjudices directs ou indirects**
+### **13.2 – Dommages et préjudices directs ou indirects**
 
 Le Client est le seul responsable des dommages et préjudices directs ou indirects, matériels ou immatériels du fait de son utilisation du service d’hébergement et s’engage à indemniser Dokos SAS contre toute demande, réclamation et/ou condamnation à des dommages et intérêts, dont Dokos Sas pourrait être l’objet dès lors que celles-ci auraient pour cause l’utilisation par le Client du service fourni.
 
-### 13.3 – \*\*\*\* Contenu du/des sites internet
+### 13.3 – Contenu du/des sites internet
 
 Le Client est le producteur et le représentant légal des données de toute nature stockées et diffusées sur son service et s’engage à disposer de toutes les autorisations nécessaires pour leur stockage et leur diffusion.
 
@@ -217,20 +206,188 @@ Le Client reconnaît assumer seul la responsabilité éditoriale prévue par la 
 
 Le Client s’oblige à procéder à toute déclaration de traitement d’informations nominatives telles que prévues par la loi « informatique, fichiers et liberté du 6 Janvier 1978 et, plus généralement, à satisfaire aux obligations édictées par ladite loi, notamment en assurant la sécurité de ces données.
 
-### 14 – \*\*\*\* LOI APPLICABLE – COMPETENCE JURIDICTIONNELLE
+\---
+
+## 14 – LOI APPLICABLE – COMPETENCE JURIDICTIONNELLE
 
 Le Contrat est soumis au droit français.
 
-Tout différend pouvant naître entre les Parties à propos de la validité, de l’interprétation, de l’exécution ou, plus généralement, du Contrat, compétence expresse et exclusive est attribuée au Tribunal compétent du ressort de Nancy. 
+Tout différend pouvant naître entre les Parties à propos de la validité, de l’interprétation, de l’exécution ou, plus généralement, du Contrat, compétence expresse et exclusive est attribuée au Tribunal compétent du ressort de Nancy.
+
+\---
 
 ## **15 – CESSION**
 
-En raison de son caractère intuitu personae, le Contrat d’Hébergement ne peut faire l'objet d'une cession sans l'accord préalable et écrit de
+En raison de son caractère intuitu personae, le Contrat d’Hébergement ne peut faire l'objet d'une cession sans l'accord préalable et écrit de l'autre Partie.
 
-l'autre Partie.
+\---
 
-### 16– \*\*\*\* ELECTION DE DOMICILE
+## 16– ELECTION DE DOMICILE
 
 Les deux Parties font élection de leur domicile à leur adresse indiquée dans le Contrat. Tout changement de domiciliation ne sera
 
 opposable à l'autre Partie qu'à la condition de lui avoir été notifié.
+
+\---
+
+## Annexes
+
+### **Annexe 1 : Garanties de Niveau de Service (SLA - Service Level Agreement)**
+
+**1. Objet de l'Annexe**
+
+La présente annexe définit les engagements de Dokos SAS en matière de niveau de service dans le cadre de l'utilisation du logiciel de gestion Dokos (ci-après, le « Service »). Elle précise les garanties offertes concernant l’accès prioritaire au support technique et les délais de réponse et de résolution des anomalies bloquantes/critiques, majeures et mineures.
+
+**2. Définitions**
+
+- _**Anomalie Bloquante**_ : Toute défaillance du Service rendant impossible son utilisation ou empêchant une fonctionnalité essentielle de fonctionner, sans solution de contournement.
+- _**Anomalie Majeure**_ : Dysfonctionnement affectant significativement le fonctionnement du Service sans le rendre totalement inutilisable, mais nécessitant une intervention rapide.
+- _**Anomalie Mineure**_ : Dysfonctionnement ou imperfection n’affectant pas de manière significative le fonctionnement global du service ou la disponibilité des fonctionnalités principales
+
+_Le classement de l’anomalie reste à la discrétion de l’équipe Dokos._ 
+
+- _**Support Prioritaire**_ : Accès prioritaire aux équipes de support de Dokos SAS pour les clients bénéficiant des garanties de niveau de service.
+
+**3. Support Prioritaire**
+
+Un support fonctionnel prioritaire à destination des utilisateurs, consistant à apporter des réponses aux questions d’usage et une aide à l’utilisation du logiciel via notre plateforme de support. Il est limité à 2 utilisateurs pour le site. Ceux-ci serviront d’utilisateurs centraux et auront une vision globale sur l’usage qui en est fait. Ce service n’implique pas d’intervention dans le logiciel, même à la demande des utilisateurs. Ce n’est pas non plus un service de formation des utilisateurs/rices ou de consulting. 
+
+Le support est disponible pendant les heures ouvrées, du lundi au vendredi, de 9h à 18h.
+
+**4. Temps d’intervention et de Résolution**
+
+Le délai d’intervention correspond au temps écoulé entre la réception d'une demande de support par Dokos Sas et la prise en charge de cette demande par une personne compétente.
+
+Le délai de résolution correspond au temps nécessaire pour corriger l'anomalie ou fournir une solution de contournement permettant de rétablir le fonctionnement normal du Service.
+
+Plage de service garanti: Lundi-Vendredi 8h-20h
+
+Garanties de Niveau de Service Niveau 1 :
+<template>
+  <div class="anomaly-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Type d'Anomalie</th>
+          <th>Temps d'Intervention</th>
+          <th>Temps de Résolution</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Critique / Bloquante</td>
+          <td>6h</td>
+          <td>12h</td>
+        </tr>
+        <tr>
+          <td>Majeure</td>
+          <td>12h</td>
+          <td>48h</td>
+        </tr>
+        <tr>
+          <td>Mineure</td>
+          <td>Délai raisonnable</td>
+          <td>Délai raisonnable</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>
+
+<style scoped>
+.anomaly-table {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+</style>
+
+Garanties de Niveau de Service Niveau 2 :
+<template>
+  <div class="anomaly-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Type d'Anomalie</th>
+          <th>Temps d'Intervention</th>
+          <th>Temps de Résolution</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Critique / Bloquante</td>
+          <td>3h</td>
+          <td>6h</td>
+        </tr>
+        <tr>
+          <td>Majeure</td>
+          <td>6h</td>
+          <td>24h</td>
+        </tr>
+        <tr>
+          <td>Mineure</td>
+          <td>Délai raisonnable</td>
+          <td>Délai raisonnable</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>
+
+<style scoped>
+.anomaly-table {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+</style>
+
+Dans tous les cas, Dokos SAS s'engage à informer le client de l'état d'avancement de la résolution à intervalles réguliers.
+
+**5. Exclusions**
+
+Les garanties mentionnées dans cette annexe ne s'appliquent pas dans les cas suivants :
+
+- Les interruptions de service dues à des causes extérieures à Dokos Sas, telles que des défaillances de prestataires tiers ou des problèmes liés à l'infrastructure du client.
+- Les maintenances programmées pour lesquelles le client a été informé avec un préavis de 7 jours.
+- Les dysfonctionnements dus à une mauvaise utilisation du Service ou à des modifications non autorisées par Dokos Sas.

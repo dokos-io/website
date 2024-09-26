@@ -292,11 +292,11 @@ La sécurité de vos données est primordiale pour nous et nous avons conçu nos
 
 Le logiciel est fourni “en l’état”, sans aucune garantie de quelque nature que ce soit, expresse ou implicite, y compris, mais sans y être limité, les garanties implicites de commercialité, de conformité à une utilisation particulière, ou de non infraction aux droits d’un tiers.
 
-En aucun cas les auteurs ou titulaires de droits d’auteur ne pourront être tenus pour responsable à votre égard et au nôtre, de réclamations, dommages ou autres responsabilités, en vertu d’un contrat, délit ou autrement, relativement au logiciel, à l’utilisation du logiciel, ou à tout autre manipulation relative au logiciel.
----
+## En aucun cas les auteurs ou titulaires de droits d’auteur ne pourront être tenus pour responsable à votre égard et au nôtre, de réclamations, dommages ou autres responsabilités, en vertu d’un contrat, délit ou autrement, relativement au logiciel, à l’utilisation du logiciel, ou à tout autre manipulation relative au logiciel.
+
 toc: true
 title: Conditions Générales de Vente
----
+------------------------------------
 
 ##
 
