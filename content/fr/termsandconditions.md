@@ -588,8 +588,168 @@ La sécurité de vos données est primordiale pour nous et nous avons conçu nos
 - _Des systèmes sécurisés_ - Nos serveurs fonctionnent avec des distributions Linux récentes, mises à jour avec les derniers patchs de sécurité et des pare-feu anti-intrusion.
 - _Isolation des données_ - Les données de nos clients sont enregistrées dans des bases de données dédiées et isolées. Aucun partage de données entre clients, ni accès depuis la base de données d’un autre client, n’est possible.
 
-#### 9.2 Annexe B
+### 9.2 Annexe B
 
 Le logiciel est fourni “en l’état”, sans aucune garantie de quelque nature que ce soit, expresse ou implicite, y compris, mais sans y être limité, les garanties implicites de commercialité, de conformité à une utilisation particulière, ou de non infraction aux droits d’un tiers.
 
 En aucun cas les auteurs ou titulaires de droits d’auteur ne pourront être tenus pour responsable à votre égard et au nôtre, de réclamations, dommages ou autres responsabilités, en vertu d’un contrat, délit ou autrement, relativement au logiciel, à l’utilisation du logiciel, ou à tout autre manipulation relative au logiciel.
+
+### 9.3 Annexe C
+
+**1. Garanties de Niveau de Service (SLA - Service Level Agreement)**
+
+La présente annexe définit les engagements de Dokos SAS en matière de niveau de service dans le cadre de l'utilisation du logiciel de gestion Dokos (ci-après, le « Service »). Elle précise les garanties offertes concernant l’accès prioritaire au support technique et les délais de réponse et de résolution des anomalies bloquantes/critiques, majeures et mineures.
+
+**2. Définitions**
+
+- _**Anomalie Bloquante**_ : Toute défaillance du Service rendant impossible son utilisation ou empêchant une fonctionnalité essentielle de fonctionner, sans solution de contournement.
+- _**Anomalie Majeure**_ : Dysfonctionnement affectant significativement le fonctionnement du Service sans le rendre totalement inutilisable, mais nécessitant une intervention rapide.
+- _**Anomalie Mineure**_ : Dysfonctionnement ou imperfection n’affectant pas de manière significative le fonctionnement global du service ou la disponibilité des fonctionnalités principales
+
+_Le classement de l’anomalie reste à la discrétion de l’équipe Dokos._
+
+- _**Support Prioritaire**_ : Accès prioritaire aux équipes de support de Dokos SAS pour les clients bénéficiant des garanties de niveau de service.
+
+**3. Support Prioritaire**
+
+Un support fonctionnel prioritaire à destination des utilisateurs, consistant à apporter des réponses aux questions d’usage et une aide à l’utilisation du logiciel via notre plateforme de support. Il est limité à 2 utilisateurs pour le site. Ceux-ci serviront d’utilisateurs centraux et auront une vision globale sur l’usage qui en est fait. Ce service n’implique pas d’intervention dans le logiciel, même à la demande des utilisateurs. Ce n’est pas non plus un service de formation des utilisateurs/rices ou de consulting.
+
+Le support est disponible pendant les heures ouvrées, du lundi au vendredi, de 9h à 18h.
+
+**4. Temps d’intervention et de Résolution**
+
+Le délai d’intervention correspond au temps écoulé entre la réception d'une demande de support par Dokos Sas et la prise en charge de cette demande par une personne compétente.
+
+Le délai de résolution correspond au temps nécessaire pour corriger l'anomalie ou fournir une solution de contournement permettant de rétablir le fonctionnement normal du Service.
+
+Plage de service garanti: Lundi-Vendredi 8h-20h
+
+Garanties de Niveau de Service Niveau 1 :
+<template>
+  <div class="anomaly-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Type d'Anomalie</th>
+          <th>Temps d'Intervention</th>
+          <th>Temps de Résolution</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Critique / Bloquante</td>
+          <td>6h</td>
+          <td>12h</td>
+        </tr>
+        <tr>
+          <td>Majeure</td>
+          <td>12h</td>
+          <td>48h</td>
+        </tr>
+        <tr>
+          <td>Mineure</td>
+          <td>Délai raisonnable</td>
+          <td>Délai raisonnable</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>
+
+<style scoped>
+.anomaly-table {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+</style>
+
+Garanties de Niveau de Service Niveau 2 :
+<template>
+  <div class="anomaly-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Type d'Anomalie</th>
+          <th>Temps d'Intervention</th>
+          <th>Temps de Résolution</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Critique / Bloquante</td>
+          <td>3h</td>
+          <td>6h</td>
+        </tr>
+        <tr>
+          <td>Majeure</td>
+          <td>6h</td>
+          <td>24h</td>
+        </tr>
+        <tr>
+          <td>Mineure</td>
+          <td>Délai raisonnable</td>
+          <td>Délai raisonnable</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>
+
+<style scoped>
+.anomaly-table {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+</style>
+
+Dans tous les cas, Dokos SAS s'engage à informer le client de l'état d'avancement de la résolution à intervalles réguliers.
+
+**5. Exclusions**
+
+Les garanties mentionnées dans cette annexe ne s'appliquent pas dans les cas suivants :
+
+- Les interruptions de service dues à des causes extérieures à Dokos Sas, telles que des défaillances de prestataires tiers ou des problèmes liés à l'infrastructure du client.
+- Les maintenances programmées pour lesquelles le client a été informé avec un préavis de 7 jours.
+- Les dysfonctionnements dus à une mauvaise utilisation du Service ou à des modifications non autorisées par Dokos Sas.
