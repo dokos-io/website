@@ -29,7 +29,7 @@ Les présentes conditions générales de service (ci-après « Conditions Géné
 
 **Réglementation sur les Données Personnelles :** Ensemble des lois et règlements relatifs à la protection des données personnelles, incluant le RGPD, la loi Informatique et Libertés modifiée, et les décisions de la **CNIL**.
 
-**CPU :**  (Central Processing Unit), ou processeur en français, joue un rôle clé dans le fonctionnement des logiciels, notamment les logiciels SaaS (Software as a Service) comme Dokos. Dans ce contexte, la consommation de CPU fait référence à la quantité de ressources ( ou temps de calcul ) que le logiciel utilise pour traiter les demandes et exécuter les tâches.
+**CPU :** (Central Processing Unit), ou processeur en français, joue un rôle clé dans le fonctionnement des logiciels, notamment les logiciels SaaS (Software as a Service) comme Dokos. Dans ce contexte, la consommation de CPU fait référence à la quantité de ressources ( ou temps de calcul ) que le logiciel utilise pour traiter les demandes et exécuter les tâches.
 
 Par exemple, lorsque vous utilisez Dokos pour gérer des données, chaque action (comme charger un fichier, générer un rapport ou traiter des données) nécessite une certaine puissance de calcul du CPU. Certaines applications utilisent beaucoup de CPU, cela peut entraîner une charge importante sur nos serveurs.
 
@@ -51,7 +51,7 @@ Dokos SAS se réserve le droit de sous-traiter tout ou partie des Prestations. E
 
 ## **5 – DURÉE DES PRESTATIONS – RENOUVELLEMENT – INTERRUPTION**
 
-Les présentes **Conditions Générales d’Hébergement** prennent effet à la date de signature du contrat et s’appliquent pour la durée spécifiée dans celui-ci. 
+Les présentes **Conditions Générales d’Hébergement** prennent effet à la date de signature du contrat et s’appliquent pour la durée spécifiée dans celui-ci.
 
 ### **Prestation à reconduction tacite :**
 
@@ -96,7 +96,7 @@ Dans cette hypothèse, le Client sera informé par écrit avec un préavis de **
 
 ## **7 – FACTURATION ET RÈGLEMENT**
 
-Les paiements doivent intervenir à la date indiquée sur la facture. 
+Les paiements doivent intervenir à la date indiquée sur la facture.
 
 Dans le cas où l'une des parties ne remplit pas ses obligations découlant du présent contrat, et si une telle violation n’est pas résolue dans les 30 jours civils à compter de la notification écrite de cette violation, le présent contrat peut être résilié immédiatement par la partie qui n'a pas commis la violation.
 
