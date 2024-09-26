@@ -79,12 +79,14 @@ Pendant la durée du contrat, si le Client à consommer plus de CPU, de base de 
 
 Les tarifs en vigueur au 01 septembre 2024 (affichés hors TVA) :
 
-- 19€ HT/Mois => 0.5h de CPU / 0,5 GB de base de données / 1 GB stockage / Pas support
-- 49€ HT/Mois => 1h de CPU / 1 GB de base de données / 2 GB stockage / Pas support
-- 99€ HT/Mois =>  1.5h de CPU / 1 GB de base de données / 10 GB stockage / Support simple
-- 199€ HT/Mois =>  2h de CPU / 1 GB de base de données / 20 GB stockage / Support simple
-- 499€ HT/Mois =>  4h de CPU / 1 GB de base de données /  40 GB stockage / Support premium (SLA: Anomalie bloquante 8H)
-- 999€ HT/Mois =>  6h de CPU / 1 GB de base de données / 100 GB stockage / Support premium (SLA: Anomalie bloquant 4H)
+| **Tarif**        | **CPU**     | **Base de données** | **Stockage** | **Support**                                   |
+| ---------------- | ----------- | ------------------- | ------------ | --------------------------------------------- |
+| **19€ HT/Mois**  | 1h de CPU   | 0.5 GB              | 5 GB         | Pas de support                                |
+| **49€ HT/Mois**  | 2h de CPU   | 1 GB                | 5 GB         | Pas de support                                |
+| **99€ HT/Mois**  | 2h de CPU   | 2 GB                | 10 GB        | Support simple                                |
+| **199€ HT/Mois** | 3h de CPU   | 2 GB                | 15 GB        | Support simple                                |
+| **499€ HT/Mois** | 4h de CPU   | 3 GB                | 25 GB        | Support premium (SLA : Niveau 1               |
+| **999€ HT/Mois** | 6h de CPU   | 3 GB                | 50 GB        | Support premium (SLA : Niveau 2)              |
 
 ### 6.2. **Modification des prix en cours de contrat**
 
