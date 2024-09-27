@@ -1,0 +1,8 @@
+title: Stocks
+icon: i-vaadin-stock
+description: Gestion des niveaux et des valorisations de stock
+application: Dokos
+navigation:
+    title: Stocks
+    icon: i-vaadin-stock
+    description: Gestion des niveaux et des valorisations de stock

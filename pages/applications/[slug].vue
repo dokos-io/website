@@ -20,13 +20,13 @@ if (!application.value) {
 
 const title = application.value.head?.title || application.value.title
 const description = application.value.head?.description || application.value.description
-useSeoMeta({
-  titleTemplate: '%s · Nuxt Agencies',
-  title,
-  description,
-  ogDescription: description,
-  ogTitle: `${title} · Nuxt Agencies`
-})
+// useSeoMeta({
+//   titleTemplate: '%s · Nuxt Agencies',
+//   title,
+//   description,
+//   ogDescription: description,
+//   ogTitle: `${title} · Nuxt Agencies`
+// })
 
 const { t } = useI18n({
   useScope: 'local'
@@ -36,8 +36,8 @@ const { t } = useI18n({
 
 <template>
   <UContainer>
-    <UPageHeader :description="application.description" :ui="{wrapper: 'border-none'}">
-      <div class="absolute top-[68px] -left-[64px] hidden lg:flex">
+    <UPageHeader :ui="{wrapper: 'border-none'}">
+      <div class="absolute top-[68px] hidden lg:flex">
         <UTooltip :text="t('back_button')">
           <UButton
             :to="localePath('/applications')"
@@ -78,12 +78,13 @@ const { t } = useI18n({
           </template>
 
           <template #default>
-            <!-- <NuxtImg
+            <NuxtImg
               :src="'/home/' + application.hero.image"
               class="w-full rounded-md bg-white/75"
               placeholder
-            /> -->
-            <Placeholder />
+              v-if="application.hero.image"
+            />
+            <Placeholder v-else/>
           </template>
         </ULandingHero>
 

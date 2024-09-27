@@ -29,6 +29,13 @@ export default defineAppConfig({
       hero: {
         wrapper: 'lg:py-24'
       }
+    },
+    header: {
+      popover: {
+        links: {
+          wrapper: 'grid grid-cols-3'
+        }
+      }
     }
   },
   colorMode: {

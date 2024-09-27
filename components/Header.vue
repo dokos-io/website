@@ -4,48 +4,34 @@ const localePath = useLocalePath()
 
 const route = useRoute()
 
-const { t } = useI18n({
+const { t, locale } = useI18n({
   useScope: 'local'
+})
+
+const { data: nav } = await useAsyncData('navigation', () => fetchContentNavigation(queryContent(`/${locale.value}/features`)), {
+    watch: [locale]
+  })
+
+const features = nav.value?.find(item => item._path === `/${locale.value}`)?.children?.find(item => item._path === `/${locale.value}/features`)?.children
+
+const features_links = features?.map(feat => {
+  return {
+    label: feat.title,
+    to: feat._path,
+    icon: feat.icon,
+    description: feat.description
+  }
 })
 
 const links = computed(() => {
   return [{
     label: t('features'),
     icon: 'i-heroicons-computer-desktop',
-    children: [
-      {
-        label: t('selling'),
-        to: localePath('/selling'),
-        icon: 'i-heroicons-ticket',
-        description: 'A simple pricing, for solo developers or teams.'
-      },
-      {
-        label: t('buying'),
-        to: localePath('/selling'),
-        icon: 'i-heroicons-ticket',
-        description: 'A simple pricing, for solo developers or teams.'
-      }
-    ]
+    children: features_links
   }, {
     label: t('documentation'),
     to: 'https://doc.dokos.io',
     icon: 'i-heroicons-book-open',
-    children: [
-      {
-        label: t('installation'),
-        to: 'https://doc.dokos.io/dodock/installation',
-        target: '_blank',
-        icon: 'i-heroicons-ticket',
-        description: 'A simple pricing, for solo developers or teams.'
-      },
-      {
-        label: t('applications'),
-        to: 'https://doc.dokos.io',
-        target: '_blank',
-        icon: 'i-heroicons-ticket',
-        description: 'A simple pricing, for solo developers or teams.'
-      }
-    ]
   }, {
     label: t('pricing'),
     to: localePath('/pricing'),
@@ -68,7 +54,7 @@ const links = computed(() => {
     </template>
 
     <template #center>
-      <UHeaderLinks :links="links" :ui="{ default: { popover: { popper: { strategy: 'absolute' }, ui: { width: 'w-[256px]' } } } }" class="hidden lg:flex" />
+      <UHeaderLinks :links="links" :ui="{ default: { popover: { popper: { strategy: 'absolute' }, ui: { width: 'w-[64rem]' } } } }" class="hidden lg:flex" />
     </template>
 
     <template #panel>
@@ -90,8 +76,6 @@ en:
   selling: Selling
   buying: Buying
   documentation: Documentation
-  installation: Installation
-  applications: Applications
   pricing: Pricing
   news: News
   badge_label: Project
@@ -100,8 +84,6 @@ fr:
   selling: Selling
   buying: Buying
   documentation: Documentation
-  installation: Installation
-  applications: Applications
   pricing: Tarifs
   news: Actualités
   badge_label: Projet

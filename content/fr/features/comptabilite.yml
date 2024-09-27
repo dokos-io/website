@@ -1,0 +1,120 @@
+title: Comptabilité
+icon: i-uil-balance-scale
+description: Gestion de la comptabilité et des finances
+application: Dokos
+navigation:
+    title: Comptabilité
+    icon: i-uil-balance-scale
+    description: Gestion de la comptabilité et des finances
+hero:
+  title: Simplifiez votre <span class="text-primary">comptabilité</span> avec Dokos
+  description: Facilitez la gestion de vos finances avec Dokos. Gérez vos comptes, suivez vos transactions et obtenez des rapports financiers détaillés en quelques clics. Notre solution de comptabilité intégrée vous permet de centraliser et d'automatiser vos processus comptables, tout en offrant une vue claire et en temps réel de votre situation financière.
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: Badge
+    color: green
+
+
+features:
+  - title: Une vue d’ensemble instantanée de vos finances
+    description: Nos tableaux de bord interactifs vous offrent un aperçu des principaux indicateurs de performance financière, vous permettant de prendre des décisions éclairées. Configurez des rapports personnalisés pour suivre précisément les aspects qui comptent le plus pour votre entreprise.
+    align: left
+    headline:
+      label: Tableaux de bord
+      color: green
+  - title: Un plan comptable flexible et personnalisable
+    description: Organisez vos comptes en fonction de vos besoins, en créant des sous-groupes et des grands livres adaptés à la structure de votre entreprise. Vous pouvez facilement ajuster votre arborescence comptable à mesure que votre organisation évolue.
+    align: right
+    headline:
+      label: Plan comptable
+      color: green
+  - title: Un grand livre toujours à jour
+    description: Enregistrez toutes vos transactions de manière précise grâce à un système de journaux intuitif. Suivez les revenus et dépenses, automatisez la gestion des paiements différés ou anticipés, et assurez un grand livre toujours à jour.
+    align: left
+    headline:
+      label: Grand livre
+      color: green
+  - title: Une facturation efficace
+    description: Créez des factures professionnelles en quelques clics. Suivez facilement les paiements en attente grâce aux notifications automatiques par e-mail ou SMS.<br>Utilisez des modèles d'impression personnalisés pour des factures adaptées à vos besoins.
+    align: right
+    headline:
+      label: Facturation
+      color: green
+  - title: Une comptabilité multidevises
+    description: Gérez les transactions internationales sans difficulté. Envoyez des factures et suivez vos dépenses dans plusieurs devises. Notre système convertit automatiquement les montants dans la devise de base, et vous permet de générer des rapports financiers dans diverses monnaies.
+    align: left
+    headline:
+      label: Multidevise
+      color: green
+  - title: Vos flux métier automatisés
+    description: Gagnez du temps en automatisant la création de factures pour les abonnements récurrents. Grâce à la fonction Abonnements, vos factures sont générées et envoyées automatiquement, vous permettant de vous concentrer sur d'autres tâches essentielles.
+    align: right
+    headline:
+      label: Automatisation
+      color: green
+  - title: Un rapprochement bancaire simplifié
+    description: Synchronisez vos comptes bancaires avec votre comptabilité. Importez facilement vos relevés bancaires et effectuez le rapprochement avec vos transactions pour garantir la cohérence de vos comptes.
+    align: left
+    headline:
+      label: Réconciliation bancaire
+      color: green
+  - title: Des personnalisations sur mesure
+    description: Adaptez le logiciel à vos besoins spécifiques. Ajoutez des champs personnalisés, modifiez les formulaires en fonction des rôles des utilisateurs, et créez des modèles d'impression uniques, tout cela sans avoir besoin de coder.
+    align: right
+    headline:
+      label: Personnalisations
+      color: green
+
+bottom_section:
+  title: "La comptabilité avec Dokos, c’est aussi :"
+  cards:
+    - title: Un accès pour votre expert-comptable
+      description: Ajoutez facilement votre expert-comptable pour qu'il accède directement à vos données financières et les valide sans effort supplémentaire.
+      icon: i-heroicons-outline-calculator
+      class: "col-span-4 row-span-3"
+    - title: Des écritures de journal
+      description: Réalisez des écritures de journal pour ajuster vos comptes manuellement en cas de besoin, y compris les entrées inverses ou de correction.
+      icon: i-heroicons-outline-book-open
+      class: "col-span-4 row-span-3"
+    - title: Un suivi des actifs
+      description: Gardez un œil sur vos actifs avec un module dédié, facilitant la gestion de la dépréciation, des transferts et des ventes d'actifs.
+      icon: i-heroicons-outline-chart-bar-square
+      class: "col-span-4 row-span-3"
+
+plus_button:
+  label: Découvrir toutes nos fonctionnalités
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /features
+
+bottom_cta:
+  title: Avec Dokos, la comptabilité devient un jeu d'enfant. 
+  description: Que vous soyez une petite ou grande entreprise, notre solution vous accompagne à chaque étape de la gestion financière.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

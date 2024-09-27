@@ -69,7 +69,8 @@ useSeoMeta({
       <template #description>
         <span v-html="section.description" />
       </template>
-      <NuxtImg :src="section.image" />
+      <NuxtImg :src="section.image" v-if="section.image"/>
+      <Placeholder v-else/>
     </ULandingSection>
 
     <ULandingSection>

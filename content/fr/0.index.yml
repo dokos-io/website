@@ -42,7 +42,7 @@ metrics:
 sections:
   - title: Une <span class="text-primary">version française</span> d'ERPNext
     description: Dokos est un <i>fork</i> d'ERPNext qui a pour objectif d'être mieux adapté aux spécificités et habitudes françaises et européennes
-    image: /home/gdpr.svg
+    image: ""
     id: enterprise
     align: left
     features:
@@ -66,7 +66,7 @@ sections:
         target: _blank
   - title: Un <span class="text-primary">logiciel d'entreprise</span> puissant
     description: "Dokos est adapté à tout type d'entreprises, de la PME à la multinationale"
-    image: /home/business.svg
+    image: ""
     id: enterprise
     align: right
     features:
@@ -91,7 +91,7 @@ sections:
   - title: Une <span class="text-primary">plateforme</span> qui grandit avec vous
     id: platform
     description: Investissez dans un ERP qui peut accompagner toutes les phases de croissance de votre entreprise
-    image: /home/growing.svg
+    image: ""
     align: left
     features:
       - name: Robuste et scalable
@@ -120,7 +120,7 @@ sections:
         class: ml-8
   - title: Gardez le <span class="text-primary">contrôle</span>
     description: Soyez certain de ne pas être enfermé avec un éditeur ou un prestataire de service
-    image: /home/security.svg
+    image: ""
     id: control
     align: right
     features:
@@ -150,7 +150,7 @@ sections:
         class: ml-8
   - title: La <span class="text-primary">force</span> de l'open-source
     description: Dokos est un logiciel libre et open-source et le restera toujours
-    image: /home/open-source.svg
+    image: ""
     id: opensource
     align: left
     features:
@@ -165,7 +165,7 @@ sections:
         icon: i-simple-icons-frappe
   - title: Un accompagnement  <span class="text-primary">personnalisé</span>
     description: Profitez d'un support sur mesure et entièrement adapté à vos besoins
-    image: /home/security.svg
+    image: ""
     id: control
     align: right
     features:
@@ -254,7 +254,7 @@ features:
   items:
     - title: CRM
       description: Gestion de la prospection
-      icon:  i-carbon-chart-relationship
+      icon: i-carbon-chart-relationship
       to: https://doc.dokos.io/dokos/crm
       target: "_blank"
     - title: Ventes
@@ -287,40 +287,40 @@ features:
       icon: i-fluent-manufacturer-24-regular
       to: https://doc.dokos.io/dokos/production
       target: "_blank"
-    - title: 'Qualité'
+    - title: Qualité
       description: Création de processus et suivi de la qualité
       icon: i-carbon-rule-data-quality
       to: 'https://doc.dokos.io/dokos/qualite'
       target: "_blank"
-    - title: 'Support'
+    - title: Support
       description: Outil de gestion de ticket pour le support client
-      icon: 'i-ri-customer-service-2-line'
-      to: 'https://doc.dokos.io/dokos/support'
+      icon: i-ri-customer-service-2-line
+      to: https://doc.dokos.io/dokos/support
       target: "_blank"
     - title: Réservations de ressources
       description: Création de contrats, génération d'abonnements, crédits de réservation et événements
-      icon: 'i-material-symbols-location-on-outline-rounded'
+      icon: i-material-symbols-location-on-outline-rounded
       to: 'https://doc.dokos.io/dokos/lieu'
       target: "_blank"
     - title: Ressources Humaines
       description: Gestion des congés, notes de frais, recrutement, quarts et présence, performance 
-      icon: 'i-mdi-human-capacity-increase'
-      to: 'https://doc.dokos.io/dokos/hrms'
+      icon: i-mdi-human-capacity-increase
+      to: https://doc.dokos.io/dokos/hrms
       target: "_blank"
     - title: Portail web & e-commerce
       description: Vente de produits/services, réservations de ressources en ligne et création d'un portail client/fournisseur
-      icon: 'i-gg-website'
+      icon: i-gg-website
       to: 'https://doc.dokos.io/dokos/e-commerce'
       target: "_blank"
-    - title: 'OCR'
-      description: 'Reconnaissance automatique des factures et notes de frais'
-      icon: 'i-mdi-ocr'
-      to: 'https://doc.dokos.io/integrations'
+    - title: OCR
+      description: Reconnaissance automatique des factures et notes de frais
+      icon: i-mdi-ocr
+      to: https://doc.dokos.io/integrations
       target: "_blank"
     - title: Paiements
       description: Collecte de paiements en ligne via carte bancaire, prélèvement SEPA, Paypal et autres passerelles de paiements...
-      icon: 'i-ic-twotone-payments'
-      to: 'https://doc.dokos.io/integrations/payments'
+      icon: i-ic-twotone-payments
+      to: https://doc.dokos.io/integrations/payments
       target: "_blank"
     - title: Intégrations
       description: Sauvegarde externalisées, services Google, e-commerce, connecteurs no-code
