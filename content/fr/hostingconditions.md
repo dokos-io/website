@@ -73,20 +73,46 @@ Dokos SAS se réserve également le droit d’interrompre le service en cas de r
 
 ### 6.1  Tarifs
 
-Les tarifs standards pour le contrat d'abonnement à l’hébergement du Logiciel fourni par DOKOS SAS sont basés sur la ressources informatiques / temps de calcul ( CPU ) consommés chaque mois et l’espace disque nécessaire et précisés par écrit à la signature du contrat.
+Les tarifs standards pour le contrat d'abonnement à l’hébergement du Logiciel fourni par DOKOS SAS sont basés sur les ressources informatiques / temps de calcul ( CPU ) consommés chaque mois et l’espace disque nécessaire et précisés par écrit à la signature du contrat.
 
 Pendant la durée du contrat, si le Client à consommer plus de CPU, de base de données ou de capacité de stockage que spécifié au moment de la signature du présent Contrat, le Client accepte de basculer sur le forfait supérieur correspondant à sa consommation.
 
 Les tarifs en vigueur au 01 septembre 2024 (affichés hors TVA) :
 
-| **Tarif**        | **CPU**     | **Base de données** | **Stockage** | **Support**                                   |
-| ---------------- | ----------- | ------------------- | ------------ | --------------------------------------------- |
-| **19€ HT/Mois**  | 1h de CPU   | 0.5 GB              | 5 GB         | Pas de support                                |
-| **49€ HT/Mois**  | 2h de CPU   | 1 GB                | 5 GB         | Pas de support                                |
-| **99€ HT/Mois**  | 2h de CPU   | 2 GB                | 10 GB        | Support simple                                |
-| **199€ HT/Mois** | 3h de CPU   | 2 GB                | 15 GB        | Support simple                                |
-| **499€ HT/Mois** | 4h de CPU   | 3 GB                | 25 GB        | Support premium (SLA : Niveau 1               |
-| **999€ HT/Mois** | 6h de CPU   | 3 GB                | 50 GB        | Support premium (SLA : Niveau 2)              |
+**Tarifs pour un hébergement mutualisé :**
+
+L'hébergement mutualisé désigne l'attribution d'une portion des ressources d'un serveur partagé entre plusieurs utilisateurs. Il implique que le client accepte que les performances de son site puissent être impactées par l'activité des autres utilisateurs partageant le même serveur. L'hébergeur s'engage à maintenir un équilibre équitable des ressources entre les utilisateurs, dans le respect des conditions de service et des limites contractuelles définies.
+
+| **Tarif**        | **CPU**   | **Base de données (GB)** | **Stockage (GB)** | **Support**                      |
+| ---------------- | --------- | ------------------------ | ----------------- | -------------------------------- |
+| **19€ HT/Mois**  | 1h de CPU | 0.5                      | 5                 | Pas de support                   |
+| **49€ HT/Mois**  | 2h de CPU | 1                        | 5                 | Pas de support                   |
+| **99€ HT/Mois**  | 2h de CPU | 2                        | 10                | Support simple                   |
+| **199€ HT/Mois** | 3h de CPU | 2                        | 15                | Support simple                   |
+| **499€ HT/Mois** | 4h de CPU | 3                        | 25                | Support premium (SLA : Niveau 1  |
+| **999€ HT/Mois** | 6h de CPU | 3                        | 50                | Support premium (SLA : Niveau 2) |
+
+**Tarifs pour un hébergement dédié :**
+
+L’hébergement dédié est destiné aux clients nécessitant des ressources exclusives pour leurs applications Dokos, garantissant des performances optimales, non affectées par le trafic ou la charge d’autres sites. Le client bénéficie de deux serveurs dédiés (un pour l’application et un pour la base de données) ainsi que de ressources illimitées pour la création de _benchs_ et de sites.
+
+Tous les forfaits d'hébergement dédiés incluent un support tecnhique standart et un support premium de niveau II ( nos garanties de niveau de service sont détaillés en annexe 1 ).
+
+| **Tarif (HT/Mois)** | **vCPU** | **RAM(GB)** | **Stockage (GB)** |
+| ------------------- | -------- | ----------- | ----------------- |
+| **1199€**           | 2        | 8           | 100               |
+| **1299€**           | 2        | 16          | 100               |
+| **1399€**           | 4        | 8           | 100               |
+| **1499€**           | 4        | 16          | 250               |
+| **1999€**           | 4        | 32          | 250               |
+| **2999€**           | 8        | 16          | 350               |
+| **3999€**           | 8        | 32          | 350               |
+| **4999€**           | 8        | 64          | 500               |
+| **5999€**           | 16       | 32          | 650               |
+| **7499€**           | 16       | 64          | 800               |
+| **9999€**           | 16       | 128         | 1000              |
+
+Cette tarification est sujette à révision en fonction des besoins du client ou des mises à jour des services fournis. Pour toute demande particulière, un devis personnalisé pourra être établi. Les tarifs d'hébergements dédiés inclus
 
 ### 6.2. **Modification des prix en cours de contrat**
 
@@ -110,7 +136,7 @@ En outre, Dokos SAS peut résilier le contrat immédiatement dans le cas où le 
 
 Dokos SAS s’engage à mettre en œuvre les infrastructures de traçabilité nécessaires au suivi des connexions concernant les accès à l’infrastructure des personnes habilitées (administrateurs, éditeurs et autres tiers).
 
-Dokos Sas  assure la traçabilité de l’ensemble des actions réalisées au titre de l’hébergement.
+Dokos Sas assure la traçabilité de l’ensemble des actions réalisées au titre de l’hébergement.
 
 \---
 
@@ -265,124 +291,26 @@ Le délai de résolution correspond au temps nécessaire pour corriger l'anomali
 Plage de service garanti: Lundi-Vendredi 8h-20h
 
 Garanties de Niveau de Service Niveau 1 :
-<template>
-  <div class="anomaly-table">
-    <table>
-      <thead>
-        <tr>
-          <th>Type d'Anomalie</th>
-          <th>Temps d'Intervention</th>
-          <th>Temps de Résolution</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Critique / Bloquante</td>
-          <td>6h</td>
-          <td>12h</td>
-        </tr>
-        <tr>
-          <td>Majeure</td>
-          <td>12h</td>
-          <td>48h</td>
-        </tr>
-        <tr>
-          <td>Mineure</td>
-          <td>Délai raisonnable</td>
-          <td>Délai raisonnable</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</template>
+\#default
 
-<style scoped>
-.anomaly-table {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-
-th {
-  background-color: #f4f4f4;
-  font-weight: bold;
-}
-
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-</style>
+::div{.anomaly-table}
+| Type d'Anomalie      | Temps d'Intervention | Temps de Résolution&#xA;         |
+| -------------------- | -------------------- | -------------------------------- |
+| Critique / Bloquante | 6h                   | 12h&#xA;                         |
+| Majeure              | 12h                  | 48h&#xA;                         |
+| Mineure              | Délai raisonnable    | Délai raisonnable&#xA;&#xA;&#xA; |
+::
 
 Garanties de Niveau de Service Niveau 2 :
-<template>
-  <div class="anomaly-table">
-    <table>
-      <thead>
-        <tr>
-          <th>Type d'Anomalie</th>
-          <th>Temps d'Intervention</th>
-          <th>Temps de Résolution</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Critique / Bloquante</td>
-          <td>3h</td>
-          <td>6h</td>
-        </tr>
-        <tr>
-          <td>Majeure</td>
-          <td>6h</td>
-          <td>24h</td>
-        </tr>
-        <tr>
-          <td>Mineure</td>
-          <td>Délai raisonnable</td>
-          <td>Délai raisonnable</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</template>
+\#default
 
-<style scoped>
-.anomaly-table {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-
-th {
-  background-color: #f4f4f4;
-  font-weight: bold;
-}
-
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-</style>
+::div{.anomaly-table}
+| Type d'Anomalie      | Temps d'Intervention | Temps de Résolution&#xA;         |
+| -------------------- | -------------------- | -------------------------------- |
+| Critique / Bloquante | 3h                   | 6h&#xA;                          |
+| Majeure              | 6h                   | 24h&#xA;                         |
+| Mineure              | Délai raisonnable    | Délai raisonnable&#xA;&#xA;&#xA; |
+::
 
 Dans tous les cas, Dokos SAS s'engage à informer le client de l'état d'avancement de la résolution à intervalles réguliers.
 
