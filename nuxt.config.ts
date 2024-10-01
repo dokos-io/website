@@ -27,7 +27,7 @@ export default defineNuxtConfig({
     '/api/search.json': { prerender: true },
     '/en/docs': { redirect: '/en/docs/getting-started', prerender: false },
     '/fr/docs': { redirect: '/fr/docs/getting-started', prerender: false },
-    '/': { redirect: '/en', prerender: true },
+    '/': { redirect: '/fr', prerender: true },
   },
   devtools: {
     enabled: true
@@ -41,16 +41,16 @@ export default defineNuxtConfig({
         iso: 'fr-FR',
         file: 'fr-FR.js'
       },
-      {
-        name: 'English',
-        code: 'en',
-        iso: 'en-US',
-        file: 'en-US.js'
-      }
+      // {
+      //   name: 'English',
+      //   code: 'en',
+      //   iso: 'en-US',
+      //   file: 'en-US.js'
+      // }
     ],
     langDir: 'lang',
     strategy: "prefix_and_default",
     detectBrowserLanguage: false,
-    defaultLocale: "en"
-  }
+    defaultLocale: "fr"
+  },
 })

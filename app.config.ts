@@ -13,6 +13,9 @@ export default defineAppConfig({
         size: 'md'
       }
     },
+    cardGroup: {
+      wrapper: 'grid grid-cols-3'
+    },
     card: {
       rounded: 'rounded-xl'
     },
@@ -36,7 +39,7 @@ export default defineAppConfig({
           wrapper: 'grid grid-cols-3'
         }
       }
-    }
+    },
   },
   colorMode: {
     preference: 'dark'

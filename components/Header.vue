@@ -8,13 +8,13 @@ const { t, locale } = useI18n({
   useScope: 'local'
 })
 
-const { data: nav } = await useAsyncData('navigation', () => fetchContentNavigation(queryContent(`/${locale.value}/features`)), {
+const { data: nav } = await useAsyncData('navigation', () => fetchContentNavigation(queryContent(`/${locale.value}/modules`)), {
     watch: [locale]
   })
 
-const features = nav.value?.find(item => item._path === `/${locale.value}`)?.children?.find(item => item._path === `/${locale.value}/features`)?.children
+const modules = nav.value?.find(item => item._path === `/${locale.value}`)?.children?.find(item => item._path === `/${locale.value}/modules`)?.children
 
-const features_links = features?.map(feat => {
+const modules_links = modules?.map(feat => {
   return {
     label: feat.title,
     to: feat._path,
@@ -27,11 +27,7 @@ const links = computed(() => {
   return [{
     label: t('features'),
     icon: 'i-heroicons-computer-desktop',
-    children: features_links
-  }, {
-    label: t('documentation'),
-    to: 'https://doc.dokos.io',
-    icon: 'i-heroicons-book-open',
+    children: modules_links
   }, {
     label: t('pricing'),
     to: localePath('/pricing'),
@@ -41,7 +37,14 @@ const links = computed(() => {
     label: t('news'),
     to: localePath('/blog'),
     icon: 'i-heroicons-newspaper',
-  }]
+  },
+  {
+    label: t('documentation'),
+    to: 'https://doc.dokos.io',
+    icon: 'i-heroicons-book-open',
+    target: "_blank"
+  }
+  ]
 });
 
 </script>

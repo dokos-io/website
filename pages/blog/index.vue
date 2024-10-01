@@ -42,7 +42,7 @@ const localePath = useLocalePath()
           :title="post.title"
           :description="post.description"
           :image="post.image"
-          :date="new Date(post.date).toLocaleDateString('en', { year: 'numeric', month: 'short', day: 'numeric' })"
+          :date="new Date(post.date).toLocaleDateString(locale.code, { year: 'numeric', month: 'short', day: 'numeric' })"
           :authors="post.authors"
           :badge="post.badge"
           :orientation="index === 0 ? 'horizontal' : 'vertical'"

@@ -11,7 +11,7 @@ export const useFeatures = () => {
     }
 
     try {
-      const data = await queryContent(`/${locale.value}/features`).where({ _extension: 'yml' }).find()
+      const data = await queryContent(`/${locale.value}/features`).where({ _extension: 'md' }).find()
 
       features.value = data as Feature[]
     }
