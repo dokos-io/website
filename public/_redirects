@@ -1,0 +1,24 @@
+/accounting	/fr/applications/comptabilite 301!
+/service-companies /fr/applications 301!
+/dashboards /fr/applications/insights 301!
+/human-resources /fr/applications/dokos-hr 301!
+/tiers-lieux /fr/applications/bookings 301!
+/website /fr/applications/builder 301!
+
+/become-a-partner /fr/partners 301!
+/checkout /fr/services 301!
+/jobs /fr/contact 301!
+/pricing /fr/pricing 301!
+/security-and-privacy /fr/securityandprivacy 301!
+/terms-and-conditions /fr/termsandconditions 301!
+/training /fr/services 301!
+
+/inventory /fr/modules/stocks 301!
+/manufacturing /fr/modules/production 301!
+/production-companies /fr/modules/production 301!
+/projects /fr/modules/projects 301!
+/purchasing /fr/modules/achats 301!
+/quality-management /fr/modules/quality 301!
+/selling /fr/modules/selling 301!
+/support /fr/modules/support 301!
+/integrations /fr/modules/integrations 301!

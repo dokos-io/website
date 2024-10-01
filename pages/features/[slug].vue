@@ -5,7 +5,10 @@ const route = useRoute();
 const {
   params: { slug },
 } = useRoute();
-const { locale } = useI18n()
+
+const { t, locale } = useI18n({
+  useScope: 'local'
+})
 
 const localePath = useLocalePath()
 
@@ -27,10 +30,6 @@ if (!feature.value) {
 //   ogDescription: description,
 //   ogTitle: `${title} · Nuxt Agencies`
 // })
-
-const { t } = useI18n({
-  useScope: 'local'
-})
 
 </script>
 
@@ -54,7 +53,7 @@ const { t } = useI18n({
 
     <UPage>
       <UPageBody prose class="prose-lg dark:text-gray-300">
-        <ULandingHero :links="feature.hero.links" orientation="vertical" :ui="{wrapper: 'pt-0 sm:pt-0 md:pt-0'}">
+        <ULandingHero :links="feature.hero.links" orientation="vertical" :ui="{wrapper: 'pt-0 sm:pt-0 md:pt-0'}" v-if="feature.hero">
           <template #headline>
             <UBadge v-if="feature.hero.headline" :color="feature.hero.headline.color || 'sky'" :variant="feature.hero.headline.variant || 'subtle'" size="lg" class="relative rounded-full font-semibold">
               <UIcon v-if="feature.hero.headline.left_icon" :name="feature.hero.headline.left_icon" class="mr-1 w-4 h-4 pointer-events-none" />
@@ -82,7 +81,7 @@ const { t } = useI18n({
           <ContentRenderer v-if="feature && feature.body" :value="feature" />
         </ULandingSection>
 
-        <!-- <ULandingCTA v-bind="feature.bottom_cta" :class="feature.bottom_cta.class"/> -->
+        <ULandingCTA v-bind="feature.bottom_cta" :class="feature.bottom_cta.class" v-if="feature.bottom_cta"/>
       </UPageBody>
     </UPage>
   </UContainer>

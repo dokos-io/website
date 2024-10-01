@@ -6,6 +6,7 @@ navigation:
     title: Comptabilité
     icon: i-uil-balance-scale
     description: Gestion de la comptabilité et des finances
+
 hero:
   title: Simplifiez votre <span class="text-primary">comptabilité</span> avec Dokos
   description: Facilitez la gestion de vos finances avec Dokos. Gérez vos comptes, suivez vos transactions et obtenez des rapports financiers détaillés en quelques clics. Notre solution de comptabilité intégrée vous permet de centraliser et d'automatiser vos processus comptables, tout en offrant une vue claire et en temps réel de votre situation financière.

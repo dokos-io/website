@@ -8,6 +8,10 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
+const sorted_modules = computed(() => {
+  return page.value.modules.items.sort((a, b) => a.title.localeCompare(b.title))
+})
+
 useSeoMeta({
   titleTemplate: '',
   title: page.value.title,
@@ -55,10 +59,16 @@ useSeoMeta({
       </template>
     </ULandingHero>
 
-    <ULandingSection :ui="{wrapper: 'bg-amber-500/10'}">
-      <ULandingGrid >
-        <UPageCard v-for="(item, index) in page.metrics.items" :key="index" v-bind="item" class="col-span-4 row-span-2" :ui="{wrapper: 'ring-0 shadow-none divide-inherit', background: 'bg-inherit'}"/>
-      </ULandingGrid>
+    <ULandingSection>
+      <UCard :ui="{body: {base: 'grid grid-cols-3 gap-4', padding: 'py-10 sm:py-20'}, background: 'bg-yellow-500/10', ring: 'ring-0'}">
+          <div v-for="(item, index) in page.metrics.items" :key="index" class="flex-1">
+            <div class="mb-6 flex">
+              <UIcon :name="item.icon" class="w-10 h-10 flex-shrink-0 text-primary"/>
+            </div>
+            <p class="text-gray-900 dark:text-white text-base font-semibold truncate flex items-center gap-1.5">{{ item.title }}</p>
+            <div class="text-[15px] text-gray-500 dark:text-gray-400 mt-1">{{ item.description }}</div>
+          </div>
+        </UCard>
     </ULandingSection>
 
     <ULandingSection v-for="(section, index) in page.sections" :key="index" :align="section.align"
@@ -76,20 +86,20 @@ useSeoMeta({
     <ULandingSection>
       <ULandingLogos :title="page.integrations.title" :ui="{ images: 'justify-center' }">
           <UIcon v-for="icon in page.integrations.icons" :key="icon" :name="icon"
-            class="w-10 h-10 flex-shrink-0 text-gray-500 dark:text-gray-400" />
-          <NuxtImg v-for="image in page.integrations.images" :key="image" :src="image" class="max-h-10" />
+            class="w-20 h-20 flex-shrink-0 text-gray-500 dark:text-gray-400" />
+          <NuxtImg v-for="image in page.integrations.images" :key="image" :src="image" class="max-h-20" />
         </ULandingLogos>
     </ULandingSection>
 
     <ULandingSection>
       <template #title>
-        <span v-html="page.features.title" />
+        <span v-html="page.modules.title" />
       </template>
       <template #description>
-        <span v-html="page.features.description" />
+        <span v-html="page.modules.description" />
       </template>
       <UPageGrid :ui="{ wrapper: 'sm:grid-cols-3 xl:grid-cols-4' }">
-        <ULandingCard v-for="(item, index) in page.features.items" :key="index" v-bind="item" orientation="vertical" />
+        <ULandingCard v-for="(item, index) in sorted_modules" :key="index" v-bind="item" orientation="vertical" />
       </UPageGrid>
     </ULandingSection>
 

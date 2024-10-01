@@ -1,15 +1,14 @@
 title: Tarifs
-description: Tarifs Dokos Cloud.
+description: Tarifs d'accompagnement
 navigation.icon: i-heroicons-credit-card
 hero:
-  title: Offres d'hébergement sur Dokos Cloud
+  title: Nos offres d'<span class="text-primary">accompagnement</span>
   description: Vous souhaitez que nous hébergions votre site Dokos ? On est là pour vous aider.
   align: center
 plans:
-  - title: Discovery
+  - title: 5 heures
     description: Hébergement seul pour les petites organisations.
-    price:
-      month: 19€
+    price: 550€ HT
     align: top
     features:
       - Hébergement et maintenance
@@ -19,21 +18,19 @@ plans:
       - 1 heure CPU
       - 0.5 GB de base de données
       - 5 GB de stockage
-  - title: Bootstrap
+  - title: 20 heures
     description: Hébergement seul sans support pour les petites organisations.
-    price:
-      month: 49€
+    price: 2000€ HT
+    highlight: true
     align: top
     features:
       - Tous les avantages du forfait Discovery
       - 2 heure CPU
       - 1 GB de base de données
       - 5 GB de stockage
-  - title: Startup
+  - title: 50 heures
     description: Hébergement avec support pour les petites et moyennes organisations.
-    price:
-      month: 99€
-    highlight: true
+    price: 4500€ HT
     align: top
     features:
       - Tous les avantages du forfait Bootstrap
@@ -41,10 +38,9 @@ plans:
       - 4 heure CPU
       - 2 GB de base de données
       - 25 GB de stockage
-  - title: Premium
+  - title: 100 heures
     description: Offre premium pour les équipes plus larges.
-    price:
-      month: 199€
+    price: 8000€ HT
     align: top
     features:
       - Tous les avantages du forfait Startup

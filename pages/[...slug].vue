@@ -4,7 +4,10 @@ const route = useRoute()
 const {
     params: { slug },
 } = useRoute();
-const { locale } = useI18n()
+
+const { t, locale } = useI18n({
+  useScope: 'local'
+})
 
 const { data: page } = await useAsyncData(route.path, () => queryContent(`/${locale.value}/${(slug as string[]).join("/")}` ).findOne())
 if (!page.value) {
@@ -28,10 +31,6 @@ defineOgImage({
     component: 'Saas',
     title: page.value.title,
     description: page.value.description
-})
-
-const { t } = useI18n({
-  useScope: 'local'
 })
 
 const headline = computed(() => findPageHeadline(page.value!))

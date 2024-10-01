@@ -1,13 +1,12 @@
 ---
-title: Comptabilité
-icon: i-uil-balance-scale
-description: Les fonctionnalités comptables détaillées  
-application: Dokos
+title: Ressources Humaines
+icon: ""
+description: ""
+application: Dokos HR
 navigation:
-    title: Comptabilité
-    icon: i-uil-balance-scale
-    description: Les fonctionnalités comptables détaillées
-
+    title: Ressources Humaines
+    icon: ""
+    description: ""
 hero:
   title: Les <span class="text-primary">fonctionnalités comptables</span> détaillées
   description: Dokos est un logiciel puissant, open-source, flexible qui offre une gamme complète de fonctionnalités de comptabilité pour aider les entreprises à gérer leurs finances de manière efficace. 

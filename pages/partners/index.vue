@@ -1,6 +1,9 @@
 <script setup lang="ts">
 
-const { locale } = useI18n()
+const { t, locale } = useI18n({
+  useScope: 'local'
+})
+
 const localePath = useLocalePath()
 
 const { Partners, fetchList } = usePartners()
@@ -17,10 +20,6 @@ const { data: page } = await useAsyncData('partners', () => queryContent(`/${loc
 //   ogDescription: description,
 //   ogTitle: `${title} · Enterprise`
 // })
-
-const { t } = useI18n({
-  useScope: 'local'
-})
 
 await fetchList()
 </script>

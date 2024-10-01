@@ -30,13 +30,13 @@ metrics:
   items:
     - title: + de 100 entreprises nous font confiance
       description: Un logiciel puissant et complet qui remplace ou centralise  toutes vos applications quelque soit votre domaine d’activité
-      icon: i-heroicons-outline-rocket-launch
+      icon: i-heroicons-rocket-launch
     - title: Un support sur mesure
       description: Notre équipe est à votre écoute pour vous offrir un accompagnement personnalisé de qualité pour chacun de vos besoins
-      icon: i-heroicons-outline-rocket-ticket
+      icon: i-heroicons-outline-ticket
     - title: + de 300 membres
       description: Une communauté d'entraide bienveillantes où l'on partage ses questions, ses expériences, ses idées.
-      icon: i-heroicons-outline-rocket-user-group
+      icon: i-heroicons-outline-user-group
 
 
 sections:
@@ -248,85 +248,70 @@ integrations:
     - /home/gocardless.png
 
 
-features:
+modules:
   title: La boîte à outils complète pour <span class="text-primary">tous vos besoins</span>
   description: Transformez votre gestion avec Dokos. Plus de 15 modules essentiels pour optimiser votre entreprise ou associations, quel que soit le secteur.
   items:
     - title: CRM
       description: Gestion de la prospection
       icon: i-carbon-chart-relationship
-      to: https://doc.dokos.io/dokos/crm
-      target: "_blank"
+      to: /fr/modules/crm
     - title: Ventes
       description: Gestion du flux commercial
       icon: i-ep-sell
-      to: https://doc.dokos.io/dokos/ventes
-      target: "_blank"
+      to: /fr/modules/ventes
     - title: Achats
       description: Gestion des achats
       icon: i-icon-park-outline-buy
-      to: https://doc.dokos.io/dokos/achats
-      target: "_blank"
+      to: /fr/modules/achats
     - title: Comptabilité
       description: Saisie de la comptabilité et états financiers
       icon: i-uil-balance-scale
-      to: https://doc.dokos.io/dokos/comptabilite
-      target: "_blank"
+      to: /fr/modules/comptabilite
     - title: Projets
       description: Suivi des projets et des temps
       icon: i-eos-icons-project-outlined
-      to: https://doc.dokos.io/dokos/projets
-      target: "_blank"
+      to: /fr/modules/projets
     - title: Stocks
       description: Gestion des niveaux et des valorisations de stock
       icon: i-vaadin-stock
-      to: https://doc.dokos.io/dokos/stocks
-      target: "_blank"
+      to: /fr/modules/stocks
     - title: Production
       description: De l'achat des matières premières à la création de produits finis
       icon: i-fluent-manufacturer-24-regular
-      to: https://doc.dokos.io/dokos/production
-      target: "_blank"
+      to: /fr/modules/production
     - title: Qualité
       description: Création de processus et suivi de la qualité
       icon: i-carbon-rule-data-quality
-      to: 'https://doc.dokos.io/dokos/qualite'
-      target: "_blank"
+      to: /dokos/fr/modules/qualite
     - title: Support
       description: Outil de gestion de ticket pour le support client
       icon: i-ri-customer-service-2-line
-      to: https://doc.dokos.io/dokos/support
-      target: "_blank"
+      to: /fr/modules/support
     - title: Réservations de ressources
       description: Création de contrats, génération d'abonnements, crédits de réservation et événements
       icon: i-material-symbols-location-on-outline-rounded
-      to: 'https://doc.dokos.io/dokos/lieu'
-      target: "_blank"
+      to: /fr/modules/reservations-de-ressources
     - title: Ressources Humaines
       description: Gestion des congés, notes de frais, recrutement, quarts et présence, performance 
       icon: i-mdi-human-capacity-increase
-      to: https://doc.dokos.io/dokos/hrms
-      target: "_blank"
+      to: /fr/modules/ressources-humaines
     - title: Portail web & e-commerce
       description: Vente de produits/services, réservations de ressources en ligne et création d'un portail client/fournisseur
       icon: i-gg-website
-      to: 'https://doc.dokos.io/dokos/e-commerce'
-      target: "_blank"
+      to: /fr/modules/e-commerce
     - title: OCR
       description: Reconnaissance automatique des factures et notes de frais
       icon: i-mdi-ocr
-      to: https://doc.dokos.io/integrations
-      target: "_blank"
+      to: /fr/modules/ocr
     - title: Paiements
       description: Collecte de paiements en ligne via carte bancaire, prélèvement SEPA, Paypal et autres passerelles de paiements...
       icon: i-ic-twotone-payments
-      to: https://doc.dokos.io/integrations/payments
-      target: "_blank"
+      to: /fr/modules/paiements
     - title: Intégrations
       description: Sauvegarde externalisées, services Google, e-commerce, connecteurs no-code
       icon: i-mdi-connection
-      to: 'https://doc.dokos.io/integrations'
-      target: "_blank"
+      to: /fr/modules/integrations
 
 
 

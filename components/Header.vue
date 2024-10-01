@@ -29,8 +29,8 @@ const links = computed(() => {
     icon: 'i-heroicons-computer-desktop',
     children: modules_links
   }, {
-    label: t('pricing'),
-    to: localePath('/pricing'),
+    label: t('services'),
+    to: localePath('/services'),
     icon: 'i-heroicons-ticket',
   },
   {
@@ -79,7 +79,7 @@ en:
   selling: Selling
   buying: Buying
   documentation: Documentation
-  pricing: Pricing
+  services: Services
   news: News
   badge_label: Project
 fr:
@@ -87,7 +87,7 @@ fr:
   selling: Selling
   buying: Buying
   documentation: Documentation
-  pricing: Tarifs
+  services: Services
   news: Actualités
   badge_label: Projet
 </i18n>

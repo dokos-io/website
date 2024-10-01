@@ -2,10 +2,14 @@
 // import type { application } from '~/types'
 
 const route = useRoute();
+
 const {
   params: { slug },
 } = useRoute();
-const { locale } = useI18n()
+
+const { t, locale } = useI18n({
+  useScope: 'local'
+})
 
 const localePath = useLocalePath()
 
@@ -27,10 +31,6 @@ const description = application.value.head?.description || application.value.des
 //   ogDescription: description,
 //   ogTitle: `${title} · Nuxt Agencies`
 // })
-
-const { t } = useI18n({
-  useScope: 'local'
-})
 
 </script>
 
@@ -54,7 +54,7 @@ const { t } = useI18n({
 
     <UPage>
       <UPageBody prose class="prose-lg dark:text-gray-300">
-        <ULandingHero :links="application.hero.links" orientation="vertical" :ui="{wrapper: 'pt-0 sm:pt-0 md:pt-0'}">
+        <ULandingHero :links="application.hero.links" orientation="vertical" :ui="{wrapper: 'pt-0 sm:pt-0 md:pt-0'}" v-if="application.hero">
           <template #headline>
             <UBadge v-if="application.hero.headline" variant="subtle" size="lg" class="relative rounded-full font-semibold">
               <UIcon v-if="application.hero.headline.left_icon" :name="application.hero.headline.left_icon" class="mr-1 w-4 h-4 pointer-events-none" />
@@ -88,16 +88,16 @@ const { t } = useI18n({
           </template>
         </ULandingHero>
 
-        <ULandingSection v-bind="application.bridge" />
+        <ULandingSection v-bind="application.bridge" v-if="application.bridge"/>
 
         <ULandingSection>
           <ULandingGrid>
-            <ULandingCard v-for="(feat, index) in application.features" :key="index" v-bind="feat" />
+            <ULandingCard v-for="(feat, index) in application.features" :key="index" v-bind="feat" v-if="application.features"/>
           </ULandingGrid>
         </ULandingSection>
 
 
-        <ULandingCTA v-bind="application.bottom_cta" class="bg-sky-600/10 dark:bg-sky-800/10"/>
+        <ULandingCTA v-bind="application.bottom_cta" class="bg-sky-600/10 dark:bg-sky-800/10" v-if="application.bottom_cta"/>
       </UPageBody>
     </UPage>
   </UContainer>

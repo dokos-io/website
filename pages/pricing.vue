@@ -20,20 +20,18 @@ defineOgImage({
   description: page.value.description
 })
 
-const isYearly = ref(false)
 </script>
 
 <template>
   <div v-if="page">
     <UPageHero v-bind="page.hero">
-      <!-- <template #links>
-        <UPricingToggle v-model="isYearly" class="w-48" />
-      </template> -->
+      <template #title>
+        <span v-html="page.hero.title" />
+      </template>
     </UPageHero>
-
     <UContainer>
       <UPricingGrid :ui="{wrapper: 'lg:grid-cols-4'}">
-        <UPricingCard v-for="(plan, index) in page.plans" :key="index" v-bind="plan" :price="isYearly ? plan.price.year : plan.price.month" :cycle="isYearly ? '/year' : '/month'" />
+        <UPricingCard v-for="(plan, index) in page.plans" :key="index" v-bind="plan" />
       </UPricingGrid>
     </UContainer>
 

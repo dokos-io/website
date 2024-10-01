@@ -41,6 +41,8 @@
     "nuxt-og-image": "^2.2.6"
   },
   "devDependencies": {
+    "@iconify-json/flag": "^1.2.0",
+    "@iconify-json/heroicons-outline": "^1.2.0",
     "@nuxt/eslint-config": "^0.5.0",
     "@nuxthq/studio": "^2.0.3",
     "eslint": "^8.57.0",

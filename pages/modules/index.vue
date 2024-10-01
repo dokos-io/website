@@ -1,6 +1,9 @@
 <script setup lang="ts">
 
-const { locale } = useI18n()
+const { t, locale } = useI18n({
+  useScope: 'local'
+})
+
 const localePath = useLocalePath()
 
 const { Modules, fetchList } = useModules()
@@ -30,7 +33,6 @@ await fetchList()
           <UPageCard
             v-for="(module, index) in Modules"
             :key="index"
-            :to="localePath(module._path)"
             :title="module.title"
             :description="module.description"
             :ui="{
@@ -43,9 +45,16 @@ await fetchList()
             <!-- <template #icon>
               <UColorModeAvatar :light="module.logo.light" :dark="module.logo.dark" size="lg" :ui="{ rounded: 'rounded-sm' }" />
             </template> -->
+            <template #header>
+              <UBadge :label="module.application" color="gray" />
+            </template>
 
             <template #footer>
-              <UBadge :label="module.application" color="gray" />
+              <UButton :label="t('go_to_label')" color="white" variant="ghost" :to="module._path">
+                <template #trailing>
+                  <UIcon name="i-heroicons-arrow-right-20-solid" class="w-5 h-5" />
+                </template>
+              </UButton>
             </template>
           </UPageCard>
         </UPageGrid>
@@ -53,3 +62,10 @@ await fetchList()
     </UPage>
   </UContainer>
 </template>
+
+<i18n lang="yaml">
+  en:
+    go_to_label: "Read more"
+  fr:
+    go_to_label: "En savoir plus"
+</i18n>

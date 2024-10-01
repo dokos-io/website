@@ -5,7 +5,10 @@ const route = useRoute();
 const {
   params: { slug },
 } = useRoute();
-const { locale } = useI18n()
+
+const { t, locale } = useI18n({
+  useScope: 'local'
+})
 
 const localePath = useLocalePath()
 
@@ -37,10 +40,6 @@ const links = computed(() => [{
 //   ogDescription: description,
 //   ogTitle: `${title} · Nuxt Agencies`
 // })
-
-const { t } = useI18n({
-  useScope: 'local'
-})
 
 </script>
 

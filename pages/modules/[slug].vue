@@ -5,7 +5,10 @@ const route = useRoute();
 const {
   params: { slug },
 } = useRoute();
-const { locale } = useI18n()
+
+const { t, locale } = useI18n({
+  useScope: 'local'
+})
 
 const localePath = useLocalePath()
 
@@ -27,10 +30,6 @@ if (!module.value) {
 //   ogDescription: description,
 //   ogTitle: `${title} · Nuxt Agencies`
 // })
-
-const { t } = useI18n({
-  useScope: 'local'
-})
 
 </script>
 
@@ -54,7 +53,7 @@ const { t } = useI18n({
 
     <UPage>
       <UPageBody prose class="prose-lg dark:text-gray-300">
-        <ULandingHero :links="module.hero.links" orientation="vertical" :ui="{wrapper: 'pt-0 sm:pt-0 md:pt-0'}">
+        <ULandingHero :links="module.hero.links" orientation="vertical" :ui="{wrapper: 'pt-0 sm:pt-0 md:pt-0'}" v-if="module.hero">
           <template #headline>
             <UBadge v-if="module.hero.headline" :color="module.hero.headline.color || 'green'" :variant="module.hero.headline.variant || 'subtle'" size="lg" class="relative rounded-full font-semibold">
               <UIcon v-if="module.hero.headline.left_icon" :name="module.hero.headline.left_icon" class="mr-1 w-4 h-4 pointer-events-none" />
@@ -78,7 +77,7 @@ const { t } = useI18n({
           </template>
         </ULandingHero>
 
-        <ULandingSection v-for="(feat, index) in module.modules" :key="index" v-bind="feat" :ui="{title: 'mt-2'}">
+        <ULandingSection v-for="(feat, index) in module.features" :key="index" v-bind="feat" :ui="{title: 'mt-2'}" v-if="module.features">
           <template #headline>
             <UBadge v-if="feat.headline" :color="feat.headline.color || 'green'" :variant="feat.headline.variant || 'subtle'" size="lg" class="relative rounded-full font-semibold">
               <UIcon v-if="feat.headline.left_icon" :name="feat.headline.left_icon" class="mr-1 w-4 h-4 pointer-events-none" />
@@ -101,15 +100,15 @@ const { t } = useI18n({
             <Placeholder v-else/>
         </ULandingSection>
 
-        <ULandingSection v-bind="module.bottom_section">
+        <ULandingSection v-bind="module.bottom_section" v-if="module.bottom_section">
           <ULandingGrid>
             <ULandingCard v-for="(feat, index) in module.bottom_section.cards" :key="index" v-bind="feat" />
           </ULandingGrid>
 
-          <UButton v-if="module.plus_button" v-bind="module.plus_button" class="max-w-fit mx-auto"/>
+          <UButton v-bind="module.plus_button" class="max-w-fit mx-auto" v-if="module.plus_button"/>
         </ULandingSection>
 
-        <ULandingCTA v-bind="module.bottom_cta" :class="module.bottom_cta.class"/>
+        <ULandingCTA v-bind="module.bottom_cta" :class="module.bottom_cta.class" v-if="module.bottom_cta"/>
       </UPageBody>
     </UPage>
   </UContainer>

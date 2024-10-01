@@ -1,0 +1,41 @@
+title: Services
+description: Découvrez nos services autour de l'écosystème Dokos
+
+hero:
+  title: Découvrez toutes nos <span class="text-primary">offres</span>
+  description: Petite ou grande entreprise, association ou tiers-lieux, démarrez votre site en autonomie ou accompagné. Nous sommes là pour vous !
+  align: center
+
+
+cards:
+  - title: Je souhaite héberger un site Dokos
+    description: Découvrez notre service d'hébergement Dokos Cloud
+    color: bg-red-500/10
+    button:
+      label: Notre plateforme d'hébergement
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      color: red
+      variant: ghost
+      to: 'https://cloud.dokos.io'
+      target: '_blank'
+  - title: Je souhaite être accompagné
+    description: Découvre notre service d'hébergement Dokos Cloud
+    color: bg-yellow-500/10
+    button:
+      label: Nos offres de support
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      color: yellow
+      variant: ghost
+      to: '/pricing'
+
+faq:
+  class: "max-w-4xl mx-auto"
+  items:
+    - label: Je suis en auto-hébergement, puis-je bénéficier de support ?
+      content: Lorem Ipsum
+    - label: Je souhaiterai être hébergé et accompagné, est-ce possible ?
+      content: Lorem Ipsum
+    - label: Je suis utilisateur de dokos et je souhaiterai modifier / adapter mon offre de support, est-ce possible
+      content: Lorem Ipsum
