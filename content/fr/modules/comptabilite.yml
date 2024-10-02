@@ -24,8 +24,10 @@ hero:
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
   headline:
-    label: Badge
-    color: green
+    label: L'écosystème Dokos
+    color: Sky
+  
+
 
 
 features:
@@ -34,55 +36,55 @@ features:
     align: left
     headline:
       label: Tableaux de bord
-      color: green
+      color: sky
   - title: Un plan comptable flexible et personnalisable
     description: Organisez vos comptes en fonction de vos besoins, en créant des sous-groupes et des grands livres adaptés à la structure de votre entreprise. Vous pouvez facilement ajuster votre arborescence comptable à mesure que votre organisation évolue.
     align: right
     headline:
       label: Plan comptable
-      color: green
+      color: sky
   - title: Un grand livre toujours à jour
     description: Enregistrez toutes vos transactions de manière précise grâce à un système de journaux intuitif. Suivez les revenus et dépenses, automatisez la gestion des paiements différés ou anticipés, et assurez un grand livre toujours à jour.
     align: left
     headline:
       label: Grand livre
-      color: green
+      color: sky
   - title: Une facturation efficace
     description: Créez des factures professionnelles en quelques clics. Suivez facilement les paiements en attente grâce aux notifications automatiques par e-mail ou SMS.<br>Utilisez des modèles d'impression personnalisés pour des factures adaptées à vos besoins.
     align: right
     headline:
       label: Facturation
-      color: green
+      color: sky
   - title: Une comptabilité multidevises
     description: Gérez les transactions internationales sans difficulté. Envoyez des factures et suivez vos dépenses dans plusieurs devises. Notre système convertit automatiquement les montants dans la devise de base, et vous permet de générer des rapports financiers dans diverses monnaies.
     align: left
     headline:
       label: Multidevise
-      color: green
+      color: sky
   - title: Vos flux métier automatisés
     description: Gagnez du temps en automatisant la création de factures pour les abonnements récurrents. Grâce à la fonction Abonnements, vos factures sont générées et envoyées automatiquement, vous permettant de vous concentrer sur d'autres tâches essentielles.
     align: right
     headline:
       label: Automatisation
-      color: green
+      color: sky
   - title: Un rapprochement bancaire simplifié
     description: Synchronisez vos comptes bancaires avec votre comptabilité. Importez facilement vos relevés bancaires et effectuez le rapprochement avec vos transactions pour garantir la cohérence de vos comptes.
     align: left
     headline:
       label: Réconciliation bancaire
-      color: green
+      color: sky
   - title: Des personnalisations sur mesure
     description: Adaptez le logiciel à vos besoins spécifiques. Ajoutez des champs personnalisés, modifiez les formulaires en fonction des rôles des utilisateurs, et créez des modèles d'impression uniques, tout cela sans avoir besoin de coder.
     align: right
     headline:
       label: Personnalisations
-      color: green
+      color: sky
 
 bottom_section:
   title: "La comptabilité avec Dokos, c’est aussi :"
   cards:
     - title: Un accès pour votre expert-comptable
-      description: Ajoutez facilement votre expert-comptable pour qu'il accède directement à vos données financières et les valide sans effort supplémentaire.
+      description: Ajoutez facilement votre expert-comptable pour qu'il accède directement à vos données financières et les valide sans frais supplémentaire.
       icon: i-heroicons-outline-calculator
       class: "col-span-4 row-span-3"
     - title: Des écritures de journal
