@@ -6,3 +6,112 @@ navigation:
     title: Ventes
     icon: i-ep-sell
     description: Gestion du flux commercial
+
+hero:
+  title: Accélérez vos ventes avec <span class="text-primary">simplicité et transparence</span>
+  description: Dokos offre une solution puissante pour automatiser et optimiser votre processus de vente. Que vous soyez une PME ou une grande organisation, Dokos vous permet de gérer chaque étape de la vente avec efficacité. Conçue pour des entreprises modernes et responsables, notre plateforme vous aide à atteindre vos objectifs commerciaux tout en favorisant une gestion éthique et collaborative.
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: Sky
+  
+
+
+
+features:
+  - title: Une gestion simplifiée de votre pipeline de vente
+    description: Dokos vous permet de suivre vos prospects et opportunités de manière fluide. Grâce à son CRM intégré, gardez une vision claire de chaque interaction client, automatisez les relances et assurez un suivi rigoureux à chaque étape du processus de vente.
+    align: right
+    headline:
+      label: CRM
+      color: sky
+  - title: Création de devis et gestion des commandes
+    description: Créez des devis professionnels en quelques clics et convertissez-les facilement en commandes. Profitez de modèles personnalisables pour vos documents commerciaux et assurez-vous que vos stocks sont toujours à jour en temps réel, afin de répondre rapidement à vos clients.
+    align: left
+    headline:
+      label: Devis
+      color: sky
+  - title: Automatisation du flux de vente
+    description: Générez automatiquement des factures à partir des commandes confirmées. Avec une gestion multi-devises, Dokos facilite vos opérations à l'international, tout en intégrant des solutions de paiement en ligne pour accélérer la collecte de vos paiements.
+    align: right
+    headline:
+      label: Factures
+      color: sky
+  - title: Gestion des livraisons et expédition
+    description: Simplifiez la préparation et l’envoi des commandes grâce à des bons de livraison générés automatiquement. Via des intégrations communaitaires, Dokos vous permet de suivre en temps réel l’état des expéditions, tout en optimisant la gestion de vos entrepôts pour une meilleure efficacité logistique.
+    align: left
+    headline:
+      label: Livraison
+      color: sky
+  - title: Rapports et Analyses
+    description: Obtenez des rapports complets et précis sur vos ventes. Analysez les performances de votre équipe, identifiez les tendances de marché et prenez des décisions stratégiques grâce aux données en temps réel disponibles sur le tableau de bord Dokos.
+    align: right
+    headline:
+      label: Rapports
+      color: sky
+  - title: Gestion des abonnements
+    description: Automatisez la gestion de vos abonnements avec des factures récurrentes. Dokos vous permet de suivre les renouvellements, les changements de plan et les annulations avec facilité, garantissant une expérience client fluide et continue.
+    align: left
+    headline:
+      label: Abonnement
+      color: sky
+  - title: Des personnalisations sur mesure
+    description: Adaptez le logiciel à vos besoins spécifiques. Ajoutez des champs personnalisés, modifiez les formulaires en fonction des rôles des utilisateurs, et créez des modèles d'impression uniques, tout cela sans avoir besoin de coder.
+    align: right
+    headline:
+      label: Personnalisations
+      color: sky
+
+bottom_section:
+  title: "La vente avec Dokos, c’est aussi :"
+  cards:
+    - title: Un portail Client
+      description: Grâce à Dokos, offrez à vos clients un espace dédié où ils peuvent consulter leurs devis, suivre leurs commandes et bons de livraison, et bien plus encore. Cette autonomie réduit les sollicitations, vous permettant de vous concentrer sur l'essentiel.
+      icon: material-symbols:settings-account-box-rounded
+      class: "col-span-4 row-span-3"
+    - title: Des startégies tarifaires
+      description: Avec Dokos, adaptez vos prix à chaque situation grâce à des fonctionnalités flexibles. Utilisez des listes de prix personnalisées, mettez en place des promotions ciblées, proposez des codes promo attractifs et fidélisez vos clients avec des programmes de récompenses. Offrez des tarifs adaptés à vos clients tout en optimisant vos marges.
+      icon: icon-park-outline:target
+      class: "col-span-4 row-span-3"
+    - title: Une Intégrations aux plateformes E-commerce
+      description: Grâce aux applications communautaires, Dokos s'intègre parfaitement avec des plateformes comme WooCommerce, Amazon, et bien d'autres. Synchronisez vos produits, commandes et stocks en temps réel pour centraliser toutes vos opérations de vente sur un seul outil. Une solution complète et évolutive pour optimiser votre activité e-commerce.
+      icon: ic:round-shopping-basket
+      class: "col-span-4 row-span-3"
+
+plus_button:
+  label: Découvrir toutes nos fonctionnalités
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /features
+
+bottom_cta:
+  title: Boostez vos ventes avec Dokos.
+  description: Dokos vous offre une gestion des ventes transparente et respectueuse de vos valeurs. Conçu pour s'adapter à vos besoins, il favorise la collaboration et l'innovation tout en garantissant la souveraineté de vos données. Reprenez le contrôle de vos processus de vente avec une solution éthique et performante."
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true   
