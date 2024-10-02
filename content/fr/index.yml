@@ -42,7 +42,8 @@ metrics:
 sections:
   - title: Une <span class="text-primary">version française</span> d'ERPNext
     description: Dokos est un <i>fork</i> d'ERPNext qui a pour objectif d'être mieux adapté aux spécificités et habitudes françaises et européennes
-    image: ""
+    image: "/home/dokos-dashboard.png"
+    image_bg_color: "bg-sky-600"
     id: enterprise
     align: left
     features:
@@ -55,18 +56,19 @@ sections:
       - name: Une liberté éditoriale
         description: Dokos suit les évolutions d'ERPNext mais dispose d'une identité propre. Certaines fonctionnalités ne sont pas conservées et d'autres sont disponibles uniquement dans Dokos
         icon: i-material-symbols-editor-choice-outline-rounded
-    links:
-      - label: Comparaison avec ERPNext
-        to: https://doc.dokos.io/dokos/comparaison-erpnext
-        color: gray
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
-        target: _blank
+    # links:
+    #   - label: Comparaison avec ERPNext
+    #     to: https://doc.dokos.io/dokos/comparaison-erpnext
+    #     color: gray
+    #     icon: i-heroicons-arrow-right-20-solid
+    #     trailing: true
+    #     size: md
+    #     class: ml-8
+    #     target: _blank
   - title: Un <span class="text-primary">logiciel d'entreprise</span> puissant
     description: "Dokos est adapté à tout type d'entreprises, de la PME à la multinationale"
-    image: ""
+    image: "/home/workflow.png"
+    image_bg_color: "bg-teal-600"
     id: enterprise
     align: right
     features:

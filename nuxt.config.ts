@@ -21,7 +21,8 @@ export default defineNuxtConfig({
     }
   },
   ui: {
-    icons: ['heroicons', 'simple-icons', 'ic', 'mdi', 'icon-park-outline', 'octicon', 'carbon', 'ep', 'uil', 'eos-icons', 'vaadin', 'fluent', 'ri', 'material-symbols', 'gg', 'ic', 'circle-flags', 'iconoir', 'logos', 'cib', 'ph']
+    icons: ['heroicons', 'simple-icons', 'ic', 'mdi', 'icon-park-outline', 'octicon', 'carbon', 'ep', 'uil', 'eos-icons', 'vaadin', 'fluent', 'ri', 'material-symbols', 'gg', 'ic', 'circle-flags', 'iconoir', 'logos', 'cib', 'ph'],
+    safelistColors: ['primary', 'orange', 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'amber', 'yellow', 'lime', 'green', 'emerald', 'teal', 'cyan', 'sky', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink', 'rose']
   },
   routeRules: {
     '/api/search.json': { prerender: true },
@@ -30,7 +31,8 @@ export default defineNuxtConfig({
     '/': { redirect: '/fr', prerender: true },
   },
   devtools: {
-    enabled: true
+    enabled: true,
+    componentInspector: false,
   },
   i18n: {
     vueI18n: './i18n.config.ts',

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-const { t, locale } = useI18n({
+const { t } = useI18n({
   useScope: 'local'
 })
 
@@ -8,7 +8,7 @@ const localePath = useLocalePath()
 
 const { Modules, fetchList } = useModules()
 
-const { data: page } = await useAsyncData('modules', () => queryContent(`/${locale.value}/modules`).findOne())
+// const { data: page } = await useAsyncData('modules', () => queryContent(`/${locale.value}/modules`).findOne())
 
 // const title = page.value.app_name
 // const description = page.value.link
@@ -20,52 +20,55 @@ const { data: page } = await useAsyncData('modules', () => queryContent(`/${loca
 //   ogTitle: `${title} · Enterprise`
 // })
 
+const get_icon_bg = (color) => {
+  return color ? `bg-${color}/5` : 'bg-gray-900/5'
+}
+
+const get_icon_color = (color) => {
+  return color ? `text-${color}` : 'text-gray-900'
+}
+
 await fetchList()
 </script>
 
 <template>
-  <UContainer>
-    <UPageHero v-bind="page" />
-
-    <UPage id="smooth" class="pt-20 -mt-20">
-      <UPageBody>
+  <UPage id="smooth" class="pt-20 -mt-20">
+    <ULandingHero :title="t('hero_title')" :ui="{ wrapper: 'bg-gradient-to-b from-yellow-400/10 from-90%', title: 'text-amber-500' }">
+      <template #description>
+        <span v-html="t('hero_description')"></span>
+      </template>
+    </ULandingHero>
+    <UPageBody>
+      <UContainer>
         <UPageGrid>
-          <UPageCard
-            v-for="(module, index) in Modules"
-            :key="index"
-            :title="module.title"
-            :description="module.description"
+          <UPageCard v-for="(module, index) in Modules" :key="index" v-bind="module" :to="localePath(module._path)"
             :ui="{
-              divide: '',
               footer: { padding: 'pt-0' },
-              title: 'text-lg',
-              description: 'line-clamp-3'
-            }"
-          >
-            <!-- <template #icon>
-              <UColorModeAvatar :light="module.logo.light" :dark="module.logo.dark" size="lg" :ui="{ rounded: 'rounded-sm' }" />
-            </template> -->
+            }">
+            <template #icon>
+              <span class="inline-flex p-1 rounded-lg" :class="get_icon_bg(module.icon_color)">
+                <UIcon :name="module.icon" class="w-10 h-10 flex-shrink-0" :class="get_icon_color(module.icon_color)"/>
+              </span>
+            </template>
+
             <template #header>
               <UBadge :label="module.application" color="gray" />
             </template>
 
-            <template #footer>
-              <UButton :label="t('go_to_label')" color="white" variant="ghost" :to="module._path">
-                <template #trailing>
-                  <UIcon name="i-heroicons-arrow-right-20-solid" class="w-5 h-5" />
-                </template>
-              </UButton>
-            </template>
           </UPageCard>
         </UPageGrid>
-      </UPageBody>
-    </UPage>
-  </UContainer>
+      </UContainer>
+    </UPageBody>
+  </UPage>
 </template>
 
 <i18n lang="yaml">
   en:
     go_to_label: "Read more"
+    hero_title: "Discover all available modules"
+    hero_description: Our ecosystem is composed of a set of modules that can be deployed on your Dokos site
   fr:
     go_to_label: "En savoir plus"
+    hero_title: "Découvrez les modules disponibles"
+    hero_description: "Notre écosystème est constitué d'un ensemble de modules déployables sur votre site Dokos"
 </i18n>

@@ -2,7 +2,9 @@ title: Achats
 icon: i-icon-park-outline-buy
 description: Gestion des achats
 application: Dokos
+icon_color: 'sky-900'
+
 navigation:
-    title: Ventes
+    title: Achats
     icon: i-icon-park-outline-buy
     description: Gestion des achats
