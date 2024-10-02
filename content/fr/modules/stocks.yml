@@ -1,6 +1,6 @@
 title: Stocks
 icon: i-vaadin-stock
-description: Gestion des niveaux et des valorisations de stock
+description: Maîtrisez votre inventaire pour éviter les ruptures et les excédents.
 application: Dokos
 navigation:
     title: Stocks
