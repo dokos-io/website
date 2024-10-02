@@ -1,7 +1,7 @@
 ---
 title: Achats
 icon: ''
-description: ''
+description: Optimisez vos achats pour des approvisionnements sans faille.
 application: Dokos
 navigation:
   title: Achats

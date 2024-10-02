@@ -1,7 +1,7 @@
 ---
 title: Comptabilité
 icon: i-uil-balance-scale
-description: Les fonctionnalités comptables détaillées
+description: Une comptabilité intégrée pour une maîtrise totale de vos finances.
 application: Dokos
 navigation:
   title: Comptabilité

@@ -1,7 +1,7 @@
 ---
 title: Ventes
 icon: ''
-description: ''
+description: Transformez vos leads en clients fidèles avec des outils de vente performants.
 application: Dokos
 navigation:
   title: Ventes
