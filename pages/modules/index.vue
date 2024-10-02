@@ -20,14 +20,6 @@ const { Modules, fetchList } = useModules()
 //   ogTitle: `${title} · Enterprise`
 // })
 
-const get_icon_bg = (color) => {
-  return color ? `bg-${color}/5` : 'bg-gray-900/5'
-}
-
-const get_icon_color = (color) => {
-  return color ? `text-${color}` : 'text-gray-900'
-}
-
 await fetchList()
 </script>
 
@@ -46,8 +38,8 @@ await fetchList()
               footer: { padding: 'pt-0' },
             }">
             <template #icon>
-              <span class="inline-flex p-1 rounded-lg" :class="get_icon_bg(module.icon_color)">
-                <UIcon :name="module.icon" class="w-10 h-10 flex-shrink-0" :class="get_icon_color(module.icon_color)"/>
+              <span class="inline-flex p-1 rounded-lg bg-amber-600/5">
+                <UIcon :name="module.icon" class="w-10 h-10 flex-shrink-0 bg-amber-600"/>
               </span>
             </template>
 
