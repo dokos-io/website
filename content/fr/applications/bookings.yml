@@ -1,7 +1,13 @@
-title: Frappe Builder
+title: Bookings
 link: "https://frappe.io/builder"
 author: Frappe Technologies
 description: L'outil ultime de création de sites web no-code
+
+navigation:
+  title: Bookings
+  description: L'outil ultime de création de sites web no-code
+  icon: /frappe/bookings_logo.svg
+
 logo:
   light: /frappe/bookings_logo.svg
   dark: /frappe/bookings_logo.svg

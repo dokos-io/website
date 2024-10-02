@@ -8,11 +8,19 @@ const { t, locale } = useI18n({
   useScope: 'local'
 })
 
-const { data: nav } = await useAsyncData('navigation', () => fetchContentNavigation(queryContent(`/${locale.value}/modules`)), {
-    watch: [locale]
-  })
+const modulesContentQuery = queryContent(`/${locale.value}/modules`)
+const { data: modules_nav } = await useAsyncData('navigation', () => fetchContentNavigation(modulesContentQuery), {
+  watch: [locale]
+})
 
-const modules = nav.value?.find(item => item._path === `/${locale.value}`)?.children?.find(item => item._path === `/${locale.value}/modules`)?.children
+const modules = modules_nav.value?.find(item => item._path === `/${locale.value}`)?.children?.find(item => item._path === `/${locale.value}/modules`)?.children
+
+const appsContentQuery = queryContent(`/${locale.value}/applications`)
+const { data: apps_nav } = await useAsyncData('navigation', () => fetchContentNavigation(appsContentQuery), {
+  watch: [locale]
+})
+
+const applications = apps_nav.value?.find(item => item._path === `/${locale.value}`)?.children?.find(item => item._path === `/${locale.value}/applications`)?.children
 
 const modules_links = modules?.map(feat => {
   return {
@@ -23,27 +31,42 @@ const modules_links = modules?.map(feat => {
   }
 })
 
-const links = computed(() => {
-  return [{
-    label: t('features'),
-    icon: 'i-heroicons-computer-desktop',
-    children: modules_links
-  }, {
-    label: t('services'),
-    to: localePath('/services'),
-    icon: 'i-heroicons-ticket',
-  },
-  {
-    label: t('news'),
-    to: localePath('/blog'),
-    icon: 'i-heroicons-newspaper',
-  },
-  {
-    label: t('documentation'),
-    to: 'https://doc.dokos.io',
-    icon: 'i-heroicons-book-open',
-    target: "_blank"
+const application_links = applications?.map(app => {
+  return {
+    label: app.title,
+    to: app._path,
+    icon: app.icon,
+    description: app.description
   }
+})
+
+const links = computed(() => {
+  return [
+    {
+      label: t('applications'),
+      icon: 'i-heroicons-computer-desktop',
+      children: application_links
+    },
+    {
+      label: t('features'),
+      icon: 'i-heroicons-computer-desktop',
+      children: modules_links
+    }, {
+      label: t('services'),
+      to: localePath('/services'),
+      icon: 'i-heroicons-ticket',
+    },
+    {
+      label: t('news'),
+      to: localePath('/blog'),
+      icon: 'i-heroicons-newspaper',
+    },
+    {
+      label: t('documentation'),
+      to: 'https://doc.dokos.io',
+      icon: 'i-heroicons-book-open',
+      target: "_blank"
+    }
   ]
 });
 
@@ -57,7 +80,9 @@ const links = computed(() => {
     </template>
 
     <template #center>
-      <UHeaderLinks :links="links" :ui="{ default: { popover: { popper: { strategy: 'absolute' }, ui: { width: 'w-[64rem]' } } } }" class="hidden lg:flex" />
+      <UHeaderLinks :links="links"
+        :ui="{ default: { popover: { popper: { strategy: 'absolute' }, ui: { width: 'w-[64rem]' } } } }"
+        class="hidden lg:flex" />
     </template>
 
     <template #panel>
@@ -65,10 +90,11 @@ const links = computed(() => {
     </template>
 
     <template #right>
-      <LangSwitcher v-if='!route.matched.some(p => p.path.includes("/blog/:slug()"))'/>
+      <LangSwitcher v-if='!route.matched.some(p => p.path.includes("/blog/:slug()"))' />
       <UColorModeButton size="sm" />
 
-      <UButton to="https://gitlab.com/dokos" target="_blank" icon="i-simple-icons-gitlab" aria-label="Gitlab" color="gray" variant="ghost" />
+      <UButton to="https://gitlab.com/dokos" target="_blank" icon="i-simple-icons-gitlab" aria-label="Gitlab"
+        color="gray" variant="ghost" />
     </template>
   </UHeader>
 </template>
@@ -82,6 +108,7 @@ en:
   services: Services
   news: News
   badge_label: Project
+  applications: Applications
 fr:
   features: Fonctionnalités
   selling: Selling
@@ -90,4 +117,5 @@ fr:
   services: Services
   news: Actualités
   badge_label: Projet
+  applications: Applications
 </i18n>

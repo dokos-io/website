@@ -53,7 +53,7 @@ if (!module.value) {
             :variant="module.hero.headline.variant || 'subtle'" size="lg" class="relative rounded-full font-semibold">
             <UIcon v-if="module.hero.headline.left_icon" :name="module.hero.headline.left_icon"
               class="mr-1 w-4 h-4 pointer-events-none" />
-            <NuxtLink :to="module.hero.headline.to" target="_blank" class="focus:outline-none" tabindex="-1">
+            <NuxtLink :to="module.hero.headline.to" :target="module.hero.headline.target || '_self'" class="focus:outline-none" tabindex="-1">
               <span class="absolute inset-0" aria-hidden="true" />
             </NuxtLink>
 
@@ -96,7 +96,7 @@ if (!module.value) {
 
       <ULandingSection v-bind="module.bottom_section" v-if="module.bottom_section">
         <ULandingGrid>
-          <ULandingCard v-for="(feat, index) in module.bottom_section.cards" :key="index" v-bind="feat" />
+          <ULandingCard v-for="(feat, index) in module.bottom_section.cards" :key="index" v-bind="feat"/>
         </ULandingGrid>
 
         <UButton v-bind="module.plus_button" class="max-w-fit mx-auto" v-if="module.plus_button" />

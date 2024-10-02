@@ -2,9 +2,16 @@ title: CRM
 link: "https://frappe.io/builder"
 author: Frappe Technologies
 description: L'outil ultime de création de sites web no-code
+
+navigation:
+  title: CRM
+  description: L'outil ultime de création de sites web no-code
+  icon: /frappe/crm.svg
+
 logo:
   light: /frappe/crm.svg
   dark: /frappe/crm.svg
+
 hero:
   title: "<span class='text-primary'>Frappe Builder</span> : l'outil ultime de création de sites web no-code"
   image: ""

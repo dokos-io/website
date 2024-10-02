@@ -2,9 +2,16 @@ title: Frappe Builder
 link: "https://frappe.io/builder"
 author: Frappe Technologies
 description: L'outil ultime de création de sites web no-code
+
+navigation:
+  title: Insights
+  description: L'outil ultime de création de sites web no-code
+  icon: /frappe/insights.svg
+
 logo:
   light: /frappe/insights.svg
   dark: /frappe/insights.svg
+
 hero:
   title: "<span class='text-primary'>Frappe Builder</span> : l'outil ultime de création de sites web no-code"
   image: ""

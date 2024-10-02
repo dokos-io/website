@@ -2,9 +2,16 @@ title: Frappe Builder
 link: "https://frappe.io/builder"
 author: Frappe Technologies
 description: L'outil ultime de création de sites web no-code
+
+navigation:
+  title: Webshop
+  description: L'outil ultime de création de sites web no-code
+  icon: /frappe/webshop_logo.svg
+
 logo:
   light: /frappe/webshop_logo.svg
   dark: /frappe/webshop_logo.svg
+
 hero:
   title: "<span class='text-primary'>Frappe Builder</span> : l'outil ultime de création de sites web no-code"
   image: ""

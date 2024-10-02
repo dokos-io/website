@@ -2,9 +2,16 @@ title: Frappe Builder
 link: "https://frappe.io/builder"
 author: Frappe Technologies
 description: L'outil ultime de création de sites web no-code
+
+navigation:
+  title: Dokos RH
+  description: L'outil ultime de création de sites web no-code
+  icon: /frappe/hrms_logo.svg
+
 logo:
   light: /frappe/hrms_logo.svg
   dark: /frappe/hrms_logo.svg
+
 hero:
   title: "<span class='text-primary'>Frappe Builder</span> : l'outil ultime de création de sites web no-code"
   image: ""

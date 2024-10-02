@@ -127,3 +127,44 @@ Install [Renovate GitHub app](https://github.com/apps/renovate/installations/sel
 
 Toutes les classes Tailwing CSS peuvent être utilisée.
 Par exemple pour mettre le texte en gras: https://tailwindcss.com/docs/font-weight
+
+
+## Syntaxe MDC
+
+**Exemples**
+
+1. Callout centré
+::div
+  ::callout
+  ---
+  color: "amber"
+  icon: "i-heroicons-light-bulb"
+  to: "https://nuxt.com"
+  target: "_blank"
+  class: max-w-52 mx-auto
+  ---
+  Hello world
+  ::
+::
+
+
+2. Tabs avec et sans HTML
+::tabs
+  ::div{label=Code icon=i-heroicons-code-bracket-square}
+  <span class="text-primary">Hello</span>
+  ::
+
+  ::div
+  ---
+  label: Preview
+  icon: i-heroicons-magnifying-glass-circle
+  ---
+  > World
+  ::
+::
+
+
+3. Bouton centré
+::div{class="text-center"}
+  <UButton color="primary" variant="solid">Button</UButton>
+::
