@@ -95,7 +95,7 @@ plus_button:
   icon: i-heroicons-outline-plus-circle
   size: lg
   color: sky
-  to: /features
+  to: /features/ventes
 
 bottom_cta:
   title: Boostez vos ventes avec Dokos.

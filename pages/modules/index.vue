@@ -8,7 +8,6 @@ const localePath = useLocalePath()
 
 const { Modules, fetchList } = useModules()
 
-// const { data: page } = await useAsyncData('modules', () => queryContent(`/${locale.value}/modules`).findOne())
 
 // const title = page.value.app_name
 // const description = page.value.link

@@ -101,7 +101,7 @@ plus_button:
   icon: i-heroicons-outline-plus-circle
   size: lg
   color: sky
-  to: /features
+  to: /features/comptabilite
 
 bottom_cta:
   title: Avec Dokos, la comptabilité devient un jeu d'enfant. 

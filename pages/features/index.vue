@@ -1,14 +1,12 @@
 <script setup lang="ts">
 
-const { t, locale } = useI18n({
+const { t } = useI18n({
   useScope: 'local'
 })
 
 const localePath = useLocalePath()
 
 const { Features, fetchList } = useFeatures()
-
-const { data: page } = await useAsyncData('features', () => queryContent(`/${locale.value}/features`).findOne())
 
 // const title = page.value.app_name
 // const description = page.value.link
