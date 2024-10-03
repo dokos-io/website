@@ -25,7 +25,9 @@ hero:
       trailing: true
   headline:
     label: L'écosystème Dokos
-    color: Sky
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
   
 
 
