@@ -95,7 +95,7 @@ if (!module.value) {
       </ULandingSection>
 
       <ULandingSection v-bind="module.bottom_section">
-        <ULandingGrid v-if="module.bottom_section.cards">
+        <ULandingGrid v-if="module.bottom_section?.cards">
           <ULandingCard v-for="(feat, index) in module.bottom_section.cards" :key="index" v-bind="feat"/>
         </ULandingGrid>
 
