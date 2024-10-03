@@ -3,12 +3,10 @@ title: Ventes
 icon: ''
 description: Transformez vos leads en clients fidèles avec des outils de vente performants.
 application: Dokos
-
 navigation:
   title: Ventes
   icon: ''
   description: ''
-
 hero:
   title: Les <span class="text-primary">fonctionnalités de vente</span> détaillées
   description: " Dokos est une solution de gestion des ventes open-source, éthique et entièrement libre, conçue pour répondre aux besoins des entreprises modernes tout en respectant vos valeurs. Découvrez une suite complète de fonctionnalités modulaires, personnalisables et interconnectées pour optimiser chaque étape de votre cycle de vente :\_"

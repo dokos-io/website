@@ -5,4 +5,99 @@ application: Dokos
 navigation:
     title: Production
     icon: i-fluent-manufacturer-24-regular
-    description: De l'achat des matières premières à la création de produits finis
+    description: Optimisez de l'achat des matières premières à la création de produits finis
+
+hero:
+  title: Pilotez avec précision votre <span class="text-primary">production</span> pour une efficacité maximale.
+  description: Optimisez vos processus, réduisez les coûts et améliorez la qualité avec Dokos
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
+  
+
+
+
+features:
+  - title: Optimisez Votre Production
+    description: Nos outils de gestion des articles et de création de nomenclatures détaillées, vous permet de définir précisément les composants nécessaires pour chaque produit, assurant ainsi une transparence totale dans vos processus. La flexibilité du logiciel vous permet également de gérer facilement les différentes variantes de produits, en adaptant rapidement les nomenclatures et les coûts associés à chaque version.
+    align: left
+    headline:
+      label: Gestion des articles et Nomenclature
+      color: sky
+  - title: Une Planification Efficace
+    description: Créez des ordres de fabrication clairs pour chaque projet, tout en vous basant sur des prévisions de vente précises. Evitez les surplus et les pénuries, tout en respectant des pratiques de production durables et responsables.
+    align: right
+    headline:
+      label: Demande de Production et Plannification
+      color: sky
+  - title: Un suivi des Opérations en Temps Réel
+    description: Le suivi des opérations de production est simplifié grâce à un tableau de bord dynamique qui vous offre une vue d'ensemble de l'avancement de chaque ordre de fabrication. Vous pouvez enregistrer les temps consacrés à chaque étape de production, ce qui vous aide à maximiser l’efficacité de vos processus et à identifier facilement les axes d'amélioration.
+    align: left
+    headline:
+      label: Suivi des Opérations de Production
+      color: sky
+  - title: Un contrôle de la Qualité
+    description: La qualité est au cœur de notre approche. Dokos intègre des contrôles qualité à chaque phase de production, vous permettant de garantir des produits conformes. Avec des rapports détaillés sur les résultats des contrôles, vous pouvez rapidement détecter les anomalies et optimiser vos processus.
+    align: right
+    headline:
+      label: Qualité
+      color: sky
+  - title: Une Gestion Optimale des Stocks
+    description: Bénéficiez d'un suivi en temps réel des niveaux de matières premières et de produits finis. Vous pouvez organiser efficacement vos stocks et optimiser les mouvements entre entrepôts. Vous pouvez également évaluer les coûts de production en intégrant les matières premières, la main-d'œuvre et les frais généraux, ce qui facilite une gestion budgétaire éclairée et responsable.
+    align: left
+    headline:
+      label: Gestion de Stock
+      color: sky
+  - title: Des Rapports Personnalisés et Analyses
+    description: Générez avec Dokos des rapports personnalisés vous permettant de prendre des décisions éclairées, basées sur des données précises. En analysant les tendances, vous identifiez les opportunités d’amélioration pour rester compétitif sur le marché.
+    align: right
+    headline:
+      label: Rapports
+      color: sky
+  - title: Pourquoi Choisir Dokos ?
+    description: Choisir Dokos, c’est opter pour une solution open-source qui favorise la transparence et l’innovation, tout en soutenant des pratiques éthiques. Nous croyons fermement qu’une gestion responsable est non seulement bénéfique pour votre entreprise, mais aussi pour la communauté et l’environnement. En rejoignant notre communauté dynamique, vous avez accès à un soutien précieux et à un partage de connaissances inestimable.
+    align: left
+    headline:
+      label: Un choix éthique
+      color: sky
+
+
+plus_button:
+  label: Découvrir toutes nos fonctionnalités
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /features/comptabilite
+
+bottom_cta:
+  title: Avec Dokos, révolutionnez la gestion de votre production.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
