@@ -93,7 +93,7 @@ plus_button:
   icon: i-heroicons-outline-plus-circle
   size: lg
   color: sky
-  to: /features/comptabilite
+  to: /features/achats
 
 bottom_cta:
   title: Maîtrisez chaque étape de vos achats avec Dokos.
