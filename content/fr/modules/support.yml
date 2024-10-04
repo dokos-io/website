@@ -5,4 +5,103 @@ application: Dokos / Frappe Helpdesk
 navigation:
     title: Support
     icon: i-ri-customer-service-2-line
-    description: Outil de gestion de ticket pour le support client
+    description: Une solution complète pour la gestion du support client.
+
+hero:
+  title: Votre <span class="text-primary">solution complète</span>  pour la gestion du support client.
+  description: Gérez efficacement toutes les intéractions avec vos clients grâce à notre module de support intégré. Que vous soyez une petite entreprise ou une grande organisation, notre logiciel s'adapte à vos besoins pour améliorer la satisfaction client et optimiser la résolution des demandes.
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
+  
+
+
+
+features:
+  - title: Un suivi des tickets et gestion des requêtes
+    description: Transformez chaque interaction en opportunité de fournir une réponse rapide et précise. Grâce à un tableau de bord centralisé, vous avez une vue d’ensemble de toutes les requêtes clients en cours. Organisez, priorisez, et suivez les tickets jusqu'à leur clôture, tout en assurant la transparence au sein de votre équipe.Suivi des statuts de tickets. Priorisation automatique des urgences. Notifications en temps réel pour garder le contrôle
+    align: left
+    headline:
+      label: Tickets
+      color: sky
+  - title: Une base de connaissances centralisée
+    description: Créez et gérez une base de données de solutions fréquemment utilisées, accessible à votre équipe et à vos clients. Cette documentation permet de réduire les sollicitations répétitives, tout en offrant des réponses immédiates aux questions courantes. Articles facilement accessibles. Organisation par catégories et tags. Système de recherche intelligent pour des résultats rapides.
+    align: right
+    headline:
+      label: Base de connaissances/ Documentation
+      color: sky
+  - title:  Automatisation et SLA (Accords de Niveau de Service)
+    description: Automatisez le processus de résolution des tickets avec des règles prédéfinies, des workflows personnalisés et des accords de niveau de service (SLA) pour garantir des réponses dans les délais impartis. Déclencheurs d’automatisation pour les étapes clés. Workflows adaptables à vos besoins spécifiques. Respect automatique des SLA pour maintenir la satisfaction client.
+    align: left
+    headline:
+      label: Automatisation
+      color: sky
+  - title: Une communication multicanale
+    description: Gérez toutes les demandes clients, qu'elles proviennent d'e-mails, de réseaux sociaux ou de votre portail en ligne, sur une seule et même interface. Ne manquez plus aucune question ou demande urgente. Intégration des principaux canaux de communication. Suivi centralisé de toutes les interactions. Historique complet des échanges clients
+    align: right
+    headline:
+      label: Multicanale
+      color: sky
+  - title: Des rapports et analyse des performances
+    description: Accédez à des rapports détaillés sur les performances de votre service client. Identifiez les points à améliorer, suivez la satisfaction des clients, et optimisez vos processus en continu grâce aux données. Rapports personnalisables. Statistiques en temps réel. Suivi des performances des agents et du temps de résolution
+    align: left
+    headline:
+      label: Rapports
+      color: sky
+
+bottom_section:
+  title: "Un système robuste, évolutif et prêt à l'emploi"
+  cards:
+    - title: Facile à installer
+      description: Prenez le contrôle de votre service support en quelques minutes.
+      icon: tdesign:tools
+      class: "col-span-4 row-span-3"
+    - title: Personnalisation complète
+      description: Adaptez chaque aspect du module pour répondre aux besoins spécifiques de votre entreprise.
+      icon: ic:baseline-manage-accounts
+      class: "col-span-4 row-span-3"
+    - title: Support technique dédié
+      description: Nous sommes là pour vous aider à tirer le meilleur parti de notre solution.
+      icon: hugeicons:customer-support
+      class: "col-span-4 row-span-3"
+
+plus_button:
+  label: Découvrir toutes nos fonctionnalités
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /features/comptabilite
+
+bottom_cta:
+  title: Essayez Dokos dès aujourd’hui !
+  description: Simplifiez votre service client et améliorez vos processus avec une solution conçue pour évoluer avec vous.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
