@@ -5,4 +5,121 @@ application: Dokos
 navigation:
     title: Projets
     icon: i-eos-icons-project-outlined
-    description: Suivi des projets et des temps
+    description: Organisez, planifiez et suivez tous vos projets dans un seul et même outil.
+
+hero:
+  title: Gérez vos <span class="text-primary">projets</span> en toute simplicité avec Dokos
+  description: Organisez, planifiez et suivez tous vos projets dans un seul et même outil. Que vous soyez une petite équipe ou une entreprise en pleine expansion, notre module "Projet" vous aide à garder le contrôle de chaque étape de vos projets.
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
+  
+
+
+
+features:
+  - title: Planification de projets
+    description: Créez et gérez vos projets facilement, de la conception à la livraison. Grâce à une interface intuitive, définissez vos objectifs, planifiez vos tâches et assignez des rôles pour garantir une exécution fluide.
+    align: left
+    headline:
+      label: Projet
+      color: sky
+  - title: Un suivi des tâches
+    description: Gardez une vue d’ensemble sur toutes les tâches de vos projets. Visualisez leur progression, leur statut et attribuez des priorités pour une gestion optimale du temps et des ressources.
+    align: right
+    headline:
+      label: Tâches
+      color: sky
+  - title: La gestion des équipes
+    description: Attribuez les rôles et responsabilités de chaque membre de l’équipe sur chaque tâche ou sous-projet. Suivez la charge de travail de chacun pour équilibrer les efforts et améliorer l’efficacité collective.
+    align: left
+    headline:
+      label: Equipe
+      color: sky
+  - title: Un calendrier interactif
+    description: Bénéficiez d’une vue calendrier pour planifier et ajuster les échéances de vos projets. Identifiez rapidement les tâches en retard et ajustez les plannings en conséquence pour rester dans les temps.
+    align: right
+    headline:
+      label: Calendrier
+      color: sky
+  - title: Un suivi budgétaire
+    description: Assurez un suivi rigoureux des budgets alloués à vos projets. Estimez les coûts, suivez les dépenses en temps réel et prenez des décisions éclairées pour rester dans vos limites budgétaires.
+    align: left
+    headline:
+      label: Budget
+      color: sky
+  - title: Une gestion des dépendances
+    description: Identifiez et gérez les dépendances entre vos tâches pour anticiper les blocages potentiels. Assurez-vous que chaque étape du projet progresse sans accroc grâce à une gestion des flux de travail transparente.
+    align: right
+    headline:
+      label: Dépendances
+      color: sky
+  - title: Des Rapports et Analyses
+    description: Accédez à des rapports détaillés sur l’avancement de vos projets. Obtenez des données en temps réel sur les performances de vos équipes, l’état des tâches et les budgets pour mieux anticiper les besoins et ajuster vos plans.
+    align: left
+    headline:
+      label: Rapport
+      color: sky
+  - title: Une collaboration en temps réel
+    description: Facilitez la collaboration au sein de vos équipes avec des outils intégrés de communication et de partage de fichiers. Discutez, partagez des documents et collaborez directement dans le projet pour améliorer la productivité.
+    align: right
+    headline:
+      label: Collaboration
+      color: sky
+
+bottom_section:
+  title: "Pourquoi choisir Dokos ? :"
+  cards:
+    - title: Simplicité d’utilisation 
+      description: Une interface claire et intuitive qui vous permet de gérer vos projets sans complexité.
+      icon: hugeicons:touch-interaction-01
+      class: "col-span-4 row-span-3"
+    - title: Flexibilité
+      description: S’adapte à vos besoins, que ce soit pour des projets simples ou complexes.
+      icon: hugeicons:curvy-up-down-direction
+      class: "col-span-4 row-span-3"
+    - title: Open-source et personnalisable 
+      description: GLibérez-vous des limitations et adaptez le logiciel selon les spécificités de vos projets.
+      icon: ic:outline-settings
+      class: "col-span-4 row-span-3"
+
+plus_button:
+  label: Découvrir toutes nos fonctionnalités
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /features/comptabilite
+
+bottom_cta:
+  title: Commencez dès aujourd'hui !
+  description: Essayez Dokos et découvrez comment notre module "Projet" peut vous aider à mieux organiser et réussir vos projets. Profitez d'une solution complète, open-source et éthique, adaptée à vos besoins spécifiques.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
