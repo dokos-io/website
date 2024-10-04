@@ -56,15 +56,15 @@ bottom_section:
   cards:
     - title: Gain de temps
       description: L'automatisation OCR accélère le traitement des documents, libérant vos équipes pour des tâches à plus forte valeur ajoutée.
-      icon: i-heroicons-outline-calculator
+      icon: material-symbols:alarm-on-outline
       class: "col-span-4 row-span-3"
     - title: Réduction des erreurs
       description: Moins de saisies manuelles signifie moins d’erreurs, notamment dans les processus critiques comme la comptabilité.
-      icon: i-heroicons-outline-book-open
+      icon: material-symbols:disabled-by-default-rounded
       class: "col-span-4 row-span-3"
     - title: Contrôle
       description: Validez les données avant intégration grâce à des workflows personnalisés.
-      icon: i-heroicons-outline-chart-bar-square
+      icon: material-symbols:check-circle-outline-rounded
       class: "col-span-4 row-span-3"
 
 plus_button:
