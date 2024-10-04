@@ -5,4 +5,108 @@ application: Dokos / Frappe CRM
 navigation:
     title: CRM
     icon: i-carbon-chart-relationship
-    description: Gestion de la prospection
+    description: Structurer et optimiser vos processus commerciaux grâce au CRM
+hero:
+  title: Structurez et optimisez <span class="text-primary">vos processus commerciaux</span> grâce à notre CRM.
+  description: Que vous soyez une PME en expansion, une association ou une organisation de l'économie sociale et solidaire, Dokos CRM vous aide à organiser et dynamiser vos relations commerciales, tout en s'adaptant facilement à vos besoins spécifiques grâce à ses fonctionnalités modulaires.
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
+  
+
+
+
+features:
+  - title: Une gestion complète des leads et opportunités
+    description: Centralisez tous vos leads, prospects et opportunités en un seul endroit. Suivez leur progression à travers un pipeline visuel clair et personnalisable, de la prospection à la conclusion du contrat. Analysez les performances de vos campagnes et actions commerciales grâce à des indicateurs en temps réel.
+    align: left
+    headline:
+      label: Gestion des leads
+      color: sky
+  - title: Un suivi des interactions clients
+    description: Ne ratez plus aucune opportunité grâce au suivi automatique de toutes vos interactions (emails, appels, réunions). Dokos CRM vous permet de rester connecté à vos clients en facilitant l'historique des échanges pour chaque contact ou organisation.
+    align: right
+    headline:
+      label: Intégration des emails
+      color: sky
+  - title: Des ventes automatisées
+    description: Dokos CRM intègre des outils puissants pour automatiser vos processus commerciaux. Automatisez les tâches répétitives comme l'envoi de rappels, la création de tâches pour vos équipes, et l'envoi de newsletters, afin de rester concentré sur ce qui compte, vos clients.
+    align: left
+    headline:
+      label: Automatisation
+      color: sky
+  - title: Une gestion des devis et commandes simplifiée
+    description: Simplifiez la gestion des devis, des factures et des commandes directement depuis votre CRM. Dokos permet de générer des devis personnalisés en quelques clics, de les convertir en commandes, et d’assurer un suivi jusqu’au paiement, tout cela dans une interface intuitive.
+    align: right
+    headline:
+      label: Facturation
+      color: sky
+  - title: Une analyse des performances
+    description: Avec les tableaux de bord dynamiques de Dokos, analysez en temps réel les indicateurs essentiels à la bonne gestion de vos activités commerciales;  taux de conversion, volume d'affaires, état des pipelines, etc. Les rapports générés vous aident à ajuster vos stratégies de manière proactive.
+    align: left
+    headline:
+      label: Rapports et analyses
+      color: sky
+  - title: Une intégration avec d’autres modules
+    description: Dokos est bien plus qu’un CRM. Il s'intègre parfaitement avec d'autres modules de gestion comme la comptabilité, la gestion des stocks et la gestion de projet. Cela permet une vue à 360° de votre activité, sans silos ni interruptions dans vos processus.
+    align: right
+    headline:
+      label: Intégration
+      color: sky
+
+bottom_section:
+  title: "Le processus commercial avec Dokos, c’est aussi :"
+  cards:
+    - title: Une gestion des campagnes 
+      description: Il est possible de suivre les performances des campagnes marketing et de vente, notamment en mesurant les leads générés et en gérant des campagnes par email ou sur les réseaux sociaux
+      icon: i-heroicons-outline-calculator
+      class: "col-span-4 row-span-3"
+    - title: Une automatisation des flux
+      description: Grâce à des règles d'automatisation, Dokos peut exécuter certaines actions en fonction de critères prédéfinis, réduisant ainsi les tâches manuelles et augmentant l'efficacité.
+      icon: i-heroicons-outline-book-open
+      class: "col-span-4 row-span-3"
+    - title: Un pipeline de vente
+      description: Dokos propose une vue personnalisable du pipeline de vente, facilitant le suivi des prospects et des opportunités à différents stades, ce qui permet une planification plus précise et un suivi des performances commerciales.
+      icon: i-heroicons-outline-chart-bar-square
+      class: "col-span-4 row-span-3"
+
+plus_button:
+  label: Découvrir toutes nos fonctionnalités
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /features/comptabilite
+
+bottom_cta:
+  title: Essayez Dokos CRM dès maintenant !
+  description: Que vous soyez une PME, une organisation non gouvernementale, ou une entreprise de l'économie sociale et solidaire, Dokos CRM est fait pour vous. Rejoignez la communauté Dokos et découvrez la puissance d'un CRM libre, éthique, et évolutif.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
