@@ -5,4 +5,90 @@ application: OCR
 navigation:
     title: OCR
     icon: i-mdi-ocr
-    description: Reconnaissance automatique des factures et notes de frais
+
+hero:
+  title: La puissance de l'<span class="text-primary">O.C.R.</span> au service de Dokos.
+  description: Grâce à l'intégration native de la Reconnaissance Optique de Caractères (OCR), Dokos transforme vos documents physiques ou numériques en informations exploitables de manière automatique.
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
+  
+
+
+
+features:
+  - title: Automatisation par OCR = Simplifiez la gestion documentaire
+    description: "La fonctionnalité OCR de Dokos permet de transformer vos documents papier ou PDF (factures, bons de livraison, etc.) en données numériques structurées, directement exploitables par Dokos.Extraction automatique de données = Lors de la réception de documents commerciaux (factures, bons de commande), l’OCR analyse le texte et extrait automatiquement les informations clés comme les montants, dates, et numéros de commande. Cela permet de réduire considérablement la saisie manuelle et d’éviter les erreurs​. Traitement des emails avec pièces jointes = Dokos peut être configuré pour recevoir des documents directement via email, analyser les pièces jointes (PDF ou images) grâce à l’OCR, et convertir ces données pour qu’elles soient utilisables dans les modules de comptabilité ou de gestion des stocks​."
+    align: left
+    headline:
+      label: Automatisation
+      color: sky
+  - title: Fonctionnement avancé = Validation humaine et flux personnalisés
+    description: L’OCR dans Dokos ne se limite pas à l’automatisation brute. Les utilisateurs peuvent configurer un workflow semi-automatisé = après la reconnaissance du document, les informations peuvent être visualisées et validées manuellement avant d’être intégrées au système. Cela offre un contrôle supplémentaire pour les entreprises souhaitant une gestion précise des données​
+    align: right
+    headline:
+      label: Semi-automatique
+      color: sky
+  - title: Éthique et open-source = Vos données, votre contrôle
+    description: Chez Dokos, nous croyons que vos données vous appartiennent. Grâce à notre approche open-source, nous vous offrons la possibilité d’ajuster, personnaliser et intégrer l'OCR selon vos besoins spécifiques, tout en respectant vos valeurs éthiques. Contrairement aux solutions propriétaires, Dokos garantit une transparence complète et le respect de votre vie privée. API ouverte = Vous pouvez intégrer Dokos à vos systèmes ou outils OCR existants via nos API ouvertes, assurant une flexibilité totale et l’évolution de votre ERP en fonction de vos besoins spécifiques
+    align: left
+    headline:
+      label: Intégrations
+      color: sky
+ 
+bottom_section:
+  title: Les avantages de l'OCR dans Dokos
+  cards:
+    - title: Gain de temps
+      description: L'automatisation OCR accélère le traitement des documents, libérant vos équipes pour des tâches à plus forte valeur ajoutée.
+      icon: i-heroicons-outline-calculator
+      class: "col-span-4 row-span-3"
+    - title: Réduction des erreurs
+      description: Moins de saisies manuelles signifie moins d’erreurs, notamment dans les processus critiques comme la comptabilité.
+      icon: i-heroicons-outline-book-open
+      class: "col-span-4 row-span-3"
+    - title: Contrôle
+      description: Validez les données avant intégration grâce à des workflows personnalisés.
+      icon: i-heroicons-outline-chart-bar-square
+      class: "col-span-4 row-span-3"
+
+plus_button:
+  label: Découvrir toutes nos fonctionnalités
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /features/comptabilite
+
+bottom_cta:
+  title: Passez à Dokos dès aujourd’hui !
+  description: Libérez le potentiel de votre entreprise avec un logiciel de gestion éthique, flexible et puissant, tout en profitant de l'automatisation avancée qu’offre l’OCR. Découvrez Dokos et rejoignez une communauté dédiée à une gestion d'entreprise respectueuse et collaborative.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
