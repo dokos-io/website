@@ -8,7 +8,7 @@ navigation:
   icon: ''
   description: ''
 hero:
-  title: Les <span class="text-primary">fonctionnalités de Production</span> détaillées
+  title: Les <span class="text-primary">fonctionnalités de production</span> détaillées
   description: Pilotez votre production avec précision pour une efficacité maximale.
   links:
     - label: Commencez maintenant
@@ -30,17 +30,17 @@ hero:
 ---
 
 ::card-group{.grid.sm:grid-cols-3.gap-4}
-  :::card{.items-start icon="i-heroicons-outline-chart-pie" title="Articles"}
+  :::card{.items-start icon="lucide:boxes" title="Articles"}
   - Chaque article représente un produit achetable, vendable ou fabriqué. Cela inclut les matières premières, les produits finis, et même des services. La flexibilité de cette fonctionnalité permet de gérer les besoins de production et d'approvisionnement à travers la gestion des stocks et la chaîne d'approvisionnement.
-  - Utilité : Facilite la gestion des composants utilisés pour produire les articles finis et assure un suivi rigoureux de chaque élément dans l'ensemble du processus​
+  - Utilité : Facilite la gestion des composants utilisés pour produire les articles finis et assure un suivi rigoureux de chaque élément dans l'ensemble du processus​.
   :::
 
-  :::card{.items-start icon="i-heroicons-outline-scale" title="Opérations"}
+  :::card{.items-start icon="bi:gear-wide-connected" title="Opérations"}
   - Ce sont les étapes spécifiques du processus de fabrication, comme l'assemblage ou la peinture. Chaque opération peut être associée à un poste de travail et des coûts de production spécifiques (électricité, main-d'œuvre, etc.).
   - Utilité : Les opérations aident à découper le processus de production en étapes mesurables, optimisant ainsi le suivi du progrès et les performances de production
   :::
 
-  :::card{.items-start icon="i-heroicons-outline-scale" title="Postes de travail"}
+  :::card{.items-start icon="octicon:tools-16" title="Postes de travail"}
   - Ces lieux où les opérations sont exécutées (ateliers, usines, lignes de production) stockent des informations telles que la capacité de production, les coûts d'exploitation et les heures de travail disponibles.
   - Utilité : Aide à allouer efficacement les ressources et à suivre les temps d'arrêt ou d'utilisation des machines, ce qui permet de calculer les coûts réels de production​
   :::
@@ -48,7 +48,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: i-heroicons-outline-scale
+  icon: material-symbols:format-list-numbered-rounded
   title: Nomenclature (Bill of Materials - BOM)
   ---
   - La nomenclature détaille tous les composants, matières premières, et sous-assemblages nécessaires à la production d'un article. Elle peut être à plusieurs niveaux pour gérer les produits complexes qui nécessitent des sous-ensembles.
@@ -58,8 +58,8 @@ hero:
   :::card
   ---
   class: items-start
-  icon: i-heroicons-outline-scale
-  title: Ordres de fabrication
+  icon: material-symbols:border-color-rounded
+  title: Ordre de fabrication
   ---
   - Un ordre de fabrication est créé à partir de la BOM et donne l’instruction d’entamer la production. Il sert de plan détaillé pour les équipes de production et permet de générer les besoins en matériaux et en ressources.
   - Utilité : Ce document guide les opérations au quotidien, en alignant les ressources et les matériaux avec les besoins de production, et assure une bonne gestion de la capacité de production​
@@ -68,7 +68,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: i-heroicons-outline-scale
+  icon: icon-park-solid:transaction-order
   title: Fiches d’opération
   ---
   - Une fiche d’opération contient les détails d’une tâche spécifique dans le processus de production. Elle est liée à un poste de travail particulier et suit l’état d’avancement de cette opération.
@@ -78,7 +78,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: i-heroicons-outline-scale
+  icon: material-symbols:add-notes-rounded
   title: Demandes de matériel
   ---
   - Ce document identifie les besoins en matières premières ou en articles spécifiques pour la production, l'achat ou la gestion de stocks (transfert entre entrepôts, approvisionnement, etc.).
@@ -88,7 +88,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: i-heroicons-outline-scale
+  icon: carbon:chart-combo-stacked
   title: Outil de planification de la production
   ---
   - Cet outil est essentiel pour organiser et planifier la production en fonction des commandes client et des niveaux de stock disponibles. Il optimise la gestion des ressources en identifiant les matières premières et les capacités de production nécessaires pour une période donnée.
@@ -98,10 +98,10 @@ hero:
   :::card
   ---
   class: items-start
-  icon: i-heroicons-outline-scale
+  icon: bi:file-earmark-bar-graph
   title: Rapports de production
   ---
-  - Dokosfournit une gamme de rapports standards comme le résumé des ordres de fabrication, des fiches d’opération et des analyses de production. Ces rapports permettent de suivre les performances, d’identifier les tendances, et de prendre des mesures correctives si nécessaire.
+  - Dokos fournit une gamme de rapports standards comme le résumé des ordres de fabrication, des fiches d’opération et des analyses de production. Ces rapports permettent de suivre les performances, d’identifier les tendances, et de prendre des mesures correctives si nécessaire.
   - Utilité : Les rapports offrent une visibilité accrue sur le flux de travail, la gestion des stocks, et les capacités de production, permettant une prise de décision basée sur des données en temps réel​
   :::
 ::
