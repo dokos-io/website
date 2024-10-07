@@ -90,6 +90,11 @@ if (!module.value) {
               class="ml-1 w-4 h-4 pointer-events-none" />
           </UBadge>
         </template>
+
+        <template #description>
+          <span v-html="feat.description"></span>
+        </template>
+
         <NuxtImg :src="'/home/' + feat.image" class="w-full rounded-md bg-white/75" placeholder v-if="feat.image" />
         <Placeholder v-else />
       </ULandingSection>
