@@ -285,7 +285,7 @@ modules:
     - title: Qualité
       description: Création de processus et suivi de la qualité
       icon: i-carbon-rule-data-quality
-      to: /dokos/fr/modules/qualite
+      to: /fr/modules/qualite
     - title: Support
       description: Outil de gestion de ticket pour le support client
       icon: i-ri-customer-service-2-line

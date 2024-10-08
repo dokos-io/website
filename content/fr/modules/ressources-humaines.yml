@@ -33,31 +33,31 @@ hero:
 
 features:
   - title: Une gestion des employés simple
-    description: Gérez facilement les profils de vos employés, leurs postes, et leurs départements. Suivez leurs assurances santé, contrats et la hiérarchie de votre organisation. Le cycle de vie complet des employés est pris en charge, de l'intégration aux promotions, en passant par les transferts et les sorties.
+    description: Gérez facilement les profils de vos employés, leurs postes, et leurs départements. Suivez vos contrats et hiérarchisez votre organisation. Le cycle de vie complet des employés est pris en charge, de l'intégration aux promotions, en passant par les transferts et les sorties.
     align: left
     headline:
       label: Gestion des employés
       color: sky
   - title: Une gestion des présences et des horaires
-    description: Comparez vos fournisseurs en toute transparence. Avec Dokos, envoyez facilement des appels d’offres, obtenez des propositions, et analysez-les pour choisir le meilleur fournisseur. Optimisez vos négociations avec une vue claire sur les propositions et assurez une traçabilité complète du processus.
+    description: Suivez les présences avec des pointages ou une intégration biométrique. Automatisez la gestion des présences et des quarts grâce à des outils flexibles pour planifier les horaires, gérer les demandes de changement et assigner les tâches de manière efficace.
     align: right
     headline:
       label: Présence et Horaires
       color: sky
   - title: Une gestion des congés
-    description: Créez et personnalisez vos politiques de congés, types de congés et listes de jours fériés. Gérez les demandes de congés avec des workflows d'approbation clairs, les demandes de congés compensatoires et l'encaissement des congés non pris. Les soldes de congés sont directement intégrés dans le calcul des salaires.
+    description: Créez et personnalisez vos politiques de congés, types de congés et listes de jours fériés. Gérez les demandes de congés avec des workflows d'approbation clairs, les demandes de congés compensatoires.
     align: left
     headline:
       label: Congés
       color: sky
-  - title: Une gestion des dépenses et des prêts
-    description: Gérez les avances de vos employés, les demandes de notes de frais et leur approbation. Le module inclut également la gestion des prêts, avec suivi des demandes, des approbations et des remboursements.
+  - title: Une gestion des dépenses et des avances
+    description: Gérez les avances de vos employés, les demandes de notes de frais et leur approbation. 
     align: right
     headline:
       label: Dépenses
       color: sky
-  - title: Une gestion de la performance
-    description: Créez des modèles d'évaluation et suivez les cycles de performance. Collectez des retours d'évaluation, suivez les objectifs et réalisez des évaluations régulières pour optimiser la performance de vos équipes.
+  - title: Une gestion des évaluations
+    description: Créez des modèles et suivez les cycles d'évaluation de vos employés. Collectez des retours, suivez les objectifs et réalisez des évaluations régulières pour optimiser la performance de vos équipes.
     align: left
     headline:
       label: Performance
@@ -75,16 +75,22 @@ features:
       label: Formation
       color: sky
   - title: Des rapports & Analyses en temps réel
-    description: Générez des rapports détaillés et actualisés pour la gestion des présences, les soldes de congés, les résumés de paie et les données de performance.
+    description: Générez des rapports détaillés et actualisés pour la gestion des présences, les soldes de congés et les données d'évaluation.
     align: right
     headline:
       label: Rapports
       color: sky
   - title: Un portail en ligne pour vos employés 
-    description: Avec Dokos, vos employés accèdent à un portail libre-service pour consulter leurs données, soumettre leurs demandes de congés, suivre leurs dépenses en toute autonomie.
+    description: Avec Dokos, vos employés accèdent à un portail pour consulter leurs données, soumettre leurs demandes de congés, suivre leurs dépenses en toute autonomie.
     align: left
     headline:
       label: Portail
+      color: sky
+  - title: Une application mobile simple
+    description: Simplifiez le quotidien de vos employés, même en déplacement, pour la gestion des congés, des dépenses et de leurs feuilles de temps. 
+    align: right
+    headline:
+      label: Application
       color: sky
 
 plus_button:

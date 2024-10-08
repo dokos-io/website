@@ -69,7 +69,7 @@ plus_button:
   icon: i-heroicons-outline-plus-circle
   size: lg
   color: sky
-  to: /features/achats
+  to: /features/e-commerce
 
 bottom_cta:
   title: Prêt à donner un nouvel élan à votre activité ?

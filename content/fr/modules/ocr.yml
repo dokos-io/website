@@ -32,7 +32,7 @@ hero:
 
 
 features:
-  - title: Automatisation par OCR = Simplifiez la gestion documentaire
+  - title: "Automatisation par OCR : Simplifiez votre flux d'achat"
     description: "La fonctionnalité OCR de Dokos permet de transformer vos documents papier ou PDF (factures, bons de livraison, etc.) en données numériques structurées, directement exploitables par Dokos.Extraction automatique de données = Lors de la réception de documents commerciaux (factures, bons de commande), l’OCR analyse le texte et extrait automatiquement les informations clés comme les montants, dates, et numéros de commande. Cela permet de réduire considérablement la saisie manuelle et d’éviter les erreurs​. Traitement des emails avec pièces jointes = Dokos peut être configuré pour recevoir des documents directement via email, analyser les pièces jointes (PDF ou images) grâce à l’OCR, et convertir ces données pour qu’elles soient utilisables dans les modules de comptabilité ou de gestion des stocks​."
     align: left
     headline:
@@ -44,7 +44,7 @@ features:
     headline:
       label: Semi-automatique
       color: sky
-  - title: Éthique et open-source = Vos données, votre contrôle
+  - title: Vos données, votre contrôle
     description: Chez Dokos, nous croyons que vos données vous appartiennent. Grâce à notre approche open-source, nous vous offrons la possibilité d’ajuster, personnaliser et intégrer l'OCR selon vos besoins spécifiques, tout en respectant vos valeurs éthiques. Contrairement aux solutions propriétaires, Dokos garantit une transparence complète et le respect de votre vie privée. API ouverte = Vous pouvez intégrer Dokos à vos systèmes ou outils OCR existants via nos API ouvertes, assurant une flexibilité totale et l’évolution de votre ERP en fonction de vos besoins spécifiques
     align: left
     headline:
@@ -63,7 +63,7 @@ bottom_section:
       icon: material-symbols:disabled-by-default-rounded
       class: "col-span-4 row-span-3"
     - title: Contrôle
-      description: Validez les données avant intégration grâce à des workflows personnalisés.
+      description: Validez les données d'achats grâce à des workflows personnalisés.
       icon: material-symbols:check-circle-outline-rounded
       class: "col-span-4 row-span-3"
 
