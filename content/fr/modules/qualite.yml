@@ -6,3 +6,103 @@ navigation:
     title: Qualité
     icon: i-carbon-rule-data-quality
     description: Création de processus et suivi de la qualité
+
+hero:
+  title: Optimisez votre gestion de la <span class="text-primary">qualité</span> avec Dokos
+  description: Garantir une qualité irréprochable est essentiel pour toute entreprise cherchant à satisfaire ses clients et à respecter les normes industrielles. Le module Qualité de Dokos vous aide à structurer, automatiser et suivre vos processus de qualité de manière efficace et intuitive. De la planification des inspections à la gestion des non-conformités, notre solution vous offre un contrôle total sur vos opérations. Découvrez comment Dokos peut vous aider à atteindre des standards de qualité élevés.
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
+  
+
+
+features:
+  - title: Des inspections de qualité structurées et efficaces
+    description: "Planifiez, exécutez et suivez vos inspections à chaque étape de votre chaîne de production. Avec Dokos, vous définissez des points de contrôle précis et des critères d'acceptation spécifiques pour garantir que chaque produit respecte vos exigences qualité. Grâce à l’automatisation des rappels et la génération de rapports détaillés, vos équipes gagnent en efficacité et ne laissent rien au hasard. Résultat : une maîtrise totale de la conformité et une réduction des risques d’erreurs."
+    align: left
+    headline:
+      label: Inspection qualité
+      color: sky
+  - title: Des plans de contrôle sur mesure
+    description: "Dokos vous permet de créer des plans de contrôle personnalisés, adaptés à vos produits et processus. Standardisez vos procédures de contrôle qualité pour assurer une cohérence à chaque inspection. Vous avez ainsi la certitude que vos exigences qualité sont respectées de manière rigoureuse, tout en simplifiant la gestion opérationnelle pour vos équipes. Grâce à cette approche systématique, vos inspections deviennent plus précises et moins sujettes aux erreurs humaines."
+    align: right
+    headline:
+      label: Plans de contrôle personnalisés
+      color: sky
+  - title: "Une gestion proactive des non-conformités
+    description: Identifiez, suivez et corrigez les anomalies avec un système de gestion des non-conformités simple et efficace. Dès qu'un problème est détecté, enregistrez les détails précis, attribuez les actions correctives nécessaires et suivez leur résolution. Grâce à une traçabilité complète, vous disposez d’une vision claire des non-conformités et pouvez analyser les tendances pour mettre en place des actions préventives. Cela vous permet de réagir rapidement et d’améliorer en continu la qualité de vos produits."
+    align: left
+    headline:
+      label: Non-conformité
+      color: sky
+  - title: Des Actions Correctives et Préventives (CAPA)
+    description: "Les actions correctives et préventives (CAPA) sont essentielles pour maintenir un niveau de qualité constant. Avec Dokos, analysez les causes profondes des non-conformités, mettez en place des actions correctives et anticipez les problèmes grâce à des mesures préventives. Automatisez le suivi de chaque action pour vous assurer que chaque étape est réalisée dans les délais. Vous réduisez ainsi les risques et améliorez la fiabilité de vos processus."
+    align: right
+    headline:
+      label: CAPA
+      color: sky
+  - title: Améliorez la qualité de vos fournisseurs
+    description: "La qualité de vos produits dépend aussi de vos fournisseurs. Dokos vous permet de suivre les performances qualité de vos partenaires en réalisant des audits réguliers et des inspections de produits. En cas de problème, gérez les réclamations fournisseurs en toute transparence et assurez la mise en place d'actions correctives. Centralisez toutes les informations relatives à la qualité des fournisseurs pour prendre des décisions basées sur des données fiables."
+    align: left
+    headline:
+      label: Réclamations
+      color: sky
+  - title: Un Contrôle Statistique de la Qualité (SPC)
+    description: "Optimisez la performance de vos processus grâce au contrôle statistique de la qualité (SPC). Dokos collecte les données de production en temps réel, vous permettant d'analyser les variations et de détecter les anomalies avant qu'elles n’affectent vos produits. En maintenant vos processus dans des limites de contrôle, vous réduisez les défauts tout en améliorant la productivité."
+    align: right
+    headline:
+      label: SCP
+      color: sky
+  - title: Une conformité et des certifications simplifiées
+    description: "Respecter les normes de qualité telles que l'ISO 9001 est crucial pour votre entreprise. Dokos facilite la gestion de la documentation, des audits et des certifications. Vous pouvez ainsi vous assurer que vos processus sont toujours conformes aux exigences réglementaires, tout en maintenant une traçabilité parfaite de vos actions."
+    align: left
+    headline:
+      label: Conformité
+      color: sky
+  - title: Une amélioration continue au cœur de vos processus
+    description: "Le module Qualité de Dokos intègre des outils d'amélioration continue pour optimiser vos opérations. Que ce soit avec des méthodologies comme Kaizen, Lean, ou 5S, Dokos vous aide à identifier les opportunités d’amélioration et à mesurer vos gains en termes de qualité et d'efficacité. Faites de l'amélioration continue une culture au sein de votre organisation pour rester compétitif et agile."
+    align: right
+    headline:
+      label: Amélioration des processus
+      color: sky
+
+plus_button:
+  label: Découvrir toutes nos fonctionnalités
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /features/achats
+
+bottom_cta:
+  title: Placez la qualité au cœur de vos opérations avec Dokos.
+  description: Avec Dokos, vous disposez d'une solution complète pour maîtriser votre gestion de la qualité, tout en respectant vos engagements éthiques et vos exigences professionnelles. Rejoignez la communauté Dokos dès aujourd'hui.  
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
