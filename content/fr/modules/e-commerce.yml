@@ -6,3 +6,86 @@ navigation:
     title: Portail web & e-commerce
     icon: i-gg-website
     description: Vente de produits/services, réservations de ressources en ligne et création d'un portail client/fournisseur
+
+hero:
+  title: Boostez votre activité avec le <span class="text-primary">module e-commerce</span> de Dokos
+  description: Avec le module e-commerce intégré à Dokos, transformez votre site web en une véritable plateforme de vente en ligne, le tout directement connecté avec tous les autres modules Dokos. Gagnez en efficacité, suivez vos commandes en temps réel, et offrez à vos clients une expérience fluide et agréable.
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
+  
+
+
+features:
+  - title: Un catalogue de produits dynamique
+    description: Publiez et mettez à jour vos produits en quelques clics. Grâce à Dokos, gérez vos descriptions, prix, images, et spécifications depuis un seul endroit. Chaque produit dispose de sa propre page dédiée pour une présentation claire et professionnelle.
+    align: left
+    headline:
+      label: Catalogue
+      color: sky
+  - title: Un panier d’achat et une gestion des commandes simplifiée
+    description: Optimisez le parcours client avec un processus de commande simplifié. Le module e-commerce de Dokos intègre un panier d’achat intuitif, permettant à vos clients de commander facilement vos produits en ligne. Vous suivez les commandes en temps réel avec des options de paiement sécurisées.
+    align: right
+    headline:
+      label: Commandes
+      color: sky
+  - title: Des formulaires intéractifs et un accès clients
+    description: Renforcez l’interaction avec vos visiteurs via des formulaires personnalisés. Que ce soit pour des demandes de devis, des inscriptions à une newsletter, ou des questions spécifiques, tout est intégré directement dans Dokos. De plus, vos clients peuvent se connecter via leurs comptes sociaux (Google, Facebook) pour un accès rapide et sécurisé.
+    align: left
+    headline:
+      label: Formulaires
+      color: sky
+  - title: Un SEO et une visibilité optimisée
+    description: Maximisez la visibilité de votre site grâce à des outils SEO intégrés. Créez des balises méta pour améliorer votre positionnement sur les moteurs de recherche, et utilisez notre gestion de blogs pour attirer et fidéliser votre audience.
+    align: right
+    headline:
+      label: SEO
+      color: sky
+  - title: Un site personnalisé et design flexible
+    description: Créez un site à votre image avec Dokos. Modifiez les couleurs, les polices, les logos, et le thème général de votre boutique en ligne pour qu’elle reflète parfaitement votre marque.
+    align: left
+    headline:
+      label: Site
+      color: sky
+
+
+plus_button:
+  label: Découvrir toutes nos fonctionnalités
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /features/achats
+
+bottom_cta:
+  title: Prêt à donner un nouvel élan à votre activité ?
+  description: Profitez d’une solution complète pour développer votre activité en ligne tout en gardant le contrôle sur tous les aspects de votre entreprise.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
