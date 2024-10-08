@@ -7,3 +7,108 @@ navigation:
     icon: i-mdi-human-capacity-increase
     description: Gestion des congés, notes de frais, recrutement, quarts et présence, performance
   
+hero:
+  title: Gérez vos <span class="text-primary">Ressources Humaines</span> de manière efficace avec Dokos.
+  description: Dokos vous propose toutes les fonctionnalités nécessaires pour simplifier la gestion des tâches et processus liés à vos collaborateurs. Découvrez comment Dokos peut vous aider à améliorer votre gestion RH !
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
+  
+
+
+features:
+  - title: Une gestion des employés simple
+    description: Gérez facilement les profils de vos employés, leurs postes, et leurs départements. Suivez leurs assurances santé, contrats et la hiérarchie de votre organisation. Le cycle de vie complet des employés est pris en charge, de l'intégration aux promotions, en passant par les transferts et les sorties.
+    align: left
+    headline:
+      label: Gestion des employés
+      color: sky
+  - title: Une gestion des présences et des horaires
+    description: Comparez vos fournisseurs en toute transparence. Avec Dokos, envoyez facilement des appels d’offres, obtenez des propositions, et analysez-les pour choisir le meilleur fournisseur. Optimisez vos négociations avec une vue claire sur les propositions et assurez une traçabilité complète du processus.
+    align: right
+    headline:
+      label: Présence et Horaires
+      color: sky
+  - title: Une gestion des congés
+    description: Créez et personnalisez vos politiques de congés, types de congés et listes de jours fériés. Gérez les demandes de congés avec des workflows d'approbation clairs, les demandes de congés compensatoires et l'encaissement des congés non pris. Les soldes de congés sont directement intégrés dans le calcul des salaires.
+    align: left
+    headline:
+      label: Congés
+      color: sky
+  - title: Une gestion des dépenses et des prêts
+    description: Gérez les avances de vos employés, les demandes de notes de frais et leur approbation. Le module inclut également la gestion des prêts, avec suivi des demandes, des approbations et des remboursements.
+    align: right
+    headline:
+      label: Dépenses
+      color: sky
+  - title: Une gestion de la performance
+    description: Créez des modèles d'évaluation et suivez les cycles de performance. Collectez des retours d'évaluation, suivez les objectifs et réalisez des évaluations régulières pour optimiser la performance de vos équipes.
+    align: left
+    headline:
+      label: Performance
+      color: sky
+  - title: Un recrutement simplifié 
+    description: Gérez vos offres d'emploi, vos candidats et vos entretiens. Dokos propose également un système de parrainage pour les employés et automatise la génération des offres d'emploi.
+    align: right
+    headline:
+      label: Recrutement
+      color: sky
+  - title: Formation et développement
+    description: Planifiez et suivez les programmes de formation, les événements, les résultats et les retours des participants pour accompagner le développement de vos collaborateurs.
+    align: left
+    headline:
+      label: Formation
+      color: sky
+  - title: Des rapports & Analyses en temps réel
+    description: Générez des rapports détaillés et actualisés pour la gestion des présences, les soldes de congés, les résumés de paie et les données de performance.
+    align: right
+    headline:
+      label: Rapports
+      color: sky
+  - title: Un portail en ligne pour vos employés 
+    description: Avec Dokos, vos employés accèdent à un portail libre-service pour consulter leurs données, soumettre leurs demandes de congés, suivre leurs dépenses en toute autonomie.
+    align: left
+    headline:
+      label: Portail
+      color: sky
+
+plus_button:
+  label: Découvrir toutes nos fonctionnalités
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /features/achats
+
+bottom_cta:
+  title: Un module intuitif et simplifié pour optimiser votre gestion RH ! 
+  description: Dokos est l'outil idéal pour une gestion des ressources humaines moderne, éthique et transparente. Rejoignez la communauté open-source et découvrez une nouvelle manière de gérer vos collaborateurs !
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

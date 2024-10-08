@@ -8,8 +8,8 @@ navigation:
   icon: ''
   description: ''
 hero:
-  title: Les <span class="text-primary">fonctionnalités comptables</span> détaillées
-  description: "Dokos est un logiciel puissant, open-source, flexible qui offre une gamme complète de fonctionnalités de comptabilité pour aider les entreprises à gérer leurs finances de manière efficace.\_"
+  title: Les fonctionnalités complètes et intuitives pour optimiser votre gestion RH :<span class="text-primary">gestion RH</span> .
+  description: Découvrez le module Ressources Humaines de Dokos, votre logiciel de gestion open-source, libre et éthique, conçu pour simplifier la gestion des tâches et des processus liés à vos collaborateurs.
   links:
     - label: Commencez maintenant
       to: https://cloud.dokos.io

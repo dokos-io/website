@@ -57,7 +57,7 @@ hero:
   ---
   - **Gestion multi-entrepôts** : Permet la création et la gestion de plusieurs entrepôts (par site géographique, section de l’usine, etc.).
   - **Stock par entrepôt** : Consultation du stock disponible par entrepôt et gestion des niveaux de réapprovisionnement.
-  - **Emplacements internes (Bins)** : Gestion des emplacements au sein des entrepôts pour un suivi plus fin des articles.
+  - **Emplacements internes** : Gestion des emplacements au sein des entrepôts pour un suivi plus fin des articles.
   :::
 
   :::card
