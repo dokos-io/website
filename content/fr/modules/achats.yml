@@ -52,7 +52,7 @@ features:
       label: Commandes
       color: sky
   - title: Un Suivi des Réceptions et Contrôle Qualité
-    description: Garantissez la conformité des articles reçus grâce au suivi en temps réel. Gérez efficacement la réception des produits, effectuez des contrôles qualité et signalez rapidement tout écart. ERPNext vous aide à suivre la disponibilité des articles pour une transparence optimale.
+    description: Garantissez la conformité des articles reçus grâce au suivi en temps réel. Gérez efficacement la réception des produits, effectuez des contrôles qualité et signalez rapidement tout écart. Dokos vous aide à suivre la disponibilité des articles pour une transparence optimale.
     align: right
     headline:
       label: Qualité
