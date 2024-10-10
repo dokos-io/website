@@ -82,7 +82,7 @@ plus_button:
   icon: i-heroicons-outline-plus-circle
   size: lg
   color: sky
-  to: /features/comptabilite
+  to: /features/production
 
 bottom_cta:
   title: Avec Dokos, révolutionnez la gestion de votre production.

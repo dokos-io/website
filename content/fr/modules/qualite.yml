@@ -86,7 +86,7 @@ plus_button:
   icon: i-heroicons-outline-plus-circle
   size: lg
   color: sky
-  to: /features/achats
+  to: /features/qualite
 
 bottom_cta:
   title: Placez la qualité au cœur de vos opérations avec Dokos.

@@ -103,7 +103,7 @@ plus_button:
   icon: i-heroicons-outline-plus-circle
   size: lg
   color: sky
-  to: /features/comptabilite
+  to: /features/projets
 
 bottom_cta:
   title: Commencez dès aujourd'hui !

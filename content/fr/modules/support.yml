@@ -85,7 +85,7 @@ plus_button:
   icon: i-heroicons-outline-plus-circle
   size: lg
   color: sky
-  to: /features/comptabilite
+  to: /features/support
 
 bottom_cta:
   title: Essayez Dokos dès aujourd’hui !

@@ -7,13 +7,13 @@ navigation:
     icon: i-mdi-ocr
 
 hero:
-  title: La puissance de l'<span class="text-primary">O.C.R.</span> au service de Dokos.
-  description: Grâce à l'intégration native de la Reconnaissance Optique de Caractères (OCR), Dokos transforme vos documents physiques ou numériques en informations exploitables de manière automatique.
+  title: Libérez le potentiel de vos documents avec la puissance de l’<span class="text-primary">O.C.R.</span> et Dokos.
+  description: Transformez vos documents en informations prêtes à l’emploi. Avec l’OCR de Dokos, gagnez du temps, réduisez les erreurs et concentrez-vous sur l’essentiel. Profitez de la gestion documentaire en un clin d’œil.
   links:
     - label: Commencez maintenant
       to: https://cloud.dokos.io
       size: sm
-      color: black
+      color: sky
       variant: solid
       icon: i-heroicons-rocket-launch
     - label: Documentation
@@ -32,20 +32,20 @@ hero:
 
 
 features:
-  - title: "Automatisation par OCR : Simplifiez votre flux d'achat"
-    description: "<span class='font-bold'>Gagnez du temps et réduisez les erreurs avec une gestion documentaire automatisée.</span><br>La fonctionnalité OCR de Dokos transforme vos documents papier ou PDF (factures, bons de livraison, etc.) en données numériques directement exploitables dans votre système de gestion.<ul><li><span class='font-bold'> Extraction automatique des données :</span> Dès la réception de vos documents (factures, bons de commande), l’OCR analyse et extrait automatiquement les informations essentielles (montants, dates, numéros de commande). Un gain de temps considérable pour vos équipes.</li><li><span class='font-bold'> Traitement des emails avec pièces jointes :</span> Envoyez vos documents directement par email, et Dokos se charge de les analyser et de les intégrer à vos modules comptables ou de gestion des stocks."
+  - title: Gagnez du temps et réduisez les erreurs avec une gestion documentaire automatisée.
+    description: "Simplifiez votre gestion documentaire grâce à l’OCR de Dokos. Transformez vos factures et bons de livraison en données utilisables instantanément, et libérez vos équipes des tâches répétitives. Moins d’erreurs, plus de temps pour l’essentiel.<ul><li><span class='font-bold'> Extraction automatique des données :</span> Dès la réception de vos documents (factures, bons de commande), l’OCR analyse et extrait automatiquement les informations essentielles (montants, dates, numéros de commande). </li><li><span class='font-bold'> Traitement des emails avec pièces jointes :</span> Envoyez vos documents directement par email, et Dokos se charge de les analyser et de les intégrer à vos modules comptables ou de gestion des stocks."
     align: left
     headline:
       label: Automatisation
       color: sky
   - title: "Fonctionnement avancé : Contrôlez chaque étape"
-    description: "Dokos OCR ne se limite pas à une simple automatisation. Avec un workflow semi-automatique, vous avez la possibilité de valider manuellement les données extraites avant de les intégrer. Cette approche vous offre à la fois la rapidité de l’automatisation et la précision d’un contrôle humain. <ul><li><span class='font-bold'>Personnalisez vos workflows :</span> Configurez Dokos selon vos besoins pour avoir un contrôle total sur la gestion des documents et la validation des informations.</li>"
+    description: "Restez maître de vos données tout en automatisant. Avec Dokos, vous validez chaque étape pour garantir une précision optimale. Configurez vos workflows selon vos besoins spécifiques."
     align: right
     headline:
       label: Semi-automatique
       color: sky
-  - title: Vos données, votre contrôle
-    description: "Chez Dokos, nous mettons l’accent sur la transparence et la sécurité de vos données. Grâce à notre logiciel open-source, vous avez la liberté de personnaliser l'outil à vos besoins spécifiques, tout en ayant la certitude que vos informations sont protégées. <ul><li><span class='font-bold'>Données supprimées après traitement :</span> Toutes les données extraites via Amazon Textract sont effacées immédiatement après traitement.</li><li><span class='font-bold'>Flexibilité grâce à nos API ouvertes :</span> Intégrez facilement Dokos avec vos systèmes ou solutions OCR existants pour une gestion des données sans contraintes."
+  - title: Gardez le contrôle total de vos données
+    description: "Chez Dokos, nous mettons l’accent sur la transparence et la sécurité de vos données. Vous avez la liberté de personnaliser chaque aspect du logiciel tout en profitant d’une sécurité garantie. Vos informations sont protégées à chaque étape. <ul><li><span class='font-bold'>Données supprimées après traitement :</span> Toutes les données extraites via Amazon Textract sont effacées immédiatement après traitement.</li><li><span class='font-bold'>Flexibilité grâce à nos API ouvertes :</span> Intégrez facilement Dokos avec vos systèmes ou solutions OCR existants pour une gestion des données sans contraintes."
     align: left
     headline:
       label: Intégrations
@@ -60,8 +60,8 @@ features:
       color: sky
  
 bottom_section:
-  title: Les avantages de l'OCR dans Dokos
-  description: "Notre solution OCR vous permet de réduire considérablement les tâches répétitives et de vous concentrer sur des missions à plus forte valeur ajoutée. Voici pourquoi nos clients nous font confiance:"
+  title: Découvrez comment Dokos OCR révolutionne votre gestion documentaire.
+  description: "Ne perdez plus de temps sur des tâches fastidieuses. Avec Dokos OCR, libérez-vous des contraintes administratives et consacrez-vous à ce qui compte vraiment : vos missions à haute valeur ajoutée."
   cards:
     - title: Gain de temps
       description: L’automatisation accélère le traitement des documents, permettant à vos équipes de se concentrer sur des tâches plus stratégiques.
@@ -81,17 +81,17 @@ plus_button:
   icon: i-heroicons-outline-plus-circle
   size: lg
   color: sky
-  to: /features/comptabilite
+  to: /features/ocr
 
 bottom_cta:
-  title: Simplifiez votre gestion documentaire dès aujourd'hui !
-  description: Avec Dokos, transformez votre gestion des achats grâce à l'automatisation et un contrôle total de vos données. Nous offrons une solution éthique, transparente et flexible qui s’adapte à vos besoins. Prêt à découvrir toutes les fonctionnalités de Dokos ?
+  title: Avec Dokos, transformez votre gestion des achats grâce à l'automatisation.
+  description: Ne perdez plus de temps avec des processus manuels. Dokos vous offre une solution flexible, éthique et transparente pour automatiser votre gestion des achats. Prenez le contrôle dès maintenant !
   class: "bg-amber-600/10 dark:bg-amber-800/10"
   links:
     - label: Commencez maintenant
       to: https://cloud.dokos.io
       size: sm
-      color: black
+      color: orange
       variant: solid
       icon: i-heroicons-rocket-launch
     - label: Documentation

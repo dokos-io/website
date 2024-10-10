@@ -90,7 +90,7 @@ plus_button:
   icon: i-heroicons-outline-plus-circle
   size: lg
   color: sky
-  to: /features/comptabilite
+  to: /features/crm
 
 bottom_cta:
   title: Essayez Dokos CRM dès maintenant !

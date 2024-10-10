@@ -6,3 +6,102 @@ navigation:
     title: Intégrations
     icon: i-mdi-connection
     description: Sauvegarde externalisées, services Google, e-commerce, connecteurs no-code
+
+hero:
+  title: Maximisez votre productivité avec les <span class="text-primary">intégrations</span> Dokos
+  description: "Fluidifiez vos processus, gagnez en efficacité, et restez focalisé sur ce qui compte vraiment : le développement de votre activité. <br>Grâce à un écosystème en constante évolution, Dokos s’adapte à vos besoins et vous donne accès à des outils puissants tout en gardant une interface simple et intuitive."
+  links:
+    - label: Créez un écosystème harmonieux
+      to: https://cloud.dokos.io
+      size: sm
+      color: yellow
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
+  
+
+
+
+features:
+  - title: Gérez vos transactions avec des solutions fiables et sécurisées
+    description: "<ul><li>Stripe : Carte bancaire et prélèvement SEPA</li><li> Stancer : Idéal pour des paiements multicanaux simplifiés.</li> <li>PayPal / Braintree : Carte bancaire ou PayPal<li>Gocardless : Prélèvement SEPA</li><li>HelloAsso : Carte bancaire pour les associations"
+    align: left
+    headline:
+      label: Paiements
+      color: sky
+  - title: Gagnez du temps et assurez la conformité légale de vos contrats
+    description: "<ul><li>DocuSign : Bientôt disponible sur Dokos, cette intégration permettra de gérer vos signatures électroniques de manière fluide et légale."
+    align: right
+    headline:
+      label: Signature électronique
+      color: sky
+  - title: Optimisez la gestion de votre boutique en ligne
+    description: "Gardez un œil sur vos ventes, vos stocks, et les performances de votre boutique en temps réel, et connectez facilement vos systèmes.<br><ul><li>WooCommerce : Gérez vos commandes, inventaires et clients en toute simplicité.</li><li>Shopify : Une solution complète pour vendre vos produits et services, intégrée directement à Dokos."
+    align: left
+    headline:
+      label: E-Commerce
+      color: sky
+  - title: "Automatisez la synchronisation de vos ventes" 
+    description: "Synchronisez automatiquement vos ventes physiques et en ligne pour une gestion optimale des stocks et des transactions.<ul><li>Hi-Boutik : Synchronisez vos points de vente physiques avec votre gestion centralisée sur DOkos."
+    align: right
+    headline:
+      label: Point de vente
+      color: sky
+  - title: "Simplifiez la gestion de vos finances"
+    description: "Réduisez les erreurs humaines et automatisez vos processus financiers complexes.<ul><li>Bridge : Gagnez du temps en connectant directement vos comptes bancaires à Dokos pour une gestion fluide et automatisée de votre comptabilité."
+    align: left
+    headline:
+      label: Open Banking
+      color: sky
+  - title: Augmentez votre productivité en automatisant des tâches récurrentes
+    description: "<ul><li>Zapier : Automatisez les flux de travail entre Dokos et des milliers d'autres applications.</li>"
+    align: right
+    headline:
+      label: Échange de Données Automatisé
+      color: sky
+  - title: Profitez de l’intégration complète de Google 
+    description: "Centralisez vos informations et optimisez la collaboration avec vos équipes grâce à la puissance de Google.<ul><li>Google Calendar : Synchronisez et gérez vos rendez-vous et événements directement sur Dokos.</li><li> Google Contacts : Retrouvez vos contacts facilement et en temps réel.</li><li> Google Drive : Stockez et accédez à tous vos fichiers sur Dokos sans quitter votre flux de travail."
+    align: left
+    headline:
+      label: Google Workspace
+      color: sky
+  - title: Centralisez vos discussions
+    description: Restez en contact avec votre équipe et vos partenaires grâce aux intégrations messageries. Centralisez vos discussions pour une meilleure réactivité et coordination entre équipes.<ul><li>Discord</li><li>Mattermost</li><li>RocketChat</li><li>Slack</li><li>Google Chat</li>
+    align: right
+    headline:
+      label: Messageries Collaboratives
+      color: sky
+  - title: Sécurisez vos données importantes avec des solutions de stockage externes
+    description: La tranquillité d’esprit avec la garantie que vos données sont en sécurité et facilement accessibles.<ul><li>Amazon S3</li><li>DropBox</li><li>Google Drive</li>
+    align: left
+    headline:
+      label: Sauvegarde Externe
+      color: sky
+
+bottom_cta:
+  title: Avec Dokos, centralisez la gestion de vos outils essentiels en un seul endroit
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: sky
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

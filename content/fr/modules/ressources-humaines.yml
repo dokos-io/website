@@ -98,7 +98,7 @@ plus_button:
   icon: i-heroicons-outline-plus-circle
   size: lg
   color: sky
-  to: /features/achats
+  to: /features/ressources-humaines
 
 bottom_cta:
   title: Un module intuitif et simplifié pour optimiser votre gestion RH ! 
