@@ -6,3 +6,77 @@ navigation:
     title: Paiements
     icon: i-ic-twotone-payments
     description: Collecte de paiements en ligne via carte bancaire, prélèvement SEPA, Paypal et autres passerelles de paiements...
+
+hero:
+  title: "Automatisez vos paiements avec Dokos : Simple, Sécurisé, Efficace"
+  description: Intégrez facilement vos passerelles de paiement préférées et collectez vos paiements ponctuels ou récurrents sans effort.
+  links:
+    - label: Simplifiez vos paiements
+      to: https://cloud.dokos.io
+      size: sm
+      color: yellow
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
+  
+
+
+
+features:
+  - title: Gérez tous vos paiements en un seul endroit
+    description: "Que ce soit pour des transactions uniques, des abonnements récurrents ou des événements, Dokos automatise le processus pour vous faire gagner du temps et éviter les erreurs.<ul><li>Automatisation des Paiements : Gérez les paiements sans intervention manuelle.</li><li>Large Choix de Prestataires : Stripe, PayPal, Braintree, GoCardless, et plus encore.</li><li>Sécurité Maximale : Des transactions protégées et cryptées.</li>"
+    align: left
+    headline:
+      label: Paiements centralisés
+      color: sky
+
+  - title: "Choisissez la flexibilité maximale avec nos prestataires de paiement intégrés"
+    description: "Choisissez parmi une gamme de prestataires pour collecter vos paiements de manière fluide, rapide et sécurisée, que ce soit pour des transactions ponctuelles ou récurrentes <ul><li>Stripe : En savoir plus </li><li> PayPal : En savoir plus</li><li>Braintree : En savoir plus</li><li>GoCardless : En savoir plus</li><li>Stancer : En savoir plus</li><li>HelloAsso : En savoir plus"
+    align: right
+    headline:
+      label: Intégrations des Passerelles de Paiement
+      color: sky
+
+  - title: Gagnez du Temps grâce à l'automatisation intelligente
+    description: "Avec Dokos, les paiements sont automatiquement rapprochés dans votre système, vous offrant un suivi précis et sans effort.Plus besoin de passer du temps sur des tâches manuelles.<ul><li> Paiements Ponctuels : Louez une salle ou vendez un produit, Dokos gère tout.</li><li> Paiements Récurrents : Abonnements et services récurrents automatisés.</li><li> Événements et Formulaires : Collectez des paiements lors d'inscriptions à vos événements."
+    align: left
+    headline:
+      label: Automatisation des Paiements et Rapprochement
+      color: sky
+  - title: "Une Expérience Intégrée : Webshop, Formulaires et Événements"
+    description: Les paiements sont entièrement synchronisés avec votre Webshop, vos formulaires web et la gestion de vos événements. Offrez une expérience de paiement fluide à vos clients et bénéficiez d'un suivi en temps réel.
+    align: right
+    headline:
+      label: Synergie avec Webshop et Événements
+      color: sky
+ 
+
+
+bottom_cta:
+  title: Prêt à Automatiser Vos Paiements ?
+  description: Simplifiez la gestion de vos paiements et concentrez-vous sur la croissance de votre activité. Rejoignez Dokos dès aujourd'hui.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Commencez maintenant
+      to: https://cloud.dokos.io
+      size: sm
+      color: yellow
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
