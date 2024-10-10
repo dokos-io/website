@@ -76,7 +76,7 @@ plus_button:
   icon: i-heroicons-outline-plus-circle
   size: lg
   color: sky
-  to: /features/comptabilite
+  to: /features/reservations-de-ressources
 
 bottom_cta:
   title: Prêt à optimiser la gestion de vos ressources ?

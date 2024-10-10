@@ -30,36 +30,26 @@ hero:
 ---
 
 ::card-group{.grid.sm:grid-cols-3.gap-4}
-  :::card
-  ---
-  class: items-start
-  icon: i-heroicons-outline-chart-pie
-  title: Réservation de salles
-  ---
+  :::card{.items-start icon="bi:person-workspace" title="Réservation de salles"}
   - Permet aux utilisateurs de réserver des salles de réunion en ligne, avec un portail qui facilite la gestion autonome de ces réservations.
   :::
 
   :::card
   ---
-  icon: i-heroicons-outline-scale
+  icon: material-symbols:precision-manufacturing-rounded
   title: Réservation de matériel et machines
   ---
   - Les utilisateurs peuvent aussi réserver divers équipements en fonction des besoins spécifiques (machines de production, matériel de coworking, etc.).
   :::
 
-  :::card
-  ---
-  class: items-start
-  icon: i-heroicons-outline-scale
-  title: 'Abonnements et tickets :'
-  ---
+  :::card{.items-start icon="ph:ticket-duotone" title="Abonnements et tickets :"}
   - Pour les espaces de coworking, le module permet l’achat de tickets ou la gestion d’abonnements récurrents.
   :::
 
   :::card
   ---
   class: items-start
-  icon: i-heroicons-outline-scale
+  icon: simple-icons:googlecalendar
   title: Synchronisation avec Google Agenda
   ---
   - Il est possible de synchroniser les calendriers de réservation avec Google Agenda, dans les deux sens.
@@ -68,17 +58,22 @@ hero:
   :::card
   ---
   class: items-start
-  icon: i-heroicons-outline-scale
+  icon: icon-park-outline:locking-web
   title: Portail utilisateur
   ---
   - Un portail dédié permet aux utilisateurs de gérer leurs réservations, accéder à des factures, et consulter leur historique d’abonnement ou d'utilisation.
   :::
 
-  :::card{.items-start icon="i-heroicons-outline-scale" title="Vue planifcation"}
+  :::card
+  ---
+  class: items-start
+  icon: icon-park-outline:locking-web
+  title: Vue planifcation
+  ---
   - Optimise la gestion et la coordination des disponibilités des ressources.
   :::
 
-  :::card{.items-start icon="i-heroicons-outline-scale" title="Badge"}
-  - Un moyen efficace d'accéder à des ressources
+  :::card{.items-start icon="heroicons:check-badge-16-solid" title="Badge"}
+  - Outil de reconnaissance des compétences et/ou de valorisation des contributions individuelles au sein de la communauté
   :::
 ::
