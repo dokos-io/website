@@ -15,7 +15,7 @@ hero:
     - label: Essayez Dokos
       to: https://demo.dokos.cloud
       size: xl
-      color: black
+      color: sky
       icon: i-heroicons-play-circle-16-solid
       trailing: false
       target: _blank
@@ -66,7 +66,7 @@ sections:
     #     class: ml-8
     #     target: _blank
   - title: Un <span class="text-primary">logiciel d'entreprise</span> puissant
-    description: "Dokos est adapté à tout type d'entreprises, de la PME à la multinationale"
+    description: "Dokos est conçu pour répondre aux besoins des entreprises, de la PME à la multinationale."
     image: "/home/workflow.png"
     image_bg_color: "bg-teal-600"
     id: enterprise
@@ -84,7 +84,7 @@ sections:
     links:
       - label: Toutes les fonctionnaltés d'entreprise
         to: https://doc.dokos.io/dodock
-        color: gray
+        color: sky
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
         size: md
@@ -115,7 +115,7 @@ sections:
         class: ml-8
       - label: Services
         to: /fr/services
-        color: gray
+        color: green
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
         size: md
@@ -136,15 +136,15 @@ sections:
         description: Vous pouvez choisir d'héberger Dokos chez un tiers ou bien sur vos serveurs. Et vous pouvez transférer vos données de l'un à l'autre si vous changez d'avis
         icon: i-material-symbols-cloud-sync-outline-rounded
     links:
-      - label: Installer Dokos
-        to: https://doc.dokos.io/dodock
-        color: gray
+      - label: Dokos Cloud
+        to: https://dokos.cloud
+        color: green
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
         size: md
         class: ml-8
-      - label: Dokos Cloud
-        to: https://dokos.cloud
+      - label: Documentation
+        to: https://doc.dokos.io/dodock
         color: gray
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
@@ -182,15 +182,15 @@ sections:
         icon:
           i-material-symbols-cloud-sync-outline-rounded
     links:
-      - label: Installer Dokos
-        to: https://doc.dokos.io/dodock
-        color: gray
+      - label: Dokos Cloud
+        to: https://dokos.cloud
+        color: sky
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
         size: md
         class: ml-8
-      - label: Dokos Cloud
-        to: https://dokos.cloud
+      - label: Documentation
+        to: https://doc.dokos.io/dodock
         color: gray
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
@@ -321,8 +321,13 @@ cta:
   title: Et si vous démarriez avec Dokos ?
   description: Choisir Dokos, c'est faire le choix d'un logiciel français, puissant, libre et adapté à chacun de vos besoins. 
   links:
-    - label: Lire la documentation
+    - label: Essayez Dokos maintenant
       size: xl
       color: sky
+      to: https://doc.dokos.io
+      target: _blank
+    - label: Documentation
+      size: xl
+      color: gray
       to: https://doc.dokos.io
       target: _blank

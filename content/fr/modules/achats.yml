@@ -6,7 +6,7 @@ application: Dokos
 navigation:
     title: Achats
     icon: i-icon-park-outline-buy
-    description: Gestion des achats
+    description: Optimisez vos achats pour des approvisionnements sans faille.
 
 hero:
   title: Optimisez vos <span class="text-primary">achats</span> avec Dokos
@@ -33,60 +33,60 @@ hero:
 
 
 features:
-  - title: Des Demandes d'Achat Simplifiées
-    description: Structurez et accélérez vos demandes d’achat grâce à une interface intuitive. Créez des demandes pour différents départements en quelques clics et assignez-les aux bonnes personnes pour validation. Suivez précisément vos besoins tout en gardant le contrôle de vos coûts grâce à une gestion centralisée.
+  - title: Simplifiez vos demandes d'achat
+    description: "Structurez et accélérez vos demandes d’achat grâce à une interface intuitive.<br>Créez des demandes pour différents départements en quelques clics et assignez-les aux bonnes personnes pour validation.<br> Suivez précisément vos besoins tout en gardant le contrôle de vos coûts grâce à une gestion centralisée."
     align: left
     headline:
       label: Demandes d'Achat
       color: sky
-  - title: Des Appels d'Offres et Négociations Optimisées
-    description: Comparez vos fournisseurs en toute transparence. Avec Dokos, envoyez facilement des appels d’offres, obtenez des propositions, et analysez-les pour choisir le meilleur fournisseur. Optimisez vos négociations avec une vue claire sur les propositions et assurez une traçabilité complète du processus.
+  - title: Optimisez vos appels d'offres et négociations
+    description: Comparez vos fournisseurs en toute transparence. <br>Avec Dokos, envoyez facilement des appels d’offres, obtenez des propositions, et analysez-les pour choisir le meilleur fournisseur.<br> Optimisez vos négociations avec une vue claire sur les propositions et assurez une traçabilité complète du processus.
     align: right
     headline:
       label: Devis Fournisseurs
       color: sky
-  - title: Des Commandes d'Achat Automatisées 
-    description: Créez des commandes d’achat en un clic après la sélection des fournisseurs. L’automatisation des commandes à partir des demandes ou des offres acceptées vous fait gagner du temps tout en assurant un suivi précis de la réception des biens et services.
+  - title: Automatisez vos commandes d'achat 
+    description: Créez des commandes d’achat en un clic après la sélection des fournisseurs. <br>L’automatisation des commandes à partir des demandes ou des offres acceptées vous fait gagner du temps tout en assurant un suivi précis de la réception des biens et services.
     align: left
     headline:
       label: Commandes
       color: sky
-  - title: Un Suivi des Réceptions et Contrôle Qualité
-    description: Garantissez la conformité des articles reçus grâce au suivi en temps réel. Gérez efficacement la réception des produits, effectuez des contrôles qualité et signalez rapidement tout écart. Dokos vous aide à suivre la disponibilité des articles pour une transparence optimale.
+  - title: Excellez dans le suivi de vos achats
+    description: Garantissez la conformité des articles reçus grâce au suivi en temps réel. <br>Gérez efficacement la réception des produits, effectuez des contrôles qualité et signalez rapidement tout écart.<br> Dokos vous aide à suivre la disponibilité des articles pour une transparence optimale.
     align: right
     headline:
       label: Qualité
       color: sky
-  - title: Gestion Performante des Fournisseurs
-    description: Améliorez vos relations fournisseurs grâce à une base de données centralisée. Suivez leurs performances, contrats et transactions en un seul endroit. Gagnez en visibilité et prenez des décisions éclairées pour optimiser vos relations commerciales.
+  - title: Renforcez la gestion de vos fournisseurs
+    description: Améliorez vos relations fournisseurs grâce à une base de données centralisée. <br>Suivez leurs performances, contrats et transactions en un seul endroit.<br> Gagnez en visibilité et prenez des décisions éclairées pour optimiser vos relations commerciales.
     align: left
     headline:
       label: Fournisseurs
       color: sky
-  - title: La gestion des Factures d’Achat 
-    description: Simplifiez vos processus comptables grâce à l’automatisation des factures fournisseurs. Reliez facilement les factures aux commandes d’achat et suivez les paiements. Réduisez les erreurs humaines et optimisez la gestion de vos flux de trésorerie.
+  - title: Perfectionnez la gestion de vos factures d’achat 
+    description: Simplifiez vos processus comptables grâce à l’automatisation des factures fournisseurs.<br> Reliez facilement les factures aux commandes d’achat et suivez les paiements. <br>Réduisez les erreurs humaines et optimisez la gestion de vos flux de trésorerie.
     align: right
     headline:
       label: Facture d'Achats
       color: sky
-  - title: Des Rapports et Analyses en Temps Réel
-    description: Obtenez des rapports d’achat détaillés pour prendre des décisions informées. Suivez les performances des fournisseurs, identifiez les opportunités d’économie, et améliorez continuellement vos processus d’achat grâce à des analyses actualisées.
+  - title: Analysez en temps réèl vos achats
+    description: Obtenez des rapports d’achat détaillés pour prendre des décisions informées.<br> Suivez les performances des fournisseurs, identifiez les opportunités d’économie, et améliorez continuellement vos processus d’achat grâce à des analyses actualisées.
     align: left
     headline:
       label: Rapports
       color: sky
-  - title: Des gestions des Stocks Connectée aux Achats
-    description: Évitez les ruptures ou les excédents de stock grâce à une gestion intégrée. Dokos synchronise vos niveaux de stock avec vos commandes d’achat, vous aidant à mieux planifier vos approvisionnements tout en réduisant les coûts superflus.
+  - title: Connectez vos stocks à vos achats
+    description: Évitez les ruptures ou les excédents de stock grâce à une gestion intégrée.<br> Dokos synchronise vos niveaux de stock avec vos commandes d’achat, vous aidant à mieux planifier vos approvisionnements tout en réduisant les coûts superflus.
     align: right
     headline:
       label: Gestions de Stock
       color: sky
-  - title: Un Approvisionnement Responsable 
-    description: Dokos soutient une gestion des achats responsable. Mettez en place des critères spécifiques pour vos fournisseurs et suivez vos objectifs d’approvisionnement durable à travers un suivi rigoureux et structuré.
+  - title: Défendez un approvisionnement responsable 
+    description: Dokos soutient une gestion des achats responsable.<br> Mettez en place des critères spécifiques pour vos fournisseurs et suivez vos objectifs d’approvisionnement durable à travers un suivi rigoureux et structuré.
     align: left
     headline:
       label: Gestions de Stock
-      color: sky
+      color: green
 
 plus_button:
   label: Découvrir toutes nos fonctionnalités
@@ -97,7 +97,7 @@ plus_button:
 
 bottom_cta:
   title: Maîtrisez chaque étape de vos achats avec Dokos.
-  description: Gagnez en efficacité, réduisez vos coûts et gardez une vue d’ensemble sur vos processus. Notre solution open-source s’adapte à vos besoins pour une gestion des achats agile et performante.
+  description: Gagnez en efficacité, réduisez vos coûts et gardez une vue d’ensemble sur vos processus. Notre solution open-source s’adapte à vos besoins pour une gestion des achats agile et performante. Une centaine d'entreprises nous font déjà confiance, pourquoi pas vous ? 
   class: "bg-amber-600/10 dark:bg-amber-800/10"
   links:
     - label: Commencez maintenant
