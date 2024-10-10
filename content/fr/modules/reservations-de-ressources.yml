@@ -50,23 +50,27 @@ bottom_section:
   cards:
     - title: Réservation de salle en ligne
       description: Proposez un système intuitif pour permettre à vos équipes ou à vos clients de réserver des espaces adaptés à leurs besoins.
-      icon: i-heroicons-outline-calculator
+      icon: bi:person-workspace
       class: "col-span-4 row-span-3"
     - title: Gestion du matériel
       description: Simplifiez la réservation de machines ou d’équipements spécifiques grâce à un système de suivi transparent.
-      icon: i-heroicons-outline-book-open
+      icon: material-symbols:precision-manufacturing-outline-rounded
       class: "col-span-4 row-span-3"
     - title: Intégration avec Google Agenda
       description: Synchronisez vos calendriers de réservation pour une visibilité optimale en temps réel.
-      icon: i-heroicons-outline-chart-bar-square
+      icon: simple-icons:googlecalendar
       class: "col-span-4 row-span-3"
     - title: Portail utilisateur personnalisé
-      description: Chaque utilisateur dispose d’un accès dédié pour gérer ses réservations, consulter ses factures ou modifier ses informations
-      icon: i-heroicons-outline-chart-bar-square
+      description: Chaque utilisateur dispose d’un accès dédié pour gérer ses réservations, consulter ses factures ou modifier ses informations.
+      icon: icon-park-outline:locking-web
       class: "col-span-4 row-span-3"
     - title: Gestion des abonnements
-      description: Proposez la possibilité de souscrire à un abonnement à vos utilisateurs. Simplifiez la mise en place d'évènements'
-      icon: i-heroicons-outline-chart-bar-square
+      description: Proposez la possibilité de souscrire à un abonnement à vos utilisateurs. Simplifiez la mise en place d'évènements.
+      icon: tabler:file-rss
+      class: "col-span-4 row-span-3"
+    - title: Gestion multi-lieux
+      description: Centralisez la gestion de plusieurs tiers-lieux, tout en offrant une vue d'ensemble et une flexibilité adaptée aux spécificités de chaque lieu.
+      icon: tabler:map-pins
       class: "col-span-4 row-span-3"
 
 
