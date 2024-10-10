@@ -33,37 +33,46 @@ hero:
 
 features:
   - title: "Automatisation par OCR : Simplifiez votre flux d'achat"
-    description: "La fonctionnalité OCR de Dokos permet de transformer vos documents papier ou PDF (factures, bons de livraison, etc.) en données numériques structurées, directement exploitables par Dokos.Extraction automatique de données = Lors de la réception de documents commerciaux (factures, bons de commande), l’OCR analyse le texte et extrait automatiquement les informations clés comme les montants, dates, et numéros de commande. Cela permet de réduire considérablement la saisie manuelle et d’éviter les erreurs​. Traitement des emails avec pièces jointes = Dokos peut être configuré pour recevoir des documents directement via email, analyser les pièces jointes (PDF ou images) grâce à l’OCR, et convertir ces données pour qu’elles soient utilisables dans les modules de comptabilité ou de gestion des stocks​."
+    description: "<span class='font-bold'>Gagnez du temps et réduisez les erreurs avec une gestion documentaire automatisée.</span><br>La fonctionnalité OCR de Dokos transforme vos documents papier ou PDF (factures, bons de livraison, etc.) en données numériques directement exploitables dans votre système de gestion.<ul><li><span class='font-bold'> Extraction automatique des données :</span> Dès la réception de vos documents (factures, bons de commande), l’OCR analyse et extrait automatiquement les informations essentielles (montants, dates, numéros de commande). Un gain de temps considérable pour vos équipes.</li><li><span class='font-bold'> Traitement des emails avec pièces jointes :</span> Envoyez vos documents directement par email, et Dokos se charge de les analyser et de les intégrer à vos modules comptables ou de gestion des stocks."
     align: left
     headline:
       label: Automatisation
       color: sky
-  - title: Fonctionnement avancé = Validation humaine et flux personnalisés
-    description: L’OCR dans Dokos ne se limite pas à l’automatisation brute. Les utilisateurs peuvent configurer un workflow semi-automatisé = après la reconnaissance du document, les informations peuvent être visualisées et validées manuellement avant d’être intégrées au système. Cela offre un contrôle supplémentaire pour les entreprises souhaitant une gestion précise des données​
+  - title: "Fonctionnement avancé : Contrôlez chaque étape"
+    description: "Dokos OCR ne se limite pas à une simple automatisation. Avec un workflow semi-automatique, vous avez la possibilité de valider manuellement les données extraites avant de les intégrer. Cette approche vous offre à la fois la rapidité de l’automatisation et la précision d’un contrôle humain. <ul><li><span class='font-bold'>Personnalisez vos workflows :</span> Configurez Dokos selon vos besoins pour avoir un contrôle total sur la gestion des documents et la validation des informations.</li>"
     align: right
     headline:
       label: Semi-automatique
       color: sky
   - title: Vos données, votre contrôle
-    description: Chez Dokos, nous croyons que vos données vous appartiennent. Grâce à notre approche open-source, nous vous offrons la possibilité d’ajuster, personnaliser et intégrer l'OCR selon vos besoins spécifiques, tout en respectant vos valeurs éthiques. Contrairement aux solutions propriétaires, Dokos garantit une transparence complète et le respect de votre vie privée. API ouverte = Vous pouvez intégrer Dokos à vos systèmes ou outils OCR existants via nos API ouvertes, assurant une flexibilité totale et l’évolution de votre ERP en fonction de vos besoins spécifiques
+    description: "Chez Dokos, nous mettons l’accent sur la transparence et la sécurité de vos données. Grâce à notre logiciel open-source, vous avez la liberté de personnaliser l'outil à vos besoins spécifiques, tout en ayant la certitude que vos informations sont protégées. <ul><li><span class='font-bold'>Données supprimées après traitement :</span> Toutes les données extraites via Amazon Textract sont effacées immédiatement après traitement.</li><li><span class='font-bold'>Flexibilité grâce à nos API ouvertes :</span> Intégrez facilement Dokos avec vos systèmes ou solutions OCR existants pour une gestion des données sans contraintes."
     align: left
     headline:
       label: Intégrations
       color: sky
+  - title: Une solution fiable et sécurisée
+    description: "Notre OCR se concentre sur trois méthodes principales pour l’extraction des données : <ul><li><span class='font-bold'>Réception par email</span></li><li><span class='font-bold'>Importation de fichiers</span></li><li><span class='font-bold'>Dépôt manuel de documents (PDF ou image)</li></span><br>Nous avons choisi Amazon Textract pour assurer une extraction de données à la fois précise et rapide, offrant ainsi le meilleur rapport qualité-prix. De plus, grâce à Dokos, vous pouvez gérer l’ensemble du flux d’achat en toute simplicité : automatisez la création de commandes fournisseurs ou faites correspondre les factures avec des commandes existantes.
+
+"
+    align: right
+    headline:
+      label: Sécurité
+      color: sky
  
 bottom_section:
   title: Les avantages de l'OCR dans Dokos
+  description: "Notre solution OCR vous permet de réduire considérablement les tâches répétitives et de vous concentrer sur des missions à plus forte valeur ajoutée. Voici pourquoi nos clients nous font confiance:"
   cards:
     - title: Gain de temps
-      description: L'automatisation OCR accélère le traitement des documents, libérant vos équipes pour des tâches à plus forte valeur ajoutée.
+      description: L’automatisation accélère le traitement des documents, permettant à vos équipes de se concentrer sur des tâches plus stratégiques.
       icon: material-symbols:alarm-on-outline
       class: "col-span-4 row-span-3"
     - title: Réduction des erreurs
-      description: Moins de saisies manuelles signifie moins d’erreurs, notamment dans les processus critiques comme la comptabilité.
+      description: "Moins de saisie manuelle = moins d'erreurs, notamment dans les processus critiques comme la comptabilité."
       icon: material-symbols:disabled-by-default-rounded
       class: "col-span-4 row-span-3"
-    - title: Contrôle
-      description: Validez les données d'achats grâce à des workflows personnalisés.
+    - title: Contrôle renforcé
+      description: Grâce aux workflows personnalisés, vous validez les informations avant qu'elles ne soient intégrées à Dokos, garantissant  des données toujours exactes.
       icon: material-symbols:check-circle-outline-rounded
       class: "col-span-4 row-span-3"
 
@@ -75,8 +84,8 @@ plus_button:
   to: /features/comptabilite
 
 bottom_cta:
-  title: Passez à Dokos dès aujourd’hui !
-  description: Libérez le potentiel de votre entreprise avec un logiciel de gestion éthique, flexible et puissant, tout en profitant de l'automatisation avancée qu’offre l’OCR. Découvrez Dokos et rejoignez une communauté dédiée à une gestion d'entreprise respectueuse et collaborative.
+  title: Simplifiez votre gestion documentaire dès aujourd'hui !
+  description: Avec Dokos, transformez votre gestion des achats grâce à l'automatisation et un contrôle total de vos données. Nous offrons une solution éthique, transparente et flexible qui s’adapte à vos besoins. Prêt à découvrir toutes les fonctionnalités de Dokos ?
   class: "bg-amber-600/10 dark:bg-amber-800/10"
   links:
     - label: Commencez maintenant
