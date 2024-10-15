@@ -9,14 +9,14 @@ const { t, locale } = useI18n({
 })
 
 const modulesContentQuery = queryContent(`/${locale.value}/modules`)
-const { data: modules_nav } = await useAsyncData('navigation', () => fetchContentNavigation(modulesContentQuery), {
+const { data: modules_nav } = await useAsyncData('modules_nav', () => fetchContentNavigation(modulesContentQuery), {
   watch: [locale]
 })
 
 const modules = modules_nav.value?.find(item => item._path === `/${locale.value}`)?.children?.find(item => item._path === `/${locale.value}/modules`)?.children
 
 const appsContentQuery = queryContent(`/${locale.value}/applications`)
-const { data: apps_nav } = await useAsyncData('navigation', () => fetchContentNavigation(appsContentQuery), {
+const { data: apps_nav } = await useAsyncData('apps_nav', () => fetchContentNavigation(appsContentQuery), {
   watch: [locale]
 })
 

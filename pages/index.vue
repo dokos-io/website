@@ -88,7 +88,7 @@ useSeoMeta({
     <ULandingSection>
       <ULandingLogos :title="page.integrations.title" :ui="{ images: 'justify-center' }">
           <UIcon v-for="icon in page.integrations.icons" :key="icon" :name="icon"
-            class="w-20 h-20 flex-shrink-0 text-gray-500 dark:text-gray-400" />
+            class="w-16 h-16 flex-shrink-0 text-gray-500 dark:text-gray-400" />
           <NuxtImg v-for="image in page.integrations.images" :key="image" :src="image" class="max-h-20" />
         </ULandingLogos>
     </ULandingSection>
