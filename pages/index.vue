@@ -71,8 +71,7 @@ useSeoMeta({
         </UCard>
     </ULandingSection>
 
-    <ULandingSection v-for="(section, index) in page.sections" :key="index" :align="section.align"
-      :features="section.features" :links="section.links">
+    <ULandingSection v-for="(section, index) in page.sections" :key="index" v-bind="section">
       <template #title>
         <span v-html="section.title" />
       </template>

@@ -1,7 +1,7 @@
-title: Frappe Builder
-link: "https://frappe.io/builder"
+title: Frappe Learning
+link: "https://frappe.io/learning"
 author: Frappe Technologies
-description: L'outil ultime de création de sites web no-code
+description: Créez votre propre plateforme de formation avec Frappe Learning
 
 navigation:
   title: Frappe Learning
@@ -13,52 +13,95 @@ logo:
   dark: /frappe/lms.png
 
 hero:
-  title: "<span class='text-primary'>Frappe Builder</span> : l'outil ultime de création de sites web no-code"
+  title: "<span class='text-primary'>Frappe Learning</span>"
+  description: Créez votre propre plateforme de formation avec Frappe Learning
   image: ""
   headline:
     label: Les applications Frappe
     to: https://frappe.io/products
     right_icon: i-heroicons-arrow-top-right-on-square-20-solid
     target: _blank
+    color: green
   links:
-    - label: Commencez avec Builder
+    - label: Mettre son premier cours en ligne
       to: https://cloud.dokos.io
       size: xl
-      color: black
-      icon: i-heroicons-play-circle-16-solid
+      color: green
+      icon: i-heroicons-rocket-launch
       trailing: false
       target: _blank
     - label: Documentation
-      icon: i-ic-outline-library-books
+      icon: i-heroicons-arrow-right
+      trailing: true
       size: xl
       color: gray
       to: https://doc.dokos.io
       target: _blank
+
+colored_section:
+  title: Simplifiez l’apprentissage de vos clients
+  description: Chez Dokos, nous avons toujours eu à cœur d’accompagner nos clients dans l’adoption des meilleures technologies, et c’est avec une grande fierté que nous vous proposons Frappe Learnin – une plateforme d’apprentissage innovante, développée par l’équipe de Frappe.
+  align: left
+  badge:
+    label: Les applications Frappe
+    to: https://frappe.io/products
+    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
+    target: _blank
+    color: green
+
+main_features:
+  - title: Révolutionnez la Conception et la Publication 
+    description: "Donnez à vos clients accès à des formations sur mesure. Créez des parcours d’apprentissage adaptés à leurs besoins spécifiques, qu’ils soient nouveaux utilisateurs de vos services ou expérimentés. En leur fournissant des contenus pédagogiques de qualité, vous renforcez leur maîtrise de vos produits et améliorez leur satisfaction à long terme."
+    align: right
+    links:
+    - label: Mettre son premier cours en ligne
+      to: https://cloud.dokos.io
+      size: xl
+      color: green
+      icon: i-heroicons-rocket-launch
+      trailing: false
+      target: _blank
+    - label: Documentation
+      icon: i-heroicons-arrow-right
+      trailing: true
+      size: xl
+      color: gray
+      to: https://doc.dokos.io
+      target: _blank
+
+carousel:
+  - title: Créez facilement vos cours
+    description: "Construit avec une interface intuitive, Frappe Learning vous permet de créer des modules de formation complets en quelques clics. Importez des contenus multimédias, créez des quiz interactifs, et structurez les parcours d’apprentissage de manière flexible."
+  - title: Simplifiez la gestion de vos utilisateurs
+    description: "Gérez les inscriptions, attribuez des cours, et offrez à vos utilisateurs une expérience d'apprentissage personnalisée. Suivez leurs progrès et ajustez les parcours selon leurs besoins."
 
 bridge:
   title: Une plateforme innovante
   description: "Frappe Builder permet à tout utilisateur, même sans compétences en développement, de créer des sites web sur-mesure grâce à une interface intuitive et no-code.  
   Conçu pour simplifier la création de site WEB, cet outil propose un ensemble de fonctionnalités puissantes pour vous permettre de concevoir des solutions entièrement personnalisées."
   image: ""
-  align: left
+  align: right
+
 
 features:
-  - title: Révolutionnez la Conception et la Publication 
-    description: Builder simplifie la création et la publication de sites Web en unifiant design et developpement, éliminant le besoin d’expertise CSS pour des mises en page précises
-    icon: i-heroicons-outline-fire
-    class: "col-span-4 row-span-2"
-  - title: Réutilisez des Systèmes de Composants 
-    description: Builder facilite la création de sites Web en permettant de réutiliser et de personnaliser des composants standard. Les changements dynamiques sont gérés de manière fluide, simplifiant l'évolution des pages sans rompre la cohérence.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Générez des Blocs Dynamiques Basés sur les Données
-    description: Builder permet de générer des blocs dynamiques directement à partir de vos données, rendant la création de sites Web interactifs et complexes simple et puissante, allant des portails aux sites d'e-commerce.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Créez des sites Web Ultra-Rapides et des Pages Légères
-    description: Builder optimise les performances en éliminant les dépendances inutiles et en chargeant uniquement les scripts essentiels. Le système garantit des pages rapides et efficaces, avec des scripts et styles ajoutés au besoin et mis en cache pour un affichage instantané.
-    icon: i-heroicons-rocket-launch
-    class: "col-span-12 row-span-2"
+  title: "Des avantages concrets pour vous et vos clients !"
+  cards:
+    - title: Révolutionnez la Conception et la Publication 
+      description: Builder simplifie la création et la publication de sites Web en unifiant design et developpement, éliminant le besoin d’expertise CSS pour des mises en page précises
+      icon: i-heroicons-outline-fire
+      class: "col-span-4 row-span-2"
+    - title: Réutilisez des Systèmes de Composants 
+      description: Builder facilite la création de sites Web en permettant de réutiliser et de personnaliser des composants standard. Les changements dynamiques sont gérés de manière fluide, simplifiant l'évolution des pages sans rompre la cohérence.
+      icon: i-heroicons-outline-cube
+      class: "col-span-4 row-span-2"
+    - title: Générez des Blocs Dynamiques Basés sur les Données
+      description: Builder permet de générer des blocs dynamiques directement à partir de vos données, rendant la création de sites Web interactifs et complexes simple et puissante, allant des portails aux sites d'e-commerce.
+      icon: i-heroicons-outline-cube
+      class: "col-span-4 row-span-2"
+    - title: Créez des sites Web Ultra-Rapides et des Pages Légères
+      description: Builder optimise les performances en éliminant les dépendances inutiles et en chargeant uniquement les scripts essentiels. Le système garantit des pages rapides et efficaces, avec des scripts et styles ajoutés au besoin et mis en cache pour un affichage instantané.
+      icon: i-heroicons-rocket-launch
+      class: "col-span-12 row-span-2"
 
 
 bottom_cta:
