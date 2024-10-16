@@ -1,0 +1,28 @@
+title: Tiers Lieux
+description: La plateforme développé par et pour les tiers-lieux
+
+hero:
+  title: Tiers Lieux
+  description: La plateforme développé par et pour les tiers-lieux
+  align: center
+  headline:
+    label: Les applications Frappe
+    to: https://frappe.io/products
+    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
+    target: _blank
+    color: green
+  links:
+    - label: Mettre son premier cours en ligne
+      to: https://cloud.dokos.io
+      size: xl
+      color: green
+      icon: i-heroicons-rocket-launch
+      trailing: false
+      target: _blank
+    - label: Documentation
+      icon: i-heroicons-arrow-right
+      trailing: true
+      size: xl
+      color: gray
+      to: https://doc.dokos.io
+      target: _blank

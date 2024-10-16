@@ -38,7 +38,6 @@ metrics:
       description: Une communauté d'entraide bienveillantes où l'on partage ses questions, ses expériences, ses idées.
       icon: i-heroicons-outline-user-group
 
-
 sections:
   - title: Une <span class="text-primary">version française</span> d'ERPNext
     description: Dokos est un <i>fork</i> d'ERPNext qui a pour objectif d'être mieux adapté aux spécificités et habitudes françaises et européennes
@@ -196,6 +195,7 @@ sections:
         trailing: true
         size: md
         class: ml-8
+
 applications:
   title: Compatible avec l'écosystème <span class="text-primary">Frappe</span>
   description: Dokos est développé pour rester compatible avec les applications créées par Frappe Technologies et la communauté Frappe/ERPNext.
@@ -232,7 +232,6 @@ applications:
       icon: print-designer.svg
       to: 'https://github.com/frappe/print_designer'
 
-
 integrations:
   title: Nous simplifions votre quotidien avec les intégrations
   icons:
@@ -248,7 +247,6 @@ integrations:
     - i-cib-nextcloud
   images:
     - /home/gocardless.png
-
 
 modules:
   title: La boîte à outils complète pour <span class="text-primary">tous vos besoins</span>
@@ -314,8 +312,6 @@ modules:
       description: Sauvegarde externalisées, services Google, e-commerce, connecteurs no-code
       icon: i-mdi-connection
       to: /fr/modules/integrations
-
-
 
 cta:
   title: Et si vous démarriez avec Dokos ?
