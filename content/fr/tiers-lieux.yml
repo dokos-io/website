@@ -26,3 +26,74 @@ hero:
       color: gray
       to: https://doc.dokos.io
       target: _blank
+
+
+logos:
+  title: Ils participent au développement de Dokos
+
+colored_section:
+  title: "Dokos & les Tiers-Lieux : une aventure collaborative et engagée depuis 2018"
+  description: "Né sous l’impulsion de la Compagnie des Tiers-Lieux, notre projet s’est initialement construit autour d’ERPNext avant de devenir Dokos.
+Notre objectif est clair : offrir un outil de gestion complet  capable de répondre aux besoins complexes des tiers-lieux, comme la gestion multi-société, tout en respectant les valeurs de l’économie sociale et solidaire (ESS).
+
+Dokos est bien plus qu’un simple logiciel, c’est un projet commun. 
+
+Des tiers-lieux se sont unis pour co-construire ce module, faisant émerger une plateforme adaptée à leurs besoins uniques. Ensemble, nous faisons grandir Dokos, toujours dans l’esprit pur de l’open-source, où chaque contribution renforce l’intelligence collective.
+
+Pour ceux qui découvrent Dokos, rejoignez un écosystème qui valorise la coopération, l’agilité et la transparence. Pour ceux qui l’utilisent déjà, merci de faire partie de cette aventure qui, jour après jour, redéfinit la gestion collaborative des tiers-lieux. 
+
+Continuons à innover et à bâtir ensemble, avec énergie et passion."
+  align: left
+  links:
+    - label: Mettre son premier cours en ligne
+      to: https://cloud.dokos.io
+      size: xl
+      color: none
+      icon: i-heroicons-rocket-launch
+      trailing: false
+      target: _blank
+    - label: Documentation
+      icon: i-heroicons-arrow-right
+      trailing: true
+      size: xl
+      color: none
+      to: https://doc.dokos.io
+      target: _blank
+
+
+sections:
+  - title: Gagnez du temps avec une gestion simplifiée
+    description: ""
+    align: left
+    features:
+      - name: Facturation et abonnements
+        description: Automatisez vos processus de facturation et d’abonnement. Avec Dokos, gérez facilement les abonnements mensuels de vos membres, créez des devis et facturez des services ponctuels. Tout est centralisé, pour une gestion sans effort.
+        icon: i-heroicons-outline-cog
+
+  - title: Offrez un expérience fluide et optimisez l’occupation de vos ressources
+    description: Avec Dokos, la gestion de vos espaces n’a jamais été aussi simple. Que vous proposiez des salles de réunion, des machines ou du matériel, vos utilisateurs peuvent réserver en toute autonomie, directement en ligne. Un système transparent, qui optimise l'occupation de vos ressources et offre à vos membres une expérience fluide.
+    align: right
+    features:
+      - name: Facturation et abonnements
+        description: Automatisez vos processus de facturation et d’abonnement. Avec Dokos, gérez facilement les abonnements mensuels de vos membres, créez des devis et facturez des services ponctuels. Tout est centralisé, pour une gestion sans effort.
+        icon: i-heroicons-outline-cog
+
+
+cta:
+  title: Prêt à simplifier la gestion de votre Tiers-Lieu ?
+  description: Rejoignez les centaines de tiers-lieux sur Dokos et simpliez la gestion de votre lieu avec une plateforme en adéquation avec vos valeurs. 
+  links:
+    - label: Mettre son premier cours en ligne
+      to: https://cloud.dokos.io
+      size: xl
+      color: orange
+      icon: i-heroicons-rocket-launch
+      trailing: false
+      target: _blank
+    - label: Documentation
+      icon: i-heroicons-arrow-right
+      trailing: true
+      size: xl
+      color: gray
+      to: https://doc.dokos.io
+      target: _blank
