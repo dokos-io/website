@@ -1,4 +1,4 @@
-title: Frappe HelpDesk
+title: Frappe Helpdesk
 link: "https://frappe.io/helpdesk"
 author: Frappe Technologies
 description: Optimisez et simplifiez la gestion des demandes clients !
@@ -13,7 +13,7 @@ logo:
   dark: /frappe/helpdesk.png
 
 hero:
-  title: "<span class='text-primary'>Frappe HelpDesk</span>"
+  title: "<span class='text-primary'>Frappe Helpdesk</span>"
   description: "Optimisez et simplifiez la gestion des demandes clients !"
   headline:
     label: Les applications Frappe
@@ -36,7 +36,7 @@ hero:
       target: _blank
 
 colored_section:
-  - title: LA solution intelligente pour la gestion de votre support client 
+    title: LA solution intelligente pour la gestion de votre support client 
     description: "Centralisez toutes vos demandes de support en un seul endroit avec à notre outil puissant et convivial, directement intégré à Dokos. Grâce à ses fonctionnalités avancées, votre équipe peut suivre chaque interaction client, résoudre les problèmes plus rapidement et améliorer l’expérience globale du service client."
 
 carousel: 
