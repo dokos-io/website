@@ -1,11 +1,11 @@
-title: Frappe Builder
-link: "https://frappe.io/builder"
+title: Frappe Insights
+link: "https://frappe.io/insights"
 author: Frappe Technologies
-description: L'outil ultime de création de sites web no-code
+description: Prenez des décisions éclairées grâce à Frappe Insights
 
 navigation:
   title: Insights
-  description: L'outil ultime de création de sites web no-code
+  description: Prenez des décisions éclairées grâce à Frappe Insights 
   icon: /frappe/insights.svg
 
 logo:
@@ -13,7 +13,8 @@ logo:
   dark: /frappe/insights.svg
 
 hero:
-  title: "<span class='text-primary'>Frappe Builder</span> : l'outil ultime de création de sites web no-code"
+  title: "Prenez des décisions éclairées grâce à <span class='text-primary'>Frappe Insights</span> "
+  description: Un  outil de rapports et analyses simple et puissant !
   image: ""
   headline:
     label: Les applications Frappe
@@ -21,10 +22,10 @@ hero:
     right_icon: i-heroicons-arrow-top-right-on-square-20-solid
     target: _blank
   links:
-    - label: Commencez avec Builder
+    - label: Générez son premier rapport
       to: https://cloud.dokos.io
       size: xl
-      color: black
+      color: green
       icon: i-heroicons-play-circle-16-solid
       trailing: false
       target: _blank
@@ -35,55 +36,68 @@ hero:
       to: https://doc.dokos.io
       target: _blank
 
-bridge:
-  title: Une plateforme innovante
-  description: "Frappe Builder permet à tout utilisateur, même sans compétences en développement, de créer des sites web sur-mesure grâce à une interface intuitive et no-code.  
-  Conçu pour simplifier la création de site WEB, cet outil propose un ensemble de fonctionnalités puissantes pour vous permettre de concevoir des solutions entièrement personnalisées."
+bridge_before_colored_section: 
+  title: "Explorez vos données en profondeur"
+  description: "Créez simplement des tableaux de bord interactifs, générez en quelques clics des rapports personnalisés ou visualisez vos données en temps réel. Grâce à l'interface intuitive et flexible d'Insights, vous pouvez explorer vos données plus en profondeur et adapter les analyses à vos besoins spécifiques, sans avoir à vous soucier de coûts supplémentaires"
+features_before_colored_section.cards:
+  - title: Des rapports sur mesure 
+    icon: material-symbols:bar-chart-4-bars-rounded
+    class: "col-span-4 row-span-3"
+  - title: Une visualisation intuitive
+    icon: material-symbols:pivot-table-chart-rounded
+    class: "col-span-4 row-span-3"
+  - title: Un suivi en temps réel
+    icon: material-symbols:alarm-on-outline-rounded
+    class: "col-span-4 row-span-3"
+
+colored_section: 
+  title: Créez, personnalisez et innovez ! 
+  description: "Avec Dokos, profitez d'un' accès direct à Frappe Builder : l’outil de création de pages innovant développé par l’équipe Frappe. Grâce à  Builder et sans coût supplémentaire, personnaliser votre interface devient intuitif et accessible, le tout sans une ligne de code"
   image: ""
   align: left
+  links:
+    - label: Générez son premier rapport
+      size: sm
+      color: gray
+      to: https://cloud.dokos.io
+      target: _blank
+    - label: En savoir plus sur Frappe Insight
+      size: sm
+      variant: 'link'
+      color: gray
+      to: https://frappe.io/builder
+      target: _blank
+      icon: i-heroicons-outline-arrow-right
+      trailing: true
 
-features:
-  - title: Révolutionnez la Conception et la Publication 
-    description: Builder simplifie la création et la publication de sites Web en unifiant design et developpement, éliminant le besoin d’expertise CSS pour des mises en page précises
-    icon: i-heroicons-outline-fire
-    class: "col-span-4 row-span-2"
-  - title: Réutilisez des Systèmes de Composants 
-    description: Builder facilite la création de sites Web en permettant de réutiliser et de personnaliser des composants standard. Les changements dynamiques sont gérés de manière fluide, simplifiant l'évolution des pages sans rompre la cohérence.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Générez des Blocs Dynamiques Basés sur les Données
-    description: Builder permet de générer des blocs dynamiques directement à partir de vos données, rendant la création de sites Web interactifs et complexes simple et puissante, allant des portails aux sites d'e-commerce.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Créez des sites Web Ultra-Rapides et des Pages Légères
-    description: Builder optimise les performances en éliminant les dépendances inutiles et en chargeant uniquement les scripts essentiels. Le système garantit des pages rapides et efficaces, avec des scripts et styles ajoutés au besoin et mis en cache pour un affichage instantané.
-    icon: i-heroicons-rocket-launch
-    class: "col-span-12 row-span-2"
+  
+bridge:
+  title: Bénéficiez d'une analyse de données de pointe
+  align: center
 
+carousel: 
+  - title: "Adoption rapide"
+    description: "Frappe Insights s’intègre facilement à votre logiciel de gestion, sans besoin de formation complexe."
+  - title: "Coût zéro"
+    description: "Cet outil puissant est inclus dans votre solution Dokos, sans frais additionnels."
+  - title: "Confiance et transparence "
+    description: "En tant que partenaires, nous assurons un support continu pour garantir que vous tiriez le meilleur parti de cet outil."
 
 bottom_cta:
-  title: Frappe Builder, le travail d’une équipe remarquable
-  description: "L’équipe de Dokos tient à exprimer son admiration pour le travail exceptionnel réalisé par l’équipe de Frappe/ERPNext,
-  ainsi que pour leur engagement constant en faveur de l’éthique et du logiciel libre. 
-  Cette collaboration mondiale incarne une véritable synergie, où contributeurs et partenaires unissent leurs efforts pour créer un écosystème durable et sécurisé.
-
-  Nous sommes fiers de pouvoir partager le fruit de ce travail avec notre communauté.
-
-  Bien que nous ayons dû adapter Dokos pour répondre aux spécificités des normes européennes, cela n’altère en rien le profond respect que nous portons au projet d’origine. 
-  Nous restons convaincus que la véritable force du logiciel libre réside dans sa flexibilité, permettant d’apporter des améliorations tout en offrant une réelle valeur 
-  ajoutée aux utilisateurs quotidien."
+  title: "Prenez le contrôle de vos données maintenant !"
+  description: ""
   card: true
   links:
-    - label: Débuter avec Builder
+    - label: Créez son premier rapport
       size: md
       color: gray
       to: https://cloud.dokos.io
       target: _blank
-    - label: En savoir plus sur Frappe Builder
+    - label: En savoir plus sur Frappe Insights
       size: md
       variant: 'link'
       color: gray
-      to: https://frappe.io/builder
+      to: https://frappe.io/insights
       target: _blank
       icon: i-heroicons-outline-arrow-right
       trailing: true

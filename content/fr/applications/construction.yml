@@ -1,11 +1,11 @@
-title: Frappe Builder
-link: "https://frappe.io/builder"
-author: Frappe Technologies
-description: L'outil ultime de création de sites web no-code
+title: Constructions
+link: "https://dokos.io/"
+author: Dokos
+description: Optimisez la gestion de vos chantiers avec Dokos Chantiers
 
 navigation:
-  title: Construction
-  description: L'outil ultime de création de sites web no-code
+  title: Chantier
+  description: Optimisez la gestion de vos chantiers avec Dokos Chantiers
   icon: /frappe/construction_logo.svg
 
 logo:
@@ -13,18 +13,19 @@ logo:
   dark: /frappe/construction_logo.svg
 
 hero:
-  title: "<span class='text-primary'>Frappe Builder</span> : l'outil ultime de création de sites web no-code"
+  title: "<span class='text-primary'>Optimisez la gestion de vos chantiers avec Dokos Chantiers</span>"
+  description: "Gagnez en efficacité et en sérénité sur tous vos projets de construction"
   image: ""
   headline:
-    label: Les applications Frappe
-    to: https://frappe.io/products
+    label: Les applications Dokos
+    to: https://dokos.io/
     right_icon: i-heroicons-arrow-top-right-on-square-20-solid
     target: _blank
   links:
-    - label: Commencez avec Builder
+    - label: Démarrez avec Dokos Chantier
       to: https://cloud.dokos.io
       size: xl
-      color: black
+      color: green
       icon: i-heroicons-play-circle-16-solid
       trailing: false
       target: _blank
@@ -35,55 +36,48 @@ hero:
       to: https://doc.dokos.io
       target: _blank
 
-bridge:
-  title: Une plateforme innovante
-  description: "Frappe Builder permet à tout utilisateur, même sans compétences en développement, de créer des sites web sur-mesure grâce à une interface intuitive et no-code.  
-  Conçu pour simplifier la création de site WEB, cet outil propose un ensemble de fonctionnalités puissantes pour vous permettre de concevoir des solutions entièrement personnalisées."
+colored_section: 
+  title: Simplifiez-vous la vie, réduisez les erreurs et maximisez votre efficacité 
+  description: "Nous vous offrons une plateforme complète et intuitive pour la gestion de vos chantiers, de la planification à la facturation. Conçu spécifiquement pour les entreprises du bâtiment, Dokos vous permet de rester organisé et de suivre chaque étape de vos projets, tout en garantissant la transparence et la fiabilité auprès de vos clients."
   image: ""
   align: left
 
-features:
-  - title: Révolutionnez la Conception et la Publication 
-    description: Builder simplifie la création et la publication de sites Web en unifiant design et developpement, éliminant le besoin d’expertise CSS pour des mises en page précises
-    icon: i-heroicons-outline-fire
-    class: "col-span-4 row-span-2"
-  - title: Réutilisez des Systèmes de Composants 
-    description: Builder facilite la création de sites Web en permettant de réutiliser et de personnaliser des composants standard. Les changements dynamiques sont gérés de manière fluide, simplifiant l'évolution des pages sans rompre la cohérence.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Générez des Blocs Dynamiques Basés sur les Données
-    description: Builder permet de générer des blocs dynamiques directement à partir de vos données, rendant la création de sites Web interactifs et complexes simple et puissante, allant des portails aux sites d'e-commerce.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Créez des sites Web Ultra-Rapides et des Pages Légères
-    description: Builder optimise les performances en éliminant les dépendances inutiles et en chargeant uniquement les scripts essentiels. Le système garantit des pages rapides et efficaces, avec des scripts et styles ajoutés au besoin et mis en cache pour un affichage instantané.
-    icon: i-heroicons-rocket-launch
-    class: "col-span-12 row-span-2"
-
+main_features: 
+  - title: Centralisez et simplifiez votre gestion
+    description: "Avec Dokos, vous centralisez toutes les informations essentielles à vos chantiers : plans, articles, factures, équipes et délais. Notre interface intuitive vous permet de :<ul><br>- Planifier et suivre chaque étape de vos chantiers.</br><br>-  Affecter les ressources (matériaux, équipes) à des tâches spécifiques.</br><br>- Visualiser en temps réel l’avancée des travaux et ajuster vos stratégies rapidement.</br>"
+    image: ""
+    align: right
+  - title: Suivez vos articles et votre matériel 
+    description: "Sur un chantier, gérer les approvisionnements et les stocks peut être un casse-tête. Dokos vous offre une vue dédiée pour chaque chantier, vous permettant de :<ul><br>- Gérer et suivre vos articles en temps réel.</br><br>- Automatiser les réapprovisionnements pour éviter les ruptures de stock.</br><br>- Anticiper les besoins matériels pour chaque phase du projet, réduisant ainsi les retards."
+    image: ""
+    align: left
+  - title: Une facturation fluide et flexible 
+    description: "Les chantiers évoluent souvent par étapes, et vos facturations doivent suivre ce rythme. Avec la facturation de situation, vous facturez vos clients en fonction de l’avancement réel des travaux. Cela vous garantit une meilleure gestion des flux de trésorerie tout en renforçant la confiance avec vos clients :<ul><br>- Émettre des factures intermédiaires à chaque étape clé du projet.</br><br>- Assurer une transparence totale avec des factures détaillées.</br>"
+    image: ""
+    align: right
+  - title: Personnalisez votre espace pour répondre à vos besoins
+    description: "Chaque entreprise est unique. Avec Dokos, personnalisez votre espace pour répondre précisément à vos besoins. Que vous soyez une petite structure ou une grande entreprise, notre logiciel s’adapte à votre croissance."
+    image: ""
+    align: left
+  - title: Gagnez la confiance de vos clients
+    description: "Dokos vous aide à garantir la transparence à chaque étape du chantier, à respecter les délais et à améliorer la satisfaction client. En centralisant vos informations et en automatisant les tâches répétitives, vous libérez du temps pour ce qui compte vraiment : la qualité de vos travaux."
+    align: center
 
 bottom_cta:
-  title: Frappe Builder, le travail d’une équipe remarquable
-  description: "L’équipe de Dokos tient à exprimer son admiration pour le travail exceptionnel réalisé par l’équipe de Frappe/ERPNext,
-  ainsi que pour leur engagement constant en faveur de l’éthique et du logiciel libre. 
-  Cette collaboration mondiale incarne une véritable synergie, où contributeurs et partenaires unissent leurs efforts pour créer un écosystème durable et sécurisé.
-
-  Nous sommes fiers de pouvoir partager le fruit de ce travail avec notre communauté.
-
-  Bien que nous ayons dû adapter Dokos pour répondre aux spécificités des normes européennes, cela n’altère en rien le profond respect que nous portons au projet d’origine. 
-  Nous restons convaincus que la véritable force du logiciel libre réside dans sa flexibilité, permettant d’apporter des améliorations tout en offrant une réelle valeur 
-  ajoutée aux utilisateurs quotidien."
+  title: "Passez à la vitesse supérieure avec Dokos Chantiers"
+  description: "Ne laissez plus les imprévus ralentir vos projets. Gagnez en tranquillité d’esprit avec une gestion optimisée de vos chantiers. Essayez Dokos Chantiers dès aujourd'hui et découvrez une nouvelle manière de gérer vos projets, en toute sérénité."
   card: true
   links:
-    - label: Débuter avec Builder
+    - label: Démarrez votre premier projet chantier
       size: md
-      color: gray
+      color: green
       to: https://cloud.dokos.io
       target: _blank
-    - label: En savoir plus sur Frappe Builder
+    - label: Documentation
       size: md
       variant: 'link'
       color: gray
-      to: https://frappe.io/builder
+      to: https://doc.dokos.io/
       target: _blank
       icon: i-heroicons-outline-arrow-right
       trailing: true

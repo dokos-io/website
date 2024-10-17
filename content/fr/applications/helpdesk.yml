@@ -1,11 +1,11 @@
-title: Frappe Builder
-link: "https://frappe.io/builder"
+title: Frappe HelpDesk
+link: "https://frappe.io/helpdesk"
 author: Frappe Technologies
-description: L'outil ultime de création de sites web no-code
+description: Optimisez et simplifiez la gestion des demandes clients !
 
 navigation:
   title: Helpdesk
-  description: L'outil ultime de création de sites web no-code
+  description: Optimisez et simplifiez la gestion des demandes clients !
   icon: /frappe/helpdesk.png
 
 logo:
@@ -13,18 +13,18 @@ logo:
   dark: /frappe/helpdesk.png
 
 hero:
-  title: "<span class='text-primary'>Frappe Builder</span> : l'outil ultime de création de sites web no-code"
-  image: ""
+  title: "<span class='text-primary'>Frappe HelpDesk</span>"
+  description: "Optimisez et simplifiez la gestion des demandes clients !"
   headline:
     label: Les applications Frappe
     to: https://frappe.io/products
     right_icon: i-heroicons-arrow-top-right-on-square-20-solid
     target: _blank
   links:
-    - label: Commencez avec Builder
+    - label: Répondre à son premier ticket
       to: https://cloud.dokos.io
       size: xl
-      color: black
+      color: orange
       icon: i-heroicons-play-circle-16-solid
       trailing: false
       target: _blank
@@ -35,55 +35,35 @@ hero:
       to: https://doc.dokos.io
       target: _blank
 
-bridge:
-  title: Une plateforme innovante
-  description: "Frappe Builder permet à tout utilisateur, même sans compétences en développement, de créer des sites web sur-mesure grâce à une interface intuitive et no-code.  
-  Conçu pour simplifier la création de site WEB, cet outil propose un ensemble de fonctionnalités puissantes pour vous permettre de concevoir des solutions entièrement personnalisées."
-  image: ""
-  align: left
+colored_section:
+  - title: LA solution intelligente pour la gestion de votre support client 
+    description: "Centralisez toutes vos demandes de support en un seul endroit avec à notre outil puissant et convivial, directement intégré à Dokos. Grâce à ses fonctionnalités avancées, votre équipe peut suivre chaque interaction client, résoudre les problèmes plus rapidement et améliorer l’expérience globale du service client."
 
-features:
-  - title: Révolutionnez la Conception et la Publication 
-    description: Builder simplifie la création et la publication de sites Web en unifiant design et developpement, éliminant le besoin d’expertise CSS pour des mises en page précises
-    icon: i-heroicons-outline-fire
-    class: "col-span-4 row-span-2"
-  - title: Réutilisez des Systèmes de Composants 
-    description: Builder facilite la création de sites Web en permettant de réutiliser et de personnaliser des composants standard. Les changements dynamiques sont gérés de manière fluide, simplifiant l'évolution des pages sans rompre la cohérence.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Générez des Blocs Dynamiques Basés sur les Données
-    description: Builder permet de générer des blocs dynamiques directement à partir de vos données, rendant la création de sites Web interactifs et complexes simple et puissante, allant des portails aux sites d'e-commerce.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Créez des sites Web Ultra-Rapides et des Pages Légères
-    description: Builder optimise les performances en éliminant les dépendances inutiles et en chargeant uniquement les scripts essentiels. Le système garantit des pages rapides et efficaces, avec des scripts et styles ajoutés au besoin et mis en cache pour un affichage instantané.
-    icon: i-heroicons-rocket-launch
-    class: "col-span-12 row-span-2"
-
+carousel: 
+  - title: Suivi des tickets en temps réel 
+    description: Chaque demande est organisée et facilement traçable depuis la création jusqu’à la résolution.
+  - title: Automatisation des processus
+    description: Automatisez la répartition des demandes, l’envoi de notifications et la mise à jour des statuts pour gagner du temps et améliorer la productivité.
+  - title: Rapports détaillés
+    description: Analysez les performances de votre équipe avec des rapports dynamiques qui vous permettent d'ajuster vos stratégies en temps réel.
+  - title: ""
+    description: "Frappe HelpDesk s’intègre parfaitement à d’autres modules comme la facturation, l’inventaire ou les ventes, créant ainsi un écosystème unifié pour toute votre gestion d’entreprise."
 
 bottom_cta:
-  title: Frappe Builder, le travail d’une équipe remarquable
-  description: "L’équipe de Dokos tient à exprimer son admiration pour le travail exceptionnel réalisé par l’équipe de Frappe/ERPNext,
-  ainsi que pour leur engagement constant en faveur de l’éthique et du logiciel libre. 
-  Cette collaboration mondiale incarne une véritable synergie, où contributeurs et partenaires unissent leurs efforts pour créer un écosystème durable et sécurisé.
-
-  Nous sommes fiers de pouvoir partager le fruit de ce travail avec notre communauté.
-
-  Bien que nous ayons dû adapter Dokos pour répondre aux spécificités des normes européennes, cela n’altère en rien le profond respect que nous portons au projet d’origine. 
-  Nous restons convaincus que la véritable force du logiciel libre réside dans sa flexibilité, permettant d’apporter des améliorations tout en offrant une réelle valeur 
-  ajoutée aux utilisateurs quotidien."
+  title: "Transformez votre gestion des demandes clients! "
+  description: "Bénéficiez dès aujourd’hui d’un outil puissant et gratuit, intégré directement à Dokos. Il suffit d’un clic, tout est déjà prêt à être utilisé pour simplifier vos impressions. Créez dès maintenant des documents professionnels, à votre image !"
   card: true
   links:
-    - label: Débuter avec Builder
+    - label: Répondre à son premier ticket
       size: md
-      color: gray
+      color: orange
       to: https://cloud.dokos.io
       target: _blank
-    - label: En savoir plus sur Frappe Builder
+    - label: En savoir plus sur Frappe HelpDesk
       size: md
       variant: 'link'
       color: gray
-      to: https://frappe.io/builder
+      to: https://frappe.io/helpDesk
       target: _blank
       icon: i-heroicons-outline-arrow-right
       trailing: true

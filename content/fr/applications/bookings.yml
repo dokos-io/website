@@ -1,88 +1,97 @@
 title: Bookings
-link: "https://frappe.io/builder"
-author: Frappe Technologies
-description: L'outil ultime de création de sites web no-code
+link: "https://frappe.io/bookings"
+author: Dokos
+description: Transformez la gestion de vos réservations avec Bookings
 
 navigation:
   title: Bookings
-  description: L'outil ultime de création de sites web no-code
+  description: Transformez la gestion de vos réservations avec Bookings
   icon: /frappe/bookings_logo.svg
 
 logo:
   light: /frappe/bookings_logo.svg
   dark: /frappe/bookings_logo.svg
 hero:
-  title: "<span class='text-primary'>Frappe Builder</span> : l'outil ultime de création de sites web no-code"
+  title: "Transformez la gestion de vos réservations avec <span class='text-primary'>Bookings</span>"
+  description: Gérez vos espaces et ressources de façon intelligente, simplifiée et automatisée.
   image: ""
   headline:
-    label: Les applications Frappe
-    to: https://frappe.io/products
+    label: Les applications Dokos
+    to: https://dokos.io
     right_icon: i-heroicons-arrow-top-right-on-square-20-solid
     target: _blank
   links:
-    - label: Commencez avec Builder
+    - label: Gérez vos ressources
       to: https://cloud.dokos.io
       size: xl
-      color: black
+      color: green
       icon: i-heroicons-play-circle-16-solid
       trailing: false
       target: _blank
     - label: Documentation
       icon: i-ic-outline-library-books
       size: xl
-      color: gray
+      color: white
       to: https://doc.dokos.io
       target: _blank
 
-bridge:
-  title: Une plateforme innovante
-  description: "Frappe Builder permet à tout utilisateur, même sans compétences en développement, de créer des sites web sur-mesure grâce à une interface intuitive et no-code.  
-  Conçu pour simplifier la création de site WEB, cet outil propose un ensemble de fonctionnalités puissantes pour vous permettre de concevoir des solutions entièrement personnalisées."
+colored_section: 
+  title: LA solution tout-en-un pour gérer efficacement les réservations !
+  description: "Bienvenue sur Dokos Bookings, l’outil de gestion  des réservations de vos salles, équipements, ou services. Que vous soyez un espace de coworking, une entreprise qui gère des ressources partagées, ou encore un prestataire de services, Dokos vous permet de centraliser et optimiser vos opérations de réservation tout en améliorant l'expérience utilisateur pour vos clients et vos équipes."
   image: ""
   align: left
 
-features:
-  - title: Révolutionnez la Conception et la Publication 
-    description: Builder simplifie la création et la publication de sites Web en unifiant design et developpement, éliminant le besoin d’expertise CSS pour des mises en page précises
-    icon: i-heroicons-outline-fire
-    class: "col-span-4 row-span-2"
-  - title: Réutilisez des Systèmes de Composants 
-    description: Builder facilite la création de sites Web en permettant de réutiliser et de personnaliser des composants standard. Les changements dynamiques sont gérés de manière fluide, simplifiant l'évolution des pages sans rompre la cohérence.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Générez des Blocs Dynamiques Basés sur les Données
-    description: Builder permet de générer des blocs dynamiques directement à partir de vos données, rendant la création de sites Web interactifs et complexes simple et puissante, allant des portails aux sites d'e-commerce.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Créez des sites Web Ultra-Rapides et des Pages Légères
-    description: Builder optimise les performances en éliminant les dépendances inutiles et en chargeant uniquement les scripts essentiels. Le système garantit des pages rapides et efficaces, avec des scripts et styles ajoutés au besoin et mis en cache pour un affichage instantané.
-    icon: i-heroicons-rocket-launch
-    class: "col-span-12 row-span-2"
+main_features:
+  - title: Gérez toutes vos réservations via une interface intuitive.
+    description: "Grâce à un calendrier partagé, visualisez en un clin d'œil les disponibilités et assurez-vous de maximiser l'utilisation de vos espaces et ressources. Fini les chevauchements de réservation ou les erreurs humaines ! Dokos automatise le suivi des créneaux pour vous libérer du temps et éviter les erreurs."
+    image: ""
+    align: right
 
+  - title: Regroupez toutes vos informations dans une seule plateforme
+    description: De la réservation d'une salle à la gestion des équipements, vous gardez le contrôle total en quelques clics. Vous pouvez également attribuer des ressources spécifiques (comme des vidéoprojecteurs ou autres équipements) à chaque réservation, garantissant ainsi une gestion fluide de vos ressources.
+    image: ""
+    align: left
+ 
+  - title: Facilitez vos processus administratifs
+    description: Dokos facilite vos facturations et vos paiements en générant automatiquement des factures à partir des réservations confirmées. Un gain de temps considérable qui évite les erreurs manuelles et améliore la relation client grâce à une gestion fluide des paiements.
+    image: ""
+    align: right
+
+  - title: Ne courez plus après les rappels.
+    description: Dokos s'occupe d’envoyer des notifications automatiques pour confirmer les réservations, envoyer des rappels ou même notifier des modifications. Vous restez connecté avec vos clients et utilisateurs, sans effort supplémentaire.
+    image: ""
+    align: left
+
+  - title: Intégrez Booking à tous vos outils
+    description: Que ce soit pour la gestion de projets ou le suivi des stocks, Dokos assure une cohésion parfaite de vos opérations. Vous optimisez ainsi la gestion de vos équipes, ressources et plannings au sein d’une seule plateforme.
+    image: ""
+    align: right
+
+  - title: Pilotez votre activité avec des outils puissants
+    description: Suivez la performance de vos réservations avec des rapports détaillés sur le taux d'occupation, l'utilisation des ressources et bien plus. Exportez facilement vos données pour une analyse encore plus poussée, et prenez des décisions éclairées pour booster votre productivité.
+    image: ""
+    align: left
+
+  - title: Une application qui inspire confiance
+    description: "En optant pour Dokos, vous choisissez un outil open-source utilisé par des entreprises du monde entier. Sa flexibilité et son approche modulaire vous garantissent une personnalisation adaptée à vos besoins tout en assurant sécurité et confidentialité de vos données.Dokos Bookings, c’est bien plus qu’un simple outil de réservation : c’est la garantie d’une gestion optimisée, fluide et professionnelle de vos ressources. Offrez à vos clients une expérience sans frictions et simplifiez la vie de vos équipes dès aujourd'hui !"
+    image: ""
+    align: center
+    image_bg_color: "bg-sky-500"
 
 bottom_cta:
-  title: Frappe Builder, le travail d’une équipe remarquable
-  description: "L’équipe de Dokos tient à exprimer son admiration pour le travail exceptionnel réalisé par l’équipe de Frappe/ERPNext,
-  ainsi que pour leur engagement constant en faveur de l’éthique et du logiciel libre. 
-  Cette collaboration mondiale incarne une véritable synergie, où contributeurs et partenaires unissent leurs efforts pour créer un écosystème durable et sécurisé.
-
-  Nous sommes fiers de pouvoir partager le fruit de ce travail avec notre communauté.
-
-  Bien que nous ayons dû adapter Dokos pour répondre aux spécificités des normes européennes, cela n’altère en rien le profond respect que nous portons au projet d’origine. 
-  Nous restons convaincus que la véritable force du logiciel libre réside dans sa flexibilité, permettant d’apporter des améliorations tout en offrant une réelle valeur 
-  ajoutée aux utilisateurs quotidien."
+  title: Prêt à transformez dès maintenant la manière dont vous gérez vos espaces et services !
   card: true
   links:
-    - label: Débuter avec Builder
+    - label: Gérez votre première réservation
       size: md
       color: gray
       to: https://cloud.dokos.io
       target: _blank
-    - label: En savoir plus sur Frappe Builder
+    - label: En savoir plus sur Booking
       size: md
       variant: 'link'
       color: gray
-      to: https://frappe.io/builder
+      to: https://https://doc.dokos.io/
       target: _blank
       icon: i-heroicons-outline-arrow-right
       trailing: true
