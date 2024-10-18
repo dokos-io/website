@@ -1,11 +1,11 @@
-title: Frappe Builder
-link: "https://frappe.io/builder"
+title: Frappe Wiki
+link: "https://frappe.io/wiki"
 author: Frappe Technologies
-description: L'outil ultime de création de sites web no-code
+description: "Libérez le potentiel de votre équipe avec la gestion des connaissances"
 
 navigation:
   title: Wiki
-  description: L'outil ultime de création de sites web no-code
+  description: Libérez le potentiel de votre équipe avec la gestion des connaissances
   icon: /frappe/wiki.png
 
 logo:
@@ -13,7 +13,7 @@ logo:
   dark: /frappe/wiki.png
 
 hero:
-  title: "<span class='text-primary'>Frappe Builder</span> : l'outil ultime de création de sites web no-code"
+  title: "<span class='text-primary'>Frappe Wiki</span>"
   image: ""
   headline:
     label: Les applications Frappe
@@ -21,7 +21,7 @@ hero:
     right_icon: i-heroicons-arrow-top-right-on-square-20-solid
     target: _blank
   links:
-    - label: Commencez avec Builder
+    - label: Ecrire son premier Wiki
       to: https://cloud.dokos.io
       size: xl
       color: black
@@ -35,55 +35,54 @@ hero:
       to: https://doc.dokos.io
       target: _blank
 
-bridge:
-  title: Une plateforme innovante
-  description: "Frappe Builder permet à tout utilisateur, même sans compétences en développement, de créer des sites web sur-mesure grâce à une interface intuitive et no-code.  
-  Conçu pour simplifier la création de site WEB, cet outil propose un ensemble de fonctionnalités puissantes pour vous permettre de concevoir des solutions entièrement personnalisées."
-  image: ""
+colored_section: 
+  title: "Centralisez et organisez le savoir de votre organisation"
+  description: "Chez Dokos, nous sommes ravis de pouvoir offrir à nos clients le Frappe Wiki, un puissant outil de gestion des connaissances développé par l'équipe innovante derrière Frappe. Grâce à cette collaboration, nous mettons à votre disposition une solution open-source robuste, sans frais supplémentaires, qui améliore le partage de l'information au sein de votre entreprise. Avec Frappe Wiki, vous pouvez facilement centraliser et organiser le savoir de votre organisation, rendant l'information accessible, à jour et directement exploitable. "
   align: left
 
 features:
-  - title: Révolutionnez la Conception et la Publication 
-    description: Builder simplifie la création et la publication de sites Web en unifiant design et developpement, éliminant le besoin d’expertise CSS pour des mises en page précises
-    icon: i-heroicons-outline-fire
-    class: "col-span-4 row-span-2"
-  - title: Réutilisez des Systèmes de Composants 
-    description: Builder facilite la création de sites Web en permettant de réutiliser et de personnaliser des composants standard. Les changements dynamiques sont gérés de manière fluide, simplifiant l'évolution des pages sans rompre la cohérence.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Générez des Blocs Dynamiques Basés sur les Données
-    description: Builder permet de générer des blocs dynamiques directement à partir de vos données, rendant la création de sites Web interactifs et complexes simple et puissante, allant des portails aux sites d'e-commerce.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Créez des sites Web Ultra-Rapides et des Pages Légères
-    description: Builder optimise les performances en éliminant les dépendances inutiles et en chargeant uniquement les scripts essentiels. Le système garantit des pages rapides et efficaces, avec des scripts et styles ajoutés au besoin et mis en cache pour un affichage instantané.
-    icon: i-heroicons-rocket-launch
-    class: "col-span-12 row-span-2"
+  - title: "Créez un référentiel de connaissances simple et efficace"
+    description: "Frappe Wiki propose une plateforme fluide pour créer et gérer une base de connaissances. Que vous documentiez des processus internes, des guides d'utilisation ou des notes de projet, son interface intuitive permet à chaque membre de l'équipe de contribuer, modifier et organiser facilement l'information."
+    align: right
+  - title: "Simplifiez la recherche"
+    description: "Fini les recherches interminables ! Grâce à son moteur de recherche puissant, Frappe Wiki garantit que les bonnes informations sont toujours à portée de main. Vos équipes peuvent accéder aux articles via des catégories, des balises ou des mots-clés, ce qui réduit considérablement le temps de recherche des données critiques."
+    align: left
+  - title: "Tranquilisez votre esprit avec le contrôle des versions"
+    description: "Une des grandes forces de Frappe Wiki réside dans sa fonctionnalité de gestion des versions, qui permet de suivre toutes les modifications apportées aux articles. Cela garantit que vous pouvez toujours revenir à une version précédente et maintenir l'exactitude et la fiabilité de votre base de connaissances."
+    align: right
+  - title: "Un partage collaboratif des connaissances"
+    description: "Les équipes peuvent collaborer en temps réel, apportant ainsi des idées et des expertises précieuses. Grâce aux fonctionnalités de commentaire simples à utiliser, les retours et les mises à jour font partie intégrante du processus de documentation, maintenant ainsi tout le monde sur la même longueur d'onde."
+    align: left
+  - title: "Sécurisez l'accès aux informations sensibles"
+    description: "Vous avez des informations sensibles à protéger ? Avec Frappe Wiki, vous pouvez paramétrer des permissions granulaires pour contrôler qui peut voir ou modifier les articles. Cela garantit la sécurité des données tout en encourageant la collaboration au sein de l'organisation."
+    align: right
 
+bridge: 
+  title: "Pourquoi faire confiance à Dokos ?"
+  description: "Chez Dokos, nous avons une profonde estime pour le formidable travail accompli par l'équipe de Frappe. En proposant Frappe Wiki à nos clients, nous sommes fiers de poursuivre leur vision open-source et leur engagement envers l'innovation. Notre mission est d'offrir aux entreprises les meilleurs outils, et nous croyons que Frappe Wiki offre une valeur inestimable pour stimuler la productivité et la collaboration."
+  align: center
+
+carousel: 
+  - title: "100% Open-Source, sans coûts cachés"
+    description: "Avec Frappe Wiki, vous bénéficiez d'un outil de gestion des connaissances rentable qui évolue avec votre entreprise — pas d'abonnements coûteux, pas de frais cachés, seulement des fonctionnalités puissantes qui grandissent avec votre équipe."
+  - title: "Une communauté mondiale de confiance"
+    description: "Frappe Wiki et Dokos sont adoptés par des milliers d'entreprises dans le monde, incluant des leaders dans des secteurs comme la fabrication, les services et la distribution. En choisissant Frappe Wiki, vous rejoignez une communauté internationale d'innovateurs et d'entreprises avant-gardistes."
 
 bottom_cta:
-  title: Frappe Builder, le travail d’une équipe remarquable
-  description: "L’équipe de Dokos tient à exprimer son admiration pour le travail exceptionnel réalisé par l’équipe de Frappe/ERPNext,
-  ainsi que pour leur engagement constant en faveur de l’éthique et du logiciel libre. 
-  Cette collaboration mondiale incarne une véritable synergie, où contributeurs et partenaires unissent leurs efforts pour créer un écosystème durable et sécurisé.
-
-  Nous sommes fiers de pouvoir partager le fruit de ce travail avec notre communauté.
-
-  Bien que nous ayons dû adapter Dokos pour répondre aux spécificités des normes européennes, cela n’altère en rien le profond respect que nous portons au projet d’origine. 
-  Nous restons convaincus que la véritable force du logiciel libre réside dans sa flexibilité, permettant d’apporter des améliorations tout en offrant une réelle valeur 
-  ajoutée aux utilisateurs quotidien."
+  title: "Prêt à transformer la gestion de vos connaissances ?"
+  description: "Que vous souhaitiez rationaliser vos processus internes, augmenter votre efficacité ou simplement faciliter l'accès à l'information pour vos équipes, Frappe Wiki est l'outil qu'il vous faut. Chez Dokos, nous sommes impatients de vous aider à en exploiter tout le potentiel. <br> Lancez-vous dès aujourd'hui !</br>"
   card: true
   links:
-    - label: Débuter avec Builder
+    - label: Créez son premier Wiki
       size: md
       color: gray
       to: https://cloud.dokos.io
       target: _blank
-    - label: En savoir plus sur Frappe Builder
+    - label: En savoir plus sur Frappe wiki
       size: md
       variant: 'link'
       color: gray
-      to: https://frappe.io/builder
+      to: https://frappe.io/wiki
       target: _blank
       icon: i-heroicons-outline-arrow-right
       trailing: true

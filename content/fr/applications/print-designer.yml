@@ -1,11 +1,11 @@
 title: Frappe Builder
-link: "https://frappe.io/builder"
+link: "https://frappe.io/print-designer"
 author: Frappe Technologies
-description: L'outil ultime de création de sites web no-code
+description: Personnalisez vos formats d'impression avec simplicité et puissance !
 
 navigation:
   title: Print Designer
-  description: L'outil ultime de création de sites web no-code
+  description: L'outil ultime de personnalisation des formats d'impression'
   icon: /frappe/print-designer.svg
 
 logo:
@@ -13,7 +13,8 @@ logo:
   dark: /frappe/print-designer.svg
 
 hero:
-  title: "<span class='text-primary'>Frappe Builder</span> : l'outil ultime de création de sites web no-code"
+  title: "<span class='text-primary'>Frappe Print designer</span>"
+  description: "Personnalisez vos formats d'impression avec simplicité et puissance !"
   image: ""
   headline:
     label: Les applications Frappe
@@ -21,7 +22,7 @@ hero:
     right_icon: i-heroicons-arrow-top-right-on-square-20-solid
     target: _blank
   links:
-    - label: Commencez avec Builder
+    - label: "Créez votre premier format d'impression"
       to: https://cloud.dokos.io
       size: xl
       color: black
@@ -35,55 +36,51 @@ hero:
       to: https://doc.dokos.io
       target: _blank
 
-bridge:
-  title: Une plateforme innovante
-  description: "Frappe Builder permet à tout utilisateur, même sans compétences en développement, de créer des sites web sur-mesure grâce à une interface intuitive et no-code.  
-  Conçu pour simplifier la création de site WEB, cet outil propose un ensemble de fonctionnalités puissantes pour vous permettre de concevoir des solutions entièrement personnalisées."
-  image: ""
-  align: left
+colored_section: 
+  - title: "Créez avec notre outils puissant et intuitif ! "
+    description: "Le Frappe Print Designer vous permet de créer des formats d'impression personnalisés pour tous vos documents professionnels – factures, devis, bons de commande, rapports et bien plus – le tout sans écrire une seule ligne de code. Que vous soyez une petite entreprise en plein essor ou une grande organisation cherchant à renforcer son identité visuelle, le Frappe Print Designer vous offre une flexibilité inégalée. <br>Et le meilleur ? Cet outil est accessible gratuitement à tous les utilisateurs Dokos, sans frais supplémentaires.</br>"
+    align: left
 
 features:
-  - title: Révolutionnez la Conception et la Publication 
-    description: Builder simplifie la création et la publication de sites Web en unifiant design et developpement, éliminant le besoin d’expertise CSS pour des mises en page précises
-    icon: i-heroicons-outline-fire
-    class: "col-span-4 row-span-2"
-  - title: Réutilisez des Systèmes de Composants 
-    description: Builder facilite la création de sites Web en permettant de réutiliser et de personnaliser des composants standard. Les changements dynamiques sont gérés de manière fluide, simplifiant l'évolution des pages sans rompre la cohérence.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Générez des Blocs Dynamiques Basés sur les Données
-    description: Builder permet de générer des blocs dynamiques directement à partir de vos données, rendant la création de sites Web interactifs et complexes simple et puissante, allant des portails aux sites d'e-commerce.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Créez des sites Web Ultra-Rapides et des Pages Légères
-    description: Builder optimise les performances en éliminant les dépendances inutiles et en chargeant uniquement les scripts essentiels. Le système garantit des pages rapides et efficaces, avec des scripts et styles ajoutés au besoin et mis en cache pour un affichage instantané.
-    icon: i-heroicons-rocket-launch
-    class: "col-span-12 row-span-2"
+  - title: "Personnalisez sans limite"
+    description: "Avec une interface simple et intuitive, vous pouvez glisser-déposer des champs, réorganiser vos informations et créer des documents uniques en un clin d'œil. Que vous ayez besoin d'ajouter des logos, des sections spécifiques ou de dynamiser vos tableaux, tout est possible, sans effort."
+    align: right
+  - title: "Créez un design qui vous ressemble "
+    description: "Affirmez votre identité visuelle grâce à la personnalisation des polices, couleurs, et marges. Pour ceux qui le souhaite, vous pouvez allez plus loin et intégrer du code CSS pour un contrôle total du style. <br> Que vous souhaitiez une facture élégante ou un rapport analytique détaillé, vos documents sont entre vos mains.</br>"
+    align: left
+  - title: "Découvrez nos champs dynamiques et intelligents"
+    description: "Frappe Print Designer vous permet d'intégrer des données spécifiques à vos documents - automatiquement ! Que ce soit des noms, des montants, ou des dates, les champs sont mis à jour en temps réel pour vous offrir des impressions précises et toujours à jour. De plus, vous pouvez facilement ajouter des QR codes ou des codes-barres pour une gestion simplifiée."
+    align: right
+  - title: "Un outils qui s'adapte à vos processus"
+    description: "Factures, devis, rapports de vente ou d'inventaire : cet outil s'adapte à tous vos types de documents. Gagnez du temps en réutilisant des modèles ou en créant des formats spécifiques selon vos besoins, avec un contrôle total sur l'apparence et le contenu."
+    align: left
+  - title: "Multilingue et multi-dispositifs"
+    description: "Peu importe où se trouvent vos clients ou collègues, vos formats d'impression peuvent être adaptés dans la langue de leur choix et sont optimisés pour une utilisation sur mobiles comme sur ordinateurs."
+    align: right
+  - title: "Visualisez en temps réel"
+    description: "Vous pouvez visualiser vos modifications en direct et générer des PDF professionnels, prêts à être partagés instantanément par mail ou stockés dans vos systèmes."
+    align: left
 
+bridge: 
+  - title: "Une équipe respectueuse et dédiée à vos besoins"
+    description: "Chez Dokos, nous avons un immense respect pour l'incroyable travail de l'équipe Frappe. Nous sommes ravis de vous offrir l'accès à cet outil innovant qui, nous en sommes convaincus, apportera une grande valeur à votre organisation. Nous croyons en la puissance de Frappe Print Designer pour simplifier la gestion de vos impressions et pour vous permettre de vous concentrer sur l'essentiel : faire croître votre entreprise. En choisissant Dokos, vous bénéficiez d'une solution puissante, entièrement gratuite et facile à utiliser, le tout dans un écosystème collaboratif et évolutif. <br> C'est notre manière de vous soutenir avec des outils robustes et accessibles, sans coût caché.</br>"
+    align: center
 
 bottom_cta:
-  title: Frappe Builder, le travail d’une équipe remarquable
-  description: "L’équipe de Dokos tient à exprimer son admiration pour le travail exceptionnel réalisé par l’équipe de Frappe/ERPNext,
-  ainsi que pour leur engagement constant en faveur de l’éthique et du logiciel libre. 
-  Cette collaboration mondiale incarne une véritable synergie, où contributeurs et partenaires unissent leurs efforts pour créer un écosystème durable et sécurisé.
-
-  Nous sommes fiers de pouvoir partager le fruit de ce travail avec notre communauté.
-
-  Bien que nous ayons dû adapter Dokos pour répondre aux spécificités des normes européennes, cela n’altère en rien le profond respect que nous portons au projet d’origine. 
-  Nous restons convaincus que la véritable force du logiciel libre réside dans sa flexibilité, permettant d’apporter des améliorations tout en offrant une réelle valeur 
-  ajoutée aux utilisateurs quotidien."
+  title: "Prêt à essayer le Frappe Print Designer ?"
+  description: "Bénéficiez dès aujourd'hui d'un outil puissant et gratuit, intégré directement à Dokos. Il suffit d'un clic, tout est déjà prêt à être utilisé pour simplifier vos impressions. <br> Créez dès maintenant des documents professionnels, à votre image !.</br>"
   card: true
   links:
-    - label: Débuter avec Builder
+    - label: Créez son premier format d'impression'
       size: md
       color: gray
       to: https://cloud.dokos.io
       target: _blank
-    - label: En savoir plus sur Frappe Builder
+    - label: En savoir plus sur Frappe Print designer
       size: md
       variant: 'link'
       color: gray
-      to: https://frappe.io/builder
+      to: https://frappe.io/printdesigner
       target: _blank
       icon: i-heroicons-outline-arrow-right
       trailing: true

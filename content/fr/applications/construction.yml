@@ -64,8 +64,8 @@ main_features:
     align: center
 
 bottom_cta:
-  title: "Passez à la vitesse supérieure avec Dokos Chantiers"
-  description: "Ne laissez plus les imprévus ralentir vos projets. Gagnez en tranquillité d’esprit avec une gestion optimisée de vos chantiers. Essayez Dokos Chantiers dès aujourd'hui et découvrez une nouvelle manière de gérer vos projets, en toute sérénité."
+  title: "Ne laissez plus les imprévus ralentir vos projets avec Dokos Chantier"
+  description: "Passez à la vitesse supérieure. Gagnez en tranquillité d'esprit avec une gestion optimisée de vos chantiers. Essayez Dokos Chantiers dès aujourd'hui et découvrez une nouvelle manière de gérer vos projets, en toute sérénité."
   card: true
   links:
     - label: Démarrez votre premier projet chantier

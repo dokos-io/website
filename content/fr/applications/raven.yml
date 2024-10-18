@@ -1,11 +1,11 @@
-title: Frappe Builder
-link: "https://frappe.io/builder"
-author: Frappe Technologies
-description: L'outil ultime de création de sites web no-code
+title: "L'assistant AI qui révolutionne votre gestion : raven"
+link: "https://www.ravenchat.ai/"
+author: Raven
+description: Transformez votre manière de travailler
 
 navigation:
   title: Raven
-  description: L'outil ultime de création de sites web no-code
+  description: "L'assistant AI qui révolutionne votre gestion : Raven"
   icon: /frappe/raven.webp
 
 logo:
@@ -13,15 +13,15 @@ logo:
   dark: /frappe/raven.webp
 
 hero:
-  title: "<span class='text-primary'>Frappe Builder</span> : l'outil ultime de création de sites web no-code"
+  title: "<span class='text-primary'>L'assistant AI qui révolutionne votre gestion </span>"
   image: ""
   headline:
-    label: Les applications Frappe
-    to: https://frappe.io/products
+    label: Raven
+    to: "https://www.ravenchat.ai/"
     right_icon: i-heroicons-arrow-top-right-on-square-20-solid
     target: _blank
   links:
-    - label: Commencez avec Builder
+    - label: Faire sa première automatisation
       to: https://cloud.dokos.io
       size: xl
       color: black
@@ -35,55 +35,42 @@ hero:
       to: https://doc.dokos.io
       target: _blank
 
-bridge:
-  title: Une plateforme innovante
-  description: "Frappe Builder permet à tout utilisateur, même sans compétences en développement, de créer des sites web sur-mesure grâce à une interface intuitive et no-code.  
-  Conçu pour simplifier la création de site WEB, cet outil propose un ensemble de fonctionnalités puissantes pour vous permettre de concevoir des solutions entièrement personnalisées."
-  image: ""
-  align: left
+colored_section : 
+  - title: "Révolutionnez votre quotidien grâce à l'AI"
+    description: "RAVEN est le module intelligent intégré à Dokos qui transforme votre manière de travailler. Grâce à son intelligence artificielle avancée, vous pouvez automatiser des tâches complexes, extraire des données facilement, et collaborer plus efficacement au sein de votre entreprise."
+    align: left
 
 features:
-  - title: Révolutionnez la Conception et la Publication 
-    description: Builder simplifie la création et la publication de sites Web en unifiant design et developpement, éliminant le besoin d’expertise CSS pour des mises en page précises
-    icon: i-heroicons-outline-fire
-    class: "col-span-4 row-span-2"
-  - title: Réutilisez des Systèmes de Composants 
-    description: Builder facilite la création de sites Web en permettant de réutiliser et de personnaliser des composants standard. Les changements dynamiques sont gérés de manière fluide, simplifiant l'évolution des pages sans rompre la cohérence.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Générez des Blocs Dynamiques Basés sur les Données
-    description: Builder permet de générer des blocs dynamiques directement à partir de vos données, rendant la création de sites Web interactifs et complexes simple et puissante, allant des portails aux sites d'e-commerce.
-    icon: i-heroicons-outline-cube
-    class: "col-span-4 row-span-2"
-  - title: Créez des sites Web Ultra-Rapides et des Pages Légères
-    description: Builder optimise les performances en éliminant les dépendances inutiles et en chargeant uniquement les scripts essentiels. Le système garantit des pages rapides et efficaces, avec des scripts et styles ajoutés au besoin et mis en cache pour un affichage instantané.
-    icon: i-heroicons-rocket-launch
-    class: "col-span-12 row-span-2"
+  - title: "Créez des automatisations intelligentes"
+    description: "Créez vos propres bots sans aucune ligne de code. Raven vous aide à automatiser des processus métier complexes tout en s'adaptant au contexte de chaque tâche."
+    align: right
+  - title: "Fluidifiez votre quotidien avec l'intégration Dokos"
+    description: "Partagez, imprimez et travaillez sur vos documents directement depuis la messagerie Raven, sans quitter votre interface Dokos."
+    align: left
+  - title: "Optimisez votre collaboration"
+    description: "Discutez, partagez des fichiers et suivez vos conversations dans des threads organisés pour ne jamais perdre le fil."
+    align: right
+
+bridge: 
+  - title: "Confiance et transparence"
+    description: "Raven est une solution open-source, vous garantissant une transparence totale et une liberté d'utilisation sans contrainte. Rejoignez la communauté Raven aujourd'hui et transformez votre gestion d'entreprise avec une solution pensée pour l'efficacité et la simplicité."
 
 
 bottom_cta:
-  title: Frappe Builder, le travail d’une équipe remarquable
-  description: "L’équipe de Dokos tient à exprimer son admiration pour le travail exceptionnel réalisé par l’équipe de Frappe/ERPNext,
-  ainsi que pour leur engagement constant en faveur de l’éthique et du logiciel libre. 
-  Cette collaboration mondiale incarne une véritable synergie, où contributeurs et partenaires unissent leurs efforts pour créer un écosystème durable et sécurisé.
-
-  Nous sommes fiers de pouvoir partager le fruit de ce travail avec notre communauté.
-
-  Bien que nous ayons dû adapter Dokos pour répondre aux spécificités des normes européennes, cela n’altère en rien le profond respect que nous portons au projet d’origine. 
-  Nous restons convaincus que la véritable force du logiciel libre réside dans sa flexibilité, permettant d’apporter des améliorations tout en offrant une réelle valeur 
-  ajoutée aux utilisateurs quotidien."
+  title: "Prêt à révolutionner votre quotidien ?"
+  description: "Que vous souhaitiez rationaliser vos processus internes, augmenter votre efficacité ou simplement faciliter l'accès à l'information pour vos équipes, Frappe Wiki est l'outil qu'il vous faut. Chez Dokos, nous sommes impatients de vous aider à en exploiter tout le potentiel.<br>Lancez-vous dès aujourd'hui !</br>"
   card: true
   links:
-    - label: Débuter avec Builder
+    - label: Se lancer avec Raven
       size: md
       color: gray
       to: https://cloud.dokos.io
       target: _blank
-    - label: En savoir plus sur Frappe Builder
+    - label: En savoir plus sur Raven
       size: md
       variant: 'link'
       color: gray
-      to: https://frappe.io/builder
+      to: https://www.ravenchat.ai/
       target: _blank
       icon: i-heroicons-outline-arrow-right
       trailing: true

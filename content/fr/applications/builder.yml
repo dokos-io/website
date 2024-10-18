@@ -38,7 +38,7 @@ hero:
 
 colored_section: 
   title: Créez, personnalisez et innovez ! 
-  description: "Avec Dokos, profitez d'un' accès direct à Frappe Builder : l’outil de création de pages innovant développé par l’équipe Frappe. Grâce à  Builder et sans coût supplémentaire, personnaliser votre interface devient intuitif et accessible, le tout sans une ligne de code"
+  description: "Avec Dokos, profitez d'un' accès direct à Frappe Builder : l'outil de création de pages innovant développé par l'équipe Frappe. Grâce à  Builder et sans coût supplémentaire, personnaliser votre interface devient intuitif et accessible, le tout sans une ligne de code"
   image: ""
   align: left
 
@@ -61,22 +61,22 @@ bottom_section:
 
 features:
   - title: Optimisé pour votre succès
-    description: "Frappe Builder ne se contente pas de vous offrir une interface simple et intuitive, il intègre également des fonctionnalités avancées pour vous permettre d'aller plus loin dans la personnalisation.<ul><li>Compatible avec les modules Dokos : Vous pouvez créer des vues dynamiques qui interagissent directement avec vos données Dokos.</li><li> Conception réactive : Vos pages sont automatiquement optimisées pour tous les appareils – ordinateurs, tablettes et smartphones.</li><li> Respect des standards web : Conçu selon les normes les plus récentes, Frappe Builder garantit des performances élevées et une navigation fluide."
+    description: "Frappe Builder ne se contente pas de vous offrir une interface simple et intuitive, il intègre également des fonctionnalités avancées pour vous permettre d'aller plus loin dans la personnalisation.<ul><li>Compatible avec les modules Dokos : Vous pouvez créer des vues dynamiques qui interagissent directement avec vos données Dokos.</li><li> Conception réactive : Vos pages sont automatiquement optimisées pour tous les appareils : ordinateurs, tablettes et smartphones.</li><li> Respect des standards web : Conçu selon les normes les plus récentes, Frappe Builder garantit des performances élevées et une navigation fluide."
     icon: iconoir:www
     class: "col-span-4 row-span-2"
-  - title: La confiance d’une collaboration solide
-    description: Chez Dokos, nous respectons profondément le travail accompli par l’équipe de Frappe. Leur vision et leur expertise sont à l’origine de Frappe Builder, un outil que nous sommes ravis de proposer à nos clients. Nous nous engageons à vous offrir la meilleure expérience possible en vous fournissant cette solution robuste, flexible et entièrement gratuite dans notre offre.
+  - title: La confiance d'une collaboration solide
+    description: Chez Dokos, nous respectons profondément le travail accompli par l'équipe de Frappe. Leur vision et leur expertise sont à l'origine de Frappe Builder, un outil que nous sommes ravis de proposer à nos clients. Nous nous engageons à vous offrir la meilleure expérience possible en vous fournissant cette solution robuste, flexible et entièrement gratuite dans notre offre.
     icon: material-symbols:handshake-rounded
     class: "col-span-4 row-span-2"
   - title: Découvrez la puissance de la simplicité
-    description: "Nous croyons que chaque utilisateur, quel que soit son niveau de compétence, mérite d'accéder à des outils puissants qui simplifient leur quotidien. Avec Frappe Builder, vous avez la possibilité de concevoir des expériences uniques et sur mesure qui répondent précisément à vos besoins.<ul><li> Aucun coût supplémentaire : Frappe Builder est inclus dans toutes nos offres, sans frais cachés.</li><li> Support dédié : L’équipe Dokos est à vos côtés pour vous accompagner dans la prise en main de cet outil et vous offrir un support de qualité.</li>"
+    description: "Nous croyons que chaque utilisateur, quel que soit son niveau de compétence, mérite d'accéder à des outils puissants qui simplifient leur quotidien. Avec Frappe Builder, vous avez la possibilité de concevoir des expériences uniques et sur mesure qui répondent précisément à vos besoins.<ul><br> - Aucun coût supplémentaire : Frappe Builder est inclus dans toutes nos offres, sans frais cachés.</br><br> Support dédié : L'équipe Dokos est à vos côtés pour vous accompagner dans la prise en main de cet outil et vous offrir un support de qualité.<br>"
     icon: material-symbols:web-traffic-rounded
     class: "col-span-4 row-span-2"
 
 
 bottom_cta:
-  title: Essayez Frappe Builder dès aujourd’hui !
-  description: "Prêt à transformer vos idées en réalité ? Profitez de Frappe Builder dès maintenant et découvrez à quel point il est facile de concevoir des pages web et des interfaces qui reflètent vos valeurs, vos produits et vos services."
+  title: Prêt à transformer vos idées en réalité ?
+  description: "Essayez Frappe Builder dès aujourd'hui ! Découvrez à quel point il est facile de concevoir des pages web et des interfaces qui reflètent vos valeurs, vos produits et vos services."
   card: true
   links:
     - label: Créez votre première page web
