@@ -1,0 +1,124 @@
+title: "La plateforme développé par et pour les tiers-lieux"
+description: "Dokos propose une solution intuitive, évolutive et personnalisable pour gérer vos activités au quotidien."
+
+hero:
+  title: "La plateforme développé par et pour les tiers-lieux"
+  description: "Dokos propose une solution intuitive, évolutive et personnalisable pour gérer vos activités au quotidien."
+  align: center
+  headline:
+    label: "Une adaptation française d'ERPNext"
+    to: https://frappe.io
+    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
+    target: _blank
+    color: sky
+  links:
+    - label: Commencez avce Dokos
+      to: https://cloud.dokos.io
+      size: xl
+      color: green
+      icon: i-heroicons-rocket-launch
+      trailing: false
+      target: _blank
+    - label: Documentation
+      icon: i-heroicons-arrow-right
+      trailing: true
+      size: xl
+      color: gray
+      to: https://doc.dokos.io
+      target: _blank
+
+
+logos:
+  title: Ils participent au développement de Dokos
+
+colored_section:
+  title: "Dokos & les Tiers-Lieux : une aventure collaborative et engagée depuis 2018"
+  description: "Né sous l'impulsion de la Compagnie des Tiers-Lieux, notre projet s'est initialement construit autour d'ERPNext avant de devenir Dokos. Notre objectif est clair : offrir un outil de gestion complet capable de répondre aux besoins complexes des tiers-lieux, comme la gestion multi-société, tout en respectant les valeurs de l'économie sociale et solidaire (ESS).<br>Dokos est bien plus qu'un simple logiciel, c'est un projet commun.</br><br> Des tiers-lieux se sont unis pour co-construire ce module, faisant émerger une plateforme adaptée à leurs besoins uniques. Ensemble, nous faisons grandir Dokos, toujours dans l'esprit pur de l'open-source, où chaque contribution renforce l'intelligence collective.</br><br> Pour ceux qui découvrent Dokos, rejoignez un écosystème qui valorise la coopération, l'agilité et la transparence. </br><br> A nos utilisateurs,  merci de faire partie de cette aventure qui, jour après jour, redéfinit la gestion collaborative des tiers-lieux. </br> Continuons à innover et à bâtir ensemble, avec énergie et passion.</br>"
+  align: left
+  links:
+    - label: "Débutez l'aventure"
+      to: https://cloud.dokos.io
+      size: xl
+      color: none
+      icon: i-heroicons-rocket-launch
+      trailing: false
+      target: _blank
+    - label: Documentation
+      icon: i-heroicons-arrow-right
+      trailing: true
+      size: xl
+      color: none
+      to: https://doc.dokos.io
+      target: _blank
+
+
+sections:
+  - title: Gagnez du temps avec une gestion simplifiée
+    description: ""
+    align: right
+    features:
+      - name: "Facturation et abonnements"
+        description: "Automatisez vos processus de facturation et d'abonnement. Avec Dokos, gérez facilement les abonnements mensuels de vos membres, créez des devis et facturez des services ponctuels. Tout est centralisé, pour une gestion sans effort."
+        icon: ri:pages-fill
+      - name: "Paiements en ligne"
+        description: "Proposez à vos utilisateurs de payer en ligne via Stripe ou GoCardless, pour des transactions rapides et sécurisées. Vous pouvez automatiser les paiements récurrents et offrir à vos membres une expérience sans friction."
+        icon: fluent:payment-16-filled
+      - name: "Comptabilité intégrée"
+        description: "Pilotez l'ensemble de la comptabilité de votre tiers-lieu depuis la même plateforme, sans avoir besoin d'outils supplémentaires. Dokos s'occupe de tout, de la facturation à la gestion des finances, vous permettant de rester concentré sur le développement de votre communauté."
+        icon: material-symbols:balance
+      - name: "CUne solution modulable et personnalisable"
+        description: "Dokos est conçu pour évoluer avec vous. Multisociété, il vous permet de gérer plusieurs lieux à partir d'une seule plateforme. Hautement personnalisable, vous pouvez ajuster Dokos à votre image, en ajoutant votre logo et en modifiant les documents ou champs existants selon vos besoins, et tout cela sans avoir à coder."
+        icon: tabler:drag-drop
+
+  - title: "Offrez un expérience fluide et optimisez l'occupation de vos ressources"
+    description: "Avec Dokos, la gestion de vos espaces n'a jamais été aussi simple. Que vous proposiez des salles de réunion, des machines ou du matériel, vos utilisateurs peuvent réserver en toute autonomie, directement en ligne. Un système transparent, qui optimise l'occupation de vos ressources et offre à vos membres une expérience fluide."
+    align: left
+    features:
+      - name: "Gestion des salles de réunion"
+        description: "Laissez vos utilisateurs réserver leurs salles en toute autonomie via une interface intuitive."
+        icon: material-symbols-light:add-home-work-outline-rounded
+      - name: "Réservation de machines et matériel"
+        description: "Optimisez l'utilisation de vos équipements grâce à notre système de réservation en ligne."
+        icon: material-symbols:precision-manufacturing-rounded
+      - name: "Co-working et tickets à la journée"
+        description: "Proposez des tickets pour des accès ponctuels à vos espaces co-working, et automatisez le processus d'achat"
+        icon: tabler:ticket
+      - name: "Intégration avec Google Agenda"
+        description: "Grâce à la synchronisation bidirectionnelle avec Google Agenda, toutes vos réservations s'actualisent en temps réel dans vos calendriers. Plus de confusion, plus d'erreurs : votre planning est toujours à jour."
+        icon: carbon:logo-google
+  
+  - title: "Créez et personnalisez votre site web"
+    description: "Avec Dokos, vous pouvez créer un site web entièrement intégré à votre gestion. Que ce soit pour permettre la réservation en ligne ou la vente d'abonnements, votre site devient un point d'accès unique pour vos utilisateurs. Profitez également d'un portail dédié, où vos membres peuvent consulter leurs factures, gérer leurs réservations et accéder à des documents."
+    align: right
+    features:
+      - name: "Portail utilisateurs"
+        description: "Offrez à vos utilisateurs un espace personnel sécurisé pour suivre leurs réservations et accéder à leurs documents."
+        icon: mmaterial-symbols:settings-account-box-rounded
+      - name: "Fonctionnalités e-commerce"
+        description: "Permettez à vos utilisateurs de réserver des salles ou d'acheter des abonnements en ligne directement depuis votre site."
+        icon: material-symbols:add-shopping-cart-outline-rounded
+
+  - title: "Entrez au sein de notre communauté, contribuez au commun, "
+    description: "En rejoignant Dokos, vous faites partie d'une communauté ouverte où chacun peut contribuer. Que ce soit en participant au développement, en partageant des idées ou en finançant de nouvelles fonctionnalités, vous aidez à construire un outil au service de tous les tiers-lieux."
+    align: left
+    
+
+
+cta:
+  title: Prêt à simplifier la gestion de votre Tiers-Lieu ?
+  description: Rejoignez les centaines de tiers-lieux sur Dokos et simpliez la gestion de votre lieu avec une plateforme en adéquation avec vos valeurs. 
+  links:
+    - label: Commencez avec Dokos
+      to: https://cloud.dokos.io
+      size: xl
+      color: orange
+      icon: i-heroicons-rocket-launch
+      trailing: false
+      target: _blank
+    - label: Documentation
+      icon: i-heroicons-arrow-right
+      trailing: true
+      size: xl
+      color: gray
+      to: https://doc.dokos.io
+      target: _blank
