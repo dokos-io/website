@@ -109,6 +109,16 @@ useSeoMeta({
             <Placeholder v-else />
           </ULandingSection>
 
+          <ULandingSection v-bind="page.carousel" v-if="page.carousel">
+            <UCarousel v-slot="{ item }" :items="page.carousel"
+              :ui="{ item: 'w-full', container: 'rounded-3xl bg-sky-50' }" indicators>
+              <div class="text-center mx-auto">
+                <h2><span v-html="item.title"></span></h2>
+                <p class="pb-8"><span v-html="item.description"></span></p>
+              </div>
+            </UCarousel>
+          </ULandingSection>
+
           <ULandingSection>
             <ULandingCTA v-bind="page.cta" class="bg-orange-100/50 dark:bg-orange-800/50" />
           </ULandingSection>
