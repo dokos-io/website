@@ -15,7 +15,7 @@ hero:
     - label: Commencez maintenant
       to: https://cloud.dokos.io
       size: sm
-      color: black
+      color: silver-tree
       variant: solid
       icon: i-heroicons-rocket-launch
     - label: Documentation
@@ -34,7 +34,8 @@ hero:
 
 features:
   - title: Simplifiez vos demandes d'achat
-    description: "Structurez et accélérez vos demandes d’achat grâce à une interface intuitive.<br>Créez des demandes pour différents départements en quelques clics et assignez-les aux bonnes personnes pour validation.<br> Suivez précisément vos besoins tout en gardant le contrôle de vos coûts grâce à une gestion centralisée."
+    description: "Structurez et accélérez vos demandes d’achat grâce à une interface intuitive.<br><br>Créez des demandes pour différents départements en quelques clics et assignez-les aux bonnes personnes pour validation.</br><br> Suivez précisément vos besoins tout en gardant le contrôle de vos coûts grâce à une gestion centralisée.</br>"
+    image: "image/deuxieme-tableau-de-bord-achat.png"
     align: left
     headline:
       label: Demandes d'Achat
@@ -71,6 +72,8 @@ features:
       color: sky
   - title: Analysez en temps réèl vos achats
     description: Obtenez des rapports d’achat détaillés pour prendre des décisions informées.<br> Suivez les performances des fournisseurs, identifiez les opportunités d’économie, et améliorez continuellement vos processus d’achat grâce à des analyses actualisées.
+    image: "image/tableau-de-bord-achat.svg"
+    image_bg_color: "bg-teal-600"
     align: left
     headline:
       label: Rapports
