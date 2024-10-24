@@ -4,7 +4,7 @@ navigation: false
 hero:
   title: LA plateforme 100% <span class="text-primary">libre, éthique et puissante</span> qui réunit tous vos besoins en un seul endroit.  
   description: L'allié quotidien au service de votre réussite
-  image: "hero_dokos.svg"
+  image: "/home/hero_dokos.svg"
   headline:
     label: Une adaptation française d'ERPNext
     to: https://erpnext.com

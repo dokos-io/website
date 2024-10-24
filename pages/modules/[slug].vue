@@ -95,7 +95,7 @@ if (!module.value) {
           <span v-html="feat.description"></span>
         </template>
 
-        <NuxtImg :src="'/home/' + feat.image" class="w-full rounded-md bg-white/75" placeholder v-if="feat.image" />
+        <NuxtImg :src="feat.image" class="w-full rounded-md bg-white/75" placeholder v-if="feat.image" />
         <Placeholder v-else />
       </ULandingSection>
 

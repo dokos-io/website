@@ -49,7 +49,7 @@ useSeoMeta({
 
       <template #default>
         <NuxtImg
-          :src="'/home/' + page.hero.image"
+          :src="page.hero.image"
           class="w-full rounded-md bg-white/75"
         />
 

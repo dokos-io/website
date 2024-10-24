@@ -76,7 +76,7 @@ const description = application.value.head?.description || application.value.des
           </template>
 
           <template #default>
-            <NuxtImg :src="'/home/' + application.hero.image" class="w-full rounded-md bg-white/75" placeholder
+            <NuxtImg :src="application.hero.image" class="w-full rounded-md bg-white/75" placeholder
               v-if="application.hero.image" />
             <Placeholder v-else />
           </template>

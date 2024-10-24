@@ -51,7 +51,7 @@ useSeoMeta({
             </template>
 
             <template #default>
-              <NuxtImg :src="'/home/' + page.hero.image" class="w-full rounded-md bg-white/75" v-if="page.hero.image" />
+              <NuxtImg :src="page.hero.image" class="w-full rounded-md bg-white/75" v-if="page.hero.image" />
               <Placeholder v-else />
 
             </template>
