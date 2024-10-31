@@ -1,10 +1,10 @@
 title: Dokos - Une Plateforme 100 % libre et éthique pour accompagner la réussite de votre entreprise
-description: LA plateforme 100% libre, éthique et puissante qui réunit tous vos besoins en un seul endroit. 
+description: LA plateforme 100% libre, éthique et puissante qui réunit tous vos besoins en un seul endroit.
 navigation: false
 hero:
-  title: LA plateforme 100% <span class="text-primary">libre, éthique et puissante</span> qui réunit tous vos besoins en un seul endroit.  
+  title: LA plateforme 100% <span class="text-primary">libre, éthique et puissante</span> qui réunit tous vos besoins en un seul endroit.
   description: L'allié quotidien au service de votre réussite
-  image: "hero_dokos.svg"
+  image: hero_dokos.svg
   headline:
     label: Une adaptation française d'ERPNext
     to: https://erpnext.com
@@ -25,7 +25,6 @@ hero:
       color: gray
       to: https://doc.dokos.io
       target: _blank
-
 metrics:
   items:
     - title: + de 100 entreprises nous font confiance
@@ -37,23 +36,22 @@ metrics:
     - title: + de 300 membres
       description: Une communauté d'entraide bienveillantes où l'on partage ses questions, ses expériences, ses idées.
       icon: i-heroicons-outline-user-group
-
 sections:
-  - title: "Un <span style='color: #79C29B'>logiciel d'entreprise</span> puissant"
-    description: "<strong>Dokos est conçu pour répondre aux besoins des entreprises, de la PME à la multinationale.</strong><br><br> Découvrez une solution robuste et évolutive qui s’adapte parfaitement aux exigences croissantes de votre entreprise. Avec Dokos, vous accédez à un environnement qui centralise tous vos outils, vous permettant de gagner en efficacité, de simplifier vos processus et de mieux collaborer. Notre mission est de vous offrir une solution complète qui évolue avec votre entreprise.</br>"
-    image: "/home/workflow.png"
-    image_bg_color: "bg-teal-600"
+  - title: 'Un <span style=''color: #79C29B''>logiciel d''entreprise</span> puissant'
+    description: <strong>Dokos est conçu pour répondre aux besoins des entreprises, de la PME à la multinationale.</strong><br><br> Découvrez une solution robuste et évolutive qui s’adapte parfaitement aux exigences croissantes de votre entreprise. Avec Dokos, vous accédez à un environnement qui centralise tous vos outils, vous permettant de gagner en efficacité, de simplifier vos processus et de mieux collaborer. Notre mission est de vous offrir une solution complète qui évolue avec votre entreprise.</br>
+    image: /home/workflow.png
+    image_bg_color: bg-teal-600
     id: enterprise
     align: right
     features:
       - name: Mode multisociété
-        description: "Gérez plusieurs entreprises ou associations dans une seule interface. Ce service est inclus, sans frais supplémentaires, pour une gestion simplifiée."
+        description: Gérez plusieurs entreprises ou associations dans une seule interface. Ce service est inclus, sans frais supplémentaires, pour une gestion simplifiée.
         icon: i-material-symbols-add-home-work-outline
       - name: Workflows de validation
-        description: "Automatisez vos processus de validation, connectez-vous en toute sécurité grâce au SSO, et utilisez un outil pensé pour les entreprises."
+        description: Automatisez vos processus de validation, connectez-vous en toute sécurité grâce au SSO, et utilisez un outil pensé pour les entreprises.
         icon: i-octicon-workflow-16
       - name: Editeur low-code
-        description: "Personnalisez et créez de nouveaux processus facilement grâce à l’éditeur intégré, pour un logiciel qui s’adapte réellement à vos besoins."
+        description: Personnalisez et créez de nouveaux processus facilement grâce à l’éditeur intégré, pour un logiciel qui s’adapte réellement à vos besoins.
         icon: i-heroicons-code-bracket-square
     links:
       - label: Toutes les fonctionnaltés d'entreprise
@@ -64,22 +62,21 @@ sections:
         size: md
         class: ml-8
         target: _blank
-
-  - title: "Une <span style='color: #79C29B'>plateforme</span> qui grandit avec vous"
+  - title: 'Une <span style=''color: #79C29B''>plateforme</span> qui grandit avec vous'
     id: platform
-    description: "<strong>Investissez dans un ERP qui accompagne toutes les phases de croissance de votre entreprise.</strong><br><br> Avec Dokos, vous choisissez une plateforme flexible et évolutive, conçue pour accompagner votre entreprise à chaque étape de sa croissance. Du sur-mesure à grande échelle, sans compromettre la stabilité, ni la sécurité.</br></br>"
-    image: "/image/une-plateforme-qui-grandit-avec-vous.gif"
-    image_bg_color: "bg-teal-600"
+    description: <strong>Investissez dans un ERP qui accompagne toutes les phases de croissance de votre entreprise.</strong><br><br> Avec Dokos, vous choisissez une plateforme flexible et évolutive, conçue pour accompagner votre entreprise à chaque étape de sa croissance. Du sur-mesure à grande échelle, sans compromettre la stabilité, ni la sécurité.</br></br>
+    image: /image/une-plateforme-qui-grandit-avec-vous.gif
+    image_bg_color: bg-teal-600
     align: left
     features:
       - name: Robuste et scalable
-        description: "Une base solide, capable de supporter les entreprises les plus exigeantes."
+        description: Une base solide, capable de supporter les entreprises les plus exigeantes.
         icon: i-iconoir-scale-frame-enlarge
       - name: Entièrement personnalisable
-        description: "Adaptez Dokos à vos besoins spécifiques grâce à une flexibilité inégalée."
+        description: Adaptez Dokos à vos besoins spécifiques grâce à une flexibilité inégalée.
         icon: i-material-symbols-dashboard-customize-outline
       - name: Des experts pour vous accompagner
-        description: "Profitez de l’accompagnement de notre écosystème de partenaires et de l’expertise de notre équipe dédiée."
+        description: Profitez de l’accompagnement de notre écosystème de partenaires et de l’expertise de notre équipe dédiée.
         icon: i-material-symbols-contact-support-outline-rounded
     links:
       - label: Services
@@ -96,21 +93,20 @@ sections:
         trailing: true
         size: md
         class: ml-8
-
   - title: Gardez le <span class="text-primary">contrôle</span>
-    description: "<strong>Soyez certain de ne pas être enfermé avec un éditeur ou un prestataire de service.</strong><br><br>Chez Dokos, vous avez toujours le contrôle de votre infrastructure et de vos données. Vous êtes libres de vos choix d’hébergement et de gestion, pour une indépendance totale.</br></br>"
-    image: ""
+    description: <strong>Soyez certain de ne pas être enfermé avec un éditeur ou un prestataire de service.</strong><br><br>Chez Dokos, vous avez toujours le contrôle de votre infrastructure et de vos données. Vous êtes libres de vos choix d’hébergement et de gestion, pour une indépendance totale.</br></br>
+    image: ''
     id: control
     align: right
     features:
       - name: Propriété des données
-        description: "Vous êtes les seuls propriétaires de vos données. Nous vous fournissons tous les outils pour sauvegarder et exporter vos informations à tout moment."
+        description: Vous êtes les seuls propriétaires de vos données. Nous vous fournissons tous les outils pour sauvegarder et exporter vos informations à tout moment.
         icon: i-material-symbols-data-loss-prevention-outline
       - name: Sécurité & Souveraineté
-        description: "Développé en France et en Inde, Dokos est un logiciel sous licence libre, que vous pouvez héberger où vous le souhaitez, tout en bénéficiant de normes de sécurité de pointe."
+        description: Développé en France et en Inde, Dokos est un logiciel sous licence libre, que vous pouvez héberger où vous le souhaitez, tout en bénéficiant de normes de sécurité de pointe.
         icon: i-material-symbols-security-rounded
       - name: SaaS ou auto-hébergement
-        description: "Hébergez Dokos où bon vous semble et changez d’avis sans souci. Vos données peuvent être transférées facilement d’une infrastructure à l’autre."
+        description: Hébergez Dokos où bon vous semble et changez d’avis sans souci. Vos données peuvent être transférées facilement d’une infrastructure à l’autre.
         icon: i-material-symbols-cloud-sync-outline-rounded
     links:
       - label: Dokos Cloud
@@ -127,24 +123,22 @@ sections:
         trailing: true
         size: md
         class: ml-8
-
   - title: Un accompagnement  <span class="text-emerald-600">personnalisé</span>
-    description: "<strong>Profitez d'un support sur mesure et entièrement adapté à vos besoins.</strong><br><br>Parce que chaque entreprise est unique, notre accompagnement s’adapte à vos spécificités et priorités. Nous mettons un point d’honneur à créer des solutions sur mesure, avec un coût juste et maîtrisé.</br></br>"
-    image: "image/un-accompagnement-personnalise.gif"
+    description: <strong>Profitez d'un support sur mesure et entièrement adapté à vos besoins.</strong><br><br>Parce que chaque entreprise est unique, notre accompagnement s’adapte à vos spécificités et priorités. Nous mettons un point d’honneur à créer des solutions sur mesure, avec un coût juste et maîtrisé.</br></br>
+    image: image/un-accompagnement-personnalise.gif
     id: control
-    image_bg_color: "bg-sky-600"
+    image_bg_color: bg-sky-600
     align: left
     features:
       - name: Un partenariat de confiance
-        description: "Nous nous adaptons à vous pour un accompagnement qui vous ressemble, garantissant efficacité et coûts maîtrisés."
+        description: Nous nous adaptons à vous pour un accompagnement qui vous ressemble, garantissant efficacité et coûts maîtrisés.
         icon: i-material-symbols-data-loss-prevention-outline
       - name: Autonomie assurée
-        description: "Vous choisissez votre niveau d’autonomie : formation, configuration, ou accompagnement complet, c’est vous qui décidez."
+        description: 'Vous choisissez votre niveau d’autonomie : formation, configuration, ou accompagnement complet, c’est vous qui décidez.'
         icon: i-material-symbols-security-rounded
       - name: Une communauté engagée
-        description: "Rejoignez une communauté active et bienveillante, toujours prête à partager son expertise et à vous accompagner."
-        icon:
-          i-material-symbols-cloud-sync-outline-rounded
+        description: Rejoignez une communauté active et bienveillante, toujours prête à partager son expertise et à vous accompagner.
+        icon: i-material-symbols-cloud-sync-outline-rounded
     links:
       - label: Dokos Cloud
         to: https://dokos.cloud
@@ -159,52 +153,39 @@ sections:
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
         size: md
-        class: ml-8 
-    
+        class: ml-8
   - title: Une <span class="text-primary">version française</span> d'ERPNext
-    description: "<strong>Dokos, une adaptation locale pensée pour les entreprises françaises et européennes.</strong><br><br>Dokos est un <i>fork</i> d'ERPNext, spécialement conçu pour répondre aux besoins des entreprises européennes. Il combine les fonctionnalités avancées d’ERPNext avec des adaptations locales pensées pour les utilisateurs français."
-    image: "/home/dokos-dashboard.png"
-    image_bg_color: "bg-sky-600"
+    description: <strong>Dokos, une adaptation locale pensée pour les entreprises françaises et européennes.</strong><br><br>Dokos est un <i>fork</i> d'ERPNext, spécialement conçu pour répondre aux besoins des entreprises européennes. Il combine les fonctionnalités avancées d’ERPNext avec des adaptations locales pensées pour les utilisateurs français.
+    image: /home/dokos-dashboard.png
+    image_bg_color: bg-sky-600
     id: enterprise
     align: right
     features:
       - name: Une adaptation locale
-        description: "Des fonctionnalités adaptées aux spécificités locales, avec une interface pensée pour répondre aux retours de nos utilisateurs."
+        description: Des fonctionnalités adaptées aux spécificités locales, avec une interface pensée pour répondre aux retours de nos utilisateurs.
         icon: i-circle-flags-european-union
       - name: Une compatibilité réglementaire
-        description: "Tous les modules impactant la réglementation sont conçus pour garantir une utilisation en conformité avec les lois françaises."
+        description: Tous les modules impactant la réglementation sont conçus pour garantir une utilisation en conformité avec les lois françaises.
         icon: i-octicon-law
       - name: Une liberté éditoriale
-        description: "Dokos évolue en parallèle d'ERPNext, tout en offrant des fonctionnalités exclusives adaptées aux besoins européens."
+        description: Dokos évolue en parallèle d'ERPNext, tout en offrant des fonctionnalités exclusives adaptées aux besoins européens.
         icon: i-material-symbols-editor-choice-outline-rounded
-    # links:
-    #   - label: Comparaison avec ERPNext
-    #     to: https://doc.dokos.io/dokos/comparaison-erpnext
-    #     color: gray
-    #     icon: i-heroicons-arrow-right-20-solid
-    #     trailing: true
-    #     size: md
-    #     class: ml-8
-    #     target: _blank
-
- 
   - title: La <span class="text-primary">force</span> de l'open-source
-    description: "<strong>Dokos est et restera un logiciel libre et open-source.</strong><br><br>Avec Dokos, vous avez la liberté totale de choisir votre fournisseur, sans dépendance envers un éditeur spécifique. Utilisez un ERP libre et évolutif, sans frais de licence, avec des options de service si vous avez besoin d’accompagnement."
-    image: "image/la-force-de-l-open-source.gif"
-    image_bg_color: "bg-sky-600"
+    description: <strong>Dokos est et restera un logiciel libre et open-source.</strong><br><br>Avec Dokos, vous avez la liberté totale de choisir votre fournisseur, sans dépendance envers un éditeur spécifique. Utilisez un ERP libre et évolutif, sans frais de licence, avec des options de service si vous avez besoin d’accompagnement.
+    image: image/la-force-de-l-open-source.gif
+    image_bg_color: bg-sky-600
     id: opensource
     align: left
     features:
       - name: Libre choix du fournisseur
-        description: "Aucun verrouillage : vous êtes libres de choisir ou changer d’intégrateur à tout moment."
+        description: 'Aucun verrouillage : vous êtes libres de choisir ou changer d’intégrateur à tout moment.'
         icon: i-heroicons-lock-closed
       - name: Aucun frais de licence
-        description: "Dokos est libre d’utilisation, sans coûts cachés. Nous offrons des services pour vous aider à en tirer le meilleur parti."
+        description: Dokos est libre d’utilisation, sans coûts cachés. Nous offrons des services pour vous aider à en tirer le meilleur parti.
         icon: i-heroicons-credit-card
       - name: Dérivé de Frappe/ERPNext
-        description: "Dokos s’appuie sur l’écosystème robuste de Frappe et ERPNext, des outils open-source plébiscités par des milliers d’utilisateurs dans le monde."
+        description: Dokos s’appuie sur l’écosystème robuste de Frappe et ERPNext, des outils open-source plébiscités par des milliers d’utilisateurs dans le monde.
         icon: i-simple-icons-frappe
-
 applications:
   title: Compatible avec l'écosystème <span class="text-primary">Frappe</span>
   description: Dokos est développé pour rester compatible avec les applications créées par Frappe Technologies et la communauté Frappe/ERPNext.
@@ -219,28 +200,27 @@ applications:
     - title: Frappe Insights
       description: Un outil de BI
       icon: insights.svg
-      to: 'https://frappe.io/products/insights'
+      to: https://frappe.io/products/insights
     - title: Frappe CRM
       description: Un outil de CRM
       icon: crm.svg
-      to: 'https://frappe.io/products/crm'
+      to: https://frappe.io/products/crm
     - title: Frappe Helpdesk
       description: Un outil de support
       icon: helpdesk.png
-      to: 'https://frappedesk.com'
+      to: https://frappedesk.com
     - title: Frappe Builder
       description: Un outil de création de sites web
       icon: builder.svg
-      to: 'https://frappe.io/products/builder'
+      to: https://frappe.io/products/builder
     - title: Frappe Wiki
       description: Un wiki d'entreprise
       icon: wiki.png
-      to: 'https://github.com/frappe/wiki'
+      to: https://github.com/frappe/wiki
     - title: Frappe Print Designer
       description: Un outil de création de formats d'impression
       icon: print-designer.svg
-      to: 'https://github.com/frappe/print_designer'
-
+      to: https://github.com/frappe/print_designer
 integrations:
   title: Nous simplifions votre quotidien avec les intégrations
   icons:
@@ -256,7 +236,6 @@ integrations:
     - i-cib-nextcloud
   images:
     - /home/gocardless.png
-
 modules:
   title: La boîte à outils complète pour <span class="text-primary">tous vos besoins</span>
   description: Transformez votre gestion avec Dokos. Plus de 15 modules essentiels pour optimiser votre entreprise ou associations, quel que soit le secteur.
@@ -302,7 +281,7 @@ modules:
       icon: i-material-symbols-location-on-outline-rounded
       to: /fr/modules/reservations-de-ressources
     - title: Ressources Humaines
-      description: Gestion des congés, notes de frais, recrutement, quarts et présence, performance 
+      description: Gestion des congés, notes de frais, recrutement, quarts et présence, performance
       icon: i-mdi-human-capacity-increase
       to: /fr/modules/ressources-humaines
     - title: Portail web & e-commerce
@@ -321,10 +300,9 @@ modules:
       description: Sauvegarde externalisées, services Google, e-commerce, connecteurs no-code
       icon: i-mdi-connection
       to: /fr/modules/integrations
-
 cta:
   title: Et si vous démarriez avec Dokos ?
-  description: Choisir Dokos, c'est faire le choix d'un logiciel français, puissant, libre et adapté à chacun de vos besoins. 
+  description: Choisir Dokos, c'est faire le choix d'un logiciel français, puissant, libre et adapté à chacun de vos besoins.
   links:
     - label: Essayez Dokos maintenant
       size: xl
