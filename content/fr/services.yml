@@ -1,12 +1,9 @@
 title: Services
 description: Découvrez nos services autour de l'écosystème Dokos
-
 hero:
-  title: Découvrez toutes nos <span class="text-primary">offres</span>
+  title: Découvrez toutes nos <span class="text-primary">offres</span> !
   description: Petite ou grande entreprise, association ou tiers-lieux, démarrez votre site en autonomie ou accompagné. Nous sommes là pour vous !
   align: center
-
-
 cards:
   - title: Je souhaite héberger un site Dokos
     description: Découvrez notre service d'hébergement Dokos Cloud
@@ -17,8 +14,8 @@ cards:
       trailing: true
       color: red
       variant: ghost
-      to: 'https://cloud.dokos.io'
-      target: '_blank'
+      to: https://cloud.dokos.io
+      target: _blank
   - title: Je souhaite être accompagné
     description: Découvre notre service d'hébergement Dokos Cloud
     color: bg-yellow-500/10
@@ -28,14 +25,13 @@ cards:
       trailing: true
       color: yellow
       variant: ghost
-      to: '/pricing'
-
+      to: /pricing
 faq:
-  class: "max-w-4xl mx-auto"
+  class: max-w-4xl mx-auto
   items:
     - label: Je suis en auto-hébergement, puis-je bénéficier de support ?
-      content: Lorem Ipsum
+      content: Absolument ! Nous sommes disponibles pour tous nos utilisateurs, y compris ceux en auto-hébergement. Si vous n’avez pas trouvé la réponse à votre question dans notre documentation ou sur notre forum, nous proposons des packs d'heures pour un accompagnement personnalisé. Ces sessions peuvent être l’occasion de revoir ensemble des sujets spécifiques ou d’approfondir certaines fonctionnalités selon vos besoins. Notre équipe est là pour vous aider à chaque étape !
     - label: Je souhaiterai être hébergé et accompagné, est-ce possible ?
-      content: Lorem Ipsum
+      content: Oui, c’est tout à fait possible ! Vous pouvez démarrer votre premier site sur Nuage en toute autonomie. Toutefois, pour vous offrir les meilleures conditions de départ, nous recommandons vivement de souscrire à un pack de formation. Cela vous permettra de bénéficier de l'accompagnement de notre équipe pour la mise en place de Dokos et de maximiser ainsi vos chances de réussite. Nous serons ravis de vous guider pas à pas !
     - label: Je suis utilisateur de dokos et je souhaiterai modifier / adapter mon offre de support, est-ce possible
-      content: Lorem Ipsum
+      content: Oui, bien sûr ! Chez Dokos, nous avons à cœur de proposer des solutions adaptées aux besoins de chacun, avec des tarifs ajustés au plus juste. Vous pouvez donc modifier votre offre de support en fonction de vos besoins évolutifs. De plus, nos packs de formation sont disponibles tout au long de votre utilisation de Dokos et peuvent être achetés à tout moment, pour vous permettre d’approfondir certains sujets ou de bénéficier d’un accompagnement supplémentaire quand vous en avez besoin.
