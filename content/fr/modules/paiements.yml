@@ -48,12 +48,12 @@ features:
       color: sky
 
   - title: Gagnez du Temps grâce à l'automatisation intelligente
-    description: "Avec Dokos, les paiements sont automatiquement rapprochés dans votre système, vous offrant un suivi précis et sans effort.Plus besoin de passer du temps sur des tâches manuelles.<ul><li> Paiements Ponctuels : Louez une salle ou vendez un produit, Dokos gère tout.</li><li> Paiements Récurrents : Abonnements et services récurrents automatisés.</li><li> Événements et Formulaires : Collectez des paiements lors d'inscriptions à vos événements."
+    description: "Avec Dokos, les paiements sont automatiquement rapprochés dans votre système, vous offrant un suivi précis et sans effort. Plus besoin de passer du temps sur des tâches manuelles.<ul><li> Paiements Ponctuels : Louez une salle ou vendez un produit, Dokos gère tout.</li><li> Paiements Récurrents : Abonnements et services récurrents automatisés.</li><li> Événements et Formulaires : Collectez des paiements lors d'inscriptions à vos événements."
     align: left
     headline:
       label: Automatisation des Paiements et Rapprochement
       color: sky
-  - title: "Une Expérience Intégrée : Webshop, Formulaires et Événements"
+  - title: "Une expérience intégrée : Webshop, Formulaires et Événements"
     description: Les paiements sont entièrement synchronisés avec votre Webshop, vos formulaires web et la gestion de vos événements. Offrez une expérience de paiement fluide à vos clients et bénéficiez d'un suivi en temps réel.
     align: right
     headline:
