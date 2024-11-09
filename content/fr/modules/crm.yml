@@ -1,11 +1,14 @@
-title: CRM
-icon: i-carbon-chart-relationship
-description: Gérez vos relations clients de manière fluide et efficace.
-application: Dokos / Frappe CRM
 navigation:
     title: CRM
     icon: i-carbon-chart-relationship
-    description: Structurer et optimiser vos processus commerciaux grâce au CRM
+    description: Gestion de la prospection et de l'avant-vente.
+
+title: CRM
+icon: i-carbon-chart-relationship
+description: Gérez vos relations clients de manière fluide et efficace.
+author: Frappe Technologies & Contributeurs
+application: Dokos / Frappe CRM
+
 hero:
   title: Simplifiez vos ventes et boostez vos résultats avec un <span class="text-primary">CRM</span> sur mesure.
   description: Que vous soyez une PME en pleine croissance ou une organisation solidaire, Dokos CRM vous permet de gérer facilement vos ventes et vos clients, avec des outils flexibles et modulaires qui s’adaptent à vos besoins.
@@ -37,7 +40,7 @@ features:
     image: "image/e-commerce/crm-deals.png"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Gestion des leads
       color: sky
   - title: Ne perdez plus aucune opportunité grâce à un suivi client automatisé
@@ -45,7 +48,7 @@ features:
     image: "image/crm/devis.png"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Intégration des emails
       color: sky
   - title: Automatisez vos processus commerciaux grâce à des outils puissants.
@@ -53,7 +56,7 @@ features:
     image: "image/crm/newsletter-les-coulisses.png"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Automatisation
       color: sky
   - title: Simplifiez votre gestion des devis et commandes depuis le CRM
@@ -61,7 +64,7 @@ features:
     image: "image/crm/devis.png"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Facturation
       color: sky
   - title: Ajustez vos stratégies grâce aux rapports
@@ -69,7 +72,7 @@ features:
     image: "image/e-commerce/parametre-e-commerce.svg"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Rapports et analyses
       color: sky
   - title: Gardez une vue complète de votre activité. 
@@ -77,7 +80,7 @@ features:
     image: "image/crm/tableaux-de-bord-compta-crm-achat.svg"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Intégration
       color: sky
 

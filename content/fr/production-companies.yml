@@ -52,15 +52,12 @@ sections:
   - title: "Gérez vos ordres de fabrication"
     description: "Créez et gérez facilement vos ordres de fabrication. Planifiez la production, répartissez les tâches et suivez chaque étape du processus de production."
     align: right
-
   - title: "Optimisez vos stocks"
     description: "Synchronisez vos stocks en temps réel avec les mouvements de production. Assurez-vous d’avoir les matériaux nécessaires à chaque étape et évitez les ruptures de stock."
     align: left
-  
   - title: "Contrôlez vos coûts et marges"
     description: "Enregistrez l’ensemble de vos coûts liés à la production et suivez vos marges grâce à des tableaux de bord intuitifs. Prenez des décisions éclairées pour améliorer votre rentabilité."
     align: right
-
   - title: "Optimisez votre plannification"
     description: "Grâce à une gestion avancée des capacités de production, ajustez vos opérations en fonction des commandes et des demandes en temps réel, et maintenez vos délais de livraison."
     align: left

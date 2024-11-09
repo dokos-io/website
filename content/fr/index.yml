@@ -250,39 +250,39 @@ modules:
       variant: solid
   items:
     - title: CRM
-      description: Gestion de la prospection
+      description: Gestion de la prospection et de l'avant-vente.
       icon: i-carbon-chart-relationship
       to: /fr/modules/crm
     - title: Ventes
-      description: Gestion du flux commercial
+      description: Gestion des flux commerciaux et de la facturation.
       icon: i-ep-sell
       to: /fr/modules/ventes
     - title: Achats
-      description: Gestion des achats
+      description: Gestion des flux d'achats et d'approvisionnements.
       icon: i-icon-park-outline-buy
       to: /fr/modules/achats
     - title: Comptabilité
-      description: Saisie de la comptabilité et états financiers
+      description: Saisie de la comptabilité et finances.
       icon: i-uil-balance-scale
       to: /fr/modules/comptabilite
     - title: Projets
-      description: Suivi des projets et des temps
+      description: Organisation, planification et suivi de projets.
       icon: i-eos-icons-project-outlined
       to: /fr/modules/projets
     - title: Stocks
-      description: Gestion des niveaux et des valorisations de stock
+      description: Suivi de vos mouvements, valorisations de stocks et de votre chaîne d'approvisionnement.
       icon: i-vaadin-stock
       to: /fr/modules/stocks
     - title: Production
-      description: De l'achat des matières premières à la création de produits finis
+      description: Planification et suivi de la production manufacturière.
       icon: i-fluent-manufacturer-24-regular
       to: /fr/modules/production
     - title: Qualité
-      description: Création de processus et suivi de la qualité
+      description: Création de processus et suivi de la qualité.
       icon: i-carbon-rule-data-quality
       to: /fr/modules/qualite
     - title: Support
-      description: Outil de gestion de ticket pour le support client
+      description: Gestion de support client moderne.
       icon: i-ri-customer-service-2-line
       to: /fr/modules/support
     - title: Réservations de ressources
@@ -294,19 +294,19 @@ modules:
       icon: i-mdi-human-capacity-increase
       to: /fr/modules/ressources-humaines
     - title: Portail web & e-commerce
-      description: Vente de produits/services, réservations de ressources en ligne et création d'un portail client/fournisseur
+      description: Vente de produits/services, réservations de ressources en ligne et portail client/fournisseur.
       icon: i-gg-website
       to: /fr/modules/e-commerce
     - title: OCR
-      description: Reconnaissance automatique des factures et notes de frais
+      description: Extraction des données de factures fournisseur avec Amazon Textract.
       icon: i-mdi-ocr
       to: /fr/modules/ocr
     - title: Paiements
-      description: Collecte de paiements en ligne via carte bancaire, prélèvement SEPA, Paypal et autres passerelles de paiements...
+      description: Collecte de paiements en ligne via carte bancaire, prélèvement SEPA, Paypal et plus encore...
       icon: i-ic-twotone-payments
       to: /fr/modules/paiements
     - title: Intégrations
-      description: Sauvegarde externalisées, services Google, e-commerce, connecteurs no-code
+      description: Sauvegarde externalisées, services Google, sites e-commerce, connecteurs no-code.
       icon: i-mdi-connection
       to: /fr/modules/integrations
 cta:

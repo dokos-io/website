@@ -1,12 +1,14 @@
-title: Frappe Learning
-link: "https://frappe.io/learning"
-author: Frappe Technologies
-description: Créez votre propre plateforme de formation avec Frappe Learning
-
 navigation:
   title: Frappe Learning
-  description: Créez votre propre plateforme de formation avec Frappe Learning
-  icon: /frappe/lms.png
+  description: Pateforme de formation en ligne / e-Learning
+  icon: i-iconoir-learning
+
+
+title: Frappe Learning
+link: "https://frappe.io/learning"
+author: Frappe Technologies & Contributeurs
+description: Créez votre propre plateforme de formation avec Frappe Learning
+application: Frappe Learning
 
 logo:
   light: /frappe/lms.png

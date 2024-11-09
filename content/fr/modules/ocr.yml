@@ -1,10 +1,13 @@
+navigation:
+    title: OCR
+    icon: i-mdi-ocr
+    description: Extraction des données de factures fournisseur avec Amazon Textract
+
 title: OCR
 icon: i-mdi-ocr
 description: Numérisez et traitez vos documents en un clin d'œil grâce à l'OCR intégré.
 application: OCR
-navigation:
-    title: OCR
-    icon: i-mdi-ocr
+author: Dokos & Contributeurs
 
 hero:
   title: Libérez le potentiel de vos documents avec la puissance de l’<span class="text-primary">O.C.R.</span> et Dokos.
@@ -27,27 +30,25 @@ hero:
     color: sky
     to: "/fr"
     right_icon: i-heroicons-arrow-right-20-solid
-  
-
 
 
 features:
   - title: Gagnez du temps et réduisez les erreurs avec une gestion documentaire automatisée.
     description: "Simplifiez votre gestion documentaire grâce à l’OCR de Dokos. Transformez vos factures et bons de livraison en données utilisables instantanément, et libérez vos équipes des tâches répétitives. Moins d’erreurs, plus de temps pour l’essentiel.<ul><li><span class='font-bold'> Extraction automatique des données :</span> Dès la réception de vos documents (factures, bons de commande), l’OCR analyse et extrait automatiquement les informations essentielles (montants, dates, numéros de commande). </li><li><span class='font-bold'> Traitement des emails avec pièces jointes :</span> Envoyez vos documents directement par email, et Dokos se charge de les analyser et de les intégrer à vos modules comptables ou de gestion des stocks."
     align: left
-    headline:
+    badge:
       label: Automatisation
       color: sky
   - title: "Fonctionnement avancé : Contrôlez chaque étape"
     description: "Restez maître de vos données tout en automatisant. Avec Dokos, vous validez chaque étape pour garantir une précision optimale. Configurez vos workflows selon vos besoins spécifiques."
     align: right
-    headline:
+    badge:
       label: Semi-automatique
       color: sky
   - title: Gardez le contrôle total de vos données
     description: "Chez Dokos, nous mettons l’accent sur la transparence et la sécurité de vos données. Vous avez la liberté de personnaliser chaque aspect du logiciel tout en profitant d’une sécurité garantie. Vos informations sont protégées à chaque étape. <ul><li><span class='font-bold'>Données supprimées après traitement :</span> Toutes les données extraites via Amazon Textract sont effacées immédiatement après traitement.</li><li><span class='font-bold'>Flexibilité grâce à nos API ouvertes :</span> Intégrez facilement Dokos avec vos systèmes ou solutions OCR existants pour une gestion des données sans contraintes."
     align: left
-    headline:
+    badge:
       label: Intégrations
       color: sky
   - title: Une solution fiable et sécurisée
@@ -55,7 +56,7 @@ features:
 
 "
     align: right
-    headline:
+    badge:
       label: Sécurité
       color: sky
  

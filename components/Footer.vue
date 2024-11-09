@@ -58,6 +58,23 @@ const links = computed(() => {
                 },
             ],
         },
+        {
+            label: t("industries"),
+            children: [
+                {
+                    label: t("service-companies"),
+                    to: localePath("/service-companies"),
+                },
+                {
+                    label: t("manufacturing"),
+                    to: localePath("/production-companies"),
+                },
+                {
+                    label: t("thirdplaces"),
+                    to: localePath("/tiers-lieux"),
+                },
+            ],
+        },
     ];
 });
 </script>
@@ -102,6 +119,10 @@ const links = computed(() => {
     gitlab: Gitlab
     built_with: Website built with Nuxt and Nuxt UI
     contact: Contact Us
+    industries: Industries
+    service-companies: Service companies
+    manufacturing: Manufacturing companies
+    thirdplaces: Third Places
   fr:
     all_rights_reserved: "Tous droits réservés"
     resources: Ressources
@@ -118,5 +139,9 @@ const links = computed(() => {
     frappeverse: Applications Frappe
     gitlab: Gitlab
     built_with: Site créé avec Nuxt et Nuxt UI
-    contact: Contactez-nous   
+    contact: Contactez-nous
+    industries: Secteurs d'activité
+    service-companies: Sociétés de service
+    manufacturing: Industrie
+    thirdplaces: Tiers-Lieux
 </i18n>

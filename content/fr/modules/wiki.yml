@@ -1,12 +1,13 @@
+navigation:
+  title: Wiki
+  description: Wiki intégré pour une meilleure gestion de la connaissance interne.
+  icon: i-hugeicons-share-knowledge
+
 title: Frappe Wiki
 link: "https://frappe.io/wiki"
 author: Frappe Technologies
 description: "Libérez le potentiel de votre équipe avec la gestion des connaissances"
-
-navigation:
-  title: Wiki
-  description: Libérez le potentiel de votre équipe avec la gestion des connaissances
-  icon: /frappe/wiki.png
+application: Frappe Wiki
 
 logo:
   light: /frappe/wiki.png

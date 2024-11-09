@@ -1,11 +1,13 @@
+navigation:
+    title: Projets
+    icon: i-eos-icons-project-outlined
+    description: Organisation, planification et suivi de projets.
+
 title: Projets
 icon: i-eos-icons-project-outlined
 description: Planifiez et suivez vos projets pour garantir leur succès.
 application: Dokos
-navigation:
-    title: Projets
-    icon: i-eos-icons-project-outlined
-    description: Organisez, planifiez et suivez tous vos projets dans un seul et même outil.
+author: Frappe Technologies, Dokos & Contributeurs
 
 hero:
   title: Gérez vos <span class="text-primary">projets</span> en toute simplicité avec Dokos
@@ -28,8 +30,6 @@ hero:
     color: sky
     to: "/fr"
     right_icon: i-heroicons-arrow-right-20-solid
-  
-
 
 
 features:
@@ -38,7 +38,7 @@ features:
     video: "projet.mp4"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Projet
       color: sky
   - title: Un suivi des tâches
@@ -46,7 +46,7 @@ features:
     image: "image/projet/Suivi-des-taches-kanban.png"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Tâches
       color: sky
   - title: La gestion des équipes
@@ -54,7 +54,7 @@ features:
     image: "image/projet/vue-planning-taches.png"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Equipe
       color: sky
   - title: Un calendrier interactif
@@ -62,7 +62,7 @@ features:
     image: "image/projet/gestion-de-projet-calendrier.png"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Calendrier
       color: sky
   - title: Un suivi budgétaire
@@ -70,7 +70,7 @@ features:
     image: "image/projet/suivi-activite-budget-projet.png"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Budget
       color: sky
   - title: Une gestion des dépendances
@@ -78,7 +78,7 @@ features:
     image: "image/projet/tache-gantt.png"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Dépendances
       color: sky
   - title: Des Rapports et Analyses
@@ -86,7 +86,7 @@ features:
     image: "image/projet/tableau-de-bord-projet.svg"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Rapport
       color: sky
   - title: Une collaboration en temps réel
@@ -94,7 +94,7 @@ features:
     image: "image/projet/communication-raven.png"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Collaboration
       color: sky
 

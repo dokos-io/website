@@ -1,11 +1,14 @@
+navigation:
+    title: Paiements
+    icon: i-ic-twotone-payments
+    description: Collecte de paiements en ligne via carte bancaire, prélèvement SEPA, Paypal et plus encore.
+
+
 title: Paiements
 icon: i-ic-twotone-payments
 description: Simplifiez et sécurisez vos transactions avec des solutions de paiement modernes.
 application: Payments
-navigation:
-    title: Paiements
-    icon: i-ic-twotone-payments
-    description: Collecte de paiements en ligne via carte bancaire, prélèvement SEPA, Paypal et autres passerelles de paiements...
+author: Frappe Technologies, Dokos & Contributeurs
 
 hero:
   title: "Automatisez vos paiements avec Dokos : Simple, Sécurisé, Efficace"
@@ -38,7 +41,7 @@ features:
     image: "image/paiements/transactions-securisees.svg"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Paiements centralisés
       color: sky
 
@@ -47,7 +50,7 @@ features:
     image: "image/paiements/paiements-gestions-paiements.png"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Intégrations des Passerelles de Paiement
       color: sky
 
@@ -56,7 +59,7 @@ features:
     image: "image/paiements/dokos-abonnement.png"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Automatisation des Paiements et Rapprochement
       color: sky
 
@@ -65,7 +68,7 @@ features:
     video: "image/paiements/gestion-evenements.mp4"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Synergie avec Webshop et Événements
       color: sky
  

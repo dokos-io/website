@@ -1,11 +1,14 @@
-title: Achats
-icon: i-icon-park-outline-buy
-description: Optimisez vos achats pour des approvisionnements sans faille.
-application: Dokos
 navigation:
   title: Achats
   icon: i-icon-park-outline-buy
-  description: Optimisez vos achats pour des approvisionnements sans faille.
+  description: Gestion des flux d'achats et d'approvisionnements.
+
+title: Achats
+icon: i-icon-park-outline-buy
+description: Optimisez vos achats pour des approvisionnements sans faille.
+author: Frappe Technologies & Contributeurs
+application: Dokos
+
 hero:
   title: Optimisez vos <span class="text-primary">achats</span> avec Dokos
   description: Dokos vous propose toutes les fonctionnalités nécessaires pour gérer vos achats de façon efficace et fluide. Conçu pour simplifier vos processus tout en offrant une transparence totale, ce module vous permet de rationaliser l’ensemble de votre chaîne d'approvisionnement. Découvrez comment Dokos peut vous aider à améliorer votre gestion des achats !
@@ -33,7 +36,7 @@ features:
     video: /image/achat/tableau-de-bord-achat.mp4
     image_bg_color: bg-teal-500
     align: left
-    headline:
+    badge:
       label: Demandes d'Achat
       color: sky
   - title: Optimisez vos appels d'offres et négociations
@@ -41,7 +44,7 @@ features:
     image: image/achat/appel-d-offre-nouveau-logo.svg
     image_bg_color: bg-teal-500
     align: right
-    headline:
+    badge:
       label: Devis Fournisseurs
       color: sky
   - title: Automatisez vos commandes d'achat
@@ -49,7 +52,7 @@ features:
     image: image/achat/trois-commande-fournisseur-automatisez-vos-commandes-dachats.png
     image_bg_color: bg-teal-500
     align: left
-    headline:
+    badge:
       label: Commandes
       color: sky
   - title: Excellez dans le suivi de vos achats
@@ -57,7 +60,7 @@ features:
     image: image/achat/quatre-qualite-modifie-dokos.svg
     image_bg_color: bg-teal-500
     align: right
-    headline:
+    badge:
       label: Qualité
       color: sky
   - title: Renforcez la gestion de vos fournisseurs
@@ -65,7 +68,7 @@ features:
     image: image/achat/cinq-espace-de-travail-achat.png
     image_bg_color: bg-teal-500
     align: left
-    headline:
+    badge:
       label: Fournisseurs
       color: sky
   - title: Perfectionnez la gestion de vos factures d’achat
@@ -73,7 +76,7 @@ features:
     image: image/achat/six-deuxieme-tableau-de-bord-achat.png
     image_bg_color: bg-teal-500
     align: right
-    headline:
+    badge:
       label: Facture d'Achats
       color: sky
   - title: Analysez en temps réèl vos achats
@@ -81,7 +84,7 @@ features:
     image: image/achat/sept-tableau-de-bord-stock-ok.png
     image_bg_color: bg-teal-600
     align: left
-    headline:
+    badge:
       label: Rapports
       color: sky
   - title: Connectez vos stocks à vos achats
@@ -89,7 +92,7 @@ features:
     image: image/achat/huit-stock-un-approvisionnement-responsable-modifie.svg
     image_bg_color: bg-teal-500
     align: right
-    headline:
+    badge:
       label: Gestions de Stock
       color: sky
   - title: Défendez un approvisionnement responsable
@@ -97,7 +100,7 @@ features:
     image: image/achat/stock-un-approvisionnement-responsable-modifie.svg
     image_bg_color: bg-teal-500
     align: left
-    headline:
+    badge:
       label: Gestions de Stock
       color: green
 plus_button:

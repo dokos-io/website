@@ -1,11 +1,13 @@
+navigation:
+    title: Production
+    icon: i-fluent-manufacturer-24-regular
+    description: Planification et suivi de la production manufacturière.
+
 title: Production
 icon: i-fluent-manufacturer-24-regular
 description: Pilotez votre production avec précision pour une efficacité maximale.
 application: Dokos
-navigation:
-    title: Production
-    icon: i-fluent-manufacturer-24-regular
-    description: Optimisez de l'achat des matières premières à la création de produits finis
+author: Frappe Technologies & Contributeurs
 
 hero:
   title: Pilotez avec précision votre <span class="text-primary">production</span> pour une efficacité maximale.
@@ -28,9 +30,6 @@ hero:
     color: sky
     to: "/fr"
     right_icon: i-heroicons-arrow-right-20-solid
-  
-
-
 
 features:
   - title: Optimisez votre Production
@@ -38,7 +37,7 @@ features:
     image: "image/production/Nomenclature.svg"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Gestion des articles et Nomenclature
       color: sky
   - title: Gagnez en efficacité sur votre plannification
@@ -46,7 +45,7 @@ features:
     image: "image/production/plannification_production.png"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Demande de Production et Plannification
       color: sky
   - title: Restez informé en temps réel 
@@ -54,7 +53,7 @@ features:
     video: "image/production/tableau-de-bord-production.mp4"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Suivi des Opérations de Production
       color: sky
   - title: Garantissez la qualité à chaque étape
@@ -62,7 +61,7 @@ features:
     image: "image/production/qualite.svg"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Contrôle Qualité
       color: sky
   - title: Optimisez votre gestion de stocks
@@ -70,7 +69,7 @@ features:
     image: "image/stock/quatre-tableau-de-bord-stock.svg"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Gestion de Stock
       color: sky
   - title: Prenez des décisions éclairées
@@ -78,7 +77,7 @@ features:
     image: "image/production/tableau-de-bord-production-image-2.svg"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Rapports
       color: sky
   - title: Une solution éthique et transparente pour une production optimisée.
@@ -86,7 +85,7 @@ features:
     image: "image/dokos-communaute.png"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Un choix éthique
       color: sky
 

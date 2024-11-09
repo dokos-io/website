@@ -1,11 +1,14 @@
+navigation:
+  title: Comptabilité
+  icon: i-uil-balance-scale
+  description: Gestion de la comptabilité et des finances.
+
 title: Comptabilité
 icon: i-uil-balance-scale
 description: Une comptabilité intégrée pour une maîtrise totale de vos finances.
 application: Dokos
-navigation:
-  title: Comptabilité
-  icon: i-uil-balance-scale
-  description: Gestion de la comptabilité et des finances
+author: Frappe Technologies, Dokos & Contributeurs
+
 hero:
   title: Simplifiez votre <span class="text-primary">comptabilité</span> et gagnez du temps avec Dokos
   description: Facilitez la gestion de vos finances avec Dokos et bénéficiez d'une tranquillité d'esprit totale. Gérez vos comptes, suivez vos transactions, et obtenez des rapports financiers détaillés en quelques clics, tout en gardant un contrôle absolu sur vos finances.
@@ -33,7 +36,7 @@ features:
     video: image/comptabilite/tableau-de-bord-compta.mp4
     image_bg_color: bg-teal-500
     align: left
-    headline:
+    badge:
       label: Tableaux de bord
       color: sky
   - title: Adaptez facilement votre plan comptable à votre entreprise
@@ -41,7 +44,7 @@ features:
     image: image/comptabilite/plan-comptable.png
     image_bg_color: bg-teal-500
     align: right
-    headline:
+    badge:
       label: Plan comptable
       color: sky
   - title: Gardez votre comptabilité à jour en automatisant le suivi des transactions
@@ -49,7 +52,7 @@ features:
     image: image/comptabilite/suivi-revenus-et-depenses.svg
     image_bg_color: bg-teal-500
     align: left
-    headline:
+    badge:
       label: Grand livre
       color: sky
   - title: Générez des factures pro en quelques clics et réduisez les retards de paiement
@@ -57,7 +60,7 @@ features:
     image: image/comptabilite/facture-de-vente.png
     image_bg_color: bg-teal-500
     align: right
-    headline:
+    badge:
       label: Facturation
       color: sky
   - title: Simplifiez vos transactions internationales
@@ -65,7 +68,7 @@ features:
     image: image/comptabilite/rapports-financiers-diverses-monnaies.png
     image_bg_color: bg-teal-500
     align: left
-    headline:
+    badge:
       label: Multidevise
       color: sky
   - title: Automatisez vos flux métier et gagnez du temps
@@ -73,7 +76,7 @@ features:
     image: image/comptabilite/abonnement-photo-dokos.png
     image_bg_color: bg-teal-500
     align: right
-    headline:
+    badge:
       label: Automatisation
       color: sky
   - title: Simplifiez le rapprochement bancaire et garantissez la cohérence de vos comptes
@@ -81,7 +84,7 @@ features:
     image: image/comptabilite/rapprochement-bancaire-dokos-photo.png
     image_bg_color: bg-teal-500
     align: left
-    headline:
+    badge:
       label: Réconciliation bancaire
       color: sky
   - title: Personnalisez Dokos pour répondre parfaitement aux besoins uniques de votre entreprise
@@ -89,7 +92,7 @@ features:
     image: image/comptabilite/personnalisation-dokos.png
     image_bg_color: bg-teal-500
     align: right
-    headline:
+    badge:
       label: Personnalisations
       color: sky
 bottom_section:

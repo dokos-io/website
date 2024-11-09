@@ -1,11 +1,14 @@
+navigation:
+  title: Support
+  icon: i-ri-customer-service-2-line
+  description: Gestion de support client moderne.
+
 title: Support
 icon: i-ri-customer-service-2-line
 description: Offrez un service client impeccable avec un support intégré.
 application: Dokos / Frappe Helpdesk
-navigation:
-  title: Support
-  icon: i-ri-customer-service-2-line
-  description: Une solution complète pour la gestion du support client.
+author: Frappe Technologies & Contributeurs
+
 hero:
   title: Votre <span class="text-primary">solution complète</span>  pour la gestion du support client.
   description: Gérez efficacement toutes les intéractions avec vos clients grâce à notre module de support intégré. Que vous soyez une petite entreprise ou une grande organisation, notre logiciel s'adapte à vos besoins pour améliorer la satisfaction client et optimiser la résolution des demandes.
@@ -33,7 +36,7 @@ features:
     image: image/support/un-crm-suivi-des-tickets-ok.svg
     image_bg_color: bg-teal-500
     align: left
-    headline:
+    badge:
       label: Tickets
       color: sky
   - title: Une base de connaissances centralisée
@@ -41,7 +44,7 @@ features:
     image: image/support/deux-base-de-connaissance-ok.svg
     image_bg_color: bg-teal-500
     align: right
-    headline:
+    badge:
       label: Base de connaissances/ Documentation
       color: sky
   - title: Automatisation et SLA (Accords de Niveau de Service)
@@ -49,7 +52,7 @@ features:
     image: image/support/trois-SLA.png
     image_bg_color: bg-teal-500
     align: left
-    headline:
+    badge:
       label: Automatisation
       color: sky
   - title: Une communication multicanale
@@ -57,7 +60,7 @@ features:
     image: image/support/centraliser-les-informations.png
     image_bg_color: bg-teal-500
     align: right
-    headline:
+    badge:
       label: Multicanale
       color: sky
   - title: Des rapports et analyse des performances
@@ -65,7 +68,7 @@ features:
     image: image/support/quatre-rapport-helpdesk.png
     image_bg_color: bg-teal-500
     align: left
-    headline:
+    badge:
       label: Rapports
       color: sky
 bottom_section:

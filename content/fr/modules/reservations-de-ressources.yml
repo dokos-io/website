@@ -1,11 +1,15 @@
+
+navigation:
+  title: Réservations de ressources
+  icon: i-material-symbols-location-on-outline-rounded
+  description: Création de contrats, génération d'abonnements, crédits de réservation et événements.
+
 title: Réservations de ressources
 icon: i-material-symbols-location-on-outline-rounded
 description: Gérez et optimisez l'utilisation de vos ressources en toute simplicité.
 application: Bookings
-navigation:
-  title: Réservations de ressources
-  icon: i-material-symbols-location-on-outline-rounded
-  description: Création de contrats, génération d'abonnements, crédits de réservation et événements
+author: Dokos & Contributeurs
+
 hero:
   title: Simplifiez la <span class="text-primary">gestion de vos ressources</span> avec Dokos
   description: Gérez vos espaces et équipements avec fluidité grâce au module de réservation de ressources de Dokos
@@ -33,7 +37,7 @@ features:
     image: image/reservation-ressource/commandes-e-commerce.png
     image_bg_color: bg-teal-500
     align: left
-    headline:
+    badge:
       label: Réservation
       color: sky
   - title: Une solution pour tous vos besoins
@@ -41,7 +45,7 @@ features:
     image: image/reservation-ressource/reservations-de-ressources.mp4g
     image_bg_color: bg-teal-500
     align: center
-    headline:
+    badge:
       label: Réservation
       color: sky
 bottom_section:

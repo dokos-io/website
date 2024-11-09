@@ -12,7 +12,6 @@ export const useModules = () => {
 
     try {
       const data = await queryContent(`/${locale.value}/modules`).where({ _extension: 'yml' }).find()
-      console.log(data)
       modules.value = data as Module[]
     }
     catch (e) {

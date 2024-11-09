@@ -1,11 +1,13 @@
+navigation:
+    title: Stocks
+    icon: i-vaadin-stock
+    description: Suivi de vos mouvements, valorisations de stocks et de votre chaîne d'approvisionnement.
+
 title: Stocks
 icon: i-vaadin-stock
 description: Simplifiez la gestion de votre Stock avec un logiciel de distribution de pointe
 application: Dokos
-navigation:
-    title: Stocks
-    icon: i-vaadin-stock
-    description: Gérez vos stocks et votre chaîne d'approvisionnement efficacement avec Dokos
+author: Frappe Technologies & Contributeurs
 
 hero:
   title: Simplifiez la gestion de votre <span class="text-primary">stock</span> avec avec un logiciel de distribution de pointe
@@ -36,7 +38,7 @@ features:
     image: "image/stock/un-articles.png"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Articles
       color: sky
   - title: Un suivi de stock automatisés.
@@ -44,7 +46,7 @@ features:
     image: "image/stock/deux-mouvement-de-stock.png"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Mouvement Stock
       color: sky
   - title: Une automatisation de la planification et du réapprovisionnement.
@@ -52,7 +54,7 @@ features:
     image: "image/stock/trois-articles-en-penuries.png"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Planification
       color: sky
   - title: Une gestion Multi-entrepôts
@@ -60,7 +62,7 @@ features:
     image: "image/stock/quatre-tableau-de-bord-stock.svg"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Multi-entrepôt
       color: sky
   - title: Des inventaires, audit et évaluation du stock
@@ -68,7 +70,7 @@ features:
     image: "image/stock/cinq-valeur-du-stock.png"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Inventaire
       color: sky
   - title: Des rapports et une visibilité en temps réel
@@ -76,7 +78,7 @@ features:
     image: ""
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Rapports
       color: sky
 

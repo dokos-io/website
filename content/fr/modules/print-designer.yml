@@ -1,12 +1,14 @@
-title: Frappe Builder
-link: "https://frappe.io/print-designer"
-author: Frappe Technologies
-description: Personnalisez vos formats d'impression avec simplicité et puissance !
-
 navigation:
   title: Print Designer
-  description: L'outil ultime de personnalisation des formats d'impression'
-  icon: /frappe/print-designer.svg
+  description: Personnalisation avancée des formats d'impression web et PDF.
+  icon: i-material-symbols-photo-prints-outline
+
+
+title: Frappe Print Designer
+link: "https://frappe.io/print-designer"
+author: Frappe Technologies & Contributeurs
+description: Personnalisez vos formats d'impression avec simplicité et puissance !
+application: Frappe Print Designer
 
 logo:
   light: /frappe/print-designer.svg

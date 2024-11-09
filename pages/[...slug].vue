@@ -1,45 +1,59 @@
 <script setup lang="ts">
-
-const route = useRoute()
+const route = useRoute();
 const {
     params: { slug },
 } = useRoute();
 
 const { t, locale } = useI18n({
-  useScope: 'local'
-})
+    useScope: "local",
+});
 
-const { data: page } = await useAsyncData(route.path, () => queryContent(`/${locale.value}/${(slug as string[]).join("/")}` ).findOne())
+const { data: page } = await useAsyncData(route.path, () =>
+    queryContent(`/${locale.value}/${(slug as string[]).join("/")}`).findOne()
+);
 if (!page.value) {
-    throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+    throw createError({
+        statusCode: 404,
+        statusMessage: "Page not found",
+        fatal: true,
+    });
 }
 
-const { data: surround } = await useAsyncData(`${route.path}-surround`, () => queryContent(`/${locale.value}`)
-    .where({ _extension: 'md', navigation: { $ne: false } })
-    .only(['title', 'description', '_path'])
-    .findSurround(`/${locale.value}`)
-    , { default: () => [] })
+const { data: surround } = await useAsyncData(
+    `${route.path}-surround`,
+    () =>
+        queryContent(`/${locale.value}`)
+            .where({ _extension: "md", navigation: { $ne: false } })
+            .only(["title", "description", "_path"])
+            .findSurround(`/${locale.value}`),
+    { default: () => [] }
+);
 
 useSeoMeta({
     title: page.value.title,
     ogTitle: page.value.title,
     description: page.value.description,
-    ogDescription: page.value.description
-})
+    ogDescription: page.value.description,
+});
 
 defineOgImage({
-    component: 'Saas',
+    component: "Saas",
     title: page.value.title,
-    description: page.value.description
-})
+    description: page.value.description,
+});
 
-const headline = computed(() => findPageHeadline(page.value!))
+const headline = computed(() => findPageHeadline(page.value!));
 </script>
 
 <template>
     <UContainer>
         <UPage v-if="page">
-            <UPageHeader :title="page.title" :links="page.links" :headline="headline" v-if="page.title">
+            <UPageHeader
+                :title="page.title"
+                :links="page.links"
+                :headline="headline"
+                v-if="page.title"
+            >
                 <template #description>
                     <span v-html="page.description" />
                 </template>
@@ -47,7 +61,7 @@ const headline = computed(() => findPageHeadline(page.value!))
             <UPageBody prose>
                 <ContentRenderer v-if="page.body" :value="page" />
 
-                <hr v-if="surround?.length">
+                <hr v-if="surround?.length" />
 
                 <UContentSurround :surround="surround" />
             </UPageBody>

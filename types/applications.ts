@@ -1,4 +1,5 @@
-import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
+import type { ParsedContent } from '@nuxt/content'
+
 
 export interface Application extends ParsedContent {
   title: string

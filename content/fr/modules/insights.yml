@@ -1,12 +1,13 @@
+navigation:
+  title: Frappe Insights
+  icon: i-material-symbols-auto-graph
+  description: Analyse et exploration de données
+
 title: Frappe Insights
 link: "https://frappe.io/insights"
-author: Frappe Technologies
+author: Frappe Technologies & Contributeurs
 description: Prenez des décisions éclairées grâce à Frappe Insights
-
-navigation:
-  title: Insights
-  description: Prenez des décisions éclairées grâce à Frappe Insights 
-  icon: /frappe/insights.svg
+application: Frappe Insights
 
 logo:
   light: /frappe/insights.svg

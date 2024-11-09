@@ -1,11 +1,13 @@
+navigation:
+  title: Ventes
+  icon: i-ep-sell
+  description: Gestion des flux commerciaux et de la facturation.
+
 title: Ventes
 icon: i-ep-sell
 description: Transformez vos leads en clients fidèles avec des outils de vente performants.
 application: Dokos
-navigation:
-    title: Ventes
-    icon: i-ep-sell
-    description: Gestion du flux commercial
+author: Frappe Technologies, Dokos & Contributeurs
 
 hero:
   title: Accélérez vos ventes avec <span class="text-primary">simplicité et transparence</span>
@@ -37,7 +39,7 @@ features:
     image: "image/ventes/un-insights-opportunites.png"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: CRM
       color: sky
   - title: Création de devis et gestion des commandes
@@ -45,7 +47,7 @@ features:
     image: "image/ventes/deux-evolution-commandes-clients.png"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Devis
       color: sky
   - title: Automatisation du flux de vente
@@ -53,7 +55,7 @@ features:
     image: "image/ventes/trois-flux-de-vente.png"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Factures
       color: sky
   - title: Gestion des livraisons et expédition
@@ -61,7 +63,7 @@ features:
     image: "image/ventes/quatre-livraison-kanban.png"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Livraison
       color: sky
   - title: Rapports et Analyses
@@ -69,7 +71,7 @@ features:
     image: "image/ventes/cinq-insights ventes.png"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Rapports
       color: sky
   - title: Gestion des abonnements
@@ -77,7 +79,7 @@ features:
     image: "image/ventes/six-abonnements-modifies.svg"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Abonnement
       color: sky
   - title: Des personnalisations sur mesure
@@ -85,7 +87,7 @@ features:
     image: "image/ventes/sept-facture-de-vente.png"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Personnalisations
       color: sky
 

@@ -1,13 +1,14 @@
+navigation:
+  title: Frappe Builder
+  icon: i-icon-park-outline-add-web
+  description: Création de sites web no-code.
+
 title: Frappe Builder
 icon: mdi:application-settings-outline
 link: "https://frappe.io/builder"
-author: Frappe Technologies
+author: Frappe Technologies & Contributeurs
 description: L'outil ultime de création de sites web no-code
-
-navigation:
-  title: Frappe Builder
-  description: L'outil ultime de création de sites web no-code
-  icon: /frappe/builder.svg
+application: Frappe Builder
 
 logo:
   light: /frappe/builder.svg

@@ -1,56 +1,72 @@
 <script setup lang="ts">
-
 const { t } = useI18n({
-  useScope: 'local'
-})
+    useScope: "local",
+});
 
-const localePath = useLocalePath()
+const localePath = useLocalePath();
 
-const { Modules, fetchList } = useModules()
+const { Modules, fetchList } = useModules();
 
-const title = "Modules Dokos"
-const description = "Liste des modules Dokos"
+const title = "Modules Dokos";
+const description = "Liste des modules Dokos";
 useSeoMeta({
-  titleTemplate: '%s · Modules',
-  title,
-  description,
-  ogDescription: description,
-  ogTitle: `${title} · Modules`
-})
+    titleTemplate: "%s · Modules",
+    title,
+    description,
+    ogDescription: description,
+    ogTitle: `${title} · Modules`,
+});
 
-await fetchList()
-
+await fetchList();
 </script>
 
 <template>
-  <UPage id="smooth" class="pt-20 -mt-20">
-    <ULandingHero :title="t('hero_title')" :ui="{ wrapper: 'bg-gradient-to-b from-yellow-400/10 from-90%', title: 'text-amber-500' }">
-      <template #description>
-        <span v-html="t('hero_description')"></span>
-      </template>
-    </ULandingHero>
-    <UPageBody>
-      <UContainer>
-        <UPageGrid>
-          <UPageCard v-for="(module, index) in Modules" :key="index" v-bind="module" :to="localePath(module._path)"
+    <UPage id="smooth" class="pt-20 -mt-20">
+        <ULandingHero
+            :title="t('hero_title')"
             :ui="{
-              footer: { padding: 'pt-0' },
-            }">
-            <template #icon>
-              <span class="inline-flex p-1 rounded-lg bg-amber-600/5">
-                <UIcon :name="module.icon || 'i-heroicons-outline-cube'" class="w-10 h-10 flex-shrink-0 bg-amber-600"/>
-              </span>
+                wrapper: 'bg-gradient-to-b from-yellow-400/10 from-90%',
+                title: 'text-amber-500',
+            }"
+        >
+            <template #description>
+                <span v-html="t('hero_description')"></span>
             </template>
+        </ULandingHero>
+        <UPageBody>
+            <UContainer>
+                <UPageGrid>
+                    <UPageCard
+                        v-for="(module, index) in Modules"
+                        :key="index"
+                        v-bind="module"
+                        :to="localePath(module._path)"
+                        :ui="{
+                            footer: { padding: 'pt-0' },
+                        }"
+                    >
+                        <template #icon>
+                            <span
+                                class="inline-flex p-1 rounded-lg bg-amber-600/5"
+                            >
+                                <UIcon
+                                    :name="
+                                        module.icon ||
+                                        'i-heroicons-outline-cube'
+                                    "
+                                    class="w-10 h-10 flex-shrink-0 bg-amber-600"
+                                />
+                            </span>
+                        </template>
 
-            <template #header>
-              <UBadge :label="module.application" color="gray" />
-            </template>
-
-          </UPageCard>
-        </UPageGrid>
-      </UContainer>
-    </UPageBody>
-  </UPage>
+                        <template #header>
+                            <UBadge :label="module.application" color="gray" />
+                        </template>
+                    </UPageCard>
+                </UPageGrid>
+            </UContainer>
+        </UPageBody>
+    </UPage>
 </template>
 
 <i18n lang="yaml">

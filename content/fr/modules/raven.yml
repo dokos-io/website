@@ -1,12 +1,13 @@
-title: "L'assistant AI qui révolutionne votre gestion : raven"
-link: "https://www.ravenchat.ai/"
-author: Raven
-description: Transformez votre manière de travailler
-
 navigation:
   title: Raven
   description: "L'assistant AI qui révolutionne votre gestion : Raven"
-  icon: /frappe/raven.webp
+  icon: i-material-symbols-android-chat
+
+title: "L'assistant AI qui révolutionne votre gestion : Raven"
+link: "https://www.ravenchat.ai/"
+author: The Commit Company & Contributeurs
+description: Transformez votre manière de travailler
+application: Raven
 
 logo:
   light: /frappe/raven.webp

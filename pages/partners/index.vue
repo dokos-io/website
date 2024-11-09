@@ -1,63 +1,71 @@
 <script setup lang="ts">
-
 const { t, locale } = useI18n({
-  useScope: 'local'
-})
+    useScope: "local",
+});
 
-const localePath = useLocalePath()
+const localePath = useLocalePath();
 
-const { Partners, fetchList } = usePartners()
+const { Partners, fetchList } = usePartners();
 
+const { data: page } = await useAsyncData("partners", () =>
+    queryContent(`/${locale.value}/partners`).findOne()
+);
 
-const { data: page } = await useAsyncData('partners', () => queryContent(`/${locale.value}/partners`).findOne())
-
-const title = page.value.head?.title || page.value.title
-const description = page.value.head?.description || page.value.description
+const title = page.value.head?.title || page.value.title;
+const description = page.value.head?.description || page.value.description;
 useSeoMeta({
-  titleTemplate: '%s · Partenaires',
-  title,
-  description,
-  ogDescription: description,
-  ogTitle: `${title} · Partenaires`
-})
+    titleTemplate: "%s · Partenaires",
+    title,
+    description,
+    ogDescription: description,
+    ogTitle: `${title} · Partenaires`,
+});
 
-await fetchList()
+await fetchList();
 </script>
 
 <template>
-  <UContainer>
-    <UPageHero v-bind="page" />
+    <UContainer>
+        <UPageHero v-bind="page" />
 
-    <UPage id="smooth" class="pt-20 -mt-20">
-      <UPageBody>
-        <UPageGrid v-if="Partners?.length">
-          <UPageCard
-            v-for="(agency, index) in Partners"
-            :key="index"
-            :to="localePath(agency._path)"
-            :title="agency.title"
-            :description="agency.description"
-            :ui="{
-              divide: '',
-              footer: { padding: 'pt-0' },
-              title: 'text-lg',
-              description: 'line-clamp-3'
-            }"
-          >
-            <template #icon>
-              <UColorModeAvatar :light="agency.logo.light" :dark="agency.logo.dark" size="lg" :ui="{ rounded: 'rounded-sm' }" />
-            </template>
+        <UPage id="smooth" class="pt-20 -mt-20">
+            <UPageBody>
+                <UPageGrid v-if="Partners?.length">
+                    <UPageCard
+                        v-for="(agency, index) in Partners"
+                        :key="index"
+                        :to="localePath(agency._path)"
+                        :title="agency.title"
+                        :description="agency.description"
+                        :ui="{
+                            divide: '',
+                            footer: { padding: 'pt-0' },
+                            title: 'text-lg',
+                            description: 'line-clamp-3',
+                        }"
+                    >
+                        <template #icon>
+                            <UColorModeAvatar
+                                :light="agency.logo.light"
+                                :dark="agency.logo.dark"
+                                size="lg"
+                                :ui="{ rounded: 'rounded-sm' }"
+                            />
+                        </template>
 
-            <template #footer>
-              <UBadge :label="agency.location.label" color="gray" />
-            </template>
-          </UPageCard>
-        </UPageGrid>
+                        <template #footer>
+                            <UBadge
+                                :label="agency.location.label"
+                                color="gray"
+                            />
+                        </template>
+                    </UPageCard>
+                </UPageGrid>
 
-        <EmptyCard v-else :label="t('empty_page')" />
-      </UPageBody>
-    </UPage>
-  </UContainer>
+                <EmptyCard v-else :label="t('empty_page')" />
+            </UPageBody>
+        </UPage>
+    </UContainer>
 </template>
 
 <i18n lang="yaml">

@@ -1,12 +1,14 @@
-title: Ressources Humaines
-icon: i-mdi-human-capacity-increase
-description: Simplifiez et améliorez la gestion de vos équipes
-application: Dokos
 navigation:
     title: Ressources Humaines
     icon: i-mdi-human-capacity-increase
-    description: Gestion des congés, notes de frais, recrutement, quarts et présence, performance
-  
+    description: Gestion des congés, notes de frais, recrutement, quarts et présence, évaluations.
+
+title: Ressources Humaines
+icon: i-mdi-human-capacity-increase
+description: Simplifiez et améliorez la gestion de vos équipes
+author: Frappe Technologies, Dokos & Contributeurs
+application: HRMS
+
 hero:
   title: Gérez vos <span class="text-primary">Ressources Humaines</span> de manière efficace avec Dokos.
   description: Dokos vous propose toutes les fonctionnalités nécessaires pour simplifier la gestion des tâches et processus liés à vos collaborateurs. Découvrez comment Dokos peut vous aider à améliorer votre gestion RH !
@@ -37,7 +39,7 @@ features:
     image: "image/module-rh/un-rh-gestion-des-employes.png"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Gestion des employés
       color: sky
   - title: Une gestion des présences et des horaires
@@ -45,7 +47,7 @@ features:
     image: "image/module-rh/deux-presence-et-horaires.png"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Présence et Horaires
       color: sky
   - title: Une gestion des congés
@@ -53,7 +55,7 @@ features:
     image: "image/module-rh/trois-gestion-des-conges.png"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Congés
       color: sky
   - title: Une gestion des dépenses et des avances
@@ -61,7 +63,7 @@ features:
     image: "image/module-rh/quatre-note-de-frais-modifie.svg"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Dépenses
       color: sky
   - title: Une gestion des évaluations
@@ -69,7 +71,7 @@ features:
     image: "image/module-rh/cinq-evaluation.png"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Performance
       color: sky
   - title: Un recrutement simplifié 
@@ -77,7 +79,7 @@ features:
     image: "image/module-rh/six-tableau-de-bord-offre-demploi.png"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Recrutement
       color: sky
   - title: Formation et développement
@@ -85,7 +87,7 @@ features:
     image: "image/module-rh/sept-programme-formation.png"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Formation
       color: sky
   - title: Des rapports & Analyses en temps réel
@@ -93,7 +95,7 @@ features:
     image: ""
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Rapports
       color: sky
   - title: Un portail en ligne pour vos employés 
@@ -101,7 +103,7 @@ features:
     image: "image/module-rh/neuf-demande-de-conge.svg"
     image_bg_color: "bg-teal-500"
     align: left
-    headline:
+    badge:
       label: Portail
       color: sky
   - title: Une application mobile simple
@@ -109,7 +111,7 @@ features:
     image: "image/module-rh/dix-application-rh.svg"
     image_bg_color: "bg-teal-500"
     align: right
-    headline:
+    badge:
       label: Application
       color: sky
 

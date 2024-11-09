@@ -1,4 +1,4 @@
-import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
+import type { ParsedContent } from '@nuxt/content'
 
 export interface BlogPost extends ParsedContent {
   title: string
@@ -10,5 +10,5 @@ export interface BlogPost extends ParsedContent {
     name: string
     description?: string
     avatar?: Avatar
-  } & Link)[]
+  } & Link)[],
 }
