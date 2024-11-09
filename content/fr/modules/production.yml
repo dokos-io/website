@@ -35,7 +35,7 @@ hero:
 features:
   - title: Optimisez votre Production
     description: Gagnez en visibilité et en contrôle sur vos processus de production. <br><br>Avec Dokos, définissez rapidement les composants nécessaires et assurez une gestion fluide et sans erreurs. <br><br>La flexibilité du logiciel vous permet également de gérer facilement les différentes variantes de produits, en adaptant rapidement les nomenclatures et les coûts associés à chaque version.</br>
-    image: ""
+    image: "image/production/Nomenclature.svg"
     image_bg_color: "bg-teal-500"
     align: left
     headline:
@@ -43,6 +43,7 @@ features:
       color: sky
   - title: Gagnez en efficacité sur votre plannification
     description: Planifiez vos productions avec confiance. <br><br>Anticipez les besoins et assurez des pratiques de production durables pour plus de sérénité.<br><br> Evitez les surplus et les pénuries, tout en respectant des pratiques de production durables et responsables.</br>
+    image: "image/production/plannification_production.png"
     image_bg_color: "bg-teal-500"
     align: right
     headline:
@@ -50,6 +51,7 @@ features:
       color: sky
   - title: Restez informé en temps réel 
     description: Le suivi des opérations de production est simplifié grâce à un tableau de bord dynamique qui vous offre une vue d'ensemble de l'avancement de chaque ordre de fabrication.<br><br> Vous pouvez enregistrer les temps consacrés à chaque étape de production, ce qui vous aide à maximiser l’efficacité de vos processus et à identifier facilement les axes d'amélioration.</br>
+    video: "image/production/tableau-de-bord-production.mp4"
     image_bg_color: "bg-teal-500"
     align: left
     headline:
@@ -57,6 +59,7 @@ features:
       color: sky
   - title: Garantissez la qualité à chaque étape
     description: La qualité est au cœur de notre approche. <br><br>Dokos intègre des contrôles qualité à chaque phase de production, vous permettant de garantir des produits conformes. <br><br>Avec des contrôles intégrés et des rapports détaillés, gagnez la confiance de vos clients en livrant des produits conformes à chaque fois.</br>
+    image: "image/production/qualite.svg"
     image_bg_color: "bg-teal-500"
     align: right
     headline:
@@ -64,6 +67,7 @@ features:
       color: sky
   - title: Optimisez votre gestion de stocks
     description: Bénéficiez d'un suivi en temps réel des niveaux de matières premières et de produits finis. <br><br>Vous pouvez organiser efficacement vos stocks et optimiser les mouvements entre entrepôts. <br><br>Vous pouvez également évaluer les coûts de production en intégrant les matières premières, la main-d'œuvre et les frais généraux, ce qui facilite une gestion budgétaire éclairée et responsable.</br>
+    image: "image/stock/quatre-tableau-de-bord-stock.svg"
     image_bg_color: "bg-teal-500"
     align: left
     headline:
@@ -71,6 +75,7 @@ features:
       color: sky
   - title: Prenez des décisions éclairées
     description: Générez avec Dokos des rapports personnalisés vous permettant de prendre des décisions éclairées, basées sur des données précises.<br><br> En analysant les tendances, vous identifiez les opportunités d’amélioration pour rester compétitif sur le marché.</br>
+    image: "image/production/tableau-de-bord-production-image-2.svg"
     image_bg_color: "bg-teal-500"
     align: right
     headline:
@@ -78,6 +83,7 @@ features:
       color: sky
   - title: Une solution éthique et transparente pour une production optimisée.
     description: En choisissant Dokos, vous rejoignez une communauté engagée qui partage vos valeurs. <br><br>Profitez d’une solution open-source innovante, conçue pour garantir transparence, performance et éthique dans votre gestion de production.</br>
+    image: "image/dokos-communaute.png"
     image_bg_color: "bg-teal-500"
     align: left
     headline:

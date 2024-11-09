@@ -3,10 +3,9 @@ icon: i-material-symbols-location-on-outline-rounded
 description: Gérez et optimisez l'utilisation de vos ressources en toute simplicité.
 application: Bookings
 navigation:
-    title: Réservations de ressources
-    icon: i-material-symbols-location-on-outline-rounded
-    description: Création de contrats, génération d'abonnements, crédits de réservation et événements
-
+  title: Réservations de ressources
+  icon: i-material-symbols-location-on-outline-rounded
+  description: Création de contrats, génération d'abonnements, crédits de réservation et événements
 hero:
   title: Simplifiez la <span class="text-primary">gestion de vos ressources</span> avec Dokos
   description: Gérez vos espaces et équipements avec fluidité grâce au module de réservation de ressources de Dokos
@@ -26,70 +25,62 @@ hero:
   headline:
     label: L'écosystème Dokos
     color: sky
-    to: "/fr"
+    to: /fr
     right_icon: i-heroicons-arrow-right-20-solid
-  
-
 features:
   - title: Réservez en quelques clics
     description: Le module de réservation de ressources de Dokos vous permet de proposer à vos utilisateurs la possibilité de réserver facilement des salles de réunion, des machines, ou du matériel. <br><br>Optimisez l’utilisation de vos ressources et offrez une autonomie totale à vos utilisateurs.</br>
-    image: "image/reservation-ressource/commandes-e-commerce.png"
-    image_bg_color: "bg-teal-500"
+    image: image/reservation-ressource/commandes-e-commerce.png
+    image_bg_color: bg-teal-500
     align: left
     headline:
       label: Réservation
       color: sky
   - title: Une solution pour tous vos besoins
     description: Que vous soyez un espace de coworking, un tiers-lieu ou une organisation disposant de plusieurs ressources à gérer, Dokos s’adapte à vos besoins avec des fonctionnalités configurables et évolutives. Proposez des abonnements, gérez des tickets de réservation ponctuels et maintenez une vue d’ensemble sur toutes vos ressources grâce à une interface simple et intuitive.
-    image: "image/reservation-ressource/reservations-de-ressources.gif"
-    image_bg_color: "bg-teal-500"
+    image: image/reservation-ressource/reservations-de-ressources.mp4g
+    image_bg_color: bg-teal-500
     align: center
     headline:
       label: Réservation
       color: sky
-
-
 bottom_section:
-  title: "Des fonctionnalités clés :"
+  title: 'Des fonctionnalités clés :'
   cards:
     - title: Réservation de salle en ligne
       description: Proposez un système intuitif pour permettre à vos équipes ou à vos clients de réserver des espaces adaptés à leurs besoins.
       icon: bi:person-workspace
-      class: "col-span-4 row-span-3"
+      class: col-span-4 row-span-3
     - title: Gestion du matériel
       description: Simplifiez la réservation de machines ou d’équipements spécifiques grâce à un système de suivi transparent.
       icon: material-symbols:precision-manufacturing-outline-rounded
-      class: "col-span-4 row-span-3"
+      class: col-span-4 row-span-3
     - title: Intégration avec Google Agenda
       description: Synchronisez vos calendriers de réservation pour une visibilité optimale en temps réel.
       icon: simple-icons:googlecalendar
-      class: "col-span-4 row-span-3"
+      class: col-span-4 row-span-3
     - title: Portail utilisateur personnalisé
       description: Chaque utilisateur dispose d’un accès dédié pour gérer ses réservations, consulter ses factures ou modifier ses informations.
       icon: icon-park-outline:locking-web
-      class: "col-span-4 row-span-3"
+      class: col-span-4 row-span-3
     - title: Gestion des abonnements
       description: Proposez la possibilité de souscrire à un abonnement à vos utilisateurs. Simplifiez la mise en place d'évènements.
       icon: tabler:file-rss
-      class: "col-span-4 row-span-3"
+      class: col-span-4 row-span-3
     - title: Gestion multi-lieux
       description: Centralisez la gestion de plusieurs tiers-lieux, tout en offrant une vue d'ensemble et une flexibilité adaptée aux spécificités de chaque lieu.
       icon: tabler:map-pins
-      class: "col-span-4 row-span-3"
-
-
-
+      class: col-span-4 row-span-3
 plus_button:
   label: Découvrir toutes nos fonctionnalités
   icon: i-heroicons-outline-plus-circle
   size: lg
   color: sky
   to: /features/reservations-de-ressources
-
 bottom_cta:
   title: Prêt à optimiser la gestion de vos ressources ?
   description: Des associations, des espaces de coworking aux structures plus traditionnelles, utilisent Dokos pour gérer efficacement leurs ressources et offrir une meilleure expérience à leurs utilisateurs.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  class: bg-amber-600/10 dark:bg-amber-800/10
   links:
     - label: Commencez maintenant
       to: https://cloud.dokos.io

@@ -58,6 +58,7 @@ features:
       color: sky
   - title: Maximisez la visibilité de votre site grâce à nos outils SEO.
     description: Créez des balises méta pour améliorer votre positionnement sur les moteurs de recherche, et utilisez notre gestion de blogs pour attirer et fidéliser votre audience.
+    image: "image/e-commerce/SEO-site-web.png"
     image_bg_color: "bg-teal-500"
     align: right
     headline:
@@ -65,7 +66,7 @@ features:
       color: sky
   - title: Personnalisez votre site à votre image
     description: Créez un site à votre image avec Dokos. <br><br>Modifiez les couleurs, les polices, les logos, et le thème général de votre boutique en ligne pour qu’elle reflète parfaitement votre marque.</br>
-    image: "image/e-commerce/site-web-dokos.gif"
+    video: "image/e-commerce/site-web-dokos.mp4"
     image_bg_color: "bg-teal-500"
     align: left
     headline:

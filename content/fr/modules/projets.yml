@@ -35,7 +35,7 @@ hero:
 features:
   - title: Planification de projets
     description: Créez et gérez vos projets facilement, de la conception à la livraison. <br><br>Grâce à une interface intuitive, définissez vos objectifs, planifiez vos tâches et assignez des rôles pour garantir une exécution fluide.</br>
-    image: ""
+    video: "projet.mp4"
     image_bg_color: "bg-teal-500"
     align: left
     headline:
@@ -43,6 +43,7 @@ features:
       color: sky
   - title: Un suivi des tâches
     description: Gardez une vue d’ensemble sur toutes les tâches de vos projets. <br><br>Visualisez leur progression, leur statut et attribuez des priorités pour une gestion optimale du temps et des ressources.</br>
+    image: "image/projet/Suivi-des-taches-kanban.png"
     image_bg_color: "bg-teal-500"
     align: right
     headline:
@@ -50,6 +51,7 @@ features:
       color: sky
   - title: La gestion des équipes
     description: Attribuez les rôles et responsabilités de chaque membre de l’équipe sur chaque tâche ou sous-projet. <br><br>Suivez la charge de travail de chacun pour équilibrer les efforts et améliorer l’efficacité collective.</br>
+    image: "image/projet/vue-planning-taches.png"
     image_bg_color: "bg-teal-500"
     align: left
     headline:
@@ -57,6 +59,7 @@ features:
       color: sky
   - title: Un calendrier interactif
     description: Bénéficiez d’une vue calendrier pour planifier et ajuster les échéances de vos projets. <br><br>Identifiez rapidement les tâches en retard et ajustez les plannings en conséquence pour rester dans les temps.</br>
+    image: "image/projet/gestion-de-projet-calendrier.png"
     image_bg_color: "bg-teal-500"
     align: right
     headline:
@@ -64,6 +67,7 @@ features:
       color: sky
   - title: Un suivi budgétaire
     description: Assurez un suivi rigoureux des budgets alloués à vos projets. <br><br>Estimez les coûts, suivez les dépenses en temps réel et prenez des décisions éclairées pour rester dans vos limites budgétaires.</br>
+    image: "image/projet/suivi-activite-budget-projet.png"
     image_bg_color: "bg-teal-500"
     align: left
     headline:
@@ -71,6 +75,7 @@ features:
       color: sky
   - title: Une gestion des dépendances
     description: Identifiez et gérez les dépendances entre vos tâches pour anticiper les blocages potentiels. <br><br>Assurez-vous que chaque étape du projet progresse sans accroc grâce à une gestion des flux de travail transparente.</br>
+    image: "image/projet/tache-gantt.png"
     image_bg_color: "bg-teal-500"
     align: right
     headline:
@@ -78,6 +83,7 @@ features:
       color: sky
   - title: Des Rapports et Analyses
     description: Accédez à des rapports détaillés sur l’avancement de vos projets. <br><br>Obtenez des données en temps réel sur les performances de vos équipes, l’état des tâches et les budgets pour mieux anticiper les besoins et ajuster vos plans.</br>
+    image: "image/projet/tableau-de-bord-projet.svg"
     image_bg_color: "bg-teal-500"
     align: left
     headline:
@@ -85,6 +91,7 @@ features:
       color: sky
   - title: Une collaboration en temps réel
     description: Facilitez la collaboration au sein de vos équipes avec des outils intégrés de communication et de partage de fichiers. <br><br>Discutez, partagez des documents et collaborez directement dans le projet pour améliorer la productivité.</br>
+    image: "image/projet/communication-raven.png"
     image_bg_color: "bg-teal-500"
     align: right
     headline:

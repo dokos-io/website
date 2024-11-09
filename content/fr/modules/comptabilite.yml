@@ -30,7 +30,7 @@ hero:
 features:
   - title: Prenez des décisions éclairées avec une vue instantanée de vos finances
     description: Nos tableaux de bord interactifs vous offrent un aperçu des principaux indicateurs de performance financière, vous permettant de prendre des décisions éclairées.<br><br>Configurez des rapports personnalisés pour suivre précisément les aspects qui comptent le plus pour votre entreprise.
-    image: image/comptabilite/tableau-de-bord-compta.gif
+    video: image/comptabilite/tableau-de-bord-compta.mp4
     image_bg_color: bg-teal-500
     align: left
     headline:
