@@ -65,7 +65,7 @@ features:
 
   - title: "Une expérience intégrée : Webshop, Formulaires et Événements"
     description: Les paiements sont entièrement synchronisés avec votre Webshop, vos formulaires web et la gestion de vos événements. Offrez une expérience de paiement fluide à vos clients et bénéficiez d'un suivi en temps réel.
-    video: "image/paiements/gestion-evenements.mp4"
+    video: "/image/paiements/gestion-evenements.mp4"
     image_bg_color: "bg-teal-500"
     align: right
     badge:

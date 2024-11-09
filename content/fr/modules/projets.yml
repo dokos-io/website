@@ -35,7 +35,7 @@ hero:
 features:
   - title: Planification de projets
     description: Créez et gérez vos projets facilement, de la conception à la livraison. <br><br>Grâce à une interface intuitive, définissez vos objectifs, planifiez vos tâches et assignez des rôles pour garantir une exécution fluide.</br>
-    video: "projet.mp4"
+    video: "/image/projet/projet.mp4"
     image_bg_color: "bg-teal-500"
     align: left
     badge:

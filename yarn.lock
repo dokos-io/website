@@ -1038,6 +1038,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/bi@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@iconify-json/bi@npm:1.2.1"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/1e17cb1ccc1aa100bf8a2c71c32f20963bb3aafb5dd8b48337bb1a3b0546313ae80f246053b5fba3d5e9eb7070bd64ee47297c81beef25d0ab2a9447836ea790
+  languageName: node
+  linkType: hard
+
 "@iconify-json/carbon@npm:^1.1.37, @iconify-json/carbon@npm:^1.2.1":
   version: 1.2.4
   resolution: "@iconify-json/carbon@npm:1.2.4"
@@ -10128,6 +10137,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nuxt-ui-pro-template-saas@workspace:."
   dependencies:
+    "@iconify-json/bi": "npm:^1.2.1"
     "@iconify-json/carbon": "npm:^1.1.37"
     "@iconify-json/cib": "npm:^1.1.10"
     "@iconify-json/circle-flags": "npm:^1.1.49"

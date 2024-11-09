@@ -68,7 +68,7 @@ features:
       color: sky
   - title: Personnalisez votre site à votre image
     description: Créez un site à votre image avec Dokos. <br><br>Modifiez les couleurs, les polices, les logos, et le thème général de votre boutique en ligne pour qu’elle reflète parfaitement votre marque.</br>
-    video: "image/e-commerce/site-web-dokos.mp4"
+    video: "/image/e-commerce/site-web-dokos.mp4"
     image_bg_color: "bg-teal-500"
     align: left
     badge:

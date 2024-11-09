@@ -50,7 +50,7 @@ features:
       color: sky
   - title: Restez informé en temps réel 
     description: Le suivi des opérations de production est simplifié grâce à un tableau de bord dynamique qui vous offre une vue d'ensemble de l'avancement de chaque ordre de fabrication.<br><br> Vous pouvez enregistrer les temps consacrés à chaque étape de production, ce qui vous aide à maximiser l’efficacité de vos processus et à identifier facilement les axes d'amélioration.</br>
-    video: "image/production/tableau-de-bord-production.mp4"
+    video: "/image/production/tableau-de-bord-production.mp4"
     image_bg_color: "bg-teal-500"
     align: left
     badge:
