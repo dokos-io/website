@@ -8,7 +8,6 @@ const localePath = useLocalePath()
 
 const { Modules, fetchList } = useModules()
 
-
 // const title = page.value.app_name
 // const description = page.value.link
 // useSeoMeta({
@@ -38,7 +37,7 @@ await fetchList()
             }">
             <template #icon>
               <span class="inline-flex p-1 rounded-lg bg-amber-600/5">
-                <UIcon :name="module.icon" class="w-10 h-10 flex-shrink-0 bg-amber-600"/>
+                <UIcon :name="module.icon || 'i-heroicons-outline-cube'" class="w-10 h-10 flex-shrink-0 bg-amber-600"/>
               </span>
             </template>
 

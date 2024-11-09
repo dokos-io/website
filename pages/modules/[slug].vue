@@ -73,6 +73,77 @@ if (!module.value) {
         </template>
       </ULandingHero>
 
+      <ULandingSection v-bind="module.bridge_before_colored_section"
+          v-if="module.bridge_before_colored_section" />
+
+        <ULandingSection v-bind="module.features_before_colored_section"
+          v-if="module.features_before_colored_section">
+          <ULandingGrid>
+            <ULandingCard v-for="(feat, index) in module.features_before_colored_section.cards" :key="index"
+              v-bind="feat" v-if="module.features_before_colored_section.cards" />
+          </ULandingGrid>
+        </ULandingSection>
+
+        <ULandingSection v-bind="module.colored_section" v-if="module.colored_section"
+          :ui="{ container: 'bg-blue-950 rounded-3xl p-5', title: 'mt-2 text-green-500', description: 'text-white' }">
+          <template #headline>
+            <UBadge v-if="module.colored_section.badge"
+              :variant="module.colored_section.badge.variant || 'subtle'"
+              :size="module.colored_section.badge.size || 'lg'"
+              :color="module.colored_section.badge.color || 'primary'" class="relative rounded-full font-semibold">
+              <UIcon v-if="module.colored_section.badge.left_icon"
+                :name="module.colored_section.badge.left_icon" class="mr-1 w-4 h-4 pointer-events-none" />
+              <NuxtLink :to="module.colored_section.badge.to" target="_blank" class="focus:outline-none"
+                tabindex="-1">
+                <span class="absolute inset-0" aria-hidden="true" />
+              </NuxtLink>
+
+              {{ module.colored_section.badge.label }}
+
+              <UIcon v-if="module.colored_section.badge.right_icon"
+                :name="module.colored_section.badge.right_icon" class="ml-1 w-4 h-4 pointer-events-none" />
+            </UBadge>
+          </template>
+
+          <div class="py-8 rounded-lg"
+            :class="[module.colored_section.image_bg_color, module.colored_section.align == 'left' ? 'pl-8' : 'pr-8']"
+            v-if="module.colored_section.image">
+            <NuxtImg :src="module.colored_section.image" class="shadow-lg"
+              :class="module.colored_section.align == 'left' ? 'rounded-s-lg' : 'rounded-e-lg'" />
+          </div>
+          <Placeholder v-else class="bg-green-500" />
+        </ULandingSection>
+
+        <ULandingSection v-for="(section, index) in module.main_features" :key="index" v-bind="section"
+          v-if="module.main_features">
+          <template #title>
+            <span v-html="section.title" />
+          </template>
+          <template #description>
+            <span v-html="section.description" />
+          </template>
+          <div class="py-8 rounded-lg" :class="[section.image_bg_color, section.align == 'left' ? 'pl-8' : 'pr-8']"
+            v-if="section.image">
+            <NuxtImg :src="section.image" class="shadow-lg"
+              :class="section.align == 'left' ? 'rounded-s-lg' : 'rounded-e-lg'" />
+          </div>
+          <Placeholder v-else />
+        </ULandingSection>
+
+        <ULandingSection v-bind="module.bridge" v-if="module.bridge" />
+
+        <ULandingSection v-bind="module.carousel" v-if="module.carousel">
+          <UCarousel v-slot="{ item }" :items="module.carousel"
+            :ui="{ item: 'w-full', container: 'rounded-3xl bg-sky-50' }" indicators>
+            <div class="text-center mx-auto">
+              <h2><span v-html="item.title"></span></h2>
+              <p class="pb-8"><span v-html="item.description"></span></p>
+            </div>
+          </UCarousel>
+        </ULandingSection>
+
+        <ULandingSection v-bind="module.bridge_after_carousel" v-if="module.bridge_after_carousel" />
+
       <ULandingSection v-for="(feat, index) in module.features" :key="index" v-bind="feat" :ui="{ title: 'mt-2' }"
         v-if="module.features">
         <template #headline>
@@ -117,13 +188,13 @@ if (!module.value) {
 <i18n lang="yaml">
   en:
     back_button: "Back to modules"
-    modules: Applications
+    modules: Modules
     website: Website
     useful_links: Liens utiles
     resources: Resources
   fr:
     back_button: "Retour aux modules"
-    modules: Applications
+    modules: Modules
     website: Site web
     useful_links: Liens utiles
     resources: Ressources

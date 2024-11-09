@@ -15,12 +15,12 @@ const { data: modules_nav } = await useAsyncData('modules_nav', () => fetchConte
 
 const modules = modules_nav.value?.find(item => item._path === `/${locale.value}`)?.children?.find(item => item._path === `/${locale.value}/modules`)?.children
 
-const appsContentQuery = queryContent(`/${locale.value}/applications`)
-const { data: apps_nav } = await useAsyncData('apps_nav', () => fetchContentNavigation(appsContentQuery), {
-  watch: [locale]
-})
+// const appsContentQuery = queryContent(`/${locale.value}/applications`)
+// const { data: apps_nav } = await useAsyncData('apps_nav', () => fetchContentNavigation(appsContentQuery), {
+//   watch: [locale]
+// })
 
-const applications = apps_nav.value?.find(item => item._path === `/${locale.value}`)?.children?.find(item => item._path === `/${locale.value}/applications`)?.children
+// const applications = apps_nav.value?.find(item => item._path === `/${locale.value}`)?.children?.find(item => item._path === `/${locale.value}/applications`)?.children
 
 const modules_links = modules?.map(feat => {
   return {
@@ -31,22 +31,22 @@ const modules_links = modules?.map(feat => {
   }
 })
 
-const application_links = applications?.map(app => {
-  return {
-    label: app.title,
-    to: app._path,
-    icon: app.icon,
-    description: app.description
-  }
-})
+// const application_links = applications?.map(app => {
+//   return {
+//     label: app.title,
+//     to: app._path,
+//     icon: app.icon,
+//     description: app.description
+//   }
+// })
 
 const links = computed(() => {
   return [
-    {
-      label: t('applications'),
-      icon: 'i-heroicons-computer-desktop',
-      children: application_links
-    },
+    // {
+    //   label: t('applications'),
+    //   icon: 'i-heroicons-computer-desktop',
+    //   children: application_links
+    // },
     {
       label: t('features'),
       icon: 'i-heroicons-computer-desktop',

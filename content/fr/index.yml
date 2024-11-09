@@ -95,7 +95,8 @@ sections:
         class: ml-8
   - title: Gardez le <span class="text-primary">contrôle</span>
     description: <strong>Soyez certain de ne pas être enfermé avec un éditeur ou un prestataire de service.</strong><br><br>Chez Dokos, vous avez toujours le contrôle de votre infrastructure et de vos données. Vous êtes libres de vos choix d’hébergement et de gestion, pour une indépendance totale.</br></br>
-    image: ''
+    image: '/image/nuage-dashboard-dark.png'
+    image_bg_color: bg-teal-600 
     id: control
     align: right
     features:
@@ -239,6 +240,14 @@ integrations:
 modules:
   title: La boîte à outils complète pour <span class="text-primary">tous vos besoins</span>
   description: Transformez votre gestion avec Dokos. Plus de 15 modules essentiels pour optimiser votre entreprise ou associations, quel que soit le secteur.
+  links:
+    - label: Voir tous les modules
+      to: "/modules"
+      color: green
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      size: md
+      variant: solid
   items:
     - title: CRM
       description: Gestion de la prospection

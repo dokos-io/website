@@ -78,8 +78,8 @@ useSeoMeta({
       <template #description>
         <span v-html="section.description" />
       </template>
-      <div class="py-8 rounded-lg" :class="[section.image_bg_color, section.align == 'left' ? 'pl-8' : 'pr-8']" v-if="section.image">
-        <NuxtImg :src="section.image" class="shadow-lg":class="section.align =='left' ? 'rounded-s-lg' : 'rounded-e-lg'"/>
+      <div class="pt-24 pb-12 rounded-lg" :class="[section.image_bg_color, section.align == 'left' ? 'pl-8 mr-7' : 'pr-8 ml-7']" v-if="section.image">
+        <NuxtImg :src="section.image" class="rounded-lg" :class="[section.align =='left' ? 'ml-7' : 'mr-7', section.image_bg_color ? 'shadow-2xl': '']" :style="section.align =='right' && 'margin-left: -15px;'"/>
       </div>
       <Placeholder v-else/>
     </ULandingSection>
@@ -92,7 +92,7 @@ useSeoMeta({
         </ULandingLogos>
     </ULandingSection>
 
-    <ULandingSection :ui="{wrapper: 'bg-green-400/10'}">
+    <ULandingSection :ui="{wrapper: 'bg-green-400/10'}" v-bind="page.modules">
       <template #title>
         <span v-html="page.modules.title" />
       </template>
