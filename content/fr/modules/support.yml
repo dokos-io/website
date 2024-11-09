@@ -34,7 +34,7 @@ hero:
 
 features:
   - title: Un suivi des tickets et gestion des requêtes
-    description: Transformez chaque interaction en opportunité de fournir une réponse rapide et précise. Grâce à un tableau de bord centralisé, vous avez une vue d’ensemble de toutes les requêtes clients en cours. Organisez, priorisez, et suivez les tickets jusqu'à leur clôture, tout en assurant la transparence au sein de votre équipe.Suivi des statuts de tickets. Priorisation automatique des urgences. Notifications en temps réel pour garder le contrôle
+    description: Transformez chaque interaction en opportunité de fournir une réponse rapide et précise. <br><br>Grâce à un tableau de bord centralisé, vous avez une vue d’ensemble de toutes les requêtes clients en cours. <br><br>Organisez, priorisez, et suivez les tickets jusqu'à leur clôture, tout en assurant la transparence au sein de votre équipe.Suivi des statuts de tickets. <br><li>Priorisation automatique des urgences. <br><li>Notifications en temps réel pour garder le contrôle.</br><l/i>
     image: "image/support/un-crm-suivi-des-tickets-ok.svg"
     image_bg_color: "bg-teal-500"
     align: left
@@ -42,7 +42,7 @@ features:
       label: Tickets
       color: sky
   - title: Une base de connaissances centralisée
-    description: Créez et gérez une base de données de solutions fréquemment utilisées, accessible à votre équipe et à vos clients. Cette documentation permet de réduire les sollicitations répétitives, tout en offrant des réponses immédiates aux questions courantes. Articles facilement accessibles. Organisation par catégories et tags. Système de recherche intelligent pour des résultats rapides.
+    description: Créez et gérez une base de données de solutions fréquemment utilisées, accessible à votre équipe et à vos clients. <br><br>Cette documentation permet de réduire les sollicitations répétitives, tout en offrant des réponses immédiates aux questions courantes. <br><li>Articles facilement accessibles. <br><li>Organisation par catégories et tags. <br><li>Système de recherche intelligent pour des résultats rapides.</br></li>
     image: "image/support/deux-base-de-connaissance-ok.svg"
     image_bg_color: "bg-teal-500"
     align: right
@@ -50,7 +50,7 @@ features:
       label: Base de connaissances/ Documentation
       color: sky
   - title:  Automatisation et SLA (Accords de Niveau de Service)
-    description: Automatisez le processus de résolution des tickets avec des règles prédéfinies, des workflows personnalisés et des accords de niveau de service (SLA) pour garantir des réponses dans les délais impartis. Déclencheurs d’automatisation pour les étapes clés. Workflows adaptables à vos besoins spécifiques. Respect automatique des SLA pour maintenir la satisfaction client.
+    description: Automatisez le processus de résolution des tickets avec des règles prédéfinies, des workflows personnalisés et des accords de niveau de service (SLA) pour garantir des réponses dans les délais impartis. <br><li>Déclencheurs d’automatisation pour les étapes clés. <br><li>Workflows adaptables à vos besoins spécifiques.<br><li> Respect automatique des SLA pour maintenir la satisfaction client.</br></li>
     image: "image/support/trois-SLA.png"
     image_bg_color: "bg-teal-500"
     align: left
@@ -58,7 +58,7 @@ features:
       label: Automatisation
       color: sky
   - title: Une communication multicanale
-    description: Gérez toutes les demandes clients, qu'elles proviennent d'e-mails, de réseaux sociaux ou de votre portail en ligne, sur une seule et même interface. Ne manquez plus aucune question ou demande urgente. Intégration des principaux canaux de communication. Suivi centralisé de toutes les interactions. Historique complet des échanges clients
+    description: Gérez toutes les demandes clients, qu'elles proviennent d'e-mails, de réseaux sociaux ou de votre portail en ligne, sur une seule et même interface. <br><br>Ne manquez plus aucune question ou demande urgente. <br><li>Intégration des principaux canaux de communication.<br><li> Suivi centralisé de toutes les interactions. <br><li>Historique complet des échanges clients</br></li>
     image: "image/support/quatre-rapport-helpdesk.png"
     image_bg_color: "bg-teal-500"
     align: right
@@ -66,7 +66,7 @@ features:
       label: Multicanale
       color: sky
   - title: Des rapports et analyse des performances
-    description: Accédez à des rapports détaillés sur les performances de votre service client. Identifiez les points à améliorer, suivez la satisfaction des clients, et optimisez vos processus en continu grâce aux données. Rapports personnalisables. Statistiques en temps réel. Suivi des performances des agents et du temps de résolution
+    description: Accédez à des rapports détaillés sur les performances de votre service client. <br><br>Identifiez les points à améliorer, suivez la satisfaction des clients, et optimisez vos processus en continu grâce aux données. <br><li>Rapports personnalisables. <br><li>Statistiques en temps réel. <br><li>Suivi des performances des agents et du temps de résolution.</br></li>
     image: "image/support/quatre-rapport-helpdesk.png"
     align: left
     headline:

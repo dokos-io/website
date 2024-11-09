@@ -32,7 +32,7 @@ hero:
 
 features:
   - title: Réservez en quelques clics
-    description: Le module de réservation de ressources de Dokos vous permet de proposer à vos utilisateurs la possibilité de réserver facilement des salles de réunion, des machines, ou du matériel. Optimisez l’utilisation de vos ressources et offrez une autonomie totale à vos utilisateurs.
+    description: Le module de réservation de ressources de Dokos vous permet de proposer à vos utilisateurs la possibilité de réserver facilement des salles de réunion, des machines, ou du matériel. <br><br>Optimisez l’utilisation de vos ressources et offrez une autonomie totale à vos utilisateurs.</br>
     image: "image/reservation-ressource/commandes-e-commerce.png"
     image_bg_color: "bg-teal-500"
     align: left

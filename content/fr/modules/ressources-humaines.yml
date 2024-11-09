@@ -33,7 +33,7 @@ hero:
 
 features:
   - title: Une gestion des employés simple
-    description: Gérez facilement les profils de vos employés, leurs postes, et leurs départements. Suivez vos contrats et hiérarchisez votre organisation. Le cycle de vie complet des employés est pris en charge, de l'intégration aux promotions, en passant par les transferts et les sorties.
+    description: Gérez facilement les profils de vos employés, leurs postes, et leurs départements. <br><br>Suivez vos contrats et hiérarchisez votre organisation. <br><br>Le cycle de vie complet des employés est pris en charge, de l'intégration aux promotions, en passant par les transferts et les sorties.</br>
     image: "image/module-rh/un-rh-gestion-des-employes.png"
     image_bg_color: "bg-teal-500"
     align: left
@@ -41,7 +41,7 @@ features:
       label: Gestion des employés
       color: sky
   - title: Une gestion des présences et des horaires
-    description: Suivez les présences avec des pointages ou une intégration biométrique. Automatisez la gestion des présences et des quarts grâce à des outils flexibles pour planifier les horaires, gérer les demandes de changement et assigner les tâches de manière efficace.
+    description: Suivez les présences avec des pointages ou une intégration biométrique.<br><br> Automatisez la gestion des présences et des quarts grâce à des outils flexibles pour planifier les horaires, gérer les demandes de changement et assigner les tâches de manière efficace.</br>
     image: "image/module-rh/deux-presence-et-horaires.png"
     image_bg_color: "bg-teal-500"
     align: right
@@ -49,7 +49,7 @@ features:
       label: Présence et Horaires
       color: sky
   - title: Une gestion des congés
-    description: Créez et personnalisez vos politiques de congés, types de congés et listes de jours fériés. Gérez les demandes de congés avec des workflows d'approbation clairs, les demandes de congés compensatoires.
+    description: Créez et personnalisez vos politiques de congés, types de congés et listes de jours fériés. <br><br>Gérez les demandes de congés avec des workflows d'approbation clairs, les demandes de congés compensatoires.</br>
     image: "image/module-rh/trois-gestion-des-conges.png"
     image_bg_color: "bg-teal-500"
     align: left
@@ -65,7 +65,7 @@ features:
       label: Dépenses
       color: sky
   - title: Une gestion des évaluations
-    description: Créez des modèles et suivez les cycles d'évaluation de vos employés. Collectez des retours, suivez les objectifs et réalisez des évaluations régulières pour optimiser la performance de vos équipes.
+    description: Créez des modèles et suivez les cycles d'évaluation de vos employés. <br><br>Collectez des retours, suivez les objectifs et réalisez des évaluations régulières pour optimiser la performance de vos équipes.</br>
     image: "image/module-rh/cinq-evaluation.png"
     image_bg_color: "bg-teal-500"
     align: left
@@ -73,7 +73,7 @@ features:
       label: Performance
       color: sky
   - title: Un recrutement simplifié 
-    description: Gérez vos offres d'emploi, vos candidats et vos entretiens. Dokos propose également un système de parrainage pour les employés et automatise la génération des offres d'emploi.
+    description: Gérez vos offres d'emploi, vos candidats et vos entretiens. <br><br>Dokos propose également un système de parrainage pour les employés et automatise la génération des offres d'emploi.</br>
     image: "image/module-rh/six-tableau-de-bord-offre-demploi.png"
     image_bg_color: "bg-teal-500"
     align: right

@@ -13,7 +13,7 @@ hero:
     - label: Commencez maintenant
       to: https://cloud.dokos.io
       size: sm
-      color: green
+      color: amber
       variant: solid
       icon: i-heroicons-rocket-launch
     - label: Documentation
@@ -33,7 +33,7 @@ hero:
 
 features:
   - title: Centralisez et transformez vos leads en clients avec une gestion simplifiée
-    description: Centralisez tous vos leads, prospects et opportunités en un seul endroit. <br>Suivez leur progression à travers un pipeline visuel clair et personnalisable, de la prospection à la conclusion du contrat.<br> Analysez les performances de vos campagnes et actions commerciales grâce à des indicateurs en temps réel.
+    description: Centralisez tous vos leads, prospects et opportunités en un seul endroit. <br><br>Suivez leur progression à travers un pipeline visuel clair et personnalisable, de la prospection à la conclusion du contrat.<br><br> Analysez les performances de vos campagnes et actions commerciales grâce à des indicateurs en temps réel.</br>
     image: "image/e-commerce/crm-deals.png"
     image_bg_color: "bg-teal-500"
     align: left
@@ -65,7 +65,7 @@ features:
       label: Facturation
       color: sky
   - title: Ajustez vos stratégies grâce aux rapports
-    description: "Avec les tableaux de bord dynamiques de Dokos, analysez en temps réel les indicateurs essentiels à la bonne gestion de vos activités commerciales : taux de conversion, volume d'affaires, état des pipelines, etc. <br>Les rapports générés vous aident à ajuster vos stratégies de manière proactive."
+    description: "Avec les tableaux de bord dynamiques de Dokos, analysez en temps réel les indicateurs essentiels à la bonne gestion de vos activités commerciales : taux de conversion, volume d'affaires, état des pipelines, etc. <br><br>Les rapports générés vous aident à ajuster vos stratégies de manière proactive.</br>"
     image: "image/e-commerce/parametre-e-commerce.svg"
     image_bg_color: "bg-teal-500"
     align: left
@@ -73,7 +73,8 @@ features:
       label: Rapports et analyses
       color: sky
   - title: Gardez une vue complète de votre activité. 
-    description: Dokos est bien plus qu’un CRM. Il s'intègre parfaitement avec d'autres modules de gestion comme la comptabilité, la gestion des stocks et la gestion de projet. Cela permet une vue à 360° de votre activité, sans silos ni interruptions dans vos processus.
+    description: Dokos est bien plus qu’un CRM. <br><br>Il s'intègre parfaitement avec d'autres modules de gestion comme la comptabilité, la gestion des stocks et la gestion de projet. <br><br>Cela permet une vue à 360° de votre activité, sans silos ni interruptions dans vos processus.</br>
+    image: "image/crm/tableaux-de-bord-compta-crm-achat.svg"
     image_bg_color: "bg-teal-500"
     align: right
     headline:
