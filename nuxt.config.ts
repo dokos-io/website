@@ -9,8 +9,12 @@ export default defineNuxtConfig({
     '@nuxthq/studio',
     '@vueuse/nuxt',
     'nuxt-og-image',
-    "@nuxtjs/i18n"
+    "@nuxtjs/i18n",
+    '@nuxtjs/turnstile',
   ],
+  turnstile: {
+    siteKey: '1x00000000000000000000AA',
+  },
   compatibilityDate: "2024-08-06",
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
@@ -53,5 +57,10 @@ export default defineNuxtConfig({
     strategy: "prefix_and_default",
     detectBrowserLanguage: false,
     defaultLocale: "fr"
+  },
+  runtimeConfig: {
+    turnstile: {
+      secretKey: '1x0000000000000000000000000000000AA',
+    },
   },
 })

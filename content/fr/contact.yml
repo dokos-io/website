@@ -1,0 +1,40 @@
+title: Contact
+description: Contactez-nous
+navigation.icon: i-ic-outline-contact-page
+
+hero:
+  title: Contactez-nous
+  align: center
+
+
+form:
+  title: 'Contactez-nous'
+  description: "Vous vous demandez si Dokos est adapté à vos besoins ? Vous souhaitez souscrire à une offre d'accompagnement ? Vous avez des questions sur l'offre d'hébergement ? Envoyez nous un message."
+  name:
+    label: 'Nom'
+    placeholder: 'Martine Dupond'
+  email:
+    label: 'Email'
+    placeholder: 'martine@dokos.io'
+  company:
+    label: 'Société'
+    placeholder: 'Votre société/association'
+  body:
+    label: 'Comment pouvons-nous vous aider ?'
+    placeholder: 'Expliquez-nous votre projet ou votre besoin'
+  info: 'By submitting this form, I confirm that I have read and understood the <a class="text-gray-950 dark:text-gray-100 underline font-medium">Nuxt Privacy Statement.</a>'
+  button:
+    icon: i-ph-paper-plane-right
+    label: 'Envoyez mon message'
+
+contact_info:
+  - title: Vous préférez les emails ?
+    description: Envoyez nous votre message à hello@dokos.io
+    to: "mailto:hello@dokos.io"
+    icon: i-material-symbols-attach-email-outline
+  - title: Une question concernant nos offres ?
+    description: "06.33.47.58.69"
+    icon: i-material-symbols-perm-phone-msg-outline
+  - title: On vous a dit que nos bureaux sont à Nancy ?
+    description: 59 rue du vieil Aître 54000 Nancy
+    icon: i-material-symbols-add-location-alt-outline
