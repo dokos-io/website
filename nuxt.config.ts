@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     '@nuxtjs/turnstile',
   ],
   turnstile: {
-    siteKey: '1x00000000000000000000AA',
+    siteKey: process.env.NUXT_PUBLIC_TURNSTILE_SITE_KEY,
   },
   compatibilityDate: "2024-08-06",
   hooks: {
@@ -60,7 +60,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     turnstile: {
-      secretKey: '1x0000000000000000000000000000000AA',
+      secretKey: process.env.NUXT_TURNSTILE_SECRET_KEY,
     },
   },
 })
