@@ -21,15 +21,15 @@ if (!feature.value) {
   throw createError({ statusCode: 404, statusMessage: 'feature not found', fatal: true })
 }
 
-// const title = feature.value.head?.title || feature.value.title
-// const description = feature.value.head?.description || feature.value.description
-// useSeoMeta({
-//   titleTemplate: '%s · Nuxt Agencies',
-//   title,
-//   description,
-//   ogDescription: description,
-//   ogTitle: `${title} · Nuxt Agencies`
-// })
+const title = feature.value.head?.title || feature.value.title
+const description = feature.value.head?.description || feature.value.description
+useSeoMeta({
+  titleTemplate: '%s · Fonctionnalités Dokos',
+  title,
+  description,
+  ogDescription: description,
+  ogTitle: `${title} · Fonctionnalités Dokos`
+})
 
 </script>
 

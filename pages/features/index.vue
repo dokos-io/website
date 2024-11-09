@@ -8,15 +8,15 @@ const localePath = useLocalePath()
 
 const { Features, fetchList } = useFeatures()
 
-// const title = page.value.app_name
-// const description = page.value.link
-// useSeoMeta({
-//   titleTemplate: '%s · Enterprise',
-//   title,
-//   description,
-//   ogDescription: description,
-//   ogTitle: `${title} · Enterprise`
-// })
+const title = page.value.app_name
+const description = page.value.link
+useSeoMeta({
+  titleTemplate: '%s · Fonctionnalités',
+  title,
+  description,
+  ogDescription: description,
+  ogTitle: `${title} · Fonctionnalités`
+})
 
 await fetchList()
 </script>

@@ -21,15 +21,16 @@ if (!module.value) {
   throw createError({ statusCode: 404, statusMessage: 'module not found', fatal: true })
 }
 
-// const title = module.value.head?.title || module.value.title
-// const description = module.value.head?.description || module.value.description
-// useSeoMeta({
-//   titleTemplate: '%s · Nuxt Agencies',
-//   title,
-//   description,
-//   ogDescription: description,
-//   ogTitle: `${title} · Nuxt Agencies`
-// })
+const title = module.value.head?.title || module.value.title
+const description = module.value.head?.description || module.value.description
+console.log(title, description)
+useSeoMeta({
+  titleTemplate: '%s · Module Dokos',
+  title,
+  description,
+  ogDescription: description,
+  ogTitle: `${title} · Module Dokos`
+})
 
 </script>
 

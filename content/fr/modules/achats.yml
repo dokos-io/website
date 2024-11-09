@@ -2,10 +2,12 @@ title: Achats
 icon: i-icon-park-outline-buy
 description: Optimisez vos achats pour des approvisionnements sans faille.
 application: Dokos
+
 navigation:
   title: Achats
   icon: i-icon-park-outline-buy
   description: Optimisez vos achats pour des approvisionnements sans faille.
+
 hero:
   title: Optimisez vos <span class="text-primary">achats</span> avec Dokos
   description: Dokos vous propose toutes les fonctionnalités nécessaires pour gérer vos achats de façon efficace et fluide. Conçu pour simplifier vos processus tout en offrant une transparence totale, ce module vous permet de rationaliser l’ensemble de votre chaîne d'approvisionnement. Découvrez comment Dokos peut vous aider à améliorer votre gestion des achats !
@@ -27,6 +29,7 @@ hero:
     color: sky
     to: /fr
     right_icon: i-heroicons-arrow-right-20-solid
+
 features:
   - title: Simplifiez vos demandes d'achat
     description: <li>Structurez et accélérez vos demandes d’achat grâce à une interface intuitive.</li><br><li>Créez des demandes pour différents départements en quelques clics et assignez-les aux bonnes personnes pour validation.</br><br><li> Suivez précisément vos besoins tout en gardant le contrôle de vos coûts grâce à une gestion centralisée.</br>
@@ -100,12 +103,14 @@ features:
     headline:
       label: Gestions de Stock
       color: green
+
 plus_button:
   label: Découvrez toutes nos fonctionnalités
   icon: i-heroicons-outline-plus-circle
   size: lg
   color: amber
   to: /features/achats
+
 bottom_cta:
   title: Maîtrisez chaque étape de vos achats avec Dokos.
   description: Gagnez en efficacité, réduisez vos coûts et gardez une vue d’ensemble sur vos processus. Notre solution open-source s’adapte à vos besoins pour une gestion des achats agile et performante. Une centaine d'entreprises nous font déjà confiance, pourquoi pas vous ?

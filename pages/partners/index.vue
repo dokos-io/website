@@ -11,15 +11,15 @@ const { Partners, fetchList } = usePartners()
 
 const { data: page } = await useAsyncData('partners', () => queryContent(`/${locale.value}/partners`).findOne())
 
-// const title = page.value.head?.title || page.value.title
-// const description = page.value.head?.description || page.value.description
-// useSeoMeta({
-//   titleTemplate: '%s · Enterprise',
-//   title,
-//   description,
-//   ogDescription: description,
-//   ogTitle: `${title} · Enterprise`
-// })
+const title = page.value.head?.title || page.value.title
+const description = page.value.head?.description || page.value.description
+useSeoMeta({
+  titleTemplate: '%s · Partenaires',
+  title,
+  description,
+  ogDescription: description,
+  ogTitle: `${title} · Partenaires`
+})
 
 await fetchList()
 </script>

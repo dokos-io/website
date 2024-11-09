@@ -1128,6 +1128,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/hugeicons@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@iconify-json/hugeicons@npm:1.2.1"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/bfeef94e56bd8e9c2f42561a120a294cfc59d743e4ab3c904bedf4f994c58b4c7b295183db51bf7fb6083f48442147e4f0ff1983a4ee186ac8ec49912613c032
+  languageName: node
+  linkType: hard
+
 "@iconify-json/ic@npm:^1.1.18":
   version: 1.2.1
   resolution: "@iconify-json/ic@npm:1.2.1"
@@ -1164,6 +1173,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/map@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@iconify-json/map@npm:1.2.1"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/33c2f0b389a56ea56a6e0531c53c84d32ded6c4084a89084091a170b7880aed9d2bbeeba57adc544f70c7098c0267580352437e75785add458084016225be99e
+  languageName: node
+  linkType: hard
+
 "@iconify-json/material-symbols@npm:^1.1.86":
   version: 1.2.6
   resolution: "@iconify-json/material-symbols@npm:1.2.6"
@@ -1191,6 +1209,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/oui@npm:^1.2.4":
+  version: 1.2.4
+  resolution: "@iconify-json/oui@npm:1.2.4"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/a0518b0121cc22c5189dbada55f03aa0378095bc7cfe24196e7727f451311dc171e84ccaa33d3b85c9070978bf494ead525b521b9043345a46af6f8cf5a4acb4
+  languageName: node
+  linkType: hard
+
 "@iconify-json/ph@npm:^1.1.14":
   version: 1.2.1
   resolution: "@iconify-json/ph@npm:1.2.1"
@@ -1215,6 +1242,15 @@ __metadata:
   dependencies:
     "@iconify/types": "npm:*"
   checksum: 10c0/8612cdfe3f9c1b64793c4feff53f82fa195ed677e9796d321eee42e980bef73b17c89fca0b4a34bf3b803e9bf89c3750e203a54a2f6856deb814332d85bbd554
+  languageName: node
+  linkType: hard
+
+"@iconify-json/solar@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@iconify-json/solar@npm:1.2.1"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/f0a3769689b3eb5ffc8c336bfebfdd94ec3a394b7d450aa8d75dfafdffd4497c60c7c30e97dae954e4a0c0976f30e052df39728e89a037e4e7f933022912f071
   languageName: node
   linkType: hard
 
@@ -10102,16 +10138,20 @@ __metadata:
     "@iconify-json/gg": "npm:^1.1.10"
     "@iconify-json/heroicons": "npm:^1.1.24"
     "@iconify-json/heroicons-outline": "npm:^1.2.0"
+    "@iconify-json/hugeicons": "npm:^1.2.1"
     "@iconify-json/ic": "npm:^1.1.18"
     "@iconify-json/icon-park-outline": "npm:^1.1.16"
     "@iconify-json/iconoir": "npm:^1.1.46"
     "@iconify-json/logos": "npm:^1.1.44"
+    "@iconify-json/map": "npm:^1.2.1"
     "@iconify-json/material-symbols": "npm:^1.1.86"
     "@iconify-json/mdi": "npm:^1.1.68"
     "@iconify-json/octicon": "npm:^1.1.57"
+    "@iconify-json/oui": "npm:^1.2.4"
     "@iconify-json/ph": "npm:^1.1.14"
     "@iconify-json/ri": "npm:^1.1.22"
     "@iconify-json/simple-icons": "npm:^1.1.112"
+    "@iconify-json/solar": "npm:^1.2.1"
     "@iconify-json/uil": "npm:^1.1.9"
     "@iconify-json/vaadin": "npm:^1.1.10"
     "@nuxt/content": "npm:^2.13.2"

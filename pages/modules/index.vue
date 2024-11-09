@@ -8,17 +8,18 @@ const localePath = useLocalePath()
 
 const { Modules, fetchList } = useModules()
 
-// const title = page.value.app_name
-// const description = page.value.link
-// useSeoMeta({
-//   titleTemplate: '%s · Enterprise',
-//   title,
-//   description,
-//   ogDescription: description,
-//   ogTitle: `${title} · Enterprise`
-// })
+const title = "Modules Dokos"
+const description = "Liste des modules Dokos"
+useSeoMeta({
+  titleTemplate: '%s · Modules',
+  title,
+  description,
+  ogDescription: description,
+  ogTitle: `${title} · Modules`
+})
 
 await fetchList()
+
 </script>
 
 <template>

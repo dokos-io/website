@@ -31,15 +31,15 @@ const links = computed(() => [{
   target: '_blank'
 }])
 
-// const title = partner.value.head?.title || partner.value.title
-// const description = partner.value.head?.description || partner.value.description
-// useSeoMeta({
-//   titleTemplate: '%s · Nuxt Agencies',
-//   title,
-//   description,
-//   ogDescription: description,
-//   ogTitle: `${title} · Nuxt Agencies`
-// })
+const title = partner.value.head?.title || partner.value.title
+const description = partner.value.head?.description || partner.value.description
+useSeoMeta({
+  titleTemplate: '%s · Partenaires',
+  title,
+  description,
+  ogDescription: description,
+  ogTitle: `${title} · Partenaires`
+})
 
 </script>
 
