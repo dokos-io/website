@@ -1,65 +1,53 @@
 title: Tarifs
 description: Tarifs d'accompagnement
 navigation.icon: i-heroicons-credit-card
+
 hero:
   title: Nos offres d'<span class="text-primary">accompagnement</span>
   description: Vous souhaitez que nous hébergions votre site Dokos ? On est là pour vous aider.
   align: center
+
+pricing_toggle:
+  left: "Entreprises"
+  right: "Associations (-20%)"
+
 plans:
   - title: 5 heures
     description: Hébergement seul pour les petites organisations.
-    price: 550€ HT
+    price:
+      entreprise: 500€
+      association: 400€
     align: top
-    features:
-      - Hébergement et maintenance
-      - Accès à tous les modules
-      - Utilisateurs illimités
-      - Forum communautaire
-      - 1 heure CPU
-      - 0.5 GB de base de données
-      - 5 GB de stockage
+    cycle: HT
   - title: 20 heures
     description: Hébergement seul sans support pour les petites organisations.
-    price: 2000€ HT
+    price:
+      entreprise: 1800€
+      association: 1440€
     highlight: true
     align: top
-    features:
-      - Tous les avantages du forfait Discovery
-      - 2 heure CPU
-      - 1 GB de base de données
-      - 5 GB de stockage
+    cycle: HT
   - title: 50 heures
     description: Hébergement avec support pour les petites et moyennes organisations.
-    price: 4500€ HT
+    price:
+      entreprise: 4250€
+      association: 3400€
     align: top
-    features:
-      - Tous les avantages du forfait Bootstrap
-      - Support par email pour 2 personnes
-      - 4 heure CPU
-      - 2 GB de base de données
-      - 25 GB de stockage
+    cycle: HT
   - title: 100 heures
     description: Offre premium pour les équipes plus larges.
-    price: 8000€ HT
+    price:
+      entreprise: 8000€
+      association: 6400€
     align: top
-    features:
-      - Tous les avantages du forfait Startup
-      - Support par email pour 3 personnes
-      - Nom de domaine personnalisé
-      - 4 heure CPU
-      - 3 GB de base de données
-      - 50 GB de stockage
-logos:
-  title: Hébergé chez des fournisseurs d'infrastructure de confiance
-  icons:
-    - i-simple-icons-hetzner
-    - i-simple-icons-ovh
+    cycle: HT
 
 services:
-  title: Vous avez besoin d'accompagnement ?
-  description: "Nous proposons aussi des formations dédiées, des personnalisations, des développements ou des services de support"
-  icon: i-heroicons-rocket-launch-16-solid
-  to: "/fr/services"
+  title: Vous que nous hébergions votre site Dokos ?
+  description: "Nous proposons aussi une plateforme d'hébergement sur laquelle vous pouvez déployer vos sites"
+  icon: i-carbon-ibm-cloud-direct-link-2-dedicated-hosting
+  to: "https://cloud.dokos.io"
+  target: _blank
 
 selfhost:
   title: Vous souhaitez auto-héberger Dokos ?
@@ -68,26 +56,26 @@ selfhost:
   to: "https://doc.dokos.io/dodock/installation"
   target: "_blank"
 
-faq:
-  title: Questions fréquentes
-  description: ""
-  items:
-    - label: Qu'est-ce qui est compris dans la formule d'hébergement ?
-      content: La formule d'hébergement comprend l'hébergement de votre site dans l'Union Européenne, la maintenance évolutive de votre application, ainsi qu'un espace de stockage, un nombre d'emails par mois et un certain niveau de support en fonction de la formule que vous choisissez. 
-      defaultOpen: true
-    - label: Pourquoi facturez-vous en fonction du nombre de documents créés et non par utilisateur ?
-      content: Notre expérience montre que votre usage du logiciel et par conséquent vos besoins d'hébergement, ne dépendent pas du nombre d'utilisateurs. Vous pouvez vouloir donner accès à votre comptable ou à des utilisateurs avec très peu d'autorisations et nous comprenons que vous ne souhaitez pas payer un abonnement complet pour ces types utilisateurs.
-    - label: Que représente 1 document créé dans Dokos ?
-      content: Chaque fois que vous crééz un nouveau client ou un nouveau devis, cela compte comme un document créé. Nous excluons les documents techniques, comme les logs, ou les emails entrants du nombre de documents créés. Vous pouvez voir votre décompte de documents créés sur votre compte client.
-    - label: Pourquoi il y a-t-il une limite d'envoi d'emails depuis Dokos ?
-      content: Notre offre d'hébergement inclus une intégration pré-configurée avec notre fournisseur d'email. Vous pouvez toujours modifier le paramétrage pour intégrer votre propre fournisseur d'emails dans Dokos et ne pas tenir compte de cette limite.
-    - label: Que se passe-t-il si j'atteins ma limite de stockage de fichiers ?
-      content: Vous pouvez garder votre forfait et nous vous proposerons une option de stockage supplémentaire. Chaque tranche de 10Go supplémentaire est facturée 5€/mois.
-    - label: Que se passe-t-il si mon usage dépasse la limite de mon forfait ?
-      content: Votre site sera toujours accessible. Si votre usage dépasse la limite pendant plusieurs mois d'affilée, nous vous contacterons pour discuter de vos options pour passer à un forfait adapté.
-    - label: Puis-je passer à un auto-hébergement après quelques temps sur le Cloud Dokos ?
-      content: Oui, vous pouvez toujours télécharger toutes vos données (base de données + fichiers) et les migrer sur votre propre serveur. Nous serons heureux de vous fournir le support dont vous avez besoin. Et vous pouvez toujours revenir sur le Cloud Dokos si vous le souhaitez.
-    - label: Do your offer support ?
-      content: Yes, email support is included in the Startup and Premium plans. For lower plans, you can ask any question on the community forum and we will be happy to help you.
-    - label: Et si j'ai d'autres questions ?
-      content: Nous serons ravis d'y répondre. Envoyez nous juste un email à hello@dokos.io
+# faq:
+#   title: Questions fréquentes
+#   description: ""
+#   items:
+#     - label: Qu'est-ce qui est compris dans la formule d'hébergement ?
+#       content: La formule d'hébergement comprend l'hébergement de votre site dans l'Union Européenne, la maintenance évolutive de votre application, ainsi qu'un espace de stockage, un nombre d'emails par mois et un certain niveau de support en fonction de la formule que vous choisissez. 
+#       defaultOpen: true
+#     - label: Pourquoi facturez-vous en fonction du nombre de documents créés et non par utilisateur ?
+#       content: Notre expérience montre que votre usage du logiciel et par conséquent vos besoins d'hébergement, ne dépendent pas du nombre d'utilisateurs. Vous pouvez vouloir donner accès à votre comptable ou à des utilisateurs avec très peu d'autorisations et nous comprenons que vous ne souhaitez pas payer un abonnement complet pour ces types utilisateurs.
+#     - label: Que représente 1 document créé dans Dokos ?
+#       content: Chaque fois que vous crééz un nouveau client ou un nouveau devis, cela compte comme un document créé. Nous excluons les documents techniques, comme les logs, ou les emails entrants du nombre de documents créés. Vous pouvez voir votre décompte de documents créés sur votre compte client.
+#     - label: Pourquoi il y a-t-il une limite d'envoi d'emails depuis Dokos ?
+#       content: Notre offre d'hébergement inclus une intégration pré-configurée avec notre fournisseur d'email. Vous pouvez toujours modifier le paramétrage pour intégrer votre propre fournisseur d'emails dans Dokos et ne pas tenir compte de cette limite.
+#     - label: Que se passe-t-il si j'atteins ma limite de stockage de fichiers ?
+#       content: Vous pouvez garder votre forfait et nous vous proposerons une option de stockage supplémentaire. Chaque tranche de 10Go supplémentaire est facturée 5€/mois.
+#     - label: Que se passe-t-il si mon usage dépasse la limite de mon forfait ?
+#       content: Votre site sera toujours accessible. Si votre usage dépasse la limite pendant plusieurs mois d'affilée, nous vous contacterons pour discuter de vos options pour passer à un forfait adapté.
+#     - label: Puis-je passer à un auto-hébergement après quelques temps sur le Cloud Dokos ?
+#       content: Oui, vous pouvez toujours télécharger toutes vos données (base de données + fichiers) et les migrer sur votre propre serveur. Nous serons heureux de vous fournir le support dont vous avez besoin. Et vous pouvez toujours revenir sur le Cloud Dokos si vous le souhaitez.
+#     - label: Do your offer support ?
+#       content: Yes, email support is included in the Startup and Premium plans. For lower plans, you can ask any question on the community forum and we will be happy to help you.
+#     - label: Et si j'ai d'autres questions ?
+#       content: Nous serons ravis d'y répondre. Envoyez nous juste un email à hello@dokos.io

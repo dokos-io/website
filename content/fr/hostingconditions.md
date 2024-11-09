@@ -85,12 +85,12 @@ L'hébergement mutualisé désigne l'attribution d'une portion des ressources d'
 
 | **Tarif**        | **CPU**   | **Base de données (GB)** | **Stockage (GB)** | **Support**                      |
 | ---------------- | --------- | ------------------------ | ----------------- | -------------------------------- |
-| **19€ HT/Mois**  | 1h de CPU | 0.5                      | 5                 | Pas de support                   |
-| **49€ HT/Mois**  | 2h de CPU | 1                        | 5                 | Pas de support                   |
+| **19€ HT/Mois**  | 0.5h de CPU | 0.5                      | 1                 | Pas de support                   |
+| **49€ HT/Mois**  | 1h de CPU | 1                        | 5                 | Pas de support                   |
 | **99€ HT/Mois**  | 2h de CPU | 2                        | 10                | Support simple                   |
 | **199€ HT/Mois** | 3h de CPU | 2                        | 15                | Support simple                   |
-| **499€ HT/Mois** | 4h de CPU | 3                        | 25                | Support premium (SLA : Niveau 1  |
-| **999€ HT/Mois** | 6h de CPU | 3                        | 50                | Support premium (SLA : Niveau 2) |
+| **499€ HT/Mois** | 4h de CPU | 3                        | 25                | Support premium (SLA : Niveau 1)  |
+| **999€ HT/Mois** | 6h de CPU | 4                        | 50                | Support premium (SLA : Niveau 2) |
 
 **Tarifs pour un hébergement dédié :**
 
@@ -112,7 +112,7 @@ Tous les forfaits d'hébergement dédiés incluent un support tecnhique standart
 | **7499€**           | 16       | 64          | 800               |
 | **9999€**           | 16       | 128         | 1000              |
 
-Cette tarification est sujette à révision en fonction des besoins du client ou des mises à jour des services fournis. Pour toute demande particulière, un devis personnalisé pourra être établi. Les tarifs d'hébergements dédiés inclus
+Cette tarification est sujette à révision en fonction des besoins du client ou des mises à jour des services fournis. Pour toute demande particulière, un devis personnalisé pourra être établi.
 
 ### 6.2. **Modification des prix en cours de contrat**
 

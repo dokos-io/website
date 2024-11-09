@@ -30,10 +30,8 @@ const links = computed(() => {
     }]
   }, {
     label: t('company'),
-    children: [{
-      label: t('about'),
-      to: localePath('/about')
-    }, {
+    children: [
+    {
       label: t('termsandconditions'),
       to: localePath('/termsandconditions')
     }, {

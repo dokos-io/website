@@ -7,6 +7,8 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
+const isNgo = ref(false)
+
 useSeoMeta({
   title: page.value.title,
   ogTitle: page.value.title,
@@ -28,17 +30,24 @@ defineOgImage({
       <template #title>
         <span v-html="page.hero.title" />
       </template>
+      <template #default>
+        <ClientOnly>
+          <HomeTetris />
+        </ClientOnly>
+      </template>
     </UPageHero>
-    <UContainer>
+    <ULandingSection class="pt-0 sm:pt-0">
+      <div class="mb-10">
+        <UPricingToggle
+          v-model="isNgo"
+          :left="page.pricing_toggle.left"
+          :right="page.pricing_toggle.right"
+          class="w-64 mx-auto bg-white"
+        />
+      </div>
       <UPricingGrid :ui="{wrapper: 'lg:grid-cols-4'}">
-        <UPricingCard v-for="(plan, index) in page.plans" :key="index" v-bind="plan" />
+        <UPricingCard v-for="(plan, index) in page.plans" :key="index" v-bind="plan" :price="isNgo ? plan.price.association : plan.price.entreprise" />
       </UPricingGrid>
-    </UContainer>
-
-    <ULandingSection>
-      <ULandingLogos :title="page.logos.title" :ui="{images: 'justify-center'}">
-        <UIcon v-for="icon in page.logos.icons" :key="icon" :name="icon" class="w-12 h-12 flex-shrink-0 text-gray-500 dark:text-gray-400" />
-      </ULandingLogos>
     </ULandingSection>
 
     <ULandingSection class="bg-gradient-to-b from-gray-50 dark:from-gray-950/50 to-white dark:to-gray-900 relative">
@@ -48,7 +57,7 @@ defineOgImage({
       </ULandingGrid>
     </ULandingSection>
 
-    <ULandingSection :title="page.faq.title" :description="page.faq.description">
+    <ULandingSection :title="page.faq.title" :description="page.faq.description" v-if="page.faq">
       <ULandingFAQ :items="page.faq.items" multiple class="max-w-4xl mx-auto" />
     </ULandingSection>
   </div>

@@ -1,3 +1,0 @@
----
-title: Notre équipe
----
