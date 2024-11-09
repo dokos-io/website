@@ -166,8 +166,13 @@ if (!module.value) {
           <span v-html="feat.description"></span>
         </template>
 
-        <NuxtImg :src="feat.image" class="w-full rounded-md bg-white/75" placeholder v-if="feat.image" />
+        <div class="pt-24 pb-12 rounded-lg" :class="[feat.image_bg_color, feat.align == 'left' ? 'pl-8 mr-7' : 'pr-8 ml-7']"     >
+          <NuxtImg :src="feat.image" class="w-full rounded-md bg-white/75" placeholder v-if="feat.image" :class="[feat.align =='left' ? 'ml-7' : 'mr-7', feat.image_bg_color ? 'shadow-2xl': '']" :style="feat.align =='right' && 'margin-left: -15px;'"/>
+          <video class="w-full rounded-md bg-white/75" v-else-if="feat.video" autoplay :class="[feat.align =='left' ? 'ml-7' : 'mr-7', feat.image_bg_color ? 'shadow-2xl': '']" :style="feat.align =='right' && 'margin-left: -15px;'">
+            <source :src="feat.video" type="video/mp4">
+          </video>
         <Placeholder v-else />
+        </div>
       </ULandingSection>
 
       <ULandingSection v-bind="module.bottom_section">

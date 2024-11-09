@@ -30,7 +30,7 @@ hero:
 features:
   - title: Simplifiez vos demandes d'achat
     description: <li>Structurez et accélérez vos demandes d’achat grâce à une interface intuitive.</li><br><li>Créez des demandes pour différents départements en quelques clics et assignez-les aux bonnes personnes pour validation.</br><br><li> Suivez précisément vos besoins tout en gardant le contrôle de vos coûts grâce à une gestion centralisée.</br>
-    image: image/achat/deuxieme-tableau-de-bord-achat.png
+    video: /image/achat/tableau-de-bord-achat.mp4
     image_bg_color: bg-teal-500
     align: left
     headline:
