@@ -36,7 +36,7 @@ defineOgImage({
         </ClientOnly>
       </template>
     </UPageHero>
-    <ULandingSection class="pt-0 sm:pt-0">
+    <ULandingSection class="pt-0 sm:pt-0" :links="page.links" >
       <div class="mb-10">
         <UPricingToggle
           v-model="isNgo"

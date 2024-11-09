@@ -42,6 +42,13 @@ plans:
     align: top
     cycle: HT
 
+links:
+  - label: "Contactez-nous"
+    color: blue
+    trailingIcon: 'i-heroicons-arrow-right'
+    size: 'lg'
+    to: "/contact"
+
 services:
   title: Vous que nous hébergions votre site Dokos ?
   description: "Nous proposons aussi une plateforme d'hébergement sur laquelle vous pouvez déployer vos sites"
