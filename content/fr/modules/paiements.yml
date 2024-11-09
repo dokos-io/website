@@ -35,6 +35,8 @@ hero:
 features:
   - title: Gérez tous vos paiements en un seul endroit
     description: "Que ce soit pour des transactions uniques, des abonnements récurrents ou des événements, Dokos automatise le processus pour vous faire gagner du temps et éviter les erreurs.<ul><li>Automatisation des Paiements : Gérez les paiements sans intervention manuelle.</li><li>Large Choix de Prestataires : Stripe, PayPal, Braintree, GoCardless, et plus encore.</li><li>Sécurité Maximale : Des transactions protégées et cryptées.</li>"
+    image: "image/paiements/transactions-securisees.svg"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Paiements centralisés
@@ -42,6 +44,8 @@ features:
 
   - title: "Choisissez la flexibilité maximale avec nos prestataires de paiement intégrés"
     description: "Choisissez parmi une gamme de prestataires pour collecter vos paiements de manière fluide, rapide et sécurisée, que ce soit pour des transactions ponctuelles ou récurrentes <ul><li>Stripe : En savoir plus </li><li> PayPal : En savoir plus</li><li>Braintree : En savoir plus</li><li>GoCardless : En savoir plus</li><li>Stancer : En savoir plus</li><li>HelloAsso : En savoir plus"
+    image: "image/paiements/paiements-gestions-paiements.png"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Intégrations des Passerelles de Paiement
@@ -49,12 +53,17 @@ features:
 
   - title: Gagnez du Temps grâce à l'automatisation intelligente
     description: "Avec Dokos, les paiements sont automatiquement rapprochés dans votre système, vous offrant un suivi précis et sans effort. Plus besoin de passer du temps sur des tâches manuelles.<ul><li> Paiements Ponctuels : Louez une salle ou vendez un produit, Dokos gère tout.</li><li> Paiements Récurrents : Abonnements et services récurrents automatisés.</li><li> Événements et Formulaires : Collectez des paiements lors d'inscriptions à vos événements."
+    image: "image/paiements/dokos-abonnement.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Automatisation des Paiements et Rapprochement
       color: sky
+
   - title: "Une expérience intégrée : Webshop, Formulaires et Événements"
     description: Les paiements sont entièrement synchronisés avec votre Webshop, vos formulaires web et la gestion de vos événements. Offrez une expérience de paiement fluide à vos clients et bénéficiez d'un suivi en temps réel.
+    image: "image/paiements/gestion-evenements.gif"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Synergie avec Webshop et Événements

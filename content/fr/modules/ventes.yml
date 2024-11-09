@@ -34,42 +34,56 @@ hero:
 features:
   - title: Une gestion simplifiée de votre pipeline de vente
     description: Dokos vous permet de suivre vos prospects et opportunités de manière fluide. Grâce à son CRM intégré, gardez une vision claire de chaque interaction client, automatisez les relances et assurez un suivi rigoureux à chaque étape du processus de vente.
+    image: "image/ventes/un-insights-opportunites.png"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: CRM
       color: sky
   - title: Création de devis et gestion des commandes
     description: Créez des devis professionnels en quelques clics et convertissez-les facilement en commandes. Profitez de modèles personnalisables pour vos documents commerciaux et assurez-vous que vos stocks sont toujours à jour en temps réel, afin de répondre rapidement à vos clients.
+    image: "image/ventes/deux-evolution-commandes-clients.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Devis
       color: sky
   - title: Automatisation du flux de vente
     description: Générez automatiquement des factures à partir des commandes confirmées. Avec une gestion multi-devises, Dokos facilite vos opérations à l'international, tout en intégrant des solutions de paiement en ligne pour accélérer la collecte de vos paiements.
+    image: "image/ventes/trois-flux-de-vente.png"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Factures
       color: sky
   - title: Gestion des livraisons et expédition
     description: Simplifiez la préparation et l’envoi des commandes grâce à des bons de livraison générés automatiquement. Via des intégrations communaitaires, Dokos vous permet de suivre en temps réel l’état des expéditions, tout en optimisant la gestion de vos entrepôts pour une meilleure efficacité logistique.
+    image: "image/ventes/quatre-livraison-kanban.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Livraison
       color: sky
   - title: Rapports et Analyses
     description: Obtenez des rapports complets et précis sur vos ventes. Analysez les performances de votre équipe, identifiez les tendances de marché et prenez des décisions stratégiques grâce aux données en temps réel disponibles sur le tableau de bord Dokos.
+    image: "image/ventes/cinq-insights ventes.png"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Rapports
       color: sky
   - title: Gestion des abonnements
     description: Automatisez la gestion de vos abonnements avec des factures récurrentes. Dokos vous permet de suivre les renouvellements, les changements de plan et les annulations avec facilité, garantissant une expérience client fluide et continue.
+    image: "image/ventes/six-abonnements-modifies.svg"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Abonnement
       color: sky
   - title: Des personnalisations sur mesure
     description: Adaptez le logiciel à vos besoins spécifiques. Ajoutez des champs personnalisés, modifiez les formulaires en fonction des rôles des utilisateurs, et créez des modèles d'impression uniques, tout cela sans avoir besoin de coder.
+    image: "image/ventes/sept-facture-de-vente.png"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Personnalisations

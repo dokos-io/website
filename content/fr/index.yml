@@ -15,7 +15,7 @@ hero:
     - label: Essayez Dokos
       to: https://demo.dokos.cloud
       size: xl
-      color: sky
+      color: amber
       icon: i-heroicons-play-circle-16-solid
       trailing: false
       target: _blank
@@ -37,10 +37,10 @@ metrics:
       description: Une communauté d'entraide bienveillantes où l'on partage ses questions, ses expériences, ses idées.
       icon: i-heroicons-outline-user-group
 sections:
-  - title: 'Un <span style=''color: #79C29B''>logiciel d''entreprise</span> puissant'
+  - title: 'Un <span style=''color: #14b8a6''>logiciel d''entreprise</span> puissant'
     description: <strong>Dokos est conçu pour répondre aux besoins des entreprises, de la PME à la multinationale.</strong><br><br> Découvrez une solution robuste et évolutive qui s’adapte parfaitement aux exigences croissantes de votre entreprise. Avec Dokos, vous accédez à un environnement qui centralise tous vos outils, vous permettant de gagner en efficacité, de simplifier vos processus et de mieux collaborer. Notre mission est de vous offrir une solution complète qui évolue avec votre entreprise.</br>
     image: /home/workflow.png
-    image_bg_color: bg-teal-600
+    image_bg_color: bg-teal-500
     id: enterprise
     align: right
     features:
@@ -56,7 +56,7 @@ sections:
     links:
       - label: Toutes les fonctionnaltés d'entreprise
         to: https://doc.dokos.io/dodock
-        color: sky
+        color: "teal"
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
         size: md
@@ -65,7 +65,7 @@ sections:
   - title: 'Une <span style=''color: #79C29B''>plateforme</span> qui grandit avec vous'
     id: platform
     description: <strong>Investissez dans un ERP qui accompagne toutes les phases de croissance de votre entreprise.</strong><br><br> Avec Dokos, vous choisissez une plateforme flexible et évolutive, conçue pour accompagner votre entreprise à chaque étape de sa croissance. Du sur-mesure à grande échelle, sans compromettre la stabilité, ni la sécurité.</br></br>
-    image: /image/une-plateforme-qui-grandit-avec-vous.gif
+    image: image/compte-de-resultat.png
     image_bg_color: bg-teal-600
     align: left
     features:
@@ -126,7 +126,7 @@ sections:
         class: ml-8
   - title: Un accompagnement  <span class="text-emerald-600">personnalisé</span>
     description: <strong>Profitez d'un support sur mesure et entièrement adapté à vos besoins.</strong><br><br>Parce que chaque entreprise est unique, notre accompagnement s’adapte à vos spécificités et priorités. Nous mettons un point d’honneur à créer des solutions sur mesure, avec un coût juste et maîtrisé.</br></br>
-    image: image/un-accompagnement-personnalise.gif
+    image: image/dokos-communaute.png
     id: control
     image_bg_color: bg-sky-600
     align: left
@@ -173,7 +173,7 @@ sections:
         icon: i-material-symbols-editor-choice-outline-rounded
   - title: La <span class="text-primary">force</span> de l'open-source
     description: <strong>Dokos est et restera un logiciel libre et open-source.</strong><br><br>Avec Dokos, vous avez la liberté totale de choisir votre fournisseur, sans dépendance envers un éditeur spécifique. Utilisez un ERP libre et évolutif, sans frais de licence, avec des options de service si vous avez besoin d’accompagnement.
-    image: image/la-force-de-l-open-source.gif
+    image: image/dokos-gitlab.png
     image_bg_color: bg-sky-600
     id: opensource
     align: left

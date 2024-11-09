@@ -35,48 +35,64 @@ hero:
 features:
   - title: Prenez des décisions éclairées avec une vue instantanée de vos finances
     description: "Nos tableaux de bord interactifs vous offrent un aperçu des principaux indicateurs de performance financière, vous permettant de prendre des décisions éclairées.<br> Configurez des rapports personnalisés pour suivre précisément les aspects qui comptent le plus pour votre entreprise."
+    image: image/comptabilite/tableau-de-bord-compta.gif
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Tableaux de bord
       color: sky
   - title: Adaptez facilement votre plan comptable à votre entreprise
     description: Organisez vos comptes en fonction de vos besoins, en créant des sous-groupes et des grands livres adaptés à la structure de votre entreprise.<br> Vous pouvez facilement ajuster votre arborescence comptable à mesure que votre organisation évolue.
+    image: "image/comptabilite/plan-comptable.png"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Plan comptable
       color: sky
   - title: Gardez votre comptabilité à jour en automatisant le suivi des transactions
     description: Enregistrez toutes vos transactions de manière précise grâce à un système de journaux intuitif.<br> Suivez les revenus et dépenses, automatisez la gestion des paiements différés ou anticipés, et assurez un grand livre toujours à jour.
+    image: "image/comptabilite/suivi-revenus-et-depenses.svg"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Grand livre
       color: sky
   - title: Générez des factures pro en quelques clics et réduisez les retards de paiement
     description: Créez des factures professionnelles en quelques clics. Suivez facilement les paiements en attente grâce aux notifications automatiques par e-mail ou SMS.<br>Utilisez des modèles d'impression personnalisés pour des factures adaptées à vos besoins.
+    image: "image/comptabilite/facture-de-vente.png"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Facturation
       color: sky
   - title: Simplifiez vos transactions internationales
     description: Gérez les transactions internationales sans difficulté. Envoyez des factures et suivez vos dépenses dans plusieurs devises. Notre système convertit automatiquement les montants dans la devise de base, et vous permet de générer des rapports financiers dans diverses monnaies.
+    image: "image/comptabilite/rapports-financiers-diverses-monnaies.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Multidevise
       color: sky
   - title: Automatisez vos flux métier et gagnez du temps
     description: Gagnez du temps en automatisant la création de factures pour les abonnements récurrents. Grâce à la fonction Abonnements, vos factures sont générées et envoyées automatiquement, vous permettant de vous concentrer sur d'autres tâches essentielles.
+    image: "image/comptabilite/abonnement-photo-dokos.png"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Automatisation
       color: sky
   - title: Simplifiez le rapprochement bancaire et garantissez la cohérence de vos comptes
     description: Synchronisez vos comptes bancaires avec votre comptabilité. Importez facilement vos relevés bancaires et effectuez le rapprochement avec vos transactions pour garantir la cohérence de vos comptes.
+    image: "image/comptabilite/rapprochement-bancaire-dokos-photo.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Réconciliation bancaire
       color: sky
   - title: Personnalisez Dokos pour répondre parfaitement aux besoins uniques de votre entreprise
     description: Adaptez le logiciel à vos besoins spécifiques. Ajoutez des champs personnalisés, modifiez les formulaires en fonction des rôles des utilisateurs, et créez des modèles d'impression uniques, tout cela sans avoir besoin de coder.
+    image: "image/comptabilite/personnalisation-dokos.png"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Personnalisations

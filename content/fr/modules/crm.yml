@@ -34,36 +34,47 @@ hero:
 features:
   - title: Centralisez et transformez vos leads en clients avec une gestion simplifiée
     description: Centralisez tous vos leads, prospects et opportunités en un seul endroit. <br>Suivez leur progression à travers un pipeline visuel clair et personnalisable, de la prospection à la conclusion du contrat.<br> Analysez les performances de vos campagnes et actions commerciales grâce à des indicateurs en temps réel.
+    image: "image/e-commerce/crm-deals.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Gestion des leads
       color: sky
   - title: Ne perdez plus aucune opportunité grâce à un suivi client automatisé
     description: Dokos CRM vous permet de rester connecté à vos clients (emails, appels, réunions) en facilitant l'historique des échanges pour chaque contact ou organisation.
+    image: "image/crm/devis.png"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Intégration des emails
       color: sky
   - title: Automatisez vos processus commerciaux grâce à des outils puissants.
     description: Automatisez les tâches répétitives comme l'envoi de rappels, la création de tâches pour vos équipes, et l'envoi de newsletters, afin de rester concentré sur ce qui compte, vos clients.
+    image: "image/crm/newsletter-les-coulisses.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Automatisation
       color: sky
   - title: Simplifiez votre gestion des devis et commandes depuis le CRM
     description: Dokos permet de générer des devis personnalisés en quelques clics, de les convertir en commandes, et d’assurer un suivi jusqu’au paiement, tout cela dans une interface intuitive.
+    image: "image/crm/devis.png"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Facturation
       color: sky
   - title: Ajustez vos stratégies grâce aux rapports
     description: "Avec les tableaux de bord dynamiques de Dokos, analysez en temps réel les indicateurs essentiels à la bonne gestion de vos activités commerciales : taux de conversion, volume d'affaires, état des pipelines, etc. <br>Les rapports générés vous aident à ajuster vos stratégies de manière proactive."
+    image: "image/e-commerce/parametre-e-commerce.svg"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Rapports et analyses
       color: sky
   - title: Gardez une vue complète de votre activité. 
     description: Dokos est bien plus qu’un CRM. Il s'intègre parfaitement avec d'autres modules de gestion comme la comptabilité, la gestion des stocks et la gestion de projet. Cela permet une vue à 360° de votre activité, sans silos ni interruptions dans vos processus.
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Intégration

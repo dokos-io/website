@@ -33,36 +33,48 @@ hero:
 features:
   - title: Une gestion des Articles et des Stocks
     description: "Avec Dokos, vous pouvez gérer vos articles avec précision. Du suivi des variantes de produits aux numéros de série et aux lots, chaque produit peut être identifié de manière unique, facilitant la gestion et la traçabilité.<ul><li><span class='font-bold'> Variantes d'articles :</span> Gérer facilement les différentes versions d'un même produit (taille, couleur, modèle).</li><li><span class='font-bold'>Codes-barres et étiquetage : </span>Simplifiez les opérations de réception et d'expédition grâce à la gestion intégrée des codes-barres.<li><span class='font-bold'>Suivi par lot et numéro de série :</span> Suivez chaque article, depuis la fabrication ou l'achat jusqu'à la vente, pour une traçabilité complète."
+    image: "image/stock/un-articles.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Articles
       color: sky
   - title: Un suivi de stock automatisés.
     description: "Gérez l’intégralité de vos transactions en temps réel, réduisant ainsi les risques d’erreur et augmentant votre productivité. <ul><li><span class='font-bold'>Entrée de stock:</span> Enregistrement automatique des réceptions de matériaux à partir des commandes d’achat.</li><li><span class='font-bold'>Sortie de stock:</span> Gestion des livraisons aux clients avec suivi en temps réel.</li><li><span class='font-bold'>Transferts inter-entrepôts:</span> Simplifiez la gestion de multiples entrepôts en transférant des produits entre sites.</li><li><span class='font-bold'>Réconciliation des stocks:</span> Ajustez les stocks rapidement en cas de différence entre stock théorique et stock physique.</li></ul>"
+    image: "image/stock/deux-mouvement-de-stock.png"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Mouvement Stock
       color: sky
   - title: Une automatisation de la planification et du réapprovisionnement.
     description: "Optimisez vos niveaux de stock avec des fonctionnalités avancées de planification et de gestion des seuils. <ul><li><span class='font-bold'>Seuils de réapprovisionnement :</span> Définissez des seuils minimum et maximum pour chaque article afin d’éviter les ruptures de stock.</li><li><span class='font-bold'> Demandes de matériaux automatisées :</span> Déclenchement automatique des approvisionnements en fonction des prévisions de production ou de vente. </li><li><span class='font-bold'>Stock en transit :</span> Suivez en temps réel les articles en cours de transfert entre vos entrepôts."
+    image: "image/stock/trois-articles-en-penuries.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Planification
       color: sky
   - title: Une gestion Multi-entrepôts
     description: "Dokos permet la gestion efficace de multiples entrepôts, chacun avec des emplacements internes définis pour un contrôle granulaire du stock. <ul><li><span class='font-bold'>Stock par entrepôt et localisation :</span> Gérez des entrepôts répartis sur plusieurs sites géographiques et optimisez le flux de matériaux entre eux.</li><li><span class='font-bold'> Visibilité globale :</span> Visualisez et suivez vos niveaux de stock pour tous vos entrepôts en un seul tableau de bord."
+    image: "image/stock/quatre-tableau-de-bord-stock.svg"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Multi-entrepôt
       color: sky
   - title: Des inventaires, audit et évaluation du stock
     description: "Dokos vous aide à suivre l’inventaire en temps réel tout en simplifiant les audits et la valorisation du stock. <ul><li><span class='font-bold'>Audit et comptage cyclique :</span> Planifiez et réalisez des inventaires périodiques pour garantir que vos données de stock sont toujours exactes.</li><li><span class='font-bold'> Valorisation du stock :</span> Utilisez la méthode d’évaluation adaptée à votre entreprise (PEPS, LIFO, coût moyen). </li><li><span class='font-bold'>Gestion des articles périssables :</span> Suivez les dates de péremption pour minimiser les pertes liées aux produits expirés. "
+    image: "image/stock/cinq-valeur-du-stock.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Inventaire
       color: sky
   - title: Des rapports et une visibilité en temps réel
     description: "Prenez des décisions éclairées grâce à des rapports détaillés et des indicateurs de performance précis.<ul><li><span class='font-bold'> Rapport d’évaluation du stock :</span> Suivez la valeur de vos stocks avec des rapports instantanés.</li><li><span class='font-bold'> Rapport de stock minimal :</span> Identifiez rapidement les articles qui nécessitent un réapprovisionnement.</li><li><span class='font-bold'>Analyse des mouvements de stock :</span> Obtenez des rapports détaillés sur les entrées, sorties et transferts d’articles."
+    image: ""
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Rapports

@@ -30,54 +30,63 @@ hero:
 features:
   - title: Gérez vos transactions avec des solutions fiables et sécurisées
     description: '<ul><li>Stripe : Carte bancaire et prélèvement SEPA</li><li> Stancer : Idéal pour des paiements multicanaux simplifiés.</li> <li>PayPal / Braintree : Carte bancaire ou PayPal<li>Gocardless : Prélèvement SEPA</li><li>HelloAsso : Carte bancaire pour les associations'
+    image: "image/integrations/transactions-securisees.svg"
     align: left
     headline:
       label: Paiements
       color: sky
   - title: Gagnez du temps et assurez la conformité légale de vos contrats
     description: '<ul><li>DocuSign : Bientôt disponible sur Dokos, cette intégration permettra de gérer vos signatures électroniques de manière fluide et légale.'
+    image: "image/integrations/signature-electronique.svg"
     align: right
     headline:
       label: Signature électronique
       color: sky
   - title: Optimisez la gestion de votre boutique en ligne
     description: 'Gardez un œil sur vos ventes, vos stocks, et les performances de votre boutique en temps réel, et connectez facilement vos systèmes.<br><ul><li>WooCommerce : Gérez vos commandes, inventaires et clients en toute simplicité.</li><li>Shopify : Une solution complète pour vendre vos produits et services, intégrée directement à Dokos.'
+    image: "image/integrations/boutique-en-ligne.gif"
     align: left
     headline:
       label: E-Commerce
       color: sky
   - title: Automatisez la synchronisation de vos ventes
     description: 'Synchronisez automatiquement vos ventes physiques et en ligne pour une gestion optimale des stocks et des transactions.<ul><li>Hi-Boutik : Synchronisez vos points de vente physiques avec votre gestion centralisée sur Dokos.'
+    image: "image/integrations/hiboutik-final.svg"
     align: right
     headline:
       label: Point de vente
       color: sky
   - title: Simplifiez la gestion de vos finances
     description: 'Réduisez les erreurs humaines et automatisez vos processus financiers complexes.<ul><li>Bridge : Gagnez du temps en connectant directement vos comptes bancaires à Dokos pour une gestion fluide et automatisée de votre comptabilité.'
+    image: "image/integrations/bridge-image.svg"
     align: left
     headline:
       label: Open Banking
       color: sky
   - title: Augmentez votre productivité en automatisant des tâches récurrentes
     description: '<ul><li>Zapier : Automatisez les flux de travail entre Dokos et des milliers d''autres applications.</li>'
+    image: "image/integrations/zapier.svg"
     align: right
     headline:
       label: Échange de Données Automatisé
       color: sky
   - title: Profitez de l’intégration complète de Google
     description: 'Centralisez vos informations et optimisez la collaboration avec vos équipes grâce à la puissance de Google.<ul><li>Google Calendar : Synchronisez et gérez vos rendez-vous et événements directement sur Dokos.</li><li> Google Contacts : Retrouvez vos contacts facilement et en temps réel.</li><li> Google Drive : Stockez et accédez à tous vos fichiers sur Dokos sans quitter votre flux de travail.'
+    image: "image/integrations/google.svg"
     align: left
     headline:
       label: Google Workspace
       color: sky
   - title: Centralisez vos discussions
     description: Restez en contact avec votre équipe et vos partenaires grâce aux intégrations messageries. Centralisez vos discussions pour une meilleure réactivité et coordination entre équipes.<ul><li>Discord</li><li>Mattermost</li><li>RocketChat</li><li>Slack</li><li>Google Chat</li>
+    image: "image/integrations/centralisez-les-discussions.svg"
     align: right
     headline:
       label: Messageries Collaboratives
       color: sky
   - title: Sécurisez vos données importantes avec des solutions de stockage externes
     description: La tranquillité d’esprit avec la garantie que vos données sont en sécurité et facilement accessibles.<ul><li>Amazon S3</li><li>DropBox</li><li>Google Drive</li>
+    image: "image/integrations/sécurité-des-donnees.svg"
     align: left
     headline:
       label: Sauvegarde Externe

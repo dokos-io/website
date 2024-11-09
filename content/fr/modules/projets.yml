@@ -35,48 +35,57 @@ hero:
 features:
   - title: Planification de projets
     description: Créez et gérez vos projets facilement, de la conception à la livraison. Grâce à une interface intuitive, définissez vos objectifs, planifiez vos tâches et assignez des rôles pour garantir une exécution fluide.
+    image: ""
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Projet
       color: sky
   - title: Un suivi des tâches
     description: Gardez une vue d’ensemble sur toutes les tâches de vos projets. Visualisez leur progression, leur statut et attribuez des priorités pour une gestion optimale du temps et des ressources.
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Tâches
       color: sky
   - title: La gestion des équipes
     description: Attribuez les rôles et responsabilités de chaque membre de l’équipe sur chaque tâche ou sous-projet. Suivez la charge de travail de chacun pour équilibrer les efforts et améliorer l’efficacité collective.
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Equipe
       color: sky
   - title: Un calendrier interactif
     description: Bénéficiez d’une vue calendrier pour planifier et ajuster les échéances de vos projets. Identifiez rapidement les tâches en retard et ajustez les plannings en conséquence pour rester dans les temps.
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Calendrier
       color: sky
   - title: Un suivi budgétaire
     description: Assurez un suivi rigoureux des budgets alloués à vos projets. Estimez les coûts, suivez les dépenses en temps réel et prenez des décisions éclairées pour rester dans vos limites budgétaires.
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Budget
       color: sky
   - title: Une gestion des dépendances
     description: Identifiez et gérez les dépendances entre vos tâches pour anticiper les blocages potentiels. Assurez-vous que chaque étape du projet progresse sans accroc grâce à une gestion des flux de travail transparente.
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Dépendances
       color: sky
   - title: Des Rapports et Analyses
     description: Accédez à des rapports détaillés sur l’avancement de vos projets. Obtenez des données en temps réel sur les performances de vos équipes, l’état des tâches et les budgets pour mieux anticiper les besoins et ajuster vos plans.
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Rapport
       color: sky
   - title: Une collaboration en temps réel
     description: Facilitez la collaboration au sein de vos équipes avec des outils intégrés de communication et de partage de fichiers. Discutez, partagez des documents et collaborez directement dans le projet pour améliorer la productivité.
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Collaboration

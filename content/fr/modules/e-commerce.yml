@@ -34,30 +34,39 @@ hero:
 features:
   - title: Attirez vos clients avec un catalogue de produits dynamique 
     description: Publiez et mettez à jour vos produits en quelques clics. Grâce à Dokos, gérez vos descriptions, prix, images, et spécifications depuis un seul endroit.<br> Chaque produit dispose de sa propre page dédiée pour une présentation claire et professionnelle.
+    image: "image/e-commerce/commandes-e-commerce.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Catalogue
       color: sky
   - title: Offrez à vos clients une expérience d'achat fluide et sans effort 
     description: Optimisez le parcours client avec un processus de commande simplifié. <br>Le module e-commerce de Dokos intègre un panier d’achat intuitif, permettant à vos clients de commander facilement vos produits en ligne. <br>Vous suivez les commandes en temps réel avec des options de paiement sécurisées.
+    image: "image/e-commerce/parametre-e-commerce.svg"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Commandes
       color: sky
   - title: Renforcez l’intéraction avec vos clients via nos formulaires personnalisés.
     description: Que ce soit pour des demandes de devis, des inscriptions à une newsletter, ou des questions spécifiques, tout est intégré directement dans Dokos. <br>De plus, vos clients peuvent se connecter via leurs comptes sociaux (Google, Facebook) pour un accès rapide et sécurisé.
+    image: "image/e-commerce/article-de-blog.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Formulaires
       color: sky
   - title: Maximisez la visibilité de votre site grâce à nos outils SEO.
     description: Créez des balises méta pour améliorer votre positionnement sur les moteurs de recherche, et utilisez notre gestion de blogs pour attirer et fidéliser votre audience.
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: SEO
       color: sky
   - title: Personnalisez votre site à votre image
     description: Créez un site à votre image avec Dokos. Modifiez les couleurs, les polices, les logos, et le thème général de votre boutique en ligne pour qu’elle reflète parfaitement votre marque.
+    image: "image/e-commerce/site-web-dokos.gif"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Site

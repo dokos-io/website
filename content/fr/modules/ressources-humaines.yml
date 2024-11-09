@@ -34,60 +34,80 @@ hero:
 features:
   - title: Une gestion des employés simple
     description: Gérez facilement les profils de vos employés, leurs postes, et leurs départements. Suivez vos contrats et hiérarchisez votre organisation. Le cycle de vie complet des employés est pris en charge, de l'intégration aux promotions, en passant par les transferts et les sorties.
+    image: "image/module-rh/un-rh-gestion-des-employes.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Gestion des employés
       color: sky
   - title: Une gestion des présences et des horaires
     description: Suivez les présences avec des pointages ou une intégration biométrique. Automatisez la gestion des présences et des quarts grâce à des outils flexibles pour planifier les horaires, gérer les demandes de changement et assigner les tâches de manière efficace.
+    image: "image/module-rh/deux-presence-et-horaires.png"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Présence et Horaires
       color: sky
   - title: Une gestion des congés
     description: Créez et personnalisez vos politiques de congés, types de congés et listes de jours fériés. Gérez les demandes de congés avec des workflows d'approbation clairs, les demandes de congés compensatoires.
+    image: "image/module-rh/trois-gestion-des-conges.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Congés
       color: sky
   - title: Une gestion des dépenses et des avances
     description: Gérez les avances de vos employés, les demandes de notes de frais et leur approbation. 
+    image: "image/module-rh/quatre-note-de-frais-modifie.svg"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Dépenses
       color: sky
   - title: Une gestion des évaluations
     description: Créez des modèles et suivez les cycles d'évaluation de vos employés. Collectez des retours, suivez les objectifs et réalisez des évaluations régulières pour optimiser la performance de vos équipes.
+    image: "image/module-rh/cinq-evaluation.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Performance
       color: sky
   - title: Un recrutement simplifié 
     description: Gérez vos offres d'emploi, vos candidats et vos entretiens. Dokos propose également un système de parrainage pour les employés et automatise la génération des offres d'emploi.
+    image: "image/module-rh/six-tableau-de-bord-offre-demploi.png"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Recrutement
       color: sky
   - title: Formation et développement
     description: Planifiez et suivez les programmes de formation, les événements, les résultats et les retours des participants pour accompagner le développement de vos collaborateurs.
+    image: "image/module-rh/sept-programme-formation.png"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Formation
       color: sky
   - title: Des rapports & Analyses en temps réel
     description: Générez des rapports détaillés et actualisés pour la gestion des présences, les soldes de congés et les données d'évaluation.
+    image: ""
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Rapports
       color: sky
   - title: Un portail en ligne pour vos employés 
     description: Avec Dokos, vos employés accèdent à un portail pour consulter leurs données, soumettre leurs demandes de congés, suivre leurs dépenses en toute autonomie.
+    image: "image/module-rh/neuf-demande-de-conge.svg"
+    image_bg_color: "bg-teal-500"
     align: left
     headline:
       label: Portail
       color: sky
   - title: Une application mobile simple
     description: Simplifiez le quotidien de vos employés, même en déplacement, pour la gestion des congés, des dépenses et de leurs feuilles de temps. 
+    image: "image/module-rh/dix-application-rh.svg"
+    image_bg_color: "bg-teal-500"
     align: right
     headline:
       label: Application
