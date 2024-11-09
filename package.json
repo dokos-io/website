@@ -48,7 +48,7 @@
     "@nuxthq/studio": "^2.0.3",
     "@nuxtjs/turnstile": "^0.9.11",
     "eslint": "^8.57.0",
-    "nuxt": "^3.12.4",
+    "nuxt": "^3.14.159",
     "vue-tsc": "^2.0.29"
   },
   "version": "0.0.0",

@@ -43,7 +43,7 @@ export default defineNuxtConfig({
       {
         name: 'Français',
         code: 'fr',
-        iso: 'fr-FR',
+        language: 'fr-FR',
         file: 'fr-FR.js'
       },
       // {
