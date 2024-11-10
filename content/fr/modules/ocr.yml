@@ -35,12 +35,16 @@ hero:
 features:
   - title: Gagnez du temps et réduisez les erreurs avec une gestion documentaire automatisée.
     description: "Simplifiez votre gestion documentaire grâce à l’OCR de Dokos. Transformez vos factures et bons de livraison en données utilisables instantanément, et libérez vos équipes des tâches répétitives. Moins d’erreurs, plus de temps pour l’essentiel.<ul><li><span class='font-bold'> Extraction automatique des données :</span> Dès la réception de vos documents (factures, bons de commande), l’OCR analyse et extrait automatiquement les informations essentielles (montants, dates, numéros de commande). </li><li><span class='font-bold'> Traitement des emails avec pièces jointes :</span> Envoyez vos documents directement par email, et Dokos se charge de les analyser et de les intégrer à vos modules comptables ou de gestion des stocks."
+    image: "image/ocr/facture-ocr.png"
+    image_bg_color: bg-teal-500
     align: left
     badge:
       label: Automatisation
       color: sky
   - title: "Fonctionnement avancé : Contrôlez chaque étape"
     description: "Restez maître de vos données tout en automatisant. Avec Dokos, vous validez chaque étape pour garantir une précision optimale. Configurez vos workflows selon vos besoins spécifiques."
+    image: "image/ocr/workflow-ocr.png"
+    image_bg_color: bg-teal-500
     align: right
     badge:
       label: Semi-automatique

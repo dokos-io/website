@@ -41,27 +41,12 @@ useSeoMeta({
 
 <template>
     <UPage v-if="module">
-        <UPageHeader :ui="{ wrapper: 'border-none bg-green-400/5' }">
-            <div class="absolute top-[24px] left-[12px] hidden lg:flex">
-                <UTooltip :text="t('back_button')">
-                    <UButton
-                        :to="localePath('/modules')"
-                        icon="i-ph-caret-left"
-                        color="gray"
-                        :ui="{ rounded: 'rounded-full' }"
-                        size="lg"
-                        class=""
-                    />
-                </UTooltip>
-            </div>
-        </UPageHeader>
         <UPageBody prose class="prose-lg dark:text-gray-300 mt-0">
             <ULandingHero
                 :links="module.hero.links"
                 orientation="vertical"
                 :ui="{
-                    wrapper:
-                        'pt-0 sm:pt-0 md:pt-0 bg-gradient-to-b from-green-400/5 from-90%',
+                    wrapper: 'bg-gradient-to-b from-green-400/5 from-90%',
                 }"
                 v-if="module.hero"
             >
@@ -103,6 +88,23 @@ useSeoMeta({
 
                 <template #description>
                     <span v-html="module.hero.description"></span>
+                </template>
+                <template #default>
+                    <div class="absolute top-[24px] left-[12px] hidden lg:flex">
+                        <UTooltip :text="t('back_button')">
+                            <UButton
+                                :to="localePath('/modules')"
+                                icon="i-ph-caret-left"
+                                color="gray"
+                                :ui="{ rounded: 'rounded-full' }"
+                                size="lg"
+                                class=""
+                            />
+                        </UTooltip>
+                    </div>
+                    <ClientOnly>
+                        <HomeTetris :color="amber"/>
+                    </ClientOnly>
                 </template>
             </ULandingHero>
 
