@@ -51,23 +51,33 @@ colored_section:
 
 sections:
   - title: Une gestion complète des projets et des clients
-    description: "Dokos vous permet de suivre l'intégralité de vos projets avec une gestion avancée des tâches, des plannings (Gantt, Kanban) et du temps passé. Vous pouvez également centraliser toutes les interactions clients (devis, factures, tickets de support) pour un suivi efficace."
+    description: "Dokos vous permet de suivre l'intégralité de vos projets avec une gestion avancée des tâches, des plannings (Gantt, Kanban) et du temps passé. <br>Vous pouvez également centraliser toutes les interactions clients (devis, factures, tickets de support) pour un suivi efficace."
+    image: "image/projet/Suivi-des-taches-kanban.png"
+    image_bg_color: bg-teal-500
     align: right
 
   - title: "Intégrez votre comptabilité et suivez en temps réel vos rapports financiers"
-    description: "Suivez toutes vos opérations financières : factures, paiements, rapprochements bancaires, tout est automatiquement intégré et enregistré. Générez des rapports financiers détaillés comme les bilans et les comptes de résultats pour garder une vue d’ensemble de votre situation."
+    description: "Suivez toutes vos opérations financières : factures, paiements, rapprochements bancaires, tout est automatiquement intégré et enregistré. <br>Générez des rapports financiers détaillés comme les bilans et les comptes de résultats pour garder une vue d’ensemble de votre situation."
+    image: "image/comptabilite/rapports-financiers-diverses-monnaies.png"
+    image_bg_color: bg-teal-500
     align: left
   
   - title: "Gardez une flexibilité totale avec une solution libre et open-source"
-    description: "Centralisez la gestion des ressources humaines avec des modules dédiés : gestion des congés, notes de frais, paie et suivi des présences. L’outil de gestion des projets permet une répartition des tâches claire et efficace entre vos collaborateurs."
+    description: "Centralisez la gestion des ressources humaines avec des modules dédiés : gestion des congés, notes de frais, paie et suivi des présences.<br>L’outil de gestion des projets permet une répartition des tâches claire et efficace entre vos collaborateurs."
+    image: "image/module-rh/trois-gestion-des-conges.png"
+    image_bg_color: bg-teal-500
     align: right
 
   - title: "Permettez une collaboration fluide entre vos équipes "
-    description: "En rejoignant Dokos, vous faites partie d'une communauté ouverte où chacun peut contribuer. Que ce soit en participant au développement, en partageant des idées ou en finançant de nouvelles fonctionnalités, vous aidez à construire un outil au service de tous les tiers-lieux."
+    description: "En rejoignant Dokos, vous faites partie d'une communauté ouverte où chacun peut contribuer. <br>Que ce soit en participant au développement, en partageant des idées ou en finançant de nouvelles fonctionnalités, vous aidez à construire un outil au service de toutes les entreprises."
+    image: "image/dokos-communaute.png"
+    image_bg_color: bg-teal-500
     align: left
   
   - title: "Optimisez votre environnement avec les intégrations "
-    description: "Connectez Dokos à vos autres outils comme Google Agenda, Slack, Stripe et bien d'autres. Optimisez encore plus votre environnement de travail avec ces intégrations natives et boostez votre productivité."
+    description: "Connectez Dokos à vos autres outils comme Google Agenda, Slack, Stripe et bien d'autres.<br>Optimisez encore plus votre environnement de travail avec ces intégrations natives et boostez votre productivité."
+    image: "image/projet/communication-raven.png"
+    image_bg_color: bg-teal-500
     align: right
 
 carousel: 

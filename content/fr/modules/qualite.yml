@@ -73,8 +73,8 @@ features:
     badge:
       label: Réclamations
       color: sky
-  - title: Un Contrôle Statistique de la Qualité (SPC)
-    description: "Optimisez la performance de vos processus grâce au contrôle statistique de la qualité (SPC). <br><br>Dokos collecte les données de production en temps réel, vous permettant d'analyser les variations et de détecter les anomalies avant qu'elles n’affectent vos produits. <br><br>En maintenant vos processus dans des limites de contrôle, vous réduisez les défauts tout en améliorant la productivité.</br>"
+  - title: Des analyses et tableaux de bord pour vous accompagner. 
+    description: "Optimisez votre qualité avec des tableaux de bord et des outils statistiques. <br><br>Allez plus loin et construisez-vous même grâce à Insight et les outils no-code de dokos toutess les analyses statistiques dont vous avez besoin. "
     image: "image/qualite/rapport-inspections.png"
     image_bg_color: "bg-teal-500"
     align: right

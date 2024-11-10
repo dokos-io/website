@@ -30,6 +30,7 @@ hero:
 colored_section:
   title: "Une solution complète et flexible pour les entreprises de production"
   description: "Que vous soyez dans l'industrie, l'artisanat, l'agroalimentaire ou la fabrication, Dokos est la plateforme de gestion d'entreprise qui répond à vos besoins. Avec ses fonctionnalités spécialement conçues pour les processus de production, Dokos vous aide à planifier, gérer et optimiser vos opérations, tout en assurant une visibilité en temps réel sur vos stocks, coûts et marges."
+  video: /image/production/tableau-de-bord-production.mp4
   align: left
   links:
     - label: "Optimisez votre production"
@@ -51,15 +52,22 @@ colored_section:
 sections:
   - title: "Gérez vos ordres de fabrication"
     description: "Créez et gérez facilement vos ordres de fabrication. Planifiez la production, répartissez les tâches et suivez chaque étape du processus de production."
+    image: "image/production/industrie_ordre-de-fabrication.svg"
+    image_bg_color: "bg-teal-500"
     align: right
   - title: "Optimisez vos stocks"
     description: "Synchronisez vos stocks en temps réel avec les mouvements de production. Assurez-vous d’avoir les matériaux nécessaires à chaque étape et évitez les ruptures de stock."
+    image: "image/production/ecriture-de-stock.png"
+    image_bg_color: "bg-teal-500"
     align: left
   - title: "Contrôlez vos coûts et marges"
     description: "Enregistrez l’ensemble de vos coûts liés à la production et suivez vos marges grâce à des tableaux de bord intuitifs. Prenez des décisions éclairées pour améliorer votre rentabilité."
+    image_bg_color: "bg-teal-500"
     align: right
   - title: "Optimisez votre plannification"
     description: "Grâce à une gestion avancée des capacités de production, ajustez vos opérations en fonction des commandes et des demandes en temps réel, et maintenez vos délais de livraison."
+    image: "image/production/tableau-de-bord-production-image-2.svg"
+    image_bg_color: "bg-teal-500"
     align: left
 
 carousel: 

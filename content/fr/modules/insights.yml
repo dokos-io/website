@@ -26,7 +26,7 @@ hero:
     - label: Générez son premier rapport
       to: https://cloud.dokos.io
       size: xl
-      color: green
+      color: amber
       icon: i-heroicons-play-circle-16-solid
       trailing: false
       target: _blank
@@ -52,14 +52,14 @@ features_before_colored_section.cards:
     class: "col-span-4 row-span-3"
 
 colored_section: 
-  title: Créez, personnalisez et innovez ! 
-  description: "Avec Dokos, profitez d'un' accès direct à Frappe Builder : l’outil de création de pages innovant développé par l’équipe Frappe. Grâce à  Builder et sans coût supplémentaire, personnaliser votre interface devient intuitif et accessible, le tout sans une ligne de code"
-  image: ""
+  title: Créez, analysez et innovez ! 
+  description: "Avec Dokos, profitez d'un accès direct à Frappe Insight : l’outil de création de rapports innovant développé par l’équipe Frappe. Grâce à  Insight et sans coût supplémentaire, analysez vos données devient intuitif et accessible, le tout sans une ligne de code"
+  image: "image/ventes/un-insights-opportunites.png"
   align: left
   links:
     - label: Générez son premier rapport
       size: sm
-      color: gray
+      color: green
       to: https://cloud.dokos.io
       target: _blank
     - label: En savoir plus sur Frappe Insight
@@ -70,7 +70,6 @@ colored_section:
       target: _blank
       icon: i-heroicons-outline-arrow-right
       trailing: true
-
   
 bridge:
   title: Bénéficiez d'une analyse de données de pointe

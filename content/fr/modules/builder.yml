@@ -1,14 +1,13 @@
-navigation:
-  title: Frappe Builder
-  icon: i-icon-park-outline-add-web
-  description: Création de sites web no-code.
-
 title: Frappe Builder
 icon: mdi:application-settings-outline
 link: "https://frappe.io/builder"
-author: Frappe Technologies & Contributeurs
+author: Frappe Technologies
 description: L'outil ultime de création de sites web no-code
-application: Frappe Builder
+
+navigation:
+  title: Frappe Builder
+  description: L'outil ultime de création de sites web no-code
+  icon: /frappe/builder.svg
 
 logo:
   light: /frappe/builder.svg
@@ -41,8 +40,7 @@ hero:
 colored_section: 
   title: Créez, personnalisez et innovez ! 
   description: "Avec Dokos, profitez d'un' accès direct à Frappe Builder : l'outil de création de pages innovant développé par l'équipe Frappe. Grâce à  Builder et sans coût supplémentaire, personnaliser votre interface devient intuitif et accessible, le tout sans une ligne de code"
-  video: "/image/builder/frappe-builder.mp4"
-  image_bg_color: bg-green-500
+  image: "image/builder/dessin-frappe-builder-1080.svg"
   align: left
 
 features:

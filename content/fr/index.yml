@@ -156,7 +156,7 @@ sections:
         size: md
         class: ml-8
   - title: Une <span class="text-primary">version française</span> d'ERPNext
-    description: <strong>Dokos, une adaptation locale pensée pour les entreprises françaises et européennes.</strong><br><br>Dokos est un <i>fork</i> d'ERPNext, spécialement conçu pour répondre aux besoins des entreprises européennes. Il combine les fonctionnalités avancées d’ERPNext avec des adaptations locales pensées pour les utilisateurs français.
+    description: <strong>Dokos, une adaptation locale pensée pour les entreprises françaises et européennes.</strong><br><br>Dokos est un <i>fork</i> d'ERPNext, spécialement conçu pour répondre aux besoins des entreprises européennes. Il combine les fonctionnalités avancées d’ERPNext avec toutes les conditions de conformité à mettre en place pour les utilisateurs français.
     image: /home/dokos-dashboard.png
     image_bg_color: bg-sky-600
     id: enterprise
