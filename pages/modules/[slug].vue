@@ -202,6 +202,7 @@ useSeoMeta({
                         class="w-full shadow-xl rounded bg-white/75"
                         v-else-if="module.colored_section.video"
                         autoplay
+                        loop
                         :class="[
                             module.colored_section.align == 'left'
                                 ? 'ml-7'
@@ -258,6 +259,7 @@ useSeoMeta({
                             class="w-full shadow-xl rounded bg-white/75"
                             v-else-if="section.video"
                             autoplay
+                            loop
                             :class="[
                                 section.align == 'left' ? 'ml-7' : 'mr-7',
                                 section.image_bg_color ? 'shadow-2xl' : '',
@@ -374,6 +376,7 @@ useSeoMeta({
                             class="w-full rounded-md bg-white/75"
                             v-else-if="feat.video"
                             autoplay
+                            loop
                             :class="[
                                 feat.align == 'left' ? 'ml-7' : 'mr-7',
                                 feat.image_bg_color ? 'shadow-2xl' : '',

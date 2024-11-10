@@ -178,6 +178,7 @@ defineOgImage({
                                 class="w-full rounded-md bg-white/75"
                                 v-else-if="page.colored_section.video"
                                 autoplay
+                                loop
                             >
                                 <source
                                     :src="page.colored_section.video"

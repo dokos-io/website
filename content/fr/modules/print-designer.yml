@@ -33,8 +33,8 @@ hero:
       target: _blank
 
 colored_section: 
-  title: "Créez avec notre outils puissant et intuitif !"
-  description: "Le Frappe Print Designer vous permet de créer des formats d'impression personnalisés pour tous vos documents professionnels – factures, devis, bons de commande, rapports et bien plus – le tout sans écrire une seule ligne de code. Que vous soyez une petite entreprise en plein essor ou une grande organisation cherchant à renforcer son identité visuelle, le Frappe Print Designer vous offre une flexibilité inégalée.<br>Et le meilleur ? Cet outil est accessible à tous les utilisateurs Dokos, sans frais supplémentaires."
+  title: "Créez avec un outil puissant et intuitif !"
+  description: "Frappe Print Designer vous permet de créer des formats d'impression personnalisés pour tous vos documents professionnels – factures, devis, bons de commande, rapports et bien plus – le tout sans écrire une seule ligne de code. Que vous soyez une petite entreprise en plein essor ou une grande organisation cherchant à renforcer son identité visuelle, Frappe Print Designer vous offre une flexibilité inégalée.<br>Et le meilleur ? Cet outil est accessible à tous les utilisateurs Dokos, sans frais supplémentaires."
   align: left
 
 features:
@@ -46,24 +46,27 @@ features:
     align: left
   - title: "Découvrez nos champs dynamiques et intelligents"
     description: "Frappe Print Designer vous permet d'intégrer des données spécifiques à vos documents - automatiquement ! Que ce soit des noms, des montants, ou des dates, les champs sont mis à jour en temps réel pour vous offrir des impressions précises et toujours à jour. De plus, vous pouvez facilement ajouter des QR codes ou des codes-barres pour une gestion simplifiée."
+    image: "image/print-designer/champs-dynamiques.png"
+    image_bg_color: bg-teal-500
     align: right
   - title: "Un outils qui s'adapte à vos processus"
     description: "Factures, devis, rapports de vente ou d'inventaire : cet outil s'adapte à tous vos types de documents. Gagnez du temps en réutilisant des modèles ou en créant des formats spécifiques selon vos besoins, avec un contrôle total sur l'apparence et le contenu."
+    image: "image/print-designer/apercu-avant-impression.png"
+    image_bg_color: bg-teal-500
     align: left
-  - title: "Multilingue et multi-dispositifs"
-    description: "Peu importe où se trouvent vos clients ou collègues, vos formats d'impression peuvent être adaptés dans la langue de leur choix et sont optimisés pour une utilisation sur mobiles comme sur ordinateurs."
-    align: right
   - title: "Visualisez en temps réel"
     description: "Vous pouvez visualiser vos modifications en direct et générer des PDF professionnels, prêts à être partagés instantanément par mail ou stockés dans vos systèmes."
+    image: "image/print-designer/pdf-facture.png"
+    image_bg_color: bg-teal-500
     align: left
 
 bridge: 
-  - title: "Une équipe respectueuse et dédiée à vos besoins"
-    description: "Chez Dokos, nous avons un immense respect pour l'incroyable travail de l'équipe Frappe. Nous sommes ravis de vous offrir l'accès à cet outil innovant qui, nous en sommes convaincus, apportera une grande valeur à votre organisation. Nous croyons en la puissance de Frappe Print Designer pour simplifier la gestion de vos impressions et pour vous permettre de vous concentrer sur l'essentiel : faire croître votre entreprise. En choisissant Dokos, vous bénéficiez d'une solution puissante, entièrement gratuite et facile à utiliser, le tout dans un écosystème collaboratif et évolutif. <br> C'est notre manière de vous soutenir avec des outils robustes et accessibles, sans coût caché."
-    align: center
+  title: "Une équipe respectueuse et dédiée à vos besoins"
+  description: "Chez Dokos, nous avons un immense respect pour l'incroyable travail de l'équipe Frappe. Nous sommes ravis de vous offrir l'accès à cet outil innovant qui, nous en sommes convaincus, apportera une grande valeur à votre organisation. Nous croyons en la puissance de Frappe Print Designer pour simplifier la gestion de vos impressions et pour vous permettre de vous concentrer sur l'essentiel : faire croître votre entreprise. En choisissant Dokos, vous bénéficiez d'une solution puissante, entièrement gratuite et facile à utiliser, le tout dans un écosystème collaboratif et évolutif. <br> C'est notre manière de vous soutenir avec des outils robustes et accessibles, sans coût caché."
+  align: center
 
 bottom_cta:
-  title: "Prêt à essayer le Frappe Print Designer ?"
+  title: "Prêt à essayer Frappe Print Designer ?"
   description: "Bénéficiez dès aujourd'hui d'un outil puissant et gratuit, intégré directement à Dokos. Il suffit d'un clic, tout est déjà prêt à être utilisé pour simplifier vos impressions. <br> Créez dès maintenant des documents professionnels, à votre image !."
   card: true
   links:

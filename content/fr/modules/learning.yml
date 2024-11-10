@@ -77,7 +77,7 @@ main_features:
     image: "image/ventes/cinq-insights ventes.png"
     image_bg_color: bg-teal-500
     align: left
-  - title: "Suivez la progession en temps réèl"
+  - title: "Suivez la progession en temps réel"
     description: "Suivez la progression de vos apprenants grâce à nos outils d'analyse précis. Vous pouvez visualiser les étapes complétées, évaluer les performances, et identifier les points d'amélioration pour offrir un service toujours plus performant. Créez ainsi une boucle d'apprentissage continue, tout en gardant vos clients informés et satisfaits."
     image: "image/learning/learning-tableau-de-bord-stat.png"
     image_bg_color: bg-teal-500
