@@ -161,15 +161,14 @@ defineOgImage({
                         </template>
 
                         <div
-                            class="py-8 rounded-lg"
-                            :class="[
-                                page.colored_section.image_bg_color,
+                            class="py-8 rounded-lg bg-orange-200"
+                            :class="
                                 page.colored_section.align == 'left'
                                     ? 'pl-8'
-                                    : 'pr-8',
-                            ]"
+                                    : 'pr-8'
+                            "
                             v-if="page.colored_section.image"
-                        >   
+                        >
                             <NuxtImg
                                 :src="page.colored_section.image"
                                 class="shadow-lg rounded"
