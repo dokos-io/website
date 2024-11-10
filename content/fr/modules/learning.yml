@@ -56,6 +56,7 @@ main_features:
   - title: Créez une expérience d'apprentissage personnalisée
     description: "Donnez à vos clients accès à des formations sur mesure. Créez des parcours d'apprentissage adaptés à leurs besoins spécifiques, qu'ils soient nouveaux utilisateurs de vos services ou expérimentés. En leur fournissant des contenus pédagogiques de qualité, vous renforcez leur maîtrise de vos produits et améliorez leur satisfaction à long terme."
     image: "image/learning/learning-cours.png"
+    image_bg_color: bg-teal-500
     align: right
     links:
     - label: Mettre son premier cours en ligne
@@ -75,14 +76,17 @@ main_features:
   - title: "Intégrez-vous parfaitement à Dokos"
     description: "Frappe Learning s'intègre parfaitement à Dokos, facilitant la gestion des utilisateurs, des cours, et des certifications. Cette intégration vous permet de centraliser la formation de vos clients tout en profitant des avantages d'un environnement d'un logiciel de gestion moderne, sans avoir à gérer une plateforme séparée ou des coûts supplémentaires. "
     image: "image/ventes/cinq-insights ventes.png"
+    image_bg_color: bg-teal-500
     align: left
   - title: "Suivez la progession en temps réèl "
     description: "Suivez la progression de vos apprenants grâce à nos outils d'analyse précis. Vous pouvez visualiser les étapes complétées, évaluer les performances, et identifier les points d'amélioration pour offrir un service toujours plus performant. Créez ainsi une boucle d'apprentissage continue, tout en gardant vos clients informés et satisfaits."
     image: "image/learning/learning-tableau-de-bord-stat.png"
+    image_bg_color: bg-teal-500
     align: right
   - title: "Un véritable programme de formation sans frais supplémentaire"
     description: "En quelques clics, mettez en place l'application Frappe Learning sans frais additionnels. Mettez en place un véritable programme de formation pour vos utilisateurs ou clients, sans augmenter vos coûts d'infrastructure ou de gestion."
     image: "image/nuage-dashboard-dark.png"
+    image_bg_color: bg-teal-500
     align: left
 
 bridge:
