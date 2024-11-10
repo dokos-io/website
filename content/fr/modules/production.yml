@@ -74,7 +74,7 @@ features:
       color: sky
   - title: Prenez des décisions éclairées
     description: Générez avec Dokos des rapports personnalisés vous permettant de prendre des décisions éclairées, basées sur des données précises.<br><br> En analysant les tendances, vous identifiez les opportunités d’amélioration pour rester compétitif sur le marché.</br>
-    image: "image/production/tableau-de-bord-production-image-2.svg"
+    image: "image/production/tableau-de-bord-production-image-1800.svg"
     image_bg_color: "bg-teal-500"
     align: right
     badge:
