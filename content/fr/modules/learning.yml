@@ -28,7 +28,7 @@ hero:
     - label: Mettre son premier cours en ligne
       to: https://cloud.dokos.io
       size: xl
-      color: orange
+      color: amber
       icon: i-heroicons-rocket-launch
       trailing: false
       target: _blank
@@ -42,7 +42,8 @@ hero:
 
 colored_section:
   title: Simplifiez l'apprentissage de vos clients
-  description: "Chez Dokos, nous avons toujours eu à cœur d'accompagner nos clients dans l'adoption des meilleures technologies, et c'est avec une grande fierté que nous vous proposons Frappe Learning : une plateforme d'apprentissage innovante, développée par l'équipe de Frappe."
+  description: "Chez Dokos, nous avons toujours eu à cœur d'accompagner nos clients dans l'adoption des meilleures technologies, et c'est avec une grande fierté que nous vous proposons Frappe Learning : une plateforme d'apprentissage innovante, développée par l'équipe de Frappe, compatible avec Dokos."
+  image: "image/learning/frappe-learning.png"
   align: left
   badge:
     label: Les applications Frappe
@@ -54,12 +55,13 @@ colored_section:
 main_features:
   - title: Créez une expérience d'apprentissage personnalisée
     description: "Donnez à vos clients accès à des formations sur mesure. Créez des parcours d'apprentissage adaptés à leurs besoins spécifiques, qu'ils soient nouveaux utilisateurs de vos services ou expérimentés. En leur fournissant des contenus pédagogiques de qualité, vous renforcez leur maîtrise de vos produits et améliorez leur satisfaction à long terme."
+    image: "image/learning/learning-cours.png"
     align: right
     links:
     - label: Mettre son premier cours en ligne
       to: https://cloud.dokos.io
       size: xl
-      color: sky
+      color: amber
       icon: i-heroicons-rocket-launch
       trailing: false
       target: _blank
@@ -72,12 +74,15 @@ main_features:
       target: _blank
   - title: "Intégrez-vous parfaitement à Dokos"
     description: "Frappe Learning s'intègre parfaitement à Dokos, facilitant la gestion des utilisateurs, des cours, et des certifications. Cette intégration vous permet de centraliser la formation de vos clients tout en profitant des avantages d'un environnement d'un logiciel de gestion moderne, sans avoir à gérer une plateforme séparée ou des coûts supplémentaires. "
+    image: "image/ventes/cinq-insights ventes.png"
     align: left
   - title: "Suivez la progession en temps réèl "
     description: "Suivez la progression de vos apprenants grâce à nos outils d'analyse précis. Vous pouvez visualiser les étapes complétées, évaluer les performances, et identifier les points d'amélioration pour offrir un service toujours plus performant. Créez ainsi une boucle d'apprentissage continue, tout en gardant vos clients informés et satisfaits."
+    image: "image/learning/learning-tableau-de-bord-stat.png"
     align: right
   - title: "Un véritable programme de formation sans frais supplémentaire"
     description: "En quelques clics, mettez en place l'application Frappe Learning sans frais additionnels. Mettez en place un véritable programme de formation pour vos utilisateurs ou clients, sans augmenter vos coûts d'infrastructure ou de gestion."
+    image: "image/nuage-dashboard-dark.png"
     align: left
 
 bridge:
@@ -99,8 +104,8 @@ bridge_after_carousel:
   description: "Chez Dokos, nous avons toujours valorisé l'apprentissage comme une clé de la réussite. Frappe Learning est plus qu'une simple plateforme de formation : c'est un moyen d'enrichir la relation avec vos clients et de les rendre plus autonomes et efficaces. Cette application s'intègre harmonieusement dans l'univers Dokos et constitue un excellent levier pour renforcer la fidélité de vos utilisateurs. Nous respectons profondément le travail et l'innovation de Frappe. Grâce à cette application, nous vous offrons une solution complète qui permet non seulement d'améliorer la satisfaction de vos clients, mais aussi d'accélérer leur adoption de vos services."
   align: center
 
-features:
-  title: "Des avantages concrets pour vous et vos clients !"
+bottom_section:
+  title: "Des avantages concrets pour vous et vos clients!"
   cards:
     - title: "Fidélisation accrue" 
       description: "Avec des parcours de formation engageants, aidez vos clients à tirer le meilleur parti de vos produits. Offrez tous les outils pour réussir et établissez une relation de confiance à long terme. "
