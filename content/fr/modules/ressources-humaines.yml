@@ -100,7 +100,7 @@ features:
       color: sky
   - title: Un portail en ligne pour vos employés 
     description: Avec Dokos, vos employés accèdent à un portail pour consulter leurs données, soumettre leurs demandes de congés, suivre leurs dépenses en toute autonomie.
-    image: "image/module-rh/neuf-demande-de-conge.svg"
+    image: "image/module-rh/applications-demande-de-conges.svg"
     image_bg_color: "bg-teal-500"
     align: left
     badge:
@@ -108,7 +108,7 @@ features:
       color: sky
   - title: Une application mobile simple
     description: Simplifiez le quotidien de vos employés, même en déplacement, pour la gestion des congés, des dépenses et de leurs feuilles de temps. 
-    image: "image/module-rh/dix-application-rh.svg"
+    image: "image/module-rh/application-rh-seul.svg"
     image_bg_color: "bg-teal-500"
     align: right
     badge:
