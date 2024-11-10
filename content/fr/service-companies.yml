@@ -1,21 +1,20 @@
-title: "La plateforme de gestion complète pour les entreprises de services"
-description: "Dokos propose une solution intuitive, évolutive et personnalisable pour gérer vos activités au quotidien."
-
+title: La plateforme de gestion complète pour les entreprises de services
+description: Dokos propose une solution intuitive, évolutive et personnalisable pour gérer vos activités au quotidien.
 hero:
-  title: "La plateforme de gestion complète pour les entreprises de services"
-  description: "Dokos propose une solution simple et intuitive pour optimisez votre gestion"
+  title: La plateforme de gestion complète pour les entreprises de services
+  description: Dokos propose une solution simple et intuitive pour optimisez votre gestion
   align: center
   headline:
-    label: "Une adaptation française d'ERPNext"
+    label: Une adaptation française d'ERPNext
     to: https://frappe.io
     right_icon: i-heroicons-arrow-top-right-on-square-20-solid
     target: _blank
     color: sky
   links:
-    - label: Commencez avce Dokos
+    - label: Commencez avec Dokos
       to: https://cloud.dokos.io
       size: xl
-      color: green
+      color: amber
       icon: i-heroicons-rocket-launch
       trailing: false
       target: _blank
@@ -26,14 +25,13 @@ hero:
       color: gray
       to: https://doc.dokos.io
       target: _blank
-
-
 colored_section:
-  title: "Adoptez une solution qui allie puissance et éthique"
-  description: "Que vous soyez dans le conseil, l’informatique, le transport, ou tout autre secteur de services, Dokos est la solution open-source qui répond à tous vos besoins. Grâce à une plateforme unifiée et personnalisable, vous pouvez gérer vos clients, vos projets, vos finances et bien plus encore, en un seul endroit."
+  title: Adoptez une solution qui allie puissance et éthique
+  description: Que vous soyez dans le conseil, l’informatique, le transport, ou tout autre secteur de services, Dokos est la solution open-source qui répond à tous vos besoins. Grâce à une plateforme unifiée et personnalisable, vous pouvez gérer vos clients, vos projets, vos finances et bien plus encore, en un seul endroit.
+  image: "image/projet/tableau-de-bord-projet.svg"
   align: left
   links:
-    - label: "Débutez l'aventure"
+    - label: Débutez l'aventure
       to: https://cloud.dokos.io
       size: xl
       color: gray
@@ -47,50 +45,42 @@ colored_section:
       color: gray
       to: https://doc.dokos.io
       target: _blank
-
-
 sections:
   - title: Une gestion complète des projets et des clients
-    description: "Dokos vous permet de suivre l'intégralité de vos projets avec une gestion avancée des tâches, des plannings (Gantt, Kanban) et du temps passé. <br>Vous pouvez également centraliser toutes les interactions clients (devis, factures, tickets de support) pour un suivi efficace."
-    image: "image/projet/Suivi-des-taches-kanban.png"
+    description: Dokos vous permet de suivre l'intégralité de vos projets avec une gestion avancée des tâches, des plannings (Gantt, Kanban) et du temps passé. <br>Vous pouvez également centraliser toutes les interactions clients (devis, factures, tickets de support) pour un suivi efficace.
+    image: image/projet/Suivi-des-taches-kanban.png
     image_bg_color: bg-teal-500
     align: right
-
-  - title: "Intégrez votre comptabilité et suivez en temps réel vos rapports financiers"
-    description: "Suivez toutes vos opérations financières : factures, paiements, rapprochements bancaires, tout est automatiquement intégré et enregistré. <br>Générez des rapports financiers détaillés comme les bilans et les comptes de résultats pour garder une vue d’ensemble de votre situation."
-    image: "image/comptabilite/rapports-financiers-diverses-monnaies.png"
+  - title: Intégrez votre comptabilité et suivez en temps réel vos rapports financiers
+    description: 'Suivez toutes vos opérations financières : factures, paiements, rapprochements bancaires, tout est automatiquement intégré et enregistré. <br>Générez des rapports financiers détaillés comme les bilans et les comptes de résultats pour garder une vue d’ensemble de votre situation.'
+    image: image/comptabilite/rapports-financiers-diverses-monnaies.png
     image_bg_color: bg-teal-500
     align: left
-  
-  - title: "Gardez une flexibilité totale avec une solution libre et open-source"
-    description: "Centralisez la gestion des ressources humaines avec des modules dédiés : gestion des congés, notes de frais, paie et suivi des présences.<br>L’outil de gestion des projets permet une répartition des tâches claire et efficace entre vos collaborateurs."
-    image: "image/module-rh/trois-gestion-des-conges.png"
+  - title: Gardez une flexibilité totale avec une solution libre et open-source
+    description: 'Centralisez la gestion des ressources humaines avec des modules dédiés : gestion des congés, notes de frais, paie et suivi des présences.<br>L’outil de gestion des projets permet une répartition des tâches claire et efficace entre vos collaborateurs.'
+    image: image/module-rh/trois-gestion-des-conges.png
     image_bg_color: bg-teal-500
     align: right
-
-  - title: "Permettez une collaboration fluide entre vos équipes "
-    description: "En rejoignant Dokos, vous faites partie d'une communauté ouverte où chacun peut contribuer. <br>Que ce soit en participant au développement, en partageant des idées ou en finançant de nouvelles fonctionnalités, vous aidez à construire un outil au service de toutes les entreprises."
-    image: "image/dokos-communaute.png"
+  - title: 'Permettez une collaboration fluide entre vos équipes '
+    description: En rejoignant Dokos, vous faites partie d'une communauté ouverte où chacun peut contribuer. <br>Que ce soit en participant au développement, en partageant des idées ou en finançant de nouvelles fonctionnalités, vous aidez à construire un outil au service de toutes les entreprises.
+    image: image/dokos-communaute.png
     image_bg_color: bg-teal-500
     align: left
-  
-  - title: "Optimisez votre environnement avec les intégrations "
-    description: "Connectez Dokos à vos autres outils comme Google Agenda, Slack, Stripe et bien d'autres.<br>Optimisez encore plus votre environnement de travail avec ces intégrations natives et boostez votre productivité."
-    image: "image/projet/communication-raven.png"
+  - title: 'Optimisez votre environnement avec les intégrations '
+    description: Connectez Dokos à vos autres outils comme Google Agenda, Slack, Stripe et bien d'autres.<br>Optimisez encore plus votre environnement de travail avec ces intégrations natives et boostez votre productivité.
+    image: image/projet/communication-raven.png
     image_bg_color: bg-teal-500
     align: right
-
-carousel: 
-  - title: "Sans frais de licence"
-    description: "Profitez de la puissance d’un logiciel de gestion complet sans coûts cachés."
-  - title: "Une plateforme personnalisable"
-    description: "Activez et désactivez les modules selon vos besoins spécifiques."
-  - title: "Indépendance et liberté"
-    description: " Installez Dokos où vous voulez et modifiez-le à votre guise."
-
+carousel:
+  - title: Sans frais de licence
+    description: Profitez de la puissance d’un logiciel de gestion complet sans coûts cachés.
+  - title: Une plateforme personnalisable
+    description: Activez et désactivez les modules selon vos besoins spécifiques.
+  - title: Indépendance et liberté
+    description: ' Installez Dokos où vous voulez et modifiez-le à votre guise.'
 cta:
   title: Prêt à simplifier la gestion de votre entreprise ?
-  description: "Évaluez tout le potentiel de Dokos pour vos projets et vos clients dès aujourd’hui !"
+  description: Évaluez tout le potentiel de Dokos pour vos projets et vos clients dès aujourd’hui !
   links:
     - label: Commencez avec Dokos
       to: https://cloud.dokos.io
