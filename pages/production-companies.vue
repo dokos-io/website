@@ -237,7 +237,7 @@ defineOgImage({
                             indicators
                         >
                             <div class="text-center mx-auto p-10">
-                                <h2><span v-html="item.title"></span></h2>
+                                <h2 class="font-bold text-xl"><span v-html="item.title"></span></h2>
                                 <p class="pb-8">
                                     <span v-html="item.description"></span>
                                 </p>

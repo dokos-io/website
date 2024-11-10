@@ -272,11 +272,18 @@ useSeoMeta({
                 <UCarousel
                     v-slot="{ item }"
                     :items="module.carousel"
-                    :ui="{ item: 'w-full', container: 'rounded-3xl bg-sky-50' }"
+                    :ui="{
+                                item: 'w-full',
+                                container: 'rounded-3xl bg-sky-50 dark:bg-sky-600',
+                                indicators: {
+                                    active: 'bg-green-500 dark:bg-green-400',
+                                    inactive: 'bg-stone-300 dark:bg-stone-900'
+                                }
+                            }"
                     indicators
                 >
-                    <div class="text-center mx-auto">
-                        <h2><span v-html="item.title"></span></h2>
+                    <div class="text-center mx-auto p-10">
+                        <h2 class="font-bold text-xl"><span v-html="item.title"></span></h2>
                         <p class="pb-8">
                             <span v-html="item.description"></span>
                         </p>
