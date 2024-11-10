@@ -78,12 +78,13 @@ bridge:
   align: center
 
 carousel: 
-  - title: "Adoption rapide"
-    description: "Frappe Insights s’intègre facilement à votre logiciel de gestion, sans besoin de formation complexe."
-  - title: "Coût zéro"
-    description: "Cet outil puissant est inclus dans votre solution Dokos, sans frais additionnels."
-  - title: "Confiance et transparence "
-    description: "En tant que partenaires, nous assurons un support continu pour garantir que vous tiriez le meilleur parti de cet outil."
+  cards:
+    - title: "Adoption rapide"
+      description: "Frappe Insights s’intègre facilement à votre logiciel de gestion, sans besoin de formation complexe."
+    - title: "Coût zéro"
+      description: "Cet outil puissant est inclus dans votre solution Dokos, sans frais additionnels."
+    - title: "Confiance et transparence "
+      description: "En tant que partenaires, nous assurons un support continu pour garantir que vous tiriez le meilleur parti de cet outil."
 
 bottom_cta:
   title: "Prenez le contrôle de vos données maintenant !"

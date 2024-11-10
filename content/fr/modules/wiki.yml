@@ -63,11 +63,12 @@ bridge:
   description: "Chez Dokos, nous avons une profonde estime pour le formidable travail accompli par l'équipe de Frappe. En proposant Frappe Wiki à nos clients, nous sommes fiers de poursuivre leur vision open-source et leur engagement envers l'innovation. Notre mission est d'offrir aux entreprises les meilleurs outils, et nous croyons que Frappe Wiki offre une valeur inestimable pour stimuler la productivité et la collaboration."
   align: center
 
-carousel: 
-  - title: "100% Open-Source, sans coûts cachés"
-    description: "Avec Frappe Wiki, vous bénéficiez d'un outil de gestion des connaissances rentable qui évolue avec votre entreprise — pas d'abonnements coûteux, pas de frais cachés, seulement des fonctionnalités puissantes qui grandissent avec votre équipe."
-  - title: "Une communauté mondiale de confiance"
-    description: "Frappe Wiki et Dokos sont adoptés par des milliers d'entreprises dans le monde, incluant des leaders dans des secteurs comme la fabrication, les services et la distribution. En choisissant Frappe Wiki, vous rejoignez une communauté internationale d'innovateurs et d'entreprises avant-gardistes."
+carousel:
+  cards:
+    - title: "100% Open-Source, sans coûts cachés"
+      description: "Avec Frappe Wiki, vous bénéficiez d'un outil de gestion des connaissances rentable qui évolue avec votre entreprise — pas d'abonnements coûteux, pas de frais cachés, seulement des fonctionnalités puissantes qui grandissent avec votre équipe."
+    - title: "Une communauté mondiale de confiance"
+      description: "Frappe Wiki et Dokos sont adoptés par des milliers d'entreprises dans le monde, incluant des leaders dans des secteurs comme la fabrication, les services et la distribution. En choisissant Frappe Wiki, vous rejoignez une communauté internationale d'innovateurs et d'entreprises avant-gardistes."
 
 bottom_cta:
   title: "Prêt à transformer la gestion de vos connaissances ?"

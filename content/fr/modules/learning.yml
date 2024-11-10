@@ -93,14 +93,15 @@ bridge:
   align: center
 
 carousel:
-  - title: "Créez facilement vos cours"
-    description: "Construit avec une interface intuitive, Frappe Learning vous permet de créer des modules de formation complets en quelques clics. Importez des contenus multimédias, créez des quiz interactifs, et structurez les parcours d'apprentissage de manière flexible."
-  - title: "Simplifiez la gestion de vos utilisateurs"
-    description: "Gérez les inscriptions, attribuez des cours, et offrez à vos utilisateurs une expérience d'apprentissage personnalisée. Suivez leurs progrès et ajustez les parcours selon leurs besoins."
-  - title: "Valorisez l'aquisition des compétences"
-    description: "Attribuez des certificats et badges à vos clients à la fin de chaque formation. Renforcez leur engagement et leur confiance dans vos services."
-  - title: "Obtenez des rapports détaillés"
-    description: "Analysez la progression de vos utilisateurs et l'efficacité de vos formations. Frappe Learning aide à ajuster votre contenu pédagogique pour des résultats optimaux."
+  cards:
+    - title: "Créez facilement vos cours"
+      description: "Construit avec une interface intuitive, Frappe Learning vous permet de créer des modules de formation complets en quelques clics. Importez des contenus multimédias, créez des quiz interactifs, et structurez les parcours d'apprentissage de manière flexible."
+    - title: "Simplifiez la gestion de vos utilisateurs"
+      description: "Gérez les inscriptions, attribuez des cours, et offrez à vos utilisateurs une expérience d'apprentissage personnalisée. Suivez leurs progrès et ajustez les parcours selon leurs besoins."
+    - title: "Valorisez l'aquisition des compétences"
+      description: "Attribuez des certificats et badges à vos clients à la fin de chaque formation. Renforcez leur engagement et leur confiance dans vos services."
+    - title: "Obtenez des rapports détaillés"
+      description: "Analysez la progression de vos utilisateurs et l'efficacité de vos formations. Frappe Learning aide à ajuster votre contenu pédagogique pour des résultats optimaux."
 
 bridge_after_carousel:
   title: "Pourquoi avons-nous choisi Frappe Learning pour vous ?"

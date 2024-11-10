@@ -268,7 +268,7 @@ useSeoMeta({
 
             <ULandingSection v-bind="module.bridge" v-if="module.bridge" />
 
-            <ULandingSection :title="module.carousel.title" v-if="module.carousel">
+            <!-- <ULandingSection :title="module.carousel.title" v-if="module.carousel">
                 <UCarousel
                     v-slot="{ item }"
                     :items="module.carousel.cards"
@@ -289,7 +289,7 @@ useSeoMeta({
                         </p>
                     </div>
                 </UCarousel>
-            </ULandingSection>
+            </ULandingSection> -->
 
             <ULandingSection
                 v-bind="module.bridge_after_carousel"

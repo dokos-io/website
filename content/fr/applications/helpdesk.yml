@@ -39,15 +39,16 @@ colored_section:
     title: LA solution intelligente pour la gestion de votre support client 
     description: "Centralisez toutes vos demandes de support en un seul endroit avec à notre outil puissant et convivial, directement intégré à Dokos. Grâce à ses fonctionnalités avancées, votre équipe peut suivre chaque interaction client, résoudre les problèmes plus rapidement et améliorer l’expérience globale du service client."
 
-carousel: 
-  - title: Suivi des tickets en temps réel 
-    description: Chaque demande est organisée et facilement traçable depuis la création jusqu’à la résolution.
-  - title: Automatisation des processus
-    description: Automatisez la répartition des demandes, l’envoi de notifications et la mise à jour des statuts pour gagner du temps et améliorer la productivité.
-  - title: Rapports détaillés
-    description: Analysez les performances de votre équipe avec des rapports dynamiques qui vous permettent d'ajuster vos stratégies en temps réel.
-  - title: ""
-    description: "Frappe HelpDesk s’intègre parfaitement à d’autres modules comme la facturation, l’inventaire ou les ventes, créant ainsi un écosystème unifié pour toute votre gestion d’entreprise."
+carousel:
+  cards:
+    - title: Suivi des tickets en temps réel 
+      description: Chaque demande est organisée et facilement traçable depuis la création jusqu’à la résolution.
+    - title: Automatisation des processus
+      description: Automatisez la répartition des demandes, l’envoi de notifications et la mise à jour des statuts pour gagner du temps et améliorer la productivité.
+    - title: Rapports détaillés
+      description: Analysez les performances de votre équipe avec des rapports dynamiques qui vous permettent d'ajuster vos stratégies en temps réel.
+    - title: ""
+      description: "Frappe HelpDesk s’intègre parfaitement à d’autres modules comme la facturation, l’inventaire ou les ventes, créant ainsi un écosystème unifié pour toute votre gestion d’entreprise."
 
 bottom_cta:
   title: "Transformez votre gestion des demandes clients! "
