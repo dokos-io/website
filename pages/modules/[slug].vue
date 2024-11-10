@@ -103,7 +103,7 @@ useSeoMeta({
                         </UTooltip>
                     </div>
                     <ClientOnly>
-                        <HomeTetris :color="amber"/>
+                        <HomeTetris/>
                     </ClientOnly>
                 </template>
             </ULandingHero>
