@@ -171,24 +171,45 @@ useSeoMeta({
                 </template>
 
                 <div
-                    class="py-8 rounded-lg"
+                    class="px-3 rounded-lg"
                     :class="[
                         module.colored_section.image_bg_color,
                         module.colored_section.align == 'left'
                             ? 'pl-8'
                             : 'pr-8',
                     ]"
-                    v-if="module.colored_section.image"
+                    v-if="
+                        module.colored_section.image ||
+                        module.colored_section.video
+                    "
                 >
                     <NuxtImg
                         :src="module.colored_section.image"
-                        class="shadow-lg"
-                        :class="
-                            module.colored_section.align == 'left'
-                                ? 'rounded-s-lg'
-                                : 'rounded-e-lg'
-                        "
+                        class="shadow-xl rounded"
+                        v-if="module.colored_section.image"
                     />
+                    <video
+                        class="w-full shadow-xl rounded bg-white/75"
+                        v-else-if="module.colored_section.video"
+                        autoplay
+                        :class="[
+                            module.colored_section.align == 'left'
+                                ? 'ml-7'
+                                : 'mr-7',
+                            module.colored_section.image_bg_color
+                                ? 'shadow-2xl'
+                                : '',
+                        ]"
+                        :style="
+                            module.colored_section.align == 'right' &&
+                            'margin-left: -15px;'
+                        "
+                    >
+                        <source
+                            :src="module.colored_section.video"
+                            type="video/mp4"
+                        />
+                    </video>
                 </div>
                 <Placeholder v-else class="bg-green-500" />
             </ULandingSection>
@@ -211,7 +232,7 @@ useSeoMeta({
                             section.image_bg_color,
                             section.align == 'left' ? 'pl-8' : 'pr-8',
                         ]"
-                        v-if="section.image"
+                        v-if="section.image || section.video"
                     >
                         <NuxtImg
                             :src="section.image"
@@ -221,7 +242,23 @@ useSeoMeta({
                                     ? 'rounded-s-lg'
                                     : 'rounded-e-lg'
                             "
+                            v-if="section.image"
                         />
+                        <video
+                            class="w-full shadow-xl rounded bg-white/75"
+                            v-else-if="section.video"
+                            autoplay
+                            :class="[
+                                section.align == 'left' ? 'ml-7' : 'mr-7',
+                                section.image_bg_color ? 'shadow-2xl' : '',
+                            ]"
+                            :style="
+                                section.align == 'right' &&
+                                'margin-left: -15px;'
+                            "
+                        >
+                            <source :src="section.video" type="video/mp4" />
+                        </video>
                     </div>
                     <Placeholder v-else />
                 </ULandingSection>

@@ -173,13 +173,16 @@ defineOgImage({
                         >
                             <NuxtImg
                                 :src="page.colored_section.image"
-                                class="shadow-lg"
-                                :class="
-                                    page.colored_section.align == 'left'
-                                        ? 'rounded-s-lg'
-                                        : 'rounded-e-lg'
-                                "
+                                class="shadow-lg rounded"
+                                v-if="page.colored_section.image"
                             />
+                            <video
+                              class="w-full rounded-md bg-white/75"
+                              v-else-if="page.colored_section.video"
+                              autoplay
+                          >
+                            <source :src="page.colored_section.video" type="video/mp4" />
+                          </video>
                         </div>
                         <Placeholder v-else class="bg-orange-200" />
                     </ULandingSection>
@@ -225,11 +228,15 @@ defineOgImage({
                             :items="page.carousel"
                             :ui="{
                                 item: 'w-full',
-                                container: 'rounded-3xl bg-sky-50',
+                                container: 'rounded-3xl bg-sky-50 dark:bg-sky-600',
+                                indicators: {
+                                    active: 'bg-green-500 dark:bg-green-400',
+                                    inactive: 'bg-stone-300 dark:bg-stone-900'
+                                }
                             }"
                             indicators
                         >
-                            <div class="text-center mx-auto">
+                            <div class="text-center mx-auto p-10">
                                 <h2><span v-html="item.title"></span></h2>
                                 <p class="pb-8">
                                     <span v-html="item.description"></span>

@@ -41,7 +41,8 @@ hero:
 colored_section: 
   title: Créez, personnalisez et innovez ! 
   description: "Avec Dokos, profitez d'un' accès direct à Frappe Builder : l'outil de création de pages innovant développé par l'équipe Frappe. Grâce à  Builder et sans coût supplémentaire, personnaliser votre interface devient intuitif et accessible, le tout sans une ligne de code"
-  image: "image/builder/dessin-frappe-builder-1080.svg"
+  video: "/image/builder/frappe-builder.mp4"
+  image_bg_color: bg-green-500
   align: left
 
 features:

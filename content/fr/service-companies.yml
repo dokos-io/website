@@ -36,7 +36,7 @@ colored_section:
     - label: "Débutez l'aventure"
       to: https://cloud.dokos.io
       size: xl
-      color: none
+      color: gray
       icon: i-heroicons-rocket-launch
       trailing: false
       target: _blank
@@ -44,7 +44,7 @@ colored_section:
       icon: i-heroicons-arrow-right
       trailing: true
       size: xl
-      color: none
+      color: gray
       to: https://doc.dokos.io
       target: _blank
 

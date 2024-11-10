@@ -32,10 +32,10 @@ colored_section:
   description: "Que vous soyez dans l'industrie, l'artisanat, l'agroalimentaire ou la fabrication, Dokos est la plateforme de gestion d'entreprise qui répond à vos besoins. Avec ses fonctionnalités spécialement conçues pour les processus de production, Dokos vous aide à planifier, gérer et optimiser vos opérations, tout en assurant une visibilité en temps réel sur vos stocks, coûts et marges."
   align: left
   links:
-    - label: "Optimisez sa production"
+    - label: "Optimisez votre production"
       to: https://cloud.dokos.io
       size: xl
-      color: none
+      color: gray
       icon: i-heroicons-rocket-launch
       trailing: false
       target: _blank
@@ -43,7 +43,7 @@ colored_section:
       icon: i-heroicons-arrow-right
       trailing: true
       size: xl
-      color: none
+      color: gray
       to: https://doc.dokos.io
       target: _blank
 

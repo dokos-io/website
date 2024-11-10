@@ -173,13 +173,19 @@ defineOgImage({
                         >
                             <NuxtImg
                                 :src="page.colored_section.image"
-                                class="shadow-lg"
-                                :class="
-                                    page.colored_section.align == 'left'
-                                        ? 'rounded-s-lg'
-                                        : 'rounded-e-lg'
-                                "
+                                class="shadow-lg rounded"
+                                v-if="page.colored_section.image"
                             />
+                            <video
+                                class="w-full rounded-md bg-white/75"
+                                v-else-if="page.colored_section.video"
+                                autoplay
+                            >
+                                <source
+                                    :src="page.colored_section.video"
+                                    type="video/mp4"
+                                />
+                            </video>
                         </div>
                         <Placeholder v-else class="bg-orange-200" />
                     </ULandingSection>
