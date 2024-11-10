@@ -1092,7 +1092,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/flag@npm:^1.2.0":
+"@iconify-json/flag@npm:^1.2.2":
   version: 1.2.2
   resolution: "@iconify-json/flag@npm:1.2.2"
   dependencies:
@@ -10152,7 +10152,7 @@ __metadata:
     "@iconify-json/circle-flags": "npm:^1.1.49"
     "@iconify-json/eos-icons": "npm:^1.1.11"
     "@iconify-json/ep": "npm:^1.1.16"
-    "@iconify-json/flag": "npm:^1.2.0"
+    "@iconify-json/flag": "npm:^1.2.2"
     "@iconify-json/fluent": "npm:^1.1.61"
     "@iconify-json/gg": "npm:^1.1.10"
     "@iconify-json/heroicons": "npm:^1.1.24"
