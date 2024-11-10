@@ -77,7 +77,7 @@ main_features:
     image: "image/ventes/cinq-insights ventes.png"
     image_bg_color: bg-teal-500
     align: left
-  - title: "Suivez la progession en temps réel"
+  - title: "Suivez la progession en temps réèl"
     description: "Suivez la progression de vos apprenants grâce à nos outils d'analyse précis. Vous pouvez visualiser les étapes complétées, évaluer les performances, et identifier les points d'amélioration pour offrir un service toujours plus performant. Créez ainsi une boucle d'apprentissage continue, tout en gardant vos clients informés et satisfaits."
     image: "image/learning/learning-tableau-de-bord-stat.png"
     image_bg_color: bg-teal-500
@@ -88,20 +88,18 @@ main_features:
     image_bg_color: bg-teal-500
     align: left
 
-bridge:
-  title: "Les fonctionnalités clés de Frappe Learning"
-  align: center
 
 carousel:
+  title: "Les fonctionnalités clés de Frappe Learning"
   cards:
-  - title: "Créez facilement vos cours"
-    description: "Construit avec une interface intuitive, Frappe Learning vous permet de créer des modules de formation complets en quelques clics. Importez des contenus multimédias, créez des quiz interactifs, et structurez les parcours d'apprentissage de manière flexible."
-  - title: "Simplifiez la gestion de vos utilisateurs"
-    description: "Gérez les inscriptions, attribuez des cours, et offrez à vos utilisateurs une expérience d'apprentissage personnalisée. Suivez leurs progrès et ajustez les parcours selon leurs besoins."
-  - title: "Valorisez l'aquisition des compétences"
-    description: "Attribuez des certificats et badges à vos clients à la fin de chaque formation. Renforcez leur engagement et leur confiance dans vos services."
-  - title: "Obtenez des rapports détaillés"
-    description: "Analysez la progression de vos utilisateurs et l'efficacité de vos formations. Frappe Learning aide à ajuster votre contenu pédagogique pour des résultats optimaux."
+    - title: "Créez facilement vos cours"
+      description: "Construit avec une interface intuitive, Frappe Learning vous permet de créer des modules de formation complets en quelques clics. Importez des contenus multimédias, créez des quiz interactifs, et structurez les parcours d'apprentissage de manière flexible."
+    - title: "Simplifiez la gestion de vos utilisateurs"
+      description: "Gérez les inscriptions, attribuez des cours, et offrez à vos utilisateurs une expérience d'apprentissage personnalisée. Suivez leurs progrès et ajustez les parcours selon leurs besoins."
+    - title: "Valorisez l'aquisition des compétences"
+      description: "Attribuez des certificats et badges à vos clients à la fin de chaque formation. Renforcez leur engagement et leur confiance dans vos services."
+    - title: "Obtenez des rapports détaillés"
+      description: "Analysez la progression de vos utilisateurs et l'efficacité de vos formations. Frappe Learning aide à ajuster votre contenu pédagogique pour des résultats optimaux."
 
 bridge_after_carousel:
   title: "Pourquoi avons-nous choisi Frappe Learning pour vous ?"

@@ -3,7 +3,6 @@ navigation:
   icon: i-material-symbols-auto-graph
   description: Analyse et exploration de données
 
-name: insights
 title: Frappe Insights
 link: "https://frappe.io/insights"
 author: Frappe Technologies & Contributeurs
@@ -43,20 +42,19 @@ bridge_before_colored_section:
   description: "Créez simplement des tableaux de bord interactifs, générez en quelques clics des rapports personnalisés ou visualisez vos données en temps réel. Grâce à l'interface intuitive et flexible d'Insights, vous pouvez explorer vos données plus en profondeur et adapter les analyses à vos besoins spécifiques, sans avoir à vous soucier de coûts supplémentaires"
 features_before_colored_section.cards:
   - title: Des rapports sur mesure 
-    icon: i-material-symbols-bar-chart-4-bars-rounded
+    icon: material-symbols:bar-chart-4-bars-rounded
     class: "col-span-4 row-span-3"
   - title: Une visualisation intuitive
-    icon: i-material-symbols-pivot-table-chart-rounded
+    icon: material-symbols:pivot-table-chart-rounded
     class: "col-span-4 row-span-3"
   - title: Un suivi en temps réel
-    icon: i-material-symbols-alarm-on-outline-rounded
+    icon: material-symbols:alarm-on-outline-rounded
     class: "col-span-4 row-span-3"
 
 colored_section: 
   title: Créez, analysez et innovez ! 
   description: "Avec Dokos, profitez d'un accès direct à Frappe Insight : l’outil de création de rapports innovant développé par l’équipe Frappe. Grâce à  Insight et sans coût supplémentaire, analysez vos données devient intuitif et accessible, le tout sans une ligne de code"
   image: "image/ventes/un-insights-opportunites.png"
-  image_bg_color: bg-teal-500
   align: left
   links:
     - label: Générez son premier rapport
@@ -78,13 +76,14 @@ bridge:
   align: center
 
 carousel: 
-  cards:
-    - title: "Adoption rapide"
-      description: "Frappe Insights s’intègre facilement à votre logiciel de gestion, sans besoin de formation complexe."
-    - title: "Coût zéro"
-      description: "Cet outil puissant est inclus dans votre solution Dokos, sans frais additionnels."
-    - title: "Confiance et transparence "
-      description: "En tant que partenaires, nous assurons un support continu pour garantir que vous tiriez le meilleur parti de cet outil."
+  title: "Bénéficiez d'une analyse de données de pointe"
+  cards: 
+   - title: "Adoption rapide"
+     description: "Frappe Insights s’intègre facilement à votre logiciel de gestion, sans besoin de formation complexe."
+   - title: "Coût zéro"
+     description: "Cet outil puissant est inclus dans votre solution Dokos, sans frais additionnels."
+   - title: "Confiance et transparence "
+     description: "En tant que partenaires, nous assurons un support continu pour garantir que vous tiriez le meilleur parti de cet outil."
 
 bottom_cta:
   title: "Prenez le contrôle de vos données maintenant !"

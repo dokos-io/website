@@ -38,24 +38,35 @@ hero:
 
 colored_section: 
   title: "Centralisez et organisez le savoir de votre organisation"
-  description: "Chez Dokos, nous sommes ravis de pouvoir offrir à nos clients Frappe Wiki, un puissant outil de gestion des connaissances développé par l'équipe innovante derrière Frappe. Grâce à cette collaboration, nous mettons à votre disposition une solution open-source robuste, sans frais supplémentaires, qui améliore le partage de l'information au sein de votre entreprise. Avec Frappe Wiki, vous pouvez facilement centraliser et organiser le savoir de votre organisation, rendant l'information accessible, à jour et directement exploitable. "
+  description: "Chez Dokos, nous sommes ravis de pouvoir offrir à nos clients le Frappe Wiki, un puissant outil de gestion des connaissances développé par l'équipe innovante derrière Frappe. Grâce à leur travail, nous mettons à votre disposition une solution open-source robuste, sans frais supplémentaires, qui améliore le partage de l'information au sein de votre entreprise. Avec Frappe Wiki, vous pouvez facilement centraliser et organiser le savoir de votre organisation, rendant l'information accessible, à jour et directement exploitable. "
+  image: "image/wiki/wiki.png"
   align: left
 
 features:
   - title: "Créez un référentiel de connaissances simple et efficace"
     description: "Frappe Wiki propose une plateforme fluide pour créer et gérer une base de connaissances. Que vous documentiez des processus internes, des guides d'utilisation ou des notes de projet, son interface intuitive permet à chaque membre de l'équipe de contribuer, modifier et organiser facilement l'information."
+    image: "image/wiki/wiki.png"
+    image_bg_color: bg-teal-500
     align: right
   - title: "Simplifiez la recherche"
     description: "Fini les recherches interminables ! Grâce à son moteur de recherche puissant, Frappe Wiki garantit que les bonnes informations sont toujours à portée de main. Vos équipes peuvent accéder aux articles via des catégories, des balises ou des mots-clés, ce qui réduit considérablement le temps de recherche des données critiques."
+    image: "image/wiki/wiki-recherches.png"
+    image_bg_color: bg-teal-500
     align: left
   - title: "Tranquilisez votre esprit avec le contrôle des versions"
     description: "Une des grandes forces de Frappe Wiki réside dans sa fonctionnalité de gestion des versions, qui permet de suivre toutes les modifications apportées aux articles. Cela garantit que vous pouvez toujours revenir à une version précédente et maintenir l'exactitude et la fiabilité de votre base de connaissances."
+    image: "image/wiki/wiki-version.png"
+    image_bg_color: bg-teal-500
     align: right
   - title: "Un partage collaboratif des connaissances"
     description: "Les équipes peuvent collaborer en temps réel, apportant ainsi des idées et des expertises précieuses. Grâce aux fonctionnalités de commentaire simples à utiliser, les retours et les mises à jour font partie intégrante du processus de documentation, maintenant ainsi tout le monde sur la même longueur d'onde."
+    image: "image/wiki/wiki.png"
+    image_bg_color: bg-teal-500
     align: left
   - title: "Sécurisez l'accès aux informations sensibles"
     description: "Vous avez des informations sensibles à protéger ? Avec Frappe Wiki, vous pouvez paramétrer des permissions granulaires pour contrôler qui peut voir ou modifier les articles. Cela garantit la sécurité des données tout en encourageant la collaboration au sein de l'organisation."
+    image: "image/wiki/wiki-securise.png"
+    image_bg_color: bg-teal-500
     align: right
 
 bridge: 
