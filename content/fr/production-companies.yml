@@ -66,7 +66,7 @@ sections:
     align: right
   - title: "Optimisez votre plannification"
     description: "Grâce à une gestion avancée des capacités de production, ajustez vos opérations en fonction des commandes et des demandes en temps réel, et maintenez vos délais de livraison."
-    image: "image/production/tableau-de-bord-production-image-2.svg"
+    image: "image/production/tableau-de-bord-production-image-1800.svg"
     image_bg_color: "bg-teal-500"
     align: left
 
