@@ -79,7 +79,7 @@ features:
     badge:
       label: Facture d'Achats
       color: sky
-  - title: Analysez en temps réèl vos achats
+  - title: Analysez en temps réel vos achats
     description: <ui><li>Obtenez des rapports d’achat détaillés pour prendre des décisions informées.<br><li> Suivez les performances des fournisseurs, identifiez les opportunités d’économie, et améliorez continuellement vos processus d’achat grâce à des analyses actualisées.</li></ui>
     image: image/achat/sept-tableau-de-bord-stock-ok.png
     image_bg_color: bg-teal-600
