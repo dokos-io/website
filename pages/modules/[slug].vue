@@ -138,6 +138,14 @@ useSeoMeta({
                     description: 'text-white',
                 }"
             >
+                <template #title>
+                    <span v-html="module.hero.title"></span>
+                </template>
+
+                <template #description>
+                    <span v-html="module.hero.description"></span>
+                </template>
+
                 <template #headline>
                     <UBadge
                         v-if="module.colored_section.badge"
@@ -268,7 +276,7 @@ useSeoMeta({
 
             <ULandingSection v-bind="module.bridge" v-if="module.bridge" />
 
-            <!-- <ULandingSection :title="module.carousel.title" v-if="module.carousel">
+            <ULandingSection :title="module.carousel.title" v-if="module.carousel">
                 <UCarousel
                     v-slot="{ item }"
                     :items="module.carousel.cards"
@@ -289,7 +297,7 @@ useSeoMeta({
                         </p>
                     </div>
                 </UCarousel>
-            </ULandingSection> -->
+            </ULandingSection>
 
             <ULandingSection
                 v-bind="module.bridge_after_carousel"

@@ -168,3 +168,9 @@ Par exemple pour mettre le texte en gras: https://tailwindcss.com/docs/font-weig
 ::div{class="text-center"}
   <UButton color="primary" variant="solid">Button</UButton>
 ::
+
+
+## Icônes
+
+Liste des familles installées:
+['heroicons', 'simple-icons', 'ic', 'mdi', 'icon-park-outline', 'octicon', 'carbon', 'ep', 'uil', 'eos-icons', 'vaadin', 'fluent', 'ri', 'material-symbols', 'gg', 'ic', 'circle-flags', 'iconoir', 'logos', 'cib', 'ph', 'map', 'hugeicons', 'oui', 'solar', 'tdesign']

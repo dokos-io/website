@@ -49,6 +49,7 @@
     "@iconify-json/map": "^1.2.1",
     "@iconify-json/oui": "^1.2.4",
     "@iconify-json/solar": "^1.2.1",
+    "@iconify-json/tdesign": "^1.2.3",
     "@nuxt/eslint-config": "^0.5.0",
     "@nuxthq/studio": "^2.0.3",
     "@nuxtjs/turnstile": "^0.9.11",

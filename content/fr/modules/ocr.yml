@@ -10,8 +10,8 @@ application: OCR
 author: Dokos & Contributeurs
 
 hero:
-  title: Libérez le potentiel de vos documents avec la puissance de l’<span class="text-primary">O.C.R.</span> et Dokos.
-  description: Transformez vos documents en informations prêtes à l’emploi. Avec l’OCR de Dokos, gagnez du temps, réduisez les erreurs et concentrez-vous sur l’essentiel. Profitez de la gestion documentaire en un clin d’œil.
+  title: Automatisez votre saisie de factures grâce au module <span class="text-primary">OCR</span> de Dokos.
+  description: Transformez vos documents en informations prêtes à l’emploi. <br>Avec le module OCR de Dokos, gagnez du temps, réduisez les erreurs et concentrez-vous sur l’essentiel.
   links:
     - label: Commencez maintenant
       to: https://cloud.dokos.io
@@ -56,9 +56,9 @@ features:
       label: Intégrations
       color: sky
   - title: Une solution fiable et sécurisée
-    description: "Notre OCR se concentre sur trois méthodes principales pour l’extraction des données : <ul><li><span class='font-bold'>Réception par email</span></li><li><span class='font-bold'>Importation de fichiers</span></li><li><span class='font-bold'>Dépôt manuel de documents (PDF ou image)</li></span><br>Nous avons choisi Amazon Textract pour assurer une extraction de données à la fois précise et rapide, offrant ainsi le meilleur rapport qualité-prix. De plus, grâce à Dokos, vous pouvez gérer l’ensemble du flux d’achat en toute simplicité : automatisez la création de commandes fournisseurs ou faites correspondre les factures avec des commandes existantes.
-
-"
+    description: "Notre OCR se concentre sur trois méthodes principales pour l’extraction des données : <ul><li><span class='font-bold'>Réception par email</span></li><li><span class='font-bold'>Importation de fichiers</span></li><li><span class='font-bold'>Dépôt manuel de documents (PDF ou image)</li></span><br>Nous avons choisi Amazon Textract pour assurer une extraction de données à la fois précise et rapide, offrant ainsi le meilleur rapport qualité-prix. De plus, grâce à Dokos, vous pouvez gérer l’ensemble du flux d’achat en toute simplicité : automatisez la création de commandes fournisseurs ou faites correspondre les factures avec des commandes existantes."
+    image: "image/ocr/bannette-factures.png"
+    image_bg_color: bg-teal-500
     align: right
     badge:
       label: Sécurité

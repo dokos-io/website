@@ -1272,6 +1272,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/tdesign@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "@iconify-json/tdesign@npm:1.2.3"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/7da6133941fca80a5d53d90c384bb8c1e7fb5d2ec427b834fd2bd3ccbc45d2a0e429095d090a29261ea02dd2373c58a5bacd481f147bb116c32ec5af937d81a6
+  languageName: node
+  linkType: hard
+
 "@iconify-json/uil@npm:^1.1.9":
   version: 1.2.1
   resolution: "@iconify-json/uil@npm:1.2.1"
@@ -10162,6 +10171,7 @@ __metadata:
     "@iconify-json/ri": "npm:^1.1.22"
     "@iconify-json/simple-icons": "npm:^1.1.112"
     "@iconify-json/solar": "npm:^1.2.1"
+    "@iconify-json/tdesign": "npm:^1.2.3"
     "@iconify-json/uil": "npm:^1.1.9"
     "@iconify-json/vaadin": "npm:^1.1.10"
     "@nuxt/content": "npm:^2.13.2"

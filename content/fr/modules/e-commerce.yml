@@ -36,7 +36,7 @@ hero:
 features:
   - title: Attirez vos clients avec un catalogue de produits dynamique 
     description: Publiez et mettez à jour vos produits en quelques clics. <br><br>Grâce à Dokos, gérez vos descriptions, prix, images, et spécifications depuis un seul endroit.<br><br> Chaque produit dispose de sa propre page dédiée pour une présentation claire et professionnelle.</br>
-    image: "image/e-commerce/commandes-e-commerce.png"
+    image: "image/e-commerce/article-site-web.png"
     image_bg_color: "bg-teal-500"
     align: left
     badge:
