@@ -96,15 +96,15 @@ bottom_section:
   cards:
     - title: Un portail Client
       description: Grâce à Dokos, offrez à vos clients un espace dédié où ils peuvent consulter leurs devis, suivre leurs commandes et bons de livraison, et bien plus encore. Cette autonomie réduit les sollicitations, vous permettant de vous concentrer sur l'essentiel.
-      icon: material-symbols:settings-account-box-rounded
+      icon: i-material-symbols-settings-account-box-rounded
       class: "col-span-4 row-span-3"
     - title: Des stratégies tarifaires
       description: Avec Dokos, adaptez vos prix à chaque situation grâce à des fonctionnalités flexibles. Utilisez des listes de prix personnalisées, mettez en place des promotions ciblées, proposez des codes promo attractifs et fidélisez vos clients avec des programmes de récompenses. Offrez des tarifs adaptés à vos clients tout en optimisant vos marges.
-      icon: icon-park-outline:target
+      icon: i-icon-park-outline-target
       class: "col-span-4 row-span-3"
     - title: Des intégrations e-commerce
       description: Grâce aux applications communautaires, Dokos s'intègre parfaitement avec des plateformes comme WooCommerce, Amazon, et bien d'autres. Synchronisez vos produits, commandes et stocks en temps réel pour centraliser toutes vos opérations de vente sur un seul outil. Une solution complète et évolutive pour optimiser votre activité e-commerce.
-      icon: ic:round-shopping-basket
+      icon: i-ic-round-shopping-basket
       class: "col-span-4 row-span-3"
 
 plus_button:

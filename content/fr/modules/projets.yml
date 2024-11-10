@@ -103,15 +103,15 @@ bottom_section:
   cards:
     - title: Simplicité d’utilisation 
       description: Une interface claire et intuitive qui vous permet de gérer vos projets sans complexité.
-      icon: hugeicons:touch-interaction-01
+      icon: i-hugeicons-touch-interaction-01
       class: "col-span-4 row-span-3"
     - title: Flexibilité
       description: S’adapte à vos besoins, que ce soit pour des projets simples ou complexes.
-      icon: hugeicons:curvy-up-down-direction
+      icon: i-hugeicons-curvy-up-down-direction
       class: "col-span-4 row-span-3"
     - title: Open-source et personnalisable 
       description: GLibérez-vous des limitations et adaptez le logiciel selon les spécificités de vos projets.
-      icon: ic:outline-settings
+      icon: i-ic-outline-settings
       class: "col-span-4 row-span-3"
 
 plus_button:

@@ -36,7 +36,7 @@ hero:
 
   :::card
   ---
-  icon: material-symbols:precision-manufacturing-rounded
+  icon: i-material-symbols-precision-manufacturing-rounded
   title: Réservation de matériel et machines
   ---
   - Les utilisateurs peuvent aussi réserver divers équipements en fonction des besoins spécifiques (machines de production, matériel de coworking, etc.).
@@ -49,7 +49,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: simple-icons:googlecalendar
+  icon: i-simple-icons-googlecalendar
   title: Synchronisation avec Google Agenda
   ---
   - Il est possible de synchroniser les calendriers de réservation avec Google Agenda, dans les deux sens.
@@ -58,7 +58,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: icon-park-outline:locking-web
+  icon: i-icon-park-outline-locking-web
   title: Portail utilisateur
   ---
   - Un portail dédié permet aux utilisateurs de gérer leurs réservations, accéder à des factures, et consulter leur historique d’abonnement ou d'utilisation.
@@ -67,7 +67,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: icon-park-outline:locking-web
+  icon: i-icon-park-outline-locking-web
   title: Vue planifcation
   ---
   - Optimise la gestion et la coordination des disponibilités des ressources.

@@ -33,7 +33,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:barcode-reader-outline-rounded
+  icon: i-material-symbols-barcode-reader-outline-rounded
   title: Articles
   ---
   - **Création et gestion des articles** : L'utilisateur peut créer et gérer des articles (produits, matières premières, produits semi-finis, etc.) avec leurs caractéristiques (description, unité de mesure, codes-barres, etc.).
@@ -52,7 +52,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:warehouse-outline-rounded
+  icon: i-material-symbols-warehouse-outline-rounded
   title: Entrepôts
   ---
   - **Gestion multi-entrepôts** : Permet la création et la gestion de plusieurs entrepôts (par site géographique, section de l’usine, etc.).
@@ -63,7 +63,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:forklift-rounded
+  icon: i-material-symbols-forklift-rounded
   title: Réapprovisionnement et planification
   ---
   - **Niveaux de réapprovisionnement** : Définition de seuils minimum et maximum pour les articles, afin de déclencher automatiquement les commandes de réapprovisionnement.
@@ -74,7 +74,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: hugeicons:money-bag-02
+  icon: i-hugeicons-money-bag-02
   title: Gestion des stocks avec PEPS, LIFO, etc.
   ---
   - **Méthode de valorisation du stock** : Permet de valoriser le stock selon différentes méthodes comme le PEPS (Premier Entrant Premier Sortie), LIFO (Last In, First Out) ou au coût moyen pondéré. Ces méthodes aident à calculer la valeur du stock au moment des transactions.
@@ -83,7 +83,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: carbon:delivery-parcel
+  icon: i-carbon-delivery-parcel
   title: Transactions et mouvements automatiques
   ---
   - **Réception des matériaux** : Enregistrement automatique des réceptions d'articles après une commande d'achat.
@@ -94,7 +94,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:event-available-rounded
+  icon: i-material-symbols-event-available-rounded
   title: Gestion des stocks à date précise
   ---
   - **Historique des mouvements de stock** : Historique complet des mouvements de stock, permettant de consulter l’état des stocks à une date précise.
@@ -104,7 +104,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:bar-chart-4-bars-rounded
+  icon: i-material-symbols-bar-chart-4-bars-rounded
   title: Valorisation et rapports de stock
   ---
   - **Rapports d’évaluation du stock** : Génération de rapports sur la valeur du stock en fonction des coûts d’achat, des coûts moyens ou des autres méthodes d’évaluation.
@@ -116,7 +116,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:data-exploration-outline-sharp
+  icon: i-material-symbols-data-exploration-outline-sharp
   title: Rapprochement et audit d’inventaire
   ---
   - **Comptage cyclique** : Mise en place de processus réguliers de comptage d’inventaire pour vérifier la concordance entre le stock physique et les données enregistrées.
@@ -126,7 +126,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:event-busy-outline-rounded
+  icon: i-material-symbols-event-busy-outline-rounded
   title: Gestion des dates d’expiration
   ---
   - **Suivi des dates de péremption** : Gestion des dates d’expiration pour les articles périssables afin de s'assurer qu’ils soient utilisés ou vendus avant la date limite.
@@ -136,7 +136,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:integration-instructions-outline-rounded
+  icon: i-material-symbols-integration-instructions-outline-rounded
   title: Intégration avec d'autres modules
   ---
   - **Intégration avec les ventes** : Lorsque des commandes de vente sont enregistrées, les niveaux de stock sont automatiquement mis à jour.
@@ -147,7 +147,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:calculate-outline-rounded
+  icon: i-material-symbols-calculate-outline-rounded
   title: Gestion des coûts et marges
   ---
   - **Coût des articles** : Possibilité de suivre le coût des articles en fonction des achats et des coûts additionnels (frais de transport, douanes, etc.).
@@ -157,7 +157,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:candlestick-chart-outline-rounded
+  icon: i-material-symbols-candlestick-chart-outline-rounded
   title: Gestion des unités de mesure
   ---
   - **Conversion d’unités de mesure** : Possibilité de gérer différents types d’unités de mesure pour les mêmes articles (par exemple, achat en kilogrammes et vente en tonnes).

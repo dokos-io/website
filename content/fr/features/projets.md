@@ -33,7 +33,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:lightbulb-rounded
+  icon: i-material-symbols-lightbulb-rounded
   title: Gestion des Projets
   ---
   - Permet de créer, organiser et suivre des projets dans leur ensemble.
@@ -53,7 +53,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:alarm-on-outline
+  icon: i-material-symbols-alarm-on-outline
   title: Suivi du Temps (Timesheets)
   ---
   - Permet de suivre le temps passé sur chaque tâche.
@@ -63,7 +63,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: fluent:people-team-24-filled
+  icon: i-fluent-people-team-24-filled
   title: Gestion des Ressources
   ---
   - Facilite l’allocation des ressources humaines, matérielles et financières aux différentes tâches.
@@ -78,7 +78,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: streamline:bank
+  icon: i-streamline-bank
   title: Analyse de la Rentabilité des Projets
   ---
   - Un rapport sur la rentabilité du projet peut être généré à partir des entrées de revenus et dépenses.

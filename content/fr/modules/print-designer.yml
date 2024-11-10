@@ -3,21 +3,15 @@ navigation:
   description: Personnalisation avancée des formats d'impression web et PDF.
   icon: i-material-symbols-photo-prints-outline
 
-
 title: Frappe Print Designer
 link: "https://frappe.io/print-designer"
 author: Frappe Technologies & Contributeurs
 description: Personnalisez vos formats d'impression avec simplicité et puissance !
 application: Frappe Print Designer
 
-logo:
-  light: /frappe/print-designer.svg
-  dark: /frappe/print-designer.svg
-
 hero:
   title: "<span class='text-primary'>Frappe Print designer</span>"
   description: "Personnalisez vos formats d'impression avec simplicité et puissance !"
-  image: ""
   headline:
     label: Les applications Frappe
     to: https://frappe.io/products
@@ -39,8 +33,8 @@ hero:
       target: _blank
 
 colored_section: 
-  - title: "Créez avec notre outils puissant et intuitif ! "
-    description: "Le Frappe Print Designer vous permet de créer des formats d'impression personnalisés pour tous vos documents professionnels – factures, devis, bons de commande, rapports et bien plus – le tout sans écrire une seule ligne de code. Que vous soyez une petite entreprise en plein essor ou une grande organisation cherchant à renforcer son identité visuelle, le Frappe Print Designer vous offre une flexibilité inégalée. <br>Et le meilleur ? Cet outil est accessible gratuitement à tous les utilisateurs Dokos, sans frais supplémentaires.</br>"
+  - title: "Créez avec notre outils puissant et intuitif !"
+    description: "Le Frappe Print Designer vous permet de créer des formats d'impression personnalisés pour tous vos documents professionnels – factures, devis, bons de commande, rapports et bien plus – le tout sans écrire une seule ligne de code. Que vous soyez une petite entreprise en plein essor ou une grande organisation cherchant à renforcer son identité visuelle, le Frappe Print Designer vous offre une flexibilité inégalée. <br>Et le meilleur ? Cet outil est accessible gratuitement à tous les utilisateurs Dokos, sans frais supplémentaires."
     align: left
 
 features:
@@ -48,7 +42,7 @@ features:
     description: "Avec une interface simple et intuitive, vous pouvez glisser-déposer des champs, réorganiser vos informations et créer des documents uniques en un clin d'œil. Que vous ayez besoin d'ajouter des logos, des sections spécifiques ou de dynamiser vos tableaux, tout est possible, sans effort."
     align: right
   - title: "Créez un design qui vous ressemble "
-    description: "Affirmez votre identité visuelle grâce à la personnalisation des polices, couleurs, et marges. Pour ceux qui le souhaite, vous pouvez allez plus loin et intégrer du code CSS pour un contrôle total du style. <br> Que vous souhaitiez une facture élégante ou un rapport analytique détaillé, vos documents sont entre vos mains.</br>"
+    description: "Affirmez votre identité visuelle grâce à la personnalisation des polices, couleurs, et marges. Pour ceux qui le souhaite, vous pouvez allez plus loin et intégrer du code CSS pour un contrôle total du style. <br> Que vous souhaitiez une facture élégante ou un rapport analytique détaillé, vos documents sont entre vos mains."
     align: left
   - title: "Découvrez nos champs dynamiques et intelligents"
     description: "Frappe Print Designer vous permet d'intégrer des données spécifiques à vos documents - automatiquement ! Que ce soit des noms, des montants, ou des dates, les champs sont mis à jour en temps réel pour vous offrir des impressions précises et toujours à jour. De plus, vous pouvez facilement ajouter des QR codes ou des codes-barres pour une gestion simplifiée."
@@ -65,22 +59,21 @@ features:
 
 bridge: 
   - title: "Une équipe respectueuse et dédiée à vos besoins"
-    description: "Chez Dokos, nous avons un immense respect pour l'incroyable travail de l'équipe Frappe. Nous sommes ravis de vous offrir l'accès à cet outil innovant qui, nous en sommes convaincus, apportera une grande valeur à votre organisation. Nous croyons en la puissance de Frappe Print Designer pour simplifier la gestion de vos impressions et pour vous permettre de vous concentrer sur l'essentiel : faire croître votre entreprise. En choisissant Dokos, vous bénéficiez d'une solution puissante, entièrement gratuite et facile à utiliser, le tout dans un écosystème collaboratif et évolutif. <br> C'est notre manière de vous soutenir avec des outils robustes et accessibles, sans coût caché.</br>"
+    description: "Chez Dokos, nous avons un immense respect pour l'incroyable travail de l'équipe Frappe. Nous sommes ravis de vous offrir l'accès à cet outil innovant qui, nous en sommes convaincus, apportera une grande valeur à votre organisation. Nous croyons en la puissance de Frappe Print Designer pour simplifier la gestion de vos impressions et pour vous permettre de vous concentrer sur l'essentiel : faire croître votre entreprise. En choisissant Dokos, vous bénéficiez d'une solution puissante, entièrement gratuite et facile à utiliser, le tout dans un écosystème collaboratif et évolutif. <br> C'est notre manière de vous soutenir avec des outils robustes et accessibles, sans coût caché."
     align: center
 
 bottom_cta:
   title: "Prêt à essayer le Frappe Print Designer ?"
-  description: "Bénéficiez dès aujourd'hui d'un outil puissant et gratuit, intégré directement à Dokos. Il suffit d'un clic, tout est déjà prêt à être utilisé pour simplifier vos impressions. <br> Créez dès maintenant des documents professionnels, à votre image !.</br>"
+  description: "Bénéficiez dès aujourd'hui d'un outil puissant et gratuit, intégré directement à Dokos. Il suffit d'un clic, tout est déjà prêt à être utilisé pour simplifier vos impressions. <br> Créez dès maintenant des documents professionnels, à votre image !."
   card: true
   links:
-    - label: Créez son premier format d'impression'
+    - label: "Créez son premier format d'impression"
       size: md
       color: gray
       to: https://cloud.dokos.io
       target: _blank
     - label: En savoir plus sur Frappe Print designer
       size: md
-      variant: 'link'
       color: gray
       to: https://frappe.io/printdesigner
       target: _blank

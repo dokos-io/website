@@ -17,7 +17,6 @@ logo:
 hero:
   title: "<span class='text-primary'>Frappe Learning</span>"
   description: Créez votre propre plateforme de formation avec Frappe Learning
-  image: ""
   headline:
     label: Les applications Frappe
     to: https://frappe.io/products
@@ -78,7 +77,7 @@ main_features:
     image: "image/ventes/cinq-insights ventes.png"
     image_bg_color: bg-teal-500
     align: left
-  - title: "Suivez la progession en temps réèl "
+  - title: "Suivez la progession en temps réèl"
     description: "Suivez la progression de vos apprenants grâce à nos outils d'analyse précis. Vous pouvez visualiser les étapes complétées, évaluer les performances, et identifier les points d'amélioration pour offrir un service toujours plus performant. Créez ainsi une boucle d'apprentissage continue, tout en gardant vos clients informés et satisfaits."
     image: "image/learning/learning-tableau-de-bord-stat.png"
     image_bg_color: bg-teal-500
@@ -90,7 +89,7 @@ main_features:
     align: left
 
 bridge:
-  title: "Les fonctionnalités  clés de Frappe Learning "
+  title: "Les fonctionnalités clés de Frappe Learning"
   align: center
 
 carousel:
@@ -104,7 +103,7 @@ carousel:
     description: "Analysez la progression de vos utilisateurs et l'efficacité de vos formations. Frappe Learning aide à ajuster votre contenu pédagogique pour des résultats optimaux."
 
 bridge_after_carousel:
-  title: "Pourquoi avons-nous choisi Frappe Learning pour vous ? "
+  title: "Pourquoi avons-nous choisi Frappe Learning pour vous ?"
   description: "Chez Dokos, nous avons toujours valorisé l'apprentissage comme une clé de la réussite. Frappe Learning est plus qu'une simple plateforme de formation : c'est un moyen d'enrichir la relation avec vos clients et de les rendre plus autonomes et efficaces. Cette application s'intègre harmonieusement dans l'univers Dokos et constitue un excellent levier pour renforcer la fidélité de vos utilisateurs. Nous respectons profondément le travail et l'innovation de Frappe. Grâce à cette application, nous vous offrons une solution complète qui permet non seulement d'améliorer la satisfaction de vos clients, mais aussi d'accélérer leur adoption de vos services."
   align: center
 
@@ -137,7 +136,6 @@ bottom_cta:
       target: _blank
     - label: En savoir plus sur Frappe Learning
       size: md
-      variant: 'link'
       color: gray
       to: https://frappe.io/learning
       target: _blank

@@ -32,7 +32,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:add-shopping-cart-rounded
+  icon: i-material-symbols-add-shopping-cart-rounded
   title: Demandes d’achat
   ---
   - Créez et gérez des demandes d'achat internes pour centraliser les besoins en approvisionnement de différents départements.
@@ -42,7 +42,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:folder-supervised-outline
+  icon: i-material-symbols-folder-supervised-outline
   title: Appels d’offres
   ---
   - Envoyez des demandes de devis à plusieurs fournisseurs, gérez les réponses.
@@ -62,7 +62,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: solar:bill-check-linear
+  icon: i-solar-bill-check-linear
   title: Factures fournisseurs
   ---
   - Gérez la facturation des fournisseurs.
@@ -72,7 +72,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:data-loss-prevention-outline-rounded
+  icon: i-material-symbols-data-loss-prevention-outline-rounded
   title: Gestion des fournisseurs
   ---
   - Créez et gérez une base de données complète des fournisseurs.
@@ -82,7 +82,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: fluent:payment-32-regular
+  icon: i-fluent-payment-32-regular
   title: Ordres de paiement
   ---
   - Gérez les paiements aux fournisseurs
@@ -96,7 +96,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: ic:baseline-query-stats
+  icon: i-ic-baseline-query-stats
   title: Rapports et analyses
   ---
   - Générez des rapports détaillés sur les achats, incluant les coûts, performances des fournisseurs, statistiques d'approvisionnement, et tendances d'achat.
@@ -110,7 +110,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: hugeicons:delivery-return-01
+  icon: i-hugeicons-delivery-return-01
   title: Gestion des retours
   ---
   - Gérez les retours fournisseurs pour les articles non conformes ou défectueux, avec une traçabilité complète des retours et des remboursements.
@@ -119,7 +119,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: ic:twotone-euro
+  icon: i-ic-twotone-euro
   title: Budgétisation et contrôle des coûts
   ---
   - Suivez les dépenses d'achats par rapport aux budgets alloués.
@@ -130,7 +130,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: mdi:transit-connection-variant
+  icon: i-mdi-transit-connection-variant
   title: Intégration avec la gestion des stocks
   ---
   - Liez automatiquement les commandes d'achat avec les niveaux de stock.
@@ -144,7 +144,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: ph:handshake-fill
+  icon: i-ph-handshake-fill
   title: Gestion des accords de fournisseurs
   ---
   - Gérez les accords à long terme avec vos fournisseurs.
@@ -154,7 +154,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: ic:baseline-insert-chart
+  icon: i-ic-baseline-insert-chart
   title: Recommandations automatisées de réapprovisionnement
   ---
   - Définissez des seuils minimum de stock pour déclencher automatiquement des demandes ou commandes d'achat lorsque les niveaux d'inventaire sont bas.

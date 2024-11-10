@@ -32,7 +32,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: hugeicons:stamp-02
+  icon: i-hugeicons-stamp-02
   title: Gestion des Inspections de Qualité
   ---
   - Planifiez et réalisez des inspections à différents stades de votre processus de production ou d'approvisionnement.
@@ -44,7 +44,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: hugeicons:flowchart-02
+  icon: i-hugeicons-flowchart-02
   title: Gestion des Plans de Contrôle
   ---
   - Créez des **plans de contrôle** qui précisent les critères d'inspection pour chaque type de produit ou de processus.
@@ -62,7 +62,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: cil:magnifying-glass
+  icon: i-cil-magnifying-glass
   title: Gestion des Actions Correctives et Préventives (CAPA)
   ---
   - **Actions Correctives** : Analysez les causes profondes des non-conformités, et mettez en place des actions correctives pour prévenir leur réapparition.
@@ -73,7 +73,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: solar:delivery-bold
+  icon: i-solar-delivery-bold
   title: Gestion de la Qualité des Fournisseurs
   ---
   - Évaluez et surveillez la performance qualité de vos fournisseurs avec des audits réguliers et des inspections de produits.
@@ -84,7 +84,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:bar-chart-4-bars-rounded
+  icon: i-material-symbols-bar-chart-4-bars-rounded
   title: Contrôle Statistique de la Qualité (SPC)
   ---
   - Automatisez la collecte de données pour analyser la performance de vos processus de fabrication.
@@ -95,7 +95,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: tabler:file-certificate
+  icon: i-tabler-file-certificate
   title: Certifications et Conformité
   ---
   - Facilitez l’adhésion aux normes de qualité internationales comme ISO 9001 ou aux autres standards industriels.
@@ -105,7 +105,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:multiline-chart
+  icon: i-material-symbols-multiline-chart
   title: Amélioration Continue (Kaizen)
   ---
   - Incorporez des outils d'amélioration continue comme **Kaizen**, **5S**, et **Lean** dans vos processus qualité pour une optimisation constante de vos opérations.

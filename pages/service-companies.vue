@@ -202,7 +202,7 @@ defineOgImage({
             <Placeholder v-else />
         </ULandingSection>
 
-        <ULandingSection v-bind="page.carousel" v-if="page.carousel">
+        <ULandingSection v-if="page.carousel">
             <UCarousel
                 v-slot="{ item }"
                 :items="page.carousel"

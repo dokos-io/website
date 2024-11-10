@@ -3,6 +3,7 @@ navigation:
   icon: i-material-symbols-auto-graph
   description: Analyse et exploration de données
 
+name: insights
 title: Frappe Insights
 link: "https://frappe.io/insights"
 author: Frappe Technologies & Contributeurs
@@ -42,13 +43,13 @@ bridge_before_colored_section:
   description: "Créez simplement des tableaux de bord interactifs, générez en quelques clics des rapports personnalisés ou visualisez vos données en temps réel. Grâce à l'interface intuitive et flexible d'Insights, vous pouvez explorer vos données plus en profondeur et adapter les analyses à vos besoins spécifiques, sans avoir à vous soucier de coûts supplémentaires"
 features_before_colored_section.cards:
   - title: Des rapports sur mesure 
-    icon: material-symbols:bar-chart-4-bars-rounded
+    icon: i-material-symbols-bar-chart-4-bars-rounded
     class: "col-span-4 row-span-3"
   - title: Une visualisation intuitive
-    icon: material-symbols:pivot-table-chart-rounded
+    icon: i-material-symbols-pivot-table-chart-rounded
     class: "col-span-4 row-span-3"
   - title: Un suivi en temps réel
-    icon: material-symbols:alarm-on-outline-rounded
+    icon: i-material-symbols-alarm-on-outline-rounded
     class: "col-span-4 row-span-3"
 
 colored_section: 

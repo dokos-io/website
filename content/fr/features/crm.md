@@ -55,7 +55,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:mark-email-read
+  icon: i-material-symbols-mark-email-read
   title: Communication et suivi client
   ---
   - **Emails et appels intégrés** : Enregistrement des communications (emails, appels téléphoniques, réunions) avec les clients ou prospects directement dans le CRM pour un suivi efficace.
@@ -67,7 +67,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: hugeicons:marketing
+  icon: i-hugeicons-marketing
   title: Gestion des campagnes marketing
   ---
   - **Campagnes marketing** : Créer et gérer des campagnes de marketing ciblées. Suivre les résultats et la performance des campagnes, y compris le nombre de leads générés, les coûts, et le retour sur investissement (ROI).
@@ -79,7 +79,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: hugeicons:estimate-02
+  icon: i-hugeicons-estimate-02
   title: Offres commerciales et devis
   ---
   - **Création de devis** : Génération facile de devis à partir d'une opportunité. Vous pouvez suivre les offres envoyées et voir lesquelles sont en attente, acceptées ou refusées.
@@ -91,7 +91,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: solar:bill-check-linear
+  icon: i-solar-bill-check-linear
   title: Conversion des ventes
   ---
   - **Conversion des opportunités en commandes** : Une fois qu'une opportunité est gagnée, elle peut être convertie en commande client, ce qui simplifie le processus de facturation et de livraison.
@@ -108,7 +108,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:dashboard-rounded
+  icon: i-material-symbols-dashboard-rounded
   title: Tableaux de bord personnalisables
   ---
   - **Tableaux de bord CRM** : Les utilisateurs peuvent configurer des tableaux de bord en fonction de leurs besoins pour obtenir une vue d'ensemble des leads, opportunités, devis et performances des campagnes.

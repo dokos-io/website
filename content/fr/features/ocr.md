@@ -43,7 +43,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:space-dashboard-rounded
+  icon: i-material-symbols-space-dashboard-rounded
   title: Intégration transparente avec les modules Dokos
   ---
   - La technologie OCR s’intègre directement dans les différents modules de Dokos, tels que la comptabilité, la gestion des stocks et les ventes.
@@ -53,7 +53,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: mdi:email-open-multiple
+  icon: i-mdi-email-open-multiple
   title: Traitement des pièces jointes reçues par email
   ---
   - L'OCR peut être appliqué aux documents reçus en pièce jointe dans les emails, transformant les fichiers PDF et images en données structurées utilisables.
@@ -63,7 +63,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: cil:magnifying-glass
+  icon: i-cil-magnifying-glass
   title: Amélioration de la recherche de documents
   ---
   - L'OCR transforme les documents scannés en texte consultable, permettant une recherche par mots-clés au sein de Dokos.
@@ -73,7 +73,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: iconoir:multi-bubble-solid
+  icon: i-iconoir-multi-bubble-solid
   title: Support multilingue
   ---
   - L'OCR dans Dokos prend en charge plusieurs langues, permettant la reconnaissance de texte dans des documents de différentes régions linguistiques.
@@ -83,7 +83,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: solar:archive-down-minimlistic-outline
+  icon: i-solar-archive-down-minimlistic-outline
   title: Classification automatique des documents
   ---
   - Les systèmes OCR peuvent classer automatiquement les documents en fonction de leur contenu (par exemple, facture, bon de commande, bon de livraison).

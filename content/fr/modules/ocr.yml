@@ -70,15 +70,15 @@ bottom_section:
   cards:
     - title: Gain de temps
       description: L’automatisation accélère le traitement des documents, permettant à vos équipes de se concentrer sur des tâches plus stratégiques.
-      icon: material-symbols:alarm-on-outline
+      icon: i-material-symbols-alarm-on-outline
       class: "col-span-4 row-span-3"
     - title: Réduction des erreurs
       description: "Moins de saisie manuelle = moins d'erreurs, notamment dans les processus critiques comme la comptabilité."
-      icon: material-symbols:disabled-by-default-rounded
+      icon: i-material-symbols-disabled-by-default-rounded
       class: "col-span-4 row-span-3"
     - title: Contrôle renforcé
       description: Grâce aux workflows personnalisés, vous validez les informations avant qu'elles ne soient intégrées à Dokos, garantissant  des données toujours exactes.
-      icon: material-symbols:check-circle-outline-rounded
+      icon: i-material-symbols-check-circle-outline-rounded
       class: "col-span-4 row-span-3"
 
 plus_button:

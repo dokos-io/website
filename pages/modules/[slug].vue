@@ -268,10 +268,10 @@ useSeoMeta({
 
             <ULandingSection v-bind="module.bridge" v-if="module.bridge" />
 
-            <ULandingSection v-bind="module.carousel" v-if="module.carousel">
+            <ULandingSection :title="module.carousel.title" v-if="module.carousel">
                 <UCarousel
                     v-slot="{ item }"
-                    :items="module.carousel"
+                    :items="module.carousel.cards"
                     :ui="{
                                 item: 'w-full',
                                 container: 'rounded-3xl bg-sky-50 dark:bg-sky-600',

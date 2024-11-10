@@ -49,9 +49,6 @@ await fetchList();
                             description: 'line-clamp-3',
                         }"
                     >
-                        <!-- <template #icon>
-              <UColorModeAvatar :light="feature.logo.light" :dark="feature.logo.dark" size="lg" :ui="{ rounded: 'rounded-sm' }" />
-            </template> -->
 
                         <template #footer>
                             <UBadge :label="feature.application" color="gray" />

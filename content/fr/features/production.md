@@ -48,7 +48,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:format-list-numbered-rounded
+  icon: i-material-symbols-format-list-numbered-rounded
   title: Nomenclature (Bill of Materials - BOM)
   ---
   - La nomenclature détaille tous les composants, matières premières, et sous-assemblages nécessaires à la production d'un article. Elle peut être à plusieurs niveaux pour gérer les produits complexes qui nécessitent des sous-ensembles.
@@ -58,7 +58,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:border-color-rounded
+  icon: i-material-symbols-border-color-rounded
   title: Ordre de fabrication
   ---
   - Un ordre de fabrication est créé à partir de la BOM et donne l’instruction d’entamer la production. Il sert de plan détaillé pour les équipes de production et permet de générer les besoins en matériaux et en ressources.
@@ -78,7 +78,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:add-notes-rounded
+  icon: i-material-symbols-add-notes-rounded
   title: Demandes de matériel
   ---
   - Ce document identifie les besoins en matières premières ou en articles spécifiques pour la production, l'achat ou la gestion de stocks (transfert entre entrepôts, approvisionnement, etc.).
@@ -88,7 +88,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: carbon:chart-combo-stacked
+  icon: i-carbon-chart-combo-stacked
   title: Outil de planification de la production
   ---
   - Cet outil est essentiel pour organiser et planifier la production en fonction des commandes client et des niveaux de stock disponibles. Il optimise la gestion des ressources en identifiant les matières premières et les capacités de production nécessaires pour une période donnée.
@@ -98,7 +98,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: bi:file-earmark-bar-graph
+  icon: i-bi-file-earmark-bar-graph
   title: Rapports de production
   ---
   - Dokos fournit une gamme de rapports standards comme le résumé des ordres de fabrication, des fiches d’opération et des analyses de production. Ces rapports permettent de suivre les performances, d’identifier les tendances, et de prendre des mesures correctives si nécessaire.

@@ -32,7 +32,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:person-edit-outline-sharp
+  icon: i-material-symbols-person-edit-outline-sharp
   title: Gestion des clients et des prospects
   ---
   - **Lead** : Gestion des leads pour identifier les potentiels clients.
@@ -52,7 +52,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: tabler:pig-money
+  icon: i-tabler-pig-money
   title: Gestion des prix et des remises
   ---
   - **Liste de prix** : Gestion des prix des articles, avec possibilité de multiple listes selon les clients ou régions.
@@ -64,7 +64,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: tabler:tax-euro
+  icon: i-tabler-tax-euro
   title: Conditions de paiement et gestion des taxes
   ---
   - **Conditions de paiement** : Définition des termes de paiement (paiement anticipé, crédits, etc.).
@@ -74,7 +74,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:local-shipping-rounded
+  icon: i-material-symbols-local-shipping-rounded
   title: Gestion des stocks en lien avec les ventes
   ---
   - **Stock et disponibilité des produits** : Suivi des niveaux de stock pour garantir la disponibilité des produits lors des ventes.
@@ -84,7 +84,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:chart-data-rounded
+  icon: i-material-symbols-chart-data-rounded
   title: Rapports et analyses
   ---
   - **Rapports de vente** : Génération de rapports sur les performances de vente, les clients, les produits les plus vendus, etc.
@@ -94,7 +94,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: hugeicons:workflow-square-03
+  icon: i-hugeicons-workflow-square-03
   title: Personnalisations et Automatisations
   ---
   - **Workflows** : Automatisation du flux de travail pour valider, approuver ou notifier les parties prenantes.

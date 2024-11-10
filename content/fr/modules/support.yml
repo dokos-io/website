@@ -76,15 +76,15 @@ bottom_section:
   cards:
     - title: Facile à installer
       description: Prenez le contrôle de votre service support en quelques minutes.
-      icon: tdesign:tools
+      icon: i-tdesign-tools
       class: col-span-4 row-span-3
     - title: Personnalisation complète
       description: Adaptez chaque aspect du module pour répondre aux besoins spécifiques de votre entreprise.
-      icon: ic:baseline-manage-accounts
+      icon: i-ic-baseline-manage-accounts
       class: col-span-4 row-span-3
     - title: Support technique dédié
       description: Nous sommes là pour vous aider à tirer le meilleur parti de notre solution.
-      icon: hugeicons:customer-support
+      icon: i-hugeicons-customer-support
       class: col-span-4 row-span-3
 plus_button:
   label: Découvrir toutes nos fonctionnalités

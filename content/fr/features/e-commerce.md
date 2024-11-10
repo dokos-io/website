@@ -43,7 +43,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: mdi:book-open-page-variant-outline
+  icon: i-mdi-book-open-page-variant-outline
   title: Catalogue de produits
   ---
   - Gestion et mise à jour votre catalogue de produits directement depuis le module e-commerce, avec des pages de listing pour afficher tous les articles disponibles​
@@ -52,7 +52,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: ri:shopping-basket-2-fill
+  icon: i-ri-shopping-basket-2-fill
   title: Panier d'achat et processus de commande
   ---
   - Possibilité pour les clients d'ajouter des produits au panier et finaliser leurs achats directement via le site.
@@ -62,7 +62,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:person-add-outline-rounded
+  icon: i-material-symbols-person-add-outline-rounded
   title: Formulaires Web et intégration des utilisateurs
   ---
   - Proposition de formulaires pour l’interaction avec les clients, comme les formulaires de contact ou de demande de devis.
@@ -72,7 +72,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: icon-park-solid:seo
+  icon: i-icon-park-solid-seo
   title: Gestion des blogs et SEO
   ---
   - Possibilité de publier des articles de blog pour renforcer la relation avec vos clients.
@@ -82,7 +82,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:design-services-rounded
+  icon: i-material-symbols-design-services-rounded
   title: Personnalisation du design
   ---
   - Possibilité de personnaliser le thème de votre site e-commerce (couleurs, polices, logos, etc.)

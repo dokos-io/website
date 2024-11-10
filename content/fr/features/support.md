@@ -32,7 +32,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: tabler:ticket
+  icon: i-tabler-ticket
   title: Gestion des Tickets de Support
   ---
   - **Création de tickets** : Les demandes de support peuvent être créées manuellement ou automatiquement à partir d'emails ou de formulaires web. Cela permet de centraliser toutes les requêtes des clients.
@@ -43,7 +43,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: ph:handshake-bold
+  icon: i-ph-handshake-bold
   title: Accord de Niveau de Service (SLA)
   ---
   - **Définition des SLAs** : Permet de définir des délais de réponse et de résolution en fonction de la priorité des tickets, assurant un suivi précis des engagements envers les clients.
@@ -58,7 +58,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: material-symbols:screen-search-desktop-outline-rounded
+  icon: i-material-symbols-screen-search-desktop-outline-rounded
   title: Portail Client
   ---
   - **Suivi en temps réel** : Les clients peuvent suivre leurs tickets, consulter les réponses et même ouvrir des tickets directement via un portail en ligne.
@@ -68,7 +68,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: mdi:folder-arrow-left-right-outline
+  icon: i-mdi-folder-arrow-left-right-outline
   title: Automatisation des Assignations
   ---
   - **Règles d'attribution** : Des règles automatiques (comme l'attribution en tour de rôle) permettent d'assigner les tickets aux membres de l'équipe de support de manière équilibrée, réduisant le besoin d'intervention manuelle.
@@ -77,7 +77,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: tdesign:tools
+  icon: i-tdesign-tools
   title: Gestion des Visites de Maintenance
   ---
   - **Planification** : Planifie et enregistre les visites de maintenance pour les produits couverts par des garanties ou des contrats de service.
@@ -87,7 +87,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: fluent:news-24-regular
+  icon: i-fluent-news-24-regular
   title: Base de Connaissances
   ---
   - **Rédaction d'articles** : Crée des articles d'aide et des FAQ pour réduire le nombre de tickets sur des sujets répétitifs. Cela permet aux équipes de se concentrer sur les problèmes plus complexes.

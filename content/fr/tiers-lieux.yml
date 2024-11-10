@@ -61,16 +61,16 @@ sections:
     features:
       - name: "Facturation et abonnements"
         description: "Automatisez vos processus de facturation et d'abonnement. Avec Dokos, gérez facilement les abonnements mensuels de vos membres, créez des devis et facturez des services ponctuels. Tout est centralisé, pour une gestion sans effort."
-        icon: ri:pages-fill
+        icon: i-ri-pages-fill
       - name: "Paiements en ligne"
         description: "Proposez à vos utilisateurs de payer en ligne via Stripe ou GoCardless, pour des transactions rapides et sécurisées. Vous pouvez automatiser les paiements récurrents et offrir à vos membres une expérience sans friction."
-        icon: fluent:payment-16-filled
+        icon: i-fluent-payment-16-filled
       - name: "Comptabilité intégrée"
         description: "Pilotez l'ensemble de la comptabilité de votre tiers-lieu depuis la même plateforme, sans avoir besoin d'outils supplémentaires. Dokos s'occupe de tout, de la facturation à la gestion des finances, vous permettant de rester concentré sur le développement de votre communauté."
-        icon: material-symbols:balance
+        icon: i-material-symbols-balance
       - name: "Une solution modulable et personnalisable"
         description: "Dokos est conçu pour évoluer avec vous. Multisociété, il vous permet de gérer plusieurs lieux à partir d'une seule plateforme. Hautement personnalisable, vous pouvez ajuster Dokos à votre image, en ajoutant votre logo et en modifiant les documents ou champs existants selon vos besoins, et tout cela sans avoir à coder."
-        icon: tabler:drag-drop
+        icon: i-tabler-drag-drop
 
   - title: "Offrez un expérience fluide et optimisez l'occupation de vos ressources"
     description: "Avec Dokos, la gestion de vos espaces n'a jamais été aussi simple. Que vous proposiez des salles de réunion, des machines ou du matériel, vos utilisateurs peuvent réserver en toute autonomie, directement en ligne. Un système transparent, qui optimise l'occupation de vos ressources et offre à vos membres une expérience fluide."
@@ -80,16 +80,16 @@ sections:
     features:
       - name: "Gestion des salles de réunion"
         description: "Laissez vos utilisateurs réserver leurs salles en toute autonomie via une interface intuitive."
-        icon: material-symbols-light:add-home-work-outline-rounded
+        icon: i-material-symbols-light-add-home-work-outline-rounded
       - name: "Réservation de machines et matériel"
         description: "Optimisez l'utilisation de vos équipements grâce à notre système de réservation en ligne."
-        icon: material-symbols:precision-manufacturing-rounded
+        icon: i-material-symbols-precision-manufacturing-rounded
       - name: "Co-working et tickets à la journée"
         description: "Proposez des tickets pour des accès ponctuels à vos espaces co-working, et automatisez le processus d'achat"
-        icon: tabler:ticket
+        icon: i-tabler-ticket
       - name: "Intégration avec Google Agenda"
         description: "Grâce à la synchronisation bidirectionnelle avec Google Agenda, toutes vos réservations s'actualisent en temps réel dans vos calendriers. Plus de confusion, plus d'erreurs : votre planning est toujours à jour."
-        icon: carbon:logo-google
+        icon: i-carbon-logo-google
   
   - title: "Créez et personnalisez votre site web"
     description: "Avec Dokos, vous pouvez créer un site web entièrement intégré à votre gestion. Que ce soit pour permettre la réservation en ligne ou la vente d'abonnements, votre site devient un point d'accès unique pour vos utilisateurs. Profitez également d'un portail dédié, où vos membres peuvent consulter leurs factures, gérer leurs réservations et accéder à des documents."
@@ -99,10 +99,10 @@ sections:
     features:
       - name: "Portail utilisateurs"
         description: "Offrez à vos utilisateurs un espace personnel sécurisé pour suivre leurs réservations et accéder à leurs documents."
-        icon: material-symbols:settings-account-box-rounded
+        icon: i-material-symbols-settings-account-box-rounded
       - name: "Fonctionnalités e-commerce"
         description: "Permettez à vos utilisateurs de réserver des salles ou d'acheter des abonnements en ligne directement depuis votre site."
-        icon: material-symbols:add-shopping-cart-outline-rounded
+        icon: i-material-symbols-add-shopping-cart-outline-rounded
 
   - title: "Entrez au sein de notre communauté, contribuez au commun, "
     description: "En rejoignant Dokos, vous faites partie d'une communauté ouverte où chacun peut contribuer. Que ce soit en participant au développement, en partageant des idées ou en finançant de nouvelles fonctionnalités, vous aidez à construire un outil au service de tous les tiers-lieux."
