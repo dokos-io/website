@@ -147,11 +147,11 @@ useSeoMeta({
                 }"
             >
                 <template #title>
-                    <span v-html="module.hero.title"></span>
+                    <span v-html="module.colored_section.title"></span>
                 </template>
 
                 <template #description>
-                    <span v-html="module.hero.description"></span>
+                    <span v-html="module.colored_section.description"></span>
                 </template>
 
                 <template #headline>
