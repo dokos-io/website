@@ -97,7 +97,7 @@ features:
       color: sky
   - title: Défendez un approvisionnement responsable
     description: <ui><li>Dokos soutient une gestion des achats responsable.<br><li> Mettez en place des critères spécifiques pour vos fournisseurs et suivez vos objectifs d’approvisionnement durable à travers un suivi rigoureux et structuré.</li></ui>
-    video: "/achat/tableau-de-bord-achat.mp4"
+    video: "/image/achat/tableau-de-bord-achat.mp4"
     image_bg_color: bg-teal-500
     align: left
     badge:
