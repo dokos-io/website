@@ -47,6 +47,7 @@ colored_section:
   title: "Dokos & les Tiers-Lieux : une aventure collaborative et engagée depuis 2018"
   description: "Né sous l'impulsion de la Compagnie des Tiers-Lieux, notre projet s'est initialement construit autour d'ERPNext avant de devenir Dokos. Notre objectif est clair : offrir un outil de gestion complet capable de répondre aux besoins complexes des tiers-lieux, comme la gestion multi-société, tout en respectant les valeurs de l'économie sociale et solidaire (ESS).<br>Dokos est bien plus qu'un simple logiciel, c'est un projet commun.<br> Des tiers-lieux se sont unis pour co-construire ce module, faisant émerger une plateforme adaptée à leurs besoins uniques. Ensemble, nous faisons grandir Dokos, toujours dans l'esprit pur de l'open-source, où chaque contribution renforce l'intelligence collective.<br> Pour ceux qui découvrent Dokos, rejoignez un écosystème qui valorise la coopération, l'agilité et la transparence.<br> A nos utilisateurs,  merci de faire partie de cette aventure qui, jour après jour, redéfinit la gestion collaborative des tiers-lieux. Continuons à innover et à bâtir ensemble, avec énergie et passion."
   align: left
+  image: "image/tiers-lieux/adopte-un-commun.png"
   links:
     - label: "Débutez l'aventure"
       to: https://cloud.dokos.io

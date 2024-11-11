@@ -28,7 +28,7 @@ hero:
 colored_section:
   title: Adoptez une solution qui allie puissance et éthique
   description: Que vous soyez dans le conseil, l’informatique, le transport, ou tout autre secteur de services, Dokos est la solution open-source qui répond à tous vos besoins. Grâce à une plateforme unifiée et personnalisable, vous pouvez gérer vos clients, vos projets, vos finances et bien plus encore, en un seul endroit.
-  image: "image/projet/tableau-de-bord-projet.svg"
+  image: "image/projet/recapitulatif-projets.png"
   align: left
   links:
     - label: Débutez l'aventure

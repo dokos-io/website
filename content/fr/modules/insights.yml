@@ -83,9 +83,10 @@ carousel:
      description: "En tant que partenaires, nous assurons un support continu pour garantir que vous tiriez le meilleur parti de cet outil."
 
 bottom_cta:
-  title: "Prenez le contrôle de vos données maintenant !  "
+  title: "Prenez le contrôle de vos données maintenant !"
   description: ""
   card: true
+  class: bg-amber-600/10 dark:bg-amber-800/10
   links:
     - label: Créez son premier rapport
       size: md
