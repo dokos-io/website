@@ -12,33 +12,20 @@ Le présent site web est édité par :
 **DOKOS SAS**
 
 7B Allée Neuve
-
 54520 Laxou France
-
 RCS : 824 710 776 R.C.S Nancy
-
 N° TVA Intracommunautaire : FR94824710776
 
 - Représentant légal : Charles-Henri Decultot, Président
 - Directeur de la publication du site web : Charles-Henri Decultot
-- Le prestataire assurant l'hébergement du site est : **Netlify** 
-
-[https://www.netlify.com/ ](https://www.netlify.com/%C2%A0)
-
-44 Montgomery Street
-
-Suite 300
-
-94104 San Francisco
-
-United States
+- Le prestataire assurant l'hébergement du site est : **Vercel Inc.** 
 
 Le contenu de ce site est régi par la législation en vigueur en France. L'utilisateur accepte la compétence exclusive des tribunaux français pour tout différend concernant le contenu ou l'utilisation du site, que ce soit en première instance ou en appel.
 
 ## 2. Conditions Générales de Vente et de Service
 
-- [Conditions générales de Vente](/en)
-- [Conditions générales d’Hébergement](/en)
+- [Conditions générales de Vente](/fr/termsandconditions)
+- [Conditions générales d’Hébergement](/fr/hostingconditions)
 
 ## **3.** Responsabilités
 
@@ -76,6 +63,6 @@ Conformément au Règlement Général sur la Protection des Données (RGPD) et �
 
 Il est possible en cas de non-respect d’ouvrir une réclamation auprès de la CNIL. 
 
-Veuillez trouver tous les détails de la gestion des données personnelles dans [notre politique de confidentialité.](/en) 
+Veuillez trouver tous les détails de la gestion des données personnelles dans [notre politique de confidentialité.](/fr/securityandprivacy) 
 
 Vous pouvez exercer ces droits en contactant notre personne en charge de la protection des Données Charles-henri Decultot par e-mail à l’adresse <chdecultot@dokos.io> ou par courrier postal à l’attention de Charles-Henri Decultot, 7 bis Allée Neuve, 54520 LAXOU, en fournissant une pièce d’identité pour justifier votre demande. Un délai de réponse peut être d’un mois à compter de la date de réception.
