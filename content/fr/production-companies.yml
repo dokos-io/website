@@ -15,7 +15,7 @@ hero:
     - label: Commencez avce Dokos
       to: https://cloud.dokos.io
       size: xl
-      color: green
+      color: amber
       icon: i-heroicons-rocket-launch
       trailing: false
       target: _blank
@@ -30,13 +30,13 @@ hero:
 colored_section:
   title: "Une solution complète et flexible pour les entreprises de production"
   description: "Que vous soyez dans l'industrie, l'artisanat, l'agroalimentaire ou la fabrication, Dokos est la plateforme de gestion d'entreprise qui répond à vos besoins. Avec ses fonctionnalités spécialement conçues pour les processus de production, Dokos vous aide à planifier, gérer et optimiser vos opérations, tout en assurant une visibilité en temps réel sur vos stocks, coûts et marges."
-  video: /image/production/tableau-de-bord-production.mp4
+  video: "/image/production/tableau-de-bord-production.mp4"
   align: left
   links:
     - label: "Optimisez votre production"
       to: https://cloud.dokos.io
       size: xl
-      color: gray
+      color: amber
       icon: i-heroicons-rocket-launch
       trailing: false
       target: _blank
@@ -62,6 +62,7 @@ sections:
     align: left
   - title: "Contrôlez vos coûts et marges"
     description: "Enregistrez l’ensemble de vos coûts liés à la production et suivez vos marges grâce à des tableaux de bord intuitifs. Prenez des décisions éclairées pour améliorer votre rentabilité."
+    image: "image/production/production-marge.png"
     image_bg_color: "bg-teal-500"
     align: right
   - title: "Optimisez votre plannification"

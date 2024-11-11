@@ -30,6 +30,18 @@ hero:
 
 logos:
   title: Ils participent au développement de Dokos
+  image:
+    - image/tiers-lieux/anis.png
+    - image/tiers-lieux/baraka.jpg
+    - image/tiers-lieux/compagnie_tiers_lieux.svg
+    - image/tiers-lieux/coroutine.png
+    - image/tiers-lieux/Ecocentre_logo.png
+    - image/tiers-lieux/logo_bil.png
+    - image/tiers-lieux/logo_tropisme.png
+    - image/tiers-lieux/logo-appel-a-commun-des-tiers-lieux.png
+    - image/tiers-lieux/logo-fabrique-a-commun.png
+    - image/tiers-lieux/logo-la-plume-a-loup.jpg
+    -  image/tiers-lieux/opteos.png
 
 colored_section:
   title: "Dokos & les Tiers-Lieux : une aventure collaborative et engagée depuis 2018"
