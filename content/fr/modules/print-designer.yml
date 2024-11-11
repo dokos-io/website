@@ -38,7 +38,7 @@ colored_section:
   align: left
   image: "image/print-designer/main-interface.png"
 
-features:
+main_features:
   - title: "Personnalisez sans limite"
     description: "Avec une interface simple et intuitive, vous pouvez glisser-déposer des champs, réorganiser vos informations et créer des documents uniques en un clin d'œil. Que vous ayez besoin d'ajouter des logos, des sections spécifiques ou de dynamiser vos tableaux, tout est possible, sans effort."
     image: "image/print-designer/interface-personnalisable.png"

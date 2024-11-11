@@ -3,7 +3,7 @@ description: Tarifs d'accompagnement
 navigation.icon: i-heroicons-credit-card
 hero:
   title: Nos offres d'<span class="text-primary">accompagnement</span>
-  description: Vous souhaitez que nous hébergions votre site Dokos ? On est là pour vous aider.
+  description: Facilitez votre utilisation de dokos avec un accompagnement sur-mesure.
   align: center
 pricing_toggle:
   left: Entreprises
