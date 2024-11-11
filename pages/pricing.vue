@@ -30,7 +30,7 @@ defineOgImage({
 
 <template>
     <div v-if="page">
-        <UPageHero v-bind="page.hero">
+        <ULandingHero v-bind="page.hero" class="py-24 sm:py-32 md:py-40 pb-0 sm:pb-0 md:pb-0">
             <template #title>
                 <span v-html="page.hero.title" />
             </template>
@@ -39,8 +39,8 @@ defineOgImage({
                     <HomeTetris />
                 </ClientOnly>
             </template>
-        </UPageHero>
-        <ULandingSection class="pt-0 sm:pt-0" :links="page.links">
+        </ULandingHero>
+        <ULandingSection class="pt-0 sm:pt-0 md:pt-0" :links="page.links">
             <div class="mb-10">
                 <UPricingToggle
                     v-model="isNgo"

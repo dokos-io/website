@@ -34,7 +34,7 @@ useSeoMeta({
             :links="page.hero.links"
             orientation="vertical"
             :ui="{ base: 'relative z-[1]' }"
-            class="mb-[calc(var(--header-height)*2)]"
+            class="pb-0 sm:pb-0 md:pb-0"
         >
             <template #headline>
                 <UBadge
@@ -89,7 +89,7 @@ useSeoMeta({
             </template>
         </ULandingHero>
 
-        <ULandingSection>
+        <ULandingSection class="pt-0 sm:pt-0 md:pt-0">
             <UCard
                 :ui="{
                     body: {
@@ -227,7 +227,7 @@ useSeoMeta({
         <ULandingSection>
             <ULandingCTA
                 v-bind="page.cta"
-                class="bg-gray-100/50 dark:bg-gray-800/50"
+                class="bg-amber-100/50 dark:bg-amber-800/50"
             />
         </ULandingSection>
     </div>

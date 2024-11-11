@@ -44,7 +44,7 @@ defineOgImage({
                 </template>
             </ULandingHero>
 
-            <ULandingSection class="py-12 sm:py-24 md:py-32">
+            <ULandingSection class="py-6 sm:py-12 md:py-16">
                 <UPageGrid
                     :ui="{
                         wrapper:
