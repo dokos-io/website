@@ -103,7 +103,7 @@ useSeoMeta({
                         </UTooltip>
                     </div>
                     <ClientOnly>
-                        <HomeTetris/>
+                        <HomeTetris />
                     </ClientOnly>
                 </template>
             </ULandingHero>
@@ -113,11 +113,17 @@ useSeoMeta({
                 v-if="module.bridge_before_colored_section"
             >
                 <template #title>
-                    <span v-html="module.bridge_before_colored_section.title"></span>
+                    <span
+                        v-html="module.bridge_before_colored_section.title"
+                    ></span>
                 </template>
 
                 <template #description>
-                    <span v-html="module.bridge_before_colored_section.description"></span>
+                    <span
+                        v-html="
+                            module.bridge_before_colored_section.description
+                        "
+                    ></span>
                 </template>
             </ULandingSection>
 
@@ -247,26 +253,29 @@ useSeoMeta({
                         <span v-html="section.description" />
                     </template>
                     <div
-                        class="py-8 rounded-lg"
+                        class="pt-24 pb-12 rounded-lg"
                         :class="[
                             section.image_bg_color,
-                            section.align == 'left' ? 'pl-8' : 'pr-8',
+                            section.align == 'left' ? 'pl-8 mr-7' : 'pr-8 ml-7',
                         ]"
-                        v-if="section.image || section.video"
                     >
                         <NuxtImg
                             :src="section.image"
-                            class="shadow-lg"
-                            :class="
-                                section.align == 'left'
-                                    ? 'rounded-s-lg'
-                                    : 'rounded-e-lg'
-                            "
+                            class="w-full rounded-md bg-white/75"
+                            placeholder
                             v-if="section.image"
+                            :class="[
+                                section.align == 'left' ? 'ml-7' : 'mr-7',
+                                section.image_bg_color ? 'shadow-2xl' : '',
+                            ]"
+                            :style="
+                                section.align == 'right' &&
+                                'margin-left: -15px;'
+                            "
                             loading="lazy"
                         />
                         <video
-                            class="w-full shadow-xl rounded bg-white/75"
+                            class="w-full rounded-md bg-white/75"
                             v-else-if="section.video"
                             autoplay
                             loop
@@ -281,8 +290,8 @@ useSeoMeta({
                         >
                             <source :src="section.video" type="video/mp4" />
                         </video>
+                        <Placeholder v-else />
                     </div>
-                    <Placeholder v-else />
                 </ULandingSection>
             </div>
 
@@ -296,22 +305,27 @@ useSeoMeta({
                 </template>
             </ULandingSection>
 
-            <ULandingSection :title="module.carousel.title" v-if="module.carousel">
+            <ULandingSection
+                :title="module.carousel.title"
+                v-if="module.carousel"
+            >
                 <UCarousel
                     v-slot="{ item }"
                     :items="module.carousel.cards"
                     :ui="{
-                                item: 'w-full',
-                                container: 'rounded-3xl bg-sky-50 dark:bg-sky-600',
-                                indicators: {
-                                    active: 'bg-green-500 dark:bg-green-400',
-                                    inactive: 'bg-stone-300 dark:bg-stone-900'
-                                }
-                            }"
+                        item: 'w-full',
+                        container: 'rounded-3xl bg-sky-50 dark:bg-sky-600',
+                        indicators: {
+                            active: 'bg-green-500 dark:bg-green-400',
+                            inactive: 'bg-stone-300 dark:bg-stone-900',
+                        },
+                    }"
                     indicators
                 >
                     <div class="text-center mx-auto p-10">
-                        <h2 class="font-bold text-xl"><span v-html="item.title"></span></h2>
+                        <h2 class="font-bold text-xl">
+                            <span v-html="item.title"></span>
+                        </h2>
                         <p class="pb-8">
                             <span v-html="item.description"></span>
                         </p>
