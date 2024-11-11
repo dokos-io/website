@@ -85,7 +85,6 @@ defineOgImage({
                                 v-if="page.hero.image"
                                 loading="lazy"
                             />
-                            <Placeholder v-else />
                         </template>
                     </ULandingHero>
 

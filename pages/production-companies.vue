@@ -189,22 +189,36 @@ defineOgImage({
                 class="py-8 rounded-lg"
                 :class="[
                     section.image_bg_color,
-                    section.align == 'left' ? 'pl-8' : 'pr-8',
+                    section.align == 'left' ? 'pl-8 mr-7' : 'pr-8 ml-7',
                 ]"
-                v-if="section.image"
             >
                 <NuxtImg
                     :src="section.image"
-                    class="shadow-lg"
-                    :class="
-                        section.align == 'left'
-                            ? 'rounded-s-lg'
-                            : 'rounded-e-lg'
-                    "
+                    class="w-full rounded-md bg-white/75"
+                    placeholder
+                    v-if="section.image"
+                    :class="[
+                        section.align == 'left' ? 'ml-7' : 'mr-7',
+                        section.image_bg_color ? 'shadow-2xl' : '',
+                    ]"
+                    :style="section.align == 'right' && 'margin-left: -15px;'"
                     loading="lazy"
                 />
+                <video
+                    class="w-full rounded-md bg-white/75"
+                    v-else-if="section.video"
+                    autoplay
+                    loop
+                    :class="[
+                        section.align == 'left' ? 'ml-7' : 'mr-7',
+                        section.image_bg_color ? 'shadow-2xl' : '',
+                    ]"
+                    :style="section.align == 'right' && 'margin-left: -15px;'"
+                >
+                    <source :src="section.video" type="video/mp4" />
+                </video>
+                <Placeholder v-else />
             </div>
-            <Placeholder v-else />
         </ULandingSection>
 
         <ULandingSection v-if="page.carousel">
