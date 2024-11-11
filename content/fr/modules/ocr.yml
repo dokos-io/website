@@ -52,6 +52,8 @@ features:
   - title: Gardez le contrôle total de vos données
     description: "Chez Dokos, nous mettons l’accent sur la transparence et la sécurité de vos données. Vous avez la liberté de personnaliser chaque aspect du logiciel tout en profitant d’une sécurité garantie. Vos informations sont protégées à chaque étape. <ul><li><span class='font-bold'>Données supprimées après traitement :</span> Toutes les données extraites via Amazon Textract sont effacées immédiatement après traitement.</li><li><span class='font-bold'>Flexibilité grâce à nos API ouvertes :</span> Intégrez facilement Dokos avec vos systèmes ou solutions OCR existants pour une gestion des données sans contraintes."
     align: left
+    image: "image/ocr/donnees-ocr.png"
+    image_bg_color: bg-teal-500
     badge:
       label: Intégrations
       color: sky

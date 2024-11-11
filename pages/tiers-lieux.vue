@@ -83,6 +83,7 @@ defineOgImage({
                                 :src="'/home/' + page.hero.image"
                                 class="w-full rounded-md bg-white/75"
                                 v-if="page.hero.image"
+                                loading="lazy"
                             />
                             <Placeholder v-else />
                         </template>
@@ -104,6 +105,7 @@ defineOgImage({
                                 :key="image"
                                 :src="image"
                                 class="max-h-20"
+                                loading="lazy"
                             />
                         </ULandingLogos>
                     </ULandingSection>
@@ -173,6 +175,7 @@ defineOgImage({
                                 :src="page.colored_section.image"
                                 class="shadow-lg rounded"
                                 v-if="page.colored_section.image"
+                                loading="lazy"
                             />
                             <video
                                 class="w-full rounded-md bg-white/75"
@@ -216,6 +219,7 @@ defineOgImage({
                                         ? 'rounded-s-lg'
                                         : 'rounded-e-lg'
                                 "
+                                loading="lazy"
                             />
                         </div>
                         <Placeholder v-else />

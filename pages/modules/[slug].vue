@@ -111,7 +111,15 @@ useSeoMeta({
             <ULandingSection
                 v-bind="module.bridge_before_colored_section"
                 v-if="module.bridge_before_colored_section"
-            />
+            >
+                <template #title>
+                    <span v-html="module.bridge_before_colored_section.title"></span>
+                </template>
+
+                <template #description>
+                    <span v-html="module.bridge_before_colored_section.description"></span>
+                </template>
+            </ULandingSection>
 
             <ULandingSection
                 v-bind="module.features_before_colored_section"
@@ -197,6 +205,7 @@ useSeoMeta({
                         :src="module.colored_section.image"
                         class="shadow-xl rounded"
                         v-if="module.colored_section.image"
+                        loading="lazy"
                     />
                     <video
                         class="w-full shadow-xl rounded bg-white/75"
@@ -254,6 +263,7 @@ useSeoMeta({
                                     : 'rounded-e-lg'
                             "
                             v-if="section.image"
+                            loading="lazy"
                         />
                         <video
                             class="w-full shadow-xl rounded bg-white/75"
@@ -276,7 +286,15 @@ useSeoMeta({
                 </ULandingSection>
             </div>
 
-            <ULandingSection v-bind="module.bridge" v-if="module.bridge" />
+            <ULandingSection v-bind="module.bridge" v-if="module.bridge">
+                <template #title>
+                    <span v-html="module.bridge.title"></span>
+                </template>
+
+                <template #description>
+                    <span v-html="module.bridge.description"></span>
+                </template>
+            </ULandingSection>
 
             <ULandingSection :title="module.carousel.title" v-if="module.carousel">
                 <UCarousel
@@ -371,6 +389,7 @@ useSeoMeta({
                             :style="
                                 feat.align == 'right' && 'margin-left: -15px;'
                             "
+                            loading="lazy"
                         />
                         <video
                             class="w-full rounded-md bg-white/75"
@@ -413,7 +432,15 @@ useSeoMeta({
                     v-bind="module.bottom_cta"
                     :class="module.bottom_cta.class"
                     v-if="module.bottom_cta"
-                />
+                >
+                    <template #title>
+                        <span v-html="module.bottom_cta.title"></span>
+                    </template>
+
+                    <template #description>
+                        <span v-html="module.bottom_cta.description"></span>
+                    </template>
+                </ULandingCTA>
             </UContainer>
         </UPageBody>
     </UPage>

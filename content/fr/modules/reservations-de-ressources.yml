@@ -42,9 +42,9 @@ features:
       color: sky
   - title: Une solution pour tous vos besoins
     description: Que vous soyez un espace de coworking, un tiers-lieu ou une organisation disposant de plusieurs ressources à gérer, Dokos s’adapte à vos besoins avec des fonctionnalités configurables et évolutives. Proposez des abonnements, gérez des tickets de réservation ponctuels et maintenez une vue d’ensemble sur toutes vos ressources grâce à une interface simple et intuitive.
-    image: ""
+    image: "image/reservation-ressource/article-reservable-site-web.png"
     image_bg_color: bg-teal-500
-    align: center
+    align: right
     badge:
       label: Réservation
       color: sky

@@ -40,16 +40,17 @@ hero:
 bridge_before_colored_section: 
   title: "Explorez vos données en profondeur"
   description: "Créez simplement des tableaux de bord interactifs, générez en quelques clics des rapports personnalisés ou visualisez vos données en temps réel. Grâce à l'interface intuitive et flexible d'Insights, vous pouvez explorer vos données plus en profondeur et adapter les analyses à vos besoins spécifiques, sans avoir à vous soucier de coûts supplémentaires"
-features_before_colored_section.cards:
-  - title: Des rapports sur mesure 
-    icon: i-material-symbols-bar-chart-4-bars-rounded
-    class: "col-span-4 row-span-3"
-  - title: Une visualisation intuitive
-    icon: i-material-symbols-pivot-table-chart-rounded
-    class: "col-span-4 row-span-3"
-  - title: Un suivi en temps réel
-    icon: i-material-symbols- alarm-on-outline-rounded
-    class: "col-span-4 row-span-3"
+features_before_colored_section:
+  cards:
+    - title: Des rapports sur mesure
+      icon: i-material-symbols-bar-chart-4-bars-rounded
+      class: "col-span-4 row-span-3"
+    - title: Une visualisation intuitive
+      icon: i-material-symbols-pivot-table-chart-rounded
+      class: "col-span-4 row-span-3"
+    - title: Un suivi en temps réel
+      icon: i-material-symbols- alarm-on-outline-rounded
+      class: "col-span-4 row-span-3"
 
 colored_section: 
   title: Créez, analysez et innovez ! 
@@ -71,10 +72,6 @@ colored_section:
       target: _blank
       icon: i-heroicons-outline-arrow-right
       trailing: true
-  
-bridge:
-  title: Bénéficiez d'une analyse de données de pointe
-  align: center
 
 carousel: 
   title: "Bénéficiez d'une analyse de données de pointe"
@@ -87,7 +84,7 @@ carousel:
      description: "En tant que partenaires, nous assurons un support continu pour garantir que vous tiriez le meilleur parti de cet outil."
 
 bottom_cta:
-  title: "Prenez le contrôle de vos données maintenant !"
+  title: "Prenez le contrôle de vos données maintenant !  "
   description: ""
   card: true
   links:

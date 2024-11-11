@@ -92,7 +92,7 @@ features:
       color: sky
   - title: Des rapports & Analyses en temps réel
     description: Générez des rapports détaillés et actualisés pour la gestion des présences, les soldes de congés et les données d'évaluation.
-    image: ""
+    image: "image/module-rh/tableau-bord-presences.png"
     image_bg_color: "bg-teal-500"
     align: right
     badge:

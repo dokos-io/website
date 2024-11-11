@@ -77,6 +77,7 @@ defineOgImage({
                     :src="'/home/' + page.hero.image"
                     class="w-full rounded-md bg-white/75"
                     v-if="page.hero.image"
+                    loading="lazy"
                 />
                 <ClientOnly>
                     <HomeTetris />
@@ -101,6 +102,7 @@ defineOgImage({
                     :key="image"
                     :src="image"
                     class="max-h-20"
+                    loading="lazy"
                 />
             </ULandingLogos>
         </ULandingSection>
@@ -155,6 +157,7 @@ defineOgImage({
                     :src="page.colored_section.image"
                     class="shadow-lg rounded"
                     v-if="page.colored_section.image"
+                    loading="lazy"
                 />
                 <video
                     class="w-full rounded-md bg-white/75"
@@ -198,6 +201,7 @@ defineOgImage({
                         section.image_bg_color ? 'shadow-2xl' : '',
                     ]"
                     :style="section.align == 'right' && 'margin-left: -15px;'"
+                    loading="lazy"
                 />
             </div>
             <Placeholder v-else />

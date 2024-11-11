@@ -79,6 +79,8 @@ useSeoMeta({
                 <NuxtImg
                     :src="'/home/' + page.hero.image"
                     class="w-full rounded-md bg-white/75"
+                    loading="lazy"
+                    placeholder
                 />
 
                 <ClientOnly>
@@ -150,6 +152,7 @@ useSeoMeta({
                         section.image_bg_color ? 'shadow-2xl' : '',
                     ]"
                     :style="section.align == 'right' && 'margin-left: -15px;'"
+                    loading="lazy"
                 />
             </div>
             <Placeholder v-else />
@@ -171,6 +174,7 @@ useSeoMeta({
                     :key="image"
                     :src="image"
                     class="max-h-20"
+                    loading="lazy"
                 />
             </ULandingLogos>
         </ULandingSection>
@@ -213,6 +217,7 @@ useSeoMeta({
                         <NuxtImg
                             :src="'/frappe/' + item.icon"
                             class="max-h-10"
+                            loading="lazy"
                         />
                     </template>
                 </ULandingCard>

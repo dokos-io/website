@@ -67,7 +67,7 @@ features:
       color: sky
   - title: Des inventaires, audit et évaluation du stock
     description: "Dokos vous aide à suivre l’inventaire en temps réel tout en simplifiant les audits et la valorisation du stock. <ul><li><span class='font-bold'>Audit et comptage cyclique :</span> Planifiez et réalisez des inventaires périodiques pour garantir que vos données de stock sont toujours exactes.</li><li><span class='font-bold'> Valorisation du stock :</span> Utilisez la méthode d’évaluation adaptée à votre entreprise (PEPS, LIFO, coût moyen). </li><li><span class='font-bold'>Gestion des articles périssables :</span> Suivez les dates de péremption pour minimiser les pertes liées aux produits expirés. "
-    image: "image/stock/cinq-valeur-du-stock.png"
+    image: "image/stock/recapitulatif-stocks.png"
     image_bg_color: "bg-teal-500"
     align: left
     badge:
@@ -75,7 +75,7 @@ features:
       color: sky
   - title: Des rapports et une visibilité en temps réel
     description: "Prenez des décisions éclairées grâce à des rapports détaillés et des indicateurs de performance précis.<ul><li><span class='font-bold'> Rapport d’évaluation du stock :</span> Suivez la valeur de vos stocks avec des rapports instantanés.</li><li><span class='font-bold'> Rapport de stock minimal :</span> Identifiez rapidement les articles qui nécessitent un réapprovisionnement.</li><li><span class='font-bold'>Analyse des mouvements de stock :</span> Obtenez des rapports détaillés sur les entrées, sorties et transferts d’articles."
-    image: ""
+    image: "image/stock/espace-travail-stock.png"
     image_bg_color: "bg-teal-500"
     align: right
     badge:
