@@ -66,7 +66,7 @@ sections:
     id: platform
     description: <strong>Investissez dans un ERP qui accompagne toutes les phases de croissance de votre entreprise.</strong><br><br> Avec Dokos, vous choisissez une plateforme flexible et évolutive, conçue pour accompagner votre entreprise à chaque étape de sa croissance. Du sur-mesure à grande échelle, sans compromettre la stabilité, ni la sécurité.</br></br>
     image: image/compte-de-resultat.png
-    image_bg_color: bg-teal-600
+    image_bg_color: bg-teal-500
     align: left
     features:
       - name: Robuste et scalable
@@ -96,7 +96,7 @@ sections:
   - title: Gardez le <span class="text-primary">contrôle</span>
     description: <strong>Soyez certain de ne pas être enfermé avec un éditeur ou un prestataire de service.</strong><br><br>Chez Dokos, vous avez toujours le contrôle de votre infrastructure et de vos données. Vous êtes libres de vos choix d’hébergement et de gestion, pour une indépendance totale.</br></br>
     image: '/image/nuage-dashboard-dark.png'
-    image_bg_color: bg-teal-600 
+    image_bg_color: bg-teal-500 
     id: control
     align: right
     features:
@@ -128,7 +128,7 @@ sections:
     description: <strong>Profitez d'un support sur mesure et entièrement adapté à vos besoins.</strong><br><br>Parce que chaque entreprise est unique, notre accompagnement s’adapte à vos spécificités et priorités. Nous mettons un point d’honneur à créer des solutions sur mesure, avec un coût juste et maîtrisé.</br></br>
     image: image/dokos-communaute.png
     id: control
-    image_bg_color: bg-sky-600
+    image_bg_color: bg-teal-500
     align: left
     features:
       - name: Un partenariat de confiance
@@ -143,7 +143,7 @@ sections:
     links:
       - label: Dokos Cloud
         to: https://dokos.cloud
-        color: sky
+        color: teal
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
         size: md
@@ -158,7 +158,7 @@ sections:
   - title: Une <span class="text-primary">version française</span> d'ERPNext
     description: <strong>Dokos, une adaptation locale pensée pour les entreprises françaises et européennes.</strong><br><br>Dokos est un <i>fork</i> d'ERPNext, spécialement conçu pour répondre aux besoins des entreprises européennes. Il combine les fonctionnalités avancées d’ERPNext avec toutes les conditions de conformité à mettre en place pour les utilisateurs français.
     image: /home/dokos-dashboard.png
-    image_bg_color: bg-sky-600
+    image_bg_color: bg-skyteal-500
     id: enterprise
     align: right
     features:
@@ -174,7 +174,7 @@ sections:
   - title: La <span class="text-primary">force</span> de l'open-source
     description: <strong>Dokos est et restera un logiciel libre et open-source.</strong><br><br>Avec Dokos, vous avez la liberté totale de choisir votre fournisseur, sans dépendance envers un éditeur spécifique. Utilisez un ERP libre et évolutif, sans frais de licence, avec des options de service si vous avez besoin d’accompagnement.
     image: image/dokos-gitlab.png
-    image_bg_color: bg-sky-600
+    image_bg_color: bg-teal-500
     id: opensource
     align: left
     features:
@@ -243,7 +243,7 @@ modules:
   links:
     - label: Voir tous les modules
       to: "/modules"
-      color: green
+      color: teal
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
       size: md
@@ -315,7 +315,7 @@ cta:
   links:
     - label: Essayez Dokos maintenant
       size: xl
-      color: sky
+      color: amber
       to: https://doc.dokos.io
       target: _blank
     - label: Documentation
