@@ -39,32 +39,34 @@ hero:
 colored_section : 
   title: "Révolutionnez votre quotidien grâce à l'AI"
   description: "RAVEN est le module intelligent intégré à Dokos qui transforme votre manière de travailler. Grâce à son intelligence artificielle avancée, vous pouvez automatiser des tâches complexes, extraire des données facilement, et collaborer plus efficacement au sein de votre entreprise."
+  image: "image/raven/raven-exemple.png"
   align: left
 
 features:
   - title: "Créez des automatisations intelligentes"
     description: "Créez vos propres bots sans aucune ligne de code. Raven vous aide à automatiser des processus métier complexes tout en s'adaptant au contexte de chaque tâche."
+    image: "image/raven/raven-exemple.png"
+    image_bg_color: bg-teal-500
     align: right
   - title: "Fluidifiez votre quotidien avec l'intégration Dokos"
     description: "Partagez, imprimez et travaillez sur vos documents directement depuis la messagerie Raven, sans quitter votre interface Dokos."
+    image: "image/raven/raven-exemple.png"
+    image_bg_color: bg-teal-500
     align: left
   - title: "Optimisez votre collaboration"
     description: "Discutez, partagez des fichiers et suivez vos conversations dans des threads organisés pour ne jamais perdre le fil."
+    image: "image/projet/communication-raven.png"
+    image_bg_color: bg-teal-500
     align: right
-
-bridge: 
-  title: "Confiance et transparence"
-  description: "Raven est une solution open-source, vous garantissant une transparence totale et une liberté d'utilisation sans contrainte. Rejoignez la communauté Raven aujourd'hui et transformez votre gestion d'entreprise avec une solution pensée pour l'efficacité et la simplicité."
-
 
 bottom_cta:
   title: "Prêt à révolutionner votre quotidien ?"
-  description: "Que vous souhaitiez rationaliser vos processus internes, augmenter votre efficacité ou simplement faciliter l'accès à l'information pour vos équipes, Frappe Wiki est l'outil qu'il vous faut. Chez Dokos, nous sommes impatients de vous aider à en exploiter tout le potentiel.<br>Lancez-vous dès aujourd'hui !</br>"
+  description: "Raven est une solution open-source, vous garantissant une transparence totale et une liberté d'utilisation sans contrainte. Rejoignez la communauté Raven aujourd'hui et transformez votre gestion d'entreprise avec une solution pensée pour l'efficacité et la simplicité."
   card: true
   links:
     - label: Se lancer avec Raven
       size: md
-      color: gray
+      color: amber
       to: https://cloud.dokos.io
       target: _blank
     - label: En savoir plus sur Raven

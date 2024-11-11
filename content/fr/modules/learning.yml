@@ -24,7 +24,7 @@ hero:
     target: _blank
     color: green
   links:
-    - label: Mettre son premier cours en ligne
+    - label: Mettez votre premier cours en ligne
       to: https://cloud.dokos.io
       size: xl
       color: amber
@@ -51,7 +51,7 @@ colored_section:
     target: _blank
     color: orange
 
-main_features:
+features:
   - title: Créez une expérience d'apprentissage personnalisée
     description: "Donnez à vos clients accès à des formations sur mesure. Créez des parcours d'apprentissage adaptés à leurs besoins spécifiques, qu'ils soient nouveaux utilisateurs de vos services ou expérimentés. En leur fournissant des contenus pédagogiques de qualité, vous renforcez leur maîtrise de vos produits et améliorez leur satisfaction à long terme."
     image: "image/learning/learning-cours.png"

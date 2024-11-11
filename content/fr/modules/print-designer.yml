@@ -37,16 +37,17 @@ colored_section:
   description: "Frappe Print Designer vous permet de créer des formats d'impression personnalisés pour tous vos documents professionnels – factures, devis, bons de commande, rapports et bien plus – le tout sans écrire une seule ligne de code. Que vous soyez une petite entreprise en plein essor ou une grande organisation cherchant à renforcer son identité visuelle, Frappe Print Designer vous offre une flexibilité inégalée.<br>Et le meilleur ? Cet outil est accessible à tous les utilisateurs Dokos, sans frais supplémentaires."
   align: left
   image: "image/print-designer/main-interface.png"
-  image_bg_color: bg-sky-500
 
 features:
   - title: "Personnalisez sans limite"
     description: "Avec une interface simple et intuitive, vous pouvez glisser-déposer des champs, réorganiser vos informations et créer des documents uniques en un clin d'œil. Que vous ayez besoin d'ajouter des logos, des sections spécifiques ou de dynamiser vos tableaux, tout est possible, sans effort."
     image: "image/print-designer/interface-personnalisable.png"
+    image_bg_color: bg-teal-500
     align: right
   - title: "Créez un design qui vous ressemble "
     description: "Affirmez votre identité visuelle grâce à la personnalisation des polices, couleurs, et marges. Pour ceux qui le souhaite, vous pouvez allez plus loin et intégrer du code CSS pour un contrôle total du style. <br> Que vous souhaitiez une facture élégante ou un rapport analytique détaillé, vos documents sont entre vos mains."
     image: "image/print-designer/choix-images.png"
+    image_bg_color: bg-teal-500
     align: left
   - title: "Découvrez nos champs dynamiques et intelligents"
     description: "Frappe Print Designer vous permet d'intégrer des données spécifiques à vos documents - automatiquement ! Que ce soit des noms, des montants, ou des dates, les champs sont mis à jour en temps réel pour vous offrir des impressions précises et toujours à jour. De plus, vous pouvez facilement ajouter des QR codes ou des codes-barres pour une gestion simplifiée."

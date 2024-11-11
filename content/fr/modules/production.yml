@@ -16,7 +16,7 @@ hero:
     - label: Commencez maintenant
       to: https://cloud.dokos.io
       size: sm
-      color: sky
+      color: amber
       variant: solid
       icon: i-heroicons-rocket-launch
     - label: Documentation

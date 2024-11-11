@@ -69,7 +69,7 @@ features:
       color: sky
   - title: Ajustez vos stratégies grâce aux rapports
     description: "Avec les tableaux de bord dynamiques de Dokos, analysez en temps réel les indicateurs essentiels à la bonne gestion de vos activités commerciales : taux de conversion, volume d'affaires, état des pipelines, etc. <br><br>Les rapports générés vous aident à ajuster vos stratégies de manière proactive.</br>"
-    image: "image/e-commerce/parametre-e-commerce.svg"
+    image: "image/ventes/un-insights-opportunites.png"
     image_bg_color: "bg-teal-500"
     align: left
     badge:

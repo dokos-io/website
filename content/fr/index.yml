@@ -158,7 +158,7 @@ sections:
   - title: Une <span class="text-primary">version française</span> d'ERPNext
     description: <strong>Dokos, une adaptation locale pensée pour les entreprises françaises et européennes.</strong><br><br>Dokos est un <i>fork</i> d'ERPNext, spécialement conçu pour répondre aux besoins des entreprises européennes. Il combine les fonctionnalités avancées d’ERPNext avec toutes les conditions de conformité à mettre en place pour les utilisateurs français.
     image: /home/dokos-dashboard.png
-    image_bg_color: bg-skyteal-500
+    image_bg_color: bg-teal-500
     id: enterprise
     align: right
     features:
@@ -166,7 +166,7 @@ sections:
         description: Des fonctionnalités adaptées aux spécificités locales, avec une interface pensée pour répondre aux retours de nos utilisateurs.
         icon: i-circle-flags-european-union
       - name: Une compatibilité réglementaire
-        description: Tous les modules impactant la réglementation sont conçus pour garantir une utilisation en conformité avec les lois françaises.
+        description: Tous les modules impactant la réglementation sont conçus pour apporter les conditions nécessaires pour être en conformité avec les lois françaises.
         icon: i-octicon-law
       - name: Une liberté éditoriale
         description: Dokos évolue en parallèle d'ERPNext, tout en offrant des fonctionnalités exclusives adaptées aux besoins européens.
@@ -243,7 +243,7 @@ modules:
   links:
     - label: Voir tous les modules
       to: "/modules"
-      color: teal
+      color: amber
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
       size: md
@@ -316,7 +316,7 @@ cta:
     - label: Essayez Dokos maintenant
       size: xl
       color: amber
-      to: https://doc.dokos.io
+      to: https://cloud.dokos.io/nuage/
       target: _blank
     - label: Documentation
       size: xl

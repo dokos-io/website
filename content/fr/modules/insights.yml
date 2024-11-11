@@ -49,14 +49,13 @@ features_before_colored_section:
       icon: i-material-symbols-pivot-table-chart-rounded
       class: "col-span-4 row-span-3"
     - title: Un suivi en temps réel
-      icon: i-material-symbols- alarm-on-outline-rounded
+      icon: i-material-symbols-alarm-on-outline-rounded
       class: "col-span-4 row-span-3"
 
 colored_section: 
   title: Créez, analysez et innovez ! 
   description: "Avec Dokos, profitez d'un accès direct à Frappe Insight : l’outil de création de rapports innovant développé par l’équipe Frappe. Grâce à  Insight et sans coût supplémentaire, analysez vos données devient intuitif et accessible, le tout sans une ligne de code"
   image: "image/ventes/un-insights-opportunites.png"
-  image_bg_color: bg-teal-500
   align: left
   links:
     - label: Générez son premier rapport
