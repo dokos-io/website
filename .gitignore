@@ -28,3 +28,5 @@ logs
 
 # Yarn
 .yarn
+.eslintcache
+static/sw.js
