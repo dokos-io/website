@@ -1,11 +1,12 @@
 ---
 date: '2024-11-12'
-title: L'appel à commun des Tiers Lieux commence aujourd-hui
+id: appel-a-commun-des-tiers-lieux
 badge:
   label: Tiers-lieux
 description: Construire ensemble des ressources éthiques et collaboratives
 author: Céline
 image: blog/tiers-lieux/logo-appel-a-commun-des-tiers-lieux.png
+title: L'appel à commun des tiers-lieux commence aujourd'hui !
 ---
 
 Chez Dokos, nous avons à cœur de soutenir les tiers-lieux dans leur mission en leur proposant des outils de gestion éthiques, ouverts et adaptés. Aujourd’hui, nous sommes heureux de participer à [l’appel à commun pour les tiers-lieux](https://lescommuns.tiers-lieux.org/#welcome), une initiative collective qui s’inscrit pleinement dans notre vision : **mutualiser les ressources, renforcer l’autonomie et soutenir les valeurs de partage et de coopération.**
