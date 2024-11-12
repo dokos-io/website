@@ -5,7 +5,7 @@ badge:
   label: Tiers-lieux
 description: Construire ensemble des ressources éthiques et collaboratives
 author: Céline
-image: log/tiers-lieux/logo-appel-a-commun-des-tiers-lieux.png
+image: blog/tiers-lieux/logo-appel-a-commun-des-tiers-lieux.png
 ---
 
 Chez Dokos, nous avons à cœur de soutenir les tiers-lieux dans leur mission en leur proposant des outils de gestion éthiques, ouverts et adaptés. Aujourd’hui, nous sommes heureux de participer à [l’appel à commun pour les tiers-lieux](https://lescommuns.tiers-lieux.org/#welcome), une initiative collective qui s’inscrit pleinement dans notre vision : **mutualiser les ressources, renforcer l’autonomie et soutenir les valeurs de partage et de coopération.**
