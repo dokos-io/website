@@ -12,9 +12,6 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     '@nuxtjs/turnstile',
   ],
-  turnstile: {
-    siteKey: process.env.NUXT_PUBLIC_TURNSTILE_SITE_KEY,
-  },
   compatibilityDate: "2024-08-06",
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
@@ -59,6 +56,11 @@ export default defineNuxtConfig({
     defaultLocale: "fr"
   },
   runtimeConfig: {
+    public: {
+      turnstile: {
+        siteKey: process.env.NUXT_PUBLIC_TURNSTILE_SITE_KEY,
+      },
+    },
     turnstile: {
       secretKey: process.env.NUXT_TURNSTILE_SECRET_KEY,
     },
