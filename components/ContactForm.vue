@@ -29,7 +29,7 @@ const state = reactive({
   body: undefined
 })
 
-const showTurnstile = ref(false)
+const showTurnstile = computed(() => validate(state)?.length === 0)
 const canSend = computed(() => {
   return Boolean(state.name && state.email && state.company && state.body && token.value)
 })
@@ -40,9 +40,6 @@ const validate = (state: any): FormError[] => {
   if (!state.email) errors.push({ path: 'email', message: 'Obligatoire' })
   if (!state.company) errors.push({ path: 'company', message: 'Obligatoire' })
   if (!state.body) errors.push({ path: 'body', message: 'Obligatoire' })
-  if (!errors.length) {
-    showTurnstile.value = true
-  }
   return errors
 }
 
@@ -64,7 +61,6 @@ async function onSubmit(event: FormSubmitEvent<any>) {
       state.name = ''
       state.email = ''
       state.body = ''
-      showTurnstile.value = false
       toast.add({ title: 'Email envoyé', description: 'Nous faison notre possible pour vous répondre dans les meilleurs délais', color: 'green' })
     })
     .catch((e) => {
