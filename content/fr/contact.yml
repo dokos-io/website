@@ -22,10 +22,10 @@ form:
   body:
     label: 'Comment pouvons-nous vous aider ?'
     placeholder: 'Expliquez-nous votre projet ou votre besoin'
-  info: 'By submitting this form, I confirm that I have read and understood the <a class="text-gray-950 dark:text-gray-100 underline font-medium">Nuxt Privacy Statement.</a>'
+  info: ''
   button:
     icon: i-ph-paper-plane-right
-    label: 'Envoyez mon message'
+    label: 'Envoyer mon message'
 
 contact_info:
   - title: Vous préférez les emails ?
@@ -35,6 +35,6 @@ contact_info:
   - title: Une question concernant nos offres ?
     description: "06.33.47.58.69"
     icon: i-material-symbols-perm-phone-msg-outline
-  - title: Venez-nous rencontrer à Nancy?
+  - title: Venez-nous rencontrer à Nancy !
     description: 59 rue du vieil Aître 54000 Nancy
     icon: i-material-symbols-add-location-alt-outline
