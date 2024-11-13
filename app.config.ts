@@ -41,7 +41,4 @@ export default defineAppConfig({
       }
     },
   },
-  colorMode: {
-    preference: 'light'
-  }
 })

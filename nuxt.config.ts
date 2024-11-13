@@ -65,4 +65,8 @@ export default defineNuxtConfig({
       secretKey: process.env.NUXT_TURNSTILE_SECRET_KEY,
     },
   },
+  colorMode: {
+    preference: 'light',
+    fallback: 'light',
+  },
 })
