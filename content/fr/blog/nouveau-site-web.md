@@ -1,5 +1,5 @@
 ---
-date: '2024-11-14 '
+date: '2024-11-14'
 id: nouveau-site-web
 badge:
   label: Site Web Dokos
