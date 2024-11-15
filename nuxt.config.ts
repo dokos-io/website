@@ -43,12 +43,12 @@ export default defineNuxtConfig({
         language: 'fr-FR',
         file: 'fr-FR.js'
       },
-      // {
-      //   name: 'English',
-      //   code: 'en',
-      //   iso: 'en-US',
-      //   file: 'en-US.js'
-      // }
+      {
+        name: 'English',
+        code: 'en',
+        iso: 'en-US',
+        file: 'en-US.js'
+      },
     ],
     langDir: 'lang',
     strategy: "prefix_and_default",

@@ -83,7 +83,7 @@ const links = computed(() => {
     <template #right>
       <UButton to="https://cloud.dokos.io" target="_blank" icon="i-material-symbols-host-outline-rounded" aria-label="Dokos Cloud"
         color="blue" variant="outline" label="Créer un site"/>
-      <LangSwitcher v-if='!route.matched.some(p => p.path.includes("/blog/:slug()"))' />
+      <!-- <LangSwitcher v-if='!route.matched.some(p => p.path.includes("/blog/:slug()"))' /> -->
       <UColorModeButton size="sm" />
 
       <UButton to="https://gitlab.com/dokos" target="_blank" icon="i-simple-icons-gitlab" aria-label="Gitlab"
