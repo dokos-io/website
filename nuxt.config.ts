@@ -29,6 +29,9 @@ export default defineNuxtConfig({
     '/en/docs': { redirect: '/en/docs/getting-started', prerender: false },
     '/fr/docs': { redirect: '/fr/docs/getting-started', prerender: false },
     '/': { redirect: '/fr', prerender: true },
+    '/**': { prerender: true },
+    '/fr': { prerender: true },
+    '/fr/**': { prerender: true },
   },
   devtools: {
     enabled: true,
@@ -68,5 +71,12 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light',
     fallback: 'light',
+  },
+  nitro: {
+    // static: true, // Don't make it static, it breaks some icons
+    prerender: {
+      crawlLinks: true,
+      failOnError: false,
+    },
   },
 })
