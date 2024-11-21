@@ -9,10 +9,10 @@ export default defineNuxtConfig({
     '@nuxthq/studio',
     '@vueuse/nuxt',
     'nuxt-og-image',
-    "@nuxtjs/i18n",
+    '@nuxtjs/i18n',
     '@nuxtjs/turnstile',
   ],
-  compatibilityDate: "2024-08-06",
+  compatibilityDate: '2024-08-06',
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
     'components:extend': (components) => {
@@ -29,6 +29,9 @@ export default defineNuxtConfig({
     '/en/docs': { redirect: '/en/docs/getting-started', prerender: false },
     '/fr/docs': { redirect: '/fr/docs/getting-started', prerender: false },
     '/': { redirect: '/fr', prerender: true },
+    '/**': { prerender: true },
+    '/fr': { prerender: true },
+    '/fr/**': { prerender: true },
   },
   devtools: {
     enabled: true,
@@ -51,9 +54,9 @@ export default defineNuxtConfig({
       // }
     ],
     langDir: 'lang',
-    strategy: "prefix_and_default",
+    strategy: 'prefix_and_default',
     detectBrowserLanguage: false,
-    defaultLocale: "fr"
+    defaultLocale: 'fr'
   },
   runtimeConfig: {
     public: {
@@ -68,5 +71,12 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light',
     fallback: 'light',
+  },
+  nitro: {
+    // static: true, // Don't make it static, it breaks some icons
+    prerender: {
+      crawlLinks: true,
+      failOnError: false,
+    },
   },
 })
