@@ -20,3 +20,6 @@ Ce DevCamp fut pour moi une véritable bouffée d’air frais. Les discussions a
 Ce qui m’a particulièrement marqué, c’est cette sensation de se retrouver entre passionnés qui partagent une même envie : contribuer à des outils qui rendent service aux utilisateurs tout en respectant leur liberté. C’est là toute la force de l’open source : aller au-delà des simples projets techniques pour **créer des liens humains et bâtir un écosystème plus fort, ensemble.**
 
 Encore un immense merci à toute l’équipe de Dolibarr pour cette belle opportunité. Merci pour votre ouverture, votre générosité et pour ce que vous apportez à la communauté open source. C’est un véritable plaisir de collaborer avec des personnes comme vous.
+
+Charles-henri
+
