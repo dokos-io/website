@@ -11,6 +11,7 @@ services:
   - Conseil
   - Implémentation
   - Développements spécifiques
+  - Création de site web
 emailAddress: antoine.maas@gmail.com
 phoneNumber: (+33) 06.36.19.95.27
 twitter: ""
@@ -23,45 +24,45 @@ regions:
 location: 272 Allée Coignet, 59000 Lille
 ---
 
-Solutions web modernes et performantes pour les TPE et PME, Artisans, Associations, tiers-lieux, fablab.
-Basé sur l'eco système open-source Frappe-Dokos.
+### Solutions web modernes et performantes pour les TPE et PME, Artisans, Associations, tiers-lieux, fablab.
+*Basé sur l'eco système open-source Frappe-Dokos*.
 
 ::card-group
   ::card
   ---
-  title: Components
-  icon: i-heroicons-cube
-  to: https://nuxt.com/docs/api/components/client-only
+  title: TPE et PME
+  icon: i-heroicons-building-office-2
+  to: https://amingenierie-opensource.fr/#entreprises
   target: _blank
   ---
-  Explore Nuxt built-in components for pages, layouts, head, and more.
+  Dokos est une adaptation française du logiciel ERPNext, l’un des meilleurs ERP du marché pour les TPE et PME. Bénéficiez d’une solution moderne, performante et entièrement personnalisable pour piloter votre activité.
   ::
   ::card
   ---
-  title: Composables
-  icon: i-heroicons-arrows-right-left
-  to: https://nuxt.com/docs/api/composables/use-app-config
+  title: Tiers-lieux et Coworking
+  icon: i-heroicons-calendar-date-range
+  to: https://amingenierie-opensource.fr/#booking
   target: _blank
   ---
-  Discover Nuxt composable functions for data-fetching, head management and more.
+  L'application Booking pour dokos permet à vos usagers de réserver en ligne votre espace de coworking, salle de réunion ou encore machine pour votre fablab. Mettez en vente des crédits de réservations pré-payé ou des abonnements prélévés automatiquement.
   ::
   ::card
   ---
-  title: Utils
-  icon: i-heroicons-scissors
-  to: https://nuxt.com/docs/api/utils/dollarfetch
+  title: Associations
+  icon: i-heroicons-chat-bubble-left-right
+  to: https://amingenierie-opensource.fr/#community
   target: _blank
   ---
-  Learn about Nuxt utility functions for navigation, error handling and more.
+  Créer des événements auquel vos usagers peuvent s'inscrire en toute autonomie.  Gardez le contact avec votre communauté avec des newsletter alimentées automatiquement par votre annuaire. Publier des articles de blog pour communiquer les dernières infos.
   ::
   ::card
   ---
-  title: Commands
-  icon: i-heroicons-command-line
-  to: https://nuxt.com/docs/api/commands/add
+  title: Réalisation de site web
+  icon: i-heroicons-code-bracket-square
+  to: https://amingenierie-opensource.fr/#website
   target: _blank
   ---
-  List of Nuxt CLI commands to init, analyze, build, and preview your application.
+  Nous pouvons concevoir et réaliser un site web pour votre activité : une vitrine, un site e-commerce, un blog ou encore un portail pour vos clients ou adhérents.
   ::
 ::
 
