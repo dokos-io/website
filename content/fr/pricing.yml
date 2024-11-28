@@ -10,14 +10,14 @@ pricing_toggle:
   right: Associations (-20%)
 plans:
   - title: 5 heures
-    description: Hébergement seul pour les petites organisations.
+    description: 'Un petit coup de pouce pour démarrer rapidement avec Dokos '
     price:
       entreprise: 500€
       association: 400€
     align: top
     cycle: HT
   - title: 20 heures
-    description: Hébergement seul sans support pour les petites organisations.
+    description: Un accompagnement structuré pour approfondir la prise en main.
     price:
       entreprise: 1800€
       association: 1440€
@@ -25,14 +25,14 @@ plans:
     align: top
     cycle: HT
   - title: 50 heures
-    description: Hébergement avec support pour les petites et moyennes organisations.
+    description: Un accompagnement complet pour personnaliser votre expérience
     price:
       entreprise: 4250€
       association: 3400€
     align: top
     cycle: HT
   - title: 100 heures
-    description: Offre premium pour les équipes plus larges.
+    description: Un accompagnement premium sur-mesure pour adapter Dokos à vos objectifs.
     price:
       entreprise: 8000€
       association: 6400€
@@ -45,14 +45,14 @@ links:
     size: lg
     to: /contact
 services:
-  title: Vous que nous hébergions votre site Dokos ?
-  description: Nous proposons aussi une plateforme d'hébergement sur laquelle vous pouvez déployer vos sites
-  icon: i-carbon-ibm-cloud-direct-link-2-dedicated-hosting
+  title: Vous voulez que nous hébergions votre site Dokos ?
+  description: Libérez-vous l'esprit et déployez votre éco-système Dokos sur notre plateforme d'hébergement
+  icon: i-material-symbols-cloud-done-outline
   to: https://cloud.dokos.io
   target: _blank
 selfhost:
   title: Vous souhaitez auto-héberger Dokos ?
-  description: Dokos est un logiciel libre et open-source. Nous vous proposons une documentation pour héberger vous-même le logiciel
+  description: Vous trouverez toute la documentation nécessaire pour être en parfaite autonomie
   icon: i-heroicons-academic-cap-16-solid
   to: https://doc.dokos.io/dodock/installation
   target: _blank
