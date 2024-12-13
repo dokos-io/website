@@ -1,24 +1,21 @@
 navigation:
   title: Raven
-  description: "L'assistant AI qui révolutionne votre gestion : Raven"
+  description: 'L''assistant AI qui révolutionne votre gestion : Raven'
   icon: i-material-symbols-android-chat
-
-title: "L'assistant AI qui révolutionne votre gestion : Raven"
-link: "https://www.ravenchat.ai/"
+title: 'L''assistant AI qui révolutionne votre gestion : Raven'
+link: https://www.ravenchat.ai/
 author: The Commit Company & Contributeurs
 description: Transformez votre manière de travailler
 application: Raven
-
 logo:
   light: /frappe/raven.webp
   dark: /frappe/raven.webp
-
 hero:
-  title: "<span class='text-primary'>L'assistant AI qui révolutionne votre gestion </span>"
-  image: ""
+  title: <span class='text-primary'>L'assistant AI qui révolutionne votre gestion </span>
+  image: ''
   headline:
     label: Raven
-    to: "https://www.ravenchat.ai/"
+    to: https://www.ravenchat.ai/
     right_icon: i-heroicons-arrow-top-right-on-square-20-solid
     target: _blank
   links:
@@ -35,33 +32,30 @@ hero:
       color: gray
       to: https://doc.dokos.io
       target: _blank
-
-colored_section : 
-  title: "Révolutionnez votre quotidien grâce à l'AI"
-  description: "RAVEN est le module intelligent intégré à Dokos qui transforme votre manière de travailler. Grâce à son intelligence artificielle avancée, vous pouvez automatiser des tâches complexes, extraire des données facilement, et collaborer plus efficacement au sein de votre entreprise."
-  image: "image/raven/raven-exemple.png"
+colored_section:
+  title: Révolutionnez votre quotidien grâce à l'AI
+  description: RAVEN est le module intelligent intégré à Dokos qui transforme votre manière de travailler. Grâce à son intelligence artificielle avancée, vous pouvez automatiser des tâches complexes, extraire des données facilement, et collaborer plus efficacement au sein de votre entreprise.
+  image: image/raven/raven-exemple.png
   align: left
-
 features:
-  - title: "Créez des automatisations intelligentes"
-    description: "Créez vos propres bots sans aucune ligne de code. Raven vous aide à automatiser des processus métier complexes tout en s'adaptant au contexte de chaque tâche."
-    image: "image/raven/raven-exemple.png"
+  - title: Créez des automatisations intelligentes
+    description: Créez vos propres bots sans aucune ligne de code. Raven vous aide à automatiser des processus métier complexes tout en s'adaptant au contexte de chaque tâche.
+    image: image/raven/raven-exemple.png
     image_bg_color: bg-teal-500
     align: right
-  - title: "Fluidifiez votre quotidien avec l'intégration Dokos"
-    description: "Partagez, imprimez et travaillez sur vos documents directement depuis la messagerie Raven, sans quitter votre interface Dokos."
-    image: "image/raven/raven-exemple.png"
+  - title: Fluidifiez votre quotidien avec l'intégration Dokos
+    description: Partagez, imprimez et travaillez sur vos documents directement depuis la messagerie Raven, sans quitter votre interface Dokos.
+    image: image/raven/raven-exemple.png
     image_bg_color: bg-teal-500
     align: left
-  - title: "Optimisez votre collaboration"
-    description: "Discutez, partagez des fichiers et suivez vos conversations dans des threads organisés pour ne jamais perdre le fil."
-    image: "image/projet/communication-raven.png"
+  - title: Optimisez votre collaboration
+    description: Discutez, partagez des fichiers et suivez vos conversations dans des threads organisés pour ne jamais perdre le fil.
+    image: image/projet/communication-raven.png
     image_bg_color: bg-teal-500
     align: right
-
 bottom_cta:
-  title: "Prêt à révolutionner votre quotidien ?"
-  description: "Raven est une solution open-source, vous garantissant une transparence totale et une liberté d'utilisation sans contrainte. Rejoignez la communauté Raven aujourd'hui et transformez votre gestion d'entreprise avec une solution pensée pour l'efficacité et la simplicité."
+  title: Prêt à révolutionner votre quotidien ?
+  description: Raven est une solution open-source, vous garantissant une transparence totale et une liberté d'utilisation sans contrainte. Rejoignez la communauté Raven aujourd'hui et transformez votre gestion d'entreprise avec une solution pensée pour l'efficacité et la simplicité.
   card: true
   class: bg-amber-600/10 dark:bg-amber-800/10
   links:
@@ -72,7 +66,7 @@ bottom_cta:
       target: _blank
     - label: En savoir plus sur Raven
       size: md
-      variant: 'link'
+      variant: link
       color: gray
       to: https://www.ravenchat.ai/
       target: _blank
