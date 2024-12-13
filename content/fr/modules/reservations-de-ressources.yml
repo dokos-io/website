@@ -1,15 +1,12 @@
-
 navigation:
   title: Réservations de ressources
   icon: i-material-symbols-location-on-outline-rounded
   description: Création de contrats, génération d'abonnements, crédits de réservation et événements.
-
 title: Réservations de ressources
 icon: i-material-symbols-location-on-outline-rounded
 description: Gérez et optimisez l'utilisation de vos ressources en toute simplicité.
 application: Bookings
 author: Dokos & Contributeurs
-
 hero:
   title: Simplifiez la <span class="text-primary">gestion de vos ressources</span> avec Dokos
   description: Gérez vos espaces et équipements avec fluidité grâce au module de réservation de ressources de Dokos
@@ -17,7 +14,7 @@ hero:
     - label: Commencez maintenant
       to: https://cloud.dokos.io
       size: sm
-      color: black
+      color: amber
       variant: solid
       icon: i-heroicons-rocket-launch
     - label: Documentation
@@ -34,7 +31,7 @@ hero:
 features:
   - title: Réservez en quelques clics
     description: Le module de réservation de ressources de Dokos vous permet de proposer à vos utilisateurs la possibilité de réserver facilement des salles de réunion, des machines, ou du matériel. <br><br>Optimisez l’utilisation de vos ressources et offrez une autonomie totale à vos utilisateurs.</br>
-    video: /image/reservation-ressource/reservations-de-ressources.mp4
+    image: image/reservation-ressource/article-reservable-site-web.png
     image_bg_color: bg-teal-500
     align: left
     badge:
@@ -42,7 +39,7 @@ features:
       color: sky
   - title: Une solution pour tous vos besoins
     description: Que vous soyez un espace de coworking, un tiers-lieu ou une organisation disposant de plusieurs ressources à gérer, Dokos s’adapte à vos besoins avec des fonctionnalités configurables et évolutives. Proposez des abonnements, gérez des tickets de réservation ponctuels et maintenez une vue d’ensemble sur toutes vos ressources grâce à une interface simple et intuitive.
-    image: "image/reservation-ressource/article-reservable-site-web.png"
+    video: /image/reservation-ressource/reservations-de-ressources.mp4
     image_bg_color: bg-teal-500
     align: right
     badge:
@@ -89,7 +86,7 @@ bottom_cta:
     - label: Commencez maintenant
       to: https://cloud.dokos.io
       size: sm
-      color: black
+      color: amber
       variant: solid
       icon: i-heroicons-rocket-launch
     - label: Documentation

@@ -45,7 +45,7 @@ features:
       color: sky
   - title: Optimisez la gestion de votre boutique en ligne
     description: 'Gardez un œil sur vos ventes, vos stocks, et les performances de votre boutique en temps réel, et connectez facilement vos systèmes.<br><ul><li>WooCommerce : Gérez vos commandes, inventaires et clients en toute simplicité.</li><li>Shopify : Une solution complète pour vendre vos produits et services, intégrée directement à Dokos.'
-    video: /integrations/boutique-en-ligne-2.mp4
+    video: image/integrations/boutique-en-ligne-2.mp4
     align: left
     badge:
       label: E-Commerce
