@@ -86,7 +86,11 @@ defineOgImage({
                     :items="page.faq.items"
                     multiple
                     :class="page.faq"
-                />
+                >
+                    <template #item="{ item }">
+                        <MDC :value="item.content" class="prose prose-primary dark:prose-invert max-w-none text-gray-500 dark:text-gray-400" />
+                    </template>
+                </ULandingFAQ>
             </ULandingSection>
         </UPage>
     </div>
