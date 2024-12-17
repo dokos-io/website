@@ -93,6 +93,17 @@ defineOgImage({
                 :items="page.faq.items"
                 multiple
                 class="max-w-4xl mx-auto"
+            >
+                <template #item="{ item }">
+                    <MDC :value="item.content" class="prose prose-primary dark:prose-invert max-w-none text-gray-500 dark:text-gray-400" />
+                </template>
+            </ULandingFAQ>
+        </ULandingSection>
+
+        <ULandingSection v-if="page.cta">
+            <ULandingCTA
+                v-bind="page.cta"
+                class="bg-amber-100/50 dark:bg-amber-800/50"
             />
         </ULandingSection>
     </div>
