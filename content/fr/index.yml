@@ -169,7 +169,7 @@ sections:
         description: Tous les modules impactant la réglementation sont conçus pour apporter les conditions nécessaires pour être en conformité avec les lois françaises.
         icon: i-octicon-law
       - name: Une liberté éditoriale
-        description: Dokos évolue en parallèle d'ERPNext, tout en offrant des fonctionnalités exclusives adaptées aux besoins européens.
+        description: Dokos évolue en synergie avec ERPNext, intégrant toutes les avancées de la plateforme Frappe pour les adapter, si nécessaire, aux besoins spécifiques des utilisateurs européens, tout en proposant des fonctionnalités exclusives.
         icon: i-material-symbols-editor-choice-outline-rounded
   - title: La <span class="text-primary">force</span> de l'open-source
     description: <strong>Dokos est et restera un logiciel libre et open-source.</strong><br><br>Avec Dokos, vous avez la liberté totale de choisir votre fournisseur, sans dépendance envers un éditeur spécifique. Utilisez un ERP libre et évolutif, sans frais de licence, avec des options de service si vous avez besoin d’accompagnement.
