@@ -41,14 +41,12 @@ Voici les dernières évolutions apportées à Dokos pour clôturer l’année e
 
 ### **Actif**
 
-- **Ré-arrangement des champs dans le formulaire de création d’un actif** : Cette amélioration améliore la clarté et la gestion des informations dans le module des actifs.
-  ---
+- **Ré-arrangement des champs dans le formulaire de création d’un actif :** Cette amélioration améliore la clarté et la gestion des informations dans le module des actifs.
 
 ## **🚀 Les nouveautés de Dodock pour les plus techniques** 
 
 1. **Affichage conditionnel des éléments des menus de la barre supérieure** : Les éléments des menus de la barre supérieure peuvent maintenant être affichés en fonction de conditions définies par l’utilisateur.
-2. **Synchronisation automatique des types de documents personnalisés** : Un nouveau hook permet de synchroniser automatiquement des types de documents personnalisés lors de la migration du site. 
-   ---
+2. **Synchronisation automatique des types de documents personnalisés :** Un nouveau hook permet de synchroniser automatiquement des types de documents personnalisés lors de la migration du site. 
 
 ### **🌟 Initiatives et travaux en cours**
 
