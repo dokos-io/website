@@ -15,6 +15,8 @@ Alors que l’année 2024 touche à sa fin, nous souhaitons vous remercier chale
 
 Nous avons à cœur de rendre votre expérience sur Dokos toujours plus intuitive, fluide et agréable. Chaque amélioration que nous apportons vise à simplifier votre quotidien et à vous permettre de vous concentrer sur ce qui compte vraiment. Créer de la valeur pour nos utilisateurs est notre priorité : cela signifie non seulement répondre à vos besoins, mais aussi anticiper vos attentes pour vous offrir des solutions qui font vraiment la différence.
 
+---
+
 ## **✨ Les améliorations du mois de décembre**
 
 Voici les dernières évolutions apportées à Dokos pour clôturer l’année en beauté :
@@ -40,17 +42,19 @@ Voici les dernières évolutions apportées à Dokos pour clôturer l’année e
 ### **Actif**
 
 - **Ré-arrangement des champs dans le formulaire de création d’un actif** : Cette amélioration améliore la clarté et la gestion des informations dans le module des actifs.
+  ---
 
 ## **🚀 Les nouveautés de Dodock pour les plus techniques** 
 
 1. **Affichage conditionnel des éléments des menus de la barre supérieure** : Les éléments des menus de la barre supérieure peuvent maintenant être affichés en fonction de conditions définies par l’utilisateur.
 2. **Synchronisation automatique des types de documents personnalisés** : Un nouveau hook permet de synchroniser automatiquement des types de documents personnalisés lors de la migration du site. 
+   ---
 
 ### **🌟 Initiatives et travaux en cours**
 
 - **Appel à commun des tiers-lieux 🌍**
 
-L’appel à commun des tiers-lieux se termine le 31 décembre. Cette initiative vise à encourager plusieurs entités partageant des fonctionnements similaires à collaborer pour adapter et enrichir un commun au plus proche de leurs besoins. Plus de détails ici : [https://lescommuns.tiers-lieux.org/#les-communs ](https://lescommuns.tiers-lieux.org/#les-communs%C2%A0)
+L’appel à commun des tiers-lieux se termine le 31 décembre. Cette initiative vise à encourager plusieurs entités partageant des fonctionnements similaires à collaborer pour adapter et enrichir un commun au plus proche de leurs besoins. Plus de détails ici : [appel à commun](https://lescommuns.tiers-lieux.org/#les-communs)[](https://lescommuns.tiers-lieux.org/#les-communs%C2%A0)
 
 - **Finalisation du nouveau portail client de l’application « Booking »  📅**
 
@@ -59,5 +63,7 @@ Nous peaufinons les derniers détails pour vous mettre à disposition un portail
 - **Amélioration du flux de facturation fournisseur via OCR 🤖**
 
 Nous travaillons sur une refonte du flux de création de commandes et factures d’achat via OCR, sur la base de vos retours d’expérience, pour vous faire gagner un temps précieux.
+
+---
 
 **🎄Toute l’équipe Dokos vous souhaite de joyeuses fêtes et une excellente année 2025.🎆**
