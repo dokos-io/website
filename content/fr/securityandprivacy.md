@@ -12,7 +12,7 @@ DOKOS SAS offre de nombreux services pour vous aider à gérer votre entreprise,
 
 Cette politique de confidentialité explique quelles informations sont collectées, pourquoi elles sont collectées et comment nous les utilisons.
 
-\---
+---
 
 ### Informations collectées
 
@@ -57,7 +57,7 @@ Nous collectons ces données uniquement en votre nom, en tant que sous-traitant 
 
 Nous ne pouvons accéder aux données du client que dans des cas spécifiques (sur demande du client, problème technique, obligations légales).
 
-\---
+---
 
 ### Comment utilisons-nous ces informations ?
 
@@ -88,7 +88,7 @@ Notre équipe de support et nos ingénieurs peuvent accéder à ces informations
 
 En tant que sous-traitant, Dokos SAS gère les données personnelles stockées dans les bases de données de ses clients. Le propriétaire de la base de données reste le responsable du traitement.
 
-\---
+---
 
 ### Accéder, Modifier ou Supprimer vos Informations Personnelles
 
@@ -100,40 +100,40 @@ Si vous souhaitez supprimer définitivement votre compte ou vos informations per
 
 **Charles-Henri Decultot**
 
-- Par e-mail à : \[<chdecultot@dokos.io>]\(mailto:<chdecultot@dokos.io>)
+- Par e-mail à : [<chdecultot@dokos.io>](mailto:<chdecultot@dokos.io>)
 - Par courrier à : Charles-Henri Decultot, 7 bis Allée Neuve, 54520 LAXOU, France.
 
 Une pièce d'identité est demandée pour justifier votre requête. Le délai de réponse peut être d’un mois à compter de la réception, prolongeable selon les circonstances.
 
-**Données des candidatures:** 
+**Données des candidatures:**
 
-Vous pouvez nous contacter par email à l’adresse : \[<help@dokos.io>]\(mailto:<help@dokos.io>) à n'importe quel moment pour demander un accès, une modification ou la suppression des données liées à votre candidature. 
+Vous pouvez nous contacter par email à l’adresse : [<help@dokos.io>](mailto:<help@dokos.io>) à n'importe quel moment pour demander un accès, une modification ou la suppression des données liées à votre candidature.
 
-**Base de données client:** 
+**Base de données client:**
 
 Vous pouvez traiter les données collectées dans vos bases de données hébergées par DOKOS SAS à n'importe quel moment, en utilisant vos identifiants d'administration. Cela inclut la modification et la suppression de toute donnée personnelle stockée dans ces bases de données.
 
-A n'importe quel moment, vous avez la possibilité d’exporter une sauvegarde complète de votre base de données dans un format structuré et couramment utilisé via votre logiciel hébergé, afin de la transférer, ou pour gérer vos propres sauvegardes/archives. 
+A n'importe quel moment, vous avez la possibilité d’exporter une sauvegarde complète de votre base de données dans un format structuré et couramment utilisé via votre logiciel hébergé, afin de la transférer, ou pour gérer vos propres sauvegardes/archives.
 
 Vous êtes responsable du traitement de ces données conformément aux lois en vigueur sur le RGPD.
 
-Vous pouvez également demander la suppression de la base de données complète à n'importe quel moment ou demander la limitation de vos données dans certains cas par demande écrite. 
+Vous pouvez également demander la suppression de la base de données complète à n'importe quel moment ou demander la limitation de vos données dans certains cas par demande écrite.
 
-**Période de conservation de sécurité:** 
+**Période de conservation de sécurité:**
 
 Nous gardons une copie de vos données dans nos sauvegardes pour des raisons de sécurité, même après qu'elles soient supprimées de nos systèmes en production. Ces données sont supprimées de manière permanente après la période de conservation de sécurité.
 
 (Pour plus de détails concernant la période de sécurité, voir les conditions générales de nos services et la section concernant la conservation des données ci-dessous).
 
-\---
+---
 
 ### Sécurité
 
-Nous sommes conscients de l'importance et de la confidentialité de vos données, et nous prenons un grand nombre de mesures pour nous assurer que cette information est traitée de manière sécurisée, conservée et préservée de toute perte de données et accès non autorisé. Veuillez nous contacter à l'adresse  : \[<help@dokos.io>]\(mailto:<help@dokos.io>) pour en savoir plus sur nos mesures de sécurité.
+Nous sommes conscients de l'importance et de la confidentialité de vos données, et nous prenons un grand nombre de mesures pour nous assurer que cette information est traitée de manière sécurisée, conservée et préservée de toute perte de données et accès non autorisé. Veuillez nous contacter à l'adresse  : [<help@dokos.io>](mailto:<help@dokos.io>) pour en savoir plus sur nos mesures de sécurité.
 
-Dans le cas éventuel d’une violation de données sur nos serveurs, une notification sera faite à la CNIL dans un délai de 72h et à chaque utilisateurs concernés si la violation présente un risque pour leurs droits et libertés. 
+Dans le cas éventuel d’une violation de données sur nos serveurs, une notification sera faite à la CNIL dans un délai de 72h et à chaque utilisateurs concernés si la violation présente un risque pour leurs droits et libertés.
 
-\---
+---
 
 ### Fournisseurs de services externes
 
@@ -153,12 +153,12 @@ Voici la liste des fournisseurs de service avec lesquels nous travaillons actuel
 
 | **FOURNISSEUR DE SERVICE**      | **RAISON**                 | **DONNÉES PARTAGÉES**                                                                                                                                                              |
 | ------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Stripe** (Conformité PCI-DSS) | Sécurité & Confidentialité | Partagé avec Stripe : Détails des commandes (montant, description, référence), Nom et email des clients.:brEnregistré uniquement par Stripe : Information de carte de crédit.      |
-| **GoCardless Ltd**              | Sécurité & Confidentialité | Partagé avec GoCardless : Détails des commandes (montant, description, référence), Nom et email des clients.:brEnregistré uniquement par GoCardless : Information de mandats SEPA. |
+| **Stripe** (Conformité PCI-DSS) | Sécurité & Confidentialité | Partagé avec Stripe : Détails des commandes (montant, description, référence), Nom et email des clients.:br Enregistré uniquement par Stripe : Information de carte de crédit.      |
+| **GoCardless Ltd**              | Sécurité & Confidentialité | Partagé avec GoCardless : Détails des commandes (montant, description, référence), Nom et email des clients.:br Enregistré uniquement par GoCardless : Information de mandats SEPA. |
 | **Hetzner GmbH**                | Sécurité & Confidentialité | Hébergé chez Hetzner GmbH : Données de production de dokos.io et ses services affiliés, dont les bases de données clients.                                                         |
-| **OVHcloud**                    | Sécurité & Confidentialité | Hébergé chez OVHcloud GmbH : Données de production de dokos.io et ses services affiliés, dont les bases de données clients.                                                        |
+| **OVHcloud**                    | Sécurité & Confidentialité | Hébergé chez OVHcloud SAS : Données de production de dokos.io et ses services affiliés, dont les bases de données clients.                                                        |
 
-\---
+---
 
 ### Conservation des données
 
@@ -166,11 +166,11 @@ Voici la liste des fournisseurs de service avec lesquels nous travaillons actuel
 
 Nous conservons ces données seulement pour la durée nécessaire au besoin pour lequel elles ont été collectées, comme indiqué dans ce document, incluant toute une période de conservation légale, ou pour la durée nécessaire à la promotion légitime et raisonnable de nos produits et services.
 
-**Données des candidatures :** 
+**Données des candidatures :**
 
-Si nous ne vous embauchons pas, nous pouvons garder vos informations pour une durée maximale de 2 ans afin de vous recontacter pour une proposition d'embauche future, à moins que vous vous y opposiez par simple demande par email à \[<help@dokos.io>]\(mailto:<help@dokos.io>). Si nous vous embauchons, vos informations personnelles seront conservées pendant toute la durée de votre contrat et par la suite, pendant la période légale de conservation qui s'applique au pays dans lequel vous avez été embauché.
+Si nous ne vous embauchons pas, nous pouvons garder vos informations pour une durée maximale de 2 ans afin de vous recontacter pour une proposition d'embauche future, à moins que vous vous y opposiez par simple demande par email à [<help@dokos.io>](mailto:<help@dokos.io>). Si nous vous embauchons, vos informations personnelles seront conservées pendant toute la durée de votre contrat et par la suite, pendant la période légale de conservation qui s'applique au pays dans lequel vous avez été embauché.
 
-**Bases de données client :** 
+**Bases de données client :**
 
 Nous ne conservons ces données qu'aussi longtemps que nécessaire pour fournir les services auxquels vous avez souscrit. Pour les bases de données hébergées sur le Cloud Dokos, si vous annulez votre inscription, votre base de données est désactivée pendant 4 semaines (période de grâce pendant laquelle vous pouvez changer d'avis) et ensuite détruite.
 
@@ -180,47 +180,47 @@ Nous essayons toujours de préserver vos données de toute suppression accidente
 
 Nous nous engageons à ne pas utiliser ces copies de sauvegarde de vos données supprimées sous aucun prétexte, à l'exception de la conservation de l'intégrité de nos sauvegardes, sauf si la loi nous y oblige.
 
-\---
+---
 
 ### Transfert de données
 
-**Localisation de l'hébergement :** 
+**Localisation de l'hébergement :**
 
 Les bases de données client sont hébergées dans les data center Dokos dans les pays suivants:
 
 - France
 - Allemagne
 
-**Localisation des sauvegardes :** 
+**Localisation des sauvegardes :**
 
 Les sauvegardes sont répliquées sur plusieurs zones de disponibilité afin de respecter nos objectifs de plan de reprise d'activité, et sont localisées dans les pays suivants:
 
 - France
 - Allemagne
 
-\---
+---
 
 ### Echange avec des tiers
 
 A l'exception des échanges explicitement mentionnés ci-dessus, nous ne vendons pas, n'échangeons pas et ne transférons pas vos données personnelles à des tiers.
 
-\---
+---
 
 ### Politique de cookies
 
 Conformément à l'article 6(1)(f) du Règlement Général sur la Protection des Données (RGPD), nous n'utilisons que des cookies strictement nécessaires au bon fonctionnement de notre site et de nos services. Ces cookies, d'intérêt légitime, permettent de maintenir la session utilisateur et d'assurer la sécurité de la navigation. Aucun cookie de suivi, marketing ou publicitaire n'est utilisé sans votre consentement explicite. Vous pouvez configurer votre navigateur pour bloquer ou supprimer ces cookies, mais cela pourrait affecter le bon fonctionnement de nos services.
 
-\---
+---
 
 ### Mise à jour de la politique
 
 Nous pouvons mettre à jour cette politique de confidentialité de temps en temps, afin de la clarifier, ou pour être en conformité avec les obligations légales. La mention "Dernière mise à jour" en en-tête de cette politique indique la dernière révision, qui est également la date de changement effective de ces changements. Si vous continuez à utiliser nos services après ces changements, vous acceptez notre politique mise à jour.
 
-\---
+---
 
 ### Nous contacter
 
 Si vous avez la moindre question concernant cette politique de confidentialité, ou tout autre question sur vos données personnelles, vous pouvez nous contacter à l'adresse :
 
-- \[<help@dokos.io>]\(mailto:<help@dokos.io>)
+- [<help@dokos.io>](mailto:<help@dokos.io>)
 - Dokos SAS, 7B Allée Neuve 54520 Laxou, France
