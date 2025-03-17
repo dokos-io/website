@@ -2,7 +2,7 @@
 date: 2025-03-17T00:00:00.000Z
 id: Pourquoi l'open-source est plus que jamais essentiel?
 badge:
-  label: Réflexions
+  label: Souveraineté Numérique
 description: ( Et pourquoi Dokos s'inscrit au coeur de cette dynamique ? )
 author: Céline
 image: blog/2025/open_source_essentiel.png
