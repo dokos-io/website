@@ -79,4 +79,11 @@ export default defineNuxtConfig({
       failOnError: false,
     },
   },
+  image: {
+    provider: 'ipx',
+    static: {
+      maxAge: 86400,
+      public: true,
+    },
+  },
 })
