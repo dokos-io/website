@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/:path(.+\\.(?:ico|png|svg|jpg|jpeg|avif|gif|webp|mp3|mp4)$)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, immutable"
+        }
+      ]
+    }
+  ]
+}
