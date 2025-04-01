@@ -29,8 +29,8 @@ Chaque changement, chaque amélioration de Bookings est le résultat d'une écou
 
 Nous vous invitons à trois sessions pour explorer ensemble cette nouvelle version :
 
-- 🕐 [Jeudi 11 avril à 13h](https://dashboard.dokos.io/events/EV04882-webinaire-booking-decouvrez-la)
-- 🕐 [Jeudi 18 avril à 13h](/en)
+- 🕐 [Vendredi 11 avril à 13h](https://dashboard.dokos.io/events/EV04882-webinaire-booking-decouvrez-la)
+- 🕐 [Vendredi 18 avril à 13h](/en)
 - 🕐 [Mercredi 23 avril à 13h](/en)
 
 ## **Ce que vous allez découvrir**
@@ -62,6 +62,6 @@ Cette version est le fruit de notre engagement commun. Elle raconte l'histoire d
 **Pour s'inscrire, cliquez ici :**
 
 - [**Webinaire du 11 avril à 13h**](https://dashboard.dokos.io/events/EV04882-webinaire-booking-decouvrez-la)
-- [**Webinaire du jeudi 18 avril à 13h**](https://dashboard.dokos.io/events/EV04883-webinaire-booking-decouvrez-la)
+- [**Webinaire du 18 avril à 13h**](https://dashboard.dokos.io/events/EV04883-webinaire-booking-decouvrez-la)
 - [**Webinaire du mercredi 23 avril à 13h**](https://dashboard.dokos.io/events/EV04884-webinaire-booking-decouvrez-la)
 ::
