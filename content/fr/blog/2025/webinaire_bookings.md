@@ -5,7 +5,7 @@ badge:
   label: Bookings
 description: Le module Lieu évolue
 author: Céline
-image: ""
+image: blog/2025/bookings_photo.png
 title: "Bookings : Un projet né de la communauté des tiers-lieux 🌍"
 ---
 
@@ -30,8 +30,8 @@ Chaque changement, chaque amélioration de Bookings est le résultat d'une écou
 Nous vous invitons à trois sessions pour explorer ensemble cette nouvelle version :
 
 - 🕐 [Jeudi 11 avril à 13h](https://dashboard.dokos.io/events/EV04882-webinaire-booking-decouvrez-la)
-- 🕐 [Jeudi 18 avril à 13h](https://dashboard.dokos.io/events/EV04883-webinaire-booking-decouvrez-la)
-- 🕐 [Mercredi 23 avril à 13h](https://dashboard.dokos.io/events/EV04884-webinaire-booking-decouvrez-la)
+- 🕐 [Jeudi 18 avril à 13h](/en)
+- 🕐 [Mercredi 23 avril à 13h](/en)
 
 ## **Ce que vous allez découvrir**
 
