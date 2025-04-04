@@ -1,6 +1,6 @@
 ---
 toc: true
-description: 'Dernière mise à jour: 1<sup>er</sup> Janvier 2024'
+description: "Dernière mise à jour: 1<sup>er</sup> Janvier 2024"
 title: Politique de confidentialité
 ---
 
@@ -100,14 +100,14 @@ Si vous souhaitez supprimer définitivement votre compte ou vos informations per
 
 **Charles-Henri Decultot**
 
-- Par e-mail à : [<chdecultot@dokos.io>](mailto:<chdecultot@dokos.io>)
+- Par e-mail à : [](mailto:%3Cchdecultot@dokos.io%3E)<chdecultot@dokos.io>
 - Par courrier à : Charles-Henri Decultot, 7 bis Allée Neuve, 54520 LAXOU, France.
 
 Une pièce d'identité est demandée pour justifier votre requête. Le délai de réponse peut être d’un mois à compter de la réception, prolongeable selon les circonstances.
 
 **Données des candidatures:**
 
-Vous pouvez nous contacter par email à l’adresse : [<help@dokos.io>](mailto:<help@dokos.io>) à n'importe quel moment pour demander un accès, une modification ou la suppression des données liées à votre candidature.
+Vous pouvez nous contacter par email à l’adresse : [](mailto:%3Chelp@dokos.io%3E)<dpo@dokos.io> à n'importe quel moment pour demander un accès, une modification ou la suppression des données liées à votre candidature.
 
 **Base de données client:**
 
@@ -129,7 +129,7 @@ Nous gardons une copie de vos données dans nos sauvegardes pour des raisons de 
 
 ### Sécurité
 
-Nous sommes conscients de l'importance et de la confidentialité de vos données, et nous prenons un grand nombre de mesures pour nous assurer que cette information est traitée de manière sécurisée, conservée et préservée de toute perte de données et accès non autorisé. Veuillez nous contacter à l'adresse  : [<help@dokos.io>](mailto:<help@dokos.io>) pour en savoir plus sur nos mesures de sécurité.
+Nous sommes conscients de l'importance et de la confidentialité de vos données, et nous prenons un grand nombre de mesures pour nous assurer que cette information est traitée de manière sécurisée, conservée et préservée de toute perte de données et accès non autorisé. Veuillez nous contacter à l'adresse : [](mailto:%3Chelp@dokos.io%3E)<dpo@dokos.io> pour en savoir plus sur nos mesures de sécurité.
 
 Dans le cas éventuel d’une violation de données sur nos serveurs, une notification sera faite à la CNIL dans un délai de 72h et à chaque utilisateurs concernés si la violation présente un risque pour leurs droits et libertés.
 
@@ -151,12 +151,12 @@ Lorsque nous partageons des données avec ces fournisseurs de service, nous nous
 
 Voici la liste des fournisseurs de service avec lesquels nous travaillons actuellement, la raison de leur utilisation et les types de données que nous partageons avec eux. C’est sous-traitant sont sous contrat avec Dokos Sas, conformément à l’article 28 du RGPD, incluant des obligations spécifiques en matière de sécurité et confidentialité.
 
-| **FOURNISSEUR DE SERVICE**      | **RAISON**                 | **DONNÉES PARTAGÉES**                                                                                                                                                              |
-| ------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Stripe** (Conformité PCI-DSS) | Sécurité & Confidentialité | Partagé avec Stripe : Détails des commandes (montant, description, référence), Nom et email des clients.:br Enregistré uniquement par Stripe : Information de carte de crédit.      |
-| **GoCardless Ltd**              | Sécurité & Confidentialité | Partagé avec GoCardless : Détails des commandes (montant, description, référence), Nom et email des clients.:br Enregistré uniquement par GoCardless : Information de mandats SEPA. |
-| **Hetzner GmbH**                | Sécurité & Confidentialité | Hébergé chez Hetzner GmbH : Données de production de dokos.io et ses services affiliés, dont les bases de données clients.                                                         |
-| **OVHcloud**                    | Sécurité & Confidentialité | Hébergé chez OVHcloud SAS : Données de production de dokos.io et ses services affiliés, dont les bases de données clients.                                                        |
+| **FOURNISSEUR DE SERVICE**      | **RAISON**                 | **DONNÉES PARTAGÉES**                                                                                                                                                                |
+| ------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Stripe** (Conformité PCI-DSS) | Sécurité & Confidentialité | Partagé avec Stripe : Détails des commandes (montant, description, référence), Nom et email des clients.\:br Enregistré uniquement par Stripe : Information de carte de crédit.      |
+| **GoCardless Ltd**              | Sécurité & Confidentialité | Partagé avec GoCardless : Détails des commandes (montant, description, référence), Nom et email des clients.\:br Enregistré uniquement par GoCardless : Information de mandats SEPA. |
+| **Hetzner GmbH**                | Sécurité & Confidentialité | Hébergé chez Hetzner GmbH : Données de production de dokos.io et ses services affiliés, dont les bases de données clients.                                                           |
+| **OVHcloud**                    | Sécurité & Confidentialité | Hébergé chez OVHcloud SAS : Données de production de dokos.io et ses services affiliés, dont les bases de données clients.                                                           |
 
 ---
 
@@ -168,7 +168,7 @@ Nous conservons ces données seulement pour la durée nécessaire au besoin pour
 
 **Données des candidatures :**
 
-Si nous ne vous embauchons pas, nous pouvons garder vos informations pour une durée maximale de 2 ans afin de vous recontacter pour une proposition d'embauche future, à moins que vous vous y opposiez par simple demande par email à [<help@dokos.io>](mailto:<help@dokos.io>). Si nous vous embauchons, vos informations personnelles seront conservées pendant toute la durée de votre contrat et par la suite, pendant la période légale de conservation qui s'applique au pays dans lequel vous avez été embauché.
+Si nous ne vous embauchons pas, nous pouvons garder vos informations pour une durée maximale de 2 ans afin de vous recontacter pour une proposition d'embauche future, à moins que vous vous y opposiez par simple demande par email à [](mailto:%3Chelp@dokos.io%3E)<dpo@dokos.io>. Si nous vous embauchons, vos informations personnelles seront conservées pendant toute la durée de votre contrat et par la suite, pendant la période légale de conservation qui s'applique au pays dans lequel vous avez été embauché.
 
 **Bases de données client :**
 
@@ -222,5 +222,5 @@ Nous pouvons mettre à jour cette politique de confidentialité de temps en temp
 
 Si vous avez la moindre question concernant cette politique de confidentialité, ou tout autre question sur vos données personnelles, vous pouvez nous contacter à l'adresse :
 
-- [<help@dokos.io>](mailto:<help@dokos.io>)
+- [](mailto:%3Chelp@dokos.io%3E)<dpo@dokos.io>
 - Dokos SAS, 7B Allée Neuve 54520 Laxou, France
