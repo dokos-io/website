@@ -194,7 +194,7 @@ Nous montrons la voie pour un écosystème numérique français indépendant et 
 
 ### **Textes de loi**
 
-- \[][Loi de finances 2025 :](https://www.legifrance.gouv.fr/jorf/jo/2025/02/15/0039)
+- [Loi de finances 2025 :](https://www.legifrance.gouv.fr/jorf/jo/2025/02/15/0039)
 - [Article 286 du CGI :](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191927?init=true\&page=1\&query=Article+286+du+CGI+\&searchField=ALL\&tab_selection=all\&anchor=LEGIARTI000051764897#LEGIARTI000051764897)
 
 ### **Documentation fiscale officielle**
