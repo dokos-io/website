@@ -5,7 +5,7 @@ badge:
   label: Certification
 description: Tout ce que vous devez savoir sur la nouvelle réglementation
 author: Céline
-image: ""
+image: /blog/2025/dokos-se-certifie-lne-photo.png
 title: "Dokos et la certification des logiciels d'encaissement "
 ---
 
@@ -194,13 +194,13 @@ Nous montrons la voie pour un écosystème numérique français indépendant et 
 
 ### **Textes de loi**
 
-- [][Loi de finances 2025 :](https://www.legifrance.gouv.fr/jorf/jo/2025/02/15/0039)
+- \[][Loi de finances 2025 :](https://www.legifrance.gouv.fr/jorf/jo/2025/02/15/0039)
 - [Article 286 du CGI :](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191927?init=true\&page=1\&query=Article+286+du+CGI+\&searchField=ALL\&tab_selection=all\&anchor=LEGIARTI000051764897#LEGIARTI000051764897)
 
 ### **Documentation fiscale officielle**
 
-- **BOFIP principal** : https\://bofip.impots.gouv.fr/bofip/10691-PGP.html (BOI-TVA-DECLA-30-10-30)
-- **Actualité BOFIP avril 2025** : https\://bofip.impots.gouv.fr/bofip/14667-PGP.html/ACTU-2025-00075
+- **BOFIP principal** : <https://bofip.impots.gouv.fr/bofip/10691-PGP.html> (BOI-TVA-DECLA-30-10-30)
+- **Actualité BOFIP avril 2025** : <https://bofip.impots.gouv.fr/bofip/14667-PGP.html/ACTU-2025-00075>
 - [FAQ officielle DGFiP :](https://www.impots.gouv.fr/professionnel/questions/quel-est-le-champ-dapplication-de-lobligation-de-detenir-un-logiciel-de)
 
 ### **Ministères**
