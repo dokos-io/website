@@ -5,7 +5,7 @@ badge:
   label: Certification
 description: Tout ce que vous devez savoir sur la nouvelle réglementation
 author: Céline
-image: /blog/2025/dokos-se-certifie-lne-photo.png
+image: blog/2025/dokos-se-certifie-lne-photo-blog.png
 title: "Dokos et la certification des logiciels d'encaissement "
 ---
 
