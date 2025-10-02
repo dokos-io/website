@@ -370,18 +370,18 @@ table {
 }
 
 th, td {
-  border: 1px solid #ddd;
+  border: 1px solid hsla(0deg, 0%, 50%, 0.26);
   padding: 8px;
   text-align: left;
 }
 
 th {
-  background-color: #f4f4f4;
+  background-color: hsla(0, 0%, 50%, 0.1);
   font-weight: bold;
 }
 
 tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: hsla(0, 0%, 50%, 0.07);
 }
 </style>
 
@@ -430,18 +430,18 @@ table {
 }
 
 th, td {
-  border: 1px solid #ddd;
+  border: 1px solid hsla(0deg, 0%, 50%, 0.26);
   padding: 8px;
   text-align: left;
 }
 
 th {
-  background-color: #f4f4f4;
+  background-color: hsla(0, 0%, 50%, 0.1);
   font-weight: bold;
 }
 
 tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: hsla(0, 0%, 50%, 0.07);
 }
 </style>
 
