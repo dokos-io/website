@@ -1,8 +1,8 @@
 ---
 date: 2025-06-12T00:00:00.000Z
 id: Nouveau tutoriel Dokos
-badge: Tutoriel
-label: Tutoriel
+badge:
+  label: Tutoriel
 description: Maîtrisez la création et l'envoi de vos devis !
 author: Céline
 image: /blog/2025/image-devis.jpg
