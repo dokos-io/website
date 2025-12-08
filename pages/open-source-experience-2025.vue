@@ -62,9 +62,9 @@ const features = [
     description: 'Vision métier des flux de gestion ET architecture technique pour une solution vraiment complète.'
   },
   {
-    icon: 'i-heroicons-lock-open',
-    title: 'Open source & souverain',
-    description: "Notre engagement pour la souveraineté numérique et la transparence de vos outils de gestion."
+    icon: 'i-heroicons-shield-check',
+    title: 'Sécurité & certifications',
+    description: "Nos certifications et notre engagement pour la sécurité de vos données et de votre infrastructure."
   },
   {
     icon: 'i-heroicons-bolt',
@@ -81,31 +81,6 @@ const solutions = [
   {
     title: 'Une flexibilité pensée pour vous',
     description: "Dokos s'adapte à votre organisation, et non l'inverse. Chaque module peut être configuré précisément selon vos besoins réels, vos processus existants, votre culture d'entreprise."
-  },
-  {
-    title: 'Open source et souverain',
-    description: "Dokos est une adaptation française d'ERPNext, conçue pour les entreprises qui souhaitent retrouver la maîtrise de leurs outils de gestion."
-  }
-]
-
-const iaFeatures = [
-  {
-    icon: 'i-heroicons-light-bulb',
-    title: 'Suggestions intelligentes',
-    description: 'qui accélèrent la saisie et réduisent les erreurs',
-    to: 'https://youtube.com/',
-  },
-  {
-    icon: 'i-heroicons-chart-bar',
-    title: 'Analyse automatique de rapports',
-    description: 'pour identifier rapidement les tendances de votre activité',
-    to: 'https://youtube.com/',
-  },
-  {
-    icon: 'i-heroicons-cog-6-tooth',
-    title: 'Automatisations pertinentes',
-    description: 'accessibles sans compétences en développement',
-    to: 'https://youtube.com/',
   }
 ]
 
@@ -122,7 +97,6 @@ useSeoMeta({
     <!-- HERO SECTION -->
     <section class="hero-section">
       <div class="hero-background">
-        <!-- <img src="/osxp/logo-orange.png" alt="" class="hero-bg-image" /> -->
         <div class="hero-overlay" />
       </div>
 
@@ -130,7 +104,7 @@ useSeoMeta({
         <div class="hero-content">
           <!-- Badge Partenaire -->
           <div class="partner-badge">
-            <Icon name="i-heroicons-star-solid" class="w-4 h-4" />
+            <Icon name="i-heroicons-star-solid" class="w-4 h-4 text-yellow-500" />
             <span class="leading-none">Partenaire Orange</span>
           </div>
 
@@ -147,13 +121,13 @@ useSeoMeta({
 
           <!-- Titre -->
           <h1 class="hero-title">
-            Orange nous confie le développement<br class="hidden md:block" />
-            de ses modules métiers
+            L'open-source comme fondation,<br class="hidden md:block" />
+            l'expertise métier comme moteur
           </h1>
 
           <p class="hero-subtitle">
-            De la gestion qualité aux fonctionnalités commerciales,<br class="hidden md:block" />
-            nous créons les outils dont votre entreprise a vraiment besoin
+            Orange l'a compris : avec ERPNext, ils ont trouvé un socle open-source<br class="hidden md:block" />
+            sur lequel construire leurs modules métiers. Et vous, qu'allez-vous créer ?
           </p>
 
           <!-- CTAs -->
@@ -162,9 +136,9 @@ useSeoMeta({
               size="xl"
               color="white"
               variant="solid"
-              to="#qualeo"
+              to="#video"
             >
-              Découvrir Qualéo (2 min)
+              Quand votre DSI devient rentable
             </UButton>
             <UButton
               size="xl"
@@ -196,11 +170,11 @@ useSeoMeta({
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section class="projects-section" id="qualeo">
+    <section class="projects-section" id="video">
       <UContainer>
         <!-- Titre de section -->
         <div class="section-header">
-          <h2 class="section-title">
+          <h2 class="section-title orange-text">
             Nous accompagnons Orange sur plusieurs projets stratégiques qui prouvent qu'un ERP open source peut répondre aux plus hautes exigences des grandes entreprises françaises
           </h2>
         </div>
@@ -211,17 +185,17 @@ useSeoMeta({
         <!-- Qualéo -->
         <div class="project-block">
           <div class="flex flex-col gap-4">
-            <div class="project-image">
-              <div class="image-placeholder">
-                <Icon name="i-heroicons-photo" class="placeholder-icon" />
-                <span>Image Qualéo</span>
-              </div>
-            </div>
-            <div class="project-image">
-              <div class="image-placeholder">
-                <Icon name="i-heroicons-photo" class="placeholder-icon" />
-                <span>Image Qualéo</span>
-              </div>
+            <div class="project-video">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                src="https://www.youtube.com/embed/VOTRE_VIDEO_ID_QUALEO" 
+                title="Qualéo - Gestion de la qualité"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                style="border-radius: 1rem;"
+              ></iframe>
             </div>
           </div>
           <div class="project-content">
@@ -235,17 +209,40 @@ useSeoMeta({
               </p>
             </UCard>
             <p>
-              <strong>Le résultat ?</strong> Qualéo est aujourd'hui un outil mature qui permet aux managers d'évaluer, d'accompagner et de faire grandir leurs équipes avec méthode.
+              <strong>Le résultat ?</strong> Qualéo est aujourd'hui un outil qui permet aux managers d'évaluer, d'accompagner et de faire grandir leurs équipes avec méthode.
             </p>
-            <UButton
-              variant="solid"
-              color="primary"
-              trailing-icon="i-heroicons-arrow-right"
-              to="#"
-              size="xl"
-            >
-              Voir Qualéo en action
-            </UButton>
+          </div>
+        </div>
+
+        <!-- Conectt -->
+        <div class="project-block">
+          <div class="project-content">
+            <h3>Conectt : orchestrer les raccordements réseau avec fluidité</h3>
+            <p>
+              L'opérateur industriel Orange pilote un volume important de demandes de raccordement réseau à l'échelle nationale. Pour remplacer leur solution historique et gagner en agilité, nous co-construisons avec leur équipe, <strong>Conectt</strong>, une plateforme qui répond aux enjeux d'un opérateur de cette envergure.
+            </p>
+            <p>
+              Nous développons des modules métiers sur mesure tout en nous appuyant sur les forces natives d'ERPNext : API, workflows, attribution automatique, notifications…
+            </p>
+            <UCard class="highlight-card">
+              <p>
+                <strong>L'objectif ?</strong> Une solution qui s'intègre de manière sécurisée dans leur écosystème complexe et offre à leurs équipes back-office tous les outils pour piloter les raccordements.
+              </p>
+            </UCard>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="project-video">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                src="https://www.youtube.com/embed/VOTRE_VIDEO_ID_CONECTT" 
+                title="Conectt - Gestion des raccordements"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                style="border-radius: 1rem;"
+              ></iframe>
+            </div>
           </div>
         </div>
 
@@ -269,63 +266,39 @@ useSeoMeta({
       </UContainer>
     </section>
 
-    <!-- SOLUTION SECTION -->
+    <!-- SOLUTION SECTION (fond noir) -->
     <section class="solution-section">
       <UContainer>
         <div class="section-header">
-          <h2 class="section-title-medium">Le défi des grandes entreprises : dépasser la rigidité des ERP traditionnels</h2>
+          <h2 class="section-title-medium white-text">
+            Sur cette fondation, nos clients ne construisent pas que des outils.<br />
+            Ils construisent des actifs.
+          </h2>
+          <p class="section-subtitle white-text">
+            Un module bien pensé devient un différenciateur. Un besoin bien structuré devient un avantage concurrentiel. Parfois même, une source de revenus inattendue.
+          </p>
         </div>
 
         <div class="problem-content">
-          <p>
+          <p class="white-text">
             Les directions informatiques et métier le constatent quotidiennement : l'ERP impose ses règles. Chaque adaptation devient un projet en soi. <strong>3 à 6 mois de développement</strong>. <strong>Des dizaines de milliers d'euros mobilisés</strong>. Des équipes entières concentrées sur des ajustements qui devraient être simples.
           </p>
-          <p>
+          <p class="white-text">
             Et pendant ce temps ? Vos collaborateurs trouvent des solutions de contournement. Les fichiers Excel se multiplient. Les processus se fragmentent.
           </p>
-          <p class="problem-conclusion">
+          <p class="problem-conclusion white-text">
             <strong>Le constat :</strong> vous disposez d'un outil puissant... qui ne reflète pas vraiment votre réalité métier.
           </p>
         </div>
 
         <div class="section-header" style="margin-top: 4rem;">
-          <h2 class="section-title-medium">Dokos : toute la puissance d'un ERP, avec l'agilité que vous attendiez</h2>
+          <h2 class="section-title-medium white-text">Dokos : toute la puissance d'un ERP, avec l'agilité que vous attendiez</h2>
         </div>
 
         <div class="solution-grid">
-          <UCard v-for="solution in solutions" :key="solution.title" class="solution-card">
+          <UCard v-for="solution in solutions" :key="solution.title" class="solution-card-dark">
             <h4 class="solution-title">{{ solution.title }}</h4>
             <p class="solution-text">{{ solution.description }}</p>
-          </UCard>
-        </div>
-      </UContainer>
-    </section>
-
-    <!-- IA SECTION -->
-    <section class="ia-section">
-      <UContainer>
-        <div class="section-header">
-          <h2 class="section-title-medium">L'intelligence artificielle au service de votre efficacité</h2>
-          <p class="section-subtitle">
-            L'IA dans Dokos, ce n'est pas de la technologie pour la technologie. Ce sont des fonctionnalités concrètes qui simplifient le quotidien de vos équipes dès les premiers jours.
-          </p>
-        </div>
-
-        <div class="ia-grid">
-          <UCard v-for="ia in iaFeatures" :key="ia.title" class="ia-card">
-            <template #header>
-              <div class="ia-icon">
-                <Icon :name="ia.icon" class="w-7 h-7" />
-              </div>
-            </template>
-            <h4 class="ia-title">{{ ia.title }}</h4>
-            <p class="ia-text">{{ ia.description }}</p>
-            <UButton class="w-full p-8 rounded-lg" size="xl" variant="solid" color="gray" :to="ia.to" target="_blank">
-              <Icon name="i-heroicons-play-circle" class="w-12 h-12 mr-2" />
-              <span class="text-3xl font-light">
-                Voir la vidéo
-              </span>
-            </UButton>
           </UCard>
         </div>
       </UContainer>
@@ -344,7 +317,7 @@ useSeoMeta({
           </div>
 
           <UBadge color="orange" size="lg" class="salon-badge">
-            Stand Orange - Pupitre 3
+            Stand Orange
           </UBadge>
 
           <div class="salon-info">
@@ -362,7 +335,7 @@ useSeoMeta({
             <h3>🎯 Nous présenterons en exclusivité</h3>
             <ul class="salon-list">
               <li>La démo complète de Qualéo : comment nous avons construit cette solution avec Orange</li>
-              <li>Nos avancées sur l'IA : cas d'usage concrets et démos en direct</li>
+              <li>Le projet Conectt : orchestrer les raccordements réseau à grande échelle</li>
               <li>Notre méthodologie pour adapter Dokos à vos enjeux spécifiques</li>
               <li>Des échanges directs avec notre équipe sur vos projets</li>
             </ul>
@@ -370,17 +343,12 @@ useSeoMeta({
 
           <UButton
             size="xl"
-            color="white"
+            color="orange"
             to="#contact"
             class="salon-cta"
           >
             Nous contacter
           </UButton>
-
-          <p class="salon-note">
-            <Icon name="i-heroicons-qr-code" class="w-5 h-5" />
-            Scannez le QR code sur notre pupitre pour accéder à cette page et rester en contact
-          </p>
         </div>
       </UContainer>
     </section>
@@ -403,11 +371,21 @@ useSeoMeta({
 
     <!-- FOOTER -->
     <footer class="footer-section">
+      <div class="footer-background">
+        <div class="footer-overlay" />
+      </div>
       <UContainer>
         <div class="footer-content">
+          <div class="footer-logos">
+            <img src="/dokos_logo_rect.svg" alt="Dokos" class="footer-logo-dokos" />
+            <div class="footer-badge">
+              <Icon name="i-heroicons-star-solid" class="w-4 h-4" />
+              <span>Partenaire Orange</span>
+            </div>
+          </div>
           <h3>Dokos</h3>
           <p>L'ERP open source qui s'adapte vraiment à votre entreprise</p>
-          <p class="footer-tagline">Expertise métier • Agilité technique • Souveraineté numérique</p>
+          <p class="footer-tagline">Expertise ERPNext • Agilité technique • Souveraineté numérique</p>
         </div>
       </UContainer>
     </footer>
@@ -428,14 +406,6 @@ useSeoMeta({
   position: absolute;
   inset: 0;
   z-index: 0;
-}
-
-.hero-bg-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.15;
-  filter: blur(2px);
 }
 
 .hero-overlay {
@@ -559,12 +529,6 @@ useSeoMeta({
   transition: all 0.3s ease;
 }
 
-/* .pillar-item:hover .pillar-icon {
-  background: #0e7490;
-  color: white;
-  transform: scale(1.1);
-} */
-
 .pillar-title {
   font-size: 1.125rem;
   font-weight: 600;
@@ -598,14 +562,18 @@ useSeoMeta({
   margin: 0 auto;
 }
 
+.orange-text {
+  color: #ff7900;
+}
+
+.white-text {
+  color: white;
+}
+
 .section-title-medium {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
-}
-
-.solution-section .section-title-medium {
-  color: rgb(21, 50, 83);
 }
 
 .section-subtitle {
@@ -620,8 +588,8 @@ useSeoMeta({
   background: linear-gradient(
     to right,
     transparent,
-    #0e7490 30%,
-    #0e7490 70%,
+    #ff7900 30%,
+    #ff7900 70%,
     transparent
   );
 }
@@ -634,29 +602,20 @@ useSeoMeta({
   margin-bottom: 5rem;
 }
 
-.project-image {
+.project-block.reverse {
+  direction: rtl;
+}
+
+.project-block.reverse > * {
+  direction: ltr;
+}
+
+.project-video {
   background: linear-gradient(135deg, #0e7490 0%, #164e63 100%);
   border-radius: 1rem;
   aspect-ratio: 16 / 10;
   overflow: hidden;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-}
-
-.image-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  gap: 1rem;
-}
-
-.placeholder-icon {
-  width: 4rem;
-  height: 4rem;
-  opacity: 0.5;
 }
 
 .project-content h3 {
@@ -668,20 +627,15 @@ useSeoMeta({
 
 .project-content p {
   font-size: 1.0625rem;
-  /* color: #4b5563; */
   line-height: 1.7;
   margin-bottom: 1rem;
 }
 
 .highlight-card {
   margin: 1.5rem 0;
-  border-left: 4px solid #0e7490;
+  border-left: 4px solid #ff7900;
   border-top-left-radius: 1px;
   border-bottom-left-radius: 1px;
-}
-
-.project-link {
-  margin-top: 1rem;
 }
 
 /* FEATURES GRID */
@@ -695,11 +649,6 @@ useSeoMeta({
 .feature-card {
   transition: all 0.3s ease;
 }
-
-/* .feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(14, 116, 144, 0.15);
-} */
 
 .feature-icon {
   width: 60px;
@@ -715,20 +664,18 @@ useSeoMeta({
 .feature-title {
   font-size: 1.125rem;
   font-weight: 600;
-  /* color: #1f2937; */
   margin: 1rem 0;
 }
 
 .feature-text {
-  /* color: #4b5563; */
   opacity: 0.7;
   line-height: 1.6;
 }
 
-/* SOLUTION SECTION */
+/* SOLUTION SECTION (fond noir) */
 .solution-section {
-  background: #f9fafb;
-  columns: black;
+  background: #1f2937;
+  color: white;
   padding: 5rem 0;
 }
 
@@ -740,14 +687,12 @@ useSeoMeta({
 
 .problem-content p {
   font-size: 1.0625rem;
-  color: #4b5563;
   line-height: 1.7;
   margin-bottom: 1.5rem;
 }
 
 .problem-conclusion {
   font-size: 1.125rem;
-  color: #1f2937;
   margin-top: 2rem;
 }
 
@@ -758,86 +703,24 @@ useSeoMeta({
   margin-top: 3rem;
 }
 
-.solution-card {
-  background: white;
+.solution-card-dark {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
-
-/* .solution-card:hover {
-  box-shadow: 0 12px 40px rgba(14, 116, 144, 0.1);
-} */
 
 .solution-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1f2937;
+  color: white;
   margin-bottom: 1rem;
 }
 
 .solution-text {
-  color: #4b5563;
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
 }
-
-/* IA SECTION */
-.ia-section {
-  padding: 5rem 0;
-}
-
-.ia-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.ia-card {
-  text-align: center;
-}
-
-.ia-icon {
-  width: 70px;
-  height: 70px;
-  margin: 0 auto 1rem;
-  background: linear-gradient(135deg, #0e7490 0%, #164e63 100%);
-  border-radius: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.ia-title {
-  font-size: 1.125rem;
-  font-weight: 600;
-  /* color: #1f2937; */
-  margin-bottom: 0.75rem;
-}
-
-.ia-text {
-  /* color: #6b7280; */
-  opacity: 0.7;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
-.video-placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 2rem;
-  background: #f9fafb;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-/* .video-placeholder:hover {
-  background: #f3f4f6;
-  transform: scale(1.02);
-} */
 
 /* SALON SECTION */
 .salon-section {
@@ -937,20 +820,9 @@ useSeoMeta({
   margin: 2rem auto;
 }
 
-.salon-note {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 2rem;
-  opacity: 0.9;
-  font-size: 0.9375rem;
-}
-
 /* CONTACT SECTION */
 .contact-section {
   padding: 5rem 0;
-  /* background: #f9fafb; */
 }
 
 .contact-card {
@@ -961,7 +833,6 @@ useSeoMeta({
 .contact-title {
   font-size: 2rem;
   font-weight: 700;
-  /* color: #1f2937; */
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -973,33 +844,58 @@ useSeoMeta({
   line-height: 1.6;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.submit-button {
-  margin-top: 1rem;
-}
-
-.form-note {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  text-align: center;
-  font-size: 0.875rem;
-  color: #6b7280;
-  margin-top: 1rem;
-}
-
 /* FOOTER */
 .footer-section {
-  background: #1f2937;
+  position: relative;
   color: white;
   padding: 3rem 0;
   text-align: center;
+  overflow: hidden;
+}
+
+.footer-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.footer-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #ff7900 0%, #ff9500 100%);
+}
+
+.footer-content {
+  position: relative;
+  z-index: 10;
+}
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-logo-dokos {
+  height: 50px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+}
+
+.footer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: #ff7900;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 
 .footer-content h3 {
@@ -1009,14 +905,14 @@ useSeoMeta({
 }
 
 .footer-content p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.95);
   margin-bottom: 0.5rem;
 }
 
 .footer-tagline {
   font-size: 0.875rem;
   margin-top: 1rem;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 /* RESPONSIVE */
@@ -1062,14 +958,15 @@ useSeoMeta({
     font-size: 1.625rem;
   }
 
-  .project-block {
+  .project-block,
+  .project-block.reverse {
     grid-template-columns: 1fr;
     gap: 2rem;
+    direction: ltr;
   }
 
   .features-grid,
-  .solution-grid,
-  .ia-grid {
+  .solution-grid {
     grid-template-columns: 1fr;
   }
 
