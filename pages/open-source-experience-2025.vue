@@ -194,7 +194,7 @@ useSeoMeta({
               <iframe 
                 width="100%" 
                 height="100%" 
-                src="https://www.youtube.com/embed/VOTRE_VIDEO_ID_QUALEO" 
+                src="https://www.youtube.com/embed/ooMT65Uxy5s?autoplay=1&loop=1&playlist=ooMT65Uxy5s" 
                 title="Qualéo - Gestion de la qualité"
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -240,7 +240,7 @@ useSeoMeta({
               <iframe 
                 width="100%" 
                 height="100%" 
-                src="https://www.youtube.com/embed/VOTRE_VIDEO_ID_CONECTT" 
+                src="https://youtube.com/embed/tzY6ybHaX6U?autoplay=1&loop=1&playlist=tzY6ybHaX6U" 
                 title="Conectt - Gestion des raccordements"
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -422,7 +422,7 @@ useSeoMeta({
             </div>
           </div>
           <h3>Dokos</h3>
-          <p>L'open-source comme fondaction, l'expertise métier comme moteur</p>
+          <p>L'open-source comme fondation, l'expertise métier comme moteur</p>
           <p class="footer-tagline">Expertise ERPNext • Agilité technique • Souveraineté numérique</p>
         </div>
       </UContainer>
