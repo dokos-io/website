@@ -61,7 +61,7 @@ async function onSubmit(event: FormSubmitEvent<any>) {
       state.name = ''
       state.email = ''
       state.body = ''
-      toast.add({ title: 'Email envoyé', description: 'Nous faison notre possible pour vous répondre dans les meilleurs délais', color: 'green' })
+      toast.add({ title: 'Email envoyé', description: 'Nous faisons notre possible pour vous répondre dans les meilleurs délais', color: 'green' })
     })
     .catch((e) => {
       const description = e.data?.message || 'Un erreur a empêché l\'envoi de votre message. Veuilez réessayer dans quelques instants ou nous envoyer un email.'

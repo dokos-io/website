@@ -30,6 +30,11 @@ useSeoMeta({
 
 <template>
     <div v-if="page">
+        <div class="bg-orange-500 py-2 text-center text-black font-semibold">Rejoignez-nous à l'open-source expérience 2025 sur le stand d'Orange.
+            <div>
+                <NuxtLink to="open-source-experience-2025" class="text-grey font-normal">En savoir plus <Icon name="i-mdi-arrow-top-right"/></NuxtLink>
+            </div>
+        </div>
         <ULandingHero
             :links="page.hero.links"
             orientation="vertical"
