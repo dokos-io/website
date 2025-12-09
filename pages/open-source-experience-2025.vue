@@ -62,9 +62,9 @@ const features = [
     description: 'Vision métier des flux de gestion ET architecture technique pour une solution vraiment complète.'
   },
   {
-    icon: 'i-heroicons-shield-check',
-    title: 'Sécurité & certifications',
-    description: "Nos certifications et notre engagement pour la sécurité de vos données et de votre infrastructure."
+    icon: 'i-heroicons-lock-open',
+    title: 'Open source & souverain',
+    description: "Notre engagement pour la souveraineté numérique et la transparence de vos outils de gestion."
   },
   {
     icon: 'i-heroicons-bolt',
@@ -81,6 +81,10 @@ const solutions = [
   {
     title: 'Une flexibilité pensée pour vous',
     description: "Dokos s'adapte à votre organisation, et non l'inverse. Chaque module peut être configuré précisément selon vos besoins réels, vos processus existants, votre culture d'entreprise."
+  },
+  {
+    title: 'Open source et souverain',
+    description: "Dokos est une adaptation française d'ERPNext, conçue pour les entreprises qui souhaitent retrouver la maîtrise de leurs outils de gestion."
   }
 ]
 
@@ -136,9 +140,9 @@ useSeoMeta({
               size="xl"
               color="white"
               variant="solid"
-              to="#video"
+              to="#qualeo"
             >
-              Quand votre DSI devient rentable
+              Découvrir Qualéo (2 min)
             </UButton>
             <UButton
               size="xl"
@@ -588,8 +592,8 @@ useSeoMeta({
   background: linear-gradient(
     to right,
     transparent,
-    #ff7900 30%,
-    #ff7900 70%,
+    #0e7490 30%,
+    #0e7490 70%,
     transparent
   );
 }
@@ -633,7 +637,7 @@ useSeoMeta({
 
 .highlight-card {
   margin: 1.5rem 0;
-  border-left: 4px solid #ff7900;
+  border-left: 4px solid #0e7490;
   border-top-left-radius: 1px;
   border-bottom-left-radius: 1px;
 }
