@@ -119,7 +119,7 @@ useSeoMeta({
             </div>
             <div class="logo-separator">×</div>
             <div class="logo-card">
-              <img src="/dokos_logo_rect.svg" alt="Dokos" class="logo-dokos" />
+              <img src="/osxp/dokos_logo.svg" alt="Dokos" class="logo-dokos" />
             </div>
           </div>
 
@@ -138,11 +138,12 @@ useSeoMeta({
           <div class="cta-group">
             <UButton
               size="xl"
-              color="white"
+              color="orange"
               variant="solid"
-              to="#qualeo"
+              to="https://qualeo.dokos.cloud"
+              target="_blank"
             >
-              Découvrir Qualéo (2 min)
+              Tester Qualéo
             </UButton>
             <UButton
               size="xl"
@@ -187,7 +188,7 @@ useSeoMeta({
         <div class="separator-line" />
 
         <!-- Qualéo -->
-        <div class="project-block">
+        <div class="project-block" id="qualeo">
           <div class="flex flex-col gap-4">
             <div class="project-video">
               <iframe 
@@ -270,40 +271,73 @@ useSeoMeta({
       </UContainer>
     </section>
 
-    <!-- SOLUTION SECTION (fond noir) -->
-    <section class="solution-section">
+    <!-- SOUVERAINETÉ SECTION (fond noir) -->
+    <section class="sovereignty-section">
       <UContainer>
         <div class="section-header">
           <h2 class="section-title-medium white-text">
-            Sur cette fondation, nos clients ne construisent pas que des outils.<br />
-            Ils construisent des actifs.
+            Souveraineté numérique :<br />
+            un concept politique ou un avantage business ?
           </h2>
           <p class="section-subtitle white-text">
-            Un module bien pensé devient un différenciateur. Un besoin bien structuré devient un avantage concurrentiel. Parfois même, une source de revenus inattendue.
+            Pour Orange, c'est un avantage stratégique mesurable. Pour vous aussi.
           </p>
         </div>
 
-        <div class="problem-content">
+        <div class="sovereignty-intro">
           <p class="white-text">
-            Les directions informatiques et métier le constatent quotidiennement : l'ERP impose ses règles. Chaque adaptation devient un projet en soi. <strong>3 à 6 mois de développement</strong>. <strong>Des dizaines de milliers d'euros mobilisés</strong>. Des équipes entières concentrées sur des ajustements qui devraient être simples.
-          </p>
-          <p class="white-text">
-            Et pendant ce temps ? Vos collaborateurs trouvent des solutions de contournement. Les fichiers Excel se multiplient. Les processus se fragmentent.
-          </p>
-          <p class="problem-conclusion white-text">
-            <strong>Le constat :</strong> vous disposez d'un outil puissant... qui ne reflète pas vraiment votre réalité métier.
+            On entend beaucoup parler de souveraineté numérique. Mais concrètement, qu'est-ce que cela change ?
           </p>
         </div>
 
-        <div class="section-header" style="margin-top: 4rem;">
-          <h2 class="section-title-medium white-text">Dokos : toute la puissance d'un ERP, avec l'agilité que vous attendiez</h2>
-        </div>
-
-        <div class="solution-grid">
-          <UCard v-for="solution in solutions" :key="solution.title" class="solution-card-dark">
-            <h4 class="solution-title">{{ solution.title }}</h4>
-            <p class="solution-text">{{ solution.description }}</p>
+        <!-- Les 4 changements -->
+        <div class="sovereignty-grid">
+          <UCard class="sovereignty-card">
+            <div class="sovereignty-icon">
+              <Icon name="i-heroicons-arrows-right-left" class="w-6 h-6" />
+            </div>
+            <h4 class="sovereignty-card-title">Votre pouvoir de négociation</h4>
+            <p class="sovereignty-card-text">
+              Avec un ERP propriétaire, vous êtes captif. Avec l'open-source, vous pouvez changer de prestataire sans tout reconstruire.
+            </p>
           </UCard>
+
+          <UCard class="sovereignty-card">
+            <div class="sovereignty-icon">
+              <Icon name="i-heroicons-bolt" class="w-6 h-6" />
+            </div>
+            <h4 class="sovereignty-card-title">Votre agilité</h4>
+            <p class="sovereignty-card-text">
+              Vous développez une fonctionnalité stratégique en quelques semaines. Pas besoin d'attendre 18 mois qu'un éditeur l'inscrive à sa roadmap.
+            </p>
+          </UCard>
+
+          <UCard class="sovereignty-card">
+            <div class="sovereignty-icon">
+              <Icon name="i-heroicons-banknotes" class="w-6 h-6" />
+            </div>
+            <h4 class="sovereignty-card-title">Votre maîtrise des coûts</h4>
+            <p class="sovereignty-card-text">
+              Pas de licence qui double d'un coup. Pas de maintenance forcée. Vous investissez où ça compte vraiment pour vous.
+            </p>
+          </UCard>
+
+          <UCard class="sovereignty-card">
+            <div class="sovereignty-icon">
+              <Icon name="i-heroicons-shield-check" class="w-6 h-6" />
+            </div>
+            <h4 class="sovereignty-card-title">Votre sécurité</h4>
+            <p class="sovereignty-card-text">
+              Vos données restent chez vous. Votre code source est auditable. Vous savez exactement ce qui tourne sur vos serveurs.
+            </p>
+          </UCard>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="sovereignty-footer">
+          <p class="white-text sovereignty-final">
+            Et cela concerne toutes les entreprises.
+          </p>
         </div>
       </UContainer>
     </section>
@@ -381,14 +415,14 @@ useSeoMeta({
       <UContainer>
         <div class="footer-content">
           <div class="footer-logos">
-            <img src="/dokos_logo_rect.svg" alt="Dokos" class="footer-logo-dokos" />
+            <img src="/osxp/dokos_logo.svg" alt="Dokos" class="footer-logo-dokos" />
             <div class="footer-badge">
               <Icon name="i-heroicons-star-solid" class="w-4 h-4" />
               <span>Partenaire Orange</span>
             </div>
           </div>
           <h3>Dokos</h3>
-          <p>L'ERP open source qui s'adapte vraiment à votre entreprise</p>
+          <p>L'open-source comme fondaction, l'expertise métier comme moteur</p>
           <p class="footer-tagline">Expertise ERPNext • Agilité technique • Souveraineté numérique</p>
         </div>
       </UContainer>
@@ -676,28 +710,111 @@ useSeoMeta({
   line-height: 1.6;
 }
 
-/* SOLUTION SECTION (fond noir) */
-.solution-section {
+/* SOUVERAINETÉ SECTION (fond noir) */
+.sovereignty-section {
   background: #1f2937;
   color: white;
   padding: 5rem 0;
 }
 
-.problem-content {
-  max-width: 800px;
-  margin: 0 auto;
+.sovereignty-intro {
+  max-width: 700px;
+  margin: 0 auto 3rem;
   text-align: center;
 }
 
-.problem-content p {
-  font-size: 1.0625rem;
-  line-height: 1.7;
+.sovereignty-intro p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.sovereignty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.sovereignty-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.sovereignty-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.sovereignty-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
   margin-bottom: 1.5rem;
 }
 
-.problem-conclusion {
+.sovereignty-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.sovereignty-card-text {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.sovereignty-highlight {
+  max-width: 800px;
+  margin: 4rem auto 0;
+  background: rgba(255, 121, 0, 0.15);
+  border: 2px solid rgba(255, 121, 0, 0.3);
+}
+
+.sovereignty-highlight-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.sovereignty-highlight-content p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1rem;
+}
+
+.sovereignty-conclusion {
+  margin-top: 1.5rem;
   font-size: 1.125rem;
-  margin-top: 2rem;
+}
+
+.sovereignty-footer {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.sovereignty-final {
+  font-size: 1.25rem;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+/* DOKOS SECTION (fond blanc) */
+.dokos-section {
+  padding: 5rem 0;
+  background: white;
 }
 
 .solution-grid {
@@ -707,22 +824,24 @@ useSeoMeta({
   margin-top: 3rem;
 }
 
-.solution-card-dark {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+.solution-card {
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.solution-title {
+.solution-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(14, 116, 144, 0.15);
+}
+
+.solution-title-light {
   font-size: 1.25rem;
   font-weight: 600;
-  color: white;
+  color: #1f2937;
   margin-bottom: 1rem;
 }
 
-.solution-text {
-  color: rgba(255, 255, 255, 0.8);
+.solution-text-light {
+  color: #4b5563;
   line-height: 1.6;
 }
 
@@ -970,7 +1089,8 @@ useSeoMeta({
   }
 
   .features-grid,
-  .solution-grid {
+  .solution-grid,
+  .sovereignty-grid {
     grid-template-columns: 1fr;
   }
 
