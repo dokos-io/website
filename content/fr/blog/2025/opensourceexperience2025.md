@@ -5,7 +5,7 @@ badge:
   label: Dokos, partenaire Orange
 description: Le jour où la souveraineté numérique est devenue concrète
 author: Céline
-image: /blog/2025/20250425-150011.jpg
+image: /blog/2025/image_blog_OSE_2025.png
 title: L'open-source Expérience 2025
 ---
 Les 10 et 11 décembre 2025, nous étions présents à l'Open-source Experience en tant que partenaire Orange. Plus de 4000 professionnels s'étaient réunis à la Cité des Sciences, et l'ambiance était particulière cette année.
@@ -20,9 +20,9 @@ Et cela change tout.
 
 Juin 2025. Audition parlementaire.
 
-Question directe à Microsoft France : "Que se passe-t-il si les autorités américaines demandent l'accès aux données hébergées en France ?"
+Question directe à Microsoft France : *"Que se passe-t-il si les autorités américaines demandent l'accès aux données hébergées en France ?"*
 
-Réponse franche : "En cas d'injonction judiciaire américaine fondée, Microsoft est légalement contraint de transmettre les données."
+Réponse franche : *"En cas d'injonction judiciaire américaine fondée, Microsoft est légalement contraint de transmettre les données."*
 
 Ce n'était pas une provocation. Juste un constat juridique. Le Cloud Act, cette loi américaine adoptée en 2018, permet aux autorités US d'accéder aux données hébergées par des entreprises américaines, même quand ces données sont physiquement stockées en Europe.
 
@@ -91,7 +91,7 @@ Cette transparence est rassurante, surtout sur des sujets sensibles.
 
 ### La réversibilité
 
-Orange utilise Mautic pour son marketing automation. Lorsque leur intégrateur initial a pivoté vers une offre propriétaire, Orange a pu changer de partenaire et basculer chez Dropsolid en quelques semaines, sans migration complexe ni dépendance contractuelle. C'est ça, la réversibilité : ne jamais être prisonnier d'un prestataire parce que la solution reste ouverte.
+Orange est en phase d'étude pour l'utilisation de Mautic (outil de marketing automation). Lorsque leur intégrateur initial a pivoté vers une offre propriétaire, Orange a pu changer de partenaire et basculer chez Dropsolid, sans migration complexe ni dépendance contractuelle. C'est ça, la réversibilité : ne jamais être prisonnier d'un prestataire parce que la solution reste ouverte.
 
 ### La souveraineté juridique
 
@@ -131,21 +131,9 @@ C'est dans ce contexte que nous avons développé Dokos, une adaptation françai
 
 Notre conviction est simple : il est possible de gérer une entreprise avec des outils performants, éthiques et souverains. Vous n'avez pas à choisir entre efficacité et maîtrise de vos données.
 
-Dokos, c'est une solution de gestion complète, pensée pour les spécificités françaises (comptabilité, réglementations, usages métiers), construite sur de l'open-source, et hébergeable sur l'infrastructure de votre choix. 
-
 Vos données vous appartiennent et restent là où vous le décidez.
 
 Nous ne prétendons pas révolutionner quoi que ce soit. Nous contribuons simplement à un mouvement plus large : celui d'entreprises qui reprennent progressivement le contrôle de leurs outils numériques.
-
-## Une transformation progressive, pas une révolution
-
-À l'OSE, une chose nous a particulièrement marqués : personne ne parle de tout changer du jour au lendemain.
-
-Les DSI que nous avons rencontrés sont lucides. Ils savent que migrer des infrastructures critiques demande du temps, de la préparation, de l'accompagnement. Ils savent aussi que certaines solutions propriétaires resteront en place pour de bonnes raisons.
-
-Mais ils savent également qu'ils ne peuvent plus ignorer la question de la souveraineté numérique. 
-
-Que chaque nouveau projet, chaque renouvellement de contrat, chaque évolution d'infrastructure est une occasion de reprendre progressivement la main.
 
 ## Une invitation à la réflexion
 
@@ -165,4 +153,3 @@ Pas pour vous convaincre de quoi que ce soit. Juste pour accompagner ceux qui se
 
 ---
 
-**~1000 mots | 4 minutes de lecture**
