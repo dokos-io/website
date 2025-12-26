@@ -4,7 +4,7 @@ id: Bonne Année 2026
 badge:
   label: Merci à vous
 author: Céline
-image:
+image: /blog/2025/bonne_annee_2026.png
 title: "Bonne Année à la Team Dokos "
 ---
 
