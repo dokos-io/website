@@ -1,0 +1,95 @@
+---
+date: 2025-01-05T00:00:00.000Z
+id: Les évolutions de 2025
+badge:
+  label: Les évolutions de 2025
+author: Céline
+image: /blog/2025/actualites-janv_26.png
+title: "Petite revue de 2025 (et ce qui nous attend en 2026)"
+---
+
+Il y a des années où on avance tête baissée. 2025 en a été une. Entre les développements, les échanges passionnants sur la facturation électronique, le chantier de la certification LNE et tout le reste, nous avons beaucoup construit. Nous avons partagé sur le forum, publié des notes de version, mais nous n'avons pas pris le temps de faire une vraie pause pour vous raconter tout ce qui a évolué.
+
+C'est chose faite aujourd'hui.
+
+---
+
+## Une bonne nouvelle venue d'ailleurs
+
+Le 1er janvier 2026, Frappe a officialisé l'intégration de l'équipe de The Commit Company dans ses rangs.
+
+Cette équipe travaillait depuis plusieurs années à la création d'application populaire de l'éco-système - dont Raven, dans le cadre d'une incubation financée Frappe. Leur approche du développement nous a particulièrement marquée quand nous avons lu l'article de Prathamesh Kurunkar ([article complet ici](https://prathameshkurunkar.com/posts/All-Commits-Merged)). 
+
+Ce qui ressort de leurs années de travail : une attention constante aux fondamentaux, un refus des solutions de surface, une volonté de construire des choses qui tiennent dans le temps. Pas de course aux fonctionnalités spectaculaires, mais un travail méticuleux sur ce qui fait vraiment la différence au quotidien.
+
+Cette formalisation de leur intégration au sein de Frappe Technologies envoie un signal clair : l'écosystème Frappe valorise et pérennise les équipes qui privilégient la qualité à long terme plutôt que l'effet d'annonce.
+
+Cela résonne profondément avec notre façon de travailler chez Dokos. Nous sommes une petite équipe, et nous assumons cette échelle. Elle nous permet justement de garder l'exigence sur chaque détail, de ne jamais considérer qu'un bug est "acceptable", de traiter chaque remontée terrain avec l'attention qu'elle mérite. Parce qu'au final, un dysfonctionnement dans un logiciel de gestion, ce n'est jamais théorique. C'est du temps perdu pour quelqu'un, une facture qui ne part pas, un processus qui bloque et génère du stress pour les équipes.
+
+Cette intégration nous rappelle qu'on peut rester petit, exigeant, et construire quelque chose de solide et durable.
+
+---
+
+## ERPNext V16 et ce qui se prépare
+
+ERPNext V16 sort ce mois-ci. Nous l'attendons avec impatience pour finaliser notre V5 de Dokos, prévue au premier trimestre 2026.
+
+Cette V16 pose surtout les bases techniques pour les évolutions à venir. Car l'équipe de The Commit Company, maintenant pleinement intégrée à Frappe, va travailler sur des aspects qui nous tiennent particulièrement à cœur :
+
+**Raven V3** : la messagerie intégrée va évoluer avec une application mobile repensée et une meilleure intégration dans le bureau. L'objectif est de simplifier la communication sans avoir à jongler entre plusieurs outils.
+
+**Amélioration des workflows financiers** : l'un des fondateurs de The Commit Company a une appétence particulière pour la comptabilité. Il va se concentrer sur les flux de paiement, la gestion des créances et dettes, les rapprochements bancaires, les états financiers. Son approche : identifier ce qui ralentit, ce qui complique, et simplifier sans appauvrir.
+
+**OCR natif et extraction de données par IA** : pour capturer automatiquement les informations clés des factures et documents. Moins de saisie manuelle répétitive, plus de temps pour se concentrer sur ce qui compte vraiment.
+Nous suivrons cette fonctionnalité avec une attention toute particulière pour adapter notre application OCR.
+
+Ces évolutions arriveront progressivement dans ERPNext au cours de 2026. Nous les intégrerons dans Dokos en les adaptant à vos besoins et aux spécificités de votre quotidien.
+
+Mais avant de parler de demain, prenons le temps de regarder ce qui est déjà là.
+
+---
+
+## Ce qui est déjà disponible dans votre Dokos
+
+En 2025, nous avons développé et déployé des dizaines de fonctionnalités. Mais nous n'avons jamais pris le recul nécessaire pour vous montrer l'ampleur de ce qui a été accompli.
+
+Voici ce qui est **déjà en production** et qui facilite peut-être déjà votre quotidien sans que vous le sachiez :
+
+**En comptabilité** : Les factures d'acompte affichent automatiquement le bon intitulé en en-tête. Le rapport des soldes intermédiaires de gestion montre le pourcentage de chaque ligne par rapport au chiffre d'affaires – cette simple colonne change la lecture de votre structure de revenus. Nous avons aussi ajouté des hooks pour personnaliser les écritures comptables avant traitement, et intégré de nouveaux plans comptables (Algérie, Allemagne, Suisse).
+
+**En gestion des stocks** : les rapports affichent maintenant les numéros de série directement, vous pouvez créer des nomenclatures et des bons de livraison sans code article obligatoire (précieux pour le sur-mesure), et les noms d'articles apparaissent à côté des codes. Parce que "PROD-2847" ne parle pas autant que "Chaise de bureau ergonomique".
+
+**Pour les réservations** : le remboursement automatique des crédits en cas d'annulation est désormais possible. Les abonnements s'affichent directement dans le calendrier de réservation. La récurrence trimestrielle pour l'allocation de crédits est disponible. Ces améliorations viennent directement de vos retours, de ces situations du quotidien qui demandaient trop d'interventions manuelles.
+
+**Pour les achats et projets** : un filtre permet d'identifier rapidement les fournisseurs _transporteurs_ dans les factures d'achat. Les feuilles de temps peuvent être masquées pour les utilisateurs de projet (une question de confidentialité qui revenait régulièrement). Les modèles de projet peuvent être renommés et désactivés pour mieux organiser vos bibliothèques. Les fiches clients et fournisseurs accueillent maintenant des activités et des notes.
+
+**Autres améliorations** : gestion de plusieurs versions de packs produits, amélioration des filtres dans les cartes d'événements, gestion du poids total dans les expéditions, amélioration du formulaire des types de crédits de réservation...
+
+
+---
+
+## Merci Aghiles, merci Antoine !
+
+Ces améliorations ne viennent pas uniquement de notre équipe interne ou de l'équipe Frappe Technologies.
+
+**Aghiles de Forlead** a ajouté le champ de suivi des commissions dans les devis. Ce développement répond à un besoin concret pour les structures qui gèrent des réseaux commerciaux. Son travail permet à nos utilisateurs d'améliorer la gestion des rémunérations variables de leurs commerciaux.
+
+**Antoine Maas** a créé le système de remboursement automatique des crédits de réservation et la récurrence trimestrielle pour les allocations. Ces fonctionnalités ont amélioré l'expérience de tous ceux qui gèrent des espaces de coworking, des salles de réunion ou des équipements partagés. Avant ses contributions, ces processus nécessitaient des interventions manuelles répétitives.
+
+C'est là toute la force de l'open source : une communauté qui ne se contente pas d'utiliser le logiciel, mais qui l'améliore, le façonne, le fait grandir. Chaque contribution bénéficie à tous. C'est cette dynamique collective qui garantit que Dokos évolue au plus près de vos besoins réels.
+
+---
+
+## Et maintenant ?
+
+La V5 arrive dans les prochaines semaines. Elle intégrera la base technique d'ERPNext V16 et nos propres développements. Nous continuerons de documenter ces évolutions sur le forum, de répondre à vos questions, d'écouter vos retours.
+
+Pour celles et ceux qui se demandent si Dokos est pérenne, si l'écosystème est solide : oui. ERPNext/Frappe continue d'attirer des talents de qualité, la communauté grandit avec bienveillance, les développements avancent avec exigence. Et de notre côté, nous sommes plus nombreux, mieux organisés, toujours aussi déterminés.
+
+2026 sera intense. Riche de projets qui nous tiennent à cœur. C'est exactement ce que nous aimons : prendre soin de ce que nous construisons, écouter ce dont vous avez besoin, avancer avec vous.
+
+Merci de faire partie de cette aventure.
+
+*L'équipe Dokos*
+
+
