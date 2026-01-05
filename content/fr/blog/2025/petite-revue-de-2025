@@ -7,9 +7,6 @@ author: Céline
 image: 
 title: "Petite revue de 2025 (et ce qui nous attend en 2026)"
 ---
-Parfait ! Je reprends l'article complet avec ces ajustements :
-
----
 
 # Petite revue de 2025 (et ce qui nous attend en 2026)
 
@@ -23,11 +20,11 @@ C'est chose faite aujourd'hui.
 
 Le 1er janvier 2026, Frappe a officialisé l'intégration de l'équipe de The Commit Company dans ses rangs.
 
-Cette équipe travaillait depuis plusieurs années sur les fondations techniques d'ERPNext, dans le cadre d'une incubation par Frappe. Leur approche du développement m'a particulièrement marquée quand j'ai lu l'article de Prathamesh Kurunkar ([article complet ici](lien)). 
+Cette équipe travaillait depuis plusieurs années sur les fondations techniques d'ERPNext, dans le cadre d'une incubation par Frappe. Leur approche du développement nous a particulièrement marquée quand nous avons lu l'article de Prathamesh Kurunkar ([article complet ici](https://prathameshkurunkar.com/posts/All-Commits-Merged)). 
 
 Ce qui ressort de leurs années de travail : une attention constante aux fondamentaux, un refus des solutions de surface, une volonté de construire des choses qui tiennent dans le temps. Pas de course aux fonctionnalités spectaculaires, mais un travail méticuleux sur ce qui fait vraiment la différence au quotidien.
 
-Cette formalisation de leur intégration envoie un signal clair : l'écosystème ERPNext valorise et pérennise les équipes qui privilégient la qualité à long terme plutôt que l'effet d'annonce.
+Cette formalisation de leur intégration envoie un signal clair : l'écosystème Frappe valorise et pérennise les équipes qui privilégient la qualité à long terme plutôt que l'effet d'annonce.
 
 Cela résonne profondément avec notre façon de travailler chez Dokos. Nous sommes une petite équipe, et nous assumons cette échelle. Elle nous permet justement de garder l'exigence sur chaque détail, de ne jamais considérer qu'un bug est "acceptable", de traiter chaque remontée terrain avec l'attention qu'elle mérite. Parce qu'au final, un dysfonctionnement dans un logiciel de gestion, ce n'est jamais théorique. C'est du temps perdu pour quelqu'un, une facture qui ne part pas, un processus qui bloque et génère du stress.
 
@@ -69,11 +66,10 @@ Voici ce qui est **déjà en production** et qui facilite peut-être déjà votr
 
 **Autres améliorations** : gestion de plusieurs versions de packs produits, amélioration des filtres dans les cartes d'événements, gestion du poids total dans les expéditions, amélioration du formulaire des types de crédits de réservation...
 
-Ces ajouts peuvent sembler modestes pris individuellement. Mais ensemble, ils transforment l'expérience quotidienne. Ils suppriment des petites frustrations, économisent des clics répétitifs, clarifient des informations.
 
 ---
 
-## Merci Aghiles, merci Antoine
+## Merci Aghiles, merci Antoine !
 
 Ces améliorations ne viennent pas uniquement de notre équipe interne.
 
@@ -89,7 +85,7 @@ C'est là toute la force de l'open source : une communauté qui ne se contente p
 
 La V5 arrive dans les prochaines semaines. Elle intégrera la base technique d'ERPNext V16 et nos propres développements. Nous continuerons de documenter ces évolutions sur le forum, de répondre à vos questions, d'écouter vos retours.
 
-Pour celles et ceux qui se demandent si Dokos est pérenne, si l'écosystème est solide : oui. ERPNext continue d'attirer des talents de qualité, la communauté grandit avec bienveillance, les développements avancent avec exigence. Et de notre côté, nous sommes plus nombreux, mieux organisés, toujours aussi déterminés.
+Pour celles et ceux qui se demandent si Dokos est pérenne, si l'écosystème est solide : oui. ERPNext/Frappe continue d'attirer des talents de qualité, la communauté grandit avec bienveillance, les développements avancent avec exigence. Et de notre côté, nous sommes plus nombreux, mieux organisés, toujours aussi déterminés.
 
 2026 sera intense. Riche de projets qui nous tiennent à cœur. C'est exactement ce que nous aimons : prendre soin de ce que nous construisons, écouter ce dont vous avez besoin, avancer avec vous.
 
@@ -97,6 +93,4 @@ Merci de faire partie de cette aventure.
 
 *L'équipe Dokos*
 
----
 
-Voilà ! Tous les ajustements sont intégrés. L'article est prêt ! 🎯
