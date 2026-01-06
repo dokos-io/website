@@ -1,5 +1,5 @@
 ---
-date: 2025-01-05T00:00:00.000Z
+date: 2026-01-05T00:00:00.000Z
 id: Les évolutions de 2025
 badge:
   label: Les évolutions de 2025
