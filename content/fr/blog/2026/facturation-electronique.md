@@ -1,14 +1,14 @@
 ---
 date: 2026-01-15T00:00:00.000Z
-id: Facturation éléctronique
+id: Facturation électronique
 badge:
-  label: Facturation éléctronique
+  label: Facturation électronique
 author: Céline
 image: /blog/2025/FE-image-blog.png
 title: "Facturation électronique"
 description: "et si on prenait le temps de respirer ?"
 ---
-Ces dernières semaines, vos boîtes mail saturent : *"Choisissez maintenant !"*, *"Urgence absolue !"*, *"Ne restez pas sur le bord de la route !"*. Cette pression constante n'est pas là pour vous aider, mais pour vous précipiter. Entre les injonctions commerciales et la complexité technique, il est normal de se sentir un peu perdu.
+Ces dernières semaines, vos boîtes mail saturent : *"Choisissez maintenant !"*, *"Urgence !"*, *"Ne restez pas sur le bord de la route !"*. Cette pression constante n'est pas là pour vous aider, mais pour vous précipiter. Entre les injonctions commerciales et la complexité technique, il est normal de se sentir un peu perdu.
 
 Pourtant, notre expérience nous a appris une chose essentielle : **on ne prend jamais de bonne décision dans l'urgence et le stress.** Alors, posons-nous un instant. Prenons le temps de décrypter ce qui se joue vraiment, calmement.
 
@@ -30,7 +30,7 @@ Ce calendrier nous offre l'opportunité de faire des choix réfléchis plutôt q
 
 ### Le nouveau "péage" numérique
 
-L'État a fait machine arrière : le portail public gratuit initialement promis ne verra pas le jour. Pour échanger vos factures, vous devrez obligatoirement passer par un intermédiaire privé agréé : une PDP (Plateforme de Dématérialisation Partenaire).
+L'État a fait machine arrière : le portail public gratuit initialement promis ne verra pas le jour. Pour échanger vos factures, vous devrez obligatoirement passer par un intermédiaire privé agréé : une PA (Plateforme Agrée).
 
 C’est un tournant majeur. Demain, émettre une facture aura un coût récurrent. Pour les petites structures, ce "péage numérique" peut vite devenir une charge lourde et un manque de souveraineté.
 
@@ -48,7 +48,8 @@ Chez [Dokos](https://www.dokos.io), nous croyons qu'un logiciel de gestion doit 
 
 1. **Négocier des tarifs justes** grâce à la force du collectif.
 2. **Garantir votre liberté** : vous ne dépendez pas d'un seul acteur marchand, mais d'un écosystème ouvert.
-3. **Protéger votre souveraineté** : vos données ne sont pas des marchandises.
+3. **Protéger votre souveraineté** : vos données sont les vôtres et le resteront.
+4. **Devenir Plateforme Agrée** pour garantir l'indépendance et la souveraineté de nos adhérents
 
 Cette démarche profite à tout le monde, que vous utilisiez Dokos ou une autre solution libre. C'est notre manière de prendre soin de votre autonomie.
 
