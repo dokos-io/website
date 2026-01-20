@@ -83,7 +83,7 @@ C'est cette rigueur aujourd'hui qui garantira votre tranquillité demain.
 
 ## En conclusion
 
-La facturation électronique est une belle opportunité de modernisation, mais elle ne doit pas se faire au prix de votre liberté. Chez Dokos, nous préparons l'intégration native de ces flux pour que la transition soit la plus simple pour vous.
+La facturation électronique est une belle opportunité de modernisation, mais elle ne doit pas se faire au prix de votre liberté. Chez Dokos, nous préparons l'intégration de ces flux pour que la transition soit la plus simple pour vous.
 
 Gardons la tête froide, restons curieux et surtout, ne laissons personne nous dicter l'urgence.
 
