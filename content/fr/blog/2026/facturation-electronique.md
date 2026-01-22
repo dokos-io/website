@@ -36,7 +36,7 @@ C’est un tournant majeur. Demain, émettre une facture aura un coût récurren
 
 ### Le piège de l'enfermement
 
-Changer de plateforme de facturation, c'est un peu comme changer de banque : c'est lourd, long et coûteux. Les acteurs du marché le savent bien. Le but de cette pression actuelle est de vous "verrouiller" le plus tôt possible. Une fois que vos équipes sont formées et vos données intégrées, l'inertie vous empêchera de partir, même si les prix augmentent.
+Changer de plateforme de facturation, c'est un peu comme changer de banque : c'est lourd, long et coûteux. Les acteurs du marché le savent bien. Le but de cette pression actuelle est de vous "verrouiller" le plus tôt possible. Une fois que vous serez enregistrés sur l'annuaire, l'inertie vous empêchera de partir, même si les prix augmentent.
 
 ---
 
@@ -59,7 +59,7 @@ Cette démarche profite à tout le monde, que vous utilisiez Dokos ou une autre 
 
 Aujourd'hui, choisir une plateforme, c'est décider dans le brouillard. Le marché est en pleine ébullition et une centaine de plateformes attendent encore leur agrément définitif.
 
-En attendant septembre 2026 :
+En attendant quelques mois encore :
 
 * Les offres seront enfin **comparables et stabilisées**.
 * Nous aurons des **retours d'expérience réels**.
@@ -84,6 +84,7 @@ C'est cette rigueur aujourd'hui qui garantira votre tranquillité demain.
 ## En conclusion
 
 La facturation électronique est une belle opportunité de modernisation, mais elle ne doit pas se faire au prix de votre liberté. Chez Dokos, nous préparons l'intégration de ces flux pour que la transition soit la plus simple pour vous.
+Nous reviendrons vers vous avec des éléments très concrets lors de la sortie de la version 5.
 
 Gardons la tête froide, restons curieux et surtout, ne laissons personne nous dicter l'urgence.
 
