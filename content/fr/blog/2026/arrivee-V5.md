@@ -4,7 +4,7 @@ id: Arrivée de la V5
 badge:
   label: Nouvelle version
 author: Céline
-image: /blog/MiniatureyoutubeteaseV5.png
+image: /blog/2025/MiniatureyoutubeteaseV5.png
 title: "La V5 arrive… De nouvelles fondations posées."
 description: "Sortie prévue le 16 mars 2026"
 ---
