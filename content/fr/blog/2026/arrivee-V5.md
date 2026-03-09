@@ -1,7 +1,13 @@
-
-## La V5 arrive… De nouvelles fondations posées.
-
-**Sortie prévue le 16 mars 2026**
+---
+date: 2026-03-09T00:00:00.000Z
+id: Arrivée de la V5
+badge:
+  label: Nouvelle version
+author: Céline
+image: /blog/
+title: "La V5 arrive… De nouvelles fondations posées."
+description: "Sortie prévue le 16 mars 2026"
+---
 
 Ces dernières semaines, on a passé beaucoup de soirées à travailler. Dokos grandit vite, très vite, et cette effervescence est une chance que l'on savoure autant qu'elle nous bouscule. Alors oui, on jongle : la V5, la facturation électronique, les projets clients, la certification LNE. Mais dans tout ça, il y a une chose qu'on ne négocie pas : prendre le temps de bien faire.
 
