@@ -37,7 +37,7 @@ Le module **eTransactions** est en train de prendre le relais du module OCR. Ce 
 
 Et les premières briques sont là. **Dokos peut déjà lire des factures électroniques aux formats CII et UBL**, les deux formats structurés au cœur du standard européen. Concrètement, vos factures fournisseurs émises dans ces formats peuvent être importées et traitées directement dans Dokos.
 
-La prochaine étape se précise. La génération automatique de factures électroniques à chaque validation arrive en premier. Ensuite, nous démarrerons le travail de connexion aux Plateformes Agréées en nous appuyant sur la norme **AFNOR XP Z12-013**, standard que Super PDP a contribué à élaborer et qu'il implémente. Une seule intégration pour se connecter à toutes les PA qui respectent ce standard : c'est exactement la philosophie que nous partageons, des outils ouverts qui ne vous enferment pas.
+La prochaine étape se précise. La génération automatique de factures électroniques à chaque validation arrive en premier. Ensuite, nous démarrerons le travail de connexion aux Plateformes Agréées en nous appuyant sur la norme **AFNOR XP Z12-013**. Une seule intégration pour se connecter à toutes les PA qui respectent ce standard : c'est exactement la philosophie que nous partageons, des outils ouverts qui ne vous enferment pas.
 
 ## En parallèle, d'autres chantiers avancent
 
