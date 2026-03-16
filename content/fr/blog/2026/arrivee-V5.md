@@ -23,37 +23,29 @@ Mais assez parlé de nous. Voici tout ce que cela donne concrètement pour vous.
 
 ### Une interface qui respire mieux
 
-On a mis l'ergonomie au cœur de cette version. Et ça se voit dès les premières minutes d'utilisation.
+Au-dessus des listes, de **nouveaux filtres** font leur apparition, enregistrables globalement ou page par page, avec des options "comme" ou "égal" pour des recherches plus souples. Dans certains documents, un **tiroir latéral** s'ouvre sur le côté pour saisir des informations sans perdre le fil : un vrai plus pour les réconciliations bancaires. Toutes vos applications sont regroupées dans un **bureau central** avec une barre latérale claire, la recherche et votre profil à portée de main.
 
-- **Des filtres enfin à votre mesure :** Au-dessus des listes, de nouveaux filtres font leur apparition. Vous pouvez les enregistrer (globalement ou page par page) et utiliser les options "comme" ou "égal" pour des recherches plus souples, sans avoir à connaître l'exacte formulation d'un champ.
-- **Le tiroir latéral :** Dans certaines listes et documents, un panneau s'ouvre sur le côté pour remplir les informations sans perdre le fil de ce que vous faisiez. Un plus pour les réconciliations bancaires !
-- **Le bureau central :** Toutes vos applications sont regroupées au même endroit. La **barre latérale** est organisée en sections claires avec la recherche et votre profil intégrée. Le retour à l'espace de travail se fait en deux clics.
-- **Le fil d'Ariane dans vos transactions :** Tous les documents liés sont désormais accessibles en un clic, directement depuis celui que vous consultez. Fini les allers-retours pour retrouver un fil.
-- **Un mini-guide à la création de facture :** Un accompagnement pas à pas s'affiche lors de la saisie d'une facture. Utile quand on débute, discret quand on n'en a plus besoin, et un vrai plus pour les factures d'acomptes.
+Deux petites choses qui changent beaucoup au quotidien : les **documents liés** sont désormais accessibles en un clic depuis celui que vous consultez, et un **mini-guide** accompagne la saisie d'une facture, utile quand on débute, discret quand on n'en a plus besoin.
 
 ## Bookings : moins de concepts, plus de clarté
 
 On a simplifié en profondeur. La notion d'articles disparaît de la réservation ; elle reste uniquement pour la facturation. Désormais, tout est une ressource, réservable ou non.
 
-## La facturation électronique avance
+## La facturation électronique avance, concrètement
 
-Un nouveau module **eTransaction** remplacera l'actuel module OCR. Le déploiement se fera en trois phases bien distinctes :
+Le module **eTransactions** est en train de prendre le relais du module OCR. Ce n'est pas un simple changement de nom : c'est une refonte pensée pour accompagner la réforme de facturation électronique dans sa globalité.
 
-1. Lecture des factures électroniques, en cours de finalisation
-2. Génération de factures électroniques à chaque validation de facture
-3. Connexion aux Plateformes Agréées via l'API standardisée AFNOR
+Et les premières briques sont là. **Dokos peut déjà lire des factures électroniques aux formats CII et UBL**, les deux formats structurés au cœur du standard européen. Concrètement, vos factures fournisseurs émises dans ces formats peuvent être importées et traitées directement dans Dokos.
 
-## RGPD : des outils concrets
+La prochaine étape se précise. La génération automatique de factures électroniques à chaque validation arrive en premier. Ensuite, nous démarrerons le travail de connexion aux Plateformes Agréées en nous appuyant sur la norme **AFNOR XP Z12-013**, standard que Super PDP a contribué à élaborer et qu'il implémente. Une seule intégration pour se connecter à toutes les PA qui respectent ce standard : c'est exactement la philosophie que nous partageons, des outils ouverts qui ne vous enferment pas.
 
-Vous pouvez maintenant taguer vos données personnelles directement dans Dokos et créer des règles de rétention adaptées.
+## En parallèle, d'autres chantiers avancent
 
-## Certification LNE
+La **gestion des acomptes** a été entièrement revue et la notion d'articles disparaît avec elle, ainsi que les effets de bord que certains d'entre vous avaient remarqués.
 
-Nous passons l'audit en avril. Selon les résultats, une application dédiée sera disponible pour les structures soumises à cette réglementation. On vous tient informés dès qu'on en sait plus.
+Côté **RGPD**, vous pouvez désormais taguer vos données personnelles directement dans Dokos et créer des règles de rétention adaptées à votre structure. Des outils concrets, pas juste une case à cocher.
 
-## Les acomptes, repensés
-
-La gestion des acomptes a été entièrement revue, avec la suppression de la notion d'articles et ses effets de bords remarqués par nos utilisateurs.
+Quant à la **certification LNE**, nous passons l'audit en avril. Selon les résultats, une application dédiée sera disponible pour les structures concernées. On vous tient informés dès qu'on en sait plus.
 
 ## Et concrètement, quand est-ce que ça arrive chez vous ?
 
