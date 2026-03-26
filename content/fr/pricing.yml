@@ -12,30 +12,30 @@ plans:
   - title: 5 heures
     description: 'Un petit coup de pouce pour démarrer rapidement avec Dokos '
     price:
-      entreprise: 500€
-      association: 400€
+      entreprise: 600€
+      association: 480€
     align: top
     cycle: HT
   - title: 20 heures
     description: Un accompagnement structuré pour approfondir la prise en main.
     price:
-      entreprise: 1800€
-      association: 1440€
+      entreprise: 2200€
+      association: 1760€
     highlight: true
     align: top
     cycle: HT
   - title: 50 heures
     description: Un accompagnement complet pour personnaliser votre expérience
     price:
-      entreprise: 4250€
-      association: 3400€
+      entreprise: 5000€
+      association: 4000€
     align: top
     cycle: HT
   - title: 100 heures
     description: Un accompagnement premium sur-mesure pour adapter Dokos à vos objectifs.
     price:
-      entreprise: 8000€
-      association: 6400€
+      entreprise: 9000€
+      association: 7200€
     align: top
     cycle: HT
 links:
