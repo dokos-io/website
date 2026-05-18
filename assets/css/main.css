@@ -1,0 +1,57 @@
+/* ── ATELIER DESIGN SYSTEM ─────────────────────────── */
+:root {
+  --cream: #FAF8F4;
+  --ink: #1C1917;
+  --orange: #F97316;
+  --orange-light: #FED7AA;
+  --grid-major: rgba(28, 25, 23, 0.07);
+  --grid-minor: rgba(28, 25, 23, 0.025);
+  --hard-shadow: 4px 4px 0 var(--ink);
+  --hard-shadow-orange: 4px 4px 0 var(--orange);
+}
+
+/* ── GRAPH PAPER BACKGROUND ─────────────────────────── */
+.graph-paper {
+  background-color: var(--cream);
+  background-image:
+    linear-gradient(var(--grid-major) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-major) 1px, transparent 1px),
+    linear-gradient(var(--grid-minor) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-minor) 1px, transparent 1px);
+  background-size: 80px 80px, 80px 80px, 16px 16px, 16px 16px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+/* ── BODY BACKGROUND ────────────────────────────────── */
+body {
+  background-color: var(--cream);
+}
+
+/* ── HERO TITLE ACCENT (text-primary maps to orange) ── */
+.atelier-hero h1 .text-primary,
+.atelier-hero h1 span[class*="text-primary"] {
+  color: var(--orange) !important;
+}
+
+/* ── HEADLINE FONT ──────────────────────────────────── */
+.mono {
+  font-family: 'Space Mono', monospace;
+}
+
+/* ── HARD SHADOW CARDS ──────────────────────────────── */
+.card-hard {
+  border: 2px solid var(--ink);
+  box-shadow: var(--hard-shadow);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.card-hard:hover {
+  box-shadow: var(--hard-shadow-orange);
+  transform: translate(-1px, -1px);
+}
+
+/* ── BUTTON OVERRIDES ───────────────────────────────── */
+.btn-atelier {
+  font-family: 'Space Mono', monospace !important;
+  border-radius: 4px !important;
+}
