@@ -32,7 +32,7 @@ useSeoMeta({
     <div v-if="page">
         <div class="bg-yellow-400 py-2 text-center text-black font-semibold">Rejoignez-nous à Toulouse, au Faire Festival, les 28, 29 et 30 Mai 2026.
             <div>
-                <NuxtLink to="https://www.fairefestival.fr/" target="_blank" class="text-grey font-normal">En savoir plus <Icon name="i-mdi-arrow-top-right"/></NuxtLink>
+                <NuxtLink to="/faire-festival-2026" class="text-grey font-normal">En savoir plus <Icon name="i-mdi-arrow-top-right"/></NuxtLink>
             </div>
         </div>
         <ULandingHero
