@@ -60,7 +60,7 @@ const programme = [
   }
 ]
 
-const videoUrl = '' // ex: 'https://www.youtube.com/embed/XXXXXXXXX'
+const videoUrl = 'https://www.youtube.com/embed/HOWEyCbs1WM'
 
 const features = [
   { icon: 'i-heroicons-academic-cap', title: 'Tutoriels', description: 'Créez et partagez des tutos pas à pas. Vos membres progressent, votre savoir-faire se transmet.' },
