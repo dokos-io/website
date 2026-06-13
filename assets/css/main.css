@@ -1,57 +1,82 @@
-/* ── ATELIER DESIGN SYSTEM ─────────────────────────── */
-:root {
-  --cream: #FAF8F4;
-  --ink: #1C1917;
-  --orange: #F97316;
-  --orange-light: #FED7AA;
-  --grid-major: rgba(28, 25, 23, 0.07);
-  --grid-minor: rgba(28, 25, 23, 0.025);
-  --hard-shadow: 4px 4px 0 var(--ink);
-  --hard-shadow-orange: 4px 4px 0 var(--orange);
-}
+@import "tailwindcss";
+@import "@nuxt/ui-pro";
 
-/* ── GRAPH PAPER BACKGROUND ─────────────────────────── */
-.graph-paper {
-  background-color: var(--cream);
-  background-image:
-    linear-gradient(var(--grid-major) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-major) 1px, transparent 1px),
-    linear-gradient(var(--grid-minor) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-minor) 1px, transparent 1px);
-  background-size: 80px 80px, 80px 80px, 16px 16px, 16px 16px;
-  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-}
+/* Scan content files for utility classes used in markdown / v-html */
+@source "../../content/**/*.{md,yml}";
 
-/* ── BODY BACKGROUND ────────────────────────────────── */
-body {
-  background-color: var(--cream);
-}
+@theme {
+  --font-sans: "DM Sans", sans-serif;
 
-/* ── HERO TITLE ACCENT (text-primary maps to orange) ── */
-.atelier-hero h1 .text-primary,
-.atelier-hero h1 span[class*="text-primary"] {
-  color: var(--orange) !important;
-}
+  /* Custom brand palettes ported from the v3 tailwind.config.ts */
+  --color-silver-tree-50: #f0f9f4;
+  --color-silver-tree-100: #dbf0e2;
+  --color-silver-tree-200: #b9e1c9;
+  --color-silver-tree-300: #79c29b;
+  --color-silver-tree-400: #5aad84;
+  --color-silver-tree-500: #389167;
+  --color-silver-tree-600: #287352;
+  --color-silver-tree-700: #205c43;
+  --color-silver-tree-800: #1b4a37;
+  --color-silver-tree-900: #173d2e;
+  --color-silver-tree-950: #0c221a;
 
-/* ── HEADLINE FONT ──────────────────────────────────── */
-.mono {
-  font-family: 'Space Mono', monospace;
-}
+  --color-bunting-50: #eff6ff;
+  --color-bunting-100: #dbeafe;
+  --color-bunting-200: #bfdafe;
+  --color-bunting-300: #93c4fd;
+  --color-bunting-400: #60a4fa;
+  --color-bunting-500: #3b80f6;
+  --color-bunting-600: #2561eb;
+  --color-bunting-700: #1d4cd8;
+  --color-bunting-800: #1e3faf;
+  --color-bunting-900: #1e398a;
+  --color-bunting-950: #162351;
 
-/* ── HARD SHADOW CARDS ──────────────────────────────── */
-.card-hard {
-  border: 2px solid var(--ink);
-  box-shadow: var(--hard-shadow);
-  transition: box-shadow 0.15s ease, transform 0.15s ease;
-}
+  --color-buttercup-50: #fffaeb;
+  --color-buttercup-100: #fdefc8;
+  --color-buttercup-200: #fadd8d;
+  --color-buttercup-300: #f8c651;
+  --color-buttercup-400: #f6b12d;
+  --color-buttercup-500: #ef8f11;
+  --color-buttercup-600: #d46a0b;
+  --color-buttercup-700: #b04a0d;
+  --color-buttercup-800: #8f3911;
+  --color-buttercup-900: #753012;
+  --color-buttercup-950: #431605;
 
-.card-hard:hover {
-  box-shadow: var(--hard-shadow-orange);
-  transform: translate(-1px, -1px);
-}
+  --color-pumpkin-50: #fff4ed;
+  --color-pumpkin-100: #ffe6d5;
+  --color-pumpkin-200: #feccaa;
+  --color-pumpkin-300: #fdac74;
+  --color-pumpkin-400: #fb8a3c;
+  --color-pumpkin-500: #f97316;
+  --color-pumpkin-600: #ea670c;
+  --color-pumpkin-700: #c2570c;
+  --color-pumpkin-800: #9a4a12;
+  --color-pumpkin-900: #7c3d12;
+  --color-pumpkin-950: #432007;
 
-/* ── BUTTON OVERRIDES ───────────────────────────────── */
-.btn-atelier {
-  font-family: 'Space Mono', monospace !important;
-  border-radius: 4px !important;
+  --color-cornflower-blue-50: #eef4ff;
+  --color-cornflower-blue-100: #dae6ff;
+  --color-cornflower-blue-200: #bdd3ff;
+  --color-cornflower-blue-300: #90b8ff;
+  --color-cornflower-blue-400: #6195ff;
+  --color-cornflower-blue-500: #3569fc;
+  --color-cornflower-blue-600: #1f48f1;
+  --color-cornflower-blue-700: #1733de;
+  --color-cornflower-blue-800: #192cb4;
+  --color-cornflower-blue-900: #1a2a8e;
+  --color-cornflower-blue-950: #151c56;
+
+  --color-coral-red-50: #fef2f2;
+  --color-coral-red-100: #fee2e2;
+  --color-coral-red-200: #fecaca;
+  --color-coral-red-300: #fca5a5;
+  --color-coral-red-400: #f87171;
+  --color-coral-red-500: #ef4444;
+  --color-coral-red-600: #dc2626;
+  --color-coral-red-700: #b91c1c;
+  --color-coral-red-800: #991b1b;
+  --color-coral-red-900: #7f1d1d;
+  --color-coral-red-950: #450a0a;
 }

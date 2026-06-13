@@ -1,14 +1,11 @@
-import type { ParsedContent } from '@nuxt/content'
-
-export interface BlogPost extends ParsedContent {
-  title: string
-  description: string
-  date: string
-  image?: HTMLImageElement
-  badge?: Badge
-  authors?: ({
-    name: string
-    description?: string
-    avatar?: Avatar
-  } & Link)[],
+export interface BlogPost {
+  title?: string
+  description?: string
+  date?: string
+  path?: string
+  image?: unknown
+  badge?: unknown
+  author?: unknown
+  authors?: unknown[]
+  [key: string]: unknown
 }

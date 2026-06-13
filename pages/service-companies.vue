@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const { locale } = useI18n();
 
-const { data: page } = await useAsyncData("service-companies", () =>
-    queryContent(`/${locale.value}/service-companies`).findOne()
+const { data: page } = await useAsyncData<any>("service-companies", () =>
+    queryCollection("pages").path(`/${locale.value}/service-companies`).first()
 );
 if (!page.value) {
     throw createError({
@@ -19,8 +19,7 @@ useSeoMeta({
     ogDescription: page.value.description,
 });
 
-defineOgImage({
-    component: "Saas",
+defineOgImage("OgImageSaas" as any, {
     title: page.value.title,
     description: page.value.description,
 });
@@ -28,10 +27,10 @@ defineOgImage({
 
 <template>
     <UPage v-if="page">
-        <ULandingHero
+        <UPageHero
             :links="page.hero.links"
             orientation="vertical"
-            :ui="{ base: 'relative z-[1]' }"
+            class="relative z-[1]"
         >
             <template #headline>
                 <UBadge
@@ -74,22 +73,22 @@ defineOgImage({
 
             <template #default>
                 <NuxtImg
+                    v-if="page.hero.image"
                     :src="'/home/' + page.hero.image"
                     class="w-full rounded-md bg-white/75"
-                    v-if="page.hero.image"
                     loading="lazy"
                 />
                 <ClientOnly>
                     <HomeTetris />
                 </ClientOnly>
             </template>
-        </ULandingHero>
+        </UPageHero>
 
-        <ULandingSection>
-            <ULandingLogos
-                :title="page.logos.title"
-                :ui="{ images: 'justify-center' }"
+        <UPageSection>
+            <UPageLogos
                 v-if="page.logos"
+                :title="page.logos.title"
+                class="justify-center"
             >
                 <UIcon
                     v-for="icon in page.logos.icons"
@@ -104,12 +103,12 @@ defineOgImage({
                     class="max-h-20"
                     loading="lazy"
                 />
-            </ULandingLogos>
-        </ULandingSection>
+            </UPageLogos>
+        </UPageSection>
 
-        <ULandingSection
-            v-bind="page.colored_section"
+        <UPageSection
             v-if="page.colored_section"
+            v-bind="page.colored_section"
             :ui="{
                 container: 'bg-blue-950 rounded-3xl p-5',
                 title: 'mt-2 text-orange-200',
@@ -149,31 +148,29 @@ defineOgImage({
             </template>
 
             <div
-                class="py-8 px-8 rounded-lg bg-orange-200"
-                v-if="page.colored_section.image"
+                v-if="page.colored_section.image || page.colored_section.video"
+                class="py-8 rounded-lg bg-orange-200"
+                :class="page.colored_section.align == 'left' ? 'pl-8' : 'pr-8'"
             >
                 <NuxtImg
+                    v-if="page.colored_section.image"
                     :src="page.colored_section.image"
                     class="shadow-lg rounded"
-                    v-if="page.colored_section.image"
                     loading="lazy"
                 />
                 <video
-                    class="w-full rounded-md bg-white/75"
                     v-else-if="page.colored_section.video"
+                    class="w-full rounded-md bg-white/75"
                     autoplay
                     loop
                 >
-                    <source
-                        :src="page.colored_section.video"
-                        type="video/mp4"
-                    />
+                    <source :src="page.colored_section.video" type="video/mp4" />
                 </video>
             </div>
             <Placeholder v-else class="bg-orange-200" />
-        </ULandingSection>
+        </UPageSection>
 
-        <ULandingSection
+        <UPageSection
             v-for="(section, index) in page.sections"
             :key="index"
             v-bind="section"
@@ -192,10 +189,10 @@ defineOgImage({
                 ]"
             >
                 <NuxtImg
+                    v-if="section.image"
                     :src="section.image"
                     class="w-full rounded-md bg-white/75"
                     placeholder
-                    v-if="section.image"
                     :class="[
                         section.align == 'left' ? 'ml-7' : 'mr-7',
                         section.image_bg_color ? 'shadow-2xl' : '',
@@ -204,8 +201,8 @@ defineOgImage({
                     loading="lazy"
                 />
                 <video
-                    class="w-full rounded-md bg-white/75"
                     v-else-if="section.video"
+                    class="w-full rounded-md bg-white/75"
                     autoplay
                     loop
                     :class="[
@@ -218,38 +215,34 @@ defineOgImage({
                 </video>
                 <Placeholder v-else />
             </div>
-        </ULandingSection>
+        </UPageSection>
 
-        <ULandingSection v-if="page.carousel">
+        <UPageSection v-if="page.carousel">
             <UCarousel
                 v-slot="{ item }"
                 :items="page.carousel"
+                dots
                 :ui="{
                     item: 'w-full',
                     container: 'rounded-3xl bg-sky-50 dark:bg-sky-600',
-                    indicators: {
-                        active: 'bg-green-500 dark:bg-green-400',
-                        inactive: 'bg-stone-300 dark:bg-stone-900',
-                    },
                 }"
-                indicators
             >
                 <div class="text-center mx-auto p-10">
                     <h2 class="font-bold text-xl">
-                        <span v-html="item.title"></span>
+                        <span v-html="(item as any).title"></span>
                     </h2>
                     <p class="pb-8">
-                        <span v-html="item.description"></span>
+                        <span v-html="(item as any).description"></span>
                     </p>
                 </div>
             </UCarousel>
-        </ULandingSection>
+        </UPageSection>
 
-        <ULandingSection>
-            <ULandingCTA
+        <UPageSection>
+            <UPageCTA
                 v-bind="page.cta"
                 class="bg-orange-100/50 dark:bg-orange-800/50"
             />
-        </ULandingSection>
+        </UPageSection>
     </UPage>
 </template>

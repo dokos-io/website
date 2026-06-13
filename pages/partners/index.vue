@@ -3,16 +3,14 @@ const { t, locale } = useI18n({
     useScope: "local",
 });
 
-const localePath = useLocalePath();
-
 const { Partners, fetchList } = usePartners();
 
-const { data: page } = await useAsyncData("partners", () =>
-    queryContent(`/${locale.value}/partners`).findOne()
+const { data: page } = await useAsyncData<any>("partners", () =>
+    queryCollection("pages").path(`/${locale.value}/partners`).first()
 );
 
-const title = page.value.head?.title || page.value.title;
-const description = page.value.head?.description || page.value.description;
+const title = page.value?.title;
+const description = page.value?.description;
 useSeoMeta({
     titleTemplate: "%s · Partenaires",
     title,
@@ -26,7 +24,11 @@ await fetchList();
 
 <template>
     <UContainer>
-        <UPageHero v-bind="page" />
+        <UPageHero
+            :title="page?.title"
+            :description="page?.description"
+            :links="(page as any)?.links"
+        />
 
         <UPage id="smooth" class="pt-20 -mt-20">
             <UPageBody>
@@ -34,29 +36,28 @@ await fetchList();
                     <UPageCard
                         v-for="(agency, index) in Partners"
                         :key="index"
-                        :to="localePath(agency._path)"
+                        :to="agency.path"
                         :title="agency.title"
                         :description="agency.description"
                         :ui="{
-                            divide: '',
-                            footer: { padding: 'pt-0' },
                             title: 'text-lg',
                             description: 'line-clamp-3',
                         }"
                     >
-                        <template #icon>
+                        <template #leading>
                             <UColorModeAvatar
-                                :light="agency.logo.light"
-                                :dark="agency.logo.dark"
+                                :light="agency.logo?.light || ''"
+                                :dark="agency.logo?.dark || ''"
                                 size="lg"
-                                :ui="{ rounded: 'rounded-sm' }"
+                                class="rounded-sm"
                             />
                         </template>
 
                         <template #footer>
                             <UBadge
+                                v-if="agency.location"
                                 :label="agency.location.label"
-                                color="gray"
+                                color="neutral"
                             />
                         </template>
                     </UPageCard>

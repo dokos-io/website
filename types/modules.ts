@@ -1,11 +1,11 @@
-import type { ParsedContent } from '@nuxt/content'
-
-export interface Module extends ParsedContent {
-  title: string
-  description: string
-  _path: string
-  logo: {
+export interface Module {
+  title?: string
+  description?: string
+  path?: string
+  icon?: string
+  logo?: {
     light: string
     dark: string
   }
+  [key: string]: unknown
 }

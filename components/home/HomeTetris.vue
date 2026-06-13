@@ -27,7 +27,7 @@
 import { useElementSize } from '@vueuse/core'
 
 const el = ref(null)
-const grid = ref([])
+const grid = ref<any>([])
 const rows = ref(0)
 const cols = ref(0)
 
@@ -58,7 +58,7 @@ function moveCellsDown() {
     }
 
     setTimeout(() => {
-        if (grid.value[rows.value].every(cell => cell !== null)) {
+        if (grid.value[rows.value].every((cell: any) => cell !== null)) {
             for (let col = 0; col < cols.value; col++) {
                 grid.value[rows.value][col] = null
             }
@@ -66,7 +66,7 @@ function moveCellsDown() {
     }, 500)
 }
 
-function removeCell(row, col) {
+function removeCell(row: any, col: any) {
     grid.value[row][col] = null
 }
 

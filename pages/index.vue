@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const { locale } = useI18n();
 
-const { data: page } = await useAsyncData("index", () =>
-    queryContent(`/${locale.value}`).findOne()
+const { data: page } = await useAsyncData<any>("index", () =>
+    queryCollection("pages").path(`/${locale.value}`).first()
 );
 
 if (!page.value) {
@@ -14,7 +14,7 @@ if (!page.value) {
 }
 
 const sorted_modules = computed(() => {
-    return page.value.modules.items.sort((a, b) =>
+    return [...(page.value!.modules?.items ?? [])].sort((a: any, b: any) =>
         a.title.localeCompare(b.title)
     );
 });
@@ -35,11 +35,10 @@ useSeoMeta({
                 <NuxtLink to="/faire-festival-2026" class="text-grey font-normal">En savoir plus <Icon name="i-mdi-arrow-top-right"/></NuxtLink>
             </div>
         </div>
-        <ULandingHero
+        <UPageHero
             :links="page.hero.links"
             orientation="vertical"
-            :ui="{ base: 'relative z-[1]' }"
-            class="pb-0 sm:pb-0 md:pb-0"
+            class="relative z-[1] pb-0 sm:pb-0 md:pb-0"
         >
             <template #headline>
                 <UBadge
@@ -92,18 +91,12 @@ useSeoMeta({
                     <HomeTetris />
                 </ClientOnly>
             </template>
-        </ULandingHero>
+        </UPageHero>
 
-        <ULandingSection class="pt-0 sm:pt-0 md:pt-0">
+        <UPageSection class="pt-0 sm:pt-0 md:pt-0">
             <UCard
-                :ui="{
-                    body: {
-                        base: 'grid grid-cols-3 gap-4',
-                        padding: 'py-10 sm:py-20',
-                    },
-                    background: 'bg-yellow-500/10',
-                    ring: 'ring-0',
-                }"
+                class="bg-yellow-500/10 ring-0"
+                :ui="{ body: 'grid grid-cols-3 gap-4 py-10 sm:py-20' }"
             >
                 <div
                     v-for="(item, index) in page.metrics.items"
@@ -128,9 +121,9 @@ useSeoMeta({
                     </div>
                 </div>
             </UCard>
-        </ULandingSection>
+        </UPageSection>
 
-        <ULandingSection
+        <UPageSection
             v-for="(section, index) in page.sections"
             :key="index"
             v-bind="section"
@@ -142,12 +135,12 @@ useSeoMeta({
                 <span v-html="section.description" />
             </template>
             <div
+                v-if="section.image"
                 class="pt-24 pb-12 rounded-lg"
                 :class="[
                     section.image_bg_color,
                     section.align == 'left' ? 'pl-8 mr-7' : 'pr-8 ml-7',
                 ]"
-                v-if="section.image"
             >
                 <NuxtImg
                     :src="section.image"
@@ -161,13 +154,10 @@ useSeoMeta({
                 />
             </div>
             <Placeholder v-else />
-        </ULandingSection>
+        </UPageSection>
 
-        <ULandingSection>
-            <ULandingLogos
-                :title="page.integrations.title"
-                :ui="{ images: 'justify-center' }"
-            >
+        <UPageSection>
+            <UPageLogos :title="page.integrations.title" class="justify-center">
                 <UIcon
                     v-for="icon in page.integrations.icons"
                     :key="icon"
@@ -181,12 +171,12 @@ useSeoMeta({
                     class="max-h-20"
                     loading="lazy"
                 />
-            </ULandingLogos>
-        </ULandingSection>
+            </UPageLogos>
+        </UPageSection>
 
-        <ULandingSection
-            :ui="{ wrapper: 'bg-green-400/10' }"
+        <UPageSection
             v-bind="page.modules"
+            class="bg-green-400/10"
         >
             <template #title>
                 <span v-html="page.modules.title" />
@@ -194,46 +184,46 @@ useSeoMeta({
             <template #description>
                 <span v-html="page.modules.description" />
             </template>
-            <UPageGrid :ui="{ wrapper: 'sm:grid-cols-3 xl:grid-cols-4' }">
-                <ULandingCard
+            <UPageGrid class="sm:grid-cols-3 xl:grid-cols-4">
+                <UPageCard
                     v-for="(item, index) in sorted_modules"
                     :key="index"
                     v-bind="item"
                     orientation="vertical"
                 />
             </UPageGrid>
-        </ULandingSection>
+        </UPageSection>
 
-        <ULandingSection :links="page.applications.links">
+        <UPageSection :links="page.applications.links">
             <template #title>
                 <span v-html="page.applications.title" />
             </template>
             <template #description>
                 <span v-html="page.applications.description" />
             </template>
-            <ULandingGrid>
-                <ULandingCard
-                    class="col-span-4 row-span-3"
+            <UPageGrid>
+                <UPageCard
                     v-for="(item, index) in page.applications.items"
                     :key="index"
                     v-bind="item"
+                    class="col-span-4 row-span-3"
                 >
-                    <template #icon>
+                    <template #leading>
                         <NuxtImg
                             :src="'/frappe/' + item.icon"
                             class="max-h-10"
                             loading="lazy"
                         />
                     </template>
-                </ULandingCard>
-            </ULandingGrid>
-        </ULandingSection>
+                </UPageCard>
+            </UPageGrid>
+        </UPageSection>
 
-        <ULandingSection>
-            <ULandingCTA
+        <UPageSection>
+            <UPageCTA
                 v-bind="page.cta"
                 class="bg-amber-100/50 dark:bg-amber-800/50"
             />
-        </ULandingSection>
+        </UPageSection>
     </div>
 </template>

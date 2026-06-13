@@ -1,18 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  extends: [process.env.NUXT_UI_PRO_PATH || '@nuxt/ui-pro'],
   modules: [
     '@nuxt/content',
     '@nuxt/image',
-    '@nuxt/ui',
-    '@nuxt/fonts',
-    '@nuxthq/studio',
+    '@nuxt/ui-pro',
     '@vueuse/nuxt',
     'nuxt-og-image',
     '@nuxtjs/i18n',
     '@nuxtjs/turnstile',
   ],
-  compatibilityDate: '2024-08-06',
+  compatibilityDate: '2025-06-13',
+  css: ['~/assets/css/main.css'],
+  site: {
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://dokos.io',
+  },
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
     'components:extend': (components) => {
@@ -21,13 +22,8 @@ export default defineNuxtConfig({
       globals.forEach((c) => c.global = true)
     }
   },
-  ui: {
-    icons: ['heroicons', 'simple-icons', 'ic', 'mdi', 'icon-park-outline', 'octicon', 'carbon', 'ep', 'uil', 'eos-icons', 'vaadin', 'fluent', 'ri', 'material-symbols', 'gg', 'ic', 'circle-flags', 'iconoir', 'logos', 'cib', 'ph', 'map', 'hugeicons', 'oui', 'solar', 'tdesign']
-  },
   routeRules: {
     '/api/search.json': { prerender: true },
-    '/en/docs': { redirect: '/en/docs/getting-started', prerender: false },
-    '/fr/docs': { redirect: '/fr/docs/getting-started', prerender: false },
     '/': { redirect: '/fr', prerender: true },
     '/**': { prerender: true },
     '/fr': { prerender: true },
@@ -38,7 +34,7 @@ export default defineNuxtConfig({
     componentInspector: false,
   },
   i18n: {
-    vueI18n: './i18n.config.ts',
+    vueI18n: 'i18n.config.ts',
     locales: [
       {
         name: 'Français',
@@ -49,7 +45,7 @@ export default defineNuxtConfig({
       // {
       //   name: 'English',
       //   code: 'en',
-      //   iso: 'en-US',
+      //   language: 'en-US',
       //   file: 'en-US.js'
       // }
     ],
@@ -73,7 +69,6 @@ export default defineNuxtConfig({
     fallback: 'light',
   },
   nitro: {
-    // static: true, // Don't make it static, it breaks some icons
     prerender: {
       crawlLinks: true,
       failOnError: false,
@@ -81,9 +76,5 @@ export default defineNuxtConfig({
   },
   image: {
     provider: 'ipx',
-    static: {
-      maxAge: 86400,
-      public: true,
-    },
   },
 })

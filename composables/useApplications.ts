@@ -1,7 +1,6 @@
 import type { Application } from '../types'
 
 export const useApplications = () => {
-  const { locale } = useI18n()
   const applications = useState<Application[]>('applications', () => [])
 
   // Data fetching
@@ -11,9 +10,9 @@ export const useApplications = () => {
     }
 
     try {
-      const data = await queryContent(`/${locale.value}/applications`).where({ _extension: 'yml' }).find()
+      const data = await queryCollection('applications').all()
 
-      applications.value = data as Application[]
+      applications.value = data as unknown as Application[]
     }
     catch (e) {
       applications.value = []

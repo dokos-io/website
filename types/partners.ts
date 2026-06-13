@@ -1,23 +1,25 @@
-import type { ParsedContent } from '@nuxt/content'
-import type { Filter } from './filters'
-import type { Link } from '#ui-pro/types'
+import type { Filter, Link } from './filters'
 
-export interface Partner extends ParsedContent {
-  title: string
-  description: string
-  fullDescription: string
-  _path: string
-  link: string
-  twitter: string
-  github: string
-  gitlab: string
-  logo: {
+export interface Partner {
+  title?: string
+  description?: string
+  fullDescription?: string
+  path?: string
+  link?: string
+  twitter?: string
+  github?: string
+  gitlab?: string
+  color?: string
+  category?: string
+  logo?: {
     light: string
     dark: string
   }
+  logoFull?: unknown
   regions: Filter[]
   services?: Filter[]
   resources?: Link[]
-  location: Filter,
-  phone: string
+  location: Filter | null
+  phone?: string
+  [key: string]: unknown
 }

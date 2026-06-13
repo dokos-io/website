@@ -3,8 +3,6 @@ const { t } = useI18n({
     useScope: "local",
 });
 
-const localePath = useLocalePath();
-
 const { Modules, fetchList } = useModules();
 
 const title = "Modules Dokos";
@@ -22,45 +20,43 @@ await fetchList();
 
 <template>
     <UPage id="smooth" class="pt-20 -mt-20">
-        <ULandingHero
+        <UPageHero
             :title="t('hero_title')"
             :ui="{
-                wrapper: 'bg-gradient-to-b from-yellow-400/10 from-90%',
+                root: 'bg-gradient-to-b from-yellow-400/10 from-90%',
                 title: 'text-amber-500',
             }"
         >
             <template #description>
                 <span v-html="t('hero_description')"></span>
             </template>
-        </ULandingHero>
+        </UPageHero>
         <UPageBody>
             <UContainer>
                 <UPageGrid>
                     <UPageCard
                         v-for="(module, index) in Modules"
                         :key="index"
-                        v-bind="module"
-                        :to="localePath(module._path)"
-                        :ui="{
-                            footer: { padding: 'pt-0' },
-                        }"
+                        :title="module.title"
+                        :description="module.description"
+                        :to="module.path"
                     >
-                        <template #icon>
+                        <template #leading>
                             <span
                                 class="inline-flex p-1 rounded-lg bg-amber-600/5"
                             >
                                 <UIcon
                                     :name="
                                         module.icon ||
-                                        'i-heroicons-outline-cube'
+                                        'i-heroicons-cube'
                                     "
-                                    class="w-10 h-10 flex-shrink-0 bg-amber-600"
+                                    class="w-10 h-10 flex-shrink-0 text-amber-600"
                                 />
                             </span>
                         </template>
 
                         <template #header>
-                            <UBadge :label="module.application" color="gray" />
+                            <UBadge :label="module.application as string" color="neutral" />
                         </template>
                     </UPageCard>
                 </UPageGrid>

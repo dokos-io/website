@@ -1,7 +1,6 @@
 import type { Feature } from '../types'
 
 export const useFeatures = () => {
-  const { locale } = useI18n()
   const features = useState<Feature[]>('features', () => [])
 
   // Data fetching
@@ -11,9 +10,9 @@ export const useFeatures = () => {
     }
 
     try {
-      const data = await queryContent(`/${locale.value}/features`).where({ _extension: 'md' }).find()
+      const data = await queryCollection('features').all()
 
-      features.value = data as Feature[]
+      features.value = data as unknown as Feature[]
     }
     catch (e) {
       features.value = []
