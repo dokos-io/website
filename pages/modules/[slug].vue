@@ -140,6 +140,8 @@ useSeoMeta({
             <UPageSection
                 v-bind="module.colored_section"
                 v-if="module.colored_section"
+                orientation="horizontal"
+                :reverse="module.colored_section.align === 'left'"
                 :ui="{
                     container: 'bg-blue-950 rounded-3xl p-5',
                     title: 'mt-2 text-green-500',
@@ -239,6 +241,8 @@ useSeoMeta({
                     v-for="(section, index) in module.main_features"
                     :key="index"
                     v-bind="section"
+                    orientation="horizontal"
+                    :reverse="section.align === 'left'"
                 >
                     <template #title>
                         <span v-html="section.title" />

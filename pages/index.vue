@@ -127,6 +127,8 @@ useSeoMeta({
             v-for="(section, index) in page.sections"
             :key="index"
             v-bind="section"
+            orientation="horizontal"
+            :reverse="section.align === 'left'"
         >
             <template #title>
                 <span v-html="section.title" />
@@ -201,12 +203,11 @@ useSeoMeta({
             <template #description>
                 <span v-html="page.applications.description" />
             </template>
-            <UPageGrid>
+            <UPageGrid class="sm:grid-cols-2 lg:grid-cols-3">
                 <UPageCard
                     v-for="(item, index) in page.applications.items"
                     :key="index"
                     v-bind="item"
-                    class="col-span-4 row-span-3"
                 >
                     <template #leading>
                         <NuxtImg

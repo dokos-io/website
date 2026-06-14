@@ -109,6 +109,8 @@ defineOgImage("OgImageSaas" as any, {
         <UPageSection
             v-if="page.colored_section"
             v-bind="page.colored_section"
+            orientation="horizontal"
+            :reverse="page.colored_section.align === 'left'"
             :ui="{
                 container: 'bg-blue-950 rounded-3xl p-5',
                 title: 'mt-2 text-orange-200',
@@ -174,6 +176,8 @@ defineOgImage("OgImageSaas" as any, {
             v-for="(section, index) in page.sections"
             :key="index"
             v-bind="section"
+            orientation="horizontal"
+            :reverse="section.align === 'left'"
         >
             <template #title>
                 <span v-html="section.title" />
