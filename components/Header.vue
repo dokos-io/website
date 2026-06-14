@@ -13,12 +13,15 @@ await fetchList()
 
 const modules_links = computed(() =>
   [...Modules.value]
-    .map(feat => ({
-      label: feat.title as string,
-      to: feat.path as string,
-      icon: feat.icon as string,
-      description: feat.description as string
-    }))
+    .map((feat) => {
+      const nav = (feat.navigation ?? {}) as { title?: string, icon?: string, description?: string }
+      return {
+        label: (nav.title ?? feat.title) as string,
+        to: feat.path as string,
+        icon: (nav.icon ?? feat.icon) as string,
+        description: (nav.description ?? feat.description) as string
+      }
+    })
     .sort((a, b) => a.label.toUpperCase().localeCompare(b.label.toUpperCase()))
 )
 
