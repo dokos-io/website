@@ -337,6 +337,8 @@ useSeoMeta({
                     v-for="(feat, index) in module.features"
                     :key="index"
                     v-bind="feat"
+                    orientation="horizontal"
+                    :reverse="feat.align === 'left'"
                     :ui="{ title: 'mt-2' }"
                 >
                     <template #headline>
