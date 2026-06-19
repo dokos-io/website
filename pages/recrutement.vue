@@ -45,8 +45,8 @@ const products = ['Dokos', 'Dodock', 'HRMS', 'Bookings']
 useSeoMeta({
   title: "Ingénieur Logiciel Full-Stack — Dokos recrute",
   ogTitle: "Ingénieur Logiciel Full-Stack — Dokos recrute",
-  description: "On est quatre. On cherche la cinquième personne. CDI à Nancy, télétravail flexible, produit open source orienté IA.",
-  ogDescription: "On est quatre. On cherche la cinquième personne. CDI à Nancy, télétravail flexible, produit open source orienté IA.",
+  description: "On est cinq. On cherche la sixième personne. CDI à Nancy, télétravail flexible, produit open source orienté IA.",
+  ogDescription: "On est cinq. On cherche la sixième personne. CDI à Nancy, télétravail flexible, produit open source orienté IA.",
 })
 </script>
 
@@ -73,7 +73,7 @@ useSeoMeta({
         </h1>
 
         <p class="hero-sub">
-          On est quatre.<br>On cherche la cinquième personne.
+          On est cinq.<br>On cherche la sixième personne.
         </p>
 
         <div class="hero-actions">
@@ -99,12 +99,12 @@ useSeoMeta({
             </div>
             <div class="stat-divider" />
             <div class="stat">
-              <span class="stat-num">4</span>
+              <span class="stat-num">5</span>
               <span class="stat-label">personnes dans l'équipe</span>
             </div>
             <div class="stat-divider" />
             <div class="stat">
-              <span class="stat-num stat-num--coral">5<sup>e</sup></span>
+              <span class="stat-num stat-num--coral">6<sup>e</sup></span>
               <span class="stat-label">poste ouvert</span>
             </div>
           </div>
