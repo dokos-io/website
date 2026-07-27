@@ -1,8 +1,7 @@
-import type { Partner, Filter } from '../types'
-import { slugify, random } from '../utils'
+import type { Partner } from '../types'
+import { slugify } from '../utils'
 
 export const usePartners = () => {
-  const { locale } = useI18n()
   const partners = useState<Partner[]>('partners', () => [])
 
   // Data fetching
@@ -12,22 +11,22 @@ export const usePartners = () => {
     }
 
     try {
-      const data = await queryContent(`/${locale.value}/partners`).where({ _extension: 'md' }).find()
+      const data = await queryCollection('partners').all()
 
       partners.value = data.map(partner => ({
         ...partner,
-        services: (partner.services || []).map((service: string) => ({
+        services: ((partner.services as string[]) || []).map((service: string) => ({
           key: slugify(service),
           label: service
         })),
-        regions: (partner.regions || []).map((region: string) => ({
+        regions: ((partner.regions as string[]) || []).map((region: string) => ({
           key: slugify(region),
           label: region
         })),
         location: partner.location
           ? {
-              key: slugify(partner.location),
-              label: partner.location
+              key: slugify(partner.location as string),
+              label: partner.location as string
             }
           : null
       })) as Partner[]

@@ -4,44 +4,33 @@ const localePath = useLocalePath()
 
 const route = useRoute()
 
-const { t, locale } = useI18n({
+const { t } = useI18n({
   useScope: 'local'
 })
 
-const modulesContentQuery = queryContent(`/${locale.value}/modules`)
-const { data: modules_nav } = await useAsyncData('modules_nav', () => fetchContentNavigation(modulesContentQuery), {
-  watch: [locale]
-})
+const { Modules, fetchList } = useModules()
+await fetchList()
 
-const modules = modules_nav.value?.find(item => item._path === `/${locale.value}`)?.children?.find(item => item._path === `/${locale.value}/modules`)?.children
-
-const modules_links = modules?.map(feat => {
-  return {
-    label: feat.title,
-    to: feat._path,
-    icon: feat.icon,
-    description: feat.description
-  }
-}).sort((a, b) => {
-  const nameA = a.label.toUpperCase();
-  const nameB = b.label.toUpperCase();
-  if (nameA < nameB) {
-    return -1;
-  }
-  if (nameA > nameB) {
-    return 1;
-  }
-
-  return 0;
-})
-
+const modules_links = computed(() =>
+  [...Modules.value]
+    .map((feat) => {
+      const nav = (feat.navigation ?? {}) as { title?: string, icon?: string, description?: string }
+      return {
+        label: (nav.title ?? feat.title) as string,
+        to: feat.path as string,
+        icon: (nav.icon ?? feat.icon) as string,
+        description: (nav.description ?? feat.description) as string
+      }
+    })
+    .sort((a, b) => a.label.toUpperCase().localeCompare(b.label.toUpperCase()))
+)
 
 const links = computed(() => {
   return [
     {
       label: t('features'),
       icon: 'i-heroicons-computer-desktop',
-      children: modules_links
+      children: modules_links.value
     }, {
       label: t('services'),
       to: localePath('/services'),
@@ -64,30 +53,28 @@ const links = computed(() => {
 </script>
 
 <template>
-  <UHeader :links="links" :to="localePath('/')">
-    <template #logo>
-      <img width="40px" src="/dokos_logo_rect.svg">
-      <UBadge :label="t('badge_label')" variant="subtle" class="mb-0.5" />
+  <UHeader :to="localePath('/')">
+    <template #left>
+      <NuxtLink :to="localePath('/')" class="flex items-center gap-2">
+        <img width="40" src="/dokos_logo_rect.svg" alt="Dokos">
+        <UBadge :label="t('badge_label')" variant="subtle" class="mb-0.5" />
+      </NuxtLink>
     </template>
 
-    <template #center>
-      <UHeaderLinks :links="links"
-        :ui="{ default: { popover: { popper: { strategy: 'absolute' }, ui: { width: 'w-[64rem]' } } } }"
-        class="hidden lg:flex" />
-    </template>
-
-    <template #panel>
-      <UNavigationTree :links="links" default-open />
-    </template>
+    <UNavigationMenu :items="links" class="hidden lg:flex" />
 
     <template #right>
       <UButton to="https://cloud.dokos.io" target="_blank" icon="i-material-symbols-host-outline-rounded" aria-label="Dokos Cloud"
-        color="blue" variant="outline" label="Créer un site"/>
-      <LangSwitcher v-if='!route.matched.some(p => p.path.includes("/blog/:slug()"))' />
-      <UColorModeButton size="sm" />
+        color="info" variant="outline" label="Créer un site" />
+      <LangSwitcher v-if="!route.matched.some(p => p.path.includes('/blog/'))" />
+      <UColorModeButton />
 
       <UButton to="https://gitlab.com/dokos" target="_blank" icon="i-simple-icons-gitlab" aria-label="Gitlab"
-        color="gray" variant="ghost" />
+        color="neutral" variant="ghost" />
+    </template>
+
+    <template #body>
+      <UNavigationMenu :items="links" orientation="vertical" class="-mx-2.5" />
     </template>
   </UHeader>
 </template>

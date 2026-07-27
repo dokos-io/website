@@ -1,7 +1,6 @@
 import type { Module } from '../types'
 
 export const useModules = () => {
-  const { locale } = useI18n()
   const modules = useState<Module[]>('modules', () => [])
 
   // Data fetching
@@ -11,8 +10,8 @@ export const useModules = () => {
     }
 
     try {
-      const data = await queryContent(`/${locale.value}/modules`).where({ _extension: 'yml' }).find()
-      modules.value = data as Module[]
+      const data = await queryCollection('modules').all()
+      modules.value = data as unknown as Module[]
     }
     catch (e) {
       modules.value = []

@@ -5,9 +5,9 @@
             '--rows': rows - 1,
             'z-index': -1
         }">
-            <div ref="el" class="absolute inset-0 grid justify-center auto-rows-[--cell] -space-y-px">
+            <div ref="el" class="absolute inset-0 grid justify-center auto-rows-(--cell) -space-y-px">
                 <div v-for="(row, rowIndex) in grid" :key="rowIndex"
-                    class="grid grid-flow-col auto-cols-[--cell] flex-1 -space-x-px">
+                    class="grid grid-flow-col auto-cols-(--cell) flex-1 -space-x-px">
                     <div v-for="(cell, cellIndex) in row" :key="cellIndex"
                         class="relative border border-green-200/50 dark:border-green-900/25">
                         <div class="absolute inset-0 bg-green-500/10 hover:bg-green-500/20 dark:bg-green-400/5 dark:hover:bg-green-400/10 opacity-0 transition-opacity will-change-[opacity] duration-1000"
@@ -27,7 +27,7 @@
 import { useElementSize } from '@vueuse/core'
 
 const el = ref(null)
-const grid = ref([])
+const grid = ref<any>([])
 const rows = ref(0)
 const cols = ref(0)
 
@@ -58,7 +58,7 @@ function moveCellsDown() {
     }
 
     setTimeout(() => {
-        if (grid.value[rows.value].every(cell => cell !== null)) {
+        if (grid.value[rows.value].every((cell: any) => cell !== null)) {
             for (let col = 0; col < cols.value; col++) {
                 grid.value[rows.value][col] = null
             }
@@ -66,7 +66,7 @@ function moveCellsDown() {
     }, 500)
 }
 
-function removeCell(row, col) {
+function removeCell(row: any, col: any) {
     grid.value[row][col] = null
 }
 

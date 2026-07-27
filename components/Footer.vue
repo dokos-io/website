@@ -82,7 +82,9 @@ const links = computed(() => {
 <template>
     <UFooter>
         <template #top>
-            <UFooterColumns :links="links" />
+            <UContainer>
+                <UFooterColumns :columns="links" />
+            </UContainer>
         </template>
 
         <template #left>

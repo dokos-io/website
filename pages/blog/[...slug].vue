@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { joinURL } from "ufo";
-import type { BlogPost } from "~/types/blog";
 
-const route = useRoute();
 const {
     params: { slug },
 } = useRoute();
 const { locale } = useI18n();
 
-const { data: post } = await useAsyncData(`/${locale.value}/blog/${slug}`, () =>
-    queryContent<BlogPost>(`/${locale.value}/blog/${slug}`).findOne()
+const path = `/${locale.value}/blog/${(slug as string[]).join("/")}`;
+
+const { data: post } = await useAsyncData<any>(path, () =>
+    queryCollection("blog").path(path).first()
 );
 if (!post.value) {
     throw createError({
@@ -19,14 +19,12 @@ if (!post.value) {
     });
 }
 
-const { data: surround } = await useAsyncData(
-    `/${locale.value}/blog/${slug}-surround`,
+const { data: surround } = await useAsyncData<any>(
+    `${path}-surround`,
     () =>
-        queryContent(`/${locale.value}/blog`)
-            .where({ _extension: "md" })
-            .without(["body", "excerpt"])
-            .sort({ date: -1 })
-            .findSurround(`/${locale.value}/blog/${slug}`),
+        queryCollectionItemSurroundings("blog", path, {
+            fields: ["title", "description", "path", "date"],
+        }),
     { default: () => [] }
 );
 
@@ -41,16 +39,17 @@ useSeoMeta({
     ogDescription: description,
 });
 
-if (post.value.image?.src) {
+const image = post.value.image as { src?: string } | undefined;
+
+if (image?.src) {
     const site = useSiteConfig();
 
     useSeoMeta({
-        ogImage: joinURL(site.url, post.value.image.src),
-        twitterImage: joinURL(site.url, post.value.image.src),
+        ogImage: joinURL(site.url, image.src),
+        twitterImage: joinURL(site.url, image.src),
     });
 } else {
-    defineOgImage({
-        component: "Saas",
+    defineOgImage("OgImageSaas" as any, {
         title,
         description,
         headline: "Blog",
@@ -62,9 +61,9 @@ if (post.value.image?.src) {
     <UContainer v-if="post">
         <UPageHeader :title="post.title" :description="post.description">
             <template #headline>
-                <UBadge v-bind="post.badge" variant="subtle" />
+                <UBadge v-if="post.badge" v-bind="post.badge" variant="subtle" />
                 <span class="text-gray-500 dark:text-gray-400">&middot;</span>
-                <time class="text-gray-500 dark:text-gray-400">{{
+                <time v-if="post.date" class="text-gray-500 dark:text-gray-400">{{
                     new Date(post.date).toLocaleDateString(language, {
                         year: "numeric",
                         month: "short",
@@ -73,12 +72,13 @@ if (post.value.image?.src) {
                 }}</time>
             </template>
 
-            <div class="flex flex-wrap items-center gap-3 mt-4">
+            <div v-if="post.authors?.length" class="flex flex-wrap items-center gap-3 mt-4">
                 <UButton
-                    v-for="(author, index) in post.authors"
+                    v-for="(author, index) in (post.authors as any[])"
                     :key="index"
                     :to="author.to"
-                    color="white"
+                    color="neutral"
+                    variant="outline"
                     target="_blank"
                     size="sm"
                 >
@@ -97,7 +97,7 @@ if (post.value.image?.src) {
             <UPageBody prose>
                 <ContentRenderer v-if="post && post.body" :value="post" />
 
-                <hr v-if="surround?.length" />
+                <USeparator v-if="surround?.length" />
 
                 <UContentSurround :surround="surround" />
             </UPageBody>
