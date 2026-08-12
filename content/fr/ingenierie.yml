@@ -1,0 +1,102 @@
+title: Ingénierie
+description: Architecture de plateforme, migration, développement métier, ingénierie IA et formation — nos ingénieurs interviennent chez vous, sur notre propre socle.
+navigation:
+  title: Ingénierie
+  icon: i-heroicons-wrench-screwdriver
+
+hero:
+  headline:
+    label: Ingénieurs embarqués
+    icon: i-heroicons-wrench-screwdriver
+  title: Nos ingénieurs travaillent<br><span class="text-primary">dans</span> votre système, pas à côté.
+  description: Nous n'écrivons pas de cahier des charges pour le faire exécuter ailleurs. Les personnes qui conçoivent Dodock et Dokos sont celles qui interviennent dans vos processus — et qui restent joignables ensuite.
+  links:
+    - label: Parler à un ingénieur
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir les tarifs
+      to: /fr/tarifs
+      size: xl
+      color: neutral
+      variant: outline
+
+scope:
+  title: Nos interventions
+  description: Cinq natures de mission, chiffrées séparément parce qu'elles ne mobilisent ni les mêmes compétences ni le même niveau d'engagement.
+  items:
+    - title: Architecture de plateforme
+      description: Dimensionnement, urbanisation, stratégie de montée de version, articulation avec le système d'information existant. La mission qui évite les trois suivantes.
+      icon: i-heroicons-squares-2x2
+    - title: Migration
+      description: Reprise depuis un ERP propriétaire, un tableur, ou une installation Frappe/ERPNext existante. Plan de bascule, jeu de recette, procédure de repli.
+      icon: i-heroicons-arrow-path
+    - title: Développement métier
+      description: Modules spécifiques, automatisations, connecteurs. Livrés sous licence libre, dans vos dépôts comme dans les nôtres — vous n'achetez pas une boîte noire.
+      icon: i-heroicons-code-bracket-square
+    - title: Ingénierie IA
+      description: Intégration d'agents et d'automatisations assistées dans vos processus de gestion, sur une base ouverte et auditable, dont vous gardez la maîtrise.
+      icon: i-heroicons-cpu-chip
+    - title: Formation
+      description: Transfert de compétences vers vos équipes, jusqu'à l'autonomie. C'est une réussite quand vous nous appelez moins.
+      icon: i-heroicons-academic-cap
+
+operations:
+  title: Comment nous travaillons
+  description: Notre manière d'intervenir compte autant que le périmètre. Voici ce sur quoi nous ne transigeons pas.
+  items:
+    - title: Embarqués, pas en délégation
+      description: Nous travaillons au contact de vos équipes, sur vos processus réels. Le transfert de compétences se fait en marchant, pas dans une session de clôture.
+      icon: i-heroicons-users
+    - title: Jamais une seule personne
+      description: Les missions sont staffées à deux dès le départ. Un projet qui repose sur une personne est un risque pour vous autant que pour nous.
+      icon: i-heroicons-user-group
+    - title: Tout est livré en clair
+      description: Code sous licence libre, documentation, procédures de déploiement. Vous pouvez reprendre le travail ou le confier à un tiers à tout moment.
+      icon: i-heroicons-document-text
+    - title: L'exploitation en prolongement
+      description: Ce que nous déployons, nous savons l'exploiter. Un contrat d'infogérance peut prendre le relais à la fin du projet — ce n'est jamais une obligation.
+      icon: i-material-symbols-cloud-done-outline
+
+reversibility:
+  title: Ce que nous ne faisons pas
+  description: Autant l'écrire ici plutôt qu'à la troisième réunion.
+  items:
+    - title: Pas de licence à vendre
+      description: Le logiciel est libre. Nous facturons du travail d'ingénieur, jamais un droit d'usage.
+      icon: i-heroicons-no-symbol
+    - title: Pas de forfait au rabais
+      description: Nous préférons refuser une mission que la sous-dimensionner et la livrer à moitié.
+      icon: i-heroicons-scale
+    - title: Pas de dépendance construite
+      description: Aucune brique fermée, aucun savoir volontairement retenu, aucune clause d'exclusivité.
+      icon: i-heroicons-lock-open
+    - title: Pas de promesse hors compétence
+      description: Sur ce que nous ne maîtrisons pas, nous le disons et nous vous orientons ailleurs.
+      icon: i-heroicons-hand-raised
+
+faq:
+  title: Questions fréquentes
+  items:
+    - label: Comment sont chiffrées les missions ?
+      content: Au projet, après un cadrage court qui précise le périmètre et les livrables. Les natures d'intervention ne sont pas facturées au même niveau : une mission d'architecture ou d'ingénierie IA mobilise des compétences plus rares qu'un développement de module, et le chiffrage le reflète. Pour des besoins ponctuels et bien identifiés, les packs d'heures de la page Tarifs sont souvent plus adaptés qu'un projet.
+    - label: Travaillez-vous avec nos équipes internes ?
+      content: C'est le mode d'intervention que nous préférons. Nos ingénieurs se placent au contact de vos équipes plutôt qu'en retrait, et l'objectif explicite est votre autonomie. Nous intervenons aussi aux côtés de vos prestataires existants lorsque le périmètre est clairement réparti.
+    - label: Que devient le code produit ?
+      content: Il est publié sous licence libre et déposé dans vos dépôts comme dans les nôtres. Vous pouvez le reprendre, le modifier, le confier à un autre prestataire. Lorsqu'un développement a un intérêt général, nous proposons de le verser au produit — vous en gardez le bénéfice et la maintenance devient la nôtre.
+    - label: Intervenez-vous sur une installation que vous n'avez pas déployée ?
+      content: Oui, y compris sur ERPNext standard et sur les applications de l'écosystème Frappe. La mission commence alors par un audit de l'existant, dont les conclusions peuvent être qu'une remise à niveau doit précéder tout développement.
+
+cta:
+  title: Décrivez-nous le problème avant la solution
+  description: Les cadrages les plus utiles commencent par ce qui ne fonctionne pas aujourd'hui, pas par la fonctionnalité imaginée pour y remédier.
+  links:
+    - label: Parler à un ingénieur
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Infogérance
+      to: /fr/exploitation
+      size: xl
+      color: neutral
+      variant: outline

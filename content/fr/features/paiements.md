@@ -8,7 +8,7 @@ navigation:
     icon: ""
     description: ""
 hero:
-  title: Les <span class="text-primary">fonctionnalités comptables</span> détaillées
+  title: Les <span class="text-primary">fonctionnalités de paiement</span> détaillées
   description: Dokos est un logiciel puissant, open-source, flexible qui offre une gamme complète de fonctionnalités de comptabilité pour aider les entreprises à gérer leurs finances de manière efficace. 
   links:
     - label: Commencez maintenant

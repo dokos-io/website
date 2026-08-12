@@ -25,6 +25,22 @@ export default defineNuxtConfig({
   routeRules: {
     '/api/search.json': { prerender: true },
     '/': { redirect: '/fr', prerender: true },
+
+    // Paths retired by the 2026 positioning revamp. Declared here rather than
+    // in `public/_redirects` because that file is a Netlify/Cloudflare
+    // convention and is ignored by Vercel, where this site is deployed.
+    // Both the prefixed and unprefixed forms exist under `prefix_and_default`.
+    '/services': { redirect: { to: '/fr/ingenierie', statusCode: 301 } },
+    '/fr/services': { redirect: { to: '/fr/ingenierie', statusCode: 301 } },
+    '/pricing': { redirect: { to: '/fr/tarifs', statusCode: 301 } },
+    '/fr/pricing': { redirect: { to: '/fr/tarifs', statusCode: 301 } },
+    '/tiers-lieux': { redirect: { to: '/fr/solutions/tiers-lieux', statusCode: 301 } },
+    '/fr/tiers-lieux': { redirect: { to: '/fr/solutions/tiers-lieux', statusCode: 301 } },
+    '/service-companies': { redirect: { to: '/fr/solutions/entreprises-de-services', statusCode: 301 } },
+    '/fr/service-companies': { redirect: { to: '/fr/solutions/entreprises-de-services', statusCode: 301 } },
+    '/production-companies': { redirect: { to: '/fr/solutions/industrie', statusCode: 301 } },
+    '/fr/production-companies': { redirect: { to: '/fr/solutions/industrie', statusCode: 301 } },
+
     '/**': { prerender: true },
     '/fr': { prerender: true },
     '/fr/**': { prerender: true },
@@ -65,13 +81,29 @@ export default defineNuxtConfig({
     },
   },
   colorMode: {
-    preference: 'light',
+    preference: 'system',
     fallback: 'light',
   },
   nitro: {
     prerender: {
       crawlLinks: true,
       failOnError: false,
+      // Under `prefix_and_default`, `localePath()` emits unprefixed URLs for
+      // the default locale, so crawling alone only discovers `/solutions/x`.
+      // The redirects above target the canonical `/fr/` form, which would then
+      // 301 into a 404 on a static host. Listed explicitly rather than left to
+      // link discovery.
+      routes: [
+        '/fr/solutions/tiers-lieux',
+        '/fr/solutions/entreprises-de-services',
+        '/fr/solutions/industrie',
+        '/fr/exploitation',
+        '/fr/exploitation/frappe-erpnext',
+        '/fr/souverainete',
+        '/fr/editeur',
+        '/fr/ingenierie',
+        '/fr/tarifs',
+      ],
     },
   },
   image: {

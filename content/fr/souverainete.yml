@@ -1,0 +1,127 @@
+title: Souveraineté et sécurité
+description: Hébergement européen, licence GPLv3, réversibilité contractuelle — les réponses aux exigences d'achat des grands comptes et du secteur public.
+navigation:
+  title: Souveraineté & sécurité
+  icon: i-material-symbols-security-rounded
+  description: Hébergement UE, GPLv3, réversibilité
+
+hero:
+  headline:
+    label: Juridiction européenne
+    icon: i-circle-flags-european-union
+  title: Vos données restent en Europe.<br>Votre logiciel reste <span class="text-primary">le vôtre</span>.
+  description: Un ERP sous licence libre, hébergé en France et en Allemagne, exploité par une société française nommément responsable. La plupart des clauses de réversibilité et de non-enfermement sont satisfaites par construction, pas par engagement commercial.
+  links:
+    - label: Parler à un ingénieur
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Politique de confidentialité
+      to: /fr/securityandprivacy
+      size: xl
+      color: neutral
+      variant: outline
+
+proof:
+  items:
+    - label: Hébergement des bases clients
+      value: France · Allemagne
+      note: OVHcloud SAS et Hetzner GmbH
+    - label: Hyperscalers américains
+      value: Aucun
+      note: Dans toute la chaîne d'hébergement
+    - label: Licence du code exploité
+      value: GPLv3
+      note: Auditable, modifiable, reprenable
+
+scope:
+  title: Ce que « souverain » veut dire ici
+  description: Le mot est employé à tort et à travers. Voici précisément ce que nous soutenons — et ce que nous ne soutenons pas.
+  items:
+    - title: Localisation des données
+      description: Les bases de données clients sont hébergées dans nos infrastructures situées en France et en Allemagne. Les sauvegardes sont répliquées sur plusieurs zones de disponibilité, dans ces mêmes pays.
+      icon: i-heroicons-map-pin
+    - title: Responsable identifié
+      description: Dokos SAS, société française immatriculée au RCS de Nancy, est votre interlocuteur contractuel et votre sous-traitant au sens de l'article 28 du RGPD. Pas d'entité offshore dans la chaîne.
+      icon: i-heroicons-building-office-2
+    - title: Fournisseurs européens
+      description: Paiements, hébergement, communication — nos sous-traitants sont établis dans l'Union européenne et listés nommément dans notre politique de confidentialité.
+      icon: i-circle-flags-european-union
+    - title: Pas de dépendance logicielle
+      description: L'intégralité du socle exploité est publiée sous GPLv3. Aucune brique propriétaire ne conditionne le fonctionnement de votre installation.
+      icon: i-heroicons-lock-open
+    - title: Ce que nous ne prétendons pas
+      description: Nous ne sommes pas qualifiés SecNumCloud et ne le revendiquons pas. Cette qualification relève de l'hébergeur d'infrastructure ; nous intervenons comme opérateur applicatif au-dessus.
+      icon: i-heroicons-exclamation-triangle
+      badge: Dit franchement
+    - title: Conformité réglementaire française
+      description: Comptabilité, facturation électronique, encaissement — les modules concernés sont conçus pour les obligations françaises. Le détail des certifications est publié.
+      icon: i-octicon-law
+
+operations:
+  title: Protection des données, dans le détail
+  description: Ces engagements figurent dans notre politique de confidentialité et dans nos conditions générales d'hébergement. Ils sont vérifiables, pas déclaratifs.
+  items:
+    - title: Vous restez responsable de traitement
+      description: Les données que vous versez dans votre base vous appartiennent. Nous les traitons uniquement en votre nom, comme sous-traitant, selon vos instructions.
+      icon: i-material-symbols-data-loss-prevention-outline
+    - title: Accès limité et journalisé
+      description: Nos équipes n'accèdent à vos données que sur votre demande, pour résoudre un incident technique, ou sur obligation légale. Chaque accès est tracé.
+      icon: i-heroicons-finger-print
+    - title: Notification sous 72 heures
+      description: En cas de violation de données sur nos serveurs, la CNIL est notifiée sous 72 heures, et vous l'êtes également dès lors qu'un risque pèse sur les droits des personnes concernées.
+      icon: i-heroicons-bell-alert
+    - title: Aucune donnée bancaire stockée
+      description: Les paiements passent par des prestataires conformes PCI-DSS. Les numéros de carte ne transitent jamais par nos systèmes et n'y sont jamais enregistrés.
+      icon: i-heroicons-credit-card
+    - title: Cookies strictement nécessaires
+      description: Le site n'utilise que les cookies indispensables à la session et à la sécurité. Aucun cookie publicitaire ou de suivi sans consentement explicite.
+      icon: i-heroicons-shield-check
+    - title: Effacement encadré
+      description: Après résiliation, votre base est désactivée pendant une période de grâce de quatre semaines, puis détruite. Les copies de sauvegarde sont purgées au terme de la conservation de sécurité de douze mois.
+      icon: i-heroicons-trash
+
+reversibility:
+  title: La réversibilité, clause par clause
+  description: C'est la question que pose tout service achats sérieux. Voici les réponses, dans l'ordre où elles sont généralement demandées.
+  items:
+    - title: Restitution des données
+      description: Export complet, à tout moment, dans un format structuré et couramment utilisé, depuis votre propre interface d'administration.
+      icon: i-material-symbols-cloud-sync-outline-rounded
+    - title: Continuité sans l'éditeur
+      description: Le code étant libre, votre installation reste exploitable si Dokos SAS disparaît. C'est une garantie que peu d'éditeurs peuvent offrir.
+      icon: i-heroicons-arrow-path
+    - title: Changement de prestataire
+      description: Aucune clause d'exclusivité. Vous pouvez confier l'exploitation à un tiers ou la reprendre en interne, avec notre concours.
+      icon: i-heroicons-arrows-right-left
+    - title: Sortie sans pénalité
+      description: Résiliation avec trente jours de préavis. En cas de révision tarifaire, sortie sans pénalité dans les trente jours suivant la notification.
+      icon: i-heroicons-document-check
+
+faq:
+  title: Questions d'achat et de conformité
+  items:
+    - label: Êtes-vous qualifiés SecNumCloud ?
+      content: "Non, et nous ne l'annonçons pas comme une échéance proche. La qualification SecNumCloud est un programme pluriannuel qui engage des moyens qu'une société de notre taille ne peut pas mobiliser seule, et elle porte sur l'infrastructure d'hébergement plutôt que sur l'application. Notre position est celle d'opérateur applicatif : lorsque votre cadre l'exige, nous déployons chez un hébergeur qualifié et nous portons le contrat d'exploitation au-dessus. Dites-nous quelle exigence vous devez satisfaire, nous vous dirons si nous savons la tenir."
+    - label: Pouvez-vous héberger exclusivement en France ?
+      content: Notre plateforme standard répartit production et sauvegardes entre la France et l'Allemagne, deux juridictions de l'Union européenne. Une contrainte de localisation strictement française est réalisable sur une infrastructure dédiée ; elle relève d'un dimensionnement spécifique et se traite en amont du contrat, pas après.
+    - label: Qui sont vos sous-traitants ?
+      content: "Ils sont nommés dans notre politique de confidentialité, avec pour chacun la raison de son intervention et la nature des données partagées : Stripe et GoCardless pour les paiements, OVHcloud et Hetzner pour l'hébergement. Tout changement susceptible de toucher vos données vous est notifié au préalable, conformément à l'article 28 du RGPD."
+    - label: Comment vérifier l'intégrité de la version installée ?
+      content: Nous publions l'empreinte cryptographique des versions concernées par la certification, fichier par fichier, ainsi que la procédure permettant de recalculer ce condensat sur votre propre installation. Le détail figure sur notre page Certifications.
+    - label: Qui contacter pour une demande RGPD ?
+      content: Notre délégué à la protection des données est joignable à dpo@dokos.io, ou par courrier à Dokos SAS, 7B Allée Neuve, 54520 Laxou, France. Le délai de réponse est d'un mois à compter de la réception, prolongeable selon les circonstances.
+
+cta:
+  title: Une grille d'exigences à nous soumettre ?
+  description: Envoyez-la. Nous répondons point par point, y compris lorsque la réponse est non — c'est généralement l'information la plus utile des deux.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir les certifications
+      to: /fr/certifications
+      size: xl
+      color: neutral
+      variant: outline

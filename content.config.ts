@@ -10,9 +10,19 @@ const arr = () => z.array(z.any())
 const landingSchema = z.object({
   icon: z.string().optional(),
   toc: z.boolean().optional(),
+  announcement: obj().optional(),
   hero: obj().optional(),
   metrics: obj().optional(),
   sections: arr().optional(),
+  // Blocks introduced by the "éditeur souverain + garanties opérationnelles"
+  // positioning. Every block here is `passthrough()`, so a typo in a key name
+  // renders nothing rather than failing the build — check pages visually.
+  scope: obj().optional(),
+  guarantees: obj().optional(),
+  operations: obj().optional(),
+  reversibility: obj().optional(),
+  lanes: obj().optional(),
+  proof: obj().optional(),
   applications: obj().optional(),
   integrations: obj().optional(),
   modules: obj().optional(),
@@ -43,7 +53,7 @@ const blogSchema = z.object({
   icon: z.string().optional(),
 })
 
-// Shared by `modules`, `applications` and `features`.
+// Shared by `modules` and `features`.
 const moduleSchema = z.object({
   icon: z.string().optional(),
   application: z.string().optional(),
@@ -94,7 +104,6 @@ export default defineContentConfig({
           'fr/blog/**',
           'fr/features/**',
           'fr/modules/**',
-          'fr/applications/**',
           'fr/partners/**',
           '**/_dir.yml',
         ],
@@ -114,11 +123,6 @@ export default defineContentConfig({
     modules: defineCollection({
       type: 'page',
       source: 'fr/modules/**',
-      schema: moduleSchema,
-    }),
-    applications: defineCollection({
-      type: 'page',
-      source: 'fr/applications/**',
       schema: moduleSchema,
     }),
     partners: defineCollection({

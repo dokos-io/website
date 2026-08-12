@@ -30,11 +30,21 @@ useSeoMeta({
 
 <template>
     <div v-if="page">
-        <div class="bg-yellow-400 py-2 text-center text-black font-semibold">Rejoignez-nous à Toulouse, au Faire Festival, les 28, 29 et 30 Mai 2026.
-            <div>
-                <NuxtLink to="/faire-festival-2026" class="text-grey font-normal">En savoir plus <Icon name="i-mdi-arrow-top-right"/></NuxtLink>
-            </div>
-        </div>
+        <!-- Content-driven; used to be hardcoded in this template. -->
+        <NuxtLink
+            v-if="page.announcement"
+            :to="page.announcement.to"
+            class="block bg-sand-200 dark:bg-stone-800 py-2.5 text-center text-sm text-highlighted hover:bg-sand-300 dark:hover:bg-stone-700 transition-colors"
+        >
+            <span class="font-medium">{{ page.announcement.label }}</span>
+            <span
+                v-if="page.announcement.cta"
+                class="ml-2 text-primary underline underline-offset-4"
+            >
+                {{ page.announcement.cta }}
+            </span>
+        </NuxtLink>
+
         <UPageHero
             :links="page.hero.links"
             orientation="vertical"
@@ -45,44 +55,30 @@ useSeoMeta({
                     v-if="page.hero.headline"
                     variant="subtle"
                     size="lg"
-                    class="relative rounded-full font-semibold"
+                    class="font-medium"
                 >
                     <UIcon
-                        v-if="page.hero.headline.left_icon"
-                        :name="page.hero.headline.left_icon"
-                        class="mr-1 w-4 h-4 pointer-events-none"
+                        v-if="page.hero.headline.icon"
+                        :name="page.hero.headline.icon"
+                        class="mr-1.5 size-4"
                     />
-                    <NuxtLink
-                        :to="page.hero.headline.to"
-                        target="_blank"
-                        class="focus:outline-none"
-                        tabindex="-1"
-                    >
-                        <span class="absolute inset-0" aria-hidden="true" />
-                    </NuxtLink>
-
                     {{ page.hero.headline.label }}
-
-                    <UIcon
-                        v-if="page.hero.headline.right_icon"
-                        :name="page.hero.headline.right_icon"
-                        class="ml-1 w-4 h-4 pointer-events-none"
-                    />
                 </UBadge>
             </template>
 
             <template #title>
-                <span v-html="page.hero.title"></span>
+                <span v-html="page.hero.title" />
             </template>
 
             <template #description>
-                <span v-html="page.hero.description"></span>
+                <span v-html="page.hero.description" />
             </template>
 
             <template #default>
                 <NuxtImg
+                    v-if="page.hero.image"
                     :src="'/home/' + page.hero.image"
-                    class="w-full rounded-md bg-white/75"
+                    class="w-full rounded-md"
                     loading="lazy"
                     placeholder
                 />
@@ -93,40 +89,34 @@ useSeoMeta({
             </template>
         </UPageHero>
 
-        <UPageSection class="pt-0 sm:pt-0 md:pt-0">
-            <UCard
-                class="bg-yellow-500/10 ring-0"
-                :ui="{ body: 'grid grid-cols-3 gap-4 py-10 sm:py-20' }"
+        <!-- Operating facts rather than vanity counts. -->
+        <UPageSection v-if="page.proof" class="pt-10 sm:pt-16">
+            <dl
+                class="grid grid-cols-1 sm:grid-cols-3 gap-px bg-default/10 rounded-lg overflow-hidden ring ring-default"
             >
                 <div
-                    v-for="(item, index) in page.metrics.items"
+                    v-for="(item, index) in page.proof.items"
                     :key="index"
-                    class="flex-1"
+                    class="bg-sand-100 dark:bg-stone-900 px-6 py-7"
                 >
-                    <div class="mb-6 flex">
-                        <UIcon
-                            :name="item.icon"
-                            class="w-10 h-10 flex-shrink-0 text-primary"
-                        />
-                    </div>
-                    <p
-                        class="text-gray-900 dark:text-white text-base font-semibold truncate flex items-center gap-1.5"
+                    <dt class="text-sm text-muted">{{ item.label }}</dt>
+                    <dd
+                        class="mt-2 text-3xl font-semibold text-highlighted tabular-nums"
                     >
-                        {{ item.title }}
-                    </p>
-                    <div
-                        class="text-[15px] text-gray-500 dark:text-gray-400 mt-1"
-                    >
-                        {{ item.description }}
-                    </div>
+                        {{ item.value }}
+                    </dd>
+                    <dd v-if="item.note" class="mt-1.5 text-sm text-muted">
+                        {{ item.note }}
+                    </dd>
                 </div>
-            </UCard>
+            </dl>
         </UPageSection>
 
         <UPageSection
             v-for="(section, index) in page.sections"
             :key="index"
-            v-bind="section"
+            :links="section.links"
+            :features="section.features"
             orientation="horizontal"
             :reverse="section.align === 'left'"
         >
@@ -136,25 +126,12 @@ useSeoMeta({
             <template #description>
                 <span v-html="section.description" />
             </template>
-            <div
+            <NuxtImg
                 v-if="section.image"
-                class="pt-24 pb-12 rounded-lg"
-                :class="[
-                    section.image_bg_color,
-                    section.align == 'left' ? 'pl-8 mr-7' : 'pr-8 ml-7',
-                ]"
-            >
-                <NuxtImg
-                    :src="section.image"
-                    class="rounded-lg"
-                    :class="[
-                        section.align == 'left' ? 'ml-7' : 'mr-7',
-                        section.image_bg_color ? 'shadow-2xl' : '',
-                    ]"
-                    :style="section.align == 'right' && 'margin-left: -15px;'"
-                    loading="lazy"
-                />
-            </div>
+                :src="section.image"
+                class="rounded-lg ring ring-default"
+                loading="lazy"
+            />
             <Placeholder v-else />
         </UPageSection>
 
@@ -164,7 +141,7 @@ useSeoMeta({
                     v-for="icon in page.integrations.icons"
                     :key="icon"
                     :name="icon"
-                    class="w-16 h-16 flex-shrink-0 text-gray-500 dark:text-gray-400"
+                    class="size-16 shrink-0 text-muted"
                 />
                 <NuxtImg
                     v-for="image in page.integrations.images"
@@ -177,21 +154,18 @@ useSeoMeta({
         </UPageSection>
 
         <UPageSection
-            v-bind="page.modules"
-            class="bg-green-400/10"
+            :title="page.modules.title"
+            :description="page.modules.description"
+            :links="page.modules.links"
+            class="bg-sand-200/60 dark:bg-stone-900"
         >
-            <template #title>
-                <span v-html="page.modules.title" />
-            </template>
-            <template #description>
-                <span v-html="page.modules.description" />
-            </template>
             <UPageGrid class="sm:grid-cols-3 xl:grid-cols-4">
                 <UPageCard
                     v-for="(item, index) in sorted_modules"
                     :key="index"
                     v-bind="item"
                     orientation="vertical"
+                    variant="subtle"
                 />
             </UPageGrid>
         </UPageSection>
@@ -208,6 +182,7 @@ useSeoMeta({
                     v-for="(item, index) in page.applications.items"
                     :key="index"
                     v-bind="item"
+                    variant="outline"
                 >
                     <template #leading>
                         <NuxtImg
@@ -223,7 +198,8 @@ useSeoMeta({
         <UPageSection>
             <UPageCTA
                 v-bind="page.cta"
-                class="bg-amber-100/50 dark:bg-amber-800/50"
+                variant="subtle"
+                class="bg-sand-200 dark:bg-stone-900 ring ring-default"
             />
         </UPageSection>
     </div>

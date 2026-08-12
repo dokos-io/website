@@ -1,0 +1,147 @@
+title: Tarifs
+description: Hébergement en libre-service, exploitation infogérée avec garanties contractuelles, et accompagnement à l'heure.
+navigation:
+  title: Tarifs
+  icon: i-heroicons-credit-card
+
+hero:
+  headline:
+    label: Tarifs publics, hors taxes
+    icon: i-heroicons-document-text
+  title: Trois façons de travailler avec nous.<br>Une seule vous engage sur des <span class="text-primary">délais</span>.
+  description: Les prix ci-dessous sont ceux de nos conditions générales. Nous les publions parce qu'un tarif que l'on doit demander est rarement un bon signe.
+
+lanes:
+  title: ""
+  items:
+    - id: decouverte
+      name: Découverte
+      tagline: Vous démarrez seul, sur une instance mutualisée.
+      caution: >-
+        Ces deux formules ne comprennent ni support ni garantie de rétablissement.
+        Elles conviennent à un essai, à une maquette ou à un usage non critique — pas
+        à un système de gestion dont dépend votre activité.
+      columns:
+        - Formule
+        - CPU / mois
+        - Base de données
+        - Stockage
+        - Support
+      rows:
+        - ["19 € HT / mois", "0,5 h", "0,5 Go", "1 Go", "Aucun"]
+        - ["49 € HT / mois", "1 h", "1 Go", "5 Go", "Aucun"]
+      cta:
+        label: Créer un site
+        to: https://cloud.dokos.io
+        target: _blank
+        color: neutral
+        variant: outline
+        icon: i-material-symbols-host-outline-rounded
+
+    - id: exploitation
+      name: Exploitation infogérée
+      tagline: Nous exploitons votre installation, avec des délais opposables.
+      highlight: true
+      caution: >-
+        À partir de 499 €, les garanties de niveau de service s'appliquent : délais de
+        prise en charge et de rétablissement contractuels, plage garantie du lundi au
+        vendredi de 8h à 20h. En dessous, le support répond aux questions d'usage sans
+        engagement de délai.
+      columns:
+        - Formule
+        - CPU / mois
+        - Base de données
+        - Stockage
+        - Engagement
+      rows:
+        - ["99 € HT / mois", "2 h", "2 Go", "10 Go", "Support simple"]
+        - ["199 € HT / mois", "3 h", "2 Go", "15 Go", "Support simple"]
+        - ["499 € HT / mois", "4 h", "3 Go", "25 Go", "Garanties de niveau 1"]
+        - ["999 € HT / mois", "6 h", "4 Go", "50 Go", "Garanties de niveau 2"]
+      footnote: >-
+        Hébergement dédié à partir de 1 199 € HT par mois (2 vCPU, 8 Go de RAM, 100 Go
+        de stockage), jusqu'à 9 999 € HT pour 16 vCPU, 128 Go et 1 To. Les formules
+        dédiées comprennent toutes le support technique standard et les garanties de
+        niveau 2. Ressources exclusives, benchs et sites illimités.
+      cta:
+        label: Voir les garanties en détail
+        to: /fr/exploitation
+        color: primary
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+    - id: accompagnement
+      name: Accompagnement
+      tagline: Des heures d'expertise, à consommer quand vous en avez besoin.
+      caution: >-
+        Analyse de besoin, paramétrage, reprise de données, formation, développement
+        spécifique. Les packs sont valables sans limite de durée et peuvent être
+        complétés à tout moment.
+      columns:
+        - Pack
+        - Entreprises
+        - Associations
+        - Pour qui
+      rows:
+        - ["5 heures", "600 € HT", "480 € HT", "Interventions ciblées, utilisateurs déjà autonomes"]
+        - ["20 heures", "2 200 € HT", "1 760 € HT", "Prise en main structurée d'un premier module"]
+        - ["50 heures", "5 000 € HT", "4 000 € HT", "Plusieurs modules, entreprise en croissance"]
+        - ["100 heures", "9 000 € HT", "7 200 € HT", "Déploiement complet et personnalisations"]
+      cta:
+        label: Nous contacter
+        to: /fr/contact
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+scope:
+  title: Et l'ingénierie ?
+  description: Architecture, migration, développement métier et ingénierie IA ne se vendent pas au forfait horaire. Ces missions sont chiffrées au projet, après cadrage.
+  items:
+    - title: Architecture de plateforme
+      description: Dimensionnement, urbanisation, stratégie de montée de version et d'intégration au système d'information existant.
+      icon: i-heroicons-squares-2x2
+    - title: Migration
+      description: Reprise de données depuis un ERP existant ou depuis une installation Frappe/ERPNext, avec plan de bascule et de repli.
+      icon: i-heroicons-arrow-path
+    - title: Développement métier
+      description: Modules spécifiques, automatisations, connecteurs. Livrés sous licence libre, dans vos dépôts autant que dans les nôtres.
+      icon: i-heroicons-wrench-screwdriver
+    - title: Ingénierie IA
+      description: Intégration d'agents et d'automatisations assistées dans vos processus de gestion, sur une base ouverte et auditable.
+      icon: i-heroicons-cpu-chip
+  links:
+    - label: Voir les offres d'ingénierie
+      to: /fr/ingenierie
+      color: primary
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+
+faq:
+  title: Questions sur la facturation
+  items:
+    - label: Pourquoi facturer au CPU plutôt qu'à l'utilisateur ?
+      content: Parce que le coût réel d'une instance dépend de ce qu'elle calcule, pas du nombre de personnes qui s'y connectent. Une facturation à l'utilisateur pénalise les organisations qui ouvrent l'outil largement — ce qui est précisément l'usage que nous voulons encourager. Si votre consommation dépasse durablement la formule souscrite, nous convenons du passage au palier correspondant.
+    - label: Les tarifs peuvent-ils augmenter en cours de contrat ?
+      content: Une révision est possible en cas d'évolution significative des conditions économiques ou réglementaires. Elle suppose un préavis écrit de 60 jours, et vous pouvez alors résilier sans pénalité en le notifiant dans les 30 jours. À défaut de réponse de votre part, les nouveaux prix s'appliquent à la date indiquée.
+    - label: Quel est le préavis de résiliation ?
+      content: Trente jours avant la fin de la période mensuelle en cours, par courrier recommandé ou par email. La résiliation prend effet à la fin du mois suivant la réception du préavis. Aucun remboursement partiel n'est effectué sur une période déjà facturée.
+    - label: Peut-on être accompagné en auto-hébergement ?
+      content: Oui. Les packs d'accompagnement sont ouverts à tous les utilisateurs, y compris ceux qui hébergent Dokos eux-mêmes. L'exploitation infogérée, en revanche, suppose que nous ayons la main sur l'infrastructure ou un accès équivalent — c'est ce qui rend les délais tenables.
+    - label: Les tarifs affichés sont-ils à jour ?
+      content: Ils reprennent la grille en vigueur au 1er septembre 2024, telle qu'elle figure dans nos Conditions Générales d'Hébergement, qui restent le document contractuel de référence. En cas d'écart entre cette page et les conditions générales, ce sont ces dernières qui font foi.
+
+cta:
+  title: Un doute sur la formule adaptée ?
+  description: Décrivez-nous votre installation et vos contraintes de disponibilité. Nous vous dirons quel niveau d'engagement est justifié — y compris s'il est inférieur à ce que vous envisagiez.
+  links:
+    - label: Parler à un ingénieur
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Conditions Générales d'Hébergement
+      to: /fr/hostingconditions
+      size: xl
+      color: neutral
+      variant: outline

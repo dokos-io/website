@@ -1,0 +1,98 @@
+title: L'éditeur — Dodock et Dokos
+description: Dokos SAS édite son propre fork du framework Frappe et de la distribution ERP. Ce que cela change concrètement pour ceux qui l'utilisent.
+navigation:
+  title: L'éditeur
+  icon: i-heroicons-code-bracket-square
+  description: Dodock et Dokos — le fork que nous maintenons
+
+hero:
+  headline:
+    label: Éditeur, pas seulement intégrateur
+    icon: i-simple-icons-gitlab
+  title: Nous ne revendons pas un ERP.<br>Nous en <span class="text-primary">écrivons</span> un.
+  description: Dodock est notre fork du framework Frappe. Dokos est la distribution ERP construite dessus. Les deux sont publiés sous GPLv3, sur notre GitLab, avec un historique consultable par n'importe qui — y compris par vous, avant de signer.
+  links:
+    - label: Voir le code
+      to: https://gitlab.com/dokos
+      target: _blank
+      size: xl
+      color: primary
+      icon: i-simple-icons-gitlab
+    - label: Documentation
+      to: https://doc.dokos.io
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline
+
+scope:
+  title: Ce que le statut d'éditeur change
+  description: La distinction paraît formelle. À l'usage, elle décide de ce qui peut être corrigé, et en combien de temps.
+  items:
+    - title: Un correctif ne dépend de personne
+      description: Quand l'anomalie est dans le socle, nous la corrigeons dans le socle. Un intégrateur, lui, ouvre un ticket en amont et attend.
+      icon: i-heroicons-wrench-screwdriver
+    - title: La conformité française est portée
+      description: Comptabilité, encaissement, facturation électronique — les adaptations réglementaires sont intégrées au produit, pas empilées en surcouche fragile.
+      icon: i-octicon-law
+    - title: L'amont est suivi de près
+      description: Les versions publiées par Frappe Technologies sont lues, testées et portées. Nous adoptons ce qui va dans le bon sens et nous divergeons quand c'est justifié.
+      icon: i-heroicons-arrow-trending-up
+    - title: Rien n'est caché
+      description: Dépôts publics, tickets publics, historique complet. Vous pouvez juger notre rythme de correction avant de nous confier quoi que ce soit.
+      icon: i-simple-icons-gitlab
+    - title: Aucun frais de licence
+      description: Le logiciel est libre et le restera. Nous vendons l'exploitation et l'ingénierie, jamais le droit d'utiliser le produit.
+      icon: i-heroicons-credit-card
+    - title: L'intégrité est vérifiable
+      description: Pour les périmètres soumis à certification, l'empreinte cryptographique de chaque fichier est publiée, et vous pouvez la recalculer vous-même.
+      icon: i-heroicons-finger-print
+
+operations:
+  title: Comment le produit avance
+  description: Un logiciel d'entreprise se juge autant sur sa trajectoire que sur son état à un instant donné.
+  items:
+    - title: Une base commune, assumée
+      description: Dokos dérive d'ERPNext et Dodock de Frappe. Nous ne cachons pas cette filiation ; elle nous fait bénéficier du travail d'un écosystème mondial.
+      icon: i-simple-icons-frappe
+    - title: Des divergences documentées
+      description: Là où les besoins européens s'écartent de l'amont, nous divergeons — et nous conservons la trace de chaque écart pour pouvoir le maintenir dans la durée.
+      icon: i-heroicons-arrows-pointing-out
+    - title: Un déploiement en deux temps
+      description: Les nouvelles versions sont livrées d'abord aux installations sans applications personnalisées, puis à celles qui en comportent, après vérification de compatibilité.
+      icon: i-heroicons-arrow-path
+    - title: Une communauté qui participe
+      description: Forum d'entraide, contributions extérieures, financement de fonctionnalités. Les retours d'usage arrivent directement chez ceux qui écrivent le code.
+      icon: i-heroicons-user-group
+
+reversibility:
+  title: Éditer sous licence libre, et l'assumer
+  description: Publier sous GPLv3 signifie renoncer à retenir ses utilisateurs par la technique. C'est un choix commercial, pas seulement philosophique.
+  items:
+    - title: Vous pouvez nous auditer
+      description: Le code est lisible par vos équipes ou par un tiers de confiance, sans accord de confidentialité.
+      icon: i-heroicons-magnifying-glass
+    - title: Vous pouvez nous quitter
+      description: L'installation reste exploitable par un autre prestataire, ou par vous.
+      icon: i-heroicons-arrows-right-left
+    - title: Vous pouvez contribuer
+      description: Corriger, étendre, proposer. Les contributions extérieures sont intégrées quand elles tiennent la route.
+      icon: i-heroicons-code-bracket
+    - title: Vous pouvez forker
+      description: C'est le droit que donne la licence. Nous l'avons exercé nous-mêmes ; nous serions mal placés pour le contester.
+      icon: i-heroicons-arrows-pointing-out
+
+cta:
+  title: Le meilleur audit fournisseur, c'est le dépôt
+  description: Avant tout rendez-vous commercial, allez lire le code, les tickets et le rythme des commits. Peu d'éditeurs peuvent proposer cela.
+  links:
+    - label: Ouvrir le GitLab
+      to: https://gitlab.com/dokos
+      target: _blank
+      size: xl
+      color: primary
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: neutral
+      variant: outline

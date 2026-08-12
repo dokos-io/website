@@ -1,13 +1,11 @@
 export default defineAppConfig({
   ui: {
     colors: {
-      primary: 'sky',
-      neutral: 'slate'
+      // `dokos` and the `stone` warm-grey neutral mirror the v5 desk chrome.
+      primary: 'dokos',
+      neutral: 'stone'
     },
     button: {
-      slots: {
-        base: 'rounded-full'
-      },
       defaultVariants: {
         size: 'md'
       }
