@@ -1,0 +1,96 @@
+navigation:
+  title: Frappe Builder
+  icon: i-icon-park-outline-add-web
+  description: No-code website creation.
+title: Frappe Builder
+icon: i-mdi-application-settings-outline
+description: The ultimate no-code website building tool
+link: https://frappe.io/builder
+author: Frappe Technologies & Contributors
+application: Frappe Builder
+theme: site-web-outils-numeriques
+logo:
+  light: /frappe/builder.svg
+  dark: /frappe/builder.svg
+hero:
+  title: '<span class=''text-primary''>Frappe Builder</span>: the ultimate no-code website building tool'
+  description: A powerful tool for building your pages without a single line of code
+  image: ''
+  headline:
+    label: Frappe applications
+    to: null
+    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
+    target: _blank
+  links:
+    - label: Build your first site
+      to: https://cloud.dokos.io
+      size: xl
+      color: black
+      icon: i-heroicons-play-circle-16-solid
+      trailing: false
+      target: _blank
+    - label: Documentation
+      icon: i-ic-outline-library-books
+      size: xl
+      color: gray
+      to: https://doc.dokos.io
+      target: _blank
+colored_section:
+  title: Create, customize and innovate!
+  description: 'With Dokos, get direct access to Frappe Builder: the innovative page building tool developed by the Frappe team. With Builder, at no extra cost, customizing your interface becomes intuitive and accessible, all without a line of code'
+  video: /image/builder/frappe-builder.mp4
+  align: left
+features:
+  - title: Built for your success
+    description: 'Frappe Builder does not just give you a simple, intuitive interface, it also packs advanced features so you can go further with customization.<ul><li>Compatible with Dokos modules: build dynamic views that interact directly with your Dokos data.</li><li>Responsive design: your pages are automatically optimized for every device, from desktop to tablet to smartphone.</li><li>Web standards compliant: built to the latest standards, Frappe Builder guarantees strong performance and smooth navigation.'
+    image: image/builder/site-internet-optimise-pour-appareils.png
+    image_bg_color: bg-teal-500
+    icon: i-iconoir-www
+    align: left
+  - title: Trust in a solid ecosystem
+    description: At Dokos, we deeply respect the work accomplished by the Frappe team.<br><br> Their vision and expertise are behind Frappe Builder. We are committed to keeping this tool compatible with Dokos.
+    icon: i-material-symbols-handshake-rounded
+    image: image/builder/frappe-builder.png
+    image_bg_color: bg-teal-500
+    align: right
+  - title: Discover the power of simplicity
+    description: 'We believe every user, whatever their skill level, deserves access to powerful tools that simplify their daily work. <br>With Frappe Builder, you can design unique, tailored experiences that meet your exact needs.<ul><li>No extra cost: Frappe Builder is included in all our plans, with no hidden fees.</li><li>Dedicated support: the Dokos team is by your side to help you get up to speed and offer quality support.</li></ul>'
+    image: image/nuage-dashboard-dark.png
+    image_bg_color: bg-teal-500
+    icon: i-material-symbols-web-traffic-rounded
+    align: left
+bottom_section:
+  title: 'Build web pages with total simplicity:'
+  description: 'Enjoy unmatched flexibility to quickly build custom web pages, with total simplicity. Whether you want to edit an existing page or create a new one, you need neither a developer nor programming skills. Here is why you will love it:'
+  cards:
+    - title: Ease of use
+      description: Drag and drop elements to customize your pages. In a few clicks, everything is ready!
+      icon: i-tabler-drag-drop
+      class: col-span-4 row-span-3
+    - title: Total flexibility
+      description: Add sections, edit styles, organize your content according to your specific needs.
+      icon: i-material-symbols-light-flex-wrap-rounded
+      class: col-span-4 row-span-3
+    - title: Save time, at no cost
+      description: Focus on what matters, Frappe Builder saves you precious hours building and maintaining your pages.
+      icon: i-material-symbols-alarm-on-outline-rounded
+      class: col-span-4 row-span-3
+bottom_cta:
+  title: Ready to turn your ideas into reality?
+  description: Try Frappe Builder today! See how easy it is to design web pages and interfaces that reflect your values, your products and your services.
+  card: true
+  class: bg-sky-600/10 dark:bg-sky-800/10
+  links:
+    - label: Build your first web page
+      size: md
+      color: amber
+      to: https://cloud.dokos.io
+      target: _blank
+    - label: Learn more about Frappe Builder
+      size: md
+      variant: link
+      color: gray
+      to: https://frappe.io/builder
+      target: _blank
+      icon: i-heroicons-outline-arrow-right
+      trailing: true

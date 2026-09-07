@@ -1,0 +1,96 @@
+navigation:
+  title: Dokos AI
+  icon: i-heroicons-sparkles
+  description: An AI assistant embedded in your Dokos data, with confirmation before any write.
+
+title: Dokos AI
+icon: i-heroicons-sparkles
+description: Conversation, business skills and automation, directly on your Dokos data.
+author: Dokos
+application: Dokos AI
+theme: intelligence-artificielle
+logo:
+  light: /frappe/dokos_logo.svg
+  dark: /frappe/dokos_logo.svg
+
+hero:
+  title: An AI assistant <span class="text-primary">that knows your data</span>, not a generic chatbot.
+  description: Dokos AI answers in natural language by working directly from your site's documents — quotes, invoices, tickets, stock. It can read and change your data, but no write happens without your explicit confirmation.
+  links:
+    - label: See it on the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+features:
+  - title: A conversation wired to your documents
+    description: Ask a question in natural language, Dokos AI turns it into queries against your DocTypes (customers, invoices, stock, projects…) and answers from your actual data, not a generic summary.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Conversation
+      color: sky
+  - title: Business skills, not general intelligence
+    description: Each skill is a dedicated file for one specific process (chasing a quote, matching an invoice…), activated only when the conversation calls for it.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Business skills
+      color: sky
+  - title: Automation, with a human confirming
+    description: Dokos AI can create, update or submit a document for you — but every write still waits for your explicit confirmation before it's applied.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Supervised automation
+      color: sky
+
+bottom_section:
+  title: "How Dokos AI is built:"
+  cards:
+    - title: A three-layer architecture
+      description: A registry that discovers available skills, an executor that decides what to do, and tools that carry out the actions — read, write, list, skill, reference.
+      icon: i-heroicons-squares-2x2
+      class: "col-span-4 row-span-3"
+    - title: Extensible through skill files
+      description: Each business skill is a plain Markdown file with a YAML header, so it can be extended without touching the engine.
+      icon: i-heroicons-puzzle-piece
+      class: "col-span-4 row-span-3"
+    - title: Confirmation before writing
+      description: Any action that changes data is shown before it runs and waits for an explicit confirmation.
+      icon: i-heroicons-shield-check
+      class: "col-span-4 row-span-3"
+
+bottom_cta:
+  title: Want to see Dokos AI on your own data?
+  description: Available from the cloud.dokos.io marketplace. Describe your use cases, and we'll tell you what it already covers and what's still to build.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

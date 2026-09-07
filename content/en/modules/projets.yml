@@ -1,0 +1,142 @@
+navigation:
+    title: Projects
+    icon: i-eos-icons-project-outlined
+    description: Project organization, planning, and tracking.
+
+title: Projects
+icon: i-eos-icons-project-outlined
+description: Plan and track your projects to keep them on course.
+application: Dokos
+theme: projets-ressources-humaines
+author: Frappe Technologies, Dokos & Contributors
+
+hero:
+  title: Manage your <span class="text-primary">projects</span> with ease using Dokos
+  description: Organize, plan, and track every project in one place. Whether you're a small team or a fast-growing company, our Projects module helps you stay in control of every stage of your projects.
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+
+features:
+  - title: Project planning
+    description: Create and manage your projects easily, from design to delivery. <br><br>With an intuitive interface, set your goals, plan your tasks, and assign roles to keep execution running smoothly.</br>
+    video: "/image/projet/projet.mp4"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Project
+      color: sky
+  - title: Task tracking
+    description: Keep an overview of every task across your projects. <br><br>See their progress and status, and set priorities for better time and resource management.</br>
+    image: "image/projet/Suivi-des-taches-kanban.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Tasks
+      color: sky
+  - title: Team management
+    description: Assign roles and responsibilities to each team member on every task or sub-project. <br><br>Track everyone's workload to balance effort and improve collective efficiency.</br>
+    image: "image/projet/vue-planning-taches.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Team
+      color: sky
+  - title: An interactive calendar
+    description: Get a calendar view to plan and adjust your project deadlines. <br><br>Quickly spot overdue tasks and adjust schedules accordingly to stay on track.</br>
+    image: "image/projet/gestion-de-projet-calendrier.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Calendar
+      color: sky
+  - title: Budget tracking
+    description: Keep a close eye on the budgets allocated to your projects. <br><br>Estimate costs, track spending in real time, and make informed decisions to stay within your budget limits.</br>
+    image: "image/projet/suivi-activite-budget-projet.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Budget
+      color: sky
+  - title: Dependency management
+    description: Identify and manage dependencies between your tasks to anticipate potential blockers. <br><br>Make sure every stage of the project moves forward smoothly with transparent workflow management.</br>
+    image: "image/projet/tache-gantt.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Dependencies
+      color: sky
+  - title: Reports and analytics
+    description: Access detailed reports on your project progress. <br><br>Get real-time data on team performance, task status, and budgets to better anticipate needs and adjust your plans.</br>
+    image: "image/projet/tableau-de-bord-projet.svg"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Report
+      color: sky
+  - title: Real-time collaboration
+    description: Make it easier for your teams to collaborate with built-in communication and file-sharing tools. <br><br>Discuss, share documents, and collaborate directly within the project to boost productivity.</br>
+    image: "image/projet/communication-raven.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Collaboration
+      color: sky
+
+bottom_section:
+  title: "Why choose Dokos?"
+  cards:
+    - title: Ease of use
+      description: A clear, intuitive interface that lets you manage your projects without the complexity.
+      icon: i-hugeicons-touch-interaction-01
+      class: "col-span-4 row-span-3"
+    - title: Flexibility
+      description: Adapts to your needs, whether your projects are simple or complex.
+      icon: i-hugeicons-curvy-up-down-direction
+      class: "col-span-4 row-span-3"
+    - title: Open source and customizable
+      description: Break free of limitations and adapt the software to the specifics of your projects.
+      icon: i-ic-outline-settings
+      class: "col-span-4 row-span-3"
+
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /en/features/projets
+
+bottom_cta:
+  title: Get started today!
+  description: Try Dokos and see how our Projects module can help you organize and deliver your projects more successfully. Enjoy a complete, open source, ethical solution tailored to your specific needs.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

@@ -1,0 +1,146 @@
+navigation:
+    title: Human Resources
+    icon: i-mdi-human-capacity-increase
+    description: Leave management, expense claims, recruitment, shifts and attendance, evaluations.
+
+title: Human Resources
+icon: i-mdi-human-capacity-increase
+description: Simplify and improve how you manage your teams
+author: Frappe Technologies, Dokos & Contributors
+application: Dokos HR
+theme: projets-ressources-humaines
+logo:
+  light: /frappe/hrms_logo.svg
+  dark: /frappe/hrms_logo.svg
+
+hero:
+  title: Manage your <span class="text-primary">Human Resources</span> efficiently with Dokos.
+  description: Dokos gives you everything you need to simplify the tasks and processes tied to your employees. See how Dokos can help improve your HR management!
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+
+
+features:
+  - title: Simple employee management
+    description: Easily manage your employees' profiles, positions, and departments. <br><br>Track contracts and structure your organization. <br><br>The full employee lifecycle is covered, from onboarding through promotions, transfers, and departures.</br>
+    image: "image/module-rh/un-rh-gestion-des-employes.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Employee management
+      color: sky
+  - title: Attendance and scheduling
+    description: Track attendance with time clocks or biometric integration.<br><br> Automate attendance and shift management with flexible tools for scheduling, handling change requests, and assigning tasks efficiently.</br>
+    image: "image/module-rh/deux-presence-et-horaires.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Attendance and scheduling
+      color: sky
+  - title: Leave management
+    description: Create and customize your leave policies, leave types, and holiday lists. <br><br>Manage leave requests with clear approval workflows, including compensatory leave requests.</br>
+    image: "image/module-rh/trois-gestion-des-conges.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Leave
+      color: sky
+  - title: Expenses and advances
+    description: Manage employee advances, expense claim requests, and their approval.
+    image: "image/module-rh/quatre-note-de-frais-modifie.svg"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Expenses
+      color: sky
+  - title: Performance reviews
+    description: Create templates and track your employees' review cycles. <br><br>Collect feedback, track goals, and run regular reviews to improve your teams' performance.</br>
+    image: "image/module-rh/cinq-evaluation.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Performance
+      color: sky
+  - title: Simplified recruitment
+    description: Manage your job postings, candidates, and interviews. <br><br>Dokos also offers an employee referral system and automates job posting generation.</br>
+    image: "image/module-rh/six-tableau-de-bord-offre-demploi.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Recruitment
+      color: sky
+  - title: Training and development
+    description: Plan and track training programs, events, results, and participant feedback to support your employees' development.
+    image: "image/module-rh/sept-programme-formation.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Training
+      color: sky
+  - title: Real-time reports and analytics
+    description: Generate detailed, up-to-date reports on attendance, leave balances, and review data.
+    image: "image/module-rh/tableau-bord-presences.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Reports
+      color: sky
+  - title: An online portal for your employees
+    description: With Dokos, your employees get a portal to view their data, submit leave requests, and track expenses on their own.
+    image: "image/module-rh/applications-demande-de-conges.svg"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Portal
+      color: sky
+  - title: A simple mobile app
+    description: Make everyday life easier for your employees, even on the move, for leave, expenses, and timesheet management.
+    image: "image/module-rh/application-rh-seul.svg"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Application
+      color: sky
+
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /en/features/ressources-humaines
+
+bottom_cta:
+  title: An intuitive, simplified module to optimize your HR management!
+  description: Dokos is the ideal tool for modern, ethical, and transparent human resources management. Join the open source community and discover a new way to manage your teams!
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

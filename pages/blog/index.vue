@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import type { BlogPost } from "~/types";
-
 const { locale } = useI18n();
-const { data: page } = await useAsyncData("blog", () =>
-    queryContent(`/${locale.value}/blog`).findOne()
+const { data: page } = await useAsyncData<any>("blog", () =>
+    queryCollection("pages").path(`/${locale.value}/blog`).first()
 );
 if (!page.value) {
     throw createError({
@@ -13,11 +11,8 @@ if (!page.value) {
     });
 }
 
-const { data: posts } = await useAsyncData("posts", () =>
-    queryContent<BlogPost>(`/${locale.value}/blog`)
-        .where({ _extension: "md" })
-        .sort({ date: -1 })
-        .find()
+const { data: posts } = await useAsyncData<any>("posts", () =>
+    queryCollection("blog").order("date", "DESC").all()
 );
 
 useSeoMeta({
@@ -27,44 +22,45 @@ useSeoMeta({
     ogDescription: page.value.description,
 });
 
-defineOgImage({
-    component: "Saas",
+defineOgImage("OgImageSaas" as any, {
     title: page.value.title,
     description: page.value.description,
 });
-
-const localePath = useLocalePath();
 </script>
 
 <template>
     <UContainer>
-        <UPageHeader v-bind="page" class="py-[50px]" />
+        <UPageHeader
+            :title="page?.title"
+            :description="page?.description"
+            class="py-[50px]"
+        />
 
         <UPageBody>
-            <UBlogList>
+            <UBlogPosts>
                 <UBlogPost
                     v-for="(post, index) in posts"
                     :key="index"
-                    :to="localePath(post._path)"
+                    :to="post.path"
                     :title="post.title"
                     :description="post.description"
-                    :image="post.image"
+                    :image="post.image as any"
                     :date="
-                        new Date(post.date).toLocaleDateString(locale.code, {
-                            year: 'numeric',
-                            month: 'short',
-                            day: 'numeric',
-                        })
+                        post.date
+                            ? new Date(post.date).toLocaleDateString(locale, {
+                                  year: 'numeric',
+                                  month: 'short',
+                                  day: 'numeric',
+                              })
+                            : undefined
                     "
-                    :authors="post.authors"
-                    :badge="post.badge"
+                    :authors="post.authors as any"
+                    :badge="post.badge as any"
                     :orientation="index === 0 ? 'horizontal' : 'vertical'"
                     :class="[index === 0 && 'col-span-full']"
-                    :ui="{
-                        description: 'line-clamp-2',
-                    }"
+                    :ui="{ description: 'line-clamp-2' }"
                 />
-            </UBlogList>
+            </UBlogPosts>
         </UPageBody>
     </UContainer>
 </template>

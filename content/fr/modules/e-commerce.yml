@@ -7,7 +7,11 @@ title: Portail web & e-commerce
 icon: i-gg-website
 description: Créez votre vitrine en ligne avec des outils web puissants.
 author: Frappe Technologies, Dokos & Contributeurs
-application: Dokos
+application: Dokos / Webshop
+theme: vente-relation-client
+logo:
+  light: /frappe/webshop_logo.svg
+  dark: /frappe/webshop_logo.svg
 
 hero:
   title: Transformez votre site en un <span class="text-primary">puissant outil de vente</span> avec le module E-commerce de Dokos

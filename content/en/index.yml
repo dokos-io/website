@@ -1,0 +1,230 @@
+title: "Dokos: French open source ERP publisher, and the operator who runs it"
+description: "We publish Dodock and Dokos under the GPLv3 license, and we operate our clients' open source ERPs under contract: Dokos, ERPNext, and Frappe applications."
+navigation: false
+
+announcement:
+  label: Join us in Toulouse, at Faire Festival, May 28-30, 2026.
+  cta: Learn more
+  to: /faire-festival-2026
+
+hero:
+  headline:
+    label: Publisher and operator, under GPLv3
+    icon: i-simple-icons-gitlab
+  title: French open source ERP publisher.<br>And the <span class="text-primary">operator</span> who runs it.
+  description: We write Dodock and Dokos, we publish them in the open, and we operate what our clients run under contract, including standard ERPNext and Frappe ecosystem applications. European hosting, enforceable recovery times, full reversibility.
+  image: hero_dokos.svg
+  links:
+    - label: Talk to an engineer
+      to: /en/contact
+      size: xl
+      color: primary
+      icon: i-heroicons-chat-bubble-left-right
+      trailing: false
+    - label: Create a site
+      to: https://cloud.dokos.io
+      size: xl
+      color: neutral
+      variant: outline
+      icon: i-material-symbols-host-outline-rounded
+      target: _blank
+
+proof:
+  items:
+    - label: Response time, blocking incident
+      value: 3 h
+      note: Contractual deadline, level 2 guarantees
+    - label: Data hosting
+      value: France · Germany
+      note: No US hyperscaler
+    - label: Core license
+      value: GPLv3
+      note: Auditable, reusable, no usage fees
+
+sections:
+  - title: Publisher, not integrator
+    description: <strong>We maintain our own fork of the Frappe framework and the ERP distribution built on it.</strong><br><br>When an issue is in the core, we fix it in the core, without opening a ticket upstream and waiting. Our repositories, tickets, and commit history are public, so you can judge our fix pace before entrusting us with anything.
+    image: /image/dokos-gitlab.png
+    align: right
+    features:
+      - name: Dodock and Dokos
+        description: The application framework and the ERP distribution, published under GPLv3 on our GitLab.
+        icon: i-heroicons-code-bracket-square
+      - name: French compliance built in
+        description: "Accounting, payment collection, e-invoicing: integrated into the product, not stacked on top as a fragile add-on."
+        icon: i-octicon-law
+      - name: No license fees
+        description: We sell operations and engineering, never the right to use the software.
+        icon: i-heroicons-credit-card
+    links:
+      - label: Discover the publisher
+        to: /en/editeur
+        color: primary
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+  - title: Operated under contract
+    description: <strong>Three hours to take a blocking incident in charge, six to restore service.</strong><br><br>These aren't internal targets. They're the deadlines written into our hosting terms and conditions, enforceable from the moment you sign. We operate Dokos, but also standard ERPNext and Frappe applications, without requiring migration.
+    image: /image/nuage-dashboard-dark.png
+    align: left
+    features:
+      - name: Enforceable deadlines
+        description: Response and recovery times set by severity level, guaranteed 8am-8pm window.
+        icon: i-heroicons-clock
+      - name: Full traceability
+        description: Logged access, tracked actions, a Security Assurance Plan attached to the contract.
+        icon: i-material-symbols-data-loss-prevention-outline
+      - name: No forced migration
+        description: Already running Frappe or ERPNext? We take over operating what you already have.
+        icon: i-simple-icons-frappe
+    links:
+      - label: See the guarantees
+        to: /en/exploitation
+        color: primary
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+  - title: Sovereign and reversible
+    description: <strong>Your data stays in Europe, and your software stays yours.</strong><br><br>Databases and backups hosted in France and Germany, at OVHcloud and Hetzner. No US hyperscaler anywhere in the chain. And because everything is published under GPLv3, reversibility isn't a clause we grant, it's a property of what we sell.
+    image: /image/compte-de-resultat.png
+    align: right
+    features:
+      - name: European jurisdiction
+        description: Named subprocessors, established in the European Union, notified before any change.
+        icon: i-circle-flags-european-union
+      - name: Export at any time
+        description: Full backup in a structured format, from your own administration panel.
+        icon: i-material-symbols-cloud-sync-outline-rounded
+      - name: No closed component
+        description: Nothing makes your installation unusable elsewhere, or by another provider.
+        icon: i-heroicons-lock-open
+    links:
+      - label: Sovereignty and security
+        to: /en/souverainete
+        color: primary
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+  - title: Engineers on the ground
+    description: <strong>The people who design the product are the ones who work at your site.</strong><br><br>Platform architecture, migration, custom development, AI engineering, training. We work alongside your teams rather than at a distance, staffed in pairs from day one, and everything is delivered in the open: free-licensed code, documentation, and procedures included.
+    image: /image/dokos-communaute.png
+    align: left
+    features:
+      - name: Never a single person
+        description: Missions are staffed in pairs from the start. A project that depends on one person is a risk.
+        icon: i-heroicons-user-group
+      - name: Aiming for autonomy
+        description: Skill transfer is part of the mission. It's a success when you call us less.
+        icon: i-heroicons-academic-cap
+      - name: Delivered in the open
+        description: Free-licensed code committed to your own repositories, documentation and deployment procedures included.
+        icon: i-heroicons-document-text
+    links:
+      - label: Our engineering work
+        to: /en/ingenierie
+        color: primary
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+integrations:
+  title: We simplify your day to day with integrations
+  icons:
+    - i-logos-woocommerce-icon
+    - i-logos-stripe
+    - i-logos-paypal
+    - i-logos-zapier
+    - i-logos-google-calendar
+    - i-logos-google-drive
+    - i-logos-google-maps
+    - i-logos-dropbox
+    - i-simple-icons-amazons3
+    - i-cib-nextcloud
+  images:
+    - /home/gocardless.png
+
+modules:
+  title: Functional coverage, by business theme
+  description: Over twenty modules, grouped into six areas. Each module works on its own or combined with the others, with no duplicate data.
+  links:
+    - label: See all modules
+      to: /en/modules
+      color: neutral
+      variant: outline
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      size: md
+  items:
+    - title: Sales & customer relations
+      description: Frappe CRM, sales, e-commerce, resource booking.
+      icon: i-heroicons-shopping-cart
+      to: /en/ecosysteme/vente-relation-client
+    - title: Finance & accounting
+      description: Accounting, payments.
+      icon: i-heroicons-banknotes
+      to: /en/ecosysteme/finance-comptabilite
+    - title: Purchasing, stock & production
+      description: Purchasing, stock, production, quality.
+      icon: i-heroicons-cube
+      to: /en/ecosysteme/achats-stocks-production
+    - title: Projects & HR
+      description: Projects, HR, training.
+      icon: i-heroicons-user-group
+      to: /en/ecosysteme/projets-ressources-humaines
+    - title: Support & collaboration
+      description: Support, Raven, Frappe Wiki.
+      icon: i-heroicons-chat-bubble-left-right
+      to: /en/ecosysteme/support-collaboration
+    - title: Website & digital tools
+      description: Builder, Insights, integrations, OCR, Print Designer.
+      icon: i-heroicons-globe-alt
+      to: /en/ecosysteme/site-web-outils-numeriques
+
+applications:
+  title: Compatible with the <span class="text-primary">Frappe</span> ecosystem
+  description: Dokos stays compatible with applications published by Frappe Technologies and by the community, and we operate them on the same footing as our own.
+  links:
+    - label: Managed Frappe and ERPNext
+      icon: i-simple-icons-frappe
+      size: xl
+      color: neutral
+      variant: outline
+      to: /en/exploitation/frappe-erpnext
+  items:
+    - title: Frappe Insights
+      description: A BI tool
+      icon: insights.svg
+      to: https://frappe.io/products/insights
+    - title: Frappe CRM
+      description: A CRM tool
+      icon: crm.svg
+      to: https://frappe.io/products/crm
+    - title: Frappe Helpdesk
+      description: A support tool
+      icon: helpdesk.png
+      to: https://frappedesk.com
+    - title: Frappe Builder
+      description: A website builder
+      icon: builder.svg
+      to: https://frappe.io/products/builder
+    - title: Frappe Wiki
+      description: A company wiki
+      icon: wiki.png
+      to: https://github.com/frappe/wiki
+    - title: Frappe Print Designer
+      description: A print format designer
+      icon: print-designer.svg
+      to: https://github.com/frappe/print_designer
+
+cta:
+  title: What are you running today?
+  description: Dokos, ERPNext, a proprietary ERP, or spreadsheets. Tell us where you stand, and we'll tell you what we know we can commit to, and what we don't.
+  links:
+    - label: Talk to an engineer
+      size: xl
+      color: primary
+      to: /en/contact
+    - label: See pricing
+      size: xl
+      color: neutral
+      variant: outline
+      to: /en/tarifs

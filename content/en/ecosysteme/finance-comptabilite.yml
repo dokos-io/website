@@ -1,0 +1,81 @@
+title: Finance & accounting
+description: Accounting kept up to date by the other modules, not by manual exports, with a French-compliant chart of accounts.
+navigation:
+  title: Finance & accounting
+  icon: i-heroicons-banknotes
+
+hero:
+  headline:
+    label: The Dokos ecosystem
+    icon: i-heroicons-banknotes
+    to: /en/modules
+  title: Accounting that <span class="text-primary">updates itself</span>.
+  description: Every invoice, every payment and every stock movement feeds the accounts directly. Bank reconciliation and financial reports draw on the same entries, with no re-entry between two systems.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See all modules
+      to: /en/modules
+      size: xl
+      color: neutral
+      variant: outline
+
+scope:
+  title: What this area covers
+  description: Built for accountants and finance teams, not just for developers.
+  items:
+    - title: French chart of accounts
+      description: A structure that complies with French standards, with VAT and fiscal year management.
+      icon: i-heroicons-document-text
+    - title: Multi-company and multi-currency
+      description: Several legal entities or several currencies in a single installation, with separate accounts.
+      icon: i-heroicons-building-office-2
+    - title: Automated bank reconciliation
+      description: Imported bank statements are matched against existing entries, with discrepancies highlighted.
+      icon: i-heroicons-arrows-right-left
+
+modules:
+  title: The modules in this area
+  description: Two modules, designed to work together.
+  items:
+    - title: Accounting
+      description: Chart of accounts, bank reconciliation, balance sheets and income statements, fed by the other modules.
+      icon: i-uil-balance-scale
+      to: /en/modules/comptabilite
+    - title: Payments
+      description: Collects payment by card, bank transfer or direct debit, with automatic reconciliation in accounting.
+      icon: i-ic-twotone-payments
+      to: /en/modules/paiements
+      logo:
+        light: /frappe/payments_logo.svg
+        dark: /frappe/payments_logo.svg
+    - title: Bank
+      description: Synchronizes your bank accounts with your Dokos accounting.
+      icon: i-heroicons-building-library
+      to: /en/modules/bank
+      logo:
+        light: /frappe/bank_logo.svg
+        dark: /frappe/bank_logo.svg
+    - title: eTransactions
+      description: Handles your incoming and outgoing e-invoices, in CII/FacturX and UBL formats.
+      icon: i-heroicons-document-text
+      to: /en/modules/etransactions
+      logo:
+        light: /frappe/etransactions.svg
+        dark: /frappe/etransactions.svg
+
+cta:
+  title: Migrating from another accounting system?
+  description: Migrating accounting data (chart of accounts, history, open invoices) is scoped before any quote.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See engineering services
+      to: /en/ingenierie
+      size: xl
+      color: neutral
+      variant: outline

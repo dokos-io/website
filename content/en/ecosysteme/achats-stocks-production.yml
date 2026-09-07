@@ -1,0 +1,58 @@
+title: Purchasing, stock & production
+description: From purchase order to warehouse dispatch, a single chain covering procurement, stock and manufacturing.
+navigation:
+  title: Purchasing, stock & production
+  icon: i-heroicons-cube
+
+hero:
+  headline:
+    label: The Dokos ecosystem
+    icon: i-heroicons-cube
+    to: /en/modules
+  title: From purchase order to <span class="text-primary">warehouse dispatch</span>, a single chain.
+  description: Purchasing, stock, production and quality control share the same bill of materials and the same locations. A manufacturing order consumes actual stock, not an estimate.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See all modules
+      to: /en/modules
+      size: xl
+      color: neutral
+      variant: outline
+
+modules:
+  title: The modules in this area
+  description: Useful on their own for a distribution business, or combined for a production site.
+  items:
+    - title: Purchasing
+      description: Purchase orders, receiving, reconciliation with supplier invoices.
+      icon: i-icon-park-outline-buy
+      to: /en/modules/achats
+    - title: Stock
+      description: Tracks movements, valuation, and multi-warehouse and multi-location management.
+      icon: i-vaadin-stock
+      to: /en/modules/stocks
+    - title: Production
+      description: Manufacturing orders, bills of materials and production cost tracking.
+      icon: i-fluent-manufacturer-24-regular
+      to: /en/modules/production
+    - title: Quality
+      description: Checks at every stage, with non-conformities tracked and corrective actions logged.
+      icon: i-carbon-rule-data-quality
+      to: /en/modules/qualite
+
+cta:
+  title: Need to rebuild a supply chain in Dokos?
+  description: Bills of materials, manufacturing routes and stock history are migrated from an existing ERP or a spreadsheet.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See engineering services
+      to: /en/ingenierie
+      size: xl
+      color: neutral
+      variant: outline

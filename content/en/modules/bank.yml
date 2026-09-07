@@ -1,0 +1,72 @@
+navigation:
+  title: Bank
+  icon: i-heroicons-building-library
+  description: Bank account synchronization.
+
+title: Bank
+icon: i-heroicons-building-library
+description: Synchronizes your bank accounts with your Dokos accounting.
+application: Bank
+theme: finance-comptabilite
+logo:
+  light: /frappe/bank_logo.svg
+  dark: /frappe/bank_logo.svg
+
+hero:
+  title: Your bank accounts, <span class="text-primary">synchronized</span> with your accounting.
+  description: Bank synchronizes your bank accounts with Dokos, so you can reconcile statements against accounting entries with no manual import.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+features:
+  - title: Account synchronization
+    description: Connects your bank accounts to your Dokos installation to track their movements.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Synchronization
+      color: sky
+  - title: Reconciliation with accounting
+    description: Synchronized movements feed the Accounting module's bank reconciliation.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Accounting
+      color: sky
+
+bottom_cta:
+  title: Want to connect your bank accounts to Dokos?
+  description: Available from the cloud.dokos.io marketplace. Tell us about your banks and transaction volume, and we'll tell you what's already supported.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

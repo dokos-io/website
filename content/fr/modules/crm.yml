@@ -1,13 +1,17 @@
 navigation:
-    title: CRM
+    title: Frappe CRM
     icon: i-carbon-chart-relationship
     description: Gestion de la prospection et de l'avant-vente.
 
-title: CRM
+title: Frappe CRM
 icon: i-carbon-chart-relationship
 description: Gérez vos relations clients de manière fluide et efficace.
 author: Frappe Technologies & Contributeurs
 application: Dokos / Frappe CRM
+theme: vente-relation-client
+logo:
+  light: /frappe/crm.svg
+  dark: /frappe/crm.svg
 
 hero:
   title: Simplifiez vos ventes et boostez vos résultats avec un <span class="text-primary">CRM</span> sur mesure.

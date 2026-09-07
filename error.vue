@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
-import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 
 const { locale } = useI18n()
 
@@ -22,14 +21,14 @@ useHead({
   }
 })
 
-const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation(), { default: () => [] })
-const { data: files } = useLazyFetch<ParsedContent[]>('/api/search.json', { default: () => [], server: false })
+const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('pages'), { default: () => [] })
+const { data: files } = useLazyFetch('/api/search.json', { default: () => [], server: false })
 
 provide('navigation', navigation)
 </script>
 
 <template>
-  <div>
+  <UApp>
     <Header />
 
     <UMain>
@@ -45,7 +44,5 @@ provide('navigation', navigation)
     <ClientOnly>
       <LazyUContentSearch :files="files" :navigation="navigation" />
     </ClientOnly>
-
-    <UNotifications />
-  </div>
+  </UApp>
 </template>

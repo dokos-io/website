@@ -1,7 +1,6 @@
 <script setup lang="ts">
 // import type { module } from '~/types'
 
-const route = useRoute();
 const {
     params: { slug },
 } = useRoute();
@@ -12,11 +11,10 @@ const { t, locale } = useI18n({
 
 const localePath = useLocalePath();
 
-const path_without_locale = route;
-path_without_locale.path.replace(`/^(/${locale}\.)/,"")`, "");
+const path = `/${locale.value}/modules/${slug}`;
 
-const { data: module } = await useAsyncData(path_without_locale.path, () =>
-    queryContent(`/${locale.value}/modules/${slug}`).findOne()
+const { data: module } = await useAsyncData<any>(path, () =>
+    queryCollection("modules").path(path).first()
 );
 
 if (!module.value) {
@@ -27,8 +25,8 @@ if (!module.value) {
     });
 }
 
-const title = module.value.head?.title || module.value.title;
-const description = module.value.head?.description || module.value.description;
+const title = module.value.title;
+const description = module.value.description;
 
 useSeoMeta({
     titleTemplate: "%s · Module Dokos",
@@ -42,13 +40,11 @@ useSeoMeta({
 <template>
     <UPage v-if="module">
         <UPageBody prose class="prose-lg dark:text-gray-300 mt-0">
-            <ULandingHero
+            <UPageHero
+                v-if="module.hero"
                 :links="module.hero.links"
                 orientation="vertical"
-                :ui="{
-                    wrapper: 'bg-gradient-to-b from-green-400/5 from-90%',
-                }"
-                v-if="module.hero"
+                class="bg-gradient-to-b from-green-400/5 from-90%"
             >
                 <template #headline>
                     <UBadge
@@ -95,10 +91,8 @@ useSeoMeta({
                             <UButton
                                 :to="localePath('/modules')"
                                 icon="i-ph-caret-left"
-                                color="gray"
-                                :ui="{ rounded: 'rounded-full' }"
+                                color="neutral"
                                 size="lg"
-                                class=""
                             />
                         </UTooltip>
                     </div>
@@ -106,9 +100,9 @@ useSeoMeta({
                         <HomeTetris />
                     </ClientOnly>
                 </template>
-            </ULandingHero>
+            </UPageHero>
 
-            <ULandingSection
+            <UPageSection
                 v-bind="module.bridge_before_colored_section"
                 v-if="module.bridge_before_colored_section"
             >
@@ -125,27 +119,29 @@ useSeoMeta({
                         "
                     ></span>
                 </template>
-            </ULandingSection>
+            </UPageSection>
 
-            <ULandingSection
+            <UPageSection
                 v-bind="module.features_before_colored_section"
                 v-if="module.features_before_colored_section"
             >
-                <ULandingGrid
+                <UPageGrid
                     v-if="module.features_before_colored_section.cards"
                 >
-                    <ULandingCard
+                    <UPageCard
                         v-for="(feat, index) in module
                             .features_before_colored_section.cards"
                         :key="index"
                         v-bind="feat"
                     />
-                </ULandingGrid>
-            </ULandingSection>
+                </UPageGrid>
+            </UPageSection>
 
-            <ULandingSection
+            <UPageSection
                 v-bind="module.colored_section"
                 v-if="module.colored_section"
+                orientation="horizontal"
+                :reverse="module.colored_section.align === 'left'"
                 :ui="{
                     container: 'bg-blue-950 rounded-3xl p-5',
                     title: 'mt-2 text-green-500',
@@ -238,13 +234,15 @@ useSeoMeta({
                     </video>
                 </div>
                 <Placeholder v-else class="bg-green-500" />
-            </ULandingSection>
+            </UPageSection>
 
             <div v-if="module.main_features">
-                <ULandingSection
+                <UPageSection
                     v-for="(section, index) in module.main_features"
                     :key="index"
                     v-bind="section"
+                    orientation="horizontal"
+                    :reverse="section.align === 'left'"
                 >
                     <template #title>
                         <span v-html="section.title" />
@@ -292,10 +290,10 @@ useSeoMeta({
                         </video>
                         <Placeholder v-else />
                     </div>
-                </ULandingSection>
+                </UPageSection>
             </div>
 
-            <ULandingSection v-bind="module.bridge" v-if="module.bridge">
+            <UPageSection v-bind="module.bridge" v-if="module.bridge">
                 <template #title>
                     <span v-html="module.bridge.title"></span>
                 </template>
@@ -303,46 +301,44 @@ useSeoMeta({
                 <template #description>
                     <span v-html="module.bridge.description"></span>
                 </template>
-            </ULandingSection>
+            </UPageSection>
 
-            <ULandingSection
+            <UPageSection
                 :title="module.carousel.title"
                 v-if="module.carousel"
             >
                 <UCarousel
                     v-slot="{ item }"
                     :items="module.carousel.cards"
+                    dots
                     :ui="{
                         item: 'w-full',
                         container: 'rounded-3xl bg-sky-50 dark:bg-sky-600',
-                        indicators: {
-                            active: 'bg-green-500 dark:bg-green-400',
-                            inactive: 'bg-stone-300 dark:bg-stone-900',
-                        },
                     }"
-                    indicators
                 >
                     <div class="text-center mx-auto p-10">
                         <h2 class="font-bold text-xl">
-                            <span v-html="item.title"></span>
+                            <span v-html="(item as any).title"></span>
                         </h2>
                         <p class="pb-8">
-                            <span v-html="item.description"></span>
+                            <span v-html="(item as any).description"></span>
                         </p>
                     </div>
                 </UCarousel>
-            </ULandingSection>
+            </UPageSection>
 
-            <ULandingSection
+            <UPageSection
                 v-bind="module.bridge_after_carousel"
                 v-if="module.bridge_after_carousel"
             />
 
             <div v-if="module.features">
-                <ULandingSection
+                <UPageSection
                     v-for="(feat, index) in module.features"
                     :key="index"
                     v-bind="feat"
+                    orientation="horizontal"
+                    :reverse="feat.align === 'left'"
                     :ui="{ title: 'mt-2' }"
                 >
                     <template #headline>
@@ -422,27 +418,27 @@ useSeoMeta({
                         </video>
                         <Placeholder v-else />
                     </div>
-                </ULandingSection>
+                </UPageSection>
             </div>
 
-            <ULandingSection v-bind="module.bottom_section">
-                <ULandingGrid v-if="module.bottom_section?.cards">
-                    <ULandingCard
+            <UPageSection v-bind="module.bottom_section">
+                <UPageGrid v-if="module.bottom_section?.cards">
+                    <UPageCard
                         v-for="(feat, index) in module.bottom_section.cards"
                         :key="index"
                         v-bind="feat"
                     />
-                </ULandingGrid>
+                </UPageGrid>
 
                 <UButton
                     v-bind="module.plus_button"
                     class="max-w-fit mx-auto"
                     v-if="module.plus_button"
                 />
-            </ULandingSection>
+            </UPageSection>
 
             <UContainer>
-                <ULandingCTA
+                <UPageCTA
                     v-bind="module.bottom_cta"
                     :class="module.bottom_cta.class"
                     v-if="module.bottom_cta"
@@ -454,7 +450,7 @@ useSeoMeta({
                     <template #description>
                         <span v-html="module.bottom_cta.description"></span>
                     </template>
-                </ULandingCTA>
+                </UPageCTA>
             </UContainer>
         </UPageBody>
     </UPage>

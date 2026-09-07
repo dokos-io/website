@@ -1,12 +1,16 @@
 navigation:
-  title: Support
+  title: Frappe Helpdesk
   icon: i-ri-customer-service-2-line
   description: Gestion de support client moderne.
 
-title: Support
+title: Frappe Helpdesk
 icon: i-ri-customer-service-2-line
 description: Offrez un service client impeccable avec un support intégré.
 application: Dokos / Frappe Helpdesk
+theme: support-collaboration
+logo:
+  light: /frappe/helpdesk.png
+  dark: /frappe/helpdesk.png
 author: Frappe Technologies & Contributeurs
 
 hero:

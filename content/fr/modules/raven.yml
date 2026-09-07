@@ -7,6 +7,7 @@ link: https://www.ravenchat.ai/
 author: The Commit Company & Contributeurs
 description: Transformez votre manière de travailler
 application: Raven
+theme: support-collaboration
 logo:
   light: /frappe/raven.webp
   dark: /frappe/raven.webp

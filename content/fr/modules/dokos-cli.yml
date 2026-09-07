@@ -1,0 +1,96 @@
+navigation:
+  title: Dokos CLI
+  icon: i-heroicons-command-line
+  description: Interroger et piloter un site Dokos depuis un terminal, ou y connecter un agent IA.
+
+title: Dokos CLI
+icon: i-heroicons-command-line
+description: Un outil en ligne de commande léger qui s'appuie sur l'API REST de Dokos/Frappe pour lire et écrire des données.
+author: Dokos
+application: Dokos CLI
+theme: intelligence-artificielle
+logo:
+  light: /frappe/dokos_logo.svg
+  dark: /frappe/dokos_logo.svg
+
+hero:
+  title: Votre site Dokos, <span class="text-primary">depuis un terminal</span>.
+  description: dokos est un outil en ligne de commande qui s'appuie sur l'API REST de Dokos/Frappe pour lire et écrire des données, aussi bien comme utilitaire pour les administrateurs et développeurs que comme serveur MCP pour connecter des agents IA (Claude Code, agy, Vibe CLI, OpenCode…) aux mêmes capacités.
+  links:
+    - label: Voir la documentation
+      to: https://doc.dokos.io/dokos-cli
+      target: _blank
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-book-open
+    - label: Contactez-nous
+      to: /fr/contact
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+features:
+  - title: Interrogez un site sans quitter le terminal
+    description: Listez des documents, lisez un enregistrement, exécutez un rapport ou inspectez le schéma d'un DocType, en une commande.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Requêtes
+      color: sky
+  - title: Écrivez des données, avec les mêmes garde-fous que l'interface
+    description: Créez, mettez à jour, soumettez, annulez, supprimez ou renommez un document depuis la ligne de commande, avec sortie structurée (tableaux ou JSON).
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Écriture
+      color: sky
+  - title: Équipez un agent IA sans passer par le terminal
+    description: Le serveur MCP intégré (`dokos mcp`) donne à un agent IA les mêmes capacités que l'outil en ligne de commande, pour connecter Claude Code, agy, Vibe CLI ou OpenCode à un site Dokos.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Intégration agents (MCP)
+      color: sky
+
+bottom_section:
+  title: "Ce que couvre Dokos CLI :"
+  cards:
+    - title: Installation & configuration
+      description: Python 3.11 ou supérieur, installé via pipx ou pip. Se connecte à un site distant avec des identifiants API, ou détecte automatiquement un bench local.
+      icon: i-heroicons-cog-6-tooth
+      class: "col-span-4 row-span-3"
+    - title: Exploration des modèles de données
+      description: Accès aux schémas de DocType et aux permissions, pour comprendre la structure d'un site avant d'y écrire.
+      icon: i-heroicons-circle-stack
+      class: "col-span-4 row-span-3"
+    - title: Deux modes d'usage
+      description: En terminal pour les administrateurs et développeurs, ou en serveur MCP pour équiper un agent IA des mêmes capacités.
+      icon: i-heroicons-command-line
+      class: "col-span-4 row-span-3"
+
+bottom_cta:
+  title: Envie d'automatiser vos opérations Dokos ?
+  description: Installation, configuration et permissions API se cadrent avec vos équipes techniques avant toute mise en place.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: Documentation
+      to: https://doc.dokos.io/dokos-cli
+      target: _blank
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

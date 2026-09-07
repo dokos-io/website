@@ -1,0 +1,67 @@
+title: Support & collaboration
+description: Customer support and internal knowledge, connected to the same data as your sales and operational modules.
+navigation:
+  title: Support & collaboration
+  icon: i-heroicons-chat-bubble-left-right
+
+hero:
+  headline:
+    label: The Dokos ecosystem
+    icon: i-heroicons-chat-bubble-left-right
+    to: /en/modules
+  title: Customer support and <span class="text-primary">internal knowledge</span>, in one place.
+  description: A support ticket sees a customer's full history, with no tool switching. Internal procedures stay documented and searchable rather than scattered across emails and shared files.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See all modules
+      to: /en/modules
+      size: xl
+      color: neutral
+      variant: outline
+
+modules:
+  title: The modules in this area
+  description: Three complementary modules, independent of one another.
+  items:
+    - title: Frappe Helpdesk
+      description: Tickets, internal SLAs and customer history, connected to the sales modules.
+      icon: i-ri-customer-service-2-line
+      to: /en/modules/support
+      logo:
+        light: /frappe/helpdesk.png
+        dark: /frappe/helpdesk.png
+    - title: Raven
+      description: An internal conversational assistant for finding information in your Dokos data.
+      icon: i-heroicons-sparkles
+      to: /en/modules/raven
+      logo:
+        light: /frappe/raven.webp
+        dark: /frappe/raven.webp
+    - title: Frappe Wiki
+      description: A shared knowledge base for documenting your internal procedures.
+      icon: i-heroicons-book-open
+      to: /en/modules/wiki
+      logo:
+        light: /frappe/wiki.png
+        dark: /frappe/wiki.png
+    - title: Telephony
+      description: Connects Exotel or Twilio to your Frappe Helpdesk customer support.
+      icon: i-heroicons-phone
+      to: /en/modules/telephony
+
+cta:
+  title: Does your customer support still run on a shared inbox?
+  description: Tell us your volumes and current response times. We'll tell you what a dedicated tool changes, and at what volume it becomes worthwhile.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See pricing
+      to: /en/tarifs
+      size: xl
+      color: neutral
+      variant: outline

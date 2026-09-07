@@ -1,0 +1,81 @@
+title: Website & digital tools
+description: Website, reports, integrations and documents, built on the same data as the rest of Dokos, with no third-party tool.
+navigation:
+  title: Website & digital tools
+  icon: i-heroicons-globe-alt
+
+hero:
+  headline:
+    label: The Dokos ecosystem
+    icon: i-heroicons-globe-alt
+    to: /en/modules
+  title: Your website, reports and documents, <span class="text-primary">with no third-party tool</span>.
+  description: An Insights dashboard reads your business data directly, with no export. A document scanned by OCR is automatically matched against the corresponding invoice.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See all modules
+      to: /en/modules
+      size: xl
+      color: neutral
+      variant: outline
+
+modules:
+  title: The modules in this area
+  description: Cross-cutting tools, useful regardless of your line of business.
+  items:
+    - title: Frappe Builder
+      description: A no-code site editor connected to your Dokos data.
+      icon: i-mdi-application-settings-outline
+      to: /en/modules/builder
+      logo:
+        light: /frappe/builder.svg
+        dark: /frappe/builder.svg
+    - title: Frappe Insights
+      description: Dashboards and reports built directly on your business data, with no export to another tool.
+      icon: i-heroicons-chart-bar
+      to: /en/modules/insights
+      logo:
+        light: /frappe/insights.svg
+        dark: /frappe/insights.svg
+    - title: Integrations
+      description: Connects Dokos to your existing tools (payments, messaging, storage, automation).
+      icon: i-mdi-connection
+      to: /en/modules/integrations
+    - title: OCR
+      description: Scans and automatically matches paper documents, supplier invoices in particular.
+      icon: i-mdi-ocr
+      to: /en/modules/ocr
+      logo:
+        light: /frappe/ocr_logo.svg
+        dark: /frappe/ocr_logo.svg
+    - title: Frappe Print Designer
+      description: Customizes your invoices, quotes and delivery notes with no development required.
+      icon: i-mdi-printer-outline
+      to: /en/modules/print-designer
+      logo:
+        light: /frappe/print-designer.svg
+        dark: /frappe/print-designer.svg
+    - title: Frappe Drive
+      description: Store and share files from your Dokos site, with no third-party service.
+      icon: i-heroicons-folder-open
+      to: /en/modules/drive
+      logo:
+        light: /frappe/drive.svg
+        dark: /frappe/drive.svg
+
+cta:
+  title: An external tool to connect to Dokos?
+  description: Describe the tool and the use case. We'll tell you whether an integration already exists or what needs to be built.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See engineering services
+      to: /en/ingenierie
+      size: xl
+      color: neutral
+      variant: outline

@@ -1,57 +1,125 @@
-/* ── ATELIER DESIGN SYSTEM ─────────────────────────── */
-:root {
-  --cream: #FAF8F4;
-  --ink: #1C1917;
-  --orange: #F97316;
-  --orange-light: #FED7AA;
-  --grid-major: rgba(28, 25, 23, 0.07);
-  --grid-minor: rgba(28, 25, 23, 0.025);
-  --hard-shadow: 4px 4px 0 var(--ink);
-  --hard-shadow-orange: 4px 4px 0 var(--orange);
+@import "tailwindcss";
+@import "@nuxt/ui-pro";
+
+/* Scan content files for utility classes used in markdown / v-html */
+@source "../../content/**/*.{md,yml}";
+
+/*
+ * Hanken Grotesk, self-hosted — the same @fontsource subsets the Dokos desk
+ * ships. Serving them ourselves keeps the page free of third-party requests,
+ * which is the claim the site now makes about the product.
+ * Latin + latin-ext only; the desk's cyrillic/vietnamese cuts are unused here.
+ */
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/hanken-grotesk/hanken-grotesk-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/hanken-grotesk/hanken-grotesk-latin-ext-400-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/hanken-grotesk/hanken-grotesk-latin-500-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/hanken-grotesk/hanken-grotesk-latin-ext-500-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/hanken-grotesk/hanken-grotesk-latin-600-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/hanken-grotesk/hanken-grotesk-latin-ext-600-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
-/* ── GRAPH PAPER BACKGROUND ─────────────────────────── */
-.graph-paper {
-  background-color: var(--cream);
-  background-image:
-    linear-gradient(var(--grid-major) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-major) 1px, transparent 1px),
-    linear-gradient(var(--grid-minor) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-minor) 1px, transparent 1px);
-  background-size: 80px 80px, 80px 80px, 16px 16px, 16px 16px;
-  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+/*
+ * Design tokens aligned with the Dokos v5 desk identity.
+ * Source of truth: dodock/scss/dodock/css_variables.scss (identical across v5,
+ * v5-dev and develop). Colours are authored in OKLCH there; kept in OKLCH here
+ * so the ramps stay perceptually even.
+ */
+/* `static`, not plain `@theme`: Nuxt UI resolves the primary ramp indirectly
+   via `--ui-color-primary-*: var(--color-dokos-*)`, which Tailwind cannot see
+   as a usage. Under a plain `@theme` the ramp is tree-shaken and the primary
+   colour resolves to nothing. */
+@theme static {
+  --font-sans: "Hanken Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand — deep petrol blue. 500 is the exact desk `--primary` (#024a70);
+     600/700 are its documented hover/active states. */
+  --color-dokos-50: oklch(97.5% 0.012 240.876);
+  --color-dokos-100: oklch(94.5% 0.025 240.876);
+  --color-dokos-200: oklch(88% 0.045 240.876);
+  --color-dokos-300: oklch(78% 0.068 240.876);
+  --color-dokos-400: oklch(58% 0.088 240.876);
+  --color-dokos-500: oklch(39.1% 0.09 240.876);
+  --color-dokos-600: oklch(35% 0.09 240.876);
+  --color-dokos-700: oklch(30% 0.09 240.876);
+  --color-dokos-800: oklch(26% 0.075 240.876);
+  --color-dokos-900: oklch(22% 0.06 240.876);
+  --color-dokos-950: oklch(16% 0.042 240.876);
+
+  /* Warm chrome. Not a full ramp — these are the desk's cream surfaces, used
+     for section backgrounds and quiet panels. Neutrals come from `stone`. */
+  --color-sand-50: #fcfbf8;
+  --color-sand-100: #faf8f5;
+  --color-sand-200: #f4f0e6;
+  --color-sand-300: #eee8dd;
+  --color-sand-400: #e7dfca;
+
+  /* Occasional accents, not a second brand colour. Use sparingly (a badge
+     tint, an icon chip, a thin underline) — never a button fill or section
+     background, and never in place of `dokos` on CTAs/links. `accent-surface`
+     is light-mode only: pair it at the call site with a dark: class, the same
+     way existing sand/stone backgrounds already do (e.g. `dark:bg-stone-900`),
+     rather than swapping the token itself. */
+  --color-accent: #ff6b6b;
+  --color-accent-secondary: #a8e6cf;
+  --color-accent-surface: #f8f9fa;
 }
 
-/* ── BODY BACKGROUND ────────────────────────────────── */
-body {
-  background-color: var(--cream);
+:root,
+.light {
+  /* Desk buttons/inputs sit at 0.4rem; 0.375rem is the nearest Tailwind step. */
+  --ui-radius: 0.375rem;
 }
 
-/* ── HERO TITLE ACCENT (text-primary maps to orange) ── */
-.atelier-hero h1 .text-primary,
-.atelier-hero h1 span[class*="text-primary"] {
-  color: var(--orange) !important;
+.dark {
+  --ui-radius: 0.375rem;
 }
 
-/* ── HEADLINE FONT ──────────────────────────────────── */
-.mono {
-  font-family: 'Space Mono', monospace;
-}
-
-/* ── HARD SHADOW CARDS ──────────────────────────────── */
-.card-hard {
-  border: 2px solid var(--ink);
-  box-shadow: var(--hard-shadow);
-  transition: box-shadow 0.15s ease, transform 0.15s ease;
-}
-
-.card-hard:hover {
-  box-shadow: var(--hard-shadow-orange);
-  transform: translate(-1px, -1px);
-}
-
-/* ── BUTTON OVERRIDES ───────────────────────────────── */
-.btn-atelier {
-  font-family: 'Space Mono', monospace !important;
-  border-radius: 4px !important;
+@layer base {
+  html {
+    /* Character variants the desk enables on Hanken Grotesk, plus the
+       letter-spacing reset it applies over the upstream Espresso scale. */
+    font-feature-settings: "cv02", "cv03", "cv04", "cv05", "cv07", "cv10";
+    letter-spacing: 0;
+  }
 }

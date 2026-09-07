@@ -1,0 +1,58 @@
+title: Achats, stocks & production
+description: Du bon de commande à la sortie d'entrepôt, une seule chaîne d'approvisionnement, de stock et de fabrication.
+navigation:
+  title: Achats, stocks & production
+  icon: i-heroicons-cube
+
+hero:
+  headline:
+    label: L'écosystème Dokos
+    icon: i-heroicons-cube
+    to: /fr/modules
+  title: Du bon de commande à la <span class="text-primary">sortie d'entrepôt</span>, une seule chaîne.
+  description: Les achats, les stocks, la production et le contrôle qualité partagent la même nomenclature et les mêmes emplacements. Un ordre de fabrication consomme le stock réel, pas une estimation.
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir tous les modules
+      to: /fr/modules
+      size: xl
+      color: neutral
+      variant: outline
+
+modules:
+  title: Les modules de ce périmètre
+  description: Utiles séparément pour une PME de distribution, ou combinés pour un site de production.
+  items:
+    - title: Achats
+      description: Bons de commande, réception, rapprochement avec les factures fournisseurs.
+      icon: i-icon-park-outline-buy
+      to: /fr/modules/achats
+    - title: Stocks
+      description: Suivi des mouvements, valorisation et gestion multi-entrepôts et multi-emplacements.
+      icon: i-vaadin-stock
+      to: /fr/modules/stocks
+    - title: Production
+      description: Ordres de fabrication, nomenclatures et suivi des coûts de production.
+      icon: i-fluent-manufacturer-24-regular
+      to: /fr/modules/production
+    - title: Qualité
+      description: Contrôles à chaque étape, non-conformités tracées et actions correctives.
+      icon: i-carbon-rule-data-quality
+      to: /fr/modules/qualite
+
+cta:
+  title: Une chaîne d'approvisionnement à reconstituer dans Dokos ?
+  description: Nomenclatures, gammes de fabrication et historique de stock se reprennent depuis un ERP existant ou un tableur.
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir les offres d'ingénierie
+      to: /fr/ingenierie
+      size: xl
+      color: neutral
+      variant: outline

@@ -1,0 +1,96 @@
+navigation:
+    title: Payments
+    icon: i-ic-twotone-payments
+    description: Collect online payments by card, SEPA direct debit, PayPal and more.
+
+
+title: Payments
+icon: i-ic-twotone-payments
+description: Simplify and secure your transactions with modern payment solutions.
+application: Payments
+theme: finance-comptabilite
+author: Frappe Technologies, Dokos & Contributors
+
+hero:
+  title: "Automate your <span class='text-primary'>payments</span> with Dokos: simple, secure, efficient"
+  description: Easily integrate your favorite payment gateways and collect one-off or recurring payments with no extra effort.
+  links:
+    - label: Simplify your payments
+      to: https://cloud.dokos.io
+      size: sm
+      color: yellow
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+
+
+
+features:
+  - title: Manage all your payments in one place
+    description: "Whether it's one-off transactions, recurring subscriptions, or events, Dokos automates the process to save you time and avoid errors.<ul><li>Payment automation: handle payments with no manual work.</li><li>Wide choice of providers: Stripe, PayPal, Braintree, GoCardless, and more.</li><li>Maximum security: protected, encrypted transactions.</li>"
+    image: "image/paiements/transactions-securisees.svg"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Centralized payments
+      color: sky
+
+  - title: "Choose maximum flexibility with our built-in payment providers"
+    description: "Choose from a range of providers to collect payments smoothly, quickly, and securely, whether one-off or recurring <ul><li>Stripe: learn more </li><li> PayPal: learn more</li><li>Braintree: learn more</li><li>GoCardless: learn more</li><li>Stancer: learn more</li><li>HelloAsso: learn more"
+    image: "image/paiements/paiements-gestions-paiements.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Payment gateway integrations
+      color: sky
+
+  - title: Save time with smart automation
+    description: "With Dokos, payments are automatically reconciled in your system, giving you accurate, effortless tracking. No more spending time on manual tasks.<ul><li> One-off payments: rent a room or sell a product, Dokos handles it all.</li><li> Recurring payments: subscriptions and recurring services, automated.</li><li> Events and forms: collect payments during event registrations."
+    image: "image/paiements/dokos-abonnement.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Payment automation and reconciliation
+      color: sky
+
+  - title: "An integrated experience: webshop, forms, and events"
+    description: Payments are fully synchronized with your webshop, web forms, and event management. Offer your customers a smooth payment experience with real-time tracking.
+    video: "/image/paiement/gestion-evenements.mp4"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Synergy with webshop and events
+      color: sky
+
+
+
+
+bottom_cta:
+  title: Ready to automate your payments?
+  description: Simplify your payment management and focus on growing your business. Join Dokos today.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Get started now
+      to: https://cloud.dokos.io
+      size: sm
+      color: yellow
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

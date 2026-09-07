@@ -1,9 +1,12 @@
-import type { Partner, Filter } from '../types'
-import { slugify, random } from '../utils'
+import type { Partner } from '../types'
+import { slugify } from '../utils'
 
 export const usePartners = () => {
-  const { locale } = useI18n()
-  const partners = useState<Partner[]>('partners', () => [])
+  // See useModules.ts for why this reads $i18n instead of calling useI18n().
+  const { $i18n } = useNuxtApp()
+  const locale = $i18n.locale
+  // Keyed by locale, see the identical comment in useModules.ts.
+  const partners = useState<Partner[]>(`partners-${locale.value}`, () => [])
 
   // Data fetching
   async function fetchList() {
@@ -12,22 +15,24 @@ export const usePartners = () => {
     }
 
     try {
-      const data = await queryContent(`/${locale.value}/partners`).where({ _extension: 'md' }).find()
+      const data = await queryCollection('partners')
+        .where('path', 'LIKE', `/${locale.value}/partners/%`)
+        .all()
 
       partners.value = data.map(partner => ({
         ...partner,
-        services: (partner.services || []).map((service: string) => ({
+        services: ((partner.services as string[]) || []).map((service: string) => ({
           key: slugify(service),
           label: service
         })),
-        regions: (partner.regions || []).map((region: string) => ({
+        regions: ((partner.regions as string[]) || []).map((region: string) => ({
           key: slugify(region),
           label: region
         })),
         location: partner.location
           ? {
-              key: slugify(partner.location),
-              label: partner.location
+              key: slugify(partner.location as string),
+              label: partner.location as string
             }
           : null
       })) as Partner[]
