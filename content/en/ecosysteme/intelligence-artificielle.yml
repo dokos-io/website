@@ -1,0 +1,63 @@
+title: Artificial intelligence
+description: A conversational assistant, a command-line tool for your own agents, and a searchable knowledge base — all on your own Dokos data.
+navigation:
+  title: Artificial intelligence
+  icon: i-heroicons-cpu-chip
+
+hero:
+  headline:
+    label: The Dokos ecosystem
+    icon: i-heroicons-cpu-chip
+    to: /en/modules
+  title: AI wired to <span class="text-primary">your data</span>, not a generic chatbot.
+  description: Dokos AI answers from your actual documents, Dokos CLI equips your own agents with the same capabilities, and Raven finds information in your knowledge base without switching tools. Nothing gets written without confirmation.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See all modules
+      to: /en/modules
+      size: xl
+      color: neutral
+      variant: outline
+
+modules:
+  title: The modules in this area
+  description: Three complementary tools, each usable on its own.
+  items:
+    - title: Dokos AI
+      description: A conversational AI assistant wired to your Dokos data, with confirmation before any write.
+      icon: i-heroicons-sparkles
+      to: /en/modules/dokos-ai
+      logo:
+        light: /frappe/dokos_logo.svg
+        dark: /frappe/dokos_logo.svg
+    - title: Dokos CLI
+      description: Query and drive a Dokos site from a terminal, or equip an AI agent with the same capabilities through its MCP server.
+      icon: i-heroicons-command-line
+      to: /en/modules/dokos-cli
+      logo:
+        light: /frappe/dokos_logo.svg
+        dark: /frappe/dokos_logo.svg
+    - title: Raven
+      description: An internal conversational assistant for finding information in your Dokos data.
+      icon: i-heroicons-chat-bubble-left-right
+      to: /en/modules/raven
+      logo:
+        light: /frappe/raven.webp
+        dark: /frappe/raven.webp
+
+cta:
+  title: AI automation to fit to your processes?
+  description: Describe your use cases. We'll tell you what these tools already cover, and what's still to build.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See pricing
+      to: /en/tarifs
+      size: xl
+      color: neutral
+      variant: outline

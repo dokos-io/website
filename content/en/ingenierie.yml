@@ -1,0 +1,114 @@
+title: Engineering
+description: Platform architecture, migration, custom development, AI engineering and training, our engineers work on-site, on our own stack.
+navigation:
+  title: Engineering
+  icon: i-heroicons-wrench-screwdriver
+
+hero:
+  headline:
+    label: Embedded engineers
+    icon: i-heroicons-wrench-screwdriver
+  title: Our engineers work<br><span class="text-primary">inside</span> your system, not alongside it.
+  description: We don't write a spec for someone else to build. The people who design Dodock and Dokos are the ones working in your processes, and staying reachable afterwards.
+  links:
+    - label: Talk to an engineer
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See pricing
+      to: /en/tarifs
+      size: xl
+      color: neutral
+      variant: outline
+
+scope:
+  title: What we take on
+  description: Five kinds of engagement, priced separately because they require different skills and different levels of commitment.
+  links:
+    - label: See the modules involved
+      to: /en/modules
+      color: neutral
+      variant: outline
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  items:
+    - title: Platform architecture
+      description: Sizing, structuring, upgrade strategy, integration with your existing information system. The engagement that avoids the next three.
+      icon: i-heroicons-squares-2x2
+      badge: From €2,500 excl. VAT
+    - title: Migration
+      description: Taking over from a proprietary ERP, a spreadsheet, or an existing Frappe/ERPNext installation. Cutover plan, acceptance testing, rollback procedure.
+      icon: i-heroicons-arrow-path
+      badge: From €4,000 excl. VAT
+    - title: Custom development
+      description: Purpose-built modules, automations, connectors. Delivered under a free license, in your repositories as well as ours, you're not buying a black box.
+      icon: i-heroicons-code-bracket-square
+      badge: From €3,000 excl. VAT
+    - title: AI engineering
+      description: Integrating agents and assisted automations into your business processes, on an open, auditable base that you stay in control of.
+      icon: i-heroicons-cpu-chip
+      badge: From €4,000 excl. VAT
+    - title: Training
+      description: Transferring skills to your teams, all the way to independence. Success looks like you calling us less.
+      icon: i-heroicons-academic-cap
+      badge: From €800 excl. VAT
+
+operations:
+  title: How we work
+  description: How we intervene matters as much as the scope. Here's what we don't compromise on.
+  items:
+    - title: Embedded, not delegated
+      description: We work in direct contact with your teams, on your real processes. Skills transfer happens along the way, not in a closing session.
+      icon: i-heroicons-users
+    - title: Never a single person
+      description: Engagements are staffed with two people from day one. A project that rests on one person is a risk for you as much as for us.
+      icon: i-heroicons-user-group
+    - title: Everything delivered in the open
+      description: Free-license code, documentation, deployment procedures. You can take over the work or hand it to a third party at any time.
+      icon: i-heroicons-document-text
+    - title: Operations as a natural extension
+      description: What we deploy, we know how to operate. A managed hosting contract can take over once the project ends, but it's never a requirement.
+      icon: i-material-symbols-cloud-done-outline
+
+reversibility:
+  title: What we don't do
+  description: Better to state it here than in the third meeting.
+  items:
+    - title: No license to sell
+      description: The software is free. We bill for engineering work, never for a right to use it.
+      icon: i-heroicons-no-symbol
+    - title: No underscoped fixed-price deals
+      description: We'd rather decline an engagement than underscope it and deliver it half-finished.
+      icon: i-heroicons-scale
+    - title: No built-in dependency
+      description: No closed component, no deliberately withheld knowledge, no exclusivity clause.
+      icon: i-heroicons-lock-open
+    - title: No promises beyond our expertise
+      description: On what we don't master, we say so and point you elsewhere.
+      icon: i-heroicons-hand-raised
+
+faq:
+  title: Frequently asked questions
+  items:
+    - label: How are engagements priced?
+      content: "Per project, after a short scoping phase that defines the perimeter and deliverables. Not every kind of engagement is priced at the same level: an architecture or AI engineering engagement calls on rarer skills than a module build, and the pricing reflects that. For one-off, well-defined needs, the hour packs on the Pricing page are often a better fit than a project."
+    - label: Do you work alongside our internal teams?
+      content: That's the mode of engagement we prefer. Our engineers work in direct contact with your teams rather than at a distance, and the explicit goal is your independence. We also work alongside your existing service providers when the scope is clearly split.
+    - label: What happens to the code produced?
+      content: "It's published under a free license and committed to your repositories as well as ours. You can take it over, modify it, or hand it to another provider. When a development has broader value, we offer to contribute it back to the product: you keep the benefit and the maintenance becomes ours."
+    - label: Do you work on an installation you didn't deploy?
+      content: Yes, including standard ERPNext and applications from the Frappe ecosystem. The engagement then starts with an audit of what's in place, which may conclude that an upgrade needs to happen before any development.
+
+cta:
+  title: Describe the problem before the solution
+  description: The most useful scoping conversations start with what isn't working today, not with the feature imagined to fix it.
+  links:
+    - label: Talk to an engineer
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: Managed hosting
+      to: /en/exploitation
+      size: xl
+      color: neutral
+      variant: outline

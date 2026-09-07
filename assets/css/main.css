@@ -93,6 +93,16 @@
   --color-sand-200: #f4f0e6;
   --color-sand-300: #eee8dd;
   --color-sand-400: #e7dfca;
+
+  /* Occasional accents, not a second brand colour. Use sparingly (a badge
+     tint, an icon chip, a thin underline) — never a button fill or section
+     background, and never in place of `dokos` on CTAs/links. `accent-surface`
+     is light-mode only: pair it at the call site with a dark: class, the same
+     way existing sand/stone backgrounds already do (e.g. `dark:bg-stone-900`),
+     rather than swapping the token itself. */
+  --color-accent: #ff6b6b;
+  --color-accent-secondary: #a8e6cf;
+  --color-accent-surface: #f8f9fa;
 }
 
 :root,

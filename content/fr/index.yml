@@ -1,5 +1,5 @@
-title: Dokos — éditeur français d'ERP open source, et l'opérateur qui le fait tourner
-description: Nous publions Dodock et Dokos sous licence GPLv3, et nous exploitons sous contrat les ERP open source de nos clients — Dokos, ERPNext et les applications Frappe.
+title: "Dokos : éditeur français d'ERP open source, et l'opérateur qui le fait tourner"
+description: "Nous publions Dodock et Dokos sous licence GPLv3, et nous exploitons sous contrat les ERP open source de nos clients : Dokos, ERPNext et les applications Frappe."
 navigation: false
 
 announcement:
@@ -12,7 +12,7 @@ hero:
     label: Éditeur et opérateur, sous licence GPLv3
     icon: i-simple-icons-gitlab
   title: Éditeur français d'ERP open source.<br>Et l'<span class="text-primary">opérateur</span> qui le fait tourner.
-  description: Nous écrivons Dodock et Dokos, nous les publions en clair, et nous exploitons sous contrat ce que nos clients font tourner — y compris ERPNext standard et les applications de l'écosystème Frappe. Hébergement européen, délais de rétablissement opposables, réversibilité totale.
+  description: Nous écrivons Dodock et Dokos, nous les publions en clair, et nous exploitons sous contrat ce que nos clients font tourner, y compris ERPNext standard et les applications de l'écosystème Frappe. Hébergement européen, délais de rétablissement opposables, réversibilité totale.
   image: hero_dokos.svg
   links:
     - label: Parler à un ingénieur
@@ -43,7 +43,7 @@ proof:
 
 sections:
   - title: Éditeur, pas intégrateur
-    description: <strong>Nous maintenons notre propre fork du framework Frappe et de la distribution ERP construite dessus.</strong><br><br>Quand une anomalie est dans le socle, nous la corrigeons dans le socle — sans ouvrir un ticket en amont et attendre. Les dépôts, les tickets et l'historique des commits sont publics : vous pouvez juger notre rythme de correction avant de nous confier quoi que ce soit.
+    description: <strong>Nous maintenons notre propre fork du framework Frappe et de la distribution ERP construite dessus.</strong><br><br>Quand une anomalie est dans le socle, nous la corrigeons dans le socle, sans ouvrir un ticket en amont et attendre. Les dépôts, les tickets et l'historique des commits sont publics : vous pouvez juger notre rythme de correction avant de nous confier quoi que ce soit.
     image: /image/dokos-gitlab.png
     align: right
     features:
@@ -51,7 +51,7 @@ sections:
         description: Le framework applicatif et la distribution ERP, publiés sous GPLv3 sur notre GitLab.
         icon: i-heroicons-code-bracket-square
       - name: Conformité française portée
-        description: Comptabilité, encaissement, facturation électronique — intégrés au produit, pas empilés en surcouche.
+        description: "Comptabilité, encaissement, facturation électronique : intégrés au produit, pas empilés en surcouche."
         icon: i-octicon-law
       - name: Aucun frais de licence
         description: Nous vendons de l'exploitation et de l'ingénierie, jamais le droit d'utiliser le logiciel.
@@ -64,7 +64,7 @@ sections:
         trailing: true
 
   - title: Exploité sous contrat
-    description: <strong>Trois heures pour prendre en charge une anomalie bloquante, six pour rétablir le service.</strong><br><br>Ce ne sont pas des objectifs internes : ce sont les délais inscrits à l'annexe de nos conditions générales d'hébergement, opposables dès la signature. Nous exploitons Dokos, mais aussi ERPNext standard et les applications Frappe — sans exiger de migration.
+    description: <strong>Trois heures pour prendre en charge une anomalie bloquante, six pour rétablir le service.</strong><br><br>Ce ne sont pas des objectifs internes : ce sont les délais inscrits à l'annexe de nos conditions générales d'hébergement, opposables dès la signature. Nous exploitons Dokos, mais aussi ERPNext standard et les applications Frappe, sans exiger de migration.
     image: /image/nuage-dashboard-dark.png
     align: left
     features:
@@ -106,7 +106,7 @@ sections:
         trailing: true
 
   - title: Ingénieurs embarqués
-    description: <strong>Les personnes qui conçoivent le produit sont celles qui interviennent chez vous.</strong><br><br>Architecture de plateforme, migration, développement métier, ingénierie IA, formation. Nous travaillons au contact de vos équipes plutôt qu'en délégation, à deux dès le départ, et tout est livré en clair — code sous licence libre, documentation et procédures comprises.
+    description: <strong>Les personnes qui conçoivent le produit sont celles qui interviennent chez vous.</strong><br><br>Architecture de plateforme, migration, développement métier, ingénierie IA, formation. Nous travaillons au contact de vos équipes plutôt qu'en délégation, à deux dès le départ, et tout est livré en clair : code sous licence libre, documentation et procédures comprises.
     image: /image/dokos-communaute.png
     align: left
     features:
@@ -143,8 +143,8 @@ integrations:
     - /home/gocardless.png
 
 modules:
-  title: La couverture fonctionnelle, module par module
-  description: Plus de quinze modules pour couvrir la gestion d'une entreprise ou d'une association, quel que soit le secteur.
+  title: La couverture fonctionnelle, par thème métier
+  description: Plus de vingt modules, regroupés en six périmètres. Chaque module s'utilise seul ou combiné aux autres, sans doublon de données.
   links:
     - label: Voir tous les modules
       to: /fr/modules
@@ -154,70 +154,34 @@ modules:
       trailing: true
       size: md
   items:
-    - title: CRM
-      description: Gestion de la prospection et de l'avant-vente.
-      icon: i-carbon-chart-relationship
-      to: /fr/modules/crm
-    - title: Ventes
-      description: Gestion des flux commerciaux et de la facturation.
-      icon: i-ep-sell
-      to: /fr/modules/ventes
-    - title: Achats
-      description: Gestion des flux d'achats et d'approvisionnements.
-      icon: i-icon-park-outline-buy
-      to: /fr/modules/achats
-    - title: Comptabilité
-      description: Saisie de la comptabilité et finances.
-      icon: i-uil-balance-scale
-      to: /fr/modules/comptabilite
-    - title: Projets
-      description: Organisation, planification et suivi de projets.
-      icon: i-eos-icons-project-outlined
-      to: /fr/modules/projets
-    - title: Stocks
-      description: Suivi de vos mouvements, valorisations de stocks et de votre chaîne d'approvisionnement.
-      icon: i-vaadin-stock
-      to: /fr/modules/stocks
-    - title: Production
-      description: Planification et suivi de la production manufacturière.
-      icon: i-fluent-manufacturer-24-regular
-      to: /fr/modules/production
-    - title: Qualité
-      description: Création de processus et suivi de la qualité.
-      icon: i-carbon-rule-data-quality
-      to: /fr/modules/qualite
-    - title: Support
-      description: Gestion de support client moderne.
-      icon: i-ri-customer-service-2-line
-      to: /fr/modules/support
-    - title: Réservations de ressources
-      description: Création de contrats, génération d'abonnements, crédits de réservation et événements.
-      icon: i-material-symbols-location-on-outline-rounded
-      to: /fr/modules/reservations-de-ressources
-    - title: Ressources Humaines
-      description: Gestion des congés, notes de frais, recrutement, quarts et présence, performance.
-      icon: i-mdi-human-capacity-increase
-      to: /fr/modules/ressources-humaines
-    - title: Portail web & e-commerce
-      description: Vente de produits/services, réservations en ligne et portail client/fournisseur.
-      icon: i-gg-website
-      to: /fr/modules/e-commerce
-    - title: OCR
-      description: Extraction des données de factures fournisseur.
-      icon: i-mdi-ocr
-      to: /fr/modules/ocr
-    - title: Paiements
-      description: Collecte de paiements en ligne via carte bancaire, prélèvement SEPA, PayPal et plus encore.
-      icon: i-ic-twotone-payments
-      to: /fr/modules/paiements
-    - title: Intégrations
-      description: Sauvegardes externalisées, services Google, sites e-commerce, connecteurs no-code.
-      icon: i-mdi-connection
-      to: /fr/modules/integrations
+    - title: Vente & relation client
+      description: Frappe CRM, ventes, e-commerce, réservations de ressources.
+      icon: i-heroicons-shopping-cart
+      to: /fr/ecosysteme/vente-relation-client
+    - title: Finance & comptabilité
+      description: Comptabilité, paiements.
+      icon: i-heroicons-banknotes
+      to: /fr/ecosysteme/finance-comptabilite
+    - title: Achats, stocks & production
+      description: Achats, stocks, production, qualité.
+      icon: i-heroicons-cube
+      to: /fr/ecosysteme/achats-stocks-production
+    - title: Projets & ressources humaines
+      description: Projets, ressources humaines, formation.
+      icon: i-heroicons-user-group
+      to: /fr/ecosysteme/projets-ressources-humaines
+    - title: Support & collaboration
+      description: Support, Raven, Frappe Wiki.
+      icon: i-heroicons-chat-bubble-left-right
+      to: /fr/ecosysteme/support-collaboration
+    - title: Site web & outils numériques
+      description: Builder, Insights, intégrations, OCR, Print Designer.
+      icon: i-heroicons-globe-alt
+      to: /fr/ecosysteme/site-web-outils-numeriques
 
 applications:
   title: Compatible avec l'écosystème <span class="text-primary">Frappe</span>
-  description: Dokos reste compatible avec les applications publiées par Frappe Technologies et par la communauté — et nous les exploitons au même titre que les nôtres.
+  description: Dokos reste compatible avec les applications publiées par Frappe Technologies et par la communauté, et nous les exploitons au même titre que les nôtres.
   links:
     - label: Infogérance Frappe et ERPNext
       icon: i-simple-icons-frappe

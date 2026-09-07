@@ -344,6 +344,50 @@ const page = computed(() => props.page)
       </UPageGrid>
     </UPageSection>
 
+    <!-- Apps grouped into this theme (ecosystem pages). Same card shape as the
+         home page's modules grid in pages/index.vue, so a module looks the
+         same whether discovered from the home page or from a theme page. -->
+    <UPageSection
+      v-if="page.modules"
+      :title="page.modules.title"
+      :description="page.modules.description"
+      :links="page.modules.links"
+    >
+      <UPageGrid class="sm:grid-cols-2 lg:grid-cols-3">
+        <UPageCard
+          v-for="(item, i) in page.modules.items"
+          :key="i"
+          :title="item.title"
+          :description="item.description"
+          :to="item.to"
+          orientation="vertical"
+          variant="subtle"
+        >
+          <template #leading>
+            <UColorModeAvatar
+              v-if="item.logo"
+              :light="item.logo.light"
+              :dark="item.logo.dark"
+              size="lg"
+              class="rounded-sm"
+            />
+            <span v-else class="inline-flex p-1 rounded-lg bg-amber-600/5">
+              <UIcon :name="item.icon || 'i-heroicons-cube'" class="w-10 h-10 shrink-0 text-amber-600" />
+            </span>
+          </template>
+
+          <!-- Screenshot, or a placeholder until one is shot for this app. -->
+          <NuxtImg
+            v-if="item.screenshot"
+            :src="item.screenshot"
+            class="w-full rounded-lg mt-3"
+            loading="lazy"
+          />
+          <Placeholder v-else class="mt-3" />
+        </UPageCard>
+      </UPageGrid>
+    </UPageSection>
+
     <UPageSection v-if="page.faq" :title="page.faq.title" :description="page.faq.description">
       <UPageAccordion :items="page.faq.items" type="multiple" class="max-w-4xl mx-auto">
         <template #body="{ item }">

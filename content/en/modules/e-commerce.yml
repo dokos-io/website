@@ -1,0 +1,108 @@
+navigation:
+    title: Web Portal & E-commerce
+    icon: i-gg-website
+    description: Sell products and services, online resource bookings and a client/supplier portal.
+
+title: Web Portal & E-commerce
+icon: i-gg-website
+description: Build your online storefront with powerful web tools.
+author: Frappe Technologies, Dokos & Contributors
+application: Dokos / Webshop
+theme: vente-relation-client
+logo:
+  light: /frappe/webshop_logo.svg
+  dark: /frappe/webshop_logo.svg
+
+hero:
+  title: Turn your website into a <span class="text-primary">powerful sales tool</span> with the Dokos E-commerce module
+  description: Sell online with ease and grow your business effortlessly. With Dokos, manage everything from a single interface and give your customers a smooth, secure, unforgettable shopping experience.
+  links:
+    - label: Launch your online store today!
+      to: https://cloud.dokos.io
+      size: sm
+      color: orange
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+
+
+
+features:
+  - title: Attract customers with a dynamic product catalog
+    description: Publish and update your products in a few clicks. <br><br>With Dokos, manage your descriptions, prices, images, and specifications from a single place.<br><br> Every product gets its own dedicated page for a clear, professional presentation.</br>
+    image: "image/e-commerce/article-site-web.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Catalog
+      color: sky
+  - title: Give your customers a smooth, effortless shopping experience
+    description: Streamline the customer journey with a simplified checkout process. <br><br>The Dokos e-commerce module includes an intuitive shopping cart, letting your customers order your products online with ease.<br><br>Track orders in real time with secure payment options.</br>
+    image: "image/e-commerce/parametre-e-commerce.svg"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Orders
+      color: sky
+  - title: Strengthen customer interaction with our custom forms
+    description: Whether for quote requests, newsletter sign-ups, or specific questions, everything is built directly into Dokos. <br><br>Plus, your customers can log in via their social accounts (Google, Facebook) for fast, secure access.</br>
+    image: "image/e-commerce/article-de-blog.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Forms
+      color: sky
+  - title: Maximize your site's visibility with our SEO tools.
+    description: Create meta tags to improve your search engine ranking, and use our blog management to attract and retain your audience.
+    image: "image/e-commerce/SEO-site-web.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: SEO
+      color: sky
+  - title: Make your site your own
+    description: Build a site that looks like you with Dokos. <br><br>Change the colors, fonts, logos, and overall theme of your online store so it perfectly reflects your brand.</br>
+    video: "/image/e-commerce/site-web-dokos.mp4"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Site
+      color: sky
+
+
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: green
+  to: /en/features/e-commerce
+
+bottom_cta:
+  title: "Grow your business right now with Dokos: don't let your sales wait!"
+  description: "Boost your sales with an all-in-one solution that gives you full control. Get rid of technical worries and focus on what matters most: your customers."
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Get started now
+      to: https://cloud.dokos.io
+      size: sm
+      color: yellow
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

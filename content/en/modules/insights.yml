@@ -1,0 +1,103 @@
+navigation:
+  title: Frappe Insights
+  icon: i-material-symbols-auto-graph
+  description: Data analysis and exploration
+
+title: Frappe Insights
+link: "https://frappe.io/insights"
+author: Frappe Technologies & Contributors
+description: Make informed decisions with Frappe Insights
+application: Frappe Insights
+theme: site-web-outils-numeriques
+
+logo:
+  light: /frappe/insights.svg
+  dark: /frappe/insights.svg
+
+hero:
+  title: "Make informed decisions with <span class='text-primary'>Frappe Insights</span> "
+  description: "A simple, powerful reporting and analytics tool!"
+  image: ""
+  headline:
+    label: Frappe applications
+    to: https://frappe.io/products
+    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
+    target: _blank
+  links:
+    - label: Build your first report
+      to: https://cloud.dokos.io
+      size: xl
+      color: amber
+      icon: i-heroicons-play-circle-16-solid
+      trailing: false
+      target: _blank
+    - label: Documentation
+      icon: i-ic-outline-library-books
+      size: xl
+      color: gray
+      to: https://doc.dokos.io
+      target: _blank
+
+bridge_before_colored_section:
+  title: "Explore your data in depth"
+  description: "Simply build interactive dashboards, generate custom reports in a few clicks, or view your data in real time. With Insights' intuitive, flexible interface, you can dig deeper into your data and tailor analytics to your specific needs, with no extra costs to worry about"
+features_before_colored_section:
+  cards:
+    - title: Reports built for you
+      icon: i-material-symbols-bar-chart-4-bars-rounded
+      class: "col-span-4 row-span-3"
+    - title: Intuitive visualization
+      icon: i-material-symbols-pivot-table-chart-rounded
+      class: "col-span-4 row-span-3"
+    - title: Real time tracking
+      icon: i-material-symbols-alarm-on-outline-rounded
+      class: "col-span-4 row-span-3"
+
+colored_section:
+  title: Create, analyze and innovate!
+  description: "With Dokos, get direct access to Frappe Insights: the innovative reporting tool developed by the Frappe team. With Insights, at no extra cost, analyzing your data becomes intuitive and accessible, all without a line of code"
+  image: "image/ventes/un-insights-opportunites.png"
+  align: left
+  links:
+    - label: Build your first report
+      size: sm
+      color: green
+      to: https://cloud.dokos.io
+      target: _blank
+    - label: Learn more about Frappe Insights
+      size: sm
+      variant: 'link'
+      color: gray
+      to: https://frappe.io/builder
+      target: _blank
+      icon: i-heroicons-outline-arrow-right
+      trailing: true
+
+carousel:
+  title: "Enjoy state of the art data analysis"
+  cards:
+   - title: "Fast adoption"
+     description: "Frappe Insights integrates easily with your management software, with no need for complex training."
+   - title: "Zero cost"
+     description: "This powerful tool is included in your Dokos solution, at no additional charge."
+   - title: "Trust and transparency "
+     description: "As partners, we provide ongoing support to make sure you get the most out of this tool."
+
+bottom_cta:
+  title: "Take control of your data now!"
+  description: ""
+  card: true
+  links:
+    - label: Build your first report
+      size: md
+      color: gray
+      to: https://cloud.dokos.io
+      target: _blank
+    - label: Learn more about Frappe Insights
+      size: md
+      variant: 'link'
+      color: gray
+      to: https://frappe.io/insights
+      target: _blank
+      icon: i-heroicons-outline-arrow-right
+      trailing: true

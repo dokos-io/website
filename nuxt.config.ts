@@ -58,12 +58,12 @@ export default defineNuxtConfig({
         language: 'fr-FR',
         file: 'fr-FR.js'
       },
-      // {
-      //   name: 'English',
-      //   code: 'en',
-      //   language: 'en-US',
-      //   file: 'en-US.js'
-      // }
+      {
+        name: 'English',
+        code: 'en',
+        language: 'en-US',
+        file: 'en-US.js'
+      }
     ],
     langDir: 'lang',
     strategy: 'prefix_and_default',
@@ -103,6 +103,14 @@ export default defineNuxtConfig({
         '/fr/editeur',
         '/fr/ingenierie',
         '/fr/tarifs',
+        '/fr/modules',
+        '/fr/ecosysteme/vente-relation-client',
+        '/fr/ecosysteme/finance-comptabilite',
+        '/fr/ecosysteme/achats-stocks-production',
+        '/fr/ecosysteme/projets-ressources-humaines',
+        '/fr/ecosysteme/support-collaboration',
+        '/fr/ecosysteme/site-web-outils-numeriques',
+        '/fr/ecosysteme/intelligence-artificielle',
       ],
     },
   },

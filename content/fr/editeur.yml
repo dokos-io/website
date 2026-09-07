@@ -1,16 +1,16 @@
-title: L'éditeur — Dodock et Dokos
+title: "L'éditeur : Dodock et Dokos"
 description: Dokos SAS édite son propre fork du framework Frappe et de la distribution ERP. Ce que cela change concrètement pour ceux qui l'utilisent.
 navigation:
   title: L'éditeur
   icon: i-heroicons-code-bracket-square
-  description: Dodock et Dokos — le fork que nous maintenons
+  description: Dodock et Dokos, le fork que nous maintenons
 
 hero:
   headline:
     label: Éditeur, pas seulement intégrateur
     icon: i-simple-icons-gitlab
   title: Nous ne revendons pas un ERP.<br>Nous en <span class="text-primary">écrivons</span> un.
-  description: Dodock est notre fork du framework Frappe. Dokos est la distribution ERP construite dessus. Les deux sont publiés sous GPLv3, sur notre GitLab, avec un historique consultable par n'importe qui — y compris par vous, avant de signer.
+  description: Dodock est notre fork du framework Frappe. Dokos est la distribution ERP construite dessus. Les deux sont publiés sous GPLv3, sur notre GitLab, avec un historique consultable par n'importe qui, y compris par vous, avant de signer.
   links:
     - label: Voir le code
       to: https://gitlab.com/dokos
@@ -33,7 +33,7 @@ scope:
       description: Quand l'anomalie est dans le socle, nous la corrigeons dans le socle. Un intégrateur, lui, ouvre un ticket en amont et attend.
       icon: i-heroicons-wrench-screwdriver
     - title: La conformité française est portée
-      description: Comptabilité, encaissement, facturation électronique — les adaptations réglementaires sont intégrées au produit, pas empilées en surcouche fragile.
+      description: "Comptabilité, encaissement, facturation électronique : les adaptations réglementaires sont intégrées au produit, pas empilées en surcouche fragile."
       icon: i-octicon-law
     - title: L'amont est suivi de près
       description: Les versions publiées par Frappe Technologies sont lues, testées et portées. Nous adoptons ce qui va dans le bon sens et nous divergeons quand c'est justifié.
@@ -56,7 +56,7 @@ operations:
       description: Dokos dérive d'ERPNext et Dodock de Frappe. Nous ne cachons pas cette filiation ; elle nous fait bénéficier du travail d'un écosystème mondial.
       icon: i-simple-icons-frappe
     - title: Des divergences documentées
-      description: Là où les besoins européens s'écartent de l'amont, nous divergeons — et nous conservons la trace de chaque écart pour pouvoir le maintenir dans la durée.
+      description: Là où les besoins européens s'écartent de l'amont, nous divergeons, et nous conservons la trace de chaque écart pour pouvoir le maintenir dans la durée.
       icon: i-heroicons-arrows-pointing-out
     - title: Un déploiement en deux temps
       description: Les nouvelles versions sont livrées d'abord aux installations sans applications personnalisées, puis à celles qui en comportent, après vérification de compatibilité.

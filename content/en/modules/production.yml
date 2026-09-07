@@ -1,0 +1,117 @@
+navigation:
+    title: Production
+    icon: i-fluent-manufacturer-24-regular
+    description: Manufacturing planning and production tracking.
+
+title: Production
+icon: i-fluent-manufacturer-24-regular
+description: Run your production with precision, for maximum efficiency.
+application: Dokos
+theme: achats-stocks-production
+author: Frappe Technologies & Contributors
+
+hero:
+  title: Run your <span class="text-primary">production</span> with precision, for maximum efficiency.
+  description: With Dokos, simplify your production operations, save valuable time, and maintain consistent quality at every step.
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+features:
+  - title: Optimize your production
+    description: Gain visibility and control over your production processes. <br><br>With Dokos, quickly define the components you need and manage a smooth, error-free workflow. <br><br>The software's flexibility also lets you handle different product variants, adapting bills of materials and their costs to each version.</br>
+    image: "image/production/Nomenclature.svg"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Item management and bill of materials
+      color: sky
+  - title: Plan production more efficiently
+    description: Plan your production runs with confidence. <br><br>Anticipate demand and support sustainable production practices for greater peace of mind.<br><br> Avoid surpluses and shortages while following responsible, sustainable production practices.</br>
+    image: "image/production/plannification_production.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Production requests and planning
+      color: sky
+  - title: Stay informed in real time
+    description: Tracking production operations is simplified with a live dashboard that gives you a complete view of the progress of every work order.<br><br> You can log time spent at each production step, which helps you maximize the efficiency of your processes and spot areas for improvement.</br>
+    video: "/image/production/tableau-de-bord-production.mp4"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Production tracking
+      color: sky
+  - title: Ensure quality at every step
+    description: Quality is at the core of our approach. <br><br>Dokos builds in quality checks at every production phase, so you can guarantee compliant products. <br><br>With built-in controls and detailed reports, earn your customers' trust by delivering compliant products every time.</br>
+    image: "image/production/qualite.svg"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Quality control
+      color: sky
+  - title: Optimize your stock management
+    description: Benefit from real-time tracking of raw material and finished goods levels. <br><br>You can organize your stock efficiently and optimize movements between warehouses. <br><br>You can also evaluate production costs by factoring in raw materials, labor, and overhead, supporting informed, responsible budget management.</br>
+    image: "image/stock/quatre-tableau-de-bord-stock.svg"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Stock management
+      color: sky
+  - title: Make informed decisions
+    description: Generate custom reports with Dokos to make decisions based on accurate data.<br><br> By analyzing trends, you identify opportunities for improvement to stay competitive in your market.</br>
+    image: "image/production/tableau-de-bord-production-image-1800.svg"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Reports
+      color: sky
+  - title: An ethical, transparent solution for optimized production.
+    description: By choosing Dokos, you join a committed community that shares your values. <br><br>Enjoy an innovative open source solution designed to guarantee transparency, performance, and ethics in your production management.</br>
+    image: "image/dokos-communaute.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: An ethical choice
+      color: sky
+
+
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /en/features/production
+
+bottom_cta:
+  title: Transform your production management with Dokos today.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: sky
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

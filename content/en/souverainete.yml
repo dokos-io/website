@@ -1,0 +1,127 @@
+title: Sovereignty and security
+description: "European hosting, GPLv3 license, contractual reversibility: the answers to the procurement requirements of large accounts and the public sector."
+navigation:
+  title: Sovereignty & security
+  icon: i-material-symbols-security-rounded
+  description: EU hosting, GPLv3, reversibility
+
+hero:
+  headline:
+    label: European jurisdiction
+    icon: i-circle-flags-european-union
+  title: Your data stays in Europe.<br>Your software stays <span class="text-primary">yours</span>.
+  description: An ERP under a free license, hosted in France and Germany, operated by a named French company that's directly accountable. Most reversibility and no-lock-in clauses are satisfied by design, not by commercial promise.
+  links:
+    - label: Talk to an engineer
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: Privacy policy
+      to: /en/securityandprivacy
+      size: xl
+      color: neutral
+      variant: outline
+
+proof:
+  items:
+    - label: Customer database hosting
+      value: France · Germany
+      note: OVHcloud SAS and Hetzner GmbH
+    - label: American hyperscalers
+      value: None
+      note: Anywhere in the hosting chain
+    - label: license of the code we run
+      value: GPLv3
+      note: Auditable, modifiable, reusable
+
+scope:
+  title: What "sovereign" means here
+  description: The word gets used loosely. Here's precisely what we stand behind, and what we don't.
+  items:
+    - title: Data location
+      description: Customer databases are hosted on our infrastructure in France and Germany. Backups are replicated across several availability zones, in those same countries.
+      icon: i-heroicons-map-pin
+    - title: A named accountable party
+      description: Dokos SAS, a French company registered with the Nancy trade registry, is your contractual point of contact and your data processor under Article 28 of the GDPR. No offshore entity anywhere in the chain.
+      icon: i-heroicons-building-office-2
+    - title: European suppliers
+      description: "Payments, hosting, communication: our subprocessors are established in the European Union and named individually in our privacy policy."
+      icon: i-circle-flags-european-union
+    - title: No software lock-in
+      description: The entire stack we operate is published under GPLv3. No proprietary component controls whether your installation runs.
+      icon: i-heroicons-lock-open
+    - title: What we don't claim
+      description: We are not SecNumCloud-qualified and don't claim to be. That qualification belongs to the infrastructure host; we operate as the application layer on top of it.
+      icon: i-heroicons-exclamation-triangle
+      badge: Stated plainly
+    - title: French regulatory compliance
+      description: "Accounting, e-invoicing, payment collection: the relevant modules are built for French requirements. Certification details are published."
+      icon: i-octicon-law
+
+operations:
+  title: Data protection, in detail
+  description: These commitments are written into our privacy policy and our hosting terms and conditions. They're verifiable, not just declared.
+  items:
+    - title: You remain the data controller
+      description: The data you put into your database belongs to you. We process it only on your behalf, as a processor, following your instructions.
+      icon: i-material-symbols-data-loss-prevention-outline
+    - title: Access is limited and logged
+      description: Our teams only access your data at your request, to resolve a technical incident, or under a legal obligation. Every access is logged.
+      icon: i-heroicons-finger-print
+    - title: Notification within 72 hours
+      description: In the event of a data breach on our servers, the CNIL is notified within 72 hours, and so are you, whenever the rights of the people concerned are at risk.
+      icon: i-heroicons-bell-alert
+    - title: No banking data stored
+      description: Payments go through PCI-DSS compliant providers. Card numbers never pass through our systems and are never stored there.
+      icon: i-heroicons-credit-card
+    - title: Strictly necessary cookies
+      description: The site only uses cookies required for the session and for security. No advertising or tracking cookie without explicit consent.
+      icon: i-heroicons-shield-check
+    - title: Controlled data erasure
+      description: After termination, your database is deactivated for a four-week grace period, then destroyed. Backup copies are purged at the end of the twelve-month security retention period.
+      icon: i-heroicons-trash
+
+reversibility:
+  title: Reversibility, clause by clause
+  description: This is the question every serious procurement team asks. Here are the answers, in the order they're usually asked.
+  items:
+    - title: Data handover
+      description: Full export, at any time, in a structured, commonly used format, from your own admin interface.
+      icon: i-material-symbols-cloud-sync-outline-rounded
+    - title: Continuity without the publisher
+      description: Because the code is free, your installation stays operable even if Dokos SAS were to disappear. That's a guarantee few publishers can offer.
+      icon: i-heroicons-arrow-path
+    - title: Changing providers
+      description: No exclusivity clause. You can hand operations to a third party, or bring them in-house, with our support.
+      icon: i-heroicons-arrows-right-left
+    - title: Exiting without penalty
+      description: Termination with thirty days' notice. In the event of a price revision, you can exit without penalty within thirty days of the notification.
+      icon: i-heroicons-document-check
+
+faq:
+  title: Procurement and compliance questions
+  items:
+    - label: Are you SecNumCloud-qualified?
+      content: "No, and we don't present it as being close on the horizon. SecNumCloud qualification is a multi-year program that requires resources a company our size can't mobilize alone, and it applies to the hosting infrastructure rather than the application. Our position is that of an application operator: when your requirements call for it, we deploy with a qualified host and run the operating contract on top. Tell us which requirement you need to meet, and we'll tell you whether we can meet it."
+    - label: Can you host exclusively in France?
+      content: Our standard platform spreads production and backups across France and Germany, two European Union jurisdictions. A strictly France-only location requirement is achievable on dedicated infrastructure; it requires specific sizing and needs to be addressed before the contract, not after.
+    - label: Who are your subprocessors?
+      content: "They're named in our privacy policy, along with the reason for their involvement and the kind of data shared with each: Stripe and GoCardless for payments, OVHcloud and Hetzner for hosting. Any change that could affect your data is notified to you beforehand, in line with Article 28 of the GDPR."
+    - label: How can I verify the integrity of the installed version?
+      content: We publish the cryptographic fingerprint of the versions covered by certification, file by file, along with the procedure for recomputing that checksum on your own installation. Details are on our Certifications page.
+    - label: Who do I contact for a GDPR request?
+      content: Our data protection officer can be reached at dpo@dokos.io, or by mail at Dokos SAS, 7B Allée Neuve, 54520 Laxou, France. The response time is one month from receipt, extendable depending on circumstances.
+
+cta:
+  title: Have a requirements checklist to send us?
+  description: Send it over. We'll answer point by point, including when the answer is no, which is usually the more useful of the two.
+  links:
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See our certifications
+      to: /en/certifications
+      size: xl
+      color: neutral
+      variant: outline

@@ -1,0 +1,67 @@
+title: Support & collaboration
+description: Le support client et la connaissance interne, connectés aux mêmes données que vos modules commerciaux et opérationnels.
+navigation:
+  title: Support & collaboration
+  icon: i-heroicons-chat-bubble-left-right
+
+hero:
+  headline:
+    label: L'écosystème Dokos
+    icon: i-heroicons-chat-bubble-left-right
+    to: /fr/modules
+  title: Le support client et la <span class="text-primary">connaissance interne</span>, au même endroit.
+  description: Un ticket de support voit l'historique complet d'un client, sans changer d'outil. Les procédures internes restent documentées et cherchables plutôt que dispersées entre emails et fichiers partagés.
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir tous les modules
+      to: /fr/modules
+      size: xl
+      color: neutral
+      variant: outline
+
+modules:
+  title: Les modules de ce périmètre
+  description: Trois modules complémentaires, indépendants les uns des autres.
+  items:
+    - title: Frappe Helpdesk
+      description: Tickets, SLA internes et historique client, connectés aux modules commerciaux.
+      icon: i-ri-customer-service-2-line
+      to: /fr/modules/support
+      logo:
+        light: /frappe/helpdesk.png
+        dark: /frappe/helpdesk.png
+    - title: Raven
+      description: Un assistant conversationnel interne pour retrouver une information dans vos données Dokos.
+      icon: i-heroicons-sparkles
+      to: /fr/modules/raven
+      logo:
+        light: /frappe/raven.webp
+        dark: /frappe/raven.webp
+    - title: Frappe Wiki
+      description: Une base de connaissances partagée pour documenter vos procédures internes.
+      icon: i-heroicons-book-open
+      to: /fr/modules/wiki
+      logo:
+        light: /frappe/wiki.png
+        dark: /frappe/wiki.png
+    - title: Telephony
+      description: Connecte Exotel ou Twilio à votre support client Frappe Helpdesk.
+      icon: i-heroicons-phone
+      to: /fr/modules/telephony
+
+cta:
+  title: Votre support client dépend encore d'une boîte mail partagée ?
+  description: Décrivez-nous vos volumes et vos délais actuels. Nous vous dirons ce qu'un outil dédié change, et à partir de quel volume ça devient utile.
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir les tarifs
+      to: /fr/tarifs
+      size: xl
+      color: neutral
+      variant: outline

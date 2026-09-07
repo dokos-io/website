@@ -1,0 +1,147 @@
+title: Pricing
+description: Self-service hosting, managed operations with contractual guarantees, and hourly support.
+navigation:
+  title: Pricing
+  icon: i-heroicons-credit-card
+
+hero:
+  headline:
+    label: Public pricing, excluding tax
+    icon: i-heroicons-document-text
+  title: Three ways to work with us.<br>Only one commits you to <span class="text-primary">deadlines</span>.
+  description: The prices below are those in our terms and conditions. We publish them because a price you have to ask for is rarely a good sign.
+
+lanes:
+  title: ""
+  items:
+    - id: decouverte
+      name: Discovery
+      tagline: You get started on your own, on a shared instance.
+      caution: >-
+        These two plans include neither support nor a recovery guarantee.
+        They suit a trial, a mockup, or non-critical use, not a management
+        system your business depends on.
+      columns:
+        - Plan
+        - CPU / month
+        - Database
+        - Storage
+        - Support
+      rows:
+        - ["€19 excl. VAT / month", "0.5 h", "0.5 GB", "1 GB", "None"]
+        - ["€49 excl. VAT / month", "1 h", "1 GB", "5 GB", "None"]
+      cta:
+        label: Create a site
+        to: https://cloud.dokos.io
+        target: _blank
+        color: neutral
+        variant: outline
+        icon: i-material-symbols-host-outline-rounded
+
+    - id: exploitation
+      name: Managed operations
+      tagline: We operate your installation, with enforceable deadlines.
+      highlight: true
+      caution: >-
+        From €499, service level guarantees apply: contractual response and
+        recovery deadlines, guaranteed window Monday to Friday, 8am to 8pm.
+        Below that, support answers usage questions with no deadline
+        commitment.
+      columns:
+        - Plan
+        - CPU / month
+        - Database
+        - Storage
+        - Commitment
+      rows:
+        - ["€99 excl. VAT / month", "2 h", "2 GB", "10 GB", "Standard support"]
+        - ["€199 excl. VAT / month", "3 h", "2 GB", "15 GB", "Standard support"]
+        - ["€499 excl. VAT / month", "4 h", "3 GB", "25 GB", "Level 1 guarantees"]
+        - ["€999 excl. VAT / month", "6 h", "4 GB", "50 GB", "Level 2 guarantees"]
+      footnote: >-
+        Dedicated hosting from €1,199 excl. VAT per month (2 vCPU, 8 GB RAM,
+        100 GB storage), up to €9,999 excl. VAT for 16 vCPU, 128 GB and 1 TB.
+        Dedicated plans all include standard technical support and level 2
+        guarantees. Exclusive resources, unlimited test and production sites.
+      cta:
+        label: See the guarantees in detail
+        to: /en/exploitation
+        color: primary
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+    - id: accompagnement
+      name: Support packs
+      tagline: Hours of expertise, to use whenever you need them.
+      caution: >-
+        Needs analysis, configuration, data migration, training, custom
+        development. Packs have no expiry date and can be topped up at any
+        time.
+      columns:
+        - Pack
+        - Businesses
+        - Non-profits
+        - Who it's for
+      rows:
+        - ["5 hours", "€600 excl. VAT", "€480 excl. VAT", "Targeted interventions, users already autonomous"]
+        - ["20 hours", "€2,200 excl. VAT", "€1,760 excl. VAT", "Structured onboarding on a first module"]
+        - ["50 hours", "€5,000 excl. VAT", "€4,000 excl. VAT", "Several modules, growing business"]
+        - ["100 hours", "€9,000 excl. VAT", "€7,200 excl. VAT", "Full deployment and customizations"]
+      cta:
+        label: Contact us
+        to: /en/contact
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+scope:
+  title: What about engineering?
+  description: Architecture, migration, custom development, and AI engineering aren't sold as hourly packages. These missions are quoted per project, after scoping.
+  items:
+    - title: Platform architecture
+      description: Sizing, structuring, version upgrade strategy, and integration with your existing information system.
+      icon: i-heroicons-squares-2x2
+    - title: Migration
+      description: Data takeover from an existing ERP or from an existing Frappe/ERPNext installation, with a cutover and rollback plan.
+      icon: i-heroicons-arrow-path
+    - title: Custom development
+      description: Specific modules, automations, connectors. Delivered under a free license, in your repositories as much as in ours.
+      icon: i-heroicons-wrench-screwdriver
+    - title: AI engineering
+      description: Integration of agents and assisted automations into your management processes, on an open, auditable base.
+      icon: i-heroicons-cpu-chip
+  links:
+    - label: See our engineering offers
+      to: /en/ingenierie
+      color: primary
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+
+faq:
+  title: Billing questions
+  items:
+    - label: Why bill by CPU rather than by user?
+      content: Because the real cost of an instance depends on what it computes, not how many people connect to it. Per-user billing penalizes organizations that open the tool up widely, which is precisely the usage we want to encourage. If your consumption durably exceeds your plan, we agree together on moving up a tier.
+    - label: Can prices increase during the contract?
+      content: A revision is possible in case of a significant change in economic or regulatory conditions. It requires 60 days' written notice, and you can then cancel without penalty by notifying us within 30 days. Absent a response from you, the new prices apply on the stated date.
+    - label: What is the cancellation notice period?
+      content: Thirty days before the end of the current monthly period, by registered letter or email. Cancellation takes effect at the end of the month following receipt of the notice. No partial refund is issued for a period already billed.
+    - label: Can I get support while self-hosting?
+      content: Yes. Support packs are open to all users, including those who host Dokos themselves. Managed operations, on the other hand, require that we have control over the infrastructure or an equivalent level of access, which is what makes the deadlines achievable.
+    - label: Are the prices shown up to date?
+      content: They reflect the pricing in effect as of September 1, 2024, as stated in our Hosting Terms and Conditions, which remain the authoritative contractual document. In case of a discrepancy between this page and the terms and conditions, the latter prevail.
+
+cta:
+  title: Not sure which plan fits?
+  description: Describe your installation and your availability constraints. We'll tell you what level of commitment is justified, including if it's lower than what you expected.
+  links:
+    - label: Talk to an engineer
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: Hosting Terms and Conditions
+      to: /en/hostingconditions
+      size: xl
+      color: neutral
+      variant: outline

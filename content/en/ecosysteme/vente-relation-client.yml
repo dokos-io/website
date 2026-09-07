@@ -1,0 +1,88 @@
+title: Sales & customer relations
+description: CRM, sales, e-commerce and resource booking share the same customer database, from first contact to invoice.
+navigation:
+  title: Sales & customer relations
+  icon: i-heroicons-shopping-cart
+
+hero:
+  headline:
+    label: The Dokos ecosystem
+    icon: i-heroicons-shopping-cart
+    to: /en/modules
+  title: From prospecting to payment,<br><span class="text-primary">one single system</span>.
+  description: A quote accepted in the CRM becomes an order, then an invoice, with no re-entry. The catalog, stock and pricing are shared between the CRM, sales and the online store.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See all modules
+      to: /en/modules
+      size: xl
+      color: neutral
+      variant: outline
+
+modules:
+  title: The modules in this area
+  description: Each one works on its own or combined with the others, with no duplicated data.
+  items:
+    - title: Frappe CRM
+      description: centralizes leads and the sales pipeline, from first contact to quote.
+      icon: i-carbon-chart-relationship
+      to: /en/modules/crm
+      logo:
+        light: /frappe/crm.svg
+        dark: /frappe/crm.svg
+    - title: Sales
+      description: Turns accepted quotes into orders, then invoices, with no re-entry.
+      icon: i-ep-sell
+      to: /en/modules/ventes
+    - title: Website & e-commerce
+      description: Opens an online storefront connected to the same catalog and the same stock.
+      icon: i-gg-website
+      to: /en/modules/e-commerce
+      logo:
+        light: /frappe/webshop_logo.svg
+        dark: /frappe/webshop_logo.svg
+    - title: Resource booking
+      description: Schedules time slots, rooms or equipment that your customers can book.
+      icon: i-material-symbols-location-on-outline-rounded
+      to: /en/modules/reservations-de-ressources
+      logo:
+        light: /frappe/bookings_logo.svg
+        dark: /frappe/bookings_logo.svg
+    - title: Construction
+      description: An advanced quote configurator for businesses selling complex work.
+      icon: i-heroicons-calculator
+      to: /en/modules/construction
+      logo:
+        light: /frappe/construction_logo.svg
+        dark: /frappe/construction_logo.svg
+    - title: Dokos WooCommerce
+      description: Connects an existing WooCommerce store to your Dokos management.
+      icon: i-simple-icons-woocommerce
+      to: /en/modules/woocommerce
+      logo:
+        light: /frappe/woocommerce_logo.svg
+        dark: /frappe/woocommerce_logo.svg
+    - title: Hiboutik
+      description: Connects your Hiboutik point of sale to your Dokos catalog and stock.
+      icon: i-heroicons-shopping-bag
+      to: /en/modules/hiboutik
+      logo:
+        light: /frappe/hiboutik_logo.svg
+        dark: /frappe/hiboutik_logo.svg
+
+cta:
+  title: Are your sales tools not talking to each other?
+  description: Describe your current customer journey. We'll tell you what a unified system actually changes, and what it doesn't.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See pricing
+      to: /en/tarifs
+      size: xl
+      color: neutral
+      variant: outline

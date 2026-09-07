@@ -1,0 +1,116 @@
+navigation:
+  title: Frappe Helpdesk
+  icon: i-ri-customer-service-2-line
+  description: Modern customer support management.
+
+title: Frappe Helpdesk
+icon: i-ri-customer-service-2-line
+description: Deliver flawless customer service with built-in support.
+application: Dokos / Frappe Helpdesk
+theme: support-collaboration
+logo:
+  light: /frappe/helpdesk.png
+  dark: /frappe/helpdesk.png
+author: Frappe Technologies & Contributors
+
+hero:
+  title: Your <span class="text-primary">complete solution</span> for managing customer support.
+  description: Handle every customer interaction efficiently with our built-in support module. Whether you run a small business or a large organization, our software adapts to your needs to improve customer satisfaction and speed up ticket resolution.
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: /en
+    right_icon: i-heroicons-arrow-right-20-solid
+features:
+  - title: Ticket tracking and request management
+    description: Turn every interaction into a chance to respond quickly and accurately. <br><br>A centralized dashboard gives you a full view of every open customer request. <br><br>Organize, prioritize and track tickets through to resolution, with full visibility across your team.<br><li>Ticket status tracking.<br><li>Automatic prioritization of urgent cases.<br><li>Real-time notifications to stay on top of things.</br></li>
+    image: image/support/un-crm-suivi-des-tickets-ok.svg
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: Tickets
+      color: sky
+  - title: A centralized knowledge base
+    description: Build and maintain a library of frequently used solutions, accessible to your team and your customers. <br><br>This documentation cuts down on repeat questions while giving instant answers to common ones. <br><li>Easy-to-find articles. <br><li>Organization by category and tag. <br><li>Smart search for fast results.</br></li>
+    image: image/support/deux-base-de-connaissance-ok.svg
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Knowledge base / Documentation
+      color: sky
+  - title: Automation and SLAs (Service Level Agreements)
+    description: Automate ticket resolution with predefined rules, custom workflows and service level agreements (SLAs) that keep response times on track. <br><li>Automation triggers for key steps. <br><li>Workflows adapted to your specific needs.<br><li>Automatic SLA enforcement to maintain customer satisfaction.</br></li>
+    image: image/support/trois-SLA.png
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: Automation
+      color: sky
+  - title: Multichannel communication
+    description: Handle every customer request, whether it comes by email, social media or your online portal, from a single interface. <br><br>Never miss a question or an urgent request again. <br><li>Integration with major communication channels.<br><li>Centralized tracking of every interaction. <br><li>Complete history of customer exchanges.</br></li>
+    image: image/support/centraliser-les-informations.png
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Multichannel
+      color: sky
+  - title: Reporting and performance analysis
+    description: Access detailed reports on your customer service performance. <br><br>Spot areas for improvement, track customer satisfaction, and refine your processes on an ongoing basis using real data. <br><li>Customizable reports. <br><li>Real-time statistics. <br><li>Agent performance and resolution-time tracking.</br></li>
+    image: image/support/quatre-rapport-helpdesk.png
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: Reports
+      color: sky
+bottom_section:
+  title: A robust, scalable, ready-to-use system
+  cards:
+    - title: Easy to set up
+      description: Take control of your support desk in minutes.
+      icon: i-tdesign-tools
+      class: col-span-4 row-span-3
+    - title: Fully customizable
+      description: Adapt every part of the module to your company's specific needs.
+      icon: i-ic-baseline-manage-accounts
+      class: col-span-4 row-span-3
+    - title: Dedicated technical support
+      description: We're here to help you get the most out of our solution.
+      icon: i-hugeicons-customer-support
+      class: col-span-4 row-span-3
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /en/features/support
+bottom_cta:
+  title: Try Dokos today!
+  description: Simplify your customer service and improve your processes with a solution built to grow with you.
+  class: bg-amber-600/10 dark:bg-amber-800/10
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

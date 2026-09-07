@@ -1,5 +1,5 @@
 title: Ingénierie
-description: Architecture de plateforme, migration, développement métier, ingénierie IA et formation — nos ingénieurs interviennent chez vous, sur notre propre socle.
+description: Architecture de plateforme, migration, développement métier, ingénierie IA et formation, nos ingénieurs interviennent chez vous, sur notre propre socle.
 navigation:
   title: Ingénierie
   icon: i-heroicons-wrench-screwdriver
@@ -9,7 +9,7 @@ hero:
     label: Ingénieurs embarqués
     icon: i-heroicons-wrench-screwdriver
   title: Nos ingénieurs travaillent<br><span class="text-primary">dans</span> votre système, pas à côté.
-  description: Nous n'écrivons pas de cahier des charges pour le faire exécuter ailleurs. Les personnes qui conçoivent Dodock et Dokos sont celles qui interviennent dans vos processus — et qui restent joignables ensuite.
+  description: Nous n'écrivons pas de cahier des charges pour le faire exécuter ailleurs. Les personnes qui conçoivent Dodock et Dokos sont celles qui interviennent dans vos processus, et qui restent joignables ensuite.
   links:
     - label: Parler à un ingénieur
       to: /fr/contact
@@ -24,22 +24,34 @@ hero:
 scope:
   title: Nos interventions
   description: Cinq natures de mission, chiffrées séparément parce qu'elles ne mobilisent ni les mêmes compétences ni le même niveau d'engagement.
+  links:
+    - label: Voir les modules concernés
+      to: /fr/modules
+      color: neutral
+      variant: outline
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
   items:
     - title: Architecture de plateforme
       description: Dimensionnement, urbanisation, stratégie de montée de version, articulation avec le système d'information existant. La mission qui évite les trois suivantes.
       icon: i-heroicons-squares-2x2
+      badge: À partir de 2 500 € HT
     - title: Migration
       description: Reprise depuis un ERP propriétaire, un tableur, ou une installation Frappe/ERPNext existante. Plan de bascule, jeu de recette, procédure de repli.
       icon: i-heroicons-arrow-path
+      badge: À partir de 4 000 € HT
     - title: Développement métier
-      description: Modules spécifiques, automatisations, connecteurs. Livrés sous licence libre, dans vos dépôts comme dans les nôtres — vous n'achetez pas une boîte noire.
+      description: Modules spécifiques, automatisations, connecteurs. Livrés sous licence libre, dans vos dépôts comme dans les nôtres, vous n'achetez pas une boîte noire.
       icon: i-heroicons-code-bracket-square
+      badge: À partir de 3 000 € HT
     - title: Ingénierie IA
       description: Intégration d'agents et d'automatisations assistées dans vos processus de gestion, sur une base ouverte et auditable, dont vous gardez la maîtrise.
       icon: i-heroicons-cpu-chip
+      badge: À partir de 4 000 € HT
     - title: Formation
       description: Transfert de compétences vers vos équipes, jusqu'à l'autonomie. C'est une réussite quand vous nous appelez moins.
       icon: i-heroicons-academic-cap
+      badge: À partir de 800 € HT
 
 operations:
   title: Comment nous travaillons
@@ -55,7 +67,7 @@ operations:
       description: Code sous licence libre, documentation, procédures de déploiement. Vous pouvez reprendre le travail ou le confier à un tiers à tout moment.
       icon: i-heroicons-document-text
     - title: L'exploitation en prolongement
-      description: Ce que nous déployons, nous savons l'exploiter. Un contrat d'infogérance peut prendre le relais à la fin du projet — ce n'est jamais une obligation.
+      description: Ce que nous déployons, nous savons l'exploiter. Un contrat d'infogérance peut prendre le relais à la fin du projet, ce n'est jamais une obligation.
       icon: i-material-symbols-cloud-done-outline
 
 reversibility:
@@ -83,7 +95,7 @@ faq:
     - label: Travaillez-vous avec nos équipes internes ?
       content: C'est le mode d'intervention que nous préférons. Nos ingénieurs se placent au contact de vos équipes plutôt qu'en retrait, et l'objectif explicite est votre autonomie. Nous intervenons aussi aux côtés de vos prestataires existants lorsque le périmètre est clairement réparti.
     - label: Que devient le code produit ?
-      content: Il est publié sous licence libre et déposé dans vos dépôts comme dans les nôtres. Vous pouvez le reprendre, le modifier, le confier à un autre prestataire. Lorsqu'un développement a un intérêt général, nous proposons de le verser au produit — vous en gardez le bénéfice et la maintenance devient la nôtre.
+      content: Il est publié sous licence libre et déposé dans vos dépôts comme dans les nôtres. Vous pouvez le reprendre, le modifier, le confier à un autre prestataire. Lorsqu'un développement a un intérêt général, nous proposons de le verser au produit : vous en gardez le bénéfice et la maintenance devient la nôtre.
     - label: Intervenez-vous sur une installation que vous n'avez pas déployée ?
       content: Oui, y compris sur ERPNext standard et sur les applications de l'écosystème Frappe. La mission commence alors par un audit de l'existant, dont les conclusions peuvent être qu'une remise à niveau doit précéder tout développement.
 

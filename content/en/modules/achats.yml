@@ -1,0 +1,130 @@
+navigation:
+  title: Purchasing
+  icon: i-icon-park-outline-buy
+  description: Manage your purchasing and supply flows.
+
+title: Purchasing
+icon: i-icon-park-outline-buy
+description: Optimize your purchasing for seamless procurement.
+author: Frappe Technologies & Contributors
+application: Dokos
+theme: achats-stocks-production
+
+hero:
+  title: Optimize your <span class="text-primary">purchasing</span> with Dokos
+  description: Dokos gives you every feature you need to manage purchasing efficiently and smoothly. Built to simplify your processes while offering full transparency, this module lets you streamline your entire supply chain. See how Dokos can help you improve your purchasing management.
+  links:
+    - label: Get started now
+      to: https://cloud.dokos.io
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: /en
+    right_icon: i-heroicons-arrow-right-20-solid
+features:
+  - title: Simplify your purchase requests
+    description: <ui><li>Structure and speed up your purchase requests with an intuitive interface.</li><br><li>Create requests for different departments in a few clicks and assign them to the right people for approval.</br><br><li>Track your needs precisely while keeping control of your costs through centralized management.</br></ui>
+    video: /image/achat/tableau-de-bord-achat.mp4
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: Purchase Requests
+      color: sky
+  - title: Optimize your tenders and negotiations
+    description: <ui><li>Compare your suppliers with full transparency.</li><br><li>With Dokos, easily send out tenders, collect proposals, and analyze them to choose the best supplier.</br></li><br><li>Optimize your negotiations with a clear view of proposals and full traceability of the process.</li></ui>
+    image: image/achat/appel-d-offre-nouveau-logo.svg
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Supplier Quotes
+      color: sky
+  - title: Automate your purchase orders
+    description: <ui><li>Create purchase orders in one click once suppliers are selected. <br><li>Automating orders from requests or accepted quotes saves you time while ensuring precise tracking of goods and service receipts.</li></ui>
+    image: image/achat/trois-commande-fournisseur-automatisez-vos-commandes-dachats.png
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: Orders
+      color: sky
+  - title: Excel at tracking your purchases
+    description: <ui><li>Guarantee the compliance of received items with real time tracking. <br><li>Manage product receipt efficiently, run quality checks, and flag discrepancies quickly.<br> <li>Dokos helps you track item availability for full transparency.</ui>
+    image: image/achat/quatre-qualite-modifie-dokos.svg
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Quality
+      color: sky
+  - title: Strengthen your supplier management
+    description: <ui><li>Improve your supplier relationships with a centralized database. <br><li>Track their performance, contracts and transactions in one place.<br><li>Gain visibility and make informed decisions to optimize your business relationships.</li></ui>
+    image: image/achat/cinq-espace-de-travail-achat.png
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: Suppliers
+      color: sky
+  - title: Perfect your purchase invoice management
+    description: <ui><li>Simplify your accounting processes by automating supplier invoices.<br><li>Easily link invoices to purchase orders and track payments.<br><li>Reduce human error and optimize the management of your cash flow.</li></ui>
+    image: image/achat/six-deuxieme-tableau-de-bord-achat.png
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Purchase Invoices
+      color: sky
+  - title: Analyze your purchases in real time
+    description: <ui><li>Get detailed purchasing reports to make informed decisions.<br><li>Track supplier performance, spot savings opportunities, and continuously improve your purchasing processes with up to date analytics.</li></ui>
+    image: image/achat/sept-tableau-de-bord-stock-ok.png
+    image_bg_color: bg-teal-600
+    align: left
+    badge:
+      label: Reports
+      color: sky
+  - title: Connect your stock to your purchasing
+    description: <ui><li>Avoid stockouts or excess inventory with integrated management.<br><li>Dokos synchronizes your stock levels with your purchase orders, helping you plan procurement more accurately while cutting unnecessary costs.</li></ui>
+    image: image/achat/huit-stock-un-approvisionnement-responsable-modifie.svg
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Stock Management
+      color: sky
+  - title: Champion responsible sourcing
+    description: <ui><li>Dokos supports responsible purchasing management.<br><li>Set specific criteria for your suppliers and track your sustainable sourcing goals through rigorous, structured monitoring.</li></ui>
+    video: "/image/achat/tableau-de-bord-achat.mp4"
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: Stock Management
+      color: green
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: amber
+  to: /en/features/achats
+bottom_cta:
+  title: Master every step of your purchasing with Dokos.
+  description: Gain efficiency, reduce costs, and keep an overview of your processes. Our open source solution adapts to your needs for agile, high performing purchasing management. A hundred companies already trust us, why not you?
+  class: bg-amber-600/10 dark:bg-amber-800/10
+  links:
+    - label: Get started now
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

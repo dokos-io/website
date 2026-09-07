@@ -1,0 +1,72 @@
+navigation:
+  title: eTransactions
+  icon: i-heroicons-document-text
+  description: Facturation électronique entrante et sortante, aux formats CII/FacturX et UBL.
+
+title: eTransactions
+icon: i-heroicons-document-text
+description: Gère vos factures électroniques entrantes et sortantes, aux formats CII/FacturX et UBL.
+application: eTransactions
+theme: finance-comptabilite
+logo:
+  light: /frappe/etransactions.svg
+  dark: /frappe/etransactions.svg
+
+hero:
+  title: La <span class="text-primary">facturation électronique</span>, dans les formats attendus.
+  description: eTransactions traite vos factures électroniques entrantes et sortantes aux formats CII/FacturX et UBL, directement depuis Dokos.
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+features:
+  - title: Factures entrantes
+    description: Traite les factures électroniques reçues aux formats CII/FacturX et UBL.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Entrant
+      color: sky
+  - title: Factures sortantes
+    description: Émet vos factures dans les formats électroniques attendus par vos clients et par la réglementation.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Sortant
+      color: sky
+
+bottom_cta:
+  title: Vous préparez la bascule vers la facturation électronique obligatoire ?
+  description: Disponible depuis la marketplace de cloud.dokos.io. Décrivez-nous votre situation actuelle, nous vous dirons ce qu'eTransactions couvre déjà.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

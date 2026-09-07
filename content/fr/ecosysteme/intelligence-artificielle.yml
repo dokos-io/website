@@ -1,0 +1,63 @@
+title: Intelligence artificielle
+description: Un assistant conversationnel, un outil en ligne de commande pour vos agents, et une base de connaissances cherchable — sur vos propres données Dokos.
+navigation:
+  title: Intelligence artificielle
+  icon: i-heroicons-cpu-chip
+
+hero:
+  headline:
+    label: L'écosystème Dokos
+    icon: i-heroicons-cpu-chip
+    to: /fr/modules
+  title: L'IA branchée sur <span class="text-primary">vos données</span>, pas sur un chatbot générique.
+  description: Dokos AI répond à partir de vos documents réels, Dokos CLI équipe vos propres agents des mêmes capacités, et Raven retrouve une information dans votre base sans changer d'outil. Rien ne s'écrit sans confirmation.
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir tous les modules
+      to: /fr/modules
+      size: xl
+      color: neutral
+      variant: outline
+
+modules:
+  title: Les modules de ce périmètre
+  description: Trois outils complémentaires, chacun utilisable seul.
+  items:
+    - title: Dokos AI
+      description: Un assistant IA conversationnel branché sur vos données Dokos, avec confirmation avant toute écriture.
+      icon: i-heroicons-sparkles
+      to: /fr/modules/dokos-ai
+      logo:
+        light: /frappe/dokos_logo.svg
+        dark: /frappe/dokos_logo.svg
+    - title: Dokos CLI
+      description: Interroge et pilote un site Dokos depuis un terminal, ou équipe un agent IA des mêmes capacités via son serveur MCP.
+      icon: i-heroicons-command-line
+      to: /fr/modules/dokos-cli
+      logo:
+        light: /frappe/dokos_logo.svg
+        dark: /frappe/dokos_logo.svg
+    - title: Raven
+      description: Un assistant conversationnel interne pour retrouver une information dans vos données Dokos.
+      icon: i-heroicons-chat-bubble-left-right
+      to: /fr/modules/raven
+      logo:
+        light: /frappe/raven.webp
+        dark: /frappe/raven.webp
+
+cta:
+  title: Une automatisation IA à cadrer sur vos processus ?
+  description: Décrivez-nous vos cas d'usage. Nous vous dirons ce que ces outils couvrent déjà, et ce qui reste à construire.
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir les tarifs
+      to: /fr/tarifs
+      size: xl
+      color: neutral
+      variant: outline

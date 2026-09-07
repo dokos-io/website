@@ -1,0 +1,72 @@
+navigation:
+  title: Hiboutik
+  icon: i-heroicons-shopping-bag
+  description: Connecteur avec le point de vente Hiboutik.
+
+title: Hiboutik
+icon: i-heroicons-shopping-bag
+description: Connecte votre point de vente Hiboutik à votre catalogue et vos stocks Dokos.
+application: Hiboutik
+theme: vente-relation-client
+logo:
+  light: /frappe/hiboutik_logo.svg
+  dark: /frappe/hiboutik_logo.svg
+
+hero:
+  title: Votre point de vente <span class="text-primary">Hiboutik</span>, relié à Dokos.
+  description: Le connecteur Hiboutik relie votre point de vente Hiboutik à votre catalogue et vos stocks Dokos, pour un magasin déjà équipé de ce point de vente.
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+features:
+  - title: Connecteur point de vente
+    description: Relie un point de vente Hiboutik existant à votre installation Dokos.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Intégration
+      color: sky
+  - title: Catalogue et stocks partagés
+    description: Utile pour un magasin déjà équipé d'Hiboutik qui veut connecter ses ventes en caisse au reste de sa gestion.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Stocks
+      color: sky
+
+bottom_cta:
+  title: Un point de vente Hiboutik à connecter à Dokos ?
+  description: Disponible depuis la marketplace de cloud.dokos.io. Décrivez-nous votre configuration actuelle, nous vous dirons ce que le connecteur couvre déjà.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

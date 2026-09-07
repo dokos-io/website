@@ -1,0 +1,130 @@
+navigation:
+    title: Frappe CRM
+    icon: i-carbon-chart-relationship
+    description: Manage prospecting and pre-sales.
+
+title: Frappe CRM
+icon: i-carbon-chart-relationship
+description: Manage your customer relationships smoothly and efficiently.
+author: Frappe Technologies & Contributors
+application: Dokos / Frappe CRM
+logo:
+  light: /frappe/crm.svg
+  dark: /frappe/crm.svg
+
+hero:
+  title: Simplify your sales and boost your results with a <span class="text-primary">CRM</span> built for you.
+  description: Whether you are a fast-growing SME or a nonprofit organization, Dokos CRM lets you manage your sales and customers with flexible, modular tools that adapt to your needs.
+  links:
+    - label: Get started now
+      to: https://cloud.dokos.io
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+
+
+
+features:
+  - title: Centralize and turn your leads into customers with simplified management
+    description: Centralize all your leads, prospects and opportunities in one place. <br><br>Track their progress through a clear, customizable pipeline, from prospecting through to closing the deal.<br><br> Analyze the performance of your campaigns and sales actions with real time indicators.</br>
+    image: "image/e-commerce/crm-deals.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Lead Management
+      color: sky
+  - title: Never miss another opportunity with automated customer follow-up
+    description: Dokos CRM keeps you connected to your customers (emails, calls, meetings), making it easy to keep a history of every exchange for each contact or organization.
+    image: "image/crm/devis.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Email Integration
+      color: sky
+  - title: Automate your sales processes with powerful tools
+    description: Automate repetitive tasks like sending reminders, creating tasks for your teams, and sending newsletters, so you can stay focused on what matters, your customers.
+    image: "image/crm/newsletter-les-coulisses.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Automation
+      color: sky
+  - title: Simplify your quote and order management right from the CRM
+    description: Dokos lets you generate custom quotes in a few clicks, convert them into orders, and track them through to payment, all in one intuitive interface.
+    image: "image/crm/devis.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Invoicing
+      color: sky
+  - title: Adjust your strategy with reports
+    description: "With Dokos' dynamic dashboards, analyze in real time the indicators that matter to your sales activity: conversion rate, deal volume, pipeline status, and more. <br><br>The generated reports help you adjust your strategy proactively.</br>"
+    image: "image/ventes/un-insights-opportunites.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Reports & Analytics
+      color: sky
+  - title: Keep a complete view of your business.
+    description: Dokos is much more than a CRM. <br><br>It integrates seamlessly with other management modules like accounting, stock management and project management. <br><br>That gives you a 360-degree view of your business, with no silos and no interruptions to your processes.</br>
+    image: "image/crm/tableaux-de-bord-compta-crm-achat.svg"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Integration
+      color: sky
+
+bottom_section:
+  title: "The Dokos sales process also includes:"
+  cards:
+    - title: Campaign management
+      description: Track the performance of your marketing and sales campaigns, including leads generated and email or social media campaign management.
+      icon: i-material-symbols-campaign-rounded
+      class: "col-span-4 row-span-3"
+    - title: Workflow automation
+      description: With automation rules, Dokos can run certain actions based on predefined criteria, reducing manual tasks and increasing efficiency.
+      icon: i-hugeicons-workflow-square-03
+      class: "col-span-4 row-span-3"
+    - title: A sales pipeline
+      description: Dokos offers a customizable view of your sales pipeline, making it easier to track prospects and opportunities at every stage for more accurate planning and performance tracking.
+      icon: i-hugeicons-sale-tag-02
+      class: "col-span-4 row-span-3"
+
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /en/features/crm
+
+bottom_cta:
+  title: Try Dokos CRM today!
+  description: Whether you are an SME, an NGO, or a social and solidarity economy organization, Dokos CRM is built for you. Join the Dokos community and discover the power of a free, ethical, evolving CRM.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Get started now
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

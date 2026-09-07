@@ -1,0 +1,72 @@
+navigation:
+  title: Dokos WooCommerce
+  icon: i-simple-icons-woocommerce
+  description: E-commerce connector between WooCommerce and Dokos.
+
+title: Dokos WooCommerce
+icon: i-simple-icons-woocommerce
+description: Connects an existing WooCommerce store to your Dokos management.
+application: Dokos WooCommerce
+theme: vente-relation-client
+logo:
+  light: /frappe/woocommerce_logo.svg
+  dark: /frappe/woocommerce_logo.svg
+
+hero:
+  title: Your <span class="text-primary">WooCommerce</span> store, connected to Dokos.
+  description: Dokos WooCommerce connects an existing WordPress/WooCommerce store to your Dokos management, so you don't have to rebuild a store you already have.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+features:
+  - title: E-commerce connector
+    description: Connects an existing WooCommerce store to your Dokos installation, without migrating the store itself.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Integration
+      color: sky
+  - title: An alternative to the native Webshop module
+    description: Useful when a WooCommerce store already exists and needs to stay in place, rather than being replaced by Dokos's native e-commerce portal.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: E-commerce
+      color: sky
+
+bottom_cta:
+  title: A WooCommerce store to connect to Dokos?
+  description: Available from the cloud.dokos.io marketplace. Describe your current store, and we'll tell you what the connector already covers.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

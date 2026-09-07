@@ -159,7 +159,7 @@ useSeoMeta({
             :links="page.modules.links"
             class="bg-sand-200/60 dark:bg-stone-900"
         >
-            <UPageGrid class="sm:grid-cols-3 xl:grid-cols-4">
+            <UPageGrid class="sm:grid-cols-2 lg:grid-cols-3">
                 <UPageCard
                     v-for="(item, index) in sorted_modules"
                     :key="index"

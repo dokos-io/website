@@ -2,7 +2,11 @@ import type { Partner } from '../types'
 import { slugify } from '../utils'
 
 export const usePartners = () => {
-  const partners = useState<Partner[]>('partners', () => [])
+  // See useModules.ts for why this reads $i18n instead of calling useI18n().
+  const { $i18n } = useNuxtApp()
+  const locale = $i18n.locale
+  // Keyed by locale, see the identical comment in useModules.ts.
+  const partners = useState<Partner[]>(`partners-${locale.value}`, () => [])
 
   // Data fetching
   async function fetchList() {
@@ -11,7 +15,9 @@ export const usePartners = () => {
     }
 
     try {
-      const data = await queryCollection('partners').all()
+      const data = await queryCollection('partners')
+        .where('path', 'LIKE', `/${locale.value}/partners/%`)
+        .all()
 
       partners.value = data.map(partner => ({
         ...partner,

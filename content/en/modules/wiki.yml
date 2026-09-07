@@ -1,0 +1,103 @@
+navigation:
+  title: Wiki
+  description: A built-in wiki for better internal knowledge management.
+  icon: i-hugeicons-share-knowledge
+
+title: Frappe Wiki
+link: "https://frappe.io/wiki"
+author: Frappe Technologies
+description: "Unlock your team's potential with knowledge management"
+application: Frappe Wiki
+theme: support-collaboration
+
+logo:
+  light: /frappe/wiki.png
+  dark: /frappe/wiki.png
+
+hero:
+  title: "<span class='text-primary'>Frappe Wiki</span>"
+  image: ""
+  headline:
+    label: Frappe applications
+    to: https://frappe.io/products
+    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
+    target: _blank
+  links:
+    - label: Write your first wiki page
+      to: https://cloud.dokos.io
+      size: xl
+      color: black
+      icon: i-heroicons-play-circle-16-solid
+      trailing: false
+      target: _blank
+    - label: Documentation
+      icon: i-ic-outline-library-books
+      size: xl
+      color: gray
+      to: https://doc.dokos.io
+      target: _blank
+
+colored_section:
+  title: "Centralize and organize your organization's knowledge"
+  description: "At Dokos, we're glad to offer our customers Frappe Wiki, a powerful knowledge management tool built by the innovative team behind Frappe. Thanks to their work, we can provide you with a robust open-source solution, at no extra cost, that improves how information is shared across your company. With Frappe Wiki, you can easily centralize and organize your organization's knowledge, keeping information accessible, up to date and directly usable."
+  image: "image/wiki/wiki.png"
+  align: left
+
+features:
+  - title: "Build a simple, effective knowledge base"
+    description: "Frappe Wiki gives you a smooth platform for building and managing a knowledge base. Whether you're documenting internal processes, user guides or project notes, its intuitive interface lets every team member contribute, edit and organize information with ease."
+    image: "image/wiki/wiki.png"
+    image_bg_color: bg-teal-500
+    align: right
+  - title: "Make search effortless"
+    description: "No more endless searching. With its powerful search engine, Frappe Wiki makes sure the right information is always within reach. Your teams can find articles by category, tag or keyword, cutting down significantly on the time spent hunting for critical data."
+    image: "image/wiki/wiki-recherches.png"
+    image_bg_color: bg-teal-500
+    align: left
+  - title: "Work with peace of mind thanks to version control"
+    description: "One of Frappe Wiki's biggest strengths is its version management, which tracks every change made to an article. That means you can always roll back to a previous version and keep your knowledge base accurate and reliable."
+    image: "image/wiki/wiki-version.png"
+    image_bg_color: bg-teal-500
+    align: right
+  - title: "Collaborative knowledge sharing"
+    description: "Teams can collaborate in real time, contributing valuable ideas and expertise. With easy-to-use commenting features, feedback and updates become part of the documentation process, keeping everyone on the same page."
+    image: "image/wiki/wiki.png"
+    image_bg_color: bg-teal-500
+    align: left
+  - title: "Secure access to sensitive information"
+    description: "Have sensitive information to protect? With Frappe Wiki, you can set granular permissions to control who can view or edit articles, keeping data secure while still encouraging collaboration across the organization."
+    image: "image/wiki/wiki-securise.png"
+    image_bg_color: bg-teal-500
+    align: right
+
+bridge:
+  title: "Why trust Dokos?"
+  description: "At Dokos, we have deep respect for the excellent work done by the Frappe team. By offering Frappe Wiki to our customers, we're proud to carry forward their open-source vision and commitment to innovation. Our mission is to give companies the best tools available, and we believe Frappe Wiki delivers real value for boosting productivity and collaboration."
+  align: center
+
+carousel:
+  cards:
+    - title: "100% open source, no hidden costs"
+      description: "With Frappe Wiki, you get a cost-effective knowledge management tool that grows with your business, with no costly subscription or hidden fees."
+    - title: "A trusted, worldwide community"
+      description: "Frappe Wiki and Dokos are used by thousands of companies around the world, across sectors such as manufacturing, services and distribution. By choosing Frappe Wiki, you join an international community of innovators and forward-thinking companies."
+
+bottom_cta:
+  title: "Ready to transform how you manage knowledge?"
+  description: "Whether you want to streamline internal processes, boost efficiency, or simply make information easier for your teams to find, Frappe Wiki is the tool for the job. At Dokos, we're glad to help you unlock its full potential. <br> Get started today!</br>"
+  card: true
+  class: bg-amber-600/10 dark:bg-amber-800/10
+  links:
+    - label: Create your first wiki page
+      size: md
+      color: gray
+      to: https://cloud.dokos.io
+      target: _blank
+    - label: Learn more about Frappe Wiki
+      size: md
+      variant: 'link'
+      color: gray
+      to: https://frappe.io/wiki
+      target: _blank
+      icon: i-heroicons-outline-arrow-right
+      trailing: true

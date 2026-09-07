@@ -1,0 +1,137 @@
+navigation:
+  title: Accounting
+  icon: i-uil-balance-scale
+  description: Manage your accounting and finances.
+
+title: Accounting
+icon: i-uil-balance-scale
+description: Integrated accounting for full control of your finances.
+application: Dokos
+theme: finance-comptabilite
+author: Frappe Technologies, Dokos & Contributors
+
+hero:
+  title: Simplify your <span class="text-primary">accounting</span> and save time with Dokos
+  description: Make managing your finances easier with Dokos and enjoy total peace of mind. Manage your accounts, track your transactions, and get detailed financial reports in a few clicks, all while keeping complete control over your finances.
+  links:
+    - label: Optimize your financial management
+      to: https://cloud.dokos.io
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: /en
+    right_icon: i-heroicons-arrow-right-20-solid
+features:
+  - title: Make informed decisions with an instant view of your finances
+    description: Our interactive dashboards give you an overview of key financial performance indicators, helping you make informed decisions.<br><br>Set up custom reports to track precisely the metrics that matter most to your business.
+    video: /image/comptabilite/tableau-de-bord-comptabilite.mp4
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: Dashboards
+      color: sky
+  - title: Easily adapt your chart of accounts to your business
+    description: Organize your accounts to fit your needs, creating sub-groups and ledgers tailored to your company's structure.<br><br> You can easily adjust your accounting tree as your organization evolves.</br>
+    image: image/comptabilite/plan-comptable.png
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Chart of Accounts
+      color: sky
+  - title: Keep your accounting current by automating transaction tracking
+    description: Record all your transactions precisely with an intuitive journal system.<br><br> Track revenue and expenses, automate the handling of deferred or prepaid payments, and keep an always up to date ledger.</br>
+    image: image/comptabilite/suivi-revenus-et-depenses.svg
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: General Ledger
+      color: sky
+  - title: Generate professional invoices in a few clicks and reduce late payments
+    description: Create professional invoices in a few clicks. <br><br>Easily track pending payments with automatic email or SMS notifications.<br><br>Use custom print templates for invoices tailored to your needs.
+    image: image/comptabilite/facture-de-vente.png
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Invoicing
+      color: sky
+  - title: Simplify your international transactions
+    description: Manage international transactions with ease.<br><br> Send invoices and track expenses in multiple currencies.<br> Our system automatically converts amounts to your base currency, and lets you generate financial reports in several currencies.</br>
+    image: image/comptabilite/rapports-financiers-diverses-monnaies.png
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: Multi-currency
+      color: sky
+  - title: Automate your business flows and save time
+    description: Save time by automating invoice creation for recurring subscriptions. <br><br>With the Subscriptions feature, your invoices are generated and sent automatically, freeing you up for other essential tasks.</br>
+    image: image/comptabilite/abonnement-photo-dokos.png
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Automation
+      color: sky
+  - title: Simplify bank reconciliation and keep your accounts consistent
+    description: Sync your bank accounts with your accounting. <br><br>Easily import your bank statements and reconcile them with your transactions to keep your accounts consistent.</br>
+    image: image/comptabilite/rapprochement-bancaire-dokos-photo.png
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: Bank Reconciliation
+      color: sky
+  - title: Customize Dokos to perfectly match your company's unique needs
+    description: Adapt the software to your specific needs.<br><br> Add custom fields, edit forms based on user roles, and create unique print templates, all without needing to code.</br>
+    image: image/comptabilite/personnalisation-dokos.png
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Customizations
+      color: sky
+bottom_section:
+  title: 'Accounting with Dokos also means:'
+  cards:
+    - title: Access for your accountant
+      description: Easily add your accountant so they can access your financial data directly and validate it at no extra cost.
+      icon: i-heroicons-outline-calculator
+      class: col-span-4 row-span-3
+    - title: Journal entries
+      description: Make journal entries to manually adjust your accounts when needed, including reversing or correcting entries.
+      icon: i-heroicons-outline-book-open
+      class: col-span-4 row-span-3
+    - title: Asset tracking
+      description: Keep an eye on your assets with a dedicated module, making depreciation, transfers and asset sales easier to manage.
+      icon: i-heroicons-outline-chart-bar-square
+      class: col-span-4 row-span-3
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: amber
+  to: /en/features/comptabilite
+bottom_cta:
+  title: With Dokos, simplify your accounting and focus on growing your business.
+  description: Whether you are a small or large company, our solution supports you at every step of financial management.
+  class: bg-amber-600/10 dark:bg-amber-800/10
+  links:
+    - label: Get started now
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

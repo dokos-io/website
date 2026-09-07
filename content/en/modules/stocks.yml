@@ -1,0 +1,110 @@
+navigation:
+    title: Stock
+    icon: i-vaadin-stock
+    description: Track your movements, stock valuation, and your supply chain.
+
+title: Stock
+icon: i-vaadin-stock
+description: Simplify your stock management with a state-of-the-art distribution tool
+application: Dokos
+theme: achats-stocks-production
+author: Frappe Technologies & Contributors
+
+hero:
+  title: Simplify your <span class="text-primary">stock</span> management with a state-of-the-art distribution tool
+  description: Make stock and distribution management easier. Whether you're a manufacturer, a distributor, or a retailer, Dokos optimizes every part of your supply chain, from receiving goods to delivering to the end customer.
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+
+features:
+  - title: Item and stock management
+    description: "With Dokos, you can manage your items with precision. From tracking product variants to serial numbers and batches, every product can be uniquely identified, making management and traceability easier.<ul><li><span class='font-bold'>Item variants:</span> Easily manage different versions of the same product (size, color, model).</li><li><span class='font-bold'>Barcodes and labeling: </span>Simplify receiving and shipping operations with built-in barcode management.<li><span class='font-bold'>Batch and serial number tracking:</span> Track each item, from manufacturing or purchase through to sale, for full traceability."
+    image: "image/stock/un-articles.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Items
+      color: sky
+  - title: Automated stock tracking.
+    description: "Manage all your transactions in real time, reducing the risk of errors and boosting your productivity. <ul><li><span class='font-bold'>Stock entry:</span> Automatic logging of material receipts from purchase orders.</li><li><span class='font-bold'>Stock exit:</span> Manage customer deliveries with real-time tracking.</li><li><span class='font-bold'>Inter-warehouse transfers:</span> Simplify managing multiple warehouses by transferring products between sites.</li><li><span class='font-bold'>Stock reconciliation:</span> Adjust stock quickly whenever theoretical and physical stock differ.</li></ul>"
+    image: "image/stock/deux-mouvement-de-stock.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Stock movement
+      color: sky
+  - title: Automated planning and replenishment.
+    description: "Optimize your stock levels with advanced planning and threshold management features. <ul><li><span class='font-bold'>Replenishment thresholds:</span> Set minimum and maximum thresholds for each item to avoid stockouts.</li><li><span class='font-bold'> Automated material requests:</span> Automatic replenishment triggers based on production or sales forecasts. </li><li><span class='font-bold'>Stock in transit:</span> Track in real time the items being transferred between your warehouses."
+    image: "image/stock/trois-articles-en-penuries.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Planning
+      color: sky
+  - title: Multi-warehouse management
+    description: "Dokos enables efficient management of multiple warehouses, each with defined internal locations for granular stock control. <ul><li><span class='font-bold'>Stock by warehouse and location:</span> Manage warehouses spread across several sites and optimize the flow of materials between them.</li><li><span class='font-bold'> Global visibility:</span> View and track your stock levels across all your warehouses in a single dashboard."
+    image: "image/stock/quatre-tableau-de-bord-stock.svg"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Multi-warehouse
+      color: sky
+  - title: Inventory, audits, and stock valuation
+    description: "Dokos helps you track inventory in real time while simplifying audits and stock valuation. <ul><li><span class='font-bold'>Audits and cycle counting:</span> Plan and run periodic inventories to make sure your stock data stays accurate.</li><li><span class='font-bold'> Stock valuation:</span> Use the valuation method suited to your company (FIFO, LIFO, average cost). </li><li><span class='font-bold'>Perishable item management:</span> Track expiry dates to minimize losses from expired products. "
+    image: "image/stock/recapitulatif-stocks.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Inventory
+      color: sky
+  - title: Real-time reports and visibility
+    description: "Make informed decisions with detailed reports and precise performance indicators.<ul><li><span class='font-bold'> Stock valuation report:</span> Track the value of your stock with instant reports.</li><li><span class='font-bold'> Low stock report:</span> Quickly identify items that need replenishing.</li><li><span class='font-bold'>Stock movement analysis:</span> Get detailed reports on item receipts, issues, and transfers."
+    image: "image/stock/espace-travail-stock.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Reports
+      color: sky
+
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /en/features/stocks
+
+bottom_cta:
+  title: Try Dokos today!
+  description: Transform your stock management with Dokos and optimize your supply chain starting today.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

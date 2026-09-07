@@ -8,6 +8,7 @@ link: "https://frappe.io/print-designer"
 author: Frappe Technologies & Contributeurs
 description: Personnalisez vos formats d'impression avec simplicité et puissance !
 application: Frappe Print Designer
+theme: site-web-outils-numeriques
 
 hero:
   title: "<span class='text-primary'>Frappe Print designer</span>"

@@ -1,0 +1,135 @@
+navigation:
+  title: Sales
+  icon: i-ep-sell
+  description: Managing commercial flows and invoicing.
+
+title: Sales
+icon: i-ep-sell
+description: Turn your leads into loyal customers with high-performing sales tools.
+application: Dokos
+theme: vente-relation-client
+author: Frappe Technologies, Dokos & Contributors
+
+hero:
+  title: Speed up your sales with <span class="text-primary">simplicity and transparency</span>
+  description: Dokos gives you a powerful way to automate and streamline your sales process. Whether you run a small business or a large organization, Dokos lets you manage every stage of a sale efficiently. Built for modern, responsible companies, our platform helps you hit your sales targets while supporting ethical, collaborative ways of working.
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    variant: subtle
+    to: /en
+    right_icon: i-heroicons-arrow-right-20-solid
+
+
+features:
+  - title: A simplified view of your sales pipeline
+    description: Dokos lets you track prospects and opportunities smoothly. <br><br>With its built-in CRM, keep a clear view of every customer interaction, automate follow-ups, and stay on top of every stage of the sales process.</br>
+    image: "image/ventes/un-insights-opportunites.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: CRM
+      color: sky
+  - title: Quote creation and order management
+    description: Create professional quotes in a few clicks and convert them into orders just as easily. <br><br>Use customizable templates for your commercial documents, and keep stock levels updated in real time so you can respond quickly to customers.</br>
+    image: "image/ventes/deux-evolution-commandes-clients.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Quotes
+      color: sky
+  - title: Automating the sales flow
+    description: Generate invoices automatically from confirmed orders.<br><br> With multi-currency support, Dokos makes international operations easier, while built-in online payment options speed up collection.</br>
+    image: "image/ventes/trois-flux-de-vente.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Invoices
+      color: sky
+  - title: Delivery and shipping management
+    description: Simplify order preparation and shipping with delivery notes generated automatically. <br><br>Through community integrations, Dokos lets you track shipments in real time while optimizing warehouse management for better logistics.</br>
+    image: "image/ventes/quatre-livraison-kanban.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Delivery
+      color: sky
+  - title: Reports and analytics
+    description: Get complete, accurate reports on your sales. <br><br>Analyze your team's performance, spot market trends, and make strategic decisions using real-time data from the Dokos dashboard.</br>
+    image: "image/ventes/cinq-insights ventes.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Reports
+      color: sky
+  - title: Subscription management
+    description: Automate subscription billing with recurring invoices. <br><br>Dokos lets you track renewals, plan changes and cancellations with ease, for a smooth, consistent customer experience.</br>
+    image: "image/ventes/six-abonnements-modifies.svg"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Subscriptions
+      color: sky
+  - title: Tailored customization
+    description: Adapt the software to your specific needs. <br><br>Add custom fields, change forms based on user roles, and create unique print formats, all without writing code.</br>
+    image: "image/ventes/sept-facture-de-vente.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Customization
+      color: sky
+
+bottom_section:
+  title: "Selling with Dokos also means:"
+  cards:
+    - title: A customer portal
+      description: With Dokos, give your customers a dedicated space to view their quotes, track orders and delivery notes, and more. This self-service reduces incoming requests, freeing you up to focus on what matters.
+      icon: i-material-symbols-settings-account-box-rounded
+      class: "col-span-4 row-span-3"
+    - title: Flexible pricing strategies
+      description: With Dokos, adapt your prices to every situation using flexible pricing tools. Use custom price lists, set up targeted promotions, offer attractive discount codes, and build loyalty with reward programs. Offer the right prices to the right customers while protecting your margins.
+      icon: i-icon-park-outline-target
+      class: "col-span-4 row-span-3"
+    - title: E-commerce integrations
+      description: Through community applications, Dokos integrates smoothly with platforms like WooCommerce, Amazon and more. Sync products, orders and stock in real time to centralize all your sales operations in a single tool, a complete, scalable solution for your e-commerce business.
+      icon: i-ic-round-shopping-basket
+      class: "col-span-4 row-span-3"
+
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /en/features/ventes
+
+bottom_cta:
+  title: Boost your sales with Dokos.
+  description: Dokos gives you sales management that's transparent and true to your values. Built to adapt to your needs, it supports collaboration and innovation while keeping you in control of your data. Take back control of your sales process with an ethical, high-performing solution.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

@@ -1,5 +1,5 @@
 title: Souveraineté et sécurité
-description: Hébergement européen, licence GPLv3, réversibilité contractuelle — les réponses aux exigences d'achat des grands comptes et du secteur public.
+description: "Hébergement européen, licence GPLv3, réversibilité contractuelle : les réponses aux exigences d'achat des grands comptes et du secteur public."
 navigation:
   title: Souveraineté & sécurité
   icon: i-material-symbols-security-rounded
@@ -36,7 +36,7 @@ proof:
 
 scope:
   title: Ce que « souverain » veut dire ici
-  description: Le mot est employé à tort et à travers. Voici précisément ce que nous soutenons — et ce que nous ne soutenons pas.
+  description: Le mot est employé à tort et à travers. Voici précisément ce que nous soutenons, et ce que nous ne soutenons pas.
   items:
     - title: Localisation des données
       description: Les bases de données clients sont hébergées dans nos infrastructures situées en France et en Allemagne. Les sauvegardes sont répliquées sur plusieurs zones de disponibilité, dans ces mêmes pays.
@@ -45,7 +45,7 @@ scope:
       description: Dokos SAS, société française immatriculée au RCS de Nancy, est votre interlocuteur contractuel et votre sous-traitant au sens de l'article 28 du RGPD. Pas d'entité offshore dans la chaîne.
       icon: i-heroicons-building-office-2
     - title: Fournisseurs européens
-      description: Paiements, hébergement, communication — nos sous-traitants sont établis dans l'Union européenne et listés nommément dans notre politique de confidentialité.
+      description: "Paiements, hébergement, communication : nos sous-traitants sont établis dans l'Union européenne et listés nommément dans notre politique de confidentialité."
       icon: i-circle-flags-european-union
     - title: Pas de dépendance logicielle
       description: L'intégralité du socle exploité est publiée sous GPLv3. Aucune brique propriétaire ne conditionne le fonctionnement de votre installation.
@@ -55,7 +55,7 @@ scope:
       icon: i-heroicons-exclamation-triangle
       badge: Dit franchement
     - title: Conformité réglementaire française
-      description: Comptabilité, facturation électronique, encaissement — les modules concernés sont conçus pour les obligations françaises. Le détail des certifications est publié.
+      description: "Comptabilité, facturation électronique, encaissement : les modules concernés sont conçus pour les obligations françaises. Le détail des certifications est publié."
       icon: i-octicon-law
 
 operations:
@@ -114,7 +114,7 @@ faq:
 
 cta:
   title: Une grille d'exigences à nous soumettre ?
-  description: Envoyez-la. Nous répondons point par point, y compris lorsque la réponse est non — c'est généralement l'information la plus utile des deux.
+  description: Envoyez-la. Nous répondons point par point, y compris lorsque la réponse est non, c'est généralement l'information la plus utile des deux.
   links:
     - label: Nous écrire
       to: /fr/contact

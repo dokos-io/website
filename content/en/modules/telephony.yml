@@ -1,0 +1,69 @@
+navigation:
+  title: Telephony
+  icon: i-heroicons-phone
+  description: Exotel and Twilio integration for Helpdesk.
+
+title: Telephony
+icon: i-heroicons-phone
+description: Connects Exotel or Twilio to your Frappe Helpdesk customer support.
+application: Telephony
+theme: support-collaboration
+
+hero:
+  title: <span class="text-primary">Telephony</span>, right inside your tickets.
+  description: Telephony integrates Exotel or Twilio with Frappe Helpdesk, so a customer call shows up in the same place as the rest of their support history.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+features:
+  - title: Exotel and Twilio integration
+    description: Connects either of these telephony providers to Frappe Helpdesk.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Telephony
+      color: sky
+  - title: In the ticket's context
+    description: Attaches calls to a customer's history, with no separate tool to find a phone conversation.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Support
+      color: sky
+
+bottom_cta:
+  title: Is your support telephony still a separate tool?
+  description: Available from the cloud.dokos.io marketplace. Tell us your current provider, and we'll tell you what the integration already covers.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

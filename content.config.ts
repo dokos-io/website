@@ -57,6 +57,7 @@ const blogSchema = z.object({
 const moduleSchema = z.object({
   icon: z.string().optional(),
   application: z.string().optional(),
+  theme: z.string().optional(),
   author: z.string().optional(),
   link: z.string().optional(),
   logo: obj().optional(),
@@ -95,16 +96,27 @@ const partnerSchema = z.object({
 
 export default defineContentConfig({
   collections: {
-    // Landing/marketing pages + standalone markdown docs (French locale)
+    // Landing/marketing pages + standalone markdown docs. `en/**` mirrors
+    // `fr/**` file by file; the blog stays French-only for now (not
+    // translated yet), so it's excluded from both locales here and kept in
+    // its own single-locale collection below.
     pages: defineCollection({
       type: 'page',
+      // `include: '**'` rather than brace-expanding '{fr,en}/**': this
+      // Content v3 version's glob matcher mishandles `{a,b}` alternation
+      // (it silently corrupts filenames instead of erroring), so every
+      // locale split here uses plain two-line excludes instead.
       source: {
-        include: 'fr/**',
+        include: '**',
         exclude: [
           'fr/blog/**',
+          'en/blog/**',
           'fr/features/**',
+          'en/features/**',
           'fr/modules/**',
+          'en/modules/**',
           'fr/partners/**',
+          'en/partners/**',
           '**/_dir.yml',
         ],
       },
@@ -117,18 +129,18 @@ export default defineContentConfig({
     }),
     features: defineCollection({
       type: 'page',
-      source: 'fr/features/**',
+      source: '**/features/**',
       schema: moduleSchema,
     }),
     modules: defineCollection({
       type: 'page',
-      source: 'fr/modules/**',
+      source: '**/modules/**',
       schema: moduleSchema,
     }),
     partners: defineCollection({
       type: 'page',
       source: {
-        include: 'fr/partners/**',
+        include: '**/partners/**',
         exclude: ['**/_dir.yml'],
       },
       schema: partnerSchema,

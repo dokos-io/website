@@ -6,6 +6,7 @@ title: Réservations de ressources
 icon: i-material-symbols-location-on-outline-rounded
 description: Gérez et optimisez l'utilisation de vos ressources en toute simplicité.
 application: Bookings
+theme: vente-relation-client
 author: Dokos & Contributeurs
 hero:
   title: Simplifiez la <span class="text-primary">gestion de vos ressources</span> avec Dokos

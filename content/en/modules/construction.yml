@@ -1,0 +1,72 @@
+navigation:
+  title: Construction
+  icon: i-heroicons-calculator
+  description: Advanced quote configurator.
+
+title: Construction
+icon: i-heroicons-calculator
+description: An advanced quote configurator for businesses selling complex work.
+application: Construction
+theme: vente-relation-client
+logo:
+  light: /frappe/construction_logo.svg
+  dark: /frappe/construction_logo.svg
+
+hero:
+  title: <span class="text-primary">Complex quotes</span>, configured with no re-entry.
+  description: Construction adds an advanced quote configurator to Dokos, for pricing multi-line work without rebuilding the quote for every variant.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+features:
+  - title: Quote configurator
+    description: Builds a quote from line items and variants, rather than a single product line.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Quotes
+      color: sky
+  - title: A Dokos module like any other
+    description: Installs and runs like the rest of the ecosystem, with no separate site or database.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Integration
+      color: sky
+
+bottom_cta:
+  title: Does your quoting still depend on a separate spreadsheet?
+  description: Available from the cloud.dokos.io marketplace. Describe your current pricing process, and we'll tell you what Construction already covers.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

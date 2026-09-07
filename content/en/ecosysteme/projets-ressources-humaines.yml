@@ -1,0 +1,60 @@
+title: Projects & HR
+description: Project, team and training tracking, connected to client billing and to payroll.
+navigation:
+  title: Projects & HR
+  icon: i-heroicons-user-group
+
+hero:
+  headline:
+    label: The Dokos ecosystem
+    icon: i-heroicons-user-group
+    to: /en/modules
+  title: Your teams and your projects, <span class="text-primary">one single view</span>.
+  description: Time logged on a project feeds both progress tracking and client billing. A team's leave and absences show up alongside its actual workload.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See all modules
+      to: /en/modules
+      size: xl
+      color: neutral
+      variant: outline
+
+modules:
+  title: The modules in this area
+  description: Three modules, useful to different degrees depending on whether you bill time or manage internal teams.
+  items:
+    - title: Projects
+      description: Planning, task and time tracking, through to client billing.
+      icon: i-eos-icons-project-outlined
+      to: /en/modules/projets
+    - title: Human resources
+      description: Leave, expense claims, attendance and payroll, centralized per employee.
+      icon: i-mdi-human-capacity-increase
+      to: /en/modules/ressources-humaines
+      logo:
+        light: /frappe/hrms_logo.svg
+        dark: /frappe/hrms_logo.svg
+    - title: Frappe Learning
+      description: An internal training platform to transfer skills across the team.
+      icon: i-heroicons-academic-cap
+      to: /en/modules/learning
+      logo:
+        light: /frappe/lms.png
+        dark: /frappe/lms.png
+
+cta:
+  title: Do you bill time, or manage internal teams?
+  description: The relevant scope differs depending on your activity. Describe it, and we'll tell you which modules actually address it.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See pricing
+      to: /en/tarifs
+      size: xl
+      color: neutral
+      variant: outline
