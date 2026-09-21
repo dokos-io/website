@@ -3,14 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build && node scripts/check-output-size.mjs",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "typecheck": "nuxt typecheck",
-    "postbuild": "node scripts/check-output-size.mjs"
+    "typecheck": "nuxt typecheck"
   },
   "dependencies": {
     "@iconify-json/bi": "^1.2.1",
