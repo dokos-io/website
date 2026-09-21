@@ -10,7 +10,7 @@ description: |
     Des nouveautés et mises à jour sur Dokos : Compatibilité, Achats, Framework Dodock, RH, Projets, Ventes et stocks.
 author: Nicolas Tissot
 image:
-  src: '/blog/version-2-1/_main.jpg'
+  src: '/blog/version-2-1/_main.webp'
 ---
 
 Pour cette nouvelle mise à jour de Dokos, quelques changements sont à noter sur plusieurs modules dont la comptabilité, les ventes, les achats, les stocks, les projets et les Ressources Humaines. 

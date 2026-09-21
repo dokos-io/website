@@ -5,7 +5,7 @@ badge:
   label: Bookings
 description: Le module Lieu évolue
 author: Céline
-image: blog/2025/bookings_photo.png
+image: blog/2025/bookings_photo.webp
 title: "Bookings : Un projet né de la communauté des tiers-lieux 🌍"
 ---
 

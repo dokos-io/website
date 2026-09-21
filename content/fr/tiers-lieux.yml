@@ -80,7 +80,7 @@ sections:
         icon: i-tabler-drag-drop
   - title: Offrez un expérience fluide et optimisez l'occupation de vos ressources
     description: Avec Dokos, la gestion de vos espaces n'a jamais été aussi simple. Que vous proposiez des salles de réunion, des machines ou du matériel, vos utilisateurs peuvent réserver en toute autonomie, directement en ligne. Un système transparent, qui optimise l'occupation de vos ressources et offre à vos membres une expérience fluide.
-    image: image/reservation-ressource/commandes-e-commerce.png
+    image: image/reservation-ressource/commandes-e-commerce.webp
     image_bg_color: bg-teal-500
     align: left
     features:
@@ -98,7 +98,7 @@ sections:
         icon: i-carbon-logo-google
   - title: Créez et personnalisez votre site web
     description: Avec Dokos, vous pouvez créer un site web entièrement intégré à votre gestion. Que ce soit pour permettre la réservation en ligne ou la vente d'abonnements, votre site devient un point d'accès unique pour vos utilisateurs. Profitez également d'un portail dédié, où vos membres peuvent consulter leurs factures, gérer leurs réservations et accéder à des documents.
-    image: image/builder/site-internet-optimise-pour-appareils.png
+    image: image/builder/site-internet-optimise-pour-appareils.webp
     image_bg_color: bg-teal-500
     align: right
     features:
@@ -110,7 +110,7 @@ sections:
         icon: i-material-symbols-add-shopping-cart-outline-rounded
   - title: 'Entrez au sein de notre communauté, contribuez au commun, '
     description: En rejoignant Dokos, vous faites partie d'une communauté ouverte où chacun peut contribuer. Que ce soit en participant au développement, en partageant des idées ou en finançant de nouvelles fonctionnalités, vous aidez à construire un outil au service de tous les tiers-lieux.
-    image: image/dokos-communaute.png
+    image: image/dokos-communaute.webp
     image_bg_color: bg-teal-500
     align: left
 cta:

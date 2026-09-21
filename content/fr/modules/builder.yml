@@ -42,7 +42,7 @@ colored_section:
 features:
   - title: Optimisé pour votre succès
     description: 'Frappe Builder ne se contente pas de vous offrir une interface simple et intuitive, il intègre également des fonctionnalités avancées pour vous permettre d''aller plus loin dans la personnalisation.<ul><li>Compatible avec les modules Dokos : Vous pouvez créer des vues dynamiques qui interagissent directement avec vos données Dokos.</li><li> Conception réactive : Vos pages sont automatiquement optimisées pour tous les appareils : ordinateurs, tablettes et smartphones.</li><li> Respect des standards web : Conçu selon les normes les plus récentes, Frappe Builder garantit des performances élevées et une navigation fluide.'
-    image: image/builder/site-internet-optimise-pour-appareils.png
+    image: image/builder/site-internet-optimise-pour-appareils.webp
     image_bg_color: bg-teal-500
     icon: i-iconoir-www
     align: left

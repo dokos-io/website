@@ -35,7 +35,7 @@ hero:
 features:
   - title: Une gestion des Articles et des Stocks
     description: "Avec Dokos, vous pouvez gérer vos articles avec précision. Du suivi des variantes de produits aux numéros de série et aux lots, chaque produit peut être identifié de manière unique, facilitant la gestion et la traçabilité.<ul><li><span class='font-bold'> Variantes d'articles :</span> Gérer facilement les différentes versions d'un même produit (taille, couleur, modèle).</li><li><span class='font-bold'>Codes-barres et étiquetage : </span>Simplifiez les opérations de réception et d'expédition grâce à la gestion intégrée des codes-barres.<li><span class='font-bold'>Suivi par lot et numéro de série :</span> Suivez chaque article, depuis la fabrication ou l'achat jusqu'à la vente, pour une traçabilité complète."
-    image: "image/stock/un-articles.png"
+    image: "image/stock/un-articles.webp"
     image_bg_color: "bg-teal-500"
     align: left
     badge:

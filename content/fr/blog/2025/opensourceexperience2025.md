@@ -5,7 +5,7 @@ badge:
   label: Dokos, partenaire Orange
 description: Le jour où la souveraineté numérique est devenue concrète
 author: Céline
-image: /blog/2025/image_blog_OSE_2025.png
+image: /blog/2025/image_blog_OSE_2025.webp
 title: L'open-source Expérience 2025
 ---
 Les 10 et 11 décembre 2025, nous étions présents à l'Open-source Experience en tant que partenaire Orange. Plus de 4000 professionnels s'étaient réunis à la Cité des Sciences, et l'ambiance était particulière cette année.

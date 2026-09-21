@@ -77,7 +77,7 @@ defineOgImage({
                         </template>
 
                         <template #default>
-                            <NuxtImg
+                            <AppImage
                                 :src="'/home/' + page.hero.image"
                                 class="w-full rounded-md bg-white/75"
                                 v-if="page.hero.image"
@@ -100,7 +100,7 @@ defineOgImage({
                                 :name="icon"
                                 class="w-16 h-16 flex-shrink-0 text-gray-500 dark:text-gray-400"
                             />
-                            <NuxtImg
+                            <AppImage
                                 v-for="image in page.logos.images"
                                 :key="image"
                                 :src="image"
@@ -176,7 +176,7 @@ defineOgImage({
                             class="py-8 px-8 rounded-lg bg-orange-200"
                             v-if="page.colored_section.image"
                         >
-                            <NuxtImg
+                            <AppImage
                                 :src="page.colored_section.image"
                                 class="shadow-lg rounded"
                                 v-if="page.colored_section.image"
@@ -217,7 +217,7 @@ defineOgImage({
                                     : 'pr-8 ml-7',
                             ]"
                         >
-                            <NuxtImg
+                            <AppImage
                                 :src="section.image"
                                 class="w-full rounded-md bg-white/75"
                                 placeholder

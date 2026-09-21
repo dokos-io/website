@@ -42,7 +42,7 @@ hero:
 colored_section:
   title: Simplifiez l'apprentissage de vos clients
   description: "Chez Dokos, nous avons toujours eu à cœur d'accompagner nos clients dans l'adoption des meilleures technologies, et c'est avec une grande fierté que nous vous proposons Frappe Learning : une plateforme d'apprentissage innovante, développée par l'équipe de Frappe, compatible avec Dokos."
-  image: "image/learning/frappe-learning.png"
+  image: "image/learning/frappe-learning.webp"
   align: left
   badge:
     label: Les applications Frappe
@@ -74,12 +74,12 @@ main_features:
       target: _blank
   - title: "Intégrez-vous parfaitement à Dokos"
     description: "Frappe Learning s'intègre parfaitement à Dokos, facilitant la gestion des utilisateurs, des cours, et des certifications. Cette intégration vous permet de centraliser la formation de vos clients tout en profitant des avantages d'un environnement d'un logiciel de gestion moderne, sans avoir à gérer une plateforme séparée ou des coûts supplémentaires. "
-    image: "image/ventes/cinq-insights ventes.png"
+    image: "image/ventes/cinq-insights ventes.webp"
     image_bg_color: bg-teal-500
     align: left
   - title: "Suivez la progession en temps réel"
     description: "Suivez la progression de vos apprenants grâce à nos outils d'analyse précis. Vous pouvez visualiser les étapes complétées, évaluer les performances, et identifier les points d'amélioration pour offrir un service toujours plus performant. Créez ainsi une boucle d'apprentissage continue, tout en gardant vos clients informés et satisfaits."
-    image: "image/learning/learning-tableau-de-bord-stat.png"
+    image: "image/learning/learning-tableau-de-bord-stat.webp"
     image_bg_color: bg-teal-500
     align: right
   - title: "Un véritable programme de formation sans frais supplémentaire"

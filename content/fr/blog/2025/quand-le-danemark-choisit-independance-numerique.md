@@ -4,7 +4,7 @@ badge:
   label: Indépendance numérique
 description: des enseignements pour les entreprises françaises
 author: Céline
-image: /blog/2025/Capture d’ecran 2025-06-19 a 10.37.11.png
+image: /blog/2025/Capture d’ecran 2025-06-19 a 10.37.11.webp
 title: "Quand le Danemark choisit l'indépendance numérique :"
 ---
 

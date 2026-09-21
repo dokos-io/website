@@ -81,7 +81,7 @@ useSeoMeta({
             </template>
 
             <template #default>
-                <NuxtImg
+                <AppImage
                     :src="'/home/' + page.hero.image"
                     class="w-full rounded-md bg-white/75"
                     loading="lazy"
@@ -149,7 +149,7 @@ useSeoMeta({
                 ]"
                 v-if="section.image"
             >
-                <NuxtImg
+                <AppImage
                     :src="section.image"
                     class="rounded-lg"
                     :class="[
@@ -174,7 +174,7 @@ useSeoMeta({
                     :name="icon"
                     class="w-16 h-16 flex-shrink-0 text-gray-500 dark:text-gray-400"
                 />
-                <NuxtImg
+                <AppImage
                     v-for="image in page.integrations.images"
                     :key="image"
                     :src="image"
@@ -219,7 +219,7 @@ useSeoMeta({
                     v-bind="item"
                 >
                     <template #icon>
-                        <NuxtImg
+                        <AppImage
                             :src="'/frappe/' + item.icon"
                             class="max-h-10"
                             loading="lazy"

@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "postbuild": "node scripts/check-output-size.mjs"
   },
   "dependencies": {
     "@iconify-json/bi": "^1.2.1",

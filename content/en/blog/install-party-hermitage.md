@@ -10,7 +10,7 @@ description: |
   La Compagnie des Tiers-Lieux and the third place l'Hermitage are arranging two days - 5 and 6 of november 2020 - dedicated to software tools for third places during which you are welcome to come discover Dokos.
 author: Charles-Henri Decultot
 image:
-  src: '/blog/install-party-hermitage/_main.jpg'
+  src: '/blog/install-party-hermitage/_main.webp'
 ---
 
 La Compagnie des Tiers-Lieux is organizing two days (5-6 november 2020) dedicated to setup and take ownership on software tools adapted to a third place's activity. In particular we will propose several sessions dedicated to setting up and use Dokos.  

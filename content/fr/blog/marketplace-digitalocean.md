@@ -10,7 +10,7 @@ description: |
   Dokos est disponible gratuitement sur la marketplace de DigitalOcean ! 🎉
 author: Charles-Henri Decultot
 image:
-  src: '/blog/digitalocean-marketplace/_main.jpg'
+  src: '/blog/digitalocean-marketplace/_main.webp'
 ---
 
 Dans l'optique de continuer à faciliter l'usage de _Dokos_ et notamment son installation, nous proposons désormais une image installable en 1 click sur la plateforme DigitalOcean.
