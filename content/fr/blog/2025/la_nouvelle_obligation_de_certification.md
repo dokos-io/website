@@ -5,7 +5,7 @@ badge:
   label: Loi de Finance
 description: Une menace pour les logiciels open-source
 author: Céline
-image: blog/2025/obligation_certification.png
+image: blog/2025/obligation_certification.webp
 title: La nouvelle obligation de certification
 ---
 

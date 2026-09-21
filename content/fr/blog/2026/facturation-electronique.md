@@ -4,7 +4,7 @@ id: Facturation électronique
 badge:
   label: Facturation électronique
 author: Céline
-image: /blog/FE-image-blog-rectangle.png
+image: /blog/FE-image-blog-rectangle.webp
 title: "Facturation électronique"
 description: "et si on prenait le temps de respirer ?"
 ---

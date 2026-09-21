@@ -207,7 +207,7 @@ useSeoMeta({
                         module.colored_section.video
                     "
                 >
-                    <NuxtImg
+                    <AppImage
                         :src="module.colored_section.image"
                         class="shadow-xl rounded"
                         v-if="module.colored_section.image"
@@ -259,7 +259,7 @@ useSeoMeta({
                             section.align == 'left' ? 'pl-8 mr-7' : 'pr-8 ml-7',
                         ]"
                     >
-                        <NuxtImg
+                        <AppImage
                             :src="section.image"
                             class="w-full rounded-md bg-white/75"
                             placeholder
@@ -391,7 +391,7 @@ useSeoMeta({
                             feat.align == 'left' ? 'pl-8 mr-7' : 'pr-8 ml-7',
                         ]"
                     >
-                        <NuxtImg
+                        <AppImage
                             :src="feat.image"
                             class="w-full rounded-md bg-white/75"
                             placeholder

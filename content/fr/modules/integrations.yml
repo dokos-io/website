@@ -31,7 +31,7 @@ hero:
 features:
   - title: Gérez vos transactions avec des solutions fiables et sécurisées
     description: '<ul><li>Stripe : Carte bancaire et prélèvement SEPA</li><li> Stancer : Idéal pour des paiements multicanaux simplifiés.</li> <li>PayPal / Braintree : Carte bancaire ou PayPal<li>Gocardless : Prélèvement SEPA</li><li>HelloAsso : Carte bancaire pour les associations'
-    image: image/integrations/transactions-securisees.svg
+    image: image/integrations/transactions-securisees.webp
     align: left
     badge:
       label: Paiements
@@ -52,7 +52,7 @@ features:
       color: sky
   - title: Automatisez la synchronisation de vos ventes
     description: 'Synchronisez automatiquement vos ventes physiques et en ligne pour une gestion optimale des stocks et des transactions.<ul><li>Hi-Boutik : Synchronisez vos points de vente physiques avec votre gestion centralisée sur Dokos.'
-    image: image/integrations/hiboutik-final.svg
+    image: image/integrations/hiboutik-final.webp
     align: right
     badge:
       label: Point de vente

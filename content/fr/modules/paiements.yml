@@ -38,7 +38,7 @@ hero:
 features:
   - title: Gérez tous vos paiements en un seul endroit
     description: "Que ce soit pour des transactions uniques, des abonnements récurrents ou des événements, Dokos automatise le processus pour vous faire gagner du temps et éviter les erreurs.<ul><li>Automatisation des Paiements : Gérez les paiements sans intervention manuelle.</li><li>Large Choix de Prestataires : Stripe, PayPal, Braintree, GoCardless, et plus encore.</li><li>Sécurité Maximale : Des transactions protégées et cryptées.</li>"
-    image: "image/paiements/transactions-securisees.svg"
+    image: "image/paiements/transactions-securisees.webp"
     image_bg_color: "bg-teal-500"
     align: left
     badge:

@@ -5,7 +5,7 @@ badge:
   label: Faire Festival 2026
 description: On est partis à Toulouse pour présenter Dokos. On en est revenus avec quelque chose en plus.
 author: Céline
-image: /blog/2026/faire-festival/image-logotuxdokosfaire.svg
+image: /blog/2026/faire-festival/image-logotuxdokosfaire.webp
 title: Au Faire Festival, on a retrouvé notre communauté
 ---
 
@@ -15,7 +15,7 @@ Le Faire Festival, c'est le grand rassemblement annuel des fablabs, makerspaces 
 
 On savait déjà, dans le train, que ce serait un moment à part. Ce qu'on ne savait pas encore, c'est à quel point on allait y trouver notre communauté.
 
-<img src="/blog/2026/faire-festival/faire-festival-2026-arrivee.svg" alt="faire-festival-2026-arrivee" style="width: 66%;" />
+<img src="/blog/2026/faire-festival/faire-festival-2026-arrivee.webp" alt="faire-festival-2026-arrivee" style="width: 66%;" />
 
 ## Trois jours qui sont passés vite
 
@@ -27,7 +27,7 @@ De toutes ces rencontres, quelques-unes méritent d'être racontées.
 
 Nous avons aussi passé de longues heures à débattre avec **Sébastien Dinot** et **Jonas** : open source, souveraineté numérique, gouvernance. Ces conversations, on les aime. Elles permettent d'affiner et d'affirmer ce qu'on est, ce qu'on défend, où on place les curseurs.
 
-<img src="/blog/2026/faire-festival/faire-festival-2026-travail-collaboratif.svg" alt="faire-festival-2026-travail-collaboratif" style="width: 66%;" />
+<img src="/blog/2026/faire-festival/faire-festival-2026-travail-collaboratif.webp" alt="faire-festival-2026-travail-collaboratif" style="width: 66%;" />
 
 ## Une communauté plus large qu'on ne le croyait
 

@@ -44,7 +44,7 @@ features:
       color: sky
   - title: Offrez à vos clients une expérience d'achat fluide et sans effort 
     description: Optimisez le parcours client avec un processus de commande simplifié. <br><br>Le module e-commerce de Dokos intègre un panier d’achat intuitif, permettant à vos clients de commander facilement vos produits en ligne.<br><br>Vous suivez les commandes en temps réel avec des options de paiement sécurisées.</br>
-    image: "image/e-commerce/parametre-e-commerce.svg"
+    image: "image/e-commerce/parametre-e-commerce.webp"
     image_bg_color: "bg-teal-500"
     align: right
     badge:
@@ -52,7 +52,7 @@ features:
       color: sky
   - title: Renforcez l’intéraction avec vos clients via nos formulaires personnalisés.
     description: Que ce soit pour des demandes de devis, des inscriptions à une newsletter, ou des questions spécifiques, tout est intégré directement dans Dokos. <br><br>De plus, vos clients peuvent se connecter via leurs comptes sociaux (Google, Facebook) pour un accès rapide et sécurisé.</br>
-    image: "image/e-commerce/article-de-blog.png"
+    image: "image/e-commerce/article-de-blog.webp"
     image_bg_color: "bg-teal-500"
     align: left
     badge:
@@ -60,7 +60,7 @@ features:
       color: sky
   - title: Maximisez la visibilité de votre site grâce à nos outils SEO.
     description: Créez des balises méta pour améliorer votre positionnement sur les moteurs de recherche, et utilisez notre gestion de blogs pour attirer et fidéliser votre audience.
-    image: "image/e-commerce/SEO-site-web.png"
+    image: "image/e-commerce/SEO-site-web.webp"
     image_bg_color: "bg-teal-500"
     align: right
     badge:

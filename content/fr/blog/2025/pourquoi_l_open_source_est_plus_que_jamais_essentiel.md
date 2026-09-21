@@ -5,7 +5,7 @@ badge:
   label: Souveraineté Numérique
 description: ( Et pourquoi Dokos s'inscrit au coeur de cette dynamique ? )
 author: Céline
-image: blog/2025/open-source_essentiel_1080_600.png
+image: blog/2025/open-source_essentiel_1080_600.webp
 title: Pourquoi l'Open Source est plus que jamais essentiel
 ---
 

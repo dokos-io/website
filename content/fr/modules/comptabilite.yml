@@ -73,7 +73,7 @@ features:
       color: sky
   - title: Automatisez vos flux métier et gagnez du temps
     description: Gagnez du temps en automatisant la création de factures pour les abonnements récurrents. <br><br>Grâce à la fonction Abonnements, vos factures sont générées et envoyées automatiquement, vous permettant de vous concentrer sur d'autres tâches essentielles.</br>
-    image: image/comptabilite/abonnement-photo-dokos.png
+    image: image/comptabilite/abonnement-photo-dokos.webp
     image_bg_color: bg-teal-500
     align: right
     badge:
@@ -89,7 +89,7 @@ features:
       color: sky
   - title: Personnalisez Dokos pour répondre parfaitement aux besoins uniques de votre entreprise
     description: Adaptez le logiciel à vos besoins spécifiques.<br><br> Ajoutez des champs personnalisés, modifiez les formulaires en fonction des rôles des utilisateurs, et créez des modèles d'impression uniques, tout cela sans avoir besoin de coder.</br>
-    image: image/comptabilite/personnalisation-dokos.png
+    image: image/comptabilite/personnalisation-dokos.webp
     image_bg_color: bg-teal-500
     align: right
     badge:

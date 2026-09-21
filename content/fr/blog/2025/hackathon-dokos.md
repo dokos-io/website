@@ -5,7 +5,7 @@ badge:
   label: Hachathon
 description: Quand l'innovation collective prend vie
 author: Céline
-image: /blog/2025/20250425-150011.jpg
+image: /blog/2025/20250425-150011.webp
 title: Clap de fin sur notre premier Hackathon
 ---
 
@@ -13,7 +13,7 @@ title: Clap de fin sur notre premier Hackathon
 
 Notre Hackathon Dokos vient de refermer ses portes après plusieurs jours d'effervescence intellectuelle et de collaboration intense. Entre lignes de code partagées, débats constructifs et moments de convivialité, ces journées ont incarné l'essence même de notre mission chez Dokos : **créer du sens ensemble**.
 
-![20250425-150011.jpg](/blog/2025/20250425-150011.jpg)
+![20250425-150011.webp](/blog/2025/20250425-150011.webp)
 
 ## Des avancées concrètes pour notre communauté
 
@@ -52,7 +52,7 @@ Les projets initiés lors de ce hackathon ne s'arrêtent pas là. Nous travaillo
 
 Ce hackathon marque une étape importante dans notre développement, mais ce n'est qu'un début. D'autres événements collaboratifs sont déjà en préparation, car nous croyons fermement à la puissance de l'intelligence collective pour façonner le futur des logiciels de gestion éthiques et libres.
 
-![postlinkdin2.jpg](/blog/2025/postlinkdin2.jpg)![hackathon\_equipedokos](/blog/2025/20250426-102002.jpg)
+![postlinkdin2.webp](/blog/2025/postlinkdin2.webp)![hackathon\_equipedokos](/blog/2025/20250426-102002.webp)
 
 ---
 

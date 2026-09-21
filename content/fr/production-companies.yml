@@ -52,12 +52,12 @@ colored_section:
 sections:
   - title: "Gérez vos ordres de fabrication"
     description: "Créez et gérez facilement vos ordres de fabrication. Planifiez la production, répartissez les tâches et suivez chaque étape du processus de production."
-    image: "image/production/industrie_ordre-de-fabrication.svg"
+    image: "image/production/industrie_ordre-de-fabrication.webp"
     image_bg_color: "bg-teal-500"
     align: right
   - title: "Optimisez vos stocks"
     description: "Synchronisez vos stocks en temps réel avec les mouvements de production. Assurez-vous d’avoir les matériaux nécessaires à chaque étape et évitez les ruptures de stock."
-    image: "image/production/ecriture-de-stock.png"
+    image: "image/production/ecriture-de-stock.webp"
     image_bg_color: "bg-teal-500"
     align: left
   - title: "Contrôlez vos coûts et marges"

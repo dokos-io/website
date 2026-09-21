@@ -10,7 +10,7 @@ description: |
     Découvrez les nouveautés de la nouvelle version de Dokos 3.0. Une interface remise à jour, des espaces de travail plus facile à gérer, apparition des onglets dans les documents et bien plus.
 author: Nicolas Tissot
 image:
-  src: '/blog/version-3-0/_main.jpg'
+  src: '/blog/version-3-0/_main.webp'
 ---
 
 Cette version 3.0 de Dokos est basée sur la version 14 de Frappe/ERPNext. Vous allez découvrir les nouvelles fonctionnalités de la plateforme et vous pourrez retrouver tous les détails sur notre documentation.

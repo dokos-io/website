@@ -143,7 +143,7 @@ useSeoMeta({
 
       <!-- Mascotte qui déborde sur la section suivante -->
       <img
-        src="/faire-festival/testlogotuxdokosfaire.svg"
+        src="/faire-festival/testlogotuxdokosfaire.webp"
         alt=""
         class="hero-mascot"
         aria-hidden="true"

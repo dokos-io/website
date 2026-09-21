@@ -4,7 +4,7 @@ navigation: false
 hero:
   title: LA plateforme 100% <span class="text-primary">libre, éthique et puissante</span> qui réunit tous vos besoins en un seul endroit.
   description: L'alternative innovante pour les entreprises visionnaires.
-  image: hero_dokos.svg
+  image: hero_dokos.webp
   headline:
     label: Une adaptation française d'ERPNext
     to: https://erpnext.com
@@ -126,7 +126,7 @@ sections:
         class: ml-8
   - title: Un accompagnement  <span class="text-emerald-600">personnalisé</span>
     description: <strong>Profitez d'un support sur mesure et entièrement adapté à vos besoins.</strong><br><br>Parce que chaque entreprise est unique, notre accompagnement s’adapte à vos spécificités et priorités. Nous mettons un point d’honneur à créer des solutions sur mesure, avec un coût juste et maîtrisé.</br></br>
-    image: image/dokos-communaute.png
+    image: image/dokos-communaute.webp
     id: control
     image_bg_color: bg-teal-500
     align: left
@@ -173,7 +173,7 @@ sections:
         icon: i-material-symbols-editor-choice-outline-rounded
   - title: La <span class="text-primary">force</span> de l'open-source
     description: <strong>Dokos est et restera un logiciel libre et open-source.</strong><br><br>Avec Dokos, vous avez la liberté totale de choisir votre fournisseur, sans dépendance envers un éditeur spécifique. Utilisez un ERP libre et évolutif, sans frais de licence, avec des options de service si vous avez besoin d’accompagnement.
-    image: image/dokos-gitlab.png
+    image: image/dokos-gitlab.webp
     image_bg_color: bg-teal-500
     id: opensource
     align: left

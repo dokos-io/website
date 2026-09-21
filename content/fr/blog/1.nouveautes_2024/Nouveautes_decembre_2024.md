@@ -5,7 +5,7 @@ badge:
   label: Actualités 2024
 description: Les actualités du mois de décembre
 author: Céline
-image: blog/nouveautes/actualites_decembre2025.png
+image: blog/nouveautes/actualites_decembre2025.webp
 title: "Décembre 2024 : Les dernières nouvelles avant de tourner la page vers 2025."
 ---
 

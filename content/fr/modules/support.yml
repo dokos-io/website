@@ -33,7 +33,7 @@ hero:
 features:
   - title: Un suivi des tickets et gestion des requêtes
     description: Transformez chaque interaction en opportunité de fournir une réponse rapide et précise. <br><br>Grâce à un tableau de bord centralisé, vous avez une vue d’ensemble de toutes les requêtes clients en cours. <br><br>Organisez, priorisez, et suivez les tickets jusqu'à leur clôture, tout en assurant la transparence au sein de votre équipe.Suivi des statuts de tickets. <br><li>Priorisation automatique des urgences. <br><li>Notifications en temps réel pour garder le contrôle.</br><l/i>
-    image: image/support/un-crm-suivi-des-tickets-ok.svg
+    image: image/support/un-crm-suivi-des-tickets-ok.webp
     image_bg_color: bg-teal-500
     align: left
     badge:
@@ -41,7 +41,7 @@ features:
       color: sky
   - title: Une base de connaissances centralisée
     description: Créez et gérez une base de données de solutions fréquemment utilisées, accessible à votre équipe et à vos clients. <br><br>Cette documentation permet de réduire les sollicitations répétitives, tout en offrant des réponses immédiates aux questions courantes. <br><li>Articles facilement accessibles. <br><li>Organisation par catégories et tags. <br><li>Système de recherche intelligent pour des résultats rapides.</br></li>
-    image: image/support/deux-base-de-connaissance-ok.svg
+    image: image/support/deux-base-de-connaissance-ok.webp
     image_bg_color: bg-teal-500
     align: right
     badge:

@@ -5,7 +5,7 @@ badge:
   label: Dolibarr
 description: Retour sur le DevCamp à Nancy
 author: Charles-henri
-image: blog/dolbarr_devcamp/dolibarr_photo_badge.png
+image: blog/dolbarr_devcamp/dolibarr_photo_badge.webp
 title: Une rencontre inspirante avec l'équipe de Dolibarr
 ---
 

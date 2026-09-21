@@ -35,17 +35,17 @@ hero:
 colored_section:
   title: Révolutionnez votre quotidien grâce à l'AI
   description: RAVEN est le module intelligent intégré à Dokos qui transforme votre manière de travailler. Grâce à son intelligence artificielle avancée, vous pouvez automatiser des tâches complexes, extraire des données facilement, et collaborer plus efficacement au sein de votre entreprise.
-  image: image/raven/raven-exemple.png
+  image: image/raven/raven-exemple.webp
   align: left
 features:
   - title: Créez des automatisations intelligentes
     description: Créez vos propres bots sans aucune ligne de code. Raven vous aide à automatiser des processus métier complexes tout en s'adaptant au contexte de chaque tâche.
-    image: image/raven/raven-exemple.png
+    image: image/raven/raven-exemple.webp
     image_bg_color: bg-teal-500
     align: right
   - title: Fluidifiez votre quotidien avec l'intégration Dokos
     description: Partagez, imprimez et travaillez sur vos documents directement depuis la messagerie Raven, sans quitter votre interface Dokos.
-    image: image/raven/raven-exemple.png
+    image: image/raven/raven-exemple.webp
     image_bg_color: bg-teal-500
     align: left
   - title: Optimisez votre collaboration

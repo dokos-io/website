@@ -63,7 +63,7 @@ sections:
     align: right
   - title: 'Permettez une collaboration fluide entre vos équipes '
     description: En rejoignant Dokos, vous faites partie d'une communauté ouverte où chacun peut contribuer. <br>Que ce soit en participant au développement, en partageant des idées ou en finançant de nouvelles fonctionnalités, vous aidez à construire un outil au service de toutes les entreprises.
-    image: image/dokos-communaute.png
+    image: image/dokos-communaute.webp
     image_bg_color: bg-teal-500
     align: left
   - title: 'Optimisez votre environnement avec les intégrations '

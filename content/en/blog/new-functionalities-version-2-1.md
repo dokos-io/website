@@ -10,7 +10,7 @@ description: |
     New features and updates on Dokos: Compatibility, Purchasing, Dodock Framework, HR, Projects, Sales and Inventory.
 author: Nicolas Tissot
 image:
-  src: '/blog/version-2-1/_main.jpg'
+  src: '/blog/version-2-1/_main.webp'
 ---
 
 For this new update of Dokos, some changes are to be noted on several modules including accounting, sales, purchases, inventory, projects and Human Resources. 

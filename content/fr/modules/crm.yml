@@ -37,7 +37,7 @@ hero:
 features:
   - title: Centralisez et transformez vos leads en clients avec une gestion simplifiée
     description: Centralisez tous vos leads, prospects et opportunités en un seul endroit. <br><br>Suivez leur progression à travers un pipeline visuel clair et personnalisable, de la prospection à la conclusion du contrat.<br><br> Analysez les performances de vos campagnes et actions commerciales grâce à des indicateurs en temps réel.</br>
-    image: "image/e-commerce/crm-deals.png"
+    image: "image/e-commerce/crm-deals.webp"
     image_bg_color: "bg-teal-500"
     align: left
     badge:
@@ -53,7 +53,7 @@ features:
       color: sky
   - title: Automatisez vos processus commerciaux grâce à des outils puissants.
     description: Automatisez les tâches répétitives comme l'envoi de rappels, la création de tâches pour vos équipes, et l'envoi de newsletters, afin de rester concentré sur ce qui compte, vos clients.
-    image: "image/crm/newsletter-les-coulisses.png"
+    image: "image/crm/newsletter-les-coulisses.webp"
     image_bg_color: "bg-teal-500"
     align: left
     badge:
@@ -69,7 +69,7 @@ features:
       color: sky
   - title: Ajustez vos stratégies grâce aux rapports
     description: "Avec les tableaux de bord dynamiques de Dokos, analysez en temps réel les indicateurs essentiels à la bonne gestion de vos activités commerciales : taux de conversion, volume d'affaires, état des pipelines, etc. <br><br>Les rapports générés vous aident à ajuster vos stratégies de manière proactive.</br>"
-    image: "image/ventes/un-insights-opportunites.png"
+    image: "image/ventes/un-insights-opportunites.webp"
     image_bg_color: "bg-teal-500"
     align: left
     badge:
@@ -77,7 +77,7 @@ features:
       color: sky
   - title: Gardez une vue complète de votre activité. 
     description: Dokos est bien plus qu’un CRM. <br><br>Il s'intègre parfaitement avec d'autres modules de gestion comme la comptabilité, la gestion des stocks et la gestion de projet. <br><br>Cela permet une vue à 360° de votre activité, sans silos ni interruptions dans vos processus.</br>
-    image: "image/crm/tableaux-de-bord-compta-crm-achat.svg"
+    image: "image/crm/tableaux-de-bord-compta-crm-achat.webp"
     image_bg_color: "bg-teal-500"
     align: right
     badge:

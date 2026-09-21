@@ -10,7 +10,7 @@ description: |
   Rapprochez vos relevés bancaires avec vos transactions, proposez à vos prospects/clients de prendre rendez-vous en ligne et ajoutez des champs personnalisés dans le point de vente parmi les nouveautés de cette version 1.3
 author: Charles-Henri Decultot
 image:
-  src: '/blog/version-1-3/_main.jpg'
+  src: '/blog/version-1-3/_main.webp'
 ---
 
 Fonctionnalité très attendue par ceux qui font leur comptabilité dans _Dokos_, la version 1.3 dispose d'un tableau de bord de rapprochement bancaire permettant de pointer vos relevés bancaires facilement.
