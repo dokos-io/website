@@ -46,11 +46,8 @@
     "@nuxt/scripts": "^1.2.1",
     "@nuxt/ui-pro": "^3.3.7",
     "@nuxtjs/i18n": "^10.4.0",
-    "@resvg/resvg-js": "^2.6.2",
     "@vueuse/nuxt": "^14.3.0",
-    "better-sqlite3": "^13.0.3",
-    "nuxt-og-image": "^6.6.0",
-    "satori": "^0.33.4"
+    "nuxt-og-image": "^6.6.0"
   },
   "devDependencies": {
     "@iconify-json/material-symbols-light": "^1.2.78",
