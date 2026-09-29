@@ -35,7 +35,11 @@ Et comme si ça ne suffisait pas, il y a eu une dernière rentrée, celle du log
 
 Côté banque, deux nouveautés sont à découvrir, toutes deux en version bêta pour l'instant. D'abord un nouveau **module Banking** pour le rapprochement bancaire, avec un tableau de bord dédié et une détection des correspondances entre relevés et transactions nettement plus fine. Il vient en complément de l'outil de rapprochement que vous connaissez déjà, qui reste disponible, pour que vous puissiez essayer le nouveau à votre rythme.
 
+![Le nouveau module Banking : tableau de bord de rapprochement bancaire](/blog/2026/capture_ecran_banking.png)
+
 Ensuite, un nouveau **prévisionnel de trésorerie**, pour vous aider à anticiper l'évolution de votre trésorerie dans les semaines à venir. Des liens vers ces deux fonctionnalités apparaîtront bientôt directement dans l'interface de Dokos, dans le module Banque.
+
+![Le nouveau prévisionnel de trésorerie : entrées, sorties et solde projeté](/blog/2026/capture_ecran_plan_tresorerie.png)
 
 La liste complète, bien plus longue, est disponible dans notre documentation pour celles et ceux qui aiment tout savoir.
 
