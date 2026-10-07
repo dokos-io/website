@@ -30,9 +30,9 @@ useSeoMeta({
 
 <template>
     <div v-if="page">
-        <div class="bg-yellow-400 py-2 text-center text-black font-semibold">Rejoignez-nous à Toulouse, au Faire Festival, les 28, 29 et 30 Mai 2026.
+        <div class="bg-yellow-400 py-2 text-center text-black font-semibold">Après un an de travail, nous sommes très heureux de pouvoir vous annoncer que Dokos est certifié conforme pour les systèmes de caisse.
             <div>
-                <NuxtLink to="/faire-festival-2026" class="text-grey font-normal">En savoir plus <Icon name="i-mdi-arrow-top-right"/></NuxtLink>
+                <NuxtLink to="/blog/2026/dokos-certifie-lne" class="text-grey font-normal">En savoir plus <Icon name="i-mdi-arrow-top-right"/></NuxtLink>
             </div>
         </div>
         <ULandingHero
