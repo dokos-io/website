@@ -1,0 +1,111 @@
+navigation:
+    title: OCR
+    icon: i-mdi-ocr
+    description: Extracting vendor invoice data with Amazon Textract
+
+title: OCR
+icon: i-mdi-ocr
+description: Scan and process your documents in a snap with built-in OCR.
+application: OCR
+theme: site-web-outils-numeriques
+author: Dokos & Contributors
+
+hero:
+  title: Automate your invoice entry with Dokos' <span class="text-primary">OCR</span> module.
+  description: Turn your documents into ready-to-use information. <br>With Dokos' OCR module, save time, cut down on errors, and focus on what matters.
+  links:
+    - label: Get started now
+      to: https://cloud.dokos.io
+      size: sm
+      color: sky
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+
+features:
+  - title: Save time and cut down on errors with automated document handling.
+    description: "Simplify your document management with Dokos' OCR. Turn your invoices and delivery notes into usable data instantly, and free your teams from repetitive tasks. Fewer errors, more time for what matters.<ul><li><span class='font-bold'> Automatic data extraction:</span> As soon as your documents arrive (invoices, purchase orders), OCR analyzes and automatically extracts the key information (amounts, dates, order numbers). </li><li><span class='font-bold'> Processing emailed attachments:</span> Send your documents straight by email, and Dokos analyzes them and feeds them into your accounting or stock modules."
+    image: "image/ocr/facture-ocr.png"
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: Automation
+      color: sky
+  - title: "Advanced operation: control every step"
+    description: "Stay in control while automating. With Dokos, you validate each step to guarantee optimal accuracy. Configure your workflows to fit your specific needs."
+    image: "image/ocr/workflow-ocr.png"
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Semi-automatic
+      color: sky
+  - title: Keep full control of your data
+    description: "At Dokos, we put transparency and data security first. You're free to customize every aspect of the software while benefiting from guaranteed security. Your information is protected at every step. <ul><li><span class='font-bold'>Data deleted after processing:</span> All data extracted via Amazon Textract is erased immediately after processing.</li><li><span class='font-bold'>Flexibility through our open APIs:</span> Easily integrate Dokos with your existing systems or OCR solutions for unconstrained data management."
+    align: left
+    image: "image/ocr/donnees-ocr.png"
+    image_bg_color: bg-teal-500
+    badge:
+      label: Integrations
+      color: sky
+  - title: A reliable, secure solution
+    description: "Our OCR relies on three main methods for data extraction: <ul><li><span class='font-bold'>Receipt by email</span></li><li><span class='font-bold'>File import</span></li><li><span class='font-bold'>Manual document upload (PDF or image)</li></span><br>We chose Amazon Textract to ensure data extraction that's both accurate and fast, offering the best value for money. What's more, with Dokos you can manage your entire purchasing flow with ease: automate the creation of vendor orders or match invoices against existing orders."
+    image: "image/ocr/bannette-factures.png"
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Security
+      color: sky
+
+bottom_section:
+  title: See how Dokos OCR transforms your document management.
+  description: "Stop wasting time on tedious tasks. With Dokos OCR, free yourself from administrative constraints and focus on what really matters: your highest-value work."
+  cards:
+    - title: Time savings
+      description: Automation speeds up document processing, letting your teams focus on more strategic tasks.
+      icon: i-material-symbols-alarm-on-outline
+      class: "col-span-4 row-span-3"
+    - title: Fewer errors
+      description: "Less manual entry means fewer errors, especially in critical processes like accounting."
+      icon: i-material-symbols-disabled-by-default-rounded
+      class: "col-span-4 row-span-3"
+    - title: Stronger control
+      description: With custom workflows, you validate information before it's added to Dokos, keeping your data consistently accurate.
+      icon: i-material-symbols-check-circle-outline-rounded
+      class: "col-span-4 row-span-3"
+
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /features/ocr
+
+bottom_cta:
+  title: With Dokos, transform your purchasing management through automation.
+  description: Stop wasting time on manual processes. Dokos gives you a flexible, ethical, transparent solution to automate your purchasing management. Take control today!
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Get started now
+      to: https://cloud.dokos.io
+      size: sm
+      color: orange
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

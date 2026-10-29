@@ -1,0 +1,98 @@
+title: "The publisher: Dodock and Dokos"
+description: Dokos SAS publishes its own fork of the Frappe framework and the ERP distribution built on it. Here's what that actually changes for the people who use it.
+navigation:
+  title: The publisher
+  icon: i-heroicons-code-bracket-square
+  description: Dodock and Dokos, the fork we maintain
+
+hero:
+  headline:
+    label: Publisher, not just an integrator
+    icon: i-simple-icons-gitlab
+  title: We don't resell an ERP.<br>We <span class="text-primary">write</span> one.
+  description: Dodock is our fork of the Frappe framework. Dokos is the ERP distribution built on it. Both are published under GPLv3, on our GitLab, with a commit history anyone can inspect, including you, before you sign anything.
+  links:
+    - label: See the code
+      to: https://gitlab.com/dokos
+      target: _blank
+      size: xl
+      color: primary
+      icon: i-simple-icons-gitlab
+    - label: Documentation
+      to: https://doc.dokos.io
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline
+
+scope:
+  title: What publisher status changes
+  description: The distinction sounds formal. In practice, it decides what can be fixed, and how fast.
+  items:
+    - title: A fix doesn't depend on anyone else
+      description: When the bug is in the core, we fix it in the core. An integrator, by contrast, opens a ticket upstream and waits.
+      icon: i-heroicons-wrench-screwdriver
+    - title: French compliance is built in
+      description: "Accounting, payment collection, e-invoicing: regulatory adaptations are integrated into the product, not bolted on as a fragile add-on."
+      icon: i-octicon-law
+    - title: Upstream is tracked closely
+      description: Every version Frappe Technologies publishes is read, tested and ported. We adopt what makes sense and diverge when it's justified.
+      icon: i-heroicons-arrow-trending-up
+    - title: Nothing is hidden
+      description: Public repositories, public tickets, full history. You can judge our fix rate before you commit to anything.
+      icon: i-simple-icons-gitlab
+    - title: No license fees
+      description: The software is free and stays free. We charge for operation and engineering, never for the right to use the product.
+      icon: i-heroicons-credit-card
+    - title: Integrity is verifiable
+      description: For the scopes covered by certification, the cryptographic fingerprint of every file is published, and you can recompute it yourself.
+      icon: i-heroicons-finger-print
+
+operations:
+  title: How the product moves forward
+  description: An enterprise software product is judged as much on its trajectory as on its state at any given moment.
+  items:
+    - title: A shared base, openly acknowledged
+      description: Dokos derives from ERPNext, and Dodock from Frappe. We don't hide that lineage; it means we benefit from the work of a worldwide ecosystem.
+      icon: i-simple-icons-frappe
+    - title: Documented divergences
+      description: Where European requirements diverge from upstream, we diverge too, and we keep a record of every gap so it can be maintained over time.
+      icon: i-heroicons-arrows-pointing-out
+    - title: A two-stage rollout
+      description: New versions are shipped first to installations without custom applications, then to those that have them, after a compatibility check.
+      icon: i-heroicons-arrow-path
+    - title: A community that contributes
+      description: A support forum, outside contributions, feature funding. Feedback from real usage reaches the people who write the code directly.
+      icon: i-heroicons-user-group
+
+reversibility:
+  title: Publishing under a free license, and standing behind it
+  description: Publishing under GPLv3 means giving up on locking in your users through technical means. It's a commercial choice, not just a philosophical one.
+  items:
+    - title: You can audit us
+      description: The code is readable by your teams or by a trusted third party, with no non-disclosure agreement required.
+      icon: i-heroicons-magnifying-glass
+    - title: You can leave us
+      description: The installation stays operable by another provider, or by you.
+      icon: i-heroicons-arrows-right-left
+    - title: You can contribute
+      description: Fix, extend, propose. Outside contributions are merged when they hold up.
+      icon: i-heroicons-code-bracket
+    - title: You can fork
+      description: That's the right the license grants. We've exercised it ourselves, so we'd be in a poor position to argue against it.
+      icon: i-heroicons-arrows-pointing-out
+
+cta:
+  title: The best vendor audit is the repository
+  description: Before any sales call, go read the code, the tickets and the commit history. Few publishers can offer that.
+  links:
+    - label: Open GitLab
+      to: https://gitlab.com/dokos
+      target: _blank
+      size: xl
+      color: primary
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: neutral
+      variant: outline

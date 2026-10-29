@@ -1,7 +1,4 @@
 <script setup lang="ts">
-// import type { feature } from '~/types'
-
-const route = useRoute();
 const {
     params: { slug },
 } = useRoute();
@@ -12,11 +9,10 @@ const { t, locale } = useI18n({
 
 const localePath = useLocalePath();
 
-const path_without_locale = route;
-path_without_locale.path.replace(`/^(/${locale}\.)/,"")`, "");
+const path = `/${locale.value}/features/${slug}`;
 
-const { data: feature } = await useAsyncData(path_without_locale.path, () =>
-    queryContent(`/${locale.value}/features/${slug}`).findOne()
+const { data: feature } = await useAsyncData<any>(path, () =>
+    queryCollection("features").path(path).first()
 );
 
 if (!feature.value) {
@@ -27,9 +23,8 @@ if (!feature.value) {
     });
 }
 
-const title = feature.value.head?.title || feature.value.title;
-const description =
-    feature.value.head?.description || feature.value.description;
+const title = feature.value.title;
+const description = feature.value.description;
 useSeoMeta({
     titleTemplate: "%s · Fonctionnalités Dokos",
     title,
@@ -42,16 +37,14 @@ useSeoMeta({
 <template>
     <UPage v-if="feature">
         <UContainer>
-            <UPageHeader :ui="{ wrapper: 'border-none' }">
+            <UPageHeader :ui="{ root: 'border-none' }">
                 <div class="absolute top-[68px] hidden lg:flex">
                     <UTooltip :text="t('back_button')">
                         <UButton
                             :to="localePath('/features')"
                             icon="i-ph-caret-left"
-                            color="gray"
-                            :ui="{ rounded: 'rounded-full' }"
+                            color="neutral"
                             size="lg"
-                            class=""
                         />
                     </UTooltip>
                 </div>
@@ -59,16 +52,16 @@ useSeoMeta({
 
             <UPage>
                 <UPageBody prose class="prose-lg dark:text-gray-300">
-                    <ULandingHero
+                    <UPageHero
+                        v-if="feature.hero"
                         :links="feature.hero.links"
                         orientation="vertical"
-                        :ui="{ wrapper: 'pt-0 sm:pt-0 md:pt-0' }"
-                        v-if="feature.hero"
+                        :ui="{ root: 'pt-0 sm:pt-0 md:pt-0' }"
                     >
                         <template #headline>
                             <UBadge
                                 v-if="feature.hero.headline"
-                                :color="feature.hero.headline.color || 'sky'"
+                                :color="feature.hero.headline.color || 'primary'"
                                 :variant="
                                     feature.hero.headline.variant || 'subtle'
                                 "
@@ -109,19 +102,19 @@ useSeoMeta({
                         <template #description>
                             <span v-html="feature.hero.description"></span>
                         </template>
-                    </ULandingHero>
+                    </UPageHero>
 
-                    <ULandingSection>
+                    <UPageSection>
                         <ContentRenderer
                             v-if="feature && feature.body"
                             :value="feature"
                         />
-                    </ULandingSection>
+                    </UPageSection>
 
-                    <ULandingCTA
+                    <UPageCTA
+                        v-if="feature.bottom_cta"
                         v-bind="feature.bottom_cta"
                         :class="feature.bottom_cta.class"
-                        v-if="feature.bottom_cta"
                     />
                 </UPageBody>
             </UPage>

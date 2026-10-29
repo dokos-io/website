@@ -1,0 +1,72 @@
+navigation:
+  title: eTransactions
+  icon: i-heroicons-document-text
+  description: Incoming and outgoing e-invoices, in CII/FacturX and UBL formats.
+
+title: eTransactions
+icon: i-heroicons-document-text
+description: Handles your incoming and outgoing e-invoices, in CII/FacturX and UBL formats.
+application: eTransactions
+theme: finance-comptabilite
+logo:
+  light: /frappe/etransactions.svg
+  dark: /frappe/etransactions.svg
+
+hero:
+  title: <span class="text-primary">E-invoicing</span>, in the formats you're expected to use.
+  description: eTransactions handles your incoming and outgoing e-invoices in CII/FacturX and UBL formats, directly from Dokos.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+features:
+  - title: Incoming invoices
+    description: Processes incoming e-invoices received in CII/FacturX and UBL formats.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Incoming
+      color: sky
+  - title: Outgoing invoices
+    description: Issues your invoices in the electronic formats your customers and the regulation expect.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Outgoing
+      color: sky
+
+bottom_cta:
+  title: Preparing for mandatory e-invoicing?
+  description: Available from the cloud.dokos.io marketplace. Describe your current situation, and we'll tell you what eTransactions already covers.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

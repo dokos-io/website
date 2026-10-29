@@ -7,7 +7,11 @@ title: Ressources Humaines
 icon: i-mdi-human-capacity-increase
 description: Simplifiez et améliorez la gestion de vos équipes
 author: Frappe Technologies, Dokos & Contributeurs
-application: HRMS
+application: Dokos HR
+theme: projets-ressources-humaines
+logo:
+  light: /frappe/hrms_logo.svg
+  dark: /frappe/hrms_logo.svg
 
 hero:
   title: Gérez vos <span class="text-primary">Ressources Humaines</span> de manière efficace avec Dokos.

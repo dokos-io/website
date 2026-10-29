@@ -1,0 +1,60 @@
+title: Projets & ressources humaines
+description: Le suivi des projets, des équipes et de la formation, connecté à la facturation client et à la paie.
+navigation:
+  title: Projets & ressources humaines
+  icon: i-heroicons-user-group
+
+hero:
+  headline:
+    label: L'écosystème Dokos
+    icon: i-heroicons-user-group
+    to: /fr/modules
+  title: Vos équipes et vos projets, <span class="text-primary">une seule vue</span>.
+  description: Le temps passé sur un projet alimente à la fois le suivi d'avancement et la facturation client. Les congés et les absences d'une équipe se lisent en face de sa charge de travail réelle.
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir tous les modules
+      to: /fr/modules
+      size: xl
+      color: neutral
+      variant: outline
+
+modules:
+  title: Les modules de ce périmètre
+  description: Trois modules, utiles à des degrés différents selon que vous facturez du temps ou gérez des équipes internes.
+  items:
+    - title: Projets
+      description: Planification, suivi des tâches et du temps passé, jusqu'à la facturation client.
+      icon: i-eos-icons-project-outlined
+      to: /fr/modules/projets
+    - title: Ressources humaines
+      description: Congés, notes de frais, présences et paie, centralisés par salarié.
+      icon: i-mdi-human-capacity-increase
+      to: /fr/modules/ressources-humaines
+      logo:
+        light: /frappe/hrms_logo.svg
+        dark: /frappe/hrms_logo.svg
+    - title: Frappe Learning
+      description: Une plateforme de formation interne pour transférer les compétences en équipe.
+      icon: i-heroicons-academic-cap
+      to: /fr/modules/learning
+      logo:
+        light: /frappe/lms.png
+        dark: /frappe/lms.png
+
+cta:
+  title: Vous facturez du temps, ou vous gérez des équipes internes ?
+  description: Le périmètre utile diffère selon votre activité. Décrivez-la, nous vous dirons quels modules l'adressent réellement.
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir les tarifs
+      to: /fr/tarifs
+      size: xl
+      color: neutral
+      variant: outline

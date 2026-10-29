@@ -1,0 +1,72 @@
+navigation:
+  title: Construction
+  icon: i-heroicons-calculator
+  description: Configurateur de devis avancé.
+
+title: Construction
+icon: i-heroicons-calculator
+description: Un configurateur de devis avancé pour les activités qui vendent des ouvrages complexes.
+application: Construction
+theme: vente-relation-client
+logo:
+  light: /frappe/construction_logo.svg
+  dark: /frappe/construction_logo.svg
+
+hero:
+  title: Des devis <span class="text-primary">complexes</span>, configurés sans ressaisie.
+  description: Construction ajoute à Dokos un configurateur de devis avancé, pour chiffrer des ouvrages à plusieurs postes sans reconstruire le devis à chaque variante.
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+features:
+  - title: Configurateur de devis
+    description: Construit un devis à partir de postes et de variantes, plutôt que d'une ligne de produit unique.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Devis
+      color: sky
+  - title: Un module Dokos comme les autres
+    description: S'installe et se gère comme le reste de l'écosystème, sans site ni base de données séparés.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Intégration
+      color: sky
+
+bottom_cta:
+  title: Vos devis dépendent d'un tableur à part ?
+  description: Disponible depuis la marketplace de cloud.dokos.io. Décrivez-nous votre processus de chiffrage actuel, nous vous dirons ce que Construction couvre déjà.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

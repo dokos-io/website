@@ -78,7 +78,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: i-streamline-bank
+  icon: i-tabler-building-bank
   title: Analyse de la Rentabilité des Projets
   ---
   - Un rapport sur la rentabilité du projet peut être généré à partir des entrées de revenus et dépenses.

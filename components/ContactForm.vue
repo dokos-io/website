@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { FormError, FormSubmitEvent } from '#ui/types'
+import type { FormError, FormSubmitEvent } from '@nuxt/ui'
 
 defineProps({
   form: {
@@ -22,7 +22,12 @@ const loading = ref<boolean>(false)
 const turnstile = ref()
 const token = ref()
 
-const state = reactive({
+const state = reactive<{
+  name?: string
+  email?: string
+  company?: string
+  body?: string
+}>({
   name: undefined,
   email: undefined,
   company: undefined,
@@ -36,10 +41,10 @@ const canSend = computed(() => {
 
 const validate = (state: any): FormError[] => {
   const errors = []
-  if (!state.name) errors.push({ path: 'name', message: 'Obligatoire' })
-  if (!state.email) errors.push({ path: 'email', message: 'Obligatoire' })
-  if (!state.company) errors.push({ path: 'company', message: 'Obligatoire' })
-  if (!state.body) errors.push({ path: 'body', message: 'Obligatoire' })
+  if (!state.name) errors.push({ name: 'name', message: 'Obligatoire' })
+  if (!state.email) errors.push({ name: 'email', message: 'Obligatoire' })
+  if (!state.company) errors.push({ name: 'company', message: 'Obligatoire' })
+  if (!state.body) errors.push({ name: 'body', message: 'Obligatoire' })
   return errors
 }
 
@@ -61,11 +66,11 @@ async function onSubmit(event: FormSubmitEvent<any>) {
       state.name = ''
       state.email = ''
       state.body = ''
-      toast.add({ title: 'Email envoyé', description: 'Nous faisons notre possible pour vous répondre dans les meilleurs délais', color: 'green' })
+      toast.add({ title: 'Email envoyé', description: 'Nous faisons notre possible pour vous répondre dans les meilleurs délais', color: 'success' })
     })
     .catch((e) => {
       const description = e.data?.message || 'Un erreur a empêché l\'envoi de votre message. Veuilez réessayer dans quelques instants ou nous envoyer un email.'
-      toast.add({ title: 'Echec de l\'envoi du message', description, color: 'red' })
+      toast.add({ title: 'Echec de l\'envoi du message', description, color: 'error' })
     })
     .finally(() => {
       loading.value = false
@@ -77,23 +82,23 @@ async function onSubmit(event: FormSubmitEvent<any>) {
 
 <template>
   <div class="w-full max-w-[640px] z-20">
-    <UCard :ui="{ background: 'form-bg', body: { base: 'flex flex-col space-y-6 w-full', padding: 'px-4 py-5 sm:p-8' } }">
+    <UCard class="form-bg" :ui="{ body: 'flex flex-col space-y-6 w-full px-4 py-5 sm:p-8' }">
       <UForm :validate="validate" :state="state" class="space-y-6" @submit="onSubmit">
-        <UFormGroup :label="form.name.label" name="name" required>
-          <UInput v-model="state.name" :placeholder="form.name.placeholder" />
-        </UFormGroup>
+        <UFormField :label="form.name.label" name="name" required>
+          <UInput v-model="state.name" :placeholder="form.name.placeholder" class="w-full" />
+        </UFormField>
 
-        <UFormGroup :label="form.email.label" name="email" required>
-          <UInput v-model="state.email" type="email" :placeholder="form.email.placeholder" />
-        </UFormGroup>
+        <UFormField :label="form.email.label" name="email" required>
+          <UInput v-model="state.email" type="email" :placeholder="form.email.placeholder" class="w-full" />
+        </UFormField>
 
-        <UFormGroup :label="form.company.label" name="company" required>
-          <UInput v-model="state.company" :placeholder="form.company.placeholder" />
-        </UFormGroup>
+        <UFormField :label="form.company.label" name="company" required>
+          <UInput v-model="state.company" :placeholder="form.company.placeholder" class="w-full" />
+        </UFormField>
 
-        <UFormGroup :label="form.body.label" name="body" required>
-          <UTextarea v-model="state.body" autoresize :placeholder="form.body.placeholder" :rows="6" />
-        </UFormGroup>
+        <UFormField :label="form.body.label" name="body" required>
+          <UTextarea v-model="state.body" autoresize :placeholder="form.body.placeholder" :rows="6" class="w-full" />
+        </UFormField>
 
         <ClientOnly>
           <NuxtTurnstile v-if="showTurnstile" ref="turnstile" v-model="token" :options="{ theme: $colorMode.value as 'auto' | 'light' | 'dark' }" />
@@ -102,7 +107,7 @@ async function onSubmit(event: FormSubmitEvent<any>) {
         <UButton
           v-bind="form.button"
           type="submit"
-          color="gray"
+          color="neutral"
           class="w-fit pt-2"
           :loading="loading"
           :disabled="!canSend"

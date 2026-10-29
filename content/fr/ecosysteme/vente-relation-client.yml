@@ -1,0 +1,88 @@
+title: Vente & relation client
+description: CRM, ventes, e-commerce et réservations partagent la même base de données client, du premier contact à la facture.
+navigation:
+  title: Vente & relation client
+  icon: i-heroicons-shopping-cart
+
+hero:
+  headline:
+    label: L'écosystème Dokos
+    icon: i-heroicons-shopping-cart
+    to: /fr/modules
+  title: De la prospection à l'encaissement,<br><span class="text-primary">un seul système</span>.
+  description: Un devis accepté dans le CRM devient une commande, puis une facture, sans ressaisie. Le catalogue, les stocks et les tarifs sont partagés entre le CRM, les ventes et la boutique en ligne.
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir tous les modules
+      to: /fr/modules
+      size: xl
+      color: neutral
+      variant: outline
+
+modules:
+  title: Les modules de ce périmètre
+  description: Chacun s'utilise seul ou combiné aux autres, sans doublon de données.
+  items:
+    - title: Frappe CRM
+      description: Centralise les prospects et le pipeline commercial, du premier contact au devis.
+      icon: i-carbon-chart-relationship
+      to: /fr/modules/crm
+      logo:
+        light: /frappe/crm.svg
+        dark: /frappe/crm.svg
+    - title: Ventes
+      description: Transforme les devis acceptés en commandes puis en factures, sans ressaisie.
+      icon: i-ep-sell
+      to: /fr/modules/ventes
+    - title: Portail web & e-commerce
+      description: Ouvre une vitrine en ligne connectée au même catalogue et aux mêmes stocks.
+      icon: i-gg-website
+      to: /fr/modules/e-commerce
+      logo:
+        light: /frappe/webshop_logo.svg
+        dark: /frappe/webshop_logo.svg
+    - title: Réservations de ressources
+      description: Planifie des créneaux, des salles ou des équipements réservables par vos clients.
+      icon: i-material-symbols-location-on-outline-rounded
+      to: /fr/modules/reservations-de-ressources
+      logo:
+        light: /frappe/bookings_logo.svg
+        dark: /frappe/bookings_logo.svg
+    - title: Construction
+      description: Un configurateur de devis avancé pour les activités qui vendent des ouvrages complexes.
+      icon: i-heroicons-calculator
+      to: /fr/modules/construction
+      logo:
+        light: /frappe/construction_logo.svg
+        dark: /frappe/construction_logo.svg
+    - title: Dokos WooCommerce
+      description: Connecte une boutique WooCommerce existante à votre gestion Dokos.
+      icon: i-simple-icons-woocommerce
+      to: /fr/modules/woocommerce
+      logo:
+        light: /frappe/woocommerce_logo.svg
+        dark: /frappe/woocommerce_logo.svg
+    - title: Hiboutik
+      description: Connecte votre point de vente Hiboutik à votre catalogue et vos stocks Dokos.
+      icon: i-heroicons-shopping-bag
+      to: /fr/modules/hiboutik
+      logo:
+        light: /frappe/hiboutik_logo.svg
+        dark: /frappe/hiboutik_logo.svg
+
+cta:
+  title: Vos outils de vente ne se parlent pas entre eux ?
+  description: Décrivez-nous votre parcours client actuel. Nous vous dirons ce qu'un système unifié change concrètement, et ce qu'il ne changera pas.
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir les tarifs
+      to: /fr/tarifs
+      size: xl
+      color: neutral
+      variant: outline

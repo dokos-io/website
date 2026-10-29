@@ -72,7 +72,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: i-icon-park-solid-seo
+  icon: i-icon-park-outline-seo
   title: Gestion des blogs et SEO
   ---
   - Possibilité de publier des articles de blog pour renforcer la relation avec vos clients.

@@ -1,10 +1,8 @@
 <script setup lang="ts">
 const { locale } = useI18n();
 
-const route = useRoute();
-
-const { data: page } = await useAsyncData(route.path, () =>
-    queryContent(`/${locale.value}${route.path}`).findOne()
+const { data: page } = await useAsyncData<any>("contact", () =>
+    queryCollection("pages").path(`/${locale.value}/contact`).first()
 );
 if (!page.value) {
     throw createError({
@@ -21,8 +19,7 @@ useSeoMeta({
     ogDescription: page.value.description,
 });
 
-defineOgImage({
-    component: "Saas",
+defineOgImage("OgImageSaas" as any, {
     title: page.value.title,
     description: page.value.description,
 });
@@ -33,8 +30,9 @@ defineOgImage({
         <ClientOnly>
             <HomeTetris />
         </ClientOnly>
-        <ULandingSection
-            :ui="{ container: 'gap-y-0 sm:gap-y-0', base: 'z-10' }"
+        <UPageSection
+            class="z-10"
+            :ui="{ container: 'gap-y-0 sm:gap-y-0' }"
         >
             <template #title>
                 <span v-html="page.form.title"></span>
@@ -46,8 +44,8 @@ defineOgImage({
             <div class="pt-8 w-full flex justify-center">
                 <ContactForm :form="page.form" />
             </div>
-        </ULandingSection>
-        <ULandingSection>
+        </UPageSection>
+        <UPageSection>
             <UPageGrid>
                 <UPageCard
                     v-for="(info, index) in page.contact_info"
@@ -56,6 +54,6 @@ defineOgImage({
                     target="_blank"
                 />
             </UPageGrid>
-        </ULandingSection>
+        </UPageSection>
     </UPage>
 </template>

@@ -1,8 +1,11 @@
 import type { Feature } from '../types'
 
 export const useFeatures = () => {
-  const { locale } = useI18n()
-  const features = useState<Feature[]>('features', () => [])
+  // See useModules.ts for why this reads $i18n instead of calling useI18n().
+  const { $i18n } = useNuxtApp()
+  const locale = $i18n.locale
+  // Keyed by locale, see the identical comment in useModules.ts.
+  const features = useState<Feature[]>(`features-${locale.value}`, () => [])
 
   // Data fetching
   async function fetchList() {
@@ -11,9 +14,11 @@ export const useFeatures = () => {
     }
 
     try {
-      const data = await queryContent(`/${locale.value}/features`).where({ _extension: 'md' }).find()
+      const data = await queryCollection('features')
+        .where('path', 'LIKE', `/${locale.value}/features/%`)
+        .all()
 
-      features.value = data as Feature[]
+      features.value = data as unknown as Feature[]
     }
     catch (e) {
       features.value = []

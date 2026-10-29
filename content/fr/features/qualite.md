@@ -62,7 +62,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: i-cil-magnifying-glass
+  icon: i-heroicons-magnifying-glass
   title: Gestion des Actions Correctives et Préventives (CAPA)
   ---
   - **Actions Correctives** : Analysez les causes profondes des non-conformités, et mettez en place des actions correctives pour prévenir leur réapparition.

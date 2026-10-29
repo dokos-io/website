@@ -8,6 +8,7 @@ link: "https://frappe.io/insights"
 author: Frappe Technologies & Contributeurs
 description: Prenez des décisions éclairées grâce à Frappe Insights
 application: Frappe Insights
+theme: site-web-outils-numeriques
 
 logo:
   light: /frappe/insights.svg

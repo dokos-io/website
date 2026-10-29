@@ -63,7 +63,7 @@ hero:
   :::card
   ---
   class: items-start
-  icon: i-cil-magnifying-glass
+  icon: i-heroicons-magnifying-glass
   title: Amélioration de la recherche de documents
   ---
   - L'OCR transforme les documents scannés en texte consultable, permettant une recherche par mots-clés au sein de Dokos.

@@ -8,6 +8,7 @@ link: "https://frappe.io/wiki"
 author: Frappe Technologies
 description: "Libérez le potentiel de votre équipe avec la gestion des connaissances"
 application: Frappe Wiki
+theme: support-collaboration
 
 logo:
   light: /frappe/wiki.png
@@ -77,7 +78,7 @@ bridge:
 carousel:
   cards:
     - title: "100% Open-Source, sans coûts cachés"
-      description: "Avec Frappe Wiki, vous bénéficiez d'un outil de gestion des connaissances rentable qui évolue avec votre entreprise — pas d'abonnements coûteux, pas de frais cachés, seulement des fonctionnalités puissantes qui grandissent avec votre équipe."
+      description: "Avec Frappe Wiki, vous bénéficiez d'un outil de gestion des connaissances rentable qui évolue avec votre entreprise, sans abonnement coûteux ni frais caché."
     - title: "Une communauté mondiale de confiance"
       description: "Frappe Wiki et Dokos sont adoptés par des milliers d'entreprises dans le monde, incluant des leaders dans des secteurs comme la fabrication, les services et la distribution. En choisissant Frappe Wiki, vous rejoignez une communauté internationale d'innovateurs et d'entreprises avant-gardistes."
 

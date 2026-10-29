@@ -3,8 +3,6 @@ const { t } = useI18n({
     useScope: "local",
 });
 
-const localePath = useLocalePath();
-
 const { Features, fetchList } = useFeatures();
 
 const title = "Fonctionnalités";
@@ -22,36 +20,33 @@ await fetchList();
 
 <template>
     <UPage id="smooth" class="pt-20 -mt-20">
-        <ULandingHero
+        <UPageHero
             :title="t('hero_title')"
             :ui="{
-                wrapper: 'bg-gradient-to-b from-green-400/10 from-90%',
+                root: 'bg-gradient-to-b from-green-400/10 from-90%',
                 title: 'text-emerald-500',
             }"
         >
             <template #description>
                 <span v-html="t('hero_description')"></span>
             </template>
-        </ULandingHero>
+        </UPageHero>
         <UPageBody>
             <UContainer>
                 <UPageGrid>
                     <UPageCard
                         v-for="(feature, index) in Features"
                         :key="index"
-                        :to="localePath(feature._path)"
+                        :to="feature.path"
                         :title="feature.title"
                         :description="feature.description"
                         :ui="{
-                            divide: '',
-                            footer: { padding: 'pt-0' },
                             title: 'text-lg',
                             description: 'line-clamp-3',
                         }"
                     >
-
                         <template #footer>
-                            <UBadge :label="feature.application" color="gray" />
+                            <UBadge :label="feature.application as string" color="neutral" />
                         </template>
                     </UPageCard>
                 </UPageGrid>

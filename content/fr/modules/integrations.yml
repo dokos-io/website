@@ -6,6 +6,7 @@ title: Intégrations
 icon: i-mdi-connection
 description: Connectez facilement vos outils pour un écosystème harmonieux.
 application: Dokos
+theme: site-web-outils-numeriques
 author: Frappe Technologies, Dokos & Contributeurs
 hero:
   title: Maximisez votre productivité avec les <span class="text-primary">intégrations</span> Dokos

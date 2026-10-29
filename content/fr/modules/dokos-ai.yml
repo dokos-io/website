@@ -1,0 +1,96 @@
+navigation:
+  title: Dokos AI
+  icon: i-heroicons-sparkles
+  description: Un assistant IA intégré à vos données Dokos, avec confirmation avant toute écriture.
+
+title: Dokos AI
+icon: i-heroicons-sparkles
+description: Conversation, compétences métier et automatisation, directement sur vos données Dokos.
+author: Dokos
+application: Dokos AI
+theme: intelligence-artificielle
+logo:
+  light: /frappe/dokos_logo.svg
+  dark: /frappe/dokos_logo.svg
+
+hero:
+  title: Un assistant IA <span class="text-primary">qui connaît vos données</span>, pas un chatbot générique.
+  description: Dokos AI répond en langage naturel en s'appuyant directement sur les documents de votre site — devis, factures, tickets, stocks. Il peut consulter et modifier vos données, mais aucune écriture n'a lieu sans votre confirmation explicite.
+  links:
+    - label: Voir sur la marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Contactez-nous
+      to: /fr/contact
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: L'écosystème Dokos
+    color: sky
+    to: "/fr"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+features:
+  - title: Une conversation branchée sur vos documents
+    description: Posez une question en langage naturel, Dokos AI la traduit en requêtes sur vos DocTypes (clients, factures, stocks, projets…) et répond à partir de vos données réelles, pas d'un résumé générique.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Conversation
+      color: sky
+  - title: Des compétences métier, pas une intelligence générale
+    description: Chaque compétence est un fichier de skill dédié à un processus précis (relance de devis, rapprochement de facture…), activé seulement quand la conversation le demande.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Compétences métier
+      color: sky
+  - title: De l'automatisation, avec confirmation humaine
+    description: Dokos AI peut créer, mettre à jour ou soumettre un document pour vous — mais toute écriture reste soumise à votre confirmation explicite avant d'être appliquée.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Automatisation encadrée
+      color: sky
+
+bottom_section:
+  title: "Comment Dokos AI est construit :"
+  cards:
+    - title: Architecture à trois couches
+      description: Un registre qui découvre les compétences disponibles, un orchestrateur qui décide de la marche à suivre, et des outils qui exécutent les actions — lecture, écriture, liste, compétence, référence.
+      icon: i-heroicons-squares-2x2
+      class: "col-span-4 row-span-3"
+    - title: Extensible par fichiers de compétence
+      description: Chaque compétence métier est un simple fichier Markdown avec un en-tête YAML, pour l'étendre sans toucher au moteur.
+      icon: i-heroicons-puzzle-piece
+      class: "col-span-4 row-span-3"
+    - title: Confirmation avant écriture
+      description: Toute action qui modifie une donnée est présentée avant exécution et attend une confirmation explicite.
+      icon: i-heroicons-shield-check
+      class: "col-span-4 row-span-3"
+
+bottom_cta:
+  title: Envie de voir Dokos AI sur vos propres données ?
+  description: Disponible depuis la marketplace de cloud.dokos.io. Décrivez-nous vos cas d'usage, nous vous dirons ce qu'il couvre déjà et ce qui reste à construire.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

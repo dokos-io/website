@@ -1,0 +1,81 @@
+title: Finance & comptabilité
+description: Une comptabilité alimentée par les autres modules, pas par des exports manuels, avec un plan comptable français.
+navigation:
+  title: Finance & comptabilité
+  icon: i-heroicons-banknotes
+
+hero:
+  headline:
+    label: L'écosystème Dokos
+    icon: i-heroicons-banknotes
+    to: /fr/modules
+  title: Une comptabilité qui <span class="text-primary">se met à jour</span> seule.
+  description: Chaque facture, chaque paiement et chaque mouvement de stock alimente directement les comptes. Le rapprochement bancaire et les rapports financiers s'appuient sur les mêmes écritures, sans ressaisie entre deux logiciels.
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir tous les modules
+      to: /fr/modules
+      size: xl
+      color: neutral
+      variant: outline
+
+scope:
+  title: Ce que couvre ce périmètre
+  description: Pensé pour des comptables et des directions financières, pas seulement pour des développeurs.
+  items:
+    - title: Plan comptable français
+      description: Structure conforme aux normes françaises, avec gestion de la TVA et des exercices comptables.
+      icon: i-heroicons-document-text
+    - title: Multi-société et multi-devise
+      description: Plusieurs entités juridiques ou plusieurs devises dans une même installation, avec des comptes séparés.
+      icon: i-heroicons-building-office-2
+    - title: Rapprochement bancaire automatisé
+      description: Les relevés bancaires importés se rapprochent des écritures existantes, avec les écarts mis en évidence.
+      icon: i-heroicons-arrows-right-left
+
+modules:
+  title: Les modules de ce périmètre
+  description: Deux modules, pensés pour fonctionner ensemble.
+  items:
+    - title: Comptabilité
+      description: Plan comptable, rapprochement bancaire, bilans et comptes de résultat, alimentés par les autres modules.
+      icon: i-uil-balance-scale
+      to: /fr/modules/comptabilite
+    - title: Paiements
+      description: Encaisse par carte, virement ou prélèvement, avec réconciliation automatique en comptabilité.
+      icon: i-ic-twotone-payments
+      to: /fr/modules/paiements
+      logo:
+        light: /frappe/payments_logo.svg
+        dark: /frappe/payments_logo.svg
+    - title: Bank
+      description: Synchronise vos comptes bancaires avec votre comptabilité Dokos.
+      icon: i-heroicons-building-library
+      to: /fr/modules/bank
+      logo:
+        light: /frappe/bank_logo.svg
+        dark: /frappe/bank_logo.svg
+    - title: eTransactions
+      description: Gère vos factures électroniques entrantes et sortantes, aux formats CII/FacturX et UBL.
+      icon: i-heroicons-document-text
+      to: /fr/modules/etransactions
+      logo:
+        light: /frappe/etransactions.svg
+        dark: /frappe/etransactions.svg
+
+cta:
+  title: Vous migrez depuis un autre logiciel comptable ?
+  description: La reprise de données comptables (plan de comptes, historique, factures en cours) se cadre avant tout chiffrage.
+  links:
+    - label: Contactez-nous
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir les offres d'ingénierie
+      to: /fr/ingenierie
+      size: xl
+      color: neutral
+      variant: outline

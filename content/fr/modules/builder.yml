@@ -8,6 +8,7 @@ description: L'outil ultime de création de sites web no-code
 link: https://frappe.io/builder
 author: Frappe Technologies & Contributeurs
 application: Frappe Builder
+theme: site-web-outils-numeriques
 logo:
   light: /frappe/builder.svg
   dark: /frappe/builder.svg

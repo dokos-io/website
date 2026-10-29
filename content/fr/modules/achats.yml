@@ -8,6 +8,7 @@ icon: i-icon-park-outline-buy
 description: Optimisez vos achats pour des approvisionnements sans faille.
 author: Frappe Technologies & Contributeurs
 application: Dokos
+theme: achats-stocks-production
 
 hero:
   title: Optimisez vos <span class="text-primary">achats</span> avec Dokos

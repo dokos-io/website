@@ -7,6 +7,7 @@ title: OCR
 icon: i-mdi-ocr
 description: Numérisez et traitez vos documents en un clin d'œil grâce à l'OCR intégré.
 application: OCR
+theme: site-web-outils-numeriques
 author: Dokos & Contributeurs
 
 hero:
