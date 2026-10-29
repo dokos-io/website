@@ -1,5 +1,5 @@
 # Sources :
-# - README de https://github.com/The-Commit-Company/raven (redirige vers github.com/frappe/raven,
+# - README de https://github.com/frappe/raven (créé par The Commit Company, aujourd'hui publié par Frappe,
 #   branche develop) : canaux, fils, fichiers, recherche, notifications, applications mobiles,
 #   cartes de documents, notifications de documents, approbation depuis le chat, bots, webhooks
 #   et agents IA, compatibilité Frappe v15.111+ et v16, licence AGPLv3
@@ -25,12 +25,12 @@ description: Une messagerie d'équipe installée sur votre site Dokos, avec des 
 icon: i-heroicons-chat-bubble-left-right
 application: Raven
 theme: support-collaboration
-author: The Commit Company
+author: Frappe
 logo:
   light: /frappe/raven.webp
   dark: /frappe/raven.webp
 
-publisher: community
+publisher: frappe
 licence: AGPLv3
 version: v5
 marketplace: raven
