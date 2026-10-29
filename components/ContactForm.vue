@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+const colorMode = useColorMode()
 import type { FormError, FormSubmitEvent } from '@nuxt/ui'
 
 defineProps({
@@ -101,7 +102,7 @@ async function onSubmit(event: FormSubmitEvent<any>) {
         </UFormField>
 
         <ClientOnly>
-          <NuxtTurnstile v-if="showTurnstile" ref="turnstile" v-model="token" :options="{ theme: $colorMode.value as 'auto' | 'light' | 'dark' }" />
+          <NuxtTurnstile v-if="showTurnstile" ref="turnstile" v-model="token" :options="{ theme: colorMode.value as 'auto' | 'light' | 'dark' }" />
         </ClientOnly>
 
         <UButton

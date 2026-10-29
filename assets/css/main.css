@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "@nuxt/ui-pro";
+@import "@nuxt/ui";
 
 /* Scan content files for utility classes used in markdown / v-html */
 @source "../../content/**/*.{md,yml}";

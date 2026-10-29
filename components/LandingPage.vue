@@ -389,14 +389,15 @@ const page = computed(() => props.page)
     </UPageSection>
 
     <UPageSection v-if="page.faq" :title="page.faq.title" :description="page.faq.description">
-      <UPageAccordion :items="page.faq.items" type="multiple" class="max-w-4xl mx-auto">
+      <UAccordion :items="page.faq.items" type="multiple" :unmount-on-hide="false" class="max-w-4xl mx-auto"
+        :ui="{ trigger: 'text-base text-highlighted py-4', body: 'text-base text-muted pb-4' }">
         <template #body="{ item }">
           <MDC
             :value="(item as any).content || ''"
             class="prose prose-primary dark:prose-invert max-w-none text-muted"
           />
         </template>
-      </UPageAccordion>
+      </UAccordion>
     </UPageSection>
 
     <UPageSection v-if="page.cta">

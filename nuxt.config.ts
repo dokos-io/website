@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/image',
-    '@nuxt/ui-pro',
+    '@nuxt/ui',
     '@vueuse/nuxt',
     'nuxt-og-image',
     '@nuxtjs/i18n',
@@ -84,6 +84,11 @@ export default defineNuxtConfig({
     turnstile: {
       secretKey: process.env.NUXT_TURNSTILE_SECRET_KEY,
     },
+  },
+  ogImage: {
+    // Every route is prerendered, so there is no runtime image endpoint to
+    // protect; v7 would otherwise require a 32-char NUXT_APP_SECRET at build.
+    security: { secret: false },
   },
   colorMode: {
     preference: 'system',
