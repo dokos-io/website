@@ -1,0 +1,177 @@
+# Sources : gitlab.com/dokos/dokos (description, license.txt GPLv3 ou ultérieure), doc.dokos.io (index v5),
+# doc.dokos.io/v5/dokos/comparaison-erpnext, doc.dokos.io/v5/dodock (présentation),
+# doc.dokos.io/v5/dodock/fonctionnalites (workflows, utilisateurs, notifications, impression, webhooks, nommage),
+# doc.dokos.io/v5/dodock/developpeurs/api/rest_api, doc.dokos.io/v5/dokos/certification-caisse/export-archives,
+# content/fr/blog/2026/arrivee-V5.md, content/fr/blog/2025/dokos-se-certifie-lne.md.
+# TODO-LNE : date et référence du certificat de la caisse.
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : le bureau central (/app) avec la barre latérale et les espaces de travail
+# - fit.webp : une facture de vente (/app/sales-invoice) avec le panneau des documents liés ouvert
+# - feature-documents.webp : une commande client validée (/app/sales-order) avec le menu Créer déplié
+# - feature-autorisations.webp : le gestionnaire d'autorisations (/app/role-permission-manager) sur Facture de vente
+# - feature-workflow.webp : un flux de travail (/app/workflow) avec ses états et transitions
+# - feature-rapports.webp : une liste avec un filtre enregistré et une vue rapport (/app/sales-invoice/view/report)
+# - feature-api.webp : la section Accès API d'un utilisateur (/app/user) et un webhook (/app/webhook)
+
+navigation:
+  title: Dokos
+  icon: i-heroicons-cube
+  description: La gestion d'entreprise, du devis à la comptabilité.
+
+title: Dokos
+description: Un logiciel de gestion d'entreprise libre, fondé sur ERPNext et adapté à la France.
+icon: i-heroicons-cube
+application: Dokos
+theme: base
+author: Frappe Technologies, Dokos & Contributeurs
+logo:
+  light: /frappe/dokos_logo.svg
+  dark: /frappe/dokos_logo.svg
+
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: erpnext
+docs: https://doc.dokos.io
+related: [dodock, comptabilite, ventes, achats, stocks]
+
+hero:
+  title: Vos devis, vos factures et votre comptabilité <span class="text-primary">dans une seule base</span>.
+  description: Dokos est un logiciel de gestion d'entreprise libre, fondé sur ERPNext et adapté à la France. La version 5, sortie le 16 mars 2026, repose sur Frappe et ERPNext v16.
+  image: /modules/dokos/hero.webp
+
+for_whom:
+  items:
+    - title: Vos devis sont dans un tableur et vos factures dans un autre outil
+      description: Dans Dokos, le devis devient la commande, puis la facture, puis l'écriture comptable. Un seul référentiel de clients et d'articles.
+      icon: i-heroicons-document-duplicate
+    - title: Votre comptable ressaisit ce que vous facturez
+      description: Chaque facture validée passe son écriture au grand livre. Votre comptable consulte les comptes et importe votre historique au format FEC.
+      icon: i-heroicons-calculator
+    - title: Vous encaissez des particuliers
+      description: Le point de vente de Dokos est certifié LNE. Les données d'encaissement sont conservées dans un journal inaltérable et exportables pour un contrôle.
+      icon: i-heroicons-receipt-percent
+    - title: Vos équipes et vos agents IA ont besoin d'une source de vérité
+      description: Chaque document est accessible par l'interface, par l'API REST et par Dokos CLI. Les autorisations s'appliquent partout de la même façon.
+      icon: i-heroicons-cpu-chip
+
+fit:
+  description: >-
+    Dokos est l'application de gestion installée sur votre site, au-dessus du cadriciel Dodock. Ses modules
+    partagent les mêmes référentiels : une fiche client sert aux ventes, aux factures et au portail ; un
+    article sert aux devis, aux stocks et à la production. Les autres applications de l'écosystème s'installent
+    à côté et lisent ces mêmes documents.
+  image: /modules/dokos/fit.webp
+  reads:
+    - Société, Exercice fiscal et Plan comptable
+    - Client, Fournisseur, Contact et Adresse
+    - Article, Liste de prix et Entrepôt
+    - Utilisateur, Rôle et autorisations (Dodock)
+  adds:
+    - Les modules CRM, Ventes, Achats, Comptabilité, Stocks, Production, Qualité, Projets et Support
+    - Les espaces de travail de Dokos, distincts de ceux d'ERPNext
+    - La numérotation des factures à la validation et l'interdiction de supprimer les documents comptables
+    - Le bilan au format français, le prélèvement SEPA, l'import OFX, les factures d'acompte et l'import FEC
+    - La caisse certifiée LNE et l'export des archives fiscales
+  depends:
+    - Dodock
+
+features:
+  - title: Des documents qui s'enchaînent
+    description: >-
+      Un devis validé devient une commande client avec Créer > Commande client. La commande crée le bon de
+      livraison, la facture de vente ou une facture d'acompte. Côté achats, la demande de matériel devient une
+      commande fournisseur, puis un reçu d'achat et une facture d'achat. Chaque document validé affiche les
+      documents liés et son écriture comptable. Un document validé ne se modifie plus : vous l'annulez et vous
+      le corrigez.
+    image: /modules/dokos/feature-documents.webp
+    badge: Documents
+  - title: Des rôles et des autorisations par document
+    description: >-
+      Vous donnez des rôles à chaque utilisateur. Les autorisations par rôle fixent, pour chaque type de
+      document, qui lit, crée, modifie, valide ou annule. Les autorisations utilisateur restreignent un
+      utilisateur à certains documents, par exemple une seule société. Vous partagez un document précis avec
+      un collègue qui n'y a pas accès. Les mêmes règles s'appliquent à l'interface et à l'API.
+    image: /modules/dokos/feature-autorisations.webp
+    badge: Autorisations
+  - title: Des flux de validation sans code
+    description: >-
+      Depuis Paramètres > Flux de travail, vous définissez les états d'un document et les transitions entre
+      eux, avec le rôle autorisé à chaque étape et une condition si besoin. Une note de frais passe de
+      Déposée à Approuvée ou Rejetée par le responsable. Un seul flux est actif par type de document et les
+      utilisateurs reçoivent un e-mail avec les actions qui les attendent.
+    image: /modules/dokos/feature-workflow.webp
+    badge: Flux de travail
+  - title: Des listes, des filtres et des rapports
+    description: >-
+      Chaque type de document a sa liste, ses filtres enregistrables pour vous ou pour tous, sa vue rapport,
+      son calendrier ou son kanban. Vous exportez une liste filtrée. Les rapports comptables (Grand livre,
+      Bilan, Compte de résultat, Balance générale) et les rapports de stock et de vente sont fournis. Un
+      rapport préparé se calcule en tâche de fond et vous attend.
+    image: /modules/dokos/feature-rapports.webp
+    badge: Rapports
+  - title: Une API REST pour chaque document
+    description: >-
+      Chaque type de document expose ses points de terminaison REST : <code>/api/resource/Sales Invoice</code>
+      pour lister, lire, créer, modifier ou supprimer, et <code>/api/method/...</code> pour appeler une méthode
+      autorisée. Vous générez une clé et un secret d'API sur la fiche utilisateur. Un webhook envoie un
+      document à un service externe à chaque création ou validation. Dokos CLI et son serveur MCP donnent les
+      mêmes capacités à vos agents IA.
+    image: /modules/dokos/feature-api.webp
+    badge: API et webhooks
+
+install:
+  steps:
+    - title: Sur Dokos Cloud
+      description: Créez votre site depuis votre tableau de bord Dokos Cloud. Dokos et Dodock y sont installés. Compris dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>, sur un bench Dodock."
+    - title: Puis les applications dont vous avez besoin
+      description: Depuis la marketplace, installez les applications de l'écosystème sur le même site. Elles lisent les documents de Dokos.
+  prerequisites:
+    - Un bench Dodock (voir le guide d'installation sur doc.dokos.io/v5/dodock/installation)
+
+faq:
+  items:
+    - label: Quelle différence entre Dokos et ERPNext ?
+      content: >-
+        Dokos est une adaptation d'ERPNext pour la France. La traduction française est tenue à jour. Les
+        factures sont numérotées à la validation en séquence continue et les documents de facturation et de
+        comptabilité ne peuvent pas être supprimés. Le bilan sort au format français. Dokos ajoute le
+        prélèvement SEPA, l'import de relevés OFX, l'amortissement linéaire, les factures d'acompte, les
+        réservations de ressources, et il a réécrit les paiements Stripe, Braintree et GoCardless.
+    - label: Sur quelle version repose Dokos V5 ?
+      content: >-
+        Dokos V5 est sortie le 16 mars 2026. Elle repose sur Frappe et ERPNext v16. Dodock est le cadriciel
+        qui porte Dokos. La marketplace Dokos Cloud sert la v5.
+    - label: Dokos est-il certifié pour l'encaissement ?
+      content: >-
+        Oui. Le point de vente de Dokos est certifié LNE. Les données d'encaissement sont inscrites dans un
+        journal inaltérable par société. Depuis la fiche Société, vous exportez une archive fiscale par période
+        d'un an au plus et vous vérifiez la chaîne cryptographique du journal. Vous conservez les archives six ans.
+    - label: Puis-je modifier Dokos ?
+      content: >-
+        Oui. Le code est publié sous licence GPLv3 sur gitlab.com/dokos/dokos. Vous ajoutez des champs, des
+        flux de travail, des notifications et des formats d'impression sans code. Seules les parties liées à
+        l'encaissement doivent rester intactes pour la certification.
+    - label: Comment installer d'autres applications sur mon site ?
+      content: >-
+        Depuis la marketplace Dokos Cloud, vous installez une application sur votre site. En auto-hébergement,
+        <code>bench get-app</code> puis <code>bench --site votre-site install-app</code>. Toutes les
+        applications sont comprises dans chaque formule Dokos Cloud.
+
+bottom_cta:
+  title: Posez-nous vos questions sur Dokos.
+  description: Dites-nous comment travaille votre entreprise, nous vous montrerons le parcours de vos documents.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

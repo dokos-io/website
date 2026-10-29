@@ -19,7 +19,8 @@ const rules = [
   { id: 'x_pas_y', re: /,\s*pas\s+(un|une|le|la|les|des?|d'|à|en|par)\b/iu },
   { id: 'pas_seulement', re: /\bpas\s+seulement\b/iu },
   { id: 'aphorism', re: /C'est le principe|Dit franchement|\bEn clair\b|Autant l'écrire|Tout simplement|Le meilleur .{0,30}, c'est/iu },
-  { id: 'banned_word', re: /\b(puissant\w*|innovant\w*|visionnaire\w*|révolutionn\w*)\b|\bLA plateforme\b|\b100\s?%/iu },
+  { id: 'banned_word', re: /\b(puissant\w*|innovant\w*|visionnaire\w*|révolutionn\w*)\b|\b100\s?%/iu },
+  { id: 'banned_word', re: /\bLA plateforme\b/u },
   { id: 'ethique_adj', re: /\b(logiciel|plateforme|solution|entreprise|outil)s?\s+éthiques?\b/iu },
   { id: 'procurement', re: /\b(service achats|grille d'exigences|opposables?|grands comptes|secteur public|appel d'offres)\b/iu },
   { id: 'secnumcloud_promise', re: /(déployons|déployer|hébergeur)\s+[^.]{0,40}SecNumCloud|SecNumCloud[^.]{0,60}(échéance|prochain)/iu },
@@ -28,7 +29,7 @@ const rules = [
   { id: 'client_name', re: /\bOrange\b/u },
 ]
 const BUDGET = [/souverain\w*/giu, /garanti\w*/giu, /réversib\w*/giu]
-const BUDGET_ALLOW = [/garantissons/giu, /Garanties de niveau/giu]
+const BUDGET_ALLOW = [/garantissons/giu, /Garanties de niveau/giu, /dépôts? de garantie/giu]
 const BUDGET_MAX = 3
 
 const SKIP_DIRS = new Set(['blog'])

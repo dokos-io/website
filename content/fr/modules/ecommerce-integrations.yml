@@ -1,14 +1,14 @@
-# Sources : README https://github.com/frappe/ecommerce_integrations (licence GPL-3.0) ;
-# docs.frappe.io/erpnext/v13/user/manual/en/erpnext_integration/shopify_integration ;
-# marketplace cloud.dokos.io, identifiant ecommerce_integrations. Seul le connecteur Shopify est documenté en détail ;
+# Sources : README https://github.com/frappe/ecommerce_integrations (licence GPL-3.0) ;
+# docs.frappe.io/erpnext/v13/user/manual/en/erpnext_integration/shopify_integration ;
+# marketplace cloud.dokos.io, identifiant ecommerce_integrations. Seul le connecteur Shopify est documenté en détail ;
 # Unicommerce, Zenoti et Amazon ne sont que nommés.
 #
-# Captures à prendre (demo.dokos.cloud) :
-# - hero.webp : le document Shopify Settings dans le bureau
-# - fit.webp : une Commande client créée depuis une commande Shopify, avec sa référence Shopify
-# - feature-commandes.webp : la liste des Commandes client filtrée sur les commandes Shopify
-# - feature-stock.webp : Shopify Settings, table de correspondance Entrepôt et emplacement Shopify
-# - feature-articles.webp : un Article Dokos et l'option d'envoi vers Shopify
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : le document Shopify Settings dans le bureau
+# - fit.webp : une Commande client créée depuis une commande Shopify, avec sa référence Shopify
+# - feature-commandes.webp : la liste des Commandes client filtrée sur les commandes Shopify
+# - feature-stock.webp : Shopify Settings, table de correspondance Entrepôt et emplacement Shopify
+# - feature-articles.webp : un Article Dokos et l'option d'envoi vers Shopify
 
 navigation:
   title: eCommerce Integrations
@@ -76,7 +76,7 @@ features:
   - title: Importez les commandes Shopify
     description: >-
       À chaque commande Shopify, Dokos crée une Commande client avec la série de numérotation choisie. Le paiement et l'expédition
-      peuvent être enregistrés sur la commande d'après Shopify. L'option « Sync Old Shopify Orders » importe en arrière-plan les commandes
+      peuvent être enregistrés sur la commande d'après Shopify. L'option « Sync Old Shopify Orders » importe en arrière-plan les commandes
       entre deux dates.
     image: /modules/ecommerce-integrations/feature-commandes.webp
     badge: Commandes
@@ -113,23 +113,23 @@ install:
 
 faq:
   items:
-    - label: Quels connecteurs sont inclus ?
+    - label: Quels connecteurs sont inclus ?
       content: >-
         Shopify, Unicommerce, Zenoti et Amazon, chacun avec sa documentation dans le manuel ERPNext.
-    - label: Qui fait foi pour le stock ?
+    - label: Qui fait foi pour le stock ?
       content: >-
         Dokos. Les niveaux de stock sont poussés vers Shopify toutes les heures, et une modification faite dans Shopify est écrasée.
         La documentation recommande une fréquence de 30 à 60 minutes.
-    - label: Que se passe-t-il si une commande Shopify est annulée ?
+    - label: Que se passe-t-il si une commande Shopify est annulée ?
       content: >-
         Si la Commande client n'a ni facture ni bon de livraison lié, elle est annulée. Sinon, le statut d'annulation est reporté sur
         ces documents et vous traitez la suite dans Dokos.
-    - label: Et pour WooCommerce ?
+    - label: Et pour WooCommerce ?
       content: >-
         WooCommerce n'est pas dans cette application. Utilisez [Dokos WooCommerce](/fr/modules/woocommerce), publié par Dokos.
 
 bottom_cta:
-  title: Une question sur eCommerce Integrations ?
+  title: Posez-nous vos questions sur eCommerce Integrations.
   description: Dites-nous sur quelle boutique vous vendez, nous vous dirons comment la relier à Dokos.
   links:
     - label: Nous écrire

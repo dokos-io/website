@@ -54,7 +54,7 @@ const blogSchema = z.object({
   icon: z.string().optional(),
 })
 
-// Shared by `modules` and `features`.
+// Schema of the `modules` collection (product pages).
 const moduleSchema = z.object({
   icon: z.string().optional(),
   application: z.string().optional(),
@@ -125,8 +125,6 @@ export default defineContentConfig({
         exclude: [
           'fr/blog/**',
           'en/blog/**',
-          'fr/features/**',
-          'en/features/**',
           'fr/modules/**',
           'en/modules/**',
           'fr/partners/**',
@@ -140,11 +138,6 @@ export default defineContentConfig({
       type: 'page',
       source: 'fr/blog/**',
       schema: blogSchema,
-    }),
-    features: defineCollection({
-      type: 'page',
-      source: '**/features/**',
-      schema: moduleSchema,
     }),
     modules: defineCollection({
       type: 'page',

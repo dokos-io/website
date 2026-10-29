@@ -109,7 +109,7 @@ faq:
       content: Frappe publie une compétence `frappe-builder` pour Claude Code, Codex ou OpenCode. L'agent modifie, construit et publie vos pages à travers l'outil `frappectl`.
 
 bottom_cta:
-  title: Une question sur Frappe Builder ?
+  title: Posez-nous vos questions sur Frappe Builder.
   description: Dites-nous quelles pages vous voulez mettre en ligne.
   links:
     - label: Nous écrire

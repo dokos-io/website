@@ -52,7 +52,7 @@ for_whom:
       icon: i-heroicons-chat-bubble-left-ellipsis
 
 fit:
-  description: Le module Qualité fait partie de Dokos. Ses documents se rattachent aux procédures que vous définissez. L'<strong>inspection de la qualité</strong>, rangée dans le module Stocks, se déclenche sur les documents de flux : un article paramétré pour le contrôle ne peut pas être reçu, livré ou fabriqué sans inspection.
+  description: "Le module Qualité fait partie de Dokos. Ses documents se rattachent aux procédures que vous définissez. L'<strong>inspection de la qualité</strong>, rangée dans le module Stocks, se déclenche sur les documents de flux : un article paramétré pour le contrôle ne peut pas être reçu, livré ou fabriqué sans inspection."
   image: /modules/qualite/fit.webp
   reads:
     - Client et Utilisateur, comme source d'un retour de la qualité
@@ -84,7 +84,7 @@ features:
     image: /modules/qualite/feature-retour.webp
     badge: Retour de la qualité
   - title: Inspectez les articles à la réception, à la livraison et en atelier
-    description: Un modèle d'inspection, attaché à l'article, définit les lectures à faire et leurs critères : une plage numérique, une valeur attendue ou une formule. À l'enregistrement, une lecture hors critère passe en Rejeté ; la case « Inspection manuelle » laisse l'inspecteur fixer le statut. Depuis Dokos V5, un contrôle peut être exigé à chaque opération d'une nomenclature.
+    description: "Un modèle d'inspection, attaché à l'article, définit les lectures à faire et leurs critères : une plage numérique, une valeur attendue ou une formule. À l'enregistrement, une lecture hors critère passe en Rejeté ; la case « Inspection manuelle » laisse l'inspecteur fixer le statut. Depuis Dokos V5, un contrôle peut être exigé à chaque opération d'une nomenclature."
     image: /modules/qualite/feature-inspection.webp
     badge: Inspection de la qualité
 
@@ -110,7 +110,7 @@ faq:
       content: Oui, dès qu'une fréquence de surveillance est définie sur l'objectif de qualité. La revue est créée au statut Ouvert ; le responsable qualité la complète et la termine.
 
 bottom_cta:
-  title: Une question sur le module Qualité ?
+  title: Posez-nous vos questions sur le module Qualité.
   description: Dites-nous comment vous suivez vos procédures et vos contrôles aujourd'hui.
   links:
     - label: Nous écrire

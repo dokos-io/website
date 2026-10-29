@@ -116,7 +116,7 @@ faq:
       content: Créez une commande client ou une facture de vente, puis une demande de paiement. Ouvrez le lien dans une fenêtre privée ou déconnectée pour voir ce que verra votre client. PayPal propose en plus l'option « Utiliser la sandbox ».
 
 bottom_cta:
-  title: Une question sur Payments ?
+  title: Posez-nous vos questions sur Payments.
   description: Dites-nous comment vos clients vous paient aujourd'hui.
   links:
     - label: Nous écrire

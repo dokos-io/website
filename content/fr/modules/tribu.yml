@@ -1,14 +1,14 @@
-# Sources : README https://gitlab.com/dokos/tribu (branche v5, licence AGPL-3.0) ; faits transmis par Dokos ;
+# Sources : README https://gitlab.com/dokos/tribu (branche v5, licence AGPL-3.0) ; faits transmis par Dokos ;
 # marketplace cloud.dokos.io, identifiant tribu. Aucune section doc.dokos.io dédiée à ce jour.
 #
-# Captures à prendre (demo.dokos.cloud) :
-# - hero.webp : la liste des adhérents (Tribu Member) avec ses filtres
-# - fit.webp : une adhésion (Tribu Membership) et sa Facture de vente liée
-# - feature-adherents.webp : la fiche d'un adhérent avec son historique d'adhésions
-# - feature-types.webp : la liste des types d'adhésion (annuelle, mensuelle, tarif réduit)
-# - feature-inscription.webp : le formulaire web d'adhésion en ligne, étape de paiement
-# - feature-dons.webp : le formulaire web de don
-# - feature-rapprochement.webp : la facture d'une adhésion et son paiement rapproché en banque
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : la liste des adhérents (Tribu Member) avec ses filtres
+# - fit.webp : une adhésion (Tribu Membership) et sa Facture de vente liée
+# - feature-adherents.webp : la fiche d'un adhérent avec son historique d'adhésions
+# - feature-types.webp : la liste des types d'adhésion (annuelle, mensuelle, tarif réduit)
+# - feature-inscription.webp : le formulaire web d'adhésion en ligne, étape de paiement
+# - feature-dons.webp : le formulaire web de don
+# - feature-rapprochement.webp : la facture d'une adhésion et son paiement rapproché en banque
 
 navigation:
   title: Tribu
@@ -82,7 +82,7 @@ features:
   - title: Définissez vos types d'adhésion
     description: >-
       Vous configurez plusieurs formules, par exemple annuelle, mensuelle ou à tarif réduit, chacune avec sa période de validité,
-      son tarif et son renouvellement. Nommer un type par saison, comme « Adhésion 2025-2026 », facilite le suivi.
+      son tarif et son renouvellement. Nommer un type par saison, comme « Adhésion 2025-2026 », facilite le suivi.
     image: /modules/tribu/feature-types.webp
     badge: Types d'adhésion
   - title: Ouvrez l'inscription en ligne
@@ -121,22 +121,22 @@ install:
 
 faq:
   items:
-    - label: Quels prestataires de paiement sont pris en charge ?
+    - label: Quels prestataires de paiement sont pris en charge ?
       content: >-
         HelloAsso, Stancer, Stripe, GoCardless et PayPal via Braintree.
-    - label: Tribu gère-t-il les dons ?
+    - label: Tribu gère-t-il les dons ?
       content: >-
         Oui. Le module dons enregistre les contributions ponctuelles et suit les donateurs, avec les mêmes moyens de paiement que les adhésions.
-    - label: Comment la comptabilité est-elle tenue ?
+    - label: Comment la comptabilité est-elle tenue ?
       content: >-
         Chaque adhésion génère une Facture de vente. Les comptes comptables sont configurés sur les articles d'adhésion.
         Le rapprochement bancaire et les exports comptables sont ceux de Dokos.
-    - label: Où sont hébergées les données de mes adhérents ?
+    - label: Où sont hébergées les données de mes adhérents ?
       content: >-
         Sur votre site Dokos, sur Dokos Cloud ou sur votre propre serveur. Tribu est publié sous licence AGPLv3.
 
 bottom_cta:
-  title: Une question sur Tribu ?
+  title: Posez-nous vos questions sur Tribu.
   description: Décrivez-nous votre association et vos formules d'adhésion, nous vous dirons comment les mettre en place.
   links:
     - label: Nous écrire

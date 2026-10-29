@@ -1,72 +1,130 @@
-navigation:
-  title: Dokos WooCommerce
-  icon: i-simple-icons-woocommerce
-  description: Connecteur e-commerce entre WooCommerce et Dokos.
+# Sources : https://doc.dokos.io/v5/integrations/woocommerce et ses sous-pages (woocommerce_settings,
+# woocommerce-bookings), README et hooks de https://gitlab.com/dokos/dokos-woocommerce (branche v5),
+# DocTypes Woocommerce Settings et Woocommerce Order. Licence : license.txt et hooks indiquent AGPLv3.
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : le document « Paramètres Woocommerce » (Intégrations > Paramètres), clé API, URL du serveur et synchronisation activée
+# - fit.webp : une Commande client créée depuis WooCommerce, avec le client et l'adresse de livraison repris de la commande
+# - feature-commandes.webp : la liste « Commandes Woocommerce » avec les statuts En attente, Commande créée et Erreur
+# - feature-stock.webp : le rapport de comparaison des stocks entre Dokos et WooCommerce
+# - feature-facturation.webp : une Facture de vente et son écriture de paiement générées depuis une commande WooCommerce
+# - feature-reservations.webp : une Réservation d'article créée depuis WooCommerce Bookings
 
 title: Dokos WooCommerce
+description: Transforme chaque commande de votre boutique WooCommerce en commande client Dokos et renvoie vos stocks vers la boutique.
 icon: i-simple-icons-woocommerce
-description: Connecte une boutique WooCommerce existante à votre gestion Dokos.
 application: Dokos WooCommerce
 theme: vente-relation-client
+author: Dokos
 logo:
   light: /frappe/woocommerce_logo.svg
   dark: /frappe/woocommerce_logo.svg
+navigation:
+  title: Dokos WooCommerce
+  icon: i-simple-icons-woocommerce
+  description: Connecteur entre une boutique WooCommerce et Dokos.
+
+publisher: dokos
+licence: AGPLv3
+version: v5
+marketplace: dokos_woocommerce
+docs: https://doc.dokos.io/v5/integrations/woocommerce
+related: [e-commerce, ventes, stocks, reservations-de-ressources]
 
 hero:
-  title: Votre boutique <span class="text-primary">WooCommerce</span>, connectée à Dokos.
-  description: Dokos WooCommerce relie une boutique WordPress/WooCommerce existante à votre gestion Dokos, pour ne pas reconstruire une boutique quand une existe déjà.
-  links:
-    - label: Contactez-nous
-      to: /fr/contact
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-chat-bubble-left-right
-    - label: Voir la marketplace
-      to: https://cloud.dokos.io
-      target: _blank
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: "/fr"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Votre boutique <span class="text-primary">WooCommerce</span> reste en place, Dokos gère la suite.
+  description: Chaque commande passée sur WordPress arrive dans Dokos par webhook et devient une commande client. Dokos renvoie les niveaux de stock à la boutique.
+  image: /modules/woocommerce/hero.webp
+
+for_whom:
+  items:
+    - title: Votre boutique WooCommerce fonctionne déjà
+      description: Vous gardez votre site WordPress tel quel. Le connecteur relie ses commandes à votre gestion commerciale et à votre stock.
+      icon: i-heroicons-globe-alt
+    - title: Vous ressaisissez les commandes web
+      description: Client, adresse de livraison et articles sont créés ou retrouvés dans Dokos à l'arrivée de la commande.
+      icon: i-heroicons-clipboard-document-list
+    - title: Vous vendez en ligne et en stock physique
+      description: À chaque mouvement de stock dans Dokos, la quantité disponible est renvoyée vers WooCommerce, variantes comprises.
+      icon: i-heroicons-cube
+
+fit:
+  description: Le connecteur se configure dans <strong>Paramètres Woocommerce</strong>, un document par boutique. À l'enregistrement, Dokos génère le secret et le point d'entrée du webhook et les crée dans WooCommerce. Chaque commande reçue est conservée comme <strong>Commande Woocommerce</strong>, puis donne une <strong>Commande client</strong>. Selon vos options, Dokos enchaîne le bon de livraison, la facture de vente et le paiement.
+  image: /modules/woocommerce/fit.webp
+  reads:
+    - Client, Adresse et Groupe de clients
+    - Article, Modèle d'article et variantes
+    - Commande client, Bon de livraison, Facture de vente, Écriture de paiement
+    - Entrepôt et Liste de prix
+  adds:
+    - Le document « Paramètres Woocommerce » et un espace de travail WooCommerce
+    - Les « Commandes Woocommerce », avec le détail reçu et le statut de traitement
+    - La correspondance des taxes, des modes de livraison et des métadonnées WooCommerce
+    - Des rapports de comparaison des stocks entre Dokos et WooCommerce
+  depends:
+    - Ventes
+    - Stocks
 
 features:
-  - title: Connecteur e-commerce
-    description: Relie une boutique WooCommerce existante à votre installation Dokos, sans migrer la boutique elle-même.
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Intégration
-      color: sky
-  - title: Une alternative au module Webshop natif
-    description: Utile quand une boutique WooCommerce existe déjà et doit rester en place, plutôt que d'être remplacée par le portail e-commerce natif de Dokos.
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: E-commerce
-      color: sky
+  - title: Recevez les commandes par webhook
+    description: Dans WooCommerce, vous générez une clé d'API REST, puis vous la collez dans Paramètres Woocommerce avec l'URL de la boutique. À l'enregistrement, Dokos crée le webhook « Commande créée ». Chaque commande arrive aussitôt dans la liste des Commandes Woocommerce, avec son statut. Une routine horaire reprend celles qui ont échoué.
+    image: /modules/woocommerce/feature-commandes.webp
+    badge: Commandes
+  - title: Créez la commande client avec ses dépendances
+    description: Si le client n'existe pas, Dokos le crée à partir de la commande, avec une adresse de livraison. Si un article manque, il est créé lui aussi. La commande client reprend la société, la série, la liste de prix et l'entrepôt que vous avez fixés dans les paramètres. Les frais de port et les taxes vont sur les comptes que vous avez choisis.
+    image: /modules/woocommerce/feature-facturation.webp
+    badge: Ventes
+  - title: Enchaînez livraison, facture et paiement
+    description: L'option « Créer les paiements et la facture de vente » génère la facture de vente et son écriture de paiement à partir de la commande client. Les bons de livraison sont créés quand la commande WooCommerce passe dans l'un des statuts d'expédition que vous avez listés. Un remboursement côté boutique donne un avoir.
+    image: /modules/woocommerce/feature-facturation.webp
+    badge: Facturation
+  - title: Renvoyez vos stocks vers la boutique
+    description: À chaque entrée ou sortie de stock dans Dokos, la quantité est envoyée à WooCommerce, en quantité réelle ou projetée selon votre choix. Une routine horaire reprend les articles mouvementés dans les deux dernières heures. Pour les produits à variations, le modèle d'article reçoit la somme des variantes actives.
+    image: /modules/woocommerce/feature-stock.webp
+    badge: Stocks
+  - title: Reprenez les réservations WooCommerce Bookings
+    description: Si une ligne de commande porte sur un article réservable, Dokos crée la réservation correspondante. Aucune configuration supplémentaire n'est nécessaire côté connecteur.
+    image: /modules/woocommerce/feature-reservations.webp
+    badge: Réservations
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Dokos WooCommerce sur votre site. L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://gitlab.com/dokos/dokos-woocommerce</code> puis <code>bench --site votre-site install-app dokos_woocommerce</code>."
+    - title: Générez une clé dans WooCommerce
+      description: Dans WooCommerce, ouvrez Paramètres, Avancé, puis API REST, et cliquez sur « Ajouter une clé ». Copiez la clé et le secret.
+    - title: Renseignez Paramètres Woocommerce
+      description: Collez la clé et le secret, saisissez l'URL de la boutique, choisissez la société, l'utilisateur de création et les comptes de taxe et de port, puis cochez « Activer la synchronisation ». Les webhooks sont créés à l'enregistrement.
+  prerequisites:
+    - Une boutique WooCommerce avec l'API REST activée
+    - Dokos version 4 ou plus récente, ou ERPNext version 15 ou plus récente
+
+faq:
+  items:
+    - label: Puis-je connecter plusieurs boutiques ?
+      content: Oui. Créez un document Paramètres Woocommerce par boutique.
+    - label: La facture de vente est-elle créée automatiquement ?
+      content: Seulement si vous cochez « Créer les paiements et la facture de vente » dans les paramètres. Sinon, le connecteur s'arrête à la commande client.
+    - label: Dans quel sens vont les stocks ?
+      content: De Dokos vers WooCommerce. La synchronisation se base sur les niveaux de stock de Dokos, à chaque mouvement puis une fois par heure pour les articles mouvementés récemment.
+    - label: Comment relier des produits à variations ?
+      content: Créez un modèle d'article et ses variantes dans Dokos. Associez chaque variante à l'identifiant de variation WooCommerce, et le modèle au produit WooCommerce.
+    - label: Et si la création automatique du webhook échoue ?
+      content: Créez-le à la main dans WooCommerce, Paramètres, Avancé, Webhooks, avec le sujet « Commande créée », l'URL de livraison et le secret affichés dans Paramètres Woocommerce.
 
 bottom_cta:
-  title: Une boutique WooCommerce à connecter à Dokos ?
-  description: Disponible depuis la marketplace de cloud.dokos.io. Décrivez-nous votre boutique actuelle, nous vous dirons ce que le connecteur couvre déjà.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Votre boutique et vos flux de commandes
+  description: Décrivez-nous votre boutique WooCommerce et votre organisation logistique, nous vous dirons ce que le connecteur couvre déjà.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-chat-bubble-left-right
+      size: xl
+      color: primary
     - label: Voir la marketplace
-      to: https://cloud.dokos.io
+      to: https://cloud.dokos.io/marketplace
       target: _blank
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+      size: xl
+      color: neutral
+      variant: outline

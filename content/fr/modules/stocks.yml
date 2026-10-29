@@ -1,110 +1,167 @@
+# Sources : doc.dokos.io/v5/dokos/stocks (introduction, warehouse, batch, serial-no, demande-materiel,
+# stock-reservation, stock-level-report, item-variants, quality-inspection, retain-sample-stock),
+# doc.dokos.io/v5/dokos/comptabilite/stock-livre-non-facture, doc.dokos.io/nouveautes (28 septembre 2026).
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : l'espace de travail Stocks (/app/stock), cartes et raccourcis
+# - fit.webp : un reçu d'achat validé (/app/purchase-receipt) avec son écriture de stock et son écriture comptable liées
+# - feature-articles.webp : une fiche article avec variantes (/app/item), onglet Stock, options Lot et Numéro de série
+# - feature-entrepots.webp : l'arborescence des entrepôts (/app/warehouse/view/tree)
+# - feature-mouvements.webp : une écriture de stock de type Transfert (/app/stock-entry), statut En transit
+# - feature-projections.webp : le rapport Projections de stock (/app/query-report/Stock Projected Qty)
+# - feature-valorisation.webp : le rapport Solde des stocks (/app/query-report/Stock Balance)
+
 navigation:
-    title: Stocks
-    icon: i-vaadin-stock
-    description: Suivi de vos mouvements, valorisations de stocks et de votre chaîne d'approvisionnement.
+  title: Stocks
+  icon: i-vaadin-stock
+  description: Articles, entrepôts, mouvements et valorisation.
 
 title: Stocks
+description: Enregistre chaque entrée, sortie et transfert d'articles, par entrepôt, lot et numéro de série.
 icon: i-vaadin-stock
-description: Simplifiez la gestion de votre Stock avec un logiciel de distribution de pointe
 application: Dokos
 theme: achats-stocks-production
-author: Frappe Technologies & Contributeurs
+author: Frappe Technologies, Dokos & Contributeurs
+
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: erpnext
+docs: https://doc.dokos.io/v5/dokos/stocks
+related: [achats, ventes, production, qualite]
 
 hero:
-  title: Simplifiez la gestion de votre <span class="text-primary">stock</span> avec avec un logiciel de distribution de pointe
-  description: Facilitez votre gestion de stock et de distribution. Que vous soyez un fabricant, un distributeur, ou un détaillant, Dokos optimise chaque aspect de votre chaîne d'approvisionnement, depuis l'entrée de marchandises jusqu'à la livraison au client final.
-  links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: "/fr"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Chaque mouvement d'article <span class="text-primary">laisse une écriture de stock</span>.
+  description: Le module Stocks de Dokos enregistre les réceptions, les livraisons et les transferts entre vos entrepôts. Il vous dit ce qui est en stock, ce qui est réservé et ce qui est attendu.
+  image: /modules/stocks/hero.webp
 
+for_whom:
+  items:
+    - title: Vous comptez vos stocks dans un tableur
+      description: Les reçus d'achat et les bons de livraison mettent le stock à jour. Le rapport Solde des stocks donne la quantité et la valeur par entrepôt.
+      icon: i-heroicons-table-cells
+    - title: Vous devez tracer un lot ou un numéro de série
+      description: Chaque réception et chaque livraison d'un article suivi exigent son lot ou son numéro de série. Vous retrouvez l'historique depuis la fiche du lot.
+      icon: i-heroicons-qr-code
+    - title: Vous découvrez les ruptures trop tard
+      description: Le rapport Projections de stock calcule la quantité projetée. Un point de commande crée la demande de matériel à votre place.
+      icon: i-heroicons-exclamation-triangle
+    - title: Vous avez plusieurs lieux de stockage
+      description: Les entrepôts forment une arborescence, jusqu'au rayon ou à l'étagère. Un transfert passe par un statut En transit.
+      icon: i-heroicons-building-office-2
+
+fit:
+  description: >-
+    Les documents des autres modules déplacent le stock. Le reçu d'achat créé depuis Achats entre les
+    articles. Le bon de livraison créé depuis Ventes les sort. L'ordre de fabrication de Production consomme
+    et produit. Chaque mouvement écrit une entrée dans le grand livre des stocks et, en inventaire permanent,
+    son écriture en Comptabilité.
+  image: /modules/stocks/fit.webp
+  reads:
+    - Article, Groupe d'article et Unité de mesure
+    - Commande client et Commande fournisseur
+    - Ordre de fabrication (Production)
+    - Compte de stock de l'entrepôt (Comptabilité)
+  adds:
+    - L'espace de travail Stocks et les Paramètres de stock
+    - Entrepôt, Lot, Numéro de série et Variantes d'article
+    - Reçu d'achat, Bon de livraison, Bordereau de colis et Écriture de stock
+    - Demande de matériel, Réservation de stock et Inspection de la qualité
+    - Les rapports Solde des stocks, Projections de stock et Vieillissement des stocks
+  depends:
+    - Achats
+    - Ventes
+    - Production
+    - Qualité
+    - Comptabilité
 
 features:
-  - title: Une gestion des Articles et des Stocks
-    description: "Avec Dokos, vous pouvez gérer vos articles avec précision. Du suivi des variantes de produits aux numéros de série et aux lots, chaque produit peut être identifié de manière unique, facilitant la gestion et la traçabilité.<ul><li><span class='font-bold'> Variantes d'articles :</span> Gérer facilement les différentes versions d'un même produit (taille, couleur, modèle).</li><li><span class='font-bold'>Codes-barres et étiquetage : </span>Simplifiez les opérations de réception et d'expédition grâce à la gestion intégrée des codes-barres.<li><span class='font-bold'>Suivi par lot et numéro de série :</span> Suivez chaque article, depuis la fabrication ou l'achat jusqu'à la vente, pour une traçabilité complète."
-    image: "image/stock/un-articles.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Articles
-      color: sky
-  - title: Un suivi de stock automatisés.
-    description: "Gérez l’intégralité de vos transactions en temps réel, réduisant ainsi les risques d’erreur et augmentant votre productivité. <ul><li><span class='font-bold'>Entrée de stock:</span> Enregistrement automatique des réceptions de matériaux à partir des commandes d’achat.</li><li><span class='font-bold'>Sortie de stock:</span> Gestion des livraisons aux clients avec suivi en temps réel.</li><li><span class='font-bold'>Transferts inter-entrepôts:</span> Simplifiez la gestion de multiples entrepôts en transférant des produits entre sites.</li><li><span class='font-bold'>Réconciliation des stocks:</span> Ajustez les stocks rapidement en cas de différence entre stock théorique et stock physique.</li></ul>"
-    image: "image/stock/deux-mouvement-de-stock.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Mouvement Stock
-      color: sky
-  - title: Une automatisation de la planification et du réapprovisionnement.
-    description: "Optimisez vos niveaux de stock avec des fonctionnalités avancées de planification et de gestion des seuils. <ul><li><span class='font-bold'>Seuils de réapprovisionnement :</span> Définissez des seuils minimum et maximum pour chaque article afin d’éviter les ruptures de stock.</li><li><span class='font-bold'> Demandes de matériaux automatisées :</span> Déclenchement automatique des approvisionnements en fonction des prévisions de production ou de vente. </li><li><span class='font-bold'>Stock en transit :</span> Suivez en temps réel les articles en cours de transfert entre vos entrepôts."
-    image: "image/stock/trois-articles-en-penuries.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Planification
-      color: sky
-  - title: Une gestion Multi-entrepôts
-    description: "Dokos permet la gestion efficace de multiples entrepôts, chacun avec des emplacements internes définis pour un contrôle granulaire du stock. <ul><li><span class='font-bold'>Stock par entrepôt et localisation :</span> Gérez des entrepôts répartis sur plusieurs sites géographiques et optimisez le flux de matériaux entre eux.</li><li><span class='font-bold'> Visibilité globale :</span> Visualisez et suivez vos niveaux de stock pour tous vos entrepôts en un seul tableau de bord."
-    image: "image/stock/quatre-tableau-de-bord-stock.svg"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Multi-entrepôt
-      color: sky
-  - title: Des inventaires, audit et évaluation du stock
-    description: "Dokos vous aide à suivre l’inventaire en temps réel tout en simplifiant les audits et la valorisation du stock. <ul><li><span class='font-bold'>Audit et comptage cyclique :</span> Planifiez et réalisez des inventaires périodiques pour garantir que vos données de stock sont toujours exactes.</li><li><span class='font-bold'> Valorisation du stock :</span> Utilisez la méthode d’évaluation adaptée à votre entreprise (PEPS, LIFO, coût moyen). </li><li><span class='font-bold'>Gestion des articles périssables :</span> Suivez les dates de péremption pour minimiser les pertes liées aux produits expirés. "
-    image: "image/stock/recapitulatif-stocks.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Inventaire
-      color: sky
-  - title: Des rapports et une visibilité en temps réel
-    description: "Prenez des décisions éclairées grâce à des rapports détaillés et des indicateurs de performance précis.<ul><li><span class='font-bold'> Rapport d’évaluation du stock :</span> Suivez la valeur de vos stocks avec des rapports instantanés.</li><li><span class='font-bold'> Rapport de stock minimal :</span> Identifiez rapidement les articles qui nécessitent un réapprovisionnement.</li><li><span class='font-bold'>Analyse des mouvements de stock :</span> Obtenez des rapports détaillés sur les entrées, sorties et transferts d’articles."
-    image: "image/stock/espace-travail-stock.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Rapports
-      color: sky
+  - title: Des articles suivis par variante, lot ou numéro de série
+    description: >-
+      Un article modèle porte des attributs (taille, couleur) et Dokos crée ses variantes. Vous cochez « A un
+      N° de Lot » et chaque mouvement de l'article exige un lot, avec une date de péremption et la création
+      automatique du lot à la réception. Vous cochez « A un numéro de série » et chaque unité a sa fiche, qui
+      relie le document d'achat ou de fabrication d'origine, le client livré, la garantie et le statut. Seuls
+      les numéros de série au statut Disponible peuvent être livrés.
+    image: /modules/stocks/feature-articles.webp
+    badge: Articles
+  - title: Des entrepôts en arborescence
+    description: >-
+      Un entrepôt est un lieu de stockage. Vous emboîtez des groupes et des sous-entrepôts, par exemple
+      Entrepôt > Pièce > Rangée > Étagère. Chaque entrepôt porte l'abréviation de sa société et un compte
+      comptable par défaut, qui fait apparaître ses mouvements au grand livre. Après enregistrement, le
+      rapport Solde des stocks donne la quantité et la valorisation de l'entrepôt, et un bouton recalcule les
+      valeurs depuis les entrées du grand livre des stocks.
+    image: /modules/stocks/feature-entrepots.webp
+    badge: Entrepôts
+  - title: Réceptions, livraisons et transferts
+    description: >-
+      Le reçu d'achat entre les articles commandés. Le bon de livraison les sort pour un client, avec un
+      bordereau de colis si besoin. L'écriture de stock transfère des articles entre entrepôts, avec un statut
+      En transit entre le départ et l'arrivée. Les retours de vente et d'achat reprennent le document
+      d'origine. Une inspection de la qualité peut conditionner la réception et un échantillon peut être
+      conservé dans un entrepôt dédié.
+    image: /modules/stocks/feature-mouvements.webp
+    badge: Mouvements
+  - title: Une quantité projetée et un point de commande
+    description: >-
+      Le rapport Projections de stock calcule, pour chaque article et entrepôt, la quantité projetée à partir
+      de la quantité réelle, planifiée en fabrication, commandée et demandée, moins les quantités réservées.
+      Une réservation de stock met de côté une quantité pour une commande ou un besoin interne, et libère le
+      stock à l'annulation. Sur l'article, vous fixez un stock minimum et un entrepôt ; quand le stock passe
+      sous ce point de commande, Dokos crée une demande de matériel avec la quantité par défaut.
+    image: /modules/stocks/feature-projections.webp
+    badge: Réapprovisionnement
+  - title: La valeur de votre stock et son âge
+    description: >-
+      Le rapport Solde des stocks donne la quantité et la valeur par article et par entrepôt. Le rapport de
+      vieillissement montre depuis combien de temps chaque lot est en stock. En inventaire permanent, chaque
+      mouvement passe son écriture comptable, et le stock livré mais non facturé apparaît dans un rapport
+      dédié de la comptabilité. Un rapport d'analyse par nomenclature complète la série pour la production.
+    image: /modules/stocks/feature-valorisation.webp
+    badge: Valorisation
 
-plus_button:
-  label: Découvrir toutes nos fonctionnalités
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: sky
-  to: /features/stocks
+install:
+  description: Le module Stocks fait partie de Dokos. Il n'y a rien à installer en plus.
+  steps:
+    - title: Sur Dokos Cloud
+      description: Créez votre site depuis votre tableau de bord Dokos Cloud. Dokos est installé avec le module Stocks. Compris dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>."
+    - title: Premiers réglages
+      description: Dans Paramètres de stock, vous choisissez l'entrepôt par défaut et les options de stock négatif, puis vous créez vos entrepôts et vos articles.
+
+faq:
+  items:
+    - label: Puis-je changer le suivi par lot d'un article déjà utilisé ?
+      content: >-
+        Non. Dès qu'une transaction existe pour l'article, l'option de lot ou de numéro de série ne peut plus
+        être activée ou désactivée.
+    - label: Comment un numéro de série reçoit-il son entrepôt ?
+      content: >-
+        Par un mouvement de stock seulement : écriture de stock, reçu d'achat, bon de livraison ou facture.
+        Un numéro créé à la main depuis la liste n'a pas d'entrepôt tant qu'il n'a pas bougé.
+    - label: Une réservation bloque-t-elle le stock pour les autres commandes ?
+      content: >-
+        Oui. La quantité réservée est retirée de la quantité projetée dès la validation de la réservation.
+        Vingt-cinq unités en stock, cinq réservées pour une commande et dix pour un projet laissent dix
+        unités disponibles.
+    - label: Les mouvements de stock écrivent-ils en comptabilité ?
+      content: >-
+        Oui en inventaire permanent, via le compte comptable de l'entrepôt. Le stock livré mais non facturé
+        est comptabilisé et suivi dans un rapport dédié.
 
 bottom_cta:
-  title: Essayez Dokos aujourd'hui !
-  description: Révolutionnez la gestion de vos stocks avec Dokos et optimisez dès aujourd'hui votre chaîne d'approvisionnement.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Posez-nous vos questions sur les stocks dans Dokos.
+  description: Décrivez-nous vos entrepôts et vos flux, nous vous montrerons les documents correspondants.
   links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

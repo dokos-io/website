@@ -53,7 +53,7 @@ for_whom:
       icon: i-heroicons-cpu-chip
 
 fit:
-  description: Le module Intégrations fait partie du socle Dodock sur lequel Dokos repose. Il ne crée pas de document métier lui-même : il <strong>écoute</strong> les documents de tous les modules pour déclencher des webhooks, et il <strong>héberge</strong> les paramètres des applications de connexion que vous installez depuis la marketplace.
+  description: "Le module Intégrations fait partie du socle Dodock sur lequel Dokos repose. Il ne crée pas de document métier lui-même : il <strong>écoute</strong> les documents de tous les modules pour déclencher des webhooks, et il <strong>héberge</strong> les paramètres des applications de connexion que vous installez depuis la marketplace."
   image: /modules/integrations/fit.webp
   reads:
     - Tout document de votre site, selon le DocType et l'événement choisis sur un webhook
@@ -71,11 +71,11 @@ fit:
 
 features:
   - title: Prévenez vos autres outils avec un webhook
-    description: Vous choisissez un DocType et un événement : After insert, On change, On update, On submit, On update after submit, On cancel ou On trash. La table Webhook Data liste les champs envoyés. Dokos appelle l'URL cible à chaque événement et conserve la trace des requêtes dans Intégrations > Webhooks.
+    description: "Vous choisissez un DocType et un événement : After insert, On change, On update, On submit, On update after submit, On cancel ou On trash. La table Webhook Data liste les champs envoyés. Dokos appelle l'URL cible à chaque événement et conserve la trace des requêtes dans Intégrations > Webhooks."
     image: /modules/integrations/feature-webhook.webp
     badge: Webhook
   - title: Donnez un accès API à un utilisateur
-    description: Depuis son profil utilisateur, section « Accès API », l'utilisateur génère une clé API et un secret API. Les appels REST s'authentifient avec ce couple et obéissent aux rôles et permissions de cet utilisateur : un employé ne lit que ses propres données, un responsable RH celles de son équipe. Les clés se renouvellent depuis le même écran.
+    description: "Depuis son profil utilisateur, section « Accès API », l'utilisateur génère une clé API et un secret API. Les appels REST s'authentifient avec ce couple et obéissent aux rôles et permissions de cet utilisateur : un employé ne lit que ses propres données, un responsable RH celles de son équipe. Les clés se renouvellent depuis le même écran."
     image: /modules/integrations/feature-api.webp
     badge: Clé API
   - title: Connectez Zapier par OAuth2
@@ -83,7 +83,7 @@ features:
     image: /modules/integrations/feature-oauth.webp
     badge: Client OAuth
   - title: Paramétrez vos connecteurs métier au même endroit
-    description: Chaque application de connexion installée depuis la marketplace ajoute son document de paramètres dans cet espace de travail : Payments pour les passerelles de paiement, Dokos WooCommerce pour votre boutique, Dokos Hiboutik pour votre caisse, E-transactions pour la plateforme agréée de facturation électronique et eSignature pour la signature électronique.
+    description: "Chaque application de connexion installée depuis la marketplace ajoute son document de paramètres dans cet espace de travail : Payments pour les passerelles de paiement, Dokos WooCommerce pour votre boutique, Dokos Hiboutik pour votre caisse, E-transactions pour la plateforme agréée de facturation électronique et eSignature pour la signature électronique."
     image: /modules/integrations/feature-connecteurs.webp
     badge: Connecteurs
 
@@ -100,7 +100,7 @@ install:
 faq:
   items:
     - label: Quelle différence entre un webhook et l'API ?
-      content: Le webhook part de Dokos : à chaque événement sur un document, Dokos appelle l'URL que vous avez indiquée avec les champs choisis. L'API part de votre outil : il appelle Dokos avec une clé API pour lire ou écrire des documents.
+      content: "Le webhook part de Dokos : à chaque événement sur un document, Dokos appelle l'URL que vous avez indiquée avec les champs choisis. L'API part de votre outil : il appelle Dokos avec une clé API pour lire ou écrire des documents."
     - label: Un script avec une clé API peut-il tout lire ?
       content: Non. Chaque appel suit les rôles et permissions de l'utilisateur dont la clé est utilisée, comme dans l'interface web. Créez un utilisateur dédié avec le rôle minimal et renouvelez ses clés régulièrement.
     - label: Faut-il un développement pour connecter Zapier ?
@@ -109,7 +109,7 @@ faq:
       content: Par une Application connectée configurée en OAuth, qui obtient un accès hors ligne durable aux API Google. La documentation Dodock décrit la configuration et le renouvellement des jetons.
 
 bottom_cta:
-  title: Une question sur une intégration ?
+  title: Posez-nous vos questions sur une intégration.
   description: Dites-nous quels outils vous utilisez autour de Dokos.
   links:
     - label: Nous écrire

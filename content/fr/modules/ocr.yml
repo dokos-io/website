@@ -1,111 +1,127 @@
-navigation:
-    title: OCR
-    icon: i-mdi-ocr
-    description: Extraction des données de factures fournisseur avec Amazon Textract
+# Sources : https://doc.dokos.io/v5/integrations/etransaction (section OCR, Banette de factures d'achat,
+# règle IMAP, Paramètres), README de https://gitlab.com/dokos/ocr (branche develop ; le dépôt n'a pas de
+# branche v5), DocTypes et hooks de l'application (OCR Settings, OCR Purchase Invoice Basket, Pending Purchase
+# Invoice, OCR Request), install.py d'eTransactions (reprise des données OCR).
+# L'application OCR couvre Dokos V4. Sur Dokos V5, ses fonctions sont reprises par eTransactions.
+#
+# Captures à prendre (demo.dokos.cloud, où la banette est fournie par eTransactions) :
+# - hero.webp : la Banette de factures d'achat avec plusieurs factures fournisseur en attente, en cours et prêtes
+# - fit.webp : une Facture fournisseur en attente reliée à une Commande fournisseur, bouton « Créer la facture d'achat » visible
+# - feature-depot.webp : la zone de dépôt de fichiers de la banette, un PDF en cours d'envoi
+# - feature-extraction.webp : une Facture fournisseur en attente avec l'aperçu du PDF à gauche et les données extraites à droite
+# - feature-rapprochement.webp : la fenêtre « Sélectionner les commandes fournisseur » avec les commandes ouvertes du fournisseur
+# - feature-parametres.webp : les Paramètres OCR (clé Textract, création sans commande, blocage sur montant, validation automatique)
 
 title: OCR
+description: Lit vos factures fournisseur en PDF avec Amazon Textract et prépare la facture d'achat dans Dokos.
 icon: i-mdi-ocr
-description: Numérisez et traitez vos documents en un clin d'œil grâce à l'OCR intégré.
 application: OCR
 theme: site-web-outils-numeriques
-author: Dokos & Contributeurs
+author: Dokos
+logo:
+  light: /frappe/ocr_logo.svg
+  dark: /frappe/ocr_logo.svg
+navigation:
+  title: OCR
+  icon: i-mdi-ocr
+  description: Extraction des données de factures fournisseur avec Amazon Textract.
+
+publisher: dokos
+licence: AGPLv3
+version: v4
+marketplace: ocr
+docs: https://doc.dokos.io/v5/integrations/etransaction
+related: [achats, comptabilite, etransactions]
 
 hero:
-  title: Automatisez votre saisie de factures grâce au module <span class="text-primary">OCR</span> de Dokos.
-  description: Transformez vos documents en informations prêtes à l’emploi. <br>Avec le module OCR de Dokos, gagnez du temps, réduisez les erreurs et concentrez-vous sur l’essentiel.
-  links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: sky
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: "/fr"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Vos factures fournisseur en PDF, <span class="text-primary">lues</span> et prêtes à comptabiliser.
+  description: Vous déposez le PDF ou vous le transférez par courriel. Amazon Textract en extrait le fournisseur, les montants et les lignes. Vous vérifiez, puis vous créez la facture d'achat.
+  image: /modules/ocr/hero.webp
 
+for_whom:
+  items:
+    - title: Vous ressaisissez chaque facture fournisseur
+      description: Le numéro, la date, les montants et les lignes sont lus sur le document. Il vous reste à vérifier.
+      icon: i-heroicons-pencil-square
+    - title: Vos factures arrivent par courriel
+      description: Une règle de messagerie envoie les pièces jointes PDF dans la banette. L'analyse démarre sans action de votre part.
+      icon: i-heroicons-envelope
+    - title: Vous contrôlez les factures par rapport aux commandes
+      description: La facture lue est reliée à la commande fournisseur ou au reçu d'achat. Un écart de montant peut bloquer la création de la facture d'achat.
+      icon: i-heroicons-scale
+
+fit:
+  description: "L'OCR ajoute à Dokos une <strong>Banette de factures d'achat</strong>. Chaque fichier déposé crée une demande d'analyse envoyée à Amazon Textract, puis une <strong>facture fournisseur en attente</strong> qui reprend les données lues. Depuis cette facture en attente, vous choisissez la commande fournisseur ou le reçu d'achat concerné, puis vous créez la <strong>Facture d'achat</strong> du module Achats. Les statuts suivent le traitement : En attente, En cours, Prêt, Terminé."
+  image: /modules/ocr/fit.webp
+  reads:
+    - Fournisseur et son numéro de TVA
+    - Commande fournisseur et Reçu d'achat
+    - Facture d'achat
+    - Compte de messagerie et Communication
+  adds:
+    - La « Banette de factures d'achat »
+    - Les factures fournisseur en attente, avec aperçu du document et données extraites
+    - Les demandes d'analyse OCR et leur suivi
+    - Le document « Paramètres OCR »
+  depends:
+    - Achats
+    - Comptabilité
 
 features:
-  - title: Gagnez du temps et réduisez les erreurs avec une gestion documentaire automatisée.
-    description: "Simplifiez votre gestion documentaire grâce à l’OCR de Dokos. Transformez vos factures et bons de livraison en données utilisables instantanément, et libérez vos équipes des tâches répétitives. Moins d’erreurs, plus de temps pour l’essentiel.<ul><li><span class='font-bold'> Extraction automatique des données :</span> Dès la réception de vos documents (factures, bons de commande), l’OCR analyse et extrait automatiquement les informations essentielles (montants, dates, numéros de commande). </li><li><span class='font-bold'> Traitement des emails avec pièces jointes :</span> Envoyez vos documents directement par email, et Dokos se charge de les analyser et de les intégrer à vos modules comptables ou de gestion des stocks."
-    image: "image/ocr/facture-ocr.png"
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Automatisation
-      color: sky
-  - title: "Fonctionnement avancé : Contrôlez chaque étape"
-    description: "Restez maître de vos données tout en automatisant. Avec Dokos, vous validez chaque étape pour garantir une précision optimale. Configurez vos workflows selon vos besoins spécifiques."
-    image: "image/ocr/workflow-ocr.png"
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Semi-automatique
-      color: sky
-  - title: Gardez le contrôle total de vos données
-    description: "Chez Dokos, nous mettons l’accent sur la transparence et la sécurité de vos données. Vous avez la liberté de personnaliser chaque aspect du logiciel tout en profitant d’une sécurité garantie. Vos informations sont protégées à chaque étape. <ul><li><span class='font-bold'>Données supprimées après traitement :</span> Toutes les données extraites via Amazon Textract sont effacées immédiatement après traitement.</li><li><span class='font-bold'>Flexibilité grâce à nos API ouvertes :</span> Intégrez facilement Dokos avec vos systèmes ou solutions OCR existants pour une gestion des données sans contraintes."
-    align: left
-    image: "image/ocr/donnees-ocr.png"
-    image_bg_color: bg-teal-500
-    badge:
-      label: Intégrations
-      color: sky
-  - title: Une solution fiable et sécurisée
-    description: "Notre OCR se concentre sur trois méthodes principales pour l’extraction des données : <ul><li><span class='font-bold'>Réception par email</span></li><li><span class='font-bold'>Importation de fichiers</span></li><li><span class='font-bold'>Dépôt manuel de documents (PDF ou image)</li></span><br>Nous avons choisi Amazon Textract pour assurer une extraction de données à la fois précise et rapide, offrant ainsi le meilleur rapport qualité-prix. De plus, grâce à Dokos, vous pouvez gérer l’ensemble du flux d’achat en toute simplicité : automatisez la création de commandes fournisseurs ou faites correspondre les factures avec des commandes existantes."
-    image: "image/ocr/bannette-factures.png"
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Sécurité
-      color: sky
- 
-bottom_section:
-  title: Découvrez comment Dokos OCR révolutionne votre gestion documentaire.
-  description: "Ne perdez plus de temps sur des tâches fastidieuses. Avec Dokos OCR, libérez-vous des contraintes administratives et consacrez-vous à ce qui compte vraiment : vos missions à haute valeur ajoutée."
-  cards:
-    - title: Gain de temps
-      description: L’automatisation accélère le traitement des documents, permettant à vos équipes de se concentrer sur des tâches plus stratégiques.
-      icon: i-material-symbols-alarm-on-outline
-      class: "col-span-4 row-span-3"
-    - title: Réduction des erreurs
-      description: "Moins de saisie manuelle = moins d'erreurs, notamment dans les processus critiques comme la comptabilité."
-      icon: i-material-symbols-disabled-by-default-rounded
-      class: "col-span-4 row-span-3"
-    - title: Contrôle renforcé
-      description: Grâce aux workflows personnalisés, vous validez les informations avant qu'elles ne soient intégrées à Dokos, garantissant  des données toujours exactes.
-      icon: i-material-symbols-check-circle-outline-rounded
-      class: "col-span-4 row-span-3"
+  - title: Déposez ou transférez vos factures
+    description: Vous glissez un PDF ou une image dans la banette. Vous pouvez aussi ajouter un compte de messagerie à Dokos et définir, dans « Détails IMAP », que le dossier INBOX alimente la banette. Chaque courriel avec une pièce jointe PDF y est alors déposé.
+    image: /modules/ocr/feature-depot.webp
+    badge: Dépôt
+  - title: Lisez les données avec Amazon Textract
+    description: La demande d'analyse part vers Amazon Textract. Au retour, la facture fournisseur en attente affiche le fournisseur, le numéro et la date de la facture, l'échéance, les lignes, le total hors taxes, la TVA et le total. L'aperçu du document reste à côté des données pour la vérification. Le fichier envoyé à Amazon est supprimé une fois l'analyse récupérée.
+    image: /modules/ocr/feature-extraction.webp
+    badge: Extraction
+  - title: Reliez la facture à vos commandes
+    description: Depuis la facture en attente, « Sélectionner les commandes fournisseur » ou « Sélectionner les reçus d'achat » propose les documents ouverts du fournisseur. Un reçu d'achat validé peut être rapproché automatiquement, dans la limite d'un écart que vous fixez en montant ou en pourcentage. Si le fournisseur n'existe pas, un bouton le crée depuis les données lues.
+    image: /modules/ocr/feature-rapprochement.webp
+    badge: Rapprochement
+  - title: Réglez le niveau de contrôle
+    description: Dans Paramètres OCR, vous autorisez ou non la création d'une facture d'achat sans commande, vous bloquez la création quand le total dépasse celui lu sur le document, et vous choisissez de valider automatiquement les factures d'achat créées. Les avoirs fournisseur se répartissent sur plusieurs factures déjà validées.
+    image: /modules/ocr/feature-parametres.webp
+    badge: Paramètres
 
-plus_button:
-  label: Découvrir toutes nos fonctionnalités
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: sky
-  to: /features/ocr
+install:
+  steps:
+    - title: Sur Dokos V5, installez eTransactions
+      description: Sur Dokos V5, l'application eTransactions reprend la banette, les factures en attente et les paramètres de l'OCR. À son installation, elle récupère les données existantes de l'OCR. Installez-la depuis la marketplace Dokos Cloud, comprise dans toutes les formules.
+    - title: Sur Dokos V4, depuis la marketplace Dokos Cloud
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez OCR sur votre site.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://gitlab.com/dokos/ocr</code> puis <code>bench --site votre-site install-app ocr</code>."
+    - title: Renseignez vos clés
+      description: Dans Paramètres OCR, saisissez la clé et le secret Amazon Textract, puis choisissez les règles de création des factures d'achat.
+  prerequisites:
+    - Un compte Amazon Web Services avec accès à Textract
+
+faq:
+  items:
+    - label: Quels fichiers l'OCR accepte-t-il ?
+      content: Des PDF et des images, déposés à la main dans la banette ou reçus en pièce jointe d'un courriel.
+    - label: Où partent mes documents ?
+      content: Le fichier est envoyé à Amazon Textract pour l'analyse, avec vos propres clés d'accès. Il est supprimé du stockage Amazon une fois le résultat récupéré par Dokos. Les données extraites restent dans votre site.
+    - label: Existe-t-il un autre moteur qu'Amazon Textract ?
+      content: Le document Paramètres OCR propose le choix entre Amazon Textract et Mistral OCR, avec une clé d'API Mistral.
+    - label: Que se passe-t-il si je passe à Dokos V5 ?
+      content: eTransactions remplace l'application OCR. Lors de son installation, elle reprend les paramètres, la banette et les factures fournisseur en attente. Les factures reçues par plateforme agréée arrivent ensuite dans la même banette.
+    - label: La facture d'achat est-elle créée toute seule ?
+      content: Seulement si vous l'avez demandé. Par défaut, vous relisez la facture en attente, vous choisissez la commande ou le reçu, puis vous cliquez sur « Créer la facture d'achat ». Une option valide automatiquement les factures créées.
 
 bottom_cta:
-  title: Avec Dokos, transformez votre gestion des achats grâce à l'automatisation.
-  description: Ne perdez plus de temps avec des processus manuels. Dokos vous offre une solution flexible, éthique et transparente pour automatiser votre gestion des achats. Prenez le contrôle dès maintenant !
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Vos factures fournisseur et leur volume
+  description: Décrivez-nous comment vos factures fournisseur arrivent aujourd'hui, nous vous dirons ce que l'OCR couvre déjà.
   links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: orange
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

@@ -1,14 +1,14 @@
-# Sources : README https://github.com/frappe/drive (branche main) ; docs.frappe.io/drive (introduction, quick-start) ;
-# licence vérifiée sur le dépôt (AGPL-3.0) ; marketplace cloud.dokos.io, identifiant drive.
+# Sources : README https://github.com/frappe/drive (branche main) ; docs.frappe.io/drive (introduction, quick-start) ;
+# licence vérifiée sur le dépôt (AGPL-3.0) ; marketplace cloud.dokos.io, identifiant drive.
 # Le README indique que Frappe Drive est archivé et rejoint Frappe Suite (github.com/frappe/suite).
 #
-# Captures à prendre (demo.dokos.cloud, interface /drive) :
-# - hero.webp : l'accueil de Frappe Drive, dossiers et fichiers récents
-# - fit.webp : la fenêtre de partage d'un dossier avec un utilisateur et un groupe d'utilisateurs du site
-# - feature-envoi.webp : l'envoi d'un dossier complet, arborescence conservée
-# - feature-partage.webp : le journal d'activité d'un fichier (changements de permissions)
-# - feature-writer.webp : un document Writer édité à deux, avec une annotation ouverte
-# - feature-apercu.webp : l'aperçu d'un PDF ou d'une vidéo dans le navigateur
+# Captures à prendre (demo.dokos.cloud, interface /drive) :
+# - hero.webp : l'accueil de Frappe Drive, dossiers et fichiers récents
+# - fit.webp : la fenêtre de partage d'un dossier avec un utilisateur et un groupe d'utilisateurs du site
+# - feature-envoi.webp : l'envoi d'un dossier complet, arborescence conservée
+# - feature-partage.webp : le journal d'activité d'un fichier (changements de permissions)
+# - feature-writer.webp : un document Writer édité à deux, avec une annotation ouverte
+# - feature-apercu.webp : l'aperçu d'un PDF ou d'une vidéo dans le navigateur
 
 navigation:
   title: Frappe Drive
@@ -112,23 +112,23 @@ install:
 
 faq:
   items:
-    - label: Puis-je partager un fichier avec quelqu'un qui n'a pas de compte ?
+    - label: Puis-je partager un fichier avec quelqu'un qui n'a pas de compte ?
       content: >-
         Oui. Vous publiez le fichier, ou vous créez un utilisateur invité avec un accès limité et contrôlé.
-    - label: Comment est réparti l'espace de stockage ?
+    - label: Comment est réparti l'espace de stockage ?
       content: >-
         Le stockage est mis en commun pour tous les utilisateurs du site, ou attribué par quota à chaque utilisateur.
-    - label: Frappe Drive remplace-t-il mes sauvegardes ?
+    - label: Frappe Drive remplace-t-il mes sauvegardes ?
       content: >-
         Non. Le README de Frappe Drive recommande aux auto-hébergeurs de ne pas en faire leur unique espace de fichiers
         et de garder une stratégie de sauvegarde.
-    - label: Frappe Drive est-il toujours maintenu ?
+    - label: Frappe Drive est-il toujours maintenu ?
       content: >-
         Le dépôt frappe/drive indique que Frappe Drive rejoint Frappe Suite (github.com/frappe/suite).
         Dokos Cloud distribue l'application Frappe Drive sur sa marketplace. Publiée sous licence AGPLv3.
 
 bottom_cta:
-  title: Une question sur Frappe Drive ?
+  title: Posez-nous vos questions sur Frappe Drive.
   description: Décrivez-nous vos volumes et vos usages, nous vous dirons si Frappe Drive y répond.
   links:
     - label: Nous écrire

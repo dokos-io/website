@@ -100,7 +100,7 @@ faq:
       content: Un billet porte une option de notification par e-mail. Pour une lettre d'information, utilisez l'application Newsletter du même site.
 
 bottom_cta:
-  title: Une question sur Blog ?
+  title: Posez-nous vos questions sur Blog.
   description: Dites-nous ce que vous voulez publier.
   links:
     - label: Nous écrire

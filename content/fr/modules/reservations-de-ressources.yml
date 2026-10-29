@@ -1,16 +1,16 @@
-# Sources : doc.dokos.io/v5/dokos/lieu (introduction, parametres-lieu, reservations-articles, contrats-bookings,
-# credit-reservation, evenements, abonnement-reservation, portails, multi-societe) ; doc.dokos.io/v5/dokos/e-commerce/reservations-en-ligne ;
-# billet content/fr/blog/2026/arrivee-V5.md ; README https://gitlab.com/dokos/bookings (branche v5, licence AGPL-3.0) ;
+# Sources : doc.dokos.io/v5/dokos/lieu (introduction, parametres-lieu, reservations-articles, contrats-bookings,
+# credit-reservation, evenements, abonnement-reservation, portails, multi-societe) ; doc.dokos.io/v5/dokos/e-commerce/reservations-en-ligne ;
+# billet content/fr/blog/2026/arrivee-V5.md ; README https://gitlab.com/dokos/bookings (branche v5, licence AGPL-3.0) ;
 # marketplace cloud.dokos.io, identifiant bookings.
 #
-# Captures à prendre (demo.dokos.cloud) :
-# - hero.webp : le portail Bookings (/bookings-ui), calendrier d'une ressource avec ses créneaux
-# - fit.webp : une Réservation d'article confirmée avec son tiers facturé et la facture de vente liée
-# - feature-ressources.webp : la fiche d'une Ressource réservable (prix par unité de mesure, calendrier, badges requis)
-# - feature-portail.webp : /bookings-ui, liste des réservations d'un client avec les statuts
-# - feature-contrats.webp : un Contrat de réservation au statut Actif, avec sa commande et son abonnement liés
-# - feature-credits.webp : le rapport de solde des crédits de réservation
-# - feature-evenements.webp : la fiche d'un Événement publié et ses inscriptions
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : le portail Bookings (/bookings-ui), calendrier d'une ressource avec ses créneaux
+# - fit.webp : une Réservation d'article confirmée avec son tiers facturé et la facture de vente liée
+# - feature-ressources.webp : la fiche d'une Ressource réservable (prix par unité de mesure, calendrier, badges requis)
+# - feature-portail.webp : /bookings-ui, liste des réservations d'un client avec les statuts
+# - feature-contrats.webp : un Contrat de réservation au statut Actif, avec sa commande et son abonnement liés
+# - feature-credits.webp : le rapport de solde des crédits de réservation
+# - feature-evenements.webp : la fiche d'un Événement publié et ses inscriptions
 
 navigation:
   title: Réservations de ressources
@@ -63,7 +63,7 @@ for_whom:
 fit:
   description: >-
     Bookings s'installe sur votre site Dokos et reprend les fonctions du module Lieu de la V4, retiré en V5.
-    Depuis la V5, <strong>tout est une ressource</strong>, réservable ou non ; l'article ne sert plus qu'à la facturation.
+    Depuis la V5, <strong>tout est une ressource</strong>, réservable ou non ; l'article ne sert plus qu'à la facturation.
     Une <strong>Ressource réservable</strong> porte le calendrier, les prix par unité de mesure et les badges requis.<br>
     Chaque <strong>Réservation d'article</strong> est rattachée à un tiers facturé, et sa facture est générée et suivie
     automatiquement. Un contrat signé crée une Commande client, un Abonnement et ses factures récurrentes dans le module Ventes.
@@ -95,7 +95,7 @@ features:
     badge: Ressources
   - title: Laissez vos clients réserver depuis le portail
     description: >-
-      Sur /bookings-ui, le client choisit un créneau. La réservation passe de « Non confirmé » à « Confirmé » après la commande,
+      Sur /bookings-ui, le client choisit un créneau. La réservation passe de « Non confirmé » à « Confirmé » après la commande,
       ou après le paiement si vous l'exigez. Un brouillon abandonné est supprimé après le délai fixé dans les Paramètres du lieu.
       Le client annule depuis son portail si vous l'autorisez, dans la limite du délai minimum d'annulation.
     image: /modules/reservations-de-ressources/feature-portail.webp
@@ -103,21 +103,21 @@ features:
   - title: Signez des contrats en ligne
     description: >-
       Un Type de contrat porte le modèle de texte, la durée minimum, le préavis, les ressources incluses, l'article récurrent,
-      les frais à la signature et le dépôt de garantie. Vous envoyez le contrat au client ; il le signe d'un clic sur son portail.
-      Le contrat passe à « Actif » et crée la Commande client, l'Abonnement et le Dépôt de garantie. Un avenant modifie un contrat actif sans le réécrire.
+      les frais à la signature et le dépôt de garantie. Vous envoyez le contrat au client ; il le signe d'un clic sur son portail.
+      Le contrat passe à « Actif » et crée la Commande client, l'Abonnement et le Dépôt de garantie. Un avenant modifie un contrat actif sans le réécrire.
     image: /modules/reservations-de-ressources/feature-contrats.webp
     badge: Contrats
   - title: Vendez des crédits de réservation
     description: >-
       Un type de crédit convertit un article facturé en crédits, à l'achat d'un ticket ou à chaque période d'un abonnement.
-      À la validation de la facture, les crédits sont alloués. Lors d'une réservation sur le portail, la case « Déduire des crédits
-      de réservation » les consomme. Les crédits expirent selon la durée du type, et un rapport présente les soldes attribués, utilisés et restants.
+      À la validation de la facture, les crédits sont alloués. Lors d'une réservation sur le portail, la case « Déduire des crédits
+      de réservation » les consomme. Les crédits expirent selon la durée du type, et un rapport présente les soldes attribués, utilisés et restants.
     image: /modules/reservations-de-ressources/feature-credits.webp
     badge: Crédits
   - title: Publiez vos événements et leurs inscriptions
     description: >-
-      Un Événement public coché « Publié » apparaît sur le site. Chaque inscription en ligne crée un document Inscription à un événement.
-      Le formulaire web « event-registration-form » encaisse le paiement, en une fois ou avec des paiements automatiques.
+      Un Événement public coché « Publié » apparaît sur le site. Chaque inscription en ligne crée un document Inscription à un événement.
+      Le formulaire web « event-registration-form » encaisse le paiement, en une fois ou avec des paiements automatiques.
       Les inscriptions se ferment automatiquement 24 heures avant l'événement par défaut, et un badge peut être attribué aux présents.
     image: /modules/reservations-de-ressources/feature-evenements.webp
     badge: Événements
@@ -132,7 +132,7 @@ install:
       description: "<code>bench get-app https://gitlab.com/dokos/bookings</code> puis <code>bench --site votre-site install-app bookings</code>."
     - title: Réglez les Paramètres du lieu
       description: >-
-        Dans l'espace de travail Événements & Ressources, ouvrez les Paramètres du lieu : délai de suppression des brouillons,
+        Dans l'espace de travail Événements & Ressources, ouvrez les Paramètres du lieu : délai de suppression des brouillons,
         confirmation après paiement, unités de mesure (nombre d'heures d'une demi-journée), portail client. Créez ensuite une première Ressource réservable.
   prerequisites:
     - Un site Dokos V5
@@ -141,28 +141,28 @@ install:
 
 faq:
   items:
-    - label: Que devient le module Lieu ?
+    - label: Que devient le module Lieu ?
       content: >-
         Le module Lieu de la V4 est retiré en V5. Ses fonctions (crédits, postes d'événement, badges, multi-lieux) sont reprises dans Bookings.
-    - label: Puis-je gérer plusieurs lieux sur un même site ?
+    - label: Puis-je gérer plusieurs lieux sur un même site ?
       content: >-
         Oui. Dans les Paramètres du lieu, activez le mode multi-lieu et listez les sociétés autorisées avec leur liste de prix.
         Chaque article publié indique les sociétés où il apparaît. Le visiteur choisit la société en bas de la vitrine, et chaque société a son panier.
-    - label: Les réservations se synchronisent-elles avec Google Agenda ?
+    - label: Les réservations se synchronisent-elles avec Google Agenda ?
       content: >-
         Oui. Chaque ressource est liée à un agenda distinct, et une option des Paramètres du lieu synchronise automatiquement les réservations en ligne.
         La suppression d'une seule occurrence d'une récurrence dans Google Agenda n'est pas encore reportée dans Dokos.
-    - label: Un abonnement peut-il réserver un poste en permanence ?
+    - label: Un abonnement peut-il réserver un poste en permanence ?
       content: >-
-        Oui. Dans la ligne du plan d'abonnement, le champ « Article réservé » désigne la ressource. Pendant toute la durée de l'abonnement,
+        Oui. Dans la ligne du plan d'abonnement, le champ « Article réservé » désigne la ressource. Pendant toute la durée de l'abonnement,
         le nombre de places restantes est diminué de la quantité indiquée, et l'abonnement apparaît dans la vue Calendrier des réservations.
-    - label: Quelle différence avec la réservation depuis la boutique Webshop ?
+    - label: Quelle différence avec la réservation depuis la boutique Webshop ?
       content: >-
-        La réservation depuis le site e-commerce est dépréciée en V5. Le portail /bookings-ui de Bookings la remplace : il porte les réservations,
+        La réservation depuis le site e-commerce est dépréciée en V5. Le portail /bookings-ui de Bookings la remplace : il porte les réservations,
         les contrats, les abonnements et le trombinoscope des membres.
 
 bottom_cta:
-  title: Une question sur Bookings ?
+  title: Posez-nous vos questions sur Bookings.
   description: Décrivez-nous votre lieu et vos ressources, nous vous dirons comment les mettre en ligne.
   links:
     - label: Nous écrire

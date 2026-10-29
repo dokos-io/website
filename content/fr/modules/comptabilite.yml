@@ -168,7 +168,7 @@ faq:
         de prélèvement SEPA, importe les relevés OFX, gère les factures d'acompte et l'amortissement linéaire.
 
 bottom_cta:
-  title: Une question sur la comptabilité dans Dokos ?
+  title: Posez-nous vos questions sur la comptabilité dans Dokos.
   description: Décrivez-nous votre organisation comptable, nous vous dirons ce que Dokos reprend tel quel.
   links:
     - label: Nous écrire

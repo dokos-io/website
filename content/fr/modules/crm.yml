@@ -1,15 +1,15 @@
-# Sources : README https://github.com/frappe/crm (branche develop) ; docs.frappe.io/crm (introduction,
-# setup-guide, erpnext, twilio, exotel, whatsapp) ; licence vérifiée sur le dépôt (AGPL-3.0) ;
+# Sources : README https://github.com/frappe/crm (branche develop) ; docs.frappe.io/crm (introduction,
+# setup-guide, erpnext, twilio, exotel, whatsapp) ; licence vérifiée sur le dépôt (AGPL-3.0) ;
 # marketplace cloud.dokos.io, identifiant crm.
 #
-# Captures à prendre (demo.dokos.cloud, interface /crm) :
-# - hero.webp : le tableau Kanban des affaires (/crm/deals, vue Kanban)
-# - fit.webp : une affaire au statut « Gagnée » avec le bouton « Créer un devis » et le Client Dokos créé
-# - feature-prospects.webp : la liste des prospects avec filtres et colonnes personnalisés (/crm/leads)
-# - feature-email.webp : la page d'une affaire, onglet E-mails, avec un modèle d'e-mail sélectionné
-# - feature-suivi.webp : la page d'un prospect, onglets Notes, Tâches et Appels
-# - feature-attribution.webp : Paramètres > Règles d'attribution, une règle à tour de rôle
-# - feature-telephonie.webp : la fenêtre d'appel Twilio ou Exotel ouverte sur une fiche
+# Captures à prendre (demo.dokos.cloud, interface /crm) :
+# - hero.webp : le tableau Kanban des affaires (/crm/deals, vue Kanban)
+# - fit.webp : une affaire au statut « Gagnée » avec le bouton « Créer un devis » et le Client Dokos créé
+# - feature-prospects.webp : la liste des prospects avec filtres et colonnes personnalisés (/crm/leads)
+# - feature-email.webp : la page d'une affaire, onglet E-mails, avec un modèle d'e-mail sélectionné
+# - feature-suivi.webp : la page d'un prospect, onglets Notes, Tâches et Appels
+# - feature-attribution.webp : Paramètres > Règles d'attribution, une règle à tour de rôle
+# - feature-telephonie.webp : la fenêtre d'appel Twilio ou Exotel ouverte sur une fiche
 
 navigation:
   title: Frappe CRM
@@ -58,9 +58,9 @@ for_whom:
 fit:
   description: >-
     Frappe CRM s'installe sur le même site que Dokos. Dans <strong>Paramètres > ERPNext</strong>, vous activez
-    l'intégration et choisissez la société. Quand une affaire passe au statut « Gagnée », ou au statut que vous
+    l'intégration et choisissez la société. Quand une affaire passe au statut « Gagnée », ou au statut que vous
     avez choisi, le CRM crée le <strong>Client</strong> dans Dokos et lui relie les contacts et l'adresse de
-    l'organisation. Le bouton « Créer un devis » ouvre un <strong>Devis</strong> Dokos prérempli avec le contact,
+    l'organisation. Le bouton « Créer un devis » ouvre un <strong>Devis</strong> Dokos prérempli avec le contact,
     l'adresse et les lignes de produits.<br>
     Les Articles de Dokos alimentent les Produits du CRM. Le prix d'une ligne vient de la liste de prix du client,
     ou de la liste de prix de vente par défaut.
@@ -82,9 +82,9 @@ features:
   - title: Qualifiez vos prospects et convertissez-les en affaires
     description: >-
       Vous créez un prospect à la main, par import CSV, depuis un formulaire web ou depuis vos publicités Meta.
-      Son statut suit votre qualification (Nouveau, Contacté, Qualifié, Non qualifié). Le bouton « Convertir en affaire »
+      Son statut suit votre qualification (Nouveau, Contacté, Qualifié, Non qualifié). Le bouton « Convertir en affaire »
       crée l'organisation et le contact, ou les relie à des fiches existantes. L'affaire avance ensuite d'étape en étape
-      jusqu'à « Gagnée » ou « Perdue ».
+      jusqu'à « Gagnée » ou « Perdue ».
     image: /modules/crm/feature-prospects.webp
     badge: Prospects et affaires
   - title: Écrivez à vos prospects depuis leur fiche
@@ -131,28 +131,28 @@ install:
 
 faq:
   items:
-    - label: Faut-il Dokos pour utiliser Frappe CRM ?
+    - label: Faut-il Dokos pour utiliser Frappe CRM ?
       content: >-
         Frappe CRM fonctionne sur Dodock seul. La création du client, du devis et la synchronisation des articles
         demandent Dokos sur le même site.
-    - label: Le nombre d'utilisateurs est-il limité ?
+    - label: Le nombre d'utilisateurs est-il limité ?
       content: >-
         Non. Frappe CRM ne limite pas le nombre d'utilisateurs. Vous les invitez dans Paramètres > Inviter un utilisateur,
         avec le rôle Sales User, Sales Manager ou Admin.
-    - label: Comment arrivent les prospects ?
+    - label: Comment arrivent les prospects ?
       content: >-
         À la main, par import CSV depuis la liste des prospects, par un formulaire web créé dans Paramètres > Formulaires,
         ou par la synchronisation des publicités Meta dans Paramètres > Lead Syncing.
-    - label: Les prix du CRM suivent-ils ceux de Dokos ?
+    - label: Les prix du CRM suivent-ils ceux de Dokos ?
       content: >-
-        Oui. Dokos fait foi : la création, la mise à jour et la suppression d'un Article se répercutent sur le Produit du CRM.
+        Oui. Dokos fait foi : la création, la mise à jour et la suppression d'un Article se répercutent sur le Produit du CRM.
         Le prix vient du Prix d'article de la liste de prix de vente, et une affaire utilise la liste de prix du client.
-    - label: Sous quelle licence est publié Frappe CRM ?
+    - label: Sous quelle licence est publié Frappe CRM ?
       content: >-
         GNU Affero General Public License v3.0 (AGPLv3), d'après le fichier de licence du dépôt frappe/crm.
 
 bottom_cta:
-  title: Une question sur Frappe CRM ?
+  title: Posez-nous vos questions sur Frappe CRM.
   description: Dites-nous comment votre équipe prospecte aujourd'hui, nous vous dirons comment la brancher sur Dokos.
   links:
     - label: Nous écrire

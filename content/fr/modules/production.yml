@@ -52,7 +52,7 @@ for_whom:
       icon: i-heroicons-calculator
 
 fit:
-  description: Le module Production fait partie de Dokos. Il lit vos articles et vos entrepôts, et il écrit des entrées de stock à chaque étape : <strong>Transfert de matières pour la production</strong> vers l'entrepôt de travaux en cours, puis <strong>Fabrication</strong> vers l'entrepôt des produits finis. Les composants manquants deviennent des demandes d'achat.
+  description: "Le module Production fait partie de Dokos. Il lit vos articles et vos entrepôts, et il écrit des entrées de stock à chaque étape : <strong>Transfert de matières pour la production</strong> vers l'entrepôt de travaux en cours, puis <strong>Fabrication</strong> vers l'entrepôt des produits finis. Les composants manquants deviennent des demandes d'achat."
   image: /modules/production/fit.webp
   reads:
     - Article, Entrepôt et Unité de mesure
@@ -87,7 +87,7 @@ features:
     image: /modules/production/feature-carte.webp
     badge: Carte de travail
   - title: Fixez les coûts horaires de vos stations
-    description: Une station de travail porte quatre coûts horaires : main-d'œuvre, électricité, loyer et consommables. Un type de station (manuel ou machine) applique ces coûts à toutes ses stations. Un calendrier d'ouverture et une liste de jours fériés servent à vérifier la disponibilité lors de la planification. Le Plan d'atelier affiche chaque station comme disponible ou occupée.
+    description: "Une station de travail porte quatre coûts horaires : main-d'œuvre, électricité, loyer et consommables. Un type de station (manuel ou machine) applique ces coûts à toutes ses stations. Un calendrier d'ouverture et une liste de jours fériés servent à vérifier la disponibilité lors de la planification. Le Plan d'atelier affiche chaque station comme disponible ou occupée."
     image: /modules/production/feature-station.webp
     badge: Station de travail
 
@@ -115,7 +115,7 @@ faq:
       content: Dupliquez la nomenclature existante depuis son formulaire et ajustez les composants. Un produit fini peut aussi être marqué comme article fantôme dans le créateur de nomenclature.
 
 bottom_cta:
-  title: Une question sur le module Production ?
+  title: Posez-nous vos questions sur le module Production.
   description: Dites-nous ce que vous fabriquez et comment vos ateliers travaillent aujourd'hui.
   links:
     - label: Nous écrire

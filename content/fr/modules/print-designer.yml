@@ -99,7 +99,7 @@ faq:
       content: Depuis le 10 octobre 2026, le README du dépôt indique que Frappe ne le maintient plus et renvoie vers l'éditeur de formats d'impression intégré à Frappe à partir de la version 16, le socle de Dodock V5. Écrivez-nous avant de bâtir de nouveaux formats avec Print Designer.
 
 bottom_cta:
-  title: Une question sur Print Designer ?
+  title: Posez-nous vos questions sur Print Designer.
   description: Dites-nous quels documents vous voulez mettre en forme.
   links:
     - label: Nous écrire

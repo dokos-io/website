@@ -1,72 +1,124 @@
-navigation:
-  title: Hiboutik
-  icon: i-heroicons-shopping-bag
-  description: Connecteur avec le point de vente Hiboutik.
+# Sources : https://doc.dokos.io/v5/integrations/hiboutik, README et hooks de https://gitlab.com/dokos/hiboutik
+# (branche v5), DocTypes Hiboutik Settings, Hiboutik Sales et Hiboutik Till Movement, traductions françaises.
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : le document « Paramètres Hiboutik » (espace Intégrations) avec la connexion API, le profil de point de vente et les modes de paiement
+# - fit.webp : une Facture de vente créée depuis une « Vente Hiboutik », le lien vers la vente visible
+# - feature-articles.webp : une fiche Article avec la case « Synchroniser avec Hiboutik » cochée
+# - feature-ventes.webp : la liste « Ventes Hiboutik » avec des statuts En attente, Terminé et Erreur
+# - feature-caisse.webp : un « Mouvement de caisse Hiboutik » et son écriture de journal
+# - feature-stock.webp : la fiche Article, section stock, avec la quantité reprise dans Hiboutik
 
 title: Hiboutik
+description: Remonte chaque vente de votre caisse Hiboutik en facture de vente et pousse vos articles et vos stocks vers la caisse.
 icon: i-heroicons-shopping-bag
-description: Connecte votre point de vente Hiboutik à votre catalogue et vos stocks Dokos.
 application: Hiboutik
 theme: vente-relation-client
+author: Dokos
 logo:
   light: /frappe/hiboutik_logo.svg
   dark: /frappe/hiboutik_logo.svg
+navigation:
+  title: Hiboutik
+  icon: i-heroicons-shopping-bag
+  description: Connecteur avec la caisse Hiboutik.
+
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: hiboutik
+docs: https://doc.dokos.io/v5/integrations/hiboutik
+related: [ventes, stocks, comptabilite, e-commerce]
 
 hero:
-  title: Votre point de vente <span class="text-primary">Hiboutik</span>, relié à Dokos.
-  description: Le connecteur Hiboutik relie votre point de vente Hiboutik à votre catalogue et vos stocks Dokos, pour un magasin déjà équipé de ce point de vente.
-  links:
-    - label: Contactez-nous
-      to: /fr/contact
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-chat-bubble-left-right
-    - label: Voir la marketplace
-      to: https://cloud.dokos.io
-      target: _blank
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: "/fr"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Votre caisse <span class="text-primary">Hiboutik</span>, tenue par Dokos.
+  description: Hiboutik est une caisse enregistreuse en ligne. Le connecteur envoie vos articles et vos stocks vers la caisse, puis ramène chaque vente dans Dokos sous forme de facture de vente.
+  image: /modules/hiboutik/hero.webp
+
+for_whom:
+  items:
+    - title: Votre boutique encaisse sur Hiboutik
+      description: Chaque ticket devient une facture de vente dans Dokos, en temps réel par webhook. La comptabilité suit sans ressaisie.
+      icon: i-heroicons-shopping-cart
+    - title: Vous tenez votre catalogue dans Dokos
+      description: Libellé, prix TTC, taxe et stock partent de la fiche Article vers Hiboutik. Dokos reste la référence.
+      icon: i-heroicons-tag
+    - title: Vous gérez un tiers-lieu ou une boutique associative
+      description: Le connecteur a été financé par des tiers-lieux. Il relie une caisse simple à une gestion complète.
+      icon: i-heroicons-building-storefront
+
+fit:
+  description: Le connecteur se configure dans <strong>Paramètres Hiboutik</strong>, dans l'espace Intégrations. Un <strong>profil de point de vente</strong> fixe la liste de prix et l'entrepôt utilisés. Chaque vente encaissée arrive dans Dokos comme une <strong>Vente Hiboutik</strong>, qui génère la <strong>Facture de vente</strong> correspondante. Les mouvements de caisse arrivent de la même façon et sont comptabilisés en écriture de journal.
+  image: /modules/hiboutik/fit.webp
+  reads:
+    - Article, Prix d'article et Modèle de taxe d'article
+    - Client de type Individuel
+    - Profil de point de vente et Entrepôt
+    - Facture de vente, Écriture de paiement, Écriture de journal
+  adds:
+    - Le document « Paramètres Hiboutik »
+    - Les « Ventes Hiboutik » et les « Mouvements de caisse Hiboutik »
+    - La case « Synchroniser avec Hiboutik » sur la fiche Article
+    - Un espace de travail Hiboutik
+  depends:
+    - Ventes
+    - Stocks
 
 features:
-  - title: Connecteur point de vente
-    description: Relie un point de vente Hiboutik existant à votre installation Dokos.
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Intégration
-      color: sky
-  - title: Catalogue et stocks partagés
-    description: Utile pour un magasin déjà équipé d'Hiboutik qui veut connecter ses ventes en caisse au reste de sa gestion.
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Stocks
-      color: sky
+  - title: Envoyez vos articles vers la caisse
+    description: Cochez « Synchroniser avec Hiboutik » sur chaque article concerné. Le libellé, le prix TTC, la taxe et le stock partent vers Hiboutik, et la référence de la caisse est mémorisée sur l'article. Les images s'ajoutent dans Hiboutik.
+    image: /modules/hiboutik/feature-articles.webp
+    badge: Catalogue
+  - title: Récupérez chaque vente en facture
+    description: Hiboutik appelle Dokos à chaque vente ou note de crédit. Dokos enregistre une Vente Hiboutik, puis crée la facture de vente et son paiement, avec la correspondance des modes de paiement que vous avez définie. Une routine horaire vérifie qu'aucune vente n'a été oubliée.
+    image: /modules/hiboutik/feature-ventes.webp
+    badge: Ventes
+  - title: Comptabilisez les mouvements de caisse
+    description: Les mouvements de caisse sont intégrés une fois par heure, puis comptabilisés. Le statut passe à Terminé une fois l'écriture validée. Les remises globales vont sur le compte que vous indiquez dans les paramètres.
+    image: /modules/hiboutik/feature-caisse.webp
+    badge: Comptabilité
+  - title: Tenez le stock de la caisse à jour
+    description: Chaque mouvement de stock dans Dokos met à jour la quantité dans Hiboutik, sur l'entrepôt du profil de point de vente. Une option envoie une notification pour les alertes de stock.
+    image: /modules/hiboutik/feature-stock.webp
+    badge: Stocks
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Hiboutik sur votre site. L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://gitlab.com/dokos/hiboutik</code> puis <code>bench --site votre-site install-app hiboutik</code>."
+    - title: Reliez la caisse
+      description: Dans Hiboutik, ouvrez Paramètres puis API et relevez vos informations de connexion. Dans Dokos, renseignez Paramètres Hiboutik, choisissez le profil de point de vente, associez les taux de TVA et les modes de paiement, puis enregistrez. Les webhooks apparaissent alors dans Hiboutik.
+    - title: Lancez la première synchronisation
+      description: Cochez « Synchroniser avec Hiboutik » sur les articles concernés, puis lancez la synchronisation des articles et des clients de type Individuel.
+  prerequisites:
+    - Un compte Hiboutik dont l'utilisateur a les droits sur les ventes, les produits, les clients, les stocks et les webhooks
+
+faq:
+  items:
+    - label: Puis-je créer des articles directement dans Hiboutik ?
+      content: Dokos est la référence du catalogue. Un article créé seulement dans Hiboutik n'est pas synchronisé et ses ventes ne remontent pas. Créez l'article dans Dokos, puis cochez « Synchroniser avec Hiboutik ».
+    - label: Plusieurs entrepôts sont-ils possibles ?
+      content: Non. Le connecteur travaille avec l'entrepôt du profil de point de vente, un seul par configuration.
+    - label: Les points de fidélité sont-ils repris ?
+      content: Non. Les points de fidélité Hiboutik ne sont pas gérés dans Dokos.
+    - label: Comment sont traitées les ventes réglées par crédit client ?
+      content: Aucune écriture de paiement n'est créée pour une vente réglée par crédit. Le solde se règle avec le mode « DIV » et un montant négatif sur le mode « CRED ». Les paiements en excédent sont créés par Dokos, puis rapprochés à la main.
+    - label: Qui a développé ce connecteur ?
+      content: La première version a été écrite par ioCraft (projet opossum). Les développements ont été financés par les tiers-lieux Coopérative Baraka, La Coroutine et MonsFabrica. Dokos SAS le maintient.
 
 bottom_cta:
-  title: Un point de vente Hiboutik à connecter à Dokos ?
-  description: Disponible depuis la marketplace de cloud.dokos.io. Décrivez-nous votre configuration actuelle, nous vous dirons ce que le connecteur couvre déjà.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Votre caisse et votre catalogue
+  description: Décrivez-nous votre configuration Hiboutik, nous vous dirons ce que le connecteur couvre déjà.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-chat-bubble-left-right
+      size: xl
+      color: primary
     - label: Voir la marketplace
-      to: https://cloud.dokos.io
+      to: https://cloud.dokos.io/marketplace
       target: _blank
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+      size: xl
+      color: neutral
+      variant: outline

@@ -106,7 +106,7 @@ faq:
       content: Des bases MySQL, PostgreSQL, DuckDB et BigQuery, ainsi que des fichiers et des feuilles de calcul importés dans Insights.
 
 bottom_cta:
-  title: Une question sur Frappe Insights ?
+  title: Posez-nous vos questions sur Frappe Insights.
   description: Dites-nous quels chiffres vous voulez suivre.
   links:
     - label: Nous écrire

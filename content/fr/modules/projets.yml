@@ -49,7 +49,7 @@ for_whom:
       icon: i-heroicons-document-duplicate
 
 fit:
-  description: Le module Projets fait partie de Dokos. Un projet se rattache à une <strong>commande client</strong> et reçoit les coûts des autres modules : feuilles de temps, notes de frais, factures d'achat et matières consommées. La <strong>feuille de temps</strong> relie le temps d'un employé à un projet, à une tâche et à une facture de vente.
+  description: "Le module Projets fait partie de Dokos. Un projet se rattache à une <strong>commande client</strong> et reçoit les coûts des autres modules : feuilles de temps, notes de frais, factures d'achat et matières consommées. La <strong>feuille de temps</strong> relie le temps d'un employé à un projet, à une tâche et à une facture de vente."
   image: /modules/projets/fit.webp
   reads:
     - Commande client, renseignée sur le projet
@@ -65,7 +65,7 @@ fit:
 
 features:
   - title: Créez un projet, seul ou à partir d'un modèle
-    description: Vous renseignez le nom, le statut et la date de fin prévue, puis le type, la priorité et le département si besoin. Avec « À partir d'un modèle », les tâches du modèle sont créées et datées automatiquement. Le champ « Méthode d'achèvement » fixe le calcul de l'avancement : manuel, par tâche terminée, par progression ou par poids des tâches.
+    description: "Vous renseignez le nom, le statut et la date de fin prévue, puis le type, la priorité et le département si besoin. Avec « À partir d'un modèle », les tâches du modèle sont créées et datées automatiquement. Le champ « Méthode d'achèvement » fixe le calcul de l'avancement : manuel, par tâche terminée, par progression ou par poids des tâches."
     image: /modules/projets/feature-projet.webp
     badge: Projet
   - title: Découpez le travail en tâches dépendantes
@@ -102,12 +102,12 @@ faq:
     - label: Mon client peut-il suivre l'avancement du projet ?
       content: Oui. Ajoutez-le dans la table Utilisateurs du projet en tant qu'utilisateur du site web. Vous pouvez aussi lui envoyer les mises à jour du projet à fréquence régulière.
     - label: Comment l'avancement d'un projet est-il calculé ?
-      content: Selon la « Méthode d'achèvement » choisie : saisie manuelle, proportion de tâches terminées, progression des tâches ou poids des tâches. Si la somme des poids n'est pas 100, Dokos normalise le résultat.
+      content: "Selon la « Méthode d'achèvement » choisie : saisie manuelle, proportion de tâches terminées, progression des tâches ou poids des tâches. Si la somme des poids n'est pas 100, Dokos normalise le résultat."
     - label: Les notes de frais entrent-elles dans le coût du projet ?
       content: Oui. Une note de frais qui mentionne le projet ou une de ses tâches met à jour le champ de demande de remboursement et le coût total du projet.
 
 bottom_cta:
-  title: Une question sur le module Projets ?
+  title: Posez-nous vos questions sur le module Projets.
   description: Dites-nous comment vous suivez vos projets et votre temps aujourd'hui.
   links:
     - label: Nous écrire

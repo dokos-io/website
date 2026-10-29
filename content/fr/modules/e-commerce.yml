@@ -1,15 +1,15 @@
-# Sources : doc.dokos.io/v5/dokos/e-commerce (introduction, parametres, portal-settings, reservations-en-ligne) ;
-# doc.dokos.io/v5/dokos/lieu/multi-societe ; README https://gitlab.com/dokos/webshop (branche v5, licence GPLv3) ;
+# Sources : doc.dokos.io/v5/dokos/e-commerce (introduction, parametres, portal-settings, reservations-en-ligne) ;
+# doc.dokos.io/v5/dokos/lieu/multi-societe ; README https://gitlab.com/dokos/webshop (branche v5, licence GPLv3) ;
 # marketplace cloud.dokos.io, identifiant webshop.
 #
-# Captures à prendre (demo.dokos.cloud) :
-# - hero.webp : la vitrine du site (/all-products) avec des articles publiés
-# - fit.webp : un Article de site web dans le bureau (Site web > Article de site web) et son Article Dokos lié
-# - feature-catalogue.webp : la fiche d'un Article de site web avec image, description et groupe d'articles
-# - feature-commande.webp : le panier puis la page de finalisation de commande
-# - feature-paiement.webp : Paramètres e-commerce, section Paiement, avec une passerelle activée
-# - feature-portail.webp : le portail client, liste des commandes (/orders)
-# - feature-personnalisation.webp : Paramètres e-commerce, onglet Panier, section Personnalisations
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : la vitrine du site (/all-products) avec des articles publiés
+# - fit.webp : un Article de site web dans le bureau (Site web > Article de site web) et son Article Dokos lié
+# - feature-catalogue.webp : la fiche d'un Article de site web avec image, description et groupe d'articles
+# - feature-commande.webp : le panier puis la page de finalisation de commande
+# - feature-paiement.webp : Paramètres e-commerce, section Paiement, avec une passerelle activée
+# - feature-portail.webp : le portail client, liste des commandes (/orders)
+# - feature-personnalisation.webp : Paramètres e-commerce, onglet Panier, section Personnalisations
 
 navigation:
   title: Webshop
@@ -58,10 +58,10 @@ for_whom:
 fit:
   description: >-
     Webshop est la version Dokos de l'application Webshop de Frappe. Elle s'appuie sur les <strong>Articles</strong>,
-    les groupes d'articles, les listes de prix et le stock du module Ventes. Vous cochez « Publier l'article » dans la fiche
+    les groupes d'articles, les listes de prix et le stock du module Ventes. Vous cochez « Publier l'article » dans la fiche
     de l'article, et il apparaît dans la vitrine avec ses images, sa description et son prix.<br>
     Une commande passée sur le site crée une <strong>Commande client</strong>. La TVA vient des règles de taxation marquées
-    « Utiliser pour le Panier », les frais de port des règles de livraison marquées « Afficher sur le site web ».
+    « Utiliser pour le Panier », les frais de port des règles de livraison marquées « Afficher sur le site web ».
     Le paiement en ligne passe par les passerelles de l'application Payments.
   image: /modules/e-commerce/fit.webp
   reads:
@@ -124,7 +124,7 @@ install:
       description: "<code>bench get-app https://gitlab.com/dokos/webshop</code> puis <code>bench --site votre-site install-app webshop</code>."
     - title: Publiez un premier article
       description: >-
-        Ouvrez la fiche d'un article, cliquez sur « Publier l'article », puis réglez les Paramètres e-commerce
+        Ouvrez la fiche d'un article, cliquez sur « Publier l'article », puis réglez les Paramètres e-commerce
         (liste de prix, règle de taxation du panier, modes de livraison, caisse).
   prerequisites:
     - Un site Dokos V5
@@ -132,29 +132,29 @@ install:
 
 faq:
   items:
-    - label: Les commandes du site vont-elles dans ma comptabilité ?
+    - label: Les commandes du site vont-elles dans ma comptabilité ?
       content: >-
         Une commande en ligne crée une Commande client dans Dokos. Vous la facturez comme une commande saisie au bureau.
         Pour les abonnements, les factures sont générées automatiquement et payables en ligne.
-    - label: Quels moyens de paiement puis-je proposer ?
+    - label: Quels moyens de paiement puis-je proposer ?
       content: >-
         Les passerelles PayPal, Stripe, HelloAsso, GoCardless et Stancer sont intégrées. Le client règle par carte bancaire,
         par prélèvement automatique ou par virement, avec ou sans passerelle.
-    - label: Mes clients peuvent-ils réserver une salle depuis la boutique ?
+    - label: Mes clients peuvent-ils réserver une salle depuis la boutique ?
       content: >-
         La réservation de ressources depuis le site e-commerce est dépréciée en V5 et sera retirée dans une prochaine version.
         Pour un nouveau projet, utilisez le portail de l'application [Réservations de ressources](/fr/modules/reservations-de-ressources).
-    - label: Puis-je vendre pour plusieurs sociétés sur le même site ?
+    - label: Puis-je vendre pour plusieurs sociétés sur le même site ?
       content: >-
         Oui, avec le mode multi-lieu des Paramètres du lieu (application Bookings). Chaque société autorisée a sa liste de prix
         et son panier. Le visiteur choisit la société en bas de la vitrine.
-    - label: Comment ajouter des pages à mon site ?
+    - label: Comment ajouter des pages à mon site ?
       content: >-
-        Les pages « À propos » et le formulaire de contact se règlent dans les paramètres du site web. Les demandes du formulaire
+        Les pages « À propos » et le formulaire de contact se règlent dans les paramètres du site web. Les demandes du formulaire
         de contact sont enregistrées comme Communication. Pour une page d'accueil, passez par Site web > Page Web ou par l'application Builder.
 
 bottom_cta:
-  title: Une question sur Webshop ?
+  title: Posez-nous vos questions sur Webshop.
   description: Décrivez-nous ce que vous vendez et à qui, nous vous dirons comment le publier depuis Dokos.
   links:
     - label: Nous écrire

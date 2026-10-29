@@ -1,135 +1,172 @@
+# Sources : doc.dokos.io/v5/dokos/ventes (introduction, devis, commande-client, abonnements,
+# point-de-vente, facturx, rapports), doc.dokos.io/v5/dokos/comptabilite/acomptes,
+# doc.dokos.io/v5/dokos/comparaison-erpnext, doc.dokos.io/nouveautes (28 septembre 2026).
+# TODO-LNE : date et référence du certificat de la caisse.
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : l'espace de travail Ventes (/app/selling), cartes et raccourcis
+# - fit.webp : une commande client validée (/app/sales-order) avec son tableau de bord de documents liés
+# - feature-devis.webp : un devis ouvert (/app/quotation) avec le menu Créer déplié
+# - feature-commande.webp : la liste des commandes clients (/app/sales-order) avec la colonne Statut
+# - feature-facture.webp : une facture de vente payée (/app/sales-invoice) avec sa demande de paiement
+# - feature-abonnements.webp : un abonnement actif (/app/subscription) et ses factures générées
+# - feature-prix.webp : une règle de prix (/app/pricing-rule) appliquée à un groupe de clients
+
 navigation:
   title: Ventes
   icon: i-ep-sell
-  description: Gestion des flux commerciaux et de la facturation.
+  description: Devis, commandes, factures et abonnements.
 
 title: Ventes
+description: Suit chaque vente du devis à l'encaissement, en boutique comme à distance.
 icon: i-ep-sell
-description: Transformez vos leads en clients fidèles avec des outils de vente performants.
 application: Dokos
 theme: vente-relation-client
 author: Frappe Technologies, Dokos & Contributeurs
 
-hero:
-  title: Accélérez vos ventes avec <span class="text-primary">simplicité et transparence</span>
-  description: Dokos offre une solution puissante pour automatiser et optimiser votre processus de vente. Que vous soyez une PME ou une grande organisation, Dokos vous permet de gérer chaque étape de la vente avec efficacité. Conçue pour des entreprises modernes et responsables, notre plateforme vous aide à atteindre vos objectifs commerciaux tout en favorisant une gestion éthique et collaborative.
-  links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    variant: subtle
-    to: /fr
-    right_icon: i-heroicons-arrow-right-20-solid
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: erpnext
+docs: https://doc.dokos.io/v5/dokos/ventes
+related: [crm, comptabilite, stocks, e-commerce, paiements]
 
+hero:
+  title: Du devis à l'encaissement, <span class="text-primary">un seul fil</span> de documents.
+  description: Le module Ventes de Dokos crée vos devis, les transforme en commandes puis en factures. Chaque document reprend le précédent et vous voyez ce qui reste à livrer et à facturer.
+  image: /modules/ventes/hero.webp
+
+for_whom:
+  items:
+    - title: Vos devis partent d'un traitement de texte
+      description: Vous créez le devis dans Dokos depuis la fiche client ou l'opportunité. Les prix viennent de votre liste de prix et la commande reprend le devis accepté.
+      icon: i-heroicons-document-text
+    - title: Vous facturez des abonnements chaque mois à la main
+      description: Un abonnement génère ses factures à chaque période et déclenche le paiement si le client a enregistré un moyen de paiement.
+      icon: i-heroicons-arrow-path
+    - title: Vous vendez en boutique et à distance
+      description: Le point de vente certifié LNE encaisse au comptoir. Les factures envoyées par e-mail portent un lien de paiement.
+      icon: i-heroicons-building-storefront
+    - title: Vous ne savez pas ce qui reste à livrer
+      description: Le statut de chaque commande indique ce qui reste à livrer et à facturer. Vous filtrez la liste sur ce statut.
+      icon: i-heroicons-truck
+
+fit:
+  description: >-
+    Une piste devient une opportunité dans le CRM, puis un devis, puis une commande client. La commande
+    vérifie la disponibilité dans Stocks à la validation. Elle crée le bon de livraison et la facture de
+    vente, qui passe son écriture en Comptabilité. La demande de paiement s'appuie sur les passerelles de
+    l'application Paiements.
+  image: /modules/ventes/fit.webp
+  reads:
+    - Client, Contact et Adresse
+    - Article, Prix de l'article et Liste de prix
+    - Piste et Opportunité (CRM)
+    - Entrepôt, pour le contrôle de disponibilité à la validation
+  adds:
+    - Devis, Commande client, Facture de vente et Facture d'acompte
+    - Abonnement, Demande de paiement et Termes de paiement
+    - Point de vente et factures de point de vente
+    - Règles de prix, Schéma promotionnel, Code promotionnel et Règle de livraison
+    - Vendeur, Partenaire commercial et les rapports commerciaux
+  depends:
+    - CRM
+    - Comptabilité
+    - Stocks
+    - Paiements
 
 features:
-  - title: Une gestion simplifiée de votre pipeline de vente
-    description: Dokos vous permet de suivre vos prospects et opportunités de manière fluide. <br><br>Grâce à son CRM intégré, gardez une vision claire de chaque interaction client, automatisez les relances et assurez un suivi rigoureux à chaque étape du processus de vente.</br>
-    image: "image/ventes/un-insights-opportunites.webp"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: CRM
-      color: sky
-  - title: Création de devis et gestion des commandes
-    description: Créez des devis professionnels en quelques clics et convertissez-les facilement en commandes. <br><br>Profitez de modèles personnalisables pour vos documents commerciaux et assurez-vous que vos stocks sont toujours à jour en temps réel, afin de répondre rapidement à vos clients.</br>
-    image: "image/ventes/deux-evolution-commandes-clients.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Devis
-      color: sky
-  - title: Automatisation du flux de vente
-    description: Générez automatiquement des factures à partir des commandes confirmées.<br><br> Avec une gestion multi-devises, Dokos facilite vos opérations à l'international, tout en intégrant des solutions de paiement en ligne pour accélérer la collecte de vos paiements.</br>
-    image: "image/ventes/trois-flux-de-vente.webp"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Factures
-      color: sky
-  - title: Gestion des livraisons et expédition
-    description: Simplifiez la préparation et l’envoi des commandes grâce à des bons de livraison générés automatiquement. <br><br>Via des intégrations communaitaires, Dokos vous permet de suivre en temps réel l’état des expéditions, tout en optimisant la gestion de vos entrepôts pour une meilleure efficacité logistique.</br>
-    image: "image/ventes/quatre-livraison-kanban.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Livraison
-      color: sky
-  - title: Rapports et Analyses
-    description: Obtenez des rapports complets et précis sur vos ventes. <br><br>Analysez les performances de votre équipe, identifiez les tendances de marché et prenez des décisions stratégiques grâce aux données en temps réel disponibles sur le tableau de bord Dokos.</br>
-    image: "image/ventes/cinq-insights ventes.webp"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Rapports
-      color: sky
-  - title: Gestion des abonnements
-    description: Automatisez la gestion de vos abonnements avec des factures récurrentes. <br><br>Dokos vous permet de suivre les renouvellements, les changements de plan et les annulations avec facilité, garantissant une expérience client fluide et continue.</br>
-    image: "image/ventes/six-abonnements-modifies.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Abonnement
-      color: sky
-  - title: Des personnalisations sur mesure
-    description: Adaptez le logiciel à vos besoins spécifiques. <br><br>Ajoutez des champs personnalisés, modifiez les formulaires en fonction des rôles des utilisateurs, et créez des modèles d'impression uniques, tout cela sans avoir besoin de coder.</br>
-    image: "image/ventes/sept-facture-de-vente.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Personnalisations
-      color: sky
+  - title: Un devis qui se transforme en commande
+    description: >-
+      Vous créez le devis pour un client, pour un prospect ou depuis une opportunité du CRM. Les prix et les
+      conditions viennent de la liste de prix du client. Vous appliquez une remise par ligne ou sur le total,
+      ou un code promotionnel. Le devis affiche sa marge brute pendant la saisie. Une fois validé, il est
+      envoyé par e-mail ou exporté en PDF. Son statut passe à Commandé, Refusé, Expiré ou Perdu, avec un
+      motif qui alimente l'analyse des ventes. Vous convertissez tout le devis ou seulement certaines lignes.
+    image: /modules/ventes/feature-devis.webp
+    badge: Devis
+  - title: Une commande qui pilote la suite
+    description: >-
+      La commande client reprend le devis accepté. Si vous gérez les stocks, Dokos vérifie la disponibilité à
+      la validation. Depuis la commande, vous créez le bon de livraison, la facture de vente, une facture
+      d'acompte, une demande de paiement, un projet ou un abonnement. Le statut indique ce qui reste à faire
+      (À livrer et facturer, À facturer, À livrer, Terminé). Une commande fournisseur en livraison directe
+      reste liée à la commande client et met à jour ses quantités livrées.
+    image: /modules/ventes/feature-commande.webp
+    badge: Commande client
+  - title: Une facture, son paiement et son ticket de caisse
+    description: >-
+      La facture de vente passe son écriture en comptabilité à la validation, dans une séquence de numéros
+      continue. Vous envoyez une demande de paiement avec un lien Stripe, GoCardless ou Braintree, et les
+      acomptes déjà encaissés se déduisent du solde. Au comptoir, le point de vente certifié LNE crée la
+      facture et enregistre le paiement en une seule opération, avec plusieurs modes de paiement et un
+      terminal SumUp si vous en avez un. Avec eTransactions, chaque facture validée génère son fichier
+      Factur-X.
+    image: /modules/ventes/feature-facture.webp
+    badge: Facture de vente
+  - title: Des abonnements qui facturent seuls
+    description: >-
+      Vous créez un abonnement depuis une commande validée ou depuis Ventes > Abonnements, avec un article
+      récurrent et une période mensuelle, trimestrielle ou annuelle, facturée en début ou en fin de période.
+      Dokos génère les factures et, si le client a enregistré une carte ou un mandat, déclenche le paiement à
+      chaque échéance. Sinon il envoie un lien de paiement. Vous annulez un abonnement à une date donnée,
+      avec un prorata sur la dernière facture.
+    image: /modules/ventes/feature-abonnements.webp
+    badge: Abonnements
+  - title: Vos prix selon le client et le moment
+    description: >-
+      Vous tenez plusieurs listes de prix, par devise ou par groupe de clients. Les règles de prix appliquent
+      une remise ou un prix selon l'article, le client, la quantité ou la période. Un schéma promotionnel
+      regroupe ces règles pour une opération. Un code promotionnel se saisit sur le devis. Les règles de
+      livraison calculent les frais de port et les termes de paiement fixent les échéances.
+    image: /modules/ventes/feature-prix.webp
+    badge: Prix et promotions
 
-bottom_section:
-  title: "La vente avec Dokos, c’est aussi :"
-  cards:
-    - title: Un portail Client
-      description: Grâce à Dokos, offrez à vos clients un espace dédié où ils peuvent consulter leurs devis, suivre leurs commandes et bons de livraison, et bien plus encore. Cette autonomie réduit les sollicitations, vous permettant de vous concentrer sur l'essentiel.
-      icon: i-material-symbols-settings-account-box-rounded
-      class: "col-span-4 row-span-3"
-    - title: Des stratégies tarifaires
-      description: Avec Dokos, adaptez vos prix à chaque situation grâce à des fonctionnalités flexibles. Utilisez des listes de prix personnalisées, mettez en place des promotions ciblées, proposez des codes promo attractifs et fidélisez vos clients avec des programmes de récompenses. Offrez des tarifs adaptés à vos clients tout en optimisant vos marges.
-      icon: i-icon-park-outline-target
-      class: "col-span-4 row-span-3"
-    - title: Des intégrations e-commerce
-      description: Grâce aux applications communautaires, Dokos s'intègre parfaitement avec des plateformes comme WooCommerce, Amazon, et bien d'autres. Synchronisez vos produits, commandes et stocks en temps réel pour centraliser toutes vos opérations de vente sur un seul outil. Une solution complète et évolutive pour optimiser votre activité e-commerce.
-      icon: i-ic-round-shopping-basket
-      class: "col-span-4 row-span-3"
+install:
+  description: Le module Ventes fait partie de Dokos. Il n'y a rien à installer en plus.
+  steps:
+    - title: Sur Dokos Cloud
+      description: Créez votre site depuis votre tableau de bord Dokos Cloud. Dokos est installé avec le module Ventes. Compris dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>."
+    - title: Pour encaisser en ligne
+      description: Installez l'application Paiements depuis la marketplace et configurez votre passerelle.
 
-plus_button:
-  label: Découvrir toutes nos fonctionnalités
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: sky
-  to: /features/ventes
+faq:
+  items:
+    - label: Puis-je modifier un devis déjà envoyé ?
+      content: >-
+        Un devis validé n'est plus modifiable. Vous l'annulez, vous le modifiez, vous le validez de nouveau et
+        vous le renvoyez. Pour comparer deux options, vous dupliquez le devis.
+    - label: Comment facturer un acompte ?
+      content: >-
+        Depuis la commande client validée, Créer > Facture d'acompte. Les lignes sont regroupées par taux de
+        TVA. Sur la facture finale, la section Avances liste les acomptes encaissés et Dokos ne comptabilise
+        que le solde restant dû.
+    - label: Que se passe-t-il si le stock manque à la validation d'une commande ?
+      content: >-
+        Si la gestion des stocks est activée, Dokos vérifie la disponibilité à la validation et peut bloquer la
+        commande avec le message « Stock insuffisant ».
+    - label: Puis-je changer la périodicité d'un abonnement ?
+      content: >-
+        Non. La période et le moment de facturation ne se modifient plus une fois l'abonnement enregistré.
+        Vous créez un nouvel abonnement.
+    - label: Le point de vente est-il certifié ?
+      content: >-
+        Oui, le point de vente de Dokos est certifié LNE pour les sites qui encaissent des particuliers. Les
+        données d'encaissement sont inscrites dans un journal inaltérable et exportables en archive fiscale.
 
 bottom_cta:
-  title: Boostez vos ventes avec Dokos.
-  description: Dokos vous offre une gestion des ventes transparente et respectueuse de vos valeurs. Conçu pour s'adapter à vos besoins, il favorise la collaboration et l'innovation tout en garantissant la souveraineté de vos données. Reprenez le contrôle de vos processus de vente avec une solution éthique et performante."
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Posez-nous vos questions sur les ventes dans Dokos.
+  description: Décrivez-nous votre cycle de vente, nous vous montrerons le parcours de vos documents.
   links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true   
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline
