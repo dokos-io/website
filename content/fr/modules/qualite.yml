@@ -1,118 +1,125 @@
+# Sources : https://doc.dokos.io/v5/dokos/qualite (Procédure de qualité, Objectif de qualité,
+# Revue de la qualité, Non-conformité, Action de qualité, Retour de la qualité),
+# https://doc.dokos.io/v5/dokos/stocks/quality-inspection (Inspection de la qualité),
+# https://doc.dokos.io/nouveautes (v5 : contrôles qualité par opération de nomenclature).
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : la vue hiérarchique des procédures de qualité (/app/quality-procedure/view/tree)
+# - fit.webp : une Inspection de la qualité liée à un Reçu d'achat, lectures acceptées et rejetées (/app/quality-inspection)
+# - feature-procedure.webp : une Procédure de qualité parente avec son tableau Processus et ses sous-procédures (/app/quality-procedure)
+# - feature-objectif.webp : un Objectif de qualité avec sa fréquence de surveillance et son tableau Objectifs (/app/quality-goal)
+# - feature-non-conformite.webp : une Non-conformité avec ses actions corrective et préventive (/app/non-conformance)
+# - feature-retour.webp : un Retour de la qualité avec ses paramètres notés de 1 à 5 (/app/quality-feedback)
+# - feature-inspection.webp : le Modèle d'inspection de la qualité d'un article (/app/quality-inspection-template)
+
 navigation:
-    title: Qualité
-    icon: i-carbon-rule-data-quality
-    description: Création de processus et suivi de la qualité.
+  title: Qualité
+  icon: i-carbon-rule-data-quality
+  description: Procédures, objectifs, non-conformités et inspections.
 
 title: Qualité
+description: Décrit vos procédures, mesure vos objectifs à fréquence régulière et suit chaque non-conformité jusqu'à son action corrective.
 icon: i-carbon-rule-data-quality
-description: Assurez la qualité à chaque étape de vos processus.
 application: Dokos
 theme: achats-stocks-production
-author: Frappe Technologies & Contributeurs
+author: Frappe Technologies, Dokos & Contributeurs
+
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: erpnext
+docs: https://doc.dokos.io/v5/dokos/qualite
+related: [production, stocks, achats, support]
 
 hero:
-  title: Optimisez votre gestion de la <span class="text-primary">qualité</span> avec Dokos
-  description: Garantir une qualité irréprochable est essentiel pour toute entreprise cherchant à satisfaire ses clients et à respecter les normes industrielles. Le module Qualité de Dokos vous aide à structurer, automatiser et suivre vos processus de qualité de manière efficace et intuitive. De la planification des inspections à la gestion des non-conformités, notre solution vous offre un contrôle total sur vos opérations. Découvrez comment Dokos peut vous aider à atteindre des standards de qualité élevés.
-  links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: "/fr"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Vos <span class="text-primary">procédures qualité</span>, leurs objectifs et les écarts constatés, dans votre site Dokos.
+  description: Vous décrivez vos procédures, vous fixez des objectifs mesurés à fréquence régulière et vous enregistrez les non-conformités. Chaque écart donne lieu à une action corrective ou préventive, suivie jusqu'à sa clôture.
+  image: /modules/qualite/hero.webp
 
+for_whom:
+  items:
+    - title: Vos procédures vivent dans des fichiers bureautiques
+      description: Vous les saisissez dans Dokos sous forme d'étapes, avec des sous-procédures. La vue hiérarchique les affiche en arborescence et une même procédure peut dépendre de plusieurs parents.
+      icon: i-heroicons-document-text
+    - title: Vous suivez des indicateurs qualité à la main
+      description: Un objectif de qualité porte une cible et une fréquence de surveillance. Dokos crée la revue correspondante à chaque échéance ; vous y saisissez la valeur réelle.
+      icon: i-heroicons-chart-bar
+    - title: Vous contrôlez des marchandises à la réception ou en atelier
+      description: Une inspection de la qualité, avec ses lectures et ses critères d'acceptation, bloque la soumission du reçu d'achat ou de la carte de travail tant qu'elle n'a pas été faite.
+      icon: i-heroicons-magnifying-glass
+    - title: Vos clients vous font des retours sans suivi
+      description: Vous enregistrez un retour de la qualité, noté paramètre par paramètre, et vous ouvrez une action de qualité quand la note n'atteint pas le niveau attendu.
+      icon: i-heroicons-chat-bubble-left-ellipsis
+
+fit:
+  description: Le module Qualité fait partie de Dokos. Ses documents se rattachent aux procédures que vous définissez. L'<strong>inspection de la qualité</strong>, rangée dans le module Stocks, se déclenche sur les documents de flux : un article paramétré pour le contrôle ne peut pas être reçu, livré ou fabriqué sans inspection.
+  image: /modules/qualite/fit.webp
+  reads:
+    - Client et Utilisateur, comme source d'un retour de la qualité
+    - Reçu d'achat, Bon de livraison, Saisie de stock et Carte de travail, pour les inspections
+    - Article, qui porte le modèle d'inspection et l'activation du contrôle
+  adds:
+    - Les documents « Procédure de qualité » (avec sa vue hiérarchique) et « Objectif de qualité »
+    - Les documents « Revue de la qualité », créés automatiquement selon la fréquence de l'objectif
+    - Les documents « Non-conformité » et « Action de qualité »
+    - Les documents « Retour de la qualité » et « Modèle de retours sur la qualité »
+    - Le document « Réunion de qualité »
+    - Les documents « Inspection de la qualité » et « Modèle d'inspection de la qualité »
 
 features:
-  - title: Des inspections de qualité structurées et efficaces
-    description: "Planifiez, exécutez et suivez vos inspections à chaque étape de votre chaîne de production.<br><br> Avec Dokos, vous définissez des points de contrôle précis et des critères d'acceptation spécifiques pour garantir que chaque produit respecte vos exigences qualité. <br><br>Grâce à l’automatisation des rappels et la génération de rapports détaillés, vos équipes gagnent en efficacité et ne laissent rien au hasard. <br><br>Résultat : une maîtrise totale de la conformité et une réduction des risques d’erreurs.</br>"
-    image: "image/qualite/inspection-qualite.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Inspection qualité
-      color: sky
-  - title: Des plans de contrôle sur mesure
-    description: "Dokos vous permet de créer des plans de contrôle personnalisés, adaptés à vos produits et processus. <br><br>Standardisez vos procédures de contrôle qualité pour assurer une cohérence à chaque inspection. <br><br>Vous avez ainsi la certitude que vos exigences qualité sont respectées de manière rigoureuse, tout en simplifiant la gestion opérationnelle pour vos équipes.<br><br>Grâce à cette approche systématique, vos inspections deviennent plus précises et moins sujettes aux erreurs humaines.</br>"
-    image: "image/qualite/procedure-qualite.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Plans de contrôle personnalisés
-      color: sky
-  - title: "Une gestion proactive des non-conformités"
-    description: Identifiez, suivez et corrigez les anomalies avec un système de gestion des non-conformités simple et efficace.<br><br> Dès qu'un problème est détecté, enregistrez les détails précis, attribuez les actions correctives nécessaires et suivez leur résolution.<br><br> Grâce à une traçabilité complète, vous disposez d’une vision claire des non-conformités et pouvez analyser les tendances pour mettre en place des actions préventives. Cela vous permet de réagir rapidement et d’améliorer en continu la qualité de vos produits.</br>
-    image: "image/qualite/non-conformite.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Non-conformité
-      color: sky
-  - title: Des Actions Correctives et Préventives (CAPA)
-    description: "Les actions correctives et préventives (CAPA) sont essentielles pour maintenir un niveau de qualité constant.<br><br> Avec Dokos, analysez les causes profondes des non-conformités, mettez en place des actions correctives et anticipez les problèmes grâce à des mesures préventives.<br><br> Automatisez le suivi de chaque action pour vous assurer que chaque étape est réalisée dans les délais. <br><br>Vous réduisez ainsi les risques et améliorez la fiabilité de vos processus.</br>"
-    image: "image/qualite/action-qualite.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: CAPA
-      color: sky
-  - title: Améliorez la qualité de vos fournisseurs
-    description: "La qualité de vos produits dépend aussi de vos fournisseurs. <br><br>Dokos vous permet de suivre les performances qualité de vos partenaires en réalisant des audits réguliers et des inspections de produits.<br><br> En cas de problème, gérez les réclamations fournisseurs en toute transparence et assurez la mise en place d'actions correctives. <br><br>Centralisez toutes les informations relatives à la qualité des fournisseurs pour prendre des décisions basées sur des données fiables.</br>"
-    image: "image/qualite/evaluation-fournisseurs.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Réclamations
-      color: sky
-  - title: Des analyses et tableaux de bord pour vous accompagner. 
-    description: "Optimisez votre qualité avec des tableaux de bord et des outils statistiques. <br><br>Allez plus loin et construisez-vous même grâce à Insight et les outils no-code de dokos toutess les analyses statistiques dont vous avez besoin. "
-    image: "image/qualite/rapport-inspections.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: SCP
-      color: sky
-  - title: Une amélioration continue au cœur de vos processus
-    description: "Le module Qualité de Dokos intègre des outils d'amélioration continue pour optimiser vos opérations.<br><br> Que ce soit avec des méthodologies comme Kaizen, Lean, ou 5S, Dokos vous aide à identifier les opportunités d’amélioration et à mesurer vos gains en termes de qualité et d'efficacité. <br><br>Faites de l'amélioration continue une culture au sein de votre organisation pour rester compétitif et agile.</br>"
-    image: "image/qualite/reunion-qualite.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Amélioration des processus
-      color: sky
+  - title: Décrivez vos procédures en arborescence
+    description: Une procédure de qualité est une liste d'étapes saisies dans le tableau Processus, ou un groupe de sous-procédures liées par le champ « Sous-procédure ». La vue hiérarchique affiche l'ensemble en arbre. Contrairement à ERPNext, Dokos permet de rattacher une procédure à plusieurs parents, pour ne pas dupliquer une étape de contrôle partagée.
+    image: /modules/qualite/feature-procedure.webp
+    badge: Procédure de qualité
+  - title: Fixez des objectifs et laissez les revues se créer
+    description: Un objectif de qualité nomme un responsable, la procédure à suivre et une fréquence de surveillance (quotidienne, hebdomadaire, mensuelle ou trimestrielle). Son tableau liste les objectifs, leur cible et leur unité de mesure. À chaque échéance, Dokos crée une revue de la qualité au statut Ouvert ; vous y saisissez les mesures réelles, puis vous créez une action de qualité si nécessaire.
+    image: /modules/qualite/feature-objectif.webp
+    badge: Objectif et revue
+  - title: Enregistrez les non-conformités et suivez les actions
+    description: Toute personne de l'organisation peut déclarer une non-conformité par rapport à une procédure existante, avec son sujet et ses détails. Vous y décrivez l'action corrective, qui traite la cause, et l'action préventive, qui évite la récidive. Une action de qualité porte son type, le problème rencontré, la résolution proposée, un responsable et une date de fin ; son statut passe d'Ouverte à Fermée.
+    image: /modules/qualite/feature-non-conformite.webp
+    badge: Non-conformité
+  - title: Recueillez les retours de vos clients et de vos utilisateurs
+    description: Vous choisissez la source du retour, client ou utilisateur du site, puis un modèle de retours qui remplit les paramètres à évaluer. Chaque ligne reçoit une note de 1 à 5 et un commentaire. Quand le retour est en dessous des attentes, vous ouvrez une action de qualité depuis ce retour.
+    image: /modules/qualite/feature-retour.webp
+    badge: Retour de la qualité
+  - title: Inspectez les articles à la réception, à la livraison et en atelier
+    description: Un modèle d'inspection, attaché à l'article, définit les lectures à faire et leurs critères : une plage numérique, une valeur attendue ou une formule. À l'enregistrement, une lecture hors critère passe en Rejeté ; la case « Inspection manuelle » laisse l'inspecteur fixer le statut. Depuis Dokos V5, un contrôle peut être exigé à chaque opération d'une nomenclature.
+    image: /modules/qualite/feature-inspection.webp
+    badge: Inspection de la qualité
 
-plus_button:
-  label: Découvrir toutes nos fonctionnalités
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: sky
-  to: /features/qualite
+install:
+  description: Le module Qualité fait partie de Dokos. Il n'y a pas d'application séparée à installer.
+  steps:
+    - title: Sur Dokos Cloud
+      description: Le module est présent dès la création de votre site, dans toutes les formules. Ouvrez Accueil > Qualité.
+    - title: En auto-hébergement
+      description: "Installez Dokos : <code>bench get-app https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>."
+    - title: Premier paramétrage
+      description: Saisissez vos procédures de qualité, puis vos objectifs. Pour les inspections, créez un modèle d'inspection et activez le contrôle sur les articles concernés.
+
+faq:
+  items:
+    - label: Une non-conformité peut-elle être déclarée sans procédure ?
+      content: Non. La non-conformité se rattache à la procédure de qualité qui n'a pas été suivie. Créez la procédure d'abord.
+    - label: Qui peut déclarer une non-conformité ?
+      content: Toute personne de l'organisation disposant d'un accès au module. Le document enregistre le sujet, la procédure concernée et les détails de l'observation.
+    - label: Où se trouve l'inspection de la qualité ?
+      content: Dans le module Stocks, car elle se déclenche sur le reçu d'achat, le bon de livraison, la saisie de stock et la carte de travail. Le modèle d'inspection se rattache à l'article.
+    - label: Les revues de la qualité sont-elles créées automatiquement ?
+      content: Oui, dès qu'une fréquence de surveillance est définie sur l'objectif de qualité. La revue est créée au statut Ouvert ; le responsable qualité la complète et la termine.
 
 bottom_cta:
-  title: Placez la qualité au cœur de vos opérations avec Dokos.
-  description: Avec Dokos, vous disposez d'une solution complète pour maîtriser votre gestion de la qualité, tout en respectant vos engagements éthiques et vos exigences professionnelles. Rejoignez la communauté Dokos dès aujourd'hui.  
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Une question sur le module Qualité ?
+  description: Dites-nous comment vous suivez vos procédures et vos contrôles aujourd'hui.
   links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

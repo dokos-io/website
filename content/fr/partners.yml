@@ -5,7 +5,7 @@ head.title: Partenaires Dokos
 head.description: Consultez notre catalogue de partenaires pour trouver un partenaire proche de chez vous avec les compétences dont vous avez besoin.
 navigation.icon: i-ph-handshake-duotone
 links:
-  - label: 'Vous souhaitez devenir partenaire ?'
+  - label: 'Devenir partenaire'
     to: 'mailto:hello@dokos.io'
     color: black
     size: 'lg'

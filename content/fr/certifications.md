@@ -5,13 +5,17 @@ title: Certifications de Dokos et ses modules
 
 ## Certification du système d'encaissement Dokos
 
-Les fonctionnalités d'encaissement sont en cours de certification.
+Les fonctionnalités d'encaissement de Dokos sont certifiées conformes par le LNE (Laboratoire national de métrologie et d'essais) au titre de l'article 286 du CGI.
+
+<!-- TODO-LNE : date de délivrance, référence du certificat et périmètre exact, à compléter avant mise en ligne. -->
+
+**Facturation électronique.** Dokos lit les factures électroniques aux formats CII, Factur-X et UBL et se raccorde à une plateforme agréée (PA) pour la réception. L'émission est en cours de développement. Voir [eTransactions](/fr/modules/etransactions).
 
 Plus d'informations ici : [Blog - Dokos et la certification des logiciels d'encaissement](/blog/2025/dokos-se-certifie-lne)
 
 ### Empreintes des versions certifiées
 
-#### v5 (Attention : en cours de certification) &middot; `ec8c1e790408fbeca08ecc9c9c7a3c20d93cb1488a026bb1b82bb36bf08845c0`
+#### v5 (version certifiée) &middot; `ec8c1e790408fbeca08ecc9c9c7a3c20d93cb1488a026bb1b82bb36bf08845c0`
 
 <details><summary>Voir le manifeste d'intégrité</summary>
 

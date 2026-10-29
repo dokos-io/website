@@ -29,7 +29,7 @@ hero:
 
 colored_section:
   title: "Une solution complète et flexible pour les entreprises de production"
-  description: "Que vous soyez dans l'industrie, l'artisanat, l'agroalimentaire ou la fabrication, Dokos est la plateforme de gestion d'entreprise qui répond à vos besoins. Avec ses fonctionnalités spécialement conçues pour les processus de production, Dokos vous aide à planifier, gérer et optimiser vos opérations, tout en assurant une visibilité en temps réel sur vos stocks, coûts et marges."
+  description: "Que vous soyez dans l'industrie, l'artisanat, l'agroalimentaire ou la fabrication, Dokos est le logiciel de gestion d'entreprise qui répond à vos besoins. Avec ses fonctionnalités spécialement conçues pour les processus de production, Dokos vous aide à planifier, gérer et optimiser vos opérations, tout en assurant une visibilité en temps réel sur vos stocks, coûts et marges."
   video: "/image/production/tableau-de-bord-production.mp4"
   align: left
   links:
@@ -79,13 +79,13 @@ carousel:
   - title: "Gestion des coûts"
     description: "Suivez l’évolution des coûts de production pour chaque produit et optimisez vos processus."
   - title: "Open Source & sans frais de licence"
-    description: "Dokos est 100% open source, vous n'avez donc pas à payer de frais de licence. Libérez votre budget pour investir dans les personnalisations et les services qui comptent vraiment pour vous."  
+    description: "Dokos est toutes open source, vous n'avez donc pas à payer de frais de licence. Libérez votre budget pour investir dans les personnalisations et les services qui comptent vraiment pour vous."  
   - title: "Flexibilité totale"
     description: "Installez Dokos sur vos propres serveurs ou faites appel à nos solutions cloud pour plus de simplicité. Vous bénéficiez d'une indépendance complète vis-à-vis des éditeurs de logiciels propriétaires."
 
 
 cta:
-  title: "Prêt à transformer votre production ?"
+  title: "Pilotez votre production avec Dokos"
   description: "Découvrez la puissance de Dokos dès aujourd'hui et commencez à gérer votre production avec plus d'efficacité."
   links:
     - label: Commencez avec Dokos

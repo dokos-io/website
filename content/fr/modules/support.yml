@@ -1,116 +1,140 @@
-navigation:
-  title: Frappe Helpdesk
-  icon: i-ri-customer-service-2-line
-  description: Gestion de support client moderne.
+# Sources :
+# - README de https://github.com/frappe/helpdesk (branche develop) : portails agent et client,
+#   SLA, règles d'affectation, base de connaissances, réponses enregistrées, dépendance à
+#   l'application Telephony, compatibilité Frappe v15 et v16, licence AGPLv3
+# - https://docs.frappe.io/helpdesk : pages Service Level Agreement, Knowledge Base, Twilio, Exotel
+#
+# Captures à prendre (demo.dokos.cloud/helpdesk, 1440×900, thème clair, français) :
+# - hero.webp : la liste des tickets du portail agent, avec statut, priorité et délai SLA
+# - fit.webp : un ticket ouvert, la fiche du contact et du client à droite, l'historique des
+#   e-mails au centre
+# - feature-tickets.webp : un ticket en cours avec son affectation à un agent et à une équipe
+# - feature-sla.webp : une politique SLA avec les délais de première réponse et de résolution
+#   par priorité, et les heures de travail
+# - feature-base.webp : la base de connaissances du portail agent, articles groupés par catégorie
+# - feature-portail.webp : le portail client (/help), un client qui suit son ticket et répond
+# - feature-reponses.webp : l'insertion d'une réponse enregistrée dans un ticket
 
-title: Frappe Helpdesk
-icon: i-ri-customer-service-2-line
-description: Offrez un service client impeccable avec un support intégré.
-application: Dokos / Frappe Helpdesk
+navigation:
+  title: Helpdesk
+  icon: i-heroicons-lifebuoy
+  description: Tickets de support, délais de réponse et base de connaissances.
+
+title: Helpdesk
+description: Transforme chaque demande client en ticket suivi, avec des délais de réponse par priorité, une base de connaissances et un portail où le client suit sa demande.
+icon: i-heroicons-lifebuoy
+application: Helpdesk
 theme: support-collaboration
+author: Frappe Technologies
 logo:
   light: /frappe/helpdesk.png
   dark: /frappe/helpdesk.png
-author: Frappe Technologies & Contributeurs
+
+publisher: frappe
+licence: AGPLv3
+version: v5
+marketplace: helpdesk
+related: [telephony, raven, wiki, crm, ventes]
 
 hero:
-  title: Votre <span class="text-primary">solution complète</span>  pour la gestion du support client.
-  description: Gérez efficacement toutes les intéractions avec vos clients grâce à notre module de support intégré. Que vous soyez une petite entreprise ou une grande organisation, notre logiciel s'adapte à vos besoins pour améliorer la satisfaction client et optimiser la résolution des demandes.
-  links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: /fr
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Vos demandes clients, <span class="text-primary">traitées en tickets</span>, avec des délais suivis.
+  description: Chaque e-mail reçu devient un ticket affecté à un agent. Un accord de niveau de service fixe le délai de première réponse et de résolution par priorité. Le client suit sa demande depuis un portail.
+  image: /modules/support/hero.webp
+
+for_whom:
+  items:
+    - title: Les demandes arrivent dans une boîte mail partagée
+      description: Chaque e-mail crée un ticket. Une règle d'affectation le confie à un agent selon la priorité, le type de demande ou la charge de chacun.
+      icon: i-heroicons-inbox-arrow-down
+    - title: Vous ne savez pas combien de temps un client attend une réponse
+      description: Une politique SLA fixe un délai de première réponse et de résolution par priorité. Le compteur tient compte de vos heures de travail et de vos jours fériés.
+      icon: i-heroicons-clock
+    - title: Vos agents retapent les mêmes réponses
+      description: Une réponse enregistrée s'insère dans le ticket en un clic. Un article de la base de connaissances est proposé au client avant même qu'il ouvre un ticket.
+      icon: i-heroicons-document-duplicate
+    - title: Vos clients appellent pour connaître l'avancement
+      description: Le client ouvre le portail, voit l'état de ses tickets et répond depuis la même page.
+      icon: i-heroicons-user-circle
+
+fit:
+  description: >-
+    Helpdesk s'installe à côté de Dokos. Les agents travaillent dans le portail agent, à
+    l'adresse /helpdesk du site. Les clients ouvrent et suivent leurs tickets dans le portail
+    client, à l'adresse /help. Un ticket est un document <strong>HD Ticket</strong>, rattaché à un
+    contact et à un client. Les e-mails entrants et sortants passent par les comptes de messagerie
+    de votre site. La politique SLA s'appuie sur une liste de jours fériés du site pour suspendre
+    ses compteurs. Avec l'application <a href="/fr/modules/telephony">Telephony</a>, un bouton
+    d'appel apparaît dans le ticket.
+  image: /modules/support/fit.webp
+  reads:
+    - Contact et Client
+    - Les comptes de messagerie du site
+    - La liste de jours fériés
+  adds:
+    - Les documents HD Ticket, HD Agent, HD Team, HD Service Level Agreement
+    - La base de connaissances, documents HD Article et HD Article Category
+    - Le portail agent (/helpdesk) et le portail client (/help)
+    - Les réponses enregistrées et les règles d'affectation
+  depends:
+    - Telephony
+
 features:
-  - title: Un suivi des tickets et gestion des requêtes
-    description: Transformez chaque interaction en opportunité de fournir une réponse rapide et précise. <br><br>Grâce à un tableau de bord centralisé, vous avez une vue d’ensemble de toutes les requêtes clients en cours. <br><br>Organisez, priorisez, et suivez les tickets jusqu'à leur clôture, tout en assurant la transparence au sein de votre équipe.Suivi des statuts de tickets. <br><li>Priorisation automatique des urgences. <br><li>Notifications en temps réel pour garder le contrôle.</br><l/i>
-    image: image/support/un-crm-suivi-des-tickets-ok.webp
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Tickets
-      color: sky
-  - title: Une base de connaissances centralisée
-    description: Créez et gérez une base de données de solutions fréquemment utilisées, accessible à votre équipe et à vos clients. <br><br>Cette documentation permet de réduire les sollicitations répétitives, tout en offrant des réponses immédiates aux questions courantes. <br><li>Articles facilement accessibles. <br><li>Organisation par catégories et tags. <br><li>Système de recherche intelligent pour des résultats rapides.</br></li>
-    image: image/support/deux-base-de-connaissance-ok.webp
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Base de connaissances/ Documentation
-      color: sky
-  - title: Automatisation et SLA (Accords de Niveau de Service)
-    description: Automatisez le processus de résolution des tickets avec des règles prédéfinies, des workflows personnalisés et des accords de niveau de service (SLA) pour garantir des réponses dans les délais impartis. <br><li>Déclencheurs d’automatisation pour les étapes clés. <br><li>Workflows adaptables à vos besoins spécifiques.<br><li> Respect automatique des SLA pour maintenir la satisfaction client.</br></li>
-    image: image/support/trois-SLA.png
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Automatisation
-      color: sky
-  - title: Une communication multicanale
-    description: Gérez toutes les demandes clients, qu'elles proviennent d'e-mails, de réseaux sociaux ou de votre portail en ligne, sur une seule et même interface. <br><br>Ne manquez plus aucune question ou demande urgente. <br><li>Intégration des principaux canaux de communication.<br><li> Suivi centralisé de toutes les interactions. <br><li>Historique complet des échanges clients</br></li>
-    image: image/support/centraliser-les-informations.png
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Multicanale
-      color: sky
-  - title: Des rapports et analyse des performances
-    description: Accédez à des rapports détaillés sur les performances de votre service client. <br><br>Identifiez les points à améliorer, suivez la satisfaction des clients, et optimisez vos processus en continu grâce aux données. <br><li>Rapports personnalisables. <br><li>Statistiques en temps réel. <br><li>Suivi des performances des agents et du temps de résolution.</br></li>
-    image: image/support/quatre-rapport-helpdesk.png
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Rapports
-      color: sky
-bottom_section:
-  title: Un système robuste, évolutif et prêt à l'emploi
-  cards:
-    - title: Facile à installer
-      description: Prenez le contrôle de votre service support en quelques minutes.
-      icon: i-tdesign-tools
-      class: col-span-4 row-span-3
-    - title: Personnalisation complète
-      description: Adaptez chaque aspect du module pour répondre aux besoins spécifiques de votre entreprise.
-      icon: i-ic-baseline-manage-accounts
-      class: col-span-4 row-span-3
-    - title: Support technique dédié
-      description: Nous sommes là pour vous aider à tirer le meilleur parti de notre solution.
-      icon: i-hugeicons-customer-support
-      class: col-span-4 row-span-3
-plus_button:
-  label: Découvrir toutes nos fonctionnalités
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: sky
-  to: /features/support
+  - title: Suivez chaque demande dans un ticket
+    description: Un ticket porte un statut, une priorité, un type et une équipe. Une règle d'affectation le confie automatiquement à un agent. L'agent répond par e-mail depuis le ticket, ajoute un commentaire interne et voit l'historique complet des échanges.
+    image: /modules/support/feature-tickets.webp
+    badge: Tickets
+  - title: Fixez des délais par priorité
+    description: Une politique SLA définit, pour chaque priorité, un délai de première réponse et un délai de résolution. Le compteur se met en pause quand le ticket attend le client, en dehors des heures de travail et les jours fériés de la liste choisie.
+    image: /modules/support/feature-sla.webp
+    badge: SLA
+  - title: Publiez une base de connaissances
+    description: Les agents écrivent des articles groupés par catégorie, avec titres, listes, tableaux, images et vidéos. Un article est en brouillon, publié ou archivé, et visible du public, des clients ou en interne. Le formulaire de nouveau ticket propose les articles pertinents avant l'envoi.
+    image: /modules/support/feature-base.webp
+    badge: Base de connaissances
+  - title: Donnez un portail à vos clients
+    description: Le client se connecte au portail, ouvre un ticket, en suit l'état et répond depuis la même page. Il consulte les articles qui lui sont ouverts et peut indiquer si un article l'a aidé.
+    image: /modules/support/feature-portail.webp
+    badge: Portail client
+  - title: Répondez vite et mesurez
+    description: Une réponse enregistrée s'insère dans le ticket pour les questions fréquentes. L'analyse montre la chronologie de chaque ticket, ses temps de réponse et un résumé de la conversation.
+    image: /modules/support/feature-reponses.webp
+    badge: Réponses enregistrées
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Helpdesk sur votre site. L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://github.com/frappe/telephony</code>, puis <code>bench get-app https://github.com/frappe/helpdesk</code> et <code>bench --site votre-site install-app helpdesk</code>. Le portail agent s'ouvre à /helpdesk, le portail client à /help."
+    - title: Reliez votre messagerie
+      description: Ajoutez le compte e-mail de votre support dans les paramètres du site. Les e-mails reçus créent des tickets, les réponses des agents partent de ce compte.
+  prerequisites:
+    - Un compte e-mail dédié au support
+
+faq:
+  items:
+    - label: Mes clients voient-ils leurs tickets ?
+      content: Oui. Le portail client, à l'adresse /help de votre site, montre à chaque client ses tickets, leur état et l'historique des échanges. Il répond depuis le portail ou par e-mail.
+    - label: Les délais SLA tiennent-ils compte de nos horaires ?
+      content: Oui. Vous définissez les heures de travail par jour de la semaine et vous liez une liste de jours fériés. Les compteurs de première réponse et de résolution se mettent en pause en dehors de ces heures et quand le ticket attend une réponse du client.
+    - label: Par quels canaux les demandes arrivent-elles ?
+      content: Par e-mail et par le portail client. Avec l'application Telephony, les agents passent et reçoivent des appels Twilio ou Exotel depuis le ticket.
+    - label: Un article peut-il rester interne ?
+      content: Oui. Chaque article a une visibilité, publique, clients ou privée. Un article privé n'est vu que des agents. Un brouillon n'est jamais visible des clients.
+    - label: Faut-il Dokos pour utiliser Helpdesk ?
+      content: Helpdesk fonctionne sur Dodock, le socle de votre site. Installé à côté de Dokos, il partage les contacts et les clients du site.
+
 bottom_cta:
-  title: Essayez Dokos dès aujourd’hui !
-  description: Simplifiez votre service client et améliorez vos processus avec une solution conçue pour évoluer avec vous.
-  class: bg-amber-600/10 dark:bg-amber-800/10
+  title: Parlez-nous de votre support client.
+  description: Décrivez-nous le volume de demandes et vos canaux, nous vous dirons comment Helpdesk s'organise sur votre site.
   links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

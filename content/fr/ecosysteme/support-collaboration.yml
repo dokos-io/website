@@ -12,21 +12,21 @@ hero:
   title: Le support client et la <span class="text-primary">connaissance interne</span>, au même endroit.
   description: Un ticket de support voit l'historique complet d'un client, sans changer d'outil. Les procédures internes restent documentées et cherchables plutôt que dispersées entre emails et fichiers partagés.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
       size: xl
       color: primary
-    - label: Voir tous les modules
+    - label: Tout l'écosystème
       to: /fr/modules
       size: xl
       color: neutral
       variant: outline
 
 modules:
-  title: Les modules de ce périmètre
+  title: Les applications de ce domaine
   description: Trois modules complémentaires, indépendants les uns des autres.
   items:
-    - title: Frappe Helpdesk
+    - title: Helpdesk
       description: Tickets, SLA internes et historique client, connectés aux modules commerciaux.
       icon: i-ri-customer-service-2-line
       to: /fr/modules/support
@@ -40,7 +40,7 @@ modules:
       logo:
         light: /frappe/raven.webp
         dark: /frappe/raven.webp
-    - title: Frappe Wiki
+    - title: Wiki
       description: Une base de connaissances partagée pour documenter vos procédures internes.
       icon: i-heroicons-book-open
       to: /fr/modules/wiki
@@ -53,10 +53,10 @@ modules:
       to: /fr/modules/telephony
 
 cta:
-  title: Votre support client dépend encore d'une boîte mail partagée ?
+  title: Sortez votre support client de la boîte mail partagée
   description: Décrivez-nous vos volumes et vos délais actuels. Nous vous dirons ce qu'un outil dédié change, et à partir de quel volume ça devient utile.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
       size: xl
       color: primary

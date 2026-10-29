@@ -1,131 +1,167 @@
+# Sources : README https://github.com/frappe/crm (branche develop) ; docs.frappe.io/crm (introduction,
+# setup-guide, erpnext, twilio, exotel, whatsapp) ; licence vérifiée sur le dépôt (AGPL-3.0) ;
+# marketplace cloud.dokos.io, identifiant crm.
+#
+# Captures à prendre (demo.dokos.cloud, interface /crm) :
+# - hero.webp : le tableau Kanban des affaires (/crm/deals, vue Kanban)
+# - fit.webp : une affaire au statut « Gagnée » avec le bouton « Créer un devis » et le Client Dokos créé
+# - feature-prospects.webp : la liste des prospects avec filtres et colonnes personnalisés (/crm/leads)
+# - feature-email.webp : la page d'une affaire, onglet E-mails, avec un modèle d'e-mail sélectionné
+# - feature-suivi.webp : la page d'un prospect, onglets Notes, Tâches et Appels
+# - feature-attribution.webp : Paramètres > Règles d'attribution, une règle à tour de rôle
+# - feature-telephonie.webp : la fenêtre d'appel Twilio ou Exotel ouverte sur une fiche
+
 navigation:
-    title: Frappe CRM
-    icon: i-carbon-chart-relationship
-    description: Gestion de la prospection et de l'avant-vente.
+  title: Frappe CRM
+  icon: i-carbon-chart-relationship
+  description: Prospection et suivi des affaires, du premier contact au devis Dokos.
 
 title: Frappe CRM
 icon: i-carbon-chart-relationship
-description: Gérez vos relations clients de manière fluide et efficace.
-author: Frappe Technologies & Contributeurs
-application: Dokos / Frappe CRM
+description: Suivez vos prospects et vos affaires dans une interface dédiée à la vente, puis créez le devis dans Dokos.
+application: Frappe CRM
 theme: vente-relation-client
+author: Frappe Technologies et contributeurs
 logo:
   light: /frappe/crm.svg
   dark: /frappe/crm.svg
 
+publisher: frappe
+licence: AGPLv3
+version: v5
+marketplace: crm
+docs: https://docs.frappe.io/crm/introduction
+related: [ventes, telephony, newsletter, support]
+
 hero:
-  title: Simplifiez vos ventes et boostez vos résultats avec un <span class="text-primary">CRM</span> sur mesure.
-  description: Que vous soyez une PME en pleine croissance ou une organisation solidaire, Dokos CRM vous permet de gérer facilement vos ventes et vos clients, avec des outils flexibles et modulaires qui s’adaptent à vos besoins.
-  links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: "/fr"
-    right_icon: i-heroicons-arrow-right-20-solid
-  
+  title: Vos prospects et vos affaires, <span class="text-primary">suivis jusqu'au devis</span> dans Dokos.
+  description: >-
+    Frappe CRM donne à votre équipe commerciale une interface dédiée à la prospection.
+    Quand une affaire est gagnée, le client et le devis sont créés dans votre site Dokos.
+  image: /modules/crm/hero.webp
 
+for_whom:
+  items:
+    - title: Vos prospects sont dispersés entre boîtes mail et tableurs
+      description: >-
+        Chaque prospect a sa page, avec ses e-mails, ses notes, ses tâches et ses appels au même endroit.
+      icon: i-heroicons-inbox-stack
+    - title: Vos commerciaux ne veulent pas travailler dans le bureau Dokos
+      description: >-
+        Ils travaillent dans l'interface /crm, en liste ou en Kanban. Le devis et le client partent ensuite dans Dokos sans ressaisie.
+      icon: i-heroicons-presentation-chart-line
+    - title: Les demandes entrantes attendent qu'on les prenne
+      description: >-
+        Les règles d'attribution répartissent les nouveaux prospects à tour de rôle ou vers la personne qui en a le moins.
+      icon: i-heroicons-arrows-right-left
 
+fit:
+  description: >-
+    Frappe CRM s'installe sur le même site que Dokos. Dans <strong>Paramètres > ERPNext</strong>, vous activez
+    l'intégration et choisissez la société. Quand une affaire passe au statut « Gagnée », ou au statut que vous
+    avez choisi, le CRM crée le <strong>Client</strong> dans Dokos et lui relie les contacts et l'adresse de
+    l'organisation. Le bouton « Créer un devis » ouvre un <strong>Devis</strong> Dokos prérempli avec le contact,
+    l'adresse et les lignes de produits.<br>
+    Les Articles de Dokos alimentent les Produits du CRM. Le prix d'une ligne vient de la liste de prix du client,
+    ou de la liste de prix de vente par défaut.
+  image: /modules/crm/fit.webp
+  reads:
+    - Article et Prix d'article
+    - Client, Contact et Adresse
+    - Devis, puis Commande client
+    - Compte e-mail
+  adds:
+    - L'interface /crm, en liste et en Kanban
+    - Les documents Prospect, Affaire, Organisation, Note, Tâche et Journal d'appel
+    - Les règles d'attribution, les SLA et les modèles d'e-mail
+  depends:
+    - Dodock
+    - Dokos pour les clients et les devis
 
 features:
-  - title: Centralisez et transformez vos leads en clients avec une gestion simplifiée
-    description: Centralisez tous vos leads, prospects et opportunités en un seul endroit. <br><br>Suivez leur progression à travers un pipeline visuel clair et personnalisable, de la prospection à la conclusion du contrat.<br><br> Analysez les performances de vos campagnes et actions commerciales grâce à des indicateurs en temps réel.</br>
-    image: "image/e-commerce/crm-deals.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Gestion des leads
-      color: sky
-  - title: Ne perdez plus aucune opportunité grâce à un suivi client automatisé
-    description: Dokos CRM vous permet de rester connecté à vos clients (emails, appels, réunions) en facilitant l'historique des échanges pour chaque contact ou organisation.
-    image: "image/crm/devis.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Intégration des emails
-      color: sky
-  - title: Automatisez vos processus commerciaux grâce à des outils puissants.
-    description: Automatisez les tâches répétitives comme l'envoi de rappels, la création de tâches pour vos équipes, et l'envoi de newsletters, afin de rester concentré sur ce qui compte, vos clients.
-    image: "image/crm/newsletter-les-coulisses.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Automatisation
-      color: sky
-  - title: Simplifiez votre gestion des devis et commandes depuis le CRM
-    description: Dokos permet de générer des devis personnalisés en quelques clics, de les convertir en commandes, et d’assurer un suivi jusqu’au paiement, tout cela dans une interface intuitive.
-    image: "image/crm/devis.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Facturation
-      color: sky
-  - title: Ajustez vos stratégies grâce aux rapports
-    description: "Avec les tableaux de bord dynamiques de Dokos, analysez en temps réel les indicateurs essentiels à la bonne gestion de vos activités commerciales : taux de conversion, volume d'affaires, état des pipelines, etc. <br><br>Les rapports générés vous aident à ajuster vos stratégies de manière proactive.</br>"
-    image: "image/ventes/un-insights-opportunites.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Rapports et analyses
-      color: sky
-  - title: Gardez une vue complète de votre activité. 
-    description: Dokos est bien plus qu’un CRM. <br><br>Il s'intègre parfaitement avec d'autres modules de gestion comme la comptabilité, la gestion des stocks et la gestion de projet. <br><br>Cela permet une vue à 360° de votre activité, sans silos ni interruptions dans vos processus.</br>
-    image: "image/crm/tableaux-de-bord-compta-crm-achat.webp"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Intégration
-      color: sky
+  - title: Qualifiez vos prospects et convertissez-les en affaires
+    description: >-
+      Vous créez un prospect à la main, par import CSV, depuis un formulaire web ou depuis vos publicités Meta.
+      Son statut suit votre qualification (Nouveau, Contacté, Qualifié, Non qualifié). Le bouton « Convertir en affaire »
+      crée l'organisation et le contact, ou les relie à des fiches existantes. L'affaire avance ensuite d'étape en étape
+      jusqu'à « Gagnée » ou « Perdue ».
+    image: /modules/crm/feature-prospects.webp
+    badge: Prospects et affaires
+  - title: Écrivez à vos prospects depuis leur fiche
+    description: >-
+      Vous connectez un compte e-mail dans Paramètres > E-mail. Les messages envoyés et reçus s'affichent sur la page
+      du prospect ou de l'affaire. Vous utilisez des modèles d'e-mail et une signature. Une option crée un prospect
+      à partir d'un expéditeur inconnu.
+    image: /modules/crm/feature-email.webp
+    badge: E-mail
+  - title: Gardez la trace de chaque échange
+    description: >-
+      Sur la page d'un prospect, vous ajoutez une note, créez une tâche de relance, consignez un appel et laissez un
+      commentaire en mentionnant un collègue. Les tâches de toute l'équipe se retrouvent dans la vue Tâches.
+    image: /modules/crm/feature-suivi.webp
+    badge: Suivi
+  - title: Répartissez les prospects et fixez des délais de relance
+    description: >-
+      Les règles d'attribution distribuent les nouveaux prospects à tour de rôle ou vers la personne la moins chargée.
+      Les SLA fixent le délai de première réponse. La hiérarchie commerciale limite ce que chaque utilisateur voit.
+    image: /modules/crm/feature-attribution.webp
+    badge: Attribution
+  - title: Appelez depuis le CRM
+    description: >-
+      Avec Twilio ou Exotel, vous passez et recevez les appels depuis la fiche, et les appels sont enregistrés.
+      L'application Frappe WhatsApp permet d'envoyer et de recevoir des messages WhatsApp depuis la même page.
+    image: /modules/crm/feature-telephonie.webp
+    badge: Téléphonie
 
-bottom_section:
-  title: "Le processus commercial avec Dokos, c’est aussi :"
-  cards:
-    - title: Une gestion des campagnes 
-      description: Il est possible de suivre les performances des campagnes marketing et de vente, notamment en mesurant les leads générés et en gérant des campagnes par email ou sur les réseaux sociaux
-      icon: i-material-symbols-campaign-rounded
-      class: "col-span-4 row-span-3"
-    - title: Une automatisation des flux
-      description: Grâce à des règles d'automatisation, Dokos peut exécuter certaines actions en fonction de critères prédéfinis, réduisant ainsi les tâches manuelles et augmentant l'efficacité.
-      icon: i-hugeicons-workflow-square-03
-      class: "col-span-4 row-span-3"
-    - title: Un pipeline de vente
-      description: Dokos propose une vue personnalisable du pipeline de vente, facilitant le suivi des prospects et des opportunités à différents stades, ce qui permet une planification plus précise et un suivi des performances commerciales.
-      icon: i-hugeicons-sale-tag-02
-      class: "col-span-4 row-span-3"
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: >-
+        Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez CRM sur votre site.
+        L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://github.com/frappe/crm</code> puis <code>bench --site votre-site install-app crm</code>."
+    - title: Activez l'intégration avec Dokos
+      description: >-
+        Dans /crm, ouvrez Paramètres > ERPNext, activez l'intégration et choisissez la société.
+        Réglez la devise dans Paramètres > Valeurs par défaut avant de créer la première affaire.
+  prerequisites:
+    - Un site Dokos V5 (Frappe CRM, branche main, fonctionne avec Frappe v15 et v16)
+    - Un compte Twilio ou Exotel pour la téléphonie, l'application Frappe WhatsApp pour WhatsApp
 
-plus_button:
-  label: Découvrir toutes nos fonctionnalités
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: sky
-  to: /features/crm
+faq:
+  items:
+    - label: Faut-il Dokos pour utiliser Frappe CRM ?
+      content: >-
+        Frappe CRM fonctionne sur Dodock seul. La création du client, du devis et la synchronisation des articles
+        demandent Dokos sur le même site.
+    - label: Le nombre d'utilisateurs est-il limité ?
+      content: >-
+        Non. Frappe CRM ne limite pas le nombre d'utilisateurs. Vous les invitez dans Paramètres > Inviter un utilisateur,
+        avec le rôle Sales User, Sales Manager ou Admin.
+    - label: Comment arrivent les prospects ?
+      content: >-
+        À la main, par import CSV depuis la liste des prospects, par un formulaire web créé dans Paramètres > Formulaires,
+        ou par la synchronisation des publicités Meta dans Paramètres > Lead Syncing.
+    - label: Les prix du CRM suivent-ils ceux de Dokos ?
+      content: >-
+        Oui. Dokos fait foi : la création, la mise à jour et la suppression d'un Article se répercutent sur le Produit du CRM.
+        Le prix vient du Prix d'article de la liste de prix de vente, et une affaire utilise la liste de prix du client.
+    - label: Sous quelle licence est publié Frappe CRM ?
+      content: >-
+        GNU Affero General Public License v3.0 (AGPLv3), d'après le fichier de licence du dépôt frappe/crm.
 
 bottom_cta:
-  title: Essayez Dokos CRM dès maintenant !
-  description: Que vous soyez une PME, une organisation non gouvernementale, ou une entreprise de l'économie sociale et solidaire, Dokos CRM est fait pour vous. Rejoignez la communauté Dokos et découvrez la puissance d'un CRM libre, éthique, et évolutif.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Une question sur Frappe CRM ?
+  description: Dites-nous comment votre équipe prospecte aujourd'hui, nous vous dirons comment la brancher sur Dokos.
   links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

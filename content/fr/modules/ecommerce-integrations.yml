@@ -1,0 +1,144 @@
+# Sources : README https://github.com/frappe/ecommerce_integrations (licence GPL-3.0) ;
+# docs.frappe.io/erpnext/v13/user/manual/en/erpnext_integration/shopify_integration ;
+# marketplace cloud.dokos.io, identifiant ecommerce_integrations. Seul le connecteur Shopify est documenté en détail ;
+# Unicommerce, Zenoti et Amazon ne sont que nommés.
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : le document Shopify Settings dans le bureau
+# - fit.webp : une Commande client créée depuis une commande Shopify, avec sa référence Shopify
+# - feature-commandes.webp : la liste des Commandes client filtrée sur les commandes Shopify
+# - feature-stock.webp : Shopify Settings, table de correspondance Entrepôt et emplacement Shopify
+# - feature-articles.webp : un Article Dokos et l'option d'envoi vers Shopify
+
+navigation:
+  title: eCommerce Integrations
+  icon: i-heroicons-shopping-bag
+  description: Connecteurs Shopify, Unicommerce, Zenoti et Amazon pour vos commandes et vos stocks.
+
+title: eCommerce Integrations
+icon: i-heroicons-shopping-bag
+description: Importez les commandes de votre boutique Shopify dans Dokos et poussez vos stocks vers la boutique.
+application: eCommerce Integrations
+theme: vente-relation-client
+author: Frappe Technologies et contributeurs
+
+publisher: frappe
+licence: GPLv3
+version: v5
+marketplace: ecommerce_integrations
+related: [woocommerce, hiboutik, ventes, stocks, e-commerce]
+
+hero:
+  title: Vos commandes Shopify <span class="text-primary">dans Dokos</span>, vos stocks Dokos dans Shopify.
+  description: >-
+    eCommerce Integrations relie votre site Dokos à des places de marché et des boutiques externes.
+    Chaque commande Shopify devient une Commande client, et le stock de vos entrepôts est poussé vers la boutique.
+  image: /modules/ecommerce-integrations/hero.webp
+
+for_whom:
+  items:
+    - title: Vous vendez sur Shopify et saisissez les commandes dans votre gestion
+      description: >-
+        Chaque commande Shopify crée une Commande client dans Dokos. Le client et les articles manquants sont créés au passage.
+      icon: i-heroicons-shopping-cart
+    - title: Votre boutique affiche un stock différent de votre entrepôt
+      description: >-
+        Dokos fait foi. Une tâche planifiée pousse les niveaux de stock modifiés vers les emplacements Shopify.
+      icon: i-heroicons-cube
+    - title: Vous vendez aussi via Unicommerce, Zenoti ou Amazon
+      description: >-
+        L'application regroupe ces connecteurs, chacun avec son document de paramètres et sa documentation.
+      icon: i-heroicons-squares-plus
+
+fit:
+  description: >-
+    eCommerce Integrations s'installe sur votre site Dokos. Chaque connecteur a son document de paramètres, par exemple
+    <strong>Shopify Settings</strong>, où vous saisissez les accès de votre application Shopify.<br>
+    Pour Shopify, une commande de la boutique crée une <strong>Commande client</strong>. Le <strong>Client</strong> et les
+    <strong>Articles</strong> absents sont créés depuis les données Shopify. Chaque taxe et chaque frais de port Shopify est
+    associé à un compte de votre plan comptable. Chaque <strong>Entrepôt</strong> correspond à un emplacement Shopify,
+    et les niveaux de stock sont poussés toutes les heures.
+  image: /modules/ecommerce-integrations/fit.webp
+  reads:
+    - Article, Entrepôt et niveaux de stock
+    - Client
+    - Commande client
+    - Facture de vente et Bon de livraison
+    - Compte, pour les taxes et les frais de port
+  adds:
+    - Un document de paramètres par connecteur (Shopify, Unicommerce, Zenoti, Amazon)
+    - Les webhooks enregistrés auprès de Shopify à l'activation
+    - Une tâche planifiée de synchronisation des stocks
+  depends:
+    - Dokos (Ventes, Stocks)
+
+features:
+  - title: Importez les commandes Shopify
+    description: >-
+      À chaque commande Shopify, Dokos crée une Commande client avec la série de numérotation choisie. Le paiement et l'expédition
+      peuvent être enregistrés sur la commande d'après Shopify. L'option « Sync Old Shopify Orders » importe en arrière-plan les commandes
+      entre deux dates.
+    image: /modules/ecommerce-integrations/feature-commandes.webp
+    badge: Commandes
+  - title: Poussez vos stocks vers la boutique
+    description: >-
+      Une tâche planifiée envoie toutes les heures les niveaux de stock modifiés. Chaque entrepôt Dokos correspond à un emplacement
+      Shopify. Dokos fait foi, et une modification faite côté Shopify est écrasée à la synchronisation suivante. Les quantités fractionnaires
+      sont arrondies à l'entier inférieur.
+    image: /modules/ecommerce-integrations/feature-stock.webp
+    badge: Stocks
+  - title: Publiez vos articles vers Shopify
+    description: >-
+      En option, un nouvel Article Dokos est envoyé vers Shopify, et sa mise à jour est répercutée. Le nom devient le titre, le code
+      article le SKU, le groupe d'articles le type de produit, avec la description et le poids. L'article est créé en brouillon,
+      non publié sur la boutique. Les variantes ne sont pas prises en charge.
+    image: /modules/ecommerce-integrations/feature-articles.webp
+    badge: Articles
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: >-
+        Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez eCommerce Integrations sur votre site.
+        L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://github.com/frappe/ecommerce_integrations</code> puis <code>bench --site votre-site install-app ecommerce_integrations</code>."
+    - title: Reliez votre boutique
+      description: >-
+        Ouvrez le document de paramètres du connecteur, saisissez les accès de votre application Shopify, associez vos entrepôts
+        aux emplacements et vos taxes aux comptes, puis activez la synchronisation.
+  prerequisites:
+    - Un site Dokos V5
+    - Une application Shopify personnalisée avec accès en lecture et écriture aux commandes, produits et stocks, et en lecture aux emplacements et clients
+
+faq:
+  items:
+    - label: Quels connecteurs sont inclus ?
+      content: >-
+        Shopify, Unicommerce, Zenoti et Amazon, chacun avec sa documentation dans le manuel ERPNext.
+    - label: Qui fait foi pour le stock ?
+      content: >-
+        Dokos. Les niveaux de stock sont poussés vers Shopify toutes les heures, et une modification faite dans Shopify est écrasée.
+        La documentation recommande une fréquence de 30 à 60 minutes.
+    - label: Que se passe-t-il si une commande Shopify est annulée ?
+      content: >-
+        Si la Commande client n'a ni facture ni bon de livraison lié, elle est annulée. Sinon, le statut d'annulation est reporté sur
+        ces documents et vous traitez la suite dans Dokos.
+    - label: Et pour WooCommerce ?
+      content: >-
+        WooCommerce n'est pas dans cette application. Utilisez [Dokos WooCommerce](/fr/modules/woocommerce), publié par Dokos.
+
+bottom_cta:
+  title: Une question sur eCommerce Integrations ?
+  description: Dites-nous sur quelle boutique vous vendez, nous vous dirons comment la relier à Dokos.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

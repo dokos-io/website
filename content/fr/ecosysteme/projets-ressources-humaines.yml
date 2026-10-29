@@ -12,18 +12,18 @@ hero:
   title: Vos équipes et vos projets, <span class="text-primary">une seule vue</span>.
   description: Le temps passé sur un projet alimente à la fois le suivi d'avancement et la facturation client. Les congés et les absences d'une équipe se lisent en face de sa charge de travail réelle.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
       size: xl
       color: primary
-    - label: Voir tous les modules
+    - label: Tout l'écosystème
       to: /fr/modules
       size: xl
       color: neutral
       variant: outline
 
 modules:
-  title: Les modules de ce périmètre
+  title: Les applications de ce domaine
   description: Trois modules, utiles à des degrés différents selon que vous facturez du temps ou gérez des équipes internes.
   items:
     - title: Projets
@@ -37,7 +37,7 @@ modules:
       logo:
         light: /frappe/hrms_logo.svg
         dark: /frappe/hrms_logo.svg
-    - title: Frappe Learning
+    - title: Learning
       description: Une plateforme de formation interne pour transférer les compétences en équipe.
       icon: i-heroicons-academic-cap
       to: /fr/modules/learning
@@ -46,10 +46,10 @@ modules:
         dark: /frappe/lms.png
 
 cta:
-  title: Vous facturez du temps, ou vous gérez des équipes internes ?
+  title: Vous facturez du temps, ou vous gérez des équipes internes
   description: Le périmètre utile diffère selon votre activité. Décrivez-la, nous vous dirons quels modules l'adressent réellement.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
       size: xl
       color: primary

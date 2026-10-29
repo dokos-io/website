@@ -1,7 +1,7 @@
-title: La plateforme développé par et pour les tiers-lieux
+title: Le logiciel de gestion développé par et pour les tiers-lieux
 description: Dokos propose une solution intuitive, évolutive et personnalisable pour gérer vos activités au quotidien.
 hero:
-  title: La plateforme développé par et pour les tiers-lieux
+  title: Le logiciel de gestion développé par et pour les tiers-lieux
   description: Dokos propose une solution intuitive, évolutive et personnalisable pour gérer vos activités au quotidien.
   align: center
   headline:
@@ -114,7 +114,7 @@ sections:
     image_bg_color: bg-teal-500
     align: left
 cta:
-  title: Prêt à simplifier la gestion de votre Tiers-Lieu ?
+  title: Simplifiez la gestion de votre tiers-lieu
   description: Rejoignez les centaines de tiers-lieux sur Dokos et simpliez la gestion de votre lieu avec une plateforme en adéquation avec vos valeurs.
   links:
     - label: Commencez avec Dokos

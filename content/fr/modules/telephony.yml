@@ -1,69 +1,127 @@
+# Sources :
+# - README de https://github.com/frappe/telephony (branche develop) : DocTypes TP Twilio Settings,
+#   TP Exotel Settings, TP Call Log, TP Telephony Agent, licence AGPLv3
+# - https://docs.frappe.io/helpdesk/twilio et https://docs.frappe.io/helpdesk/exotel : réglages,
+#   bouton d'appel dans le ticket, fenêtre d'appel, appels entrants
+# - README de https://github.com/frappe/helpdesk : Telephony est installé avec Helpdesk
+#
+# Captures à prendre (demo.dokos.cloud, 1440×900, thème clair, français ; un compte Twilio ou
+# Exotel de test doit être configuré sur le site de démonstration) :
+# - hero.webp : un ticket Helpdesk avec la fenêtre d'appel ouverte (nom, numéro, statut, durée)
+# - fit.webp : un enregistrement TP Call Log lié à son ticket, avec le lien d'enregistrement
+# - feature-reglages.webp : les Paramètres de téléphonie du Helpdesk, Twilio activé
+# - feature-appel.webp : le bouton d'appel au-dessus des détails du ticket
+# - feature-entrant.webp : la fenêtre d'appel entrant avec les boutons Accepter et Refuser
+# - feature-journal.webp : la liste des TP Call Log, appels entrants et sortants
+
 navigation:
   title: Telephony
   icon: i-heroicons-phone
-  description: Intégration avec Exotel et Twilio pour Helpdesk.
+  description: Appels Exotel et Twilio depuis Helpdesk et le CRM.
 
 title: Telephony
+description: Relie un compte Exotel ou Twilio à votre site pour passer et recevoir des appels depuis un ticket Helpdesk ou une fiche CRM, et journaliser chaque appel.
 icon: i-heroicons-phone
-description: Connecte Exotel ou Twilio à votre support client Frappe Helpdesk.
 application: Telephony
 theme: support-collaboration
+author: Frappe Technologies
+
+publisher: frappe
+licence: AGPLv3
+version: v5
+marketplace: telephony
+related: [support, crm, raven]
 
 hero:
-  title: La <span class="text-primary">téléphonie</span>, directement dans vos tickets.
-  description: Telephony intègre Exotel ou Twilio à Frappe Helpdesk, pour retrouver un appel client au même endroit que le reste de son historique de support.
-  links:
-    - label: Contactez-nous
-      to: /fr/contact
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-chat-bubble-left-right
-    - label: Voir la marketplace
-      to: https://cloud.dokos.io
-      target: _blank
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: "/fr"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Vos appels Exotel ou Twilio, <span class="text-primary">depuis le ticket</span> ou la fiche CRM.
+  description: Un bouton d'appel apparaît dans le ticket. L'appel entrant ouvre une fenêtre avec le nom du contact. Chaque appel est journalisé avec sa durée et son enregistrement.
+  image: /modules/telephony/hero.webp
+
+for_whom:
+  items:
+    - title: Vos agents décrochent, puis cherchent le ticket
+      description: L'appel entrant ouvre une fenêtre avec le nom et le numéro de l'appelant. L'agent accepte ou refuse depuis cette fenêtre et retrouve le contact.
+      icon: i-heroicons-phone-arrow-down-left
+    - title: Vous rappelez un client depuis un autre téléphone
+      description: Le bouton d'appel du ticket compose le numéro du contact. L'agent reste dans le ticket pendant l'appel.
+      icon: i-heroicons-phone-arrow-up-right
+    - title: Vous n'avez aucune trace des appels de support
+      description: Chaque appel crée un journal avec son sens, son statut, sa durée et le lien vers l'enregistrement, rattaché au document concerné.
+      icon: i-heroicons-document-text
+
+fit:
+  description: >-
+    Telephony est une application du socle que Helpdesk et le CRM utilisent pour la téléphonie.
+    Elle ajoute les réglages des deux opérateurs et un <strong>journal d'appel</strong>. Le
+    bouton d'appel du ticket compose le numéro de mobile du contact. L'appel entrant est reçu par
+    une adresse de votre site que vous déclarez chez l'opérateur, puis présenté à l'agent dans une
+    fenêtre qui reste accessible pendant qu'il navigue. Chaque appel est enregistré dans un
+    document TP Call Log, lié au ticket ou à la fiche concernée.
+  image: /modules/telephony/fit.webp
+  reads:
+    - Le numéro de mobile du contact
+    - Les utilisateurs déclarés comme agents
+  adds:
+    - Les documents TP Twilio Settings et TP Exotel Settings
+    - Le document TP Call Log (identifiant, numéros, sens, statut, durée, enregistrement, documents liés)
+    - Le document TP Telephony Agent (utilisateur, numéro, opérateur par défaut)
+    - Le bouton d'appel et la fenêtre d'appel dans Helpdesk
+  depends:
+    - Helpdesk ou CRM
+    - Un compte Twilio ou Exotel
 
 features:
-  - title: Intégration Exotel et Twilio
-    description: Connecte l'un ou l'autre de ces opérateurs de téléphonie à Frappe Helpdesk.
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Téléphonie
-      color: sky
-  - title: Dans le contexte du ticket
-    description: Rattache les appels à l'historique du client, sans changer d'outil pour retrouver un échange téléphonique.
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Support
-      color: sky
+  - title: Déclarez votre opérateur
+    description: Dans les paramètres de téléphonie, vous activez Twilio ou Exotel et saisissez les identifiants du compte (Account SID, jeton, numéro). Vous pouvez activer l'enregistrement des appels au même endroit.
+    image: /modules/telephony/feature-reglages.webp
+    badge: Réglages
+  - title: Appelez depuis le ticket
+    description: Un bouton d'appel se trouve au-dessus des détails du ticket. La fenêtre d'appel affiche le nom, le numéro, le statut et la durée, avec les boutons d'action. Elle se réduit dans la barre de navigation pendant que l'agent travaille ailleurs.
+    image: /modules/telephony/feature-appel.webp
+    badge: Appel sortant
+  - title: Recevez les appels dans l'interface
+    description: Vous déclarez l'adresse de votre site chez l'opérateur. Avec Exotel, un groupe d'utilisateurs reçoit les appels dans l'ordre que vous fixez. Avec Twilio, l'appel entrant arrive à l'agent dans la fenêtre d'appel, qui l'accepte ou le refuse.
+    image: /modules/telephony/feature-entrant.webp
+    badge: Appel entrant
+  - title: Gardez un journal de chaque appel
+    description: Chaque appel crée un document TP Call Log avec son sens, ses numéros, son statut, sa durée, l'adresse de l'enregistrement et le lien vers les documents concernés.
+    image: /modules/telephony/feature-journal.webp
+    badge: Journal
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Telephony sur votre site. L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://github.com/frappe/telephony</code> puis <code>bench --site votre-site install-app telephony</code>."
+    - title: Reliez l'opérateur
+      description: Saisissez les identifiants dans les paramètres de téléphonie, puis déclarez l'adresse de votre site dans la configuration des appels entrants et sortants de l'opérateur. Les pas à pas sont dans la documentation Helpdesk pour Twilio et pour Exotel.
+  prerequisites:
+    - Un abonnement Twilio ou Exotel actif, avec un numéro
+    - Helpdesk ou CRM installé sur le site
+
+faq:
+  items:
+    - label: Quels opérateurs sont pris en charge ?
+      content: Exotel et Twilio. L'application ne propose pas d'autre opérateur.
+    - label: Les appels sont-ils enregistrés ?
+      content: Si vous l'activez dans les paramètres de l'opérateur. L'adresse de l'enregistrement est alors conservée dans le journal d'appel.
+    - label: Faut-il installer Telephony séparément ?
+      content: Sur Dokos Cloud, installez-la depuis la marketplace. En auto-hébergement, Helpdesk demande que l'application Telephony soit présente sur le bench avant son installation.
+    - label: Un numéro doit-il avoir un format particulier ?
+      content: Avec Exotel, le numéro de mobile du contact doit comporter l'indicatif du pays pour que l'appel parte du ticket. Exotel demande aussi que la vérification d'identité du compte soit terminée.
 
 bottom_cta:
-  title: Votre téléphonie support est encore à part ?
-  description: Disponible depuis la marketplace de cloud.dokos.io. Décrivez-nous votre opérateur actuel, nous vous dirons ce que l'intégration couvre déjà.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Dites-nous quel opérateur vous utilisez.
+  description: Nous vous dirons ce que l'intégration couvre déjà pour votre support ou votre CRM.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-chat-bubble-left-right
+      size: xl
+      color: primary
     - label: Voir la marketplace
-      to: https://cloud.dokos.io
+      to: https://cloud.dokos.io/marketplace
       target: _blank
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+      size: xl
+      color: neutral
+      variant: outline

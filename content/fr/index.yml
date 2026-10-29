@@ -1,5 +1,5 @@
-title: "Dokos : éditeur français d'ERP open source, et l'opérateur qui le fait tourner"
-description: "Nous publions Dodock et Dokos sous licence GPLv3, et nous exploitons sous contrat les ERP open source de nos clients : Dokos, ERPNext et les applications Frappe."
+title: "Dokos, le logiciel de gestion open source pour toute l'entreprise"
+description: "Ventes, comptabilité, stocks, RH, projets, support : une seule base de données, une suite d'applications libres, et un accès pour vos équipes comme pour vos agents IA."
 navigation: false
 
 announcement:
@@ -9,125 +9,165 @@ announcement:
 
 hero:
   headline:
-    label: Éditeur et opérateur, sous licence GPLv3
+    label: Version 5, sur Frappe et ERPNext v16
     icon: i-simple-icons-gitlab
-  title: Éditeur français d'ERP open source.<br>Et l'<span class="text-primary">opérateur</span> qui le fait tourner.
-  description: Nous écrivons Dodock et Dokos, nous les publions en clair, et nous exploitons sous contrat ce que nos clients font tourner, y compris ERPNext standard et les applications de l'écosystème Frappe. Hébergement européen, délais de rétablissement opposables, réversibilité totale.
+  title: Dokos. Toute votre entreprise<br>dans un seul <span class="text-primary">logiciel libre</span>.
+  description: "Ventes, comptabilité, stocks, RH, projets, support : une seule base de données, une suite d'applications qui s'y branchent, et un accès pour vos équipes comme pour vos agents IA."
   image: hero_dokos.webp
   links:
-    - label: Parler à un ingénieur
-      to: /fr/contact
+    - label: Essayer Dokos
+      to: https://cloud.dokos.io
+      target: _blank
       size: xl
       color: primary
-      icon: i-heroicons-chat-bubble-left-right
+      icon: i-heroicons-rocket-launch
       trailing: false
-    - label: Créer un site
-      to: https://cloud.dokos.io
+    - label: Découvrir l'écosystème
+      to: /fr/modules
       size: xl
       color: neutral
       variant: outline
-      icon: i-material-symbols-host-outline-rounded
-      target: _blank
+      icon: i-heroicons-squares-2x2
 
+# Product facts, verifiable on /fr/certifications and in the journal.
 proof:
   items:
-    - label: Prise en charge, anomalie bloquante
-      value: 3 h
-      note: Délai contractuel, garanties de niveau 2
-    - label: Hébergement des données
-      value: France · Allemagne
-      note: Aucun hyperscaler américain
-    - label: Licence du socle
-      value: GPLv3
-      note: Auditable, reprenable, sans frais d'usage
+    - label: Systèmes de caisse
+      value: Certifié LNE
+      note: "Certificat obtenu en 2026. TODO-LNE : date et référence."
+    - label: Facturation électronique
+      value: Réception et PA
+      note: Lecture des factures CII, Factur-X et UBL, raccordement à une plateforme agréée. Émission en cours.
+    - label: Agents IA
+      value: Dokos AI · MCP
+      note: Un assistant intégré à vos données, et un serveur MCP pour vos propres agents.
+
+# The company behind the project, in one sentence.
+pillars:
+  title: Éditeur open source, experts Frappe et ERPNext,<br>nous bâtissons et garantissons vos applications métier.
+  description: Dokos SAS, à Nancy, est l'équipe qui écrit, adapte et exploite Dokos.
+  items:
+    - title: Éditeur open source
+      description: Nous maintenons Dodock, Dokos et une douzaine d'applications, publiés sous licence GPLv3 sur notre GitLab.
+      icon: i-heroicons-code-bracket-square
+      to: /fr/editeur
+    - title: Experts Frappe et ERPNext
+      description: Nous lisons et portons chaque version de Frappe et d'ERPNext, et nous exploitons aussi des installations standard.
+      icon: i-simple-icons-frappe
+      to: /fr/exploitation/frappe-erpnext
+    - title: Nous bâtissons et garantissons vos applications métier
+      description: Nos ingénieurs construisent vos applications sur cette base, puis les exploitent sous contrat, avec des délais écrits.
+      icon: i-heroicons-wrench-screwdriver
+      to: /fr/ingenierie
 
 sections:
-  - title: Éditeur, pas intégrateur
-    description: <strong>Nous maintenons notre propre fork du framework Frappe et de la distribution ERP construite dessus.</strong><br><br>Quand une anomalie est dans le socle, nous la corrigeons dans le socle, sans ouvrir un ticket en amont et attendre. Les dépôts, les tickets et l'historique des commits sont publics : vous pouvez juger notre rythme de correction avant de nous confier quoi que ce soit.
-    image: /image/dokos-gitlab.webp
-    align: right
-    features:
-      - name: Dodock et Dokos
-        description: Le framework applicatif et la distribution ERP, publiés sous GPLv3 sur notre GitLab.
-        icon: i-heroicons-code-bracket-square
-      - name: Conformité française portée
-        description: "Comptabilité, encaissement, facturation électronique : intégrés au produit, pas empilés en surcouche."
-        icon: i-octicon-law
-      - name: Aucun frais de licence
-        description: Nous vendons de l'exploitation et de l'ingénierie, jamais le droit d'utiliser le logiciel.
-        icon: i-heroicons-credit-card
-    links:
-      - label: Découvrir l'éditeur
-        to: /fr/editeur
-        color: primary
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-
-  - title: Exploité sous contrat
-    description: <strong>Trois heures pour prendre en charge une anomalie bloquante, six pour rétablir le service.</strong><br><br>Ce ne sont pas des objectifs internes : ce sont les délais inscrits à l'annexe de nos conditions générales d'hébergement, opposables dès la signature. Nous exploitons Dokos, mais aussi ERPNext standard et les applications Frappe, sans exiger de migration.
-    image: /image/nuage-dashboard-dark.png
-    align: left
-    features:
-      - name: Délais opposables
-        description: Prise en charge et rétablissement chiffrés par niveau de gravité, plage garantie 8h–20h.
-        icon: i-heroicons-clock
-      - name: Traçabilité complète
-        description: Accès journalisés, actions tracées, Plan d'Assurance Sécurité annexé au contrat.
-        icon: i-material-symbols-data-loss-prevention-outline
-      - name: Sans migration imposée
-        description: Déjà sous Frappe ou ERPNext ? Nous reprenons l'exploitation de l'existant.
-        icon: i-simple-icons-frappe
-    links:
-      - label: Voir les garanties
-        to: /fr/exploitation
-        color: primary
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-
-  - title: Souverain et réversible
-    description: <strong>Vos données restent en Europe, et votre logiciel reste le vôtre.</strong><br><br>Bases de données et sauvegardes hébergées en France et en Allemagne, chez OVHcloud et Hetzner. Aucun hyperscaler américain dans la chaîne. Et parce que tout est publié sous GPLv3, la réversibilité n'est pas une clause que nous concédons : c'est une propriété de ce que nous vendons.
+  - title: Une seule base de données pour toute l'entreprise
+    description: <strong>Un devis accepté devient une commande, une facture, une écriture comptable et un paiement, sans ressaisie.</strong><br><br>Chaque document est lié à ceux qui le précèdent et à ceux qui le suivent. Une recherche retrouve un client, ses commandes, ses tickets et ses paiements. Les droits sont définis une fois, par rôle, et s'appliquent partout.
     image: /image/compte-de-resultat.png
     align: right
     features:
-      - name: Juridiction européenne
-        description: Sous-traitants nommés, établis dans l'Union européenne, notifiés avant tout changement.
-        icon: i-circle-flags-european-union
-      - name: Export à tout moment
-        description: Sauvegarde complète dans un format structuré, depuis votre propre administration.
-        icon: i-material-symbols-cloud-sync-outline-rounded
-      - name: Aucun composant fermé
-        description: Rien ne rend votre installation inexploitable ailleurs, ni par un autre prestataire.
-        icon: i-heroicons-lock-open
+      - name: Tout est lié
+        description: Du prospect à l'écriture comptable, chaque document garde la trace de son origine.
+        icon: i-heroicons-link
+      - name: Une seule saisie
+        description: Un article, un client ou un tarif n'existe qu'une fois et sert à tous les modules.
+        icon: i-heroicons-pencil-square
+      - name: Des droits par rôle
+        description: Les permissions s'appliquent aux écrans, aux rapports, à l'API et aux agents.
+        icon: i-heroicons-shield-check
     links:
-      - label: Souveraineté et sécurité
-        to: /fr/souverainete
+      - label: Voir l'écosystème
+        to: /fr/modules
         color: primary
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
 
-  - title: Ingénieurs embarqués
-    description: <strong>Les personnes qui conçoivent le produit sont celles qui interviennent chez vous.</strong><br><br>Architecture de plateforme, migration, développement métier, ingénierie IA, formation. Nous travaillons au contact de vos équipes plutôt qu'en délégation, à deux dès le départ, et tout est livré en clair : code sous licence libre, documentation et procédures comprises.
+  - title: Une suite d'applications qui se branchent dessus
+    description: >-
+      <strong>Les modules d'ERPNext, les applications de Frappe et celles que nous éditons partagent la même base.</strong><br><br>CRM, support, décisionnel, site web, documents, messagerie d'équipe : chaque application s'installe en un clic depuis la marketplace de Dokos Cloud et lit les mêmes clients, articles et factures que les autres.
     image: /image/dokos-communaute.webp
     align: left
     features:
-      - name: Jamais une seule personne
-        description: Les missions sont staffées à deux dès le début. Un projet qui tient à une personne est un risque.
-        icon: i-heroicons-user-group
-      - name: Autonomie visée
-        description: Le transfert de compétences fait partie de la mission. C'est réussi quand vous nous appelez moins.
-        icon: i-heroicons-academic-cap
-      - name: Livré en clair
-        description: Code libre déposé dans vos dépôts, documentation et procédures de déploiement incluses.
-        icon: i-heroicons-document-text
+      - name: Modules ERPNext
+        description: Ventes, achats, stocks, comptabilité, production, projets, qualité, ressources humaines.
+        icon: i-heroicons-rectangle-group
+      - name: Applications Frappe
+        description: CRM, Helpdesk, Insights, Builder, Drive, Wiki, Print Designer, Learning, Newsletter.
+        icon: i-simple-icons-frappe
+      - name: Applications Dokos
+        description: Banking, Bookings, eTransactions, OCR, Construction, Hiboutik, WooCommerce, Tribu, Dokos AI.
+        icon: i-heroicons-puzzle-piece
     links:
-      - label: Nos interventions
-        to: /fr/ingenierie
+      - label: Toutes les applications
+        to: /fr/modules
         color: primary
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
 
+  - title: Le harnais de vos équipes et de vos agents IA
+    description: <strong>Une personne ou un agent agit sur les mêmes données, avec les mêmes droits.</strong><br><br>Dokos AI répond à partir de vos documents et demande confirmation avant d'écrire. Le serveur MCP de Dokos CLI connecte Claude Code et d'autres agents à votre site. Chaque action, humaine ou non, apparaît dans l'historique du document.
+    image: /image/nuage-dashboard-dark.png
+    align: right
+    features:
+      - name: Dokos AI
+        description: Un assistant qui lit vos devis, factures, tickets et stocks, et attend votre accord avant toute écriture.
+        icon: i-heroicons-sparkles
+      - name: Dokos CLI et serveur MCP
+        description: Les mêmes lectures et écritures depuis un terminal ou depuis l'agent de votre choix.
+        icon: i-heroicons-command-line
+      - name: API REST
+        description: Chaque document, chaque rapport et chaque droit sont accessibles par l'API, pour vos propres outils.
+        icon: i-heroicons-code-bracket
+    links:
+      - label: IA & agents
+        to: /fr/ecosysteme/intelligence-artificielle
+        color: primary
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+modules:
+  title: Par domaine métier
+  description: Vingt-sept applications et modules, regroupés en sept domaines. Chacun s'installe seul ou avec les autres.
+  links:
+    - label: Voir tout l'écosystème
+      to: /fr/modules
+      color: neutral
+      variant: outline
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      size: md
+  items:
+    - title: Vente & relation client
+      description: CRM, ventes, e-commerce, réservations, Construction, WooCommerce, Hiboutik, Tribu.
+      icon: i-heroicons-shopping-cart
+      to: /fr/ecosysteme/vente-relation-client
+    - title: Finance & comptabilité
+      description: Comptabilité, Banking, paiements, eTransactions.
+      icon: i-heroicons-banknotes
+      to: /fr/ecosysteme/finance-comptabilite
+    - title: Achats, stocks & production
+      description: Achats, stocks, production, qualité.
+      icon: i-heroicons-cube
+      to: /fr/ecosysteme/achats-stocks-production
+    - title: Projets & ressources humaines
+      description: Projets, ressources humaines, formation.
+      icon: i-heroicons-user-group
+      to: /fr/ecosysteme/projets-ressources-humaines
+    - title: Support & collaboration
+      description: Helpdesk, Raven, Wiki, téléphonie.
+      icon: i-heroicons-chat-bubble-left-right
+      to: /fr/ecosysteme/support-collaboration
+    - title: Site web & outils numériques
+      description: Builder, Insights, Drive, Print Designer, OCR, Newsletter, Blog, intégrations.
+      icon: i-heroicons-globe-alt
+      to: /fr/ecosysteme/site-web-outils-numeriques
+    - title: IA & agents
+      description: Dokos AI, Dokos CLI et son serveur MCP.
+      icon: i-heroicons-cpu-chip
+      to: /fr/ecosysteme/intelligence-artificielle
+
 integrations:
-  title: Nous simplifions votre quotidien avec les intégrations
+  title: Connecté à vos autres outils
   icons:
     - i-logos-woocommerce-icon
     - i-logos-stripe
@@ -142,84 +182,11 @@ integrations:
   images:
     - /home/gocardless.png
 
-modules:
-  title: La couverture fonctionnelle, par thème métier
-  description: Plus de vingt modules, regroupés en six périmètres. Chaque module s'utilise seul ou combiné aux autres, sans doublon de données.
-  links:
-    - label: Voir tous les modules
-      to: /fr/modules
-      color: neutral
-      variant: outline
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-      size: md
-  items:
-    - title: Vente & relation client
-      description: Frappe CRM, ventes, e-commerce, réservations de ressources.
-      icon: i-heroicons-shopping-cart
-      to: /fr/ecosysteme/vente-relation-client
-    - title: Finance & comptabilité
-      description: Comptabilité, paiements.
-      icon: i-heroicons-banknotes
-      to: /fr/ecosysteme/finance-comptabilite
-    - title: Achats, stocks & production
-      description: Achats, stocks, production, qualité.
-      icon: i-heroicons-cube
-      to: /fr/ecosysteme/achats-stocks-production
-    - title: Projets & ressources humaines
-      description: Projets, ressources humaines, formation.
-      icon: i-heroicons-user-group
-      to: /fr/ecosysteme/projets-ressources-humaines
-    - title: Support & collaboration
-      description: Support, Raven, Frappe Wiki.
-      icon: i-heroicons-chat-bubble-left-right
-      to: /fr/ecosysteme/support-collaboration
-    - title: Site web & outils numériques
-      description: Builder, Insights, intégrations, OCR, Print Designer.
-      icon: i-heroicons-globe-alt
-      to: /fr/ecosysteme/site-web-outils-numeriques
-
-applications:
-  title: Compatible avec l'écosystème <span class="text-primary">Frappe</span>
-  description: Dokos reste compatible avec les applications publiées par Frappe Technologies et par la communauté, et nous les exploitons au même titre que les nôtres.
-  links:
-    - label: Infogérance Frappe et ERPNext
-      icon: i-simple-icons-frappe
-      size: xl
-      color: neutral
-      variant: outline
-      to: /fr/exploitation/frappe-erpnext
-  items:
-    - title: Frappe Insights
-      description: Un outil de BI
-      icon: insights.svg
-      to: https://frappe.io/products/insights
-    - title: Frappe CRM
-      description: Un outil de CRM
-      icon: crm.svg
-      to: https://frappe.io/products/crm
-    - title: Frappe Helpdesk
-      description: Un outil de support
-      icon: helpdesk.png
-      to: https://frappedesk.com
-    - title: Frappe Builder
-      description: Un outil de création de sites web
-      icon: builder.svg
-      to: https://frappe.io/products/builder
-    - title: Frappe Wiki
-      description: Un wiki d'entreprise
-      icon: wiki.png
-      to: https://github.com/frappe/wiki
-    - title: Frappe Print Designer
-      description: Un outil de création de formats d'impression
-      icon: print-designer.svg
-      to: https://github.com/frappe/print_designer
-
 cta:
-  title: Qu'exploitez-vous aujourd'hui ?
-  description: Dokos, ERPNext, un ERP propriétaire, ou encore des tableurs. Dites-nous où vous en êtes ; nous vous dirons ce que nous savons tenir, et ce que nous ne savons pas.
+  title: Dites-nous comment travaille votre entreprise
+  description: Un échange de trente minutes suffit pour savoir quels modules et quelles applications vous concernent, et par où commencer.
   links:
-    - label: Parler à un ingénieur
+    - label: Nous écrire
       size: xl
       color: primary
       to: /fr/contact

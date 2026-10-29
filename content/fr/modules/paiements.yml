@@ -1,95 +1,131 @@
-navigation:
-    title: Paiements
-    icon: i-ic-twotone-payments
-    description: Collecte de paiements en ligne via carte bancaire, prélèvement SEPA, Paypal et plus encore.
+# Sources : https://doc.dokos.io/v5/integrations/payments et ses pages Stripe, Paypal, GoCardless,
+# Stancer, HelloAsso, SumUp ; README et license.txt de https://gitlab.com/dokos/payments (branche v5) ;
+# https://doc.dokos.io/nouveautes (v5 : une demande de paiement échouée ne peut plus être réutilisée).
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : une Demande de paiement soumise, avec son lien de paiement (/app/payment-request)
+# - fit.webp : un Mode de paiement, onglet « Passerelle de paiement » (/app/mode-of-payment)
+# - feature-lien.webp : la page de paiement du portail ouverte depuis le lien d'une demande de paiement
+# - feature-boutique.webp : les Paramètres E-Commerce, section « Modes de paiement autorisés » (/app/webshop-settings)
+# - feature-recurrent.webp : les Paramètres GoCardless, avec le secret du webhook (/app/gocardless-settings)
+# - feature-sumup.webp : le bouton « Payer avec SumUp » sur une Facture de vente (/app/sales-invoice)
+# - feature-stripe.webp : les Paramètres Stripe, bouton « Webhooks > Créer des webhooks Stripe » (/app/stripe-settings)
 
+navigation:
+  title: Paiements
+  icon: i-ic-twotone-payments
+  description: Paiements par carte, prélèvement SEPA, PayPal et terminal SumUp.
 
 title: Paiements
+description: Encaisse vos factures et vos ventes en ligne par carte ou par prélèvement SEPA, depuis un lien de paiement ou votre boutique.
 icon: i-ic-twotone-payments
-description: Simplifiez et sécurisez vos transactions avec des solutions de paiement modernes.
 application: Payments
 theme: finance-comptabilite
 author: Frappe Technologies, Dokos & Contributeurs
+logo:
+  light: /frappe/payments_logo.svg
+  dark: /frappe/payments_logo.svg
+
+publisher: dokos
+licence: MIT
+version: v5
+marketplace: payments
+docs: https://doc.dokos.io/v5/integrations/payments
+related: [comptabilite, ventes, e-commerce, bank]
 
 hero:
-  title: "Automatisez vos <span class='text-primary'>paiements</span> avec Dokos : Simple, Sécurisé, Efficace"
-  description: Intégrez facilement vos passerelles de paiement préférées et collectez vos paiements ponctuels ou récurrents sans effort.
-  links:
-    - label: Simplifiez vos paiements
-      to: https://cloud.dokos.io
-      size: sm
-      color: yellow
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: "/fr"
-    right_icon: i-heroicons-arrow-right-20-solid
-  
+  title: Vos <span class="text-primary">demandes de paiement</span>, réglées par carte ou par prélèvement SEPA, depuis une facture ou votre boutique.
+  description: Vous créez une demande de paiement depuis une commande client ou une facture de vente et vous envoyez le lien à votre client. La passerelle confirme le paiement à Dokos par webhook ; aucune donnée de carte n'est stockée sur votre site.
+  image: /modules/paiements/hero.webp
 
+for_whom:
+  items:
+    - title: Vous envoyez des factures et attendez les virements
+      description: La demande de paiement génère un lien. Votre client paie par carte ou par prélèvement SEPA, et le statut de la demande se met à jour dans Dokos.
+      icon: i-heroicons-link
+    - title: Vous vendez en ligne avec Webshop
+      description: Le mode de paiement lié à une passerelle, autorisé dans les Paramètres E-Commerce, apparaît au moment du paiement de la commande.
+      icon: i-heroicons-shopping-cart
+    - title: Vous facturez des abonnements
+      description: Avec Stripe ou GoCardless, une demande de paiement liée à un abonnement conserve la carte ou le mandat de prélèvement pour les échéances suivantes.
+      icon: i-heroicons-arrow-path
+    - title: Vous encaissez sur place
+      description: Le bouton « Payer avec SumUp » d'une facture, d'une demande de paiement ou du point de vente lance le paiement sur l'application SumUp et son terminal.
+      icon: i-heroicons-device-phone-mobile
 
+fit:
+  description: Payments ajoute les passerelles à la <strong>demande de paiement</strong> de Dokos. Chaque passerelle se rattache à un mode de paiement, dont l'onglet Portail paramètre la page de paiement. Sur la fiche client, Dokos ne conserve que l'identifiant client de la passerelle et le moyen de paiement par défaut, pour réutiliser le même client d'une fois sur l'autre.
+  image: /modules/paiements/fit.webp
+  reads:
+    - Commande client et Facture de vente, à l'origine d'une demande de paiement
+    - Demande de paiement, dont le statut suit les notifications de la passerelle
+    - Client, qui garde l'identifiant client de la passerelle et le moyen de paiement par défaut
+    - Mode de paiement, avec ses onglets « Passerelle de paiement » et « Portail »
+    - Paramètres E-Commerce, section « Modes de paiement autorisés »
+    - Abonnement, pour les paiements récurrents
+  adds:
+    - Les documents « Paramètres Stripe », « Paramètres GoCardless », « Paramètres Stancer », « Paramètres HelloAsso », « Paramètres SumUp » et « Paramètres Paypal »
+    - La page de paiement du portail, ouverte depuis le lien d'une demande de paiement
+    - Le bouton « Payer avec SumUp » sur la facture de vente, la demande de paiement et le point de vente
+    - Les webhooks de réception des statuts de paiement
+  depends:
+    - Comptabilité
 
 features:
-  - title: Gérez tous vos paiements en un seul endroit
-    description: "Que ce soit pour des transactions uniques, des abonnements récurrents ou des événements, Dokos automatise le processus pour vous faire gagner du temps et éviter les erreurs.<ul><li>Automatisation des Paiements : Gérez les paiements sans intervention manuelle.</li><li>Large Choix de Prestataires : Stripe, PayPal, Braintree, GoCardless, et plus encore.</li><li>Sécurité Maximale : Des transactions protégées et cryptées.</li>"
-    image: "image/paiements/transactions-securisees.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Paiements centralisés
-      color: sky
+  - title: Envoyez un lien de paiement
+    description: Depuis une commande client ou une facture de vente, vous créez une demande de paiement et vous partagez le lien généré. Votre client règle sur la page de paiement du portail, sans compte sur votre site. Pour tester, ouvrez le lien dans une fenêtre de navigation privée.
+    image: /modules/paiements/feature-lien.webp
+    badge: Demande de paiement
+  - title: Encaissez les commandes de votre boutique
+    description: Vous créez un mode de paiement et vous le reliez à votre passerelle dans l'onglet « Passerelle de paiement ». Dans les Paramètres E-Commerce, vous l'ajoutez aux modes de paiement autorisés. Les clients de votre boutique Webshop le voient au moment de payer.
+    image: /modules/paiements/feature-boutique.webp
+    badge: Webshop
+  - title: Prélevez vos abonnements
+    description: Avec Stripe, un paiement par carte ou par prélèvement SEPA lié à un abonnement enregistre le moyen de paiement pour les échéances suivantes. Avec GoCardless, c'est le mandat de prélèvement qui est conservé. Stancer conserve aussi la carte pour une demande liée à un abonnement ; HelloAsso ne le fait pas.
+    image: /modules/paiements/feature-recurrent.webp
+    badge: Récurrent
+  - title: Encaissez sur place avec SumUp
+    description: Vous saisissez dans les Paramètres SumUp les clés de votre compte développeur et vous créez un mode de paiement SumUp pour vos sociétés. Le bouton « Payer avec SumUp » apparaît sur la facture de vente, la demande de paiement et le point de vente ; il déclenche le paiement sur l'application SumUp d'un appareil mobile relié au terminal.
+    image: /modules/paiements/feature-sumup.webp
+    badge: SumUp
+  - title: Recevez les confirmations par webhook
+    description: Dans les Paramètres Stripe, le bouton « Créer des webhooks Stripe » configure les webhooks pour vous. Pour GoCardless, vous créez l'endpoint dans l'espace développeur et vous copiez le secret généré dans Dokos. Les changements de statut arrivent par ce canal, parfois quelques secondes après le paiement. Depuis Dokos V5, une demande échouée ne peut plus être réutilisée pour une nouvelle transaction.
+    image: /modules/paiements/feature-stripe.webp
+    badge: Webhooks
 
-  - title: "Choisissez la flexibilité maximale avec nos prestataires de paiement intégrés"
-    description: "Choisissez parmi une gamme de prestataires pour collecter vos paiements de manière fluide, rapide et sécurisée, que ce soit pour des transactions ponctuelles ou récurrentes <ul><li>Stripe : En savoir plus </li><li> PayPal : En savoir plus</li><li>Braintree : En savoir plus</li><li>GoCardless : En savoir plus</li><li>Stancer : En savoir plus</li><li>HelloAsso : En savoir plus"
-    image: "image/paiements/paiements-gestions-paiements.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Intégrations des Passerelles de Paiement
-      color: sky
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: Payments s'installe avec Dokos sur votre site. Si elle manque, ouvrez la marketplace depuis votre tableau de bord Dokos Cloud et installez-la. Comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://gitlab.com/dokos/payments</code> puis <code>bench --site votre-site install-app payments</code>."
+    - title: Premier paramétrage
+      description: Saisissez les clés de votre passerelle dans son document de paramètres, créez un mode de paiement relié à cette passerelle, puis testez avec une demande de paiement ouverte dans une fenêtre privée.
+  prerequisites:
+    - Un compte chez l'une des passerelles prises en charge, avec ses clés API
 
-  - title: Gagnez du Temps grâce à l'automatisation intelligente
-    description: "Avec Dokos, les paiements sont automatiquement rapprochés dans votre système, vous offrant un suivi précis et sans effort. Plus besoin de passer du temps sur des tâches manuelles.<ul><li> Paiements Ponctuels : Louez une salle ou vendez un produit, Dokos gère tout.</li><li> Paiements Récurrents : Abonnements et services récurrents automatisés.</li><li> Événements et Formulaires : Collectez des paiements lors d'inscriptions à vos événements."
-    image: "image/paiements/dokos-abonnement.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Automatisation des Paiements et Rapprochement
-      color: sky
-
-  - title: "Une expérience intégrée : Webshop, Formulaires et Événements"
-    description: Les paiements sont entièrement synchronisés avec votre Webshop, vos formulaires web et la gestion de vos événements. Offrez une expérience de paiement fluide à vos clients et bénéficiez d'un suivi en temps réel.
-    video: "/image/paiement/gestion-evenements.mp4"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Synergie avec Webshop et Événements
-      color: sky
- 
-
+faq:
+  items:
+    - label: Quelles passerelles sont prises en charge ?
+      content: Stripe (carte et prélèvement SEPA), GoCardless (prélèvement SEPA), Stancer (carte), HelloAsso (carte, réservé aux associations), PayPal et SumUp (paiement sur place par terminal). Chaque passerelle a sa page dans la documentation.
+    - label: Dokos stocke-t-il les données de carte ?
+      content: Non. La saisie se fait chez la passerelle. Dokos ne conserve sur la fiche client que l'identifiant client de la passerelle et l'identifiant du moyen de paiement par défaut.
+    - label: Nous sommes une association, que choisir ?
+      content: HelloAsso, si votre association est vérifiée par HelloAsso. Le payeur peut ajouter une contribution volontaire à HelloAsso. Pour des abonnements, HelloAsso ne conserve pas la carte ; préférez alors Stripe ou GoCardless.
+    - label: Comment tester un paiement avant la mise en service ?
+      content: Créez une commande client ou une facture de vente, puis une demande de paiement. Ouvrez le lien dans une fenêtre privée ou déconnectée pour voir ce que verra votre client. PayPal propose en plus l'option « Utiliser la sandbox ».
 
 bottom_cta:
-  title: Prêt à Automatiser Vos Paiements ?
-  description: Simplifiez la gestion de vos paiements et concentrez-vous sur la croissance de votre activité. Rejoignez Dokos dès aujourd'hui.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Une question sur Payments ?
+  description: Dites-nous comment vos clients vous paient aujourd'hui.
   links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: yellow
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

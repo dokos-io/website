@@ -1,72 +1,133 @@
-navigation:
-  title: eTransactions
-  icon: i-heroicons-document-text
-  description: Facturation électronique entrante et sortante, aux formats CII/FacturX et UBL.
+# Sources : https://doc.dokos.io/v5/integrations/etransaction et ses sous-pages (plateformes-agreees,
+# inscription-annuaire, configuration-clients-fournisseurs, reception-factures-electroniques,
+# emission-factures-electroniques, etransactions), https://doc.dokos.io/nouveautes (septembre 2026),
+# README de https://gitlab.com/dokos/etransactions (branche v5), billet facturation-electronique.md.
+# Statut fixé par le client : réception et connexion à une plateforme agréée en production, émission en cours.
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : Paramètres E-transactions, onglet « Plateforme Agréée », une plateforme active avec son voyant de santé
+# - fit.webp : une Facture d'achat créée depuis une facture électronique reçue, avec l'indicateur de la plateforme d'origine
+# - feature-plateforme.webp : la fenêtre d'ajout d'une plateforme (périmètre, environnement, bouton « Tester la connexion »)
+# - feature-annuaire.webp : la fenêtre « Inscription à l'annuaire » avec le choix FR (PPF) ou Peppol et l'identifiant 0225:SIREN
+# - feature-banette.webp : la Banette de factures d'achat avec des factures en attente, en cours et prêtes
+# - feature-reception.webp : une Facture fournisseur en attente avec le fournisseur proposé et son niveau de confiance
+# - feature-emission.webp : une Facture de vente validée en environnement bac à sable, avec le panneau de statut sur la plateforme
 
 title: eTransactions
+description: Reçoit vos factures électroniques, les relie à vos commandes et prépare vos factures d'achat dans Dokos.
 icon: i-heroicons-document-text
-description: Gère vos factures électroniques entrantes et sortantes, aux formats CII/FacturX et UBL.
 application: eTransactions
 theme: finance-comptabilite
+author: Dokos
 logo:
   light: /frappe/etransactions.svg
   dark: /frappe/etransactions.svg
+navigation:
+  title: eTransactions
+  icon: i-heroicons-document-text
+  description: Facturation électronique et lecture des factures fournisseur.
+
+publisher: dokos
+licence: AGPLv3
+version: v5
+marketplace: etransactions
+docs: https://doc.dokos.io/v5/integrations/etransaction
+related: [comptabilite, achats, ventes, ocr]
 
 hero:
-  title: La <span class="text-primary">facturation électronique</span>, dans les formats attendus.
-  description: eTransactions traite vos factures électroniques entrantes et sortantes aux formats CII/FacturX et UBL, directement depuis Dokos.
-  links:
-    - label: Contactez-nous
-      to: /fr/contact
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-chat-bubble-left-right
-    - label: Voir la marketplace
-      to: https://cloud.dokos.io
-      target: _blank
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: "/fr"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Vos factures électroniques, <span class="text-primary">reçues et traitées</span> dans Dokos.
+  description: eTransactions relie votre société à une plateforme agréée. Les factures fournisseur aux formats Factur-X, CII et UBL arrivent dans Dokos et deviennent des factures d'achat.
+  image: /modules/etransactions/hero.webp
+
+for_whom:
+  items:
+    - title: Vos fournisseurs vous envoient déjà des factures électroniques
+      description: Depuis septembre 2026, toute entreprise doit pouvoir les recevoir. Dokos les récupère sur votre plateforme agréée et les lit pour vous.
+      icon: i-heroicons-inbox-arrow-down
+    - title: Vous ressaisissez les factures fournisseur reçues en PDF
+      description: Vous déposez le PDF dans la banette ou vous le transférez par courriel. L'OCR extrait le fournisseur, les montants et les lignes.
+      icon: i-heroicons-document-magnifying-glass
+    - title: Vous préparez l'émission de vos propres factures
+      description: Vous renseignez le SIREN et le profil de vos clients dès aujourd'hui. L'émission depuis la facture de vente est en cours de finalisation.
+      icon: i-heroicons-paper-airplane
+
+fit:
+  description: eTransactions se configure dans <strong>Paramètres E-transactions</strong>, au niveau de la société. Les factures reçues, par la plateforme agréée ou par OCR, arrivent dans la même <strong>Banette de factures d'achat</strong>. Chacune devient une facture fournisseur en attente, que vous reliez à une commande fournisseur ou à un reçu d'achat, puis que vous transformez en <strong>Facture d'achat</strong>. Côté ventes, la fiche Client porte le SIREN, le profil e-invoice et la ligne d'annuaire qui serviront à l'émission.
+  image: /modules/etransactions/fit.webp
+  reads:
+    - Société, Client, Fournisseur et leurs adresses
+    - Commande fournisseur et Reçu d'achat
+    - Facture d'achat
+    - Facture de vente et Écriture de paiement
+  adds:
+    - Le document « Paramètres E-transactions » avec l'onglet « Plateforme Agréée »
+    - La « Banette de factures d'achat » et les factures fournisseur en attente
+    - Les champs SIREN, profil e-invoice et annuaire sur les fiches Client et Fournisseur
+    - Un panneau de statut sur la facture de vente et l'action « Annuler avec cycle de vie »
+  depends:
+    - Comptabilité
+    - Achats
 
 features:
-  - title: Factures entrantes
-    description: Traite les factures électroniques reçues aux formats CII/FacturX et UBL.
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Entrant
-      color: sky
-  - title: Factures sortantes
-    description: Émet vos factures dans les formats électroniques attendus par vos clients et par la réglementation.
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Sortant
-      color: sky
+  - title: Connectez votre plateforme agréée
+    description: Dans Paramètres E-transactions, onglet Plateforme Agréée, vous ajoutez SuperPDP, Esalink (HUBTIMIZE) ou une plateforme personnalisée conforme au standard AFNOR XP Z12-013. Vous choisissez le périmètre, ventes, achats ou les deux, puis l'environnement bac à sable ou production. Le bouton « Tester la connexion » vérifie vos identifiants avant l'activation. Dokos contrôle chaque jour l'état de la connexion et signale une erreur par un voyant.
+    image: /modules/etransactions/feature-plateforme.webp
+    badge: En production
+  - title: Inscrivez votre société à l'annuaire
+    description: Le bouton « Remplir depuis SIRENE » complète le SIREN, le numéro de TVA et l'adresse du siège sur la fiche Société. Depuis la configuration de la plateforme, « Inscription à l'annuaire » enregistre votre identifiant dans l'annuaire français ou dans Peppol. Sur Esalink, l'entrée prend effet au moins dix jours après la demande.
+    image: /modules/etransactions/feature-annuaire.webp
+    badge: En production
+  - title: Recevez les factures de vos fournisseurs
+    description: Dokos interroge la plateforme à intervalle régulier et dépose chaque facture reçue dans la banette. Il lit les formats UBL et CII, y compris les données intégrées à un PDF Factur-X, puis extrait le fournisseur, les montants, les lignes, les conditions de paiement et l'IBAN. Le fournisseur est recherché par numéro de TVA, puis par IBAN et par nom, avec un niveau de confiance. Vous confirmez, puis vous créez la facture d'achat.
+    image: /modules/etransactions/feature-reception.webp
+    badge: En production
+  - title: Lisez les PDF par OCR
+    description: Les factures fournisseur reçues en PDF, déposées à la main ou transférées depuis une boîte de courriel dédiée, passent par Amazon Textract. La facture fournisseur en attente reprend les données extraites, propose la commande fournisseur ouverte du fournisseur et bloque, si vous l'avez demandé, une facture d'achat dont le montant dépasse celui lu sur le document.
+    image: /modules/etransactions/feature-banette.webp
+    badge: En production
+  - title: Émettez vos factures depuis la facture de vente
+    description: À la validation d'une facture de vente, Dokos classe le client, entreprise, administration, particulier ou partenaire étranger, puis génère le format attendu, Factur-X par défaut ou UBL pour un destinataire Peppol. L'envoi part automatiquement ou à la main, et un panneau affiche le statut renvoyé par la plateforme. Une facture déjà transmise s'annule par « Annuler avec cycle de vie ». Cette partie est en cours de finalisation.
+    image: /modules/etransactions/feature-emission.webp
+    badge: En cours
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez eTransactions sur votre site. L'application est comprise dans toutes les formules et fait partie de l'image Docker standard de Dokos.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://gitlab.com/dokos/etransactions</code> puis <code>bench --site votre-site install-app etransactions</code>."
+    - title: Obtenez vos identifiants de plateforme
+      description: Pour SuperPDP, créez l'identifiant et le secret client sur votre compte SuperPDP. Pour Esalink, les clés sont fournies par Dokos Cloud (help@dokos.cloud) ou par Dokos SAS en auto-hébergement.
+    - title: Complétez vos fiches
+      description: Renseignez le SIREN et le numéro de TVA de votre société, de vos clients et de vos fournisseurs. Le bouton « Remplir depuis SIRENE » le fait pour vous.
+  prerequisites:
+    - Un compte chez une plateforme agréée (SuperPDP, Esalink ou une plateforme au standard AFNOR)
+    - Pour l'OCR, une clé d'accès Amazon Textract
+
+faq:
+  items:
+    - label: Quelles plateformes agréées sont prises en charge ?
+      content: SuperPDP, Esalink (HUBTIMIZE) et toute plateforme personnalisée qui respecte le standard AFNOR XP Z12-013. Une société peut activer plusieurs plateformes, chacune avec son périmètre.
+    - label: Dokos est-il lui-même une plateforme agréée ?
+      content: Non. Dokos se connecte à la plateforme de votre choix. Dokos est par ailleurs membre fondateur de l'association [PDP Libre](https://pdplibre.org/), qui regroupe des éditeurs de logiciels libres autour de la facturation électronique.
+    - label: Que puis-je faire aujourd'hui, et qu'est-ce qui reste en cours ?
+      content: La connexion à une plateforme agréée, la réception des factures aux formats Factur-X, CII et UBL et la lecture des PDF par OCR sont en production. L'émission depuis la facture de vente est en cours de finalisation.
+    - label: Que deviennent mes réglages de l'application OCR ?
+      content: Sur Dokos V5, eTransactions remplace l'application OCR. À l'installation, les réglages et les factures en attente de l'OCR sont repris dans eTransactions.
+    - label: Comment un fournisseur reçu est-il reconnu ?
+      content: Dokos cherche d'abord le numéro de TVA, puis l'IBAN, puis un alias de nom, puis le nom. Il affiche un niveau de confiance et vous laisse corriger le fournisseur avant de créer la facture d'achat.
 
 bottom_cta:
-  title: Vous préparez la bascule vers la facturation électronique obligatoire ?
-  description: Disponible depuis la marketplace de cloud.dokos.io. Décrivez-nous votre situation actuelle, nous vous dirons ce qu'eTransactions couvre déjà.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Votre situation face à la facturation électronique
+  description: Décrivez-nous votre plateforme et vos flux de factures, nous vous dirons ce qu'eTransactions couvre déjà.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-chat-bubble-left-right
+      size: xl
+      color: primary
     - label: Voir la marketplace
-      to: https://cloud.dokos.io
+      to: https://cloud.dokos.io/marketplace
       target: _blank
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+      size: xl
+      color: neutral
+      variant: outline

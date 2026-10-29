@@ -1,123 +1,102 @@
 <script setup lang="ts">
+import { THEMES, AI_THEME_SLUG } from '~/utils/themes'
 
 const localePath = useLocalePath()
-
 const route = useRoute()
-
-const { t } = useI18n({
-  useScope: 'local'
-})
+const { t, locale } = useI18n({ useScope: 'local' })
 
 const links = computed(() => {
-  // The six business themes grouping the flat module list, see
-  // content/fr/ecosysteme/*.yml. Kept in sync manually with that content.
-  const theme_links = [
-    { label: t('theme_sales'), slug: 'vente-relation-client', icon: 'i-heroicons-shopping-cart' },
-    { label: t('theme_finance'), slug: 'finance-comptabilite', icon: 'i-heroicons-banknotes' },
-    { label: t('theme_supply'), slug: 'achats-stocks-production', icon: 'i-heroicons-cube' },
-    { label: t('theme_projects'), slug: 'projets-ressources-humaines', icon: 'i-heroicons-user-group' },
-    { label: t('theme_support'), slug: 'support-collaboration', icon: 'i-heroicons-chat-bubble-left-right' },
-    { label: t('theme_digital'), slug: 'site-web-outils-numeriques', icon: 'i-heroicons-globe-alt' },
-    { label: t('theme_ai'), slug: 'intelligence-artificielle', icon: 'i-heroicons-cpu-chip' }
-  ].map((theme) => ({
-    label: theme.label,
+  const lang = (locale.value === 'en' ? 'en' : 'fr') as 'fr' | 'en'
+
+  // The AI theme has its own entry above the business themes, so it is not
+  // repeated in the theme list.
+  const theme_links = THEMES.filter(theme => theme.slug !== AI_THEME_SLUG).map(theme => ({
+    label: theme.label[lang],
     to: localePath(`/ecosysteme/${theme.slug}`),
-    icon: theme.icon
+    icon: theme.icon,
   }))
 
   return [
     {
-      // What we publish: the éditeur claim and the surface it covers.
-      label: t('platform'),
+      // The product: the ecosystem of apps and the project behind it.
+      label: t('dokos'),
       icon: 'i-heroicons-squares-2x2',
       children: [
         {
-          label: t('publisher'),
-          to: localePath('/editeur'),
-          icon: 'i-heroicons-code-bracket-square',
-          description: t('publisher_description')
-        },
-        {
-          label: t('all_modules'),
+          label: t('ecosystem'),
           to: localePath('/modules'),
           icon: 'i-heroicons-rectangle-group',
-          description: t('all_modules_description')
+          description: t('ecosystem_description'),
+        },
+        {
+          label: t('ai_agents'),
+          to: localePath(`/ecosysteme/${AI_THEME_SLUG}`),
+          icon: 'i-heroicons-cpu-chip',
+          description: t('ai_agents_description'),
+        },
+        {
+          label: t('open_source'),
+          to: localePath('/editeur'),
+          icon: 'i-heroicons-code-bracket-square',
+          description: t('open_source_description'),
         },
         {
           label: t('certifications'),
           to: localePath('/certifications'),
           icon: 'i-octicon-law',
-          description: t('certifications_description')
+          description: t('certifications_description'),
         },
-        ...theme_links
-      ]
+        ...theme_links,
+      ],
     },
     {
-      // What we run, and what we commit to in writing.
-      label: t('operations'),
-      icon: 'i-heroicons-server-stack',
+      // The services: what Dokos SAS does for its clients.
+      label: t('services'),
+      icon: 'i-heroicons-wrench-screwdriver',
       children: [
         {
-          label: t('managed_dokos'),
+          label: t('build'),
+          to: localePath('/ingenierie'),
+          icon: 'i-heroicons-wrench-screwdriver',
+          description: t('build_description'),
+        },
+        {
+          label: t('guarantee'),
           to: localePath('/exploitation'),
           icon: 'i-material-symbols-cloud-done-outline',
-          description: t('managed_dokos_description')
+          description: t('guarantee_description'),
         },
         {
-          label: t('managed_frappe'),
+          label: t('frappe_experts'),
           to: localePath('/exploitation/frappe-erpnext'),
           icon: 'i-simple-icons-frappe',
-          description: t('managed_frappe_description')
+          description: t('frappe_experts_description'),
         },
         {
-          label: t('sovereignty'),
+          label: t('hosting_data'),
           to: localePath('/souverainete'),
           icon: 'i-material-symbols-security-rounded',
-          description: t('sovereignty_description')
-        }
-      ]
-    },
-    {
-      label: t('engineering'),
-      to: localePath('/ingenierie'),
-      icon: 'i-heroicons-wrench-screwdriver'
+          description: t('hosting_data_description'),
+        },
+      ],
     },
     {
       label: t('pricing'),
       to: localePath('/tarifs'),
-      icon: 'i-heroicons-credit-card'
+      icon: 'i-heroicons-credit-card',
     },
     {
       label: t('resources'),
       icon: 'i-heroicons-book-open',
       children: [
-        {
-          label: t('news'),
-          to: localePath('/blog'),
-          icon: 'i-heroicons-newspaper'
-        },
-        {
-          label: t('documentation'),
-          to: 'https://doc.dokos.io',
-          icon: 'i-ic-outline-library-books',
-          target: '_blank'
-        },
-        {
-          label: t('community'),
-          to: 'https://community.dokos.io',
-          icon: 'i-heroicons-user-group',
-          target: '_blank'
-        },
-        {
-          label: t('partners'),
-          to: localePath('/partners'),
-          icon: 'i-heroicons-building-office-2'
-        }
-      ]
-    }
+        { label: t('news'), to: localePath('/blog'), icon: 'i-heroicons-newspaper' },
+        { label: t('documentation'), to: 'https://doc.dokos.io', icon: 'i-ic-outline-library-books', target: '_blank' },
+        { label: t('community'), to: 'https://community.dokos.io', icon: 'i-heroicons-user-group', target: '_blank' },
+        { label: t('partners'), to: localePath('/partners'), icon: 'i-heroicons-building-office-2' },
+      ],
+    },
   ]
-});
-
+})
 </script>
 
 <template>
@@ -125,18 +104,16 @@ const links = computed(() => {
     <template #left>
       <NuxtLink :to="localePath('/')" class="flex items-center gap-2">
         <img width="40" src="/dokos_logo_rect.svg" alt="Dokos">
-        <UBadge :label="t('badge_label')" variant="subtle" class="mb-0.5" />
       </NuxtLink>
     </template>
 
     <UNavigationMenu :items="links" class="hidden lg:flex" />
 
     <template #right>
-      <!-- Two doors: self-serve stays, but the operated offer leads. -->
       <UButton :to="localePath('/contact')" icon="i-heroicons-chat-bubble-left-right"
-        color="primary" variant="solid" :label="t('talk_to_engineer')" class="hidden sm:inline-flex" />
+        color="primary" variant="solid" :label="t('contact')" class="hidden sm:inline-flex" />
       <UButton to="https://cloud.dokos.io" target="_blank" icon="i-material-symbols-host-outline-rounded"
-        aria-label="Dokos Cloud" color="neutral" variant="outline" :label="t('create_site')" />
+        aria-label="Dokos Cloud" color="neutral" variant="outline" :label="t('try_dokos')" />
       <LangSwitcher v-if="!route.matched.some(p => p.path.includes('/blog/'))" />
       <UColorModeButton />
 
@@ -152,67 +129,57 @@ const links = computed(() => {
 
 <i18n lang="yaml">
 en:
-  platform: Platform
-  publisher: The publisher
-  publisher_description: Dodock and Dokos, the fork we maintain
-  all_modules: All modules
-  all_modules_description: The functional surface, module by module
-  theme_sales: Sales & customer relations
-  theme_finance: Finance & accounting
-  theme_supply: Purchasing, stock & production
-  theme_projects: Projects & HR
-  theme_support: Support & collaboration
-  theme_digital: Website & digital tools
-  theme_ai: Artificial intelligence
+  dokos: Dokos
+  ecosystem: The ecosystem
+  ecosystem_description: One database, the apps that plug into it
+  ai_agents: AI & agents
+  ai_agents_description: Dokos AI, Dokos CLI and the MCP server
+  open_source: Open source publisher
+  open_source_description: Dodock, Dokos and the apps we maintain
   certifications: Certifications & compliance
   certifications_description: LNE, e-invoicing, version integrity
-  operations: Operations
-  managed_dokos: Managed Dokos
-  managed_dokos_description: We run your ERP under contract
-  managed_frappe: Frappe & ERPNext
-  managed_frappe_description: Already running Frappe? We operate it too
-  sovereignty: Sovereignty & security
-  sovereignty_description: EU hosting, GPLv3, reversibility
-  engineering: Engineering
+  services: Services
+  build: We build · Engineering
+  build_description: Business apps built on Dokos and Frappe
+  guarantee: We guarantee · Operations
+  guarantee_description: Your Dokos run under contract, with written delays
+  frappe_experts: Frappe & ERPNext experts
+  frappe_experts_description: Audits, upgrades and operations of standard ERPNext
+  hosting_data: Hosting & data
+  hosting_data_description: EU hosting, GPLv3, your data stays yours
   pricing: Pricing
   resources: Resources
   documentation: Documentation
   community: Community forum
   partners: Partners
   news: News
-  badge_label: Project
-  create_site: Create a site
-  talk_to_engineer: Talk to an engineer
+  try_dokos: Try Dokos
+  contact: Contact us
 fr:
-  platform: Plateforme
-  publisher: L'éditeur
-  publisher_description: Dodock et Dokos, le fork que nous maintenons
-  all_modules: Tous les modules
-  all_modules_description: La couverture fonctionnelle, module par module
-  theme_sales: Vente & relation client
-  theme_finance: Finance & comptabilité
-  theme_supply: Achats, stocks & production
-  theme_projects: Projets & RH
-  theme_support: Support & collaboration
-  theme_digital: Site web & outils numériques
-  theme_ai: Intelligence artificielle
+  dokos: Dokos
+  ecosystem: L'écosystème
+  ecosystem_description: Une seule base, les applications qui s'y branchent
+  ai_agents: IA & agents
+  ai_agents_description: Dokos AI, Dokos CLI et le serveur MCP
+  open_source: Éditeur open source
+  open_source_description: Dodock, Dokos et les applications que nous maintenons
   certifications: Certifications & conformité
   certifications_description: LNE, facturation électronique, intégrité des versions
-  operations: Exploitation
-  managed_dokos: Infogérance Dokos
-  managed_dokos_description: Nous exploitons votre ERP, sous contrat
-  managed_frappe: Frappe & ERPNext
-  managed_frappe_description: Déjà sous Frappe ? Nous l'exploitons aussi
-  sovereignty: Souveraineté & sécurité
-  sovereignty_description: Hébergement UE, GPLv3, réversibilité
-  engineering: Ingénierie
+  services: Services
+  build: Nous bâtissons · Ingénierie
+  build_description: Des applications métier construites sur Dokos et Frappe
+  guarantee: Nous garantissons · Exploitation
+  guarantee_description: Votre Dokos exploité sous contrat, avec des délais écrits
+  frappe_experts: Experts Frappe & ERPNext
+  frappe_experts_description: Audit, montée de version et exploitation d'ERPNext standard
+  hosting_data: Hébergement et données
+  hosting_data_description: Hébergement européen, GPLv3, vos données restent à vous
   pricing: Tarifs
   resources: Ressources
   documentation: Documentation
   community: Forum communautaire
   partners: Partenaires
   news: Actualités
-  badge_label: Projet
-  create_site: Créer un site
-  talk_to_engineer: Parler à un ingénieur
+  try_dokos: Essayer Dokos
+  contact: Nous écrire
 </i18n>

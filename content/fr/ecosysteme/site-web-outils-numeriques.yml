@@ -12,28 +12,28 @@ hero:
   title: Le site, les rapports et les documents, <span class="text-primary">sans outil tiers</span>.
   description: Un tableau de bord Insights lit directement vos données de gestion, sans export. Un document numérisé par l'OCR se rapproche automatiquement de la facture correspondante.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
       size: xl
       color: primary
-    - label: Voir tous les modules
+    - label: Tout l'écosystème
       to: /fr/modules
       size: xl
       color: neutral
       variant: outline
 
 modules:
-  title: Les modules de ce périmètre
+  title: Les applications de ce domaine
   description: Des outils transverses, utiles quel que soit le secteur d'activité.
   items:
-    - title: Frappe Builder
+    - title: Builder
       description: Un éditeur de sites no-code connecté à vos données Dokos.
       icon: i-mdi-application-settings-outline
       to: /fr/modules/builder
       logo:
         light: /frappe/builder.svg
         dark: /frappe/builder.svg
-    - title: Frappe Insights
+    - title: Insights
       description: Des tableaux de bord et rapports construits sur vos données de gestion, sans export vers un autre outil.
       icon: i-heroicons-chart-bar
       to: /fr/modules/insights
@@ -51,26 +51,34 @@ modules:
       logo:
         light: /frappe/ocr_logo.svg
         dark: /frappe/ocr_logo.svg
-    - title: Frappe Print Designer
+    - title: Print Designer
       description: Personnalise vos factures, devis et bons de livraison sans développement.
       icon: i-mdi-printer-outline
       to: /fr/modules/print-designer
       logo:
         light: /frappe/print-designer.svg
         dark: /frappe/print-designer.svg
-    - title: Frappe Drive
+    - title: Drive
       description: Stockez et partagez vos fichiers depuis votre site Dokos, sans service tiers.
       icon: i-heroicons-folder-open
       to: /fr/modules/drive
       logo:
         light: /frappe/drive.svg
         dark: /frappe/drive.svg
+    - title: Newsletter
+      description: Envoi d'emails groupés à vos contacts, depuis les listes de votre site.
+      icon: i-heroicons-envelope
+      to: /fr/modules/newsletter
+    - title: Blog
+      description: Publication d'articles sur votre site web, avec les mêmes comptes et le même thème.
+      icon: i-heroicons-newspaper
+      to: /fr/modules/blog-app
 
 cta:
-  title: Un outil externe à raccorder à Dokos ?
+  title: Raccordez vos outils externes à Dokos
   description: Décrivez-nous l'outil et l'usage. Nous vous dirons si une intégration existe déjà ou ce qu'il faut construire.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
       size: xl
       color: primary

@@ -112,6 +112,26 @@ useSeoMeta({
             </dl>
         </UPageSection>
 
+        <!-- The positioning sentence and the three pillars behind it. -->
+        <UPageSection
+            v-if="page.pillars"
+            :description="page.pillars.description"
+            class="bg-sand-200/60 dark:bg-stone-900"
+        >
+            <template #title>
+                <span v-html="page.pillars.title" />
+            </template>
+            <UPageGrid class="sm:grid-cols-2 lg:grid-cols-3">
+                <UPageCard
+                    v-for="(item, index) in page.pillars.items"
+                    :key="index"
+                    v-bind="item"
+                    orientation="vertical"
+                    variant="subtle"
+                />
+            </UPageGrid>
+        </UPageSection>
+
         <UPageSection
             v-for="(section, index) in page.sections"
             :key="index"
@@ -135,7 +155,7 @@ useSeoMeta({
             <Placeholder v-else />
         </UPageSection>
 
-        <UPageSection>
+        <UPageSection v-if="page.integrations">
             <UPageLogos :title="page.integrations.title" class="justify-center">
                 <UIcon
                     v-for="icon in page.integrations.icons"
@@ -154,6 +174,7 @@ useSeoMeta({
         </UPageSection>
 
         <UPageSection
+            v-if="page.modules"
             :title="page.modules.title"
             :description="page.modules.description"
             :links="page.modules.links"
@@ -170,7 +191,7 @@ useSeoMeta({
             </UPageGrid>
         </UPageSection>
 
-        <UPageSection :links="page.applications.links">
+        <UPageSection v-if="page.applications" :links="page.applications.links">
             <template #title>
                 <span v-html="page.applications.title" />
             </template>

@@ -1,5 +1,5 @@
 title: Finance & comptabilité
-description: Une comptabilité alimentée par les autres modules, pas par des exports manuels, avec un plan comptable français.
+description: Chaque facture, chaque paiement et chaque mouvement de stock alimente les comptes. Le rapprochement bancaire, les paiements en ligne et les factures électroniques s'appuient sur les mêmes écritures.
 navigation:
   title: Finance & comptabilité
   icon: i-heroicons-banknotes
@@ -9,73 +9,73 @@ hero:
     label: L'écosystème Dokos
     icon: i-heroicons-banknotes
     to: /fr/modules
-  title: Une comptabilité qui <span class="text-primary">se met à jour</span> seule.
-  description: Chaque facture, chaque paiement et chaque mouvement de stock alimente directement les comptes. Le rapprochement bancaire et les rapports financiers s'appuient sur les mêmes écritures, sans ressaisie entre deux logiciels.
+  title: Une comptabilité qui se met à jour<br><span class="text-primary">à chaque document</span>.
+  description: Une facture validée crée son écriture. Un paiement reçu la solde. Un mouvement de stock passe dans les comptes. Le rapprochement bancaire et les rapports financiers lisent ces écritures, sans ressaisie entre deux logiciels.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
       size: xl
       color: primary
-    - label: Voir tous les modules
+    - label: Tout l'écosystème
       to: /fr/modules
       size: xl
       color: neutral
       variant: outline
 
 scope:
-  title: Ce que couvre ce périmètre
-  description: Pensé pour des comptables et des directions financières, pas seulement pour des développeurs.
+  title: Ce que couvre ce domaine
+  description: Conçu pour les obligations françaises, utilisable en multi-société et multi-devise.
   items:
     - title: Plan comptable français
-      description: Structure conforme aux normes françaises, avec gestion de la TVA et des exercices comptables.
-      icon: i-heroicons-document-text
-    - title: Multi-société et multi-devise
-      description: Plusieurs entités juridiques ou plusieurs devises dans une même installation, avec des comptes séparés.
-      icon: i-heroicons-building-office-2
-    - title: Rapprochement bancaire automatisé
-      description: Les relevés bancaires importés se rapprochent des écritures existantes, avec les écarts mis en évidence.
-      icon: i-heroicons-arrows-right-left
+      description: Plan de comptes, TVA, écritures, grand livre, balance, bilan et compte de résultat, avec export vers votre expert-comptable.
+      icon: i-heroicons-book-open
+    - title: Encaissement certifié LNE
+      description: Le système d'encaissement est certifié conforme. Les empreintes du périmètre certifié sont publiées sur la page Certifications.
+      icon: i-octicon-law
+    - title: Facturation électronique
+      description: Réception des factures CII, Factur-X et UBL, et raccordement à une plateforme agréée. L'émission est en cours de développement.
+      icon: i-heroicons-document-check
+    - title: Rapprochement bancaire
+      description: Relevés synchronisés ou importés, correspondances proposées, et un prévisionnel de trésorerie avec le module Banking en bêta.
+      icon: i-heroicons-building-library
 
 modules:
-  title: Les modules de ce périmètre
-  description: Deux modules, pensés pour fonctionner ensemble.
+  title: Les applications de ce domaine
+  description: Quatre applications, une seule comptabilité.
   items:
     - title: Comptabilité
-      description: Plan comptable, rapprochement bancaire, bilans et comptes de résultat, alimentés par les autres modules.
-      icon: i-uil-balance-scale
+      description: Écritures, TVA, grand livre, bilan et compte de résultat, multi-société et multi-devise.
+      icon: i-heroicons-calculator
       to: /fr/modules/comptabilite
-    - title: Paiements
-      description: Encaisse par carte, virement ou prélèvement, avec réconciliation automatique en comptabilité.
-      icon: i-ic-twotone-payments
-      to: /fr/modules/paiements
-      logo:
-        light: /frappe/payments_logo.svg
-        dark: /frappe/payments_logo.svg
     - title: Bank
-      description: Synchronise vos comptes bancaires avec votre comptabilité Dokos.
+      description: Synchronise vos comptes bancaires et rapproche les relevés des écritures. Module Banking et prévisionnel de trésorerie en bêta.
       icon: i-heroicons-building-library
       to: /fr/modules/bank
       logo:
         light: /frappe/bank_logo.svg
         dark: /frappe/bank_logo.svg
-    - title: eTransactions
-      description: Gère vos factures électroniques entrantes et sortantes, aux formats CII/FacturX et UBL.
-      icon: i-heroicons-document-text
-      to: /fr/modules/etransactions
+    - title: Payments
+      description: Paiements en ligne par passerelle, rattachés aux factures et aux commandes.
+      icon: i-heroicons-credit-card
+      to: /fr/modules/paiements
       logo:
-        light: /frappe/etransactions.svg
-        dark: /frappe/etransactions.svg
+        light: /frappe/payments_logo.svg
+        dark: /frappe/payments_logo.svg
+    - title: eTransactions
+      description: Reçoit les factures électroniques CII, Factur-X et UBL et se raccorde à une plateforme agréée.
+      icon: i-heroicons-document-check
+      to: /fr/modules/etransactions
 
 cta:
-  title: Vous migrez depuis un autre logiciel comptable ?
-  description: La reprise de données comptables (plan de comptes, historique, factures en cours) se cadre avant tout chiffrage.
+  title: Vous migrez depuis un autre logiciel comptable
+  description: Décrivez-nous votre plan de comptes et vos flux. Nous vous dirons ce qui se reprend tel quel, et ce qui demande un travail de préparation.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
       size: xl
       color: primary
-    - label: Voir les offres d'ingénierie
-      to: /fr/ingenierie
+    - label: Voir les tarifs
+      to: /fr/tarifs
       size: xl
       color: neutral
       variant: outline

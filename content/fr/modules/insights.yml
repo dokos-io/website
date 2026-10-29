@@ -1,103 +1,121 @@
-navigation:
-  title: Frappe Insights
-  icon: i-material-symbols-auto-graph
-  description: Analyse et exploration de données
+# Sources :
+# - README de https://github.com/frappe/insights (branche version-3, celle que sert la marketplace Dokos Cloud ; lu le 29 octobre 2026)
+# - Matrice de compatibilité du README (version-3 : Frappe version-15 et version-16)
+# - DocTypes de la branche version-3 (insights/insights/doctype) : Insights Workbook, Insights Query v3, Insights Chart v3, Insights Dashboard v3, Insights Data Source v3, Insights Alert, Insights Team
+# - Vérifications sur un site Insights 3.14 (source de données « Site DB », modèles de classeur sales, purchasing, accounting, stock, rôles Insights User et Insights Admin)
+# - Licence : fichier license.txt du dépôt (AGPLv3)
+# - Marketplace Dokos Cloud : app « insights »
+#
+# Captures à prendre (demo.dokos.cloud, 1440×900, thème clair, français) :
+# - hero.webp : un tableau de bord Insights (/insights) avec plusieurs graphiques et un filtre de période
+# - fit.webp : le constructeur de requête sur la table « Sales Invoice » de la source « Site DB »
+# - feature-requete.webp : une requête avec une jointure, un filtre et une agrégation, résultat affiché en dessous
+# - feature-graphique.webp : le constructeur de graphique avec la suggestion de type de graphique
+# - feature-tableau-de-bord.webp : l'édition d'un tableau de bord, glisser-déposer d'un graphique et filtre de tableau de bord
+# - feature-modeles.webp : la liste des modèles de classeur (ventes, achats, comptabilité, stock)
 
 title: Frappe Insights
-link: "https://frappe.io/insights"
-author: Frappe Technologies & Contributeurs
-description: Prenez des décisions éclairées grâce à Frappe Insights
+description: Interrogez les données de votre site Dokos sans SQL, puis assemblez vos graphiques en tableaux de bord.
+icon: i-heroicons-chart-bar-square
 application: Frappe Insights
 theme: site-web-outils-numeriques
-
+author: Frappe Technologies et contributeurs
 logo:
   light: /frappe/insights.svg
   dark: /frappe/insights.svg
+navigation:
+  title: Frappe Insights
+  icon: i-heroicons-chart-bar-square
+  description: Requêtes, graphiques et tableaux de bord sur vos données.
+
+publisher: frappe
+licence: AGPLv3
+version: v5
+marketplace: insights
+docs: https://docs.frappe.io/insights
+related: [comptabilite, ventes, achats, stocks, dokos-ai]
 
 hero:
-  title: "Prenez des décisions éclairées grâce à <span class='text-primary'>Frappe Insights</span> "
-  description: "Un  outil de rapports et analyses simple et puissant !"
-  image: ""
-  headline:
-    label: Les applications Frappe
-    to: https://frappe.io/products
-    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
-    target: _blank
-  links:
-    - label: Générez son premier rapport
-      to: https://cloud.dokos.io
-      size: xl
-      color: amber
-      icon: i-heroicons-play-circle-16-solid
-      trailing: false
-      target: _blank
-    - label: Documentation
-      icon: i-ic-outline-library-books
-      size: xl
-      color: gray
-      to: https://doc.dokos.io
-      target: _blank
+  title: Vos données Dokos, <span class="text-primary">interrogées</span> sans écrire de SQL.
+  description: Vous choisissez une table, ajoutez une jointure et un filtre, et le graphique se dessine. Vous assemblez ensuite vos graphiques dans un tableau de bord partagé avec votre équipe.
+  image: /modules/insights/hero.webp
 
-bridge_before_colored_section: 
-  title: "Explorez vos données en profondeur"
-  description: "Créez simplement des tableaux de bord interactifs, générez en quelques clics des rapports personnalisés ou visualisez vos données en temps réel. Grâce à l'interface intuitive et flexible d'Insights, vous pouvez explorer vos données plus en profondeur et adapter les analyses à vos besoins spécifiques, sans avoir à vous soucier de coûts supplémentaires"
-features_before_colored_section:
-  cards:
-    - title: Des rapports sur mesure
-      icon: i-material-symbols-bar-chart-4-bars-rounded
-      class: "col-span-4 row-span-3"
-    - title: Une visualisation intuitive
-      icon: i-material-symbols-pivot-table-chart-rounded
-      class: "col-span-4 row-span-3"
-    - title: Un suivi en temps réel
-      icon: i-material-symbols-alarm-on-outline-rounded
-      class: "col-span-4 row-span-3"
+for_whom:
+  items:
+    - title: Vous exportez vos factures dans un tableur chaque mois
+      description: Vous construisez la requête une fois, sur la table des factures de vente. Le graphique se met à jour à chaque ouverture.
+      icon: i-heroicons-table-cells
+    - title: Vous demandez un rapport à un développeur
+      description: Le constructeur de requête remplace le SQL. Vous sélectionnez les colonnes, les jointures et les calculs pas à pas.
+      icon: i-heroicons-adjustments-horizontal
+    - title: Votre équipe suit des chiffres venus de plusieurs sources
+      description: Vous connectez d'autres bases, des fichiers ou des feuilles de calcul à côté de votre base Dokos et vous les croisez dans la même requête.
+      icon: i-heroicons-circle-stack
 
-colored_section: 
-  title: Créez, analysez et innovez ! 
-  description: "Avec Dokos, profitez d'un accès direct à Frappe Insight : l’outil de création de rapports innovant développé par l’équipe Frappe. Grâce à  Insight et sans coût supplémentaire, analysez vos données devient intuitif et accessible, le tout sans une ligne de code"
-  image: "image/ventes/un-insights-opportunites.webp"
-  align: left
-  links:
-    - label: Générez son premier rapport
-      size: sm
-      color: green
-      to: https://cloud.dokos.io
-      target: _blank
-    - label: En savoir plus sur Frappe Insight
-      size: sm
-      variant: 'link'
-      color: gray
-      to: https://frappe.io/builder
-      target: _blank
-      icon: i-heroicons-outline-arrow-right
-      trailing: true
+fit:
+  description: "Frappe Insights s'installe sur votre site Dokos et lit sa base de données comme source de données <strong>« Site DB »</strong>. Chaque DocType y apparaît comme une table. Les requêtes respectent les permissions utilisateur de votre site : une personne voit les lignes que Dokos l'autorise à voir. Vous partagez un classeur ou un tableau de bord avec les utilisateurs de votre choix."
+  image: /modules/insights/fit.webp
+  reads:
+    - La base de données de votre site Dokos, chaque DocType étant une table
+    - D'autres bases MySQL, PostgreSQL, DuckDB et BigQuery, des fichiers et des feuilles de calcul
+    - Les permissions utilisateur de votre site pour les lignes renvoyées
+  adds:
+    - L'application Insights à l'adresse /insights
+    - Les DocTypes « Insights Workbook », « Insights Query v3 », « Insights Chart v3 » et « Insights Dashboard v3 »
+    - Les rôles « Insights User » et « Insights Admin »
+    - "Quatre modèles de classeur ERPNext : ventes, achats, comptabilité et stock"
+  depends:
+    - Dodock
 
-carousel: 
-  title: "Bénéficiez d'une analyse de données de pointe"
-  cards: 
-   - title: "Adoption rapide"
-     description: "Frappe Insights s’intègre facilement à votre logiciel de gestion, sans besoin de formation complexe."
-   - title: "Coût zéro"
-     description: "Cet outil puissant est inclus dans votre solution Dokos, sans frais additionnels."
-   - title: "Confiance et transparence "
-     description: "En tant que partenaires, nous assurons un support continu pour garantir que vous tiriez le meilleur parti de cet outil."
+features:
+  - title: Construisez la requête pas à pas
+    description: Vous choisissez la table de départ, puis vous ajoutez une jointure, un filtre, un calcul ou un regroupement. Chaque étape affiche son résultat. Le SQL reste accessible pour celles et ceux qui le préfèrent.
+    image: /modules/insights/feature-requete.webp
+    badge: Requêtes
+  - title: Laissez Insights proposer le graphique
+    description: À partir du résultat d'une requête, Insights propose le type de graphique adapté. Vous ajustez les axes, les mesures et le format des nombres, par exemple une devise ou un pourcentage.
+    image: /modules/insights/feature-graphique.webp
+    badge: Graphiques
+  - title: Assemblez un tableau de bord
+    description: Vous glissez vos graphiques dans une grille et vous ajoutez un filtre de tableau de bord, par exemple une période, qui s'applique à tous les graphiques. Vous partagez le tableau de bord avec les utilisateurs concernés.
+    image: /modules/insights/feature-tableau-de-bord.webp
+    badge: Tableaux de bord
+  - title: Partez d'un modèle ERPNext
+    description: Un administrateur Insights importe un modèle de classeur pour les ventes, les achats, la comptabilité ou le stock. Le classeur arrive avec ses requêtes et ses graphiques sur les tables de Dokos. Vous l'adaptez ensuite à vos besoins.
+    image: /modules/insights/feature-modeles.webp
+    badge: Modèles
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez « Insights » sur votre site. La marketplace sert la version 3. L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app --branch version-3 https://github.com/frappe/insights</code> puis <code>bench --site votre-site install-app insights</code>."
+    - title: Donnez les rôles
+      description: Attribuez le rôle « Insights User » aux personnes qui consultent et construisent, et « Insights Admin » à celles qui gèrent les sources de données et importent les modèles.
+
+faq:
+  items:
+    - label: Quelle version d'Insights fonctionne avec Dokos V5 ?
+      content: La branche `version-3`, que la marketplace Dokos Cloud installe. Frappe la teste sur Frappe version-15 et version-16, le socle de Dokos V5.
+    - label: Faut-il écrire du SQL ?
+      content: Non. Le constructeur de requête couvre la sélection des tables, les jointures, les filtres et les calculs. Une requête SQL native reste possible.
+    - label: Un utilisateur peut-il voir des données que Dokos lui cache ?
+      content: Non. Les requêtes sur la base de votre site appliquent les permissions utilisateur de Dokos. Un classeur n'est visible que de son auteur et des personnes avec qui il est partagé.
+    - label: Quelles autres sources de données puis-je connecter ?
+      content: Des bases MySQL, PostgreSQL, DuckDB et BigQuery, ainsi que des fichiers et des feuilles de calcul importés dans Insights.
 
 bottom_cta:
-  title: "Prenez le contrôle de vos données maintenant !"
-  description: ""
-  card: true
+  title: Une question sur Frappe Insights ?
+  description: Dites-nous quels chiffres vous voulez suivre.
   links:
-    - label: Créez son premier rapport
-      size: md
-      color: gray
-      to: https://cloud.dokos.io
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
       target: _blank
-    - label: En savoir plus sur Frappe Insights
-      size: md
-      variant: 'link'
-      color: gray
-      to: https://frappe.io/insights
-      target: _blank
-      icon: i-heroicons-outline-arrow-right
-      trailing: true
+      size: xl
+      color: neutral
+      variant: outline

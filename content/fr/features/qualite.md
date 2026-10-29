@@ -9,7 +9,7 @@ navigation:
   description: Assurez la qualité à chaque étape de vos processus.
 hero:
   title: Les fonctionnalités <span class="text-primary">qualités</span> détaillées
-  description: La qualité est au cœur des activités de toute organisation performante. Le module Qualité de Dokos vous permet de garantir des standards élevés en optimisant et en automatisant vos processus de gestion de la qualité. Découvrez comment toutes nos fonctionnalités vous aide à améliorer la conformité et la satisfaction client grâce à des outils flexibles et puissants.
+  description: La qualité est au cœur des activités de toute organisation performante. Le module Qualité de Dokos vous permet d'assurer des standards élevés en optimisant et en automatisant vos processus de gestion de la qualité. Découvrez comment toutes nos fonctionnalités vous aide à améliorer la conformité et la satisfaction client grâce à des outils flexibles et complets.
   links:
     - label: Commencez maintenant
       to: https://cloud.dokos.io
@@ -36,8 +36,8 @@ hero:
   title: Gestion des Inspections de Qualité
   ---
   - Planifiez et réalisez des inspections à différents stades de votre processus de production ou d'approvisionnement.
-  - Définissez des points de contrôle avec des critères d'acceptation spécifiques, ce qui vous permet de garantir que chaque produit respecte les normes de qualité avant d’être validé.
-  - Automatisez les rappels d'inspection pour garantir la régularité des contrôles et évitez les oublis.
+  - Définissez des points de contrôle avec des critères d'acceptation spécifiques, ce qui vous permet de vérifier que chaque produit respecte les normes de qualité avant d’être validé.
+  - Automatisez les rappels d'inspection pour assurer la régularité des contrôles et évitez les oublis.
   - Générez des rapports d'inspection détaillés, avec des notes et des photos pour suivre les anomalies et les défauts identifiés.
   :::
 
@@ -48,7 +48,7 @@ hero:
   title: Gestion des Plans de Contrôle
   ---
   - Créez des **plans de contrôle** qui précisent les critères d'inspection pour chaque type de produit ou de processus.
-  - Définissez des exigences spécifiques pour chaque opération et garantissez que les normes sont respectées de manière cohérente.
+  - Définissez des exigences spécifiques pour chaque opération et assurez-vous que les normes sont respectées de manière cohérente.
   - Standardisez vos procédures de contrôle pour améliorer la précision et la répétabilité des inspections.
   :::
 

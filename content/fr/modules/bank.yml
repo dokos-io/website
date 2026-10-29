@@ -1,72 +1,123 @@
-navigation:
-  title: Bank
-  icon: i-heroicons-building-library
-  description: Synchronisation des comptes bancaires.
+# Sources : https://doc.dokos.io/v5/dokos/comptabilite/synchronisation-bancaire,
+# https://doc.dokos.io/v5/dokos/comptabilite/nouveau-module-bancaire,
+# https://doc.dokos.io/v5/dokos/comptabilite/rapprochement-bancaire, https://doc.dokos.io/nouveautes
+# (septembre 2026), README de https://gitlab.com/dokos/bank (branche v5), billet rentree-2026.md.
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : le document Banque (Comptabilité > Paramètres > Banque) avec le panneau « Connexion bancaire » et ses comptes synchronisés
+# - fit.webp : la liste Transaction bancaire (Comptabilité > Relevé bancaire > Transaction bancaire) avec des lignes importées par la synchronisation
+# - feature-connexion.webp : le document Banque avec le bouton « Connecter votre banque »
+# - feature-synchronisation.webp : la fenêtre « Mettre à jour les comptes bancaires » avec le compte bancaire Dokos et la date de synchronisation
+# - feature-banking.webp : le module bancaire (/banking), un compte sélectionné, le panneau de correspondance ouvert sur une transaction
+# - feature-tresorerie.webp : le prévisionnel de trésorerie (/desk/cash-flow-forecast) avec entrées, sorties et solde projeté
 
 title: Bank
+description: Synchronise vos comptes bancaires avec Dokos et alimente le rapprochement bancaire chaque jour.
 icon: i-heroicons-building-library
-description: Synchronise vos comptes bancaires avec votre comptabilité Dokos.
 application: Bank
 theme: finance-comptabilite
+author: Dokos
 logo:
   light: /frappe/bank_logo.svg
   dark: /frappe/bank_logo.svg
+navigation:
+  title: Bank
+  icon: i-heroicons-building-library
+  description: Synchronisation des comptes bancaires avec Dokos.
+
+publisher: dokos
+licence: AGPLv3
+version: v5
+marketplace: bank
+docs: https://doc.dokos.io/v5/dokos/comptabilite/synchronisation-bancaire
+related: [comptabilite, paiements, etransactions]
 
 hero:
-  title: Vos comptes bancaires, <span class="text-primary">synchronisés</span> avec votre comptabilité.
-  description: Bank synchronise vos comptes bancaires avec Dokos, pour rapprocher vos relevés des écritures comptables sans import manuel.
-  links:
-    - label: Contactez-nous
-      to: /fr/contact
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-chat-bubble-left-right
-    - label: Voir la marketplace
-      to: https://cloud.dokos.io
-      target: _blank
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: "/fr"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Vos relevés bancaires <span class="text-primary">arrivent seuls</span> dans Dokos.
+  description: Bank connecte vos comptes bancaires à Dokos par l'agrégateur Bridge. Chaque jour, les opérations deviennent des transactions bancaires prêtes à être rapprochées.
+  image: /modules/bank/hero.webp
+
+for_whom:
+  items:
+    - title: Vous importez vos relevés à la main
+      description: Vous téléchargez un fichier sur le site de votre banque, puis vous l'importez dans Dokos. Bank supprime cette étape.
+      icon: i-heroicons-arrow-down-tray
+    - title: Votre comptable attend le relevé du mois
+      description: Les opérations de la veille sont déjà dans Dokos. Le pointage se fait au fil de l'eau.
+      icon: i-heroicons-calculator
+    - title: Vous voulez voir votre trésorerie à venir
+      description: Dokos V5 ajoute au module Banque un prévisionnel de trésorerie, en version bêta depuis la rentrée 2026.
+      icon: i-heroicons-presentation-chart-line
+
+fit:
+  description: Bank ajoute au document <strong>Banque</strong> de Dokos un bouton de connexion à votre banque. Une fois le compte relié, chaque opération devient une <strong>Transaction bancaire</strong>, classée par date. Ces transactions sont celles que le rapprochement bancaire, l'outil historique comme le nouveau module bancaire, propose de faire correspondre à vos écritures de paiement et à vos factures.
+  image: /modules/bank/fit.webp
+  reads:
+    - Banque et Compte bancaire
+    - Transaction bancaire
+    - Catégorie de transaction bancaire
+    - Écriture de paiement, Facture de vente, Facture d'achat
+  adds:
+    - Un panneau « Connexion bancaire » sur le document Banque
+    - La synchronisation quotidienne des opérations par Bridge
+    - L'import des catégories de transaction fournies par Bridge
+    - Un journal des erreurs de synchronisation sur le document Banque
+  depends:
+    - Comptabilité
 
 features:
-  - title: Synchronisation des comptes
-    description: Connecte vos comptes bancaires à votre installation Dokos pour en suivre les mouvements.
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Synchronisation
-      color: sky
-  - title: Rapprochement avec la comptabilité
-    description: Les mouvements synchronisés alimentent le rapprochement bancaire du module Comptabilité.
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Comptabilité
-      color: sky
+  - title: Connectez votre banque depuis le document Banque
+    description: Ouvrez la liste Banque, créez ou modifiez votre banque, puis cliquez sur « Connecter votre banque ». Vous choisissez votre banque sur la page de connexion Bridge et saisissez vos identifiants bancaires. Bridge est un agrégateur agréé par l'ACPR, encadré par la DSP2.
+    image: /modules/bank/feature-connexion.webp
+    badge: Connexion
+  - title: Reliez chaque compte Bridge à un compte bancaire Dokos
+    description: Après la connexion, cliquez sur « Mettre à jour les comptes bancaires ». Pour chaque compte, vous indiquez le compte bancaire Dokos à associer et la date de début de synchronisation. À la première connexion, l'historique disponible chez votre banque est importé.
+    image: /modules/bank/feature-synchronisation.webp
+    badge: Synchronisation
+  - title: Rapprochez dans le nouveau module bancaire
+    description: Dokos V5 propose un module bancaire en version bêta, accessible depuis Comptabilité puis Module bancaire. Vous sélectionnez un compte et une période, puis le panneau de correspondance propose des factures, des écritures de paiement et des écritures de journal pour chaque transaction. Des règles appliquent un tiers, un compte ou une catégorie aux libellés que vous définissez.
+    image: /modules/bank/feature-banking.webp
+    badge: Bêta
+  - title: Anticipez votre trésorerie
+    description: Le prévisionnel de trésorerie, en version bêta depuis la rentrée 2026, affiche vos entrées, vos sorties et le solde projeté des semaines à venir. Il est accessible depuis le module Banque de Dokos, à côté du module bancaire.
+    image: /modules/bank/feature-tresorerie.webp
+    badge: Bêta
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Bank sur votre site. L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://gitlab.com/dokos/bank</code> puis <code>bench --site votre-site install-app bank</code>. L'application fonctionne avec l'application intermédiaire Bank API (<code>gitlab.com/dokos/bank-api</code>), qui porte le contrat Bridge."
+    - title: Connectez votre première banque
+      description: Ouvrez Comptabilité, Paramètres puis Banque. Cliquez sur « Connecter votre banque », puis associez vos comptes.
+  prerequisites:
+    - Un compte bancaire Dokos lié à un compte du grand livre
+
+faq:
+  items:
+    - label: Quelles banques sont prises en charge ?
+      content: Celles proposées par Bridge. La liste s'affiche sur la page de connexion Bridge au moment où vous choisissez votre banque.
+    - label: À quelle fréquence les opérations arrivent-elles ?
+      content: Une fois par jour, automatiquement. Vous pouvez aussi relancer la synchronisation d'un compte depuis une date donnée, depuis le document Banque. Un volume important peut prendre plusieurs minutes.
+    - label: Puis-je utiliser Bank en auto-hébergement ?
+      content: La documentation présente la synchronisation Bridge comme disponible sur Dokos Cloud. En auto-hébergement, l'application a besoin de l'intermédiaire Bank API et d'un contrat Bridge. Sans synchronisation, Dokos importe vos relevés aux formats OFX, CSV, XLSX et PDF.
+    - label: Dois-je passer au nouveau module bancaire ?
+      content: Non. L'outil « Rapprochement bancaire » et la liste « Transaction bancaire » restent disponibles. Les deux outils partagent les mêmes données. Ce que vous rapprochez dans l'un apparaît dans l'autre.
+    - label: Que se passe-t-il si une opération manque ?
+      content: Vérifiez la date de synchronisation du compte, puis relancez la mise à jour depuis le document Banque. Le journal des erreurs du document Banque indique la cause d'un échec.
 
 bottom_cta:
-  title: Envie de connecter vos comptes bancaires à Dokos ?
-  description: Disponible depuis la marketplace de cloud.dokos.io. Décrivez-nous vos banques et le volume de transactions, nous vous dirons ce qui est déjà pris en charge.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Vos banques et votre volume d'opérations
+  description: Décrivez-nous vos banques et votre rythme de rapprochement, nous vous dirons ce que Bank couvre déjà.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-chat-bubble-left-right
+      size: xl
+      color: primary
     - label: Voir la marketplace
-      to: https://cloud.dokos.io
+      to: https://cloud.dokos.io/marketplace
       target: _blank
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+      size: xl
+      color: neutral
+      variant: outline

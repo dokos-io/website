@@ -1,7 +1,7 @@
-title: Intelligence artificielle
-description: Un assistant conversationnel, un outil en ligne de commande pour vos agents, et une base de connaissances cherchable — sur vos propres données Dokos.
+title: Pour vos équipes et vos agents IA
+description: "Dokos AI répond à partir de vos documents et demande confirmation avant d'écrire. Dokos CLI et son serveur MCP connectent vos propres agents au site, avec les mêmes droits qu'un utilisateur."
 navigation:
-  title: Intelligence artificielle
+  title: IA & agents
   icon: i-heroicons-cpu-chip
 
 hero:
@@ -9,55 +9,90 @@ hero:
     label: L'écosystème Dokos
     icon: i-heroicons-cpu-chip
     to: /fr/modules
-  title: L'IA branchée sur <span class="text-primary">vos données</span>, pas sur un chatbot générique.
-  description: Dokos AI répond à partir de vos documents réels, Dokos CLI équipe vos propres agents des mêmes capacités, et Raven retrouve une information dans votre base sans changer d'outil. Rien ne s'écrit sans confirmation.
+  title: Le harnais de vos équipes<br>et de vos <span class="text-primary">agents IA</span>.
+  description: Un agent qui travaille dans Dokos lit les mêmes documents que vos équipes, avec les mêmes droits, et chaque action qu'il fait apparaît dans l'historique du document. Dokos AI est l'assistant intégré au site. Dokos CLI connecte l'agent de votre choix par son serveur MCP.
   links:
-    - label: Contactez-nous
-      to: /fr/contact
+    - label: Dokos AI
+      to: /fr/modules/dokos-ai
       size: xl
       color: primary
-    - label: Voir tous les modules
-      to: /fr/modules
+      icon: i-heroicons-sparkles
+    - label: Dokos CLI et MCP
+      to: /fr/modules/dokos-cli
       size: xl
       color: neutral
       variant: outline
+      icon: i-heroicons-command-line
+
+scope:
+  title: Les règles, les mêmes pour tous
+  description: Ce qu'un agent peut faire dans Dokos est défini par ce que la base applique déjà à chaque utilisateur.
+  items:
+    - title: Les droits d'un utilisateur
+      description: Un agent se connecte avec un compte et des rôles. Il ne lit et n'écrit que ce que ce compte peut lire et écrire.
+      icon: i-heroicons-shield-check
+    - title: Confirmation avant écriture
+      description: Dokos AI présente chaque création, modification ou validation de document avant de l'appliquer, et attend votre accord.
+      icon: i-heroicons-hand-raised
+    - title: Chaque action dans l'historique
+      description: Une écriture faite par un agent apparaît dans la chronologie du document, comme celle d'une personne, avec son auteur et son heure.
+      icon: i-heroicons-clock
+    - title: Un serveur MCP
+      description: Dokos CLI expose les lectures, les écritures, les rapports et les schémas de votre site à Claude Code, agy, Vibe CLI ou OpenCode.
+      icon: i-heroicons-command-line
+    - title: Des compétences écrites pour vos processus
+      description: Une compétence Dokos AI est un fichier Markdown avec un en-tête YAML, dédié à un processus précis. Nous les écrivons avec vous en mission d'ingénierie IA.
+      icon: i-heroicons-document-text
+    - title: L'API REST sous tout cela
+      description: Chaque document, chaque rapport et chaque droit sont accessibles par l'API, pour vos propres outils et vos propres agents.
+      icon: i-heroicons-code-bracket
+
+operations:
+  title: Ce qui tourne déjà sans agent
+  description: Des automatisations livrées dans le produit, que les agents prolongent.
+  items:
+    - title: Factures fournisseur lues par OCR
+      description: L'application OCR extrait les données d'une facture reçue avec Amazon Textract et prépare la facture d'achat.
+      icon: i-heroicons-document-magnifying-glass
+    - title: Factures électroniques reçues
+      description: eTransactions lit les factures CII, Factur-X et UBL et se raccorde à une plateforme agréée pour la réception.
+      icon: i-heroicons-document-check
+    - title: Rapprochement bancaire
+      description: Le module Banking, en bêta, propose les correspondances entre relevés et écritures, avec un prévisionnel de trésorerie.
+      icon: i-heroicons-building-library
+    - title: Pages web générées
+      description: Frappe Builder génère une page à partir d'une description, via le service OpenRouter, facturé à l'usage.
+      icon: i-heroicons-globe-alt
 
 modules:
-  title: Les modules de ce périmètre
-  description: Trois outils complémentaires, chacun utilisable seul.
+  title: Les applications de ce domaine
+  description: L'assistant intégré, et l'outil qui connecte les agents externes.
   items:
     - title: Dokos AI
-      description: Un assistant IA conversationnel branché sur vos données Dokos, avec confirmation avant toute écriture.
+      description: Un assistant branché sur les documents de votre site, avec des compétences métier et une confirmation avant toute écriture.
       icon: i-heroicons-sparkles
       to: /fr/modules/dokos-ai
       logo:
         light: /frappe/dokos_logo.svg
         dark: /frappe/dokos_logo.svg
     - title: Dokos CLI
-      description: Interroge et pilote un site Dokos depuis un terminal, ou équipe un agent IA des mêmes capacités via son serveur MCP.
+      description: Interroge et pilote un site depuis un terminal, ou équipe un agent IA des mêmes capacités par son serveur MCP.
       icon: i-heroicons-command-line
       to: /fr/modules/dokos-cli
       logo:
         light: /frappe/dokos_logo.svg
         dark: /frappe/dokos_logo.svg
-    - title: Raven
-      description: Un assistant conversationnel interne pour retrouver une information dans vos données Dokos.
-      icon: i-heroicons-chat-bubble-left-right
-      to: /fr/modules/raven
-      logo:
-        light: /frappe/raven.webp
-        dark: /frappe/raven.webp
 
 cta:
-  title: Une automatisation IA à cadrer sur vos processus ?
-  description: Décrivez-nous vos cas d'usage. Nous vous dirons ce que ces outils couvrent déjà, et ce qui reste à construire.
+  title: Confiez un processus à un agent
+  description: Décrivez-le nous. Nous vous dirons ce que Dokos AI et le serveur MCP couvrent déjà, et ce qu'il reste à écrire.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
       size: xl
       color: primary
-    - label: Voir les tarifs
-      to: /fr/tarifs
+    - label: Ingénierie IA
+      to: /fr/ingenierie
       size: xl
       color: neutral
       variant: outline

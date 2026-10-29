@@ -27,6 +27,7 @@ const landingSchema = z.object({
   integrations: obj().optional(),
   modules: obj().optional(),
   cta: obj().optional(),
+  pillars: obj().optional(),
   pricing_toggle: obj().optional(),
   plans: arr().optional(),
   links: arr().optional(),
@@ -73,6 +74,19 @@ const moduleSchema = z.object({
   bottom_section: obj().optional(),
   bottom_cta: obj().optional(),
   plus_button: obj().optional(),
+  // Product page blocks (see pages/modules/[slug].vue): what the app is,
+  // who it is for, how it fits in a Dokos site, how to get it.
+  publisher: z.string().optional(),
+  licence: z.string().optional(),
+  marketplace: z.string().optional(),
+  docs: z.string().optional(),
+  version: z.string().optional(),
+  related: arr().optional(),
+  facts: obj().optional(),
+  for_whom: obj().optional(),
+  fit: obj().optional(),
+  install: obj().optional(),
+  faq: obj().optional(),
 })
 
 const partnerSchema = z.object({

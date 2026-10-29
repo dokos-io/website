@@ -8,45 +8,22 @@ const localePath = useLocalePath();
 const links = computed(() => {
     return [
         {
-            label: t("operations"),
+            label: t("dokos"),
             children: [
-                {
-                    label: t("managed_dokos"),
-                    to: localePath("/exploitation"),
-                },
-                {
-                    label: t("managed_frappe"),
-                    to: localePath("/exploitation/frappe-erpnext"),
-                },
-                {
-                    label: t("sovereignty"),
-                    to: localePath("/souverainete"),
-                },
-                {
-                    label: t("pricing"),
-                    to: localePath("/tarifs"),
-                },
+                { label: t("ecosystem"), to: localePath("/modules") },
+                { label: t("ai_agents"), to: localePath("/ecosysteme/intelligence-artificielle") },
+                { label: t("open_source"), to: localePath("/editeur") },
+                { label: t("certifications"), to: localePath("/certifications") },
             ],
         },
         {
-            label: t("platform"),
+            label: t("services"),
             children: [
-                {
-                    label: t("publisher"),
-                    to: localePath("/editeur"),
-                },
-                {
-                    label: t("modules"),
-                    to: localePath("/modules"),
-                },
-                {
-                    label: t("engineering"),
-                    to: localePath("/ingenierie"),
-                },
-                {
-                    label: t("certifications"),
-                    to: localePath("/certifications"),
-                },
+                { label: t("engineering"), to: localePath("/ingenierie") },
+                { label: t("operations"), to: localePath("/exploitation") },
+                { label: t("managed_frappe"), to: localePath("/exploitation/frappe-erpnext") },
+                { label: t("hosting_data"), to: localePath("/souverainete") },
+                { label: t("pricing"), to: localePath("/tarifs") },
             ],
         },
         {
@@ -54,64 +31,28 @@ const links = computed(() => {
             // pages are orphaned and `crawlLinks` never prerenders them.
             label: t("industries"),
             children: [
-                {
-                    label: t("service-companies"),
-                    to: localePath("/solutions/entreprises-de-services"),
-                },
-                {
-                    label: t("manufacturing"),
-                    to: localePath("/solutions/industrie"),
-                },
-                {
-                    label: t("thirdplaces"),
-                    to: localePath("/solutions/tiers-lieux"),
-                },
+                { label: t("service-companies"), to: localePath("/solutions/entreprises-de-services") },
+                { label: t("manufacturing"), to: localePath("/solutions/industrie") },
+                { label: t("thirdplaces"), to: localePath("/solutions/tiers-lieux") },
             ],
         },
         {
             label: t("resources"),
             children: [
-                {
-                    label: t("documentation"),
-                    to: "https://doc.dokos.io",
-                },
-                {
-                    label: t("forum"),
-                    to: "https://community.dokos.io",
-                },
-                {
-                    label: t("gitlab"),
-                    to: "https://gitlab.com/dokos",
-                },
-                {
-                    label: t("partners"),
-                    to: localePath("/partners"),
-                },
+                { label: t("documentation"), to: "https://doc.dokos.io" },
+                { label: t("forum"), to: "https://community.dokos.io" },
+                { label: t("gitlab"), to: "https://gitlab.com/dokos" },
+                { label: t("partners"), to: localePath("/partners") },
             ],
         },
         {
             label: t("company"),
             children: [
-                {
-                    label: t("contact"),
-                    to: localePath("/contact"),
-                },
-                {
-                    label: t("termsandconditions"),
-                    to: localePath("/termsandconditions"),
-                },
-                {
-                    label: t("hostingconditions"),
-                    to: localePath("/hostingconditions"),
-                },
-                {
-                    label: t("securityandprivacy"),
-                    to: localePath("/securityandprivacy"),
-                },
-                {
-                    label: t("legal"),
-                    to: localePath("/legal"),
-                },
+                { label: t("contact"), to: localePath("/contact") },
+                { label: t("termsandconditions"), to: localePath("/termsandconditions") },
+                { label: t("hostingconditions"), to: localePath("/hostingconditions") },
+                { label: t("securityandprivacy"), to: localePath("/securityandprivacy") },
+                { label: t("legal"), to: localePath("/legal") },
             ],
         },
     ];
@@ -144,16 +85,17 @@ const links = computed(() => {
   en:
     all_rights_reserved: "All rights reserved"
     gplv3: "Software published under GPLv3"
-    operations: Operations
-    managed_dokos: Managed Dokos
-    managed_frappe: Frappe & ERPNext
-    sovereignty: Sovereignty & security
-    pricing: Pricing
-    platform: Platform
-    publisher: The publisher
-    modules: Modules
-    engineering: Engineering
+    dokos: Dokos
+    ecosystem: The ecosystem
+    ai_agents: AI & agents
+    open_source: Open source publisher
     certifications: Certifications & compliance
+    services: Services
+    engineering: Engineering
+    operations: Operations
+    managed_frappe: Frappe & ERPNext experts
+    hosting_data: Hosting & data
+    pricing: Pricing
     industries: Industries
     service-companies: Service companies
     manufacturing: Manufacturing
@@ -172,16 +114,17 @@ const links = computed(() => {
   fr:
     all_rights_reserved: "Tous droits réservés"
     gplv3: "Logiciel publié sous licence GPLv3"
-    operations: Exploitation
-    managed_dokos: Infogérance Dokos
-    managed_frappe: Frappe & ERPNext
-    sovereignty: Souveraineté & sécurité
-    pricing: Tarifs
-    platform: Plateforme
-    publisher: L'éditeur
-    modules: Modules
-    engineering: Ingénierie
+    dokos: Dokos
+    ecosystem: L'écosystème
+    ai_agents: IA & agents
+    open_source: Éditeur open source
     certifications: Certifications & conformité
+    services: Services
+    engineering: Ingénierie
+    operations: Exploitation
+    managed_frappe: Experts Frappe & ERPNext
+    hosting_data: Hébergement et données
+    pricing: Tarifs
     industries: Secteurs d'activité
     service-companies: Sociétés de service
     manufacturing: Industrie

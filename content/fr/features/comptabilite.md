@@ -9,7 +9,7 @@ navigation:
   description: Les fonctionnalités comptables détaillées
 hero:
   title: Les <span class="text-primary">fonctionnalités comptables</span> détaillées
-  description: "Dokos est un logiciel puissant, open-source, flexible qui offre une gamme complète de fonctionnalités de comptabilité pour aider les entreprises à gérer leurs finances de manière efficace.\_"
+  description: "Dokos est un logiciel complet, open-source, flexible qui offre une gamme complète de fonctionnalités de comptabilité pour aider les entreprises à gérer leurs finances de manière efficace.\_"
   links:
     - label: Commencez maintenant
       to: https://cloud.dokos.io

@@ -1,99 +1,177 @@
+# Sources : doc.dokos.io/v5/dokos/lieu (introduction, parametres-lieu, reservations-articles, contrats-bookings,
+# credit-reservation, evenements, abonnement-reservation, portails, multi-societe) ; doc.dokos.io/v5/dokos/e-commerce/reservations-en-ligne ;
+# billet content/fr/blog/2026/arrivee-V5.md ; README https://gitlab.com/dokos/bookings (branche v5, licence AGPL-3.0) ;
+# marketplace cloud.dokos.io, identifiant bookings.
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : le portail Bookings (/bookings-ui), calendrier d'une ressource avec ses créneaux
+# - fit.webp : une Réservation d'article confirmée avec son tiers facturé et la facture de vente liée
+# - feature-ressources.webp : la fiche d'une Ressource réservable (prix par unité de mesure, calendrier, badges requis)
+# - feature-portail.webp : /bookings-ui, liste des réservations d'un client avec les statuts
+# - feature-contrats.webp : un Contrat de réservation au statut Actif, avec sa commande et son abonnement liés
+# - feature-credits.webp : le rapport de solde des crédits de réservation
+# - feature-evenements.webp : la fiche d'un Événement publié et ses inscriptions
+
 navigation:
   title: Réservations de ressources
   icon: i-material-symbols-location-on-outline-rounded
-  description: Création de contrats, génération d'abonnements, crédits de réservation et événements.
+  description: Ressources réservables, contrats, crédits et événements pour les tiers-lieux et les loueurs d'espaces.
+
 title: Réservations de ressources
 icon: i-material-symbols-location-on-outline-rounded
-description: Gérez et optimisez l'utilisation de vos ressources en toute simplicité.
+description: Publiez vos espaces et vos équipements, laissez vos membres réserver en ligne et facturez depuis Dokos.
 application: Bookings
 theme: vente-relation-client
-author: Dokos & Contributeurs
+author: Dokos et contributeurs
+logo:
+  light: /frappe/bookings_logo.svg
+  dark: /frappe/bookings_logo.svg
+
+publisher: dokos
+licence: AGPLv3
+version: v5
+marketplace: bookings
+docs: https://doc.dokos.io/v5/dokos/lieu
+related: [e-commerce, ventes, paiements, tribu, comptabilite]
+
 hero:
-  title: Simplifiez la <span class="text-primary">gestion de vos ressources</span> avec Dokos
-  description: Gérez vos espaces et équipements avec fluidité grâce au module de réservation de ressources de Dokos
-  links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: /fr
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Vos salles, vos postes et vos machines, <span class="text-primary">réservés en ligne</span> et facturés dans Dokos.
+  description: >-
+    Bookings publie vos ressources réservables sur un portail, encaisse les réservations et génère les factures,
+    les contrats et les abonnements dans votre site Dokos.
+  image: /modules/reservations-de-ressources/hero.webp
+
+for_whom:
+  items:
+    - title: Vous gérez un tiers-lieu ou un espace de coworking
+      description: >-
+        Vos membres réservent un poste ou une salle depuis le portail, avec leurs crédits ou leur abonnement. Vous suivez les soldes dans un rapport.
+      icon: i-heroicons-building-office-2
+    - title: Vous louez des salles ou du matériel à l'heure ou à la journée
+      description: >-
+        Chaque ressource a ses prix par unité de mesure, son calendrier d'ouverture et son préavis minimum. La facture suit la réservation.
+      icon: i-heroicons-clock
+    - title: Vous signez des contrats de poste fixe ou de domiciliation
+      description: >-
+        Le client signe en ligne. Le contrat crée la commande, l'abonnement, les factures récurrentes et le dépôt de garantie.
+      icon: i-heroicons-document-check
+    - title: Vous organisez des ateliers ou des événements
+      description: >-
+        Vous publiez l'événement sur le site, ouvrez les inscriptions et encaissez le paiement depuis le formulaire web.
+      icon: i-heroicons-ticket
+
+fit:
+  description: >-
+    Bookings s'installe sur votre site Dokos et reprend les fonctions du module Lieu de la V4, retiré en V5.
+    Depuis la V5, <strong>tout est une ressource</strong>, réservable ou non ; l'article ne sert plus qu'à la facturation.
+    Une <strong>Ressource réservable</strong> porte le calendrier, les prix par unité de mesure et les badges requis.<br>
+    Chaque <strong>Réservation d'article</strong> est rattachée à un tiers facturé, et sa facture est générée et suivie
+    automatiquement. Un contrat signé crée une Commande client, un Abonnement et ses factures récurrentes dans le module Ventes.
+    Le paiement en ligne passe par les passerelles de l'application Payments.
+  image: /modules/reservations-de-ressources/fit.webp
+  reads:
+    - Article, Groupe d'articles et Liste de prix
+    - Client et Contact
+    - Commande client, Abonnement et Facture de vente
+    - Événement
+    - Passerelle de paiement
+  adds:
+    - L'espace de travail Événements & Ressources
+    - Les documents Ressource réservable, Réservation d'article, Calendrier de réservation et Disponibilité de réservation
+    - Les documents Contrat de réservation, Type de contrat et Dépôt de garantie
+    - Les crédits de réservation et les badges
+    - Le portail /bookings-ui, les Paramètres du lieu et les Paramètres de réservation de ressources
+  depends:
+    - Dokos (Ventes)
+    - Payments pour le paiement en ligne
+
 features:
-  - title: Réservez en quelques clics
-    description: Le module de réservation de ressources de Dokos vous permet de proposer à vos utilisateurs la possibilité de réserver facilement des salles de réunion, des machines, ou du matériel. <br><br>Optimisez l’utilisation de vos ressources et offrez une autonomie totale à vos utilisateurs.</br>
-    image: image/reservation-ressource/article-reservable-site-web.png
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Réservation
-      color: sky
-  - title: Une solution pour tous vos besoins
-    description: Que vous soyez un espace de coworking, un tiers-lieu ou une organisation disposant de plusieurs ressources à gérer, Dokos s’adapte à vos besoins avec des fonctionnalités configurables et évolutives. Proposez des abonnements, gérez des tickets de réservation ponctuels et maintenez une vue d’ensemble sur toutes vos ressources grâce à une interface simple et intuitive.
-    video: /image/reservation-ressource/reservations-de-ressources.mp4
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Réservation
-      color: sky
-bottom_section:
-  title: 'Des fonctionnalités clés :'
-  cards:
-    - title: Réservation de salle en ligne
-      description: Proposez un système intuitif pour permettre à vos équipes ou à vos clients de réserver des espaces adaptés à leurs besoins.
-      icon: i-bi-person-workspace
-      class: col-span-4 row-span-3
-    - title: Gestion du matériel
-      description: Simplifiez la réservation de machines ou d’équipements spécifiques grâce à un système de suivi transparent.
-      icon: i-material-symbols-precision-manufacturing-outline-rounded
-      class: col-span-4 row-span-3
-    - title: Intégration avec Google Agenda
-      description: Synchronisez vos calendriers de réservation pour une visibilité optimale en temps réel.
-      icon: i-simple-icons-googlecalendar
-      class: col-span-4 row-span-3
-    - title: Portail utilisateur personnalisé
-      description: Chaque utilisateur dispose d’un accès dédié pour gérer ses réservations, consulter ses factures ou modifier ses informations.
-      icon: i-icon-park-outline-locking-web
-      class: col-span-4 row-span-3
-    - title: Gestion des abonnements
-      description: Proposez la possibilité de souscrire à un abonnement à vos utilisateurs. Simplifiez la mise en place d'évènements.
-      icon: i-tabler-file-rss
-      class: col-span-4 row-span-3
-    - title: Gestion multi-lieux
-      description: Centralisez la gestion de plusieurs tiers-lieux, tout en offrant une vue d'ensemble et une flexibilité adaptée aux spécificités de chaque lieu.
-      icon: i-tabler-map-pins
-      class: col-span-4 row-span-3
-plus_button:
-  label: Découvrir toutes nos fonctionnalités
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: sky
-  to: /features/reservations-de-ressources
+  - title: Décrivez vos ressources et leurs calendriers
+    description: >-
+      Une Ressource réservable fixe le nombre de réservations simultanées, les prix par unité de mesure (heure, demi-journée,
+      journée, mois) et les badges requis. Un Calendrier de réservation définit les créneaux par jour de la semaine et ses exceptions,
+      comme les jours fériés ou la maintenance. La Disponibilité de réservation fixe le préavis minimum et maximum, contrôlé aussi côté serveur.
+    image: /modules/reservations-de-ressources/feature-ressources.webp
+    badge: Ressources
+  - title: Laissez vos clients réserver depuis le portail
+    description: >-
+      Sur /bookings-ui, le client choisit un créneau. La réservation passe de « Non confirmé » à « Confirmé » après la commande,
+      ou après le paiement si vous l'exigez. Un brouillon abandonné est supprimé après le délai fixé dans les Paramètres du lieu.
+      Le client annule depuis son portail si vous l'autorisez, dans la limite du délai minimum d'annulation.
+    image: /modules/reservations-de-ressources/feature-portail.webp
+    badge: Portail
+  - title: Signez des contrats en ligne
+    description: >-
+      Un Type de contrat porte le modèle de texte, la durée minimum, le préavis, les ressources incluses, l'article récurrent,
+      les frais à la signature et le dépôt de garantie. Vous envoyez le contrat au client ; il le signe d'un clic sur son portail.
+      Le contrat passe à « Actif » et crée la Commande client, l'Abonnement et le Dépôt de garantie. Un avenant modifie un contrat actif sans le réécrire.
+    image: /modules/reservations-de-ressources/feature-contrats.webp
+    badge: Contrats
+  - title: Vendez des crédits de réservation
+    description: >-
+      Un type de crédit convertit un article facturé en crédits, à l'achat d'un ticket ou à chaque période d'un abonnement.
+      À la validation de la facture, les crédits sont alloués. Lors d'une réservation sur le portail, la case « Déduire des crédits
+      de réservation » les consomme. Les crédits expirent selon la durée du type, et un rapport présente les soldes attribués, utilisés et restants.
+    image: /modules/reservations-de-ressources/feature-credits.webp
+    badge: Crédits
+  - title: Publiez vos événements et leurs inscriptions
+    description: >-
+      Un Événement public coché « Publié » apparaît sur le site. Chaque inscription en ligne crée un document Inscription à un événement.
+      Le formulaire web « event-registration-form » encaisse le paiement, en une fois ou avec des paiements automatiques.
+      Les inscriptions se ferment automatiquement 24 heures avant l'événement par défaut, et un badge peut être attribué aux présents.
+    image: /modules/reservations-de-ressources/feature-evenements.webp
+    badge: Événements
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: >-
+        Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Bookings sur votre site.
+        L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://gitlab.com/dokos/bookings</code> puis <code>bench --site votre-site install-app bookings</code>."
+    - title: Réglez les Paramètres du lieu
+      description: >-
+        Dans l'espace de travail Événements & Ressources, ouvrez les Paramètres du lieu : délai de suppression des brouillons,
+        confirmation après paiement, unités de mesure (nombre d'heures d'une demi-journée), portail client. Créez ensuite une première Ressource réservable.
+  prerequisites:
+    - Un site Dokos V5
+    - L'application Payments et une passerelle pour le paiement en ligne
+    - Une connexion Google Agenda et un agenda par ressource pour la synchronisation
+
+faq:
+  items:
+    - label: Que devient le module Lieu ?
+      content: >-
+        Le module Lieu de la V4 est retiré en V5. Ses fonctions (crédits, postes d'événement, badges, multi-lieux) sont reprises dans Bookings.
+    - label: Puis-je gérer plusieurs lieux sur un même site ?
+      content: >-
+        Oui. Dans les Paramètres du lieu, activez le mode multi-lieu et listez les sociétés autorisées avec leur liste de prix.
+        Chaque article publié indique les sociétés où il apparaît. Le visiteur choisit la société en bas de la vitrine, et chaque société a son panier.
+    - label: Les réservations se synchronisent-elles avec Google Agenda ?
+      content: >-
+        Oui. Chaque ressource est liée à un agenda distinct, et une option des Paramètres du lieu synchronise automatiquement les réservations en ligne.
+        La suppression d'une seule occurrence d'une récurrence dans Google Agenda n'est pas encore reportée dans Dokos.
+    - label: Un abonnement peut-il réserver un poste en permanence ?
+      content: >-
+        Oui. Dans la ligne du plan d'abonnement, le champ « Article réservé » désigne la ressource. Pendant toute la durée de l'abonnement,
+        le nombre de places restantes est diminué de la quantité indiquée, et l'abonnement apparaît dans la vue Calendrier des réservations.
+    - label: Quelle différence avec la réservation depuis la boutique Webshop ?
+      content: >-
+        La réservation depuis le site e-commerce est dépréciée en V5. Le portail /bookings-ui de Bookings la remplace : il porte les réservations,
+        les contrats, les abonnements et le trombinoscope des membres.
+
 bottom_cta:
-  title: Prêt à optimiser la gestion de vos ressources ?
-  description: Des associations, des espaces de coworking aux structures plus traditionnelles, utilisent Dokos pour gérer efficacement leurs ressources et offrir une meilleure expérience à leurs utilisateurs.
-  class: bg-amber-600/10 dark:bg-amber-800/10
+  title: Une question sur Bookings ?
+  description: Décrivez-nous votre lieu et vos ressources, nous vous dirons comment les mettre en ligne.
   links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

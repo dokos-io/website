@@ -114,6 +114,8 @@ export default defineNuxtConfig({
         '/fr/ingenierie',
         '/fr/tarifs',
         '/fr/modules',
+        '/fr/certifications',
+        '/fr/open-source-experience-2026',
         '/fr/ecosysteme/vente-relation-client',
         '/fr/ecosysteme/finance-comptabilite',
         '/fr/ecosysteme/achats-stocks-production',

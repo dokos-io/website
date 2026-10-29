@@ -1,72 +1,143 @@
+# Sources : README https://github.com/frappe/drive (branche main) ; docs.frappe.io/drive (introduction, quick-start) ;
+# licence vérifiée sur le dépôt (AGPL-3.0) ; marketplace cloud.dokos.io, identifiant drive.
+# Le README indique que Frappe Drive est archivé et rejoint Frappe Suite (github.com/frappe/suite).
+#
+# Captures à prendre (demo.dokos.cloud, interface /drive) :
+# - hero.webp : l'accueil de Frappe Drive, dossiers et fichiers récents
+# - fit.webp : la fenêtre de partage d'un dossier avec un utilisateur et un groupe d'utilisateurs du site
+# - feature-envoi.webp : l'envoi d'un dossier complet, arborescence conservée
+# - feature-partage.webp : le journal d'activité d'un fichier (changements de permissions)
+# - feature-writer.webp : un document Writer édité à deux, avec une annotation ouverte
+# - feature-apercu.webp : l'aperçu d'un PDF ou d'une vidéo dans le navigateur
+
 navigation:
   title: Frappe Drive
   icon: i-heroicons-folder-open
-  description: Plateforme de stockage et partage de fichiers.
+  description: Stockage, partage et édition de documents sur votre site Dokos.
 
 title: Frappe Drive
 icon: i-heroicons-folder-open
-description: Stockez et partagez vos fichiers depuis votre site Dokos, sans service tiers.
+description: Stockez vos fichiers sur votre site Dokos, partagez-les avec vos utilisateurs et rédigez des documents à plusieurs.
 application: Frappe Drive
 theme: site-web-outils-numeriques
+author: Frappe Technologies et contributeurs
 logo:
   light: /frappe/drive.svg
   dark: /frappe/drive.svg
 
+publisher: frappe
+licence: AGPLv3
+version: v5
+marketplace: drive
+docs: https://docs.frappe.io/drive/introduction
+related: [wiki, raven, support, builder]
+
 hero:
-  title: Vos fichiers, <span class="text-primary">stockés et partagés</span> depuis Dokos.
-  description: Frappe Drive ajoute à Dokos une plateforme de stockage et de partage de fichiers, sans dépendre d'un service de stockage tiers.
-  links:
-    - label: Contactez-nous
-      to: /fr/contact
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-chat-bubble-left-right
-    - label: Voir la marketplace
-      to: https://cloud.dokos.io
-      target: _blank
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: "/fr"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Vos fichiers d'équipe, <span class="text-primary">stockés et partagés</span> depuis votre site Dokos.
+  description: >-
+    Frappe Drive ajoute à votre site un espace de fichiers avec les utilisateurs et les groupes que vous avez déjà.
+    Vous envoyez des dossiers entiers, partagez un fichier et rédigez des documents à plusieurs.
+  image: /modules/drive/hero.webp
+
+for_whom:
+  items:
+    - title: Vos fichiers d'équipe vivent chez un service tiers
+      description: >-
+        Vous les stockez sur votre site Dokos, et vous les partagez avec les utilisateurs et les groupes du site.
+      icon: i-heroicons-folder
+    - title: Vous rédigez des documents à plusieurs
+      description: >-
+        L'éditeur Writer permet d'écrire en même temps, d'annoter, de répondre aux annotations et de garder des versions.
+      icon: i-heroicons-pencil-square
+    - title: Vous devez transmettre un dossier à un partenaire extérieur
+      description: >-
+        Vous créez un utilisateur invité avec un accès limité, ou vous publiez le fichier.
+      icon: i-heroicons-user-plus
+
+fit:
+  description: >-
+    Frappe Drive s'installe sur votre site Dokos et utilise ses <strong>Utilisateurs</strong> et ses
+    <strong>Groupes d'utilisateurs</strong>. Vous ouvrez l'interface /drive, envoyez vos fichiers et dossiers, puis partagez
+    chacun avec un utilisateur, un groupe, tout le site, ou le publiez.<br>
+    Le stockage est mis en commun pour tous les utilisateurs, ou attribué par quota à chacun.
+  image: /modules/drive/fit.webp
+  reads:
+    - Utilisateur
+    - Groupe d'utilisateurs
+  adds:
+    - L'interface /drive
+    - Les fichiers et dossiers Drive, leurs partages et leur journal d'activité
+    - L'éditeur de documents Writer
+    - Les utilisateurs invités et les quotas de stockage
+  depends:
+    - Dodock
 
 features:
-  - title: Stockage de fichiers
-    description: Un espace de stockage hébergé sur votre site Dokos, à côté de vos autres données de gestion.
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Stockage
-      color: sky
-  - title: Partage
-    description: Partage des fichiers ou des dossiers avec votre équipe, sans passer par un service de stockage tiers.
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Partage
-      color: sky
+  - title: Envoyez des dossiers entiers
+    description: >-
+      Les fichiers volumineux sont envoyés en plusieurs parties. Un dossier envoyé garde son arborescence.
+      Les vidéos sont lues en continu depuis le serveur.
+    image: /modules/drive/feature-envoi.webp
+    badge: Envoi
+  - title: Partagez et retrouvez vos fichiers
+    description: >-
+      Vous partagez un fichier ou un dossier avec un utilisateur, un groupe, tout le site, ou vous le publiez.
+      La recherche couvre vos fichiers et ceux partagés avec vous. Le journal d'activité montre les changements de permissions et de métadonnées.
+    image: /modules/drive/feature-partage.webp
+    badge: Partage
+  - title: Rédigez à plusieurs avec Writer
+    description: >-
+      Plusieurs utilisateurs, ou des invités, modifient un document en même temps. Vous annotez, répondez et résolvez les annotations.
+      Les versions sont enregistrées à la main ou automatiquement, et un fichier .docx s'importe dans l'éditeur.
+    image: /modules/drive/feature-writer.webp
+    badge: Documents
+  - title: Ouvrez vos fichiers dans le navigateur
+    description: >-
+      De nombreux types de fichiers s'affichent en aperçu sans téléchargement. La liste des formats pris en charge est
+      tenue dans la documentation de Frappe Drive.
+    image: /modules/drive/feature-apercu.webp
+    badge: Aperçu
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: >-
+        Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Frappe Drive sur votre site.
+        L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://github.com/frappe/drive --branch main</code> puis <code>bench --site votre-site install-app drive</code>."
+  prerequisites:
+    - Un site Dokos V5
+    - En auto-hébergement, les paquets système ffmpeg et libmagic
+
+faq:
+  items:
+    - label: Puis-je partager un fichier avec quelqu'un qui n'a pas de compte ?
+      content: >-
+        Oui. Vous publiez le fichier, ou vous créez un utilisateur invité avec un accès limité et contrôlé.
+    - label: Comment est réparti l'espace de stockage ?
+      content: >-
+        Le stockage est mis en commun pour tous les utilisateurs du site, ou attribué par quota à chaque utilisateur.
+    - label: Frappe Drive remplace-t-il mes sauvegardes ?
+      content: >-
+        Non. Le README de Frappe Drive recommande aux auto-hébergeurs de ne pas en faire leur unique espace de fichiers
+        et de garder une stratégie de sauvegarde.
+    - label: Frappe Drive est-il toujours maintenu ?
+      content: >-
+        Le dépôt frappe/drive indique que Frappe Drive rejoint Frappe Suite (github.com/frappe/suite).
+        Dokos Cloud distribue l'application Frappe Drive sur sa marketplace. Publiée sous licence AGPLv3.
 
 bottom_cta:
-  title: Envie de sortir vos fichiers d'un service tiers ?
-  description: Disponible depuis la marketplace de cloud.dokos.io. Décrivez-nous vos volumes et vos usages, nous vous dirons si Frappe Drive y répond.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Une question sur Frappe Drive ?
+  description: Décrivez-nous vos volumes et vos usages, nous vous dirons si Frappe Drive y répond.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-chat-bubble-left-right
+      size: xl
+      color: primary
     - label: Voir la marketplace
-      to: https://cloud.dokos.io
+      to: https://cloud.dokos.io/marketplace
       target: _blank
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+      size: xl
+      color: neutral
+      variant: outline

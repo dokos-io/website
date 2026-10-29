@@ -1,142 +1,122 @@
+# Sources : https://doc.dokos.io/v5/dokos/projets (Projet, Tâche, Feuille de temps, Type d'activité).
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : la vue Gantt des tâches d'un projet (/app/task/view/gantt)
+# - fit.webp : un Projet, section des coûts et de la facturation (Montant total facturable, Marge brute) (/app/project)
+# - feature-projet.webp : la création d'un projet « À partir d'un modèle », tâches remplies automatiquement (/app/project/new)
+# - feature-taches.webp : une Tâche avec son champ « Tâches dépendantes » et son statut (/app/task)
+# - feature-temps.webp : une Feuille de temps avec plusieurs lignes et le minuteur (/app/timesheet)
+# - feature-facturation.webp : le bouton « Créer > Facture de vente » sur une feuille de temps soumise (/app/timesheet)
+# - feature-client.webp : la table Utilisateurs d'un projet et une Mise à jour du projet (/app/project)
+
 navigation:
-    title: Projets
-    icon: i-eos-icons-project-outlined
-    description: Organisation, planification et suivi de projets.
+  title: Projets
+  icon: i-eos-icons-project-outlined
+  description: Projets, tâches, feuilles de temps et facturation du temps passé.
 
 title: Projets
+description: Découpe vos projets en tâches, enregistre le temps passé et calcule le coût et le montant facturable de chaque projet.
 icon: i-eos-icons-project-outlined
-description: Planifiez et suivez vos projets pour garantir leur succès.
 application: Dokos
 theme: projets-ressources-humaines
 author: Frappe Technologies, Dokos & Contributeurs
 
-hero:
-  title: Gérez vos <span class="text-primary">projets</span> en toute simplicité avec Dokos
-  description: Organisez, planifiez et suivez tous vos projets dans un seul et même outil. Que vous soyez une petite équipe ou une entreprise en pleine expansion, notre module "Projet" vous aide à garder le contrôle de chaque étape de vos projets.
-  links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: "/fr"
-    right_icon: i-heroicons-arrow-right-20-solid
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: erpnext
+docs: https://doc.dokos.io/v5/dokos/projets
+related: [ventes, ressources-humaines, comptabilite, support]
 
+hero:
+  title: Vos <span class="text-primary">projets</span>, leurs tâches et le temps passé, reliés à vos factures.
+  description: Vous découpez un projet en tâches, votre équipe saisit ses heures dans des feuilles de temps, et Dokos calcule le coût et le montant facturable du projet. Une facture de vente se crée depuis la feuille de temps.
+  image: /modules/projets/hero.webp
+
+for_whom:
+  items:
+    - title: Vous vendez des prestations au temps passé
+      description: Chaque ligne de feuille de temps marquée Facturable porte un taux de facturation. Après soumission, vous créez la facture de vente depuis la feuille, et le projet affiche le montant facturé.
+      icon: i-heroicons-clock
+    - title: Vous menez des projets avec des tâches qui s'enchaînent
+      description: Une tâche dépend d'une autre et ne peut pas être terminée avant elle. Les dépendances s'affichent dans le Gantt ; la vue Plan se modifie par glisser-déposer.
+      icon: i-heroicons-arrows-right-left
+    - title: Vous voulez la marge de chaque projet
+      description: Le projet additionne les coûts des feuilles de temps, des notes de frais, des achats et des matières consommées, puis les compare au montant des ventes.
+      icon: i-heroicons-banknotes
+    - title: Vous répétez le même type de projet
+      description: Un modèle de projet contient une séquence de tâches. À la création, les tâches sont remplies et datées à partir de leur durée, en sautant les jours fériés de la société.
+      icon: i-heroicons-document-duplicate
+
+fit:
+  description: Le module Projets fait partie de Dokos. Un projet se rattache à une <strong>commande client</strong> et reçoit les coûts des autres modules : feuilles de temps, notes de frais, factures d'achat et matières consommées. La <strong>feuille de temps</strong> relie le temps d'un employé à un projet, à une tâche et à une facture de vente.
+  image: /modules/projets/fit.webp
+  reads:
+    - Commande client, renseignée sur le projet
+    - Facture de vente, créée depuis une feuille de temps soumise
+    - Note de frais et Facture d'achat, dont les montants alimentent le coût du projet
+    - Employé, pour les feuilles de temps et les coûts d'activité par personne
+    - Liste de jours fériés, pour dater les tâches d'un modèle
+  adds:
+    - Les documents « Projet », « Modèle de projet » et « Mise à jour du projet »
+    - Le document « Tâche », avec ses vues Gantt et Plan
+    - Les documents « Feuille de temps », « Type d'activité » et « Coût de l'activité »
+    - Les champs de coût et de facturation du projet (Montant total facturable, Montant total facturé, Marge brute)
 
 features:
-  - title: Planification de projets
-    description: Créez et gérez vos projets facilement, de la conception à la livraison. <br><br>Grâce à une interface intuitive, définissez vos objectifs, planifiez vos tâches et assignez des rôles pour garantir une exécution fluide.</br>
-    video: "/image/projet/projet.mp4"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Projet
-      color: sky
-  - title: Un suivi des tâches
-    description: Gardez une vue d’ensemble sur toutes les tâches de vos projets. <br><br>Visualisez leur progression, leur statut et attribuez des priorités pour une gestion optimale du temps et des ressources.</br>
-    image: "image/projet/Suivi-des-taches-kanban.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Tâches
-      color: sky
-  - title: La gestion des équipes
-    description: Attribuez les rôles et responsabilités de chaque membre de l’équipe sur chaque tâche ou sous-projet. <br><br>Suivez la charge de travail de chacun pour équilibrer les efforts et améliorer l’efficacité collective.</br>
-    image: "image/projet/vue-planning-taches.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Equipe
-      color: sky
-  - title: Un calendrier interactif
-    description: Bénéficiez d’une vue calendrier pour planifier et ajuster les échéances de vos projets. <br><br>Identifiez rapidement les tâches en retard et ajustez les plannings en conséquence pour rester dans les temps.</br>
-    image: "image/projet/gestion-de-projet-calendrier.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Calendrier
-      color: sky
-  - title: Un suivi budgétaire
-    description: Assurez un suivi rigoureux des budgets alloués à vos projets. <br><br>Estimez les coûts, suivez les dépenses en temps réel et prenez des décisions éclairées pour rester dans vos limites budgétaires.</br>
-    image: "image/projet/suivi-activite-budget-projet.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Budget
-      color: sky
-  - title: Une gestion des dépendances
-    description: Identifiez et gérez les dépendances entre vos tâches pour anticiper les blocages potentiels. <br><br>Assurez-vous que chaque étape du projet progresse sans accroc grâce à une gestion des flux de travail transparente.</br>
-    image: "image/projet/tache-gantt.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Dépendances
-      color: sky
-  - title: Des Rapports et Analyses
-    description: Accédez à des rapports détaillés sur l’avancement de vos projets. <br><br>Obtenez des données en temps réel sur les performances de vos équipes, l’état des tâches et les budgets pour mieux anticiper les besoins et ajuster vos plans.</br>
-    image: "image/projet/tableau-de-bord-projet.svg"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Rapport
-      color: sky
-  - title: Une collaboration en temps réel
-    description: Facilitez la collaboration au sein de vos équipes avec des outils intégrés de communication et de partage de fichiers. <br><br>Discutez, partagez des documents et collaborez directement dans le projet pour améliorer la productivité.</br>
-    image: "image/projet/communication-raven.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Collaboration
-      color: sky
+  - title: Créez un projet, seul ou à partir d'un modèle
+    description: Vous renseignez le nom, le statut et la date de fin prévue, puis le type, la priorité et le département si besoin. Avec « À partir d'un modèle », les tâches du modèle sont créées et datées automatiquement. Le champ « Méthode d'achèvement » fixe le calcul de l'avancement : manuel, par tâche terminée, par progression ou par poids des tâches.
+    image: /modules/projets/feature-projet.webp
+    badge: Projet
+  - title: Découpez le travail en tâches dépendantes
+    description: Une tâche porte un statut (Ouvert, En cours, En retard, En attente de révision, Terminé, Annulé) et une priorité. La case « Est un groupe » en fait un parent de sous-tâches. Le champ « Tâches dépendantes » bloque la clôture tant que la tâche amont n'est pas terminée. Les dates réelles de début et de fin viennent des feuilles de temps.
+    image: /modules/projets/feature-taches.webp
+    badge: Tâche
+  - title: Saisissez le temps passé, ligne par ligne
+    description: Une feuille de temps couvre un ou plusieurs jours. Chaque ligne indique l'horaire de début, les heures, le type d'activité, le projet et la tâche. Un minuteur mesure le temps réel. Le taux de coût vient du type d'activité ou du coût de l'activité propre à l'employé ; une fois la feuille soumise, les taux sont verrouillés.
+    image: /modules/projets/feature-temps.webp
+    badge: Feuille de temps
+  - title: Facturez le temps et suivez la marge
+    description: Les lignes cochées Facturable, multipliées par le taux de facturation, donnent le montant de facturation. Depuis la feuille de temps soumise, vous créez la facture de vente ; le total des heures facturées et le pourcentage facturé se mettent à jour. Sur le projet, la marge brute compare le montant des ventes au coût total.
+    image: /modules/projets/feature-facturation.webp
+    badge: Facturation
+  - title: Tenez vos clients informés
+    description: La table Utilisateurs du projet donne accès à un utilisateur du site web, par exemple votre client, avec un e-mail de bienvenue et, si vous le souhaitez, l'affichage des pièces jointes. La mise à jour du projet envoie l'état d'avancement aux parties prenantes, à la fréquence que vous choisissez.
+    image: /modules/projets/feature-client.webp
+    badge: Suivi client
 
-bottom_section:
-  title: "Pourquoi choisir Dokos ? :"
-  cards:
-    - title: Simplicité d’utilisation 
-      description: Une interface claire et intuitive qui vous permet de gérer vos projets sans complexité.
-      icon: i-hugeicons-touch-interaction-01
-      class: "col-span-4 row-span-3"
-    - title: Flexibilité
-      description: S’adapte à vos besoins, que ce soit pour des projets simples ou complexes.
-      icon: i-hugeicons-curvy-up-down-direction
-      class: "col-span-4 row-span-3"
-    - title: Open-source et personnalisable 
-      description: GLibérez-vous des limitations et adaptez le logiciel selon les spécificités de vos projets.
-      icon: i-ic-outline-settings
-      class: "col-span-4 row-span-3"
+install:
+  description: Le module Projets fait partie de Dokos. Il n'y a pas d'application séparée à installer.
+  steps:
+    - title: Sur Dokos Cloud
+      description: Le module est présent dès la création de votre site, dans toutes les formules. Ouvrez l'espace de travail Projets depuis la page d'accueil.
+    - title: En auto-hébergement
+      description: "Installez Dokos : <code>bench get-app https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>."
+    - title: Premier paramétrage
+      description: Vérifiez les types d'activité créés par défaut (Planification, Recherche, Rédaction de proposition, Exécution, Communication), renseignez leurs taux, puis créez votre premier modèle de projet.
 
-plus_button:
-  label: Découvrir toutes nos fonctionnalités
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: sky
-  to: /features/projets
+faq:
+  items:
+    - label: Comment fixer un taux horaire différent par personne ?
+      content: Créez un « Coût de l'activité » pour l'employé et le type d'activité concernés, avec son coût de revient et son prix de facturation. Dokos applique ces taux à ses feuilles de temps.
+    - label: Mon client peut-il suivre l'avancement du projet ?
+      content: Oui. Ajoutez-le dans la table Utilisateurs du projet en tant qu'utilisateur du site web. Vous pouvez aussi lui envoyer les mises à jour du projet à fréquence régulière.
+    - label: Comment l'avancement d'un projet est-il calculé ?
+      content: Selon la « Méthode d'achèvement » choisie : saisie manuelle, proportion de tâches terminées, progression des tâches ou poids des tâches. Si la somme des poids n'est pas 100, Dokos normalise le résultat.
+    - label: Les notes de frais entrent-elles dans le coût du projet ?
+      content: Oui. Une note de frais qui mentionne le projet ou une de ses tâches met à jour le champ de demande de remboursement et le coût total du projet.
 
 bottom_cta:
-  title: Commencez dès aujourd'hui !
-  description: Essayez Dokos et découvrez comment notre module "Projet" peut vous aider à mieux organiser et réussir vos projets. Profitez d'une solution complète, open-source et éthique, adaptée à vos besoins spécifiques.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Une question sur le module Projets ?
+  description: Dites-nous comment vous suivez vos projets et votre temps aujourd'hui.
   links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

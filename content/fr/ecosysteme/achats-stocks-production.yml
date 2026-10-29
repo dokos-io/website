@@ -10,20 +10,20 @@ hero:
     icon: i-heroicons-cube
     to: /fr/modules
   title: Du bon de commande à la <span class="text-primary">sortie d'entrepôt</span>, une seule chaîne.
-  description: Les achats, les stocks, la production et le contrôle qualité partagent la même nomenclature et les mêmes emplacements. Un ordre de fabrication consomme le stock réel, pas une estimation.
+  description: Les achats, les stocks, la production et le contrôle qualité partagent la même nomenclature et les mêmes emplacements. Un ordre de fabrication consomme le stock réel.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
       size: xl
       color: primary
-    - label: Voir tous les modules
+    - label: Tout l'écosystème
       to: /fr/modules
       size: xl
       color: neutral
       variant: outline
 
 modules:
-  title: Les modules de ce périmètre
+  title: Les applications de ce domaine
   description: Utiles séparément pour une PME de distribution, ou combinés pour un site de production.
   items:
     - title: Achats
@@ -44,10 +44,10 @@ modules:
       to: /fr/modules/qualite
 
 cta:
-  title: Une chaîne d'approvisionnement à reconstituer dans Dokos ?
+  title: Reconstituez votre chaîne d'approvisionnement dans Dokos
   description: Nomenclatures, gammes de fabrication et historique de stock se reprennent depuis un ERP existant ou un tableur.
   links:
-    - label: Contactez-nous
+    - label: Nous écrire
       to: /fr/contact
       size: xl
       color: primary

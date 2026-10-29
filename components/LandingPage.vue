@@ -195,6 +195,7 @@ const page = computed(() => props.page)
           :title="item.title"
           :description="item.description"
           :icon="item.icon"
+          :to="item.to"
           variant="subtle"
         >
           <template v-if="item.badge" #footer>

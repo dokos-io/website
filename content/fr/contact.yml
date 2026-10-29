@@ -1,15 +1,15 @@
-title: Contact
-description: Contactez-nous
+title: Nous écrire
+description: Dites-nous comment travaille votre entreprise. Nous répondons sous deux jours ouvrés.
 navigation.icon: i-ic-outline-contact-page
 
 hero:
-  title: Contactez-nous
+  title: Nous écrire
   align: center
 
 
 form:
-  title: 'Contactez-nous'
-  description: "Vous vous demandez si Dokos est adapté à vos besoins ? Vous souhaitez souscrire à une offre d'accompagnement ? Vous avez des questions sur l'offre d'hébergement ? Envoyez nous un message."
+  title: 'Nous écrire'
+  description: "Dites-nous comment travaille votre entreprise, ce que vous gérez aujourd'hui et ce qui coince. Nous répondons sous deux jours ouvrés."
   name:
     label: 'Nom'
     placeholder: 'Martine Dupond'
@@ -20,7 +20,7 @@ form:
     label: 'Société'
     placeholder: 'Votre société/association'
   body:
-    label: 'Comment pouvons-nous vous aider ?'
+    label: 'Votre message'
     placeholder: 'Expliquez-nous votre projet ou votre besoin'
   info: ''
   button:
@@ -28,13 +28,13 @@ form:
     label: 'Envoyer mon message'
 
 contact_info:
-  - title: Vous préférez les emails ?
-    description: Envoyez nous votre message à hello@dokos.io
+  - title: Par email
+    description: Écrivez-nous à hello@dokos.io
     to: "mailto:hello@dokos.io"
     icon: i-material-symbols-attach-email-outline
-  - title: Une question concernant nos offres ?
+  - title: Par téléphone
     description: "06.33.47.58.69"
     icon: i-material-symbols-perm-phone-msg-outline
-  - title: Venez-nous rencontrer à Nancy !
+  - title: À Nancy
     description: 59 rue du vieil Aître 54000 Nancy
     icon: i-material-symbols-add-location-alt-outline

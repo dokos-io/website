@@ -1,117 +1,130 @@
+# Sources : https://doc.dokos.io/v5/dokos/production (Nomenclature, Ordre de travail,
+# Carte de travail, Station de travail, cycle de production complet « Dokompany »),
+# https://doc.dokos.io/nouveautes (v5 : plan de production depuis une commande client,
+# duplication de nomenclature, contrôles qualité par opération).
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : le Plan d'atelier, cartes de travail par station (/app/job-card/view/dashboard ou le Plan d'atelier)
+# - fit.webp : un Ordre de travail soumis, avec ses entrées de stock liées dans le tableau de bord du document (/app/work-order)
+# - feature-nomenclature.webp : une Nomenclature multiniveau, section « Coût de la nomenclature » (/app/bom)
+# - feature-plan.webp : un Plan de production alimenté par des commandes client (/app/production-plan)
+# - feature-ordre.webp : l'Ordre de travail, boutons « Transférer les matières » et « Terminer » (/app/work-order)
+# - feature-carte.webp : une Carte de travail avec ses journaux de temps (/app/job-card)
+# - feature-station.webp : une Station de travail, section des coûts horaires (/app/workstation)
+
 navigation:
-    title: Production
-    icon: i-fluent-manufacturer-24-regular
-    description: Planification et suivi de la production manufacturière.
+  title: Production
+  icon: i-fluent-manufacturer-24-regular
+  description: Nomenclatures, ordres de travail et cartes de travail.
 
 title: Production
+description: Décrit vos produits dans des nomenclatures, lance des ordres de travail et calcule le coût réel de chaque lot fabriqué.
 icon: i-fluent-manufacturer-24-regular
-description: Pilotez votre production avec précision pour une efficacité maximale.
 application: Dokos
 theme: achats-stocks-production
-author: Frappe Technologies & Contributeurs
+author: Frappe Technologies, Dokos & Contributeurs
+
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: erpnext
+docs: https://doc.dokos.io/v5/dokos/production
+related: [stocks, achats, qualite, ventes]
 
 hero:
-  title: Pilotez avec précision votre <span class="text-primary">production</span> pour une efficacité maximale.
-  description: Avec Dokos, simplifiez vos opérations de production, économisez du temps précieux et assurez une qualité irréprochable à chaque étape.
-  links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: "/fr"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Vos <span class="text-primary">ordres de travail</span>, de la nomenclature au produit fini en stock.
+  description: Vous décrivez la composition de vos produits dans une nomenclature, vous lancez des ordres de travail et vos opérateurs saisissent leurs temps sur des cartes de travail. Dokos réserve les composants, enregistre les transferts de matières et compare le coût réel au coût prévu.
+  image: /modules/production/hero.webp
+
+for_whom:
+  items:
+    - title: Vous fabriquez sur stock et vous relancez la production à partir d'un seuil
+      description: Le plan de production regroupe vos prévisions et vos seuils de réapprovisionnement, puis crée les ordres de travail et les demandes d'achat des composants manquants.
+      icon: i-heroicons-cube
+    - title: Vous produisez à la commande
+      description: Vous créez un plan de production directement depuis une commande client. Les ordres de travail héritent de l'entrepôt source défini dans le plan.
+      icon: i-heroicons-clipboard-document-check
+    - title: Vous assemblez des sous-ensembles sur plusieurs niveaux
+      description: Une nomenclature peut contenir d'autres nomenclatures. L'outil de mise à jour propage la modification d'un sous-ensemble dans les nomenclatures parentes.
+      icon: i-heroicons-squares-2x2
+    - title: Vous voulez connaître le coût réel d'un lot
+      description: Les temps saisis sur les cartes de travail, multipliés par les coûts horaires des stations, s'ajoutent au coût des matières consommées.
+      icon: i-heroicons-calculator
+
+fit:
+  description: Le module Production fait partie de Dokos. Il lit vos articles et vos entrepôts, et il écrit des entrées de stock à chaque étape : <strong>Transfert de matières pour la production</strong> vers l'entrepôt de travaux en cours, puis <strong>Fabrication</strong> vers l'entrepôt des produits finis. Les composants manquants deviennent des demandes d'achat.
+  image: /modules/production/fit.webp
+  reads:
+    - Article, Entrepôt et Unité de mesure
+    - Commande client et Plan Industriel et Commercial (MPS), pour alimenter le plan de production
+    - Demande d'achat et Reçu d'achat, pour les composants manquants
+    - Entrée de stock, pour les transferts de matières et la fabrication
+    - Inspection de la qualité, exigée sur une carte de travail quand l'article le demande
+  adds:
+    - Les documents « Nomenclature », « Routage », « Opération » et « Station de travail »
+    - Les documents « Plan de production », « Ordre de travail », « Carte de travail » et « Arrêt de production »
+    - Le « Plan d'atelier », l'écran des opérateurs
+    - Le rapport « Résumé des ordres de travail » et le rapport d'analyse de stock par nomenclature
+    - Les « Paramètres de production » (entrepôts par défaut, règles de planification)
+  depends:
+    - Stocks
 
 features:
-  - title: Optimisez votre Production
-    description: Gagnez en visibilité et en contrôle sur vos processus de production. <br><br>Avec Dokos, définissez rapidement les composants nécessaires et assurez une gestion fluide et sans erreurs. <br><br>La flexibilité du logiciel vous permet également de gérer facilement les différentes variantes de produits, en adaptant rapidement les nomenclatures et les coûts associés à chaque version.</br>
-    image: "image/production/Nomenclature.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Gestion des articles et Nomenclature
-      color: sky
-  - title: Gagnez en efficacité sur votre plannification
-    description: Planifiez vos productions avec confiance. <br><br>Anticipez les besoins et assurez des pratiques de production durables pour plus de sérénité.<br><br> Evitez les surplus et les pénuries, tout en respectant des pratiques de production durables et responsables.</br>
-    image: "image/production/plannification_production.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Demande de Production et Plannification
-      color: sky
-  - title: Restez informé en temps réel 
-    description: Le suivi des opérations de production est simplifié grâce à un tableau de bord dynamique qui vous offre une vue d'ensemble de l'avancement de chaque ordre de fabrication.<br><br> Vous pouvez enregistrer les temps consacrés à chaque étape de production, ce qui vous aide à maximiser l’efficacité de vos processus et à identifier facilement les axes d'amélioration.</br>
-    video: "/image/production/tableau-de-bord-production.mp4"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Suivi des Opérations de Production
-      color: sky
-  - title: Garantissez la qualité à chaque étape
-    description: La qualité est au cœur de notre approche. <br><br>Dokos intègre des contrôles qualité à chaque phase de production, vous permettant de garantir des produits conformes. <br><br>Avec des contrôles intégrés et des rapports détaillés, gagnez la confiance de vos clients en livrant des produits conformes à chaque fois.</br>
-    image: "image/production/qualite.webp"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Contrôle Qualité
-      color: sky
-  - title: Optimisez votre gestion de stocks
-    description: Bénéficiez d'un suivi en temps réel des niveaux de matières premières et de produits finis. <br><br>Vous pouvez organiser efficacement vos stocks et optimiser les mouvements entre entrepôts. <br><br>Vous pouvez également évaluer les coûts de production en intégrant les matières premières, la main-d'œuvre et les frais généraux, ce qui facilite une gestion budgétaire éclairée et responsable.</br>
-    image: "image/stock/quatre-tableau-de-bord-stock.svg"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Gestion de Stock
-      color: sky
-  - title: Prenez des décisions éclairées
-    description: Générez avec Dokos des rapports personnalisés vous permettant de prendre des décisions éclairées, basées sur des données précises.<br><br> En analysant les tendances, vous identifiez les opportunités d’amélioration pour rester compétitif sur le marché.</br>
-    image: "image/production/tableau-de-bord-production-image-1800.svg"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Rapports
-      color: sky
-  - title: Une solution éthique et transparente pour une production optimisée.
-    description: En choisissant Dokos, vous rejoignez une communauté engagée qui partage vos valeurs. <br><br>Profitez d’une solution open-source innovante, conçue pour garantir transparence, performance et éthique dans votre gestion de production.</br>
-    image: "image/dokos-communaute.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Un choix éthique
-      color: sky
+  - title: Décrivez vos produits dans une nomenclature
+    description: Vous listez les composants achetés et les sous-ensembles fabriqués, avec leurs quantités. Si un routage est attaché, chaque composant est lié à l'opération qui le consomme. La section « Coût de la nomenclature » additionne le coût des composants et le coût des opérations. Une nomenclature soumise est verrouillée ; une nouvelle version reçoit un numéro incrémenté, et une seule nomenclature par article porte le statut Actif.
+    image: /modules/production/feature-nomenclature.webp
+    badge: Nomenclature
+  - title: Planifiez les quantités à produire
+    description: Le plan de production regroupe les commandes client, les prévisions du MPS et les seuils de réapprovisionnement. Vous le créez aussi directement depuis une commande client. Dokos en déduit les ordres de travail à lancer et les demandes d'achat des composants manquants.
+    image: /modules/production/feature-plan.webp
+    badge: Plan de production
+  - title: Lancez un ordre de travail et suivez les matières
+    description: À la soumission, Dokos réserve les matières premières dans leurs entrepôts sources. Le bouton de transfert crée une entrée de stock vers l'atelier ; les transferts partiels se cumulent. En fin de production, une entrée de type Fabrication déplace les produits finis vers l'entrepôt cible. Si vous arrêtez un ordre, les matières déjà transférées retournent au stock.
+    image: /modules/production/feature-ordre.webp
+    badge: Ordre de travail
+  - title: Vos opérateurs saisissent leurs temps sur une carte de travail
+    description: Chaque opération de la nomenclature génère une carte de travail, assignée à une station. L'opérateur ouvre le Plan d'atelier, enregistre son temps et valide sa quantité. Au clic sur « Terminer », il répartit le total entre quantité complétée, quantité en attente et perte de process. Chaque carte soumise met à jour l'avancement et le coût réel de l'ordre.
+    image: /modules/production/feature-carte.webp
+    badge: Carte de travail
+  - title: Fixez les coûts horaires de vos stations
+    description: Une station de travail porte quatre coûts horaires : main-d'œuvre, électricité, loyer et consommables. Un type de station (manuel ou machine) applique ces coûts à toutes ses stations. Un calendrier d'ouverture et une liste de jours fériés servent à vérifier la disponibilité lors de la planification. Le Plan d'atelier affiche chaque station comme disponible ou occupée.
+    image: /modules/production/feature-station.webp
+    badge: Station de travail
 
+install:
+  description: Le module Production fait partie de Dokos. Il n'y a pas d'application séparée à installer.
+  steps:
+    - title: Sur Dokos Cloud
+      description: Le module est présent dès la création de votre site, dans toutes les formules. Ouvrez l'espace de travail Production depuis la page d'accueil.
+    - title: En auto-hébergement
+      description: "Installez Dokos : <code>bench get-app https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>."
+    - title: Premier paramétrage
+      description: Renseignez les entrepôts par défaut dans « Paramètres de production », créez vos stations de travail et vos opérations, puis vos premières nomenclatures.
+  prerequisites:
+    - Vos articles et vos entrepôts sont créés dans le module Stocks
 
-plus_button:
-  label: Découvrir toutes nos fonctionnalités
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: sky
-  to: /features/production
+faq:
+  items:
+    - label: Comment Dokos calcule-t-il le coût d'un ordre de travail ?
+      content: La nomenclature donne le coût prévisionnel. Le coût réel additionne les matières consommées et les temps saisis sur les cartes de travail, multipliés par les coûts horaires de chaque station. L'ordre de travail affiche les deux valeurs.
+    - label: Les quantités consommées sont-elles théoriques ou réelles ?
+      content: Le champ « Consommer les composants basé sur » de la nomenclature choisit entre les quantités théoriques de la nomenclature et les quantités réellement transférées par les entrées de stock. S'il est vide, le réglage global des paramètres de production s'applique.
+    - label: Puis-je contrôler la qualité en cours de fabrication ?
+      content: Oui. Un contrôle qualité peut être défini au niveau de chaque opération d'une nomenclature. La carte de travail ne peut alors pas être soumise avant qu'une inspection de la qualité ait été passée.
+    - label: Comment créer une variante d'un produit existant ?
+      content: Dupliquez la nomenclature existante depuis son formulaire et ajustez les composants. Un produit fini peut aussi être marqué comme article fantôme dans le créateur de nomenclature.
 
 bottom_cta:
-  title: Révolutionnez dès aujourd'hui la gestion de votre production avec Dokos.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Une question sur le module Production ?
+  description: Dites-nous ce que vous fabriquez et comment vos ateliers travaillent aujourd'hui.
   links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: sky
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

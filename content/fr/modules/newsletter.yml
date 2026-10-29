@@ -1,0 +1,119 @@
+# Sources :
+# - README et hooks.py de https://github.com/frappe/newsletter (branche develop, lu le 29 octobre 2026) : « Manage and send newsletters », licence agpl-3.0
+# - DocType Newsletter du dépôt (newsletter/newsletter/doctype/newsletter) : groupes d'e-mails, expéditeur, contenu Rich Text / Markdown / HTML,
+#   pièces jointes, envoi planifié, e-mail de test, recherche des liens cassés, lien de désinscription, publication web, destinataires et vues, campagne UTM
+# - Groupe d'e-mails (Email Group) et Désinscription (Email Unsubscribe) : DocTypes de Dodock utilisés par l'application
+# - Marketplace Dokos Cloud : app « newsletter »
+# Pas de logo dans public/frappe/ : icône de repli.
+#
+# Captures à prendre (demo.dokos.cloud, 1440×900, thème clair, français) :
+# - hero.webp : le formulaire Newsletter (/app/newsletter) rempli, groupe d'e-mails choisi et message rédigé
+# - fit.webp : un Groupe d'e-mails avec ses membres importés depuis les contacts
+# - feature-redaction.webp : l'éditeur de texte riche du message, avec une pièce jointe
+# - feature-planification.webp : la case « planifier l'envoi » cochée avec une date et une heure, et le bouton d'e-mail de test
+# - feature-suivi.webp : une newsletter envoyée, nombre de destinataires et nombre de vues
+# - feature-web.webp : la version web publiée de la newsletter, sur le site
+
+title: Newsletter
+description: Envoyez une lettre d'information aux groupes d'e-mails de votre site Dokos, planifiez l'envoi et suivez les ouvertures.
+icon: i-heroicons-envelope
+application: Newsletter
+theme: site-web-outils-numeriques
+author: Frappe Technologies et contributeurs
+navigation:
+  title: Newsletter
+  icon: i-heroicons-envelope
+  description: Envoi groupé d'e-mails à vos groupes de contacts.
+
+publisher: frappe
+licence: AGPLv3
+version: v5
+marketplace: newsletter
+related: [crm, ventes, blog-app, builder]
+
+hero:
+  title: Votre lettre d'information, <span class="text-primary">envoyée</span> depuis votre site Dokos.
+  description: Vous rédigez le message, vous choisissez les groupes de destinataires et vous envoyez, tout de suite ou à la date prévue. Les désinscriptions sont prises en compte à l'envoi suivant.
+  image: /modules/newsletter/hero.webp
+
+for_whom:
+  items:
+    - title: Vous copiez vos contacts dans un outil d'e-mailing externe
+      description: Vos contacts, prospects et clients sont déjà dans Dokos. Vous les importez dans un groupe d'e-mails et vous envoyez depuis le même site.
+      icon: i-heroicons-users
+    - title: Vous informez vos clients d'une nouveauté ou d'une fermeture
+      description: Vous écrivez le message dans l'éditeur, vous ajoutez le document en pièce jointe et vous envoyez au groupe concerné.
+      icon: i-heroicons-megaphone
+    - title: Vous préparez vos envois à l'avance
+      description: Vous fixez la date et l'heure. L'envoi part sans vous, et vous recevez un e-mail de test avant pour vérifier le rendu.
+      icon: i-heroicons-clock
+
+fit:
+  description: L'application ajoute le document <strong>Newsletter</strong> à votre site. Il s'adresse aux <strong>Groupes d'e-mails</strong> de Dodock, dans lesquels vous importez les adresses de vos contacts, de vos prospects ou de vos clients. Les envois passent par les comptes e-mail de votre site. Une personne qui se désinscrit est inscrite dans les Désinscriptions et n'est plus servie par les envois suivants.
+  image: /modules/newsletter/fit.webp
+  reads:
+    - Groupe d'e-mails et ses membres, importés depuis Contact, Prospect ou Client
+    - Compte e-mail de votre site pour l'expédition
+    - Désinscription (Email Unsubscribe), pour exclure les adresses retirées
+    - Campagne UTM, pour rattacher l'envoi à une campagne
+  adds:
+    - Le DocType « Newsletter », avec ses groupes de destinataires et ses pièces jointes
+    - Une page web par newsletter publiée
+    - La page /unsubscribe pour la désinscription
+  depends:
+    - Dodock
+
+features:
+  - title: Rédigez le message
+    description: Vous écrivez le message en texte riche, en Markdown ou en HTML. Vous précisez le nom et l'adresse de l'expéditeur, et vous ajoutez des pièces jointes. Un bouton recherche les liens cassés avant l'envoi.
+    image: /modules/newsletter/feature-redaction.webp
+    badge: Rédaction
+  - title: Choisissez les destinataires
+    description: Vous sélectionnez un ou plusieurs groupes d'e-mails. Les adresses désinscrites sont retirées automatiquement de la liste. Le lien de désinscription s'ajoute en bas du message si vous cochez l'option.
+    image: /modules/newsletter/fit.webp
+    badge: Destinataires
+  - title: Testez, puis envoyez ou planifiez
+    description: Vous envoyez d'abord un e-mail de test à votre adresse. Vous envoyez ensuite tout de suite, ou vous cochez « planifier l'envoi » avec une date et une heure. L'application alimente la file d'e-mails de votre site.
+    image: /modules/newsletter/feature-planification.webp
+    badge: Envoi
+  - title: Suivez l'envoi et publiez la version web
+    description: Une fois l'envoi parti, le document affiche le nombre de destinataires et le nombre de vues. Si vous publiez la newsletter, elle devient une page de votre site, et le message peut contenir le lien vers cette version web.
+    image: /modules/newsletter/feature-suivi.webp
+    badge: Suivi
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez « Newsletter » sur votre site. L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://github.com/frappe/newsletter</code> puis <code>bench --site votre-site install-app newsletter</code>."
+    - title: Préparez un groupe d'e-mails
+      description: Créez un Groupe d'e-mails et importez-y les adresses de vos contacts, prospects ou clients. Votre première newsletter s'adresse à ce groupe.
+  prerequisites:
+    - Un compte e-mail sortant configuré sur votre site
+
+faq:
+  items:
+    - label: D'où viennent les destinataires ?
+      content: Des Groupes d'e-mails de votre site. Vous y importez les adresses depuis vos Contacts, vos Prospects ou vos Clients, ou vous les ajoutez à la main.
+    - label: Que se passe-t-il quand une personne se désinscrit ?
+      content: Elle clique sur le lien de désinscription du message. Son adresse est enregistrée dans les Désinscriptions et retirée des envois suivants, pour cette newsletter ou pour tous les envois selon son choix.
+    - label: Puis-je voir qui a ouvert le message ?
+      content: Le document affiche le nombre total de destinataires et le nombre total de vues après l'envoi.
+    - label: Puis-je envoyer la même newsletter deux fois ?
+      content: Non. Une newsletter envoyée est marquée comme telle. Vous la dupliquez pour un nouvel envoi.
+
+bottom_cta:
+  title: Une question sur Newsletter ?
+  description: Dites-nous à qui vous écrivez.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline
