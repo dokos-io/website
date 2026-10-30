@@ -13,6 +13,14 @@ if (!page.value) {
     });
 }
 
+// Hero: the point the visitor hovers highlights the matching layer of HomeStack.
+const stackFocus = ref<"core" | "apps" | "access" | null>(null);
+const POINT_MARKS: Record<string, string> = {
+    core: "bg-dokos-500",
+    apps: "bg-white dark:bg-stone-900 bg-[radial-gradient(circle,#FF6B6B_3px,transparent_3.5px),radial-gradient(circle,#8C7AE6_3px,transparent_3.5px),radial-gradient(circle,#4AA3DF_3px,transparent_3.5px),radial-gradient(circle,#E0A43A_3px,transparent_3.5px)] bg-[length:10px_10px] bg-[position:2px_2px,9px_2px,2px_9px,9px_9px] bg-no-repeat",
+    access: "bg-accent",
+};
+
 const sorted_modules = computed(() => {
     return [...(page.value!.modules?.items ?? [])].sort((a: any, b: any) =>
         a.title.localeCompare(b.title)
@@ -47,8 +55,9 @@ useSeoMeta({
 
         <UPageHero
             :links="page.hero.links"
-            orientation="vertical"
-            class="relative z-[1] pb-0 sm:pb-0 md:pb-0"
+            :orientation="page.hero.stack ? 'horizontal' : 'vertical'"
+            class="relative z-[1]"
+            :class="page.hero.stack ? '' : 'pb-0 sm:pb-0 md:pb-0'"
         >
             <template #headline>
                 <UBadge
@@ -71,12 +80,37 @@ useSeoMeta({
             </template>
 
             <template #description>
-                <span v-html="page.hero.description" />
+                <!-- One line per layer of the stack; hovering a line highlights its layer. -->
+                <ul v-if="page.hero.points" class="grid gap-1 text-left">
+                    <li
+                        v-for="point in page.hero.points"
+                        :key="point.layer"
+                        class="grid grid-cols-[1.75rem_1fr] gap-3 -mx-3 px-3 py-2.5 rounded-lg transition-colors hover:bg-sand-200 dark:hover:bg-stone-800"
+                        @mouseenter="stackFocus = point.layer"
+                        @mouseleave="stackFocus = null"
+                    >
+                        <span
+                            class="mt-1 size-7 rounded-md border-[2.5px] border-dokos-500 dark:border-dokos-300"
+                            :class="POINT_MARKS[point.layer]"
+                            aria-hidden="true"
+                        />
+                        <span>
+                            <strong class="block text-lg text-highlighted">{{ point.title }}</strong>
+                            <span class="block text-base leading-snug mt-0.5">{{ point.description }}</span>
+                        </span>
+                    </li>
+                </ul>
+                <span v-else v-html="page.hero.description" />
             </template>
 
             <template #default>
+                <HomeStack
+                    v-if="page.hero.stack"
+                    :stack="page.hero.stack"
+                    :focus="stackFocus"
+                />
                 <AppImage
-                    v-if="page.hero.image"
+                    v-else-if="page.hero.image"
                     :src="'/home/' + page.hero.image"
                     class="w-full rounded-md"
                     loading="lazy"

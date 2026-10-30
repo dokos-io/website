@@ -12,8 +12,61 @@ hero:
     label: Version 5, sur Frappe et ERPNext v16
     icon: i-simple-icons-gitlab
   title: Dokos. Toute votre entreprise<br>dans un seul <span class="text-primary">logiciel libre</span>.
-  description: "Ventes, comptabilité, stocks, RH, projets, support : une seule base de données, une suite d'applications qui s'y branchent, et un accès pour vos équipes comme pour vos agents IA."
-  image: hero_dokos.webp
+  # Three lines, one per layer of the stack on the right (components/home/HomeStack.vue).
+  points:
+    - layer: core
+      title: Une seule base de données
+      description: Ventes, achats, stocks, comptabilité, production, projets et RH.
+    - layer: apps
+      title: Des applications qui s'y branchent
+      description: CRM, support, rapports, messagerie, site web… Vous installez celles qu'il vous faut.
+    - layer: access
+      title: Vos équipes et vos agents IA
+      description: Dans le navigateur ou par MCP, avec les mêmes droits et le même historique.
+  # The ecosystem drawn as a stack. Agents are never named by product: MCP only.
+  stack:
+    teams:
+      title: Vos équipes
+      note: dans le navigateur et sur mobile
+      to: /fr/modules/dokos
+    agents:
+      title: Vos agents IA
+      note: Accès MCP, avec l'agent de votre choix
+      to: /fr/ecosysteme/intelligence-artificielle
+    cli:
+      title: Dokos CLI
+      note: MCP local
+      to: /fr/modules/dokos-cli
+    shared: mêmes droits · même historique
+    apps_label: Applications
+    apps_note: chacune s'installe seule ou avec les autres
+    apps:
+      - { title: Frappe CRM, domain: sales, to: /fr/modules/crm }
+      - { title: Helpdesk, domain: collab, to: /fr/modules/support }
+      - { title: Insights, domain: finance, to: /fr/modules/insights }
+      - { title: Raven, domain: collab, to: /fr/modules/raven }
+      - { title: Builder, domain: web, to: /fr/modules/builder }
+      - { title: Suite, domain: collab, to: /fr/modules }
+      - { title: Wiki, domain: collab, to: /fr/modules/wiki }
+      - { title: Learning, domain: people, to: /fr/modules/learning }
+      - { title: Webshop, domain: web, to: /fr/modules/e-commerce }
+      - { title: Bank, domain: finance, to: /fr/modules/bank }
+      - { title: eTransactions, domain: finance, to: /fr/modules/etransactions }
+      - { title: Paiements, domain: finance, to: /fr/modules/paiements }
+      - { title: Telephony, domain: sales, to: /fr/modules/telephony }
+      - { title: Newsletter, domain: web, to: /fr/modules/newsletter }
+      - { title: Tribu, domain: people, to: /fr/modules/tribu }
+      - { title: Dokos AI, domain: ai, to: /fr/modules/dokos-ai }
+    core:
+      title: Dokos
+      note: Ventes · Achats · Stocks · Comptabilité · Production · Projets · RH
+      tags: [Caisse certifiée LNE, Facturation électronique]
+      to: /fr/modules/dokos
+    base:
+      title: Dodock · Frappe Framework · ERPNext
+      note: une base open source développée avec une communauté mondiale
+      tag: GPLv3
+      to: /fr/modules/dodock
   links:
     - label: Essayer Dokos
       to: https://cloud.dokos.io
