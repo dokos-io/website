@@ -1,0 +1,144 @@
+# Sources : README https://gitlab.com/dokos/tribu (branche v5, licence AGPL-3.0) ; faits transmis par Dokos ;
+# marketplace cloud.dokos.io, identifiant tribu. Aucune section doc.dokos.io dédiée à ce jour.
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : la liste des adhérents (Tribu Member) avec ses filtres
+# - fit.webp : une adhésion (Tribu Membership) et sa Facture de vente liée
+# - feature-adherents.webp : la fiche d'un adhérent avec son historique d'adhésions
+# - feature-types.webp : la liste des types d'adhésion (annuelle, mensuelle, tarif réduit)
+# - feature-inscription.webp : le formulaire web d'adhésion en ligne, étape de paiement
+# - feature-dons.webp : le formulaire web de don
+# - feature-rapprochement.webp : la facture d'une adhésion et son paiement rapproché en banque
+
+navigation:
+  title: Tribu
+  icon: i-heroicons-identification
+  description: Adhérents, cotisations et dons de votre association, avec inscription et paiement en ligne.
+
+title: Tribu
+icon: i-heroicons-identification
+description: Gérez les adhérents, les cotisations et les dons de votre association, avec inscription et paiement en ligne et facturation automatique.
+application: Tribu
+theme: vente-relation-client
+author: Dokos
+
+publisher: dokos
+licence: AGPLv3
+version: v5
+marketplace: tribu
+related: [reservations-de-ressources, paiements, comptabilite, bank]
+
+hero:
+  title: Vos adhérents et vos cotisations, <span class="text-primary">gérés dans Dokos</span>.
+  description: >-
+    Tribu enregistre vos adhérents, leurs adhésions et leurs dons. L'adhérent s'inscrit et paie en ligne,
+    et Tribu génère la facture dans votre comptabilité Dokos.
+
+for_whom:
+  items:
+    - title: Vous tenez la liste de vos adhérents dans un tableur
+      description: >-
+        Chaque adhérent a sa fiche, avec ses coordonnées et l'historique de ses adhésions. Vous importez et exportez la liste.
+      icon: i-heroicons-table-cells
+    - title: Les adhésions arrivent en ligne et vous les ressaisissez
+      description: >-
+        Le formulaire web crée la fiche adhérent, l'adhésion et la facture. Le paiement est encaissé dans le même parcours.
+      icon: i-heroicons-globe-alt
+    - title: Votre trésorier pointe les cotisations à la main
+      description: >-
+        Chaque adhésion a sa facture. Le paiement en ligne se rapproche en banque, et vous exportez la comptabilité.
+      icon: i-heroicons-calculator
+
+fit:
+  description: >-
+    Tribu s'installe sur votre site Dokos. Un type d'adhésion (<strong>Tribu Membership Type</strong>) est relié à un
+    <strong>Article</strong> du module Ventes, qui porte le prix et les comptes comptables. Quand un adhérent souscrit,
+    Tribu crée l'adhésion (<strong>Tribu Membership</strong>) et génère la <strong>Facture de vente</strong>.<br>
+    Le paiement en ligne passe par les passerelles de l'application Payments, et le rapprochement bancaire de Dokos
+    pointe l'encaissement. Les contacts, la facturation et le portail web sont ceux de votre site.
+  reads:
+    - Article
+    - Client et Contact
+    - Facture de vente et Écriture de paiement
+    - Transaction bancaire
+    - Passerelle de paiement
+  adds:
+    - Les documents Tribu Member, Tribu Membership, Tribu Membership Type et Tribu Settings
+    - Les formulaires web d'adhésion et de don
+    - Les pages Tribu
+  depends:
+    - Dokos (Ventes, Comptabilité)
+    - Payments pour le paiement en ligne
+
+features:
+  - title: Tenez vos fiches adhérents
+    description: >-
+      La fiche d'un adhérent porte ses informations personnelles, ses contacts professionnels ou personnels et l'historique
+      de ses adhésions. Vous filtrez et cherchez dans la liste, vous importez et exportez vos adhérents.
+    badge: Adhérents
+  - title: Définissez vos types d'adhésion
+    description: >-
+      Vous configurez plusieurs formules, par exemple annuelle, mensuelle ou à tarif réduit, chacune avec sa période de validité,
+      son tarif et son renouvellement. Nommer un type par saison, comme « Adhésion 2025-2026 », facilite le suivi.
+    badge: Types d'adhésion
+  - title: Ouvrez l'inscription en ligne
+    description: >-
+      L'adhérent remplit un formulaire web que vous personnalisez. Les données sont validées pendant la saisie, le paiement
+      s'effectue dans le même parcours, et la fiche adhérent est créée automatiquement. Le formulaire s'affiche sur mobile comme sur ordinateur.
+    badge: Inscription
+  - title: Recevez des dons
+    description: >-
+      Le module dons enregistre les contributions ponctuelles et suit les donateurs, avec les mêmes moyens de paiement que les adhésions.
+    badge: Dons
+  - title: Facturez et rapprochez automatiquement
+    description: >-
+      Chaque adhésion génère sa facture. Les comptes comptables se règlent sur les articles d'adhésion. Les paiements encaissés
+      sont suivis et rapprochés en banque, et vous exportez la comptabilité vers votre expert-comptable.
+    badge: Comptabilité
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: >-
+        Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Tribu sur votre site.
+        L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://gitlab.com/dokos/tribu</code> puis <code>bench --site votre-site install-app tribu</code> et <code>bench --site votre-site migrate</code>."
+    - title: Configurez une première adhésion
+      description: >-
+        Créez les articles d'adhésion dans le module Ventes, définissez vos types d'adhésion, configurez un moyen de paiement
+        et ses webhooks, puis testez une inscription complète avant d'ouvrir le formulaire.
+  prerequisites:
+    - Un site Dokos V5
+    - L'application Payments et un compte chez un prestataire de paiement
+
+faq:
+  items:
+    - label: Quels prestataires de paiement sont pris en charge ?
+      content: >-
+        HelloAsso, Stancer, Stripe, GoCardless et PayPal via Braintree.
+    - label: Tribu gère-t-il les dons ?
+      content: >-
+        Oui. Le module dons enregistre les contributions ponctuelles et suit les donateurs, avec les mêmes moyens de paiement que les adhésions.
+    - label: Comment la comptabilité est-elle tenue ?
+      content: >-
+        Chaque adhésion génère une Facture de vente. Les comptes comptables sont configurés sur les articles d'adhésion.
+        Le rapprochement bancaire et les exports comptables sont ceux de Dokos.
+    - label: Où sont hébergées les données de mes adhérents ?
+      content: >-
+        Sur votre site Dokos, sur Dokos Cloud ou sur votre propre serveur. Tribu est publié sous licence AGPLv3.
+
+bottom_cta:
+  title: Posez-nous vos questions sur Tribu.
+  description: Décrivez-nous votre association et vos formules d'adhésion, nous vous dirons comment les mettre en place.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

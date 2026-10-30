@@ -1,0 +1,72 @@
+navigation:
+  title: Frappe Drive
+  icon: i-heroicons-folder-open
+  description: File storage and sharing platform.
+
+title: Frappe Drive
+icon: i-heroicons-folder-open
+description: Store and share files from your Dokos site, with no third-party service.
+application: Frappe Drive
+theme: site-web-outils-numeriques
+logo:
+  light: /frappe/drive.svg
+  dark: /frappe/drive.svg
+
+hero:
+  title: Your files, <span class="text-primary">stored and shared</span> from Dokos.
+  description: Frappe Drive adds a file storage and sharing platform to Dokos, with no dependency on a third-party storage service.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+features:
+  - title: File storage
+    description: A storage space hosted on your Dokos site, alongside your other business data.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Storage
+      color: sky
+  - title: Sharing
+    description: Share files or folders with your team, without going through a third-party storage service.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Sharing
+      color: sky
+
+bottom_cta:
+  title: Want to move your files off a third-party service?
+  description: Available from the cloud.dokos.io marketplace. Describe your volumes and use cases, and we'll tell you whether Frappe Drive fits.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

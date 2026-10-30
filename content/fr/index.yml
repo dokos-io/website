@@ -1,229 +1,226 @@
-title: Dokos - Une Plateforme 100 % libre et éthique pour accompagner la réussite de votre entreprise
-description: LA plateforme 100% libre, éthique et puissante qui réunit tous vos besoins en un seul endroit.
+title: "Dokos, le logiciel de gestion open source pour toute l'entreprise"
+description: "Ventes, comptabilité, stocks, RH, projets, support : une seule base de données, une suite d'applications libres, et un accès pour vos équipes comme pour vos agents IA."
 navigation: false
+
+announcement:
+  label: Le module Certification Caisse de Dokos est certifié par le LNE.
+  cta: Voir les certifications
+  to: /fr/certifications
+
 hero:
-  title: LA plateforme 100% <span class="text-primary">libre, éthique et puissante</span> qui réunit tous vos besoins en un seul endroit.
-  description: L'alternative innovante pour les entreprises visionnaires.
-  image: hero_dokos.webp
   headline:
-    label: Une adaptation française d'ERPNext
-    to: https://erpnext.com
-    left_icon: i-flag-bl-4x3
-    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
-    target: _blank
+    label: Version 5, sur Frappe et ERPNext v16
+    icon: i-simple-icons-gitlab
+  title: Dokos. Toute votre entreprise<br>dans un seul <span class="text-primary">logiciel libre</span>.
+  # Three lines, one per layer of the stack on the right (components/home/HomeStack.vue).
+  points:
+    - layer: core
+      title: Une seule base de données
+      description: Ventes, achats, stocks, comptabilité, production, projets et RH.
+    - layer: apps
+      title: Des applications qui s'y branchent
+      description: CRM, support, rapports, messagerie, site web… Vous installez celles qu'il vous faut.
+    - layer: access
+      title: Vos équipes et vos agents IA
+      description: Dans le navigateur ou par MCP, avec les mêmes droits et le même historique.
+  # The ecosystem drawn as a stack. Agents are never named by product: MCP only.
+  stack:
+    teams:
+      title: Vos équipes
+      note: dans le navigateur et sur mobile
+      to: /fr/modules/dokos
+    agents:
+      title: Vos agents IA
+      note: Accès MCP, avec l'agent de votre choix
+      to: /fr/ecosysteme/intelligence-artificielle
+    cli:
+      title: Dokos CLI
+      note: MCP local
+      to: /fr/modules/dokos-cli
+    shared: mêmes droits · même historique
+    apps_label: Applications
+    apps_note: chacune s'installe seule ou avec les autres
+    apps:
+      - { title: Frappe CRM, domain: sales, to: /fr/modules/crm }
+      - { title: Helpdesk, domain: collab, to: /fr/modules/support }
+      - { title: Insights, domain: finance, to: /fr/modules/insights }
+      - { title: Raven, domain: collab, to: /fr/modules/raven }
+      - { title: Builder, domain: web, to: /fr/modules/builder }
+      - { title: Suite, domain: collab, to: /fr/modules }
+      - { title: Wiki, domain: collab, to: /fr/modules/wiki }
+      - { title: Learning, domain: people, to: /fr/modules/learning }
+      - { title: Webshop, domain: web, to: /fr/modules/e-commerce }
+      - { title: Bank, domain: finance, to: /fr/modules/bank }
+      - { title: eTransactions, domain: finance, to: /fr/modules/etransactions }
+      - { title: Paiements, domain: finance, to: /fr/modules/paiements }
+      - { title: Telephony, domain: sales, to: /fr/modules/telephony }
+      - { title: Newsletter, domain: web, to: /fr/modules/newsletter }
+      - { title: Tribu, domain: people, to: /fr/modules/tribu }
+      - { title: Dokos AI, domain: ai, to: /fr/modules/dokos-ai }
+    core:
+      title: Dokos
+      note: Ventes · Achats · Stocks · Comptabilité · Production · Projets · RH
+      tags: [Caisse certifiée LNE, Facturation électronique]
+      to: /fr/modules/dokos
+    base:
+      title: Dodock · Frappe Framework · ERPNext
+      note: une base open source développée avec une communauté mondiale
+      tag: GPLv3
+      to: /fr/modules/dodock
   links:
-    - label: Essayez Dokos
-      to: https://demo.dokos.cloud
-      size: xl
-      color: amber
-      icon: i-heroicons-play-circle-16-solid
-      trailing: false
+    - label: Essayer Dokos
+      to: https://cloud.dokos.io
       target: _blank
-    - label: Documentation
-      icon: i-ic-outline-library-books
       size: xl
-      color: gray
-      to: https://doc.dokos.io
-      target: _blank
-metrics:
-  items:
-    - title: + de 100 entreprises nous font confiance
-      description: Un logiciel puissant et complet qui remplace ou centralise  toutes vos applications quelque soit votre domaine d’activité
+      color: primary
       icon: i-heroicons-rocket-launch
-    - title: Un support sur mesure
-      description: Notre équipe est à votre écoute pour vous offrir un accompagnement personnalisé de qualité pour chacun de vos besoins
-      icon: i-heroicons-outline-ticket
-    - title: + de 300 membres
-      description: Une communauté d'entraide bienveillantes où l'on partage ses questions, ses expériences, ses idées.
-      icon: i-heroicons-outline-user-group
-sections:
-  - title: 'Un <span style=''color: #14b8a6''>logiciel d''entreprise</span> puissant'
-    description: <strong>Dokos est conçu pour répondre aux besoins des entreprises, de la PME à la multinationale.</strong><br><br> Découvrez une solution robuste et évolutive qui s’adapte parfaitement aux exigences croissantes de votre entreprise. Avec Dokos, vous accédez à un environnement qui centralise tous vos outils, vous permettant de gagner en efficacité, de simplifier vos processus et de mieux collaborer. Notre mission est de vous offrir une solution complète qui évolue avec votre entreprise.</br>
-    image: /home/workflow.png
-    image_bg_color: bg-teal-500
-    id: enterprise
-    align: right
-    features:
-      - name: Mode multisociété
-        description: Gérez plusieurs entreprises ou associations dans une seule interface. Ce service est inclus, sans frais supplémentaires, pour une gestion simplifiée.
-        icon: i-material-symbols-add-home-work-outline
-      - name: Workflows de validation
-        description: Automatisez vos processus de validation, connectez-vous en toute sécurité grâce au SSO, et utilisez un outil pensé pour les entreprises.
-        icon: i-octicon-workflow-16
-      - name: Editeur low-code
-        description: Personnalisez et créez de nouveaux processus facilement grâce à l’éditeur intégré, pour un logiciel qui s’adapte réellement à vos besoins.
-        icon: i-heroicons-code-bracket-square
-    links:
-      - label: Toutes les fonctionnaltés d'entreprise
-        to: https://doc.dokos.io/dodock
-        color: "teal"
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
-        target: _blank
-  - title: 'Une <span style=''color: #79C29B''>plateforme</span> qui grandit avec vous'
-    id: platform
-    description: <strong>Investissez dans un ERP qui accompagne toutes les phases de croissance de votre entreprise.</strong><br><br> Avec Dokos, vous choisissez une plateforme flexible et évolutive, conçue pour accompagner votre entreprise à chaque étape de sa croissance. Du sur-mesure à grande échelle, sans compromettre la stabilité, ni la sécurité.</br></br>
-    image: image/compte-de-resultat.png
-    image_bg_color: bg-teal-500
-    align: left
-    features:
-      - name: Robuste et scalable
-        description: Une base solide, capable de supporter les entreprises les plus exigeantes.
-        icon: i-iconoir-scale-frame-enlarge
-      - name: Entièrement personnalisable
-        description: Adaptez Dokos à vos besoins spécifiques grâce à une flexibilité inégalée.
-        icon: i-material-symbols-dashboard-customize-outline
-      - name: Des experts pour vous accompagner
-        description: Profitez de l’accompagnement de notre écosystème de partenaires et de l’expertise de notre équipe dédiée.
-        icon: i-material-symbols-contact-support-outline-rounded
-    links:
-      - label: Services
-        to: /fr/services
-        color: yellow
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
-      - label: Partenaires
-        to: /fr/partners
-        color: gray
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
-  - title: Gardez le <span class="text-primary">contrôle</span>
-    description: <strong>Soyez certain de ne pas être enfermé avec un éditeur ou un prestataire de service.</strong><br><br>Chez Dokos, vous avez toujours le contrôle de votre infrastructure et de vos données. Vous êtes libres de vos choix d’hébergement et de gestion, pour une indépendance totale.</br></br>
-    image: '/image/nuage-dashboard-dark.png'
-    image_bg_color: bg-teal-500 
-    id: control
-    align: right
-    features:
-      - name: Propriété des données
-        description: Vous êtes les seuls propriétaires de vos données. Nous vous fournissons tous les outils pour sauvegarder et exporter vos informations à tout moment.
-        icon: i-material-symbols-data-loss-prevention-outline
-      - name: Sécurité & Souveraineté
-        description: Développé en France et en Inde, Dokos est un logiciel sous licence libre, que vous pouvez héberger où vous le souhaitez, tout en bénéficiant de normes de sécurité de pointe.
-        icon: i-material-symbols-security-rounded
-      - name: SaaS ou auto-hébergement
-        description: Hébergez Dokos où bon vous semble et changez d’avis sans souci. Vos données peuvent être transférées facilement d’une infrastructure à l’autre.
-        icon: i-material-symbols-cloud-sync-outline-rounded
-    links:
-      - label: Dokos Cloud
-        to: https://dokos.cloud
-        color: green
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
-      - label: Documentation
-        to: https://doc.dokos.io/dodock
-        color: gray
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
-  - title: Un accompagnement  <span class="text-emerald-600">personnalisé</span>
-    description: <strong>Profitez d'un support sur mesure et entièrement adapté à vos besoins.</strong><br><br>Parce que chaque entreprise est unique, notre accompagnement s’adapte à vos spécificités et priorités. Nous mettons un point d’honneur à créer des solutions sur mesure, avec un coût juste et maîtrisé.</br></br>
-    image: image/dokos-communaute.webp
-    id: control
-    image_bg_color: bg-teal-500
-    align: left
-    features:
-      - name: Un partenariat de confiance
-        description: Nous nous adaptons à vous pour un accompagnement qui vous ressemble, garantissant efficacité et coûts maîtrisés.
-        icon: i-material-symbols-data-loss-prevention-outline
-      - name: Autonomie assurée
-        description: 'Vous choisissez votre niveau d’autonomie : formation, configuration, ou accompagnement complet, c’est vous qui décidez.'
-        icon: i-material-symbols-security-rounded
-      - name: Une communauté engagée
-        description: Rejoignez une communauté active et bienveillante, toujours prête à partager son expertise et à vous accompagner.
-        icon: i-material-symbols-cloud-sync-outline-rounded
-    links:
-      - label: Dokos Cloud
-        to: https://dokos.cloud
-        color: teal
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
-      - label: Documentation
-        to: https://doc.dokos.io/dodock
-        color: gray
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
-  - title: Une <span class="text-primary">version française</span> d'ERPNext
-    description: <strong>Dokos, une adaptation locale pensée pour les entreprises françaises et européennes.</strong><br><br>Dokos est un <i>fork</i> d'ERPNext, spécialement conçu pour répondre aux besoins des entreprises européennes. Il combine les fonctionnalités avancées d’ERPNext avec toutes les conditions de conformité à mettre en place pour les utilisateurs français.
-    image: /home/dokos-dashboard.png
-    image_bg_color: bg-teal-500
-    id: enterprise
-    align: right
-    features:
-      - name: Une adaptation locale
-        description: Des fonctionnalités adaptées aux spécificités locales, avec une interface pensée pour répondre aux retours de nos utilisateurs.
-        icon: i-circle-flags-european-union
-      - name: Une compatibilité réglementaire
-        description: Tous les modules impactant la réglementation sont conçus pour apporter les conditions nécessaires pour être en conformité avec les lois françaises.
-        icon: i-octicon-law
-      - name: Une liberté éditoriale
-        description: Dokos évolue en synergie avec ERPNext, intégrant toutes les avancées de la plateforme Frappe pour les adapter, si nécessaire, aux besoins spécifiques des utilisateurs européens, tout en proposant des fonctionnalités exclusives.
-        icon: i-material-symbols-editor-choice-outline-rounded
-  - title: La <span class="text-primary">force</span> de l'open-source
-    description: <strong>Dokos est et restera un logiciel libre et open-source.</strong><br><br>Avec Dokos, vous avez la liberté totale de choisir votre fournisseur, sans dépendance envers un éditeur spécifique. Utilisez un ERP libre et évolutif, sans frais de licence, avec des options de service si vous avez besoin d’accompagnement.
-    image: image/dokos-gitlab.webp
-    image_bg_color: bg-teal-500
-    id: opensource
-    align: left
-    features:
-      - name: Libre choix du fournisseur
-        description: 'Aucun verrouillage : vous êtes libres de choisir ou changer d’intégrateur à tout moment.'
-        icon: i-heroicons-lock-closed
-      - name: Aucun frais de licence
-        description: Dokos est libre d’utilisation, sans coûts cachés. Nous offrons des services pour vous aider à en tirer le meilleur parti.
-        icon: i-heroicons-credit-card
-      - name: Dérivé de Frappe/ERPNext
-        description: Dokos s’appuie sur l’écosystème robuste de Frappe et ERPNext, des outils open-source plébiscités par des milliers d’utilisateurs dans le monde.
-        icon: i-simple-icons-frappe
-applications:
-  title: Compatible avec l'écosystème <span class="text-primary">Frappe</span>
-  description: Dokos est développé pour rester compatible avec les applications créées par Frappe Technologies et la communauté Frappe/ERPNext.
-  links:
-    - label: Voir toutes les applications Frappe
-      icon: i-simple-icons-frappe
+      trailing: false
+    - label: Découvrir l'écosystème
+      to: /fr/modules
       size: xl
-      color: black
-      to: https://frappe.io
-      target: _blank
+      color: neutral
+      variant: outline
+      icon: i-heroicons-squares-2x2
+
+# Product facts, verifiable on /fr/certifications and in the journal.
+proof:
   items:
-    - title: Frappe Insights
-      description: Un outil de BI
-      icon: insights.svg
-      to: https://frappe.io/products/insights
-    - title: Frappe CRM
-      description: Un outil de CRM
-      icon: crm.svg
-      to: https://frappe.io/products/crm
-    - title: Frappe Helpdesk
-      description: Un outil de support
-      icon: helpdesk.png
-      to: https://frappedesk.com
-    - title: Frappe Builder
-      description: Un outil de création de sites web
-      icon: builder.svg
-      to: https://frappe.io/products/builder
-    - title: Frappe Wiki
-      description: Un wiki d'entreprise
-      icon: wiki.png
-      to: https://github.com/frappe/wiki
-    - title: Frappe Print Designer
-      description: Un outil de création de formats d'impression
-      icon: print-designer.svg
-      to: https://github.com/frappe/print_designer
+    - label: Systèmes de caisse
+      value: Certifié LNE
+      note: Avec le module Certification Caisse et une licence délivrée par Dokos SAS.
+    - label: Facturation électronique
+      value: Réception et PA
+      note: Lecture des factures CII, Factur-X et UBL, raccordement à une plateforme agréée. Émission en cours.
+    - label: Agents IA
+      value: Dokos AI · MCP
+      note: Un assistant intégré à vos données, et un serveur MCP pour vos propres agents.
+
+# The company behind the project, in one sentence.
+pillars:
+  title: Éditeur open source, experts Frappe et ERPNext,<br>nous bâtissons et garantissons vos applications métier.
+  description: Dokos SAS, à Nancy, est l'équipe qui écrit, adapte et exploite Dokos.
+  items:
+    - title: Éditeur open source
+      description: Nous maintenons Dodock, Dokos et une douzaine d'applications, publiés sous licence GPLv3 sur notre GitLab.
+      icon: i-heroicons-code-bracket-square
+      to: /fr/editeur
+    - title: Experts Frappe et ERPNext
+      description: Nous lisons et portons chaque version de Frappe et d'ERPNext, et nous exploitons aussi des installations standard.
+      icon: i-simple-icons-frappe
+      to: /fr/exploitation/frappe-erpnext
+    - title: Nous bâtissons et garantissons vos applications métier
+      description: Nos ingénieurs construisent vos applications sur cette base, puis les exploitent sous contrat, avec des délais écrits.
+      icon: i-heroicons-wrench-screwdriver
+      to: /fr/ingenierie
+
+sections:
+  - title: Une seule base de données pour toute l'entreprise
+    description: <strong>Un devis accepté devient une commande, une facture, une écriture comptable et un paiement, sans ressaisie.</strong><br><br>Chaque document est lié à ceux qui le précèdent et à ceux qui le suivent. Une recherche retrouve un client, ses commandes, ses tickets et ses paiements. Les droits sont définis une fois, par rôle, et s'appliquent partout.
+    image: /image/compte-de-resultat.png
+    align: right
+    features:
+      - name: Tout est lié
+        description: Du prospect à l'écriture comptable, chaque document garde la trace de son origine.
+        icon: i-heroicons-link
+      - name: Une seule saisie
+        description: Un article, un client ou un tarif n'existe qu'une fois et sert à tous les modules.
+        icon: i-heroicons-pencil-square
+      - name: Des droits par rôle
+        description: Les permissions s'appliquent aux écrans, aux rapports, à l'API et aux agents.
+        icon: i-heroicons-shield-check
+    links:
+      - label: Voir l'écosystème
+        to: /fr/modules
+        color: primary
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+  - title: Une suite d'applications qui se branchent dessus
+    description: >-
+      <strong>Les modules d'ERPNext, les applications de Frappe et celles que nous éditons partagent la même base.</strong><br><br>CRM, support, décisionnel, site web, documents, messagerie d'équipe : chaque application s'installe en un clic depuis la marketplace de Dokos Cloud et lit les mêmes clients, articles et factures que les autres.
+    image: /image/dokos-communaute.webp
+    align: left
+    features:
+      - name: Modules ERPNext
+        description: Ventes, achats, stocks, comptabilité, production, projets, qualité, ressources humaines.
+        icon: i-heroicons-rectangle-group
+      - name: Applications Frappe
+        description: CRM, Helpdesk, Insights, Builder, Drive, Wiki, Print Designer, Learning, Newsletter.
+        icon: i-simple-icons-frappe
+      - name: Applications Dokos
+        description: Banking, Bookings, eTransactions, OCR, Construction, Hiboutik, WooCommerce, Tribu, Dokos AI.
+        icon: i-heroicons-puzzle-piece
+    links:
+      - label: Toutes les applications
+        to: /fr/modules
+        color: primary
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+  - title: Le harnais de vos équipes et de vos agents IA
+    description: <strong>Une personne ou un agent agit sur les mêmes données, avec les mêmes droits.</strong><br><br>Dokos AI répond à partir de vos documents et demande confirmation avant d'écrire. Le serveur MCP de Dokos CLI connecte Claude Code et d'autres agents à votre site. Chaque action, humaine ou non, apparaît dans l'historique du document.
+    image: /image/nuage-dashboard-dark.png
+    align: right
+    features:
+      - name: Dokos AI
+        description: Un assistant qui lit vos devis, factures, tickets et stocks, et attend votre accord avant toute écriture.
+        icon: i-heroicons-sparkles
+      - name: Dokos CLI et serveur MCP
+        description: Les mêmes lectures et écritures depuis un terminal ou depuis l'agent de votre choix.
+        icon: i-heroicons-command-line
+      - name: API REST
+        description: Chaque document, chaque rapport et chaque droit sont accessibles par l'API, pour vos propres outils.
+        icon: i-heroicons-code-bracket
+    links:
+      - label: IA & agents
+        to: /fr/ecosysteme/intelligence-artificielle
+        color: primary
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+modules:
+  title: Par domaine métier
+  description: Vingt-sept applications et modules, regroupés en sept domaines. Chacun s'installe seul ou avec les autres.
+  links:
+    - label: Voir tout l'écosystème
+      to: /fr/modules
+      color: neutral
+      variant: outline
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      size: md
+  items:
+    - title: Vente & relation client
+      description: CRM, ventes, e-commerce, réservations, Construction, WooCommerce, Hiboutik, Tribu.
+      icon: i-heroicons-shopping-cart
+      to: /fr/ecosysteme/vente-relation-client
+    - title: Finance & comptabilité
+      description: Comptabilité, Banking, paiements, eTransactions.
+      icon: i-heroicons-banknotes
+      to: /fr/ecosysteme/finance-comptabilite
+    - title: Achats, stocks & production
+      description: Achats, stocks, production, qualité.
+      icon: i-heroicons-cube
+      to: /fr/ecosysteme/achats-stocks-production
+    - title: Projets & ressources humaines
+      description: Projets, ressources humaines, formation.
+      icon: i-heroicons-user-group
+      to: /fr/ecosysteme/projets-ressources-humaines
+    - title: Support & collaboration
+      description: Helpdesk, Raven, Wiki, téléphonie.
+      icon: i-heroicons-chat-bubble-left-right
+      to: /fr/ecosysteme/support-collaboration
+    - title: Site web & outils numériques
+      description: Builder, Insights, Drive, Print Designer, OCR, Newsletter, Blog, intégrations.
+      icon: i-heroicons-globe-alt
+      to: /fr/ecosysteme/site-web-outils-numeriques
+    - title: IA & agents
+      description: Dokos AI, Dokos CLI et son serveur MCP.
+      icon: i-heroicons-cpu-chip
+      to: /fr/ecosysteme/intelligence-artificielle
+
 integrations:
-  title: Nous simplifions votre quotidien avec les intégrations
+  title: Connecté à vos autres outils
   icons:
     - i-logos-woocommerce-icon
     - i-logos-stripe
@@ -237,89 +234,17 @@ integrations:
     - i-cib-nextcloud
   images:
     - /home/gocardless.png
-modules:
-  title: La boîte à outils complète pour <span class="text-primary">tous vos besoins</span>
-  description: Transformez votre gestion avec Dokos. Plus de 15 modules essentiels pour optimiser votre entreprise ou associations, quel que soit le secteur.
-  links:
-    - label: Voir tous les modules
-      to: "/modules"
-      color: amber
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-      size: md
-      variant: solid
-  items:
-    - title: CRM
-      description: Gestion de la prospection et de l'avant-vente.
-      icon: i-carbon-chart-relationship
-      to: /fr/modules/crm
-    - title: Ventes
-      description: Gestion des flux commerciaux et de la facturation.
-      icon: i-ep-sell
-      to: /fr/modules/ventes
-    - title: Achats
-      description: Gestion des flux d'achats et d'approvisionnements.
-      icon: i-icon-park-outline-buy
-      to: /fr/modules/achats
-    - title: Comptabilité
-      description: Saisie de la comptabilité et finances.
-      icon: i-uil-balance-scale
-      to: /fr/modules/comptabilite
-    - title: Projets
-      description: Organisation, planification et suivi de projets.
-      icon: i-eos-icons-project-outlined
-      to: /fr/modules/projets
-    - title: Stocks
-      description: Suivi de vos mouvements, valorisations de stocks et de votre chaîne d'approvisionnement.
-      icon: i-vaadin-stock
-      to: /fr/modules/stocks
-    - title: Production
-      description: Planification et suivi de la production manufacturière.
-      icon: i-fluent-manufacturer-24-regular
-      to: /fr/modules/production
-    - title: Qualité
-      description: Création de processus et suivi de la qualité.
-      icon: i-carbon-rule-data-quality
-      to: /fr/modules/qualite
-    - title: Support
-      description: Gestion de support client moderne.
-      icon: i-ri-customer-service-2-line
-      to: /fr/modules/support
-    - title: Réservations de ressources
-      description: Création de contrats, génération d'abonnements, crédits de réservation et événements
-      icon: i-material-symbols-location-on-outline-rounded
-      to: /fr/modules/reservations-de-ressources
-    - title: Ressources Humaines
-      description: Gestion des congés, notes de frais, recrutement, quarts et présence, performance
-      icon: i-mdi-human-capacity-increase
-      to: /fr/modules/ressources-humaines
-    - title: Portail web & e-commerce
-      description: Vente de produits/services, réservations de ressources en ligne et portail client/fournisseur.
-      icon: i-gg-website
-      to: /fr/modules/e-commerce
-    - title: OCR
-      description: Extraction des données de factures fournisseur avec Amazon Textract.
-      icon: i-mdi-ocr
-      to: /fr/modules/ocr
-    - title: Paiements
-      description: Collecte de paiements en ligne via carte bancaire, prélèvement SEPA, Paypal et plus encore...
-      icon: i-ic-twotone-payments
-      to: /fr/modules/paiements
-    - title: Intégrations
-      description: Sauvegarde externalisées, services Google, sites e-commerce, connecteurs no-code.
-      icon: i-mdi-connection
-      to: /fr/modules/integrations
+
 cta:
-  title: Et si vous démarriez avec Dokos ?
-  description: Choisir Dokos, c'est faire le choix d'un logiciel français, puissant, libre et adapté à chacun de vos besoins.
+  title: Dites-nous comment travaille votre entreprise
+  description: Un échange de trente minutes suffit pour savoir quels modules et quelles applications vous concernent, et par où commencer.
   links:
-    - label: Essayez Dokos maintenant
+    - label: Nous écrire
       size: xl
-      color: amber
-      to: https://cloud.dokos.io/nuage/
-      target: _blank
-    - label: Documentation
+      color: primary
+      to: /fr/contact
+    - label: Voir les tarifs
       size: xl
-      color: gray
-      to: https://doc.dokos.io
-      target: _blank
+      color: neutral
+      variant: outline
+      to: /fr/tarifs

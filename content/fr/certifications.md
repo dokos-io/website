@@ -3,15 +3,34 @@ toc: true
 title: Certifications de Dokos et ses modules
 ---
 
-## Certification du système d'encaissement Dokos
+## Certification du système d'encaissement
 
-Les fonctionnalités d'encaissement sont en cours de certification.
+Le module **Certification Caisse** de Dokos est certifié par le LNE (Laboratoire national de métrologie et d'essais). Le certificat atteste que le système de caisse respecte les conditions d'inaltérabilité, de sécurisation, de conservation et d'archivage des données prévues à l'article 286 du code général des impôts, selon le référentiel de certification des systèmes de caisse.
 
-Plus d'informations ici : [Blog - Dokos et la certification des logiciels d'encaissement](/blog/2025/dokos-se-certifie-lne)
+### Ce qu'il faut pour encaisser avec un système certifié
+
+Votre site Dokos est couvert par la certification quand deux conditions sont réunies.
+
+1. **Le module Certification Caisse est installé sur le site.** Il inscrit chaque vente, paiement, annulation et impression dans un journal signé, et il produit les archives fiscales que vous conservez.
+2. **Une licence d'utilisation délivrée par Dokos SAS est importée dans le module.** Vous la demandez en [nous écrivant](/fr/contact). Sans licence active, le module ne signe pas le journal.
+
+### Pourquoi la licence est obligatoire
+
+La licence apporte trois éléments que la certification exige.
+
+- **Une clé de signature propre à votre société.** La licence contient une paire de clés générée pour vous. Chaque enregistrement du journal est signé avec la clé privée. La clé publique permet à un contrôleur de vérifier vos archives fiscales.
+- **Une preuve conservée hors de votre serveur.** Dokos est un logiciel libre et vous administrez votre base de données. Une signature stockée sur votre seul serveur ne prouve pas que le journal n'a pas été recalculé après coup. Avec la licence, votre site transmet régulièrement au journal externe de Dokos SAS un échantillon de ses dernières signatures, le compteur de chaque journal et l'empreinte du logiciel installé. Un contrôleur peut ensuite vérifier qu'une signature figurait dans ce journal à la date indiquée.
+- **Le lien avec l'éditeur certifié.** Le certificat est délivré à Dokos SAS pour ce module. La licence identifie la société qui encaisse et la rattache à l'éditeur qui répond de la certification.
+
+## Facturation électronique
+
+Dokos lit les factures électroniques aux formats CII, Factur-X et UBL et se raccorde à une plateforme agréée (PA) pour la réception. L'émission est en cours de développement. Voir [eTransactions](/fr/modules/etransactions).
+
+Plus d'informations sur la certification : [Blog - Dokos et la certification des logiciels d'encaissement](/blog/2025/dokos-se-certifie-lne)
 
 ### Empreintes des versions certifiées
 
-#### v5 (Attention : en cours de certification) &middot; `ec8c1e790408fbeca08ecc9c9c7a3c20d93cb1488a026bb1b82bb36bf08845c0`
+#### v5 (version certifiée) &middot; `ec8c1e790408fbeca08ecc9c9c7a3c20d93cb1488a026bb1b82bb36bf08845c0`
 
 <details><summary>Voir le manifeste d'intégrité</summary>
 

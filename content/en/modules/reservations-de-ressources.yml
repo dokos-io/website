@@ -1,0 +1,99 @@
+navigation:
+  title: Resource bookings
+  icon: i-material-symbols-location-on-outline-rounded
+  description: Contract creation, subscription generation, booking credits, and events.
+title: Resource bookings
+icon: i-material-symbols-location-on-outline-rounded
+description: Manage and optimize the use of your resources with ease.
+application: Bookings
+theme: vente-relation-client
+author: Dokos & Contributors
+hero:
+  title: Simplify <span class="text-primary">resource management</span> with Dokos
+  description: Manage your spaces and equipment smoothly with the Dokos resource booking module
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: /en
+    right_icon: i-heroicons-arrow-right-20-solid
+features:
+  - title: Book in a few clicks
+    description: The Dokos resource booking module lets your users easily book meeting rooms, machines, or equipment. <br><br>Get the most out of your resources and give your users full autonomy.</br>
+    image: image/reservation-ressource/article-reservable-site-web.png
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: Booking
+      color: sky
+  - title: A solution for every need
+    description: Whether you run a coworking space, a third place, or an organization managing several resources, Dokos adapts to your needs with configurable, scalable features. Offer subscriptions, manage one-off booking tickets, and keep an overview of all your resources through a simple, intuitive interface.
+    video: /image/reservation-ressource/reservations-de-ressources.mp4
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Booking
+      color: sky
+bottom_section:
+  title: 'Key features:'
+  cards:
+    - title: Online room booking
+      description: Offer an intuitive system so your teams or your customers can book spaces suited to their needs.
+      icon: i-bi-person-workspace
+      class: col-span-4 row-span-3
+    - title: Equipment management
+      description: Simplify booking machines or specific equipment with transparent tracking.
+      icon: i-material-symbols-precision-manufacturing-outline-rounded
+      class: col-span-4 row-span-3
+    - title: Google Calendar integration
+      description: Sync your booking calendars for full real-time visibility.
+      icon: i-simple-icons-googlecalendar
+      class: col-span-4 row-span-3
+    - title: Custom user portal
+      description: Every user gets a dedicated space to manage their bookings, view invoices, or update their information.
+      icon: i-icon-park-outline-locking-web
+      class: col-span-4 row-span-3
+    - title: Subscription management
+      description: Offer your users the option to subscribe. Simplify setting up recurring events.
+      icon: i-tabler-file-rss
+      class: col-span-4 row-span-3
+    - title: Multi-site management
+      description: Centralize the management of several third places while keeping an overview and the flexibility each location needs.
+      icon: i-tabler-map-pins
+      class: col-span-4 row-span-3
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /en/features/reservations-de-ressources
+bottom_cta:
+  title: Ready to optimize how you manage your resources?
+  description: From nonprofits and coworking spaces to more traditional organizations, teams use Dokos to manage their resources efficiently and offer a better experience to their users.
+  class: bg-amber-600/10 dark:bg-amber-800/10
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

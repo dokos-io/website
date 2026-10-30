@@ -1,0 +1,104 @@
+title: "Optimisez votre production avec Dokos"
+description: "Le logiciel de gestion libre et open-source conçu pour les industries"
+
+hero:
+  title: "Optimisez votre production avec Dokos"
+  description: "Le logiciel de gestion libre et open-source conçu pour les industries"
+  align: center
+  headline:
+    label: "Une adaptation française d'ERPNext"
+    to: https://frappe.io
+    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
+    target: _blank
+    color: sky
+  links:
+    - label: Commencez avce Dokos
+      to: https://cloud.dokos.io
+      size: xl
+      color: amber
+      icon: i-heroicons-rocket-launch
+      trailing: false
+      target: _blank
+    - label: Documentation
+      icon: i-heroicons-arrow-right
+      trailing: true
+      size: xl
+      color: gray
+      to: https://doc.dokos.io
+      target: _blank
+
+colored_section:
+  title: "Une solution complète et flexible pour les entreprises de production"
+  description: "Que vous soyez dans l'industrie, l'artisanat, l'agroalimentaire ou la fabrication, Dokos est le logiciel de gestion d'entreprise qui répond à vos besoins. Avec ses fonctionnalités spécialement conçues pour les processus de production, Dokos vous aide à planifier, gérer et optimiser vos opérations, tout en assurant une visibilité en temps réel sur vos stocks, coûts et marges."
+  video: "/image/production/tableau-de-bord-production.mp4"
+  align: left
+  links:
+    - label: "Optimisez votre production"
+      to: https://cloud.dokos.io
+      size: xl
+      color: amber
+      icon: i-heroicons-rocket-launch
+      trailing: false
+      target: _blank
+    - label: Documentation
+      icon: i-heroicons-arrow-right
+      trailing: true
+      size: xl
+      color: gray
+      to: https://doc.dokos.io
+      target: _blank
+
+
+sections:
+  - title: "Gérez vos ordres de fabrication"
+    description: "Créez et gérez facilement vos ordres de fabrication. Planifiez la production, répartissez les tâches et suivez chaque étape du processus de production."
+    image: "image/production/industrie_ordre-de-fabrication.webp"
+    image_bg_color: "bg-teal-500"
+    align: right
+  - title: "Optimisez vos stocks"
+    description: "Synchronisez vos stocks en temps réel avec les mouvements de production. Assurez-vous d’avoir les matériaux nécessaires à chaque étape et évitez les ruptures de stock."
+    image: "image/production/ecriture-de-stock.webp"
+    image_bg_color: "bg-teal-500"
+    align: left
+  - title: "Contrôlez vos coûts et marges"
+    description: "Enregistrez l’ensemble de vos coûts liés à la production et suivez vos marges grâce à des tableaux de bord intuitifs. Prenez des décisions éclairées pour améliorer votre rentabilité."
+    image: "image/production/production-marge.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+  - title: "Optimisez votre plannification"
+    description: "Grâce à une gestion avancée des capacités de production, ajustez vos opérations en fonction des commandes et des demandes en temps réel, et maintenez vos délais de livraison."
+    image: "image/production/tableau-de-bord-production-image-1800.svg"
+    image_bg_color: "bg-teal-500"
+    align: left
+
+carousel: 
+  - title: "Création de nomenclatures (BOM)"
+    description: "Définissez précisément toutes les opérations et matériaux nécessaires à la production de vos produits."
+  - title: "Tableaux de bord de production "
+    description: "Visualisez l’ensemble de vos opérations grâce à des rapports détaillés et des vues en temps réel."
+  - title: "Gestion des coûts"
+    description: "Suivez l’évolution des coûts de production pour chaque produit et optimisez vos processus."
+  - title: "Open Source & sans frais de licence"
+    description: "Dokos est toutes open source, vous n'avez donc pas à payer de frais de licence. Libérez votre budget pour investir dans les personnalisations et les services qui comptent vraiment pour vous."  
+  - title: "Flexibilité totale"
+    description: "Installez Dokos sur vos propres serveurs ou faites appel à nos solutions cloud pour plus de simplicité. Vous bénéficiez d'une indépendance complète vis-à-vis des éditeurs de logiciels propriétaires."
+
+
+cta:
+  title: "Pilotez votre production avec Dokos"
+  description: "Découvrez la puissance de Dokos dès aujourd'hui et commencez à gérer votre production avec plus d'efficacité."
+  links:
+    - label: Commencez avec Dokos
+      to: https://cloud.dokos.io
+      size: xl
+      color: orange
+      icon: i-heroicons-rocket-launch
+      trailing: false
+      target: _blank
+    - label: Documentation
+      icon: i-heroicons-arrow-right
+      trailing: true
+      size: xl
+      color: gray
+      to: https://doc.dokos.io
+      target: _blank

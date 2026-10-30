@@ -1,0 +1,168 @@
+# Sources : gitlab.com/dokos/dodock (description, LICENSE MIT), doc.dokos.io/v5/dodock (présentation),
+# doc.dokos.io/v5/dodock/developpeurs (api, api/rest_api, safe-exec, property-setters),
+# doc.dokos.io/v5/dodock/fonctionnalites (workflows, utilisateurs, notifications, impression, webhooks, nommage),
+# doc.dokos.io/v5/dodock/automatisations (déclencheurs, actions, file d'attente),
+# doc.dokos.io/v5/dodock/interface/composants_ui, doc.dokos.io/v5/dodock/rapports/rapports-prepares,
+# doc.dokos.io/v5/dodock/configuration/pappers, doc.dokos.io/v5/dodock/personnalisation.
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : la liste des types de document (/app/doctype) avec un DocType personnalisé ouvert
+# - fit.webp : la fiche d'un DocType (/app/doctype/Sales Invoice) avec ses champs et ses autorisations
+# - feature-doctype.webp : le formulaire Personnaliser (/app/customize-form) sur un type de document
+# - feature-api.webp : la section Accès API d'un utilisateur (/app/user) et la réponse JSON de /api/resource
+# - feature-automatisations.webp : un flux d'automatisation avec son déclencheur et ses actions
+# - feature-scripts.webp : un script serveur (/app/server-script) et un format d'impression (/app/print-format)
+# - feature-taches.webp : la file des tâches de fond (/app/rq-job) et les rapports préparés (/app/prepared-report)
+
+navigation:
+  title: Dodock
+  icon: i-heroicons-code-bracket
+  description: Le cadriciel sous Dokos.
+
+title: Dodock
+description: Le cadriciel libre qui porte Dokos, dérivé de Frappe Framework.
+icon: i-heroicons-code-bracket
+application: Dodock
+theme: base
+author: Frappe Technologies, Dokos & Contributeurs
+logo:
+  light: /frappe/dodock_logo.svg
+  dark: /frappe/dodock_logo.svg
+
+publisher: dokos
+licence: MIT
+version: v5
+marketplace: frappe
+docs: https://doc.dokos.io/v5/dodock
+related: [dokos, dokos-cli, dokos-ai, insights]
+
+hero:
+  title: Vous définissez un type de document, Dodock crée <span class="text-primary">le formulaire, la liste et l'API</span>.
+  description: Dodock est le cadriciel sous Dokos. C'est un fork de Frappe Framework, publié sous licence MIT, que nous maintenons. Il fournit les documents, les autorisations, les flux de travail et l'API REST que toutes les applications de l'écosystème utilisent.
+
+for_whom:
+  items:
+    - title: Vous développez une application pour votre site
+      description: Vous déclarez vos types de document en Python et en JSON. Dodock génère le formulaire, la liste, les autorisations et les points de terminaison REST.
+      icon: i-heroicons-command-line
+    - title: Vous administrez un site et vous ajoutez un champ
+      description: Depuis Personnaliser le formulaire, vous ajoutez un champ, une règle de nommage ou une notification sans écrire de code.
+      icon: i-heroicons-adjustments-horizontal
+    - title: Vous branchez un outil externe
+      description: Vous créez une clé d'API pour un utilisateur et vous appelez /api/resource. Un webhook pousse chaque document validé vers votre outil.
+      icon: i-heroicons-arrows-right-left
+
+fit:
+  description: >-
+    Dodock est la couche sous votre site. Dokos et chaque application de la marketplace sont des applications
+    Dodock : leurs documents, leurs rôles et leurs tâches de fond passent par lui. Quand vous écrivez une
+    application pour votre site, elle s'installe au même niveau que Dokos et lit ses documents par la même API.
+  image: /modules/dodock/fit.webp
+  reads:
+    - Tous les types de document de Dokos et des applications installées
+    - Utilisateur, Rôle, Profil de rôle et Autorisation utilisateur
+  adds:
+    - Le bureau, les espaces de travail, les listes, les calendriers et les rapports
+    - Les types de document (DocType), les champs personnalisés et les Property Setters
+    - Les flux de travail, les notifications, les règles de nommage et les formats d'impression
+    - L'API REST, les webhooks, l'authentification par clé d'API et OAuth/OpenID
+    - Le gestionnaire de tâches de fond, les rapports préparés et le moteur d'automatisations (bêta)
+    - La bibliothèque de composants Vue.js @framework/ui
+  depends: []
+
+features:
+  - title: Un type de document, et tout ce qui va avec
+    description: >-
+      Vous déclarez un DocType avec ses champs, ses liens vers d'autres documents et ses autorisations par
+      rôle. Dodock crée la table, le formulaire, la liste avec ses filtres, la vue calendrier et la vue
+      rapport. Un administrateur ajoute un champ depuis Personnaliser le formulaire ; les Property Setters
+      conservent ces ajustements et se gèrent aussi en code dans votre application.
+    badge: DocTypes
+  - title: Une API REST et des webhooks pour chaque document
+    description: >-
+      Chaque DocType expose <code>/api/resource/&lt;DocType&gt;</code> pour lister avec champs et filtres,
+      lire, créer, modifier et supprimer. Une méthode Python décorée en liste blanche se publie sur
+      <code>/api/method/&lt;chemin&gt;</code>. Vous vous authentifiez par session ou par l'en-tête
+      <code>Authorization: token clé:secret</code>, généré sur la fiche utilisateur. Un webhook envoie le
+      document à une URL externe à l'événement choisi. Les API Document, Base de données et Query Builder
+      servent côté serveur.
+    badge: API REST
+  - title: Des flux de travail et des automatisations sans code
+    description: >-
+      Un flux de travail définit les états d'un document, les transitions et le rôle autorisé à chaque
+      étape, avec une condition si besoin. Le moteur d'automatisations, en bêta, enchaîne un déclencheur et
+      plusieurs actions (notification, assignation, appel web) dans une file d'attente que vous suivez. Les
+      notifications envoient un e-mail ou une alerte à un événement ou à une date du document.
+    badge: Automatisations
+  - title: Des scripts serveur exécutés en environnement contrôlé
+    description: >-
+      Un administrateur écrit un script serveur ou un gabarit Jinja depuis l'interface. Dodock les exécute
+      dans safe_exec, qui sépare un contexte de rendu en lecture seule d'un contexte d'exécution en lecture et
+      écriture. Les formats d'impression se composent en Jinja ou dans l'éditeur visuel, et les règles de
+      nommage fixent la numérotation de chaque document.
+    image: /modules/dodock/feature-scripts.webp
+    badge: Scripts et impression
+  - title: Des tâches de fond et des composants d'interface
+    description: >-
+      Le gestionnaire de tâches de fond exécute les traitements longs et planifiés, et les rapports préparés
+      se calculent hors ligne. Socket.io et Redis Pub/Sub poussent les mises à jour aux navigateurs ouverts.
+      Pour vos propres écrans, Dodock v5 embarque la bibliothèque de composants Vue.js @framework/ui,
+      rétroportée depuis la branche develop de Frappe, et des compositeurs d'e-mail et de commentaire
+      réutilisables.
+    image: /modules/dodock/feature-taches.webp
+    badge: Tâches de fond
+
+install:
+  steps:
+    - title: Sur Dokos Cloud
+      description: Dodock est installé sur chaque site Dokos Cloud. Il n'y a rien à faire. Compris dans toutes les formules.
+    - title: En auto-hébergement
+      description: "Créez votre bench avec <code>bench init --frappe-path https://gitlab.com/dokos/dodock votre-bench</code>, puis suivez le guide d'installation de la documentation."
+    - title: Pour développer une application
+      description: "<code>bench new-app votre_app</code> crée le squelette, puis <code>bench --site votre-site install-app votre_app</code> l'installe sur votre site."
+  prerequisites:
+    - Le guide d'installation doc.dokos.io/v5/dodock/installation pour les versions de Python, Node.js, MariaDB et Redis
+
+faq:
+  items:
+    - label: Quelle différence entre Dodock et Frappe Framework ?
+      content: >-
+        Dodock est un fork de Frappe Framework que Dokos SAS maintient. Il garde le même cœur et la même API,
+        rétroporte des éléments de la branche develop de Frappe, comme la bibliothèque @framework/ui, et
+        ajoute des intégrations françaises, comme la recherche d'entreprises par SIREN avec Pappers. Les
+        applications Frappe de la marketplace (CRM, Helpdesk, Insights) s'installent sur Dodock.
+    - label: Faut-il savoir coder pour l'utiliser ?
+      content: >-
+        Non pour l'essentiel. Les rôles, les autorisations, les flux de travail, les notifications, les règles
+        de nommage, les champs personnalisés et les formats d'impression se configurent depuis l'interface.
+        Le code sert pour une application dédiée ou une méthode d'API.
+    - label: Comment lire mes données depuis un autre outil ?
+      content: >-
+        Créez une clé et un secret d'API sur la fiche de l'utilisateur, puis appelez
+        <code>GET /api/resource/&lt;DocType&gt;</code> avec l'en-tête
+        <code>Authorization: token clé:secret</code>. Les paramètres fields, filters, order_by et
+        limit_page_length cadrent la réponse. Dokos CLI enveloppe cette API en ligne de commande.
+    - label: Un script serveur peut-il casser mon site ?
+      content: >-
+        Les scripts serveur et les gabarits Jinja s'exécutent dans safe_exec, un environnement contrôlé qui
+        sépare la lecture de l'écriture. Ils n'ont pas accès au système de fichiers ni aux modules Python
+        arbitraires.
+    - label: Sous quelle licence ?
+      content: >-
+        Dodock est publié sous licence MIT sur gitlab.com/dokos/dodock. Dokos, l'application de gestion, est
+        sous GPLv3.
+
+bottom_cta:
+  title: Posez-nous vos questions sur Dodock.
+  description: Décrivez-nous l'application ou l'intégration que vous envisagez, nous vous dirons ce que le cadriciel fournit déjà.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la documentation
+      to: https://doc.dokos.io/v5/dodock
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

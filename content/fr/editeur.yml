@@ -1,0 +1,180 @@
+title: Éditeur open source
+description: Dokos SAS maintient Dodock, Dokos et une douzaine d'applications, publiés sous licence GPLv3 sur GitLab, avec l'historique complet des modifications.
+navigation:
+  title: Éditeur open source
+  icon: i-heroicons-code-bracket-square
+  description: Dodock, Dokos et les applications que nous maintenons
+
+hero:
+  headline:
+    label: Code public sur gitlab.com/dokos
+    icon: i-simple-icons-gitlab
+  title: Nous éditons <span class="text-primary">Dokos</span>, Dodock<br>et les applications autour.
+  description: Dodock est notre version du cadre applicatif Frappe. Dokos est la gestion d'entreprise construite dessus, dérivée d'ERPNext. Autour, nous maintenons les applications dont les entreprises et les associations françaises ont besoin. Tout est publié sous licence GPLv3, et vous pouvez lire chaque modification avant de nous confier quoi que ce soit.
+  links:
+    - label: Voir le code
+      to: https://gitlab.com/dokos
+      target: _blank
+      size: xl
+      color: primary
+      icon: i-simple-icons-gitlab
+    - label: Voir l'écosystème
+      to: /fr/modules
+      size: xl
+      color: neutral
+      variant: outline
+
+proof:
+  items:
+    - label: Dernière version majeure
+      value: Version 5
+      note: Publiée le 16 mars 2026, sur Frappe et ERPNext v16
+    - label: Licence
+      value: GPLv3
+      note: Lisible, modifiable, reprenable par vous ou par un tiers
+    - label: Dépôts maintenus
+      value: "16"
+      note: Dodock, Dokos et quatorze applications
+
+scope:
+  title: Ce que nous maintenons
+  description: Chaque dépôt a sa page produit. Les forks suivent les versions publiées par Frappe ; les applications sont écrites par nos soins.
+  items:
+    - title: Dodock
+      description: Le cadre applicatif sous Dokos, notre version de Frappe. Documents, droits, flux de validation, rapports, API.
+      icon: i-heroicons-circle-stack
+      badge: Fork de Frappe
+      to: /fr/modules/dodock
+    - title: Dokos
+      description: La gestion d'entreprise construite sur Dodock, dérivée d'ERPNext et adaptée aux obligations françaises.
+      icon: i-heroicons-building-office
+      badge: Fork d'ERPNext
+      to: /fr/modules/dokos
+    - title: Dokos HR
+      description: La gestion des ressources humaines, notre version de Frappe HR.
+      icon: i-heroicons-users
+      badge: Fork de Frappe HR
+      to: /fr/modules/ressources-humaines
+    - title: Payments
+      description: Les paiements en ligne par passerelle, notre version de Frappe Payments.
+      icon: i-heroicons-credit-card
+      badge: Fork de Frappe Payments
+      to: /fr/modules/paiements
+    - title: Webshop
+      description: La boutique en ligne et le portail client, notre version de Frappe Webshop.
+      icon: i-heroicons-shopping-bag
+      badge: Fork de Frappe Webshop
+      to: /fr/modules/e-commerce
+    - title: Bank
+      description: Synchronisation des comptes bancaires et rapprochement, avec le module Banking et le prévisionnel de trésorerie en bêta.
+      icon: i-heroicons-building-library
+      badge: Application
+      to: /fr/modules/bank
+    - title: Bookings
+      description: Réservation de ressources et gestion de crédits, écrite pour les tiers-lieux.
+      icon: i-heroicons-calendar-days
+      badge: Application
+      to: /fr/modules/reservations-de-ressources
+    - title: eTransactions
+      description: Réception des factures électroniques CII, Factur-X et UBL, et raccordement à une plateforme agréée.
+      icon: i-heroicons-document-check
+      badge: Application
+      to: /fr/modules/etransactions
+    - title: OCR
+      description: Extraction des données des factures fournisseur, avec Amazon Textract.
+      icon: i-heroicons-document-magnifying-glass
+      badge: Application
+      to: /fr/modules/ocr
+    - title: Construction
+      description: Un configurateur de devis pour les activités qui vendent des ouvrages.
+      icon: i-heroicons-calculator
+      badge: Application
+      to: /fr/modules/construction
+    - title: Hiboutik
+      description: Le connecteur avec le point de vente Hiboutik.
+      icon: i-heroicons-shopping-cart
+      badge: Application
+      to: /fr/modules/hiboutik
+    - title: Dokos WooCommerce
+      description: Le connecteur entre une boutique WooCommerce et Dokos.
+      icon: i-simple-icons-woocommerce
+      badge: Application
+      to: /fr/modules/woocommerce
+    - title: Tribu
+      description: Membres, adhésions, dons et inscriptions en ligne pour les associations.
+      icon: i-heroicons-identification
+      badge: Application
+      to: /fr/modules/tribu
+    - title: Dokos AI
+      description: Un assistant branché sur les données du site, avec confirmation avant toute écriture.
+      icon: i-heroicons-sparkles
+      badge: Application
+      to: /fr/modules/dokos-ai
+    - title: Dokos CLI
+      description: Un outil en ligne de commande et un serveur MCP pour piloter un site depuis un terminal ou un agent.
+      icon: i-heroicons-command-line
+      badge: Outil
+      to: /fr/modules/dokos-cli
+    - title: Certification caisse
+      description: Le périmètre certifié LNE du système d'encaissement, avec les empreintes de chaque fichier publiées.
+      icon: i-octicon-law
+      badge: Application
+      to: /fr/certifications
+
+operations:
+  title: Comment le produit avance
+  description: Un logiciel de gestion se juge sur sa trajectoire autant que sur son état. Voici comment la nôtre est tenue.
+  items:
+    - title: Nous suivons Frappe et ERPNext
+      description: Chaque version publiée par Frappe est lue, testée et portée. Dokos 5 repose sur la version 16 de Frappe et d'ERPNext.
+      icon: i-heroicons-arrow-trending-up
+    - title: Les écarts sont documentés
+      description: Là où les besoins français s'écartent de l'amont, nous divergeons et nous gardons la trace de chaque écart pour le maintenir dans la durée.
+      icon: i-heroicons-arrows-pointing-out
+    - title: Un déploiement en deux temps
+      description: Une nouvelle version arrive d'abord sur les sites sans application personnalisée, puis sur les autres, après vérification de compatibilité.
+      icon: i-heroicons-arrow-path
+    - title: Dépôts et tickets publics
+      description: Le code, les tickets et l'historique des modifications sont lisibles par tous sur gitlab.com/dokos.
+      icon: i-simple-icons-gitlab
+    - title: Des empreintes publiées
+      description: Pour le périmètre certifié, l'empreinte de chaque fichier est publiée avec la procédure pour la recalculer sur votre installation.
+      icon: i-heroicons-finger-print
+    - title: Un journal des versions
+      description: Chaque changement est décrit sur doc.dokos.io/nouveautes, et les versions majeures font l'objet d'un webinaire.
+      icon: i-heroicons-newspaper
+    - title: Une communauté
+      description: Le forum community.dokos.io, les tiers-lieux et fablabs rencontrés au Faire Festival, les contributeurs externes. Nous sommes aussi membre fondateur de l'association PDP Libre.
+      icon: i-heroicons-user-group
+
+reversibility:
+  title: Ce que la licence vous donne
+  description: Publier sous GPLv3 engage l'éditeur autant que l'utilisateur.
+  items:
+    - title: Lire le code
+      description: Vos équipes ou un tiers peuvent auditer le logiciel, sans accord de confidentialité.
+      icon: i-heroicons-magnifying-glass
+    - title: Modifier et contribuer
+      description: Corriger, étendre, proposer. Les contributions externes sont intégrées quand elles passent la revue.
+      icon: i-heroicons-code-bracket
+    - title: Reprendre l'installation ailleurs
+      description: Votre site reste exploitable par un autre prestataire, ou par vous, avec le même code.
+      icon: i-heroicons-arrows-right-left
+    - title: Forker
+      description: Le droit que donne la licence. Nous l'avons exercé nous-mêmes à partir de Frappe et d'ERPNext.
+      icon: i-heroicons-arrows-pointing-out
+
+cta:
+  title: Commencez par le dépôt
+  description: Le code, les tickets et l'historique des modifications sont publics. Si une question reste, écrivez-nous.
+  links:
+    - label: Ouvrir le GitLab
+      to: https://gitlab.com/dokos
+      target: _blank
+      size: xl
+      color: primary
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: neutral
+      variant: outline

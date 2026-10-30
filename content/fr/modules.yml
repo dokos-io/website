@@ -1,0 +1,53 @@
+title: L'écosystème Dokos
+description: "Une seule base de données, et les applications qui s'y branchent : les modules d'ERPNext, les applications de Frappe et celles que Dokos SAS édite."
+navigation: false
+
+hero:
+  headline:
+    label: Version 5, sur Frappe et ERPNext v16
+    icon: i-simple-icons-gitlab
+  title: L'écosystème <span class="text-primary">Dokos</span>
+  description: Dokos est une base de données de gestion et une suite d'applications qui la partagent. Vous installez celles dont vous avez besoin depuis la marketplace de Dokos Cloud, et elles lisent les mêmes clients, articles, factures et projets. Vos équipes y travaillent, et vos agents IA aussi.
+  links:
+    - label: Essayer Dokos
+      to: https://cloud.dokos.io
+      target: _blank
+      size: xl
+      color: primary
+      icon: i-heroicons-rocket-launch
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: neutral
+      variant: outline
+
+scope:
+  title: Trois familles d'applications, un seul site
+  description: Toutes sont publiées sous licence libre et s'installent sur la même base.
+  items:
+    - title: La base, Dodock et Dokos
+      description: Dodock est le cadre applicatif, Dokos la gestion d'entreprise construite dessus. Ensemble, ils fournissent les documents, les droits, les flux de validation, les rapports et l'API que toutes les applications utilisent.
+      icon: i-heroicons-circle-stack
+      badge: Édités par Dokos SAS
+    - title: Les applications Frappe
+      description: CRM, Helpdesk, Insights, Builder, Drive, Wiki, Print Designer, Learning, Newsletter, Blog. Publiées par Frappe, elles tournent sur Dokos telles quelles et nous les exploitons au même titre que les nôtres.
+      icon: i-simple-icons-frappe
+      badge: Publiées par Frappe
+    - title: Les applications éditées par Dokos SAS
+      description: Banking, Bookings, eTransactions, OCR, Construction, Hiboutik, WooCommerce, Tribu, Dokos AI, Dokos CLI. Écrites pour les besoins des entreprises et associations françaises, publiées sur notre GitLab.
+      icon: i-heroicons-puzzle-piece
+      badge: Éditées par Dokos SAS
+
+cta:
+  title: Il vous manque une application
+  description: Décrivez-nous le besoin. Nous vous dirons si une application existante le couvre, si une application communautaire s'en approche, ou s'il faut la construire.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Nous bâtissons vos applications
+      to: /fr/ingenierie
+      size: xl
+      color: neutral
+      variant: outline

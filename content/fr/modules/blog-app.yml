@@ -1,0 +1,109 @@
+# Slug : blog-app, parce que /blog est le journal du site dokos.io. La page produit est servie à /fr/modules/blog-app.
+# Sources :
+# - README et hooks.py de https://github.com/frappe/blog (branche develop, lu le 29 octobre 2026) : « Write and publish blogs », licence mit, entrée « Blog » dans l'écran des applications
+# - DocTypes du dépôt (blog/blog/doctype) : Blog Post, Blog Category, Blogger, Blog Settings ; espace de travail « Blog » ; flux RSS (blog/www/rss.py) ; mentions « J'aime » (templates/includes/likes)
+# - Marketplace Dokos Cloud : app « blog », titre « Blog »
+# Pas de logo dans public/frappe/ : icône de repli.
+#
+# Captures à prendre (demo.dokos.cloud, 1440×900, thème clair, français) :
+# - hero.webp : la page publique du blog (/blog) avec plusieurs billets et leurs catégories
+# - fit.webp : le formulaire Billet de blog (/app/blog-post) avec l'auteur (Blogger) et la catégorie
+# - feature-redaction.webp : l'éditeur Markdown d'un billet et son introduction
+# - feature-seo.webp : l'onglet des métadonnées d'un billet, titre, description, image et aperçu Google
+# - feature-categories.webp : la liste des catégories et la page publique filtrée par catégorie
+# - feature-reglages.webp : les Paramètres du blog, commentaires, partage et appel à l'action
+
+title: Blog
+description: Publiez des billets sur votre site Dokos, par auteur et par catégorie, avec commentaires et flux RSS.
+icon: i-heroicons-newspaper
+application: Blog
+theme: site-web-outils-numeriques
+author: Frappe Technologies et contributeurs
+navigation:
+  title: Blog
+  icon: i-heroicons-newspaper
+  description: Billets, auteurs et catégories sur votre site web.
+
+publisher: frappe
+licence: MIT
+version: v5
+marketplace: blog
+related: [builder, newsletter, wiki, crm]
+
+hero:
+  title: Vos actualités, <span class="text-primary">publiées</span> sur votre site Dokos.
+  description: Vous écrivez un billet en Markdown ou en texte riche, vous le rattachez à un auteur et à une catégorie, et vous le publiez à la date choisie. Le billet apparaît sur votre site et dans votre flux RSS.
+
+for_whom:
+  items:
+    - title: Vous publiez vos actualités sur un outil séparé de votre site
+      description: Les billets vivent sur votre site Dokos, aux côtés de vos pages. Chaque auteur écrit avec son compte utilisateur.
+      icon: i-heroicons-pencil-square
+    - title: Plusieurs personnes écrivent pour votre entreprise
+      description: Chaque auteur a sa fiche Blogger, avec sa biographie et sa photo. Un billet porte son auteur et sa catégorie.
+      icon: i-heroicons-users
+    - title: Vous voulez que vos billets soient trouvés
+      description: Vous renseignez le titre, la description et l'image de partage, puis vous vérifiez l'aperçu Google avant de publier.
+      icon: i-heroicons-magnifying-glass
+
+fit:
+  description: L'application ajoute un espace de travail <strong>Blog</strong> à votre site, avec les billets, les auteurs et les catégories. Un auteur est un utilisateur de votre site rattaché à une fiche Blogger. Les billets publiés sont servis par le site web de Dodock, à l'adresse /blog, et repris dans le flux RSS.
+  reads:
+    - Utilisateur, rattaché à chaque fiche Blogger
+    - Le site web de votre instance Dodock, qui sert les pages des billets
+  adds:
+    - Les DocTypes « Blog Post », « Blog Category », « Blogger » et « Blog Settings »
+    - Un espace de travail « Blog » dans le bureau
+    - Les pages publiques du blog et le flux RSS
+    - Les commentaires et les mentions « J'aime » sur les billets
+  depends:
+    - Dodock
+
+features:
+  - title: Écrivez le billet
+    description: Vous saisissez le titre et l'introduction, puis le contenu en Markdown, en texte riche ou en HTML. Vous choisissez l'auteur et la catégorie. Le temps de lecture est calculé pour vous.
+    badge: Rédaction
+  - title: Préparez le référencement et le partage
+    description: Vous renseignez le titre et la description pour les moteurs de recherche, ainsi que l'image affichée au partage. L'aperçu Google montre le résultat avant la publication. Vous pouvez marquer un billet comme mis en avant.
+    badge: Référencement
+  - title: Publiez et classez
+    description: Vous cochez « publié » et fixez la date de publication. Le billet rejoint la page du blog, sa catégorie et le flux RSS. Les lecteurs parcourent les billets par catégorie si vous l'autorisez dans les paramètres.
+    badge: Publication
+  - title: Réglez les échanges avec vos lecteurs
+    description: Dans les Paramètres du blog, vous autorisez les commentaires des visiteurs, vous limitez leur nombre et celui des mentions « J'aime », vous activez le partage sur les réseaux sociaux et vous affichez un appel à l'action en fin de billet. Chaque billet peut désactiver ses commentaires ou ses mentions « J'aime ».
+    badge: Paramètres
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez « Blog » sur votre site. L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://github.com/frappe/blog</code> puis <code>bench --site votre-site install-app blog</code>."
+    - title: Créez votre premier billet
+      description: Ouvrez l'espace de travail Blog, créez votre fiche Blogger et une catégorie, puis écrivez le billet et publiez-le.
+
+faq:
+  items:
+    - label: Qui peut écrire un billet ?
+      content: Un utilisateur de votre site rattaché à une fiche Blogger. La fiche porte son nom, sa biographie et sa photo, affichés avec ses billets.
+    - label: Les visiteurs peuvent-ils commenter ?
+      content: Oui, si vous l'autorisez dans les Paramètres du blog. Vous pouvez limiter le nombre de commentaires et désactiver les commentaires sur un billet donné.
+    - label: Mes billets sont-ils disponibles en RSS ?
+      content: Oui. L'application publie un flux RSS des billets publiés.
+    - label: Puis-je prévenir mes lecteurs d'une publication ?
+      content: Un billet porte une option de notification par e-mail. Pour une lettre d'information, utilisez l'application Newsletter du même site.
+
+bottom_cta:
+  title: Posez-nous vos questions sur Blog.
+  description: Dites-nous ce que vous voulez publier.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

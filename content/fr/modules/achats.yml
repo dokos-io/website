@@ -1,129 +1,165 @@
+# Sources : doc.dokos.io/v5/dokos/achats (introduction, commandes-fournisseur, evaluation-fournisseurs,
+# devis-fournisseurs), doc.dokos.io/v5/dokos/stocks/demande-materiel, doc.dokos.io/v5/dokos/factures-fournisseurs,
+# doc.dokos.io/v5/dokos/comptabilite/factures-fournisseurs, doc.dokos.io/nouveautes (28 septembre 2026).
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : l'espace de travail Achats (/app/buying), cartes et raccourcis
+# - fit.webp : une commande fournisseur validée (/app/purchase-order) avec son tableau de bord de documents liés
+# - feature-demande.webp : une demande de matériel de type Achat (/app/material-request) avec la boîte de dialogue Créer > Commande fournisseur
+# - feature-devis.webp : la liste des devis fournisseurs (/app/supplier-quotation) pour une même demande
+# - feature-commande.webp : une commande fournisseur (/app/purchase-order) avec le menu Créer déplié
+# - feature-reception.webp : la liste des e-invoices du module Achats, colonne Statut visible
+# - feature-evaluation.webp : une carte de pointage fournisseur (/app/supplier-scorecard) avec ses périodes
+
 navigation:
   title: Achats
   icon: i-icon-park-outline-buy
-  description: Gestion des flux d'achats et d'approvisionnements.
+  description: Demandes, commandes fournisseurs, réceptions et factures d'achat.
 
 title: Achats
+description: Suit vos achats de la demande interne à la facture fournisseur.
 icon: i-icon-park-outline-buy
-description: Optimisez vos achats pour des approvisionnements sans faille.
-author: Frappe Technologies & Contributeurs
 application: Dokos
+theme: achats-stocks-production
+author: Frappe Technologies, Dokos & Contributeurs
+
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: erpnext
+docs: https://doc.dokos.io/v5/dokos/achats
+related: [stocks, comptabilite, qualite, etransactions]
 
 hero:
-  title: Optimisez vos <span class="text-primary">achats</span> avec Dokos
-  description: Dokos vous propose toutes les fonctionnalités nécessaires pour gérer vos achats de façon efficace et fluide. Conçu pour simplifier vos processus tout en offrant une transparence totale, ce module vous permet de rationaliser l’ensemble de votre chaîne d'approvisionnement. Découvrez comment Dokos peut vous aider à améliorer votre gestion des achats !
-  links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: /fr
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: De la demande interne à la facture fournisseur, <span class="text-primary">chaque étape laisse un document</span>.
+  description: Le module Achats de Dokos enchaîne la demande de matériel, le devis fournisseur, la commande, la réception et la facture d'achat. Chaque document reprend le précédent.
+  image: /modules/achats/hero.webp
+
+for_whom:
+  items:
+    - title: Vos équipes commandent par e-mail
+      description: Elles saisissent une demande de matériel. Vous la transformez en commande fournisseur en choisissant le fournisseur de chaque article.
+      icon: i-heroicons-inbox-arrow-down
+    - title: Vous comparez les fournisseurs dans un tableur
+      description: Chaque réponse devient un devis fournisseur dans Dokos. Vous créez la commande depuis le devis retenu.
+      icon: i-heroicons-scale
+    - title: Vos factures fournisseurs arrivent en électronique
+      description: Les factures reçues de votre plateforme agréée apparaissent dans la liste des e-invoices du module Achats et deviennent des factures d'achat.
+      icon: i-heroicons-document-arrow-down
+    - title: Un fournisseur livre en retard sans que personne ne le note
+      description: La carte de pointage calcule un score par période à partir des réceptions et peut bloquer les nouvelles commandes.
+      icon: i-heroicons-chart-bar
+
+fit:
+  description: >-
+    Une demande de matériel part de Stocks ou d'une commande client. Elle devient une commande fournisseur
+    dans Achats. Le reçu d'achat entre les articles en stock et, si une inspection est demandée, passe par
+    Qualité. La facture d'achat écrit en Comptabilité et se paie par une écriture de paiement. Avec
+    eTransactions, les factures électroniques reçues alimentent directement cette chaîne.
+  image: /modules/achats/fit.webp
+  reads:
+    - Fournisseur, Contact et Adresse
+    - Article, Prix de l'article et Entrepôt
+    - Demande de matériel (Stocks)
+    - Commande client, pour la livraison directe
+    - E-invoices reçues de la plateforme agréée (eTransactions)
+  adds:
+    - L'espace de travail Achats et les Paramètres des achats
+    - Devis fournisseur et Commande fournisseur
+    - Reçu d'achat (dans Stocks) et Facture d'achat (dans Comptabilité)
+    - Carte de pointage des fournisseurs, ses périodes et ses critères
+    - Modèle de taxes et frais d'achat, Règles de prix et Schémas promotionnels côté achat
+  depends:
+    - Stocks
+    - Comptabilité
+    - Qualité
+    - eTransactions
+
 features:
-  - title: Simplifiez vos demandes d'achat
-    description: <ui><li>Structurez et accélérez vos demandes d’achat grâce à une interface intuitive.</li><br><li>Créez des demandes pour différents départements en quelques clics et assignez-les aux bonnes personnes pour validation.</br><br><li> Suivez précisément vos besoins tout en gardant le contrôle de vos coûts grâce à une gestion centralisée.</br></ui>
-    video: /image/achat/tableau-de-bord-achat.mp4
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Demandes d'Achat
-      color: sky
-  - title: Optimisez vos appels d'offres et négociations
-    description: <ui><li>Comparez vos fournisseurs en toute transparence.</li><br><li>Avec Dokos, envoyez facilement des appels d’offres, obtenez des propositions, et analysez-les pour choisir le meilleur fournisseur.</br></li><br><li>Optimisez vos négociations avec une vue claire sur les propositions et assurez une traçabilité complète du processus.</li></ui>
-    image: image/achat/appel-d-offre-nouveau-logo.webp
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Devis Fournisseurs
-      color: sky
-  - title: Automatisez vos commandes d'achat
-    description: <ui><li>Créez des commandes d’achat en un clic après la sélection des fournisseurs. <br><li>L’automatisation des commandes à partir des demandes ou des offres acceptées vous fait gagner du temps tout en assurant un suivi précis de la réception des biens et services.</li></ui>
-    image: image/achat/trois-commande-fournisseur-automatisez-vos-commandes-dachats.webp
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Commandes
-      color: sky
-  - title: Excellez dans le suivi de vos achats
-    description: <ui><li>Garantissez la conformité des articles reçus grâce au suivi en temps réel. <br><li>Gérez efficacement la réception des produits, effectuez des contrôles qualité et signalez rapidement tout écart.<br> <li>Dokos vous aide à suivre la disponibilité des articles pour une transparence optimale.</ui>
-    image: image/achat/quatre-qualite-modifie-dokos.webp
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Qualité
-      color: sky
-  - title: Renforcez la gestion de vos fournisseurs
-    description: <ui><li>Améliorez vos relations fournisseurs grâce à une base de données centralisée. <br><li>Suivez leurs performances, contrats et transactions en un seul endroit.<br><li> Gagnez en visibilité et prenez des décisions éclairées pour optimiser vos relations commerciales.</li></ui>
-    image: image/achat/cinq-espace-de-travail-achat.webp
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Fournisseurs
-      color: sky
-  - title: Perfectionnez la gestion de vos factures d’achat
-    description: <ui><li>Simplifiez vos processus comptables grâce à l’automatisation des factures fournisseurs.<br><li>Reliez facilement les factures aux commandes d’achat et suivez les paiements.<br><li>Réduisez les erreurs humaines et optimisez la gestion de vos flux de trésorerie.</li></ui>
-    image: image/achat/six-deuxieme-tableau-de-bord-achat.png
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Facture d'Achats
-      color: sky
-  - title: Analysez en temps réel vos achats
-    description: <ui><li>Obtenez des rapports d’achat détaillés pour prendre des décisions informées.<br><li> Suivez les performances des fournisseurs, identifiez les opportunités d’économie, et améliorez continuellement vos processus d’achat grâce à des analyses actualisées.</li></ui>
-    image: image/achat/sept-tableau-de-bord-stock-ok.png
-    image_bg_color: bg-teal-600
-    align: left
-    badge:
-      label: Rapports
-      color: sky
-  - title: Connectez vos stocks à vos achats
-    description: <ui><li>Évitez les ruptures ou les excédents de stock grâce à une gestion intégrée.<br><li> Dokos synchronise vos niveaux de stock avec vos commandes d’achat, vous aidant à mieux planifier vos approvisionnements tout en réduisant les coûts superflus.</li></ui>
-    image: image/achat/huit-stock-un-approvisionnement-responsable-modifie.webp
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Gestions de Stock
-      color: sky
-  - title: Défendez un approvisionnement responsable
-    description: <ui><li>Dokos soutient une gestion des achats responsable.<br><li> Mettez en place des critères spécifiques pour vos fournisseurs et suivez vos objectifs d’approvisionnement durable à travers un suivi rigoureux et structuré.</li></ui>
-    video: "/image/achat/tableau-de-bord-achat.mp4"
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Gestions de Stock
-      color: green
-plus_button:
-  label: Découvrez toutes nos fonctionnalités
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: amber
-  to: /features/achats
+  - title: La demande de matériel, point de départ de l'achat
+    description: >-
+      Une demande de matériel exprime un besoin d'articles ou de services, de type Achat, Transfert,
+      Fabrication ou Matériel pour un client. Vous la saisissez à la main, ou Dokos la crée quand le stock d'un
+      article passe sous son point de commande dans un entrepôt, avec la quantité par défaut de l'article.
+      Depuis la demande, Créer > Commande fournisseur ouvre une boîte de dialogue qui propose le fournisseur
+      par défaut de chaque article et crée une commande par fournisseur.
+    image: /modules/achats/feature-demande.webp
+    badge: Demande de matériel
+  - title: Des devis fournisseurs comparés dans Dokos
+    description: >-
+      Vous envoyez votre demande de prix à plusieurs fournisseurs. Chaque réponse est saisie en devis
+      fournisseur, avec ses prix et ses délais. Depuis la commande fournisseur, « Obtenir les articles de >
+      Devis fournisseur » reprend les lignes du devis retenu. Les fournisseurs bloqués par leur carte de
+      pointage ne sont pas proposés.
+    badge: Devis fournisseur
+  - title: Une commande qui suit la réception et la facture
+    description: >-
+      La commande fournisseur reprend l'adresse, le contact et la devise de la fiche fournisseur. Ses articles
+      viennent d'une demande de matériel ouverte ou d'un devis fournisseur. Une fois validée, vous créez
+      depuis elle le reçu d'achat, la facture d'achat et l'écriture de paiement. En livraison directe, la
+      commande fournisseur reste liée à la commande client et le bouton « Mettre à jour la quantité livrée »
+      recalcule le taux de livraison du client. La tolérance de sur-livraison s'applique aussi aux commandes
+      créées depuis une demande de matériel.
+    badge: Commande fournisseur
+  - title: Réception, contrôle et facture d'achat
+    description: >-
+      Le reçu d'achat confirme les quantités reçues et les entre en stock. Si l'article l'exige, une inspection
+      de la qualité précède l'acceptation, et un retour d'achat renvoie ce qui est refusé. La facture d'achat
+      se lie à la commande ou au reçu. Les factures électroniques reçues de votre plateforme agréée
+      apparaissent dans la liste des e-invoices avec leur statut. Dokos crée la facture fournisseur en
+      brouillon ; vous vérifiez le montant et l'échéance, vous rapprochez avec la commande, puis vous validez
+      ou vous refusez la facture avec un motif renvoyé à la plateforme.
+    badge: Réception et facture
+  - title: Une carte de pointage par fournisseur
+    description: >-
+      Vous créez une carte de pointage par fournisseur, évaluée par semaine, par mois ou par an. Chaque
+      critère (qualité des articles reçus, délai de livraison, délai de réponse aux demandes de prix) a une
+      formule construite sur des variables comme les quantités reçues, acceptées ou rejetées, et une
+      pondération ; les pondérations totalisent 100. Le score courant pondère les douze dernières périodes.
+      Selon le classement obtenu, Dokos affiche un avertissement ou bloque la création de demandes de prix et
+      de commandes pour ce fournisseur.
+    badge: Évaluation des fournisseurs
+
+install:
+  description: Le module Achats fait partie de Dokos. Il n'y a rien à installer en plus.
+  steps:
+    - title: Sur Dokos Cloud
+      description: Créez votre site depuis votre tableau de bord Dokos Cloud. Dokos est installé avec le module Achats. Compris dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>."
+    - title: Pour recevoir les factures électroniques
+      description: Installez l'application eTransactions depuis la marketplace et renseignez la connexion à votre plateforme agréée.
+
+faq:
+  items:
+    - label: Une demande de matériel peut-elle couvrir plusieurs fournisseurs ?
+      content: >-
+        Oui. La boîte de dialogue Créer > Commande fournisseur demande un fournisseur par article. Si tous les
+        articles ont le même fournisseur, Dokos crée une commande ; sinon il crée une commande par fournisseur.
+    - label: Peut-on supprimer un article d'une commande déjà reçue ?
+      content: >-
+        Non. Les articles déjà reçus ne peuvent plus être supprimés de la commande fournisseur.
+    - label: Que devient une facture électronique que je ne traite pas ?
+      content: >-
+        Passé le délai configuré au niveau de la plateforme agréée, elle passe au statut Abandonnée. Elle
+        reste consultable et vous pouvez la réactiver à la main. Une facture refusée ne peut pas être
+        réintégrée automatiquement : vous demandez au fournisseur de la renvoyer.
+    - label: Comment éviter de commander à un fournisseur mal noté ?
+      content: >-
+        Sur sa carte de pointage, vous associez à un classement une action : un avertissement à la création
+        d'une demande de prix ou d'une commande, ou le blocage de ces documents pour ce fournisseur.
+
 bottom_cta:
-  title: Maîtrisez chaque étape de vos achats avec Dokos.
-  description: Gagnez en efficacité, réduisez vos coûts et gardez une vue d’ensemble sur vos processus. Notre solution open-source s’adapte à vos besoins pour une gestion des achats agile et performante. Une centaine d'entreprises nous font déjà confiance, pourquoi pas vous ?
-  class: bg-amber-600/10 dark:bg-amber-800/10
+  title: Posez-nous vos questions sur les achats dans Dokos.
+  description: Décrivez-nous votre circuit d'approvisionnement, nous vous montrerons les documents correspondants.
   links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

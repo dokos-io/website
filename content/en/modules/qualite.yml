@@ -1,0 +1,118 @@
+navigation:
+    title: Quality
+    icon: i-carbon-rule-data-quality
+    description: Process design and quality tracking.
+
+title: Quality
+icon: i-carbon-rule-data-quality
+description: Maintain quality at every step of your processes.
+application: Dokos
+theme: achats-stocks-production
+author: Frappe Technologies & Contributors
+
+hero:
+  title: Improve your <span class="text-primary">quality</span> management with Dokos
+  description: Consistent quality is essential for any company aiming to satisfy customers and meet industry standards. The Dokos Quality module helps you structure, automate, and track your quality processes efficiently and intuitively. From inspection planning to non-conformance management, our solution gives you full control over your operations. Discover how Dokos can help you reach high quality standards.
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
+
+
+features:
+  - title: Structured, efficient quality inspections
+    description: "Plan, run, and track inspections at every stage of your production chain.<br><br> With Dokos, you define precise checkpoints and specific acceptance criteria to make sure every product meets your quality requirements. <br><br>With automated reminders and detailed reporting, your teams gain efficiency and leave nothing to chance. <br><br>The result: full control over compliance and fewer errors.</br>"
+    image: "image/qualite/inspection-qualite.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Quality inspection
+      color: sky
+  - title: Custom control plans
+    description: "Dokos lets you create control plans tailored to your products and processes. <br><br>Standardize your quality control procedures for consistency across every inspection. <br><br>You gain the assurance that your quality requirements are met rigorously, while simplifying operational management for your teams.<br><br>With this systematic approach, your inspections become more precise and less prone to human error.</br>"
+    image: "image/qualite/procedure-qualite.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Custom control plans
+      color: sky
+  - title: "Proactive non-conformance management"
+    description: Identify, track, and correct anomalies with a simple, effective non-conformance management system.<br><br> As soon as an issue is detected, log the details, assign the necessary corrective actions, and track their resolution.<br><br> With full traceability, you get a clear view of non-conformances and can analyze trends to put preventive actions in place. This lets you react quickly and continuously improve the quality of your products.</br>
+    image: "image/qualite/non-conformite.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Non-conformance
+      color: sky
+  - title: Corrective and Preventive Actions (CAPA)
+    description: "Corrective and preventive actions (CAPA) are essential to maintaining a consistent quality level.<br><br> With Dokos, analyze the root causes of non-conformances, put corrective actions in place, and anticipate problems with preventive measures.<br><br> Automate tracking of every action to make sure each step is completed on time. <br><br>This reduces risk and improves the reliability of your processes.</br>"
+    image: "image/qualite/action-qualite.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: CAPA
+      color: sky
+  - title: Improve your suppliers' quality
+    description: "The quality of your products also depends on your suppliers. <br><br>Dokos lets you track your partners' quality performance through regular audits and product inspections.<br><br> If an issue arises, manage supplier complaints transparently and put corrective actions in place. <br><br>Centralize all supplier quality information to make decisions based on reliable data.</br>"
+    image: "image/qualite/evaluation-fournisseurs.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Complaints
+      color: sky
+  - title: Analytics and dashboards to support you
+    description: "Improve quality with dashboards and statistical tools. <br><br>Go further and build all the statistical analyses you need yourself, with Insights and Dokos' no-code tools. "
+    image: "image/qualite/rapport-inspections.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: SPC
+      color: sky
+  - title: Continuous improvement at the heart of your processes
+    description: "The Dokos Quality module includes continuous improvement tools to optimize your operations.<br><br> Whether with methodologies like Kaizen, Lean, or 5S, Dokos helps you identify opportunities for improvement and measure your gains in quality and efficiency. <br><br>Make continuous improvement part of your organization's culture to stay competitive and agile.</br>"
+    image: "image/qualite/reunion-qualite.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Process improvement
+      color: sky
+
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /en/features/qualite
+
+bottom_cta:
+  title: Put quality at the heart of your operations with Dokos.
+  description: With Dokos, you get a complete solution for managing quality while honoring your ethical commitments and professional requirements. Join the Dokos community today.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

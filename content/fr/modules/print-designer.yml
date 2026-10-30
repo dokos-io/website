@@ -1,90 +1,108 @@
+# Sources :
+# - README de https://github.com/frappe/print_designer (branche develop, lu le 29 octobre 2026)
+#   Le README indique depuis le 10 octobre 2026 que le dépôt n'est plus maintenu et renvoie vers l'éditeur de formats
+#   d'impression intégré à Frappe à partir de la version 16. TODO : décider avec Dokos du maintien de cette page et de la fiche marketplace.
+# - Licence : fichier license.txt du dépôt (AGPLv3)
+# - Marketplace Dokos Cloud : app « print_designer »
+#
+# Captures à prendre (demo.dokos.cloud, 1440×900, thème clair, français) :
+# - hero.webp : le designer (/app/print-designer) ouvert sur un format de facture de vente
+# - fit.webp : la liste des formats d'impression (Print Format) avec un format créé dans Print Designer, puis l'aperçu d'impression d'une facture de vente qui l'utilise
+# - feature-editeur.webp : un élément texte sélectionné, repères d'alignement et panneau des propriétés
+# - feature-donnees.webp : le sélecteur de champ dynamique, avec les champs du document et ceux des documents liés (client, société)
+# - feature-tableau.webp : l'éditeur de tableau sur les lignes d'articles d'une facture
+# - feature-pdf.webp : le PDF généré depuis la facture avec ce format
+
+title: Print Designer
+description: Dessinez vos formats d'impression de devis, de factures ou de bons de livraison dans un éditeur visuel, sans code.
+icon: i-heroicons-document-text
+application: Print Designer
+theme: site-web-outils-numeriques
+author: Frappe Technologies et contributeurs
+logo:
+  light: /frappe/print-designer.svg
+  dark: /frappe/print-designer.svg
 navigation:
   title: Print Designer
-  description: Personnalisation avancée des formats d'impression web et PDF.
-  icon: i-material-symbols-photo-prints-outline
+  icon: i-heroicons-document-text
+  description: Formats d'impression dessinés dans un éditeur visuel.
 
-title: Frappe Print Designer
-link: "https://frappe.io/print-designer"
-author: Frappe Technologies & Contributeurs
-description: Personnalisez vos formats d'impression avec simplicité et puissance !
-application: Frappe Print Designer
+publisher: frappe
+licence: AGPLv3
+version: v5
+marketplace: print_designer
+related: [ventes, achats, comptabilite, stocks]
 
 hero:
-  title: "<span class='text-primary'>Frappe Print designer</span>"
-  description: "Personnalisez vos formats d'impression avec simplicité et puissance !"
-  headline:
-    label: Les applications Frappe
-    to: https://frappe.io/products
-    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
-    target: _blank
-  links:
-    - label: "Créez votre premier format d'impression"
-      to: https://cloud.dokos.io
-      size: xl
-      color: black
-      icon: i-heroicons-play-circle-16-solid
-      trailing: false
-      target: _blank
-    - label: Documentation
-      icon: i-ic-outline-library-books
-      size: xl
-      color: gray
-      to: https://doc.dokos.io
-      target: _blank
+  title: Vos documents imprimés, <span class="text-primary">dessinés</span> à votre image.
+  description: Vous placez le logo, les champs du document et le tableau des lignes sur la page, puis vous imprimez le PDF depuis Dokos. Le format vaut pour tous les documents du même type.
 
-colored_section: 
-  title: "Créez avec un outil puissant et intuitif !"
-  description: "Frappe Print Designer vous permet de créer des formats d'impression personnalisés pour tous vos documents professionnels – factures, devis, bons de commande, rapports et bien plus – le tout sans écrire une seule ligne de code. Que vous soyez une petite entreprise en plein essor ou une grande organisation cherchant à renforcer son identité visuelle, Frappe Print Designer vous offre une flexibilité inégalée.<br>Et le meilleur ? Cet outil est accessible à tous les utilisateurs Dokos, sans frais supplémentaires."
-  align: left
-  image: "image/print-designer/main-interface.png"
+for_whom:
+  items:
+    - title: Votre facture PDF ne ressemble pas à vos documents papier
+      description: Vous reproduisez votre charte dans l'éditeur, puis vous l'appliquez à toutes les factures du site.
+      icon: i-heroicons-paint-brush
+    - title: Vous payez un développeur pour chaque changement de mise en page
+      description: Vous déplacez un champ ou une colonne à la souris. L'aperçu se met à jour pendant que vous travaillez.
+      icon: i-heroicons-cursor-arrow-rays
+    - title: Vos documents courent sur plusieurs pages
+      description: Vous dessinez plusieurs pages dans le même format, avec des en-têtes et des pieds de page différents.
+      icon: i-heroicons-document-duplicate
 
-main_features:
-  - title: "Personnalisez sans limite"
-    description: "Avec une interface simple et intuitive, vous pouvez glisser-déposer des champs, réorganiser vos informations et créer des documents uniques en un clin d'œil. Que vous ayez besoin d'ajouter des logos, des sections spécifiques ou de dynamiser vos tableaux, tout est possible, sans effort."
-    image: "image/print-designer/interface-personnalisable.png"
-    image_bg_color: bg-teal-500
-    align: right
-  - title: "Créez un design qui vous ressemble "
-    description: "Affirmez votre identité visuelle grâce à la personnalisation des polices, couleurs, et marges. Pour ceux qui le souhaite, vous pouvez allez plus loin et intégrer du code CSS pour un contrôle total du style. <br> Que vous souhaitiez une facture élégante ou un rapport analytique détaillé, vos documents sont entre vos mains."
-    image: "image/print-designer/choix-images.png"
-    image_bg_color: bg-teal-500
-    align: left
-  - title: "Découvrez nos champs dynamiques et intelligents"
-    description: "Frappe Print Designer vous permet d'intégrer des données spécifiques à vos documents - automatiquement ! Que ce soit des noms, des montants, ou des dates, les champs sont mis à jour en temps réel pour vous offrir des impressions précises et toujours à jour. De plus, vous pouvez facilement ajouter des QR codes ou des codes-barres pour une gestion simplifiée."
-    image: "image/print-designer/champs-dynamiques.png"
-    image_bg_color: bg-teal-500
-    align: right
-  - title: "Un outils qui s'adapte à vos processus"
-    description: "Factures, devis, rapports de vente ou d'inventaire : cet outil s'adapte à tous vos types de documents. Gagnez du temps en réutilisant des modèles ou en créant des formats spécifiques selon vos besoins, avec un contrôle total sur l'apparence et le contenu."
-    image: "image/print-designer/apercu-avant-impression.png"
-    image_bg_color: bg-teal-500
-    align: left
-  - title: "Visualisez en temps réel"
-    description: "Vous pouvez visualiser vos modifications en direct et générer des PDF professionnels, prêts à être partagés instantanément par mail ou stockés dans vos systèmes."
-    image: "image/print-designer/pdf-facture.png"
-    image_bg_color: bg-teal-500
-    align: right
+fit:
+  description: Print Designer crée des <strong>formats d'impression</strong> de Dodock, les mêmes que ceux que vous choisissez dans l'aperçu d'impression d'un devis ou d'une facture. Un format se rattache à un DocType. Il lit les champs du document imprimé et ceux des documents liés, par exemple l'adresse du client ou les coordonnées de la société.
+  reads:
+    - "Le document imprimé : Devis, Facture de vente, Bon de livraison, Bon de commande"
+    - "Les documents liés : Client, Fournisseur, Adresse, Société"
+  adds:
+    - L'éditeur à l'adresse /app/print-designer
+    - Des formats d'impression conçus dans l'éditeur, visibles dans la liste des formats d'impression
+  depends:
+    - Dodock
 
-bridge: 
-  title: "Une équipe respectueuse et dédiée à vos besoins"
-  description: "Chez Dokos, nous avons un immense respect pour l'incroyable travail de l'équipe Frappe. Nous sommes ravis de vous offrir l'accès à cet outil innovant qui, nous en sommes convaincus, apportera une grande valeur à votre organisation. Nous croyons en la puissance de Frappe Print Designer pour simplifier la gestion de vos impressions et pour vous permettre de vous concentrer sur l'essentiel : faire croître votre entreprise. En choisissant Dokos, vous bénéficiez d'une solution puissante, entièrement gratuite et facile à utiliser, le tout dans un écosystème collaboratif et évolutif. <br> C'est notre manière de vous soutenir avec des outils robustes et accessibles, sans coût caché."
-  align: center
+features:
+  - title: Placez chaque élément à la souris
+    description: Vous ajoutez un texte ou une image et vous le positionnez sur la page. L'éditeur affiche le rendu pendant que vous travaillez. Vous réglez l'apparence de chaque élément dans le panneau des propriétés.
+    badge: Éditeur visuel
+  - title: Insérez les champs du document et de ses liens
+    description: Un champ dynamique affiche la valeur du document imprimé, par exemple le numéro et la date de la facture. Vous pouvez aussi afficher un champ d'un document lié, comme le numéro de TVA de la société ou l'adresse de livraison du client.
+    badge: Données dynamiques
+  - title: Composez le tableau des lignes
+    description: L'éditeur de tableau liste les colonnes des lignes d'articles. Vous choisissez les colonnes, leur largeur et leur style, et vous voyez le résultat sur le document.
+    badge: Tableaux
+  - title: Imprimez le PDF depuis Dokos
+    description: Le format apparaît dans l'aperçu d'impression du document. Vous l'imprimez, le téléchargez en PDF ou le joignez à un e-mail depuis Dokos. Pour des cas particuliers, un script ajoute des données calculées ou un élément HTML.
+    badge: Impression
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez « Print Designer » sur votre site. L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://github.com/frappe/print_designer</code> puis <code>bench --site votre-site install-app print_designer</code>."
+    - title: Créez votre premier format
+      description: Ouvrez /app/print-designer, choisissez le DocType à imprimer et donnez un nom au format. Il apparaît ensuite dans l'aperçu d'impression de ce DocType.
+
+faq:
+  items:
+    - label: Un format Print Designer remplace-t-il les formats d'impression existants ?
+      content: Non. Il s'ajoute à la liste des formats d'impression du DocType. Vous choisissez le format dans l'aperçu d'impression du document.
+    - label: Puis-je afficher des données d'un autre document ?
+      content: Oui, pour les documents liés au document imprimé. Le sélecteur de champ dynamique propose les champs du document et ceux de ses liens.
+    - label: Print Designer est-il encore maintenu par Frappe ?
+      content: Depuis le 10 octobre 2026, le README du dépôt indique que Frappe ne le maintient plus et renvoie vers l'éditeur de formats d'impression intégré à Frappe à partir de la version 16, le socle de Dodock V5. Écrivez-nous avant de bâtir de nouveaux formats avec Print Designer.
 
 bottom_cta:
-  title: "Prêt à essayer Frappe Print Designer ?"
-  description: "Bénéficiez dès aujourd'hui d'un outil puissant et gratuit, intégré directement à Dokos. Il suffit d'un clic, tout est déjà prêt à être utilisé pour simplifier vos impressions. <br> Créez dès maintenant des documents professionnels, à votre image !."
-  card: true
-  class: bg-amber-600/10 dark:bg-amber-800/10
+  title: Posez-nous vos questions sur Print Designer.
+  description: Dites-nous quels documents vous voulez mettre en forme.
   links:
-    - label: "Créez son premier format d'impression"
-      size: md
-      color: gray
-      to: https://cloud.dokos.io
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
       target: _blank
-    - label: En savoir plus sur Frappe Print designer
-      size: md
-      color: gray
-      to: https://frappe.io/printdesigner
-      target: _blank
-      icon: i-heroicons-outline-arrow-right
-      trailing: true
+      size: xl
+      color: neutral
+      variant: outline

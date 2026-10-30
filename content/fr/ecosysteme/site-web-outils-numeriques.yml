@@ -1,0 +1,89 @@
+title: Site web & outils numériques
+description: Site web, rapports, intégrations et documents, construits sur les mêmes données que le reste de Dokos, sans outil tiers.
+navigation:
+  title: Site web & outils numériques
+  icon: i-heroicons-globe-alt
+
+hero:
+  headline:
+    label: L'écosystème Dokos
+    icon: i-heroicons-globe-alt
+    to: /fr/modules
+  title: Le site, les rapports et les documents, <span class="text-primary">sans outil tiers</span>.
+  description: Un tableau de bord Insights lit directement vos données de gestion, sans export. Un document numérisé par l'OCR se rapproche automatiquement de la facture correspondante.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Tout l'écosystème
+      to: /fr/modules
+      size: xl
+      color: neutral
+      variant: outline
+
+modules:
+  title: Les applications de ce domaine
+  description: Des outils transverses, utiles quel que soit le secteur d'activité.
+  items:
+    - title: Builder
+      description: Un éditeur de sites no-code connecté à vos données Dokos.
+      icon: i-mdi-application-settings-outline
+      to: /fr/modules/builder
+      logo:
+        light: /frappe/builder.svg
+        dark: /frappe/builder.svg
+    - title: Insights
+      description: Des tableaux de bord et rapports construits sur vos données de gestion, sans export vers un autre outil.
+      icon: i-heroicons-chart-bar
+      to: /fr/modules/insights
+      logo:
+        light: /frappe/insights.svg
+        dark: /frappe/insights.svg
+    - title: Intégrations
+      description: Connecte Dokos à vos outils existants (paiement, messagerie, stockage, automatisation).
+      icon: i-mdi-connection
+      to: /fr/modules/integrations
+    - title: OCR
+      description: Numérise et rapproche automatiquement les documents papier, notamment les factures fournisseurs.
+      icon: i-mdi-ocr
+      to: /fr/modules/ocr
+      logo:
+        light: /frappe/ocr_logo.svg
+        dark: /frappe/ocr_logo.svg
+    - title: Print Designer
+      description: Personnalise vos factures, devis et bons de livraison sans développement.
+      icon: i-mdi-printer-outline
+      to: /fr/modules/print-designer
+      logo:
+        light: /frappe/print-designer.svg
+        dark: /frappe/print-designer.svg
+    - title: Drive
+      description: Stockez et partagez vos fichiers depuis votre site Dokos, sans service tiers.
+      icon: i-heroicons-folder-open
+      to: /fr/modules/drive
+      logo:
+        light: /frappe/drive.svg
+        dark: /frappe/drive.svg
+    - title: Newsletter
+      description: Envoi d'emails groupés à vos contacts, depuis les listes de votre site.
+      icon: i-heroicons-envelope
+      to: /fr/modules/newsletter
+    - title: Blog
+      description: Publication d'articles sur votre site web, avec les mêmes comptes et le même thème.
+      icon: i-heroicons-newspaper
+      to: /fr/modules/blog-app
+
+cta:
+  title: Raccordez vos outils externes à Dokos
+  description: Décrivez-nous l'outil et l'usage. Nous vous dirons si une intégration existe déjà ou ce qu'il faut construire.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir les offres d'ingénierie
+      to: /fr/ingenierie
+      size: xl
+      color: neutral
+      variant: outline

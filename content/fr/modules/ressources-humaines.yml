@@ -1,142 +1,134 @@
+# Sources : https://doc.dokos.io/v5/dokos/hrms (accueil, Congés, Quarts et présences, Notes de frais,
+# Évaluations, Application mobile RH, Interface Desktop Dokos RH, Paramètres RH, Gérer les contrats
+# des employés), README https://gitlab.com/dokos/hrms (liste des modules, licence GPLv3),
+# content/fr/blog/2026/rentree-2026.md (refonte du module RH en cours),
+# https://doc.dokos.io/nouveautes (v5 : bouton « Créer un utilisateur », jalons sur la fiche employé).
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : le Tableau de bord RH, indicateurs clés (/app/hr)
+# - fit.webp : une Note de frais soumise, section « Détails comptables » et écriture liée (/app/expense-claim)
+# - feature-conges.webp : une Demande de congé en attente d'approbation, solde affiché (/app/leave-application)
+# - feature-presences.webp : un Type de quart avec l'enregistrement automatique des présences (/app/shift-type)
+# - feature-frais.webp : une Dépense avec son type et son centre de coûts (/app/expense)
+# - feature-evaluation.webp : un Cycle d'évaluation et une Évaluation avec son tableau KRA vs Goals (/app/appraisal)
+# - feature-mobile.webp : l'application mobile RH, écran d'accueil avec la visualisation rapide des demandes (https://demo.dokos.cloud/hrms, fenêtre mobile)
+
 navigation:
-    title: Ressources Humaines
-    icon: i-mdi-human-capacity-increase
-    description: Gestion des congés, notes de frais, recrutement, quarts et présence, évaluations.
+  title: Ressources Humaines
+  icon: i-mdi-human-capacity-increase
+  description: Congés, présences, notes de frais, évaluations et application mobile.
 
 title: Ressources Humaines
+description: Gère vos employés, leurs congés, leurs présences et leurs notes de frais, avec une application mobile pour les demandes et les approbations.
 icon: i-mdi-human-capacity-increase
-description: Simplifiez et améliorez la gestion de vos équipes
+application: Dokos HR
+theme: projets-ressources-humaines
 author: Frappe Technologies, Dokos & Contributeurs
-application: HRMS
+logo:
+  light: /frappe/hrms_logo.svg
+  dark: /frappe/hrms_logo.svg
+
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: hrms
+docs: https://doc.dokos.io/v5/dokos/hrms
+related: [projets, comptabilite, learning]
 
 hero:
-  title: Gérez vos <span class="text-primary">Ressources Humaines</span> de manière efficace avec Dokos.
-  description: Dokos vous propose toutes les fonctionnalités nécessaires pour simplifier la gestion des tâches et processus liés à vos collaborateurs. Découvrez comment Dokos peut vous aider à améliorer votre gestion RH !
-  links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: "/fr"
-    right_icon: i-heroicons-arrow-right-20-solid
-  
+  title: Vos <span class="text-primary">employés</span>, leurs congés, leurs présences et leurs notes de frais, dans votre site Dokos.
+  description: Vos employés demandent leurs congés et saisissent leurs dépenses depuis l'application mobile ; leurs responsables approuvent depuis le même écran. Chaque note de frais soumise crée son écriture comptable.
 
+for_whom:
+  items:
+    - title: Vous gérez les congés par e-mail et par tableur
+      description: L'allocation de congé se calcule à partir du contrat de travail. L'employé soumet sa demande, l'approbateur la valide, et le calendrier du service affiche les absences approuvées.
+      icon: i-heroicons-calendar-days
+    - title: Votre comptable ressaisit les notes de frais
+      description: L'employé saisit ses dépenses, le responsable approuve, et la note de frais soumise s'impute sur le compte de dépense et le compte de l'employé. Le règlement se fait par une écriture de paiement.
+      icon: i-heroicons-receipt-percent
+    - title: Vos équipes travaillent en quarts
+      description: Un type de quart fixe les horaires. Les enregistrements des employés (pointages) marquent la présence automatiquement, avec des seuils pour la demi-journée et l'absence.
+      icon: i-heroicons-clock
+    - title: Vous menez des entretiens annuels
+      description: Un cycle d'évaluation désigne la période et les employés concernés. Les évaluations se génèrent en masse à partir d'un modèle qui pondère les critères.
+      icon: i-heroicons-chart-bar
+
+fit:
+  description: "Dokos HR est une application distincte, installée par défaut sur les sites Dokos Cloud. Elle lit la <strong>fiche employé</strong> et la structure de la société, et elle écrit dans la comptabilité : une note de frais soumise crée son écriture, et une écriture de paiement la règle. Les feuilles de temps du module Projets servent au décompte des jours payés."
+  image: /modules/ressources-humaines/fit.webp
+  reads:
+    - Employé, Société, Département et Liste de jours fériés
+    - Compte de dépense, Centre de coûts et Projet, pour imputer les notes de frais
+    - Écriture de paiement, pour régler une note de frais
+    - Feuille de temps, pour le calcul des jours payés
+    - Utilisateur, créé depuis la fiche employé pour l'accès à l'application mobile
+  adds:
+    - Le « Tableau de bord RH », le « Tableau de bord du département » et le « Tableau de bord du manager »
+    - Le « Centre de configuration RH » et les « Paramètres RH »
+    - Les documents « Type de congé », « Allocation de congé » et « Demande de congé »
+    - Les documents « Type de quart », « Affectation de quart », « Présence » et « Enregistrement des employés »
+    - Les documents « Dépense », « Type de note de frais » et « Note de frais »
+    - Les documents « Cycle d'évaluation », « Modèle d'évaluation » et « Évaluation »
+    - Les contrats de travail, depuis l'onglet Connexions de la fiche employé
+    - L'application mobile RH, à l'adresse de votre site suivie de /hrms
+  depends:
+    - Dokos
 
 features:
-  - title: Une gestion des employés simple
-    description: Gérez facilement les profils de vos employés, leurs postes, et leurs départements. <br><br>Suivez vos contrats et hiérarchisez votre organisation. <br><br>Le cycle de vie complet des employés est pris en charge, de l'intégration aux promotions, en passant par les transferts et les sorties.</br>
-    image: "image/module-rh/un-rh-gestion-des-employes.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Gestion des employés
-      color: sky
-  - title: Une gestion des présences et des horaires
-    description: Suivez les présences avec des pointages ou une intégration biométrique.<br><br> Automatisez la gestion des présences et des quarts grâce à des outils flexibles pour planifier les horaires, gérer les demandes de changement et assigner les tâches de manière efficace.</br>
-    image: "image/module-rh/deux-presence-et-horaires.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Présence et Horaires
-      color: sky
-  - title: Une gestion des congés
-    description: Créez et personnalisez vos politiques de congés, types de congés et listes de jours fériés. <br><br>Gérez les demandes de congés avec des workflows d'approbation clairs, les demandes de congés compensatoires.</br>
-    image: "image/module-rh/trois-gestion-des-conges.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Congés
-      color: sky
-  - title: Une gestion des dépenses et des avances
-    description: Gérez les avances de vos employés, les demandes de notes de frais et leur approbation. 
-    image: "image/module-rh/quatre-note-de-frais-modifie.webp"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Dépenses
-      color: sky
-  - title: Une gestion des évaluations
-    description: Créez des modèles et suivez les cycles d'évaluation de vos employés. <br><br>Collectez des retours, suivez les objectifs et réalisez des évaluations régulières pour optimiser la performance de vos équipes.</br>
-    image: "image/module-rh/cinq-evaluation.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Performance
-      color: sky
-  - title: Un recrutement simplifié 
-    description: Gérez vos offres d'emploi, vos candidats et vos entretiens. <br><br>Dokos propose également un système de parrainage pour les employés et automatise la génération des offres d'emploi.</br>
-    image: "image/module-rh/six-tableau-de-bord-offre-demploi.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Recrutement
-      color: sky
-  - title: Formation et développement
-    description: Planifiez et suivez les programmes de formation, les événements, les résultats et les retours des participants pour accompagner le développement de vos collaborateurs.
-    image: "image/module-rh/sept-programme-formation.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Formation
-      color: sky
-  - title: Des rapports & Analyses en temps réel
-    description: Générez des rapports détaillés et actualisés pour la gestion des présences, les soldes de congés et les données d'évaluation.
-    image: "image/module-rh/tableau-bord-presences.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Rapports
-      color: sky
-  - title: Un portail en ligne pour vos employés 
-    description: Avec Dokos, vos employés accèdent à un portail pour consulter leurs données, soumettre leurs demandes de congés, suivre leurs dépenses en toute autonomie.
-    image: "image/module-rh/applications-demande-de-conges.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Portail
-      color: sky
-  - title: Une application mobile simple
-    description: Simplifiez le quotidien de vos employés, même en déplacement, pour la gestion des congés, des dépenses et de leurs feuilles de temps. 
-    image: "image/module-rh/application-rh-seul.webp"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Application
-      color: sky
+  - title: Gérez les congés de la demande à l'approbation
+    description: Les RH créent la liste de jours fériés et les types de congés, puis indiquent dans le contrat de travail les types auxquels chaque employé a droit. L'allocation se calcule et s'ajuste au fil de la période. L'employé soumet sa demande de congé ; l'approbateur la valide ou la refuse. Des périodes de blocage peuvent empêcher les congés sur les moments critiques.
+    badge: Congés
+  - title: Marquez les présences depuis les pointages
+    description: "Un type de quart porte une heure de début et une heure de fin, avec des tolérances avant et après. Quand l'enregistrement automatique est activé, Dokos lit les enregistrements des employés et crée la présence du jour : Présent, Demi-journée ou Absent selon les heures travaillées. L'outil « Marquer la présence » et le rapport « Détails de la présence mensuelle » complètent le suivi."
+    image: /modules/ressources-humaines/feature-presences.webp
+    badge: Quarts et présences
+  - title: Transformez les dépenses en écritures comptables
+    description: L'employé enregistre chaque dépense avec sa date et son type, par exemple Carburant ou Repas, une ligne par taux de TVA. La note de frais reprend ces lignes, exige un approbateur et accepte les justificatifs en pièces jointes. À la soumission, le montant s'impute sur le compte de dépense et sur le compte de l'employé ; le règlement se fait depuis « Créer > Paiement ». Le rapport « Notes de dépenses non réclamées » liste ce qui reste à payer.
+    badge: Notes de frais
+  - title: Conduisez vos cycles d'évaluation
+    description: Un modèle d'évaluation définit les critères et leur poids, adaptable par poste ou par département. Le cycle d'évaluation fixe la période et les employés concernés, puis génère les évaluations en masse. La note finale combine le score des objectifs, celui des critères et l'auto-évaluation ; une formule personnalisée peut les pondérer autrement.
+    image: /modules/ressources-humaines/feature-evaluation.webp
+    badge: Évaluations
+  - title: Donnez à vos employés une application mobile
+    description: À l'adresse de votre site suivie de /hrms, chaque employé ouvre une application web depuis un navigateur Chromium (Chrome, Brave, Edge). Il pointe son arrivée, demande un congé, consulte son historique et les jours fériés à venir, enregistre une dépense et saisit ses heures par QR code ou à la main. Les approbateurs traitent les demandes de congé depuis l'écran d'accueil.
+    badge: Application mobile
 
-plus_button:
-  label: Découvrir toutes nos fonctionnalités
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: sky
-  to: /features/ressources-humaines
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: Dokos HR est installée par défaut sur les sites Dokos Cloud et dans les images Docker. Si elle manque sur votre site, ouvrez la marketplace depuis votre tableau de bord Dokos Cloud et installez-la. Comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://gitlab.com/dokos/hrms</code> puis <code>bench --site votre-site install-app hrms</code>."
+    - title: Premier paramétrage
+      description: Ouvrez le Centre de configuration RH, créez la liste de jours fériés, les types de congés et les types de note de frais, puis vos fiches employés. Le bouton « Créer un utilisateur » de la fiche employé donne l'accès à l'application mobile.
+  prerequisites:
+    - Dokos installé sur le site
+
+faq:
+  items:
+    - label: Le module RH évolue-t-il ?
+      content: Oui. Le module RH est en cours de refonte, comme nous l'annoncions dans notre journal à la rentrée 2026. Les documents décrits sur cette page restent disponibles pendant ce chantier.
+    - label: La paie est-elle utilisable en France ?
+      content: Le module de paie hérité de Frappe HR n'est pas encore adapté à la France. Les notes de frais, elles, se règlent par une écriture de paiement distincte du salaire.
+    - label: Que couvre Dokos HR au-delà de cette page ?
+      content: L'application reprend les modules de Frappe HR, dont le recrutement, la formation, la gestion de flotte et les rapports. Les sections Recrutement et Paie de la documentation sont en cours de rédaction.
+    - label: Comment un employé accède-t-il à l'application mobile ?
+      content: Il doit avoir une fiche employé et un utilisateur sur le site. Il ouvre ensuite l'adresse de votre site suivie de /hrms dans un navigateur Chromium et peut l'installer comme application web.
+    - label: Les données RH sont-elles protégées sur l'API ?
+      content: Chaque appel API suit les mêmes permissions que l'interface. Un employé ne lit que ses propres données ; un responsable RH accède à celles de son équipe selon ses rôles.
 
 bottom_cta:
-  title: Un module intuitif et simplifié pour optimiser votre gestion RH ! 
-  description: Dokos est l'outil idéal pour une gestion des ressources humaines moderne, éthique et transparente. Rejoignez la communauté open-source et découvrez une nouvelle manière de gérer vos collaborateurs !
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Posez-nous vos questions sur Dokos HR.
+  description: Dites-nous comment vous gérez vos congés et vos notes de frais aujourd'hui.
   links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

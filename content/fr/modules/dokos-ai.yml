@@ -1,0 +1,146 @@
+# Sources :
+# - https://doc.dokos.io/v5/integrations/ia (et sous-pages assistant, configuration,
+#   flux-automatises, serveurs-mcp, assistants-externes)
+# - README de https://gitlab.com/dokos/dokos-ai (branche main) : outils, compétences, licence MIT
+# - README de https://gitlab.com/dokos/dokos-cli : point d'accès MCP du site (dokos_ai.mcp.endpoint)
+# - Faits fixés par le client : trois couches (registre, orchestrateur, outils), compétences en
+#   Markdown avec en-tête YAML, confirmation avant toute écriture, disponible sur la marketplace.
+#
+# Captures à prendre (demo.dokos.cloud, 1440×900, thème clair, français) :
+# - hero.webp : l'espace de travail « Dokos AI », conversation ouverte avec une question sur les
+#   créances clients et la réponse de l'assistant (icône « AI Assistant » du bureau)
+# - fit.webp : la boîte de réception de l'espace Dokos AI, une écriture préparée en attente
+#   d'approbation, avec le document concerné et les boutons Approuver / Rejeter
+# - feature-conversation.webp : l'assistant qui exécute un rapport (Balance âgée des créances)
+#   et répond avec les lignes trouvées
+# - feature-formulaire.webp : un formulaire Article, le bouton IA à côté du champ Description,
+#   la proposition de texte affichée avant remplacement
+# - feature-competences.webp : la liste des compétences (AI Skill) avec la colonne
+#   « Partager avec les assistants externes »
+# - feature-flux.webp : l'éditeur visuel d'un flux automatisé, avec un point d'approbation
+
+navigation:
+  title: Dokos AI
+  icon: i-heroicons-sparkles
+  description: Un assistant qui lit vos données Dokos et prépare des écritures que vous validez.
+
+title: Dokos AI
+description: Un assistant qui répond à partir de vos documents Dokos, exécute vos rapports et prépare des écritures que vous validez avant qu'elles soient appliquées.
+icon: i-heroicons-sparkles
+application: Dokos AI
+theme: intelligence-artificielle
+author: Dokos
+logo:
+  light: /frappe/dokos_logo.svg
+  dark: /frappe/dokos_logo.svg
+
+publisher: dokos
+licence: MIT
+version: v5
+marketplace: dokos_ai
+docs: https://doc.dokos.io/v5/integrations/ia
+related: [dokos-cli, raven, wiki, integrations]
+
+hero:
+  title: Un assistant qui travaille <span class="text-primary">sur vos données Dokos</span>, avec vos permissions.
+  description: Vous posez une question en français. Dokos AI lit vos documents, exécute vos rapports et répond en citant ce qu'il a consulté. Quand la réponse suppose une écriture, il la prépare et attend votre validation.
+
+for_whom:
+  items:
+    - title: Vous ouvrez le même rapport plusieurs fois par jour pour en tirer un chiffre
+      description: Vous demandez « quels clients ont dépassé leur encours ce mois-ci ». L'assistant exécute le rapport des créances, le croise avec les limites de crédit et vous renvoie la liste avec le dépassement de chacun.
+      icon: i-heroicons-chart-bar
+    - title: Vous retapez les mêmes textes dans vos documents
+      description: Le bouton IA d'un formulaire rédige ou reformule une description d'article ou les conditions d'une offre à partir du document ouvert. Vous voyez la proposition avant qu'elle remplace le champ.
+      icon: i-heroicons-pencil-square
+    - title: Un utilisateur ne comprend pas pourquoi un écran lui est fermé
+      description: L'assistant explique pourquoi cet utilisateur ne peut pas ouvrir le document et propose les rôles à ajouter. Vous validez l'attribution.
+      icon: i-heroicons-lock-closed
+    - title: Vous répétez la même procédure à chaque demande entrante
+      description: Vous écrivez une compétence qui décrit la procédure. L'assistant l'applique ensuite de la même façon, quel que soit le collaborateur qui reçoit la demande.
+      icon: i-heroicons-document-text
+
+fit:
+  description: >-
+    Dokos AI s'installe sur votre site et agit <strong>avec les permissions de l'utilisateur
+    connecté</strong>. Il ne lit pas un document que vous ne pourriez pas ouvrir et ne prépare pas
+    une écriture que vous ne pourriez pas faire vous-même. Un commercial et un comptable
+    n'obtiennent pas la même réponse à la même question.<br>
+    Toute création ou modification de document passe par la <strong>boîte de réception</strong>
+    de l'espace Dokos AI. Vous y voyez ce qui est proposé, sur quel document et à la demande de
+    qui, puis vous approuvez ou vous rejetez. Une proposition non validée ne devient jamais un
+    document. Chaque action, approuvée ou refusée, est inscrite au journal d'audit avec son auteur
+    et les jetons consommés.<br>
+    L'IA est désactivée tant que vous ne l'activez pas dans les Paramètres de l'IA. Avant
+    l'activation, rien n'est envoyé à un fournisseur de modèles.
+  reads:
+    - Tout document auquel l'utilisateur a accès (clients, factures, articles, projets)
+    - Les rapports du site et les graphiques Insights
+    - La documentation Dokos, le Wiki interne, les cours Learning et les notes publiques
+    - Les rôles et les permissions des utilisateurs
+  adds:
+    - L'espace de travail « Dokos AI » avec la boîte de réception, les conversations et le suivi des flux
+    - Le bouton IA dans les formulaires et à côté des champs de texte
+    - Les Paramètres de l'IA (fournisseur de modèles, capacités, journal d'audit)
+    - Les compétences et les flux automatisés
+    - Un point d'accès MCP qui expose le site aux assistants externes
+  depends:
+    - Dokos v5
+    - Une clé OpenRouter
+
+features:
+  - title: Interrogez vos documents et vos rapports
+    description: Vous demandez un document, une liste filtrée, un comptage ou un rapport avec vos filtres. L'assistant va chercher la réponse dans vos données et cite ce qu'il a consulté. Il cherche aussi dans la documentation Dokos et dans votre wiki interne.
+    badge: Conversation
+  - title: Faites préparer une écriture, puis validez-la
+    description: Vous demandez « prépare une relance pour les trois premiers ». L'assistant rédige les messages et attend votre accord. La création ou la modification d'un document arrive dans la boîte de réception, où vous approuvez ou rejetez d'un clic.
+    badge: Confirmation
+  - title: Rédigez depuis le formulaire
+    description: Le bouton IA agit sur le document ouvert. À côté d'un champ de texte, il propose une rédaction à partir du contexte du document. L'assistant écrit aussi un modèle d'impression, un script de formulaire ou un espace de travail avec sa navigation.
+    badge: Formulaires
+  - title: Apprenez-lui vos façons de faire avec des compétences
+    description: Une compétence est un fichier Markdown avec un en-tête YAML. Elle indique le domaine couvert, le modèle à employer, les outils autorisés et des documents de référence. Dokos en fournit une bibliothèque (création et modification de documents, rapports, modèles d'impression, diagnostic de permissions). Vous écrivez les vôtres pour vos procédures internes.
+    badge: Compétences
+  - title: Automatisez un traitement récurrent avec un flux
+    description: Un flux se déclenche sur un événement de document, à heure fixe, à la demande ou par appel externe. Il rédige ou compare, puis dépose le résultat dans la boîte de réception pour approbation. Une galerie de flux prêts à l'emploi s'installe désactivée, pour que vous les relisiez avant de les activer.
+    badge: Flux automatisés
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Dokos AI sur votre site. L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://gitlab.com/dokos/dokos-ai</code> puis <code>bench --site votre-site install-app dokos_ai</code>."
+    - title: Activez l'IA
+      description: Ouvrez les Paramètres de l'IA, collez votre clé OpenRouter et testez-la. Choisissez un modèle pour chacun des trois usages (logique et agent, rapide, OCR et vision), puis ouvrez une à une les capacités dont vous avez besoin.
+  prerequisites:
+    - Un compte OpenRouter et une clé d'accès. La consommation est facturée à l'usage par ce fournisseur.
+    - Un site Dokos v5
+
+faq:
+  items:
+    - label: L'assistant peut-il modifier un document sans que je le voie ?
+      content: Non. Une écriture préparée par l'assistant arrive dans la boîte de réception et attend votre approbation. Un flux automatisé prépare et attend par défaut. L'écriture sans surveillance doit être autorisée flux par flux, après que vous avez vérifié son comportement sur plusieurs exécutions réelles.
+    - label: Quelles données partent chez le fournisseur de modèles ?
+      content: Rien avant l'activation dans les Paramètres de l'IA. Une fois l'IA activée, l'assistant envoie au modèle ce dont il a besoin pour répondre à la question posée. Dokos compte les jetons consommés à chaque exécution et les affiche dans le suivi et dans le journal d'audit.
+    - label: Quels modèles sont utilisés ?
+      content: Dokos consomme des modèles via OpenRouter, qui donne accès aux modèles de Google, Anthropic, OpenAI et Mistral avec une seule clé. Vous associez un modèle à chacun des trois usages (logique et agent, rapide, OCR et vision) et vous pouvez changer d'affectation à tout moment.
+    - label: Comment l'application est-elle construite ?
+      content: En trois couches. Un registre découvre les compétences disponibles. Un orchestrateur décide de la marche à suivre. Des outils exécutent les actions (lecture, écriture, liste, compétence, référence). Chaque outil d'écriture demande une confirmation.
+    - label: Puis-je dialoguer avec l'assistant depuis Raven ou depuis Claude Code ?
+      content: Oui. Le pont Raven, activé dans les Paramètres de l'IA, permet d'envoyer un message direct à un bot dans votre messagerie d'équipe. Pour Claude Code, Claude Cowork, agy, Vibe CLI ou OpenCode, [Dokos CLI](/fr/modules/dokos-cli) fait la jonction. Le site expose aussi son propre point d'accès MCP, auquel l'utilisateur se connecte avec son compte Dokos et ses permissions.
+
+bottom_cta:
+  title: Décrivez-nous une tâche que vous aimeriez confier à l'assistant.
+  description: Nous vous dirons ce que Dokos AI couvre déjà et ce qu'une compétence maison ajouterait.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

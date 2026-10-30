@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import type { Partner } from "~/types/partners";
-
-const route = useRoute();
 const {
     params: { slug },
 } = useRoute();
@@ -12,11 +9,10 @@ const { t, locale } = useI18n({
 
 const localePath = useLocalePath();
 
-const path_without_locale = route;
-path_without_locale.path.replace(`/^(/${locale}\.)/,"")`, "");
+const path = `/${locale.value}/partners/${slug}`;
 
-const { data: partner } = await useAsyncData(path_without_locale.path, () =>
-    queryContent<Partner>(`/${locale.value}/partners/${slug}`).findOne()
+const { data: partner } = await useAsyncData<any>(path, () =>
+    queryCollection("partners").path(path).first()
 );
 
 if (!partner.value) {
@@ -30,11 +26,11 @@ if (!partner.value) {
 const links = computed(() => [
     {
         label: `${t("visit")} ${partner.value && partner.value.title}`,
-        color: "black" as const,
+        color: "neutral" as const,
         size: "md" as const,
         icon: "i-ph-arrow-square-out",
         trailing: true,
-        to: partner.value && partner.value.link,
+        to: partner.value?.link,
         target: "_blank",
     },
 ]);
@@ -61,11 +57,10 @@ useSeoMeta({
                 <template #title>
                     <div class="flex items-center gap-4">
                         <UColorModeAvatar
-                            :light="partner.logo.light"
-                            :dark="partner.logo.dark"
+                            :light="partner.logo?.light"
+                            :dark="partner.logo?.dark"
                             size="lg"
-                            :ui="{ rounded: 'rounded-sm' }"
-                            class="-m-[4px]"
+                            class="-m-[4px] rounded-sm"
                         />
 
                         <span>{{ partner.title }}</span>
@@ -77,10 +72,8 @@ useSeoMeta({
                         <UButton
                             :to="localePath('/partners')"
                             icon="i-ph-caret-left"
-                            color="gray"
-                            :ui="{ rounded: 'rounded-full' }"
+                            color="neutral"
                             size="lg"
-                            class=""
                         />
                     </UTooltip>
                 </div>
@@ -187,7 +180,7 @@ useSeoMeta({
                     </UPageLinks>
 
                     <div v-if="partner.resources?.length">
-                        <UDivider type="dashed" class="my-6" />
+                        <USeparator type="dashed" class="my-6" />
 
                         <UPageLinks
                             :title="t('resources')"

@@ -1,111 +1,119 @@
+# Sources : https://doc.dokos.io/v5/integrations (connecteurs : Payments, eSignature, WooCommerce,
+# Hiboutik, Zapier, E-transactions, IA), https://doc.dokos.io/v5/integrations/zapier (Client OAuth,
+# Clé de connexion sociale, Webhooks et leurs événements), https://doc.dokos.io/v5/dokos/hrms/securite-api
+# (Clé API et Secret API sur le profil utilisateur, mêmes permissions que l'interface),
+# https://doc.dokos.io/v5/dodock/integrations/connected-app-google-oauth (Application connectée Google),
+# https://doc.dokos.io/v5/integrations/ia (assistants externes via Dokos CLI).
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : l'espace de travail Intégrations, avec ses raccourcis vers les paramètres des connecteurs (/app/integrations)
+# - fit.webp : un Webhook sur le DocType Facture de vente, événement « On submit », table Webhook Data (/app/webhook)
+# - feature-webhook.webp : la liste des webhooks et le journal des requêtes envoyées (/app/webhook)
+# - feature-api.webp : le profil utilisateur, section « Accès API », bouton de génération des clés (/app/user, onglet Paramètres)
+# - feature-oauth.webp : un Client OAuth avec ses URIs de redirection (/app/oauth-client)
+# - feature-connecteurs.webp : les Paramètres Stripe ou les Paramètres WooCommerce (/app/stripe-settings)
+
 navigation:
   title: Intégrations
   icon: i-mdi-connection
-  description: Sauvegardes externalisées, services Google, sites e-commerces, connecteurs no-code.
+  description: Connecteurs, webhooks, clés API et clients OAuth.
+
 title: Intégrations
+description: Regroupe les paramètres des services connectés à votre site, et les webhooks, clés API et clients OAuth que vos autres outils utilisent.
 icon: i-mdi-connection
-description: Connectez facilement vos outils pour un écosystème harmonieux.
 application: Dokos
+theme: site-web-outils-numeriques
 author: Frappe Technologies, Dokos & Contributeurs
+
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: erpnext
+docs: https://doc.dokos.io/v5/integrations
+related: [paiements, etransactions, woocommerce, hiboutik, dokos-cli]
+
 hero:
-  title: Maximisez votre productivité avec les <span class="text-primary">intégrations</span> Dokos
-  description: 'Fluidifiez vos processus, gagnez en efficacité, et restez focalisé sur ce qui compte vraiment : le développement de votre activité. <br>Grâce à un écosystème en constante évolution, Dokos s’adapte à vos besoins et vous donne accès à des outils puissants tout en gardant une interface simple et intuitive.'
-  links:
-    - label: Créez un écosystème harmonieux
-      to: https://cloud.dokos.io
-      size: sm
-      color: yellow
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: /fr
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Vos <span class="text-primary">connecteurs</span>, webhooks et accès API, réunis dans un espace de travail.
+  description: L'espace de travail Intégrations rassemble les paramètres des services reliés à votre site Dokos. Vous y créez aussi les webhooks qui préviennent vos autres outils quand un document change, et les clients OAuth qu'ils utilisent pour se connecter.
+  image: /modules/integrations/hero.webp
+
+for_whom:
+  items:
+    - title: Vous vendez aussi en dehors de Dokos
+      description: Les commandes de votre boutique WooCommerce et les ventes de votre caisse Hiboutik arrivent dans Dokos par leur connecteur, dont les paramètres se trouvent ici.
+      icon: i-heroicons-shopping-bag
+    - title: Un outil externe doit réagir quand un document change
+      description: Un webhook envoie les champs de votre choix à une URL dès qu'un document est créé, modifié, soumis ou annulé. Zapier s'appuie sur ce mécanisme.
+      icon: i-heroicons-bolt
+    - title: Vous écrivez un script qui lit ou écrit vos données
+      description: Chaque utilisateur génère une clé API et un secret depuis son profil. Les appels respectent les mêmes permissions que l'interface.
+      icon: i-heroicons-code-bracket
+    - title: Vous pilotez Dokos depuis un assistant IA
+      description: Claude Code, agy, Vibe CLI ou OpenCode se connectent à votre site par Dokos CLI et travaillent sur les mêmes données, avec les mêmes garde-fous.
+      icon: i-heroicons-cpu-chip
+
+fit:
+  description: "Le module Intégrations fait partie du socle Dodock sur lequel Dokos repose. Il ne crée pas de document métier lui-même : il <strong>écoute</strong> les documents de tous les modules pour déclencher des webhooks, et il <strong>héberge</strong> les paramètres des applications de connexion que vous installez depuis la marketplace."
+  reads:
+    - Tout document de votre site, selon le DocType et l'événement choisis sur un webhook
+    - Commande client, Article et Client, synchronisés par le connecteur WooCommerce
+    - Vente Hiboutik, transformée en Facture de vente par le connecteur Hiboutik
+    - Demande de paiement et Mode de paiement, utilisés par les passerelles de l'application Payments
+    - Facture d'achat, créée par E-transactions à la réception d'une facture UBL ou CII
+  adds:
+    - L'espace de travail « Intégrations »
+    - Les documents « Webhook » et le journal des requêtes envoyées
+    - Les documents « Client OAuth » et « Clé de connexion sociale »
+    - L'« Application connectée », pour l'accès aux API Google par OAuth
+    - La section « Accès API » du profil utilisateur, avec la clé API et le secret API
+    - Les paramètres de chaque connecteur installé (Paramètres Stripe, Paramètres WooCommerce, etc.)
+
 features:
-  - title: Gérez vos transactions avec des solutions fiables et sécurisées
-    description: '<ul><li>Stripe : Carte bancaire et prélèvement SEPA</li><li> Stancer : Idéal pour des paiements multicanaux simplifiés.</li> <li>PayPal / Braintree : Carte bancaire ou PayPal<li>Gocardless : Prélèvement SEPA</li><li>HelloAsso : Carte bancaire pour les associations'
-    image: image/integrations/transactions-securisees.webp
-    align: left
-    badge:
-      label: Paiements
-      color: sky
-  - title: Gagnez du temps et assurez la conformité légale de vos contrats
-    description: '<ul><li>DocuSign : Bientôt disponible sur Dokos, cette intégration permettra de gérer vos signatures électroniques de manière fluide et légale.'
-    image: image/integrations/signature-electronique.svg
-    align: right
-    badge:
-      label: Signature électronique
-      color: sky
-  - title: Optimisez la gestion de votre boutique en ligne
-    description: 'Gardez un œil sur vos ventes, vos stocks, et les performances de votre boutique en temps réel, et connectez facilement vos systèmes.<br><ul><li>WooCommerce : Gérez vos commandes, inventaires et clients en toute simplicité.</li><li>Shopify : Une solution complète pour vendre vos produits et services, intégrée à Dokos.'
-    video: image/integrations/boutique-en-ligne-2.mp4
-    align: left
-    badge:
-      label: E-Commerce
-      color: sky
-  - title: Automatisez la synchronisation de vos ventes
-    description: 'Synchronisez automatiquement vos ventes physiques et en ligne pour une gestion optimale des stocks et des transactions.<ul><li>Hi-Boutik : Synchronisez vos points de vente physiques avec votre gestion centralisée sur Dokos.'
-    image: image/integrations/hiboutik-final.webp
-    align: right
-    badge:
-      label: Point de vente
-      color: sky
-  - title: Simplifiez la gestion de vos finances
-    description: 'Réduisez les erreurs humaines et automatisez vos processus financiers complexes.<ul><li>Bridge : Gagnez du temps en connectant directement vos comptes bancaires à Dokos pour une gestion fluide et automatisée de votre comptabilité.'
-    image: image/integrations/bridge-image.svg
-    align: left
-    badge:
-      label: Open Banking
-      color: sky
-  - title: Augmentez votre productivité en automatisant des tâches récurrentes
-    description: '<ul><li>Zapier : Automatisez les flux de travail entre Dokos et des milliers d''autres applications.</li>'
-    image: image/integrations/zapier.svg
-    align: right
-    badge:
-      label: Échange de Données Automatisé
-      color: sky
-  - title: Profitez de l’intégration complète de Google
-    description: 'Centralisez vos informations et optimisez la collaboration avec vos équipes grâce à la puissance de Google.<ul><li>Google Calendar : Synchronisez et gérez vos rendez-vous et événements directement sur Dokos.</li><li> Google Contacts : Retrouvez vos contacts facilement et en temps réel.</li><li> Google Drive : Stockez et accédez à tous vos fichiers sur Dokos sans quitter votre flux de travail.'
-    image: image/integrations/google.svg
-    align: left
-    badge:
-      label: Google Workspace
-      color: sky
-  - title: Centralisez vos discussions
-    description: Restez en contact avec votre équipe et vos partenaires grâce aux intégrations messageries. Centralisez vos discussions pour une meilleure réactivité et coordination entre équipes.<ul><li>Discord</li><li>Mattermost</li><li>RocketChat</li><li>Slack</li><li>Google Chat</li>
-    image: image/integrations/centralisez-les-discussions.svg
-    align: right
-    badge:
-      label: Messageries Collaboratives
-      color: sky
-  - title: Sécurisez vos données importantes avec des solutions de stockage externes
-    description: La tranquillité d’esprit avec la garantie que vos données sont en sécurité et facilement accessibles.<ul><li>Amazon S3</li><li>DropBox</li><li>Google Drive</li>
-    image: image/integrations/sécurité-des-donnees.svg
-    align: left
-    badge:
-      label: Sauvegarde Externe
-      color: sky
+  - title: Prévenez vos autres outils avec un webhook
+    description: "Vous choisissez un DocType et un événement : After insert, On change, On update, On submit, On update after submit, On cancel ou On trash. La table Webhook Data liste les champs envoyés. Dokos appelle l'URL cible à chaque événement et conserve la trace des requêtes dans Intégrations > Webhooks."
+    badge: Webhook
+  - title: Donnez un accès API à un utilisateur
+    description: "Depuis son profil utilisateur, section « Accès API », l'utilisateur génère une clé API et un secret API. Les appels REST s'authentifient avec ce couple et obéissent aux rôles et permissions de cet utilisateur : un employé ne lit que ses propres données, un responsable RH celles de son équipe. Les clés se renouvellent depuis le même écran."
+    badge: Clé API
+  - title: Connectez Zapier par OAuth2
+    description: Vous créez un Client OAuth avec l'URI de redirection fournie par Zapier ; Dokos génère l'ID client et le secret. Une Clé de connexion sociale avec le fournisseur Dodock complète l'authentification. Dans Zapier, le déclencheur « Document events » crée les webhooks pour vous, et les actions Create Document et Find Document créent ou recherchent des documents.
+    badge: Client OAuth
+  - title: Paramétrez vos connecteurs métier au même endroit
+    description: "Chaque application de connexion installée depuis la marketplace ajoute son document de paramètres dans cet espace de travail : Payments pour les passerelles de paiement, Dokos WooCommerce pour votre boutique, Dokos Hiboutik pour votre caisse, E-transactions pour la plateforme agréée de facturation électronique et eSignature pour la signature électronique."
+    badge: Connecteurs
+
+install:
+  description: Le module Intégrations fait partie de Dodock et de Dokos. Il n'y a pas d'application séparée à installer. Les connecteurs, eux, s'installent un par un.
+  steps:
+    - title: Sur Dokos Cloud
+      description: L'espace de travail Intégrations est présent dès la création de votre site, dans toutes les formules. Les connecteurs (Payments, WooCommerce, Hiboutik, E-transactions, eSignature, Dokos AI) s'installent depuis la marketplace de votre tableau de bord Dokos Cloud.
+    - title: En auto-hébergement
+      description: "Installez Dokos : <code>bench get-app https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>. Chaque connecteur a son propre dépôt, indiqué sur sa page produit."
+    - title: Premier usage
+      description: Créez un webhook sur un DocType de test et vérifiez la requête reçue. Pour un accès API, générez une clé depuis le profil d'un utilisateur dédié, avec le rôle minimal nécessaire.
+
+faq:
+  items:
+    - label: Quelle différence entre un webhook et l'API ?
+      content: "Le webhook part de Dokos : à chaque événement sur un document, Dokos appelle l'URL que vous avez indiquée avec les champs choisis. L'API part de votre outil : il appelle Dokos avec une clé API pour lire ou écrire des documents."
+    - label: Un script avec une clé API peut-il tout lire ?
+      content: Non. Chaque appel suit les rôles et permissions de l'utilisateur dont la clé est utilisée, comme dans l'interface web. Créez un utilisateur dédié avec le rôle minimal et renouvelez ses clés régulièrement.
+    - label: Faut-il un développement pour connecter Zapier ?
+      content: Non. Vous créez un Client OAuth et une Clé de connexion sociale dans Dokos, puis vous saisissez l'URL de votre site, l'ID client et le secret dans Zapier. L'application Zapier pour Dokos est en bêta, sur invitation.
+    - label: Comment accéder aux API Google depuis Dokos ?
+      content: Par une Application connectée configurée en OAuth, qui obtient un accès hors ligne durable aux API Google. La documentation Dodock décrit la configuration et le renouvellement des jetons.
+
 bottom_cta:
-  title: Avec Dokos, centralisez la gestion de vos outils essentiels en un seul endroit
-  class: bg-amber-600/10 dark:bg-amber-800/10
+  title: Posez-nous vos questions sur une intégration.
+  description: Dites-nous quels outils vous utilisez autour de Dokos.
   links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

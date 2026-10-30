@@ -1,95 +1,120 @@
-navigation:
-  title: Frappe Builder
-  icon: i-icon-park-outline-add-web
-  description: Création de sites web no-code.
+# Sources :
+# - README de https://github.com/frappe/builder (branche develop, lu le 29 octobre 2026)
+# - Code du dépôt : builder/builder/doctype/builder_settings, builder_ai_provider, patches/seed_ai_providers_and_models.py (fournisseur OpenRouter)
+# - content/fr/blog/frappe-builder-ia.md (IA via OpenRouter, coût à l'usage)
+# - Licence : fichier LICENSE du dépôt (MIT)
+# - Marketplace Dokos Cloud : app « builder » (press.api.marketplace.get_marketplace_apps)
+#
+# Captures à prendre (demo.dokos.cloud, 1440×900, thème clair, français) :
+# - hero.webp : l'éditeur Builder (/builder) ouvert sur une page de démonstration, panneau des blocs à gauche
+# - fit.webp : une section dynamique liée à un DocType Dokos (par exemple une liste de billets de blog ou d'articles du site web) dans l'éditeur
+# - feature-editeur.webp : l'éditeur visuel, un bloc sélectionné, panneau des propriétés et vues ordinateur / tablette / mobile
+# - feature-ia.webp : le panneau de discussion avec Bob, une demande de page saisie et la page en cours de construction
+# - feature-donnees.webp : un script de données d'un bloc et la propriété liée à une valeur dynamique
+# - feature-publication.webp : le bouton Publier et le tableau d'analyse de la page (vues, visiteurs uniques, référents)
+
 title: Frappe Builder
-icon: i-mdi-application-settings-outline
-description: L'outil ultime de création de sites web no-code
-link: https://frappe.io/builder
-author: Frappe Technologies & Contributeurs
+description: Construisez les pages de votre site web dans un éditeur visuel, sur votre site Dokos, et publiez-les en un clic.
+icon: i-heroicons-globe-alt
 application: Frappe Builder
+theme: site-web-outils-numeriques
+author: Frappe Technologies et contributeurs
 logo:
   light: /frappe/builder.svg
   dark: /frappe/builder.svg
+navigation:
+  title: Frappe Builder
+  icon: i-heroicons-globe-alt
+  description: Création de pages web sans code, sur votre site Dokos.
+
+publisher: frappe
+licence: MIT
+version: v5
+marketplace: builder
+docs: https://docs.frappe.io/builder
+related: [blog-app, newsletter, e-commerce, dokos-ai, wiki]
+
 hero:
-  title: '<span class=''text-primary''>Frappe Builder</span> : l''outil ultime de création de sites web no-code'
-  description: Un outil puissant pour construire vos pages sans une seule ligne de code
-  image: ''
-  headline:
-    label: Les applications Frappe
-    to: null
-    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
-    target: _blank
-  links:
-    - label: Créez son premier site
-      to: https://cloud.dokos.io
-      size: xl
-      color: black
-      icon: i-heroicons-play-circle-16-solid
-      trailing: false
-      target: _blank
-    - label: Documentation
-      icon: i-ic-outline-library-books
-      size: xl
-      color: gray
-      to: https://doc.dokos.io
-      target: _blank
-colored_section:
-  title: Créez, personnalisez et innovez !
-  description: 'Avec Dokos, profitez d''un'' accès direct à Frappe Builder : l''outil de création de pages innovant développé par l''équipe Frappe. Grâce à  Builder et sans coût supplémentaire, personnaliser votre interface devient intuitif et accessible, le tout sans une ligne de code'
-  video: /image/builder/frappe-builder.mp4
-  align: left
+  title: Vos pages web, <span class="text-primary">construites</span> sur votre site Dokos.
+  description: Vous assemblez une page à la souris, ou vous la décrivez à l'assistant qui la construit devant vous. Vous publiez en un clic, à l'adresse de votre site.
+  image: /modules/builder/hero.webp
+
+for_whom:
+  items:
+    - title: Vous attendez votre agence pour changer une page
+      description: Vous ouvrez l'éditeur, vous modifiez le texte ou l'image, vous publiez. La page est en ligne sans intervention extérieure.
+      icon: i-heroicons-cursor-arrow-rays
+    - title: Vos pages doivent afficher des données de votre Dokos
+      description: Une section dynamique lit un DocType de votre site. La liste des articles ou des billets se met à jour quand vos données changent.
+      icon: i-heroicons-circle-stack
+    - title: Vous préférez décrire la page plutôt que la dessiner
+      description: Vous écrivez ce que vous voulez dans la discussion avec Bob. Il lit vos pages existantes et construit la nouvelle dans le même style.
+      icon: i-heroicons-chat-bubble-left-ellipsis
+
+fit:
+  description: Frappe Builder s'installe sur le même site que Dokos. Les pages sont servies à l'adresse de votre site et le <strong>CMS intégré</strong> à Dodock alimente les sections dynamiques depuis vos DocTypes. Un formulaire Builder écrit dans un DocType de votre site. L'assistant lit vos pages en respectant vos permissions et attend votre accord avant une modification sensible.
+  reads:
+    - Les DocTypes de votre site pour les sections dynamiques et les formulaires
+    - Les composants et les jetons de thème de vos pages existantes, réutilisés par l'assistant
+    - Les Paramètres Builder (page d'accueil, scripts et styles globaux, favicon)
+  adds:
+    - L'éditeur visuel à l'adresse /builder
+    - Les DocTypes « Builder Page », « Builder Component », « Block Template » et « Builder Client Script »
+    - Les DocTypes « Builder AI Provider » et « Builder AI Model » pour la configuration de l'assistant
+    - Un tableau d'analyse par page
+  depends:
+    - Dodock
+
 features:
-  - title: Optimisé pour votre succès
-    description: 'Frappe Builder ne se contente pas de vous offrir une interface simple et intuitive, il intègre également des fonctionnalités avancées pour vous permettre d''aller plus loin dans la personnalisation.<ul><li>Compatible avec les modules Dokos : Vous pouvez créer des vues dynamiques qui interagissent directement avec vos données Dokos.</li><li> Conception réactive : Vos pages sont automatiquement optimisées pour tous les appareils : ordinateurs, tablettes et smartphones.</li><li> Respect des standards web : Conçu selon les normes les plus récentes, Frappe Builder garantit des performances élevées et une navigation fluide.'
-    image: image/builder/site-internet-optimise-pour-appareils.webp
-    image_bg_color: bg-teal-500
-    icon: i-iconoir-www
-    align: left
-  - title: La confiance dans un ecosystème solide
-    description: Chez Dokos, nous respectons profondément le travail accompli par l'équipe de Frappe.<br><br> Leur vision et leur expertise sont à l'origine de Frappe Builder. Nous nous engageons à assurer la comptabilité de cet outil avec Dokos.
-    icon: i-material-symbols-handshake-rounded
-    image: image/builder/frappe-builder.png
-    image_bg_color: bg-teal-500
-    align: right
-  - title: Découvrez la puissance de la simplicité
-    description: 'Nous croyons que chaque utilisateur, quel que soit son niveau de compétence, mérite d''accéder à des outils puissants qui simplifient leur quotidien. <br>Avec Frappe Builder, vous avez la possibilité de concevoir des expériences uniques et sur mesure qui répondent précisément à vos besoins.<ul><li>Aucun coût supplémentaire : Frappe Builder est inclus dans toutes nos offres, sans frais cachés.</li><li>Support dédié : L''équipe Dokos est à vos côtés pour vous accompagner dans la prise en main de cet outil et vous offrir un support de qualité.</li></ul>'
-    image: image/nuage-dashboard-dark.png
-    image_bg_color: bg-teal-500
-    icon: i-material-symbols-web-traffic-rounded
-    align: left
-bottom_section:
-  title: 'Créer en toute simplicité des pages web :'
-  description: 'Offrez vous une flexibilité inégalée pour créer rapidement des pages web sur mesure, en toute simplicité. Que vous souhaitiez modifier une page existante ou en créer une nouvelle, vous n''avez besoin ni de développeur, ni de compétences en programmation. Voici pourquoi vous allez l''adorer :'
-  cards:
-    - title: Une facilité d'utilisation
-      description: Glissez-déposez des éléments pour personnaliser vos pages. En quelques clics, tout est prêt !
-      icon: i-tabler-drag-drop
-      class: col-span-4 row-span-3
-    - title: Une flexibilité totale
-      description: Ajoutez des sections, modifiez les styles, organisez vos contenus en fonction de vos besoins spécifiques.
-      icon: i-material-symbols-light-flex-wrap-rounded
-      class: col-span-4 row-span-3
-    - title: Un gain de temps, sans coût
-      description: Concentrez-vous sur l'essentiel, Frappe Builder vous fait gagner des heures précieuses sur la création et la maintenance de vos pages.
-      icon: i-material-symbols-alarm-on-outline-rounded
-      class: col-span-4 row-span-3
+  - title: Assemblez la page à la souris
+    description: Vous placez les blocs dans un éditeur de type Figma, puis vous réglez chaque propriété dans le panneau de droite. Vous vérifiez la mise en page dans la vue de chaque taille d'écran. Le mode sombre suit la préférence du visiteur, avec un bouton pour l'imposer.
+    image: /modules/builder/feature-editeur.webp
+    badge: Éditeur visuel
+  - title: Décrivez la page à Bob
+    description: Vous écrivez votre demande dans la discussion. Bob lit vos pages existantes, reprend leurs composants et leur style, puis relie les sections dynamiques et les formulaires à vos DocTypes. Chaque modification de l'assistant peut être annulée. La génération passe par OpenRouter, un service externe facturé à l'usage, de l'ordre de quelques centimes par page créée.
+    badge: Assistant IA
+  - title: Reliez vos blocs à vos données
+    description: Un script de données par bloc lit votre base et renvoie les valeurs à afficher. Vous liez une propriété ou un style à une donnée de la page, à un paramètre d'URL ou au résultat d'un script. Des scripts globaux et des scripts de page complètent le comportement.
+    badge: CMS intégré
+  - title: Publiez et mesurez
+    description: Vous cliquez sur Publier et la page est en ligne à l'adresse de votre site. Le tableau d'analyse affiche les vues, les visiteurs uniques et les principaux référents de chaque page. Builder n'ajoute pas de scripts superflus aux pages publiées.
+    badge: Publication
+
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez « Builder » sur votre site. L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://github.com/frappe/builder</code> puis <code>bench --site votre-site install-app builder</code>."
+    - title: Pour activer l'assistant
+      description: Dans « Builder AI Provider », renseignez la clé API de votre compte OpenRouter. Le coût de génération est facturé par OpenRouter, à l'usage.
+  prerequisites:
+    - Un compte OpenRouter avec une clé API, seulement si vous utilisez l'assistant
+
+faq:
+  items:
+    - label: Faut-il savoir coder pour créer une page ?
+      content: Non. Vous assemblez les blocs et réglez leurs propriétés dans l'éditeur. Les scripts de page, de bloc et globaux restent disponibles si vous voulez aller plus loin.
+    - label: Combien coûte la génération de pages par l'assistant ?
+      content: L'assistant appelle OpenRouter avec votre propre clé API. OpenRouter facture à l'usage, de l'ordre de quelques centimes par page créée. Dokos ne facture rien pour cette fonction.
+    - label: L'assistant peut-il modifier mon site sans mon accord ?
+      content: Ses lectures respectent vos permissions. Les modifications sensibles attendent votre validation et chaque modification peut être annulée.
+    - label: Puis-je partir d'une maquette Figma ?
+      content: Frappe publie un plugin Figma vers Frappe Builder, en version bêta, qui importe une maquette dans l'éditeur.
+    - label: Puis-je piloter Builder depuis un agent de code ?
+      content: Frappe publie une compétence `frappe-builder` pour Claude Code, Codex ou OpenCode. L'agent modifie, construit et publie vos pages à travers l'outil `frappectl`.
+
 bottom_cta:
-  title: Prêt à transformer vos idées en réalité ?
-  description: Essayez Frappe Builder dès aujourd'hui ! Découvrez à quel point il est facile de concevoir des pages web et des interfaces qui reflètent vos valeurs, vos produits et vos services.
-  card: true
-  class: bg-sky-600/10 dark:bg-sky-800/10
+  title: Posez-nous vos questions sur Frappe Builder.
+  description: Dites-nous quelles pages vous voulez mettre en ligne.
   links:
-    - label: Créez votre première page web
-      size: md
-      color: amber
-      to: https://cloud.dokos.io
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
       target: _blank
-    - label: En savoir plus sur Frappe Builder
-      size: md
-      variant: link
-      color: gray
-      to: https://frappe.io/builder
-      target: _blank
-      icon: i-heroicons-outline-arrow-right
-      trailing: true
+      size: xl
+      color: neutral
+      variant: outline

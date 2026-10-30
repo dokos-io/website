@@ -1,0 +1,138 @@
+# Sources :
+# - https://doc.dokos.io/v5/dokos-cli (et sous-pages installation, configuration, commandes,
+#   integration-agents), https://doc.dokos.io/v5/integrations/ia/assistants-externes
+# - README de https://gitlab.com/dokos/dokos-cli (branche develop) : commandes, sites en lecture
+#   seule, trousseau du système, plugin Claude, licence MIT (Dokos SAS, 2026)
+#
+# Captures à prendre : Dokos CLI s'exécute sur le poste de l'utilisateur, les captures sont des
+# fenêtres de terminal (thème clair, 1440×900) connectées à demo.dokos.cloud :
+# - hero.webp : `dokos get-list "Sales Invoice" --filters '[["status","=","Overdue"]]'` avec le
+#   tableau de résultats
+# - fit.webp : une session Claude Code où l'agent appelle l'outil `doc_list` du serveur `dokos`,
+#   puis demande confirmation avant un `doc_update`
+# - feature-lecture.webp : `dokos run-report "Accounts Receivable"` suivi de `dokos meta get "Sales Invoice"`
+# - feature-ecriture.webp : `dokos set-value "Task" "TASK-0001" status "Completed"`, puis la
+#   même commande refusée sur un site marqué en lecture seule
+# - feature-sites.webp : `dokos sites` listant plusieurs sites et le site actif
+# - feature-agents.webp : `dokos agent install --print` et la liste des runtimes détectés
+
+navigation:
+  title: Dokos CLI
+  icon: i-heroicons-command-line
+  description: Lire et écrire les données d'un site Dokos depuis un terminal ou depuis un agent IA.
+
+title: Dokos CLI
+description: Une commande installée sur votre poste pour lire et écrire les données d'un site Dokos par l'API REST, et un serveur MCP qui donne les mêmes capacités à Claude Code et aux autres agents.
+icon: i-heroicons-command-line
+application: Dokos CLI
+theme: intelligence-artificielle
+author: Dokos
+logo:
+  light: /frappe/dokos_logo.svg
+  dark: /frappe/dokos_logo.svg
+
+publisher: dokos
+licence: MIT
+version: v5
+docs: https://doc.dokos.io/v5/dokos-cli
+related: [dokos-ai, dokos, dodock]
+
+hero:
+  title: Votre site Dokos, <span class="text-primary">depuis un terminal</span> ou depuis un agent IA.
+  description: La commande <code>dokos</code> interroge et modifie les documents d'un site par son API REST. La même commande, lancée avec <code>dokos mcp</code>, devient un serveur MCP pour Claude Code, agy, Vibe CLI ou OpenCode.
+
+for_whom:
+  items:
+    - title: Vous administrez un site et vous exportez des listes dans des scripts
+      description: Vous listez des documents avec des filtres, exécutez un rapport et récupérez le résultat en JSON pour l'enchaîner avec vos autres outils.
+      icon: i-heroicons-command-line
+    - title: Vous développez sur Dokos et vous voulez connaître un schéma avant d'écrire
+      description: Vous affichez les champs d'un DocType, ses options et ses règles de permission, puis vous créez ou modifiez un document en une commande.
+      icon: i-heroicons-code-bracket
+    - title: Vous travaillez déjà avec Claude Code ou un autre agent
+      description: Vous branchez l'agent sur votre site en une commande. Il lit vos documents, exécute vos rapports et prépare des écritures que vous confirmez.
+      icon: i-heroicons-cpu-chip
+    - title: Vous voulez laisser un agent explorer la production sans risque
+      description: Vous marquez le site en lecture seule. Toute écriture est refusée avant que la demande quitte votre poste.
+      icon: i-heroicons-lock-closed
+
+fit:
+  description: >-
+    Dokos CLI s'installe <strong>sur votre poste</strong> et dialogue avec le site par l'API REST,
+    avec une clé d'API. Les droits de la commande, et ceux de l'agent qui l'utilise, sont ceux de
+    l'utilisateur dont la clé est enregistrée. Une clé issue d'un compte restreint donne un agent
+    restreint.<br>
+    Les lectures s'exécutent sans interruption. Les écritures demandent une confirmation en
+    langage clair dans l'agent. Un site peut être marqué en lecture seule. Une sauvegarde envoie
+    la date de dernière modification du document, et le site refuse l'écriture si quelqu'un l'a
+    changé entre-temps. Les secrets sont rangés dans le trousseau du système d'exploitation.<br>
+    Si votre site a l'application <a href="/fr/modules/dokos-ai">Dokos AI</a> avec son serveur
+    MCP activé, les compétences que vous y publiez sont récupérées par <code>dokos skill pull</code>
+    et appliquées par votre agent externe.
+  reads:
+    - Tout DocType et tout rapport accessibles à l'utilisateur de la clé d'API
+    - Les schémas de DocType et les règles de permission
+    - Les compétences publiées par le site (application Dokos AI)
+  adds:
+    - La commande <code>dokos</code> sur votre poste (Linux, macOS, Windows)
+    - Le serveur MCP <code>dokos mcp</code> et la compétence « dokos-erp » pour les agents
+    - Le plugin « dokos » pour Claude Cowork et l'application Claude de bureau
+    - Un cache local des DocTypes et des rapports du site (<code>dokos sync</code>)
+  depends:
+    - Un site Dokos avec une clé et un secret d'API
+    - Python 3.11 ou supérieur
+
+features:
+  - title: Interrogez un site sans quitter le terminal
+    description: Vous listez des documents avec des filtres et des champs choisis, lisez un document, comptez, lisez une valeur, exécutez un rapport ou affichez le schéma d'un DocType. Le résultat s'affiche en tableau, ou en JSON dès que la sortie est redirigée vers un autre programme.
+    badge: Lecture
+  - title: Écrivez des données, avec les garde-fous du site
+    description: Vous créez, sauvegardez, soumettez, annulez, amendez, supprimez ou renommez un document, mettez à jour une valeur ou un lot, et téléversez un fichier. Une erreur affiche le message du serveur et la commande qui y répond. Sur un site en lecture seule, l'écriture est refusée avant d'être envoyée.
+    badge: Écriture
+  - title: Travaillez avec plusieurs sites
+    description: Vous enregistrez chaque site sous un nom avec <code>dokos add-site</code> ou depuis un bench local avec <code>dokos use-site</code>. Vous changez de site actif, ou vous ciblez un site pour une seule commande avec <code>-s</code>.
+    badge: Sites
+  - title: Équipez un agent IA en une commande
+    description: <code>dokos agent install</code> enregistre le serveur MCP dans Claude Code, agy, Vibe CLI et OpenCode, approuve d'office les seuls outils de lecture et installe la compétence « dokos-erp ». L'agent lit et met à jour le site en langage naturel. Les écritures restent confirmées.
+    badge: Agents (MCP)
+
+install:
+  description: Dokos CLI ne s'installe pas depuis la marketplace. C'est un paquet Python que vous installez sur votre poste, puis que vous connectez à votre site.
+  steps:
+    - title: Installez la commande
+      description: "<code>pipx install \"git+https://gitlab.com/dokos/dokos-cli.git@&lt;tag&gt;\"</code> en épinglant une version publiée. <code>pip</code> fonctionne aussi. <code>dokos self-update</code> met l'outil à jour selon la méthode d'installation détectée."
+    - title: Connectez un site
+      description: "<code>dokos configure</code> enregistre l'URL du site et une clé d'API. Depuis un bench local, <code>dokos use-site</code> émet les clés pour l'utilisateur de votre choix. Vérifiez avec <code>dokos get-list \"User\" --limit 5</code>."
+    - title: Branchez vos agents
+      description: "<code>dokos agent install</code> pour Claude Code, agy, Vibe CLI et OpenCode. À la main, <code>dokos mcp --print-config</code> affiche l'extrait à coller dans la configuration MCP de l'agent, et <code>dokos mcp</code> lance le serveur."
+  prerequisites:
+    - Python 3.11 ou supérieur, avec pipx (recommandé) ou pip
+    - Une clé et un secret d'API d'un utilisateur du site, ou un bench local
+
+faq:
+  items:
+    - label: Quelle différence avec Dokos AI ?
+      content: "[Dokos AI](/fr/modules/dokos-ai) vit dans le site : son assistant est dans l'interface Dokos et ses flux s'exécutent sur le serveur. Dokos CLI vit sur votre poste et sert d'abord aux administrateurs, aux développeurs et aux agents installés localement. Les deux passent par le MCP. Si Dokos AI est installé avec son serveur MCP activé, le plugin « dokos-connect » relie Claude au site sans rien installer sur votre poste."
+    - label: Un agent peut-il écrire sans mon accord ?
+      content: "<code>dokos agent install</code> n'approuve d'office que les outils de lecture (lire, lister, compter, rapport, schéma, permissions, sites). Les outils d'écriture restent soumis à la confirmation de l'agent. Pour exclure toute écriture, marquez le site en lecture seule avec <code>dokos sites --read-only nom-du-site</code>."
+    - label: Où sont stockés mes identifiants ?
+      content: Dans le trousseau du système d'exploitation. Sans trousseau (conteneur, intégration continue), ils sont écrits dans le fichier de configuration en mode 0600. Les variables d'environnement <code>DOKOS_URL</code>, <code>DOKOS_API_KEY</code> et <code>DOKOS_API_SECRET</code> ont la priorité sur le fichier.
+    - label: Fonctionne-t-il sous Windows ?
+      content: Oui, sous Linux, macOS et Windows. Les commandes <code>dokos use-site</code> et <code>dokos setup</code>, qui appellent <code>bench</code>, sont réservées à Linux et macOS. Elles ne sont pas nécessaires pour le MCP ni pour le plugin Claude.
+    - label: Et depuis l'application Claude de bureau ou Claude Cowork ?
+      content: "Ajoutez la marketplace <code>https://gitlab.com/dokos/dokos-cli</code> dans Customize, Plugins, puis installez le plugin « dokos ». Il demande le chemin de l'exécutable <code>dokos</code> (<code>which dokos</code> ou <code>where dokos</code>). La session doit s'exécuter en local : une session dans le cloud ne peut pas lancer un programme sur votre poste."
+
+bottom_cta:
+  title: Dites-nous ce que vous voulez automatiser sur votre site.
+  description: Installation, clés d'API et permissions se cadrent avec votre équipe technique avant la mise en place.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Lire la documentation
+      to: https://doc.dokos.io/v5/dokos-cli
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

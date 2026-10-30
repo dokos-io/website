@@ -1,0 +1,115 @@
+title: Nous bâtissons vos applications métier
+description: Nos ingénieurs construisent les applications qui manquent à votre gestion, sur Dokos et Frappe, et les livrent dans vos dépôts.
+navigation:
+  title: Ingénierie
+  icon: i-heroicons-wrench-screwdriver
+  description: Des applications métier construites sur Dokos et Frappe
+
+hero:
+  headline:
+    label: Ingénierie
+    icon: i-heroicons-wrench-screwdriver
+  title: Nous <span class="text-primary">bâtissons</span> vos applications métier.
+  description: "Vos processus ne rentrent pas tous dans un logiciel standard. Nous construisons les applications qui manquent, sur Dokos et Frappe, et nous les livrons dans vos dépôts, sous licence libre. Elles héritent de la base : les documents, les droits, l'API et l'accès des agents."
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir les tarifs
+      to: /fr/tarifs
+      size: xl
+      color: neutral
+      variant: outline
+
+scope:
+  title: Nos interventions
+  description: Cinq natures de mission, chiffrées au projet après un cadrage court.
+  links:
+    - label: Voir l'écosystème
+      to: /fr/modules
+      color: neutral
+      variant: outline
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  items:
+    - title: Architecture de plateforme
+      description: Dimensionnement, découpage en applications, stratégie de montée de version, articulation avec votre système d'information. La mission qui évite les trois suivantes.
+      icon: i-heroicons-squares-2x2
+    - title: Migration
+      description: Reprise depuis un logiciel propriétaire, des tableurs ou une installation Frappe ou ERPNext existante. Plan de bascule, jeu de recette, procédure de repli.
+      icon: i-heroicons-arrow-path
+    - title: Développement métier
+      description: Applications spécifiques, automatisations, connecteurs. Livrés sous licence libre dans vos dépôts, documentés, déployables sans nous.
+      icon: i-heroicons-code-bracket-square
+    - title: Ingénierie IA
+      description: Des compétences Dokos AI écrites pour vos processus, des agents connectés par le serveur MCP, avec confirmation avant toute écriture et un historique de chaque action.
+      icon: i-heroicons-cpu-chip
+    - title: Formation
+      description: Vos équipes apprennent à paramétrer, à adapter et à administrer le site. La mission réussit quand vous nous appelez moins.
+      icon: i-heroicons-academic-cap
+
+sections:
+  - title: Ce qu'une application métier hérite de Dokos
+    description: <strong>Une application construite sur Dokos commence avec tout ce que la base fournit déjà.</strong><br><br>Vous décrivez vos documents et leurs règles ; les formulaires, les listes, les rapports, les droits et l'API existent aussitôt. Vos équipes y accèdent depuis le même bureau, et vos agents IA depuis le même serveur MCP.
+    image: /image/nuage-dashboard-dark.png
+    align: right
+    features:
+      - name: Documents et flux de validation
+        description: Brouillon, validation, annulation, historique. Chaque document garde la trace de qui a fait quoi.
+        icon: i-heroicons-document-check
+      - name: Droits par rôle
+        description: Les permissions définies pour Dokos s'appliquent à votre application sans travail supplémentaire.
+        icon: i-heroicons-shield-check
+      - name: API, webhooks et MCP
+        description: Chaque document est lisible et modifiable par l'API, par un webhook, ou par un agent via Dokos CLI.
+        icon: i-heroicons-code-bracket
+
+operations:
+  title: Comment nous travaillons
+  description: Notre manière d'intervenir compte autant que le périmètre.
+  items:
+    - title: À deux dès le début
+      description: Chaque mission est suivie par deux ingénieurs. Un projet qui tient à une seule personne est un risque pour vous comme pour nous.
+      icon: i-heroicons-user-group
+    - title: Au contact de vos équipes
+      description: Nous travaillons sur vos processus réels, avec les personnes qui les tiennent. Le transfert de compétences se fait en chemin.
+      icon: i-heroicons-users
+    - title: Livré dans vos dépôts
+      description: Code sous licence libre, documentation, procédure de déploiement. Vous pouvez reprendre le travail ou le confier à un tiers à tout moment.
+      icon: i-heroicons-document-text
+    - title: Sur le socle que nous éditons
+      description: Quand une limite vient de Dokos ou de Dodock, nous la corrigeons dans le socle, et la correction profite à tous.
+      icon: i-heroicons-code-bracket-square
+    - title: L'exploitation peut suivre
+      description: Ce que nous construisons, nous savons l'exploiter. Un contrat d'exploitation peut prendre le relais à la fin du projet.
+      icon: i-material-symbols-cloud-done-outline
+    - title: Ce qui dépasse nos compétences
+      description: Sur ce que nous ne maîtrisons pas, nous le disons et nous vous orientons vers un partenaire.
+      icon: i-heroicons-hand-raised
+
+faq:
+  title: Questions fréquentes
+  items:
+    - label: Comment sont chiffrées les missions ?
+      content: Au projet, après un cadrage court qui précise le périmètre et les livrables. Une mission d'architecture ou d'ingénierie IA mobilise des compétences plus rares qu'un développement de module, et le chiffrage le reflète. Pour un besoin ponctuel et bien identifié, les packs d'heures de la page Tarifs conviennent souvent mieux qu'un projet.
+    - label: Travaillez-vous avec nos équipes internes ?
+      content: C'est le mode que nous préférons. Nos ingénieurs se placent au contact de vos équipes, et l'objectif est votre autonomie. Nous intervenons aussi aux côtés de vos prestataires existants lorsque le périmètre de chacun est écrit.
+    - label: Que devient le code produit ?
+      content: "Il est publié sous licence libre et déposé dans vos dépôts comme dans les nôtres. Vous pouvez le reprendre, le modifier, le confier à un autre prestataire. Lorsqu'un développement a un intérêt général, nous proposons de le verser au produit : vous en gardez le bénéfice et la maintenance devient la nôtre."
+    - label: Intervenez-vous sur une installation que vous n'avez pas déployée ?
+      content: Oui, y compris sur ERPNext standard et sur les applications de l'écosystème Frappe. La mission commence par un audit de l'existant. Ses conclusions peuvent être qu'une remise à niveau doit précéder tout développement.
+
+cta:
+  title: Décrivez-nous le processus qui coince
+  description: Ce qui ne fonctionne pas aujourd'hui nous en dit plus qu'une liste de fonctionnalités. Un premier échange d'une heure suffit pour cadrer.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Nous garantissons vos applications
+      to: /fr/exploitation
+      size: xl
+      color: neutral
+      variant: outline

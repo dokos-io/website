@@ -1,0 +1,124 @@
+title: Hébergement et données
+description: "Vos données en France et en Allemagne, chez OVHcloud et Hetzner, un logiciel sous licence GPLv3, et une société française identifiée comme responsable."
+navigation:
+  title: Hébergement et données
+  icon: i-material-symbols-security-rounded
+  description: Hébergement européen, GPLv3, vos données restent à vous
+
+hero:
+  headline:
+    label: Hébergement européen
+    icon: i-circle-flags-european-union
+  title: Vos données restent en Europe.<br>Votre logiciel reste <span class="text-primary">le vôtre</span>.
+  description: Un logiciel de gestion sous licence libre, hébergé en France et en Allemagne, exploité par une société française nommée dans le contrat. Vous pouvez exporter votre base à tout moment, et faire tourner le même code ailleurs.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Politique de confidentialité
+      to: /fr/securityandprivacy
+      size: xl
+      color: neutral
+      variant: outline
+
+proof:
+  items:
+    - label: Hébergement des bases clients
+      value: France · Allemagne
+      note: OVHcloud SAS et Hetzner GmbH
+    - label: Hyperscalers américains
+      value: Aucun
+      note: Dans la chaîne d'hébergement
+    - label: Licence du code exploité
+      value: GPLv3
+      note: Lisible, modifiable, reprenable
+
+scope:
+  title: Ce que nous tenons
+  description: Chaque point renvoie à notre politique de confidentialité ou à nos conditions générales d'hébergement.
+  items:
+    - title: Localisation des données
+      description: Les bases de données clients sont hébergées en France et en Allemagne. Les sauvegardes sont répliquées sur plusieurs zones de disponibilité, dans ces deux pays.
+      icon: i-heroicons-map-pin
+    - title: Responsable identifié
+      description: Dokos SAS, société française immatriculée au RCS de Nancy, est votre interlocuteur contractuel et votre sous-traitant au sens de l'article 28 du RGPD.
+      icon: i-heroicons-building-office-2
+    - title: Hébergeurs européens
+      description: "OVHcloud SAS en France et Hetzner GmbH en Allemagne. Les prestataires de paiement, Stripe et GoCardless Ltd, sont nommés dans la politique de confidentialité avec les données qu'ils reçoivent."
+      icon: i-circle-flags-european-union
+    - title: Aucune dépendance logicielle
+      description: L'intégralité du socle exploité est publiée sous GPLv3. Aucune brique propriétaire ne conditionne le fonctionnement de votre installation.
+      icon: i-heroicons-lock-open
+    - title: SecNumCloud
+      description: Nous ne sommes pas qualifiés SecNumCloud et nous ne l'annonçons pas. Cette qualification porte sur l'hébergeur d'infrastructure ; nous intervenons comme exploitant applicatif au-dessus.
+      icon: i-heroicons-information-circle
+    - title: Obligations françaises
+      description: "Comptabilité, encaissement certifié LNE, facturation électronique : les modules concernés sont conçus pour les obligations françaises. Le détail figure sur la page Certifications."
+      icon: i-octicon-law
+
+operations:
+  title: Protection des données, dans le détail
+  description: Ces engagements figurent dans notre politique de confidentialité et dans nos conditions générales d'hébergement.
+  items:
+    - title: Vous restez responsable de traitement
+      description: Les données que vous versez dans votre base vous appartiennent. Nous les traitons en votre nom, comme sous-traitant, selon vos instructions.
+      icon: i-material-symbols-data-loss-prevention-outline
+    - title: Accès limité et journalisé
+      description: Nos équipes n'accèdent à vos données que sur votre demande, pour résoudre un incident technique, ou sur obligation légale. Chaque accès est tracé.
+      icon: i-heroicons-finger-print
+    - title: Notification sous 72 heures
+      description: En cas de violation de données sur nos serveurs, la CNIL est notifiée sous 72 heures, et vous l'êtes dès lors qu'un risque pèse sur les droits des personnes concernées.
+      icon: i-heroicons-bell-alert
+    - title: Aucune donnée bancaire stockée
+      description: Les paiements passent par des prestataires conformes PCI-DSS. Les numéros de carte ne transitent pas par nos systèmes.
+      icon: i-heroicons-credit-card
+    - title: Cookies strictement nécessaires
+      description: Le site n'utilise que les cookies indispensables à la session et à la sécurité. Aucun cookie publicitaire ou de suivi sans consentement explicite.
+      icon: i-heroicons-shield-check
+    - title: Effacement encadré
+      description: Après résiliation, votre base est désactivée pendant quatre semaines, puis détruite. Les copies de sauvegarde sont purgées au terme de la conservation de sécurité de douze mois.
+      icon: i-heroicons-trash
+
+reversibility:
+  title: Reprendre vos données et votre installation
+  description: Ce que vous pouvez faire à tout moment, sans demande préalable.
+  items:
+    - title: Exporter vos données
+      description: Export complet, dans un format structuré et courant, depuis votre propre interface d'administration.
+      icon: i-material-symbols-cloud-sync-outline-rounded
+    - title: Continuer sans l'éditeur
+      description: Le code étant libre, votre installation reste exploitable si Dokos SAS disparaît.
+      icon: i-heroicons-arrow-path
+    - title: Changer d'exploitant
+      description: Aucune clause d'exclusivité. Vous pouvez confier l'exploitation à un tiers ou la reprendre en interne, avec notre concours.
+      icon: i-heroicons-arrows-right-left
+    - title: Résilier avec trente jours de préavis
+      description: En cas de révision tarifaire, sortie sans pénalité dans les trente jours suivant la notification.
+      icon: i-heroicons-document-check
+
+faq:
+  title: Questions fréquentes
+  items:
+    - label: Où sont hébergées les données ?
+      content: En France et en Allemagne, chez OVHcloud et Hetzner. Production et sauvegardes sont réparties entre ces deux pays, dans l'Union européenne. Le détail figure dans notre politique de confidentialité.
+    - label: Qui sont vos sous-traitants ?
+      content: "Ils sont nommés dans notre politique de confidentialité, avec pour chacun la raison de son intervention et la nature des données partagées : OVHcloud et Hetzner pour l'hébergement, Stripe et GoCardless Ltd pour les paiements. Tout changement susceptible de toucher vos données vous est notifié au préalable, conformément à l'article 28 du RGPD."
+    - label: Comment vérifier l'intégrité de la version installée ?
+      content: Nous publions l'empreinte de chaque fichier du périmètre certifié, ainsi que la procédure pour recalculer cette empreinte sur votre propre installation. Le détail figure sur la page Certifications.
+    - label: Qui contacter pour une demande RGPD ?
+      content: Notre délégué à la protection des données est joignable à dpo@dokos.io, ou par courrier à l'adresse indiquée dans notre [politique de confidentialité](/fr/securityandprivacy). Le délai de réponse est d'un mois à compter de la réception, prolongeable selon les circonstances.
+
+cta:
+  title: Posez-nous vos questions sur l'hébergement et les données
+  description: Envoyez-les. Nous répondons point par point, y compris quand la réponse est non.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir les certifications
+      to: /fr/certifications
+      size: xl
+      color: neutral
+      variant: outline

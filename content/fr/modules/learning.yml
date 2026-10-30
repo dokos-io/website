@@ -1,143 +1,119 @@
-navigation:
-  title: Frappe Learning
-  description: Pateforme de formation en ligne / e-Learning
-  icon: i-iconoir-learning
-
+# Sources :
+# - README de https://github.com/frappe/lms (branche develop, lu le 29 octobre 2026)
+# - Documentation Frappe Learning, page « Your First Steps with Frappe Learning » (https://docs.frappe.io/learning)
+# - hooks.py du dépôt : required_apps = ["frappe/payments"], entrée « Learning » dans l'écran des applications
+# - DocTypes du dépôt (lms/lms/doctype) : LMS Course, Course Chapter, Course Lesson, LMS Batch, LMS Quiz, LMS Assignment, LMS Certificate, LMS Program, LMS Enrollment, LMS Live Class, LMS Payment
+# - Licence : fichier license.txt du dépôt (AGPLv3)
+# - Marketplace Dokos Cloud : app « lms », titre « Frappe Learning »
+#
+# Captures à prendre (demo.dokos.cloud, 1440×900, thème clair, français) :
+# - hero.webp : la page d'accueil de Learning (/lms) avec la liste des cours publiés
+# - fit.webp : la liste des membres d'une session (batch) côté Learning, et la fiche Utilisateur Dokos d'un apprenant
+# - feature-cours.webp : l'éditeur de cours, un chapitre déplié avec ses leçons (texte, vidéo, quiz)
+# - feature-session.webp : une session avec ses dates, ses cours et un cours en direct planifié
+# - feature-evaluation.webp : la correction d'un devoir remis en PDF, ou le résultat d'un quiz
+# - feature-certificat.webp : un certificat généré à la fin d'un cours
 
 title: Frappe Learning
-link: "https://frappe.io/learning"
-author: Frappe Technologies & Contributeurs
-description: Créez votre propre plateforme de formation avec Frappe Learning
+description: Publiez vos cours en ligne, suivez vos apprenants par session et délivrez leurs certificats depuis votre site Dokos.
+icon: i-heroicons-academic-cap
 application: Frappe Learning
-
+theme: projets-ressources-humaines
+author: Frappe Technologies et contributeurs
 logo:
   light: /frappe/lms.png
   dark: /frappe/lms.png
+navigation:
+  title: Frappe Learning
+  icon: i-heroicons-academic-cap
+  description: Cours en ligne, sessions, quiz et certificats.
+
+publisher: frappe
+licence: AGPLv3
+version: v5
+marketplace: lms
+docs: https://docs.frappe.io/learning
+related: [ressources-humaines, paiements, wiki, support]
 
 hero:
-  title: "<span class='text-primary'>Frappe Learning</span>"
-  description: Créez votre propre plateforme de formation avec Frappe Learning
-  headline:
-    label: Les applications Frappe
-    to: https://frappe.io/products
-    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
-    target: _blank
-    color: green
-  links:
-    - label: Mettez votre premier cours en ligne
-      to: https://cloud.dokos.io
-      size: xl
-      color: amber
-      icon: i-heroicons-rocket-launch
-      trailing: false
-      target: _blank
-    - label: Documentation
-      icon: i-heroicons-arrow-right
-      trailing: true
-      size: xl
-      color: gray
-      to: https://doc.dokos.io
-      target: _blank
+  title: Vos formations <span class="text-primary">en ligne</span>, sur votre site Dokos.
+  description: Vous écrivez un cours en chapitres et en leçons, vous l'ouvrez à vos apprenants et vous suivez leur progression. À la fin, vous délivrez le certificat.
+  image: /modules/learning/hero.webp
 
-colored_section:
-  title: Simplifiez l'apprentissage de vos clients
-  description: "Chez Dokos, nous avons toujours eu à cœur d'accompagner nos clients dans l'adoption des meilleures technologies, et c'est avec une grande fierté que nous vous proposons Frappe Learning : une plateforme d'apprentissage innovante, développée par l'équipe de Frappe, compatible avec Dokos."
-  image: "image/learning/frappe-learning.webp"
-  align: left
-  badge:
-    label: Les applications Frappe
-    to: https://frappe.io/products
-    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
-    target: _blank
-    color: orange
+for_whom:
+  items:
+    - title: Vous formez vos clients à votre produit
+      description: Vous publiez un cours en libre accès ou payant. Chaque client s'inscrit, suit les leçons à son rythme et obtient un certificat.
+      icon: i-heroicons-user-group
+    - title: Vous intégrez vos nouveaux salariés
+      description: Vous regroupez les recrues d'un même mois dans une session, avec des dates et des cours en direct. La session les inscrit à tous ses cours.
+      icon: i-heroicons-identification
+    - title: Vous animez des classes avec des évaluations
+      description: Vous ajoutez des quiz et des devoirs aux leçons. Un évaluateur corrige les remises et valide le certificat.
+      icon: i-heroicons-clipboard-document-check
 
-main_features:
-  - title: Créez une expérience d'apprentissage personnalisée
-    description: "Donnez à vos clients accès à des formations sur mesure. Créez des parcours d'apprentissage adaptés à leurs besoins spécifiques, qu'ils soient nouveaux utilisateurs de vos services ou expérimentés. En leur fournissant des contenus pédagogiques de qualité, vous renforcez leur maîtrise de vos produits et améliorez leur satisfaction à long terme."
-    image: "image/learning/learning-cours.png"
-    image_bg_color: bg-teal-500
-    align: right
-    links:
-    - label: Mettre son premier cours en ligne
-      to: https://cloud.dokos.io
-      size: xl
-      color: amber
-      icon: i-heroicons-rocket-launch
-      trailing: false
-      target: _blank
-    - label: Documentation
-      icon: i-heroicons-arrow-right
-      trailing: true
-      size: xl
-      color: gray
-      to: https://doc.dokos.io
-      target: _blank
-  - title: "Intégrez-vous parfaitement à Dokos"
-    description: "Frappe Learning s'intègre parfaitement à Dokos, facilitant la gestion des utilisateurs, des cours, et des certifications. Cette intégration vous permet de centraliser la formation de vos clients tout en profitant des avantages d'un environnement d'un logiciel de gestion moderne, sans avoir à gérer une plateforme séparée ou des coûts supplémentaires. "
-    image: "image/ventes/cinq-insights ventes.webp"
-    image_bg_color: bg-teal-500
-    align: left
-  - title: "Suivez la progession en temps réel"
-    description: "Suivez la progression de vos apprenants grâce à nos outils d'analyse précis. Vous pouvez visualiser les étapes complétées, évaluer les performances, et identifier les points d'amélioration pour offrir un service toujours plus performant. Créez ainsi une boucle d'apprentissage continue, tout en gardant vos clients informés et satisfaits."
-    image: "image/learning/learning-tableau-de-bord-stat.webp"
-    image_bg_color: bg-teal-500
-    align: right
-  - title: "Un véritable programme de formation sans frais supplémentaire"
-    description: "En quelques clics, mettez en place l'application Frappe Learning sans frais additionnels. Mettez en place un véritable programme de formation pour vos utilisateurs ou clients, sans augmenter vos coûts d'infrastructure ou de gestion."
-    image: "image/nuage-dashboard-dark.png"
-    image_bg_color: bg-teal-500
-    align: left
+fit:
+  description: "Frappe Learning s'installe sur votre site Dokos et utilise ses <strong>utilisateurs</strong> : un apprenant, un formateur ou un évaluateur est un utilisateur de votre site avec le rôle correspondant. Les cours payants passent par l'application Paiements, la même que vos factures. L'application est accessible à l'adresse /lms et dans l'écran des applications de votre site."
+  reads:
+    - Les Utilisateurs de votre site, avec les rôles Student, Instructor, Evaluator et Moderator
+    - Les passerelles de paiement de l'application Paiements pour les cours payants
+  adds:
+    - L'application Learning à l'adresse /lms
+    - Les DocTypes « LMS Course », « Course Chapter », « Course Lesson », « LMS Batch » et « LMS Program »
+    - Les DocTypes « LMS Quiz », « LMS Assignment », « LMS Certificate » et « LMS Live Class »
+    - Les DocTypes « LMS Enrollment » et « LMS Payment »
+  depends:
+    - Dodock
+    - Paiements
 
+features:
+  - title: Écrivez le cours en chapitres et en leçons
+    description: Un cours contient des chapitres, et chaque chapitre contient ses leçons. Une leçon porte un texte, une vidéo, un PDF, des diapositives, un quiz ou un devoir. La vue apprenant montre la leçon telle que vos apprenants la verront. Seul un Moderator publie le cours.
+    badge: Cours
+  - title: Regroupez vos apprenants en sessions
+    description: Une session réunit un groupe d'apprenants sur un ou plusieurs cours, avec une date de début et une date de fin. Un apprenant ajouté à la session est inscrit à tous ses cours. Vous planifiez un cours en direct Zoom depuis la session, et les apprenants voient la liste des cours à suivre.
+    badge: Sessions
+  - title: Évaluez avec des quiz et des devoirs
+    description: Vous créez un quiz avec des questions à choix unique, à choix multiples ou à réponse libre. Un devoir se remet en PDF ou en document. L'évaluateur corrige depuis sa file de remises. Un programme enchaîne plusieurs cours dans un ordre fixé.
+    badge: Évaluations
+  - title: Délivrez le certificat
+    description: À la fin d'un cours ou d'une session, vous accordez un certificat à l'apprenant, automatiquement à la fin du cours ou en une fois pour toute la session. L'application fournit un modèle de certificat, et vous pouvez y substituer le vôtre. Vous pouvez facturer un cours, une session ou le certificat lui-même.
+    badge: Certificats
 
-carousel:
-  title: "Les fonctionnalités clés de Frappe Learning"
-  cards:
-    - title: "Créez facilement vos cours"
-      description: "Construit avec une interface intuitive, Frappe Learning vous permet de créer des modules de formation complets en quelques clics. Importez des contenus multimédias, créez des quiz interactifs, et structurez les parcours d'apprentissage de manière flexible."
-    - title: "Simplifiez la gestion de vos utilisateurs"
-      description: "Gérez les inscriptions, attribuez des cours, et offrez à vos utilisateurs une expérience d'apprentissage personnalisée. Suivez leurs progrès et ajustez les parcours selon leurs besoins."
-    - title: "Valorisez l'aquisition des compétences"
-      description: "Attribuez des certificats et badges à vos clients à la fin de chaque formation. Renforcez leur engagement et leur confiance dans vos services."
-    - title: "Obtenez des rapports détaillés"
-      description: "Analysez la progression de vos utilisateurs et l'efficacité de vos formations. Frappe Learning aide à ajuster votre contenu pédagogique pour des résultats optimaux."
+install:
+  steps:
+    - title: Depuis la marketplace Dokos Cloud
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez « Frappe Learning » sur votre site. L'application est comprise dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://github.com/frappe/lms</code> puis <code>bench --site votre-site install-app lms</code>. L'application Paiements doit être installée sur le bench au préalable."
+    - title: Ouvrez votre premier cours
+      description: Dans /lms, donnez les rôles à vos utilisateurs, créez un cours avec ses chapitres et ses leçons, puis publiez-le avec un compte Moderator.
+  prerequisites:
+    - L'application Paiements, requise par Frappe Learning
+    - Un compte Zoom, seulement pour les cours en direct
 
-bridge_after_carousel:
-  title: "Pourquoi avons-nous choisi Frappe Learning pour vous ?"
-  description: "Chez Dokos, nous avons toujours valorisé l'apprentissage comme une clé de la réussite. Frappe Learning est plus qu'une simple plateforme de formation : c'est un moyen d'enrichir la relation avec vos clients et de les rendre plus autonomes et efficaces. Cette application s'intègre harmonieusement dans l'univers Dokos et constitue un excellent levier pour renforcer la fidélité de vos utilisateurs. Nous respectons profondément le travail et l'innovation de Frappe. Grâce à cette application, nous vous offrons une solution complète qui permet non seulement d'améliorer la satisfaction de vos clients, mais aussi d'accélérer leur adoption de vos services."
-  align: center
-
-bottom_section:
-  title: "Des avantages concrets pour vous et vos clients!"
-  cards:
-    - title: "Fidélisation accrue" 
-      description: "Avec des parcours de formation engageants, aidez vos clients à tirer le meilleur parti de vos produits. Offrez tous les outils pour réussir et établissez une relation de confiance à long terme. "
-      icon: i-heroicons-outline-fire
-      class: "col-span-4 row-span-2"
-    - title: "Gain de temps et efficacité"
-      description: "Automatisez l'apprentissage avec des modules en ligne accessibles 24/7, réduisant les besoins de support client et renforçant l'autonomie de vos utilisateurs."
-      icon: i-heroicons-outline-cube
-      class: "col-span-4 row-span-2"
-    - title: "Réputation renforcée"
-      description: "En offrant des certifications via Frappe Learning, vous positionnez votre entreprise comme un leader dans votre secteur, avec une démarche éducative solide."
-      icon: i-heroicons-outline-cube
-      class: "col-span-4 row-span-2"
-
+faq:
+  items:
+    - label: Mes apprenants doivent-ils avoir un compte sur mon site ?
+      content: Oui. Chaque apprenant est un utilisateur de votre site avec le rôle Student. Un formateur a le rôle Instructor, un correcteur le rôle Evaluator et un administrateur le rôle Moderator.
+    - label: Puis-je vendre un cours ?
+      content: Oui. Vous activez « cours payant » dans les réglages du cours et vous choisissez une passerelle dans Settings, onglet Payment. Le paiement passe par l'application Paiements de votre site.
+    - label: Quelle est la différence entre un cours, une session et un programme ?
+      content: Le cours est le contenu, en chapitres et en leçons. La session réunit des apprenants sur un ou plusieurs cours entre deux dates. Le programme enchaîne plusieurs cours dans un ordre fixé.
+    - label: Comment se passent les cours en direct ?
+      content: Depuis une session, vous créez un cours en direct Zoom. Les apprenants de la session voient la liste des cours en direct à suivre.
 
 bottom_cta:
-  title: "Prêt à transformer l'apprentissage de vos clients ?"
-  description: "Prenez le contrôle de leur expérience d'apprentissage et découvrez comment Frappe Learning peut vous aider à renforcer la satisfaction, l'engagement et l'autonomie de vos utilisateurs.<br>Commencez dès aujourd'hui !</br>"
-  card: true
-  class: bg-amber-600/10 dark:bg-amber-800/10
+  title: Posez-nous vos questions sur Frappe Learning.
+  description: Dites-nous qui vous voulez former.
   links:
-    - label: Postez votre premier cours
-      size: md
-      color: orange
-      to: https://cloud.dokos.io
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
       target: _blank
-    - label: En savoir plus sur Frappe Learning
-      size: md
-      color: gray
-      to: https://frappe.io/learning
-      target: _blank
-      icon: i-heroicons-outline-arrow-right
-      trailing: true
+      size: xl
+      color: neutral
+      variant: outline

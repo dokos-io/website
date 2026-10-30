@@ -1,136 +1,178 @@
+# Sources : doc.dokos.io/v5/dokos/comptabilite (introduction, nouveau-module-bancaire,
+# tresorerie/prevision-tresorerie, factures-fournisseurs, prelevement-sepa, acomptes, import-fec),
+# doc.dokos.io/v5/dokos/factures-fournisseurs, doc.dokos.io/v5/dokos/ventes/point-de-vente,
+# doc.dokos.io/v5/dokos/ventes/facturx, doc.dokos.io/v5/dokos/certification-caisse/export-archives,
+# doc.dokos.io/v5/dokos/comparaison-erpnext, doc.dokos.io/nouveautes (28 septembre 2026),
+# content/fr/blog/2026/arrivee-V5.md, content/fr/blog/2026/rentree-2026.md, content/fr/certifications.md.
+#
+# Captures à prendre (demo.dokos.cloud) :
+# - hero.webp : l'espace de travail Comptabilité (/app/accounting), cartes et raccourcis
+# - fit.webp : une facture de vente validée (/app/sales-invoice) avec son écriture au grand livre ouverte
+# - feature-ecritures.webp : le rapport Grand livre (/app/query-report/General Ledger) filtré sur un client
+# - feature-caisse.webp : une facture de point de vente (/app/pos-invoice) payée, avec ses modes de paiement
+# - feature-einvoice.webp : la liste des e-invoices du module Achats, colonne Statut visible
+# - feature-banking.webp : le module Banque (/banking), un compte sélectionné, une correspondance proposée
+# - feature-tresorerie.webp : le prévisionnel de trésorerie (Comptabilité > Trésorerie), cartes et grille journalière
+
 navigation:
   title: Comptabilité
   icon: i-uil-balance-scale
-  description: Gestion de la comptabilité et des finances.
+  description: Factures, écritures, banque et trésorerie dans un même module.
 
 title: Comptabilité
+description: Tient votre comptabilité à partir de vos factures, de vos paiements et de vos relevés bancaires.
 icon: i-uil-balance-scale
-description: Une comptabilité intégrée pour une maîtrise totale de vos finances.
 application: Dokos
+theme: finance-comptabilite
 author: Frappe Technologies, Dokos & Contributeurs
 
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: erpnext
+docs: https://doc.dokos.io/v5/dokos/comptabilite
+related: [ventes, achats, bank, paiements, etransactions]
+
 hero:
-  title: Simplifiez votre <span class="text-primary">comptabilité</span> et gagnez du temps avec Dokos
-  description: Facilitez la gestion de vos finances avec Dokos et bénéficiez d'une tranquillité d'esprit totale. Gérez vos comptes, suivez vos transactions, et obtenez des rapports financiers détaillés en quelques clics, tout en gardant un contrôle absolu sur vos finances.
-  links:
-    - label: Optimisez votre gestion financière
-      to: https://cloud.dokos.io
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: L'écosystème Dokos
-    color: sky
-    to: /fr
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Chaque facture validée écrit <span class="text-primary">son écriture comptable</span>.
+  description: Le module Comptabilité de Dokos enregistre vos factures de vente et d'achat, vos paiements et vos relevés bancaires. Il produit le grand livre, le bilan et le compte de résultat sans ressaisie.
+  image: /modules/comptabilite/hero.webp
+
+for_whom:
+  items:
+    - title: Votre expert-comptable ressaisit vos factures
+      description: Vos factures de vente et d'achat sont déjà des écritures. Vous lui ouvrez un accès et il consulte le grand livre à jour.
+      icon: i-heroicons-calculator
+    - title: Vous encaissez des particuliers
+      description: Avec le module Certification Caisse et sa licence, le point de vente de Dokos est couvert par la certification LNE. Les données d'encaissement sont conservées dans un journal inaltérable et exportables pour un contrôle.
+      icon: i-heroicons-receipt-percent
+    - title: Vos fournisseurs vous envoient déjà des factures électroniques
+      description: Dokos reçoit les factures CII, Factur-X et UBL depuis une plateforme agréée et prépare la facture fournisseur.
+      icon: i-heroicons-document-arrow-down
+    - title: Vous pointez vos relevés à la main
+      description: Le module Banque importe vos relevés et propose les correspondances avec vos paiements. Vous validez.
+      icon: i-heroicons-building-library
+
+fit:
+  description: >-
+    La comptabilité est au centre de votre site Dokos. Une facture de vente validée dans Ventes, une facture
+    d'achat validée dans Achats ou un reçu d'achat enregistré dans Stocks écrivent dans le même grand livre.
+    Les écritures de paiement rapprochées avec vos transactions bancaires ferment la boucle.
+  image: /modules/comptabilite/fit.webp
+  reads:
+    - Facture de vente et Facture d'achat
+    - Écriture de paiement et Écriture de journal
+    - Compte bancaire et Transaction bancaire
+    - Commande client et Commande fournisseur, pour les acomptes et le prévisionnel
+    - Abonnement, Note de frais et Fiche de paie, pour le prévisionnel de trésorerie
+  adds:
+    - L'espace de travail Comptabilité, le plan comptable, les journaux et l'exercice fiscal
+    - Le Grand livre, le Bilan, le Compte de résultat et la Balance générale
+    - Le module Banque (/banking) et le prévisionnel de trésorerie
+    - Le journal SAS Ledger de la caisse certifiée et l'export des archives fiscales
+    - Le Prélèvement SEPA, les Factures d'acompte et l'Import FEC
+  depends:
+    - Ventes
+    - Achats
+    - Stocks
+    - eTransactions
+    - Paiements
+
 features:
-  - title: Prenez des décisions éclairées avec une vue instantanée de vos finances
-    description: Nos tableaux de bord interactifs vous offrent un aperçu des principaux indicateurs de performance financière, vous permettant de prendre des décisions éclairées.<br><br>Configurez des rapports personnalisés pour suivre précisément les aspects qui comptent le plus pour votre entreprise.
-    video: /image/comptabilite/tableau-de-bord-comptabilite.mp4
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Tableaux de bord
-      color: sky
-  - title: Adaptez facilement votre plan comptable à votre entreprise
-    description: Organisez vos comptes en fonction de vos besoins, en créant des sous-groupes et des grands livres adaptés à la structure de votre entreprise.<br><br> Vous pouvez facilement ajuster votre arborescence comptable à mesure que votre organisation évolue.</br>
-    image: image/comptabilite/plan-comptable.png
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Plan comptable
-      color: sky
-  - title: Gardez votre comptabilité à jour en automatisant le suivi des transactions
-    description: Enregistrez toutes vos transactions de manière précise grâce à un système de journaux intuitif.<br><br> Suivez les revenus et dépenses, automatisez la gestion des paiements différés ou anticipés, et assurez un grand livre toujours à jour.</br>
-    image: image/comptabilite/suivi-revenus-et-depenses.svg
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Grand livre
-      color: sky
-  - title: Générez des factures pro en quelques clics et réduisez les retards de paiement
-    description: Créez des factures professionnelles en quelques clics. <br><br>Suivez facilement les paiements en attente grâce aux notifications automatiques par e-mail ou SMS.<br><br>Utilisez des modèles d'impression personnalisés pour des factures adaptées à vos besoins.
-    image: image/comptabilite/facture-de-vente.png
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Facturation
-      color: sky
-  - title: Simplifiez vos transactions internationales
-    description: Gérez les transactions internationales sans difficulté.<br><br> Envoyez des factures et suivez vos dépenses dans plusieurs devises.<br> Notre système convertit automatiquement les montants dans la devise de base, et vous permet de générer des rapports financiers dans diverses monnaies.</br>
-    image: image/comptabilite/rapports-financiers-diverses-monnaies.png
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Multidevise
-      color: sky
-  - title: Automatisez vos flux métier et gagnez du temps
-    description: Gagnez du temps en automatisant la création de factures pour les abonnements récurrents. <br><br>Grâce à la fonction Abonnements, vos factures sont générées et envoyées automatiquement, vous permettant de vous concentrer sur d'autres tâches essentielles.</br>
-    image: image/comptabilite/abonnement-photo-dokos.webp
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Automatisation
-      color: sky
-  - title: Simplifiez le rapprochement bancaire et garantissez la cohérence de vos comptes
-    description: Synchronisez vos comptes bancaires avec votre comptabilité. <br><br>Importez facilement vos relevés bancaires et effectuez le rapprochement avec vos transactions pour garantir la cohérence de vos comptes.</br>
-    image: image/comptabilite/rapprochement-bancaire-dokos-photo.png
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Réconciliation bancaire
-      color: sky
-  - title: Personnalisez Dokos pour répondre parfaitement aux besoins uniques de votre entreprise
-    description: Adaptez le logiciel à vos besoins spécifiques.<br><br> Ajoutez des champs personnalisés, modifiez les formulaires en fonction des rôles des utilisateurs, et créez des modèles d'impression uniques, tout cela sans avoir besoin de coder.</br>
-    image: image/comptabilite/personnalisation-dokos.webp
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Personnalisations
-      color: sky
-bottom_section:
-  title: 'La comptabilité avec Dokos, c’est aussi :'
-  cards:
-    - title: Un accès pour votre expert-comptable
-      description: Ajoutez facilement votre expert-comptable pour qu'il accède directement à vos données financières et les valide sans frais supplémentaire.
-      icon: i-heroicons-outline-calculator
-      class: col-span-4 row-span-3
-    - title: Des écritures de journal
-      description: Réalisez des écritures de journal pour ajuster vos comptes manuellement en cas de besoin, y compris les entrées inverses ou de correction.
-      icon: i-heroicons-outline-book-open
-      class: col-span-4 row-span-3
-    - title: Un suivi des actifs
-      description: Gardez un œil sur vos actifs avec un module dédié, facilitant la gestion de la dépréciation, des transferts et des ventes d'actifs.
-      icon: i-heroicons-outline-chart-bar-square
-      class: col-span-4 row-span-3
-plus_button:
-  label: Découvrez toutes nos fonctionnalités
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: amber
-  to: /features/comptabilite
+  - title: Vos factures deviennent vos écritures
+    description: >-
+      Vous validez une facture de vente ou d'achat. Dokos lui attribue son numéro à la validation, dans une
+      séquence continue, et passe l'écriture au grand livre. Les documents de facturation et de comptabilité
+      ne peuvent pas être supprimés. Le bilan sort au format attendu en France et les comptes de tiers se
+      placent à l'actif ou au passif selon leur solde.
+    badge: Grand livre
+  - title: Une caisse certifiée LNE
+    description: >-
+      Le point de vente crée la facture et enregistre le paiement en une seule opération, avec plusieurs
+      modes de paiement sur un même ticket. Chaque opération d'encaissement est inscrite dans un journal
+      SAS Ledger par société. Depuis la fiche Société, vous exportez une archive fiscale par période d'un an
+      au plus et vous vérifiez la chaîne cryptographique du journal. Vous conservez chaque archive six ans.
+      La certification suppose le module Certification Caisse et une licence délivrée par Dokos SAS.
+    badge: Certifié LNE
+  - title: Vos factures fournisseurs arrivent en électronique
+    description: >-
+      Dokos reçoit les factures électroniques aux formats CII, Factur-X et UBL par sa connexion à une
+      plateforme agréée. Chaque facture reçue apparaît dans la liste des e-invoices du module Achats avec son
+      statut (Réceptionnée, En attente de validation, Intégrée, Refusée, Abandonnée). Dokos crée la facture
+      fournisseur en brouillon et notifie l'équipe comptable, qui vérifie le montant et l'échéance avant de
+      valider. Un indicateur affiche par quelle plateforme la facture est arrivée. Côté émission, Dokos génère
+      déjà le fichier Factur-X à la validation d'une facture de vente ; l'envoi par la plateforme agréée est
+      en cours.
+    badge: Facturation électronique
+  - title: Le module Banque rapproche vos relevés
+    description: >-
+      Vous importez vos relevés en OFX, CSV, XLSX ou PDF. Dokos détecte les colonnes et écarte les doublons.
+      Pour chaque transaction, il propose une correspondance par montant, référence ou numéro de document,
+      avec une tolérance de date réglable. Vous validez, vous rapprochez une transaction avec plusieurs
+      paiements ou l'inverse, ou vous créez le paiement manquant. Des règles de correspondance affectent un
+      tiers ou un compte selon le libellé. Le module est en bêta et l'outil de rapprochement que vous
+      connaissez reste disponible, sur les mêmes données.
+    badge: Banking (bêta)
+  - title: Un prévisionnel de trésorerie à partir de vos documents
+    description: >-
+      Depuis Comptabilité > Trésorerie, vous choisissez une période et vous cliquez sur Générer. Dokos lit
+      vos factures de vente et d'achat, vos abonnements, vos commandes, vos notes de frais approuvées et vos
+      fiches de paie. Il affiche le solde d'ouverture, les encaissements et décaissements attendus, le solde
+      de clôture et une grille jour par jour. Vous cliquez sur un flux pour ouvrir son document, et vous
+      ajoutez des entrées manuelles. L'outil est en bêta ; la documentation conseille de le régénérer chaque
+      semaine sur huit à douze semaines.
+    badge: Trésorerie (bêta)
+
+install:
+  description: Le module Comptabilité fait partie de Dokos. Il n'y a rien à installer en plus.
+  steps:
+    - title: Sur Dokos Cloud
+      description: Créez votre site depuis votre tableau de bord Dokos Cloud. Dokos est installé avec le module Comptabilité. Compris dans toutes les formules.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>."
+    - title: Pour la facturation électronique
+      description: Installez l'application eTransactions depuis la marketplace, puis renseignez la connexion à votre plateforme agréée dans ses paramètres.
+    - title: Pour la caisse certifiée
+      description: L'application de certification de caisse s'installe sur les sites qui encaissent des particuliers. Écrivez-nous pour l'activer sur votre site.
+
+faq:
+  items:
+    - label: Puis-je reprendre ma comptabilité existante ?
+      content: >-
+        Oui. Depuis Comptabilité > France, vous créez les paramètres d'import FEC, puis les journaux et les
+        comptes manquants, puis un document Import FEC avec votre fichier. Dokos crée les factures ou les
+        écritures de journal selon vos paramètres et peut lettrer les paiements d'après le fichier.
+    - label: Comment mon expert-comptable accède-t-il à mes comptes ?
+      content: >-
+        Vous lui créez un utilisateur avec les rôles comptables. Les autorisations par rôle et les
+        autorisations utilisateur limitent ce qu'il voit, par exemple à une seule société.
+    - label: Puis-je prélever mes clients par SEPA ?
+      content: >-
+        Oui. Chaque client dispose d'un mandat SEPA actif avec IBAN et BIC. Depuis Comptabilité >
+        Prélèvement Sepa, vous sélectionnez les écritures de paiement de la période et vous générez le
+        fichier XML (pain.008) à transmettre à votre banque.
+    - label: Quand la facturation électronique devient-elle obligatoire ?
+      content: >-
+        La réception est obligatoire pour toutes les entreprises en septembre 2026. L'émission est obligatoire
+        pour les grandes entreprises et les ETI en septembre 2026, et pour les PME et microentreprises en
+        septembre 2027. Dokos reçoit déjà les factures électroniques et génère le Factur-X à la validation.
+    - label: Qu'est-ce qui change par rapport à la comptabilité d'ERPNext ?
+      content: >-
+        Dokos numérote les factures à la validation en séquence continue, interdit la suppression des
+        documents de facturation et de comptabilité, produit le bilan au format français, génère les fichiers
+        de prélèvement SEPA, importe les relevés OFX, gère les factures d'acompte et l'amortissement linéaire.
+
 bottom_cta:
-  title: Avec Dokos, simplifiez votre comptabilité et concentrez-vous sur la croissance de votre entreprise.
-  description: Que vous soyez une petite ou grande entreprise, notre solution vous accompagne à chaque étape de la gestion financière.
-  class: bg-amber-600/10 dark:bg-amber-800/10
+  title: Posez-nous vos questions sur la comptabilité dans Dokos.
+  description: Décrivez-nous votre organisation comptable, nous vous dirons ce que Dokos reprend tel quel.
   links:
-    - label: Commencez maintenant
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Voir la marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline
