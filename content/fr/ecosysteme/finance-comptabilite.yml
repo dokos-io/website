@@ -30,7 +30,7 @@ scope:
       description: Plan de comptes, TVA, écritures, grand livre, balance, bilan et compte de résultat, avec export vers votre expert-comptable.
       icon: i-heroicons-book-open
     - title: Encaissement certifié LNE
-      description: Le système d'encaissement est certifié conforme. Les empreintes du périmètre certifié sont publiées sur la page Certifications.
+      description: Le module Certification Caisse est certifié par le LNE. Il s'utilise avec une licence délivrée par Dokos SAS. Les empreintes du périmètre certifié sont publiées sur la page Certifications.
       icon: i-octicon-law
     - title: Facturation électronique
       description: Réception des factures CII, Factur-X et UBL, et raccordement à une plateforme agréée. L'émission est en cours de développement.

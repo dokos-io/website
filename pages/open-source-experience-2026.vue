@@ -1,8 +1,8 @@
 <script setup lang="ts">
 /**
  * Event page for Open Source Experience 2026 (Paris Expo Porte de Versailles,
- * Hall 5.2, 9–10 December 2026). Mockup: the stand number and the talk slot
- * are TODO until the organisers confirm them.
+ * Hall 5.2, 9–10 December 2026). Dokos is on Orange's stand and speaks in two
+ * sessions, both taken from the official programme on eventmaker.io.
  *
  * This page names Orange and the Conectt project with the client's agreement;
  * the copy lint does not scan pages/, see docs/editorial-guidelines.md.
@@ -27,10 +27,30 @@ const event = {
   dates: '9 et 10 décembre 2026',
   venue: 'Paris Expo Porte de Versailles, Hall 5.2',
   address: '1 place de la Porte de Versailles, 75015 Paris',
-  stand: 'TODO-OSXP : numéro de stand',
-  talk: 'TODO-OSXP : créneau et salle de la conférence',
+  stand: 'Avec Orange, sur son stand',
   registration: 'https://www.opensource-experience.com/',
 }
+
+const talks = [
+  {
+    title: 'Facturation électronique : on est en prod ! Retour des communautés Dolibarr, Odoo OCA et Dokos',
+    when: 'Mercredi 9 décembre, 14 h 25 à 15 h 10',
+    room: 'Salle Dennis Ritchie',
+    format: 'Table ronde',
+    description: 'La facturation électronique est en production en France depuis septembre 2026. Trois communautés open source racontent comment elles l\'ont intégrée, comment elles ont financé le travail, ce qu\'elles ont mis en commun et ce que leurs utilisateurs en disent. Animée par Walid Nouh (Projets Libres), avec Alexis de Lattre (Akretion), Maxime Kohlhaas (ATM Consulting) et Charles-Henri Decultot (Dokos).',
+    to: 'https://website-27805.eventmaker.io/fr/programme/6a96d852ac947f00e9590199',
+    icon: 'i-heroicons-document-text',
+  },
+  {
+    title: 'Orange et ses partenaires dans l\'écosystème open source',
+    when: 'Jeudi 10 décembre, 14 h 00 à 14 h 20',
+    room: 'Salle Kirk McKusick',
+    format: 'Atelier',
+    description: 'Gilles Viton, responsable du programme communautés open source d\'Orange France, présente la façon dont Orange travaille avec ses partenaires open source. Dokos y intervient aux côtés d\'Orange.',
+    to: 'https://website-27805.eventmaker.io/fr/programme/6abfa3348a2dc0e857955484',
+    icon: 'i-heroicons-user-group',
+  },
+]
 
 const pillars = [
   {
@@ -104,7 +124,7 @@ const demos = [
         Nous bâtissons et garantissons<br>vos <span class="text-primary">applications métier</span>.
       </template>
       <template #description>
-        Éditeur open source, experts Frappe et ERPNext, nous serons à Open Source Experience les {{ event.dates }}, Hall 5.2 de Paris Expo Porte de Versailles. Venez voir Conectt, la plateforme de raccordements réseau construite avec Orange sur ERPNext, et ce que Dokos 5 apporte aux PME.
+        Éditeur open source, experts Frappe et ERPNext, nous serons à Open Source Experience les {{ event.dates }}, Hall 5.2 de Paris Expo Porte de Versailles, sur le stand d'Orange. Venez voir Conectt, la plateforme de raccordements réseau construite avec Orange sur ERPNext, et ce que Dokos 5 apporte aux PME.
       </template>
       <template #links>
         <UButton to="#rendez-vous" size="xl" color="primary" icon="i-heroicons-chat-bubble-left-right" label="Prendre rendez-vous sur le stand" />
@@ -120,7 +140,7 @@ const demos = [
           <div class="flex gap-3"><dt class="w-28 shrink-0 text-muted">Dates</dt><dd class="font-medium text-highlighted">{{ event.dates }}</dd></div>
           <div class="flex gap-3"><dt class="w-28 shrink-0 text-muted">Lieu</dt><dd class="font-medium text-highlighted">{{ event.venue }}<br><span class="font-normal text-muted">{{ event.address }}</span></dd></div>
           <div class="flex gap-3"><dt class="w-28 shrink-0 text-muted">Stand</dt><dd class="font-medium text-highlighted">{{ event.stand }}</dd></div>
-          <div class="flex gap-3"><dt class="w-28 shrink-0 text-muted">Conférence</dt><dd class="font-medium text-highlighted">{{ event.talk }}</dd></div>
+          <div class="flex gap-3"><dt class="w-28 shrink-0 text-muted">Conférences</dt><dd class="font-medium text-highlighted"><a href="#conferences" class="hover:text-primary">9 décembre à 14 h 25<br>10 décembre à 14 h 00</a></dd></div>
         </dl>
       </div>
     </UPageHero>
@@ -208,7 +228,34 @@ const demos = [
     </UPageSection>
 
     <UPageSection
-      title="Sur le stand"
+      id="conferences"
+      title="Nos deux conférences"
+      description="Deux sessions au programme officiel du salon."
+    >
+      <UPageGrid class="lg:grid-cols-2">
+        <UPageCard
+          v-for="talk in talks"
+          :key="talk.to"
+          :title="talk.title"
+          :description="talk.description"
+          :icon="talk.icon"
+          :to="talk.to"
+          target="_blank"
+          variant="outline"
+        >
+          <template #footer>
+            <div class="flex flex-wrap gap-2">
+              <UBadge :label="talk.format" variant="subtle" size="sm" />
+              <UBadge :label="talk.when" color="neutral" variant="subtle" size="sm" />
+              <UBadge :label="talk.room" color="neutral" variant="subtle" size="sm" />
+            </div>
+          </template>
+        </UPageCard>
+      </UPageGrid>
+    </UPageSection>
+
+    <UPageSection
+      title="Sur le stand d'Orange"
       description="Quatre démonstrations en continu, sur des données réelles de démonstration."
       class="bg-sand-200/60 dark:bg-stone-900"
     >

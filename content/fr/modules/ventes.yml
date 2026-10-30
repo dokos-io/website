@@ -1,7 +1,6 @@
 # Sources : doc.dokos.io/v5/dokos/ventes (introduction, devis, commande-client, abonnements,
 # point-de-vente, facturx, rapports), doc.dokos.io/v5/dokos/comptabilite/acomptes,
 # doc.dokos.io/v5/dokos/comparaison-erpnext, doc.dokos.io/nouveautes (28 septembre 2026).
-# TODO-LNE : date et référence du certificat de la caisse.
 #
 # Captures à prendre (demo.dokos.cloud) :
 # - hero.webp : l'espace de travail Ventes (/app/selling), cartes et raccourcis
@@ -45,7 +44,7 @@ for_whom:
       description: Un abonnement génère ses factures à chaque période et déclenche le paiement si le client a enregistré un moyen de paiement.
       icon: i-heroicons-arrow-path
     - title: Vous vendez en boutique et à distance
-      description: Le point de vente certifié LNE encaisse au comptoir. Les factures envoyées par e-mail portent un lien de paiement.
+      description: Le point de vente encaisse au comptoir, avec la certification LNE quand le module Certification Caisse est installé sous licence. Les factures envoyées par e-mail portent un lien de paiement.
       icon: i-heroicons-building-storefront
     - title: Vous ne savez pas ce qui reste à livrer
       description: Le statut de chaque commande indique ce qui reste à livrer et à facturer. Vous filtrez la liste sur ce statut.
@@ -98,7 +97,7 @@ features:
     description: >-
       La facture de vente passe son écriture en comptabilité à la validation, dans une séquence de numéros
       continue. Vous envoyez une demande de paiement avec un lien Stripe, GoCardless ou Braintree, et les
-      acomptes déjà encaissés se déduisent du solde. Au comptoir, le point de vente certifié LNE crée la
+      acomptes déjà encaissés se déduisent du solde. Au comptoir, le point de vente crée la
       facture et enregistre le paiement en une seule opération, avec plusieurs modes de paiement et un
       terminal SumUp si vous en avez un. Avec eTransactions, chaque facture validée génère son fichier
       Factur-X.
@@ -153,7 +152,7 @@ faq:
         Vous créez un nouvel abonnement.
     - label: Le point de vente est-il certifié ?
       content: >-
-        Oui, le point de vente de Dokos est certifié LNE pour les sites qui encaissent des particuliers. Les
+        Oui, quand le module Certification Caisse est installé avec une licence délivrée par Dokos SAS. Ce module est certifié par le LNE. La [page Certifications](/fr/certifications) explique le rôle de la licence. Les
         données d'encaissement sont inscrites dans un journal inaltérable et exportables en archive fiscale.
 
 bottom_cta:

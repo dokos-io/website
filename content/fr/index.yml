@@ -3,7 +3,7 @@ description: "Ventes, comptabilité, stocks, RH, projets, support : une seule ba
 navigation: false
 
 announcement:
-  label: Dokos est certifié conforme pour les systèmes de caisse (LNE).
+  label: Le module Certification Caisse de Dokos est certifié par le LNE.
   cta: Voir les certifications
   to: /fr/certifications
 
@@ -34,7 +34,7 @@ proof:
   items:
     - label: Systèmes de caisse
       value: Certifié LNE
-      note: "Certificat obtenu en 2026. TODO-LNE : date et référence."
+      note: Avec le module Certification Caisse et une licence délivrée par Dokos SAS.
     - label: Facturation électronique
       value: Réception et PA
       note: Lecture des factures CII, Factur-X et UBL, raccordement à une plateforme agréée. Émission en cours.

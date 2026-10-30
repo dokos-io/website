@@ -107,7 +107,7 @@ faq:
     - label: Comment vérifier l'intégrité de la version installée ?
       content: Nous publions l'empreinte de chaque fichier du périmètre certifié, ainsi que la procédure pour recalculer cette empreinte sur votre propre installation. Le détail figure sur la page Certifications.
     - label: Qui contacter pour une demande RGPD ?
-      content: Notre délégué à la protection des données est joignable à dpo@dokos.io, ou par courrier à Dokos SAS, 7B Allée Neuve, 54520 Laxou, France. Le délai de réponse est d'un mois à compter de la réception, prolongeable selon les circonstances.
+      content: Notre délégué à la protection des données est joignable à dpo@dokos.io, ou par courrier à l'adresse indiquée dans notre [politique de confidentialité](/fr/securityandprivacy). Le délai de réponse est d'un mois à compter de la réception, prolongeable selon les circonstances.
 
 cta:
   title: Posez-nous vos questions sur l'hébergement et les données

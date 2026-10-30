@@ -4,7 +4,6 @@
 # doc.dokos.io/v5/dokos/ventes/facturx, doc.dokos.io/v5/dokos/certification-caisse/export-archives,
 # doc.dokos.io/v5/dokos/comparaison-erpnext, doc.dokos.io/nouveautes (28 septembre 2026),
 # content/fr/blog/2026/arrivee-V5.md, content/fr/blog/2026/rentree-2026.md, content/fr/certifications.md.
-# TODO-LNE : date et référence du certificat de la caisse.
 #
 # Captures à prendre (demo.dokos.cloud) :
 # - hero.webp : l'espace de travail Comptabilité (/app/accounting), cartes et raccourcis
@@ -45,7 +44,7 @@ for_whom:
       description: Vos factures de vente et d'achat sont déjà des écritures. Vous lui ouvrez un accès et il consulte le grand livre à jour.
       icon: i-heroicons-calculator
     - title: Vous encaissez des particuliers
-      description: Le point de vente de Dokos est certifié LNE. Les données d'encaissement sont conservées dans un journal inaltérable et exportables pour un contrôle.
+      description: Avec le module Certification Caisse et sa licence, le point de vente de Dokos est couvert par la certification LNE. Les données d'encaissement sont conservées dans un journal inaltérable et exportables pour un contrôle.
       icon: i-heroicons-receipt-percent
     - title: Vos fournisseurs vous envoient déjà des factures électroniques
       description: Dokos reçoit les factures CII, Factur-X et UBL depuis une plateforme agréée et prépare la facture fournisseur.
@@ -94,6 +93,7 @@ features:
       modes de paiement sur un même ticket. Chaque opération d'encaissement est inscrite dans un journal
       SAS Ledger par société. Depuis la fiche Société, vous exportez une archive fiscale par période d'un an
       au plus et vous vérifiez la chaîne cryptographique du journal. Vous conservez chaque archive six ans.
+      La certification suppose le module Certification Caisse et une licence délivrée par Dokos SAS.
     image: /modules/comptabilite/feature-caisse.webp
     badge: Certifié LNE
   - title: Vos factures fournisseurs arrivent en électronique

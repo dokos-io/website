@@ -3,7 +3,6 @@
 # doc.dokos.io/v5/dodock/fonctionnalites (workflows, utilisateurs, notifications, impression, webhooks, nommage),
 # doc.dokos.io/v5/dodock/developpeurs/api/rest_api, doc.dokos.io/v5/dokos/certification-caisse/export-archives,
 # content/fr/blog/2026/arrivee-V5.md, content/fr/blog/2025/dokos-se-certifie-lne.md.
-# TODO-LNE : date et référence du certificat de la caisse.
 #
 # Captures à prendre (demo.dokos.cloud) :
 # - hero.webp : le bureau central (/app) avec la barre latérale et les espaces de travail
@@ -50,7 +49,7 @@ for_whom:
       description: Chaque facture validée passe son écriture au grand livre. Votre comptable consulte les comptes et importe votre historique au format FEC.
       icon: i-heroicons-calculator
     - title: Vous encaissez des particuliers
-      description: Le point de vente de Dokos est certifié LNE. Les données d'encaissement sont conservées dans un journal inaltérable et exportables pour un contrôle.
+      description: Avec le module Certification Caisse et sa licence, le point de vente de Dokos est couvert par la certification LNE. Les données d'encaissement sont conservées dans un journal inaltérable et exportables pour un contrôle.
       icon: i-heroicons-receipt-percent
     - title: Vos équipes et vos agents IA ont besoin d'une source de vérité
       description: Chaque document est accessible par l'interface, par l'API REST et par Dokos CLI. Les autorisations s'appliquent partout de la même façon.
@@ -73,7 +72,7 @@ fit:
     - Les espaces de travail de Dokos, distincts de ceux d'ERPNext
     - La numérotation des factures à la validation et l'interdiction de supprimer les documents comptables
     - Le bilan au format français, le prélèvement SEPA, l'import OFX, les factures d'acompte et l'import FEC
-    - La caisse certifiée LNE et l'export des archives fiscales
+    - La caisse certifiée LNE (module Certification Caisse, sous licence) et l'export des archives fiscales
   depends:
     - Dodock
 
@@ -147,7 +146,7 @@ faq:
         qui porte Dokos. La marketplace Dokos Cloud sert la v5.
     - label: Dokos est-il certifié pour l'encaissement ?
       content: >-
-        Oui. Le point de vente de Dokos est certifié LNE. Les données d'encaissement sont inscrites dans un
+        Oui, avec le module Certification Caisse, certifié par le LNE, et une licence délivrée par Dokos SAS. La [page Certifications](/fr/certifications) explique pourquoi la licence est nécessaire. Les données d'encaissement sont inscrites dans un
         journal inaltérable par société. Depuis la fiche Société, vous exportez une archive fiscale par période
         d'un an au plus et vous vérifiez la chaîne cryptographique du journal. Vous conservez les archives six ans.
     - label: Puis-je modifier Dokos ?

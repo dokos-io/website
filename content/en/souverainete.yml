@@ -110,7 +110,7 @@ faq:
     - label: How can I verify the integrity of the installed version?
       content: We publish the cryptographic fingerprint of the versions covered by certification, file by file, along with the procedure for recomputing that checksum on your own installation. Details are on our Certifications page.
     - label: Who do I contact for a GDPR request?
-      content: Our data protection officer can be reached at dpo@dokos.io, or by mail at Dokos SAS, 7B Allée Neuve, 54520 Laxou, France. The response time is one month from receipt, extendable depending on circumstances.
+      content: Our data protection officer can be reached at dpo@dokos.io, or by mail at the address given in our [privacy policy](/en/securityandprivacy). The response time is one month from receipt, extendable depending on circumstances.
 
 cta:
   title: Have a requirements checklist to send us?
