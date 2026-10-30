@@ -33,7 +33,6 @@ related: [ventes, stocks, comptabilite, e-commerce]
 hero:
   title: Votre caisse <span class="text-primary">Hiboutik</span>, tenue par Dokos.
   description: Hiboutik est une caisse enregistreuse en ligne. Le connecteur envoie vos articles et vos stocks vers la caisse, puis ramène chaque vente dans Dokos sous forme de facture de vente.
-  image: /modules/hiboutik/hero.webp
 
 for_whom:
   items:
@@ -49,7 +48,6 @@ for_whom:
 
 fit:
   description: Le connecteur se configure dans <strong>Paramètres Hiboutik</strong>, dans l'espace Intégrations. Un <strong>profil de point de vente</strong> fixe la liste de prix et l'entrepôt utilisés. Chaque vente encaissée arrive dans Dokos comme une <strong>Vente Hiboutik</strong>, qui génère la <strong>Facture de vente</strong> correspondante. Les mouvements de caisse arrivent de la même façon et sont comptabilisés en écriture de journal.
-  image: /modules/hiboutik/fit.webp
   reads:
     - Article, Prix d'article et Modèle de taxe d'article
     - Client de type Individuel
@@ -67,19 +65,15 @@ fit:
 features:
   - title: Envoyez vos articles vers la caisse
     description: Cochez « Synchroniser avec Hiboutik » sur chaque article concerné. Le libellé, le prix TTC, la taxe et le stock partent vers Hiboutik, et la référence de la caisse est mémorisée sur l'article. Les images s'ajoutent dans Hiboutik.
-    image: /modules/hiboutik/feature-articles.webp
     badge: Catalogue
   - title: Récupérez chaque vente en facture
     description: Hiboutik appelle Dokos à chaque vente ou note de crédit. Dokos enregistre une Vente Hiboutik, puis crée la facture de vente et son paiement, avec la correspondance des modes de paiement que vous avez définie. Une routine horaire vérifie qu'aucune vente n'a été oubliée.
-    image: /modules/hiboutik/feature-ventes.webp
     badge: Ventes
   - title: Comptabilisez les mouvements de caisse
     description: Les mouvements de caisse sont intégrés une fois par heure, puis comptabilisés. Le statut passe à Terminé une fois l'écriture validée. Les remises globales vont sur le compte que vous indiquez dans les paramètres.
-    image: /modules/hiboutik/feature-caisse.webp
     badge: Comptabilité
   - title: Tenez le stock de la caisse à jour
     description: Chaque mouvement de stock dans Dokos met à jour la quantité dans Hiboutik, sur l'entrepôt du profil de point de vente. Une option envoie une notification pour les alertes de stock.
-    image: /modules/hiboutik/feature-stock.webp
     badge: Stocks
 
 install:

@@ -35,7 +35,6 @@ related: [comptabilite, paiements, etransactions]
 hero:
   title: Vos relevés bancaires <span class="text-primary">arrivent seuls</span> dans Dokos.
   description: Bank connecte vos comptes bancaires à Dokos par l'agrégateur Bridge. Chaque jour, les opérations deviennent des transactions bancaires prêtes à être rapprochées.
-  image: /modules/bank/hero.webp
 
 for_whom:
   items:
@@ -51,7 +50,6 @@ for_whom:
 
 fit:
   description: Bank ajoute au document <strong>Banque</strong> de Dokos un bouton de connexion à votre banque. Une fois le compte relié, chaque opération devient une <strong>Transaction bancaire</strong>, classée par date. Ces transactions sont celles que le rapprochement bancaire, l'outil historique comme le nouveau module bancaire, propose de faire correspondre à vos écritures de paiement et à vos factures.
-  image: /modules/bank/fit.webp
   reads:
     - Banque et Compte bancaire
     - Transaction bancaire
@@ -68,19 +66,15 @@ fit:
 features:
   - title: Connectez votre banque depuis le document Banque
     description: Ouvrez la liste Banque, créez ou modifiez votre banque, puis cliquez sur « Connecter votre banque ». Vous choisissez votre banque sur la page de connexion Bridge et saisissez vos identifiants bancaires. Bridge est un agrégateur agréé par l'ACPR, encadré par la DSP2.
-    image: /modules/bank/feature-connexion.webp
     badge: Connexion
   - title: Reliez chaque compte Bridge à un compte bancaire Dokos
     description: Après la connexion, cliquez sur « Mettre à jour les comptes bancaires ». Pour chaque compte, vous indiquez le compte bancaire Dokos à associer et la date de début de synchronisation. À la première connexion, l'historique disponible chez votre banque est importé.
-    image: /modules/bank/feature-synchronisation.webp
     badge: Synchronisation
   - title: Rapprochez dans le nouveau module bancaire
     description: Dokos V5 propose un module bancaire en version bêta, accessible depuis Comptabilité puis Module bancaire. Vous sélectionnez un compte et une période, puis le panneau de correspondance propose des factures, des écritures de paiement et des écritures de journal pour chaque transaction. Des règles appliquent un tiers, un compte ou une catégorie aux libellés que vous définissez.
-    image: /modules/bank/feature-banking.webp
     badge: Bêta
   - title: Anticipez votre trésorerie
     description: Le prévisionnel de trésorerie, en version bêta depuis la rentrée 2026, affiche vos entrées, vos sorties et le solde projeté des semaines à venir. Il est accessible depuis le module Banque de Dokos, à côté du module bancaire.
-    image: /modules/bank/feature-tresorerie.webp
     badge: Bêta
 
 install:

@@ -100,7 +100,6 @@ features:
       eux, avec le rôle autorisé à chaque étape et une condition si besoin. Une note de frais passe de
       Déposée à Approuvée ou Rejetée par le responsable. Un seul flux est actif par type de document et les
       utilisateurs reçoivent un e-mail avec les actions qui les attendent.
-    image: /modules/dokos/feature-workflow.webp
     badge: Flux de travail
   - title: Des listes, des filtres et des rapports
     description: >-
@@ -117,7 +116,6 @@ features:
       autorisée. Vous générez une clé et un secret d'API sur la fiche utilisateur. Un webhook envoie un
       document à un service externe à chaque création ou validation. Dokos CLI et son serveur MCP donnent les
       mêmes capacités à vos agents IA.
-    image: /modules/dokos/feature-api.webp
     badge: API et webhooks
 
 install:

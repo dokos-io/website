@@ -38,7 +38,6 @@ related: [support, raven, dokos-ai, learning]
 hero:
   title: Vos procédures et votre documentation, <span class="text-primary">publiées depuis votre site</span>.
   description: Vous écrivez une page en Markdown, elle est en ligne sans redéploiement. Chaque modification est conservée dans l'historique et peut passer par une approbation avant publication.
-  image: /modules/wiki/hero.webp
 
 for_whom:
   items:
@@ -60,7 +59,6 @@ fit:
     version d'une page.<br>
     Si <a href="/fr/modules/dokos-ai">Dokos AI</a> est installé, l'assistant cherche dans votre
     wiki interne pour répondre aux questions de vos utilisateurs.
-  image: /modules/wiki/fit.webp
   reads:
     - Les comptes utilisateurs du site, pour l'édition et l'approbation
   adds:
@@ -74,19 +72,15 @@ fit:
 features:
   - title: Écrivez en Markdown, avec pièces jointes
     description: Vous rédigez la page en Markdown dans l'éditeur. Vous joignez des fichiers à la page. La table des matières se génère depuis les titres.
-    image: /modules/wiki/feature-edition.webp
     badge: Rédaction
   - title: Organisez les pages en espaces
     description: Un espace wiki regroupe des pages sur un sujet et porte sa propre barre latérale. Vous réorganisez la barre latérale par glisser-déposer et vous groupez les pages.
-    image: /modules/wiki/feature-espaces.webp
     badge: Espaces
   - title: Faites relire avant de publier
     description: Une modification proposée attend l'approbation d'un relecteur. La page publiée ne change qu'une fois la modification approuvée.
-    image: /modules/wiki/feature-approbation.webp
     badge: Approbation
   - title: Retrouvez chaque version
     description: L'historique des révisions conserve chaque version d'une page. Vous consultez une version passée et vous voyez ce qui a changé.
-    image: /modules/wiki/feature-revisions.webp
     badge: Révisions
 
 install:

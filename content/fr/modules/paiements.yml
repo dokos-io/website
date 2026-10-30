@@ -74,23 +74,18 @@ fit:
 features:
   - title: Envoyez un lien de paiement
     description: Depuis une commande client ou une facture de vente, vous créez une demande de paiement et vous partagez le lien généré. Votre client règle sur la page de paiement du portail, sans compte sur votre site. Pour tester, ouvrez le lien dans une fenêtre de navigation privée.
-    image: /modules/paiements/feature-lien.webp
     badge: Demande de paiement
   - title: Encaissez les commandes de votre boutique
     description: Vous créez un mode de paiement et vous le reliez à votre passerelle dans l'onglet « Passerelle de paiement ». Dans les Paramètres E-Commerce, vous l'ajoutez aux modes de paiement autorisés. Les clients de votre boutique Webshop le voient au moment de payer.
-    image: /modules/paiements/feature-boutique.webp
     badge: Webshop
   - title: Prélevez vos abonnements
     description: Avec Stripe, un paiement par carte ou par prélèvement SEPA lié à un abonnement enregistre le moyen de paiement pour les échéances suivantes. Avec GoCardless, c'est le mandat de prélèvement qui est conservé. Stancer conserve aussi la carte pour une demande liée à un abonnement ; HelloAsso ne le fait pas.
-    image: /modules/paiements/feature-recurrent.webp
     badge: Récurrent
   - title: Encaissez sur place avec SumUp
     description: Vous saisissez dans les Paramètres SumUp les clés de votre compte développeur et vous créez un mode de paiement SumUp pour vos sociétés. Le bouton « Payer avec SumUp » apparaît sur la facture de vente, la demande de paiement et le point de vente ; il déclenche le paiement sur l'application SumUp d'un appareil mobile relié au terminal.
-    image: /modules/paiements/feature-sumup.webp
     badge: SumUp
   - title: Recevez les confirmations par webhook
     description: Dans les Paramètres Stripe, le bouton « Créer des webhooks Stripe » configure les webhooks pour vous. Pour GoCardless, vous créez l'endpoint dans l'espace développeur et vous copiez le secret généré dans Dokos. Les changements de statut arrivent par ce canal, parfois quelques secondes après le paiement. Depuis Dokos V5, une demande échouée ne peut plus être réutilisée pour une nouvelle transaction.
-    image: /modules/paiements/feature-stripe.webp
     badge: Webhooks
 
 install:

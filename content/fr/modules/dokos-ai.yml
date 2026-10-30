@@ -44,7 +44,6 @@ related: [dokos-cli, raven, wiki, integrations]
 hero:
   title: Un assistant qui travaille <span class="text-primary">sur vos données Dokos</span>, avec vos permissions.
   description: Vous posez une question en français. Dokos AI lit vos documents, exécute vos rapports et répond en citant ce qu'il a consulté. Quand la réponse suppose une écriture, il la prépare et attend votre validation.
-  image: /modules/dokos-ai/hero.webp
 
 for_whom:
   items:
@@ -74,7 +73,6 @@ fit:
     et les jetons consommés.<br>
     L'IA est désactivée tant que vous ne l'activez pas dans les Paramètres de l'IA. Avant
     l'activation, rien n'est envoyé à un fournisseur de modèles.
-  image: /modules/dokos-ai/fit.webp
   reads:
     - Tout document auquel l'utilisateur a accès (clients, factures, articles, projets)
     - Les rapports du site et les graphiques Insights
@@ -93,23 +91,18 @@ fit:
 features:
   - title: Interrogez vos documents et vos rapports
     description: Vous demandez un document, une liste filtrée, un comptage ou un rapport avec vos filtres. L'assistant va chercher la réponse dans vos données et cite ce qu'il a consulté. Il cherche aussi dans la documentation Dokos et dans votre wiki interne.
-    image: /modules/dokos-ai/feature-conversation.webp
     badge: Conversation
   - title: Faites préparer une écriture, puis validez-la
     description: Vous demandez « prépare une relance pour les trois premiers ». L'assistant rédige les messages et attend votre accord. La création ou la modification d'un document arrive dans la boîte de réception, où vous approuvez ou rejetez d'un clic.
-    image: /modules/dokos-ai/feature-inbox.webp
     badge: Confirmation
   - title: Rédigez depuis le formulaire
     description: Le bouton IA agit sur le document ouvert. À côté d'un champ de texte, il propose une rédaction à partir du contexte du document. L'assistant écrit aussi un modèle d'impression, un script de formulaire ou un espace de travail avec sa navigation.
-    image: /modules/dokos-ai/feature-formulaire.webp
     badge: Formulaires
   - title: Apprenez-lui vos façons de faire avec des compétences
     description: Une compétence est un fichier Markdown avec un en-tête YAML. Elle indique le domaine couvert, le modèle à employer, les outils autorisés et des documents de référence. Dokos en fournit une bibliothèque (création et modification de documents, rapports, modèles d'impression, diagnostic de permissions). Vous écrivez les vôtres pour vos procédures internes.
-    image: /modules/dokos-ai/feature-competences.webp
     badge: Compétences
   - title: Automatisez un traitement récurrent avec un flux
     description: Un flux se déclenche sur un événement de document, à heure fixe, à la demande ou par appel externe. Il rédige ou compare, puis dépose le résultat dans la boîte de réception pour approbation. Une galerie de flux prêts à l'emploi s'installe désactivée, pour que vous les relisiez avant de les activer.
-    image: /modules/dokos-ai/feature-flux.webp
     badge: Flux automatisés
 
 install:

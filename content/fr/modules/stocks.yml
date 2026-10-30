@@ -110,7 +110,6 @@ features:
       Une réservation de stock met de côté une quantité pour une commande ou un besoin interne, et libère le
       stock à l'annulation. Sur l'article, vous fixez un stock minimum et un entrepôt ; quand le stock passe
       sous ce point de commande, Dokos crée une demande de matériel avec la quantité par défaut.
-    image: /modules/stocks/feature-projections.webp
     badge: Réapprovisionnement
   - title: La valeur de votre stock et son âge
     description: >-
@@ -118,7 +117,6 @@ features:
       vieillissement montre depuis combien de temps chaque lot est en stock. En inventaire permanent, chaque
       mouvement passe son écriture comptable, et le stock livré mais non facturé apparaît dans un rapport
       dédié de la comptabilité. Un rapport d'analyse par nomenclature complète la série pour la production.
-    image: /modules/stocks/feature-valorisation.webp
     badge: Valorisation
 
 install:

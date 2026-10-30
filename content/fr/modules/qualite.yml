@@ -69,19 +69,15 @@ fit:
 features:
   - title: Décrivez vos procédures en arborescence
     description: Une procédure de qualité est une liste d'étapes saisies dans le tableau Processus, ou un groupe de sous-procédures liées par le champ « Sous-procédure ». La vue hiérarchique affiche l'ensemble en arbre. Contrairement à ERPNext, Dokos permet de rattacher une procédure à plusieurs parents, pour ne pas dupliquer une étape de contrôle partagée.
-    image: /modules/qualite/feature-procedure.webp
     badge: Procédure de qualité
   - title: Fixez des objectifs et laissez les revues se créer
     description: Un objectif de qualité nomme un responsable, la procédure à suivre et une fréquence de surveillance (quotidienne, hebdomadaire, mensuelle ou trimestrielle). Son tableau liste les objectifs, leur cible et leur unité de mesure. À chaque échéance, Dokos crée une revue de la qualité au statut Ouvert ; vous y saisissez les mesures réelles, puis vous créez une action de qualité si nécessaire.
-    image: /modules/qualite/feature-objectif.webp
     badge: Objectif et revue
   - title: Enregistrez les non-conformités et suivez les actions
     description: Toute personne de l'organisation peut déclarer une non-conformité par rapport à une procédure existante, avec son sujet et ses détails. Vous y décrivez l'action corrective, qui traite la cause, et l'action préventive, qui évite la récidive. Une action de qualité porte son type, le problème rencontré, la résolution proposée, un responsable et une date de fin ; son statut passe d'Ouverte à Fermée.
-    image: /modules/qualite/feature-non-conformite.webp
     badge: Non-conformité
   - title: Recueillez les retours de vos clients et de vos utilisateurs
     description: Vous choisissez la source du retour, client ou utilisateur du site, puis un modèle de retours qui remplit les paramètres à évaluer. Chaque ligne reçoit une note de 1 à 5 et un commentaire. Quand le retour est en dessous des attentes, vous ouvrez une action de qualité depuis ce retour.
-    image: /modules/qualite/feature-retour.webp
     badge: Retour de la qualité
   - title: Inspectez les articles à la réception, à la livraison et en atelier
     description: "Un modèle d'inspection, attaché à l'article, définit les lectures à faire et leurs critères : une plage numérique, une valeur attendue ou une formule. À l'enregistrement, une lecture hors critère passe en Rejeté ; la case « Inspection manuelle » laisse l'inspecteur fixer le statut. Depuis Dokos V5, un contrôle peut être exigé à chaque opération d'une nomenclature."

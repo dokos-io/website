@@ -33,7 +33,6 @@ hero:
   description: >-
     Tribu enregistre vos adhérents, leurs adhésions et leurs dons. L'adhérent s'inscrit et paie en ligne,
     et Tribu génère la facture dans votre comptabilité Dokos.
-  image: /modules/tribu/hero.webp
 
 for_whom:
   items:
@@ -57,7 +56,6 @@ fit:
     Tribu crée l'adhésion (<strong>Tribu Membership</strong>) et génère la <strong>Facture de vente</strong>.<br>
     Le paiement en ligne passe par les passerelles de l'application Payments, et le rapprochement bancaire de Dokos
     pointe l'encaissement. Les contacts, la facturation et le portail web sont ceux de votre site.
-  image: /modules/tribu/fit.webp
   reads:
     - Article
     - Client et Contact
@@ -77,30 +75,25 @@ features:
     description: >-
       La fiche d'un adhérent porte ses informations personnelles, ses contacts professionnels ou personnels et l'historique
       de ses adhésions. Vous filtrez et cherchez dans la liste, vous importez et exportez vos adhérents.
-    image: /modules/tribu/feature-adherents.webp
     badge: Adhérents
   - title: Définissez vos types d'adhésion
     description: >-
       Vous configurez plusieurs formules, par exemple annuelle, mensuelle ou à tarif réduit, chacune avec sa période de validité,
       son tarif et son renouvellement. Nommer un type par saison, comme « Adhésion 2025-2026 », facilite le suivi.
-    image: /modules/tribu/feature-types.webp
     badge: Types d'adhésion
   - title: Ouvrez l'inscription en ligne
     description: >-
       L'adhérent remplit un formulaire web que vous personnalisez. Les données sont validées pendant la saisie, le paiement
       s'effectue dans le même parcours, et la fiche adhérent est créée automatiquement. Le formulaire s'affiche sur mobile comme sur ordinateur.
-    image: /modules/tribu/feature-inscription.webp
     badge: Inscription
   - title: Recevez des dons
     description: >-
       Le module dons enregistre les contributions ponctuelles et suit les donateurs, avec les mêmes moyens de paiement que les adhésions.
-    image: /modules/tribu/feature-dons.webp
     badge: Dons
   - title: Facturez et rapprochez automatiquement
     description: >-
       Chaque adhésion génère sa facture. Les comptes comptables se règlent sur les articles d'adhésion. Les paiements encaissés
       sont suivis et rapprochés en banque, et vous exportez la comptabilité vers votre expert-comptable.
-    image: /modules/tribu/feature-rapprochement.webp
     badge: Comptabilité
 
 install:

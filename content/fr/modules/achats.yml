@@ -91,7 +91,6 @@ features:
       fournisseur, avec ses prix et ses délais. Depuis la commande fournisseur, « Obtenir les articles de >
       Devis fournisseur » reprend les lignes du devis retenu. Les fournisseurs bloqués par leur carte de
       pointage ne sont pas proposés.
-    image: /modules/achats/feature-devis.webp
     badge: Devis fournisseur
   - title: Une commande qui suit la réception et la facture
     description: >-
@@ -101,7 +100,6 @@ features:
       commande fournisseur reste liée à la commande client et le bouton « Mettre à jour la quantité livrée »
       recalcule le taux de livraison du client. La tolérance de sur-livraison s'applique aussi aux commandes
       créées depuis une demande de matériel.
-    image: /modules/achats/feature-commande.webp
     badge: Commande fournisseur
   - title: Réception, contrôle et facture d'achat
     description: >-
@@ -111,7 +109,6 @@ features:
       apparaissent dans la liste des e-invoices avec leur statut. Dokos crée la facture fournisseur en
       brouillon ; vous vérifiez le montant et l'échéance, vous rapprochez avec la commande, puis vous validez
       ou vous refusez la facture avec un motif renvoyé à la plateforme.
-    image: /modules/achats/feature-reception.webp
     badge: Réception et facture
   - title: Une carte de pointage par fournisseur
     description: >-
@@ -121,7 +118,6 @@ features:
       pondération ; les pondérations totalisent 100. Le score courant pondère les douze dernières périodes.
       Selon le classement obtenu, Dokos affiche un avertissement ou bloque la création de demandes de prix et
       de commandes pour ce fournisseur.
-    image: /modules/achats/feature-evaluation.webp
     badge: Évaluation des fournisseurs
 
 install:

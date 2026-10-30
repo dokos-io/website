@@ -91,7 +91,6 @@ features:
       d'acompte, une demande de paiement, un projet ou un abonnement. Le statut indique ce qui reste à faire
       (À livrer et facturer, À facturer, À livrer, Terminé). Une commande fournisseur en livraison directe
       reste liée à la commande client et met à jour ses quantités livrées.
-    image: /modules/ventes/feature-commande.webp
     badge: Commande client
   - title: Une facture, son paiement et son ticket de caisse
     description: >-
@@ -110,7 +109,6 @@ features:
       Dokos génère les factures et, si le client a enregistré une carte ou un mandat, déclenche le paiement à
       chaque échéance. Sinon il envoie un lien de paiement. Vous annulez un abonnement à une date donnée,
       avec un prorata sur la dernière facture.
-    image: /modules/ventes/feature-abonnements.webp
     badge: Abonnements
   - title: Vos prix selon le client et le moment
     description: >-
@@ -118,7 +116,6 @@ features:
       une remise ou un prix selon l'article, le client, la quantité ou la période. Un schéma promotionnel
       regroupe ces règles pour une opération. Un code promotionnel se saisit sur le devis. Les règles de
       livraison calculent les frais de port et les termes de paiement fixent les échéances.
-    image: /modules/ventes/feature-prix.webp
     badge: Prix et promotions
 
 install:

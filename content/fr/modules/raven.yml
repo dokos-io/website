@@ -39,7 +39,6 @@ related: [support, wiki, dokos-ai, ressources-humaines, projets]
 hero:
   title: Une messagerie d'équipe <span class="text-primary">dans votre site Dokos</span>.
   description: Raven s'installe sur votre site. Vos messages restent dans votre base de données, et un lien vers un devis ou une commande s'affiche en carte avec son statut.
-  image: /modules/raven/hero.webp
 
 for_whom:
   items:
@@ -66,7 +65,6 @@ fit:
     conversation. Les congés saisis dans Dokos HR s'affichent à côté du nom de la personne.<br>
     Si <a href="/fr/modules/dokos-ai">Dokos AI</a> est installé, vous dialoguez avec l'assistant
     par message direct à un bot, sans quitter Raven. Ce pont s'active dans les Paramètres de l'IA.
-  image: /modules/raven/fit.webp
   reads:
     - Tout document du site, affiché en carte depuis son lien
     - Les événements de document (création, modification, validation) pour les notifications
@@ -82,19 +80,15 @@ fit:
 features:
   - title: Organisez les échanges en canaux et en fils
     description: Vous créez des canaux publics ou privés par équipe, par projet ou par sujet, regroupés en espaces de travail. Les messages directs servent au reste. Une discussion annexe part dans un fil pour ne pas couvrir le canal.
-    image: /modules/raven/feature-fils.webp
     badge: Canaux
   - title: Partagez des fichiers et retrouvez-les
     description: Vous déposez des photos, des vidéos et des documents. Un lien affiche un aperçu. Chaque fichier partagé est listé par canal, et la recherche couvre les messages, les fichiers, les liens et les personnes de tous vos canaux.
-    image: /modules/raven/feature-fichiers.webp
     badge: Fichiers
   - title: Faites circuler vos documents Dokos dans la conversation
     description: Un lien vers un document devient une carte avec son statut. Une notification de document poste automatiquement un message quand un document est créé, modifié ou validé, avec les conditions que vous fixez. Vous approuvez ou refusez le document depuis le message.
-    image: /modules/raven/feature-documents.webp
     badge: Documents
   - title: Recevez les notifications sur le web et sur votre téléphone
     description: Les notifications push ont des heures calmes et des réglages par canal. Un rappel ramène un message plus tard. Un message programmé part à l'heure choisie.
-    image: /modules/raven/feature-mobile.webp
     badge: Mobile
 
 install:

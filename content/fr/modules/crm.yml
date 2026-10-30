@@ -38,7 +38,6 @@ hero:
   description: >-
     Frappe CRM donne à votre équipe commerciale une interface dédiée à la prospection.
     Quand une affaire est gagnée, le client et le devis sont créés dans votre site Dokos.
-  image: /modules/crm/hero.webp
 
 for_whom:
   items:
@@ -64,7 +63,6 @@ fit:
     l'adresse et les lignes de produits.<br>
     Les Articles de Dokos alimentent les Produits du CRM. Le prix d'une ligne vient de la liste de prix du client,
     ou de la liste de prix de vente par défaut.
-  image: /modules/crm/fit.webp
   reads:
     - Article et Prix d'article
     - Client, Contact et Adresse
@@ -85,32 +83,27 @@ features:
       Son statut suit votre qualification (Nouveau, Contacté, Qualifié, Non qualifié). Le bouton « Convertir en affaire »
       crée l'organisation et le contact, ou les relie à des fiches existantes. L'affaire avance ensuite d'étape en étape
       jusqu'à « Gagnée » ou « Perdue ».
-    image: /modules/crm/feature-prospects.webp
     badge: Prospects et affaires
   - title: Écrivez à vos prospects depuis leur fiche
     description: >-
       Vous connectez un compte e-mail dans Paramètres > E-mail. Les messages envoyés et reçus s'affichent sur la page
       du prospect ou de l'affaire. Vous utilisez des modèles d'e-mail et une signature. Une option crée un prospect
       à partir d'un expéditeur inconnu.
-    image: /modules/crm/feature-email.webp
     badge: E-mail
   - title: Gardez la trace de chaque échange
     description: >-
       Sur la page d'un prospect, vous ajoutez une note, créez une tâche de relance, consignez un appel et laissez un
       commentaire en mentionnant un collègue. Les tâches de toute l'équipe se retrouvent dans la vue Tâches.
-    image: /modules/crm/feature-suivi.webp
     badge: Suivi
   - title: Répartissez les prospects et fixez des délais de relance
     description: >-
       Les règles d'attribution distribuent les nouveaux prospects à tour de rôle ou vers la personne la moins chargée.
       Les SLA fixent le délai de première réponse. La hiérarchie commerciale limite ce que chaque utilisateur voit.
-    image: /modules/crm/feature-attribution.webp
     badge: Attribution
   - title: Appelez depuis le CRM
     description: >-
       Avec Twilio ou Exotel, vous passez et recevez les appels depuis la fiche, et les appels sont enregistrés.
       L'application Frappe WhatsApp permet d'envoyer et de recevoir des messages WhatsApp depuis la même page.
-    image: /modules/crm/feature-telephonie.webp
     badge: Téléphonie
 
 install:

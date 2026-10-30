@@ -33,7 +33,6 @@ hero:
   description: >-
     eCommerce Integrations relie votre site Dokos à des places de marché et des boutiques externes.
     Chaque commande Shopify devient une Commande client, et le stock de vos entrepôts est poussé vers la boutique.
-  image: /modules/ecommerce-integrations/hero.webp
 
 for_whom:
   items:
@@ -58,7 +57,6 @@ fit:
     <strong>Articles</strong> absents sont créés depuis les données Shopify. Chaque taxe et chaque frais de port Shopify est
     associé à un compte de votre plan comptable. Chaque <strong>Entrepôt</strong> correspond à un emplacement Shopify,
     et les niveaux de stock sont poussés toutes les heures.
-  image: /modules/ecommerce-integrations/fit.webp
   reads:
     - Article, Entrepôt et niveaux de stock
     - Client
@@ -78,21 +76,18 @@ features:
       À chaque commande Shopify, Dokos crée une Commande client avec la série de numérotation choisie. Le paiement et l'expédition
       peuvent être enregistrés sur la commande d'après Shopify. L'option « Sync Old Shopify Orders » importe en arrière-plan les commandes
       entre deux dates.
-    image: /modules/ecommerce-integrations/feature-commandes.webp
     badge: Commandes
   - title: Poussez vos stocks vers la boutique
     description: >-
       Une tâche planifiée envoie toutes les heures les niveaux de stock modifiés. Chaque entrepôt Dokos correspond à un emplacement
       Shopify. Dokos fait foi, et une modification faite côté Shopify est écrasée à la synchronisation suivante. Les quantités fractionnaires
       sont arrondies à l'entier inférieur.
-    image: /modules/ecommerce-integrations/feature-stock.webp
     badge: Stocks
   - title: Publiez vos articles vers Shopify
     description: >-
       En option, un nouvel Article Dokos est envoyé vers Shopify, et sa mise à jour est répercutée. Le nom devient le titre, le code
       article le SKU, le groupe d'articles le type de produit, avec la description et le poids. L'article est créé en brouillon,
       non publié sur la boutique. Les variantes ne sont pas prises en charge.
-    image: /modules/ecommerce-integrations/feature-articles.webp
     badge: Articles
 
 install:

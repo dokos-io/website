@@ -35,7 +35,6 @@ related: [support, crm, raven]
 hero:
   title: Vos appels Exotel ou Twilio, <span class="text-primary">depuis le ticket</span> ou la fiche CRM.
   description: Un bouton d'appel apparaît dans le ticket. L'appel entrant ouvre une fenêtre avec le nom du contact. Chaque appel est journalisé avec sa durée et son enregistrement.
-  image: /modules/telephony/hero.webp
 
 for_whom:
   items:
@@ -57,7 +56,6 @@ fit:
     une adresse de votre site que vous déclarez chez l'opérateur, puis présenté à l'agent dans une
     fenêtre qui reste accessible pendant qu'il navigue. Chaque appel est enregistré dans un
     document TP Call Log, lié au ticket ou à la fiche concernée.
-  image: /modules/telephony/fit.webp
   reads:
     - Le numéro de mobile du contact
     - Les utilisateurs déclarés comme agents
@@ -73,19 +71,15 @@ fit:
 features:
   - title: Déclarez votre opérateur
     description: Dans les paramètres de téléphonie, vous activez Twilio ou Exotel et saisissez les identifiants du compte (Account SID, jeton, numéro). Vous pouvez activer l'enregistrement des appels au même endroit.
-    image: /modules/telephony/feature-reglages.webp
     badge: Réglages
   - title: Appelez depuis le ticket
     description: Un bouton d'appel se trouve au-dessus des détails du ticket. La fenêtre d'appel affiche le nom, le numéro, le statut et la durée, avec les boutons d'action. Elle se réduit dans la barre de navigation pendant que l'agent travaille ailleurs.
-    image: /modules/telephony/feature-appel.webp
     badge: Appel sortant
   - title: Recevez les appels dans l'interface
     description: Vous déclarez l'adresse de votre site chez l'opérateur. Avec Exotel, un groupe d'utilisateurs reçoit les appels dans l'ordre que vous fixez. Avec Twilio, l'appel entrant arrive à l'agent dans la fenêtre d'appel, qui l'accepte ou le refuse.
-    image: /modules/telephony/feature-entrant.webp
     badge: Appel entrant
   - title: Gardez un journal de chaque appel
     description: Chaque appel crée un document TP Call Log avec son sens, ses numéros, son statut, sa durée, l'adresse de l'enregistrement et le lien vers les documents concernés.
-    image: /modules/telephony/feature-journal.webp
     badge: Journal
 
 install:

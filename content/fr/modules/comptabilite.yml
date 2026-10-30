@@ -85,7 +85,6 @@ features:
       séquence continue, et passe l'écriture au grand livre. Les documents de facturation et de comptabilité
       ne peuvent pas être supprimés. Le bilan sort au format attendu en France et les comptes de tiers se
       placent à l'actif ou au passif selon leur solde.
-    image: /modules/comptabilite/feature-ecritures.webp
     badge: Grand livre
   - title: Une caisse certifiée LNE
     description: >-
@@ -94,7 +93,6 @@ features:
       SAS Ledger par société. Depuis la fiche Société, vous exportez une archive fiscale par période d'un an
       au plus et vous vérifiez la chaîne cryptographique du journal. Vous conservez chaque archive six ans.
       La certification suppose le module Certification Caisse et une licence délivrée par Dokos SAS.
-    image: /modules/comptabilite/feature-caisse.webp
     badge: Certifié LNE
   - title: Vos factures fournisseurs arrivent en électronique
     description: >-
@@ -105,7 +103,6 @@ features:
       valider. Un indicateur affiche par quelle plateforme la facture est arrivée. Côté émission, Dokos génère
       déjà le fichier Factur-X à la validation d'une facture de vente ; l'envoi par la plateforme agréée est
       en cours.
-    image: /modules/comptabilite/feature-einvoice.webp
     badge: Facturation électronique
   - title: Le module Banque rapproche vos relevés
     description: >-
@@ -115,7 +112,6 @@ features:
       paiements ou l'inverse, ou vous créez le paiement manquant. Des règles de correspondance affectent un
       tiers ou un compte selon le libellé. Le module est en bêta et l'outil de rapprochement que vous
       connaissez reste disponible, sur les mêmes données.
-    image: /modules/comptabilite/feature-banking.webp
     badge: Banking (bêta)
   - title: Un prévisionnel de trésorerie à partir de vos documents
     description: >-
@@ -125,7 +121,6 @@ features:
       de clôture et une grille jour par jour. Vous cliquez sur un flux pour ouvrir son document, et vous
       ajoutez des entrées manuelles. L'outil est en bêta ; la documentation conseille de le régénérer chaque
       semaine sur huit à douze semaines.
-    image: /modules/comptabilite/feature-tresorerie.webp
     badge: Trésorerie (bêta)
 
 install:

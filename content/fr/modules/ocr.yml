@@ -36,7 +36,6 @@ related: [achats, comptabilite, etransactions]
 hero:
   title: Vos factures fournisseur en PDF, <span class="text-primary">lues</span> et prêtes à comptabiliser.
   description: Vous déposez le PDF ou vous le transférez par courriel. Amazon Textract en extrait le fournisseur, les montants et les lignes. Vous vérifiez, puis vous créez la facture d'achat.
-  image: /modules/ocr/hero.webp
 
 for_whom:
   items:
@@ -52,7 +51,6 @@ for_whom:
 
 fit:
   description: "L'OCR ajoute à Dokos une <strong>Banette de factures d'achat</strong>. Chaque fichier déposé crée une demande d'analyse envoyée à Amazon Textract, puis une <strong>facture fournisseur en attente</strong> qui reprend les données lues. Depuis cette facture en attente, vous choisissez la commande fournisseur ou le reçu d'achat concerné, puis vous créez la <strong>Facture d'achat</strong> du module Achats. Les statuts suivent le traitement : En attente, En cours, Prêt, Terminé."
-  image: /modules/ocr/fit.webp
   reads:
     - Fournisseur et son numéro de TVA
     - Commande fournisseur et Reçu d'achat
@@ -70,19 +68,15 @@ fit:
 features:
   - title: Déposez ou transférez vos factures
     description: Vous glissez un PDF ou une image dans la banette. Vous pouvez aussi ajouter un compte de messagerie à Dokos et définir, dans « Détails IMAP », que le dossier INBOX alimente la banette. Chaque courriel avec une pièce jointe PDF y est alors déposé.
-    image: /modules/ocr/feature-depot.webp
     badge: Dépôt
   - title: Lisez les données avec Amazon Textract
     description: La demande d'analyse part vers Amazon Textract. Au retour, la facture fournisseur en attente affiche le fournisseur, le numéro et la date de la facture, l'échéance, les lignes, le total hors taxes, la TVA et le total. L'aperçu du document reste à côté des données pour la vérification. Le fichier envoyé à Amazon est supprimé une fois l'analyse récupérée.
-    image: /modules/ocr/feature-extraction.webp
     badge: Extraction
   - title: Reliez la facture à vos commandes
     description: Depuis la facture en attente, « Sélectionner les commandes fournisseur » ou « Sélectionner les reçus d'achat » propose les documents ouverts du fournisseur. Un reçu d'achat validé peut être rapproché automatiquement, dans la limite d'un écart que vous fixez en montant ou en pourcentage. Si le fournisseur n'existe pas, un bouton le crée depuis les données lues.
-    image: /modules/ocr/feature-rapprochement.webp
     badge: Rapprochement
   - title: Réglez le niveau de contrôle
     description: Dans Paramètres OCR, vous autorisez ou non la création d'une facture d'achat sans commande, vous bloquez la création quand le total dépasse celui lu sur le document, et vous choisissez de valider automatiquement les factures d'achat créées. Les avoirs fournisseur se répartissent sur plusieurs factures déjà validées.
-    image: /modules/ocr/feature-parametres.webp
     badge: Paramètres
 
 install:

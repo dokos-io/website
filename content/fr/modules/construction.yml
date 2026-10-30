@@ -35,7 +35,6 @@ related: [ventes, projets, achats, comptabilite]
 hero:
   title: Des devis <span class="text-primary">structurés en lots</span>, facturés à l'avancement.
   description: Construction remplace la table d'articles des devis, commandes et factures par un éditeur à titres, commentaires et sous-totaux. La commande se facture ensuite par situations.
-  image: /modules/construction/hero.webp
 
 for_whom:
   items:
@@ -51,7 +50,6 @@ for_whom:
 
 fit:
   description: Construction s'active dans les <strong>Paramètres de l'application Chantier</strong>. Vous cochez « Utiliser la vue Table dédiée », vous choisissez les documents de vente et d'achat concernés, puis les colonnes à afficher. L'éditeur remplace alors la table d'articles du <strong>Devis</strong>, de la <strong>Commande client</strong>, de la <strong>Facture de vente</strong> et du Bon de livraison, ainsi que du Devis fournisseur, de la Commande fournisseur et du Reçu d'achat. Les lignes de type titre, commentaire ou article passent d'un document à l'autre avec leurs sous-totaux.
-  image: /modules/construction/fit.webp
   reads:
     - Devis, Commande client, Bon de livraison, Facture de vente
     - Devis fournisseur, Commande fournisseur, Reçu d'achat
@@ -68,19 +66,15 @@ fit:
 features:
   - title: Composez le devis par sections
     description: Dans l'éditeur, vous ajoutez un titre, un commentaire ou un article, puis vous réordonnez les lignes par glisser-déposer. Chaque section calcule son sous-total. Les colonnes se choisissent dans les paramètres, par exemple le prix de revient unitaire, le coefficient de charge ou le pourcentage de marge brute.
-    image: /modules/construction/feature-editeur.webp
     badge: Devis
   - title: Choisissez ce que le client voit
     description: "Pour chaque ligne, vous décidez de l'affichage à l'impression : masquer le prix, masquer la ligne, ou masquer les prix de toute une section. Le format d'impression reprend les sections et affiche les sous-totaux."
-    image: /modules/construction/feature-impression.webp
     badge: Impression
   - title: Facturez par situations
     description: Sur une commande client validée, choisissez Créer puis Facture de situation. Dokos propose un pourcentage d'avancement, le plus élevé entre l'avancement du projet lié et ce qui est déjà facturé. Vous l'appliquez à toute la facture ou ligne par ligne. Le titre d'impression indique « Facture de situation n°3 » et le récapitulatif de facturation, sur la commande et sur la facture, liste les situations déjà émises.
-    image: /modules/construction/feature-situation.webp
     badge: Facturation
   - title: Comparez la marge prévue et la marge réelle
     description: Le rapport « Récapitulatif de marque sur devis par projet » compare, pour chaque projet, le taux de marque du devis avec les ventes et les achats réels. Le rapport « Comparatif de marge par devis » met en face la marge calculée au devis et la marge constatée à la facturation.
-    image: /modules/construction/feature-marge.webp
     badge: Rapports
 
 install:

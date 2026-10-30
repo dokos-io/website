@@ -54,7 +54,6 @@ for_whom:
 
 fit:
   description: "Le module Intégrations fait partie du socle Dodock sur lequel Dokos repose. Il ne crée pas de document métier lui-même : il <strong>écoute</strong> les documents de tous les modules pour déclencher des webhooks, et il <strong>héberge</strong> les paramètres des applications de connexion que vous installez depuis la marketplace."
-  image: /modules/integrations/fit.webp
   reads:
     - Tout document de votre site, selon le DocType et l'événement choisis sur un webhook
     - Commande client, Article et Client, synchronisés par le connecteur WooCommerce
@@ -72,19 +71,15 @@ fit:
 features:
   - title: Prévenez vos autres outils avec un webhook
     description: "Vous choisissez un DocType et un événement : After insert, On change, On update, On submit, On update after submit, On cancel ou On trash. La table Webhook Data liste les champs envoyés. Dokos appelle l'URL cible à chaque événement et conserve la trace des requêtes dans Intégrations > Webhooks."
-    image: /modules/integrations/feature-webhook.webp
     badge: Webhook
   - title: Donnez un accès API à un utilisateur
     description: "Depuis son profil utilisateur, section « Accès API », l'utilisateur génère une clé API et un secret API. Les appels REST s'authentifient avec ce couple et obéissent aux rôles et permissions de cet utilisateur : un employé ne lit que ses propres données, un responsable RH celles de son équipe. Les clés se renouvellent depuis le même écran."
-    image: /modules/integrations/feature-api.webp
     badge: Clé API
   - title: Connectez Zapier par OAuth2
     description: Vous créez un Client OAuth avec l'URI de redirection fournie par Zapier ; Dokos génère l'ID client et le secret. Une Clé de connexion sociale avec le fournisseur Dodock complète l'authentification. Dans Zapier, le déclencheur « Document events » crée les webhooks pour vous, et les actions Create Document et Find Document créent ou recherchent des documents.
-    image: /modules/integrations/feature-oauth.webp
     badge: Client OAuth
   - title: Paramétrez vos connecteurs métier au même endroit
     description: "Chaque application de connexion installée depuis la marketplace ajoute son document de paramètres dans cet espace de travail : Payments pour les passerelles de paiement, Dokos WooCommerce pour votre boutique, Dokos Hiboutik pour votre caisse, E-transactions pour la plateforme agréée de facturation électronique et eSignature pour la signature électronique."
-    image: /modules/integrations/feature-connecteurs.webp
     badge: Connecteurs
 
 install:

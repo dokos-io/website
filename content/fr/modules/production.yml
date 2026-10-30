@@ -76,7 +76,6 @@ features:
     badge: Nomenclature
   - title: Planifiez les quantités à produire
     description: Le plan de production regroupe les commandes client, les prévisions du MPS et les seuils de réapprovisionnement. Vous le créez aussi directement depuis une commande client. Dokos en déduit les ordres de travail à lancer et les demandes d'achat des composants manquants.
-    image: /modules/production/feature-plan.webp
     badge: Plan de production
   - title: Lancez un ordre de travail et suivez les matières
     description: À la soumission, Dokos réserve les matières premières dans leurs entrepôts sources. Le bouton de transfert crée une entrée de stock vers l'atelier ; les transferts partiels se cumulent. En fin de production, une entrée de type Fabrication déplace les produits finis vers l'entrepôt cible. Si vous arrêtez un ordre, les matières déjà transférées retournent au stock.
@@ -88,7 +87,6 @@ features:
     badge: Carte de travail
   - title: Fixez les coûts horaires de vos stations
     description: "Une station de travail porte quatre coûts horaires : main-d'œuvre, électricité, loyer et consommables. Un type de station (manuel ou machine) applique ces coûts à toutes ses stations. Un calendrier d'ouverture et une liste de jours fériés servent à vérifier la disponibilité lors de la planification. Le Plan d'atelier affiche chaque station comme disponible ou occupée."
-    image: /modules/production/feature-station.webp
     badge: Station de travail
 
 install:

@@ -33,7 +33,6 @@ related: [builder, newsletter, wiki, crm]
 hero:
   title: Vos actualités, <span class="text-primary">publiées</span> sur votre site Dokos.
   description: Vous écrivez un billet en Markdown ou en texte riche, vous le rattachez à un auteur et à une catégorie, et vous le publiez à la date choisie. Le billet apparaît sur votre site et dans votre flux RSS.
-  image: /modules/blog-app/hero.webp
 
 for_whom:
   items:
@@ -49,7 +48,6 @@ for_whom:
 
 fit:
   description: L'application ajoute un espace de travail <strong>Blog</strong> à votre site, avec les billets, les auteurs et les catégories. Un auteur est un utilisateur de votre site rattaché à une fiche Blogger. Les billets publiés sont servis par le site web de Dodock, à l'adresse /blog, et repris dans le flux RSS.
-  image: /modules/blog-app/fit.webp
   reads:
     - Utilisateur, rattaché à chaque fiche Blogger
     - Le site web de votre instance Dodock, qui sert les pages des billets
@@ -64,19 +62,15 @@ fit:
 features:
   - title: Écrivez le billet
     description: Vous saisissez le titre et l'introduction, puis le contenu en Markdown, en texte riche ou en HTML. Vous choisissez l'auteur et la catégorie. Le temps de lecture est calculé pour vous.
-    image: /modules/blog-app/feature-redaction.webp
     badge: Rédaction
   - title: Préparez le référencement et le partage
     description: Vous renseignez le titre et la description pour les moteurs de recherche, ainsi que l'image affichée au partage. L'aperçu Google montre le résultat avant la publication. Vous pouvez marquer un billet comme mis en avant.
-    image: /modules/blog-app/feature-seo.webp
     badge: Référencement
   - title: Publiez et classez
     description: Vous cochez « publié » et fixez la date de publication. Le billet rejoint la page du blog, sa catégorie et le flux RSS. Les lecteurs parcourent les billets par catégorie si vous l'autorisez dans les paramètres.
-    image: /modules/blog-app/feature-categories.webp
     badge: Publication
   - title: Réglez les échanges avec vos lecteurs
     description: Dans les Paramètres du blog, vous autorisez les commentaires des visiteurs, vous limitez leur nombre et celui des mentions « J'aime », vous activez le partage sur les réseaux sociaux et vous affichez un appel à l'action en fin de billet. Chaque billet peut désactiver ses commentaires ou ses mentions « J'aime ».
-    image: /modules/blog-app/feature-reglages.webp
     badge: Paramètres
 
 install:

@@ -39,7 +39,6 @@ related: [dokos, dokos-cli, dokos-ai, insights]
 hero:
   title: Vous définissez un type de document, Dodock crée <span class="text-primary">le formulaire, la liste et l'API</span>.
   description: Dodock est le cadriciel sous Dokos. C'est un fork de Frappe Framework, publié sous licence MIT, que nous maintenons. Il fournit les documents, les autorisations, les flux de travail et l'API REST que toutes les applications de l'écosystème utilisent.
-  image: /modules/dodock/hero.webp
 
 for_whom:
   items:
@@ -78,7 +77,6 @@ features:
       rôle. Dodock crée la table, le formulaire, la liste avec ses filtres, la vue calendrier et la vue
       rapport. Un administrateur ajoute un champ depuis Personnaliser le formulaire ; les Property Setters
       conservent ces ajustements et se gèrent aussi en code dans votre application.
-    image: /modules/dodock/feature-doctype.webp
     badge: DocTypes
   - title: Une API REST et des webhooks pour chaque document
     description: >-
@@ -88,7 +86,6 @@ features:
       <code>Authorization: token clé:secret</code>, généré sur la fiche utilisateur. Un webhook envoie le
       document à une URL externe à l'événement choisi. Les API Document, Base de données et Query Builder
       servent côté serveur.
-    image: /modules/dodock/feature-api.webp
     badge: API REST
   - title: Des flux de travail et des automatisations sans code
     description: >-
@@ -96,7 +93,6 @@ features:
       étape, avec une condition si besoin. Le moteur d'automatisations, en bêta, enchaîne un déclencheur et
       plusieurs actions (notification, assignation, appel web) dans une file d'attente que vous suivez. Les
       notifications envoient un e-mail ou une alerte à un événement ou à une date du document.
-    image: /modules/dodock/feature-automatisations.webp
     badge: Automatisations
   - title: Des scripts serveur exécutés en environnement contrôlé
     description: >-

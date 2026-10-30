@@ -54,7 +54,6 @@ for_whom:
 
 fit:
   description: "Frappe Learning s'installe sur votre site Dokos et utilise ses <strong>utilisateurs</strong> : un apprenant, un formateur ou un évaluateur est un utilisateur de votre site avec le rôle correspondant. Les cours payants passent par l'application Paiements, la même que vos factures. L'application est accessible à l'adresse /lms et dans l'écran des applications de votre site."
-  image: /modules/learning/fit.webp
   reads:
     - Les Utilisateurs de votre site, avec les rôles Student, Instructor, Evaluator et Moderator
     - Les passerelles de paiement de l'application Paiements pour les cours payants
@@ -70,19 +69,15 @@ fit:
 features:
   - title: Écrivez le cours en chapitres et en leçons
     description: Un cours contient des chapitres, et chaque chapitre contient ses leçons. Une leçon porte un texte, une vidéo, un PDF, des diapositives, un quiz ou un devoir. La vue apprenant montre la leçon telle que vos apprenants la verront. Seul un Moderator publie le cours.
-    image: /modules/learning/feature-cours.webp
     badge: Cours
   - title: Regroupez vos apprenants en sessions
     description: Une session réunit un groupe d'apprenants sur un ou plusieurs cours, avec une date de début et une date de fin. Un apprenant ajouté à la session est inscrit à tous ses cours. Vous planifiez un cours en direct Zoom depuis la session, et les apprenants voient la liste des cours à suivre.
-    image: /modules/learning/feature-session.webp
     badge: Sessions
   - title: Évaluez avec des quiz et des devoirs
     description: Vous créez un quiz avec des questions à choix unique, à choix multiples ou à réponse libre. Un devoir se remet en PDF ou en document. L'évaluateur corrige depuis sa file de remises. Un programme enchaîne plusieurs cours dans un ordre fixé.
-    image: /modules/learning/feature-evaluation.webp
     badge: Évaluations
   - title: Délivrez le certificat
     description: À la fin d'un cours ou d'une session, vous accordez un certificat à l'apprenant, automatiquement à la fin du cours ou en une fois pour toute la session. L'application fournit un modèle de certificat, et vous pouvez y substituer le vôtre. Vous pouvez facturer un cours, une session ou le certificat lui-même.
-    image: /modules/learning/feature-certificat.webp
     badge: Certificats
 
 install:

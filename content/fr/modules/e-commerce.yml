@@ -90,21 +90,18 @@ features:
     description: >-
       Le client remplit son panier et finalise sa commande. Dokos enregistre la Commande client, applique la règle de taxation
       du panier et propose les modes de livraison publiés. Le client retrouve l'historique de ses commandes sur son portail.
-    image: /modules/e-commerce/feature-commande.webp
     badge: Commandes
   - title: Proposez le paiement en ligne
     description: >-
       Vous activez la caisse dans les Paramètres e-commerce et définissez l'URL de réussite de paiement. Les passerelles
       PayPal, Stripe, HelloAsso, GoCardless et Stancer sont intégrées. Le client règle par carte bancaire, par prélèvement
       automatique ou par virement.
-    image: /modules/e-commerce/feature-paiement.webp
     badge: Paiement
   - title: Ouvrez un portail à vos clients
     description: >-
       Depuis la page de connexion, un client ou un fournisseur crée son compte et reçoit son mot de passe par e-mail.
       Il consulte l'état de ses commandes, de ses factures et de ses expéditions. Le statut se met à jour quand la facture
       et le paiement sont validés. Dans les Paramètres du portail, vous choisissez les documents visibles, leur route et le rôle autorisé.
-    image: /modules/e-commerce/feature-portail.webp
     badge: Portail client
   - title: Adaptez le panier à vos conditions de vente
     description: >-

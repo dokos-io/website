@@ -39,7 +39,6 @@ related: [telephony, raven, wiki, crm, ventes]
 hero:
   title: Vos demandes clients, <span class="text-primary">traitées en tickets</span>, avec des délais suivis.
   description: Chaque e-mail reçu devient un ticket affecté à un agent. Un accord de niveau de service fixe le délai de première réponse et de résolution par priorité. Le client suit sa demande depuis un portail.
-  image: /modules/support/hero.webp
 
 for_whom:
   items:
@@ -65,7 +64,6 @@ fit:
     de votre site. La politique SLA s'appuie sur une liste de jours fériés du site pour suspendre
     ses compteurs. Avec l'application <a href="/fr/modules/telephony">Telephony</a>, un bouton
     d'appel apparaît dans le ticket.
-  image: /modules/support/fit.webp
   reads:
     - Contact et Client
     - Les comptes de messagerie du site
@@ -81,23 +79,18 @@ fit:
 features:
   - title: Suivez chaque demande dans un ticket
     description: Un ticket porte un statut, une priorité, un type et une équipe. Une règle d'affectation le confie automatiquement à un agent. L'agent répond par e-mail depuis le ticket, ajoute un commentaire interne et voit l'historique complet des échanges.
-    image: /modules/support/feature-tickets.webp
     badge: Tickets
   - title: Fixez des délais par priorité
     description: Une politique SLA définit, pour chaque priorité, un délai de première réponse et un délai de résolution. Le compteur se met en pause quand le ticket attend le client, en dehors des heures de travail et les jours fériés de la liste choisie.
-    image: /modules/support/feature-sla.webp
     badge: SLA
   - title: Publiez une base de connaissances
     description: Les agents écrivent des articles groupés par catégorie, avec titres, listes, tableaux, images et vidéos. Un article est en brouillon, publié ou archivé, et visible du public, des clients ou en interne. Le formulaire de nouveau ticket propose les articles pertinents avant l'envoi.
-    image: /modules/support/feature-base.webp
     badge: Base de connaissances
   - title: Donnez un portail à vos clients
     description: Le client se connecte au portail, ouvre un ticket, en suit l'état et répond depuis la même page. Il consulte les articles qui lui sont ouverts et peut indiquer si un article l'a aidé.
-    image: /modules/support/feature-portail.webp
     badge: Portail client
   - title: Répondez vite et mesurez
     description: Une réponse enregistrée s'insère dans le ticket pour les questions fréquentes. L'analyse montre la chronologie de chaque ticket, ses temps de réponse et un résumé de la conversation.
-    image: /modules/support/feature-reponses.webp
     badge: Réponses enregistrées
 
 install:

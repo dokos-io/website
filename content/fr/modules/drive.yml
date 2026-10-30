@@ -37,7 +37,6 @@ hero:
   description: >-
     Frappe Drive ajoute à votre site un espace de fichiers avec les utilisateurs et les groupes que vous avez déjà.
     Vous envoyez des dossiers entiers, partagez un fichier et rédigez des documents à plusieurs.
-  image: /modules/drive/hero.webp
 
 for_whom:
   items:
@@ -60,7 +59,6 @@ fit:
     <strong>Groupes d'utilisateurs</strong>. Vous ouvrez l'interface /drive, envoyez vos fichiers et dossiers, puis partagez
     chacun avec un utilisateur, un groupe, tout le site, ou le publiez.<br>
     Le stockage est mis en commun pour tous les utilisateurs, ou attribué par quota à chacun.
-  image: /modules/drive/fit.webp
   reads:
     - Utilisateur
     - Groupe d'utilisateurs
@@ -77,25 +75,21 @@ features:
     description: >-
       Les fichiers volumineux sont envoyés en plusieurs parties. Un dossier envoyé garde son arborescence.
       Les vidéos sont lues en continu depuis le serveur.
-    image: /modules/drive/feature-envoi.webp
     badge: Envoi
   - title: Partagez et retrouvez vos fichiers
     description: >-
       Vous partagez un fichier ou un dossier avec un utilisateur, un groupe, tout le site, ou vous le publiez.
       La recherche couvre vos fichiers et ceux partagés avec vous. Le journal d'activité montre les changements de permissions et de métadonnées.
-    image: /modules/drive/feature-partage.webp
     badge: Partage
   - title: Rédigez à plusieurs avec Writer
     description: >-
       Plusieurs utilisateurs, ou des invités, modifient un document en même temps. Vous annotez, répondez et résolvez les annotations.
       Les versions sont enregistrées à la main ou automatiquement, et un fichier .docx s'importe dans l'éditeur.
-    image: /modules/drive/feature-writer.webp
     badge: Documents
   - title: Ouvrez vos fichiers dans le navigateur
     description: >-
       De nombreux types de fichiers s'affichent en aperçu sans téléchargement. La liste des formats pris en charge est
       tenue dans la documentation de Frappe Drive.
-    image: /modules/drive/feature-apercu.webp
     badge: Aperçu
 
 install:

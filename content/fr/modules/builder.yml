@@ -53,7 +53,6 @@ for_whom:
 
 fit:
   description: Frappe Builder s'installe sur le même site que Dokos. Les pages sont servies à l'adresse de votre site et le <strong>CMS intégré</strong> à Dodock alimente les sections dynamiques depuis vos DocTypes. Un formulaire Builder écrit dans un DocType de votre site. L'assistant lit vos pages en respectant vos permissions et attend votre accord avant une modification sensible.
-  image: /modules/builder/fit.webp
   reads:
     - Les DocTypes de votre site pour les sections dynamiques et les formulaires
     - Les composants et les jetons de thème de vos pages existantes, réutilisés par l'assistant
@@ -73,15 +72,12 @@ features:
     badge: Éditeur visuel
   - title: Décrivez la page à Bob
     description: Vous écrivez votre demande dans la discussion. Bob lit vos pages existantes, reprend leurs composants et leur style, puis relie les sections dynamiques et les formulaires à vos DocTypes. Chaque modification de l'assistant peut être annulée. La génération passe par OpenRouter, un service externe facturé à l'usage, de l'ordre de quelques centimes par page créée.
-    image: /modules/builder/feature-ia.webp
     badge: Assistant IA
   - title: Reliez vos blocs à vos données
     description: Un script de données par bloc lit votre base et renvoie les valeurs à afficher. Vous liez une propriété ou un style à une donnée de la page, à un paramètre d'URL ou au résultat d'un script. Des scripts globaux et des scripts de page complètent le comportement.
-    image: /modules/builder/feature-donnees.webp
     badge: CMS intégré
   - title: Publiez et mesurez
     description: Vous cliquez sur Publier et la page est en ligne à l'adresse de votre site. Le tableau d'analyse affiche les vues, les visiteurs uniques et les principaux référents de chaque page. Builder n'ajoute pas de scripts superflus aux pages publiées.
-    image: /modules/builder/feature-publication.webp
     badge: Publication
 
 install:

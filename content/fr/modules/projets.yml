@@ -31,7 +31,6 @@ related: [ventes, ressources-humaines, comptabilite, support]
 hero:
   title: Vos <span class="text-primary">projets</span>, leurs tâches et le temps passé, reliés à vos factures.
   description: Vous découpez un projet en tâches, votre équipe saisit ses heures dans des feuilles de temps, et Dokos calcule le coût et le montant facturable du projet. Une facture de vente se crée depuis la feuille de temps.
-  image: /modules/projets/hero.webp
 
 for_whom:
   items:
@@ -50,7 +49,6 @@ for_whom:
 
 fit:
   description: "Le module Projets fait partie de Dokos. Un projet se rattache à une <strong>commande client</strong> et reçoit les coûts des autres modules : feuilles de temps, notes de frais, factures d'achat et matières consommées. La <strong>feuille de temps</strong> relie le temps d'un employé à un projet, à une tâche et à une facture de vente."
-  image: /modules/projets/fit.webp
   reads:
     - Commande client, renseignée sur le projet
     - Facture de vente, créée depuis une feuille de temps soumise
@@ -66,7 +64,6 @@ fit:
 features:
   - title: Créez un projet, seul ou à partir d'un modèle
     description: "Vous renseignez le nom, le statut et la date de fin prévue, puis le type, la priorité et le département si besoin. Avec « À partir d'un modèle », les tâches du modèle sont créées et datées automatiquement. Le champ « Méthode d'achèvement » fixe le calcul de l'avancement : manuel, par tâche terminée, par progression ou par poids des tâches."
-    image: /modules/projets/feature-projet.webp
     badge: Projet
   - title: Découpez le travail en tâches dépendantes
     description: Une tâche porte un statut (Ouvert, En cours, En retard, En attente de révision, Terminé, Annulé) et une priorité. La case « Est un groupe » en fait un parent de sous-tâches. Le champ « Tâches dépendantes » bloque la clôture tant que la tâche amont n'est pas terminée. Les dates réelles de début et de fin viennent des feuilles de temps.
@@ -74,15 +71,12 @@ features:
     badge: Tâche
   - title: Saisissez le temps passé, ligne par ligne
     description: Une feuille de temps couvre un ou plusieurs jours. Chaque ligne indique l'horaire de début, les heures, le type d'activité, le projet et la tâche. Un minuteur mesure le temps réel. Le taux de coût vient du type d'activité ou du coût de l'activité propre à l'employé ; une fois la feuille soumise, les taux sont verrouillés.
-    image: /modules/projets/feature-temps.webp
     badge: Feuille de temps
   - title: Facturez le temps et suivez la marge
     description: Les lignes cochées Facturable, multipliées par le taux de facturation, donnent le montant de facturation. Depuis la feuille de temps soumise, vous créez la facture de vente ; le total des heures facturées et le pourcentage facturé se mettent à jour. Sur le projet, la marge brute compare le montant des ventes au coût total.
-    image: /modules/projets/feature-facturation.webp
     badge: Facturation
   - title: Tenez vos clients informés
     description: La table Utilisateurs du projet donne accès à un utilisateur du site web, par exemple votre client, avec un e-mail de bienvenue et, si vous le souhaitez, l'affichage des pièces jointes. La mise à jour du projet envoie l'état d'avancement aux parties prenantes, à la fréquence que vous choisissez.
-    image: /modules/projets/feature-client.webp
     badge: Suivi client
 
 install:

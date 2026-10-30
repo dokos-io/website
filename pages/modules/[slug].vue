@@ -68,6 +68,11 @@ const facts = computed(() => {
   return [...items, ...(m.facts?.items ?? [])]
 })
 
+// Features with a screenshot get their own section; the others share a grid
+// of cards, so a page without screenshots does not show empty halves.
+const shownFeatures = computed<any[]>(() => (module.value.features ?? []).filter((f: any) => f.image || f.video))
+const textFeatures = computed<any[]>(() => (module.value.features ?? []).filter((f: any) => !f.image && !f.video))
+
 const heroLinks = computed(() => {
   if (module.value.hero?.links) return module.value.hero.links
   const links: any[] = []
@@ -85,7 +90,7 @@ const heroLinks = computed(() => {
   <UPage v-if="module">
     <UPageHero
       :links="heroLinks"
-      orientation="horizontal"
+      :orientation="module.hero?.image ? 'horizontal' : 'vertical'"
     >
       <template #headline>
         <NuxtLink :to="localePath('/modules')" class="inline-flex">
@@ -95,7 +100,7 @@ const heroLinks = computed(() => {
         </NuxtLink>
       </template>
       <template #title>
-        <span class="flex items-center gap-4">
+        <span class="flex items-center gap-4" :class="{ 'justify-center': !module.hero?.image }">
           <UColorModeAvatar
             v-if="module.logo"
             :light="module.logo.light"
@@ -115,7 +120,6 @@ const heroLinks = computed(() => {
         :alt="module.title"
         class="w-full rounded-lg ring ring-default"
       />
-      <Placeholder v-else class="aspect-video" />
     </UPageHero>
 
     <!-- Facts strip: publisher, licence, version, availability, docs. -->
@@ -154,7 +158,7 @@ const heroLinks = computed(() => {
     <!-- How it fits in a Dokos site: the documents it reads and writes, what it adds. -->
     <UPageSection
       v-if="module.fit"
-      orientation="horizontal"
+      :orientation="module.fit.image ? 'horizontal' : 'vertical'"
       :reverse="module.fit.align === 'left'"
       class="bg-sand-200/60 dark:bg-stone-900"
     >
@@ -163,7 +167,7 @@ const heroLinks = computed(() => {
       </template>
       <template #description>
         <span v-html="module.fit.description" />
-        <dl class="mt-6 grid gap-6 sm:grid-cols-2">
+        <dl class="mt-6 grid gap-6 text-left sm:grid-cols-2">
           <div v-if="module.fit.reads?.length">
             <dt class="text-sm font-semibold text-highlighted">{{ t('fit_reads') }}</dt>
             <dd>
@@ -205,12 +209,11 @@ const heroLinks = computed(() => {
         class="rounded-lg ring ring-default"
         loading="lazy"
       />
-      <Placeholder v-else class="aspect-video" />
     </UPageSection>
 
-    <!-- What it does: one feature per section, alternating sides. -->
+    <!-- What it does: one section per feature with a screenshot, alternating sides. -->
     <UPageSection
-      v-for="(feature, i) in (module.features as any[])"
+      v-for="(feature, i) in shownFeatures"
       :key="i"
       orientation="horizontal"
       :reverse="feature.align ? feature.align === 'left' : i % 2 === 1"
@@ -232,7 +235,7 @@ const heroLinks = computed(() => {
         loading="lazy"
       />
       <video
-        v-else-if="feature.video"
+        v-else
         class="w-full rounded-lg ring ring-default"
         autoplay
         loop
@@ -241,7 +244,30 @@ const heroLinks = computed(() => {
       >
         <source :src="feature.video" type="video/mp4">
       </video>
-      <Placeholder v-else class="aspect-video" />
+    </UPageSection>
+
+    <!-- Features without a screenshot, as cards. -->
+    <UPageSection
+      v-if="textFeatures.length"
+      :title="shownFeatures.length ? undefined : t('features_title')"
+    >
+      <UPageGrid class="sm:grid-cols-2 lg:grid-cols-3">
+        <UPageCard
+          v-for="(feature, i) in textFeatures"
+          :key="i"
+          variant="subtle"
+        >
+          <template v-if="feature.badge" #leading>
+            <UBadge :label="typeof feature.badge === 'string' ? feature.badge : feature.badge.label" variant="subtle" />
+          </template>
+          <template #title>
+            <span v-html="feature.title" />
+          </template>
+          <template #description>
+            <span v-html="feature.description" />
+          </template>
+        </UPageCard>
+      </UPageGrid>
     </UPageSection>
 
     <!-- How to get it. -->
@@ -341,6 +367,7 @@ en:
   read_docs: Read the documentation
   install_from_marketplace: Install from the marketplace
   for_whom_title: Who it is for
+  features_title: What you do with it
   fit_title: How it fits in your Dokos site
   fit_reads: Documents it reads and writes
   fit_adds: What it adds to your site
@@ -363,6 +390,7 @@ fr:
   read_docs: Lire la documentation
   install_from_marketplace: Installer depuis la marketplace
   for_whom_title: Pour qui
+  features_title: Ce que vous faites avec l'application
   fit_title: Comment l'application s'intègre à votre site Dokos
   fit_reads: Les documents qu'elle lit et écrit
   fit_adds: Ce qu'elle ajoute à votre site

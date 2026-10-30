@@ -40,7 +40,6 @@ related: [dokos-ai, dokos, dodock]
 hero:
   title: Votre site Dokos, <span class="text-primary">depuis un terminal</span> ou depuis un agent IA.
   description: La commande <code>dokos</code> interroge et modifie les documents d'un site par son API REST. La même commande, lancée avec <code>dokos mcp</code>, devient un serveur MCP pour Claude Code, agy, Vibe CLI ou OpenCode.
-  image: /modules/dokos-cli/hero.webp
 
 for_whom:
   items:
@@ -70,7 +69,6 @@ fit:
     Si votre site a l'application <a href="/fr/modules/dokos-ai">Dokos AI</a> avec son serveur
     MCP activé, les compétences que vous y publiez sont récupérées par <code>dokos skill pull</code>
     et appliquées par votre agent externe.
-  image: /modules/dokos-cli/fit.webp
   reads:
     - Tout DocType et tout rapport accessibles à l'utilisateur de la clé d'API
     - Les schémas de DocType et les règles de permission
@@ -87,19 +85,15 @@ fit:
 features:
   - title: Interrogez un site sans quitter le terminal
     description: Vous listez des documents avec des filtres et des champs choisis, lisez un document, comptez, lisez une valeur, exécutez un rapport ou affichez le schéma d'un DocType. Le résultat s'affiche en tableau, ou en JSON dès que la sortie est redirigée vers un autre programme.
-    image: /modules/dokos-cli/feature-lecture.webp
     badge: Lecture
   - title: Écrivez des données, avec les garde-fous du site
     description: Vous créez, sauvegardez, soumettez, annulez, amendez, supprimez ou renommez un document, mettez à jour une valeur ou un lot, et téléversez un fichier. Une erreur affiche le message du serveur et la commande qui y répond. Sur un site en lecture seule, l'écriture est refusée avant d'être envoyée.
-    image: /modules/dokos-cli/feature-ecriture.webp
     badge: Écriture
   - title: Travaillez avec plusieurs sites
     description: Vous enregistrez chaque site sous un nom avec <code>dokos add-site</code> ou depuis un bench local avec <code>dokos use-site</code>. Vous changez de site actif, ou vous ciblez un site pour une seule commande avec <code>-s</code>.
-    image: /modules/dokos-cli/feature-sites.webp
     badge: Sites
   - title: Équipez un agent IA en une commande
     description: <code>dokos agent install</code> enregistre le serveur MCP dans Claude Code, agy, Vibe CLI et OpenCode, approuve d'office les seuls outils de lecture et installe la compétence « dokos-erp ». L'agent lit et met à jour le site en langage naturel. Les écritures restent confirmées.
-    image: /modules/dokos-cli/feature-agents.webp
     badge: Agents (MCP)
 
 install:

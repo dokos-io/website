@@ -38,7 +38,6 @@ related: [projets, comptabilite, learning]
 hero:
   title: Vos <span class="text-primary">employés</span>, leurs congés, leurs présences et leurs notes de frais, dans votre site Dokos.
   description: Vos employés demandent leurs congés et saisissent leurs dépenses depuis l'application mobile ; leurs responsables approuvent depuis le même écran. Chaque note de frais soumise crée son écriture comptable.
-  image: /modules/ressources-humaines/hero.webp
 
 for_whom:
   items:
@@ -79,7 +78,6 @@ fit:
 features:
   - title: Gérez les congés de la demande à l'approbation
     description: Les RH créent la liste de jours fériés et les types de congés, puis indiquent dans le contrat de travail les types auxquels chaque employé a droit. L'allocation se calcule et s'ajuste au fil de la période. L'employé soumet sa demande de congé ; l'approbateur la valide ou la refuse. Des périodes de blocage peuvent empêcher les congés sur les moments critiques.
-    image: /modules/ressources-humaines/feature-conges.webp
     badge: Congés
   - title: Marquez les présences depuis les pointages
     description: "Un type de quart porte une heure de début et une heure de fin, avec des tolérances avant et après. Quand l'enregistrement automatique est activé, Dokos lit les enregistrements des employés et crée la présence du jour : Présent, Demi-journée ou Absent selon les heures travaillées. L'outil « Marquer la présence » et le rapport « Détails de la présence mensuelle » complètent le suivi."
@@ -87,7 +85,6 @@ features:
     badge: Quarts et présences
   - title: Transformez les dépenses en écritures comptables
     description: L'employé enregistre chaque dépense avec sa date et son type, par exemple Carburant ou Repas, une ligne par taux de TVA. La note de frais reprend ces lignes, exige un approbateur et accepte les justificatifs en pièces jointes. À la soumission, le montant s'impute sur le compte de dépense et sur le compte de l'employé ; le règlement se fait depuis « Créer > Paiement ». Le rapport « Notes de dépenses non réclamées » liste ce qui reste à payer.
-    image: /modules/ressources-humaines/feature-frais.webp
     badge: Notes de frais
   - title: Conduisez vos cycles d'évaluation
     description: Un modèle d'évaluation définit les critères et leur poids, adaptable par poste ou par département. Le cycle d'évaluation fixe la période et les employés concernés, puis génère les évaluations en masse. La note finale combine le score des objectifs, celui des critères et l'auto-évaluation ; une formule personnalisée peut les pondérer autrement.
@@ -95,7 +92,6 @@ features:
     badge: Évaluations
   - title: Donnez à vos employés une application mobile
     description: À l'adresse de votre site suivie de /hrms, chaque employé ouvre une application web depuis un navigateur Chromium (Chrome, Brave, Edge). Il pointe son arrivée, demande un congé, consulte son historique et les jours fériés à venir, enregistre une dépense et saisit ses heures par QR code ou à la main. Les approbateurs traitent les demandes de congé depuis l'écran d'accueil.
-    image: /modules/ressources-humaines/feature-mobile.webp
     badge: Application mobile
 
 install:

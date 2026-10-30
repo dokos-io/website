@@ -39,7 +39,6 @@ hero:
   description: >-
     Bookings publie vos ressources réservables sur un portail, encaisse les réservations et génère les factures,
     les contrats et les abonnements dans votre site Dokos.
-  image: /modules/reservations-de-ressources/hero.webp
 
 for_whom:
   items:
@@ -68,7 +67,6 @@ fit:
     Chaque <strong>Réservation d'article</strong> est rattachée à un tiers facturé, et sa facture est générée et suivie
     automatiquement. Un contrat signé crée une Commande client, un Abonnement et ses factures récurrentes dans le module Ventes.
     Le paiement en ligne passe par les passerelles de l'application Payments.
-  image: /modules/reservations-de-ressources/fit.webp
   reads:
     - Article, Groupe d'articles et Liste de prix
     - Client et Contact
@@ -91,35 +89,30 @@ features:
       Une Ressource réservable fixe le nombre de réservations simultanées, les prix par unité de mesure (heure, demi-journée,
       journée, mois) et les badges requis. Un Calendrier de réservation définit les créneaux par jour de la semaine et ses exceptions,
       comme les jours fériés ou la maintenance. La Disponibilité de réservation fixe le préavis minimum et maximum, contrôlé aussi côté serveur.
-    image: /modules/reservations-de-ressources/feature-ressources.webp
     badge: Ressources
   - title: Laissez vos clients réserver depuis le portail
     description: >-
       Sur /bookings-ui, le client choisit un créneau. La réservation passe de « Non confirmé » à « Confirmé » après la commande,
       ou après le paiement si vous l'exigez. Un brouillon abandonné est supprimé après le délai fixé dans les Paramètres du lieu.
       Le client annule depuis son portail si vous l'autorisez, dans la limite du délai minimum d'annulation.
-    image: /modules/reservations-de-ressources/feature-portail.webp
     badge: Portail
   - title: Signez des contrats en ligne
     description: >-
       Un Type de contrat porte le modèle de texte, la durée minimum, le préavis, les ressources incluses, l'article récurrent,
       les frais à la signature et le dépôt de garantie. Vous envoyez le contrat au client ; il le signe d'un clic sur son portail.
       Le contrat passe à « Actif » et crée la Commande client, l'Abonnement et le Dépôt de garantie. Un avenant modifie un contrat actif sans le réécrire.
-    image: /modules/reservations-de-ressources/feature-contrats.webp
     badge: Contrats
   - title: Vendez des crédits de réservation
     description: >-
       Un type de crédit convertit un article facturé en crédits, à l'achat d'un ticket ou à chaque période d'un abonnement.
       À la validation de la facture, les crédits sont alloués. Lors d'une réservation sur le portail, la case « Déduire des crédits
       de réservation » les consomme. Les crédits expirent selon la durée du type, et un rapport présente les soldes attribués, utilisés et restants.
-    image: /modules/reservations-de-ressources/feature-credits.webp
     badge: Crédits
   - title: Publiez vos événements et leurs inscriptions
     description: >-
       Un Événement public coché « Publié » apparaît sur le site. Chaque inscription en ligne crée un document Inscription à un événement.
       Le formulaire web « event-registration-form » encaisse le paiement, en une fois ou avec des paiements automatiques.
       Les inscriptions se ferment automatiquement 24 heures avant l'événement par défaut, et un badge peut être attribué aux présents.
-    image: /modules/reservations-de-ressources/feature-evenements.webp
     badge: Événements
 
 install:

@@ -34,7 +34,6 @@ related: [e-commerce, ventes, stocks, reservations-de-ressources]
 hero:
   title: Votre boutique <span class="text-primary">WooCommerce</span> reste en place, Dokos gère la suite.
   description: Chaque commande passée sur WordPress arrive dans Dokos par webhook et devient une commande client. Dokos renvoie les niveaux de stock à la boutique.
-  image: /modules/woocommerce/hero.webp
 
 for_whom:
   items:
@@ -50,7 +49,6 @@ for_whom:
 
 fit:
   description: Le connecteur se configure dans <strong>Paramètres Woocommerce</strong>, un document par boutique. À l'enregistrement, Dokos génère le secret et le point d'entrée du webhook et les crée dans WooCommerce. Chaque commande reçue est conservée comme <strong>Commande Woocommerce</strong>, puis donne une <strong>Commande client</strong>. Selon vos options, Dokos enchaîne le bon de livraison, la facture de vente et le paiement.
-  image: /modules/woocommerce/fit.webp
   reads:
     - Client, Adresse et Groupe de clients
     - Article, Modèle d'article et variantes
@@ -68,23 +66,18 @@ fit:
 features:
   - title: Recevez les commandes par webhook
     description: Dans WooCommerce, vous générez une clé d'API REST, puis vous la collez dans Paramètres Woocommerce avec l'URL de la boutique. À l'enregistrement, Dokos crée le webhook « Commande créée ». Chaque commande arrive aussitôt dans la liste des Commandes Woocommerce, avec son statut. Une routine horaire reprend celles qui ont échoué.
-    image: /modules/woocommerce/feature-commandes.webp
     badge: Commandes
   - title: Créez la commande client avec ses dépendances
     description: Si le client n'existe pas, Dokos le crée à partir de la commande, avec une adresse de livraison. Si un article manque, il est créé lui aussi. La commande client reprend la société, la série, la liste de prix et l'entrepôt que vous avez fixés dans les paramètres. Les frais de port et les taxes vont sur les comptes que vous avez choisis.
-    image: /modules/woocommerce/feature-facturation.webp
     badge: Ventes
   - title: Enchaînez livraison, facture et paiement
     description: L'option « Créer les paiements et la facture de vente » génère la facture de vente et son écriture de paiement à partir de la commande client. Les bons de livraison sont créés quand la commande WooCommerce passe dans l'un des statuts d'expédition que vous avez listés. Un remboursement côté boutique donne un avoir.
-    image: /modules/woocommerce/feature-facturation.webp
     badge: Facturation
   - title: Renvoyez vos stocks vers la boutique
     description: À chaque entrée ou sortie de stock dans Dokos, la quantité est envoyée à WooCommerce, en quantité réelle ou projetée selon votre choix. Une routine horaire reprend les articles mouvementés dans les deux dernières heures. Pour les produits à variations, le modèle d'article reçoit la somme des variantes actives.
-    image: /modules/woocommerce/feature-stock.webp
     badge: Stocks
   - title: Reprenez les réservations WooCommerce Bookings
     description: Si une ligne de commande porte sur un article réservable, Dokos crée la réservation correspondante. Aucune configuration supplémentaire n'est nécessaire côté connecteur.
-    image: /modules/woocommerce/feature-reservations.webp
     badge: Réservations
 
 install:

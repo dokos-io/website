@@ -54,7 +54,6 @@ for_whom:
 
 fit:
   description: "Frappe Insights s'installe sur votre site Dokos et lit sa base de données comme source de données <strong>« Site DB »</strong>. Chaque DocType y apparaît comme une table. Les requêtes respectent les permissions utilisateur de votre site : une personne voit les lignes que Dokos l'autorise à voir. Vous partagez un classeur ou un tableau de bord avec les utilisateurs de votre choix."
-  image: /modules/insights/fit.webp
   reads:
     - La base de données de votre site Dokos, chaque DocType étant une table
     - D'autres bases MySQL, PostgreSQL, DuckDB et BigQuery, des fichiers et des feuilles de calcul
@@ -74,15 +73,12 @@ features:
     badge: Requêtes
   - title: Laissez Insights proposer le graphique
     description: À partir du résultat d'une requête, Insights propose le type de graphique adapté. Vous ajustez les axes, les mesures et le format des nombres, par exemple une devise ou un pourcentage.
-    image: /modules/insights/feature-graphique.webp
     badge: Graphiques
   - title: Assemblez un tableau de bord
     description: Vous glissez vos graphiques dans une grille et vous ajoutez un filtre de tableau de bord, par exemple une période, qui s'applique à tous les graphiques. Vous partagez le tableau de bord avec les utilisateurs concernés.
-    image: /modules/insights/feature-tableau-de-bord.webp
     badge: Tableaux de bord
   - title: Partez d'un modèle ERPNext
     description: Un administrateur Insights importe un modèle de classeur pour les ventes, les achats, la comptabilité ou le stock. Le classeur arrive avec ses requêtes et ses graphiques sur les tables de Dokos. Vous l'adaptez ensuite à vos besoins.
-    image: /modules/insights/feature-modeles.webp
     badge: Modèles
 
 install:

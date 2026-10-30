@@ -37,7 +37,6 @@ related: [comptabilite, achats, ventes, ocr]
 hero:
   title: Vos factures électroniques, <span class="text-primary">reçues et traitées</span> dans Dokos.
   description: eTransactions relie votre société à une plateforme agréée. Les factures fournisseur aux formats Factur-X, CII et UBL arrivent dans Dokos et deviennent des factures d'achat.
-  image: /modules/etransactions/hero.webp
 
 for_whom:
   items:
@@ -53,7 +52,6 @@ for_whom:
 
 fit:
   description: eTransactions se configure dans <strong>Paramètres E-transactions</strong>, au niveau de la société. Les factures reçues, par la plateforme agréée ou par OCR, arrivent dans la même <strong>Banette de factures d'achat</strong>. Chacune devient une facture fournisseur en attente, que vous reliez à une commande fournisseur ou à un reçu d'achat, puis que vous transformez en <strong>Facture d'achat</strong>. Côté ventes, la fiche Client porte le SIREN, le profil e-invoice et la ligne d'annuaire qui serviront à l'émission.
-  image: /modules/etransactions/fit.webp
   reads:
     - Société, Client, Fournisseur et leurs adresses
     - Commande fournisseur et Reçu d'achat
@@ -71,23 +69,18 @@ fit:
 features:
   - title: Connectez votre plateforme agréée
     description: Dans Paramètres E-transactions, onglet Plateforme Agréée, vous ajoutez SuperPDP, Esalink (HUBTIMIZE) ou une plateforme personnalisée conforme au standard AFNOR XP Z12-013. Vous choisissez le périmètre, ventes, achats ou les deux, puis l'environnement bac à sable ou production. Le bouton « Tester la connexion » vérifie vos identifiants avant l'activation. Dokos contrôle chaque jour l'état de la connexion et signale une erreur par un voyant.
-    image: /modules/etransactions/feature-plateforme.webp
     badge: En production
   - title: Inscrivez votre société à l'annuaire
     description: Le bouton « Remplir depuis SIRENE » complète le SIREN, le numéro de TVA et l'adresse du siège sur la fiche Société. Depuis la configuration de la plateforme, « Inscription à l'annuaire » enregistre votre identifiant dans l'annuaire français ou dans Peppol. Sur Esalink, l'entrée prend effet au moins dix jours après la demande.
-    image: /modules/etransactions/feature-annuaire.webp
     badge: En production
   - title: Recevez les factures de vos fournisseurs
     description: Dokos interroge la plateforme à intervalle régulier et dépose chaque facture reçue dans la banette. Il lit les formats UBL et CII, y compris les données intégrées à un PDF Factur-X, puis extrait le fournisseur, les montants, les lignes, les conditions de paiement et l'IBAN. Le fournisseur est recherché par numéro de TVA, puis par IBAN et par nom, avec un niveau de confiance. Vous confirmez, puis vous créez la facture d'achat.
-    image: /modules/etransactions/feature-reception.webp
     badge: En production
   - title: Lisez les PDF par OCR
     description: Les factures fournisseur reçues en PDF, déposées à la main ou transférées depuis une boîte de courriel dédiée, passent par Amazon Textract. La facture fournisseur en attente reprend les données extraites, propose la commande fournisseur ouverte du fournisseur et bloque, si vous l'avez demandé, une facture d'achat dont le montant dépasse celui lu sur le document.
-    image: /modules/etransactions/feature-banette.webp
     badge: En production
   - title: Émettez vos factures depuis la facture de vente
     description: À la validation d'une facture de vente, Dokos classe le client, entreprise, administration, particulier ou partenaire étranger, puis génère le format attendu, Factur-X par défaut ou UBL pour un destinataire Peppol. L'envoi part automatiquement ou à la main, et un panneau affiche le statut renvoyé par la plateforme. Une facture déjà transmise s'annule par « Annuler avec cycle de vie ». Cette partie est en cours de finalisation.
-    image: /modules/etransactions/feature-emission.webp
     badge: En cours
 
 install:
