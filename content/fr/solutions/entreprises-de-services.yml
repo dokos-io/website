@@ -1,98 +1,119 @@
-title: Le logiciel de gestion de gestion complète pour les entreprises de services
-description: Dokos propose une solution intuitive, évolutive et personnalisable pour gérer vos activités au quotidien.
+title: Dokos pour les entreprises de services
+description: Projets, temps passé, facturation et comptabilité dans le même logiciel de gestion, avec la marge de chaque projet.
+
 hero:
-  title: Le logiciel de gestion de gestion complète pour les entreprises de services
-  description: Dokos propose une solution simple et intuitive pour optimisez votre gestion
-  align: center
   headline:
-    label: Une adaptation française d'ERPNext
-    to: https://frappe.io
-    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
-    target: _blank
-    color: sky
+    label: Entreprises de services
+    icon: i-heroicons-briefcase
+  title: Du temps passé à la facture, <span class="text-primary">la marge de chaque projet</span>.
+  description: Vous vendez des prestations, au forfait ou au temps passé. Votre équipe saisit ses heures sur les tâches du projet. Dokos crée la facture depuis la feuille de temps et compare le montant des ventes au coût du projet.
   links:
-    - label: Commencez avec Dokos
+    - label: Essayer Dokos
       to: https://cloud.dokos.io
+      target: _blank
       size: xl
-      color: amber
+      color: primary
       icon: i-heroicons-rocket-launch
-      trailing: false
-      target: _blank
-    - label: Documentation
-      icon: i-heroicons-arrow-right
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
       size: xl
-      color: gray
-      to: https://doc.dokos.io
-      target: _blank
+      color: neutral
+      variant: outline
+
 colored_section:
-  title: Adoptez une solution qui allie puissance et éthique
-  description: Que vous soyez dans le conseil, l’informatique, le transport, ou tout autre secteur de services, Dokos est la solution open-source qui répond à tous vos besoins. Grâce à une plateforme unifiée et personnalisable, vous pouvez gérer vos clients, vos projets, vos finances et bien plus encore, en un seul endroit.
-  image: "image/projet/recapitulatif-projets.png"
+  title: Vos projets en tâches, sur un tableau
+  description: "Un projet se rattache à une commande client et se découpe en tâches. Chaque tâche porte un statut et une priorité, et une tâche dépendante ne peut pas être terminée avant la tâche amont. Vous suivez l'avancement dans la liste, le Gantt ou le kanban. Dokos v5 repose sur Frappe et ERPNext v16 ; son code est publié sous licence GPLv3."
+  image: /modules/projets/feature-taches.webp
   align: left
-  links:
-    - label: Débutez l'aventure
-      to: https://cloud.dokos.io
-      size: xl
-      color: gray
-      icon: i-heroicons-rocket-launch
-      trailing: false
-      target: _blank
-    - label: Documentation
-      icon: i-heroicons-arrow-right
-      trailing: true
-      size: xl
-      color: gray
-      to: https://doc.dokos.io
-      target: _blank
+
 sections:
-  - title: Une gestion complète des projets et des clients
-    description: Dokos vous permet de suivre l'intégralité de vos projets avec une gestion avancée des tâches, des plannings (Gantt, Kanban) et du temps passé. <br>Vous pouvez également centraliser toutes les interactions clients (devis, factures, tickets de support) pour un suivi efficace.
-    image: image/projet/Suivi-des-taches-kanban.png
-    image_bg_color: bg-teal-500
+  - title: Le temps passé devient une facture
+    description: Une feuille de temps indique, ligne par ligne, les heures, le type d'activité, le projet et la tâche. Les lignes facturables, multipliées par le taux de facturation, donnent le montant à facturer. Depuis la feuille soumise, vous créez la facture de vente.
+    image: /modules/ventes/feature-facture.webp
     align: right
-  - title: Intégrez votre comptabilité et suivez en temps réel vos rapports financiers
-    description: 'Suivez toutes vos opérations financières : factures, paiements, rapprochements bancaires, tout est automatiquement intégré et enregistré. <br>Générez des rapports financiers détaillés comme les bilans et les comptes de résultats pour garder une vue d’ensemble de votre situation.'
-    image: image/comptabilite/rapports-financiers-diverses-monnaies.png
-    image_bg_color: bg-teal-500
+    features:
+      - title: Des modèles de projet
+        description: Les tâches d'un modèle sont créées et datées à partir de leur durée, en sautant les jours fériés de la société.
+        icon: i-heroicons-document-duplicate
+      - title: Vos clients informés
+        description: Vous ouvrez le projet à votre client sur le portail et vous lui envoyez son état d'avancement à la fréquence choisie.
+        icon: i-heroicons-user-group
+    links:
+      - label: Le module Projets
+        to: /fr/modules/projets
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: La marge de chaque projet
+    description: Le projet additionne les coûts des feuilles de temps, des notes de frais et des achats. Il les compare au montant des ventes et affiche la marge brute.
+    image: /modules/comptabilite/fit.webp
     align: left
-  - title: Gardez une flexibilité totale avec une solution libre et open-source
-    description: 'Centralisez la gestion des ressources humaines avec des modules dédiés : gestion des congés, notes de frais, paie et suivi des présences.<br>L’outil de gestion des projets permet une répartition des tâches claire et efficace entre vos collaborateurs.'
-    image: image/module-rh/trois-gestion-des-conges.png
-    image_bg_color: bg-teal-500
+  - title: Du devis à l'encaissement
+    description: Vous créez le devis depuis la fiche client. La commande reprend le devis accepté et la facture reprend la commande. Un abonnement génère ses factures à chaque période. Les factures envoyées par e-mail portent un lien de paiement.
+    image: /modules/ventes/feature-devis.webp
     align: right
-  - title: 'Permettez une collaboration fluide entre vos équipes '
-    description: En rejoignant Dokos, vous faites partie d'une communauté ouverte où chacun peut contribuer. <br>Que ce soit en participant au développement, en partageant des idées ou en finançant de nouvelles fonctionnalités, vous aidez à construire un outil au service de toutes les entreprises.
-    image: image/dokos-communaute.webp
-    image_bg_color: bg-teal-500
+    links:
+      - label: Le module Ventes
+        to: /fr/modules/ventes
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Votre comptabilité se tient à partir de vos factures
+    description: Chaque facture de vente ou d'achat validée passe son écriture au grand livre. Le bilan et le compte de résultat sortent sans ressaisie. Le module Banque importe vos relevés et propose les correspondances avec vos paiements. Dokos reçoit déjà les factures fournisseurs électroniques CII, Factur-X et UBL depuis une plateforme agréée ; l'émission est en cours.
+    image: /modules/comptabilite/hero.webp
     align: left
-  - title: 'Optimisez votre environnement avec les intégrations '
-    description: Connectez Dokos à vos autres outils comme Google Agenda, Slack, Stripe et bien d'autres.<br>Optimisez encore plus votre environnement de travail avec ces intégrations natives et boostez votre productivité.
-    image: image/projet/communication-raven.png
-    image_bg_color: bg-teal-500
+    links:
+      - label: Le module Comptabilité
+        to: /fr/modules/comptabilite
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Les congés et les notes de frais de votre équipe
+    description: L'employé demande son congé ou saisit ses dépenses depuis l'application mobile, et son responsable approuve. L'allocation de congé se calcule à partir du contrat de travail. Chaque note de frais soumise crée son écriture comptable.
+    image: /solutions/notes-de-frais.webp
     align: right
+    links:
+      - label: Le module Ressources Humaines
+        to: /fr/modules/ressources-humaines
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Reliez vos autres outils
+    description: Un webhook prévient un outil externe quand un document est créé, modifié ou soumis. Chaque utilisateur génère une clé API, avec les mêmes permissions que dans l'interface. L'agent de votre choix se connecte à votre site par MCP, et chaque écriture reste soumise à votre confirmation.
+    image: /modules/integrations/hero.webp
+    align: left
+    links:
+      - label: Les intégrations
+        to: /fr/modules/integrations
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
 carousel:
-  - title: Sans frais de licence
-    description: Profitez de la puissance d’un logiciel de gestion complet sans coûts cachés.
-  - title: Une plateforme personnalisable
-    description: Activez et désactivez les modules selon vos besoins spécifiques.
-  - title: Indépendance et liberté
-    description: ' Installez Dokos où vous voulez et modifiez-le à votre guise.'
+  - title: Un support client en tickets
+    description: Avec Helpdesk, chaque e-mail reçu devient un ticket, avec des délais de réponse par priorité et un portail où le client suit sa demande.
+  - title: Des droits par rôle
+    description: Vous limitez un utilisateur à certains documents, par exemple ceux d'une seule société.
+  - title: Un code ouvert
+    description: Le code de Dokos est publié sous licence GPLv3. Vous ajoutez des champs et des flux de validation depuis l'interface.
+
 cta:
-  title: Simplifiez la gestion de votre entreprise
-  description: Évaluez tout le potentiel de Dokos pour vos projets et vos clients dès aujourd’hui !
+  title: Dites-nous comment votre équipe vend et facture.
+  description: Éditeur open source, experts Frappe et ERPNext, nous bâtissons et garantissons vos applications métier. Créez un site d'essai sur Dokos Cloud, ou écrivez-nous.
   links:
-    - label: Commencez avec Dokos
+    - label: Essayer Dokos
       to: https://cloud.dokos.io
+      target: _blank
       size: xl
-      color: orange
+      color: primary
       icon: i-heroicons-rocket-launch
-      trailing: false
-      target: _blank
-    - label: Documentation
-      icon: i-heroicons-arrow-right
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
       size: xl
-      color: gray
-      to: https://doc.dokos.io
-      target: _blank
+      color: neutral
+      variant: outline

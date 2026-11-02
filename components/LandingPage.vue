@@ -75,7 +75,7 @@ const page = computed(() => props.page)
           v-for="image in page.logos.images"
           :key="image"
           :src="image"
-          class="max-h-20"
+          class="max-h-20 dark:rounded-lg dark:bg-sand-100 dark:p-2"
           loading="lazy"
         />
       </UPageLogos>
@@ -303,7 +303,7 @@ const page = computed(() => props.page)
       :key="i"
       :links="section.links"
       :features="section.features"
-      orientation="horizontal"
+      :orientation="section.image || section.video ? 'horizontal' : 'vertical'"
       :reverse="section.align === 'left'"
     >
       <template #title>
@@ -328,7 +328,6 @@ const page = computed(() => props.page)
       >
         <source :src="section.video" type="video/mp4">
       </video>
-      <Placeholder v-else />
     </UPageSection>
 
     <!-- Short value statements. Rendered as a grid, not a carousel: three cards
@@ -390,7 +389,8 @@ const page = computed(() => props.page)
     </UPageSection>
 
     <UPageSection v-if="page.faq" :title="page.faq.title" :description="page.faq.description">
-      <UAccordion :items="page.faq.items" type="multiple" :unmount-on-hide="false" class="max-w-4xl mx-auto"
+      <UAccordion
+:items="page.faq.items" type="multiple" :unmount-on-hide="false" class="max-w-4xl mx-auto"
         :ui="{ trigger: 'text-base text-highlighted py-4', body: 'text-base text-muted pb-4' }">
         <template #body="{ item }">
           <MDC

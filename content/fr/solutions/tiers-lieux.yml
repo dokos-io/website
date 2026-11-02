@@ -1,133 +1,131 @@
-title: Le logiciel de gestion développé par et pour les tiers-lieux
-description: Dokos propose une solution intuitive, évolutive et personnalisable pour gérer vos activités au quotidien.
+title: Dokos pour les tiers-lieux
+description: Réservations de ressources, contrats, abonnements, adhésions et paiement en ligne, facturés dans votre comptabilité Dokos.
+
 hero:
-  title: Le logiciel de gestion développé par et pour les tiers-lieux
-  description: Dokos propose une solution intuitive, évolutive et personnalisable pour gérer vos activités au quotidien.
-  align: center
   headline:
-    label: Une adaptation française d'ERPNext
-    to: https://frappe.io
-    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
-    target: _blank
-    color: sky
+    label: Tiers-lieux et coworkings
+    icon: i-heroicons-building-office-2
+  title: Vos espaces <span class="text-primary">réservés en ligne</span>, vos membres facturés dans Dokos.
+  description: Vos membres réservent une salle, un poste ou une machine depuis le portail. Ils paient en ligne, avec leurs crédits ou leur abonnement. Dokos génère les factures, les contrats et les abonnements dans votre comptabilité.
   links:
-    - label: Commencez avec Dokos
+    - label: Essayer Dokos
       to: https://cloud.dokos.io
+      target: _blank
       size: xl
-      color: green
+      color: primary
       icon: i-heroicons-rocket-launch
-      trailing: false
-      target: _blank
     - label: Documentation
-      icon: i-heroicons-arrow-right
-      trailing: true
-      size: xl
-      color: gray
-      to: https://doc.dokos.io
+      to: https://doc.dokos.io/v5/dokos/lieu
       target: _blank
+      size: xl
+      color: neutral
+      variant: outline
+
 logos:
   title: Ils participent au développement de Dokos
   images:
-    - image/tiers-lieux/anis.png
-    - image/tiers-lieux/baraka.jpg
-    - image/tiers-lieux/compagnie_tiers_lieux.svg
-    - image/tiers-lieux/coroutine.png
-    - image/tiers-lieux/Ecocentre_logo.png
-    - image/tiers-lieux/logo_bil.png
-    - image/tiers-lieux/logo_tropisme.png
-    - image/tiers-lieux/logo-appel-a-commun-des-tiers-lieux.png
-    - image/tiers-lieux/logo-fabrique-a-commun.png
-    - image/tiers-lieux/logo-la-plume-a-loup.jpg
-    - image/tiers-lieux/opteos.png
+    - /image/tiers-lieux/anis.png
+    - /image/tiers-lieux/baraka.jpg
+    - /image/tiers-lieux/compagnie_tiers_lieux.svg
+    - /image/tiers-lieux/coroutine.png
+    - /image/tiers-lieux/Ecocentre_logo.png
+    - /image/tiers-lieux/logo_bil.png
+    - /image/tiers-lieux/logo_tropisme.png
+    - /image/tiers-lieux/logo-appel-a-commun-des-tiers-lieux.png
+    - /image/tiers-lieux/logo-fabrique-a-commun.png
+    - /image/tiers-lieux/logo-la-plume-a-loup.jpg
+    - /image/tiers-lieux/opteos.png
+
 colored_section:
-  title: 'Dokos & les Tiers-Lieux : une aventure collaborative et engagée depuis 2018'
-  description: 'Né sous l''impulsion de la Compagnie des Tiers-Lieux, notre projet s''est initialement construit autour d''ERPNext avant de devenir Dokos. Notre objectif est clair : offrir un outil de gestion complet capable de répondre aux besoins complexes des tiers-lieux, comme la gestion multi-société, tout en respectant les valeurs de l''économie sociale et solidaire (ESS).<br>Dokos est bien plus qu''un simple logiciel, c''est un projet commun.<br> Des tiers-lieux se sont unis pour co-construire ce module, faisant émerger une plateforme adaptée à leurs besoins uniques. Ensemble, nous faisons grandir Dokos, toujours dans l''esprit pur de l''open-source, où chaque contribution renforce l''intelligence collective.<br> Pour ceux qui découvrent Dokos, rejoignez un écosystème qui valorise la coopération, l''agilité et la transparence.<br> A nos utilisateurs,  merci de faire partie de cette aventure qui, jour après jour, redéfinit la gestion collaborative des tiers-lieux. Continuons à innover et à bâtir ensemble, avec énergie et passion.'
+  title: Construit avec les tiers-lieux depuis 2018
+  description: "Le projet est né en 2018 avec la Compagnie des Tiers-Lieux, d'abord sur ERPNext, avant de devenir Dokos. Des tiers-lieux ont co-construit l'outil avec nous et financé de nouvelles fonctions. Les échanges se poursuivent sur le forum de la communauté Dokos, ouvert à tous."
+  image: /image/dokos-communaute.webp
   align: left
-  image: image/tiers-lieux/adopte-un-commun.png
-  links:
-    - label: Débutez l'aventure
-      to: https://cloud.dokos.io
-      size: xl
-      color: gray
-      icon: i-heroicons-rocket-launch
-      trailing: false
-      target: _blank
-    - label: Documentation
-      icon: i-heroicons-arrow-right
-      trailing: true
-      size: xl
-      color: gray
-      to: https://doc.dokos.io
-      target: _blank
+
 sections:
-  - title: Gagnez du temps avec une gestion simplifiée
-    description: ''
-    image: image/comptabilite/rapports-financiers-diverses-monnaies.png
-    image_bg_color: bg-teal-500
+  - title: Vos ressources réservées depuis le portail
+    description: Chaque salle, poste ou machine devient une ressource réservable, avec ses prix à l'heure, à la demi-journée, à la journée ou au mois, son calendrier d'ouverture et son préavis minimum. Le client choisit un créneau sur le portail. La réservation est confirmée après la commande, ou après le paiement si vous l'exigez.
     align: right
     features:
-      - name: Facturation et abonnements
-        description: Automatisez vos processus de facturation et d'abonnement. Avec Dokos, gérez facilement les abonnements mensuels de vos membres, créez des devis et facturez des services ponctuels. Tout est centralisé, pour une gestion sans effort.
-        icon: i-ri-pages-fill
-      - name: Paiements en ligne
-        description: Proposez à vos utilisateurs de payer en ligne via Stripe ou GoCardless, pour des transactions rapides et sécurisées. Vous pouvez automatiser les paiements récurrents et offrir à vos membres une expérience sans friction.
-        icon: i-fluent-payment-16-filled
-      - name: Comptabilité intégrée
-        description: Pilotez l'ensemble de la comptabilité de votre tiers-lieu depuis la même plateforme, sans avoir besoin d'outils supplémentaires. Dokos s'occupe de tout, de la facturation à la gestion des finances, vous permettant de rester concentré sur le développement de votre communauté.
-        icon: i-material-symbols-balance
-      - name: Une solution modulable et personnalisable
-        description: Dokos est conçu pour évoluer avec vous. Multisociété, il vous permet de gérer plusieurs lieux à partir d'une seule plateforme. Hautement personnalisable, vous pouvez ajuster Dokos à votre image, en ajoutant votre logo et en modifiant les documents ou champs existants selon vos besoins, et tout cela sans avoir à coder.
-        icon: i-tabler-drag-drop
-  - title: Offrez un expérience fluide et optimisez l'occupation de vos ressources
-    description: Avec Dokos, la gestion de vos espaces n'a jamais été aussi simple. Que vous proposiez des salles de réunion, des machines ou du matériel, vos utilisateurs peuvent réserver en toute autonomie, directement en ligne. Un système transparent, qui optimise l'occupation de vos ressources et offre à vos membres une expérience fluide.
-    image: image/reservation-ressource/commandes-e-commerce.webp
-    image_bg_color: bg-teal-500
+      - title: Des crédits de réservation
+        description: Un ticket ou un abonnement alloue des crédits, consommés à chaque réservation. Un rapport présente les soldes.
+        icon: i-heroicons-ticket
+      - title: La synchronisation avec Google Agenda
+        description: Chaque ressource est liée à son agenda, et une option synchronise les réservations en ligne.
+        icon: i-heroicons-calendar-days
+      - title: Plusieurs lieux sur un même site
+        description: En mode multi-lieu, chaque société a sa liste de prix et son panier.
+        icon: i-heroicons-map-pin
+    links:
+      - label: Réservations de ressources
+        to: /fr/modules/reservations-de-ressources
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Contrats et abonnements de vos résidents
+    description: Pour un poste fixe ou une domiciliation, vous envoyez le contrat au client, qui le signe d'un clic sur son portail. Le contrat actif crée la commande client, l'abonnement et le dépôt de garantie. L'abonnement génère ses factures à chaque période et déclenche le paiement si le client a enregistré un moyen de paiement.
+    image: /solutions/abonnement.webp
     align: left
-    features:
-      - name: Gestion des salles de réunion
-        description: Laissez vos utilisateurs réserver leurs salles en toute autonomie via une interface intuitive.
-        icon: i-material-symbols-light-add-home-work-outline-rounded
-      - name: Réservation de machines et matériel
-        description: Optimisez l'utilisation de vos équipements grâce à notre système de réservation en ligne.
-        icon: i-material-symbols-precision-manufacturing-rounded
-      - name: Co-working et tickets à la journée
-        description: Proposez des tickets pour des accès ponctuels à vos espaces co-working, et automatisez le processus d'achat
-        icon: i-tabler-ticket
-      - name: Intégration avec Google Agenda
-        description: 'Grâce à la synchronisation bidirectionnelle avec Google Agenda, toutes vos réservations s''actualisent en temps réel dans vos calendriers. Plus de confusion, plus d''erreurs : votre planning est toujours à jour.'
-        icon: i-carbon-logo-google
-  - title: Créez et personnalisez votre site web
-    description: Avec Dokos, vous pouvez créer un site web entièrement intégré à votre gestion. Que ce soit pour permettre la réservation en ligne ou la vente d'abonnements, votre site devient un point d'accès unique pour vos utilisateurs. Profitez également d'un portail dédié, où vos membres peuvent consulter leurs factures, gérer leurs réservations et accéder à des documents.
-    image: image/builder/site-internet-optimise-pour-appareils.webp
-    image_bg_color: bg-teal-500
+    links:
+      - label: Le module Ventes
+        to: /fr/modules/ventes
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Le paiement en ligne
+    description: Vous envoyez un lien de paiement depuis une commande ou une facture. Votre client paie par carte ou par prélèvement SEPA, et le statut de la demande se met à jour dans Dokos. Les passerelles Stripe, GoCardless, Stancer, HelloAsso, SumUp et Paypal sont disponibles. Avec Stripe ou GoCardless, le moyen de paiement est conservé pour les échéances de l'abonnement.
+    image: /modules/paiements/hero.webp
     align: right
-    features:
-      - name: Portail utilisateurs
-        description: Offrez à vos utilisateurs un espace personnel sécurisé pour suivre leurs réservations et accéder à leurs documents.
-        icon: i-material-symbols-settings-account-box-rounded
-      - name: Fonctionnalités e-commerce
-        description: Permettez à vos utilisateurs de réserver des salles ou d'acheter des abonnements en ligne directement depuis votre site.
-        icon: i-material-symbols-add-shopping-cart-outline-rounded
-  - title: 'Entrez au sein de notre communauté, contribuez au commun, '
-    description: En rejoignant Dokos, vous faites partie d'une communauté ouverte où chacun peut contribuer. Que ce soit en participant au développement, en partageant des idées ou en finançant de nouvelles fonctionnalités, vous aidez à construire un outil au service de tous les tiers-lieux.
-    image: image/dokos-communaute.webp
-    image_bg_color: bg-teal-500
+    links:
+      - label: Le module Paiements
+        to: /fr/modules/paiements
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Vos adhérents et leurs cotisations
+    description: Avec Tribu, l'adhérent s'inscrit et paie dans un formulaire web. Tribu crée sa fiche, son adhésion et la facture de vente. Le module dons enregistre les contributions ponctuelles. Les encaissements se rapprochent en banque.
+    image: /modules/comptabilite/hero.webp
     align: left
+    links:
+      - label: Tribu
+        to: /fr/modules/tribu
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Votre site web et votre boutique
+    description: Vous construisez les pages de votre site dans l'éditeur visuel de Frappe Builder et vous les publiez en un clic. Avec Webshop, vos articles sont publiés sur le site, une commande en ligne devient une commande client et vos clients retrouvent leurs commandes et leurs factures sur leur portail.
+    image: /modules/builder/hero.webp
+    align: right
+    links:
+      - label: Frappe Builder
+        to: /fr/modules/builder
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+      - label: Webshop
+        to: /fr/modules/e-commerce
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
 cta:
-  title: Simplifiez la gestion de votre tiers-lieu
-  description: Rejoignez les centaines de tiers-lieux sur Dokos et simpliez la gestion de votre lieu avec une plateforme en adéquation avec vos valeurs.
+  title: Décrivez-nous votre lieu.
+  description: Éditeur open source, experts Frappe et ERPNext, nous bâtissons et garantissons vos applications métier. Créez un site d'essai sur Dokos Cloud, ou écrivez-nous pour nous présenter vos espaces et vos membres.
   links:
-    - label: Commencez avec Dokos
+    - label: Essayer Dokos
       to: https://cloud.dokos.io
+      target: _blank
       size: xl
-      color: orange
+      color: primary
       icon: i-heroicons-rocket-launch
-      trailing: false
-      target: _blank
-    - label: Documentation
-      icon: i-heroicons-arrow-right
-      trailing: true
+    - label: Nous écrire
+      to: /fr/contact
       size: xl
-      color: gray
-      to: https://doc.dokos.io
-      target: _blank
+      color: neutral
+      variant: outline
