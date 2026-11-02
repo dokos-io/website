@@ -123,3 +123,112 @@
     letter-spacing: 0;
   }
 }
+
+/*
+ * "Stack" look, from the homepage hero: 2.5px petrol strokes and hard offset
+ * shadows. Plain CSS rather than @apply so the dark variants stay explicit.
+ * Ink (#0F2A3A) is used for borders and shadows of actions, so buttons and
+ * links stand out from the petrol content blocks around them.
+ */
+.dk-slab {
+  border: 2.5px solid var(--color-dokos-500);
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 6px 6px 0 var(--color-dokos-500);
+}
+.dark .dk-slab {
+  border-color: var(--color-dokos-300);
+  background: #1c1917;
+  box-shadow: 6px 6px 0 var(--color-dokos-400);
+}
+
+/* Buttons. Applied with `class:` on UButton links in content, or directly. */
+.dk-btn {
+  border: 2.5px solid #0f2a3a;
+  font-weight: 700;
+  box-shadow: 4px 4px 0 #0f2a3a;
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+.dk-btn:hover,
+.dk-btn:focus-visible {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 #0f2a3a;
+}
+.dark .dk-btn {
+  background: var(--color-dokos-200);
+  color: #0f2a3a;
+  border-color: var(--color-dokos-200);
+  box-shadow: 4px 4px 0 var(--color-accent);
+}
+.dark .dk-btn:hover,
+.dark .dk-btn:focus-visible {
+  box-shadow: 6px 6px 0 var(--color-accent);
+}
+.dk-btn-outline {
+  border: 2.5px solid #0f2a3a;
+  color: #0f2a3a;
+  font-weight: 700;
+  background: #fff;
+  transition: box-shadow 0.12s;
+}
+.dk-btn-outline:hover,
+.dk-btn-outline:focus-visible {
+  box-shadow: 4px 4px 0 var(--color-accent);
+}
+.dark .dk-btn-outline {
+  border-color: var(--color-dokos-200);
+  color: #fff;
+  background: transparent;
+}
+
+/* Text links: ink, bold, thick coral underline, filled on hover or focus. */
+.dk-link {
+  display: inline-block;
+  color: #0f2a3a;
+  font-weight: 700;
+  border-bottom: 3px solid var(--color-accent);
+  padding: 1px 2px;
+  border-radius: 2px;
+  transition: background 0.12s, color 0.12s;
+}
+.dk-link:hover,
+.dk-link:focus-visible {
+  background: var(--color-dokos-500);
+  color: #fff;
+  border-bottom-color: var(--color-dokos-500);
+}
+.dark .dk-link {
+  color: #fff;
+}
+.dark .dk-link:hover,
+.dark .dk-link:focus-visible {
+  background: var(--color-dokos-300);
+  color: #0c0a09;
+}
+
+/* Buttons placed on a petrol block (homepage contact band). */
+.dk-btn-on-dark {
+  background: #fff;
+  color: #0f2a3a;
+  border: 2.5px solid #fff;
+  font-weight: 700;
+  box-shadow: 4px 4px 0 var(--color-accent);
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+.dk-btn-on-dark:hover,
+.dk-btn-on-dark:focus-visible {
+  background: #fff;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--color-accent);
+}
+.dk-btn-ghost-on-dark {
+  background: transparent;
+  color: #fff;
+  border: 2.5px solid #fff;
+  font-weight: 700;
+}
+.dk-btn-ghost-on-dark:hover,
+.dk-btn-ghost-on-dark:focus-visible {
+  background: #fff;
+  color: #0f2a3a;
+}

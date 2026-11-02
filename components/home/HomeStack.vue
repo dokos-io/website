@@ -4,7 +4,7 @@
 // content/<locale>/index.yml. `focus` dims every layer except one; the hero
 // sets it when a visitor hovers one of its three points.
 
-type Layer = "core" | "apps" | "access";
+type Layer = 'core' | 'apps' | 'access';
 
 interface Block {
     title: string;
@@ -18,38 +18,39 @@ interface Stack {
     cli: Block;
     shared?: string;
     apps_label?: string;
+    label?: string;
     apps_note?: string;
     apps: (Block & { domain?: string })[];
     core: Block & { tags?: string[] };
     base: Block & { tag?: string };
 }
 
-const props = defineProps<{ stack: Stack; focus?: Layer | null }>();
+const props = defineProps<{ stack: Stack; focus?: Layer | null }>()
 
 // One dot colour per business domain, shared with the hero illustration.
 const DOMAIN_COLOURS: Record<string, string> = {
-    sales: "bg-[#FF6B6B]",
-    finance: "bg-dokos-500 dark:bg-dokos-300",
-    ops: "bg-[#E0A43A]",
-    people: "bg-[#76B7B2]",
-    collab: "bg-[#8C7AE6]",
-    web: "bg-[#4AA3DF]",
-    ai: "bg-[#FF6B6B]",
-};
+    sales: 'bg-[#FF6B6B]',
+    finance: 'bg-dokos-500 dark:bg-dokos-300',
+    ops: 'bg-[#E0A43A]',
+    people: 'bg-[#76B7B2]',
+    collab: 'bg-[#8C7AE6]',
+    web: 'bg-[#4AA3DF]',
+    ai: 'bg-[#FF6B6B]',
+}
 
 function layerClass(layer: Layer) {
-    if (!props.focus || props.focus === layer) return "";
-    return "opacity-30 saturate-50";
+    if (!props.focus || props.focus === layer) return ''
+    return 'opacity-30 saturate-50'
 }
 
 const slab =
-    "rounded-xl border-[2.5px] border-dokos-500 dark:border-dokos-300 shadow-[6px_6px_0_var(--color-dokos-500)] dark:shadow-[6px_6px_0_var(--color-dokos-400)] transition-[opacity,filter] duration-200";
+    'rounded-xl border-[2.5px] border-dokos-500 dark:border-dokos-300 shadow-[6px_6px_0_var(--color-dokos-500)] dark:shadow-[6px_6px_0_var(--color-dokos-400)] transition-[opacity,filter] duration-200'
 const strap =
-    "relative w-[11px] bg-dokos-500 dark:bg-dokos-300 after:absolute after:inset-y-0 after:left-1 after:border-l-2 after:border-dashed after:border-sand-100 dark:after:border-stone-950";
+    'relative w-[11px] bg-dokos-500 dark:bg-dokos-300 after:absolute after:inset-y-0 after:left-1 after:border-l-2 after:border-dashed after:border-sand-100 dark:after:border-stone-950'
 </script>
 
 <template>
-    <div class="grid gap-3.5 text-[15px] text-left" role="group" aria-label="L'écosystème Dokos">
+    <div class="grid gap-3.5 text-[15px] text-left" role="group" :aria-label="stack.label ?? 'Dokos'">
         <!-- Who works in Dokos: people, and agents through MCP. -->
         <div
             class="grid grid-cols-2 gap-x-3 sm:gap-x-5"
@@ -81,24 +82,27 @@ const strap =
                 </span>
             </ULink>
 
-            <!-- Teams go straight down to the apps. -->
-            <div class="relative flex justify-around" aria-hidden="true">
-                <span :class="strap" />
-                <span :class="strap" />
-                <span
-                    v-if="stack.shared"
-                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[88%] sm:w-auto sm:whitespace-nowrap text-center rounded-full border-2 border-dokos-500 dark:border-dokos-300 bg-sand-200 dark:bg-stone-800 px-2.5 sm:px-3.5 py-1 text-[11px] sm:text-[13px] font-medium text-highlighted"
-                >
+            <!-- The shared rules: one strap joins people and agents, the pill sits on it. -->
+            <div class="relative col-span-2 grid grid-cols-2 gap-x-3 sm:gap-x-5 h-14" aria-hidden="true">
+                <div class="flex justify-around"><span :class="strap" /><span :class="strap" /></div>
+                <div class="flex justify-around"><span :class="strap" /><span :class="strap" /></div>
+                <span class="absolute inset-x-[12.5%] top-1/2 -translate-y-1/2 h-[11px] bg-dokos-500 dark:bg-dokos-300 after:absolute after:inset-x-0 after:top-1 after:border-t-2 after:border-dashed after:border-sand-100 dark:after:border-stone-950" />
+            </div>
+            <span
+                v-if="stack.shared"
+                class="col-span-2 -mt-14 mb-0 h-14 grid place-items-center pointer-events-none"
+            >
+                <span class="relative rounded-full border-2 border-dokos-500 dark:border-dokos-300 bg-sand-200 dark:bg-stone-800 px-3 sm:px-4 py-1 text-xs sm:text-sm font-semibold text-highlighted whitespace-nowrap">
                     {{ stack.shared }}
                 </span>
-            </div>
+            </span>
 
-            <!-- Agents go through Dokos CLI. -->
+            <!-- Teams go straight down to the apps; agents go through Dokos CLI. -->
+            <div class="flex justify-around" aria-hidden="true">
+                <span :class="strap" />
+                <span :class="strap" />
+            </div>
             <div class="flex flex-col">
-                <div class="flex justify-around h-4" aria-hidden="true">
-                    <span :class="strap" />
-                    <span :class="strap" />
-                </div>
                 <ULink
                     :to="stack.cli.to"
                     :class="[slab, 'flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3.5 bg-[#FFECEA] dark:bg-[#3b2222] p-3 sm:p-4']"

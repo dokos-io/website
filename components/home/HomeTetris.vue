@@ -1,16 +1,20 @@
 <template>
     <Transition appear name="fade">
-        <div :style="{
+        <div
+:style="{
             '--cell': `${width / cols}px`,
             '--rows': rows - 1,
             'z-index': -1
         }">
             <div ref="el" class="absolute inset-0 grid justify-center auto-rows-(--cell) -space-y-px">
-                <div v-for="(row, rowIndex) in grid" :key="rowIndex"
+                <div
+v-for="(row, rowIndex) in grid" :key="rowIndex"
                     class="grid grid-flow-col auto-cols-(--cell) flex-1 -space-x-px">
-                    <div v-for="(cell, cellIndex) in row" :key="cellIndex"
+                    <div
+v-for="(cell, cellIndex) in row" :key="cellIndex"
                         class="relative border border-green-200/50 dark:border-green-900/25">
-                        <div class="absolute inset-0 bg-green-500/10 hover:bg-green-500/20 dark:bg-green-400/5 dark:hover:bg-green-400/10 opacity-0 transition-opacity will-change-[opacity] duration-1000"
+                        <div
+class="absolute inset-0 bg-green-500/10 hover:bg-green-500/20 dark:bg-green-400/5 dark:hover:bg-green-400/10 opacity-0 transition-opacity will-change-[opacity] duration-1000"
                             :class="[cell && 'opacity-100 cursor-pointer']"
                             @click="cell && removeCell(rowIndex, cellIndex)" />
                     </div>

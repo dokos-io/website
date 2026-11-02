@@ -37,26 +37,27 @@ hero:
       title: Dokos CLI
       note: MCP local
       to: /fr/modules/dokos-cli
+    label: L'écosystème Dokos
     shared: mêmes droits · même historique
     apps_label: Applications
     apps_note: chacune s'installe seule ou avec les autres
     apps:
-      - { title: Frappe CRM, domain: sales, to: /fr/modules/crm }
-      - { title: Helpdesk, domain: collab, to: /fr/modules/support }
-      - { title: Insights, domain: finance, to: /fr/modules/insights }
-      - { title: Raven, domain: collab, to: /fr/modules/raven }
-      - { title: Builder, domain: web, to: /fr/modules/builder }
-      - { title: Suite, domain: collab, to: /fr/modules }
-      - { title: Wiki, domain: collab, to: /fr/modules/wiki }
-      - { title: Learning, domain: people, to: /fr/modules/learning }
-      - { title: Webshop, domain: web, to: /fr/modules/e-commerce }
-      - { title: Bank, domain: finance, to: /fr/modules/bank }
-      - { title: eTransactions, domain: finance, to: /fr/modules/etransactions }
-      - { title: Paiements, domain: finance, to: /fr/modules/paiements }
-      - { title: Telephony, domain: sales, to: /fr/modules/telephony }
-      - { title: Newsletter, domain: web, to: /fr/modules/newsletter }
-      - { title: Tribu, domain: people, to: /fr/modules/tribu }
-      - { title: Dokos AI, domain: ai, to: /fr/modules/dokos-ai }
+      - { title: Frappe CRM, domain: sales, to: /fr/modules/crm, publisher: frappe, note: "Prospection et suivi des affaires, du premier contact au devis Dokos." }
+      - { title: Helpdesk, domain: collab, to: /fr/modules/support, publisher: frappe, note: "Tickets de support, délais de réponse et base de connaissances." }
+      - { title: Insights, domain: finance, to: /fr/modules/insights, publisher: frappe, note: "Requêtes, graphiques et tableaux de bord sur vos données." }
+      - { title: Raven, domain: collab, to: /fr/modules/raven, publisher: frappe, note: "Messagerie d'équipe, avec vos documents Dokos dans la conversation." }
+      - { title: Builder, domain: web, to: /fr/modules/builder, publisher: frappe, note: "Création de pages web sans code, sur votre site Dokos." }
+      - { title: Suite, domain: collab, to: /fr/modules, publisher: frappe }
+      - { title: Wiki, domain: collab, to: /fr/modules/wiki, publisher: frappe, note: "Documentation et procédures, avec relecture avant publication." }
+      - { title: Learning, domain: people, to: /fr/modules/learning, publisher: frappe, note: "Cours en ligne, sessions, quiz et certificats." }
+      - { title: Webshop, domain: web, to: /fr/modules/e-commerce, publisher: dokos, note: "Boutique en ligne et portail client, sur le catalogue de Dokos." }
+      - { title: Bank, domain: finance, to: /fr/modules/bank, publisher: dokos, note: "Synchronisation des comptes bancaires avec Dokos." }
+      - { title: eTransactions, domain: finance, to: /fr/modules/etransactions, publisher: dokos, note: "Facturation électronique et lecture des factures fournisseur." }
+      - { title: Paiements, domain: finance, to: /fr/modules/paiements, publisher: dokos, note: "Carte, prélèvement SEPA, PayPal et terminal SumUp." }
+      - { title: Telephony, domain: sales, to: /fr/modules/telephony, publisher: frappe, note: "Appels Exotel et Twilio depuis Helpdesk et le CRM." }
+      - { title: Newsletter, domain: web, to: /fr/modules/newsletter, publisher: frappe, note: "Envoi groupé d'e-mails à vos groupes de contacts." }
+      - { title: Tribu, domain: people, to: /fr/modules/tribu, publisher: dokos, note: "Adhérents, cotisations et dons, avec paiement en ligne." }
+      - { title: Dokos AI, domain: ai, to: /fr/modules/dokos-ai, publisher: dokos, note: "Un assistant qui lit vos données et prépare des écritures que vous validez." }
     core:
       title: Dokos
       note: Ventes · Achats · Stocks · Comptabilité · Production · Projets · RH
@@ -75,149 +76,122 @@ hero:
       color: primary
       icon: i-heroicons-rocket-launch
       trailing: false
+      class: dk-btn
     - label: Découvrir l'écosystème
       to: /fr/modules
       size: xl
       color: neutral
       variant: outline
       icon: i-heroicons-squares-2x2
+      class: dk-btn-outline
 
-# Product facts, verifiable on /fr/certifications and in the journal.
-proof:
-  items:
+# Below the hero, the page goes down the stack one layer at a time.
+# Layer 1: who works in Dokos. The invoice and its history are example data.
+access:
+  label: Équipes et agents IA
+  title: "Une personne ou un agent : les mêmes règles."
+  rules:
+    - title: Les droits d'un utilisateur
+      description: Un agent se connecte avec un compte et des rôles. Il ne voit que ce que ce compte voit.
+    - title: Une confirmation avant d'écrire
+      description: Dokos AI présente chaque création ou modification et attend votre accord.
+    - title: Chaque action dans l'historique
+      description: Une écriture d'agent apparaît dans la chronologie du document, avec son auteur et son heure.
+  link:
+    label: IA & agents
+    to: /fr/ecosysteme/intelligence-artificielle
+  example:
+    title: Facture FA-2026-0412
+    status: Validée
+    fields:
+      - { label: Client, value: Exemple SARL }
+      - { label: Format, value: Factur-X }
+      - { label: Total TTC, value: "4 860,00 €" }
+    history:
+      - { kind: person, who: Comptabilité, what: a créé la facture, time: "09:12" }
+      - { kind: ai, who: Dokos AI, what: a ajouté 3 lignes du devis, time: "09:14" }
+      - { kind: mcp, who: Agent via MCP, what: a contrôlé le Factur-X, time: "09:20" }
+      - { kind: person, who: Comptabilité, what: a validé la facture, time: "09:21" }
+    ask: J'ajoute ces trois lignes à la facture ?
+    confirm: Confirmer
+    cancel: Annuler
+
+# Layer 2: the apps. The cards come from hero.stack.apps (one list for both).
+apps:
+  label: Applications
+  title: Installez celles qu'il vous faut.
+  description: Chaque application lit les mêmes clients, articles et factures que les autres. Elles s'installent depuis la marketplace de Dokos Cloud.
+  all: Toutes
+  domains:
+    sales: Vente
+    finance: Finance
+    people: Équipe
+    collab: Collaboration
+    web: Web
+    ai: IA
+  publishers:
+    frappe: Frappe
+    dokos: Dokos
+  link:
+    label: Voir tout l'écosystème
+    to: /fr/modules
+
+# Layer 3: Dokos itself. The document numbers are example data.
+core:
+  label: Dokos
+  title: Un devis accepté devient une facture, une écriture et un paiement, sans ressaisie.
+  description: "Chaque document est lié à celui qui le précède. Les droits sont définis une fois, par rôle, et s'appliquent partout : écrans, rapports, API et agents."
+  chain:
+    - { title: Devis, number: DEV-0388 }
+    - { title: Commande, number: CMD-0291 }
+    - { title: Livraison, number: BL-0277 }
+    - { title: Facture, number: FA-0412 }
+    - { title: Écriture, number: ECR-5530 }
+    - { title: Paiement, number: PAY-0198 }
+  # Product facts, verifiable on /fr/certifications.
+  facts:
     - label: Systèmes de caisse
       value: Certifié LNE
+      status: Disponible
+      state: ok
       note: Avec le module Certification Caisse et une licence délivrée par Dokos SAS.
+      link: { label: Les certifications, to: /fr/certifications }
     - label: Facturation électronique
       value: Réception et PA
-      note: Lecture des factures CII, Factur-X et UBL, raccordement à une plateforme agréée. Émission en cours.
-    - label: Agents IA
-      value: Dokos AI · MCP
-      note: Un assistant intégré à vos données, et un serveur MCP pour vos propres agents.
+      status: Émission en cours
+      state: wip
+      note: Lecture des factures CII, Factur-X et UBL, raccordement à une plateforme agréée.
+      link: { label: eTransactions, to: /fr/modules/etransactions }
 
-# The company behind the project, in one sentence.
-pillars:
-  title: Éditeur open source, experts Frappe et ERPNext,<br>nous bâtissons et garantissons vos applications métier.
-  description: Dokos SAS, à Nancy, est l'équipe qui écrit, adapte et exploite Dokos.
+# Layer 4: the open source base, and the tools Dokos connects to.
+base:
+  label: La base open source
+  title: Construit sur Frappe et ERPNext, avec leur communauté.
+  description: Dodock et Dokos suivent chaque version de Frappe et d'ERPNext, et y ajoutent ce qu'il faut en France. Tout le code est publié sous licence GPLv3 sur notre GitLab.
+  link:
+    label: Lire le code
+    to: https://gitlab.com/dokos
+  layers:
+    - { title: Dokos, note: "gestion, localisation française, LNE", to: /fr/modules/dokos }
+    - { title: ERPNext, note: les modules de gestion }
+    - { title: Dodock, note: "le framework, version Dokos de Frappe", to: /fr/modules/dodock }
+    - { title: GPLv3, note: "code publié, versions suivies" }
+
+# The company behind the project, with the positioning sentence verbatim.
+team:
+  label: L'équipe derrière Dokos · Nancy
+  title: Éditeur open source, experts Frappe et ERPNext, nous bâtissons et garantissons vos applications métier.
+  description: Dokos SAS est l'équipe qui écrit, adapte et exploite Dokos.
   items:
     - title: Éditeur open source
-      description: Nous maintenons Dodock, Dokos et une douzaine d'applications, publiés sous licence GPLv3 sur notre GitLab.
-      icon: i-heroicons-code-bracket-square
+      description: Dodock, Dokos et une douzaine d'applications, publiés sous GPLv3.
       to: /fr/editeur
     - title: Experts Frappe et ERPNext
-      description: Nous lisons et portons chaque version de Frappe et d'ERPNext, et nous exploitons aussi des installations standard.
-      icon: i-simple-icons-frappe
+      description: Nous portons chaque version et exploitons aussi des installations standard.
       to: /fr/exploitation/frappe-erpnext
-    - title: Nous bâtissons et garantissons vos applications métier
-      description: Nos ingénieurs construisent vos applications sur cette base, puis les exploitent sous contrat, avec des délais écrits.
-      icon: i-heroicons-wrench-screwdriver
+    - title: Vos applications métier
+      description: Construites sur cette base, puis exploitées sous contrat, avec des délais écrits.
       to: /fr/ingenierie
-
-sections:
-  - title: Une seule base de données pour toute l'entreprise
-    description: <strong>Un devis accepté devient une commande, une facture, une écriture comptable et un paiement, sans ressaisie.</strong><br><br>Chaque document est lié à ceux qui le précèdent et à ceux qui le suivent. Une recherche retrouve un client, ses commandes, ses tickets et ses paiements. Les droits sont définis une fois, par rôle, et s'appliquent partout.
-    image: /image/compte-de-resultat.png
-    align: right
-    features:
-      - name: Tout est lié
-        description: Du prospect à l'écriture comptable, chaque document garde la trace de son origine.
-        icon: i-heroicons-link
-      - name: Une seule saisie
-        description: Un article, un client ou un tarif n'existe qu'une fois et sert à tous les modules.
-        icon: i-heroicons-pencil-square
-      - name: Des droits par rôle
-        description: Les permissions s'appliquent aux écrans, aux rapports, à l'API et aux agents.
-        icon: i-heroicons-shield-check
-    links:
-      - label: Voir l'écosystème
-        to: /fr/modules
-        color: primary
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-
-  - title: Une suite d'applications qui se branchent dessus
-    description: >-
-      <strong>Les modules d'ERPNext, les applications de Frappe et celles que nous éditons partagent la même base.</strong><br><br>CRM, support, décisionnel, site web, documents, messagerie d'équipe : chaque application s'installe en un clic depuis la marketplace de Dokos Cloud et lit les mêmes clients, articles et factures que les autres.
-    image: /image/dokos-communaute.webp
-    align: left
-    features:
-      - name: Modules ERPNext
-        description: Ventes, achats, stocks, comptabilité, production, projets, qualité, ressources humaines.
-        icon: i-heroicons-rectangle-group
-      - name: Applications Frappe
-        description: CRM, Helpdesk, Insights, Builder, Drive, Wiki, Print Designer, Learning, Newsletter.
-        icon: i-simple-icons-frappe
-      - name: Applications Dokos
-        description: Banking, Bookings, eTransactions, OCR, Construction, Hiboutik, WooCommerce, Tribu, Dokos AI.
-        icon: i-heroicons-puzzle-piece
-    links:
-      - label: Toutes les applications
-        to: /fr/modules
-        color: primary
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-
-  - title: Le harnais de vos équipes et de vos agents IA
-    description: <strong>Une personne ou un agent agit sur les mêmes données, avec les mêmes droits.</strong><br><br>Dokos AI répond à partir de vos documents et demande confirmation avant d'écrire. Le serveur MCP de Dokos CLI connecte Claude Code et d'autres agents à votre site. Chaque action, humaine ou non, apparaît dans l'historique du document.
-    image: /image/nuage-dashboard-dark.png
-    align: right
-    features:
-      - name: Dokos AI
-        description: Un assistant qui lit vos devis, factures, tickets et stocks, et attend votre accord avant toute écriture.
-        icon: i-heroicons-sparkles
-      - name: Dokos CLI et serveur MCP
-        description: Les mêmes lectures et écritures depuis un terminal ou depuis l'agent de votre choix.
-        icon: i-heroicons-command-line
-      - name: API REST
-        description: Chaque document, chaque rapport et chaque droit sont accessibles par l'API, pour vos propres outils.
-        icon: i-heroicons-code-bracket
-    links:
-      - label: IA & agents
-        to: /fr/ecosysteme/intelligence-artificielle
-        color: primary
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-
-modules:
-  title: Par domaine métier
-  description: Vingt-sept applications et modules, regroupés en sept domaines. Chacun s'installe seul ou avec les autres.
-  links:
-    - label: Voir tout l'écosystème
-      to: /fr/modules
-      color: neutral
-      variant: outline
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-      size: md
-  items:
-    - title: Vente & relation client
-      description: CRM, ventes, e-commerce, réservations, Construction, WooCommerce, Hiboutik, Tribu.
-      icon: i-heroicons-shopping-cart
-      to: /fr/ecosysteme/vente-relation-client
-    - title: Finance & comptabilité
-      description: Comptabilité, Banking, paiements, eTransactions.
-      icon: i-heroicons-banknotes
-      to: /fr/ecosysteme/finance-comptabilite
-    - title: Achats, stocks & production
-      description: Achats, stocks, production, qualité.
-      icon: i-heroicons-cube
-      to: /fr/ecosysteme/achats-stocks-production
-    - title: Projets & ressources humaines
-      description: Projets, ressources humaines, formation.
-      icon: i-heroicons-user-group
-      to: /fr/ecosysteme/projets-ressources-humaines
-    - title: Support & collaboration
-      description: Helpdesk, Raven, Wiki, téléphonie.
-      icon: i-heroicons-chat-bubble-left-right
-      to: /fr/ecosysteme/support-collaboration
-    - title: Site web & outils numériques
-      description: Builder, Insights, Drive, Print Designer, OCR, Newsletter, Blog, intégrations.
-      icon: i-heroicons-globe-alt
-      to: /fr/ecosysteme/site-web-outils-numeriques
-    - title: IA & agents
-      description: Dokos AI, Dokos CLI et son serveur MCP.
-      icon: i-heroicons-cpu-chip
-      to: /fr/ecosysteme/intelligence-artificielle
 
 integrations:
   title: Connecté à vos autres outils
@@ -236,15 +210,18 @@ integrations:
     - /home/gocardless.png
 
 cta:
-  title: Dites-nous comment travaille votre entreprise
-  description: Un échange de trente minutes suffit pour savoir quels modules et quelles applications vous concernent, et par où commencer.
+  title: Dites-nous comment travaille votre entreprise.
+  description: Trente minutes pour savoir quels modules et quelles applications vous concernent, et par où commencer.
   links:
     - label: Nous écrire
       size: xl
-      color: primary
+      color: neutral
+      variant: solid
       to: /fr/contact
+      class: dk-btn-on-dark
     - label: Voir les tarifs
       size: xl
       color: neutral
       variant: outline
       to: /fr/tarifs
+      class: dk-btn-ghost-on-dark

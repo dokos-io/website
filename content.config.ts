@@ -40,6 +40,12 @@ const landingSchema = z.object({
   logos: obj().optional(),
   colored_section: obj().optional(),
   carousel: arr().optional(),
+  // Homepage, below the hero: one block per layer of the stack.
+  access: obj().optional(),
+  apps: obj().optional(),
+  core: obj().optional(),
+  base: obj().optional(),
+  team: obj().optional(),
 })
 
 const blogSchema = z.object({

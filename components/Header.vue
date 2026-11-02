@@ -107,17 +107,33 @@ const links = computed(() => {
       </NuxtLink>
     </template>
 
-    <UNavigationMenu :items="links" class="hidden lg:flex" />
+    <!-- High-contrast top menu: bold ink labels, coral underline on hover,
+         ink background on the open item. -->
+    <UNavigationMenu
+      :items="links"
+      class="hidden lg:flex"
+      :ui="{
+        link: 'px-3.5 py-2 rounded-lg text-[15px] font-bold text-[#0F2A3A] dark:text-white hover:bg-sand-200 dark:hover:bg-stone-800 hover:shadow-[inset_0_-3px_0_var(--color-accent)] data-[state=open]:bg-[#0F2A3A] data-[state=open]:text-white data-[state=open]:shadow-[3px_3px_0_var(--color-accent)] before:hidden',
+        linkLeadingIcon: 'hidden',
+        linkTrailingIcon: 'text-current',
+        content: 'border-[2.5px] border-[#0F2A3A] dark:border-dokos-300 rounded-xl shadow-[6px_6px_0_#0F2A3A] dark:shadow-[6px_6px_0_var(--color-dokos-400)]',
+        childLinkLabel: 'font-bold text-[#0F2A3A] dark:text-white',
+        childLinkDescription: 'text-[#4A5A64] dark:text-stone-300',
+      }"
+    />
 
     <template #right>
-      <UButton :to="localePath('/contact')" icon="i-heroicons-chat-bubble-left-right"
-        color="primary" variant="solid" :label="t('contact')" class="hidden sm:inline-flex" />
-      <UButton to="https://cloud.dokos.io" target="_blank" icon="i-material-symbols-host-outline-rounded"
-        aria-label="Dokos Cloud" color="neutral" variant="outline" :label="t('try_dokos')" />
+      <UButton
+:to="localePath('/contact')" icon="i-heroicons-chat-bubble-left-right"
+        color="primary" variant="solid" :label="t('contact')" class="dk-btn hidden sm:inline-flex" />
+      <UButton
+to="https://cloud.dokos.io" target="_blank" icon="i-material-symbols-host-outline-rounded"
+        aria-label="Dokos Cloud" color="neutral" variant="outline" :label="t('try_dokos')" class="dk-btn-outline" />
       <LangSwitcher v-if="!route.matched.some(p => p.path.includes('/blog/'))" />
       <UColorModeButton />
 
-      <UButton to="https://gitlab.com/dokos" target="_blank" icon="i-simple-icons-gitlab" aria-label="Gitlab"
+      <UButton
+to="https://gitlab.com/dokos" target="_blank" icon="i-simple-icons-gitlab" aria-label="Gitlab"
         color="neutral" variant="ghost" />
     </template>
 

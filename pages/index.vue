@@ -1,39 +1,39 @@
 <script setup lang="ts">
-const { locale } = useI18n();
+const { locale } = useI18n()
 
-const { data: page } = await useAsyncData<any>("index", () =>
-    queryCollection("pages").path(`/${locale.value}`).first()
-);
+const { data: page } = await useAsyncData<any>('index', () =>
+    queryCollection('pages').path(`/${locale.value}`).first()
+)
 
 if (!page.value) {
     throw createError({
         statusCode: 404,
-        statusMessage: "Page not found",
+        statusMessage: 'Page not found',
         fatal: true,
-    });
+    })
 }
 
 // Hero: the point the visitor hovers highlights the matching layer of HomeStack.
-const stackFocus = ref<"core" | "apps" | "access" | null>(null);
+const stackFocus = ref<'core' | 'apps' | 'access' | null>(null)
 const POINT_MARKS: Record<string, string> = {
-    core: "bg-dokos-500",
-    apps: "bg-white dark:bg-stone-900 bg-[radial-gradient(circle,#FF6B6B_3px,transparent_3.5px),radial-gradient(circle,#8C7AE6_3px,transparent_3.5px),radial-gradient(circle,#4AA3DF_3px,transparent_3.5px),radial-gradient(circle,#E0A43A_3px,transparent_3.5px)] bg-[length:10px_10px] bg-[position:2px_2px,9px_2px,2px_9px,9px_9px] bg-no-repeat",
-    access: "bg-accent",
-};
+    core: 'bg-dokos-500',
+    apps: 'bg-white dark:bg-stone-900 bg-[radial-gradient(circle,#FF6B6B_3px,transparent_3.5px),radial-gradient(circle,#8C7AE6_3px,transparent_3.5px),radial-gradient(circle,#4AA3DF_3px,transparent_3.5px),radial-gradient(circle,#E0A43A_3px,transparent_3.5px)] bg-[length:10px_10px] bg-[position:2px_2px,9px_2px,2px_9px,9px_9px] bg-no-repeat',
+    access: 'bg-accent',
+}
 
 const sorted_modules = computed(() => {
     return [...(page.value!.modules?.items ?? [])].sort((a: any, b: any) =>
         a.title.localeCompare(b.title)
-    );
-});
+    )
+})
 
 useSeoMeta({
-    titleTemplate: "",
+    titleTemplate: '',
     title: page.value.title,
     ogTitle: page.value.title,
     description: page.value.description,
     ogDescription: page.value.description,
-});
+})
 </script>
 
 <template>
@@ -57,7 +57,7 @@ useSeoMeta({
             :links="page.hero.links"
             :orientation="page.hero.stack ? 'horizontal' : 'vertical'"
             class="relative z-[1]"
-            :class="page.hero.stack ? '' : 'pb-0 sm:pb-0 md:pb-0'"
+            :class="page.hero.stack ? 'pb-4 sm:pb-8 lg:pb-12' : 'pb-0 sm:pb-0 md:pb-0'"
         >
             <template #headline>
                 <UBadge
@@ -122,6 +122,18 @@ useSeoMeta({
                 </ClientOnly>
             </template>
         </UPageHero>
+
+        <!-- Below the hero, one section per layer of the stack, top down.
+             Pages without these blocks (English for now) keep the layout below. -->
+        <HomeAccess v-if="page.access" :block="page.access" />
+        <HomeCatalogue
+            v-if="page.apps && page.hero.stack"
+            :block="page.apps"
+            :apps="page.hero.stack.apps"
+        />
+        <HomeCore v-if="page.core" :block="page.core" />
+        <HomeBase v-if="page.base" :block="page.base" :integrations="page.integrations" />
+        <HomeTeam v-if="page.team" :block="page.team" />
 
         <!-- Operating facts rather than vanity counts. -->
         <UPageSection v-if="page.proof" class="pt-10 sm:pt-16">
@@ -189,7 +201,7 @@ useSeoMeta({
             <Placeholder v-else />
         </UPageSection>
 
-        <UPageSection v-if="page.integrations">
+        <UPageSection v-if="page.integrations && !page.base">
             <UPageLogos :title="page.integrations.title" class="justify-center">
                 <UIcon
                     v-for="icon in page.integrations.icons"
@@ -251,10 +263,14 @@ useSeoMeta({
         </UPageSection>
 
         <UPageSection>
+            <!-- Petrol contact band with the stack's hard shadow on the new layout. -->
             <UPageCTA
                 v-bind="page.cta"
-                variant="subtle"
-                class="bg-sand-200 dark:bg-stone-900 ring ring-default"
+                :variant="page.team ? 'solid' : 'subtle'"
+                :class="page.team
+                    ? 'bg-dokos-500 dark:bg-dokos-700 text-white rounded-2xl shadow-[8px_8px_0_#0F2A3A] dark:shadow-[8px_8px_0_var(--color-accent)]'
+                    : 'bg-sand-200 dark:bg-stone-900 ring ring-default'"
+                :ui="page.team ? { title: 'text-white', description: 'text-dokos-100' } : undefined"
             />
         </UPageSection>
     </div>
