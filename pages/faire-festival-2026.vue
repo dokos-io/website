@@ -3,13 +3,13 @@ import ContactForm from '~/components/ContactForm.vue'
 
 const form = {
   title: 'On se retrouve ?',
-  description: "Vous venez au Faire Festival et vous voulez qu'on se croise ? Vous ne pouvez pas venir mais vous êtes curieux·se de savoir ce que Dokos peut faire pour vous ? Écrivez-nous.",
+  description: 'Vous venez au Faire Festival et vous voulez qu\'on se croise ? Vous ne pouvez pas venir mais vous êtes curieux·se de savoir ce que Dokos peut faire pour vous ? Écrivez-nous.',
   name: { label: 'Nom', placeholder: 'Martine Dupond' },
   email: { label: 'Email', placeholder: 'martine@mon-fablab.fr' },
   company: { label: 'Structure', placeholder: 'Votre fablab / tiers-lieu / association' },
   body: { label: 'Dites-nous tout', placeholder: 'Parlez-nous de votre espace et de ce que vous cherchez à mieux gérer' },
   info: '',
-  button: { icon: "i-ph-paper-plane-right", label: 'Envoyer' },
+  button: { icon: 'i-ph-paper-plane-right', label: 'Envoyer' },
 }
 
 const montage = [
@@ -72,11 +72,11 @@ const features = [
 ]
 
 useSeoMeta({
-  title: "Dokos au Faire Festival 2026",
-  ogTitle: "Dokos au Faire Festival 2026 : le logiciel libre des Makers",
-  description: "Retrouvez Dokos au Faire Festival 2026, 28-30 mai à Toulouse. Le logiciel libre de gestion pensé pour les makers, fablabs et tiers-lieux.",
-  ogDescription: "Retrouvez Dokos au Faire Festival 2026, 28-30 mai à Toulouse. Le logiciel libre de gestion pensé pour les makers, fablabs et tiers-lieux.",
-});
+  title: 'Dokos au Faire Festival 2026',
+  ogTitle: 'Dokos au Faire Festival 2026 : le logiciel libre des Makers',
+  description: 'Retrouvez Dokos au Faire Festival 2026, 28-30 mai à Toulouse. Le logiciel libre de gestion pensé pour les makers, fablabs et tiers-lieux.',
+  ogDescription: 'Retrouvez Dokos au Faire Festival 2026, 28-30 mai à Toulouse. Le logiciel libre de gestion pensé pour les makers, fablabs et tiers-lieux.',
+})
 </script>
 
 <template>
@@ -138,8 +138,8 @@ useSeoMeta({
       </UContainer>
 
       <!-- Coins de cadre technique — signal maker discret -->
-      <span class="hero-corner hero-corner--tl" aria-hidden="true"></span>
-      <span class="hero-corner hero-corner--tr" aria-hidden="true"></span>
+      <span class="hero-corner hero-corner--tl" aria-hidden="true"/>
+      <span class="hero-corner hero-corner--tr" aria-hidden="true"/>
 
       <!-- Mascotte qui déborde sur la section suivante -->
       <img
@@ -147,7 +147,7 @@ useSeoMeta({
         alt=""
         class="hero-mascot"
         aria-hidden="true"
-      />
+      >
 
       <!-- Coupe diagonale bas — séparateur festival -->
       <div class="hero-angle-cut" aria-hidden="true">
@@ -231,7 +231,7 @@ useSeoMeta({
     <!-- ══════════════════════════════════════════════════
          OÙ NOUS TROUVER — Le Cyber Café du Faire
     ══════════════════════════════════════════════════ -->
-    <section class="trouver-section" id="trouver">
+    <section id="trouver" class="trouver-section">
       <UContainer>
         <div class="trouver-grid">
 
@@ -316,7 +316,7 @@ useSeoMeta({
     <!-- ══════════════════════════════════════════════════
          CTA + CONTACT — fond corail, inversion chaude
     ══════════════════════════════════════════════════ -->
-    <section class="contact-section" id="contact">
+    <section id="contact" class="contact-section">
       <UContainer>
         <div class="contact-grid">
 
@@ -326,7 +326,7 @@ useSeoMeta({
               src="/faire-festival/Tamponfairefestival2026dokos.png"
               alt="Tampon Faire Festival 2026 Dokos"
               class="contact-tampon"
-            />
+            >
             <h2 class="contact-h2">On se retrouve&nbsp;?</h2>
             <p class="contact-sub">
               Vous venez au festival et vous voulez qu'on se croise,
@@ -349,7 +349,7 @@ useSeoMeta({
     <footer class="ff-footer">
       <UContainer>
         <div class="footer-inner">
-          <img src="/faire-festival/dokos-logo-inverted-dokosblanc.svg" alt="Dokos" class="footer-logo" />
+          <img src="/faire-festival/dokos-logo-inverted-dokosblanc.svg" alt="Dokos" class="footer-logo" >
           <p class="footer-line">Le logiciel libre des Makers</p>
           <p class="footer-sub">Faire Festival 2026 · 28-30 mai · La Cité, Toulouse</p>
         </div>

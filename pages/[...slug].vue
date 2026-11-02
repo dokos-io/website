@@ -5,18 +5,18 @@ const {
 } = useRoute()
 
 const { t, locale } = useI18n({
-    useScope: "local",
+    useScope: 'local',
 })
 
-const path = `/${locale.value}/${(slug as string[]).join("/")}`
+const path = `/${locale.value}/${(slug as string[]).join('/')}`
 
 const { data: page } = await useAsyncData<any>(route.path, () =>
-    queryCollection("pages").path(path).first()
+    queryCollection('pages').path(path).first()
 )
 if (!page.value) {
     throw createError({
         statusCode: 404,
-        statusMessage: "Page not found",
+        statusMessage: 'Page not found',
         fatal: true,
     })
 }
@@ -24,8 +24,8 @@ if (!page.value) {
 const { data: surround } = await useAsyncData<any>(
     `${route.path}-surround`,
     () =>
-        queryCollectionItemSurroundings("pages", path, {
-            fields: ["title", "description", "path"],
+        queryCollectionItemSurroundings('pages', path, {
+            fields: ['title', 'description', 'path'],
         }),
     { default: () => [] }
 )
@@ -37,7 +37,7 @@ useSeoMeta({
     ogDescription: page.value.description,
 })
 
-defineOgImage("OgImageSaas" as any, {
+defineOgImage('OgImageSaas' as any, {
     title: page.value.title,
     description: page.value.description,
 })

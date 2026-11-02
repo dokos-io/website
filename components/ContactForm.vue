@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-const colorMode = useColorMode()
 import type { FormError, FormSubmitEvent } from '@nuxt/ui'
+const colorMode = useColorMode()
 
 defineProps({
   form: {

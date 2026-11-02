@@ -1,49 +1,49 @@
 <script setup lang="ts">
 const {
     params: { slug },
-} = useRoute();
+} = useRoute()
 
 const { t, locale } = useI18n({
-    useScope: "local",
-});
+    useScope: 'local',
+})
 
-const localePath = useLocalePath();
+const localePath = useLocalePath()
 
-const path = `/${locale.value}/partners/${slug}`;
+const path = `/${locale.value}/partners/${slug}`
 
 const { data: partner } = await useAsyncData<any>(path, () =>
-    queryCollection("partners").path(path).first()
-);
+    queryCollection('partners').path(path).first()
+)
 
 if (!partner.value) {
     throw createError({
         statusCode: 404,
-        statusMessage: "Partner not found",
+        statusMessage: 'Partner not found',
         fatal: true,
-    });
+    })
 }
 
 const links = computed(() => [
     {
-        label: `${t("visit")} ${partner.value && partner.value.title}`,
-        color: "neutral" as const,
-        size: "md" as const,
-        icon: "i-ph-arrow-square-out",
+        label: `${t('visit')} ${partner.value && partner.value.title}`,
+        color: 'neutral' as const,
+        size: 'md' as const,
+        icon: 'i-ph-arrow-square-out',
         trailing: true,
         to: partner.value?.link,
-        target: "_blank",
+        target: '_blank',
     },
-]);
+])
 
-const title = partner.value.title;
-const description = partner.value.description;
+const title = partner.value.title
+const description = partner.value.description
 useSeoMeta({
-    titleTemplate: "%s · Partenaires",
+    titleTemplate: '%s · Partenaires',
     title,
     description,
     ogDescription: description,
     ogTitle: `${title} · Partenaires`,
-});
+})
 </script>
 
 <template>

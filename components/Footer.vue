@@ -1,62 +1,62 @@
 <script setup lang="ts">
 const { t } = useI18n({
-    useScope: "local",
-});
+    useScope: 'local',
+})
 
-const localePath = useLocalePath();
+const localePath = useLocalePath()
 
 const links = computed(() => {
     return [
         {
-            label: t("dokos"),
+            label: t('dokos'),
             children: [
-                { label: t("ecosystem"), to: localePath("/modules") },
-                { label: t("ai_agents"), to: localePath("/ecosysteme/intelligence-artificielle") },
-                { label: t("open_source"), to: localePath("/editeur") },
-                { label: t("certifications"), to: localePath("/certifications") },
+                { label: t('ecosystem'), to: localePath('/modules') },
+                { label: t('ai_agents'), to: localePath('/ecosysteme/intelligence-artificielle') },
+                { label: t('open_source'), to: localePath('/editeur') },
+                { label: t('certifications'), to: localePath('/certifications') },
             ],
         },
         {
-            label: t("services"),
+            label: t('services'),
             children: [
-                { label: t("engineering"), to: localePath("/ingenierie") },
-                { label: t("operations"), to: localePath("/exploitation") },
-                { label: t("managed_frappe"), to: localePath("/exploitation/frappe-erpnext") },
-                { label: t("hosting_data"), to: localePath("/souverainete") },
-                { label: t("pricing"), to: localePath("/tarifs") },
+                { label: t('engineering'), to: localePath('/ingenierie') },
+                { label: t('operations'), to: localePath('/exploitation') },
+                { label: t('managed_frappe'), to: localePath('/exploitation/frappe-erpnext') },
+                { label: t('hosting_data'), to: localePath('/souverainete') },
+                { label: t('pricing'), to: localePath('/tarifs') },
             ],
         },
         {
             // Also the only inbound link to /solutions/* — without it those
             // pages are orphaned and `crawlLinks` never prerenders them.
-            label: t("industries"),
+            label: t('industries'),
             children: [
-                { label: t("service-companies"), to: localePath("/solutions/entreprises-de-services") },
-                { label: t("manufacturing"), to: localePath("/solutions/industrie") },
-                { label: t("thirdplaces"), to: localePath("/solutions/tiers-lieux") },
+                { label: t('service-companies'), to: localePath('/solutions/entreprises-de-services') },
+                { label: t('manufacturing'), to: localePath('/solutions/industrie') },
+                { label: t('thirdplaces'), to: localePath('/solutions/tiers-lieux') },
             ],
         },
         {
-            label: t("resources"),
+            label: t('resources'),
             children: [
-                { label: t("documentation"), to: "https://doc.dokos.io" },
-                { label: t("forum"), to: "https://community.dokos.io" },
-                { label: t("gitlab"), to: "https://gitlab.com/dokos" },
-                { label: t("partners"), to: localePath("/partners") },
+                { label: t('documentation'), to: 'https://doc.dokos.io' },
+                { label: t('forum'), to: 'https://community.dokos.io' },
+                { label: t('gitlab'), to: 'https://gitlab.com/dokos' },
+                { label: t('partners'), to: localePath('/partners') },
             ],
         },
         {
-            label: t("company"),
+            label: t('company'),
             children: [
-                { label: t("contact"), to: localePath("/contact") },
-                { label: t("termsandconditions"), to: localePath("/termsandconditions") },
-                { label: t("hostingconditions"), to: localePath("/hostingconditions") },
-                { label: t("securityandprivacy"), to: localePath("/securityandprivacy") },
-                { label: t("legal"), to: localePath("/legal") },
+                { label: t('contact'), to: localePath('/contact') },
+                { label: t('termsandconditions'), to: localePath('/termsandconditions') },
+                { label: t('hostingconditions'), to: localePath('/hostingconditions') },
+                { label: t('securityandprivacy'), to: localePath('/securityandprivacy') },
+                { label: t('legal'), to: localePath('/legal') },
             ],
         },
-    ];
-});
+    ]
+})
 </script>
 
 <template>

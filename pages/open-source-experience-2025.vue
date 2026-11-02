@@ -3,7 +3,7 @@ import ContactForm from '~/components/ContactForm.vue'
 
 const form = {
   title: 'Contactez-nous',
-  description: "Vous vous demandez si Dokos est adapté à vos besoins ? Vous souhaitez souscrire à une offre d'accompagnement ? Vous avez des questions sur l'offre d'hébergement ? Envoyez nous un message.",
+  description: 'Vous vous demandez si Dokos est adapté à vos besoins ? Vous souhaitez souscrire à une offre d\'accompagnement ? Vous avez des questions sur l\'offre d\'hébergement ? Envoyez nous un message.',
   name: {
     label: 'Nom',
     placeholder: 'Martine Dupond',
@@ -22,7 +22,7 @@ const form = {
   },
   info: '',
   button: {
-    icon: "i-ph-paper-plane-right",
+    icon: 'i-ph-paper-plane-right',
     label: 'Envoyer mon message',
   },
 }
@@ -53,8 +53,8 @@ const pillars = [
 const features = [
   {
     icon: 'i-heroicons-wrench-screwdriver',
-    title: "Maîtrise d'ERPNext",
-    description: "Notre expertise approfondie d'ERPNext, le projet source de Dokos, nous permet de répondre aux besoins les plus complexes."
+    title: 'Maîtrise d\'ERPNext',
+    description: 'Notre expertise approfondie d\'ERPNext, le projet source de Dokos, nous permet de répondre aux besoins les plus complexes.'
   },
   {
     icon: 'i-heroicons-squares-2x2',
@@ -64,7 +64,7 @@ const features = [
   {
     icon: 'i-heroicons-lock-open',
     title: 'Open source & souverain',
-    description: "Notre engagement pour la souveraineté numérique et la transparence de vos outils de gestion."
+    description: 'Notre engagement pour la souveraineté numérique et la transparence de vos outils de gestion.'
   },
   {
     icon: 'i-heroicons-bolt',
@@ -73,27 +73,13 @@ const features = [
   }
 ]
 
-const solutions = [
-  {
-    title: 'Adapter sans développer',
-    description: "Dokos vous offre toute la richesse fonctionnelle d'un ERP complet, tout en vous permettant de l'ajuster à vos processus métier sans semaines de développement personnalisé."
-  },
-  {
-    title: 'Une flexibilité pensée pour vous',
-    description: "Dokos s'adapte à votre organisation, et non l'inverse. Chaque module peut être configuré précisément selon vos besoins réels, vos processus existants, votre culture d'entreprise."
-  },
-  {
-    title: 'Open source et souverain',
-    description: "Dokos est une adaptation française d'ERPNext, conçue pour les entreprises qui souhaitent retrouver la maîtrise de leurs outils de gestion."
-  }
-]
 
 useSeoMeta({
-    title: "Open Source Experience 2025",
-    ogTitle: "Open Source Experience 2025 - Dokos",
-    description: "Nous accompagnons Orange sur plusieurs projets stratégiques qui prouvent qu'un ERP open source peut répondre aux plus hautes exigences des grandes entreprises françaises",
-    ogDescription: "Nous accompagnons Orange sur plusieurs projets stratégiques qui prouvent qu'un ERP open source peut répondre aux plus hautes exigences des grandes entreprises françaises",
-});
+    title: 'Open Source Experience 2025',
+    ogTitle: 'Open Source Experience 2025 - Dokos',
+    description: 'Nous accompagnons Orange sur plusieurs projets stratégiques qui prouvent qu\'un ERP open source peut répondre aux plus hautes exigences des grandes entreprises françaises',
+    ogDescription: 'Nous accompagnons Orange sur plusieurs projets stratégiques qui prouvent qu\'un ERP open source peut répondre aux plus hautes exigences des grandes entreprises françaises',
+})
 </script>
 
 <template>
@@ -115,22 +101,22 @@ useSeoMeta({
           <!-- Logos -->
           <div class="logos-section">
             <div class="logo-card">
-              <img src="/osxp/logo-orange.png" alt="Orange" class="logo-orange" />
+              <img src="/osxp/logo-orange.png" alt="Orange" class="logo-orange" >
             </div>
             <div class="logo-separator">×</div>
             <div class="logo-card">
-              <img src="/osxp/dokos_logo.svg" alt="Dokos" class="logo-dokos" />
+              <img src="/osxp/dokos_logo.svg" alt="Dokos" class="logo-dokos" >
             </div>
           </div>
 
           <!-- Titre -->
           <h1 class="hero-title">
-            L'open-source comme fondation,<br class="hidden md:block" />
+            L'open-source comme fondation,<br class="hidden md:block" >
             l'expertise métier comme moteur
           </h1>
 
           <p class="hero-subtitle">
-            Orange l'a compris : avec ERPNext, ils ont trouvé un socle open-source<br class="hidden md:block" />
+            Orange l'a compris : avec ERPNext, ils ont trouvé un socle open-source<br class="hidden md:block" >
             sur lequel construire leurs modules métiers. Et vous, qu'allez-vous créer ?
           </p>
 
@@ -175,7 +161,7 @@ useSeoMeta({
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section class="projects-section" id="video">
+    <section id="video" class="projects-section">
       <UContainer>
         <!-- Titre de section -->
         <div class="section-header">
@@ -188,7 +174,7 @@ useSeoMeta({
         <div class="separator-line" />
 
         <!-- Qualéo -->
-        <div class="project-block" id="qualeo">
+        <div id="qualeo" class="project-block">
           <div class="flex flex-col gap-4">
             <div class="project-video">
               <iframe 
@@ -200,7 +186,7 @@ useSeoMeta({
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen
                 style="border-radius: 1rem;"
-              ></iframe>
+              />
             </div>
           </div>
           <div class="project-content">
@@ -246,7 +232,7 @@ useSeoMeta({
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen
                 style="border-radius: 1rem;"
-              ></iframe>
+              />
             </div>
           </div>
         </div>
@@ -276,7 +262,7 @@ useSeoMeta({
       <UContainer>
         <div class="section-header">
           <h2 class="section-title-medium white-text">
-            Souveraineté numérique :<br />
+            Souveraineté numérique :<br >
             un concept politique ou un avantage business ?
           </h2>
           <p class="section-subtitle white-text">
@@ -343,7 +329,7 @@ useSeoMeta({
     </section>
 
     <!-- SALON SECTION -->
-    <section class="salon-section" id="salon">
+    <section id="salon" class="salon-section">
       <div class="salon-background">
         <div class="salon-overlay" />
       </div>
@@ -392,7 +378,7 @@ useSeoMeta({
     </section>
 
     <!-- CONTACT SECTION -->
-    <section class="contact-section" id="contact">
+    <section id="contact" class="contact-section">
       <UContainer>
         <UCard class="contact-card">
           <h2 class="contact-title">Vous ne pouvez pas venir nous rencontrer ?</h2>
@@ -415,7 +401,7 @@ useSeoMeta({
       <UContainer>
         <div class="footer-content">
           <div class="footer-logos">
-            <img src="/osxp/dokos_logo.svg" alt="Dokos" class="footer-logo-dokos" />
+            <img src="/osxp/dokos_logo.svg" alt="Dokos" class="footer-logo-dokos" >
             <div class="footer-badge">
               <Icon name="i-heroicons-star-solid" class="w-4 h-4" />
               <span>Partenaire Orange</span>

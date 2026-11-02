@@ -1,25 +1,25 @@
 <script setup lang="ts">
 const { t, locale } = useI18n({
-    useScope: "local",
-});
+    useScope: 'local',
+})
 
-const { Partners, fetchList } = usePartners();
+const { Partners, fetchList } = usePartners()
 
-const { data: page } = await useAsyncData<any>("partners", () =>
-    queryCollection("pages").path(`/${locale.value}/partners`).first()
-);
+const { data: page } = await useAsyncData<any>('partners', () =>
+    queryCollection('pages').path(`/${locale.value}/partners`).first()
+)
 
-const title = page.value?.title;
-const description = page.value?.description;
+const title = page.value?.title
+const description = page.value?.description
 useSeoMeta({
-    titleTemplate: "%s · Partenaires",
+    titleTemplate: '%s · Partenaires',
     title,
     description,
     ogDescription: description,
     ogTitle: `${title} · Partenaires`,
-});
+})
 
-await fetchList();
+await fetchList()
 </script>
 
 <template>

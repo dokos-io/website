@@ -1,31 +1,31 @@
 <script setup lang="ts">
-const { locale } = useI18n();
-const { data: page } = await useAsyncData<any>("blog", () =>
-    queryCollection("pages").path(`/${locale.value}/blog`).first()
-);
+const { locale } = useI18n()
+const { data: page } = await useAsyncData<any>('blog', () =>
+    queryCollection('pages').path(`/${locale.value}/blog`).first()
+)
 if (!page.value) {
     throw createError({
         statusCode: 404,
-        statusMessage: "Page not found",
+        statusMessage: 'Page not found',
         fatal: true,
-    });
+    })
 }
 
-const { data: posts } = await useAsyncData<any>("posts", () =>
-    queryCollection("blog").order("date", "DESC").all()
-);
+const { data: posts } = await useAsyncData<any>('posts', () =>
+    queryCollection('blog').order('date', 'DESC').all()
+)
 
 useSeoMeta({
     title: page.value.title,
     ogTitle: page.value.title,
     description: page.value.description,
     ogDescription: page.value.description,
-});
+})
 
-defineOgImage("OgImageSaas" as any, {
+defineOgImage('OgImageSaas' as any, {
     title: page.value.title,
     description: page.value.description,
-});
+})
 </script>
 
 <template>

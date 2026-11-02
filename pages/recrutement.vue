@@ -11,23 +11,23 @@ const techStack = [
 const mindset = [
   {
     icon: 'i-heroicons-globe-alt',
-    title: "L'open source comme conviction",
-    description: "Pas une appétence, une façon de concevoir le logiciel et son rapport aux utilisateurs."
+    title: 'L\'open source comme conviction',
+    description: 'Pas une appétence, une façon de concevoir le logiciel et son rapport aux utilisateurs.'
   },
   {
     icon: 'i-heroicons-cpu-chip',
-    title: "Une vraie curiosité pour l'IA",
-    description: "Comprendre ce que l'IA change concrètement dans un produit de gestion, pas juste s'y intéresser."
+    title: 'Une vraie curiosité pour l\'IA',
+    description: 'Comprendre ce que l\'IA change concrètement dans un produit de gestion, pas juste s\'y intéresser.'
   },
   {
     icon: 'i-heroicons-puzzle-piece',
-    title: "A l'aise dans l'ambiguïté",
-    description: "Avancer sans qu'on formule chaque tâche. Dans une équipe de cinq, les problèmes ne sont pas toujours bien définis."
+    title: 'A l\'aise dans l\'ambiguïté',
+    description: 'Avancer sans qu\'on formule chaque tâche. Dans une équipe de cinq, les problèmes ne sont pas toujours bien définis.'
   },
   {
     icon: 'i-heroicons-hand-raised',
-    title: "L'implication dans le projet",
-    description: "Des contraintes réelles, une responsabilité directe, un impact visible."
+    title: 'L\'implication dans le projet',
+    description: 'Des contraintes réelles, une responsabilité directe, un impact visible.'
   },
 ]
 
@@ -43,10 +43,10 @@ const conditions = [
 const products = ['Dokos', 'Dodock', 'HRMS', 'Bookings']
 
 useSeoMeta({
-  title: "Ingénieur Logiciel Full-Stack — Dokos recrute",
-  ogTitle: "Ingénieur Logiciel Full-Stack — Dokos recrute",
-  description: "On est cinq. On cherche la sixième personne. CDI à Nancy, télétravail flexible, produit open source orienté IA.",
-  ogDescription: "On est cinq. On cherche la sixième personne. CDI à Nancy, télétravail flexible, produit open source orienté IA.",
+  title: 'Ingénieur Logiciel Full-Stack — Dokos recrute',
+  ogTitle: 'Ingénieur Logiciel Full-Stack — Dokos recrute',
+  description: 'On est cinq. On cherche la sixième personne. CDI à Nancy, télétravail flexible, produit open source orienté IA.',
+  ogDescription: 'On est cinq. On cherche la sixième personne. CDI à Nancy, télétravail flexible, produit open source orienté IA.',
 })
 </script>
 
@@ -116,7 +116,7 @@ useSeoMeta({
     <!-- ═══════════════════════════════════════
          QUI ON EST
     ═══════════════════════════════════════ -->
-    <section class="section section--light" id="poste">
+    <section id="poste" class="section section--light">
       <UContainer class="section-grid">
         <div class="section-label">
           <span class="eyebrow">Qui on est</span>
@@ -309,7 +309,7 @@ useSeoMeta({
     <!-- ═══════════════════════════════════════
          POSTULER
     ═══════════════════════════════════════ -->
-    <section class="apply-section" id="postuler">
+    <section id="postuler" class="apply-section">
       <UContainer class="apply-inner">
         <span class="eyebrow eyebrow--light">Comment postuler</span>
         <h2 class="apply-title">Envoyez-nous ce qui vous semble pertinent.</h2>

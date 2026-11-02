@@ -1,59 +1,59 @@
 <script setup lang="ts">
-import { joinURL } from "ufo";
+import { joinURL } from 'ufo'
 
 const {
     params: { slug },
-} = useRoute();
-const { locale } = useI18n();
+} = useRoute()
+const { locale } = useI18n()
 
-const path = `/${locale.value}/blog/${(slug as string[]).join("/")}`;
+const path = `/${locale.value}/blog/${(slug as string[]).join('/')}`
 
 const { data: post } = await useAsyncData<any>(path, () =>
-    queryCollection("blog").path(path).first()
-);
+    queryCollection('blog').path(path).first()
+)
 if (!post.value) {
     throw createError({
         statusCode: 404,
-        statusMessage: "Post not found",
+        statusMessage: 'Post not found',
         fatal: true,
-    });
+    })
 }
 
 const { data: surround } = await useAsyncData<any>(
     `${path}-surround`,
     () =>
-        queryCollectionItemSurroundings("blog", path, {
-            fields: ["title", "description", "path", "date"],
+        queryCollectionItemSurroundings('blog', path, {
+            fields: ['title', 'description', 'path', 'date'],
         }),
     { default: () => [] }
-);
+)
 
-const title = post.value.title;
-const description = post.value.description;
-const language = locale.value;
+const title = post.value.title
+const description = post.value.description
+const language = locale.value
 
 useSeoMeta({
     title,
     ogTitle: title,
     description,
     ogDescription: description,
-});
+})
 
-const image = post.value.image as { src?: string } | undefined;
+const image = post.value.image as { src?: string } | undefined
 
 if (image?.src) {
-    const site = useSiteConfig();
+    const site = useSiteConfig()
 
     useSeoMeta({
         ogImage: joinURL(site.url, image.src),
         twitterImage: joinURL(site.url, image.src),
-    });
+    })
 } else {
-    defineOgImage("OgImageSaas" as any, {
+    defineOgImage('OgImageSaas' as any, {
         title,
         description,
-        headline: "Blog",
-    });
+        headline: 'Blog',
+    })
 }
 </script>
 
