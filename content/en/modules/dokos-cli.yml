@@ -15,7 +15,7 @@ logo:
 
 hero:
   title: Your Dokos site, <span class="text-primary">from a terminal</span>.
-  description: dokos is a command-line tool that uses the Dokos/Frappe REST API to read and write data — both as a utility for administrators and developers, and as an MCP server that connects AI agents (Claude Code, agy, Vibe CLI, OpenCode…) to the same capabilities.
+  description: dokos is a command-line tool that uses the Dokos/Frappe REST API to read and write data — both as a utility for administrators and developers, and as an MCP server that connects the AI agent of your choice to the same capabilities.
   links:
     - label: Read the documentation
       to: https://doc.dokos.io/dokos-cli
@@ -52,7 +52,7 @@ features:
       label: Writes
       color: sky
   - title: Equip an AI agent without the terminal
-    description: The built-in MCP server (`dokos mcp`) gives an AI agent the same capabilities as the command-line tool, connecting Claude Code, agy, Vibe CLI or OpenCode to a Dokos site.
+    description: The built-in MCP server (`dokos mcp`) gives an AI agent the same capabilities as the command-line tool, connecting any MCP-compatible agent to a Dokos site.
     image_bg_color: "bg-teal-500"
     align: left
     badge:

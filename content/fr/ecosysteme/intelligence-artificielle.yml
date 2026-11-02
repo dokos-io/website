@@ -38,7 +38,7 @@ scope:
       description: Une écriture faite par un agent apparaît dans la chronologie du document, comme celle d'une personne, avec son auteur et son heure.
       icon: i-heroicons-clock
     - title: Un serveur MCP
-      description: Dokos CLI expose les lectures, les écritures, les rapports et les schémas de votre site à Claude Code, agy, Vibe CLI ou OpenCode.
+      description: Dokos CLI expose les lectures, les écritures, les rapports et les schémas de votre site à tout agent compatible MCP.
       icon: i-heroicons-command-line
     - title: Des compétences écrites pour vos processus
       description: Une compétence Dokos AI est un fichier Markdown avec un en-tête YAML, dédié à un processus précis. Nous les écrivons avec vous en mission d'ingénierie IA.

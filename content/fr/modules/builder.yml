@@ -102,7 +102,7 @@ faq:
     - label: Puis-je partir d'une maquette Figma ?
       content: Frappe publie un plugin Figma vers Frappe Builder, en version bêta, qui importe une maquette dans l'éditeur.
     - label: Puis-je piloter Builder depuis un agent de code ?
-      content: Frappe publie une compétence `frappe-builder` pour Claude Code, Codex ou OpenCode. L'agent modifie, construit et publie vos pages à travers l'outil `frappectl`.
+      content: Frappe publie une compétence `frappe-builder` pour les agents de code. L'agent modifie, construit et publie vos pages à travers l'outil `frappectl`.
 
 bottom_cta:
   title: Posez-nous vos questions sur Frappe Builder.

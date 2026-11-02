@@ -127,8 +127,8 @@ faq:
       content: Dokos consomme des modèles via OpenRouter, qui donne accès aux modèles de Google, Anthropic, OpenAI et Mistral avec une seule clé. Vous associez un modèle à chacun des trois usages (logique et agent, rapide, OCR et vision) et vous pouvez changer d'affectation à tout moment.
     - label: Comment l'application est-elle construite ?
       content: En trois couches. Un registre découvre les compétences disponibles. Un orchestrateur décide de la marche à suivre. Des outils exécutent les actions (lecture, écriture, liste, compétence, référence). Chaque outil d'écriture demande une confirmation.
-    - label: Puis-je dialoguer avec l'assistant depuis Raven ou depuis Claude Code ?
-      content: Oui. Le pont Raven, activé dans les Paramètres de l'IA, permet d'envoyer un message direct à un bot dans votre messagerie d'équipe. Pour Claude Code, Claude Cowork, agy, Vibe CLI ou OpenCode, [Dokos CLI](/fr/modules/dokos-cli) fait la jonction. Le site expose aussi son propre point d'accès MCP, auquel l'utilisateur se connecte avec son compte Dokos et ses permissions.
+    - label: Puis-je dialoguer avec l'assistant depuis Raven ou depuis mon propre agent ?
+      content: Oui. Le pont Raven, activé dans les Paramètres de l'IA, permet d'envoyer un message direct à un bot dans votre messagerie d'équipe. Pour un agent installé sur votre poste, [Dokos CLI](/fr/modules/dokos-cli) fait la jonction. Le site expose aussi son propre point d'accès MCP, auquel l'utilisateur se connecte avec son compte Dokos et ses permissions.
 
 bottom_cta:
   title: Décrivez-nous une tâche que vous aimeriez confier à l'assistant.

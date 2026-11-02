@@ -49,7 +49,7 @@ for_whom:
       description: Chaque utilisateur génère une clé API et un secret depuis son profil. Les appels respectent les mêmes permissions que l'interface.
       icon: i-heroicons-code-bracket
     - title: Vous pilotez Dokos depuis un assistant IA
-      description: Claude Code, agy, Vibe CLI ou OpenCode se connectent à votre site par Dokos CLI et travaillent sur les mêmes données, avec les mêmes garde-fous.
+      description: L'agent de votre choix se connecte à votre site par Dokos CLI et travaillent sur les mêmes données, avec les mêmes garde-fous.
       icon: i-heroicons-cpu-chip
 
 fit:
