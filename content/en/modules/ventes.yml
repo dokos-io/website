@@ -1,135 +1,156 @@
+# English version of content/fr/modules/ventes.yml (sources and screenshot notes are there).
+
 navigation:
   title: Sales
   icon: i-ep-sell
-  description: Managing commercial flows and invoicing.
+  description: Quotations, orders, invoices and subscriptions.
 
 title: Sales
+description: Tracks each sale from the quotation to the payment, in a shop or at a distance.
 icon: i-ep-sell
-description: Turn your leads into loyal customers with high-performing sales tools.
 application: Dokos
 theme: vente-relation-client
 author: Frappe Technologies, Dokos & Contributors
 
-hero:
-  title: Speed up your sales with <span class="text-primary">simplicity and transparency</span>
-  description: Dokos gives you a powerful way to automate and streamline your sales process. Whether you run a small business or a large organization, Dokos lets you manage every stage of a sale efficiently. Built for modern, responsible companies, our platform helps you hit your sales targets while supporting ethical, collaborative ways of working.
-  links:
-    - label: Get started
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: The Dokos ecosystem
-    color: sky
-    variant: subtle
-    to: /en
-    right_icon: i-heroicons-arrow-right-20-solid
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: erpnext
+docs: https://doc.dokos.io/v5/dokos/ventes
+related: [crm, comptabilite, stocks, e-commerce, paiements]
 
+hero:
+  title: From the quotation to the payment, <span class="text-primary">one thread</span> of documents.
+  description: The Dokos Sales module creates your quotations and turns them into orders, then invoices. Each document picks up the previous one, and you see what is left to deliver and to invoice.
+  image: /modules/ventes/hero.webp
+
+for_whom:
+  items:
+    - title: Your quotations start in a word processor
+      description: You create the quotation in Dokos from the customer record or the opportunity. Prices come from your price list, and the order picks up the accepted quotation.
+      icon: i-heroicons-document-text
+    - title: You invoice subscriptions by hand every month
+      description: A subscription generates its invoices each period and triggers the payment if the customer has saved a payment method.
+      icon: i-heroicons-arrow-path
+    - title: You sell in a shop and at a distance
+      description: The point of sale takes payments at the counter, with the LNE certification when the Certification Caisse module is installed under licence. Invoices sent by e-mail carry a payment link.
+      icon: i-heroicons-building-storefront
+    - title: You do not know what is left to deliver
+      description: The status of each order shows what is left to deliver and to invoice. You filter the list on this status.
+      icon: i-heroicons-truck
+
+fit:
+  description: >-
+    A lead becomes an opportunity in the CRM, then a quotation, then a sales order. When it is submitted, the
+    order checks availability in Stock. It creates the delivery note and the sales invoice, which posts its
+    entry to Accounting. The payment request uses the gateways of the Payments application.
+  image: /modules/ventes/fit.webp
+  reads:
+    - Customer, Contact and Address
+    - Item, Item Price and Price List
+    - Lead and Opportunity (CRM)
+    - Warehouse, for the availability check at submission
+  adds:
+    - Quotation, Sales Order, Sales Invoice and Down Payment Invoice
+    - Subscription, Payment Request and Payment Terms
+    - Point of Sale and POS invoices
+    - Pricing Rules, Promotional Scheme, Coupon Code and Shipping Rule
+    - Sales Person, Sales Partner and the sales reports
+  depends:
+    - CRM
+    - Accounting
+    - Stock
+    - Payments
 
 features:
-  - title: A simplified view of your sales pipeline
-    description: Dokos lets you track prospects and opportunities smoothly. <br><br>With its built-in CRM, keep a clear view of every customer interaction, automate follow-ups, and stay on top of every stage of the sales process.</br>
-    image: "image/ventes/un-insights-opportunites.webp"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: CRM
-      color: sky
-  - title: Quote creation and order management
-    description: Create professional quotes in a few clicks and convert them into orders just as easily. <br><br>Use customizable templates for your commercial documents, and keep stock levels updated in real time so you can respond quickly to customers.</br>
-    image: "image/ventes/deux-evolution-commandes-clients.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Quotes
-      color: sky
-  - title: Automating the sales flow
-    description: Generate invoices automatically from confirmed orders.<br><br> With multi-currency support, Dokos makes international operations easier, while built-in online payment options speed up collection.</br>
-    image: "image/ventes/trois-flux-de-vente.webp"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Invoices
-      color: sky
-  - title: Delivery and shipping management
-    description: Simplify order preparation and shipping with delivery notes generated automatically. <br><br>Through community integrations, Dokos lets you track shipments in real time while optimizing warehouse management for better logistics.</br>
-    image: "image/ventes/quatre-livraison-kanban.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Delivery
-      color: sky
-  - title: Reports and analytics
-    description: Get complete, accurate reports on your sales. <br><br>Analyze your team's performance, spot market trends, and make strategic decisions using real-time data from the Dokos dashboard.</br>
-    image: "image/ventes/cinq-insights ventes.webp"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Reports
-      color: sky
-  - title: Subscription management
-    description: Automate subscription billing with recurring invoices. <br><br>Dokos lets you track renewals, plan changes and cancellations with ease, for a smooth, consistent customer experience.</br>
-    image: "image/ventes/six-abonnements-modifies.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Subscriptions
-      color: sky
-  - title: Tailored customization
-    description: Adapt the software to your specific needs. <br><br>Add custom fields, change forms based on user roles, and create unique print formats, all without writing code.</br>
-    image: "image/ventes/sept-facture-de-vente.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Customization
-      color: sky
+  - title: A quotation that becomes an order
+    description: >-
+      You create the quotation for a customer, for a prospect or from a CRM opportunity. Prices and terms
+      come from the customer's price list. You apply a discount per line or on the total, or a coupon code.
+      The quotation shows its gross margin while you enter it. Once it is submitted, you send it by e-mail or
+      export it as a PDF. Its status changes to Ordered, Rejected, Expired or Lost, with a reason that feeds
+      the sales analysis. You convert the whole quotation or only some of its lines.
+    image: /modules/ventes/feature-devis.webp
+    badge: Quotation
+  - title: An order that drives what comes next
+    description: >-
+      The sales order picks up the accepted quotation. If you manage stock, Dokos checks availability when the
+      order is submitted. From the order, you create the delivery note, the sales invoice, a down payment
+      invoice, a payment request, a project or a subscription. The status shows what is left to do (To
+      Deliver and Bill, To Bill, To Deliver, Completed). A drop-shipping purchase order stays linked to the
+      sales order and updates its delivered quantities.
+    badge: Sales order
+  - title: An invoice, its payment and its receipt
+    description: >-
+      The sales invoice posts its entry to accounting when it is submitted, in a continuous number sequence.
+      You send a payment request with a Stripe, GoCardless or Braintree link, and the down payments already
+      received are deducted from the balance. At the counter, the point of sale creates the invoice and
+      records the payment in one operation, with several payment methods and a SumUp terminal if you have
+      one. With eTransactions, each submitted invoice generates its Factur-X file.
+    image: /modules/ventes/feature-facture.webp
+    badge: Sales invoice
+  - title: Subscriptions that invoice on their own
+    description: >-
+      You create a subscription from a submitted order or from Sales > Subscriptions, with a recurring item
+      and a monthly, quarterly or yearly period, invoiced at the start or at the end of the period. Dokos
+      generates the invoices and, if the customer has saved a card or a mandate, triggers the payment at each
+      due date. Otherwise it sends a payment link. You cancel a subscription at a given date, with a prorated
+      last invoice.
+    badge: Subscriptions
+  - title: Your prices by customer and by period
+    description: >-
+      You keep several price lists, per currency or per customer group. Pricing rules apply a discount or a
+      price depending on the item, the customer, the quantity or the period. A promotional scheme groups these
+      rules for one campaign. A coupon code is entered on the quotation. Shipping rules calculate shipping
+      costs, and payment terms set the due dates.
+    badge: Prices and promotions
 
-bottom_section:
-  title: "Selling with Dokos also means:"
-  cards:
-    - title: A customer portal
-      description: With Dokos, give your customers a dedicated space to view their quotes, track orders and delivery notes, and more. This self-service reduces incoming requests, freeing you up to focus on what matters.
-      icon: i-material-symbols-settings-account-box-rounded
-      class: "col-span-4 row-span-3"
-    - title: Flexible pricing strategies
-      description: With Dokos, adapt your prices to every situation using flexible pricing tools. Use custom price lists, set up targeted promotions, offer attractive discount codes, and build loyalty with reward programs. Offer the right prices to the right customers while protecting your margins.
-      icon: i-icon-park-outline-target
-      class: "col-span-4 row-span-3"
-    - title: E-commerce integrations
-      description: Through community applications, Dokos integrates smoothly with platforms like WooCommerce, Amazon and more. Sync products, orders and stock in real time to centralize all your sales operations in a single tool, a complete, scalable solution for your e-commerce business.
-      icon: i-ic-round-shopping-basket
-      class: "col-span-4 row-span-3"
+install:
+  description: The Sales module is part of Dokos. There is nothing else to install.
+  steps:
+    - title: On Dokos Cloud
+      description: Create your site from your Dokos Cloud dashboard. Dokos is installed with the Sales module. Included in every plan.
+    - title: Self-hosted
+      description: "<code>bench get-app https://gitlab.com/dokos/dokos</code> then <code>bench --site your-site install-app erpnext</code>."
+    - title: To take payments online
+      description: Install the Payments application from the marketplace and configure your gateway.
 
-plus_button:
-  label: Discover all our features
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: sky
-  to: /en/modules/ventes
+faq:
+  items:
+    - label: Can I change a quotation I have already sent?
+      content: >-
+        A submitted quotation can no longer be changed. You cancel it, amend it, submit it again and send it
+        again. To compare two options, you duplicate the quotation.
+    - label: How do I invoice a down payment?
+      content: >-
+        From the submitted sales order, Create > Down Payment Invoice. Lines are grouped by VAT rate. On the
+        final invoice, the Advances section lists the down payments received, and Dokos posts only the
+        balance still due.
+    - label: What happens if stock is short when an order is submitted?
+      content: >-
+        If stock management is enabled, Dokos checks availability at submission and can block the order with
+        the message "Insufficient Stock".
+    - label: Can I change the period of a subscription?
+      content: >-
+        No. The period and the invoicing moment cannot be changed once the subscription is saved. You create a
+        new subscription.
+    - label: Is the point of sale certified?
+      content: >-
+        Yes, when the Certification Caisse module is installed with a licence issued by Dokos SAS. This module
+        is certified by LNE. The [Certifications page](/en/certifications) explains the role of the licence.
+        Payment data is written to a tamper-proof log and can be exported as a fiscal archive.
 
 bottom_cta:
-  title: Boost your sales with Dokos.
-  description: Dokos gives you sales management that's transparent and true to your values. Built to adapt to your needs, it supports collaboration and innovation while keeping you in control of your data. Take back control of your sales process with an ethical, high-performing solution.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Ask us your questions about sales in Dokos.
+  description: Describe your sales cycle, and we will show you the path of your documents.
   links:
-    - label: Get started
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

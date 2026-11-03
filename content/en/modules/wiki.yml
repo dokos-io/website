@@ -1,103 +1,106 @@
+# English version of content/fr/modules/wiki.yml (sources and screenshot notes are there).
+
 navigation:
   title: Wiki
-  description: A built-in wiki for better internal knowledge management.
-  icon: i-hugeicons-share-knowledge
+  icon: i-heroicons-book-open
+  description: Documentation and procedures published from your site, reviewed before publication.
 
-title: Frappe Wiki
-link: "https://frappe.io/wiki"
-author: Frappe Technologies
-description: "Unlock your team's potential with knowledge management"
+title: Wiki
+description: Publishes your documentation and procedures as web pages from your site, with a revision history and a review of changes before publication.
+icon: i-heroicons-book-open
 application: Frappe Wiki
 theme: support-collaboration
-
+author: Frappe Technologies
 logo:
   light: /frappe/wiki.png
   dark: /frappe/wiki.png
 
-hero:
-  title: "<span class='text-primary'>Frappe Wiki</span>"
-  image: ""
-  headline:
-    label: Frappe applications
-    to: https://frappe.io/products
-    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
-    target: _blank
-  links:
-    - label: Write your first wiki page
-      to: https://cloud.dokos.io
-      size: xl
-      color: black
-      icon: i-heroicons-play-circle-16-solid
-      trailing: false
-      target: _blank
-    - label: Documentation
-      icon: i-ic-outline-library-books
-      size: xl
-      color: gray
-      to: https://doc.dokos.io
-      target: _blank
+publisher: frappe
+licence: MIT
+version: v5
+marketplace: wiki
+related: [support, raven, dokos-ai, learning]
 
-colored_section:
-  title: "Centralize and organize your organization's knowledge"
-  description: "At Dokos, we're glad to offer our customers Frappe Wiki, a powerful knowledge management tool built by the innovative team behind Frappe. Thanks to their work, we can provide you with a robust open-source solution, at no extra cost, that improves how information is shared across your company. With Frappe Wiki, you can easily centralize and organize your organization's knowledge, keeping information accessible, up to date and directly usable."
-  image: "image/wiki/wiki.webp"
-  align: left
+hero:
+  title: Your procedures and documentation, <span class="text-primary">published from your site</span>.
+  description: You write a page in Markdown, and it is online with no redeployment. Each change is kept in the history and can go through an approval before publication.
+
+for_whom:
+  items:
+    - title: Your internal procedures are scattered across files
+      description: You write them as wiki pages, organised by space, with a sidebar and a table of contents generated from the headings.
+      icon: i-heroicons-folder-open
+    - title: You publish product documentation for your customers
+      description: A wiki page is a web page of your site. You fix a sentence or add a page with no service interruption.
+      icon: i-heroicons-globe-alt
+    - title: A change must be reviewed before it goes online
+      description: A contributor proposes a change. A reviewer approves it, and the published page changes at that moment.
+      icon: i-heroicons-check-circle
+
+fit:
+  description: >-
+    Wiki installs on your site and serves its pages as web pages of that site. Pages are organised
+    in <strong>wiki spaces</strong>, each with its own sidebar. Contributors sign in with their Dokos
+    account. The revision history keeps every version of a page.<br>
+    If <a href="/en/modules/dokos-ai">Dokos AI</a> is installed, the assistant searches your internal
+    wiki to answer your users' questions.
+  reads:
+    - The site's user accounts, for editing and approval
+  adds:
+    - The Wiki Page, Wiki Space and Wiki Group documents
+    - The Wiki Settings, with support for custom scripts
+    - Pages published under your spaces' addresses
+    - The revision history and the changes waiting for approval
+  depends:
+    - Dodock v5
 
 features:
-  - title: "Build a simple, effective knowledge base"
-    description: "Frappe Wiki gives you a smooth platform for building and managing a knowledge base. Whether you're documenting internal processes, user guides or project notes, its intuitive interface lets every team member contribute, edit and organize information with ease."
-    image: "image/wiki/wiki.webp"
-    image_bg_color: bg-teal-500
-    align: right
-  - title: "Make search effortless"
-    description: "No more endless searching. With its powerful search engine, Frappe Wiki makes sure the right information is always within reach. Your teams can find articles by category, tag or keyword, cutting down significantly on the time spent hunting for critical data."
-    image: "image/wiki/wiki-recherches.webp"
-    image_bg_color: bg-teal-500
-    align: left
-  - title: "Work with peace of mind thanks to version control"
-    description: "One of Frappe Wiki's biggest strengths is its version management, which tracks every change made to an article. That means you can always roll back to a previous version and keep your knowledge base accurate and reliable."
-    image: "image/wiki/wiki-version.png"
-    image_bg_color: bg-teal-500
-    align: right
-  - title: "Collaborative knowledge sharing"
-    description: "Teams can collaborate in real time, contributing valuable ideas and expertise. With easy-to-use commenting features, feedback and updates become part of the documentation process, keeping everyone on the same page."
-    image: "image/wiki/wiki.webp"
-    image_bg_color: bg-teal-500
-    align: left
-  - title: "Secure access to sensitive information"
-    description: "Have sensitive information to protect? With Frappe Wiki, you can set granular permissions to control who can view or edit articles, keeping data secure while still encouraging collaboration across the organization."
-    image: "image/wiki/wiki-securise.png"
-    image_bg_color: bg-teal-500
-    align: right
+  - title: Write in Markdown, with attachments
+    description: You write the page in Markdown in the editor. You attach files to the page. The table of contents is generated from the headings.
+    badge: Writing
+  - title: Organise pages in spaces
+    description: A wiki space groups pages on one subject and has its own sidebar. You reorder the sidebar by drag and drop and you group pages.
+    badge: Spaces
+  - title: Have changes reviewed before publishing
+    description: A proposed change waits for a reviewer's approval. The published page changes only once the change is approved.
+    badge: Approval
+  - title: Find every version
+    description: The revision history keeps every version of a page. You open a past version and see what changed.
+    badge: Revisions
 
-bridge:
-  title: "Why trust Dokos?"
-  description: "At Dokos, we have deep respect for the excellent work done by the Frappe team. By offering Frappe Wiki to our customers, we're proud to carry forward their open-source vision and commitment to innovation. Our mission is to give companies the best tools available, and we believe Frappe Wiki delivers real value for boosting productivity and collaboration."
-  align: center
+install:
+  steps:
+    - title: From the Dokos Cloud marketplace
+      description: In your Dokos Cloud dashboard, open the marketplace and install Wiki on your site. The application is included in every plan.
+    - title: Self-hosted
+      description: "<code>bench get-app https://github.com/frappe/wiki</code> then <code>bench --site your-site install-app wiki</code>."
+    - title: Create a first space
+      description: Open the desk, create a Wiki Space with its address, then a first Wiki Page. The page is online at the space's address.
 
-carousel:
-  cards:
-    - title: "100% open source, no hidden costs"
-      description: "With Frappe Wiki, you get a cost-effective knowledge management tool that grows with your business, with no costly subscription or hidden fees."
-    - title: "A trusted, worldwide community"
-      description: "Frappe Wiki and Dokos are used by thousands of companies around the world, across sectors such as manufacturing, services and distribution. By choosing Frappe Wiki, you join an international community of innovators and forward-thinking companies."
+faq:
+  items:
+    - label: In which format are pages written?
+      content: In Markdown. The table of contents is generated from the page's headings.
+    - label: Can a change be published without review?
+      content: The wiki has an approval mechanism. A proposed change waits for a reviewer to approve it before the published page changes.
+    - label: Can I go back to a previous version?
+      content: Yes. The revision history keeps every version of a page.
+    - label: Does Dokos AI read the wiki?
+      content: Yes. The Dokos AI assistant searches the internal wiki, Learning courses and public notes to answer your users' questions.
+    - label: Can I take over an existing wiki?
+      content: The Frappe Wiki documentation includes a migration guide. Describe your current tool so that we can estimate the takeover.
 
 bottom_cta:
-  title: "Ready to transform how you manage knowledge?"
-  description: "Whether you want to streamline internal processes, boost efficiency, or simply make information easier for your teams to find, Frappe Wiki is the tool for the job. At Dokos, we're glad to help you unlock its full potential. <br> Get started today!</br>"
-  card: true
-  class: bg-amber-600/10 dark:bg-amber-800/10
+  title: Tell us what you want to document.
+  description: We will show you Wiki on a demo site, with a space and a reviewed page.
   links:
-    - label: Create your first wiki page
-      size: md
-      color: gray
-      to: https://cloud.dokos.io
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the marketplace
+      to: https://cloud.dokos.io/marketplace
       target: _blank
-    - label: Learn more about Frappe Wiki
-      size: md
-      variant: 'link'
-      color: gray
-      to: https://frappe.io/wiki
-      target: _blank
-      icon: i-heroicons-outline-arrow-right
-      trailing: true
+      size: xl
+      color: neutral
+      variant: outline

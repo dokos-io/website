@@ -1,144 +1,105 @@
-navigation:
-  title: Frappe Learning
-  description: Online training platform / e-Learning
-  icon: i-iconoir-learning
-
+# English version of content/fr/modules/learning.yml (sources and screenshot notes are there).
 
 title: Frappe Learning
-link: "https://frappe.io/learning"
-author: Frappe Technologies & Contributors
-description: Build your own training platform with Frappe Learning
+description: Publish your online courses, follow your learners by batch and issue their certificates from your Dokos site.
+icon: i-heroicons-academic-cap
 application: Frappe Learning
 theme: projets-ressources-humaines
-
+author: Frappe Technologies and contributors
 logo:
   light: /frappe/lms.png
   dark: /frappe/lms.png
+navigation:
+  title: Frappe Learning
+  icon: i-heroicons-academic-cap
+  description: Online courses, batches, quizzes and certificates.
+
+publisher: frappe
+licence: AGPLv3
+version: v5
+marketplace: lms
+docs: https://docs.frappe.io/learning
+related: [ressources-humaines, paiements, wiki, support]
 
 hero:
-  title: "<span class='text-primary'>Frappe Learning</span>"
-  description: Build your own training platform with Frappe Learning
-  headline:
-    label: Frappe applications
-    to: https://frappe.io/products
-    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
-    target: _blank
-    color: green
-  links:
-    - label: Publish your first course
-      to: https://cloud.dokos.io
-      size: xl
-      color: amber
-      icon: i-heroicons-rocket-launch
-      trailing: false
-      target: _blank
-    - label: Documentation
-      icon: i-heroicons-arrow-right
-      trailing: true
-      size: xl
-      color: gray
-      to: https://doc.dokos.io
-      target: _blank
+  title: Your training courses <span class="text-primary">online</span>, on your Dokos site.
+  description: You write a course in chapters and lessons, open it to your learners and follow their progress. At the end, you issue the certificate.
+  image: /modules/learning/hero.webp
 
-colored_section:
-  title: Simplify your customers' learning
-  description: "At Dokos, we have always cared about helping our customers adopt the best technologies, and we are proud to offer you Frappe Learning: an innovative learning platform, developed by the Frappe team, compatible with Dokos."
-  image: "image/learning/frappe-learning.webp"
-  align: left
-  badge:
-    label: Frappe applications
-    to: https://frappe.io/products
-    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
-    target: _blank
-    color: orange
+for_whom:
+  items:
+    - title: You train your customers on your product
+      description: You publish a free or paid course. Each customer enrols, follows the lessons at their own pace and gets a certificate.
+      icon: i-heroicons-user-group
+    - title: You onboard your new employees
+      description: You group the hires of the same month in a batch, with dates and live classes. The batch enrols them in all its courses.
+      icon: i-heroicons-identification
+    - title: You run classes with assessments
+      description: You add quizzes and assignments to the lessons. An evaluator grades the submissions and validates the certificate.
+      icon: i-heroicons-clipboard-document-check
 
-main_features:
-  - title: Create a personalized learning experience
-    description: "Give your customers access to tailored training. Build learning paths adapted to their specific needs, whether they are new to your services or experienced users. By providing quality educational content, you strengthen their mastery of your products and improve their long term satisfaction."
-    image: "image/learning/learning-cours.png"
-    image_bg_color: bg-teal-500
-    align: right
-    links:
-    - label: Publish your first course
-      to: https://cloud.dokos.io
-      size: xl
-      color: amber
-      icon: i-heroicons-rocket-launch
-      trailing: false
-      target: _blank
-    - label: Documentation
-      icon: i-heroicons-arrow-right
-      trailing: true
-      size: xl
-      color: gray
-      to: https://doc.dokos.io
-      target: _blank
-  - title: "Integrate seamlessly with Dokos"
-    description: "Frappe Learning integrates seamlessly with Dokos, making it easy to manage users, courses, and certifications. This integration lets you centralize your customers' training while enjoying the benefits of a modern management software environment, with no separate platform to run and no extra costs. "
-    image: "image/ventes/cinq-insights ventes.webp"
-    image_bg_color: bg-teal-500
-    align: left
-  - title: "Track progress in real time"
-    description: "Track your learners' progress with our precise analytics tools. You can view completed steps, assess performance, and identify areas for improvement to offer an ever better service. This creates a continuous learning loop, keeping your customers informed and satisfied."
-    image: "image/learning/learning-tableau-de-bord-stat.webp"
-    image_bg_color: bg-teal-500
-    align: right
-  - title: "A genuine training program at no extra cost"
-    description: "In a few clicks, set up the Frappe Learning app at no additional cost. Build a genuine training program for your users or customers, without increasing your infrastructure or management costs."
-    image: "image/nuage-dashboard-dark.png"
-    image_bg_color: bg-teal-500
-    align: left
+fit:
+  description: "Frappe Learning installs on your Dokos site and uses its <strong>users</strong>: a learner, an instructor or an evaluator is a user of your site with the matching role. Paid courses go through the Payments application, the same one as your invoices. The application is available at /lms and in your site's apps screen."
+  reads:
+    - Your site's Users, with the Student, Instructor, Evaluator and Moderator roles
+    - The payment gateways of the Payments application, for paid courses
+  adds:
+    - The Learning application at /lms
+    - The "LMS Course", "Course Chapter", "Course Lesson", "LMS Batch" and "LMS Program" DocTypes
+    - The "LMS Quiz", "LMS Assignment", "LMS Certificate" and "LMS Live Class" DocTypes
+    - The "LMS Enrollment" and "LMS Payment" DocTypes
+  depends:
+    - Dodock
+    - Payments
 
+features:
+  - title: Write the course in chapters and lessons
+    description: A course contains chapters, and each chapter contains its lessons. A lesson holds text, a video, a PDF, slides, a quiz or an assignment. The learner view shows the lesson as your learners will see it. Only a Moderator publishes the course.
+    badge: Courses
+  - title: Group your learners in batches
+    description: A batch brings a group of learners together on one or more courses, with a start date and an end date. A learner added to the batch is enrolled in all its courses. You schedule a Zoom live class from the batch, and the learners see the list of classes to attend.
+    badge: Batches
+  - title: Assess with quizzes and assignments
+    description: You create a quiz with single-choice, multiple-choice or open questions. An assignment is submitted as a PDF or a document. The evaluator grades from their submission queue. A program chains several courses in a set order.
+    badge: Assessments
+  - title: Issue the certificate
+    description: At the end of a course or a batch, you grant the learner a certificate, automatically at the end of the course or all at once for the whole batch. The application provides a certificate template, and you can replace it with your own. You can charge for a course, a batch or the certificate itself.
+    badge: Certificates
 
-carousel:
-  title: "Key features of Frappe Learning"
-  cards:
-    - title: "Build your courses with ease"
-      description: "Built with an intuitive interface, Frappe Learning lets you create complete training modules in a few clicks. Import multimedia content, build interactive quizzes, and structure learning paths flexibly."
-    - title: "Simplify user management"
-      description: "Manage enrollments, assign courses, and give your users a personalized learning experience. Track their progress and adjust paths based on their needs."
-    - title: "Showcase skills acquired"
-      description: "Award certificates and badges to your customers at the end of each course. Strengthen their engagement and their confidence in your services."
-    - title: "Get detailed reports"
-      description: "Analyze your users' progress and the effectiveness of your training. Frappe Learning helps you fine-tune your educational content for the best results."
+install:
+  steps:
+    - title: From the Dokos Cloud marketplace
+      description: In your Dokos Cloud dashboard, open the marketplace and install "Frappe Learning" on your site. The application is included in every plan.
+    - title: Self-hosted
+      description: "<code>bench get-app https://github.com/frappe/lms</code> then <code>bench --site your-site install-app lms</code>. The Payments application must be installed on the bench first."
+    - title: Open your first course
+      description: In /lms, give the roles to your users, create a course with its chapters and lessons, then publish it with a Moderator account.
+  prerequisites:
+    - The Payments application, required by Frappe Learning
+    - A Zoom account, only for live classes
 
-bridge_after_carousel:
-  title: "Why did we choose Frappe Learning for you?"
-  description: "At Dokos, we have always valued learning as a key to success. Frappe Learning is more than a simple training platform: it is a way to enrich your relationship with your customers and make them more independent and effective. This app fits harmoniously into the Dokos world and is an excellent lever for strengthening user loyalty. We deeply respect the work and innovation of Frappe. With this app, we offer you a complete solution that not only improves your customers' satisfaction, but also speeds up their adoption of your services."
-  align: center
-
-bottom_section:
-  title: "Concrete benefits for you and your customers!"
-  cards:
-    - title: "Stronger loyalty"
-      description: "With engaging training paths, help your customers get the most out of your products. Provide every tool for success and build a long term relationship of trust. "
-      icon: i-heroicons-outline-fire
-      class: "col-span-4 row-span-2"
-    - title: "Time savings and efficiency"
-      description: "Automate learning with online modules available around the clock, reducing the need for customer support and strengthening your users' independence."
-      icon: i-heroicons-outline-cube
-      class: "col-span-4 row-span-2"
-    - title: "Stronger reputation"
-      description: "By offering certifications through Frappe Learning, you position your company as a leader in your field, with a solid educational approach."
-      icon: i-heroicons-outline-cube
-      class: "col-span-4 row-span-2"
-
+faq:
+  items:
+    - label: Do my learners need an account on my site?
+      content: Yes. Each learner is a user of your site with the Student role. An instructor has the Instructor role, a grader the Evaluator role and an administrator the Moderator role.
+    - label: Can I sell a course?
+      content: Yes. You enable "paid course" in the course settings and choose a gateway in Settings, Payment tab. The payment goes through your site's Payments application.
+    - label: What is the difference between a course, a batch and a program?
+      content: The course is the content, in chapters and lessons. The batch brings learners together on one or more courses between two dates. The program chains several courses in a set order.
+    - label: How do live classes work?
+      content: From a batch, you create a Zoom live class. The batch's learners see the list of live classes to attend.
 
 bottom_cta:
-  title: "Ready to transform your customers' learning?"
-  description: "Take control of their learning experience and discover how Frappe Learning can help you strengthen the satisfaction, engagement and independence of your users.<br>Get started today!</br>"
-  card: true
-  class: bg-amber-600/10 dark:bg-amber-800/10
+  title: Ask us your questions about Frappe Learning.
+  description: Tell us who you want to train.
   links:
-    - label: Publish your first course
-      size: md
-      color: orange
-      to: https://cloud.dokos.io
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the marketplace
+      to: https://cloud.dokos.io/marketplace
       target: _blank
-    - label: Learn more about Frappe Learning
-      size: md
-      color: gray
-      to: https://frappe.io/learning
-      target: _blank
-      icon: i-heroicons-outline-arrow-right
-      trailing: true
+      size: xl
+      color: neutral
+      variant: outline

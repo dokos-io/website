@@ -1,130 +1,152 @@
+# English version of content/fr/modules/achats.yml (sources and screenshot notes are there).
+
 navigation:
   title: Purchasing
   icon: i-icon-park-outline-buy
-  description: Manage your purchasing and supply flows.
+  description: Material requests, purchase orders, receipts and purchase invoices.
 
 title: Purchasing
+description: Tracks your purchases from the internal request to the supplier invoice.
 icon: i-icon-park-outline-buy
-description: Optimize your purchasing for seamless procurement.
-author: Frappe Technologies & Contributors
 application: Dokos
 theme: achats-stocks-production
+author: Frappe Technologies, Dokos & Contributors
+
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: erpnext
+docs: https://doc.dokos.io/v5/dokos/achats
+related: [stocks, comptabilite, qualite, etransactions]
 
 hero:
-  title: Optimize your <span class="text-primary">purchasing</span> with Dokos
-  description: Dokos gives you every feature you need to manage purchasing efficiently and smoothly. Built to simplify your processes while offering full transparency, this module lets you streamline your entire supply chain. See how Dokos can help you improve your purchasing management.
-  links:
-    - label: Get started now
-      to: https://cloud.dokos.io
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: The Dokos ecosystem
-    color: sky
-    to: /en
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: From the internal request to the supplier invoice, <span class="text-primary">each step leaves a document</span>.
+  description: The Dokos Purchasing module links the material request, the supplier quotation, the purchase order, the receipt and the purchase invoice. Each document picks up the previous one.
+  image: /modules/achats/hero.webp
+
+for_whom:
+  items:
+    - title: Your teams order by e-mail
+      description: They enter a material request. You turn it into a purchase order and choose the supplier of each item.
+      icon: i-heroicons-inbox-arrow-down
+    - title: You compare suppliers in a spreadsheet
+      description: Each reply becomes a supplier quotation in Dokos. You create the order from the quotation you select.
+      icon: i-heroicons-scale
+    - title: Your supplier invoices arrive as e-invoices
+      description: Invoices received from your approved platform appear in the e-invoice list of the Purchasing module and become purchase invoices.
+      icon: i-heroicons-document-arrow-down
+    - title: A supplier delivers late and nobody records it
+      description: The supplier scorecard calculates a score per period from the receipts and can block new orders.
+      icon: i-heroicons-chart-bar
+
+fit:
+  description: >-
+    A material request starts in Stock or from a sales order. It becomes a purchase order in Purchasing. The
+    purchase receipt puts the items into stock and, if an inspection is required, goes through Quality. The
+    purchase invoice posts to Accounting and is paid with a payment entry. With eTransactions, the e-invoices
+    you receive feed this chain directly.
+  image: /modules/achats/fit.webp
+  reads:
+    - Supplier, Contact and Address
+    - Item, Item Price and Warehouse
+    - Material Request (Stock)
+    - Sales Order, for drop shipping
+    - E-invoices received from the approved platform (eTransactions)
+  adds:
+    - The Purchasing workspace and Buying Settings
+    - Supplier Quotation and Purchase Order
+    - Purchase Receipt (in Stock) and Purchase Invoice (in Accounting)
+    - Supplier Scorecard, with its periods and criteria
+    - Purchase Taxes and Charges Template, Pricing Rules and Promotional Schemes on the buying side
+  depends:
+    - Stock
+    - Accounting
+    - Quality
+    - eTransactions
+
 features:
-  - title: Simplify your purchase requests
-    description: <ui><li>Structure and speed up your purchase requests with an intuitive interface.</li><br><li>Create requests for different departments in a few clicks and assign them to the right people for approval.</br><br><li>Track your needs precisely while keeping control of your costs through centralized management.</br></ui>
-    video: /image/achat/tableau-de-bord-achat.mp4
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Purchase Requests
-      color: sky
-  - title: Optimize your tenders and negotiations
-    description: <ui><li>Compare your suppliers with full transparency.</li><br><li>With Dokos, easily send out tenders, collect proposals, and analyze them to choose the best supplier.</br></li><br><li>Optimize your negotiations with a clear view of proposals and full traceability of the process.</li></ui>
-    image: image/achat/appel-d-offre-nouveau-logo.webp
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Supplier Quotes
-      color: sky
-  - title: Automate your purchase orders
-    description: <ui><li>Create purchase orders in one click once suppliers are selected. <br><li>Automating orders from requests or accepted quotes saves you time while ensuring precise tracking of goods and service receipts.</li></ui>
-    image: image/achat/trois-commande-fournisseur-automatisez-vos-commandes-dachats.webp
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Orders
-      color: sky
-  - title: Excel at tracking your purchases
-    description: <ui><li>Guarantee the compliance of received items with real time tracking. <br><li>Manage product receipt efficiently, run quality checks, and flag discrepancies quickly.<br> <li>Dokos helps you track item availability for full transparency.</ui>
-    image: image/achat/quatre-qualite-modifie-dokos.webp
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Quality
-      color: sky
-  - title: Strengthen your supplier management
-    description: <ui><li>Improve your supplier relationships with a centralized database. <br><li>Track their performance, contracts and transactions in one place.<br><li>Gain visibility and make informed decisions to optimize your business relationships.</li></ui>
-    image: image/achat/cinq-espace-de-travail-achat.webp
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Suppliers
-      color: sky
-  - title: Perfect your purchase invoice management
-    description: <ui><li>Simplify your accounting processes by automating supplier invoices.<br><li>Easily link invoices to purchase orders and track payments.<br><li>Reduce human error and optimize the management of your cash flow.</li></ui>
-    image: image/achat/six-deuxieme-tableau-de-bord-achat.png
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Purchase Invoices
-      color: sky
-  - title: Analyze your purchases in real time
-    description: <ui><li>Get detailed purchasing reports to make informed decisions.<br><li>Track supplier performance, spot savings opportunities, and continuously improve your purchasing processes with up to date analytics.</li></ui>
-    image: image/achat/sept-tableau-de-bord-stock-ok.png
-    image_bg_color: bg-teal-600
-    align: left
-    badge:
-      label: Reports
-      color: sky
-  - title: Connect your stock to your purchasing
-    description: <ui><li>Avoid stockouts or excess inventory with integrated management.<br><li>Dokos synchronizes your stock levels with your purchase orders, helping you plan procurement more accurately while cutting unnecessary costs.</li></ui>
-    image: image/achat/huit-stock-un-approvisionnement-responsable-modifie.webp
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Stock Management
-      color: sky
-  - title: Champion responsible sourcing
-    description: <ui><li>Dokos supports responsible purchasing management.<br><li>Set specific criteria for your suppliers and track your sustainable sourcing goals through rigorous, structured monitoring.</li></ui>
-    video: "/image/achat/tableau-de-bord-achat.mp4"
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Stock Management
-      color: green
-plus_button:
-  label: Discover all our features
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: amber
-  to: /en/modules/achats
+  - title: The material request, where a purchase starts
+    description: >-
+      A material request states a need for items or services, of type Purchase, Material Transfer,
+      Manufacture or Customer Provided. You enter it by hand, or Dokos creates it when an item's stock falls
+      below its reorder level in a warehouse, with the item's default quantity. From the request, Create >
+      Purchase Order opens a dialog that suggests each item's default supplier and creates one order per
+      supplier.
+    image: /modules/achats/feature-demande.webp
+    badge: Material request
+  - title: Supplier quotations compared in Dokos
+    description: >-
+      You send your request for quotation to several suppliers. Each reply is entered as a supplier
+      quotation, with its prices and lead times. From the purchase order, Get Items From > Supplier Quotation
+      copies the lines of the quotation you select. Suppliers blocked by their scorecard are not suggested.
+    badge: Supplier quotation
+  - title: An order that follows the receipt and the invoice
+    description: >-
+      The purchase order takes the address, contact and currency from the supplier record. Its items come
+      from an open material request or a supplier quotation. Once it is submitted, you create the purchase
+      receipt, the purchase invoice and the payment entry from it. In drop shipping, the purchase order stays
+      linked to the sales order, and the Update Delivered Quantity button recalculates the customer's
+      delivery percentage. The over-delivery allowance also applies to orders created from a material
+      request.
+    badge: Purchase order
+  - title: Receipt, inspection and purchase invoice
+    description: >-
+      The purchase receipt confirms the quantities received and puts them into stock. If the item requires
+      it, a quality inspection comes before acceptance, and a purchase return sends back what is rejected.
+      The purchase invoice links to the order or the receipt. E-invoices received from your approved platform
+      appear in the e-invoice list with their status. Dokos creates the purchase invoice as a draft. You check
+      the amount and the due date, match it with the order, then you approve the invoice, or you reject it
+      with a reason that is sent back to the platform.
+    badge: Receipt and invoice
+  - title: A scorecard for each supplier
+    description: >-
+      You create a scorecard for each supplier, evaluated per week, month or year. Each criterion (quality
+      of the items received, delivery time, response time to requests for quotation) has a formula built on
+      variables such as the quantities received, accepted or rejected, and a weight. The weights add up to
+      100. The current score weights the last twelve periods. Depending on the standing, Dokos shows a
+      warning or blocks requests for quotation and purchase orders for this supplier.
+    badge: Supplier evaluation
+
+install:
+  description: The Purchasing module is part of Dokos. There is nothing else to install.
+  steps:
+    - title: On Dokos Cloud
+      description: Create your site from your Dokos Cloud dashboard. Dokos is installed with the Purchasing module. Included in every plan.
+    - title: Self-hosted
+      description: "<code>bench get-app https://gitlab.com/dokos/dokos</code> then <code>bench --site your-site install-app erpnext</code>."
+    - title: To receive e-invoices
+      description: Install the eTransactions application from the marketplace and enter the connection to your approved platform.
+
+faq:
+  items:
+    - label: Can a material request cover several suppliers?
+      content: >-
+        Yes. The Create > Purchase Order dialog asks for a supplier for each item. If all items have the same
+        supplier, Dokos creates one order. Otherwise it creates one order per supplier.
+    - label: Can I remove an item from an order that has already been received?
+      content: >-
+        No. Items already received can no longer be removed from the purchase order.
+    - label: What happens to an e-invoice that I do not process?
+      content: >-
+        After the delay configured on the approved platform, its status changes to Abandoned. You can still
+        open it and reactivate it by hand. A rejected invoice cannot be brought back automatically: you ask
+        the supplier to send it again.
+    - label: How do I avoid ordering from a supplier with a poor score?
+      content: >-
+        On the supplier's scorecard, you link an action to a standing: a warning when a request for quotation
+        or an order is created, or a block on these documents for this supplier.
+
 bottom_cta:
-  title: Master every step of your purchasing with Dokos.
-  description: Gain efficiency, reduce costs, and keep an overview of your processes. Our open source solution adapts to your needs for agile, high performing purchasing management. A hundred companies already trust us, why not you?
-  class: bg-amber-600/10 dark:bg-amber-800/10
+  title: Ask us your questions about purchasing in Dokos.
+  description: Describe your procurement process, and we will show you the matching documents.
   links:
-    - label: Get started now
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

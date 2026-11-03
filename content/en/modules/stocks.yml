@@ -1,110 +1,152 @@
+# English version of content/fr/modules/stocks.yml (sources and screenshot notes are there).
+
 navigation:
-    title: Stock
-    icon: i-vaadin-stock
-    description: Track your movements, stock valuation, and your supply chain.
+  title: Stock
+  icon: i-vaadin-stock
+  description: Items, warehouses, movements and valuation.
 
 title: Stock
+description: Records each receipt, delivery and transfer of items, by warehouse, batch and serial number.
 icon: i-vaadin-stock
-description: Simplify your stock management with a state-of-the-art distribution tool
 application: Dokos
 theme: achats-stocks-production
-author: Frappe Technologies & Contributors
+author: Frappe Technologies, Dokos & Contributors
+
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: erpnext
+docs: https://doc.dokos.io/v5/dokos/stocks
+related: [achats, ventes, production, qualite]
 
 hero:
-  title: Simplify your <span class="text-primary">stock</span> management with a state-of-the-art distribution tool
-  description: Make stock and distribution management easier. Whether you're a manufacturer, a distributor, or a retailer, Dokos optimizes every part of your supply chain, from receiving goods to delivering to the end customer.
-  links:
-    - label: Get started
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: The Dokos ecosystem
-    color: sky
-    to: "/en"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Each item movement <span class="text-primary">leaves a stock entry</span>.
+  description: The Dokos Stock module records receipts, deliveries and transfers between your warehouses. It tells you what is in stock, what is reserved and what is expected.
+  image: /modules/stocks/hero.webp
 
+for_whom:
+  items:
+    - title: You count your stock in a spreadsheet
+      description: Purchase receipts and delivery notes update the stock. The Stock Balance report gives the quantity and value per warehouse.
+      icon: i-heroicons-table-cells
+    - title: You must trace a batch or a serial number
+      description: Each receipt and each delivery of a tracked item requires its batch or serial number. You find the history from the batch record.
+      icon: i-heroicons-qr-code
+    - title: You find out about stock-outs too late
+      description: The Stock Projected Qty report calculates the projected quantity. A reorder level creates the material request for you.
+      icon: i-heroicons-exclamation-triangle
+    - title: You have several storage locations
+      description: Warehouses form a tree, down to the aisle or the shelf. A transfer goes through an In Transit status.
+      icon: i-heroicons-building-office-2
+
+fit:
+  description: >-
+    The documents of the other modules move the stock. The purchase receipt created from Purchasing brings
+    items in. The delivery note created from Sales takes them out. The work order from Manufacturing consumes
+    and produces. Each movement writes an entry to the stock ledger and, in perpetual inventory, its journal
+    entry in Accounting.
+  image: /modules/stocks/fit.webp
+  reads:
+    - Item, Item Group and Unit of Measure
+    - Sales Order and Purchase Order
+    - Work Order (Manufacturing)
+    - The warehouse's stock account (Accounting)
+  adds:
+    - The Stock workspace and Stock Settings
+    - Warehouse, Batch, Serial No and Item Variants
+    - Purchase Receipt, Delivery Note, Packing Slip and Stock Entry
+    - Material Request, Stock Reservation and Quality Inspection
+    - The Stock Balance, Stock Projected Qty and Stock Ageing reports
+  depends:
+    - Purchasing
+    - Sales
+    - Manufacturing
+    - Quality
+    - Accounting
 
 features:
-  - title: Item and stock management
-    description: "With Dokos, you can manage your items with precision. From tracking product variants to serial numbers and batches, every product can be uniquely identified, making management and traceability easier.<ul><li><span class='font-bold'>Item variants:</span> Easily manage different versions of the same product (size, color, model).</li><li><span class='font-bold'>Barcodes and labeling: </span>Simplify receiving and shipping operations with built-in barcode management.<li><span class='font-bold'>Batch and serial number tracking:</span> Track each item, from manufacturing or purchase through to sale, for full traceability."
-    image: "image/stock/un-articles.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Items
-      color: sky
-  - title: Automated stock tracking.
-    description: "Manage all your transactions in real time, reducing the risk of errors and boosting your productivity. <ul><li><span class='font-bold'>Stock entry:</span> Automatic logging of material receipts from purchase orders.</li><li><span class='font-bold'>Stock exit:</span> Manage customer deliveries with real-time tracking.</li><li><span class='font-bold'>Inter-warehouse transfers:</span> Simplify managing multiple warehouses by transferring products between sites.</li><li><span class='font-bold'>Stock reconciliation:</span> Adjust stock quickly whenever theoretical and physical stock differ.</li></ul>"
-    image: "image/stock/deux-mouvement-de-stock.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Stock movement
-      color: sky
-  - title: Automated planning and replenishment.
-    description: "Optimize your stock levels with advanced planning and threshold management features. <ul><li><span class='font-bold'>Replenishment thresholds:</span> Set minimum and maximum thresholds for each item to avoid stockouts.</li><li><span class='font-bold'> Automated material requests:</span> Automatic replenishment triggers based on production or sales forecasts. </li><li><span class='font-bold'>Stock in transit:</span> Track in real time the items being transferred between your warehouses."
-    image: "image/stock/trois-articles-en-penuries.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Planning
-      color: sky
-  - title: Multi-warehouse management
-    description: "Dokos enables efficient management of multiple warehouses, each with defined internal locations for granular stock control. <ul><li><span class='font-bold'>Stock by warehouse and location:</span> Manage warehouses spread across several sites and optimize the flow of materials between them.</li><li><span class='font-bold'> Global visibility:</span> View and track your stock levels across all your warehouses in a single dashboard."
-    image: "image/stock/quatre-tableau-de-bord-stock.svg"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Multi-warehouse
-      color: sky
-  - title: Inventory, audits, and stock valuation
-    description: "Dokos helps you track inventory in real time while simplifying audits and stock valuation. <ul><li><span class='font-bold'>Audits and cycle counting:</span> Plan and run periodic inventories to make sure your stock data stays accurate.</li><li><span class='font-bold'> Stock valuation:</span> Use the valuation method suited to your company (FIFO, LIFO, average cost). </li><li><span class='font-bold'>Perishable item management:</span> Track expiry dates to minimize losses from expired products. "
-    image: "image/stock/recapitulatif-stocks.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Inventory
-      color: sky
-  - title: Real-time reports and visibility
-    description: "Make informed decisions with detailed reports and precise performance indicators.<ul><li><span class='font-bold'> Stock valuation report:</span> Track the value of your stock with instant reports.</li><li><span class='font-bold'> Low stock report:</span> Quickly identify items that need replenishing.</li><li><span class='font-bold'>Stock movement analysis:</span> Get detailed reports on item receipts, issues, and transfers."
-    image: "image/stock/espace-travail-stock.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Reports
-      color: sky
+  - title: Items tracked by variant, batch or serial number
+    description: >-
+      A template item carries attributes (size, colour) and Dokos creates its variants. You tick Has Batch No
+      and each movement of the item requires a batch, with an expiry date and automatic batch creation at
+      receipt. You tick Has Serial No and each unit has its own record, which links the original purchase or
+      manufacturing document, the customer delivered, the warranty and the status. Only serial numbers with
+      the Available status can be delivered.
+    image: /modules/stocks/feature-articles.webp
+    badge: Items
+  - title: Warehouses as a tree
+    description: >-
+      A warehouse is a storage location. You nest groups and sub-warehouses, for example Warehouse > Room >
+      Row > Shelf. Each warehouse carries its company's abbreviation and a default account, which shows its
+      movements in the general ledger. After saving, the Stock Balance report gives the warehouse's quantity
+      and valuation, and a button recalculates the values from the stock ledger entries.
+    image: /modules/stocks/feature-entrepots.webp
+    badge: Warehouses
+  - title: Receipts, deliveries and transfers
+    description: >-
+      The purchase receipt brings in the items ordered. The delivery note takes them out for a customer, with
+      a packing slip if needed. The stock entry transfers items between warehouses, with an In Transit status
+      between departure and arrival. Sales and purchase returns pick up the original document. A quality
+      inspection can be required before the receipt, and a sample can be kept in a dedicated warehouse.
+    image: /modules/stocks/feature-mouvements.webp
+    badge: Movements
+  - title: A projected quantity and a reorder level
+    description: >-
+      For each item and warehouse, the Stock Projected Qty report calculates the projected quantity from the
+      actual, planned (in manufacturing), ordered and requested quantities, minus the reserved quantities. A
+      stock reservation sets aside a quantity for an order or an internal need, and releases the stock when it
+      is cancelled. On the item, you set a minimum stock and a warehouse. When the stock falls below this
+      reorder level, Dokos creates a material request with the default quantity.
+    badge: Replenishment
+  - title: The value of your stock and its age
+    description: >-
+      The Stock Balance report gives the quantity and value per item and per warehouse. The ageing report
+      shows how long each batch has been in stock. In perpetual inventory, each movement posts its journal
+      entry, and stock delivered but not billed appears in a dedicated accounting report. A BOM analysis
+      report completes the set for manufacturing.
+    badge: Valuation
 
-plus_button:
-  label: Discover all our features
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: sky
-  to: /en/modules/stocks
+install:
+  description: The Stock module is part of Dokos. There is nothing else to install.
+  steps:
+    - title: On Dokos Cloud
+      description: Create your site from your Dokos Cloud dashboard. Dokos is installed with the Stock module. Included in every plan.
+    - title: Self-hosted
+      description: "<code>bench get-app https://gitlab.com/dokos/dokos</code> then <code>bench --site your-site install-app erpnext</code>."
+    - title: First settings
+      description: In Stock Settings, you choose the default warehouse and the negative stock options, then you create your warehouses and your items.
+
+faq:
+  items:
+    - label: Can I change batch tracking on an item that is already in use?
+      content: >-
+        No. As soon as a transaction exists for the item, the batch or serial number option can no longer be
+        turned on or off.
+    - label: How does a serial number get its warehouse?
+      content: >-
+        Only through a stock movement: stock entry, purchase receipt, delivery note or invoice. A number
+        created by hand from the list has no warehouse until it has moved.
+    - label: Does a reservation block the stock for other orders?
+      content: >-
+        Yes. The reserved quantity is removed from the projected quantity as soon as the reservation is
+        submitted. Twenty-five units in stock, five reserved for an order and ten for a project leave ten units
+        available.
+    - label: Do stock movements post to accounting?
+      content: >-
+        Yes in perpetual inventory, through the warehouse's account. Stock delivered but not billed is posted
+        and tracked in a dedicated report.
 
 bottom_cta:
-  title: Try Dokos today!
-  description: Transform your stock management with Dokos and optimize your supply chain starting today.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Ask us your questions about stock in Dokos.
+  description: Describe your warehouses and your flows, and we will show you the matching documents.
   links:
-    - label: Get started
-      to: https://cloud.dokos.io
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

@@ -1,17 +1,18 @@
-title: Engineering
-description: Platform architecture, migration, custom development, AI engineering and training, our engineers work on-site, on our own stack.
+title: We build your business applications
+description: Our engineers build the applications your business management is missing, on Dokos and Frappe, and deliver them in your repositories.
 navigation:
   title: Engineering
   icon: i-heroicons-wrench-screwdriver
+  description: Business applications built on Dokos and Frappe
 
 hero:
   headline:
-    label: Embedded engineers
+    label: Engineering
     icon: i-heroicons-wrench-screwdriver
-  title: Our engineers work<br><span class="text-primary">inside</span> your system, not alongside it.
-  description: We don't write a spec for someone else to build. The people who design Dodock and Dokos are the ones working in your processes, and staying reachable afterwards.
+  title: We <span class="text-primary">build</span> your business applications.
+  description: "Not all of your processes fit into standard software. We build the missing applications on Dokos and Frappe, and deliver them in your repositories, under a free licence. They inherit everything the base provides: documents, permissions, the API and agent access."
   links:
-    - label: Talk to an engineer
+    - label: Write to us
       to: /en/contact
       size: xl
       color: primary
@@ -23,9 +24,9 @@ hero:
 
 scope:
   title: What we take on
-  description: Five kinds of engagement, priced separately because they require different skills and different levels of commitment.
+  description: Five kinds of engagement, quoted per project after a short scoping phase.
   links:
-    - label: See the modules involved
+    - label: See the ecosystem
       to: /en/modules
       color: neutral
       variant: outline
@@ -33,81 +34,81 @@ scope:
       trailing: true
   items:
     - title: Platform architecture
-      description: Sizing, structuring, upgrade strategy, integration with your existing information system. The engagement that avoids the next three.
+      description: Sizing, splitting into applications, upgrade strategy, integration with your information system. The engagement that prevents the next three.
       icon: i-heroicons-squares-2x2
-      badge: From €2,500 excl. VAT
     - title: Migration
-      description: Taking over from a proprietary ERP, a spreadsheet, or an existing Frappe/ERPNext installation. Cutover plan, acceptance testing, rollback procedure.
+      description: Takeover from proprietary software, spreadsheets or an existing Frappe or ERPNext installation. Cutover plan, acceptance tests, rollback procedure.
       icon: i-heroicons-arrow-path
-      badge: From €4,000 excl. VAT
     - title: Custom development
-      description: Purpose-built modules, automations, connectors. Delivered under a free license, in your repositories as well as ours, you're not buying a black box.
+      description: Specific applications, automations, connectors. Delivered under a free licence in your repositories, documented, and deployable without us.
       icon: i-heroicons-code-bracket-square
-      badge: From €3,000 excl. VAT
     - title: AI engineering
-      description: Integrating agents and assisted automations into your business processes, on an open, auditable base that you stay in control of.
+      description: Dokos AI skills written for your processes, and agents connected through the MCP server, with a confirmation before any write and a history of every action.
       icon: i-heroicons-cpu-chip
-      badge: From €4,000 excl. VAT
     - title: Training
-      description: Transferring skills to your teams, all the way to independence. Success looks like you calling us less.
+      description: Your teams learn to configure, adapt and administer the site. The engagement succeeds when you call us less.
       icon: i-heroicons-academic-cap
-      badge: From €800 excl. VAT
+
+sections:
+  - title: What a business application inherits from Dokos
+    description: <strong>An application built on Dokos starts with everything the base already provides.</strong><br><br>You describe your documents and their rules; the forms, lists, reports, permissions and API exist straight away. Your teams reach the application from the same desk, and your AI agents from the same MCP server.
+    image: /modules/dodock/fit.webp
+    align: right
+    features:
+      - title: Documents and approval workflows
+        description: Draft, submit, cancel, history. Each document records who did what.
+        icon: i-heroicons-document-check
+      - title: Permissions by role
+        description: The permissions defined for Dokos apply to your application with no extra work.
+        icon: i-heroicons-shield-check
+      - title: API, webhooks and MCP
+        description: Each document can be read and changed through the API, a webhook, or an agent through Dokos CLI.
+        icon: i-heroicons-code-bracket
 
 operations:
   title: How we work
-  description: How we intervene matters as much as the scope. Here's what we don't compromise on.
+  description: How we work matters as much as the scope.
   items:
-    - title: Embedded, not delegated
-      description: We work in direct contact with your teams, on your real processes. Skills transfer happens along the way, not in a closing session.
-      icon: i-heroicons-users
-    - title: Never a single person
-      description: Engagements are staffed with two people from day one. A project that rests on one person is a risk for you as much as for us.
+    - title: Two people from day one
+      description: Each engagement is followed by two engineers. A project that rests on one person is a risk for you as much as for us.
       icon: i-heroicons-user-group
-    - title: Everything delivered in the open
-      description: Free-license code, documentation, deployment procedures. You can take over the work or hand it to a third party at any time.
+    - title: Alongside your teams
+      description: We work on your real processes, with the people who run them. Skills transfer happens along the way.
+      icon: i-heroicons-users
+    - title: Delivered in your repositories
+      description: Code under a free licence, documentation, deployment procedure. You can take over the work or hand it to a third party at any time.
       icon: i-heroicons-document-text
-    - title: Operations as a natural extension
-      description: What we deploy, we know how to operate. A managed hosting contract can take over once the project ends, but it's never a requirement.
+    - title: On the base we publish
+      description: When a limit comes from Dokos or Dodock, we fix it in the base, and every user gets the fix.
+      icon: i-heroicons-code-bracket-square
+    - title: Operations can follow
+      description: What we build, we know how to run. A managed operations contract can take over at the end of the project.
       icon: i-material-symbols-cloud-done-outline
-
-reversibility:
-  title: What we don't do
-  description: Better to state it here than in the third meeting.
-  items:
-    - title: No license to sell
-      description: The software is free. We bill for engineering work, never for a right to use it.
-      icon: i-heroicons-no-symbol
-    - title: No underscoped fixed-price deals
-      description: We'd rather decline an engagement than underscope it and deliver it half-finished.
-      icon: i-heroicons-scale
-    - title: No built-in dependency
-      description: No closed component, no deliberately withheld knowledge, no exclusivity clause.
-      icon: i-heroicons-lock-open
-    - title: No promises beyond our expertise
-      description: On what we don't master, we say so and point you elsewhere.
+    - title: What is beyond our skills
+      description: When we do not master a subject, we say so and refer you to a partner.
       icon: i-heroicons-hand-raised
 
 faq:
   title: Frequently asked questions
   items:
     - label: How are engagements priced?
-      content: "Per project, after a short scoping phase that defines the perimeter and deliverables. Not every kind of engagement is priced at the same level: an architecture or AI engineering engagement calls on rarer skills than a module build, and the pricing reflects that. For one-off, well-defined needs, the hour packs on the Pricing page are often a better fit than a project."
-    - label: Do you work alongside our internal teams?
-      content: That's the mode of engagement we prefer. Our engineers work in direct contact with your teams rather than at a distance, and the explicit goal is your independence. We also work alongside your existing service providers when the scope is clearly split.
+      content: Per project, after a short scoping phase that sets the scope and the deliverables. An architecture or AI engineering engagement calls on rarer skills than a module build, and the quote reflects that. For a one-off, well-defined need, the hour packs on the Pricing page are often a better fit than a project.
+    - label: Do you work with our internal teams?
+      content: That is the way we prefer to work. Our engineers work alongside your teams, and the goal is your independence. We also work alongside your existing providers when the scope of each one is written down.
     - label: What happens to the code produced?
-      content: "It's published under a free license and committed to your repositories as well as ours. You can take it over, modify it, or hand it to another provider. When a development has broader value, we offer to contribute it back to the product: you keep the benefit and the maintenance becomes ours."
-    - label: Do you work on an installation you didn't deploy?
-      content: Yes, including standard ERPNext and applications from the Frappe ecosystem. The engagement then starts with an audit of what's in place, which may conclude that an upgrade needs to happen before any development.
+      content: "It is published under a free licence and committed to your repositories as well as ours. You can take it over, modify it, or hand it to another provider. When a development is useful to others, we offer to contribute it to the product: you keep the benefit and the maintenance becomes ours."
+    - label: Do you work on an installation you did not deploy?
+      content: Yes, including standard ERPNext and applications from the Frappe ecosystem. The engagement starts with an audit of what is in place. It may conclude that an upgrade must come before any development.
 
 cta:
-  title: Describe the problem before the solution
-  description: The most useful scoping conversations start with what isn't working today, not with the feature imagined to fix it.
+  title: Describe the process that gets stuck
+  description: What does not work today tells us more than a list of features. A first one-hour conversation is enough to scope the work.
   links:
-    - label: Talk to an engineer
+    - label: Write to us
       to: /en/contact
       size: xl
       color: primary
-    - label: Managed hosting
+    - label: Managed operations
       to: /en/exploitation
       size: xl
       color: neutral
