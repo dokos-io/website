@@ -30,9 +30,9 @@ proof:
     - label: Latest major version
       value: Version 5
       note: Released on 16 March 2026, on Frappe and ERPNext v16
-    - label: Licence
-      value: GPLv3
-      note: Dokos, readable and modifiable by you or by a third party
+    - label: Licences
+      value: GPLv3 · AGPLv3 · MIT
+      note: Depending on the repository, readable and modifiable by you or by a third party
     - label: Maintained repositories
       value: "16"
       note: Dodock, Dokos and fourteen applications

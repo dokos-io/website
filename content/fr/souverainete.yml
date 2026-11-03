@@ -30,8 +30,9 @@ proof:
     - label: Hyperscalers américains
       value: Aucun
       note: Dans la chaîne d'hébergement
-    - label: Licence du code exploité
-      value: GPLv3
+    # source: licences déclarées sur gitlab.com/dokos et github.com/frappe
+    - label: Licences du code exploité
+      value: GPLv3 · AGPLv3 · MIT
       note: Lisible, modifiable, reprenable
 
 scope:
@@ -48,7 +49,7 @@ scope:
       description: "OVHcloud SAS en France et Hetzner GmbH en Allemagne. Les prestataires de paiement, Stripe et GoCardless Ltd, sont nommés dans la politique de confidentialité avec les données qu'ils reçoivent."
       icon: i-circle-flags-european-union
     - title: Aucune dépendance logicielle
-      description: L'intégralité du socle exploité est publiée sous GPLv3. Aucune brique propriétaire ne conditionne le fonctionnement de votre installation.
+      description: L'intégralité du socle exploité est publiée sous licence libre, GPLv3, AGPLv3 ou MIT selon le dépôt. Aucune brique propriétaire ne conditionne le fonctionnement de votre installation. Seul le module Certification Caisse demande une licence délivrée par Dokos SAS, pour les clés de signature et le journal externe.
       icon: i-heroicons-lock-open
     - title: SecNumCloud
       description: Nous ne sommes pas qualifiés SecNumCloud et nous ne l'annonçons pas. Cette qualification porte sur l'hébergeur d'infrastructure ; nous intervenons comme exploitant applicatif au-dessus.
@@ -93,8 +94,9 @@ reversibility:
     - title: Changer d'exploitant
       description: Aucune clause d'exclusivité. Vous pouvez confier l'exploitation à un tiers ou la reprendre en interne, avec notre concours.
       icon: i-heroicons-arrows-right-left
+    # source: hostingconditions.md, §5 et §6.2
     - title: Résilier avec trente jours de préavis
-      description: En cas de révision tarifaire, sortie sans pénalité dans les trente jours suivant la notification.
+      description: Vous résiliez à tout moment, trente jours avant la fin du mois en cours. En cas de révision tarifaire, annoncée soixante jours à l'avance, vous pouvez partir sans pénalité dans les trente jours suivant la notification.
       icon: i-heroicons-document-check
 
 faq:
@@ -106,6 +108,9 @@ faq:
       content: "Ils sont nommés dans notre politique de confidentialité, avec pour chacun la raison de son intervention et la nature des données partagées : OVHcloud et Hetzner pour l'hébergement, Stripe et GoCardless Ltd pour les paiements. Tout changement susceptible de toucher vos données vous est notifié au préalable, conformément à l'article 28 du RGPD."
     - label: Comment vérifier l'intégrité de la version installée ?
       content: Nous publions l'empreinte de chaque fichier du périmètre certifié, ainsi que la procédure pour recalculer cette empreinte sur votre propre installation. Le détail figure sur la page Certifications.
+    # source: content/fr/modules/ocr.yml (clés Textract ou Mistral du client) ; dokos-ai.yml (clé OpenRouter du client) ; etransactions.yml (plateforme agréée)
+    - label: Des applications envoient-elles des données hors de l'hébergement ?
+      content: "Oui, quand vous activez une application ou une intégration qui s'appuie sur un service tiers. OCR envoie chaque facture fournisseur déposée à Amazon Textract ou à Mistral OCR pour en lire les données. Dokos AI envoie vos questions et les données consultées au modèle choisi via OpenRouter. eTransactions échange vos factures avec la plateforme agréée que vous avez choisie. Pour OCR et Dokos AI, vous saisissez vos propres clés d'accès dans les paramètres de l'application, et le fournisseur vous facture directement."
     - label: Qui contacter pour une demande RGPD ?
       content: Notre délégué à la protection des données est joignable à dpo@dokos.io, ou par courrier à l'adresse indiquée dans notre [politique de confidentialité](/fr/securityandprivacy). Le délai de réponse est d'un mois à compter de la réception, prolongeable selon les circonstances.
 

@@ -43,8 +43,8 @@ const conditions = [
 const products = ['Dokos', 'Dodock', 'HRMS', 'Bookings']
 
 useSeoMeta({
-  title: 'Ingénieur Logiciel Full-Stack — Dokos recrute',
-  ogTitle: 'Ingénieur Logiciel Full-Stack — Dokos recrute',
+  title: 'Ingénieur Logiciel Full-Stack : Dokos recrute',
+  ogTitle: 'Ingénieur Logiciel Full-Stack : Dokos recrute',
   description: 'On est cinq. On cherche la sixième personne. CDI à Nancy, télétravail flexible, produit open source orienté IA.',
   ogDescription: 'On est cinq. On cherche la sixième personne. CDI à Nancy, télétravail flexible, produit open source orienté IA.',
 })

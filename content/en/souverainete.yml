@@ -31,8 +31,9 @@ proof:
     - label: American hyperscalers
       value: None
       note: In the hosting chain
-    - label: Licence of Dokos
-      value: GPLv3
+    # source: licences declared on gitlab.com/dokos and github.com/frappe
+    - label: Licences of the code we run
+      value: GPLv3 · AGPLv3 · MIT
       note: Readable, modifiable, reusable
 
 scope:

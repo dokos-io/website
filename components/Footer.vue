@@ -49,10 +49,10 @@ const links = computed(() => {
             label: t('company'),
             children: [
                 { label: t('contact'), to: localePath('/contact') },
-                { label: t('termsandconditions'), to: localePath('/termsandconditions') },
-                { label: t('hostingconditions'), to: localePath('/hostingconditions') },
-                { label: t('securityandprivacy'), to: localePath('/securityandprivacy') },
-                { label: t('legal'), to: localePath('/legal') },
+                { label: t('termsandconditions'), to: '/fr/termsandconditions' },
+                { label: t('hostingconditions'), to: '/fr/hostingconditions' },
+                { label: t('securityandprivacy'), to: '/fr/securityandprivacy' },
+                { label: t('legal'), to: '/fr/legal' },
             ],
         },
     ]
@@ -126,18 +126,18 @@ const links = computed(() => {
     hosting_data: Hébergement et données
     pricing: Tarifs
     industries: Secteurs d'activité
-    service-companies: Sociétés de service
+    service-companies: Entreprises de services
     manufacturing: Industrie
-    thirdplaces: Tiers-Lieux
+    thirdplaces: Tiers-lieux
     resources: Ressources
     documentation: Documentation
-    forum: Forum Communautaire
+    forum: Forum communautaire
     gitlab: Gitlab
     partners: Partenaires
     company: Société
     contact: Contactez-nous
-    termsandconditions: Conditions Générales de Ventes
-    hostingconditions: Conditions Générales d'Hébergement
-    securityandprivacy: Sécurité et Confidentialité
-    legal: Mentions Légales
+    termsandconditions: Conditions générales de vente
+    hostingconditions: Conditions générales d'hébergement
+    securityandprivacy: Sécurité et confidentialité
+    legal: Mentions légales
 </i18n>

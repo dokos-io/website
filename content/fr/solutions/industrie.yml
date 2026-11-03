@@ -57,10 +57,27 @@ sections:
       - title: Le Plan d'atelier
         description: L'écran des opérateurs affiche chaque station comme disponible ou occupée.
         icon: i-heroicons-squares-2x2
+  # source : content/fr/modules/achats.yml (sections Demande de matériel, Devis fournisseur, Réception et facture,
+  # Carte de pointage) ; content/fr/modules/etransactions.yml
+  - title: Achetez les composants qui manquent
+    description: Le plan de production crée les demandes de matériel des composants manquants. Depuis la demande, Dokos propose le fournisseur par défaut de chaque article et crée une commande par fournisseur. Le reçu d'achat entre les quantités en stock, après l'inspection qualité si l'article l'exige. Les factures électroniques de vos fournisseurs, reçues de votre plateforme agréée, arrivent en factures d'achat brouillon à rapprocher de la commande.
+    image: /modules/achats/feature-demande.webp
+    align: right
+    features:
+      - title: Une carte de pointage par fournisseur
+        description: Un score par période, calculé sur la qualité des articles reçus et les délais de livraison, peut bloquer les nouvelles commandes à un fournisseur.
+        icon: i-heroicons-chart-bar
+    links:
+      - label: Le module Achats
+        to: /fr/modules/achats
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
   - title: Vos stocks suivent la production
     description: Chaque réception, livraison et transfert écrit une entrée dans le grand livre des stocks. Vous suivez un article par lot ou par numéro de série. Le rapport Projections de stock tient compte des quantités planifiées en fabrication. Sous le point de commande d'un article, Dokos crée la demande de matériel.
     image: /modules/stocks/feature-mouvements.webp
-    align: right
+    align: left
     links:
       - label: Le module Stocks
         to: /fr/modules/stocks
@@ -71,7 +88,7 @@ sections:
   - title: Contrôlez la qualité en réception et en atelier
     description: Un modèle d'inspection, attaché à l'article, définit les lectures à faire et leurs critères. Tant que l'inspection n'est pas faite, le reçu d'achat ou la carte de travail ne peut pas être soumis. Depuis Dokos v5, un contrôle peut être exigé à chaque opération d'une nomenclature. Les non-conformités sont suivies jusqu'à leur action corrective.
     image: /modules/qualite/feature-inspection.webp
-    align: left
+    align: right
     links:
       - label: Le module Qualité
         to: /fr/modules/qualite

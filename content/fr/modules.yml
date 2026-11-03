@@ -30,11 +30,13 @@ scope:
       icon: i-heroicons-circle-stack
       badge: Édités par Dokos SAS
     - title: Les applications Frappe
-      description: CRM, Helpdesk, Insights, Builder, Drive, Wiki, Print Designer, Learning, Newsletter, Blog. Publiées par Frappe, elles tournent sur Dokos telles quelles et nous les exploitons au même titre que les nôtres.
+      # source: champ publisher: frappe des pages content/fr/modules/*.yml (Drive et Print Designer retirés, applications abandonnées)
+      description: CRM, Helpdesk, Insights, Builder, Wiki, Raven, Learning, Newsletter, Blog, Telephony, eCommerce Integrations. Publiées par Frappe, elles tournent sur Dokos telles quelles et nous les exploitons au même titre que les nôtres.
       icon: i-simple-icons-frappe
       badge: Publiées par Frappe
     - title: Les applications éditées par Dokos SAS
-      description: Banking, Bookings, eTransactions, OCR, Construction, Hiboutik, WooCommerce, Tribu, Dokos AI, Dokos CLI. Écrites pour les besoins des entreprises et associations françaises, publiées sur notre GitLab.
+      # source: champ publisher: dokos des pages content/fr/modules/*.yml ; dépôts gitlab.com/dokos
+      description: Bank, Bookings, eTransactions, OCR, Construction, Hiboutik, WooCommerce, Tribu, Dokos AI, Dokos CLI, ainsi que nos versions de Webshop et de Payments. Écrites pour les besoins des entreprises et associations françaises, publiées sur notre GitLab.
       icon: i-heroicons-puzzle-piece
       badge: Éditées par Dokos SAS
 

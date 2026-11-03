@@ -1,5 +1,7 @@
+# Sources : content/fr/modules/{support,raven,wiki,telephony}.yml (navigation.description, README des dépôts
+# frappe/helpdesk, frappe/raven, frappe/wiki, frappe/telephony cités dans ces pages).
 title: Support & collaboration
-description: Le support client et la connaissance interne, connectés aux mêmes données que vos modules commerciaux et opérationnels.
+description: Le support client, la messagerie d'équipe et la documentation interne, connectés aux mêmes données que vos modules commerciaux et opérationnels.
 navigation:
   title: Support & collaboration
   icon: i-heroicons-chat-bubble-left-right
@@ -24,31 +26,31 @@ hero:
 
 modules:
   title: Les applications de ce domaine
-  description: Trois modules complémentaires, indépendants les uns des autres.
+  description: Quatre applications. Helpdesk, Raven et Wiki s'installent séparément. Telephony s'ajoute à Helpdesk ou au CRM.
   items:
     - title: Helpdesk
-      description: Tickets, SLA internes et historique client, connectés aux modules commerciaux.
+      description: Chaque demande client devient un ticket, avec des délais de réponse par priorité, une base de connaissances et un portail où le client suit sa demande.
       icon: i-ri-customer-service-2-line
       to: /fr/modules/support
       logo:
         light: /frappe/helpdesk.png
         dark: /frappe/helpdesk.png
     - title: Raven
-      description: Un assistant conversationnel interne pour retrouver une information dans vos données Dokos.
-      icon: i-heroicons-sparkles
+      description: Une messagerie d'équipe installée sur votre site, avec des canaux, des fils et vos documents Dokos affichés en carte dans la conversation.
+      icon: i-heroicons-chat-bubble-left-right
       to: /fr/modules/raven
       logo:
         light: /frappe/raven.webp
         dark: /frappe/raven.webp
     - title: Wiki
-      description: Une base de connaissances partagée pour documenter vos procédures internes.
+      description: Vos procédures publiées en pages web depuis votre site, avec un historique des révisions et une relecture avant publication.
       icon: i-heroicons-book-open
       to: /fr/modules/wiki
       logo:
         light: /frappe/wiki.png
         dark: /frappe/wiki.png
     - title: Telephony
-      description: Connecte Exotel ou Twilio à votre support client Frappe Helpdesk.
+      description: Relie un compte Exotel ou Twilio à votre site. Vous passez et recevez les appels depuis un ticket Helpdesk ou une fiche CRM, et chaque appel est journalisé.
       icon: i-heroicons-phone
       to: /fr/modules/telephony
 

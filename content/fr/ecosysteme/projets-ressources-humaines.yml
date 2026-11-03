@@ -1,5 +1,7 @@
+# Sources : content/fr/modules/{projets,ressources-humaines,learning}.yml ; billet rentree-2026.md (refonte RH).
+# La paie héritée de Frappe HR n'est pas adaptée à la France (FAQ de ressources-humaines.yml) : elle n'est plus citée.
 title: Projets & ressources humaines
-description: Le suivi des projets, des équipes et de la formation, connecté à la facturation client et à la paie.
+description: Le suivi des projets, des équipes et de la formation, connecté à la facturation client et à la comptabilité.
 navigation:
   title: Projets & ressources humaines
   icon: i-heroicons-user-group
@@ -27,18 +29,18 @@ modules:
   description: Trois modules, utiles à des degrés différents selon que vous facturez du temps ou gérez des équipes internes.
   items:
     - title: Projets
-      description: Planification, suivi des tâches et du temps passé, jusqu'à la facturation client.
+      description: Des projets découpés en tâches, des feuilles de temps, et le coût et le montant facturable de chaque projet.
       icon: i-eos-icons-project-outlined
       to: /fr/modules/projets
     - title: Ressources humaines
-      description: Congés, notes de frais, présences et paie, centralisés par salarié.
+      description: Congés, présences, notes de frais et évaluations, avec une application mobile pour les demandes et les approbations. Le module est en cours de refonte depuis la rentrée 2026.
       icon: i-mdi-human-capacity-increase
       to: /fr/modules/ressources-humaines
       logo:
         light: /frappe/hrms_logo.svg
         dark: /frappe/hrms_logo.svg
     - title: Learning
-      description: Une plateforme de formation interne pour transférer les compétences en équipe.
+      description: Des cours en ligne, des sessions, des quiz et des certificats délivrés depuis votre site.
       icon: i-heroicons-academic-cap
       to: /fr/modules/learning
       logo:

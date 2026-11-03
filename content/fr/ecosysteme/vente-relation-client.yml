@@ -1,3 +1,5 @@
+# Sources : content/fr/modules/{crm,ventes,e-commerce,reservations-de-ressources,construction,tribu,
+# woocommerce,hiboutik,ecommerce-integrations}.yml (navigation.description).
 title: Vente & relation client
 description: CRM, ventes, boutique en ligne, réservations, adhésions et points de vente partagent la même base client, du premier contact à la facture.
 navigation:
@@ -34,7 +36,7 @@ modules:
         light: /frappe/crm.svg
         dark: /frappe/crm.svg
     - title: Ventes
-      description: Devis, commandes, livraisons et factures, avec les tarifs et les stocks du site.
+      description: Devis, commandes, livraisons, factures et abonnements, avec les tarifs et les stocks du site.
       icon: i-ep-sell
       to: /fr/modules/ventes
     - title: Webshop
@@ -52,32 +54,32 @@ modules:
         light: /frappe/bookings_logo.svg
         dark: /frappe/bookings_logo.svg
     - title: Construction
-      description: Un configurateur de devis pour les activités qui vendent des ouvrages.
+      description: Des devis construits par sections avec sous-totaux, puis des factures de situation à l'avancement du chantier.
       icon: i-heroicons-calculator
       to: /fr/modules/construction
       logo:
         light: /frappe/construction_logo.svg
         dark: /frappe/construction_logo.svg
     - title: Tribu
-      description: Membres, adhésions, dons et inscriptions en ligne pour les associations.
+      description: Adhérents, cotisations et dons de votre association, avec inscription et paiement en ligne et facturation automatique.
       icon: i-heroicons-identification
       to: /fr/modules/tribu
     - title: Dokos WooCommerce
-      description: Connecte une boutique WooCommerce existante à vos articles, vos commandes et vos stocks.
+      description: Chaque commande de votre boutique WooCommerce devient une commande client Dokos, et vos stocks repartent vers la boutique.
       icon: i-simple-icons-woocommerce
       to: /fr/modules/woocommerce
       logo:
         light: /frappe/woocommerce_logo.svg
         dark: /frappe/woocommerce_logo.svg
     - title: Hiboutik
-      description: Connecte votre point de vente Hiboutik à votre catalogue et à vos stocks.
+      description: Chaque vente de votre caisse Hiboutik remonte en facture de vente, et vos articles et vos stocks partent vers la caisse.
       icon: i-heroicons-shopping-bag
       to: /fr/modules/hiboutik
       logo:
         light: /frappe/hiboutik_logo.svg
         dark: /frappe/hiboutik_logo.svg
     - title: eCommerce Integrations
-      description: Les connecteurs e-commerce publiés par Frappe, pour d'autres plateformes de vente en ligne.
+      description: Les connecteurs publiés par Frappe pour Shopify, Unicommerce, Zenoti et Amazon, pour vos commandes et vos stocks.
       icon: i-heroicons-shopping-bag
       to: /fr/modules/ecommerce-integrations
 

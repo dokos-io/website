@@ -15,7 +15,7 @@ form:
     placeholder: 'Martine Dupond'
   email:
     label: 'Email'
-    placeholder: 'martine@dokos.io'
+    placeholder: 'martine@exemple.fr'
   company:
     label: 'Société'
     placeholder: 'Votre société/association'

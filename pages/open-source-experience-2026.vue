@@ -26,9 +26,9 @@ defineOgImage('OgImageSaas' as any, { title, description })
 const event = {
   dates: '9 et 10 décembre 2026',
   venue: 'Paris Expo Porte de Versailles, Hall 5.2',
-  address: '1 place de la Porte de Versailles, 75015 Paris',
+  address: '1 place de la Porte de Versailles, entrée A1, 75015 Paris',
   stand: 'Avec Orange, sur son stand',
-  registration: 'https://www.opensource-experience.com/',
+  registration: 'https://www.opensource-experience.com/fr/inscription',
 }
 
 const talks = [
@@ -46,7 +46,7 @@ const talks = [
     when: 'Jeudi 10 décembre, 14 h 00 à 14 h 20',
     room: 'Salle Kirk McKusick',
     format: 'Atelier',
-    description: 'Gilles Viton, responsable du programme communautés open source d\'Orange France, présente la façon dont Orange travaille avec ses partenaires open source. Dokos y intervient aux côtés d\'Orange.',
+    description: 'Gilles Viton, responsable du programme communautés open source d\'Orange France, présente la façon dont Orange travaille avec ses partenaires open source. Charles-Henri Decultot, directeur de Dokos, y intervient à ses côtés.',
     to: 'https://website-27805.eventmaker.io/fr/programme/6abfa3348a2dc0e857955484',
     icon: 'i-heroicons-user-group',
   },
@@ -106,7 +106,7 @@ const expertise = [
 const demos = [
   'Conectt : le parcours d\'une demande de raccordement, de la réception à la clôture',
   'Qualéo : l\'évaluation de la qualité des interactions clients, co-construite avec Orange',
-  'Dokos 5 : la caisse certifiée LNE, la réception de factures électroniques, le rapprochement bancaire',
+  'Dokos 5 : le module Certification Caisse certifié LNE, la réception de factures électroniques, le module Banking',
   'Dokos AI et le serveur MCP : un agent qui prépare une écriture et attend votre validation',
 ]
 </script>

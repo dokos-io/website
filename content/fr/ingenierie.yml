@@ -34,7 +34,7 @@ scope:
       trailing: true
   items:
     - title: Architecture de plateforme
-      description: Dimensionnement, découpage en applications, stratégie de montée de version, articulation avec votre système d'information. La mission qui évite les trois suivantes.
+      description: Dimensionnement, découpage en applications, stratégie de montée de version, articulation avec votre système d'information. Elle se fait avant la migration et les développements.
       icon: i-heroicons-squares-2x2
     - title: Migration
       description: Reprise depuis un logiciel propriétaire, des tableurs ou une installation Frappe ou ERPNext existante. Plan de bascule, jeu de recette, procédure de repli.
@@ -46,7 +46,7 @@ scope:
       description: Des compétences Dokos AI écrites pour vos processus, des agents connectés par le serveur MCP, avec confirmation avant toute écriture et un historique de chaque action.
       icon: i-heroicons-cpu-chip
     - title: Formation
-      description: Vos équipes apprennent à paramétrer, à adapter et à administrer le site. La mission réussit quand vous nous appelez moins.
+      description: Vos équipes apprennent à paramétrer, à adapter et à administrer le site, pour traiter elles-mêmes les demandes courantes.
       icon: i-heroicons-academic-cap
 
 sections:
@@ -70,7 +70,7 @@ operations:
   description: Notre manière d'intervenir compte autant que le périmètre.
   items:
     - title: À deux dès le début
-      description: Chaque mission est suivie par deux ingénieurs. Un projet qui tient à une seule personne est un risque pour vous comme pour nous.
+      description: Chaque mission est suivie par deux ingénieurs. Si l'un est absent, l'autre connaît le projet et reprend le travail.
       icon: i-heroicons-user-group
     - title: Au contact de vos équipes
       description: Nous travaillons sur vos processus réels, avec les personnes qui les tiennent. Le transfert de compétences se fait en chemin.

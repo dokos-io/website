@@ -337,7 +337,7 @@ useSeoMeta({
         <div class="salon-content">
           <div class="salon-header">
             <Icon name="i-heroicons-bolt" class="w-8 h-8" />
-            <h2>Rencontrez-nous à l'Open Source Experience 2025</h2>
+            <h2>Nous étions à Open Source Experience 2025</h2>
           </div>
 
           <UBadge color="orange" size="lg" class="salon-badge">
@@ -356,7 +356,7 @@ useSeoMeta({
           </div>
 
           <UCard class="salon-features-card">
-            <h3>🎯 Nous présenterons en exclusivité</h3>
+            <h3>🎯 Ce que nous avons présenté</h3>
             <ul class="salon-list">
               <li>La démo complète de Qualéo : comment nous avons construit cette solution avec Orange</li>
               <li>Le projet Conectt : orchestrer les raccordements réseau à grande échelle</li>
@@ -368,10 +368,10 @@ useSeoMeta({
           <UButton
             size="xl"
             color="orange"
-            to="#contact"
+            to="/fr/open-source-experience-2026"
             class="salon-cta"
           >
-            Nous contacter
+            Nous retrouver à l'édition 2026, les 9 et 10 décembre
           </UButton>
         </div>
       </UContainer>
@@ -381,7 +381,7 @@ useSeoMeta({
     <section id="contact" class="contact-section">
       <UContainer>
         <UCard class="contact-card">
-          <h2 class="contact-title">Vous ne pouvez pas venir nous rencontrer ?</h2>
+          <h2 class="contact-title">Parlons de votre projet</h2>
           <p class="contact-description">
             Nous serions ravis d'échanger avec vous sur vos enjeux de gestion d'entreprise et vos besoins en développements métiers. Sans engagement, sans discours commercial.
           </p>

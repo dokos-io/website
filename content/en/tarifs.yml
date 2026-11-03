@@ -10,7 +10,7 @@ hero:
     label: Public pricing, excluding VAT
     icon: i-heroicons-document-text
   title: Pricing
-  description: The prices below are those of our hosting terms and conditions, in effect since 1 September 2024. Every module and every application is included in each plan. You pay for server resources, never for user accounts.
+  description: The prices below are those of our hosting terms and conditions, in effect since 1 September 2024. Each plan sets a monthly CPU time, a database size and a storage space. The number of user accounts does not enter into the price.
 
 lanes:
   title: ""

@@ -1,3 +1,4 @@
+# Sources : content/fr/modules/{achats,stocks,production,qualite}.yml (navigation.description, sections).
 title: Achats, stocks & production
 description: Du bon de commande à la sortie d'entrepôt, une seule chaîne d'approvisionnement, de stock et de fabrication.
 navigation:
@@ -27,19 +28,19 @@ modules:
   description: Utiles séparément pour une PME de distribution, ou combinés pour un site de production.
   items:
     - title: Achats
-      description: Bons de commande, réception, rapprochement avec les factures fournisseurs.
+      description: Demandes de matériel, devis et commandes fournisseurs, réceptions et factures d'achat, avec une carte de pointage par fournisseur.
       icon: i-icon-park-outline-buy
       to: /fr/modules/achats
     - title: Stocks
-      description: Suivi des mouvements, valorisation et gestion multi-entrepôts et multi-emplacements.
+      description: Chaque entrée, sortie et transfert d'articles, par entrepôt, lot et numéro de série, avec la valorisation du stock.
       icon: i-vaadin-stock
       to: /fr/modules/stocks
     - title: Production
-      description: Ordres de fabrication, nomenclatures et suivi des coûts de production.
+      description: Nomenclatures, ordres de travail et cartes de travail, avec le coût réel de chaque lot fabriqué.
       icon: i-fluent-manufacturer-24-regular
       to: /fr/modules/production
     - title: Qualité
-      description: Contrôles à chaque étape, non-conformités tracées et actions correctives.
+      description: Procédures, objectifs mesurés, inspections en réception et en atelier, et non-conformités suivies jusqu'à leur action corrective.
       icon: i-carbon-rule-data-quality
       to: /fr/modules/qualite
 

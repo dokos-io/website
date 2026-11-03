@@ -1,5 +1,5 @@
 title: Éditeur open source
-description: Dokos SAS maintient Dodock, Dokos et une douzaine d'applications, publiés sous licence GPLv3 sur GitLab, avec l'historique complet des modifications.
+description: Dokos SAS maintient Dodock, Dokos et quatorze applications, publiés sous licence libre sur GitLab, avec l'historique complet des modifications.
 navigation:
   title: Éditeur open source
   icon: i-heroicons-code-bracket-square
@@ -10,7 +10,7 @@ hero:
     label: Code public sur gitlab.com/dokos
     icon: i-simple-icons-gitlab
   title: Nous éditons <span class="text-primary">Dokos</span>, Dodock<br>et les applications autour.
-  description: Dodock est notre version du cadre applicatif Frappe. Dokos est la gestion d'entreprise construite dessus, dérivée d'ERPNext. Autour, nous maintenons les applications dont les entreprises et les associations françaises ont besoin. Tout est publié sous licence GPLv3, et vous pouvez lire chaque modification avant de nous confier quoi que ce soit.
+  description: Dodock est notre version du cadre applicatif Frappe. Dokos est la gestion d'entreprise construite dessus, dérivée d'ERPNext. Autour, nous maintenons les applications dont les entreprises et les associations françaises ont besoin. Tout est publié sous licence libre, GPLv3, AGPLv3 ou MIT selon le dépôt, et vous pouvez lire chaque modification avant de nous confier quoi que ce soit.
   links:
     - label: Voir le code
       to: https://gitlab.com/dokos
@@ -29,8 +29,9 @@ proof:
     - label: Dernière version majeure
       value: Version 5
       note: Publiée le 16 mars 2026, sur Frappe et ERPNext v16
-    - label: Licence
-      value: GPLv3
+    # source: licences déclarées sur gitlab.com/dokos (dokos, hrms, webshop : GPLv3 ; bank, bookings, construction, etransactions, ocr, tribu, certification_caisse : AGPLv3 ; dodock, payments, dokos-ai, dokos-cli : MIT)
+    - label: Licences
+      value: GPLv3 · AGPLv3 · MIT
       note: Lisible, modifiable, reprenable par vous ou par un tiers
     - label: Dépôts maintenus
       value: "16"
@@ -76,12 +77,13 @@ scope:
       badge: Application
       to: /fr/modules/reservations-de-ressources
     - title: eTransactions
-      description: Réception des factures électroniques CII, Factur-X et UBL, et raccordement à une plateforme agréée.
+      description: Réception des factures électroniques CII, Factur-X et UBL, et raccordement à une plateforme agréée. L'émission est en cours de finalisation.
       icon: i-heroicons-document-check
       badge: Application
       to: /fr/modules/etransactions
     - title: OCR
-      description: Extraction des données des factures fournisseur, avec Amazon Textract.
+      # source: content/fr/modules/ocr.yml (Amazon Textract ou Mistral OCR)
+      description: Extraction des données des factures fournisseur, avec Amazon Textract ou Mistral OCR.
       icon: i-heroicons-document-magnifying-glass
       badge: Application
       to: /fr/modules/ocr
@@ -141,7 +143,8 @@ operations:
       description: Pour le périmètre certifié, l'empreinte de chaque fichier est publiée avec la procédure pour la recalculer sur votre installation.
       icon: i-heroicons-finger-print
     - title: Un journal des versions
-      description: Chaque changement est décrit sur doc.dokos.io/nouveautes, et les versions majeures font l'objet d'un webinaire.
+      # source: https://doc.dokos.io/nouveautes (édition du 28 septembre 2026) ; blog/2026/webinaireV5.md
+      description: Chaque changement est décrit sur doc.dokos.io/nouveautes. La dernière édition, du 28 septembre 2026, présente le module Banking et le prévisionnel de trésorerie en bêta. Les versions majeures font l'objet d'un webinaire, comme la version 5 en mars 2026.
       icon: i-heroicons-newspaper
     - title: Une communauté
       description: Le forum community.dokos.io, les tiers-lieux et fablabs rencontrés au Faire Festival, les contributeurs externes. Nous sommes aussi membre fondateur de l'association PDP Libre.
@@ -149,7 +152,7 @@ operations:
 
 reversibility:
   title: Ce que la licence vous donne
-  description: Publier sous GPLv3 engage l'éditeur autant que l'utilisateur.
+  description: Publier sous licence libre engage l'éditeur autant que l'utilisateur.
   items:
     - title: Lire le code
       description: Vos équipes ou un tiers peuvent auditer le logiciel, sans accord de confidentialité.

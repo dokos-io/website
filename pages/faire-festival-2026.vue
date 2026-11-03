@@ -2,8 +2,8 @@
 import ContactForm from '~/components/ContactForm.vue'
 
 const form = {
-  title: 'On se retrouve ?',
-  description: 'Vous venez au Faire Festival et vous voulez qu\'on se croise ? Vous ne pouvez pas venir mais vous êtes curieux·se de savoir ce que Dokos peut faire pour vous ? Écrivez-nous.',
+  title: 'Gardons le contact',
+  description: 'Nous nous sommes croisés au Faire Festival, ou vous n\'avez pas pu venir. Présentez-nous votre fablab, votre tiers-lieu ou votre association, nous vous répondons.',
   name: { label: 'Nom', placeholder: 'Martine Dupond' },
   email: { label: 'Email', placeholder: 'martine@mon-fablab.fr' },
   company: { label: 'Structure', placeholder: 'Votre fablab / tiers-lieu / association' },
@@ -13,9 +13,9 @@ const form = {
 }
 
 const montage = [
-  { number: '01', title: 'Écouter', description: 'Vos besoins font évoluer le logiciel. Pas l\'inverse.' },
+  { number: '01', title: 'Écouter', description: 'Vos besoins font évoluer le logiciel.' },
   { number: '02', title: 'Construire ensemble', description: 'Un commun numérique. Pensé et construit avec les makers.' },
-  { number: '03', title: 'Fabriquer, pas administrer', description: 'Adhésions, réservations, facturation, documentation… On gère. Place au Faire.' },
+  { number: '03', title: 'Fabriquer d\'abord', description: 'Adhésions, réservations, facturation, documentation… On gère. Place au Faire.' },
   { number: '04', title: 'Rester libre', description: 'Votre outil, vos données, vos règles. Un numérique qui vous appartient vraiment.' }
 ]
 
@@ -74,8 +74,8 @@ const features = [
 useSeoMeta({
   title: 'Dokos au Faire Festival 2026',
   ogTitle: 'Dokos au Faire Festival 2026 : le logiciel libre des Makers',
-  description: 'Retrouvez Dokos au Faire Festival 2026, 28-30 mai à Toulouse. Le logiciel libre de gestion pensé pour les makers, fablabs et tiers-lieux.',
-  ogDescription: 'Retrouvez Dokos au Faire Festival 2026, 28-30 mai à Toulouse. Le logiciel libre de gestion pensé pour les makers, fablabs et tiers-lieux.',
+  description: 'Dokos était au Faire Festival 2026, du 28 au 30 mai à Toulouse. Le logiciel libre de gestion des fablabs, makerspaces et tiers-lieux.',
+  ogDescription: 'Dokos était au Faire Festival 2026, du 28 au 30 mai à Toulouse. Le logiciel libre de gestion des fablabs, makerspaces et tiers-lieux.',
 })
 </script>
 
@@ -104,7 +104,7 @@ useSeoMeta({
         <div class="hero-dateline">
           <Icon name="i-heroicons-map-pin-solid" class="w-4 h-4" />
           <span>28 · 29 · 30 MAI 2026</span>
-          <span class="hero-sep">—</span>
+          <span class="hero-sep">·</span>
           <span>TOULOUSE</span>
         </div>
 
@@ -117,13 +117,13 @@ useSeoMeta({
 
         <p class="hero-sub">
           Le logiciel libre des makers.<br>
-          Construisons quelque chose ensemble.
+          Merci pour ces trois jours à Toulouse.
         </p>
 
         <!-- Trust chips — avant les CTAs pour réduire la friction (neuromarketing) -->
         <div class="hero-chips">
           <span class="chip chip--outline">Commun du numérique</span>
-          <span class="chip chip--outline">100 % open source</span>
+          <span class="chip chip--outline">Logiciel libre GPLv3</span>
           <span class="chip chip--outline">Vos données, vos règles</span>
         </div>
 
@@ -131,8 +131,8 @@ useSeoMeta({
           <UButton to="https://dokos.io" target="_blank" size="xl" class="btn-hero-primary">
             Découvrir dokos.io
           </UButton>
-          <UButton to="#trouver" size="xl" class="btn-hero-ghost">
-            Nous trouver au festival →
+          <UButton to="/fr/blog/2026/faire-festival-retour" size="xl" class="btn-hero-ghost">
+            Lire notre retour du festival →
           </UButton>
         </div>
       </UContainer>
@@ -165,7 +165,7 @@ useSeoMeta({
       <UContainer>
         <div class="montage-header">
           <span class="section-eyebrow">Notice de montage</span>
-          <h2 class="section-h2">Comment fonctionne Dokos&nbsp;?</h2>
+          <h2 class="section-h2">Comment nous construisons Dokos</h2>
         </div>
 
         <div class="montage-grid">
@@ -236,7 +236,7 @@ useSeoMeta({
         <div class="trouver-grid">
 
           <div class="trouver-main">
-            <span class="section-eyebrow">Où nous trouver</span>
+            <span class="section-eyebrow">Où nous étions</span>
             <h2 class="trouver-title">Le Cyber Café<br>du Faire</h2>
 
             <div class="trouver-infos">
@@ -256,13 +256,13 @@ useSeoMeta({
 
             <p class="trouver-desc">
               L'espace permanent du festival dédié aux logiciels libres et propriétaires.
-              Venez tester, comparer, poser vos questions, on vous y attend !
+              Pendant trois jours, les visiteurs y ont testé et comparé les outils, et nous ont posé leurs questions sur Dokos.
             </p>
           </div>
 
           <!-- Autres outils — validation sociale peer-to-peer (neuromarketing) -->
           <div class="trouver-peers">
-            <h3 class="peers-title">On y sera avec…</h3>
+            <h3 class="peers-title">Nous y étions avec…</h3>
             <div class="peers-chips">
               <span v-for="tool in otherTools" :key="tool" class="chip chip--solid">{{ tool }}</span>
             </div>
@@ -282,7 +282,7 @@ useSeoMeta({
 
       <UContainer class="relative z-10">
         <div class="programme-header">
-          <span class="section-eyebrow section-eyebrow--light">Programme</span>
+          <span class="section-eyebrow section-eyebrow--light">Le programme de l'édition 2026</span>
           <h2 class="section-h2 section-h2--light">Parcours Communs Numériques</h2>
         </div>
 
@@ -307,7 +307,7 @@ useSeoMeta({
 
         <div class="programme-note">
           <Icon name="i-heroicons-information-circle" class="w-5 h-5 flex-shrink-0" />
-          <p>Le Cyber Café du Faire est ouvert en continu sur les 3 jours, avec des personnes ressources pour accompagner la découverte des outils.</p>
+          <p>Le Cyber Café du Faire était ouvert en continu sur les 3 jours, avec des personnes ressources pour accompagner la découverte des outils.</p>
         </div>
       </UContainer>
     </section>
@@ -327,10 +327,10 @@ useSeoMeta({
               alt="Tampon Faire Festival 2026 Dokos"
               class="contact-tampon"
             >
-            <h2 class="contact-h2">On se retrouve&nbsp;?</h2>
+            <h2 class="contact-h2">Gardons le contact</h2>
             <p class="contact-sub">
-              Vous venez au festival et vous voulez qu'on se croise,
-              ou vous avez une question sur Dokos, écrivez-nous. On répond vite.
+              Nous nous sommes croisés à Toulouse, ou vous avez une question sur Dokos.
+              Écrivez-nous, nous vous répondons.
             </p>
           </div>
 

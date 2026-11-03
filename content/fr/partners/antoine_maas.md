@@ -44,7 +44,7 @@ location: 272 Allée Coignet, 59000 Lille
   to: https://amingenierie-opensource.fr/#booking
   target: _blank
   ---
-  L'application Booking pour dokos permet à vos usagers de réserver en ligne votre espace de coworking, salle de réunion ou encore machine pour votre fablab. Mettez en vente des crédits de réservations pré-payé ou des abonnements prélévés automatiquement.
+  L'application Bookings pour Dokos permet à vos usagers de réserver en ligne votre espace de coworking, salle de réunion ou encore machine pour votre fablab. Mettez en vente des crédits de réservations pré-payé ou des abonnements prélévés automatiquement.
   ::
   ::card
   ---

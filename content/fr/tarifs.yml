@@ -9,7 +9,8 @@ hero:
     label: Tarifs publics, hors taxes
     icon: i-heroicons-document-text
   title: Tarifs
-  description: Les prix ci-dessous sont ceux de nos conditions générales d'hébergement, en vigueur depuis le 1er septembre 2024. Tous les modules et toutes les applications sont compris dans chaque formule ; vous payez les ressources serveur, jamais les comptes utilisateurs.
+  # source: hostingconditions.md, §6.1 (tarifs au 01/09/2024, fondés sur le CPU, la base de données et le stockage)
+  description: Les prix ci-dessous sont ceux de nos conditions générales d'hébergement, en vigueur depuis le 1er septembre 2024. Chaque formule fixe un temps de calcul (CPU) mensuel, une taille de base de données et un espace de stockage. Le nombre de comptes utilisateurs n'entre pas dans le prix.
 
 lanes:
   title: ""
@@ -22,6 +23,8 @@ lanes:
         À partir de 499 €, les garanties de niveau de service s'appliquent : délais de
         prise en charge et de rétablissement contractuels, du lundi au vendredi de 8h à 20h.
         En dessous, le support répond aux questions d'usage sans engagement de délai.
+        Ces quatre formules sont hébergées sur des serveurs mutualisés : l'activité des autres
+        sites du serveur peut influer sur les performances du vôtre.
       columns:
         - Formule
         - CPU / mois
@@ -35,9 +38,11 @@ lanes:
         - ["999 € HT / mois", "6 h", "4 Go", "50 Go", "Garanties de niveau 2"]
       footnote: >-
         Hébergement dédié à partir de 1 199 € HT par mois (2 vCPU, 8 Go de RAM, 100 Go
-        de stockage), jusqu'à 9 999 € HT pour 16 vCPU, 128 Go et 1 To. Les formules
+        de stockage), jusqu'à 9 999 € HT pour 16 vCPU, 128 Go et 1 To. Vous disposez de
+        deux serveurs dédiés, un pour l'application et un pour la base de données, et
+        vous créez autant de benchs et de sites que vous le souhaitez. Les formules
         dédiées comprennent toutes le support technique standard et les garanties de
-        niveau 2. Ressources exclusives, benchs et sites illimités.
+        niveau 2.
       cta:
         label: Voir les garanties en détail
         to: /fr/exploitation
@@ -75,8 +80,8 @@ lanes:
       tagline: Vous démarrez seul, sur une instance mutualisée.
       caution: >-
         Ces deux formules ne comprennent ni support ni délai de rétablissement.
-        Elles conviennent à un essai, à une maquette ou à un usage non critique, pas
-        à un système de gestion dont dépend votre activité.
+        Elles conviennent à un essai, à une maquette ou à un usage non critique. Si
+        votre activité dépend du site, choisissez une formule avec support.
       columns:
         - Formule
         - CPU / mois
@@ -121,11 +126,13 @@ faq:
   title: Questions sur la facturation
   items:
     - label: Pourquoi facturer au CPU plutôt qu'à l'utilisateur ?
-      content: Parce que le coût réel d'une instance dépend de ce qu'elle calcule, pas du nombre de personnes qui s'y connectent. Une facturation à l'utilisateur pénalise les organisations qui ouvrent l'outil largement, et c'est l'usage que nous voulons encourager. Si votre consommation dépasse durablement la formule souscrite, nous convenons du passage au palier correspondant.
+      # source: hostingconditions.md, §6.1 (bascule sur le forfait supérieur)
+      content: Le coût d'une instance dépend de ce qu'elle calcule et de ce qu'elle stocke. Vous pouvez donc ouvrir l'outil à toute votre équipe sans changer de formule. Si votre consommation de CPU, de base de données ou de stockage dépasse celle de votre formule, vous passez à la formule supérieure qui correspond à votre consommation.
     - label: Les tarifs peuvent-ils augmenter en cours de contrat ?
       content: Une révision est possible en cas d'évolution significative des conditions économiques ou réglementaires. Elle suppose un préavis écrit de soixante jours, et vous pouvez alors résilier sans pénalité en le notifiant dans les trente jours. Sans réponse de votre part, les nouveaux prix s'appliquent à la date indiquée.
     - label: Quel est le préavis de résiliation ?
-      content: Trente jours avant la fin de la période mensuelle en cours, par courrier recommandé ou par email. La résiliation prend effet à la fin du mois suivant la réception du préavis. Aucun remboursement partiel n'est effectué sur une période déjà facturée.
+      # source: hostingconditions.md, §5
+      content: Trente jours avant la fin de la période mensuelle en cours, par courrier recommandé avec accusé de réception ou par email à help@dokos.io. La résiliation prend effet à la fin du mois suivant la réception du préavis. Aucun remboursement partiel n'est effectué sur une période déjà facturée. Le contrat est mensuel et se renouvelle chaque mois ; le premier mois est facturé au prorata des jours restants.
     - label: Peut-on être accompagné en auto-hébergement ?
       content: Oui. Les packs d'accompagnement sont ouverts à tous les utilisateurs, y compris ceux qui hébergent Dokos eux-mêmes. L'exploitation sous contrat, en revanche, suppose que nous ayons la main sur l'infrastructure ou un accès équivalent. C'est ce qui rend les délais tenables.
     - label: Les tarifs affichés sont-ils à jour ?

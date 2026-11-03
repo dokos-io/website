@@ -11,7 +11,7 @@ Le module **Certification Caisse** de Dokos est certifié par le LNE (Laboratoir
 
 Votre site Dokos est couvert par la certification quand deux conditions sont réunies.
 
-1. **Le module Certification Caisse est installé sur le site.** Il inscrit chaque vente, paiement, annulation et impression dans un journal signé, et il produit les archives fiscales que vous conservez.
+1. **Le module Certification Caisse est installé sur le site.** Il inscrit chaque vente, paiement, annulation et impression dans un journal signé, et il produit les archives fiscales que vous conservez. Son code est publié sur [gitlab.com/dokos/certification_caisse](https://gitlab.com/dokos/certification_caisse), sous licence AGPLv3.
 2. **Une licence d'utilisation délivrée par Dokos SAS est importée dans le module.** Vous la demandez en [nous écrivant](/fr/contact). Sans licence active, le module ne signe pas le journal.
 
 ### Pourquoi la licence est obligatoire
@@ -19,14 +19,22 @@ Votre site Dokos est couvert par la certification quand deux conditions sont ré
 La licence apporte trois éléments que la certification exige.
 
 - **Une clé de signature propre à votre société.** La licence contient une paire de clés générée pour vous. Chaque enregistrement du journal est signé avec la clé privée. La clé publique permet à un contrôleur de vérifier vos archives fiscales.
-- **Une preuve conservée hors de votre serveur.** Dokos est un logiciel libre et vous administrez votre base de données. Une signature stockée sur votre seul serveur ne prouve pas que le journal n'a pas été recalculé après coup. Avec la licence, votre site transmet régulièrement au journal externe de Dokos SAS un échantillon de ses dernières signatures, le compteur de chaque journal et l'empreinte du logiciel installé. Un contrôleur peut ensuite vérifier qu'une signature figurait dans ce journal à la date indiquée.
+- **Une preuve conservée hors de votre serveur.** Dokos est un logiciel libre et vous administrez votre base de données. Une signature stockée sur votre seul serveur ne prouve pas que le journal n'a pas été recalculé après coup. Avec la licence, votre site transmet régulièrement au journal externe de Dokos SAS (SASLOG) un échantillon de ses dernières signatures, le compteur de chaque journal et l'empreinte du logiciel installé. Un contrôleur peut ensuite vérifier qu'une signature figurait dans ce journal à la date indiquée.
 - **Le lien avec l'éditeur certifié.** Le certificat est délivré à Dokos SAS pour ce module. La licence identifie la société qui encaisse et la rattache à l'éditeur qui répond de la certification.
 
-## Facturation électronique
+<!-- source: https://doc.dokos.io/v5/dokos/certification-caisse/export-archives -->
+### Exporter vos archives fiscales
 
-Dokos lit les factures électroniques aux formats CII, Factur-X et UBL et se raccorde à une plateforme agréée (PA) pour la réception. L'émission est en cours de développement. Voir [eTransactions](/fr/modules/etransactions).
+Vous devez conserver les archives de vos données d'encaissement pendant six ans, à compter de la dernière opération de l'exercice. Le module produit ces archives.
 
-Plus d'informations sur la certification : [Blog - Dokos et la certification des logiciels d'encaissement](/blog/2025/dokos-se-certifie-lne)
+1. Ouvrez **Société** > votre société > **Conformité fiscale** > **Exporter une archive fiscale**.
+2. Choisissez le journal de la société. Chaque société a son propre journal.
+3. Indiquez la période, un an au plus par export, par exemple du 1er janvier au 31 décembre.
+4. Cliquez sur **Télécharger** : vous obtenez un fichier ZIP à conserver en lieu sûr.
+
+Le bouton **Vérifier** parcourt la chaîne de signatures du journal et confirme qu'aucun enregistrement n'a été modifié. Avant de fermer un site Dokos, exportez les archives des six dernières années. La procédure complète figure dans la [documentation](https://doc.dokos.io/v5/dokos/certification-caisse/export-archives).
+
+Le billet [Dokos et la certification des logiciels d'encaissement](/fr/blog/2025/dokos-se-certifie-lne), publié en 2025 au lancement de la démarche, explique l'obligation fiscale.
 
 ### Empreintes des versions certifiées
 
@@ -159,7 +167,7 @@ ef44d1a9208bc01424ce355d47365cba3235064085aa4f47b00c0fe5387f8620  certification_
 
 ```
 cd dokos-bench/
-curl https://gitlab.com/dokos/certification_caisse/-/raw/develop/certification_caisse/compute_hash.py?ref_type=heads | python3
+curl https://gitlab.com/dokos/certification_caisse/-/raw/v5/certification_caisse/compute_hash.py | python3
 # Noter le hash global affiché
 
 # Consulter le hash fichier par fichier
@@ -169,4 +177,11 @@ cat hashes.txt
 
 ### Pour vérifier une archive
 
-Utilisez l'[outil de vérification d'archives fiscales](https://dokos.gitlab.io/certification_caisse/).
+Utilisez l'[outil de vérification d'archives fiscales](https://dokos.gitlab.io/certification_caisse/). Il contrôle qu'une archive exportée n'a pas été modifiée depuis son export.
+
+<!-- source: blog/2026/facturation-electronique.md, blog/2026/rentree-2026.md, content/fr/modules/etransactions.yml -->
+## Facturation électronique
+
+Dokos reçoit les factures électroniques aux formats CII, Factur-X et UBL, et se raccorde à une plateforme agréée (PA) pour la réception. L'émission depuis la facture de vente est en cours de finalisation. Le détail figure sur la page [eTransactions](/fr/modules/etransactions) et dans la [documentation](https://doc.dokos.io/v5/integrations/etransaction).
+
+Dokos SAS est membre fondateur de l'association [PDP Libre](https://pdplibre.org/), qui réunit des éditeurs open source autour de la facturation électronique.

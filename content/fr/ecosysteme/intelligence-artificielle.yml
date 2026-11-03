@@ -52,7 +52,7 @@ operations:
   description: Des automatisations livrées dans le produit, que les agents prolongent.
   items:
     - title: Factures fournisseur lues par OCR
-      description: L'application OCR extrait les données d'une facture reçue avec Amazon Textract et prépare la facture d'achat.
+      description: L'OCR extrait les données d'une facture PDF avec Amazon Textract et prépare la facture d'achat. Sur Dokos V5, cette lecture est reprise par eTransactions.
       icon: i-heroicons-document-magnifying-glass
     - title: Factures électroniques reçues
       description: eTransactions lit les factures CII, Factur-X et UBL et se raccorde à une plateforme agréée pour la réception.
