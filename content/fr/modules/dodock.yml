@@ -4,6 +4,8 @@
 # doc.dokos.io/v5/dodock/automatisations (déclencheurs, actions, file d'attente),
 # doc.dokos.io/v5/dodock/interface/composants_ui, doc.dokos.io/v5/dodock/rapports/rapports-prepares,
 # doc.dokos.io/v5/dodock/configuration/pappers, doc.dokos.io/v5/dodock/personnalisation.
+# Branche v5 de gitlab.com/dokos/dodock (vérifié le 3 novembre 2026) : LICENSE MIT, pyproject.toml
+# requires-python >=3.14,<3.15, package.json engines node >=24, ui/package.json « @framework/ui ».
 #
 # Captures à prendre (demo.dokos.cloud) :
 # - hero.webp : la liste des types de document (/app/doctype) avec un DocType personnalisé ouvert
@@ -117,11 +119,13 @@ install:
     - title: Sur Dokos Cloud
       description: Dodock est installé sur chaque site Dokos Cloud. Il n'y a rien à faire. Compris dans toutes les formules.
     - title: En auto-hébergement
-      description: "Créez votre bench avec <code>bench init --frappe-path https://gitlab.com/dokos/dodock votre-bench</code>, puis suivez le guide d'installation de la documentation."
+      description: "Créez votre bench avec <code>bench init --frappe-path https://gitlab.com/dokos/dodock --frappe-branch v5 votre-bench</code>, puis suivez le guide d'installation de la documentation, en mode standard ou Docker."
     - title: Pour développer une application
       description: "<code>bench new-app votre_app</code> crée le squelette, puis <code>bench --site votre-site install-app votre_app</code> l'installe sur votre site."
   prerequisites:
-    - Le guide d'installation doc.dokos.io/v5/dodock/installation pour les versions de Python, Node.js, MariaDB et Redis
+    - Un serveur Linux. Les hébergements mutualisés ne conviennent pas.
+    - Python 3.14 et Node.js 24 ou plus récent pour la branche v5
+    - Le guide d'installation doc.dokos.io/v5/dodock/installation pour MariaDB, Redis et les autres dépendances
 
 faq:
   items:

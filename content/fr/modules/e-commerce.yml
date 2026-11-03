@@ -143,7 +143,7 @@ faq:
         Pour un nouveau projet, utilisez le portail de l'application [Réservations de ressources](/fr/modules/reservations-de-ressources).
     - label: Puis-je vendre pour plusieurs sociétés sur le même site ?
       content: >-
-        Oui, avec le mode multi-lieu des Paramètres du lieu (application Bookings). Chaque société autorisée a sa liste de prix
+        Oui, avec le mode multi-lieu des Paramètres de réservation de ressources (application Bookings). Chaque société autorisée a sa liste de prix
         et son panier. Le visiteur choisit la société en bas de la vitrine.
     - label: Comment ajouter des pages à mon site ?
       content: >-

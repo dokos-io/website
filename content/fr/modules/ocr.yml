@@ -3,6 +3,10 @@
 # branche v5), DocTypes et hooks de l'application (OCR Settings, OCR Purchase Invoice Basket, Pending Purchase
 # Invoice, OCR Request), install.py d'eTransactions (reprise des données OCR).
 # L'application OCR couvre Dokos V4. Sur Dokos V5, ses fonctions sont reprises par eTransactions.
+# source (3 novembre 2026) : branche v4 du dépôt ocr, dernière version v2.4.0 du 24 octobre 2025. OCR Settings y porte
+# seulement la clé et le secret Amazon Textract, la création sans commande et les deux blocages sur montant.
+# Le choix Mistral OCR, le rapprochement automatique avec les reçus d'achat et la validation automatique existent sur
+# la branche develop du dépôt ocr et dans eTransactions (branche v5), pas dans la version V4 publiée.
 #
 # Captures à prendre (demo.dokos.cloud, où la banette est fournie par eTransactions) :
 # - hero.webp : la Banette de factures d'achat avec plusieurs factures fournisseur en attente, en cours et prêtes
@@ -10,7 +14,7 @@
 # - feature-depot.webp : la zone de dépôt de fichiers de la banette, un PDF en cours d'envoi
 # - feature-extraction.webp : une Facture fournisseur en attente avec l'aperçu du PDF à gauche et les données extraites à droite
 # - feature-rapprochement.webp : la fenêtre « Sélectionner les commandes fournisseur » avec les commandes ouvertes du fournisseur
-# - feature-parametres.webp : les Paramètres OCR (clé Textract, création sans commande, blocage sur montant, validation automatique)
+# - feature-parametres.webp : les Paramètres OCR (clé Textract, création sans commande, blocage sur montant)
 
 title: OCR
 description: Lit vos factures fournisseur en PDF avec Amazon Textract et prépare la facture d'achat dans Dokos.
@@ -46,7 +50,7 @@ for_whom:
       description: Une règle de messagerie envoie les pièces jointes PDF dans la banette. L'analyse démarre sans action de votre part.
       icon: i-heroicons-envelope
     - title: Vous contrôlez les factures par rapport aux commandes
-      description: La facture lue est reliée à la commande fournisseur ou au reçu d'achat. Un écart de montant peut bloquer la création de la facture d'achat.
+      description: La facture lue est reliée à la commande fournisseur ou au reçu d'achat. Un dépassement du montant lu peut bloquer la création de la facture d'achat.
       icon: i-heroicons-scale
 
 fit:
@@ -73,10 +77,10 @@ features:
     description: La demande d'analyse part vers Amazon Textract. Au retour, la facture fournisseur en attente affiche le fournisseur, le numéro et la date de la facture, l'échéance, les lignes, le total hors taxes, la TVA et le total. L'aperçu du document reste à côté des données pour la vérification. Le fichier envoyé à Amazon est supprimé une fois l'analyse récupérée.
     badge: Extraction
   - title: Reliez la facture à vos commandes
-    description: Depuis la facture en attente, « Sélectionner les commandes fournisseur » ou « Sélectionner les reçus d'achat » propose les documents ouverts du fournisseur. Un reçu d'achat validé peut être rapproché automatiquement, dans la limite d'un écart que vous fixez en montant ou en pourcentage. Si le fournisseur n'existe pas, un bouton le crée depuis les données lues.
+    description: Depuis la facture en attente, « Sélectionner les commandes fournisseur » ou « Sélectionner les reçus d'achat » propose les documents ouverts du fournisseur. Si des lignes ne correspondent à aucune commande, le bouton « Créer une commande fournisseur » la crée avec ces lignes. Si le fournisseur n'existe pas, un bouton le crée depuis les données lues.
     badge: Rapprochement
   - title: Réglez le niveau de contrôle
-    description: Dans Paramètres OCR, vous autorisez ou non la création d'une facture d'achat sans commande, vous bloquez la création quand le total dépasse celui lu sur le document, et vous choisissez de valider automatiquement les factures d'achat créées. Les avoirs fournisseur se répartissent sur plusieurs factures déjà validées.
+    description: Dans Paramètres OCR, vous autorisez ou non la création d'une facture d'achat sans commande, et vous bloquez la création quand le total TTC ou le total HT dépasse celui lu sur le document. À la création, vous choisissez de valider la facture d'achat ou de la garder en brouillon. Un avoir fournisseur devient une facture d'achat de retour, liée à la facture d'origine.
     badge: Paramètres
 
 install:
@@ -99,11 +103,11 @@ faq:
     - label: Où partent mes documents ?
       content: Le fichier est envoyé à Amazon Textract pour l'analyse, avec vos propres clés d'accès. Il est supprimé du stockage Amazon une fois le résultat récupéré par Dokos. Les données extraites restent dans votre site.
     - label: Existe-t-il un autre moteur qu'Amazon Textract ?
-      content: Le document Paramètres OCR propose le choix entre Amazon Textract et Mistral OCR, avec une clé d'API Mistral.
+      content: Pas dans l'application OCR publiée pour Dokos V4, qui utilise Amazon Textract. Sur Dokos V5, eTransactions propose le choix entre Amazon Textract, réglage par défaut, et Mistral OCR, avec une clé d'API Mistral.
     - label: Que se passe-t-il si je passe à Dokos V5 ?
       content: eTransactions remplace l'application OCR. Lors de son installation, elle reprend les paramètres, la banette et les factures fournisseur en attente. Les factures reçues par plateforme agréée arrivent ensuite dans la même banette.
     - label: La facture d'achat est-elle créée toute seule ?
-      content: Seulement si vous l'avez demandé. Par défaut, vous relisez la facture en attente, vous choisissez la commande ou le reçu, puis vous cliquez sur « Créer la facture d'achat ». Une option valide automatiquement les factures créées.
+      content: Non. Vous relisez la facture en attente, vous choisissez la commande ou le reçu, puis vous cliquez sur « Créer la facture d'achat » et vous choisissez de la valider ou de la garder en brouillon. Sur Dokos V5, eTransactions ajoute le rapprochement automatique avec les reçus d'achat et la validation automatique des factures créées.
 
 bottom_cta:
   title: Vos factures fournisseur et leur volume

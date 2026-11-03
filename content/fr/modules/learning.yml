@@ -4,6 +4,8 @@
 # - hooks.py du dépôt : required_apps = ["frappe/payments"], entrée « Learning » dans l'écran des applications
 # - DocTypes du dépôt (lms/lms/doctype) : LMS Course, Course Chapter, Course Lesson, LMS Batch, LMS Quiz, LMS Assignment, LMS Certificate, LMS Program, LMS Enrollment, LMS Live Class, LMS Payment
 # - Licence : fichier license.txt du dépôt (AGPLv3)
+# - source (3 novembre 2026) : LMS Live Class et LMS Batch de la branche develop, champ conferencing_provider (Zoom ou
+#   Google Meet), DocTypes LMS Zoom Settings et LMS Google Meet Settings (ajouté en septembre 2026) ; dernière version v2.68.0 du 28 octobre 2026
 # - Marketplace Dokos Cloud : app « lms », titre « Frappe Learning »
 #
 # Captures à prendre (demo.dokos.cloud, 1440×900, thème clair, français) :
@@ -71,7 +73,7 @@ features:
     description: Un cours contient des chapitres, et chaque chapitre contient ses leçons. Une leçon porte un texte, une vidéo, un PDF, des diapositives, un quiz ou un devoir. La vue apprenant montre la leçon telle que vos apprenants la verront. Seul un Moderator publie le cours.
     badge: Cours
   - title: Regroupez vos apprenants en sessions
-    description: Une session réunit un groupe d'apprenants sur un ou plusieurs cours, avec une date de début et une date de fin. Un apprenant ajouté à la session est inscrit à tous ses cours. Vous planifiez un cours en direct Zoom depuis la session, et les apprenants voient la liste des cours à suivre.
+    description: Une session réunit un groupe d'apprenants sur un ou plusieurs cours, avec une date de début et une date de fin. Un apprenant ajouté à la session est inscrit à tous ses cours. Vous planifiez un cours en direct sur Zoom ou Google Meet depuis la session, et les apprenants voient la liste des cours à suivre.
     badge: Sessions
   - title: Évaluez avec des quiz et des devoirs
     description: Vous créez un quiz avec des questions à choix unique, à choix multiples ou à réponse libre. Un devoir se remet en PDF ou en document. L'évaluateur corrige depuis sa file de remises. Un programme enchaîne plusieurs cours dans un ordre fixé.
@@ -90,7 +92,7 @@ install:
       description: Dans /lms, donnez les rôles à vos utilisateurs, créez un cours avec ses chapitres et ses leçons, puis publiez-le avec un compte Moderator.
   prerequisites:
     - L'application Paiements, requise par Frappe Learning
-    - Un compte Zoom, seulement pour les cours en direct
+    - Un compte Zoom ou Google Meet, seulement pour les cours en direct
 
 faq:
   items:
@@ -101,7 +103,7 @@ faq:
     - label: Quelle est la différence entre un cours, une session et un programme ?
       content: Le cours est le contenu, en chapitres et en leçons. La session réunit des apprenants sur un ou plusieurs cours entre deux dates. Le programme enchaîne plusieurs cours dans un ordre fixé.
     - label: Comment se passent les cours en direct ?
-      content: Depuis une session, vous créez un cours en direct Zoom. Les apprenants de la session voient la liste des cours en direct à suivre.
+      content: Depuis une session, vous créez un cours en direct sur Zoom ou sur Google Meet, avec le compte de visioconférence enregistré dans les réglages de Learning. Les apprenants de la session voient la liste des cours en direct à suivre.
 
 bottom_cta:
   title: Posez-nous vos questions sur Frappe Learning.

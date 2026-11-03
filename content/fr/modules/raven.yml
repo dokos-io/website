@@ -2,7 +2,8 @@
 # - README de https://github.com/frappe/raven (créé par The Commit Company, aujourd'hui publié par Frappe,
 #   branche develop) : canaux, fils, fichiers, recherche, notifications, applications mobiles,
 #   cartes de documents, notifications de documents, approbation depuis le chat, bots, webhooks
-#   et agents IA, compatibilité Frappe v15.111+ et v16, licence AGPLv3
+#   et agents IA, messages enrichis (mise en forme, mentions, blocs de code, sondages, réactions),
+#   compatibilité Frappe v15.111+ et v16, licence AGPLv3 ; dernière version v3.2.0 du 28 octobre 2026
 # - https://doc.dokos.io/v5/integrations/ia/assistant et /configuration : pont Raven de Dokos AI
 #
 # Captures à prendre (demo.dokos.cloud/raven, 1440×900, thème clair, français) :
@@ -79,7 +80,7 @@ fit:
 
 features:
   - title: Organisez les échanges en canaux et en fils
-    description: Vous créez des canaux publics ou privés par équipe, par projet ou par sujet, regroupés en espaces de travail. Les messages directs servent au reste. Une discussion annexe part dans un fil pour ne pas couvrir le canal.
+    description: Vous créez des canaux publics ou privés par équipe, par projet ou par sujet, regroupés en espaces de travail. Les messages directs servent au reste. Une discussion annexe part dans un fil pour ne pas couvrir le canal. Un message accepte la mise en forme, les mentions, les blocs de code, les sondages et les réactions.
     badge: Canaux
   - title: Partagez des fichiers et retrouvez-les
     description: Vous déposez des photos, des vidéos et des documents. Un lien affiche un aperçu. Chaque fichier partagé est listé par canal, et la recherche couvre les messages, les fichiers, les liens et les personnes de tous vos canaux.

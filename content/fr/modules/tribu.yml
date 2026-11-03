@@ -1,5 +1,11 @@
-# Sources : README https://gitlab.com/dokos/tribu (branche v5, licence AGPL-3.0) ; faits transmis par Dokos ;
-# marketplace cloud.dokos.io, identifiant tribu. Aucune section doc.dokos.io dédiée à ce jour.
+# Sources : README https://gitlab.com/dokos/tribu (branche v5, licence AGPL-3.0) ; faits transmis par Dokos ;
+# documentation https://doc.dokos.io/v5/dokos/tribu (flux de vie d'un adhérent, types d'adhésion, champs
+# supplémentaires, code d'intégration, facturation, tâches de nuit) ; code de la branche v5 :
+# tribu_membership.py (on_submit crée la Commande client et la Demande de paiement, statut de paiement
+# calculé depuis les factures), tribu_membership_type.json (périodes Rolling One-Year, Unlimited, From Date
+# to Date, Manual), tribu_membership_prices.json (Fixed Price, User Defined Price, Free), tribu_settings.json
+# (article d'adhésion, article de don), hooks.py (tâche quotidienne update_memberships_based_on_dates) ;
+# marketplace cloud.dokos.io, identifiant tribu.
 #
 # Captures à prendre (demo.dokos.cloud) :
 # - hero.webp : la liste des adhérents (Tribu Member) avec ses filtres
@@ -26,13 +32,14 @@ publisher: dokos
 licence: AGPLv3
 version: v5
 marketplace: tribu
+docs: https://doc.dokos.io/v5/dokos/tribu
 related: [reservations-de-ressources, paiements, comptabilite, bank]
 
 hero:
   title: Vos adhérents et vos cotisations, <span class="text-primary">gérés dans Dokos</span>.
   description: >-
     Tribu enregistre vos adhérents, leurs adhésions et leurs dons. L'adhérent s'inscrit et paie en ligne,
-    et Tribu génère la facture dans votre comptabilité Dokos.
+    et Tribu crée la commande, la demande de paiement puis la facture dans votre comptabilité Dokos.
 
 for_whom:
   items:
@@ -42,7 +49,7 @@ for_whom:
       icon: i-heroicons-table-cells
     - title: Les adhésions arrivent en ligne et vous les ressaisissez
       description: >-
-        Le formulaire web crée la fiche adhérent, l'adhésion et la facture. Le paiement est encaissé dans le même parcours.
+        Le formulaire web crée la fiche adhérent, son client et son contact, l'adhésion et la commande. Le paiement est encaissé dans le même parcours.
       icon: i-heroicons-globe-alt
     - title: Votre trésorier pointe les cotisations à la main
       description: >-
@@ -51,21 +58,23 @@ for_whom:
 
 fit:
   description: >-
-    Tribu s'installe sur votre site Dokos. Un type d'adhésion (<strong>Tribu Membership Type</strong>) est relié à un
-    <strong>Article</strong> du module Ventes, qui porte le prix et les comptes comptables. Quand un adhérent souscrit,
-    Tribu crée l'adhésion (<strong>Tribu Membership</strong>) et génère la <strong>Facture de vente</strong>.<br>
-    Le paiement en ligne passe par les passerelles de l'application Payments, et le rapprochement bancaire de Dokos
-    pointe l'encaissement. Les contacts, la facturation et le portail web sont ceux de votre site.
+    Tribu s'installe sur votre site Dokos. Les <strong>Paramètres Tribu</strong> désignent l'article qui facture les adhésions,
+    celui qui facture les dons, le groupe de clients et le mode de paiement par défaut. Chaque adhérent (<strong>Tribu Member</strong>)
+    a son Client et son Contact dans Dokos. À la validation d'une adhésion (<strong>Tribu Membership</strong>), Tribu crée une
+    <strong>Commande client</strong> avec l'adhésion et le don éventuel, puis une <strong>Demande de paiement</strong> si le montant n'est pas nul.<br>
+    Le paiement en ligne passe par les passerelles de l'application Payments. Une fois la facture de vente payée, l'adhésion passe au statut
+    Payé, et le rapprochement bancaire de Dokos pointe l'encaissement.
   reads:
-    - Article
+    - Article, pour l'adhésion et pour le don
     - Client et Contact
-    - Facture de vente et Écriture de paiement
-    - Transaction bancaire
+    - Commande client, Demande de paiement et Facture de vente
+    - Écriture de paiement et Transaction bancaire
     - Passerelle de paiement
   adds:
     - Les documents Tribu Member, Tribu Membership, Tribu Membership Type et Tribu Settings
-    - Les formulaires web d'adhésion et de don
-    - Les pages Tribu
+    - Les catégories de types d'adhésion et les tarifs de chaque type
+    - Les formulaires web d'adhésion, publiés sur votre site ou intégrés sur un autre site
+    - Une tâche quotidienne qui active et expire les adhésions selon leurs dates
   depends:
     - Dokos (Ventes, Comptabilité)
     - Payments pour le paiement en ligne
@@ -74,26 +83,31 @@ features:
   - title: Tenez vos fiches adhérents
     description: >-
       La fiche d'un adhérent porte ses informations personnelles, ses contacts professionnels ou personnels et l'historique
-      de ses adhésions. Vous filtrez et cherchez dans la liste, vous importez et exportez vos adhérents.
+      de ses adhésions. Vous filtrez et cherchez dans la liste, vous importez et exportez vos adhérents. Un adhérent perd
+      son statut de membre quand il n'a plus d'adhésion active.
     badge: Adhérents
   - title: Définissez vos types d'adhésion
     description: >-
-      Vous configurez plusieurs formules, par exemple annuelle, mensuelle ou à tarif réduit, chacune avec sa période de validité,
-      son tarif et son renouvellement. Nommer un type par saison, comme « Adhésion 2025-2026 », facilite le suivi.
+      Chaque type a sa période : une année glissante, une durée illimitée, des dates fixes ou une fin manuelle. Il porte un ou
+      plusieurs tarifs, à prix fixe, à prix libre avec un minimum, ou gratuits. Nommer un type par saison, comme « Adhésion 2025-2026 »,
+      facilite le suivi. Chaque nuit, Tribu active les adhésions dont la date de début est arrivée et expire celles qui arrivent à terme.
     badge: Types d'adhésion
   - title: Ouvrez l'inscription en ligne
     description: >-
-      L'adhérent remplit un formulaire web que vous personnalisez. Les données sont validées pendant la saisie, le paiement
-      s'effectue dans le même parcours, et la fiche adhérent est créée automatiquement. Le formulaire s'affiche sur mobile comme sur ordinateur.
+      Chaque type d'adhésion a son formulaire web, à une adresse de votre site. Vous ajoutez des champs au formulaire
+      sans code, par exemple un numéro de carte étudiant. Le paiement s'effectue dans le même parcours, et la fiche adhérent
+      est créée automatiquement. Vous intégrez aussi le formulaire sur un autre site avec le code d'intégration fourni.
     badge: Inscription
   - title: Recevez des dons
     description: >-
-      Le module dons enregistre les contributions ponctuelles et suit les donateurs, avec les mêmes moyens de paiement que les adhésions.
+      L'adhérent ajoute un don à son adhésion. Le don est facturé sur la même commande, avec l'article de don choisi dans les
+      Paramètres Tribu, et suit les mêmes moyens de paiement que les adhésions.
     badge: Dons
-  - title: Facturez et rapprochez automatiquement
+  - title: Facturez et rapprochez
     description: >-
-      Chaque adhésion génère sa facture. Les comptes comptables se règlent sur les articles d'adhésion. Les paiements encaissés
-      sont suivis et rapprochés en banque, et vous exportez la comptabilité vers votre expert-comptable.
+      Chaque adhésion validée crée sa commande client et sa demande de paiement. Une fois le paiement reçu, la commande est facturée
+      et l'adhésion indique Payé, Partiellement payé ou Non payé. Les comptes comptables se règlent sur les articles d'adhésion et de don.
+      Les paiements encaissés sont rapprochés en banque, et vous exportez la comptabilité vers votre expert-comptable.
     badge: Comptabilité
 
 install:
@@ -106,8 +120,8 @@ install:
       description: "<code>bench get-app https://gitlab.com/dokos/tribu</code> puis <code>bench --site votre-site install-app tribu</code> et <code>bench --site votre-site migrate</code>."
     - title: Configurez une première adhésion
       description: >-
-        Créez les articles d'adhésion dans le module Ventes, définissez vos types d'adhésion, configurez un moyen de paiement
-        et ses webhooks, puis testez une inscription complète avant d'ouvrir le formulaire.
+        Créez les articles d'adhésion et de don dans le module Ventes et renseignez-les dans les Paramètres Tribu. Définissez vos types
+        d'adhésion, configurez un moyen de paiement et ses webhooks, puis testez une inscription complète avant d'ouvrir le formulaire.
   prerequisites:
     - Un site Dokos V5
     - L'application Payments et un compte chez un prestataire de paiement
@@ -119,11 +133,15 @@ faq:
         HelloAsso, Stancer, Stripe, GoCardless et PayPal via Braintree.
     - label: Tribu gère-t-il les dons ?
       content: >-
-        Oui. Le module dons enregistre les contributions ponctuelles et suit les donateurs, avec les mêmes moyens de paiement que les adhésions.
+        Oui. L'adhérent ajoute un don à son adhésion, facturé sur la même commande avec l'article de don des Paramètres Tribu,
+        et payé par les mêmes moyens que l'adhésion.
     - label: Comment la comptabilité est-elle tenue ?
       content: >-
-        Chaque adhésion génère une Facture de vente. Les comptes comptables sont configurés sur les articles d'adhésion.
-        Le rapprochement bancaire et les exports comptables sont ceux de Dokos.
+        Chaque adhésion validée crée une Commande client, facturée une fois le paiement reçu. Les comptes comptables sont configurés
+        sur les articles d'adhésion et de don. Le rapprochement bancaire et les exports comptables sont ceux de Dokos.
+    - label: Une adhésion importée crée-t-elle une commande ?
+      content: >-
+        Non. Les adhésions importées en masse ne créent ni commande ni demande de paiement. Vous reprenez ainsi votre historique sans le refacturer.
     - label: Où sont hébergées les données de mes adhérents ?
       content: >-
         Sur votre site Dokos, sur Dokos Cloud ou sur votre propre serveur. Tribu est publié sous licence AGPLv3.

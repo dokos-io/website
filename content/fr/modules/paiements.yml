@@ -1,6 +1,9 @@
 # Sources : https://doc.dokos.io/v5/integrations/payments et ses pages Stripe, Paypal, GoCardless,
 # Stancer, HelloAsso, SumUp ; README et license.txt de https://gitlab.com/dokos/payments (branche v5) ;
-# https://doc.dokos.io/nouveautes (v5 : une demande de paiement échouée ne peut plus être réutilisée).
+# https://doc.dokos.io/nouveautes (v5 : une demande de paiement échouée ne peut plus être réutilisée ;
+# 28 septembre 2026 : annulation automatique de la demande de paiement quand la commande client associée est annulée).
+# Passerelles : DocTypes de payments/payment_gateways de la branche v5 (Stripe, GoCardless, Stancer, HelloAsso, SumUp,
+# PayPal ; Braintree, Razorpay, Paytm, M-Pesa et Paymob restent dans le code mais n'ont pas de page dans la doc V5).
 #
 # Captures à prendre (demo.dokos.cloud) :
 # - hero.webp : une Demande de paiement soumise, avec son lien de paiement (/app/payment-request)
@@ -73,7 +76,7 @@ fit:
 
 features:
   - title: Envoyez un lien de paiement
-    description: Depuis une commande client ou une facture de vente, vous créez une demande de paiement et vous partagez le lien généré. Votre client règle sur la page de paiement du portail, sans compte sur votre site. Pour tester, ouvrez le lien dans une fenêtre de navigation privée.
+    description: Depuis une commande client ou une facture de vente, vous créez une demande de paiement et vous partagez le lien généré. Votre client règle sur la page de paiement du portail, sans compte sur votre site. Si la commande client est annulée, sa demande de paiement est annulée avec elle. Pour tester, ouvrez le lien dans une fenêtre de navigation privée.
     badge: Demande de paiement
   - title: Encaissez les commandes de votre boutique
     description: Vous créez un mode de paiement et vous le reliez à votre passerelle dans l'onglet « Passerelle de paiement ». Dans les Paramètres E-Commerce, vous l'ajoutez aux modes de paiement autorisés. Les clients de votre boutique Webshop le voient au moment de payer.

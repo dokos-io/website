@@ -3,6 +3,9 @@
 #   flux-automatises, serveurs-mcp, assistants-externes)
 # - README de https://gitlab.com/dokos/dokos-ai (branche main) : outils, compétences, licence MIT
 # - README de https://gitlab.com/dokos/dokos-cli : point d'accès MCP du site (dokos_ai.mcp.endpoint)
+# - Branche v5 de gitlab.com/dokos/dokos-ai (vérifiée le 3 novembre 2026, tag v1.14.0 du 1er novembre 2026),
+#   doc.dokos.io/v5/integrations/ia/configuration (capacités fermées par défaut, prompt global) et
+#   flux-automatises (plafond de jetons, mode interprété ou compilé).
 # - Faits fixés par le client : trois couches (registre, orchestrateur, outils), compétences en
 #   Markdown avec en-tête YAML, confirmation avant toute écriture, disponible sur la marketplace.
 #
@@ -102,7 +105,7 @@ features:
     description: Une compétence est un fichier Markdown avec un en-tête YAML. Elle indique le domaine couvert, le modèle à employer, les outils autorisés et des documents de référence. Dokos en fournit une bibliothèque (création et modification de documents, rapports, modèles d'impression, diagnostic de permissions). Vous écrivez les vôtres pour vos procédures internes.
     badge: Compétences
   - title: Automatisez un traitement récurrent avec un flux
-    description: Un flux se déclenche sur un événement de document, à heure fixe, à la demande ou par appel externe. Il rédige ou compare, puis dépose le résultat dans la boîte de réception pour approbation. Une galerie de flux prêts à l'emploi s'installe désactivée, pour que vous les relisiez avant de les activer.
+    description: Un flux se déclenche sur un événement de document, à heure fixe, à la demande ou par appel externe. Il rédige ou compare, puis dépose le résultat dans la boîte de réception pour approbation. Un plafond de jetons par exécution limite la dépense. En mode compilé, Dokos génère un script que vous relisez une fois, puis ce script s'exécute sans consommer de jetons. Une galerie de flux prêts à l'emploi s'installe désactivée, pour que vous les relisiez avant de les activer.
     badge: Flux automatisés
 
 install:
@@ -110,9 +113,9 @@ install:
     - title: Depuis la marketplace Dokos Cloud
       description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Dokos AI sur votre site. L'application est comprise dans toutes les formules.
     - title: En auto-hébergement
-      description: "<code>bench get-app https://gitlab.com/dokos/dokos-ai</code> puis <code>bench --site votre-site install-app dokos_ai</code>."
+      description: "<code>bench get-app --branch v5 https://gitlab.com/dokos/dokos-ai</code> puis <code>bench --site votre-site install-app dokos_ai</code>."
     - title: Activez l'IA
-      description: Ouvrez les Paramètres de l'IA, collez votre clé OpenRouter et testez-la. Choisissez un modèle pour chacun des trois usages (logique et agent, rapide, OCR et vision), puis ouvrez une à une les capacités dont vous avez besoin.
+      description: Ouvrez les Paramètres de l'IA, collez votre clé OpenRouter et testez-la. Choisissez un modèle pour chacun des trois usages (logique et agent, rapide, OCR et vision), puis ouvrez une à une les capacités dont vous avez besoin. Un prompt global donne à l'assistant le nom de votre société, votre secteur et vos conventions.
   prerequisites:
     - Un compte OpenRouter et une clé d'accès. La consommation est facturée à l'usage par ce fournisseur.
     - Un site Dokos v5
@@ -122,7 +125,7 @@ faq:
     - label: L'assistant peut-il modifier un document sans que je le voie ?
       content: Non. Une écriture préparée par l'assistant arrive dans la boîte de réception et attend votre approbation. Un flux automatisé prépare et attend par défaut. L'écriture sans surveillance doit être autorisée flux par flux, après que vous avez vérifié son comportement sur plusieurs exécutions réelles.
     - label: Quelles données partent chez le fournisseur de modèles ?
-      content: Rien avant l'activation dans les Paramètres de l'IA. Une fois l'IA activée, l'assistant envoie au modèle ce dont il a besoin pour répondre à la question posée. Dokos compte les jetons consommés à chaque exécution et les affiche dans le suivi et dans le journal d'audit.
+      content: Rien avant l'activation dans les Paramètres de l'IA. Une fois l'IA activée, l'assistant envoie au modèle ce dont il a besoin pour répondre à la question posée. La recherche web, les appels HTTP sortants (seulement vers les hôtes que vous listez), les serveurs MCP externes et le pont Raven restent fermés tant que vous ne les ouvrez pas, un par un. Dokos compte les jetons consommés à chaque exécution et les affiche dans le suivi et dans le journal d'audit.
     - label: Quels modèles sont utilisés ?
       content: Dokos consomme des modèles via OpenRouter, qui donne accès aux modèles de Google, Anthropic, OpenAI et Mistral avec une seule clé. Vous associez un modèle à chacun des trois usages (logique et agent, rapide, OCR et vision) et vous pouvez changer d'affectation à tout moment.
     - label: Comment l'application est-elle construite ?

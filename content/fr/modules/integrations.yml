@@ -3,7 +3,7 @@
 # Clé de connexion sociale, Webhooks et leurs événements), https://doc.dokos.io/v5/dokos/hrms/securite-api
 # (Clé API et Secret API sur le profil utilisateur, mêmes permissions que l'interface),
 # https://doc.dokos.io/v5/dodock/integrations/connected-app-google-oauth (Application connectée Google),
-# https://doc.dokos.io/v5/integrations/ia (assistants externes via Dokos CLI).
+# https://doc.dokos.io/v5/integrations/ia (assistants externes via Dokos CLI et son serveur MCP, « avec vos permissions »).
 #
 # Captures à prendre (demo.dokos.cloud) :
 # - hero.webp : l'espace de travail Intégrations, avec ses raccourcis vers les paramètres des connecteurs (/app/integrations)
@@ -49,7 +49,7 @@ for_whom:
       description: Chaque utilisateur génère une clé API et un secret depuis son profil. Les appels respectent les mêmes permissions que l'interface.
       icon: i-heroicons-code-bracket
     - title: Vous pilotez Dokos depuis un assistant IA
-      description: L'agent de votre choix se connecte à votre site par Dokos CLI et travaillent sur les mêmes données, avec les mêmes garde-fous.
+      description: Accès MCP, avec l'agent de votre choix. Dokos CLI sert de MCP local, et l'agent travaille sur les mêmes données que vous, avec vos permissions.
       icon: i-heroicons-cpu-chip
 
 fit:

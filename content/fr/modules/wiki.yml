@@ -1,18 +1,20 @@
 # Sources :
-# - README de https://github.com/frappe/wiki (branche master) : pages en Markdown, relecture et
-#   approbation des modifications, pièces jointes, table des matières, historique des révisions,
-#   scripts personnalisés, recherche RediSearch, licence MIT
-# - https://docs.frappe.io/wiki : espaces wiki, groupes, révisions, approbation, barre latérale
-#   réorganisable, guide de migration
-# - README de https://gitlab.com/dokos/dokos-ai : l'assistant cherche dans le Wiki interne
+# - README de https://github.com/frappe/wiki (branche version-3, v3.4.0 du 8 octobre 2026) : espaces avec
+#   règles d'accès, éditeur de texte enrichi stocké en Markdown, demandes de modification avec relecture,
+#   lecteur avec arborescence, recherche, mode sombre et téléchargement PDF, retours des lecteurs,
+#   statistiques, GitHub Sync, sitemap et llms.txt, compatibilité Frappe v15 et v16, application à /wiki-app,
+#   licence MIT
+# - DocTypes de la branche version-3 : Wiki Space, Wiki Document, Wiki Change Request, Wiki Revision
+# - README et tools_knowledge.py de https://gitlab.com/dokos/dokos-ai : l'assistant cherche dans les
+#   Wiki Document
 #
 # Captures à prendre (demo.dokos.cloud, 1440×900, thème clair, français) :
-# - hero.webp : une page wiki publiée, barre latérale de l'espace à gauche, table des matières à droite
-# - fit.webp : l'espace de travail Wiki dans le bureau, liste des Wiki Page avec leur espace
-# - feature-edition.webp : l'éditeur d'une page, en Markdown, avec une pièce jointe
-# - feature-espaces.webp : la barre latérale d'un espace en cours de réorganisation par glisser-déposer
-# - feature-approbation.webp : une modification proposée en attente d'approbation
-# - feature-revisions.webp : l'historique des révisions d'une page
+# - hero.webp : une page wiki publiée, arborescence de l'espace à gauche, table des matières à droite
+# - fit.webp : la liste des espaces dans /wiki-app, avec leur visibilité
+# - feature-edition.webp : l'éditeur d'une page, avec un tableau et un diagramme Mermaid
+# - feature-espaces.webp : les réglages d'un espace (adresse, logo, rôles autorisés)
+# - feature-approbation.webp : une demande de modification en relecture, ancienne et nouvelle version côte à côte
+# - feature-statistiques.webp : la page de statistiques, vues par espace et pages les plus lues
 
 navigation:
   title: Wiki
@@ -20,7 +22,7 @@ navigation:
   description: Documentation et procédures publiées depuis votre site, avec relecture avant publication.
 
 title: Wiki
-description: Publie votre documentation et vos procédures en pages web depuis votre site, avec un historique des révisions et une relecture des modifications avant publication.
+description: Publie votre documentation et vos procédures en pages web depuis votre site, avec une relecture de chaque modification avant publication et l'historique de chaque page.
 icon: i-heroicons-book-open
 application: Frappe Wiki
 theme: support-collaboration
@@ -37,73 +39,78 @@ related: [support, raven, dokos-ai, learning]
 
 hero:
   title: Vos procédures et votre documentation, <span class="text-primary">publiées depuis votre site</span>.
-  description: Vous écrivez une page en Markdown, elle est en ligne sans redéploiement. Chaque modification est conservée dans l'historique et peut passer par une approbation avant publication.
+  description: Vous écrivez une page dans l'éditeur, un relecteur approuve la modification, et la page est en ligne sans redéploiement. Le wiki garde l'historique de chaque page.
 
 for_whom:
   items:
     - title: Vos procédures internes sont dispersées dans des fichiers
-      description: Vous les écrivez en pages wiki, rangées par espace, avec une barre latérale et une table des matières générée depuis les titres.
+      description: Vous les écrivez en pages wiki, rangées par espace. Un espace peut rester privé, réservé à certains rôles de votre site.
       icon: i-heroicons-folder-open
     - title: Vous publiez une documentation produit pour vos clients
-      description: Une page wiki est une page web de votre site. Vous corrigez une phrase ou ajoutez une page sans interruption de service.
+      description: Un espace public a sa propre adresse et son logo. Le lecteur cherche dans les pages, télécharge une page en PDF et indique si elle l'a aidé.
       icon: i-heroicons-globe-alt
     - title: Une modification doit être relue avant d'être en ligne
-      description: Un contributeur propose une modification. Un relecteur l'approuve, et la page publiée change à ce moment-là.
+      description: Vos modifications s'accumulent dans une demande de modification. Un relecteur lit les différences et l'approuve, et la page publiée change à ce moment-là.
       icon: i-heroicons-check-circle
 
 fit:
   description: >-
-    Wiki s'installe sur votre site et sert ses pages comme des pages web de ce site. Les pages
-    sont rangées dans des <strong>espaces wiki</strong>, chacun avec sa barre latérale. Les
-    contributeurs se connectent avec leur compte Dokos. L'historique des révisions garde chaque
-    version d'une page.<br>
+    Wiki s'installe sur votre site. Les rédacteurs travaillent dans l'application, à l'adresse
+    /wiki-app, et les pages publiées sont des pages web de votre site. Les pages sont rangées dans des
+    <strong>espaces</strong>, chacun avec son adresse, son logo et ses règles d'accès. Les
+    contributeurs se connectent avec leur compte Dokos, et les rôles de votre site décident qui lit un
+    espace privé.<br>
     Si <a href="/fr/modules/dokos-ai">Dokos AI</a> est installé, l'assistant cherche dans votre
     wiki interne pour répondre aux questions de vos utilisateurs.
   reads:
-    - Les comptes utilisateurs du site, pour l'édition et l'approbation
+    - Les comptes utilisateurs et les rôles du site, pour l'accès, l'édition et la relecture
   adds:
-    - Les documents Wiki Page, Wiki Space et Wiki Group
-    - Les Wiki Settings, avec la prise en charge de scripts personnalisés
-    - Les pages publiées sous les adresses de vos espaces
-    - L'historique des révisions et les modifications en attente d'approbation
+    - L'application Wiki, à l'adresse /wiki-app de votre site
+    - Les documents Wiki Space et Wiki Document
+    - Les demandes de modification (Wiki Change Request) et les révisions de chaque page
+    - Les pages publiées sous les adresses de vos espaces, avec un sitemap, une copie Markdown de chaque page et un index llms.txt
+    - Les statistiques de lecture et les retours des lecteurs
   depends:
     - Dodock v5
 
 features:
-  - title: Écrivez en Markdown, avec pièces jointes
-    description: Vous rédigez la page en Markdown dans l'éditeur. Vous joignez des fichiers à la page. La table des matières se génère depuis les titres.
+  - title: Écrivez dans un éditeur de texte enrichi
+    description: Vous rédigez avec des titres, des tableaux, des listes de tâches, des blocs de code, des encadrés, des images, des diagrammes Mermaid, des PDF et des vidéos. Le contenu est enregistré en Markdown. Une image peut avoir une version pour le mode sombre.
     badge: Rédaction
   - title: Organisez les pages en espaces
-    description: Un espace wiki regroupe des pages sur un sujet et porte sa propre barre latérale. Vous réorganisez la barre latérale par glisser-déposer et vous groupez les pages.
+    description: Un espace regroupe les pages d'un wiki, par exemple un guide produit ou un manuel interne. Il a sa propre adresse, son logo et ses règles d'accès. Il est public, ou réservé à certains rôles.
     badge: Espaces
   - title: Faites relire avant de publier
-    description: Une modification proposée attend l'approbation d'un relecteur. La page publiée ne change qu'une fois la modification approuvée.
-    badge: Approbation
-  - title: Retrouvez chaque version
-    description: L'historique des révisions conserve chaque version d'une page. Vous consultez une version passée et vous voyez ce qui a changé.
-    badge: Révisions
+    description: Vos modifications s'accumulent dans une demande de modification. Le relecteur lit les différences, puis approuve, demande des changements ou refuse. Une fois fusionnée, la modification est en ligne. Les lecteurs peuvent aussi proposer une modification.
+    badge: Relecture
+  - title: Mesurez la lecture de vos pages
+    description: Les statistiques montrent les pages vues, les nouveaux visiteurs, les pages les plus lues et les sites d'origine, pour tout le wiki, pour un espace ou pour une page. Chaque page reçoit les retours de ses lecteurs.
+    badge: Statistiques
+  - title: Synchronisez un espace avec un dépôt GitHub
+    description: GitHub Sync tient un espace à jour à partir d'un dossier de fichiers Markdown d'un dépôt GitHub. Vous prévisualisez le dossier sur votre site de développement avant de pousser vos changements.
+    badge: GitHub Sync
 
 install:
   steps:
     - title: Depuis la marketplace Dokos Cloud
       description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Wiki sur votre site. L'application est comprise dans toutes les formules.
     - title: En auto-hébergement
-      description: "<code>bench get-app https://github.com/frappe/wiki</code> puis <code>bench --site votre-site install-app wiki</code>."
+      description: "<code>bench get-app https://github.com/frappe/wiki --branch version-3</code> puis <code>bench --site votre-site install-app wiki</code>. L'application s'ouvre à l'adresse /wiki-app du site."
     - title: Créez un premier espace
-      description: Ouvrez le bureau, créez un Wiki Space avec son adresse, puis une première Wiki Page. La page est en ligne à l'adresse de l'espace.
+      description: Dans /wiki-app, créez un espace avec son adresse et sa visibilité, puis une première page. Après relecture de la demande de modification, la page est en ligne à l'adresse de l'espace.
 
 faq:
   items:
     - label: Dans quel format les pages sont-elles écrites ?
-      content: En Markdown. La table des matières est générée depuis les titres de la page.
+      content: Vous écrivez dans un éditeur de texte enrichi, et le contenu est enregistré en Markdown. Chaque page publiée existe aussi en copie Markdown.
     - label: Une modification peut-elle être publiée sans relecture ?
-      content: Le wiki propose un mécanisme d'approbation. Une modification proposée attend qu'un relecteur l'approuve avant que la page publiée change.
-    - label: Puis-je revenir à une version précédente ?
-      content: Oui. L'historique des révisions conserve chaque version d'une page.
+      content: Chaque modification passe par une demande de modification. Un relecteur l'approuve, demande des changements ou la refuse, et la page publiée ne change qu'à la fusion.
+    - label: Puis-je garder un espace privé ?
+      content: Oui. Un espace est public, ou réservé à certains rôles de votre site. Les autres utilisateurs ne le voient pas.
     - label: Dokos AI lit-il le wiki ?
       content: Oui. L'assistant de Dokos AI cherche dans le wiki interne, les cours Learning et les notes publiques pour répondre aux questions de vos utilisateurs.
-    - label: Puis-je reprendre un wiki existant ?
-      content: La documentation Frappe Wiki comporte un guide de migration. Décrivez-nous votre outil actuel pour que nous estimions la reprise.
+    - label: Puis-je reprendre une documentation existante ?
+      content: Si elle est en fichiers Markdown dans un dépôt GitHub, GitHub Sync la reprend dans un espace. Pour un autre outil, décrivez-le-nous pour que nous estimions la reprise.
 
 bottom_cta:
   title: Dites-nous ce que vous voulez documenter.

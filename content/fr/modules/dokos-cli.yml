@@ -3,6 +3,7 @@
 #   integration-agents), https://doc.dokos.io/v5/integrations/ia/assistants-externes
 # - README de https://gitlab.com/dokos/dokos-cli (branche develop) : commandes, sites en lecture
 #   seule, trousseau du système, plugin pour agents de bureau, licence MIT (Dokos SAS, 2026)
+# - pyproject.toml (requires-python >=3.11) et tags du dépôt : v1.1.0 du 19 août 2026, vérifié le 3 novembre 2026
 #
 # Captures à prendre : Dokos CLI s'exécute sur le poste de l'utilisateur, les captures sont des
 # fenêtres de terminal (thème clair, 1440×900) connectées à demo.dokos.cloud :
@@ -84,10 +85,10 @@ fit:
 
 features:
   - title: Interrogez un site sans quitter le terminal
-    description: Vous listez des documents avec des filtres et des champs choisis, lisez un document, comptez, lisez une valeur, exécutez un rapport ou affichez le schéma d'un DocType. Le résultat s'affiche en tableau, ou en JSON dès que la sortie est redirigée vers un autre programme.
+    description: Vous listez des documents avec des filtres et des champs choisis, lisez un document, comptez, lisez une valeur, exécutez un rapport ou affichez le schéma d'un DocType. Le résultat s'affiche en tableau, ou en JSON dès que la sortie est redirigée vers un autre programme. <code>dokos call</code> appelle une méthode serveur autorisée, et <code>dokos guide</code> affiche une prise en main sans site ni identifiants.
     badge: Lecture
   - title: Écrivez des données, avec les garde-fous du site
-    description: Vous créez, sauvegardez, soumettez, annulez, amendez, supprimez ou renommez un document, mettez à jour une valeur ou un lot, et téléversez un fichier. Une erreur affiche le message du serveur et la commande qui y répond. Sur un site en lecture seule, l'écriture est refusée avant d'être envoyée.
+    description: Vous créez, sauvegardez, soumettez, annulez, amendez, supprimez ou renommez un document, mettez à jour une valeur ou un lot, et téléversez un fichier. Une erreur affiche le message du serveur et la commande qui y répond. Si quelqu'un a modifié le document depuis votre lecture, l'écriture est refusée, sauf avec <code>--force</code>. Sur un site en lecture seule, l'écriture est refusée avant d'être envoyée.
     badge: Écriture
   - title: Travaillez avec plusieurs sites
     description: Vous enregistrez chaque site sous un nom avec <code>dokos add-site</code> ou depuis un bench local avec <code>dokos use-site</code>. Vous changez de site actif, ou vous ciblez un site pour une seule commande avec <code>-s</code>.
@@ -100,7 +101,7 @@ install:
   description: Dokos CLI ne s'installe pas depuis la marketplace. C'est un paquet Python que vous installez sur votre poste, puis que vous connectez à votre site.
   steps:
     - title: Installez la commande
-      description: "<code>pipx install \"git+https://gitlab.com/dokos/dokos-cli.git@&lt;tag&gt;\"</code> en épinglant une version publiée. <code>pip</code> fonctionne aussi. <code>dokos self-update</code> met l'outil à jour selon la méthode d'installation détectée."
+      description: "<code>pipx install \"git+https://gitlab.com/dokos/dokos-cli.git@&lt;tag&gt;\"</code> en épinglant une version publiée (v1.1.0 au 19 août 2026). <code>pip</code> fonctionne aussi. L'outil signale au plus une fois par jour qu'une version plus récente existe. <code>dokos self-update</code> met l'outil à jour selon la méthode d'installation détectée."
     - title: Connectez un site
       description: "<code>dokos configure</code> enregistre l'URL du site et une clé d'API. Depuis un bench local, <code>dokos use-site</code> émet les clés pour l'utilisateur de votre choix. Vérifiez avec <code>dokos get-list \"User\" --limit 5</code>."
     - title: Branchez vos agents

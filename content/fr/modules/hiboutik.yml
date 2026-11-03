@@ -1,5 +1,8 @@
 # Sources : https://doc.dokos.io/v5/integrations/hiboutik, README et hooks de https://gitlab.com/dokos/hiboutik
 # (branche v5), DocTypes Hiboutik Settings, Hiboutik Sales et Hiboutik Till Movement, traductions françaises.
+# source (3 novembre 2026) : commits de la branche v5, version 1.3.0 du 24 août 2026 (reprise des ventes depuis la
+# dernière synchronisation, relance manuelle sur une période) et version 1.3.3 du 30 octobre 2026 (option « Prices
+# exclude VAT » : la TVA de l'article est ajoutée au prix d'une liste de prix hors taxes avant l'envoi).
 #
 # Captures à prendre (demo.dokos.cloud) :
 # - hero.webp : le document « Paramètres Hiboutik » (espace Intégrations) avec la connexion API, le profil de point de vente et les modes de paiement
@@ -64,10 +67,10 @@ fit:
 
 features:
   - title: Envoyez vos articles vers la caisse
-    description: Cochez « Synchroniser avec Hiboutik » sur chaque article concerné. Le libellé, le prix TTC, la taxe et le stock partent vers Hiboutik, et la référence de la caisse est mémorisée sur l'article. Les images s'ajoutent dans Hiboutik.
+    description: Cochez « Synchroniser avec Hiboutik » sur chaque article concerné. Le libellé, le prix TTC, la taxe et le stock partent vers Hiboutik, et la référence de la caisse est mémorisée sur l'article. Si votre liste de prix est hors taxes, une option des Paramètres Hiboutik ajoute la TVA de l'article avant l'envoi. Les images s'ajoutent dans Hiboutik.
     badge: Catalogue
   - title: Récupérez chaque vente en facture
-    description: Hiboutik appelle Dokos à chaque vente ou note de crédit. Dokos enregistre une Vente Hiboutik, puis crée la facture de vente et son paiement, avec la correspondance des modes de paiement que vous avez définie. Une routine horaire vérifie qu'aucune vente n'a été oubliée.
+    description: Hiboutik appelle Dokos à chaque vente ou note de crédit. Dokos enregistre une Vente Hiboutik, puis crée la facture de vente et son paiement, avec la correspondance des modes de paiement que vous avez définie. Une routine horaire reprend toutes les ventes clôturées depuis la dernière synchronisation, ce qui rattrape une interruption des webhooks. Un bouton des Paramètres Hiboutik relance la synchronisation sur une période que vous choisissez.
     badge: Ventes
   - title: Comptabilisez les mouvements de caisse
     description: Les mouvements de caisse sont intégrés une fois par heure, puis comptabilisés. Le statut passe à Terminé une fois l'écriture validée. Les remises globales vont sur le compte que vous indiquez dans les paramètres.

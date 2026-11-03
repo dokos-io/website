@@ -3,6 +3,8 @@
 # - README et hooks.py de https://github.com/frappe/blog (branche develop, lu le 29 octobre 2026) : « Write and publish blogs », licence mit, entrée « Blog » dans l'écran des applications
 # - DocTypes du dépôt (blog/blog/doctype) : Blog Post, Blog Category, Blogger, Blog Settings ; espace de travail « Blog » ; flux RSS (blog/www/rss.py) ; mentions « J'aime » (templates/includes/likes)
 # - Marketplace Dokos Cloud : app « blog », titre « Blog »
+# - pyproject.toml vérifié le 3 novembre 2026 : branche develop frappe >=17.0.0-dev (hors V5),
+#   branche version-16 frappe >=16,<17 (V5), mêmes quatre DocTypes.
 # Pas de logo dans public/frappe/ : icône de repli.
 #
 # Captures à prendre (demo.dokos.cloud, 1440×900, thème clair, français) :
@@ -78,7 +80,7 @@ install:
     - title: Depuis la marketplace Dokos Cloud
       description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez « Blog » sur votre site. L'application est comprise dans toutes les formules.
     - title: En auto-hébergement
-      description: "<code>bench get-app https://github.com/frappe/blog</code> puis <code>bench --site votre-site install-app blog</code>."
+      description: "<code>bench get-app --branch version-16 https://github.com/frappe/blog</code> puis <code>bench --site votre-site install-app blog</code>. La branche par défaut, develop, vise déjà Frappe v17 et ne s'installe pas sur Dokos V5."
     - title: Créez votre premier billet
       description: Ouvrez l'espace de travail Blog, créez votre fiche Blogger et une catégorie, puis écrivez le billet et publiez-le.
 

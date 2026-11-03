@@ -1,6 +1,8 @@
 # Sources : doc.dokos.io/v5/dokos/ventes (introduction, devis, commande-client, abonnements,
 # point-de-vente, facturx, rapports), doc.dokos.io/v5/dokos/comptabilite/acomptes,
-# doc.dokos.io/v5/dokos/comparaison-erpnext, doc.dokos.io/nouveautes (28 septembre 2026).
+# doc.dokos.io/v5/dokos/comparaison-erpnext, doc.dokos.io/nouveautes (28 septembre 2026),
+# content/fr/blog/2026/facturation-electronique.md (mise à jour du 3 novembre 2026 : réception et raccordement
+# à une plateforme agréée en service, émission en cours de développement).
 #
 # Captures à prendre (demo.dokos.cloud) :
 # - hero.webp : l'espace de travail Ventes (/app/selling), cartes et raccourcis
@@ -151,6 +153,12 @@ faq:
       content: >-
         Oui, quand le module Certification Caisse est installé avec une licence délivrée par Dokos SAS. Ce module est certifié par le LNE. La [page Certifications](/fr/certifications) explique le rôle de la licence. Les
         données d'encaissement sont inscrites dans un journal inaltérable et exportables en archive fiscale.
+
+    - label: Mes factures de vente partent-elles par une plateforme agréée ?
+      content: >-
+        Pas encore. Dokos reçoit déjà les factures électroniques aux formats CII, Factur-X et UBL et se raccorde à une plateforme agréée
+        pour la réception. L'émission est en cours de développement. En attendant, eTransactions génère le fichier Factur-X de chaque
+        facture validée. Voir le module [eTransactions](/fr/modules/etransactions).
 
 bottom_cta:
   title: Posez-nous vos questions sur les ventes dans Dokos.

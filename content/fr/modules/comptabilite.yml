@@ -115,10 +115,11 @@ features:
     badge: Banking (bêta)
   - title: Un prévisionnel de trésorerie à partir de vos documents
     description: >-
-      Depuis Comptabilité > Trésorerie, vous choisissez une période et vous cliquez sur Générer. Dokos lit
-      vos factures de vente et d'achat, vos abonnements, vos commandes, vos notes de frais approuvées et vos
+      Depuis Comptabilité > Trésorerie, ou à l'adresse <code>/desk/cash-flow-forecast</code>, vous choisissez une
+      période, les comptes bancaires et les sources, puis vous cliquez sur Générer. Dokos lit
+      vos factures de vente et d'achat non payées, vos abonnements, vos commandes, vos notes de frais approuvées et vos
       fiches de paie. Il affiche le solde d'ouverture, les encaissements et décaissements attendus, le solde
-      de clôture et une grille jour par jour. Vous cliquez sur un flux pour ouvrir son document, et vous
+      de clôture, une grille jour par jour où les jours à solde négatif ressortent en couleur, et un graphique du solde cumulé. Vous cliquez sur un flux pour ouvrir son document, et vous
       ajoutez des entrées manuelles. L'outil est en bêta ; la documentation conseille de le régénérer chaque
       semaine sur huit à douze semaines.
     badge: Trésorerie (bêta)
@@ -129,11 +130,11 @@ install:
     - title: Sur Dokos Cloud
       description: Créez votre site depuis votre tableau de bord Dokos Cloud. Dokos est installé avec le module Comptabilité. Compris dans toutes les formules.
     - title: En auto-hébergement
-      description: "<code>bench get-app https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>."
+      description: "<code>bench get-app --branch v5 https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>, sur un bench Dodock v5."
     - title: Pour la facturation électronique
       description: Installez l'application eTransactions depuis la marketplace, puis renseignez la connexion à votre plateforme agréée dans ses paramètres.
     - title: Pour la caisse certifiée
-      description: L'application de certification de caisse s'installe sur les sites qui encaissent des particuliers. Écrivez-nous pour l'activer sur votre site.
+      description: Installez le module Certification Caisse, puis demandez une licence à Dokos SAS en nous écrivant. La licence apporte les clés de signature de votre société et l'accès au journal de signature externe de Dokos SAS. Sans licence active, le module ne signe pas le journal.
 
 faq:
   items:
@@ -153,9 +154,10 @@ faq:
         fichier XML (pain.008) à transmettre à votre banque.
     - label: Quand la facturation électronique devient-elle obligatoire ?
       content: >-
-        La réception est obligatoire pour toutes les entreprises en septembre 2026. L'émission est obligatoire
-        pour les grandes entreprises et les ETI en septembre 2026, et pour les PME et microentreprises en
-        septembre 2027. Dokos reçoit déjà les factures électroniques et génère le Factur-X à la validation.
+        Depuis septembre 2026, toutes les entreprises doivent pouvoir recevoir des factures électroniques, et les
+        grandes entreprises et les ETI doivent les émettre. Les PME et les microentreprises émettent à partir de
+        septembre 2027. Dokos reçoit déjà les factures électroniques par une plateforme agréée et génère le
+        Factur-X à la validation. L'envoi par la plateforme agréée est en cours de développement.
     - label: Qu'est-ce qui change par rapport à la comptabilité d'ERPNext ?
       content: >-
         Dokos numérote les factures à la validation en séquence continue, interdit la suppression des

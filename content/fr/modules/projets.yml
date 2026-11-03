@@ -98,7 +98,7 @@ faq:
     - label: Comment l'avancement d'un projet est-il calculé ?
       content: "Selon la « Méthode d'achèvement » choisie : saisie manuelle, proportion de tâches terminées, progression des tâches ou poids des tâches. Si la somme des poids n'est pas 100, Dokos normalise le résultat."
     - label: Les notes de frais entrent-elles dans le coût du projet ?
-      content: Oui. Une note de frais qui mentionne le projet ou une de ses tâches met à jour le champ de demande de remboursement et le coût total du projet.
+      content: Oui. Une note de frais qui mentionne le projet ou une de ses tâches met à jour le champ de demande de remboursement et le coût total du projet. Les notes de frais viennent de l'application [Dokos HR](/fr/modules/ressources-humaines).
 
 bottom_cta:
   title: Posez-nous vos questions sur le module Projets.

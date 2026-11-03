@@ -1,6 +1,7 @@
 # Sources : README https://github.com/frappe/crm (branche develop) ; docs.frappe.io/crm (introduction,
 # setup-guide, erpnext, twilio, exotel, whatsapp) ; licence vérifiée sur le dépôt (AGPL-3.0) ;
-# marketplace cloud.dokos.io, identifiant crm.
+# marketplace cloud.dokos.io, identifiant crm. pyproject.toml vérifié le 3 novembre 2026 : branche main
+# frappe >=15,<17 ; branche par défaut develop >=16.0.0-dev ; dernière version v1.91.1 du 2 novembre 2026.
 #
 # Captures à prendre (demo.dokos.cloud, interface /crm) :
 # - hero.webp : le tableau Kanban des affaires (/crm/deals, vue Kanban)
@@ -113,7 +114,7 @@ install:
         Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez CRM sur votre site.
         L'application est comprise dans toutes les formules.
     - title: En auto-hébergement
-      description: "<code>bench get-app https://github.com/frappe/crm</code> puis <code>bench --site votre-site install-app crm</code>."
+      description: "<code>bench get-app --branch main https://github.com/frappe/crm</code> puis <code>bench --site votre-site install-app crm</code>. La branche main est la version stable ; develop suit le développement en cours."
     - title: Activez l'intégration avec Dokos
       description: >-
         Dans /crm, ouvrez Paramètres > ERPNext, activez l'intégration et choisissez la société.

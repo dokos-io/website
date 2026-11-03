@@ -1,6 +1,9 @@
 # Sources : https://doc.dokos.io/v5/dokos/chantiers et ses sous-pages (vue-chantiers, factures-situation, outils),
 # README et hooks de https://gitlab.com/dokos/construction (branche v5), DocTypes Construction App Settings et
 # Progress Invoicing Items, traductions françaises de l'application. Dans l'interface, l'application s'appelle « Chantier ».
+# Branche v5 vérifiée le 3 novembre 2026 : license.txt AGPLv3, v3.6.0 du 1er novembre 2026 ; commits du 25 octobre 2026
+# « show purchases in the margin reports » et « read expense claims only when the HR app is installed »
+# (report quotation_markup_by_project).
 #
 # Captures à prendre (demo.dokos.cloud) :
 # - hero.webp : un Devis en vue Chantier, avec des titres, des lignes d'articles et un sous-total par section
@@ -55,6 +58,7 @@ fit:
     - Devis fournisseur, Commande fournisseur, Reçu d'achat
     - Projet et Tâche
     - Ensemble de produits
+    - Note de frais, quand l'application RH est installée, pour le rapport par projet
   adds:
     - Le document « Paramètres de l'application Chantier »
     - Un éditeur de lignes avec titres, commentaires, sous-totaux et affichage à l'impression
@@ -74,15 +78,15 @@ features:
     description: Sur une commande client validée, choisissez Créer puis Facture de situation. Dokos propose un pourcentage d'avancement, le plus élevé entre l'avancement du projet lié et ce qui est déjà facturé. Vous l'appliquez à toute la facture ou ligne par ligne. Le titre d'impression indique « Facture de situation n°3 » et le récapitulatif de facturation, sur la commande et sur la facture, liste les situations déjà émises.
     badge: Facturation
   - title: Comparez la marge prévue et la marge réelle
-    description: Le rapport « Récapitulatif de marque sur devis par projet » compare, pour chaque projet, le taux de marque du devis avec les ventes et les achats réels. Le rapport « Comparatif de marge par devis » met en face la marge calculée au devis et la marge constatée à la facturation.
+    description: Le rapport « Récapitulatif de marque sur devis par projet » compare, pour chaque projet, le taux de marque du devis avec les ventes et les achats réels. Si l'application RH est installée, il compte aussi les notes de frais du projet. Le rapport « Comparatif de marge par devis » met en face la marge calculée au devis et la marge constatée à la facturation.
     badge: Rapports
 
 install:
   steps:
     - title: Depuis la marketplace Dokos Cloud
-      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Construction sur votre site. L'application est comprise dans toutes les formules.
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Construction sur votre site. La documentation indique aussi que vous pouvez demander l'installation à help@dokos.cloud.
     - title: En auto-hébergement
-      description: "<code>bench get-app https://gitlab.com/dokos/construction</code> puis <code>bench --site votre-site install-app construction</code>."
+      description: "<code>bench get-app --branch v5 https://gitlab.com/dokos/construction</code> puis <code>bench --site votre-site install-app construction</code>."
     - title: Activez la vue dédiée
       description: Ouvrez les Paramètres de l'application Chantier, cochez « Utiliser la vue Table dédiée », choisissez les documents de vente et d'achat concernés, puis les colonnes de l'éditeur de devis. La vue n'est pas active par défaut.
 

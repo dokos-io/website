@@ -2,7 +2,8 @@
 # doc.dokos.io/v5/dokos/comparaison-erpnext, doc.dokos.io/v5/dodock (présentation),
 # doc.dokos.io/v5/dodock/fonctionnalites (workflows, utilisateurs, notifications, impression, webhooks, nommage),
 # doc.dokos.io/v5/dodock/developpeurs/api/rest_api, doc.dokos.io/v5/dokos/certification-caisse/export-archives,
-# content/fr/blog/2026/arrivee-V5.md, content/fr/blog/2025/dokos-se-certifie-lne.md.
+# content/fr/blog/2026/arrivee-V5.md, content/fr/blog/2025/dokos-se-certifie-lne.md, doc.dokos.io/v5/dodock/installation
+# (installation standard ou Docker), branches v5 de gitlab.com/dokos/dokos et dodock (vérifié le 3 novembre 2026).
 #
 # Captures à prendre (demo.dokos.cloud) :
 # - hero.webp : le bureau central (/app) avec la barre latérale et les espaces de travail
@@ -123,10 +124,11 @@ install:
     - title: Sur Dokos Cloud
       description: Créez votre site depuis votre tableau de bord Dokos Cloud. Dokos et Dodock y sont installés. Compris dans toutes les formules.
     - title: En auto-hébergement
-      description: "<code>bench get-app https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>, sur un bench Dodock."
+      description: "Sur un bench Dodock de branche v5 : <code>bench get-app --branch v5 https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>. La documentation décrit aussi une installation Docker."
     - title: Puis les applications dont vous avez besoin
       description: Depuis la marketplace, installez les applications de l'écosystème sur le même site. Elles lisent les documents de Dokos.
   prerequisites:
+    - Un serveur Linux (VPS, serveur physique ou machine virtuelle). Les hébergements mutualisés ne conviennent pas.
     - Un bench Dodock (voir le guide d'installation sur doc.dokos.io/v5/dodock/installation)
 
 faq:
@@ -136,8 +138,10 @@ faq:
         Dokos est une adaptation d'ERPNext pour la France. La traduction française est tenue à jour. Les
         factures sont numérotées à la validation en séquence continue et les documents de facturation et de
         comptabilité ne peuvent pas être supprimés. Le bilan sort au format français. Dokos ajoute le
-        prélèvement SEPA, l'import de relevés OFX, l'amortissement linéaire, les factures d'acompte, les
-        réservations de ressources, et il a réécrit les paiements Stripe, Braintree et GoCardless.
+        prélèvement SEPA (fichiers pain.008), l'import de relevés OFX, l'amortissement linéaire selon les règles
+        françaises, les factures d'acompte, la gestion de lieu et les réservations de ressources, une vue Planning
+        pour les documents datés, et il a réécrit les paiements Stripe, Braintree et GoCardless. La
+        [page de comparaison](https://doc.dokos.io/v5/dokos/comparaison-erpnext) tient la liste à jour.
     - label: Sur quelle version repose Dokos V5 ?
       content: >-
         Dokos V5 est sortie le 16 mars 2026. Elle repose sur Frappe et ERPNext v16. Dodock est le cadriciel

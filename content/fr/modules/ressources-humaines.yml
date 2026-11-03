@@ -2,7 +2,11 @@
 # Évaluations, Application mobile RH, Interface Desktop Dokos RH, Paramètres RH, Gérer les contrats
 # des employés), README https://gitlab.com/dokos/hrms (liste des modules, licence GPLv3),
 # content/fr/blog/2026/rentree-2026.md (refonte du module RH en cours),
-# https://doc.dokos.io/nouveautes (v5 : bouton « Créer un utilisateur », jalons sur la fiche employé).
+# https://doc.dokos.io/nouveautes (v5 : bouton « Créer un utilisateur », jalons sur la fiche employé),
+# https://doc.dokos.io/v5/dokos/hrms/paie (« aucune différence avec Frappe HR », « nous ne conseillons pas son
+# utilisation en France »), sections Recrutement et Paie de la documentation v5, branche v5 de
+# https://gitlab.com/dokos/hrms (v3.14.4 du 28 octobre 2026) : justificatif PDF depuis le téléphone (12 juin 2026),
+# vue kanban des candidats et reCAPTCHA du formulaire de candidature (juillet 2026).
 #
 # Captures à prendre (demo.dokos.cloud) :
 # - hero.webp : le Tableau de bord RH, indicateurs clés (/app/hr)
@@ -91,7 +95,7 @@ features:
     image: /modules/ressources-humaines/feature-evaluation.webp
     badge: Évaluations
   - title: Donnez à vos employés une application mobile
-    description: À l'adresse de votre site suivie de /hrms, chaque employé ouvre une application web depuis un navigateur Chromium (Chrome, Brave, Edge). Il pointe son arrivée, demande un congé, consulte son historique et les jours fériés à venir, enregistre une dépense et saisit ses heures par QR code ou à la main. Les approbateurs traitent les demandes de congé depuis l'écran d'accueil.
+    description: À l'adresse de votre site suivie de /hrms, chaque employé ouvre une application web depuis un navigateur Chromium (Chrome, Brave, Edge). Il pointe son arrivée, demande un congé, consulte son historique et les jours fériés à venir, enregistre une dépense avec la photo ou le PDF de son justificatif et saisit ses heures par QR code ou à la main. Les approbateurs traitent les demandes de congé depuis l'écran d'accueil.
     badge: Application mobile
 
 install:
@@ -110,9 +114,9 @@ faq:
     - label: Le module RH évolue-t-il ?
       content: Oui. Le module RH est en cours de refonte, comme nous l'annoncions dans notre journal à la rentrée 2026. Les documents décrits sur cette page restent disponibles pendant ce chantier.
     - label: La paie est-elle utilisable en France ?
-      content: Le module de paie hérité de Frappe HR n'est pas encore adapté à la France. Les notes de frais, elles, se règlent par une écriture de paiement distincte du salaire.
+      content: Non. Le module de paie est celui de Frappe HR, sans adaptation, et notre documentation déconseille son utilisation en France. Les notes de frais, elles, se règlent par une écriture de paiement distincte du salaire.
     - label: Que couvre Dokos HR au-delà de cette page ?
-      content: L'application reprend les modules de Frappe HR, dont le recrutement, la formation, la gestion de flotte et les rapports. Les sections Recrutement et Paie de la documentation sont en cours de rédaction.
+      content: L'application reprend les modules de Frappe HR, dont le recrutement, la formation, la gestion de flotte, les avances aux employés et les rapports. Pour le recrutement, une vue kanban suit chaque candidat dans le processus d'embauche, et le formulaire de candidature en ligne est protégé par reCAPTCHA. La documentation V5 couvre le recrutement et la paie.
     - label: Comment un employé accède-t-il à l'application mobile ?
       content: Il doit avoir une fiche employé et un utilisateur sur le site. Il ouvre ensuite l'adresse de votre site suivie de /hrms dans un navigateur Chromium et peut l'installer comme application web.
     - label: Les données RH sont-elles protégées sur l'API ?

@@ -4,18 +4,22 @@
 #   pièces jointes, envoi planifié, e-mail de test, recherche des liens cassés, lien de désinscription, publication web, destinataires et vues, campagne UTM
 # - Groupe d'e-mails (Email Group) et Désinscription (Email Unsubscribe) : DocTypes de Dodock utilisés par l'application
 # - Marketplace Dokos Cloud : app « newsletter »
+# - Dodock V5 (branche v5, 28 septembre 2026) : « Email Group » traduit « Liste de diffusion » ; DocType « Email Group Source »
+#   (alimentation automatique depuis un DocType et des filtres), champs nature (Service, Marketing), base légale par défaut,
+#   mode statique ou dynamique, « Mise à jour automatique quotidienne » ; https://doc.dokos.io/v5/dodock/premiers-pas/listes-de-diffusion
+# - Billet rentree-2026.md : refonte de la liste de diffusion en cours
 # Pas de logo dans public/frappe/ : icône de repli.
 #
 # Captures à prendre (demo.dokos.cloud, 1440×900, thème clair, français) :
-# - hero.webp : le formulaire Newsletter (/app/newsletter) rempli, groupe d'e-mails choisi et message rédigé
-# - fit.webp : un Groupe d'e-mails avec ses membres importés depuis les contacts
+# - hero.webp : le formulaire Newsletter (/app/newsletter) rempli, liste de diffusion choisie et message rédigé
+# - fit.webp : une Liste de diffusion avec une source et ses membres issus des contacts
 # - feature-redaction.webp : l'éditeur de texte riche du message, avec une pièce jointe
 # - feature-planification.webp : la case « planifier l'envoi » cochée avec une date et une heure, et le bouton d'e-mail de test
 # - feature-suivi.webp : une newsletter envoyée, nombre de destinataires et nombre de vues
 # - feature-web.webp : la version web publiée de la newsletter, sur le site
 
 title: Newsletter
-description: Envoyez une lettre d'information aux groupes d'e-mails de votre site Dokos, planifiez l'envoi et suivez les ouvertures.
+description: Envoyez une lettre d'information aux listes de diffusion de votre site Dokos, planifiez l'envoi et suivez les ouvertures.
 icon: i-heroicons-envelope
 application: Newsletter
 theme: site-web-outils-numeriques
@@ -23,7 +27,7 @@ author: Frappe Technologies et contributeurs
 navigation:
   title: Newsletter
   icon: i-heroicons-envelope
-  description: Envoi groupé d'e-mails à vos groupes de contacts.
+  description: Envoi groupé d'e-mails à vos listes de diffusion.
 
 publisher: frappe
 licence: AGPLv3
@@ -33,29 +37,29 @@ related: [crm, ventes, blog-app, builder]
 
 hero:
   title: Votre lettre d'information, <span class="text-primary">envoyée</span> depuis votre site Dokos.
-  description: Vous rédigez le message, vous choisissez les groupes de destinataires et vous envoyez, tout de suite ou à la date prévue. Les désinscriptions sont prises en compte à l'envoi suivant.
+  description: Vous rédigez le message, vous choisissez les listes de diffusion et vous envoyez, tout de suite ou à la date prévue. Les désinscriptions sont prises en compte à l'envoi suivant.
 
 for_whom:
   items:
     - title: Vous copiez vos contacts dans un outil d'e-mailing externe
-      description: Vos contacts, prospects et clients sont déjà dans Dokos. Vous les importez dans un groupe d'e-mails et vous envoyez depuis le même site.
+      description: Vos contacts, prospects et clients sont déjà dans Dokos. Une source alimente la liste de diffusion à partir de ces fiches, et vous envoyez depuis le même site.
       icon: i-heroicons-users
     - title: Vous informez vos clients d'une nouveauté ou d'une fermeture
-      description: Vous écrivez le message dans l'éditeur, vous ajoutez le document en pièce jointe et vous envoyez au groupe concerné.
+      description: Vous écrivez le message dans l'éditeur, vous ajoutez le document en pièce jointe et vous envoyez à la liste concernée.
       icon: i-heroicons-megaphone
     - title: Vous préparez vos envois à l'avance
       description: Vous fixez la date et l'heure. L'envoi part sans vous, et vous recevez un e-mail de test avant pour vérifier le rendu.
       icon: i-heroicons-clock
 
 fit:
-  description: L'application ajoute le document <strong>Newsletter</strong> à votre site. Il s'adresse aux <strong>Groupes d'e-mails</strong> de Dodock, dans lesquels vous importez les adresses de vos contacts, de vos prospects ou de vos clients. Les envois passent par les comptes e-mail de votre site. Une personne qui se désinscrit est inscrite dans les Désinscriptions et n'est plus servie par les envois suivants.
+  description: L'application ajoute le document <strong>Newsletter</strong> à votre site. Il s'adresse aux <strong>Listes de diffusion</strong> de Dodock. Depuis Dokos V5, une liste s'alimente à la main ou par des <strong>sources</strong>, chacune définie par un type de document, par exemple Contact ou Client, et des filtres. L'option « Mise à jour automatique quotidienne » recalcule ses membres chaque jour. Les envois passent par les comptes e-mail de votre site. Une personne qui se désinscrit est inscrite dans les Désinscriptions et n'est plus servie par les envois suivants.
   reads:
-    - Groupe d'e-mails et ses membres, importés depuis Contact, Prospect ou Client
+    - Liste de diffusion, ses sources et ses membres, issus de Contact, Prospect ou Client
     - Compte e-mail de votre site pour l'expédition
     - Désinscription (Email Unsubscribe), pour exclure les adresses retirées
     - Campagne UTM, pour rattacher l'envoi à une campagne
   adds:
-    - Le DocType « Newsletter », avec ses groupes de destinataires et ses pièces jointes
+    - Le DocType « Newsletter », avec ses listes de destinataires et ses pièces jointes
     - Une page web par newsletter publiée
     - La page /unsubscribe pour la désinscription
   depends:
@@ -66,7 +70,7 @@ features:
     description: Vous écrivez le message en texte riche, en Markdown ou en HTML. Vous précisez le nom et l'adresse de l'expéditeur, et vous ajoutez des pièces jointes. Un bouton recherche les liens cassés avant l'envoi.
     badge: Rédaction
   - title: Choisissez les destinataires
-    description: Vous sélectionnez un ou plusieurs groupes d'e-mails. Les adresses désinscrites sont retirées automatiquement de la liste. Le lien de désinscription s'ajoute en bas du message si vous cochez l'option.
+    description: Vous sélectionnez une ou plusieurs listes de diffusion. Chaque liste porte sa nature, Service pour les messages liés au contrat ou au service, Marketing pour les offres et les lettres d'information, et sa base légale par défaut, par exemple le consentement ou l'intérêt légitime. Les adresses désinscrites sont retirées automatiquement de la liste. Le lien de désinscription s'ajoute en bas du message si vous cochez l'option.
     badge: Destinataires
   - title: Testez, puis envoyez ou planifiez
     description: Vous envoyez d'abord un e-mail de test à votre adresse. Vous envoyez ensuite tout de suite, ou vous cochez « planifier l'envoi » avec une date et une heure. L'application alimente la file d'e-mails de votre site.
@@ -81,15 +85,15 @@ install:
       description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez « Newsletter » sur votre site. L'application est comprise dans toutes les formules.
     - title: En auto-hébergement
       description: "<code>bench get-app https://github.com/frappe/newsletter</code> puis <code>bench --site votre-site install-app newsletter</code>."
-    - title: Préparez un groupe d'e-mails
-      description: Créez un Groupe d'e-mails et importez-y les adresses de vos contacts, prospects ou clients. Votre première newsletter s'adresse à ce groupe.
+    - title: Préparez une liste de diffusion
+      description: Créez une Liste de diffusion, ajoutez une source sur vos contacts, prospects ou clients, ou collez des adresses à la main. Votre première newsletter s'adresse à cette liste.
   prerequisites:
     - Un compte e-mail sortant configuré sur votre site
 
 faq:
   items:
     - label: D'où viennent les destinataires ?
-      content: Des Groupes d'e-mails de votre site. Vous y importez les adresses depuis vos Contacts, vos Prospects ou vos Clients, ou vous les ajoutez à la main.
+      content: Des Listes de diffusion de votre site. Une source y ajoute les adresses de vos Contacts, de vos Prospects ou de vos Clients selon des filtres, ou vous les ajoutez à la main. La [documentation des listes de diffusion](https://doc.dokos.io/v5/dodock/premiers-pas/listes-de-diffusion) décrit le paramétrage.
     - label: Que se passe-t-il quand une personne se désinscrit ?
       content: Elle clique sur le lien de désinscription du message. Son adresse est enregistrée dans les Désinscriptions et retirée des envois suivants, pour cette newsletter ou pour tous les envois selon son choix.
     - label: Puis-je voir qui a ouvert le message ?

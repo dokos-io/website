@@ -1,6 +1,10 @@
 # Sources : README https://github.com/frappe/drive (branche main) ; docs.frappe.io/drive (introduction, quick-start) ;
 # licence vérifiée sur le dépôt (AGPL-3.0) ; marketplace cloud.dokos.io, identifiant drive.
 # Le README indique que Frappe Drive est archivé et rejoint Frappe Suite (github.com/frappe/suite).
+# Statut vérifié le 3 novembre 2026 : description du dépôt frappe/drive « Drive is now archived and is a part of
+# Frappe Suite now », avis d'archivage ajouté le 1er octobre 2026 (commit « docs: add archival notice »).
+# frappe/suite : « [WIP] », AGPL-3.0, sept produits (Drive, Writer, Sheets, Slides, Meet, Mail, Calendar),
+# frappe >=16. TODO (décision utilisateur) : retirer cette page ou la remplacer par une page Frappe Suite.
 #
 # Captures à prendre (demo.dokos.cloud, interface /drive) :
 # - hero.webp : l'accueil de Frappe Drive, dossiers et fichiers récents
@@ -17,7 +21,7 @@ navigation:
 
 title: Frappe Drive
 icon: i-heroicons-folder-open
-description: Stockez vos fichiers sur votre site Dokos, partagez-les avec vos utilisateurs et rédigez des documents à plusieurs.
+description: Stocke et partage vos fichiers sur votre site Dokos. Frappe a archivé l'application, qui rejoint Frappe Suite.
 application: Frappe Drive
 theme: site-web-outils-numeriques
 author: Frappe Technologies et contributeurs
@@ -36,7 +40,8 @@ hero:
   title: Vos fichiers d'équipe, <span class="text-primary">stockés et partagés</span> depuis votre site Dokos.
   description: >-
     Frappe Drive ajoute à votre site un espace de fichiers avec les utilisateurs et les groupes que vous avez déjà.
-    Vous envoyez des dossiers entiers, partagez un fichier et rédigez des documents à plusieurs.
+    Frappe a archivé Drive en octobre 2026 : ses fonctions passent dans Frappe Suite, encore en développement.
+    Pour un nouveau projet, parlez-nous d'abord de Suite.
 
 for_whom:
   items:
@@ -94,12 +99,16 @@ features:
 
 install:
   steps:
-    - title: Depuis la marketplace Dokos Cloud
+    - title: Pour un nouveau projet, voyez Frappe Suite
       description: >-
-        Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Frappe Drive sur votre site.
-        L'application est comprise dans toutes les formules.
+        Frappe Suite réunit Drive, Writer, Sheets, Slides, Meet, Mail et Calendar dans une seule application (github.com/frappe/suite).
+        Elle est encore marquée en développement par Frappe. Écrivez-nous pour en parler avant de l'installer.
+    - title: Si votre site utilise déjà Drive
+      description: >-
+        L'application reste listée sur la marketplace Dokos Cloud. Le dépôt frappe/drive est archivé :
+        prévoyez avec nous le passage à Suite.
     - title: En auto-hébergement
-      description: "<code>bench get-app https://github.com/frappe/drive --branch main</code> puis <code>bench --site votre-site install-app drive</code>."
+      description: "<code>bench get-app https://github.com/frappe/drive --branch develop</code> puis <code>bench --site votre-site install-app drive</code>. La branche develop déclare Frappe v15 à v17."
   prerequisites:
     - Un site Dokos V5
     - En auto-hébergement, les paquets système ffmpeg et libmagic
@@ -118,12 +127,13 @@ faq:
         et de garder une stratégie de sauvegarde.
     - label: Frappe Drive est-il toujours maintenu ?
       content: >-
-        Le dépôt frappe/drive indique que Frappe Drive rejoint Frappe Suite (github.com/frappe/suite).
-        Dokos Cloud distribue l'application Frappe Drive sur sa marketplace. Publiée sous licence AGPLv3.
+        Frappe a archivé Drive en octobre 2026. Le dépôt frappe/drive indique que Drive fait désormais partie de
+        Frappe Suite (github.com/frappe/suite), une application qui regroupe aussi Writer, Sheets, Slides, Meet, Mail et Calendar.
+        Suite est publiée sous licence AGPLv3 et encore marquée en développement. Pour un nouveau site, parlez-nous de Suite.
 
 bottom_cta:
-  title: Posez-nous vos questions sur Frappe Drive.
-  description: Décrivez-nous vos volumes et vos usages, nous vous dirons si Frappe Drive y répond.
+  title: Vous utilisez Frappe Drive ou cherchez à le remplacer.
+  description: Décrivez-nous vos volumes et vos usages, nous préparons avec vous le passage à Frappe Suite.
   links:
     - label: Nous écrire
       to: /fr/contact

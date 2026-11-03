@@ -3,6 +3,12 @@
 # emission-factures-electroniques, etransactions), https://doc.dokos.io/nouveautes (septembre 2026),
 # README de https://gitlab.com/dokos/etransactions (branche v5), billet facturation-electronique.md.
 # Statut fixé par le client : réception et connexion à une plateforme agréée en production, émission en cours.
+# source (3 novembre 2026) : branche v5 du dépôt, version 2.17.1 du 2 novembre 2026 ; eTransactions Settings
+# (ocr_service : Amazon Textract par défaut ou Mistral OCR ; envois automatiques des statuts de cycle de vie ;
+# rapprochement automatique avec les reçus d'achat), traductions locale/fr.po ; doc.dokos.io/nouveautes du
+# 28 septembre 2026 (refus d'une facture reçue depuis la fiche facture fournisseur, notification de la comptabilité).
+# Le README de la branche v5 classe encore la réception, l'émission et la connexion PA en « Roadmap » : il est en retard
+# sur le code et sur la documentation.
 #
 # Captures à prendre (demo.dokos.cloud) :
 # - hero.webp : Paramètres E-transactions, onglet « Plateforme Agréée », une plateforme active avec son voyant de santé
@@ -74,10 +80,13 @@ features:
     description: Le bouton « Remplir depuis SIRENE » complète le SIREN, le numéro de TVA et l'adresse du siège sur la fiche Société. Depuis la configuration de la plateforme, « Inscription à l'annuaire » enregistre votre identifiant dans l'annuaire français ou dans Peppol. Sur Esalink, l'entrée prend effet au moins dix jours après la demande.
     badge: En production
   - title: Recevez les factures de vos fournisseurs
-    description: Dokos interroge la plateforme à intervalle régulier et dépose chaque facture reçue dans la banette. Il lit les formats UBL et CII, y compris les données intégrées à un PDF Factur-X, puis extrait le fournisseur, les montants, les lignes, les conditions de paiement et l'IBAN. Le fournisseur est recherché par numéro de TVA, puis par IBAN et par nom, avec un niveau de confiance. Vous confirmez, puis vous créez la facture d'achat.
+    description: Dokos interroge la plateforme à intervalle régulier et dépose chaque facture reçue dans la banette. Il lit les formats UBL et CII, y compris les données intégrées à un PDF Factur-X, puis extrait le fournisseur, les montants, les lignes, les conditions de paiement et l'IBAN. Le fournisseur est recherché par numéro de TVA, puis par IBAN et par nom, avec un niveau de confiance. Vous confirmez, puis vous créez la facture d'achat. Vous pouvez aussi refuser une facture reçue directement depuis la fiche facture fournisseur.
+    badge: En production
+  - title: Renvoyez les statuts à votre fournisseur
+    description: "Dokos transmet à la plateforme le statut « Prise en charge » à la création de la facture fournisseur, « Approuvée » à la validation de la facture d'achat, puis les statuts de paiement à la validation du paiement. Ces trois envois sont activés par défaut et se désactivent un par un dans Paramètres E-transactions."
     badge: En production
   - title: Lisez les PDF par OCR
-    description: Les factures fournisseur reçues en PDF, déposées à la main ou transférées depuis une boîte de courriel dédiée, passent par Amazon Textract. La facture fournisseur en attente reprend les données extraites, propose la commande fournisseur ouverte du fournisseur et bloque, si vous l'avez demandé, une facture d'achat dont le montant dépasse celui lu sur le document.
+    description: Les factures fournisseur reçues en PDF, déposées à la main ou transférées depuis une boîte de courriel dédiée, passent par Amazon Textract ou par Mistral OCR. Vous choisissez le service dans Paramètres E-transactions, onglet Achats ; Amazon Textract est le réglage par défaut. La facture fournisseur en attente reprend les données extraites, propose la commande fournisseur ouverte du fournisseur et bloque, si vous l'avez demandé, une facture d'achat dont le montant dépasse celui lu sur le document. Une option rapproche automatiquement la facture des reçus d'achat, dans la limite d'un écart en montant ou en pourcentage sur le total HT.
     badge: En production
   - title: Émettez vos factures depuis la facture de vente
     description: À la validation d'une facture de vente, Dokos classe le client, entreprise, administration, particulier ou partenaire étranger, puis génère le format attendu, Factur-X par défaut ou UBL pour un destinataire Peppol. L'envoi part automatiquement ou à la main, et un panneau affiche le statut renvoyé par la plateforme. Une facture déjà transmise s'annule par « Annuler avec cycle de vie ». Cette partie est en cours de finalisation.
@@ -95,7 +104,7 @@ install:
       description: Renseignez le SIREN et le numéro de TVA de votre société, de vos clients et de vos fournisseurs. Le bouton « Remplir depuis SIRENE » le fait pour vous.
   prerequisites:
     - Un compte chez une plateforme agréée (SuperPDP, Esalink ou une plateforme au standard AFNOR)
-    - Pour l'OCR, une clé d'accès Amazon Textract
+    - Pour l'OCR, une clé d'accès Amazon Textract ou une clé d'API Mistral
 
 faq:
   items:
@@ -103,8 +112,9 @@ faq:
       content: SuperPDP, Esalink (HUBTIMIZE) et toute plateforme personnalisée qui respecte le standard AFNOR XP Z12-013. Une société peut activer plusieurs plateformes, chacune avec son périmètre.
     - label: Dokos est-il lui-même une plateforme agréée ?
       content: Non. Dokos se connecte à la plateforme de votre choix. Dokos est par ailleurs membre fondateur de l'association [PDP Libre](https://pdplibre.org/), qui regroupe des éditeurs de logiciels libres autour de la facturation électronique.
+    # source : billet rentree-2026.md (« Les premières factures électroniques sont déjà arrivées cet été »)
     - label: Que puis-je faire aujourd'hui, et qu'est-ce qui reste en cours ?
-      content: La connexion à une plateforme agréée, la réception des factures aux formats Factur-X, CII et UBL et la lecture des PDF par OCR sont en production. L'émission depuis la facture de vente est en cours de finalisation.
+      content: La connexion à une plateforme agréée, la réception des factures aux formats Factur-X, CII et UBL, le renvoi des statuts au fournisseur et la lecture des PDF par OCR sont en production. Les premières factures électroniques sont arrivées chez des clients de Dokos SAS à l'été 2026. L'émission depuis la facture de vente est en cours de finalisation.
     - label: Que deviennent mes réglages de l'application OCR ?
       content: Sur Dokos V5, eTransactions remplace l'application OCR. À l'installation, les réglages et les factures en attente de l'OCR sont repris dans eTransactions.
     - label: Comment un fournisseur reçu est-il reconnu ?
