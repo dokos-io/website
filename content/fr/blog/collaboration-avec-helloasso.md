@@ -50,7 +50,7 @@ Et voilà, vos utilisateurs bénéficient d’une solution de paiement fluide et
 
 ### En savoir plus
 
-Vous êtes prêt·e à sauter le pas ? Rendez-vous sur notre [documentation dédiée](https://doc.dokos.io/integrations/payments/helloasso) pour découvrir toutes les étapes en détail.
+Vous êtes prêt·e à sauter le pas ? Rendez-vous sur notre [documentation dédiée](https://doc.dokos.io/v5/integrations/payments/helloasso) pour découvrir toutes les étapes en détail.
 
 Chez Dokos, nous croyons fermement à la puissance du collectif et de l’innovation pour servir l’intérêt général. En collaborant avec HelloAsso, nous mettons à votre disposition une solution éthique et performante, au service de vos projets.
 

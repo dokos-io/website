@@ -8,6 +8,8 @@ image: /blog/FE-image-blog-rectangle.webp
 title: "Facturation électronique"
 description: "et si on prenait le temps de respirer ?"
 ---
+
+> **Mise à jour du 3 novembre 2026 :** Dokos reçoit les factures électroniques aux formats CII, Factur-X et UBL et se raccorde à une plateforme agréée pour la réception. L'émission est en cours de développement. Voir le module [eTransactions](/fr/modules/etransactions) et [notre billet de la rentrée 2026](/fr/blog/2026/rentree-2026).
 Ces dernières semaines, vos boîtes mail saturent : *"Choisissez maintenant !"*, *"Urgence !"*, *"Ne restez pas sur le bord de la route !"*. Cette pression constante n'est pas là pour vous aider, mais pour vous précipiter. Entre les injonctions commerciales et la complexité technique, il est normal de se sentir un peu perdu.
 
 Pourtant, notre expérience nous a appris une chose essentielle : **on ne prend jamais de bonne décision dans l'urgence et le stress.** Alors, posons-nous un instant. Prenons le temps de décrypter ce qui se joue vraiment, calmement.

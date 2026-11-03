@@ -37,7 +37,7 @@ Pour la première version de Dokos, nous nous sommes fiers de vous proposer un c
 - Possibilité de proposer des réservations de salles ou de ressources sur le site web.
 - Nouveau système de traduction pour garantir des traductions adaptées au contexte de chaque document.
 
-Retrouvez l'ensemble des changements de la v1.0.0 sur le site de [documentation](https://doc.dokos.io/fr/dokos/versions/v1_0_0.html).
+Retrouvez l'ensemble des changements de la v1.0.0 sur le site de [documentation](https://doc.dokos.io/v5/dokos/versions/v1.x.x/v1_0_0).
 
 
 ## La création d'un commun

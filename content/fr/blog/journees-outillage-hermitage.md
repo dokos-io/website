@@ -21,7 +21,7 @@ Tout cela aura lieu dans le cadre idyllique du tiers-lieux [l'Hermitage à Autr�
 
 Outre Dokos, 9 autres logiciels ou plateformes collaboratives seront présentés et feront l'objets d'ateliers dédiés:
 
-- [France Barter](www.francebarter.coop)  
+- [France Barter](https://www.francebarter.coop)  
   Place de marché collaborative sur laquelle les entreprises peuvent échanger des biens et des services. Originalité du dispositif, la facturation ne se fait pas en euro, mais en "Barter", une monnaie virtuelle solidaire qui a la même valeur faciale que l’euro mais n'est pas convertible donc a vocation à circuler entre les membres du réseau.
 - [Les oiseaux de passages](https://lesoiseauxdepassage.coop/)  
   Les oiseaux de passage est une plateforme coopérative pour un autre voyage. Elle privilégie l’échange direct et la rencontre entre habitants, professionnels et voyageurs, d‘humain à humain. Elle permet à des acteurs locaux de promouvoir leurs offres d’hébergement et d'activités, leurs créations et productions, leurs bons plans et de les raconter sous forme d’histoires, d’itinéraires et de destinations. Des tiers lieux sont membres de ces communautés ou les créent en réunissant des personnes autours de leur projet. Ils sont accompagnés dans la mise en ligne et en récit de leur destination.

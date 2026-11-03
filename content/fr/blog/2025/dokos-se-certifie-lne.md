@@ -9,7 +9,10 @@ image: blog/2025/dokos-se-certifie-lne-photo-blog.png
 title: "Dokos et la certification des logiciels d'encaissement "
 ---
 
+> **Mise à jour du 3 novembre 2026 :** le module Certification Caisse de Dokos est certifié par le LNE. Pour encaisser avec un système certifié, installez ce module sur votre site et importez la licence que Dokos SAS vous délivre sur demande. Les conditions sont détaillées sur la page [Certifications](/fr/certifications).
+
 *Mis à jour le 15 août 2025*
+
 
 **En résumé** : Une nouvelle loi impose la certification des logiciels d'encaissement dès mars 2026. Dokos se prépare pour accompagner les utilisateurs concernés. On vous explique tout simplement.
 

@@ -6,6 +6,7 @@ badge:
 author: Céline
 image: /blog/2025/actualites-janv_26.png
 title: "Petite revue de 2025 (et ce qui nous attend en 2026)"
+description: "Les fonctionnalités livrées en 2025, les contributions de la communauté et l'arrivée d'ERPNext V16."
 ---
 
 Il y a des années où on avance tête baissée. 2025 en a été une. Entre les développements, les échanges passionnants sur la facturation électronique, le chantier de la certification LNE et tout le reste, nous avons beaucoup construit. Nous avons partagé sur le forum, publié des notes de version, mais nous n'avons pas pris le temps de faire une vraie pause pour vous raconter tout ce qui a évolué.

@@ -9,6 +9,8 @@ title: "La V5 arrive… De nouvelles fondations posées."
 description: "Sortie prévue le 16 mars 2026"
 ---
 
+> **Mise à jour du 3 novembre 2026 :** la V5 est sortie le 16 mars 2026. Le module Certification Caisse est certifié par le LNE, voir la page [Certifications](/fr/certifications). La réception des factures électroniques et le raccordement à une plateforme agréée fonctionnent, voir [notre billet de la rentrée 2026](/fr/blog/2026/rentree-2026).
+
 Ces dernières semaines, on a passé beaucoup de soirées à travailler. Dokos grandit vite, très vite, et cette effervescence est une chance que l'on savoure autant qu'elle nous bouscule. Alors oui, on jongle : la V5, la facturation électronique, les projets clients, la certification LNE. Mais dans tout ça, il y a une chose qu'on ne négocie pas : prendre le temps de bien faire.
 
 ## Ce qui se passe dans les coulisses
@@ -64,5 +66,3 @@ C'est ça, un logiciel vivant. C'est ça, un projet open-source porté avec le c
 Merci d'être là. On est impatients de vous la mettre entre les mains. 🌱
 
 *L'équipe Dokos 💙*
-
-```

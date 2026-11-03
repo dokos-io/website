@@ -14,7 +14,7 @@ image:
 ---
 
 Cette version 3.0 de Dokos est basée sur la version 14 de Frappe/ERPNext. Vous allez découvrir les nouvelles fonctionnalités de la plateforme et vous pourrez retrouver tous les détails sur notre documentation.
-- [Documentation détaillé de la Version 3.0](https://doc.dokos.io/fr/versions/v3_0_0)
+- [Documentation détaillé de la Version 3.0](https://doc.dokos.io/v5/dokos/versions/v3.x.x/v3_0_0)
 
 
 ## Les évolutions graphiques de Dokos
@@ -77,7 +77,7 @@ Il est désormais possible de lier un client à fournisseur avec une comptabilit
 
 <br>
 
-Vous pouvez retrouver la liste détaillée des changements de cette nouvelle mise à jour dans la [documentation technique](https://doc.dokos.io/fr/versions/v3_0_0).
+Vous pouvez retrouver la liste détaillée des changements de cette nouvelle mise à jour dans la [documentation technique](https://doc.dokos.io/v5/dokos/versions/v3.x.x/v3_0_0).
 
 ---
 

@@ -6,6 +6,7 @@ badge:
 author: Céline
 image: /blog/2025/bonne_annee_2026.png
 title: "Bonne Année à la Team Dokos "
+description: "Nos vœux pour 2026 et les chantiers de l'année : V5, certification LNE, PDP Libre."
 ---
 
 Chers utilisateurs et utilisatrices,

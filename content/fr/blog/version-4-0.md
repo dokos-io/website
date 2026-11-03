@@ -41,7 +41,7 @@ Voici un aperçu de quelques nouveautés.
 
 ![Editeur de workflows](/images/blog/version-4/workflow_builder.png)
 
-✨ **Intégration du design** [Espresso de Frappe](https://frappeui.com/)**, tout en gardant des couleurs.**
+✨ **Intégration du design** [Espresso de Frappe](https://ui.frappe.io/)**, tout en gardant des couleurs.**
 
 ✨ **Les écritures de clôture des comptes et des stocks sont générées automatiquement lors de la clôture comptable.**:br
 Jusqu'à présent le système recalculait les soldes lors des éditions de rapports. Cela permet d'améliorer la performance lors de la génération des rapports comptables et de stock.
@@ -72,9 +72,9 @@ Cela permet, par exemple, de joindre systématiquement des conditions générale
 
 Le détail des changements des principales applications est disponible en cliquant sur les liens suivants:
 
-➡️ [Framework Dodock](https://doc.dokos.io/dodock/versions/v4.x.x/v4_0_0)\:br
-➡️ [Dokos](https://doc.dokos.io/dokos/versions/v4.x.x/v4_0_0)\:br
-➡️ [HRMS](https://doc.dokos.io/dokos/hrms/versions/v4.x.x/v4_0_0)
+➡️ [Framework Dodock](https://doc.dokos.io/v5/dodock/versions/v4.x.x/v4_0_0)\:br
+➡️ [Dokos](https://doc.dokos.io/v5/dokos/versions/v4.x.x/v4_0_0)\:br
+➡️ [HRMS](https://doc.dokos.io/v5/dokos/hrms/versions/v2.x.x/v2_0_0)
 
 En dehors des améliorations apportées aux applications principales de l'éco-système Dokos, la plateforme est désormais compatible avec les applications suivantes du [Frappeverse](https://frappe.io/frappeverse):
 

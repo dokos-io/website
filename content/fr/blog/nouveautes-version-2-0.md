@@ -59,7 +59,7 @@ De plus, vous avez la possibilité de créer des modèles de nomenclatures pour 
 
 <br>
 
-Vous pouvez retrouver la liste détaillée des changements de cette nouvelle mise à jour dans la [documentation technique](https://doc.dokos.io/fr/versions/v2_0_0).
+Vous pouvez retrouver la liste détaillée des changements de cette nouvelle mise à jour dans la [documentation technique](https://doc.dokos.io/v5/dokos/versions/v2.x.x/v2_0_0).
 
 ---
 

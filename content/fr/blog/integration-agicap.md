@@ -35,6 +35,6 @@ Pour en savoir plus sur Agicap, prenez rendez-vous avec Floriane Seyre, responsa
 
 ### Installation
 
-Cette intégration est disponible immédiatement : https://doc.dokos.io/dokos/integrations/agicap
+Cette intégration est disponible immédiatement : https://doc.dokos.io/v5/dokos/integrations/agicap
 
 Si vous êtes client Dokos Cloud, n'hésitez pas à envoyer un message à notre équipe support pour qu'on la déploie sur votre site.

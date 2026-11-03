@@ -42,7 +42,7 @@ De plus, vous pouvez créer un type d’utilisateur spécifique uniquement pour 
 
 <br>
 
-Vous pouvez retrouver la liste détaillée des changements de cette nouvelle mise à jour dans la [documentation technique](https://doc.dokos.io/fr/versions/v2_1_0).
+Vous pouvez retrouver la liste détaillée des changements de cette nouvelle mise à jour dans la [documentation technique](https://doc.dokos.io/v5/dokos/versions/v2.x.x/v2_1_0).
 
 ---
 

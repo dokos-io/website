@@ -45,7 +45,7 @@ Avant cela, il fallait qu'il y ait une passerelle activée (Virement, Stripe etc
 
 <br>
 
-Vous pouvez retrouver la liste détaillée des changements de cette nouvelle mise à jour dans la [documentation technique](https://doc.dokos.io/fr/versions/v2_2_0).
+Vous pouvez retrouver la liste détaillée des changements de cette nouvelle mise à jour dans la [documentation technique](https://doc.dokos.io/v5/dokos/versions/v2.x.x/v2_2_0).
 
 ---
 
