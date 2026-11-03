@@ -1,6 +1,5 @@
-# English version of content/fr/ecosysteme/finance-comptabilite.yml (sources are there).
 title: Finance & accounting
-description: Every invoice, every payment and every stock movement feeds the accounts. Bank reconciliation, online payments and e-invoices rely on the same entries.
+description: Accounting kept up to date by the other modules, not by manual exports, with a French-compliant chart of accounts.
 navigation:
   title: Finance & accounting
   icon: i-heroicons-banknotes
@@ -10,14 +9,14 @@ hero:
     label: The Dokos ecosystem
     icon: i-heroicons-banknotes
     to: /en/modules
-  title: Accounts that update<br><span class="text-primary">with each document</span>.
-  description: A submitted invoice creates its journal entry. A payment received settles it. A stock movement goes into the accounts. Bank reconciliation and financial reports read these entries, with no re-keying between two programs.
+  title: Accounting that <span class="text-primary">updates itself</span>.
+  description: Every invoice, every payment and every stock movement feeds the accounts directly. Bank reconciliation and financial reports draw on the same entries, with no re-entry between two systems.
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
       size: xl
       color: primary
-    - label: The whole ecosystem
+    - label: See all modules
       to: /en/modules
       size: xl
       color: neutral
@@ -25,58 +24,58 @@ hero:
 
 scope:
   title: What this area covers
-  description: Built for French obligations, usable with several companies and several currencies.
+  description: Built for accountants and finance teams, not just for developers.
   items:
     - title: French chart of accounts
-      description: Chart of accounts, VAT, journal entries, general ledger, trial balance, balance sheet and profit and loss, with an export for your accountant.
-      icon: i-heroicons-book-open
-    - title: LNE-certified point of sale
-      description: The Certification Caisse module is certified by LNE. You install it and request a licence from Dokos SAS. The licence carries the signing keys of each company and access to the external signature log of Dokos SAS. The fingerprints of the certified scope are published on the Certifications page.
-      icon: i-octicon-law
-    - title: E-invoicing
-      description: Receiving CII, Factur-X and UBL invoices, and the connection to an approved platform (PA). Sending is in development.
-      icon: i-heroicons-document-check
-    - title: Bank reconciliation
-      description: Your statements arrive every day through Bank, or you import them in OFX, CSV, XLSX or PDF. The Banking module, in beta, suggests the matches. The cash-flow forecast, in beta, reads your invoices, orders and subscriptions.
-      icon: i-heroicons-building-library
+      description: A structure that complies with French standards, with VAT and fiscal year management.
+      icon: i-heroicons-document-text
+    - title: Multi-company and multi-currency
+      description: Several legal entities or several currencies in a single installation, with separate accounts.
+      icon: i-heroicons-building-office-2
+    - title: Automated bank reconciliation
+      description: Imported bank statements are matched against existing entries, with discrepancies highlighted.
+      icon: i-heroicons-arrows-right-left
 
 modules:
-  title: The applications in this area
-  description: Four applications, one set of accounts.
+  title: The modules in this area
+  description: Two modules, designed to work together.
   items:
     - title: Accounting
-      description: Journal entries, VAT, general ledger, balance sheet and profit and loss, with several companies and currencies. The Banking module and the cash-flow forecast, in beta since September 2026, are part of it.
-      icon: i-heroicons-calculator
+      description: Chart of accounts, bank reconciliation, balance sheets and income statements, fed by the other modules.
+      icon: i-uil-balance-scale
       to: /en/modules/comptabilite
+    - title: Payments
+      description: Collects payment by card, bank transfer or direct debit, with automatic reconciliation in accounting.
+      icon: i-ic-twotone-payments
+      to: /en/modules/paiements
+      logo:
+        light: /frappe/payments_logo.svg
+        dark: /frappe/payments_logo.svg
     - title: Bank
-      description: Connects your bank accounts through the Bridge aggregator. Every day, the previous day's operations become bank transactions ready to reconcile. Only for Dokos Cloud sites.
+      description: Synchronizes your bank accounts with your Dokos accounting.
       icon: i-heroicons-building-library
       to: /en/modules/bank
       logo:
         light: /frappe/bank_logo.svg
         dark: /frappe/bank_logo.svg
-    - title: Payments
-      description: Card, SEPA direct debit, PayPal or SumUp terminal payments, from a payment link attached to the invoice, the order or the subscription.
-      icon: i-heroicons-credit-card
-      to: /en/modules/paiements
-      logo:
-        light: /frappe/payments_logo.svg
-        dark: /frappe/payments_logo.svg
     - title: eTransactions
-      description: Receives CII, Factur-X and UBL e-invoices and connects to an approved platform (PA).
-      icon: i-heroicons-document-check
+      description: Handles your incoming and outgoing e-invoices, in CII/FacturX and UBL formats.
+      icon: i-heroicons-document-text
       to: /en/modules/etransactions
+      logo:
+        light: /frappe/etransactions.svg
+        dark: /frappe/etransactions.svg
 
 cta:
-  title: Moving from other accounting software
-  description: Describe your chart of accounts and your flows. We will tell you what can be taken over as it is, and what needs preparation.
+  title: Migrating from another accounting system?
+  description: Migrating accounting data (chart of accounts, history, open invoices) is scoped before any quote.
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
       size: xl
       color: primary
-    - label: See pricing
-      to: /en/tarifs
+    - label: See engineering services
+      to: /en/ingenierie
       size: xl
       color: neutral
       variant: outline

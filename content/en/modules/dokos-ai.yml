@@ -1,126 +1,96 @@
-# English version of content/fr/modules/dokos-ai.yml (sources and screenshot notes are there).
-
 navigation:
   title: Dokos AI
   icon: i-heroicons-sparkles
-  description: An assistant that reads your Dokos data and prepares entries that you approve.
+  description: An AI assistant embedded in your Dokos data, with confirmation before any write.
 
 title: Dokos AI
-description: An assistant that answers from your Dokos documents, runs your reports and prepares entries that you approve before they are applied.
 icon: i-heroicons-sparkles
+description: Conversation, business skills and automation, directly on your Dokos data.
+author: Dokos
 application: Dokos AI
 theme: intelligence-artificielle
-author: Dokos
 logo:
   light: /frappe/dokos_logo.svg
   dark: /frappe/dokos_logo.svg
 
-publisher: dokos
-licence: MIT
-version: v5
-marketplace: dokos_ai
-docs: https://doc.dokos.io/v5/integrations/ia
-related: [dokos-cli, raven, wiki, integrations]
-
 hero:
-  title: An assistant that works <span class="text-primary">on your Dokos data</span>, with your permissions.
-  description: You ask a question in your own words. Dokos AI reads your documents, runs your reports and answers, citing what it looked at. When the answer involves writing to a document, it prepares the change and waits for your approval.
-
-for_whom:
-  items:
-    - title: You open the same report several times a day to get one figure
-      description: You ask "which customers went over their credit limit this month". The assistant runs the receivables report, compares it with the credit limits and returns the list with each customer's overrun.
-      icon: i-heroicons-chart-bar
-    - title: You type the same texts into your documents again and again
-      description: The AI button of a form writes or rewords an item description or the terms of an offer from the open document. You see the proposal before it replaces the field.
-      icon: i-heroicons-pencil-square
-    - title: A user does not understand why a screen is closed to them
-      description: The assistant explains why this user cannot open the document and proposes the roles to add. You approve the assignment.
-      icon: i-heroicons-lock-closed
-    - title: You repeat the same procedure for each incoming request
-      description: You write a skill that describes the procedure. The assistant then applies it the same way, whoever receives the request.
-      icon: i-heroicons-document-text
-
-fit:
-  description: >-
-    Dokos AI installs on your site and acts <strong>with the permissions of the signed-in
-    user</strong>. It does not read a document you could not open, and it does not prepare an
-    entry you could not make yourself. A salesperson and an accountant do not get the same answer
-    to the same question.<br>
-    Every creation or change of a document goes through the <strong>inbox</strong> of the Dokos
-    AI workspace. You see what is proposed, on which document and at whose request, then you
-    approve or reject it. A proposal that is not approved never becomes a document. Each action,
-    approved or rejected, is written to the audit log with its author and the tokens used.<br>
-    AI is switched off until you switch it on in the AI Settings. Before that, nothing is sent to
-    a model provider.
-  reads:
-    - Any document the user has access to (customers, invoices, items, projects)
-    - The site's reports and Insights charts
-    - The Dokos documentation, the internal Wiki, Learning courses and public notes
-    - Users' roles and permissions
-  adds:
-    - The "Dokos AI" workspace with the inbox, the conversations and workflow tracking
-    - The AI button in forms and next to text fields
-    - The AI Settings (model provider, capabilities, audit log)
-    - Skills and automated workflows
-    - An MCP endpoint that exposes the site to external assistants
-  depends:
-    - Dokos v5
-    - An OpenRouter key
+  title: An AI assistant <span class="text-primary">that knows your data</span>, not a generic chatbot.
+  description: Dokos AI answers in natural language by working directly from your site's documents — quotes, invoices, tickets, stock. It can read and change your data, but no write happens without your explicit confirmation.
+  links:
+    - label: See it on the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
 
 features:
-  - title: Query your documents and your reports
-    description: You ask for a document, a filtered list, a count or a report with your filters. The assistant looks for the answer in your data and cites what it looked at. It also searches the Dokos documentation and your internal wiki.
-    badge: Conversation
-  - title: Have an entry prepared, then approve it
-    description: You ask "prepare a reminder for the first three". The assistant drafts the messages and waits for your agreement. The creation or change of a document arrives in the inbox, where you approve or reject it in one click.
-    badge: Confirmation
-  - title: Write from the form
-    description: The AI button acts on the open document. Next to a text field, it proposes a text based on the document's context. The assistant also writes a print format, a client script or a workspace with its navigation.
-    badge: Forms
-  - title: Teach it how you work with skills
-    description: A skill is a Markdown file with a YAML header. It states the area covered, the model to use, the tools allowed and reference documents. Dokos provides a library of skills (creating and editing documents, reports, print formats, permission diagnosis). You write your own for your internal procedures.
-    badge: Skills
-  - title: Automate a recurring task with a workflow
-    description: A workflow starts on a document event, at a set time, on demand or through an external call. It drafts or compares, then drops the result into the inbox for approval. A gallery of ready-made workflows installs switched off, so that you review them before switching them on.
-    badge: Automated workflows
+  - title: A conversation wired to your documents
+    description: Ask a question in natural language, Dokos AI turns it into queries against your DocTypes (customers, invoices, stock, projects…) and answers from your actual data, not a generic summary.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Conversation
+      color: sky
+  - title: Business skills, not general intelligence
+    description: Each skill is a dedicated file for one specific process (chasing a quote, matching an invoice…), activated only when the conversation calls for it.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Business skills
+      color: sky
+  - title: Automation, with a human confirming
+    description: Dokos AI can create, update or submit a document for you — but every write still waits for your explicit confirmation before it's applied.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Supervised automation
+      color: sky
 
-install:
-  steps:
-    - title: From the Dokos Cloud marketplace
-      description: In your Dokos Cloud dashboard, open the marketplace and install Dokos AI on your site. The application is included in every plan.
-    - title: Self-hosted
-      description: "<code>bench get-app https://gitlab.com/dokos/dokos-ai</code> then <code>bench --site your-site install-app dokos_ai</code>."
-    - title: Switch on AI
-      description: Open the AI Settings, paste your OpenRouter key and test it. Choose a model for each of the three uses (reasoning and agent, fast, OCR and vision), then switch on the capabilities you need one by one.
-  prerequisites:
-    - An OpenRouter account and an access key. Usage is billed by this provider.
-    - A Dokos v5 site
-
-faq:
-  items:
-    - label: Can the assistant change a document without me seeing it?
-      content: No. An entry prepared by the assistant arrives in the inbox and waits for your approval. An automated workflow prepares and waits by default. Unattended writing must be allowed workflow by workflow, after you have checked its behaviour on several real runs.
-    - label: What data goes to the model provider?
-      content: Nothing before you switch AI on in the AI Settings. Once it is on, the assistant sends the model what it needs to answer the question asked. Dokos counts the tokens used at each run and shows them in the tracking and in the audit log.
-    - label: Which models are used?
-      content: Dokos uses models through OpenRouter, which gives access to models from Google, Anthropic, OpenAI and Mistral with a single key. You assign a model to each of the three uses (reasoning and agent, fast, OCR and vision) and you can change the assignment at any time.
-    - label: How is the application built?
-      content: In three layers. A registry discovers the available skills. An orchestrator decides the steps to follow. Tools carry out the actions (read, write, list, skill, reference). Each write tool asks for confirmation.
-    - label: Can I talk to the assistant from Raven or from my own agent?
-      content: Yes. The Raven bridge, switched on in the AI Settings, lets you send a direct message to a bot in your team messaging. For an agent installed on your computer, [Dokos CLI](/en/modules/dokos-cli) provides local MCP access. The site also exposes its own MCP endpoint, to which the user connects with their Dokos account and permissions.
+bottom_section:
+  title: "How Dokos AI is built:"
+  cards:
+    - title: A three-layer architecture
+      description: A registry that discovers available skills, an executor that decides what to do, and tools that carry out the actions — read, write, list, skill, reference.
+      icon: i-heroicons-squares-2x2
+      class: "col-span-4 row-span-3"
+    - title: Extensible through skill files
+      description: Each business skill is a plain Markdown file with a YAML header, so it can be extended without touching the engine.
+      icon: i-heroicons-puzzle-piece
+      class: "col-span-4 row-span-3"
+    - title: Confirmation before writing
+      description: Any action that changes data is shown before it runs and waits for an explicit confirmation.
+      icon: i-heroicons-shield-check
+      class: "col-span-4 row-span-3"
 
 bottom_cta:
-  title: Tell us about a task you would like to hand to the assistant.
-  description: We will tell you what Dokos AI already covers and what a skill of your own would add.
+  title: Want to see Dokos AI on your own data?
+  description: Available from the cloud.dokos.io marketplace. Describe your use cases, and we'll tell you what it already covers and what's still to build.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
-      size: xl
-      color: primary
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
     - label: See the marketplace
-      to: https://cloud.dokos.io/marketplace
+      to: https://cloud.dokos.io
       target: _blank
-      size: xl
-      color: neutral
-      variant: outline
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

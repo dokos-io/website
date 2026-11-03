@@ -1,8 +1,7 @@
-# English version of content/fr/ecosysteme/projets-ressources-humaines.yml (sources are there).
-title: Projects & human resources
-description: Tracking of projects, teams and training, connected to customer invoicing and accounting.
+title: Projects & HR
+description: Project, team and training tracking, connected to client billing and to payroll.
 navigation:
-  title: Projects & human resources
+  title: Projects & HR
   icon: i-heroicons-user-group
 
 hero:
@@ -10,36 +9,36 @@ hero:
     label: The Dokos ecosystem
     icon: i-heroicons-user-group
     to: /en/modules
-  title: Your teams and your projects, <span class="text-primary">in one view</span>.
-  description: Time spent on a project feeds both progress tracking and customer invoicing. A team's leave and absences can be read against its actual workload.
+  title: Your teams and your projects, <span class="text-primary">one single view</span>.
+  description: Time logged on a project feeds both progress tracking and client billing. A team's leave and absences show up alongside its actual workload.
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
       size: xl
       color: primary
-    - label: The whole ecosystem
+    - label: See all modules
       to: /en/modules
       size: xl
       color: neutral
       variant: outline
 
 modules:
-  title: The applications in this area
+  title: The modules in this area
   description: Three modules, useful to different degrees depending on whether you bill time or manage internal teams.
   items:
     - title: Projects
-      description: Projects split into tasks, timesheets, and the cost and billable amount of each project.
+      description: Planning, task and time tracking, through to client billing.
       icon: i-eos-icons-project-outlined
       to: /en/modules/projets
     - title: Human resources
-      description: Leave, attendance, expense claims and appraisals, with a mobile app for requests and approvals. The module has been under overhaul since September 2026.
+      description: Leave, expense claims, attendance and payroll, centralized per employee.
       icon: i-mdi-human-capacity-increase
       to: /en/modules/ressources-humaines
       logo:
         light: /frappe/hrms_logo.svg
         dark: /frappe/hrms_logo.svg
-    - title: Learning
-      description: Online courses, sessions, quizzes and certificates issued from your site.
+    - title: Frappe Learning
+      description: An internal training platform to transfer skills across the team.
       icon: i-heroicons-academic-cap
       to: /en/modules/learning
       logo:
@@ -47,10 +46,10 @@ modules:
         dark: /frappe/lms.png
 
 cta:
-  title: You bill time, or you manage internal teams
-  description: The useful scope depends on your activity. Describe it, and we will tell you which modules cover it.
+  title: Do you bill time, or manage internal teams?
+  description: The relevant scope differs depending on your activity. Describe it, and we'll tell you which modules actually address it.
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
       size: xl
       color: primary

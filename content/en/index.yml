@@ -66,8 +66,7 @@ hero:
     base:
       title: Dodock · Frappe Framework · ERPNext
       note: an open source base developed with a worldwide community
-      # source: licences on gitlab.com/dokos/dodock (MIT) and github.com/frappe/erpnext (GPLv3)
-      tag: MIT · GPLv3
+      tag: GPLv3
       to: /en/modules/dodock
   links:
     - label: Try Dokos
@@ -149,7 +148,7 @@ core:
     - { title: Invoice, number: INV-0412 }
     - { title: Journal entry, number: JE-5530 }
     - { title: Payment, number: PAY-0198 }
-  # Product facts, verifiable on /en/certifications and content/fr/blog/2026/facturation-electronique.md.
+  # Product facts, verifiable on /en/certifications.
   facts:
     - label: Point-of-sale systems
       value: LNE certified
@@ -168,7 +167,7 @@ core:
 base:
   label: The open source base
   title: Built on Frappe and ERPNext, with their community.
-  description: Dodock and Dokos follow every Frappe and ERPNext release, and add what France requires. Dokos 5, released on 16 March 2026, runs on version 16 of Frappe and ERPNext. All the code is published on our GitLab, under GPLv3, AGPLv3 or MIT depending on the repository.
+  description: Dodock and Dokos follow every Frappe and ERPNext release, and add what France requires. All the code is published under GPLv3 on our GitLab.
   link:
     label: Read the code
     to: https://gitlab.com/dokos
@@ -176,7 +175,7 @@ base:
     - { title: Dokos, note: "management, French localisation, LNE", to: /en/modules/dokos }
     - { title: ERPNext, note: the management modules }
     - { title: Dodock, note: "the framework, Dokos's version of Frappe", to: /en/modules/dodock }
-    - { title: Free licences, note: "GPLv3, AGPLv3 or MIT, published code" }
+    - { title: GPLv3, note: "published code, tracked releases" }
 
 # The company behind the project, with the positioning sentence.
 team:
@@ -185,7 +184,7 @@ team:
   description: Dokos SAS is the team that writes, adapts and operates Dokos.
   items:
     - title: Open source publisher
-      description: Dodock, Dokos and a dozen applications, published on GitLab under free licences.
+      description: Dodock, Dokos and a dozen applications, published under GPLv3.
       to: /en/editeur
     - title: Frappe and ERPNext experts
       description: We port every release and also operate standard installations.

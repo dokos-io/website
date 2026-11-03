@@ -1,8 +1,7 @@
-# English version of content/fr/ecosysteme/achats-stocks-production.yml (sources are there).
-title: Purchasing, stock & manufacturing
-description: From the purchase order to the warehouse dispatch, one chain for supply, stock and manufacturing.
+title: Purchasing, stock & production
+description: From purchase order to warehouse dispatch, a single chain covering procurement, stock and manufacturing.
 navigation:
-  title: Purchasing, stock & manufacturing
+  title: Purchasing, stock & production
   icon: i-heroicons-cube
 
 hero:
@@ -10,49 +9,49 @@ hero:
     label: The Dokos ecosystem
     icon: i-heroicons-cube
     to: /en/modules
-  title: From the purchase order to the <span class="text-primary">warehouse dispatch</span>, one chain.
-  description: Purchasing, stock, manufacturing and quality control share the same bill of materials and the same locations. A work order consumes the actual stock.
+  title: From purchase order to <span class="text-primary">warehouse dispatch</span>, a single chain.
+  description: Purchasing, stock, production and quality control share the same bill of materials and the same locations. A manufacturing order consumes actual stock, not an estimate.
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
       size: xl
       color: primary
-    - label: The whole ecosystem
+    - label: See all modules
       to: /en/modules
       size: xl
       color: neutral
       variant: outline
 
 modules:
-  title: The applications in this area
-  description: Useful on their own for a distribution SME, or combined for a manufacturing site.
+  title: The modules in this area
+  description: Useful on their own for a distribution business, or combined for a production site.
   items:
     - title: Purchasing
-      description: Material requests, supplier quotations and purchase orders, receipts and purchase invoices, with a scorecard for each supplier.
+      description: Purchase orders, receiving, reconciliation with supplier invoices.
       icon: i-icon-park-outline-buy
       to: /en/modules/achats
     - title: Stock
-      description: Every receipt, issue and transfer of items, by warehouse, batch and serial number, with stock valuation.
+      description: Tracks movements, valuation, and multi-warehouse and multi-location management.
       icon: i-vaadin-stock
       to: /en/modules/stocks
-    - title: Manufacturing
-      description: Bills of materials, work orders and job cards, with the actual cost of each batch produced.
+    - title: Production
+      description: Manufacturing orders, bills of materials and production cost tracking.
       icon: i-fluent-manufacturer-24-regular
       to: /en/modules/production
     - title: Quality
-      description: Procedures, measured goals, inspections at receipt and on the shop floor, and non-conformities followed up to their corrective action.
+      description: Checks at every stage, with non-conformities tracked and corrective actions logged.
       icon: i-carbon-rule-data-quality
       to: /en/modules/qualite
 
 cta:
-  title: Rebuild your supply chain in Dokos
-  description: Bills of materials, routings and stock history can be taken over from an existing ERP or a spreadsheet.
+  title: Need to rebuild a supply chain in Dokos?
+  description: Bills of materials, manufacturing routes and stock history are migrated from an existing ERP or a spreadsheet.
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
       size: xl
       color: primary
-    - label: See the engineering engagements
+    - label: See engineering services
       to: /en/ingenierie
       size: xl
       color: neutral

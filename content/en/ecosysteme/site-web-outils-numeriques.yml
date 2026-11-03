@@ -1,7 +1,5 @@
-# English version of content/fr/ecosysteme/site-web-outils-numeriques.yml (sources are there).
-# Print Designer (deprecated) and Frappe Drive (archived, moving into Frappe Suite) are not listed.
 title: Website & digital tools
-description: Website, blog, newsletters, reports and integrations, built on the same data as the rest of Dokos.
+description: Website, reports, integrations and documents, built on the same data as the rest of Dokos, with no third-party tool.
 navigation:
   title: Website & digital tools
   icon: i-heroicons-globe-alt
@@ -11,66 +9,72 @@ hero:
     label: The Dokos ecosystem
     icon: i-heroicons-globe-alt
     to: /en/modules
-  title: Your website and your reports, <span class="text-primary">on your Dokos data</span>.
-  description: An Insights dashboard reads your management data directly, with no export. OCR reads a PDF supplier invoice and prepares the purchase invoice, which you match with the order.
+  title: Your website, reports and documents, <span class="text-primary">with no third-party tool</span>.
+  description: An Insights dashboard reads your business data directly, with no export. A document scanned by OCR is automatically matched against the corresponding invoice.
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
       size: xl
       color: primary
-    - label: The whole ecosystem
+    - label: See all modules
       to: /en/modules
       size: xl
       color: neutral
       variant: outline
 
 modules:
-  title: The applications in this area
-  description: Cross-cutting tools, useful in any sector.
+  title: The modules in this area
+  description: Cross-cutting tools, useful regardless of your line of business.
   items:
-    - title: Builder
-      description: You build your website pages in a visual editor, linked to your Dokos data, and publish them in one click.
+    - title: Frappe Builder
+      description: A no-code site editor connected to your Dokos data.
       icon: i-mdi-application-settings-outline
       to: /en/modules/builder
       logo:
         light: /frappe/builder.svg
         dark: /frappe/builder.svg
-    - title: Insights
-      description: Dashboards and reports built on your management data, with no export to another tool.
+    - title: Frappe Insights
+      description: Dashboards and reports built directly on your business data, with no export to another tool.
       icon: i-heroicons-chart-bar
       to: /en/modules/insights
       logo:
         light: /frappe/insights.svg
         dark: /frappe/insights.svg
     - title: Integrations
-      description: The settings of the services connected to your site, with the webhooks, API keys and OAuth clients your other tools use.
+      description: Connects Dokos to your existing tools (payments, messaging, storage, automation).
       icon: i-mdi-connection
       to: /en/modules/integrations
     - title: OCR
-      description: Reads your PDF supplier invoices with Amazon Textract and prepares the purchase invoice. On Dokos V5, eTransactions takes over these functions.
+      description: Scans and automatically matches paper documents, supplier invoices in particular.
       icon: i-mdi-ocr
       to: /en/modules/ocr
       logo:
         light: /frappe/ocr_logo.svg
         dark: /frappe/ocr_logo.svg
-    - title: Newsletter
-      description: You send a newsletter to your site's e-mail groups, schedule the sending and track the opens.
-      icon: i-heroicons-envelope
-      to: /en/modules/newsletter
-    - title: Blog
-      description: You publish posts on your site, by author and category, with comments and an RSS feed.
-      icon: i-heroicons-newspaper
-      to: /en/modules/blog-app
+    - title: Frappe Print Designer
+      description: Customizes your invoices, quotes and delivery notes with no development required.
+      icon: i-mdi-printer-outline
+      to: /en/modules/print-designer
+      logo:
+        light: /frappe/print-designer.svg
+        dark: /frappe/print-designer.svg
+    - title: Frappe Drive
+      description: Store and share files from your Dokos site, with no third-party service.
+      icon: i-heroicons-folder-open
+      to: /en/modules/drive
+      logo:
+        light: /frappe/drive.svg
+        dark: /frappe/drive.svg
 
 cta:
-  title: Connect your external tools to Dokos
-  description: Describe the tool and how you use it. We will tell you whether an integration already exists or what needs to be built.
+  title: An external tool to connect to Dokos?
+  description: Describe the tool and the use case. We'll tell you whether an integration already exists or what needs to be built.
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
       size: xl
       color: primary
-    - label: See the engineering engagements
+    - label: See engineering services
       to: /en/ingenierie
       size: xl
       color: neutral

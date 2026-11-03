@@ -1,114 +1,72 @@
-# English version of content/fr/modules/etransactions.yml (sources and screenshot notes are there).
-# Status set by Dokos: reception and connection to an approved platform in production, emission in progress.
-
-title: eTransactions
-description: Receives your e-invoices, links them to your orders and prepares your purchase invoices in Dokos.
-icon: i-heroicons-document-text
-application: eTransactions
-theme: finance-comptabilite
-author: Dokos
-logo:
-  light: /frappe/etransactions.svg
-  dark: /frappe/etransactions.svg
 navigation:
   title: eTransactions
   icon: i-heroicons-document-text
-  description: E-invoicing and supplier invoice reading.
+  description: Incoming and outgoing e-invoices, in CII/FacturX and UBL formats.
 
-publisher: dokos
-licence: AGPLv3
-version: v5
-marketplace: etransactions
-docs: https://doc.dokos.io/v5/integrations/etransaction
-related: [comptabilite, achats, ventes, ocr]
+title: eTransactions
+icon: i-heroicons-document-text
+description: Handles your incoming and outgoing e-invoices, in CII/FacturX and UBL formats.
+application: eTransactions
+theme: finance-comptabilite
+logo:
+  light: /frappe/etransactions.svg
+  dark: /frappe/etransactions.svg
 
 hero:
-  title: Your e-invoices, <span class="text-primary">received and processed</span> in Dokos.
-  description: eTransactions connects your company to an approved platform (PA). Supplier invoices in Factur-X, CII and UBL formats arrive in Dokos and become purchase invoices.
-
-for_whom:
-  items:
-    - title: Your suppliers already send you e-invoices
-      description: Since September 2026, every company in France must be able to receive them. Dokos collects them from your approved platform and reads them for you.
-      icon: i-heroicons-inbox-arrow-down
-    - title: You re-key the supplier invoices you receive as PDF
-      description: You drop the PDF into the basket or forward it by e-mail. OCR extracts the supplier, the amounts and the lines.
-      icon: i-heroicons-document-magnifying-glass
-    - title: You are getting ready to issue your own e-invoices
-      description: You can fill in the SIREN number and the profile of your customers today. Sending from the sales invoice is being finalised.
-      icon: i-heroicons-paper-airplane
-
-fit:
-  description: eTransactions is configured in <strong>E-transactions Settings</strong>, at company level. Received invoices, from the approved platform or through OCR, arrive in the same <strong>Purchase Invoice Basket</strong>. Each one becomes a pending supplier invoice, which you link to a purchase order or a purchase receipt, then turn into a <strong>Purchase Invoice</strong>. On the sales side, the Customer record holds the SIREN number, the e-invoice profile and the directory entry that will be used for sending.
-  reads:
-    - Company, Customer, Supplier and their addresses
-    - Purchase Order and Purchase Receipt
-    - Purchase Invoice
-    - Sales Invoice and Payment Entry
-  adds:
-    - The "E-transactions Settings" document with the "Approved Platform" tab
-    - The "Purchase Invoice Basket" and pending supplier invoices
-    - SIREN, e-invoice profile and directory fields on Customer and Supplier records
-    - A status panel on the sales invoice and the "Cancel with lifecycle" action
-  depends:
-    - Accounting
-    - Purchasing
+  title: <span class="text-primary">E-invoicing</span>, in the formats you're expected to use.
+  description: eTransactions handles your incoming and outgoing e-invoices in CII/FacturX and UBL formats, directly from Dokos.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
 
 features:
-  - title: Connect your approved platform
-    description: In E-transactions Settings, Approved Platform tab, you add SuperPDP, Esalink (HUBTIMIZE) or a custom platform that follows the AFNOR XP Z12-013 standard. You choose the scope, sales, purchases or both, then the sandbox or production environment. The "Test connection" button checks your credentials before activation. Dokos checks the state of the connection every day and shows an error with a status light.
-    badge: In production
-  - title: Register your company in the directory
-    description: The "Fill from SIRENE" button completes the SIREN number, the VAT number and the head office address on the Company record. From the platform configuration, "Directory registration" records your identifier in the French directory or in Peppol. On Esalink, the entry takes effect at least ten days after the request.
-    badge: In production
-  - title: Receive your suppliers' invoices
-    description: Dokos polls the platform at regular intervals and drops each received invoice into the basket. It reads the UBL and CII formats, including the data embedded in a Factur-X PDF, then extracts the supplier, the amounts, the lines, the payment terms and the IBAN. The supplier is looked up by VAT number, then by IBAN and by name, with a confidence level. You confirm, then you create the purchase invoice.
-    badge: In production
-  - title: Read PDFs with OCR
-    description: Supplier invoices received as PDF, dropped by hand or forwarded from a dedicated mailbox, go through Amazon Textract. The pending supplier invoice takes the extracted data, proposes the supplier's open purchase order and, if you asked for it, blocks a purchase invoice whose amount is higher than the one read on the document.
-    badge: In production
-  - title: Send your invoices from the sales invoice
-    description: When a sales invoice is submitted, Dokos classifies the customer as a company, a public body, an individual or a foreign partner, then generates the expected format, Factur-X by default or UBL for a Peppol recipient. Sending is automatic or manual, and a panel shows the status returned by the platform. An invoice already transmitted is cancelled with "Cancel with lifecycle". This part is being finalised.
-    badge: In progress
-
-install:
-  steps:
-    - title: From the Dokos Cloud marketplace
-      description: In your Dokos Cloud dashboard, open the marketplace and install eTransactions on your site. The application is included in every plan and is part of the standard Dokos Docker image.
-    - title: Self-hosted
-      description: "<code>bench get-app https://gitlab.com/dokos/etransactions</code> then <code>bench --site your-site install-app etransactions</code>."
-    - title: Get your platform credentials
-      description: For SuperPDP, create the client ID and secret in your SuperPDP account. For Esalink, the keys are provided by Dokos Cloud (help@dokos.cloud), or by Dokos SAS for self-hosted sites.
-    - title: Complete your records
-      description: Fill in the SIREN and VAT numbers of your company, your customers and your suppliers. The "Fill from SIRENE" button does it for you.
-  prerequisites:
-    - An account with an approved platform (SuperPDP, Esalink or a platform that follows the AFNOR standard)
-    - For OCR, an Amazon Textract access key
-
-faq:
-  items:
-    - label: Which approved platforms are supported?
-      content: SuperPDP, Esalink (HUBTIMIZE) and any custom platform that follows the AFNOR XP Z12-013 standard. A company can activate several platforms, each with its own scope.
-    - label: Is Dokos itself an approved platform?
-      content: No. Dokos connects to the platform of your choice. Dokos SAS is also a founding member of the [PDP Libre](https://pdplibre.org/) association, which brings together free software publishers working on e-invoicing.
-    - label: What can I do today, and what is still in progress?
-      content: The connection to an approved platform, the reception of invoices in Factur-X, CII and UBL formats and the reading of PDFs by OCR are in production. Sending from the sales invoice is being finalised.
-    - label: What happens to my OCR application settings?
-      content: On Dokos V5, eTransactions replaces the OCR application. On installation, the OCR settings and pending invoices are taken over by eTransactions.
-    - label: How is a received supplier recognised?
-      content: Dokos looks first for the VAT number, then the IBAN, then a name alias, then the name. It shows a confidence level and lets you correct the supplier before creating the purchase invoice.
+  - title: Incoming invoices
+    description: Processes incoming e-invoices received in CII/FacturX and UBL formats.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Incoming
+      color: sky
+  - title: Outgoing invoices
+    description: Issues your invoices in the electronic formats your customers and the regulation expect.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Outgoing
+      color: sky
 
 bottom_cta:
-  title: Where you stand with e-invoicing
-  description: Tell us about your platform and your invoice flows, and we will tell you what eTransactions already covers.
+  title: Preparing for mandatory e-invoicing?
+  description: Available from the cloud.dokos.io marketplace. Describe your current situation, and we'll tell you what eTransactions already covers.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
-      size: xl
-      color: primary
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
     - label: See the marketplace
-      to: https://cloud.dokos.io/marketplace
+      to: https://cloud.dokos.io
       target: _blank
-      size: xl
-      color: neutral
-      variant: outline
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

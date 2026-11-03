@@ -1,16 +1,16 @@
-title: Open source publisher
-description: Dokos SAS maintains Dodock, Dokos and a dozen applications, published under free licences on GitLab, with the full history of every change.
+title: "The publisher: Dodock and Dokos"
+description: Dokos SAS publishes its own fork of the Frappe framework and the ERP distribution built on it. Here's what that actually changes for the people who use it.
 navigation:
-  title: Open source publisher
+  title: The publisher
   icon: i-heroicons-code-bracket-square
-  description: Dodock, Dokos and the applications we maintain
+  description: Dodock and Dokos, the fork we maintain
 
 hero:
   headline:
-    label: Public code on gitlab.com/dokos
+    label: Publisher, not just an integrator
     icon: i-simple-icons-gitlab
-  title: We publish <span class="text-primary">Dokos</span>, Dodock<br>and the applications around them.
-  description: Dodock is our version of the Frappe framework. Dokos is the business management software built on it, derived from ERPNext. Around them, we maintain the applications that French companies and non-profits need. Dokos is published under GPLv3 and Dodock under MIT, and you can read every change before you trust us with anything.
+  title: We don't resell an ERP.<br>We <span class="text-primary">write</span> one.
+  description: Dodock is our fork of the Frappe framework. Dokos is the ERP distribution built on it. Both are published under GPLv3, on our GitLab, with a commit history anyone can inspect, including you, before you sign anything.
   links:
     - label: See the code
       to: https://gitlab.com/dokos
@@ -18,156 +18,73 @@ hero:
       size: xl
       color: primary
       icon: i-simple-icons-gitlab
-    - label: See the ecosystem
-      to: /en/modules
+    - label: Documentation
+      to: https://doc.dokos.io
+      target: _blank
       size: xl
       color: neutral
       variant: outline
 
-# source: content/fr/blog/2026 (arrivee-V5) for the release date; LICENSE files of gitlab.com/dokos/dokos (GPLv3) and gitlab.com/dokos/dodock (MIT)
-proof:
-  items:
-    - label: Latest major version
-      value: Version 5
-      note: Released on 16 March 2026, on Frappe and ERPNext v16
-    - label: Licences
-      value: GPLv3 · AGPLv3 · MIT
-      note: Depending on the repository, readable and modifiable by you or by a third party
-    - label: Maintained repositories
-      value: "16"
-      note: Dodock, Dokos and fourteen applications
-
 scope:
-  title: What we maintain
-  description: Each repository has its product page. The forks follow the versions published by Frappe; the applications are written by us.
+  title: What publisher status changes
+  description: The distinction sounds formal. In practice, it decides what can be fixed, and how fast.
   items:
-    - title: Dodock
-      description: The framework under Dokos, our version of Frappe. Documents, permissions, approval workflows, reports, API.
-      icon: i-heroicons-circle-stack
-      badge: Fork of Frappe
-      to: /en/modules/dodock
-    - title: Dokos
-      description: The business management software built on Dodock, derived from ERPNext and adapted to French obligations.
-      icon: i-heroicons-building-office
-      badge: Fork of ERPNext
-      to: /en/modules/dokos
-    - title: Dokos HR
-      description: Human resources management, our version of Frappe HR.
-      icon: i-heroicons-users
-      badge: Fork of Frappe HR
-      to: /en/modules/ressources-humaines
-    - title: Payments
-      description: Online payments through payment gateways, our version of Frappe Payments.
-      icon: i-heroicons-credit-card
-      badge: Fork of Frappe Payments
-      to: /en/modules/paiements
-    - title: Webshop
-      description: The online shop and the customer portal, our version of Frappe Webshop.
-      icon: i-heroicons-shopping-bag
-      badge: Fork of Frappe Webshop
-      to: /en/modules/e-commerce
-    - title: Bank
-      description: Bank account synchronisation and reconciliation, with the Banking module and the cash-flow forecast in beta.
-      icon: i-heroicons-building-library
-      badge: Application
-      to: /en/modules/bank
-    - title: Bookings
-      description: Resource booking and credit management, written for third places.
-      icon: i-heroicons-calendar-days
-      badge: Application
-      to: /en/modules/reservations-de-ressources
-    - title: eTransactions
-      description: Receiving CII, Factur-X and UBL e-invoices, and the connection to an approved platform (PA).
-      icon: i-heroicons-document-check
-      badge: Application
-      to: /en/modules/etransactions
-    - title: OCR
-      description: Data extraction from supplier invoices, with Amazon Textract.
-      icon: i-heroicons-document-magnifying-glass
-      badge: Application
-      to: /en/modules/ocr
-    - title: Construction
-      description: A quotation configurator for businesses that sell building work.
-      icon: i-heroicons-calculator
-      badge: Application
-      to: /en/modules/construction
-    - title: Hiboutik
-      description: The connector with the Hiboutik point of sale.
-      icon: i-heroicons-shopping-cart
-      badge: Application
-      to: /en/modules/hiboutik
-    - title: Dokos WooCommerce
-      description: The connector between a WooCommerce shop and Dokos.
-      icon: i-simple-icons-woocommerce
-      badge: Application
-      to: /en/modules/woocommerce
-    - title: Tribu
-      description: Members, memberships, donations and online registrations for non-profits.
-      icon: i-heroicons-identification
-      badge: Application
-      to: /en/modules/tribu
-    - title: Dokos AI
-      description: An assistant connected to the site's data, with a confirmation before any write.
-      icon: i-heroicons-sparkles
-      badge: Application
-      to: /en/modules/dokos-ai
-    - title: Dokos CLI
-      description: A command-line tool and an MCP server to drive a site from a terminal or an agent.
-      icon: i-heroicons-command-line
-      badge: Tool
-      to: /en/modules/dokos-cli
-    - title: Certification Caisse
-      description: The LNE-certified scope of the point-of-sale system, with the fingerprint of each file published.
+    - title: A fix doesn't depend on anyone else
+      description: When the bug is in the core, we fix it in the core. An integrator, by contrast, opens a ticket upstream and waits.
+      icon: i-heroicons-wrench-screwdriver
+    - title: French compliance is built in
+      description: "Accounting, payment collection, e-invoicing: regulatory adaptations are integrated into the product, not bolted on as a fragile add-on."
       icon: i-octicon-law
-      badge: Application
-      to: /en/certifications
+    - title: Upstream is tracked closely
+      description: Every version Frappe Technologies publishes is read, tested and ported. We adopt what makes sense and diverge when it's justified.
+      icon: i-heroicons-arrow-trending-up
+    - title: Nothing is hidden
+      description: Public repositories, public tickets, full history. You can judge our fix rate before you commit to anything.
+      icon: i-simple-icons-gitlab
+    - title: No license fees
+      description: The software is free and stays free. We charge for operation and engineering, never for the right to use the product.
+      icon: i-heroicons-credit-card
+    - title: Integrity is verifiable
+      description: For the scopes covered by certification, the cryptographic fingerprint of every file is published, and you can recompute it yourself.
+      icon: i-heroicons-finger-print
 
 operations:
   title: How the product moves forward
-  description: Business software is judged on its trajectory as much as on its current state. This is how we keep ours.
+  description: An enterprise software product is judged as much on its trajectory as on its state at any given moment.
   items:
-    - title: We follow Frappe and ERPNext
-      description: Every version published by Frappe is read, tested and ported. Dokos 5 runs on version 16 of Frappe and ERPNext.
-      icon: i-heroicons-arrow-trending-up
-    - title: Differences are documented
-      description: Where French needs differ from upstream, we diverge, and we keep a record of each difference so that it can be maintained over time.
+    - title: A shared base, openly acknowledged
+      description: Dokos derives from ERPNext, and Dodock from Frappe. We don't hide that lineage; it means we benefit from the work of a worldwide ecosystem.
+      icon: i-simple-icons-frappe
+    - title: Documented divergences
+      description: Where European requirements diverge from upstream, we diverge too, and we keep a record of every gap so it can be maintained over time.
       icon: i-heroicons-arrows-pointing-out
     - title: A two-stage rollout
-      description: A new version reaches sites without custom applications first, then the others, after a compatibility check.
+      description: New versions are shipped first to installations without custom applications, then to those that have them, after a compatibility check.
       icon: i-heroicons-arrow-path
-    - title: Public repositories and tickets
-      description: The code, the tickets and the history of changes are readable by everyone on gitlab.com/dokos.
-      icon: i-simple-icons-gitlab
-    - title: Published fingerprints
-      description: For the certified scope, the fingerprint of each file is published, with the procedure to recompute it on your installation.
-      icon: i-heroicons-finger-print
-    - title: A release log
-      description: Each change is described on doc.dokos.io/nouveautes, and major versions are presented in a webinar.
-      icon: i-heroicons-newspaper
-    - title: A community
-      description: The community.dokos.io forum, the third places and fablabs we met at Faire Festival, the outside contributors. Dokos SAS is also a founding member of the PDP Libre association.
+    - title: A community that contributes
+      description: A support forum, outside contributions, feature funding. Feedback from real usage reaches the people who write the code directly.
       icon: i-heroicons-user-group
 
 reversibility:
-  title: What the licence gives you
-  description: Publishing under a free licence commits the publisher as much as the user.
+  title: Publishing under a free license, and standing behind it
+  description: Publishing under GPLv3 means giving up on locking in your users through technical means. It's a commercial choice, not just a philosophical one.
   items:
-    - title: Read the code
-      description: Your teams or a third party can audit the software, with no non-disclosure agreement.
+    - title: You can audit us
+      description: The code is readable by your teams or by a trusted third party, with no non-disclosure agreement required.
       icon: i-heroicons-magnifying-glass
-    - title: Modify and contribute
-      description: Fix, extend, propose. Outside contributions are merged when they pass review.
-      icon: i-heroicons-code-bracket
-    - title: Move the installation elsewhere
-      description: Your site stays operable by another provider, or by you, with the same code.
+    - title: You can leave us
+      description: The installation stays operable by another provider, or by you.
       icon: i-heroicons-arrows-right-left
-    - title: Fork
-      description: The right the licence grants. We used it ourselves, starting from Frappe and ERPNext.
+    - title: You can contribute
+      description: Fix, extend, propose. Outside contributions are merged when they hold up.
+      icon: i-heroicons-code-bracket
+    - title: You can fork
+      description: That's the right the license grants. We've exercised it ourselves, so we'd be in a poor position to argue against it.
       icon: i-heroicons-arrows-pointing-out
 
 cta:
-  title: Start with the repository
-  description: The code, the tickets and the history of changes are public. If a question remains, write to us.
+  title: The best vendor audit is the repository
+  description: Before any sales call, go read the code, the tickets and the commit history. Few publishers can offer that.
   links:
     - label: Open GitLab
       to: https://gitlab.com/dokos

@@ -1,114 +1,75 @@
-# English version of content/fr/modules/raven.yml (sources and screenshot notes are there).
-
 navigation:
   title: Raven
-  icon: i-heroicons-chat-bubble-left-right
-  description: Team messaging installed on your site, with your Dokos documents in the conversation.
-
-title: Raven
-description: Team messaging installed on your Dokos site, with channels, threads and your documents shown as cards in the conversation.
-icon: i-heroicons-chat-bubble-left-right
+  description: 'Raven: an AI assistant for your Dokos data'
+  icon: i-material-symbols-android-chat
+title: 'Raven: an AI assistant for your Dokos data'
+link: https://www.ravenchat.ai/
+author: The Commit Company & Contributors
+description: Change the way your team works
 application: Raven
 theme: support-collaboration
-author: Frappe
 logo:
   light: /frappe/raven.webp
   dark: /frappe/raven.webp
-
-publisher: frappe
-licence: AGPLv3
-version: v5
-marketplace: raven
-related: [support, wiki, dokos-ai, ressources-humaines, projets]
-
 hero:
-  title: Team messaging <span class="text-primary">in your Dokos site</span>.
-  description: Raven installs on your site. Your messages stay in your database, and a link to a quotation or an order is shown as a card with its status.
-
-for_whom:
-  items:
-    - title: Your team chats in a tool separate from your management software
-      description: You paste a link to an order and Raven shows its card, with its status and key fields. The discussion sits next to the document.
-      icon: i-heroicons-link
-    - title: An approval is waiting in a mailbox
-      description: The document to approve is posted in a channel when it is created or submitted. You approve it, reject it or send it back from the conversation.
-      icon: i-heroicons-check-badge
-    - title: Your field teams only have a phone
-      description: The iOS and Android apps connect to your site. Every channel is there, in sync with the web version.
-      icon: i-heroicons-device-phone-mobile
-    - title: You pay a per-user subscription for your chat
-      description: Raven is included in your Dokos site. Nobody bills you per user.
-      icon: i-heroicons-users
-
-fit:
-  description: >-
-    Raven runs on your site, next to Dokos, Dokos HR, the CRM and Helpdesk. You paste a
-    document's link and Raven shows <strong>a card with its status and key fields</strong>. A
-    document notification posts a message in a channel when a document is created, changed or
-    submitted, with the conditions and message template you set without writing code. You approve,
-    reject or send back a document without leaving the conversation. Leave entered in Dokos HR is
-    shown next to the person's name.<br>
-    If <a href="/en/modules/dokos-ai">Dokos AI</a> is installed, you talk to the assistant by
-    direct message to a bot, without leaving Raven. This bridge is enabled in the AI Settings.
-  reads:
-    - Any document of the site, shown as a card from its link
-    - Document events (creation, change, submission) for notifications
-    - Leave applications from Dokos HR
-  adds:
-    - The Raven application, at /raven on your site
-    - Workspaces, public or private channels and direct messages
-    - Raven bots, incoming webhooks and AI agents
-    - iOS and Android mobile apps, and an installable web app
-  depends:
-    - Dodock v5 (Frappe v16)
-
-features:
-  - title: Organise conversations in channels and threads
-    description: You create public or private channels per team, project or topic, grouped in workspaces. Direct messages cover the rest. A side discussion goes into a thread so that it does not crowd the channel.
-    badge: Channels
-  - title: Share files and find them again
-    description: You drop photos, videos and documents. A link shows a preview. Each shared file is listed per channel, and search covers the messages, files, links and people of all your channels.
-    badge: Files
-  - title: Move your Dokos documents through the conversation
-    description: A link to a document becomes a card with its status. A document notification posts a message automatically when a document is created, changed or submitted, under the conditions you set. You approve or reject the document from the message.
-    badge: Documents
-  - title: Get notifications on the web and on your phone
-    description: Push notifications have quiet hours and per-channel settings. A reminder brings a message back later. A scheduled message goes out at the time you choose.
-    badge: Mobile
-
-install:
-  steps:
-    - title: From the Dokos Cloud marketplace
-      description: In your Dokos Cloud dashboard, open the marketplace and install Raven on your site. The application is included in every plan.
-    - title: Self-hosted
-      description: "<code>bench get-app https://github.com/frappe/raven</code> then <code>bench --site your-site install-app raven</code>. Raven opens at /raven on the site."
-    - title: On phones
-      description: Install Raven from the App Store or Google Play, enter your site's address and sign in. The apps require Raven 3.1 or later.
-
-faq:
-  items:
-    - label: Where are messages stored?
-      content: In your Dokos site's database, with the rest of your data. Nothing is sent to a third-party messaging service.
-    - label: Can I approve a document from Raven?
-      content: Yes. You approve, reject or send back a document from the message that announces it, without opening Dokos.
-    - label: Do document notifications need code?
-      content: No. You choose the document type, the event (creation, change, submission), conditions and the message template, then the target channel.
-    - label: Does Raven include AI agents?
-      content: Yes. Raven offers bots that post and reply, incoming webhooks that write to a channel, and agents connected to your own OpenAI or compatible provider. The Dokos AI assistant can be reached by direct message once the Raven bridge is enabled.
-    - label: Is there a per-user subscription?
-      content: No. Raven is an application of your site. It is included in every Dokos Cloud plan and can be installed freely when self-hosting, under the AGPLv3 licence.
-
-bottom_cta:
-  title: Show a sales order to your team from a channel.
-  description: Tell us how your team communicates today, and we will show you Raven on a demo site.
+  title: <span class='text-primary'>An AI assistant built into your Dokos data</span>
+  image: ''
+  headline:
+    label: Raven
+    to: https://www.ravenchat.ai/
+    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
+    target: _blank
   links:
-    - label: Write to us
-      to: /en/contact
+    - label: Build your first automation
+      to: https://cloud.dokos.io
       size: xl
-      color: primary
-    - label: See the marketplace
-      to: https://cloud.dokos.io/marketplace
+      color: black
+      icon: i-heroicons-play-circle-16-solid
+      trailing: false
       target: _blank
+    - label: Documentation
+      icon: i-ic-outline-library-books
       size: xl
-      color: neutral
-      variant: outline
+      color: gray
+      to: https://doc.dokos.io
+      target: _blank
+colored_section:
+  title: Change your everyday workflow with AI
+  description: Raven is the AI-powered module built into Dokos that changes the way you work. With its assistant, you can automate complex tasks, extract data more easily, and collaborate more efficiently across your company.
+  image: image/raven/raven-exemple.webp
+  align: left
+features:
+  - title: Build smart automations
+    description: Create your own bots without writing a line of code. Raven helps you automate complex business processes while adapting to the context of each task.
+    image: image/raven/raven-exemple.webp
+    image_bg_color: bg-teal-500
+    align: right
+  - title: Streamline your day with the Dokos integration
+    description: Share, print, and work on your documents directly from the Raven chat, without leaving your Dokos interface.
+    image: image/raven/raven-exemple.webp
+    image_bg_color: bg-teal-500
+    align: left
+  - title: Improve your collaboration
+    description: Chat, share files, and follow your conversations in organized threads so you never lose track.
+    image: image/projet/communication-raven.png
+    image_bg_color: bg-teal-500
+    align: right
+bottom_cta:
+  title: Ready to change your everyday workflow?
+  description: Raven is an open source solution, giving you full transparency and freedom of use with no lock-in. Join the Raven community today and transform how you manage your business with a solution built for efficiency and simplicity.
+  card: true
+  class: bg-amber-600/10 dark:bg-amber-800/10
+  links:
+    - label: Get started with Raven
+      size: md
+      color: amber
+      to: https://cloud.dokos.io
+      target: _blank
+    - label: Learn more about Raven
+      size: md
+      variant: link
+      color: gray
+      to: https://www.ravenchat.ai/
+      target: _blank
+      icon: i-heroicons-outline-arrow-right
+      trailing: true

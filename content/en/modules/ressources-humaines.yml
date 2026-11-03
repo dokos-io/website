@@ -1,121 +1,146 @@
-# English version of content/fr/modules/ressources-humaines.yml (sources and screenshot notes are there).
-
 navigation:
-  title: Human Resources
-  icon: i-mdi-human-capacity-increase
-  description: Leave, attendance, expense claims, appraisals and a mobile app.
+    title: Human Resources
+    icon: i-mdi-human-capacity-increase
+    description: Leave management, expense claims, recruitment, shifts and attendance, evaluations.
 
 title: Human Resources
-description: Manages your employees, their leave, their attendance and their expense claims, with a mobile app for requests and approvals.
 icon: i-mdi-human-capacity-increase
+description: Simplify and improve how you manage your teams
+author: Frappe Technologies, Dokos & Contributors
 application: Dokos HR
 theme: projets-ressources-humaines
-author: Frappe Technologies, Dokos & Contributors
 logo:
   light: /frappe/hrms_logo.svg
   dark: /frappe/hrms_logo.svg
 
-publisher: dokos
-licence: GPLv3
-version: v5
-marketplace: hrms
-docs: https://doc.dokos.io/v5/dokos/hrms
-related: [projets, comptabilite, learning]
-
 hero:
-  title: Your <span class="text-primary">employees</span>, their leave, their attendance and their expense claims, in your Dokos site.
-  description: Your employees request leave and enter their expenses from the mobile app; their managers approve from the same screen. Each submitted expense claim creates its journal entry.
+  title: Manage your <span class="text-primary">Human Resources</span> efficiently with Dokos.
+  description: Dokos gives you everything you need to simplify the tasks and processes tied to your employees. See how Dokos can help improve your HR management!
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
 
-for_whom:
-  items:
-    - title: You manage leave by e-mail and spreadsheet
-      description: The leave allocation is calculated from the employment contract. The employee submits the request, the approver validates it, and the department calendar shows the approved absences.
-      icon: i-heroicons-calendar-days
-    - title: Your accountant re-keys expense claims
-      description: The employee enters the expenses, the manager approves, and the submitted expense claim is posted to the expense account and the employee's account. It is settled with a payment entry.
-      icon: i-heroicons-receipt-percent
-    - title: Your teams work in shifts
-      description: A shift type sets the hours. Employee check-ins mark attendance automatically, with thresholds for half day and absence.
-      icon: i-heroicons-clock
-    - title: You hold annual reviews
-      description: An appraisal cycle sets the period and the employees concerned. Appraisals are generated in bulk from a template that weights the criteria.
-      icon: i-heroicons-chart-bar
 
-fit:
-  description: "Dokos HR is a separate application, installed by default on Dokos Cloud sites. It reads the <strong>employee record</strong> and the company structure, and it writes to the accounts: a submitted expense claim creates its journal entry, and a payment entry settles it. Timesheets from the Projects module are used to count paid days."
-  image: /modules/ressources-humaines/fit.webp
-  reads:
-    - Employee, Company, Department and Holiday List
-    - Expense account, Cost Center and Project, to allocate expense claims
-    - Payment Entry, to settle an expense claim
-    - Timesheet, to calculate paid days
-    - User, created from the employee record for access to the mobile app
-  adds:
-    - The HR Dashboard, the Department Dashboard and the Manager Dashboard
-    - The HR setup centre and HR Settings
-    - The Leave Type, Leave Allocation and Leave Application documents
-    - The Shift Type, Shift Assignment, Attendance and Employee Checkin documents
-    - The Expense, Expense Claim Type and Expense Claim documents
-    - The Appraisal Cycle, Appraisal Template and Appraisal documents
-    - Employment contracts, from the Connections tab of the employee record
-    - The HR mobile app, at your site address followed by /hrms
-  depends:
-    - Dokos
 
 features:
-  - title: Manage leave from request to approval
-    description: HR creates the holiday list and the leave types, then sets in the employment contract the types each employee is entitled to. The allocation is calculated and adjusted over the period. The employee submits a leave application; the approver accepts or rejects it. Block periods can prevent leave at critical times.
-    badge: Leave
-  - title: Mark attendance from check-ins
-    description: "A shift type has a start time and an end time, with grace periods before and after. When automatic attendance is enabled, Dokos reads the employee check-ins and creates the day's attendance: Present, Half Day or Absent according to the hours worked. The Mark Attendance tool and the Monthly Attendance Sheet report complete the follow-up."
-    image: /modules/ressources-humaines/feature-presences.webp
-    badge: Shifts and attendance
-  - title: Turn expenses into journal entries
-    description: The employee records each expense with its date and type, for example Fuel or Meals, one line per VAT rate. The expense claim takes these lines, requires an approver and accepts receipts as attachments. On submission, the amount is posted to the expense account and to the employee's account; you settle it from Create > Payment. The Unclaimed Expense Claims report lists what remains to be paid.
-    badge: Expense claims
-  - title: Run your appraisal cycles
-    description: An appraisal template defines the criteria and their weight, adaptable by position or department. The appraisal cycle sets the period and the employees concerned, then generates the appraisals in bulk. The final score combines the goal score, the criteria score and the self-appraisal; a custom formula can weight them differently.
-    image: /modules/ressources-humaines/feature-evaluation.webp
-    badge: Appraisals
-  - title: Give your employees a mobile app
-    description: At your site address followed by /hrms, each employee opens a web app from a Chromium browser (Chrome, Brave, Edge). They check in, request leave, see their history and the upcoming holidays, record an expense and enter their hours by QR code or by hand. Approvers handle leave applications from the home screen.
-    badge: Mobile app
+  - title: Simple employee management
+    description: Easily manage your employees' profiles, positions, and departments. <br><br>Track contracts and structure your organization. <br><br>The full employee lifecycle is covered, from onboarding through promotions, transfers, and departures.</br>
+    image: "image/module-rh/un-rh-gestion-des-employes.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Employee management
+      color: sky
+  - title: Attendance and scheduling
+    description: Track attendance with time clocks or biometric integration.<br><br> Automate attendance and shift management with flexible tools for scheduling, handling change requests, and assigning tasks efficiently.</br>
+    image: "image/module-rh/deux-presence-et-horaires.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Attendance and scheduling
+      color: sky
+  - title: Leave management
+    description: Create and customize your leave policies, leave types, and holiday lists. <br><br>Manage leave requests with clear approval workflows, including compensatory leave requests.</br>
+    image: "image/module-rh/trois-gestion-des-conges.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Leave
+      color: sky
+  - title: Expenses and advances
+    description: Manage employee advances, expense claim requests, and their approval.
+    image: "image/module-rh/quatre-note-de-frais-modifie.webp"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Expenses
+      color: sky
+  - title: Performance reviews
+    description: Create templates and track your employees' review cycles. <br><br>Collect feedback, track goals, and run regular reviews to improve your teams' performance.</br>
+    image: "image/module-rh/cinq-evaluation.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Performance
+      color: sky
+  - title: Simplified recruitment
+    description: Manage your job postings, candidates, and interviews. <br><br>Dokos also offers an employee referral system and automates job posting generation.</br>
+    image: "image/module-rh/six-tableau-de-bord-offre-demploi.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Recruitment
+      color: sky
+  - title: Training and development
+    description: Plan and track training programs, events, results, and participant feedback to support your employees' development.
+    image: "image/module-rh/sept-programme-formation.webp"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Training
+      color: sky
+  - title: Real-time reports and analytics
+    description: Generate detailed, up-to-date reports on attendance, leave balances, and review data.
+    image: "image/module-rh/tableau-bord-presences.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Reports
+      color: sky
+  - title: An online portal for your employees
+    description: With Dokos, your employees get a portal to view their data, submit leave requests, and track expenses on their own.
+    image: "image/module-rh/applications-demande-de-conges.webp"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Portal
+      color: sky
+  - title: A simple mobile app
+    description: Make everyday life easier for your employees, even on the move, for leave, expenses, and timesheet management.
+    image: "image/module-rh/application-rh-seul.webp"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Application
+      color: sky
 
-install:
-  steps:
-    - title: From the Dokos Cloud marketplace
-      description: Dokos HR is installed by default on Dokos Cloud sites and in the Docker images. If it is missing on your site, open the marketplace from your Dokos Cloud dashboard and install it. Included in every plan.
-    - title: Self-hosted
-      description: "<code>bench get-app https://gitlab.com/dokos/hrms</code> then <code>bench --site your-site install-app hrms</code>."
-    - title: First setup
-      description: Open the HR setup centre, create the holiday list, the leave types and the expense claim types, then your employee records. The Create User button on the employee record gives access to the mobile app.
-  prerequisites:
-    - Dokos installed on the site
-
-faq:
-  items:
-    - label: Is the HR module changing?
-      content: Yes. The HR module is being overhauled, as we announced in our blog in autumn 2026. The documents described on this page remain available during this work.
-    - label: Can payroll be used in France?
-      content: The payroll module inherited from Frappe HR is not yet adapted to France. Expense claims are settled with a payment entry separate from the salary.
-    - label: What does Dokos HR cover beyond this page?
-      content: The application includes the Frappe HR modules, including recruitment, training, fleet management and reports. The Recruitment and Payroll sections of the documentation are being written.
-    - label: How does an employee access the mobile app?
-      content: They need an employee record and a user on the site. They then open your site address followed by /hrms in a Chromium browser and can install it as a web app.
-    - label: Is HR data protected on the API?
-      content: Each API call follows the same permissions as the interface. An employee reads only their own data; an HR manager accesses their team's data according to their roles.
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /en/modules/ressources-humaines
 
 bottom_cta:
-  title: Ask us your questions about Dokos HR.
-  description: Tell us how you manage leave and expense claims today.
+  title: An intuitive, simplified module to optimize your HR management!
+  description: Dokos is the ideal tool for modern, ethical, and transparent human resources management. Join the open source community and discover a new way to manage your teams!
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
   links:
-    - label: Write to us
-      to: /en/contact
-      size: xl
-      color: primary
-    - label: See the marketplace
-      to: https://cloud.dokos.io/marketplace
-      target: _blank
-      size: xl
-      color: neutral
-      variant: outline
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

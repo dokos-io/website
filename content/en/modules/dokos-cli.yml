@@ -1,121 +1,96 @@
-# English version of content/fr/modules/dokos-cli.yml (sources and screenshot notes are there).
-
 navigation:
   title: Dokos CLI
   icon: i-heroicons-command-line
-  description: Read and write a Dokos site's data from a terminal or from an AI agent.
+  description: Query and drive a Dokos site from a terminal, or connect it to an AI agent.
 
 title: Dokos CLI
-description: A command installed on your computer to read and write a Dokos site's data through the REST API, and an MCP server that gives your AI agents the same capabilities.
 icon: i-heroicons-command-line
+description: A lightweight command-line tool that uses the Dokos/Frappe REST API to read and write data.
+author: Dokos
 application: Dokos CLI
 theme: intelligence-artificielle
-author: Dokos
 logo:
   light: /frappe/dokos_logo.svg
   dark: /frappe/dokos_logo.svg
 
-publisher: dokos
-licence: MIT
-version: v5
-docs: https://doc.dokos.io/v5/dokos-cli
-related: [dokos-ai, dokos, dodock]
-
 hero:
-  title: Your Dokos site, <span class="text-primary">from a terminal</span> or from an AI agent.
-  description: The <code>dokos</code> command queries and changes a site's documents through its REST API. The same command, started with <code>dokos mcp</code>, becomes a local MCP server for the agent of your choice.
-
-for_whom:
-  items:
-    - title: You run a site and export lists in scripts
-      description: You list documents with filters, run a report and get the result as JSON to pass on to your other tools.
-      icon: i-heroicons-command-line
-    - title: You develop on Dokos and want to see a schema before you write
-      description: You display a DocType's fields, options and permission rules, then create or edit a document in one command.
-      icon: i-heroicons-code-bracket
-    - title: You already work with an AI agent
-      description: You connect the agent to your site in one command. It reads your documents, runs your reports and prepares entries that you confirm.
-      icon: i-heroicons-cpu-chip
-    - title: You want an agent to explore production safely
-      description: You mark the site as read-only. Any write is refused before the request leaves your computer.
-      icon: i-heroicons-lock-closed
-
-fit:
-  description: >-
-    Dokos CLI installs <strong>on your computer</strong> and talks to the site through the REST API,
-    with an API key. The command, and the agent that uses it, have the permissions of the user whose
-    key is saved. A key from a restricted account gives a restricted agent.<br>
-    Reads run without interruption. Writes ask for a confirmation in plain language in the agent. A
-    site can be marked as read-only. A save sends the document's last modified date, and the site
-    refuses the write if someone changed the document in the meantime. Secrets are stored in the
-    operating system's keychain.<br>
-    If your site has the <a href="/en/modules/dokos-ai">Dokos AI</a> application with its MCP server
-    enabled, the skills you publish there are fetched by <code>dokos skill pull</code> and applied by
-    your external agent.
-  reads:
-    - Every DocType and report the API key's user can access
-    - DocType schemas and permission rules
-    - The skills published by the site (Dokos AI application)
-  adds:
-    - The <code>dokos</code> command on your computer (Linux, macOS, Windows)
-    - The <code>dokos mcp</code> MCP server and the "dokos-erp" skill for agents
-    - The "dokos" plugin for desktop agent applications that accept plugins
-    - A local cache of the site's DocTypes and reports (<code>dokos sync</code>)
-  depends:
-    - A Dokos site with an API key and secret
-    - Python 3.11 or later
+  title: Your Dokos site, <span class="text-primary">from a terminal</span>.
+  description: dokos is a command-line tool that uses the Dokos/Frappe REST API to read and write data — both as a utility for administrators and developers, and as an MCP server that connects the AI agent of your choice to the same capabilities.
+  links:
+    - label: Read the documentation
+      to: https://doc.dokos.io/dokos-cli
+      target: _blank
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-book-open
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
 
 features:
   - title: Query a site without leaving the terminal
-    description: You list documents with filters and chosen fields, read a document, count, read a value, run a report or display a DocType's schema. The result is shown as a table, or as JSON when the output is piped to another program.
-    badge: Read
-  - title: Write data, within the site's safeguards
-    description: You create, save, submit, cancel, amend, delete or rename a document, update one value or a batch, and upload a file. An error shows the server's message and the command that addresses it. On a read-only site, the write is refused before it is sent.
-    badge: Write
-  - title: Work with several sites
-    description: You save each site under a name with <code>dokos add-site</code>, or from a local bench with <code>dokos use-site</code>. You switch the active site, or target a site for a single command with <code>-s</code>.
-    badge: Sites
-  - title: Set up an AI agent in one command
-    description: <code>dokos agent install</code> registers the MCP server in the command-line agents found on your computer, pre-approves the read tools only and installs the "dokos-erp" skill. The agent reads and updates the site in natural language. Writes still need your confirmation.
-    badge: Agents (MCP)
+    description: List documents, read a record, run a report, or inspect a DocType's schema, in a single command.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Queries
+      color: sky
+  - title: Write data, with the same guardrails as the interface
+    description: Create, update, submit, cancel, delete or rename a document from the command line, with structured output (tables or JSON).
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Writes
+      color: sky
+  - title: Equip an AI agent without the terminal
+    description: The built-in MCP server (`dokos mcp`) gives an AI agent the same capabilities as the command-line tool, connecting any MCP-compatible agent to a Dokos site.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Agent integration (MCP)
+      color: sky
 
-install:
-  description: Dokos CLI is not installed from the marketplace. It is a Python package that you install on your computer, then connect to your site.
-  steps:
-    - title: Install the command
-      description: "<code>pipx install \"git+https://gitlab.com/dokos/dokos-cli.git@&lt;tag&gt;\"</code>, pinning a published version. <code>pip</code> works too. <code>dokos self-update</code> updates the tool with the installation method it detects."
-    - title: Connect a site
-      description: "<code>dokos configure</code> saves the site URL and an API key. From a local bench, <code>dokos use-site</code> issues the keys for the user you choose. Check with <code>dokos get-list \"User\" --limit 5</code>."
-    - title: Connect your agents
-      description: "<code>dokos agent install</code> configures the agents found on your computer. By hand, <code>dokos mcp --print-config</code> prints the snippet to paste into the agent's MCP configuration, and <code>dokos mcp</code> starts the server."
-  prerequisites:
-    - Python 3.11 or later, with pipx (recommended) or pip
-    - An API key and secret of a site user, or a local bench
-
-faq:
-  items:
-    - label: What is the difference with Dokos AI?
-      content: "[Dokos AI](/en/modules/dokos-ai) lives in the site: its assistant is in the Dokos interface and its flows run on the server. Dokos CLI lives on your computer and is mainly for administrators, developers and locally installed agents. Both go through MCP. If Dokos AI is installed with its MCP server enabled, the \"dokos-connect\" plugin connects your agent to the site with nothing to install on your computer."
-    - label: Can an agent write without my approval?
-      content: "<code>dokos agent install</code> pre-approves only the read tools (read, list, count, report, schema, permissions, sites). Write tools still need the agent's confirmation. To rule out any write, mark the site as read-only with <code>dokos sites --read-only site-name</code>."
-    - label: Where are my credentials stored?
-      content: In the operating system's keychain. Without a keychain (container, continuous integration), they are written to the configuration file with mode 0600. The environment variables <code>DOKOS_URL</code>, <code>DOKOS_API_KEY</code> and <code>DOKOS_API_SECRET</code> take priority over the file.
-    - label: Does it work on Windows?
-      content: Yes, on Linux, macOS and Windows. The <code>dokos use-site</code> and <code>dokos setup</code> commands, which call <code>bench</code>, are for Linux and macOS only. You do not need them for MCP or for the desktop agent plugin.
-    - label: And from a desktop agent application?
-      content: "If the application accepts plugins, add the marketplace <code>https://gitlab.com/dokos/dokos-cli</code> in its settings, then install the \"dokos\" plugin. It asks for the path of the <code>dokos</code> executable (<code>which dokos</code> or <code>where dokos</code>). The session must run locally: a cloud session cannot start a program on your computer."
+bottom_section:
+  title: "What Dokos CLI covers:"
+  cards:
+    - title: Installation & configuration
+      description: Python 3.11 or later, installed via pipx or pip. Connects to a remote site with API credentials, or auto-detects a local bench.
+      icon: i-heroicons-cog-6-tooth
+      class: "col-span-4 row-span-3"
+    - title: Exploring data models
+      description: Access to DocType schemas and permissions, to understand a site's structure before writing to it.
+      icon: i-heroicons-circle-stack
+      class: "col-span-4 row-span-3"
+    - title: Two usage modes
+      description: Terminal mode for administrators and developers, or MCP server mode to equip an AI agent with the same capabilities.
+      icon: i-heroicons-command-line
+      class: "col-span-4 row-span-3"
 
 bottom_cta:
-  title: Tell us what you want to automate on your site.
-  description: Installation, API keys and permissions are agreed with your technical team before setup.
+  title: Want to automate your Dokos operations?
+  description: Installation, configuration and API permissions are scoped with your technical team before any rollout.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
-      size: xl
-      color: primary
-    - label: Read the documentation
-      to: https://doc.dokos.io/v5/dokos-cli
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: Documentation
+      to: https://doc.dokos.io/dokos-cli
       target: _blank
-      size: xl
-      color: neutral
-      variant: outline
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

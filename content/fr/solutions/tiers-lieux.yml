@@ -38,8 +38,7 @@ logos:
 
 colored_section:
   title: Construit avec les tiers-lieux depuis 2018
-  description: "Le projet est né en 2018 avec la Compagnie des Tiers-Lieux, d'abord sur ERPNext, avant de devenir Dokos. Des tiers-lieux ont co-construit l'outil avec nous et financé de nouvelles fonctions. Les échanges se poursuivent sur le forum de la communauté Dokos, ouvert à tous. En mai 2026, au Faire Festival de Toulouse, nous avons retrouvé fablabs, intégrateurs et utilisateurs en auto-hébergement, et lancé l'interconnexion entre TiBillet, la billetterie libre et coopérative, et Dokos."
-  # source : content/fr/blog/2026/faire-festival-retour.md
+  description: "Le projet est né en 2018 avec la Compagnie des Tiers-Lieux, d'abord sur ERPNext, avant de devenir Dokos. Des tiers-lieux ont co-construit l'outil avec nous et financé de nouvelles fonctions. Les échanges se poursuivent sur le forum de la communauté Dokos, ouvert à tous."
   image: /image/dokos-communaute.webp
   align: left
 
@@ -77,7 +76,7 @@ sections:
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
   - title: Le paiement en ligne
-    description: Vous envoyez un lien de paiement depuis une commande ou une facture. Votre client paie par carte ou par prélèvement SEPA, et le statut de la demande se met à jour dans Dokos. Les passerelles Stripe, GoCardless, Stancer, HelloAsso, SumUp et PayPal sont disponibles. Avec Stripe ou GoCardless, le moyen de paiement est conservé pour les échéances de l'abonnement.
+    description: Vous envoyez un lien de paiement depuis une commande ou une facture. Votre client paie par carte ou par prélèvement SEPA, et le statut de la demande se met à jour dans Dokos. Les passerelles Stripe, GoCardless, Stancer, HelloAsso, SumUp et Paypal sont disponibles. Avec Stripe ou GoCardless, le moyen de paiement est conservé pour les échéances de l'abonnement.
     image: /modules/paiements/hero.webp
     align: right
     links:

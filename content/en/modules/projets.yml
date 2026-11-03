@@ -1,107 +1,142 @@
-# English version of content/fr/modules/projets.yml (sources and screenshot notes are there).
-
 navigation:
-  title: Projects
-  icon: i-eos-icons-project-outlined
-  description: Projects, tasks, timesheets and billing of time spent.
+    title: Projects
+    icon: i-eos-icons-project-outlined
+    description: Project organization, planning, and tracking.
 
 title: Projects
-description: Splits your projects into tasks, records the time spent and calculates the cost and billable amount of each project.
 icon: i-eos-icons-project-outlined
+description: Plan and track your projects to keep them on course.
 application: Dokos
 theme: projets-ressources-humaines
 author: Frappe Technologies, Dokos & Contributors
 
-publisher: dokos
-licence: GPLv3
-version: v5
-marketplace: erpnext
-docs: https://doc.dokos.io/v5/dokos/projets
-related: [ventes, ressources-humaines, comptabilite, support]
-
 hero:
-  title: Your <span class="text-primary">projects</span>, their tasks and the time spent, linked to your invoices.
-  description: You split a project into tasks, your team enters its hours in timesheets, and Dokos calculates the cost and billable amount of the project. A sales invoice is created from the timesheet.
+  title: Manage your <span class="text-primary">projects</span> with ease using Dokos
+  description: Organize, plan, and track every project in one place. Whether you're a small team or a fast-growing company, our Projects module helps you stay in control of every stage of your projects.
+  links:
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
 
-for_whom:
-  items:
-    - title: You sell services billed by the hour
-      description: Each timesheet line marked Billable carries a billing rate. After submission, you create the sales invoice from the timesheet, and the project shows the billed amount.
-      icon: i-heroicons-clock
-    - title: You run projects with tasks that follow each other
-      description: A task depends on another and cannot be completed before it. Dependencies show in the Gantt view; you edit the Plan view by drag and drop.
-      icon: i-heroicons-arrows-right-left
-    - title: You want the margin of each project
-      description: The project adds up the costs of timesheets, expense claims, purchases and consumed materials, then compares them with the sales amount.
-      icon: i-heroicons-banknotes
-    - title: You repeat the same type of project
-      description: A project template holds a sequence of tasks. At creation, the tasks are filled in and dated from their duration, skipping the company's holidays.
-      icon: i-heroicons-document-duplicate
-
-fit:
-  description: "The Projects module is part of Dokos. A project is linked to a <strong>sales order</strong> and receives the costs of the other modules: timesheets, expense claims, purchase invoices and consumed materials. The <strong>timesheet</strong> links an employee's time to a project, a task and a sales invoice."
-  reads:
-    - Sales Order, set on the project
-    - Sales Invoice, created from a submitted timesheet
-    - Expense Claim and Purchase Invoice, whose amounts feed the project cost
-    - Employee, for timesheets and activity costs per person
-    - Holiday List, to date the tasks of a template
-  adds:
-    - The Project, Project Template and Project Update documents
-    - The Task document, with its Gantt and Plan views
-    - The Timesheet, Activity Type and Activity Cost documents
-    - The cost and billing fields of the project (Total Billable Amount, Total Billed Amount, Gross Margin)
 
 features:
-  - title: Create a project, from scratch or from a template
-    description: "You enter the name, the status and the expected end date, then the type, priority and department if needed. With From Template, the template's tasks are created and dated automatically. The % Complete Method field sets how progress is calculated: manual, by completed tasks, by task progress or by task weight."
-    badge: Project
-  - title: Split the work into dependent tasks
-    description: A task has a status (Open, Working, Overdue, Pending Review, Completed, Cancelled) and a priority. The Is Group box makes it the parent of subtasks. The Dependent Tasks field blocks closing while the upstream task is not completed. The actual start and end dates come from timesheets.
-    image: /modules/projets/feature-taches.webp
-    badge: Task
-  - title: Enter the time spent, line by line
-    description: A timesheet covers one or more days. Each line gives the start time, the hours, the activity type, the project and the task. A timer measures the actual time. The cost rate comes from the activity type or from the employee's own activity cost; once the timesheet is submitted, the rates are locked.
-    badge: Timesheet
-  - title: Bill the time and track the margin
-    description: Lines marked Billable, multiplied by the billing rate, give the billing amount. From the submitted timesheet, you create the sales invoice; the total billed hours and the billed percentage are updated. On the project, the gross margin compares the sales amount with the total cost.
-    badge: Billing
-  - title: Keep your customers informed
-    description: The Users table of the project gives access to a website user, for example your customer, with a welcome e-mail and, if you wish, access to the attachments. The project update sends the progress to the stakeholders, at the frequency you choose.
-    badge: Customer follow-up
+  - title: Project planning
+    description: Create and manage your projects easily, from design to delivery. <br><br>With an intuitive interface, set your goals, plan your tasks, and assign roles to keep execution running smoothly.</br>
+    video: "/image/projet/projet.mp4"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Project
+      color: sky
+  - title: Task tracking
+    description: Keep an overview of every task across your projects. <br><br>See their progress and status, and set priorities for better time and resource management.</br>
+    image: "image/projet/Suivi-des-taches-kanban.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Tasks
+      color: sky
+  - title: Team management
+    description: Assign roles and responsibilities to each team member on every task or sub-project. <br><br>Track everyone's workload to balance effort and improve collective efficiency.</br>
+    image: "image/projet/vue-planning-taches.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Team
+      color: sky
+  - title: An interactive calendar
+    description: Get a calendar view to plan and adjust your project deadlines. <br><br>Quickly spot overdue tasks and adjust schedules accordingly to stay on track.</br>
+    image: "image/projet/gestion-de-projet-calendrier.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Calendar
+      color: sky
+  - title: Budget tracking
+    description: Keep a close eye on the budgets allocated to your projects. <br><br>Estimate costs, track spending in real time, and make informed decisions to stay within your budget limits.</br>
+    image: "image/projet/suivi-activite-budget-projet.png"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Budget
+      color: sky
+  - title: Dependency management
+    description: Identify and manage dependencies between your tasks to anticipate potential blockers. <br><br>Make sure every stage of the project moves forward smoothly with transparent workflow management.</br>
+    image: "image/projet/tache-gantt.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Dependencies
+      color: sky
+  - title: Reports and analytics
+    description: Access detailed reports on your project progress. <br><br>Get real-time data on team performance, task status, and budgets to better anticipate needs and adjust your plans.</br>
+    image: "image/projet/tableau-de-bord-projet.svg"
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Report
+      color: sky
+  - title: Real-time collaboration
+    description: Make it easier for your teams to collaborate with built-in communication and file-sharing tools. <br><br>Discuss, share documents, and collaborate directly within the project to boost productivity.</br>
+    image: "image/projet/communication-raven.png"
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Collaboration
+      color: sky
 
-install:
-  description: The Projects module is part of Dokos. There is no separate application to install.
-  steps:
-    - title: On Dokos Cloud
-      description: The module is on your site from its creation, in every plan. Open the Projects workspace from the home page.
-    - title: Self-hosted
-      description: "Install Dokos: <code>bench get-app https://gitlab.com/dokos/dokos</code> then <code>bench --site your-site install-app erpnext</code>."
-    - title: First setup
-      description: Check the activity types created by default (Planning, Research, Proposal Writing, Execution, Communication), set their rates, then create your first project template.
+bottom_section:
+  title: "Why choose Dokos?"
+  cards:
+    - title: Ease of use
+      description: A clear, intuitive interface that lets you manage your projects without the complexity.
+      icon: i-hugeicons-touch-interaction-01
+      class: "col-span-4 row-span-3"
+    - title: Flexibility
+      description: Adapts to your needs, whether your projects are simple or complex.
+      icon: i-hugeicons-curvy-up-down-direction
+      class: "col-span-4 row-span-3"
+    - title: Open source and customizable
+      description: Break free of limitations and adapt the software to the specifics of your projects.
+      icon: i-ic-outline-settings
+      class: "col-span-4 row-span-3"
 
-faq:
-  items:
-    - label: How do I set a different hourly rate per person?
-      content: Create an Activity Cost for the employee and the activity type, with its costing rate and its billing rate. Dokos applies these rates to the employee's timesheets.
-    - label: Can my customer follow the progress of the project?
-      content: Yes. Add them to the Users table of the project as a website user. You can also send them project updates at a regular frequency.
-    - label: How is the progress of a project calculated?
-      content: "According to the % Complete Method you choose: manual entry, share of completed tasks, task progress or task weight. If the weights do not add up to 100, Dokos normalises the result."
-    - label: Do expense claims count in the project cost?
-      content: Yes. An expense claim that mentions the project or one of its tasks updates the claimed amount field and the total cost of the project.
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: sky
+  to: /en/modules/projets
 
 bottom_cta:
-  title: Ask us your questions about the Projects module.
-  description: Tell us how you track your projects and your time today.
+  title: Get started today!
+  description: Try Dokos and see how our Projects module can help you organize and deliver your projects more successfully. Enjoy a complete, open source, ethical solution tailored to your specific needs.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
   links:
-    - label: Write to us
-      to: /en/contact
-      size: xl
-      color: primary
-    - label: See the marketplace
-      to: https://cloud.dokos.io/marketplace
-      target: _blank
-      size: xl
-      color: neutral
-      variant: outline
+    - label: Get started
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

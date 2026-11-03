@@ -1,107 +1,69 @@
-# English version of content/fr/modules/telephony.yml (sources and screenshot notes are there).
-
 navigation:
   title: Telephony
   icon: i-heroicons-phone
-  description: Exotel and Twilio calls from Helpdesk and the CRM.
+  description: Exotel and Twilio integration for Helpdesk.
 
 title: Telephony
-description: Links an Exotel or Twilio account to your site to make and receive calls from a Helpdesk ticket or a CRM record, and logs each call.
 icon: i-heroicons-phone
+description: Connects Exotel or Twilio to your Frappe Helpdesk customer support.
 application: Telephony
 theme: support-collaboration
-author: Frappe Technologies
-
-publisher: frappe
-licence: AGPLv3
-version: v5
-marketplace: telephony
-related: [support, crm, raven]
 
 hero:
-  title: Your Exotel or Twilio calls, <span class="text-primary">from the ticket</span> or the CRM record.
-  description: A call button appears in the ticket. An incoming call opens a window with the contact's name. Each call is logged with its duration and its recording.
-
-for_whom:
-  items:
-    - title: Your agents pick up, then look for the ticket
-      description: An incoming call opens a window with the caller's name and number. The agent accepts or declines from this window and finds the contact.
-      icon: i-heroicons-phone-arrow-down-left
-    - title: You call a customer back from another phone
-      description: The ticket's call button dials the contact's number. The agent stays in the ticket during the call.
-      icon: i-heroicons-phone-arrow-up-right
-    - title: You have no record of your support calls
-      description: Each call creates a log with its direction, status, duration and a link to the recording, attached to the document concerned.
-      icon: i-heroicons-document-text
-
-fit:
-  description: >-
-    Telephony is a base application that Helpdesk and the CRM use for calls. It adds the
-    settings of both providers and a <strong>call log</strong>. The ticket's call button dials
-    the contact's mobile number. An incoming call is received by an address of your site that
-    you declare to the provider, then shown to the agent in a window that stays available while
-    they move around. Each call is recorded in a TP Call Log document, linked to the ticket or
-    the record concerned.
-  reads:
-    - The contact's mobile number
-    - The users declared as agents
-  adds:
-    - The TP Twilio Settings and TP Exotel Settings documents
-    - The TP Call Log document (ID, numbers, direction, status, duration, recording, linked documents)
-    - The TP Telephony Agent document (user, number, default provider)
-    - The call button and the call window in Helpdesk
-  depends:
-    - Helpdesk or CRM
-    - A Twilio or Exotel account
+  title: <span class="text-primary">Telephony</span>, right inside your tickets.
+  description: Telephony integrates Exotel or Twilio with Frappe Helpdesk, so a customer call shows up in the same place as the rest of their support history.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
 
 features:
-  - title: Declare your provider
-    description: In the telephony settings, you switch on Twilio or Exotel and enter the account credentials (Account SID, token, number). You can switch on call recording in the same place.
-    badge: Settings
-  - title: Call from the ticket
-    description: A call button sits above the ticket details. The call window shows the name, the number, the status and the duration, with the action buttons. It shrinks into the navigation bar while the agent works elsewhere.
-    badge: Outgoing call
-  - title: Receive calls in the interface
-    description: You declare your site's address to the provider. With Exotel, a group of users receives calls in the order you set. With Twilio, the incoming call reaches the agent in the call window, who accepts or declines it.
-    badge: Incoming call
-  - title: Keep a log of each call
-    description: Each call creates a TP Call Log document with its direction, numbers, status, duration, recording address and a link to the documents concerned.
-    badge: Log
-
-install:
-  steps:
-    - title: From the Dokos Cloud marketplace
-      description: In your Dokos Cloud dashboard, open the marketplace and install Telephony on your site. The application is included in every plan.
-    - title: Self-hosted
-      description: "<code>bench get-app https://github.com/frappe/telephony</code> then <code>bench --site your-site install-app telephony</code>."
-    - title: Link the provider
-      description: Enter the credentials in the telephony settings, then declare your site's address in the provider's incoming and outgoing call configuration. The step-by-step guides are in the Helpdesk documentation, for Twilio and for Exotel.
-  prerequisites:
-    - An active Twilio or Exotel subscription, with a number
-    - Helpdesk or CRM installed on the site
-
-faq:
-  items:
-    - label: Which providers are supported?
-      content: Exotel and Twilio. The application offers no other provider.
-    - label: Are calls recorded?
-      content: If you switch it on in the provider settings. The recording's address is then kept in the call log.
-    - label: Do I need to install Telephony separately?
-      content: On Dokos Cloud, install it from the marketplace. When self-hosting, Helpdesk requires the Telephony application to be on the bench before it is installed.
-    - label: Must a number follow a particular format?
-      content: With Exotel, the contact's mobile number must include the country code for the call to start from the ticket. Exotel also requires the account's identity verification to be complete.
+  - title: Exotel and Twilio integration
+    description: Connects either of these telephony providers to Frappe Helpdesk.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Telephony
+      color: sky
+  - title: In the ticket's context
+    description: Attaches calls to a customer's history, with no separate tool to find a phone conversation.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Support
+      color: sky
 
 bottom_cta:
-  title: Tell us which provider you use.
-  description: We will tell you what the integration already covers for your support or your CRM.
+  title: Is your support telephony still a separate tool?
+  description: Available from the cloud.dokos.io marketplace. Tell us your current provider, and we'll tell you what the integration already covers.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
-      size: xl
-      color: primary
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
     - label: See the marketplace
-      to: https://cloud.dokos.io/marketplace
+      to: https://cloud.dokos.io
       target: _blank
-      size: xl
-      color: neutral
-      variant: outline
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

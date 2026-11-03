@@ -1,6 +1,5 @@
-# English version of content/fr/ecosysteme/vente-relation-client.yml (sources are there).
 title: Sales & customer relations
-description: CRM, sales, online shop, bookings, memberships and points of sale share the same customer base, from the first contact to the invoice.
+description: CRM, sales, e-commerce and resource booking share the same customer database, from first contact to invoice.
 navigation:
   title: Sales & customer relations
   icon: i-heroicons-shopping-cart
@@ -10,83 +9,75 @@ hero:
     label: The Dokos ecosystem
     icon: i-heroicons-shopping-cart
     to: /en/modules
-  title: From prospecting to payment,<br><span class="text-primary">one customer base</span>.
-  description: A quotation accepted in the CRM becomes an order, then an invoice, with no re-keying. The catalogue, stock and prices are shared by the CRM, sales, the online shop and the point of sale.
+  title: From prospecting to payment,<br><span class="text-primary">one single system</span>.
+  description: A quote accepted in the CRM becomes an order, then an invoice, with no re-entry. The catalog, stock and pricing are shared between the CRM, sales and the online store.
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
       size: xl
       color: primary
-    - label: The whole ecosystem
+    - label: See all modules
       to: /en/modules
       size: xl
       color: neutral
       variant: outline
 
 modules:
-  title: The applications in this area
-  description: Each one installs on its own or with the others, on the same base.
+  title: The modules in this area
+  description: Each one works on its own or combined with the others, with no duplicated data.
   items:
-    - title: CRM
-      description: Leads, sales pipeline and quotations, from the first contact to the signature.
+    - title: Frappe CRM
+      description: centralizes leads and the sales pipeline, from first contact to quote.
       icon: i-carbon-chart-relationship
       to: /en/modules/crm
       logo:
         light: /frappe/crm.svg
         dark: /frappe/crm.svg
     - title: Sales
-      description: Quotations, orders, deliveries, invoices and subscriptions, with the site's prices and stock.
+      description: Turns accepted quotes into orders, then invoices, with no re-entry.
       icon: i-ep-sell
       to: /en/modules/ventes
-    - title: Webshop
-      description: An online shop and a customer portal on the same catalogue and the same stock.
+    - title: Website & e-commerce
+      description: Opens an online storefront connected to the same catalog and the same stock.
       icon: i-gg-website
       to: /en/modules/e-commerce
       logo:
         light: /frappe/webshop_logo.svg
         dark: /frappe/webshop_logo.svg
-    - title: Bookings
-      description: Rooms, equipment or time slots that your customers can book, with credits for third places.
+    - title: Resource booking
+      description: Schedules time slots, rooms or equipment that your customers can book.
       icon: i-material-symbols-location-on-outline-rounded
       to: /en/modules/reservations-de-ressources
       logo:
         light: /frappe/bookings_logo.svg
         dark: /frappe/bookings_logo.svg
     - title: Construction
-      description: Quotations built in sections with subtotals, then progress invoices as the work advances.
+      description: An advanced quote configurator for businesses selling complex work.
       icon: i-heroicons-calculator
       to: /en/modules/construction
       logo:
         light: /frappe/construction_logo.svg
         dark: /frappe/construction_logo.svg
-    - title: Tribu
-      description: Members, membership fees and donations of your non-profit, with online registration and payment, and automatic invoicing.
-      icon: i-heroicons-identification
-      to: /en/modules/tribu
     - title: Dokos WooCommerce
-      description: Each order from your WooCommerce shop becomes a Dokos sales order, and your stock levels go back to the shop.
+      description: Connects an existing WooCommerce store to your Dokos management.
       icon: i-simple-icons-woocommerce
       to: /en/modules/woocommerce
       logo:
         light: /frappe/woocommerce_logo.svg
         dark: /frappe/woocommerce_logo.svg
     - title: Hiboutik
-      description: Each sale from your Hiboutik till comes back as a sales invoice, and your items and stock go to the till.
+      description: Connects your Hiboutik point of sale to your Dokos catalog and stock.
       icon: i-heroicons-shopping-bag
       to: /en/modules/hiboutik
       logo:
         light: /frappe/hiboutik_logo.svg
         dark: /frappe/hiboutik_logo.svg
-    - title: eCommerce Integrations
-      description: The connectors published by Frappe for Shopify, Unicommerce, Zenoti and Amazon, for your orders and stock.
-      icon: i-heroicons-shopping-bag
-      to: /en/modules/ecommerce-integrations
 
 cta:
-  title: Your sales tools do not talk to each other
-  description: Describe your current customer journey. We will tell you what a shared base changes, and what it will not change.
+  title: Are your sales tools not talking to each other?
+  description: Describe your current customer journey. We'll tell you what a unified system actually changes, and what it doesn't.
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
       size: xl
       color: primary

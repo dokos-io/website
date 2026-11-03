@@ -1,104 +1,72 @@
-# English version of content/fr/modules/construction.yml (sources and screenshot notes are there).
-
-title: Construction
-description: Builds your quotations in sections with subtotals, then invoices the job in progress invoices.
-icon: i-heroicons-calculator
-application: Construction
-theme: vente-relation-client
-author: Dokos
-logo:
-  light: /frappe/construction_logo.svg
-  dark: /frappe/construction_logo.svg
 navigation:
   title: Construction
   icon: i-heroicons-calculator
-  description: Quotations in sections and progress invoices.
+  description: Advanced quote configurator.
 
-publisher: dokos
-licence: AGPLv3
-version: v5
-marketplace: construction
-docs: https://doc.dokos.io/v5/dokos/chantiers
-related: [ventes, projets, achats, comptabilite]
+title: Construction
+icon: i-heroicons-calculator
+description: An advanced quote configurator for businesses selling complex work.
+application: Construction
+theme: vente-relation-client
+logo:
+  light: /frappe/construction_logo.svg
+  dark: /frappe/construction_logo.svg
 
 hero:
-  title: Quotations <span class="text-primary">structured in work packages</span>, invoiced as the job progresses.
-  description: Construction replaces the item table of quotations, orders and invoices with an editor that has headings, comments and subtotals. The order is then invoiced in progress invoices.
-
-for_whom:
-  items:
-    - title: You price your work in a spreadsheet
-      description: Work packages, subtotals and comments are entered directly in the Dokos quotation, then carried over to the order and the invoice.
-      icon: i-heroicons-table-cells
-    - title: You invoice your jobs in stages
-      description: From the submitted order, you create a progress invoice with an overall completion percentage or one per line.
-      icon: i-heroicons-receipt-percent
-    - title: You want to compare planned and actual margin
-      description: Two reports compare the quotation with what was invoiced, per project and per quotation.
-      icon: i-heroicons-chart-bar
-
-fit:
-  description: Construction is switched on in the <strong>Construction App Settings</strong>. You tick "Use the dedicated table view", choose the sales and purchasing documents concerned, then the columns to show. The editor then replaces the item table of the <strong>Quotation</strong>, the <strong>Sales Order</strong>, the <strong>Sales Invoice</strong> and the Delivery Note, as well as the Supplier Quotation, the Purchase Order and the Purchase Receipt. Heading, comment and item lines move from one document to the next with their subtotals. In the French interface, the application is called « Chantier ».
-  reads:
-    - Quotation, Sales Order, Delivery Note, Sales Invoice
-    - Supplier Quotation, Purchase Order, Purchase Receipt
-    - Project and Task
-    - Product Bundle
-  adds:
-    - The "Construction App Settings" document
-    - A line editor with headings, comments, subtotals and print display options
-    - Progress invoices and the "Billing summary" on the order
-    - The "Markup summary on quotations per project" and "Margin comparison per quotation" reports
-  depends:
-    - Sales
+  title: <span class="text-primary">Complex quotes</span>, configured with no re-entry.
+  description: Construction adds an advanced quote configurator to Dokos, for pricing multi-line work without rebuilding the quote for every variant.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
 
 features:
-  - title: Build the quotation in sections
-    description: In the editor, you add a heading, a comment or an item, then you reorder the lines by drag and drop. Each section calculates its subtotal. You choose the columns in the settings, for example the unit cost price, the overhead coefficient or the gross margin percentage.
-    badge: Quotations
-  - title: Choose what the customer sees
-    description: "For each line, you decide how it prints: hide the price, hide the line, or hide the prices of a whole section. The print format follows the sections and shows the subtotals."
-    badge: Printing
-  - title: Invoice in progress invoices
-    description: On a submitted sales order, choose Create, then Progress Invoice. Dokos proposes a completion percentage, the higher of the linked project's progress and what is already invoiced. You apply it to the whole invoice or line by line. The print title reads "Progress invoice no. 3", and the billing summary, on the order and on the invoice, lists the progress invoices already issued.
-    badge: Invoicing
-  - title: Compare planned and actual margin
-    description: The "Markup summary on quotations per project" report compares, for each project, the markup rate of the quotation with actual sales and purchases. The "Margin comparison per quotation" report sets the margin calculated on the quotation against the margin recorded at invoicing.
-    badge: Reports
-
-install:
-  steps:
-    - title: From the Dokos Cloud marketplace
-      description: In your Dokos Cloud dashboard, open the marketplace and install Construction on your site. The application is included in every plan.
-    - title: Self-hosted
-      description: "<code>bench get-app https://gitlab.com/dokos/construction</code> then <code>bench --site your-site install-app construction</code>."
-    - title: Switch on the dedicated view
-      description: Open the Construction App Settings, tick "Use the dedicated table view", choose the sales and purchasing documents concerned, then the columns of the quotation editor. The view is off by default.
-
-faq:
-  items:
-    - label: In which documents does the editor appear?
-      content: In the quotation, the sales order, the sales invoice and the delivery note, as well as in the supplier quotation, the purchase order and the purchase receipt. You switch on sales documents and purchasing documents separately.
-    - label: Can one progress invoice cover several orders?
-      content: No. A progress invoice is attached to a single sales order.
-    - label: Does stock go out with the progress invoice?
-      content: No. Quantities leave stock with the delivery note. The progress invoice does not move stock.
-    - label: How do I show progress in the quotation table?
-      content: In the Construction App Settings, add a column with the `progress_percentage` field, usually before the quantity.
-    - label: What do projects and tasks gain?
-      content: A tab on the project and on each task groups all the documents attached to the project's tasks.
+  - title: Quote configurator
+    description: Builds a quote from line items and variants, rather than a single product line.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Quotes
+      color: sky
+  - title: A Dokos module like any other
+    description: Installs and runs like the rest of the ecosystem, with no separate site or database.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Integration
+      color: sky
 
 bottom_cta:
-  title: How you price your work today
-  description: Tell us how you quote and invoice your jobs, and we will tell you what Construction already covers.
+  title: Does your quoting still depend on a separate spreadsheet?
+  description: Available from the cloud.dokos.io marketplace. Describe your current pricing process, and we'll tell you what Construction already covers.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
-      size: xl
-      color: primary
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
     - label: See the marketplace
-      to: https://cloud.dokos.io/marketplace
+      to: https://cloud.dokos.io
       target: _blank
-      size: xl
-      color: neutral
-      variant: outline
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

@@ -1,161 +1,137 @@
-# English version of content/fr/modules/comptabilite.yml (sources and screenshot notes are there).
-
 navigation:
   title: Accounting
   icon: i-uil-balance-scale
-  description: Invoices, journal entries, bank and cash flow in one module.
+  description: Manage your accounting and finances.
 
 title: Accounting
-description: Keeps your accounts from your invoices, your payments and your bank statements.
 icon: i-uil-balance-scale
+description: Integrated accounting for full control of your finances.
 application: Dokos
 theme: finance-comptabilite
 author: Frappe Technologies, Dokos & Contributors
 
-publisher: dokos
-licence: GPLv3
-version: v5
-marketplace: erpnext
-docs: https://doc.dokos.io/v5/dokos/comptabilite
-related: [ventes, achats, bank, paiements, etransactions]
-
 hero:
-  title: Each submitted invoice posts <span class="text-primary">its journal entry</span>.
-  description: The Dokos Accounting module records your sales and purchase invoices, your payments and your bank statements. It produces the general ledger, the balance sheet and the profit and loss statement with no re-keying.
-  image: /modules/comptabilite/hero.webp
-
-for_whom:
-  items:
-    - title: Your accountant re-keys your invoices
-      description: Your sales and purchase invoices are already journal entries. You give your accountant access, and they read the up-to-date general ledger.
-      icon: i-heroicons-calculator
-    - title: You take payments from consumers
-      description: With the Certification Caisse module and its licence, the Dokos point of sale is covered by the LNE certification. Payment data is kept in a tamper-proof log and can be exported for an audit.
-      icon: i-heroicons-receipt-percent
-    - title: Your suppliers already send you e-invoices
-      description: Dokos receives CII, Factur-X and UBL invoices from an approved platform and prepares the purchase invoice.
-      icon: i-heroicons-document-arrow-down
-    - title: You check your bank statements by hand
-      description: The Banking module imports your statements and suggests matches with your payments. You approve them.
-      icon: i-heroicons-building-library
-
-fit:
-  description: >-
-    Accounting is at the centre of your Dokos site. A sales invoice submitted in Sales, a purchase invoice
-    submitted in Purchasing or a purchase receipt recorded in Stock all post to the same general ledger.
-    Payment entries matched with your bank transactions close the loop.
-  image: /modules/comptabilite/fit.webp
-  reads:
-    - Sales Invoice and Purchase Invoice
-    - Payment Entry and Journal Entry
-    - Bank Account and Bank Transaction
-    - Sales Order and Purchase Order, for down payments and the forecast
-    - Subscription, Expense Claim and Salary Slip, for the cash-flow forecast
-  adds:
-    - The Accounting workspace, the chart of accounts, the journals and the fiscal year
-    - The General Ledger, Balance Sheet, Profit and Loss Statement and Trial Balance
-    - The Banking module (/banking) and the cash-flow forecast
-    - The SAS Ledger log of the certified point of sale and the fiscal archive export
-    - SEPA Direct Debit, Down Payment Invoices and FEC Import
-  depends:
-    - Sales
-    - Purchasing
-    - Stock
-    - eTransactions
-    - Payments
-
-features:
-  - title: Your invoices become your journal entries
-    description: >-
-      You submit a sales or purchase invoice. Dokos gives it its number at submission, in a continuous
-      sequence, and posts the entry to the general ledger. Invoicing and accounting documents cannot be
-      deleted. The balance sheet comes out in the French format, and third-party accounts go to assets or
-      liabilities according to their balance.
-    badge: General ledger
-  - title: An LNE-certified point of sale
-    description: >-
-      The point of sale creates the invoice and records the payment in one operation, with several payment
-      methods on the same receipt. Each payment operation is written to a SAS Ledger log per company. From the
-      Company record, you export a fiscal archive for a period of up to one year and you check the log's
-      cryptographic chain. You keep each archive for six years. The certification requires the Certification
-      Caisse module and a licence issued by Dokos SAS.
-    badge: LNE certified
-  - title: Your supplier invoices arrive as e-invoices
-    description: >-
-      Dokos receives e-invoices in CII, Factur-X and UBL formats through its connection to an approved
-      platform. Each invoice received appears in the e-invoice list of the Purchasing module with its status
-      (Received, Pending Approval, Integrated, Rejected, Abandoned). Dokos creates the purchase invoice as a
-      draft and notifies the accounting team, who check the amount and the due date before submitting it. An
-      indicator shows which platform the invoice came through. For sending, Dokos already generates the
-      Factur-X file when a sales invoice is submitted. Sending through the approved platform is in progress.
-    badge: E-invoicing
-  - title: The Banking module matches your statements
-    description: >-
-      You import your statements in OFX, CSV, XLSX or PDF. Dokos detects the columns and skips duplicates. For
-      each transaction, it suggests a match by amount, reference or document number, with an adjustable date
-      tolerance. You approve, you match one transaction with several payments or the reverse, or you create
-      the missing payment. Matching rules assign a party or an account according to the label. The module is
-      in beta, and the reconciliation tool you know is still available, on the same data.
-    badge: Banking (beta)
-  - title: A cash-flow forecast from your documents
-    description: >-
-      From Accounting > Cash Flow, you choose a period and click Generate. Dokos reads your sales and
-      purchase invoices, your subscriptions, your orders, your approved expense claims and your salary slips.
-      It shows the opening balance, the expected receipts and payments, the closing balance and a day-by-day
-      grid. You click a flow to open its document, and you add manual entries. The tool is in beta. The
-      documentation recommends generating it again each week, over eight to twelve weeks.
-    badge: Cash flow (beta)
-
-install:
-  description: The Accounting module is part of Dokos. There is nothing else to install.
-  steps:
-    - title: On Dokos Cloud
-      description: Create your site from your Dokos Cloud dashboard. Dokos is installed with the Accounting module. Included in every plan.
-    - title: Self-hosted
-      description: "<code>bench get-app https://gitlab.com/dokos/dokos</code> then <code>bench --site your-site install-app erpnext</code>."
-    - title: For e-invoicing
-      description: Install the eTransactions application from the marketplace, then enter the connection to your approved platform in its settings.
-    - title: For the certified point of sale
-      description: The Certification Caisse module is installed on sites that take payments from consumers, with a licence issued by Dokos SAS. Write to us to activate it on your site.
-
-faq:
-  items:
-    - label: Can I bring over my existing accounts?
-      content: >-
-        Yes. From Accounting > France, you create the FEC import settings, then the missing journals and
-        accounts, then an FEC Import document with your file. Dokos creates invoices or journal entries
-        according to your settings and can reconcile payments based on the file.
-    - label: How does my accountant access my accounts?
-      content: >-
-        You create a user for them with the accounting roles. Role permissions and user permissions limit what
-        they see, for example to a single company.
-    - label: Can I collect from my customers by SEPA direct debit?
-      content: >-
-        Yes. Each customer has an active SEPA mandate with IBAN and BIC. From Accounting > SEPA Direct Debit,
-        you select the payment entries of the period and generate the XML file (pain.008) for your bank.
-    - label: When does e-invoicing become mandatory in France?
-      content: >-
-        Receiving e-invoices has been mandatory for all companies since September 2026. Sending has been
-        mandatory for large and mid-sized companies since September 2026, and becomes mandatory for SMEs and
-        micro-businesses in September 2027. Dokos already receives e-invoices and generates the Factur-X file
-        at submission.
-    - label: What is different from ERPNext accounting?
-      content: >-
-        Dokos numbers invoices at submission in a continuous sequence, prevents the deletion of invoicing and
-        accounting documents, produces the balance sheet in the French format, generates SEPA direct debit
-        files, imports OFX statements, and handles down payment invoices and straight-line depreciation.
-
-bottom_cta:
-  title: Ask us your questions about accounting in Dokos.
-  description: Describe how your accounting is organised, and we will tell you what Dokos covers as it is.
+  title: Simplify your <span class="text-primary">accounting</span> and save time with Dokos
+  description: Make managing your finances easier with Dokos and enjoy total peace of mind. Manage your accounts, track your transactions, and get detailed financial reports in a few clicks, all while keeping complete control over your finances.
   links:
-    - label: Write to us
-      to: /en/contact
-      size: xl
-      color: primary
-    - label: See the marketplace
-      to: https://cloud.dokos.io/marketplace
-      target: _blank
-      size: xl
-      color: neutral
-      variant: outline
+    - label: Optimize your financial management
+      to: https://cloud.dokos.io
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: /en
+    right_icon: i-heroicons-arrow-right-20-solid
+features:
+  - title: Make informed decisions with an instant view of your finances
+    description: Our interactive dashboards give you an overview of key financial performance indicators, helping you make informed decisions.<br><br>Set up custom reports to track precisely the metrics that matter most to your business.
+    video: /image/comptabilite/tableau-de-bord-comptabilite.mp4
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: Dashboards
+      color: sky
+  - title: Easily adapt your chart of accounts to your business
+    description: Organize your accounts to fit your needs, creating sub-groups and ledgers tailored to your company's structure.<br><br> You can easily adjust your accounting tree as your organization evolves.</br>
+    image: image/comptabilite/plan-comptable.png
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Chart of Accounts
+      color: sky
+  - title: Keep your accounting current by automating transaction tracking
+    description: Record all your transactions precisely with an intuitive journal system.<br><br> Track revenue and expenses, automate the handling of deferred or prepaid payments, and keep an always up to date ledger.</br>
+    image: image/comptabilite/suivi-revenus-et-depenses.svg
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: General Ledger
+      color: sky
+  - title: Generate professional invoices in a few clicks and reduce late payments
+    description: Create professional invoices in a few clicks. <br><br>Easily track pending payments with automatic email or SMS notifications.<br><br>Use custom print templates for invoices tailored to your needs.
+    image: image/comptabilite/facture-de-vente.png
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Invoicing
+      color: sky
+  - title: Simplify your international transactions
+    description: Manage international transactions with ease.<br><br> Send invoices and track expenses in multiple currencies.<br> Our system automatically converts amounts to your base currency, and lets you generate financial reports in several currencies.</br>
+    image: image/comptabilite/rapports-financiers-diverses-monnaies.png
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: Multi-currency
+      color: sky
+  - title: Automate your business flows and save time
+    description: Save time by automating invoice creation for recurring subscriptions. <br><br>With the Subscriptions feature, your invoices are generated and sent automatically, freeing you up for other essential tasks.</br>
+    image: image/comptabilite/abonnement-photo-dokos.webp
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Automation
+      color: sky
+  - title: Simplify bank reconciliation and keep your accounts consistent
+    description: Sync your bank accounts with your accounting. <br><br>Easily import your bank statements and reconcile them with your transactions to keep your accounts consistent.</br>
+    image: image/comptabilite/rapprochement-bancaire-dokos-photo.png
+    image_bg_color: bg-teal-500
+    align: left
+    badge:
+      label: Bank Reconciliation
+      color: sky
+  - title: Customize Dokos to perfectly match your company's unique needs
+    description: Adapt the software to your specific needs.<br><br> Add custom fields, edit forms based on user roles, and create unique print templates, all without needing to code.</br>
+    image: image/comptabilite/personnalisation-dokos.webp
+    image_bg_color: bg-teal-500
+    align: right
+    badge:
+      label: Customizations
+      color: sky
+bottom_section:
+  title: 'Accounting with Dokos also means:'
+  cards:
+    - title: Access for your accountant
+      description: Easily add your accountant so they can access your financial data directly and validate it at no extra cost.
+      icon: i-heroicons-outline-calculator
+      class: col-span-4 row-span-3
+    - title: Journal entries
+      description: Make journal entries to manually adjust your accounts when needed, including reversing or correcting entries.
+      icon: i-heroicons-outline-book-open
+      class: col-span-4 row-span-3
+    - title: Asset tracking
+      description: Keep an eye on your assets with a dedicated module, making depreciation, transfers and asset sales easier to manage.
+      icon: i-heroicons-outline-chart-bar-square
+      class: col-span-4 row-span-3
+plus_button:
+  label: Discover all our features
+  icon: i-heroicons-outline-plus-circle
+  size: lg
+  color: amber
+  to: /en/modules/comptabilite
+bottom_cta:
+  title: With Dokos, simplify your accounting and focus on growing your business.
+  description: Whether you are a small or large company, our solution supports you at every step of financial management.
+  class: bg-amber-600/10 dark:bg-amber-800/10
+  links:
+    - label: Get started now
+      to: https://cloud.dokos.io
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-rocket-launch
+    - label: Documentation
+      to: https://doc.dokos.io
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

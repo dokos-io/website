@@ -1,103 +1,103 @@
-# English version of content/fr/modules/insights.yml (sources and screenshot notes are there).
+navigation:
+  title: Frappe Insights
+  icon: i-material-symbols-auto-graph
+  description: Data analysis and exploration
 
 title: Frappe Insights
-description: Query your Dokos site's data without SQL, then put your charts together in dashboards.
-icon: i-heroicons-chart-bar-square
+link: "https://frappe.io/insights"
+author: Frappe Technologies & Contributors
+description: Make informed decisions with Frappe Insights
 application: Frappe Insights
 theme: site-web-outils-numeriques
-author: Frappe Technologies and contributors
+
 logo:
   light: /frappe/insights.svg
   dark: /frappe/insights.svg
-navigation:
-  title: Frappe Insights
-  icon: i-heroicons-chart-bar-square
-  description: Queries, charts and dashboards on your data.
-
-publisher: frappe
-licence: AGPLv3
-version: v5
-marketplace: insights
-docs: https://docs.frappe.io/insights
-related: [comptabilite, ventes, achats, stocks, dokos-ai]
 
 hero:
-  title: Your Dokos data, <span class="text-primary">queried</span> without writing SQL.
-  description: You pick a table, add a join and a filter, and the chart is drawn. You then put your charts together in a dashboard shared with your team.
-  image: /modules/insights/hero.webp
+  title: "Make informed decisions with <span class='text-primary'>Frappe Insights</span> "
+  description: "A simple, powerful reporting and analytics tool!"
+  image: ""
+  headline:
+    label: Frappe applications
+    to: https://frappe.io/products
+    right_icon: i-heroicons-arrow-top-right-on-square-20-solid
+    target: _blank
+  links:
+    - label: Build your first report
+      to: https://cloud.dokos.io
+      size: xl
+      color: amber
+      icon: i-heroicons-play-circle-16-solid
+      trailing: false
+      target: _blank
+    - label: Documentation
+      icon: i-ic-outline-library-books
+      size: xl
+      color: gray
+      to: https://doc.dokos.io
+      target: _blank
 
-for_whom:
-  items:
-    - title: You export your invoices to a spreadsheet every month
-      description: You build the query once, on the sales invoice table. The chart updates every time you open it.
-      icon: i-heroicons-table-cells
-    - title: You ask a developer for a report
-      description: The query builder replaces SQL. You select the columns, joins and calculations step by step.
-      icon: i-heroicons-adjustments-horizontal
-    - title: Your team follows figures from several sources
-      description: You connect other databases, files or spreadsheets next to your Dokos database and combine them in the same query.
-      icon: i-heroicons-circle-stack
+bridge_before_colored_section:
+  title: "Explore your data in depth"
+  description: "Simply build interactive dashboards, generate custom reports in a few clicks, or view your data in real time. With Insights' intuitive, flexible interface, you can dig deeper into your data and tailor analytics to your specific needs, with no extra costs to worry about"
+features_before_colored_section:
+  cards:
+    - title: Reports built for you
+      icon: i-material-symbols-bar-chart-4-bars-rounded
+      class: "col-span-4 row-span-3"
+    - title: Intuitive visualization
+      icon: i-material-symbols-pivot-table-chart-rounded
+      class: "col-span-4 row-span-3"
+    - title: Real time tracking
+      icon: i-material-symbols-alarm-on-outline-rounded
+      class: "col-span-4 row-span-3"
 
-fit:
-  description: "Frappe Insights installs on your Dokos site and reads its database as the <strong>\"Site DB\"</strong> data source. Each DocType appears as a table. Queries follow your site's user permissions: a person sees the rows that Dokos allows them to see. You share a workbook or a dashboard with the users you choose."
-  reads:
-    - Your Dokos site's database, each DocType being a table
-    - Other MySQL, PostgreSQL, DuckDB and BigQuery databases, files and spreadsheets
-    - Your site's user permissions for the rows returned
-  adds:
-    - The Insights application at /insights
-    - The "Insights Workbook", "Insights Query v3", "Insights Chart v3" and "Insights Dashboard v3" DocTypes
-    - The "Insights User" and "Insights Admin" roles
-    - "Four ERPNext workbook templates: sales, purchasing, accounting and stock"
-  depends:
-    - Dodock
+colored_section:
+  title: Create, analyze and innovate!
+  description: "With Dokos, get direct access to Frappe Insights: the innovative reporting tool developed by the Frappe team. With Insights, at no extra cost, analyzing your data becomes intuitive and accessible, all without a line of code"
+  image: "image/ventes/un-insights-opportunites.webp"
+  align: left
+  links:
+    - label: Build your first report
+      size: sm
+      color: green
+      to: https://cloud.dokos.io
+      target: _blank
+    - label: Learn more about Frappe Insights
+      size: sm
+      variant: 'link'
+      color: gray
+      to: https://frappe.io/builder
+      target: _blank
+      icon: i-heroicons-outline-arrow-right
+      trailing: true
 
-features:
-  - title: Build the query step by step
-    description: You choose the starting table, then add a join, a filter, a calculation or a grouping. Each step shows its result. SQL stays available for those who prefer it.
-    image: /modules/insights/feature-requete.webp
-    badge: Queries
-  - title: Let Insights suggest the chart
-    description: From a query's result, Insights suggests a suitable chart type. You adjust the axes, the measures and the number format, for example a currency or a percentage.
-    badge: Charts
-  - title: Put a dashboard together
-    description: You drag your charts into a grid and add a dashboard filter, for example a period, that applies to every chart. You share the dashboard with the users concerned.
-    badge: Dashboards
-  - title: Start from an ERPNext template
-    description: An Insights administrator imports a workbook template for sales, purchasing, accounting or stock. The workbook comes with its queries and charts on the Dokos tables. You then adapt it to your needs.
-    badge: Templates
-
-install:
-  steps:
-    - title: From the Dokos Cloud marketplace
-      description: In your Dokos Cloud dashboard, open the marketplace and install "Insights" on your site. The marketplace serves version 3. The application is included in every plan.
-    - title: Self-hosted
-      description: "<code>bench get-app --branch version-3 https://github.com/frappe/insights</code> then <code>bench --site your-site install-app insights</code>."
-    - title: Assign the roles
-      description: Give the "Insights User" role to the people who view and build, and "Insights Admin" to those who manage the data sources and import the templates.
-
-faq:
-  items:
-    - label: Which version of Insights works with Dokos V5?
-      content: The `version-3` branch, which the Dokos Cloud marketplace installs. Frappe tests it on Frappe version-15 and version-16, the base of Dokos V5.
-    - label: Do I need to write SQL?
-      content: No. The query builder covers choosing tables, joins, filters and calculations. A native SQL query is still possible.
-    - label: Can a user see data that Dokos hides from them?
-      content: No. Queries on your site's database apply the Dokos user permissions. A workbook is visible only to its author and to the people it is shared with.
-    - label: Which other data sources can I connect?
-      content: MySQL, PostgreSQL, DuckDB and BigQuery databases, as well as files and spreadsheets imported into Insights.
+carousel:
+  title: "Enjoy state of the art data analysis"
+  cards:
+   - title: "Fast adoption"
+     description: "Frappe Insights integrates easily with your management software, with no need for complex training."
+   - title: "Zero cost"
+     description: "This powerful tool is included in your Dokos solution, at no additional charge."
+   - title: "Trust and transparency "
+     description: "As partners, we provide ongoing support to make sure you get the most out of this tool."
 
 bottom_cta:
-  title: Ask us your questions about Frappe Insights.
-  description: Tell us which figures you want to follow.
+  title: "Take control of your data now!"
+  description: ""
+  card: true
   links:
-    - label: Write to us
-      to: /en/contact
-      size: xl
-      color: primary
-    - label: See the marketplace
-      to: https://cloud.dokos.io/marketplace
+    - label: Build your first report
+      size: md
+      color: gray
+      to: https://cloud.dokos.io
       target: _blank
-      size: xl
-      color: neutral
-      variant: outline
+    - label: Learn more about Frappe Insights
+      size: md
+      variant: 'link'
+      color: gray
+      to: https://frappe.io/insights
+      target: _blank
+      icon: i-heroicons-outline-arrow-right
+      trailing: true

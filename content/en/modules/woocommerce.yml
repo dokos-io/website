@@ -1,113 +1,72 @@
-# English version of content/fr/modules/woocommerce.yml (sources and screenshot notes are there).
-
-title: Dokos WooCommerce
-description: Turns each order from your WooCommerce shop into a Dokos sales order and sends your stock levels back to the shop.
-icon: i-simple-icons-woocommerce
-application: Dokos WooCommerce
-theme: vente-relation-client
-author: Dokos
-logo:
-  light: /frappe/woocommerce_logo.svg
-  dark: /frappe/woocommerce_logo.svg
 navigation:
   title: Dokos WooCommerce
   icon: i-simple-icons-woocommerce
-  description: Connector between a WooCommerce shop and Dokos.
+  description: E-commerce connector between WooCommerce and Dokos.
 
-publisher: dokos
-licence: AGPLv3
-version: v5
-marketplace: dokos_woocommerce
-docs: https://doc.dokos.io/v5/integrations/woocommerce
-related: [e-commerce, ventes, stocks, reservations-de-ressources]
+title: Dokos WooCommerce
+icon: i-simple-icons-woocommerce
+description: Connects an existing WooCommerce store to your Dokos management.
+application: Dokos WooCommerce
+theme: vente-relation-client
+logo:
+  light: /frappe/woocommerce_logo.svg
+  dark: /frappe/woocommerce_logo.svg
 
 hero:
-  title: Your <span class="text-primary">WooCommerce</span> shop stays as it is, Dokos handles what follows.
-  description: Each order placed on WordPress reaches Dokos through a webhook and becomes a sales order. Dokos sends stock levels back to the shop.
-
-for_whom:
-  items:
-    - title: Your WooCommerce shop already runs
-      description: You keep your WordPress site as it is. The connector links its orders to your sales management and your stock.
-      icon: i-heroicons-globe-alt
-    - title: You re-key your web orders
-      description: Customer, shipping address and items are created or found in Dokos when the order arrives.
-      icon: i-heroicons-clipboard-document-list
-    - title: You sell online and from physical stock
-      description: At each stock movement in Dokos, the available quantity is sent back to WooCommerce, variants included.
-      icon: i-heroicons-cube
-
-fit:
-  description: The connector is configured in <strong>Woocommerce Settings</strong>, one document per shop. When you save, Dokos generates the webhook secret and endpoint and creates them in WooCommerce. Each order received is kept as a <strong>Woocommerce Order</strong>, then gives a <strong>Sales Order</strong>. Depending on your options, Dokos goes on to create the delivery note, the sales invoice and the payment.
-  reads:
-    - Customer, Address and Customer Group
-    - Item, Item Template and variants
-    - Sales Order, Delivery Note, Sales Invoice, Payment Entry
-    - Warehouse and Price List
-  adds:
-    - The "Woocommerce Settings" document and a WooCommerce workspace
-    - The "Woocommerce Orders", with the details received and the processing status
-    - Mapping of WooCommerce taxes, shipping methods and metadata
-    - Reports that compare stock between Dokos and WooCommerce
-  depends:
-    - Sales
-    - Stock
+  title: Your <span class="text-primary">WooCommerce</span> store, connected to Dokos.
+  description: Dokos WooCommerce connects an existing WordPress/WooCommerce store to your Dokos management, so you don't have to rebuild a store you already have.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
 
 features:
-  - title: Receive orders through a webhook
-    description: In WooCommerce, you generate a REST API key, then you paste it into Woocommerce Settings with the shop's URL. When you save, Dokos creates the "Order created" webhook. Each order arrives at once in the Woocommerce Orders list, with its status. An hourly job retries the ones that failed.
-    badge: Orders
-  - title: Create the sales order and what it needs
-    description: If the customer does not exist, Dokos creates it from the order, with a shipping address. If an item is missing, it is created too. The sales order uses the company, naming series, price list and warehouse you set in the settings. Shipping costs and taxes go to the accounts you chose.
-    badge: Sales
-  - title: Chain delivery, invoice and payment
-    description: The "Create payments and sales invoice" option generates the sales invoice and its payment entry from the sales order. Delivery notes are created when the WooCommerce order reaches one of the shipping statuses you listed. A refund on the shop side gives a credit note.
-    badge: Invoicing
-  - title: Send your stock back to the shop
-    description: At each stock receipt or issue in Dokos, the quantity is sent to WooCommerce, as actual or projected quantity depending on your choice. An hourly job picks up the items moved in the last two hours. For variable products, the item template receives the sum of its active variants.
-    badge: Stock
-  - title: Bring in WooCommerce Bookings reservations
-    description: If an order line is for a bookable item, Dokos creates the matching booking. No extra configuration is needed in the connector.
-    badge: Bookings
-
-install:
-  steps:
-    - title: From the Dokos Cloud marketplace
-      description: In your Dokos Cloud dashboard, open the marketplace and install Dokos WooCommerce on your site. The application is included in every plan.
-    - title: Self-hosted
-      description: "<code>bench get-app https://gitlab.com/dokos/dokos-woocommerce</code> then <code>bench --site your-site install-app dokos_woocommerce</code>."
-    - title: Generate a key in WooCommerce
-      description: In WooCommerce, open Settings, Advanced, then REST API, and click "Add key". Copy the key and the secret.
-    - title: Fill in Woocommerce Settings
-      description: Paste the key and the secret, enter the shop's URL, choose the company, the user that creates documents and the tax and shipping accounts, then tick "Enable synchronisation". The webhooks are created when you save.
-  prerequisites:
-    - A WooCommerce shop with the REST API enabled
-    - Dokos version 4 or later, or ERPNext version 15 or later
-
-faq:
-  items:
-    - label: Can I connect several shops?
-      content: Yes. Create one Woocommerce Settings document per shop.
-    - label: Is the sales invoice created automatically?
-      content: Only if you tick "Create payments and sales invoice" in the settings. Otherwise, the connector stops at the sales order.
-    - label: In which direction does stock go?
-      content: From Dokos to WooCommerce. Synchronisation is based on Dokos stock levels, at each movement, then once an hour for recently moved items.
-    - label: How do I link variable products?
-      content: Create an item template and its variants in Dokos. Link each variant to the WooCommerce variation ID, and the template to the WooCommerce product.
-    - label: What if the webhook is not created automatically?
-      content: Create it by hand in WooCommerce, Settings, Advanced, Webhooks, with the topic "Order created", and the delivery URL and secret shown in Woocommerce Settings.
+  - title: E-commerce connector
+    description: Connects an existing WooCommerce store to your Dokos installation, without migrating the store itself.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Integration
+      color: sky
+  - title: An alternative to the native Webshop module
+    description: Useful when a WooCommerce store already exists and needs to stay in place, rather than being replaced by Dokos's native e-commerce portal.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: E-commerce
+      color: sky
 
 bottom_cta:
-  title: Your shop and your order flows
-  description: Tell us about your WooCommerce shop and how you ship, and we will tell you what the connector already covers.
+  title: A WooCommerce store to connect to Dokos?
+  description: Available from the cloud.dokos.io marketplace. Describe your current store, and we'll tell you what the connector already covers.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
-      size: xl
-      color: primary
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
     - label: See the marketplace
-      to: https://cloud.dokos.io/marketplace
+      to: https://cloud.dokos.io
       target: _blank
-      size: xl
-      color: neutral
-      variant: outline
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

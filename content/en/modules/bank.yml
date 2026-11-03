@@ -1,107 +1,72 @@
-# English version of content/fr/modules/bank.yml (sources and screenshot notes are there).
-
-title: Bank
-description: Synchronises your bank accounts with Dokos and feeds bank reconciliation every day.
-icon: i-heroicons-building-library
-application: Bank
-theme: finance-comptabilite
-author: Dokos
-logo:
-  light: /frappe/bank_logo.svg
-  dark: /frappe/bank_logo.svg
 navigation:
   title: Bank
   icon: i-heroicons-building-library
-  description: Bank account synchronisation with Dokos.
+  description: Bank account synchronization.
 
-publisher: dokos
-licence: AGPLv3
-version: v5
-marketplace: bank
-docs: https://doc.dokos.io/v5/dokos/comptabilite/synchronisation-bancaire
-related: [comptabilite, paiements, etransactions]
+title: Bank
+icon: i-heroicons-building-library
+description: Synchronizes your bank accounts with your Dokos accounting.
+application: Bank
+theme: finance-comptabilite
+logo:
+  light: /frappe/bank_logo.svg
+  dark: /frappe/bank_logo.svg
 
 hero:
-  title: Your bank statements <span class="text-primary">arrive on their own</span> in Dokos.
-  description: Bank connects your bank accounts to Dokos through the Bridge aggregator. Every day, the operations become bank transactions ready to be reconciled.
-
-for_whom:
-  items:
-    - title: You import your statements by hand
-      description: You download a file from your bank's website, then you import it into Dokos. Bank removes this step.
-      icon: i-heroicons-arrow-down-tray
-    - title: Your accountant waits for the monthly statement
-      description: Yesterday's operations are already in Dokos. Matching happens as you go.
-      icon: i-heroicons-calculator
-    - title: You want to see your upcoming cash position
-      description: Dokos V5 offers a cash-flow forecast, in beta since September 2026. It reads the transactions that Bank imports.
-      icon: i-heroicons-presentation-chart-line
-
-fit:
-  description: Bank adds a button to connect your bank on the Dokos <strong>Bank</strong> document. Once the account is linked, each operation becomes a <strong>Bank Transaction</strong>, sorted by date. These are the transactions that bank reconciliation, in the existing tool as in the new Banking module, proposes to match with your payment entries and your invoices.
-  reads:
-    - Bank and Bank Account
-    - Bank Transaction
-    - Bank Transaction Category
-    - Payment Entry, Sales Invoice, Purchase Invoice
-  adds:
-    - A "Bank connection" panel on the Bank document
-    - Daily synchronisation of operations through Bridge, with automatic retry after a partial failure
-    - Import of the transaction categories provided by Bridge
-    - A log of synchronisation errors on the Bank document
-  depends:
-    - Accounting
+  title: Your bank accounts, <span class="text-primary">synchronized</span> with your accounting.
+  description: Bank synchronizes your bank accounts with Dokos, so you can reconcile statements against accounting entries with no manual import.
+  links:
+    - label: Contact us
+      to: /en/contact
+      size: sm
+      color: amber
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
+    - label: See the marketplace
+      to: https://cloud.dokos.io
+      target: _blank
+      size: sm
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+  headline:
+    label: The Dokos ecosystem
+    color: sky
+    to: "/en"
+    right_icon: i-heroicons-arrow-right-20-solid
 
 features:
-  - title: Connect your bank from the Bank document
-    description: Open the Bank list, create or edit your bank, then click "Connect your bank". You choose your bank on the Bridge connection page and enter your bank credentials. Bridge, published by Bankin', is an aggregator approved by the ACPR (the French banking supervisor) under PSD2. Your credentials stay with Bridge.
-    badge: Connection
-  - title: Link each Bridge account to a Dokos bank account
-    description: After connecting, click "Update bank accounts". For each account, you choose the Dokos bank account to link and the date synchronisation starts from. On the first connection, the history available at your bank is imported, from a few weeks to a few months depending on the bank.
-    badge: Synchronisation
-  - title: Reconcile in the new Banking module
-    description: Dokos V5 offers the Banking module, in beta, at the <code>/banking</code> address of your site. You select an account and a period, then the matching panel proposes invoices, payment entries and journal entries for each transaction. One transaction can cover several invoices. Rules apply a party, an account or a category to the descriptions you define, and an action log records each reconciliation.
-    badge: Beta
-  - title: Plan your cash position
-    description: The cash-flow forecast, in beta since September 2026, shows your incoming and outgoing amounts and the projected balance for the coming weeks and months. Open it at the <code>/desk/cash-flow-forecast</code> address of your site. A link from the Dokos Bank module is announced.
-    badge: Beta
-
-install:
-  steps:
-    - title: From the Dokos Cloud marketplace
-      description: In your Dokos Cloud dashboard, open the marketplace and install Bank on your site. The documentation reserves Bridge synchronisation for Dokos Cloud sites.
-    - title: Self-hosted
-      description: "<code>bench get-app --branch v5 https://gitlab.com/dokos/bank</code> then <code>bench --site your-site install-app bank</code>. The application only works with the intermediate Bank API application (<code>gitlab.com/dokos/bank-api</code>), which holds the Bridge contract."
-    - title: Connect your first bank
-      description: Open Accounting, Settings, then Bank. Click "Connect your bank", then link your accounts.
-  prerequisites:
-    - Dokos V5 (Frappe v16)
-    - A Dokos Bank and Bank Account linked to a general ledger account
-
-faq:
-  items:
-    - label: Which banks are supported?
-      content: The ones Bridge offers. The list appears on the Bridge connection page when you choose your bank.
-    - label: How often do operations arrive?
-      content: Once a day, automatically. You can also run the synchronisation again for an account from a given date, from the Bank document. A large volume can take several minutes.
-    - label: Can I use Bank when self-hosting?
-      content: The documentation states that Bridge synchronisation is only available on Dokos Cloud. For self-hosted sites, it suggests a Plaid subscription or file import. The Banking module imports your statements in OFX, CSV, XLSX and PDF formats (selectable text only, scans are not read) and creates no duplicate when the file carries a reference number.
-    - label: Do I have to move to the Banking module?
-      content: No. The module is in beta. The "Bank Reconciliation" tool and the "Bank Transaction" list remain available. Both tools share the same data. What you reconcile in one appears in the other.
-    - label: What if an operation is missing?
-      content: Check the synchronisation date of the account, then run the update again from the Bank document. The error log on the Bank document gives the cause of a failure.
+  - title: Account synchronization
+    description: Connects your bank accounts to your Dokos installation to track their movements.
+    image_bg_color: "bg-teal-500"
+    align: left
+    badge:
+      label: Synchronization
+      color: sky
+  - title: Reconciliation with accounting
+    description: Synchronized movements feed the Accounting module's bank reconciliation.
+    image_bg_color: "bg-teal-500"
+    align: right
+    badge:
+      label: Accounting
+      color: sky
 
 bottom_cta:
-  title: Your banks and your volume of operations
-  description: Tell us about your banks and how often you reconcile, and we will tell you what Bank already covers.
+  title: Want to connect your bank accounts to Dokos?
+  description: Available from the cloud.dokos.io marketplace. Tell us about your banks and transaction volume, and we'll tell you what's already supported.
+  class: "bg-amber-600/10 dark:bg-amber-800/10"
   links:
-    - label: Write to us
+    - label: Contact us
       to: /en/contact
-      size: xl
-      color: primary
+      size: sm
+      color: black
+      variant: solid
+      icon: i-heroicons-chat-bubble-left-right
     - label: See the marketplace
-      to: https://cloud.dokos.io/marketplace
+      to: https://cloud.dokos.io
       target: _blank
-      size: xl
-      color: neutral
-      variant: outline
+      size: sm
+      variant: ghost
+      color: gray
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
