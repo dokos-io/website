@@ -42,6 +42,8 @@ export default defineNuxtConfig({
     '/fr/features': { redirect: { to: '/fr/modules', statusCode: 301 } },
     '/features/**': { redirect: { to: '/fr/modules/**', statusCode: 301 } },
     '/fr/features/**': { redirect: { to: '/fr/modules/**', statusCode: 301 } },
+    '/en/features': { redirect: { to: '/en/modules', statusCode: 301 } },
+    '/en/features/**': { redirect: { to: '/en/modules/**', statusCode: 301 } },
     '/fr/pricing': { redirect: { to: '/fr/tarifs', statusCode: 301 } },
     '/tiers-lieux': { redirect: { to: '/fr/solutions/tiers-lieux', statusCode: 301 } },
     '/fr/tiers-lieux': { redirect: { to: '/fr/solutions/tiers-lieux', statusCode: 301 } },

@@ -1,0 +1,150 @@
+# English version of content/fr/modules/dodock.yml (sources and screenshot notes are there).
+
+navigation:
+  title: Dodock
+  icon: i-heroicons-code-bracket
+  description: The framework under Dokos.
+
+title: Dodock
+description: The open source framework under Dokos, derived from Frappe Framework.
+icon: i-heroicons-code-bracket
+application: Dodock
+theme: base
+author: Frappe Technologies, Dokos & Contributors
+logo:
+  light: /frappe/dodock_logo.svg
+  dark: /frappe/dodock_logo.svg
+
+publisher: dokos
+licence: MIT
+version: v5
+marketplace: frappe
+docs: https://doc.dokos.io/v5/dodock
+related: [dokos, dokos-cli, dokos-ai, insights]
+
+hero:
+  title: You define a document type, Dodock creates <span class="text-primary">the form, the list and the API</span>.
+  description: Dodock is the framework under Dokos. It is a fork of Frappe Framework, published under the MIT licence, that we maintain. It provides the documents, permissions, workflows and REST API that every application of the ecosystem uses.
+
+for_whom:
+  items:
+    - title: You are building an application for your site
+      description: You declare your document types in Python and JSON. Dodock generates the form, the list, the permissions and the REST endpoints.
+      icon: i-heroicons-command-line
+    - title: You run a site and you add a field
+      description: From Customize Form, you add a field, a naming rule or a notification without writing code.
+      icon: i-heroicons-adjustments-horizontal
+    - title: You connect an external tool
+      description: You create an API key for a user and call /api/resource. A webhook pushes each submitted document to your tool.
+      icon: i-heroicons-arrows-right-left
+
+fit:
+  description: >-
+    Dodock is the layer under your site. Dokos and every marketplace application are Dodock applications:
+    their documents, roles and background jobs go through it. When you write an application for your site,
+    it installs at the same level as Dokos and reads its documents through the same API.
+  image: /modules/dodock/fit.webp
+  reads:
+    - Every document type of Dokos and of the installed applications
+    - User, Role, Role Profile and User Permission
+  adds:
+    - The desk, workspaces, lists, calendars and reports
+    - Document types (DocType), custom fields and Property Setters
+    - Workflows, notifications, naming rules and print formats
+    - The REST API, webhooks, API key authentication and OAuth/OpenID
+    - The background job manager, prepared reports and the automation engine (beta)
+    - The @framework/ui Vue.js component library
+  depends: []
+
+features:
+  - title: A document type, and everything that comes with it
+    description: >-
+      You declare a DocType with its fields, its links to other documents and its permissions by role.
+      Dodock creates the table, the form, the list with its filters, the calendar view and the report view.
+      An administrator adds a field from Customize Form; Property Setters keep these changes and can also be
+      managed in code in your application.
+    badge: DocTypes
+  - title: A REST API and webhooks for each document
+    description: >-
+      Each DocType exposes <code>/api/resource/&lt;DocType&gt;</code> to list with fields and filters, read,
+      create, edit and delete. A whitelisted Python method is published at
+      <code>/api/method/&lt;path&gt;</code>. You authenticate by session or with the header
+      <code>Authorization: token key:secret</code>, generated on the user record. A webhook sends the
+      document to an external URL on the event you choose. The Document, Database and Query Builder APIs
+      serve the server side.
+    badge: REST API
+  - title: Workflows and automations without code
+    description: >-
+      A workflow defines a document's states, the transitions and the role allowed at each step, with a
+      condition if needed. The automation engine, in beta, chains a trigger and several actions
+      (notification, assignment, web call) in a queue that you can follow. Notifications send an e-mail or an
+      alert on an event or on a date of the document.
+    badge: Automations
+  - title: Server scripts run in a controlled environment
+    description: >-
+      An administrator writes a server script or a Jinja template from the interface. Dodock runs them in
+      safe_exec, which separates a read-only rendering context from a read-write execution context. Print
+      formats are built in Jinja or in the visual editor, and naming rules set the numbering of each document.
+    image: /modules/dodock/feature-scripts.webp
+    badge: Scripts and printing
+  - title: Background jobs and interface components
+    description: >-
+      The background job manager runs long and scheduled tasks, and prepared reports are calculated offline.
+      Socket.io and Redis Pub/Sub push updates to open browsers. For your own screens, Dodock v5 ships the
+      @framework/ui Vue.js component library, backported from Frappe's develop branch, and reusable e-mail and
+      comment composers.
+    image: /modules/dodock/feature-taches.webp
+    badge: Background jobs
+
+install:
+  steps:
+    - title: On Dokos Cloud
+      description: Dodock is installed on every Dokos Cloud site. There is nothing to do. Included in every plan.
+    - title: Self-hosted
+      description: "Create your bench with <code>bench init --frappe-path https://gitlab.com/dokos/dodock your-bench</code>, then follow the installation guide in the documentation."
+    - title: To build an application
+      description: "<code>bench new-app your_app</code> creates the skeleton, then <code>bench --site your-site install-app your_app</code> installs it on your site."
+  prerequisites:
+    - The installation guide at doc.dokos.io/v5/dodock/installation, for the Python, Node.js, MariaDB and Redis versions
+
+faq:
+  items:
+    - label: What is the difference between Dodock and Frappe Framework?
+      content: >-
+        Dodock is a fork of Frappe Framework maintained by Dokos SAS. It keeps the same core and the same API,
+        backports parts of Frappe's develop branch, such as the @framework/ui library, and adds French
+        integrations, such as company lookup by SIREN number with Pappers. The Frappe applications of the
+        marketplace (CRM, Helpdesk, Insights) install on Dodock.
+    - label: Do I need to code to use it?
+      content: >-
+        Mostly no. Roles, permissions, workflows, notifications, naming rules, custom fields and print formats
+        are set up from the interface. Code is for a dedicated application or an API method.
+    - label: How do I read my data from another tool?
+      content: >-
+        Create an API key and secret on the user's record, then call
+        <code>GET /api/resource/&lt;DocType&gt;</code> with the header
+        <code>Authorization: token key:secret</code>. The fields, filters, order_by and limit_page_length
+        parameters shape the response. Dokos CLI wraps this API on the command line.
+    - label: Can a server script break my site?
+      content: >-
+        Server scripts and Jinja templates run in safe_exec, a controlled environment that separates reading
+        from writing. They have no access to the file system or to arbitrary Python modules.
+    - label: Under which licence?
+      content: >-
+        Dodock is published under the MIT licence at gitlab.com/dokos/dodock. Dokos, the management
+        application, is under GPLv3.
+
+bottom_cta:
+  title: Ask us your questions about Dodock.
+  description: Describe the application or integration you have in mind, and we will tell you what the framework already provides.
+  links:
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the documentation
+      to: https://doc.dokos.io/v5/dodock
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

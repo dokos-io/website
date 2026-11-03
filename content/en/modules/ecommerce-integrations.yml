@@ -1,0 +1,128 @@
+# English version of content/fr/modules/ecommerce-integrations.yml (sources and screenshot notes are there).
+
+navigation:
+  title: eCommerce Integrations
+  icon: i-heroicons-shopping-bag
+  description: Shopify, Unicommerce, Zenoti and Amazon connectors for your orders and stock.
+
+title: eCommerce Integrations
+icon: i-heroicons-shopping-bag
+description: Import your Shopify store's orders into Dokos and push your stock to the store.
+application: eCommerce Integrations
+theme: vente-relation-client
+author: Frappe Technologies and contributors
+
+publisher: frappe
+licence: GPLv3
+version: v5
+marketplace: ecommerce_integrations
+related: [woocommerce, hiboutik, ventes, stocks, e-commerce]
+
+hero:
+  title: Your Shopify orders <span class="text-primary">in Dokos</span>, your Dokos stock in Shopify.
+  description: >-
+    eCommerce Integrations connects your Dokos site to external marketplaces and stores.
+    Each Shopify order becomes a Sales Order, and your warehouses' stock is pushed to the store.
+
+for_whom:
+  items:
+    - title: You sell on Shopify and re-key the orders in your management software
+      description: >-
+        Each Shopify order creates a Sales Order in Dokos. The customer and any missing items are created along the way.
+      icon: i-heroicons-shopping-cart
+    - title: Your store shows different stock from your warehouse
+      description: >-
+        Dokos is the reference. A scheduled job pushes the changed stock levels to the Shopify locations.
+      icon: i-heroicons-cube
+    - title: You also sell through Unicommerce, Zenoti or Amazon
+      description: >-
+        The application brings these connectors together, each with its own settings document and documentation.
+      icon: i-heroicons-squares-plus
+
+fit:
+  description: >-
+    eCommerce Integrations installs on your Dokos site. Each connector has its settings document, for example
+    <strong>Shopify Settings</strong>, where you enter your Shopify app's credentials.<br>
+    For Shopify, a store order creates a <strong>Sales Order</strong>. The missing <strong>Customer</strong> and
+    <strong>Items</strong> are created from the Shopify data. Each Shopify tax and shipping charge is mapped to an
+    account of your chart of accounts. Each <strong>Warehouse</strong> matches a Shopify location, and stock levels
+    are pushed every hour.
+  reads:
+    - Item, Warehouse and stock levels
+    - Customer
+    - Sales Order
+    - Sales Invoice and Delivery Note
+    - Account, for taxes and shipping charges
+  adds:
+    - A settings document per connector (Shopify, Unicommerce, Zenoti, Amazon)
+    - The webhooks registered with Shopify on activation
+    - A scheduled stock synchronisation job
+  depends:
+    - Dokos (Sales, Stock)
+
+features:
+  - title: Import Shopify orders
+    description: >-
+      For each Shopify order, Dokos creates a Sales Order with the naming series you chose. Payment and shipping can be
+      recorded on the order from Shopify. The "Sync Old Shopify Orders" option imports orders between two dates in the background.
+    badge: Orders
+  - title: Push your stock to the store
+    description: >-
+      A scheduled job sends the changed stock levels every hour. Each Dokos warehouse matches a Shopify location. Dokos is
+      the reference, and a change made in Shopify is overwritten at the next synchronisation. Fractional quantities are
+      rounded down.
+    badge: Stock
+  - title: Publish your items to Shopify
+    description: >-
+      Optionally, a new Dokos Item is sent to Shopify, and its updates follow. The name becomes the title, the item code
+      the SKU and the item group the product type, with the description and weight. The item is created as a draft, not
+      published on the store. Variants are not supported.
+    badge: Items
+
+install:
+  steps:
+    - title: From the Dokos Cloud marketplace
+      description: >-
+        In your Dokos Cloud dashboard, open the marketplace and install eCommerce Integrations on your site.
+        The application is included in every plan.
+    - title: Self-hosted
+      description: "<code>bench get-app https://github.com/frappe/ecommerce_integrations</code> then <code>bench --site your-site install-app ecommerce_integrations</code>."
+    - title: Connect your store
+      description: >-
+        Open the connector's settings document, enter your Shopify app's credentials, map your warehouses to locations and
+        your taxes to accounts, then turn on synchronisation.
+  prerequisites:
+    - A Dokos V5 site
+    - A custom Shopify app with read and write access to orders, products and inventory, and read access to locations and customers
+
+faq:
+  items:
+    - label: Which connectors are included?
+      content: >-
+        Shopify, Unicommerce, Zenoti and Amazon, each with its documentation in the ERPNext manual.
+    - label: Which side is the reference for stock?
+      content: >-
+        Dokos. Stock levels are pushed to Shopify every hour, and a change made in Shopify is overwritten.
+        The documentation recommends a frequency of 30 to 60 minutes.
+    - label: What happens if a Shopify order is cancelled?
+      content: >-
+        If the Sales Order has no linked invoice or delivery note, it is cancelled. Otherwise, the cancellation status is
+        carried over to those documents and you handle the rest in Dokos.
+    - label: What about WooCommerce?
+      content: >-
+        WooCommerce is not in this application. Use [Dokos WooCommerce](/en/modules/woocommerce), published by Dokos.
+
+bottom_cta:
+  title: Ask us your questions about eCommerce Integrations.
+  description: Tell us which store you sell on, and we will tell you how to connect it to Dokos.
+  links:
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

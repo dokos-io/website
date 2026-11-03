@@ -1,72 +1,109 @@
-navigation:
-  title: Hiboutik
-  icon: i-heroicons-shopping-bag
-  description: Connector for the Hiboutik point of sale.
+# English version of content/fr/modules/hiboutik.yml (sources and screenshot notes are there).
 
 title: Hiboutik
+description: Brings each sale from your Hiboutik till into Dokos as a sales invoice, and pushes your items and stock to the till.
 icon: i-heroicons-shopping-bag
-description: Connects your Hiboutik point of sale to your Dokos catalog and stock.
 application: Hiboutik
 theme: vente-relation-client
+author: Dokos
 logo:
   light: /frappe/hiboutik_logo.svg
   dark: /frappe/hiboutik_logo.svg
+navigation:
+  title: Hiboutik
+  icon: i-heroicons-shopping-bag
+  description: Connector for the Hiboutik till.
+
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: hiboutik
+docs: https://doc.dokos.io/v5/integrations/hiboutik
+related: [ventes, stocks, comptabilite, e-commerce]
 
 hero:
-  title: Your <span class="text-primary">Hiboutik</span> point of sale, connected to Dokos.
-  description: The Hiboutik connector links your Hiboutik point of sale to your Dokos catalog and stock, for a store already equipped with this point of sale.
-  links:
-    - label: Contact us
-      to: /en/contact
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-chat-bubble-left-right
-    - label: See the marketplace
-      to: https://cloud.dokos.io
-      target: _blank
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: The Dokos ecosystem
-    color: sky
-    to: "/en"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Your <span class="text-primary">Hiboutik</span> till, kept up to date by Dokos.
+  description: Hiboutik is an online cash register. The connector sends your items and stock to the till, then brings each sale back into Dokos as a sales invoice.
+
+for_whom:
+  items:
+    - title: Your shop takes payments on Hiboutik
+      description: Each receipt becomes a sales invoice in Dokos, in real time through a webhook. Accounting follows with no re-keying.
+      icon: i-heroicons-shopping-cart
+    - title: You keep your catalogue in Dokos
+      description: Name, price including tax, tax and stock go from the Item record to Hiboutik. Dokos stays the reference.
+      icon: i-heroicons-tag
+    - title: You run a third place or a non-profit shop
+      description: The connector was funded by French third places (tiers-lieux). It links a simple till to full business management.
+      icon: i-heroicons-building-storefront
+
+fit:
+  description: The connector is configured in <strong>Hiboutik Settings</strong>, in the Integrations workspace. A <strong>POS Profile</strong> sets the price list and the warehouse used. Each sale taken at the till arrives in Dokos as a <strong>Hiboutik Sale</strong>, which generates the matching <strong>Sales Invoice</strong>. Till movements arrive the same way and are posted as journal entries.
+  reads:
+    - Item, Item Price and Item Tax Template
+    - Customer of type Individual
+    - POS Profile and Warehouse
+    - Sales Invoice, Payment Entry, Journal Entry
+  adds:
+    - The "Hiboutik Settings" document
+    - The "Hiboutik Sales" and "Hiboutik Till Movements"
+    - The "Sync with Hiboutik" checkbox on the Item record
+    - A Hiboutik workspace
+  depends:
+    - Sales
+    - Stock
 
 features:
-  - title: Point of sale connector
-    description: Connects an existing Hiboutik point of sale to your Dokos installation.
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Integration
-      color: sky
-  - title: Shared catalog and stock
-    description: Useful for a store already using Hiboutik that wants to connect its till sales to the rest of its management.
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Stock
-      color: sky
+  - title: Send your items to the till
+    description: Tick "Sync with Hiboutik" on each item concerned. The name, the price including tax, the tax and the stock go to Hiboutik, and the till's reference is stored on the item. Images are added in Hiboutik.
+    badge: Catalogue
+  - title: Get each sale back as an invoice
+    description: Hiboutik calls Dokos at each sale or credit note. Dokos records a Hiboutik Sale, then creates the sales invoice and its payment, with the payment method mapping you defined. An hourly job checks that no sale was missed.
+    badge: Sales
+  - title: Post the till movements
+    description: Till movements are imported once an hour, then posted. The status changes to Completed once the entry is submitted. Global discounts go to the account you set in the settings.
+    badge: Accounting
+  - title: Keep the till's stock up to date
+    description: Each stock movement in Dokos updates the quantity in Hiboutik, on the warehouse of the POS profile. An option sends a notification for stock alerts.
+    badge: Stock
+
+install:
+  steps:
+    - title: From the Dokos Cloud marketplace
+      description: In your Dokos Cloud dashboard, open the marketplace and install Hiboutik on your site. The application is included in every plan.
+    - title: Self-hosted
+      description: "<code>bench get-app https://gitlab.com/dokos/hiboutik</code> then <code>bench --site your-site install-app hiboutik</code>."
+    - title: Link the till
+      description: In Hiboutik, open Settings, then API, and note your connection details. In Dokos, fill in Hiboutik Settings, choose the POS profile, map the VAT rates and the payment methods, then save. The webhooks then appear in Hiboutik.
+    - title: Run the first synchronisation
+      description: Tick "Sync with Hiboutik" on the items concerned, then run the synchronisation of items and of customers of type Individual.
+  prerequisites:
+    - A Hiboutik account whose user has rights on sales, products, customers, stock and webhooks
+
+faq:
+  items:
+    - label: Can I create items directly in Hiboutik?
+      content: Dokos is the reference for the catalogue. An item created only in Hiboutik is not synchronised and its sales do not come back. Create the item in Dokos, then tick "Sync with Hiboutik".
+    - label: Can I use several warehouses?
+      content: No. The connector works with the warehouse of the POS profile, one per configuration.
+    - label: Are loyalty points carried over?
+      content: No. Hiboutik loyalty points are not managed in Dokos.
+    - label: How are sales paid with customer credit handled?
+      content: No payment entry is created for a sale paid with credit. The balance is settled with the "DIV" method and a negative amount on the "CRED" method. Overpayments are created by Dokos, then reconciled by hand.
+    - label: Who developed this connector?
+      content: The first version was written by ioCraft (opossum project). The development was funded by the third places Coopérative Baraka, La Coroutine and MonsFabrica. Dokos SAS maintains it.
 
 bottom_cta:
-  title: A Hiboutik point of sale to connect to Dokos?
-  description: Available from the cloud.dokos.io marketplace. Describe your current setup, and we'll tell you what the connector already covers.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Your till and your catalogue
+  description: Tell us about your Hiboutik setup, and we will tell you what the connector already covers.
   links:
-    - label: Contact us
+    - label: Write to us
       to: /en/contact
-      size: sm
-      color: black
-      variant: solid
-      icon: i-heroicons-chat-bubble-left-right
+      size: xl
+      color: primary
     - label: See the marketplace
-      to: https://cloud.dokos.io
+      to: https://cloud.dokos.io/marketplace
       target: _blank
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+      size: xl
+      color: neutral
+      variant: outline

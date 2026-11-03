@@ -1,0 +1,134 @@
+# English version of content/fr/modules/tribu.yml (sources and screenshot notes are there).
+
+navigation:
+  title: Tribu
+  icon: i-heroicons-identification
+  description: Your association's members, fees and donations, with online sign-up and payment.
+
+title: Tribu
+icon: i-heroicons-identification
+description: Manage your association's members, fees and donations, with online sign-up and payment and automatic invoicing.
+application: Tribu
+theme: vente-relation-client
+author: Dokos
+
+publisher: dokos
+licence: AGPLv3
+version: v5
+marketplace: tribu
+related: [reservations-de-ressources, paiements, comptabilite, bank]
+
+hero:
+  title: Your members and their fees, <span class="text-primary">managed in Dokos</span>.
+  description: >-
+    Tribu records your members, their memberships and their donations. Members sign up and pay online,
+    and Tribu creates the invoice in your Dokos accounts.
+
+for_whom:
+  items:
+    - title: You keep your member list in a spreadsheet
+      description: >-
+        Each member has a record, with their contact details and the history of their memberships. You import and export the list.
+      icon: i-heroicons-table-cells
+    - title: Memberships arrive online and you re-key them
+      description: >-
+        The web form creates the member record, the membership and the invoice. Payment is collected in the same flow.
+      icon: i-heroicons-globe-alt
+    - title: Your treasurer ticks off fees by hand
+      description: >-
+        Each membership has its invoice. The online payment is reconciled in the bank module, and you export the accounts.
+      icon: i-heroicons-calculator
+
+fit:
+  description: >-
+    Tribu installs on your Dokos site. A membership type (<strong>Tribu Membership Type</strong>) is linked to an
+    <strong>Item</strong> of the Sales module, which carries the price and the accounts. When a member signs up,
+    Tribu creates the membership (<strong>Tribu Membership</strong>) and the <strong>Sales Invoice</strong>.<br>
+    Online payment goes through the gateways of the Payments application, and Dokos bank reconciliation
+    matches the payment received. Contacts, invoicing and the web portal are those of your site.
+  reads:
+    - Item
+    - Customer and Contact
+    - Sales Invoice and Payment Entry
+    - Bank Transaction
+    - Payment Gateway
+  adds:
+    - The Tribu Member, Tribu Membership, Tribu Membership Type and Tribu Settings documents
+    - The membership and donation web forms
+    - The Tribu pages
+  depends:
+    - Dokos (Sales, Accounting)
+    - Payments, for online payment
+
+features:
+  - title: Keep your member records
+    description: >-
+      A member's record holds their personal details, their professional or personal contacts and the
+      history of their memberships. You filter and search the list, and you import and export your members.
+    badge: Members
+  - title: Define your membership types
+    description: >-
+      You set up several plans, for example yearly, monthly or reduced rate, each with its validity period,
+      price and renewal. Naming a type by season, such as "Membership 2025-2026", makes it easier to follow.
+    badge: Membership types
+  - title: Open online sign-up
+    description: >-
+      Members fill in a web form that you customise. Data is checked as they type, payment happens in the
+      same flow, and the member record is created automatically. The form works on mobile and on desktop.
+    badge: Sign-up
+  - title: Receive donations
+    description: >-
+      The donations module records one-off contributions and tracks donors, with the same payment methods as memberships.
+    badge: Donations
+  - title: Invoice and reconcile automatically
+    description: >-
+      Each membership creates its invoice. The accounts are set on the membership items. Payments received
+      are tracked and reconciled in the bank module, and you export the accounts for your accountant.
+    badge: Accounting
+
+install:
+  steps:
+    - title: From the Dokos Cloud marketplace
+      description: >-
+        In your Dokos Cloud dashboard, open the marketplace and install Tribu on your site.
+        The application is included in every plan.
+    - title: Self-hosted
+      description: "<code>bench get-app https://gitlab.com/dokos/tribu</code> then <code>bench --site your-site install-app tribu</code> and <code>bench --site your-site migrate</code>."
+    - title: Set up a first membership
+      description: >-
+        Create the membership items in the Sales module, define your membership types, set up a payment method
+        and its webhooks, then test a full sign-up before you open the form.
+  prerequisites:
+    - A Dokos V5 site
+    - The Payments application and an account with a payment provider
+
+faq:
+  items:
+    - label: Which payment providers are supported?
+      content: >-
+        HelloAsso, Stancer, Stripe, GoCardless, and PayPal through Braintree.
+    - label: Does Tribu handle donations?
+      content: >-
+        Yes. The donations module records one-off contributions and tracks donors, with the same payment methods as memberships.
+    - label: How are the accounts kept?
+      content: >-
+        Each membership creates a Sales Invoice. The accounts are set on the membership items. Bank
+        reconciliation and accounting exports are those of Dokos.
+    - label: Where is my members' data stored?
+      content: >-
+        On your Dokos site, on Dokos Cloud or on your own server. Tribu is published under AGPLv3.
+
+bottom_cta:
+  title: Ask us your questions about Tribu.
+  description: Describe your association and your membership plans, and we will tell you how to set them up.
+  links:
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

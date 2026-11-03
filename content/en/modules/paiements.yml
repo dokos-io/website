@@ -1,96 +1,115 @@
-navigation:
-    title: Payments
-    icon: i-ic-twotone-payments
-    description: Collect online payments by card, SEPA direct debit, PayPal and more.
+# English version of content/fr/modules/paiements.yml (sources and screenshot notes are there).
 
+navigation:
+  title: Payments
+  icon: i-ic-twotone-payments
+  description: Card, SEPA direct debit, PayPal and SumUp terminal payments.
 
 title: Payments
+description: Collects your invoices and online sales by card or SEPA direct debit, from a payment link or your shop.
 icon: i-ic-twotone-payments
-description: Simplify and secure your transactions with modern payment solutions.
 application: Payments
 theme: finance-comptabilite
 author: Frappe Technologies, Dokos & Contributors
+logo:
+  light: /frappe/payments_logo.svg
+  dark: /frappe/payments_logo.svg
+
+publisher: dokos
+licence: MIT
+version: v5
+marketplace: payments
+docs: https://doc.dokos.io/v5/integrations/payments
+related: [comptabilite, ventes, e-commerce, bank]
 
 hero:
-  title: "Automate your <span class='text-primary'>payments</span> with Dokos: simple, secure, efficient"
-  description: Easily integrate your favorite payment gateways and collect one-off or recurring payments with no extra effort.
-  links:
-    - label: Simplify your payments
-      to: https://cloud.dokos.io
-      size: sm
-      color: yellow
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: The Dokos ecosystem
-    color: sky
-    to: "/en"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Your <span class="text-primary">payment requests</span>, paid by card or SEPA direct debit, from an invoice or your shop.
+  description: You create a payment request from a sales order or a sales invoice and send the link to your customer. The gateway confirms the payment to Dokos by webhook; no card data is stored on your site.
+  image: /modules/paiements/hero.webp
 
+for_whom:
+  items:
+    - title: You send invoices and wait for bank transfers
+      description: The payment request generates a link. Your customer pays by card or SEPA direct debit, and the status of the request is updated in Dokos.
+      icon: i-heroicons-link
+    - title: You sell online with Webshop
+      description: The mode of payment linked to a gateway, allowed in the Webshop Settings, appears when the order is paid.
+      icon: i-heroicons-shopping-cart
+    - title: You invoice subscriptions
+      description: With Stripe or GoCardless, a payment request linked to a subscription keeps the card or the direct debit mandate for the next instalments.
+      icon: i-heroicons-arrow-path
+    - title: You take payments on site
+      description: The Pay with SumUp button on an invoice, a payment request or the point of sale starts the payment on the SumUp app and its terminal.
+      icon: i-heroicons-device-phone-mobile
 
-
+fit:
+  description: Payments adds the gateways to the Dokos <strong>payment request</strong>. Each gateway is linked to a mode of payment, whose Portal tab sets up the payment page. On the customer record, Dokos keeps only the gateway's customer ID and the default payment method, to reuse the same customer from one payment to the next.
+  image: /modules/paiements/fit.webp
+  reads:
+    - Sales Order and Sales Invoice, the source of a payment request
+    - Payment Request, whose status follows the gateway's notifications
+    - Customer, which keeps the gateway's customer ID and the default payment method
+    - Mode of Payment, with its Payment Gateway and Portal tabs
+    - Webshop Settings, Allowed modes of payment section
+    - Subscription, for recurring payments
+  adds:
+    - The Stripe Settings, GoCardless Settings, Stancer Settings, HelloAsso Settings, SumUp Settings and Paypal Settings documents
+    - The portal payment page, opened from the link of a payment request
+    - The Pay with SumUp button on the sales invoice, the payment request and the point of sale
+    - The webhooks that receive payment statuses
+  depends:
+    - Accounting
 
 features:
-  - title: Manage all your payments in one place
-    description: "Whether it's one-off transactions, recurring subscriptions, or events, Dokos automates the process to save you time and avoid errors.<ul><li>Payment automation: handle payments with no manual work.</li><li>Wide choice of providers: Stripe, PayPal, Braintree, GoCardless, and more.</li><li>Maximum security: protected, encrypted transactions.</li>"
-    image: "image/paiements/transactions-securisees.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Centralized payments
-      color: sky
+  - title: Send a payment link
+    description: From a sales order or a sales invoice, you create a payment request and share the generated link. Your customer pays on the portal payment page, without an account on your site. To test, open the link in a private browsing window.
+    badge: Payment request
+  - title: Take payment for your shop's orders
+    description: You create a mode of payment and link it to your gateway in the Payment Gateway tab. In the Webshop Settings, you add it to the allowed modes of payment. Customers of your Webshop see it when they pay.
+    badge: Webshop
+  - title: Collect your subscriptions
+    description: With Stripe, a card or SEPA direct debit payment linked to a subscription saves the payment method for the next instalments. With GoCardless, the direct debit mandate is kept. Stancer also keeps the card for a request linked to a subscription; HelloAsso does not.
+    badge: Recurring
+  - title: Take payments on site with SumUp
+    description: You enter the keys of your developer account in the SumUp Settings and create a SumUp mode of payment for your companies. The Pay with SumUp button appears on the sales invoice, the payment request and the point of sale; it starts the payment on the SumUp app of a mobile device linked to the terminal.
+    badge: SumUp
+  - title: Receive confirmations by webhook
+    description: In the Stripe Settings, the Create Stripe webhooks button sets up the webhooks for you. For GoCardless, you create the endpoint in the developer area and copy the generated secret into Dokos. Status changes arrive through this channel, sometimes a few seconds after the payment. Since Dokos V5, a failed request can no longer be reused for a new transaction.
+    badge: Webhooks
 
-  - title: "Choose maximum flexibility with our built-in payment providers"
-    description: "Choose from a range of providers to collect payments smoothly, quickly, and securely, whether one-off or recurring <ul><li>Stripe: learn more </li><li> PayPal: learn more</li><li>Braintree: learn more</li><li>GoCardless: learn more</li><li>Stancer: learn more</li><li>HelloAsso: learn more"
-    image: "image/paiements/paiements-gestions-paiements.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Payment gateway integrations
-      color: sky
+install:
+  steps:
+    - title: From the Dokos Cloud marketplace
+      description: Payments is installed with Dokos on your site. If it is missing, open the marketplace from your Dokos Cloud dashboard and install it. Included in every plan.
+    - title: Self-hosted
+      description: "<code>bench get-app https://gitlab.com/dokos/payments</code> then <code>bench --site your-site install-app payments</code>."
+    - title: First setup
+      description: Enter your gateway's keys in its settings document, create a mode of payment linked to this gateway, then test with a payment request opened in a private window.
+  prerequisites:
+    - An account with one of the supported gateways, with its API keys
 
-  - title: Save time with smart automation
-    description: "With Dokos, payments are automatically reconciled in your system, giving you accurate, effortless tracking. No more spending time on manual tasks.<ul><li> One-off payments: rent a room or sell a product, Dokos handles it all.</li><li> Recurring payments: subscriptions and recurring services, automated.</li><li> Events and forms: collect payments during event registrations."
-    image: "image/paiements/dokos-abonnement.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Payment automation and reconciliation
-      color: sky
-
-  - title: "An integrated experience: webshop, forms, and events"
-    description: Payments are fully synchronized with your webshop, web forms, and event management. Offer your customers a smooth payment experience with real-time tracking.
-    video: "/image/paiement/gestion-evenements.mp4"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Synergy with webshop and events
-      color: sky
-
-
-
+faq:
+  items:
+    - label: Which gateways are supported?
+      content: Stripe (card and SEPA direct debit), GoCardless (SEPA direct debit), Stancer (card), HelloAsso (card, for non-profits only), PayPal and SumUp (on-site payment by terminal). Each gateway has its page in the documentation.
+    - label: Does Dokos store card data?
+      content: No. The card is entered at the gateway. On the customer record, Dokos keeps only the gateway's customer ID and the ID of the default payment method.
+    - label: We are a non-profit. Which one should we choose?
+      content: HelloAsso, if your association is verified by HelloAsso. The payer can add a voluntary contribution to HelloAsso. For subscriptions, HelloAsso does not keep the card; use Stripe or GoCardless instead.
+    - label: How do I test a payment before going live?
+      content: Create a sales order or a sales invoice, then a payment request. Open the link in a private or signed-out window to see what your customer will see. PayPal also offers the Use Sandbox option.
 
 bottom_cta:
-  title: Ready to automate your payments?
-  description: Simplify your payment management and focus on growing your business. Join Dokos today.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Ask us your questions about Payments.
+  description: Tell us how your customers pay you today.
   links:
-    - label: Get started now
-      to: https://cloud.dokos.io
-      size: sm
-      color: yellow
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

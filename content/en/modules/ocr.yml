@@ -1,111 +1,110 @@
-navigation:
-    title: OCR
-    icon: i-mdi-ocr
-    description: Extracting vendor invoice data with Amazon Textract
+# English version of content/fr/modules/ocr.yml (sources and screenshot notes are there).
+# The OCR application covers Dokos V4. On Dokos V5, its functions are taken over by eTransactions.
 
 title: OCR
+description: Reads your PDF supplier invoices with Amazon Textract and prepares the purchase invoice in Dokos.
 icon: i-mdi-ocr
-description: Scan and process your documents in a snap with built-in OCR.
 application: OCR
 theme: site-web-outils-numeriques
-author: Dokos & Contributors
+author: Dokos
+logo:
+  light: /frappe/ocr_logo.svg
+  dark: /frappe/ocr_logo.svg
+navigation:
+  title: OCR
+  icon: i-mdi-ocr
+  description: Supplier invoice data extraction with Amazon Textract.
+
+publisher: dokos
+licence: AGPLv3
+version: v4
+marketplace: ocr
+docs: https://doc.dokos.io/v5/integrations/etransaction
+related: [achats, comptabilite, etransactions]
 
 hero:
-  title: Automate your invoice entry with Dokos' <span class="text-primary">OCR</span> module.
-  description: Turn your documents into ready-to-use information. <br>With Dokos' OCR module, save time, cut down on errors, and focus on what matters.
-  links:
-    - label: Get started now
-      to: https://cloud.dokos.io
-      size: sm
-      color: sky
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: The Dokos ecosystem
-    color: sky
-    to: "/en"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Your PDF supplier invoices, <span class="text-primary">read</span> and ready to post.
+  description: You drop the PDF or forward it by e-mail. Amazon Textract extracts the supplier, the amounts and the lines. You check, then you create the purchase invoice.
 
+for_whom:
+  items:
+    - title: You re-key every supplier invoice
+      description: The number, the date, the amounts and the lines are read from the document. You only have to check them.
+      icon: i-heroicons-pencil-square
+    - title: Your invoices arrive by e-mail
+      description: A mailbox rule sends the PDF attachments to the basket. Analysis starts with no action on your part.
+      icon: i-heroicons-envelope
+    - title: You check invoices against orders
+      description: The invoice that was read is linked to the purchase order or the purchase receipt. An amount difference can block the creation of the purchase invoice.
+      icon: i-heroicons-scale
+
+fit:
+  description: "OCR adds a <strong>Purchase Invoice Basket</strong> to Dokos. Each file you drop creates an analysis request sent to Amazon Textract, then a <strong>pending supplier invoice</strong> with the data that was read. From this pending invoice, you choose the purchase order or the purchase receipt concerned, then you create the <strong>Purchase Invoice</strong> of the Purchasing module. Statuses follow the processing: Pending, In progress, Ready, Completed."
+  reads:
+    - Supplier and its VAT number
+    - Purchase Order and Purchase Receipt
+    - Purchase Invoice
+    - Email Account and Communication
+  adds:
+    - The "Purchase Invoice Basket"
+    - Pending supplier invoices, with a preview of the document and the extracted data
+    - OCR analysis requests and their tracking
+    - The "OCR Settings" document
+  depends:
+    - Purchasing
+    - Accounting
 
 features:
-  - title: Save time and cut down on errors with automated document handling.
-    description: "Simplify your document management with Dokos' OCR. Turn your invoices and delivery notes into usable data instantly, and free your teams from repetitive tasks. Fewer errors, more time for what matters.<ul><li><span class='font-bold'> Automatic data extraction:</span> As soon as your documents arrive (invoices, purchase orders), OCR analyzes and automatically extracts the key information (amounts, dates, order numbers). </li><li><span class='font-bold'> Processing emailed attachments:</span> Send your documents straight by email, and Dokos analyzes them and feeds them into your accounting or stock modules."
-    image: "image/ocr/facture-ocr.png"
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Automation
-      color: sky
-  - title: "Advanced operation: control every step"
-    description: "Stay in control while automating. With Dokos, you validate each step to guarantee optimal accuracy. Configure your workflows to fit your specific needs."
-    image: "image/ocr/workflow-ocr.png"
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Semi-automatic
-      color: sky
-  - title: Keep full control of your data
-    description: "At Dokos, we put transparency and data security first. You're free to customize every aspect of the software while benefiting from guaranteed security. Your information is protected at every step. <ul><li><span class='font-bold'>Data deleted after processing:</span> All data extracted via Amazon Textract is erased immediately after processing.</li><li><span class='font-bold'>Flexibility through our open APIs:</span> Easily integrate Dokos with your existing systems or OCR solutions for unconstrained data management."
-    align: left
-    image: "image/ocr/donnees-ocr.png"
-    image_bg_color: bg-teal-500
-    badge:
-      label: Integrations
-      color: sky
-  - title: A reliable, secure solution
-    description: "Our OCR relies on three main methods for data extraction: <ul><li><span class='font-bold'>Receipt by email</span></li><li><span class='font-bold'>File import</span></li><li><span class='font-bold'>Manual document upload (PDF or image)</li></span><br>We chose Amazon Textract to ensure data extraction that's both accurate and fast, offering the best value for money. What's more, with Dokos you can manage your entire purchasing flow with ease: automate the creation of vendor orders or match invoices against existing orders."
-    image: "image/ocr/bannette-factures.png"
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Security
-      color: sky
+  - title: Drop or forward your invoices
+    description: You drag a PDF or an image into the basket. You can also add an e-mail account to Dokos and set, in "IMAP Details", that the INBOX folder feeds the basket. Each e-mail with a PDF attachment is then dropped there.
+    badge: Upload
+  - title: Read the data with Amazon Textract
+    description: The analysis request goes to Amazon Textract. When it comes back, the pending supplier invoice shows the supplier, the invoice number and date, the due date, the lines, the total excluding tax, the VAT and the grand total. The document preview stays next to the data for checking. The file sent to Amazon is deleted once the analysis is retrieved.
+    badge: Extraction
+  - title: Link the invoice to your orders
+    description: From the pending invoice, "Select purchase orders" or "Select purchase receipts" proposes the supplier's open documents. A submitted purchase receipt can be matched automatically, within a difference you set as an amount or a percentage. If the supplier does not exist, a button creates it from the data that was read.
+    badge: Matching
+  - title: Set the level of control
+    description: In OCR Settings, you allow or refuse the creation of a purchase invoice without an order, you block creation when the total is higher than the one read on the document, and you choose whether to submit the purchase invoices created automatically. Supplier credit notes are allocated across several invoices already submitted.
+    badge: Settings
 
-bottom_section:
-  title: See how Dokos OCR transforms your document management.
-  description: "Stop wasting time on tedious tasks. With Dokos OCR, free yourself from administrative constraints and focus on what really matters: your highest-value work."
-  cards:
-    - title: Time savings
-      description: Automation speeds up document processing, letting your teams focus on more strategic tasks.
-      icon: i-material-symbols-alarm-on-outline
-      class: "col-span-4 row-span-3"
-    - title: Fewer errors
-      description: "Less manual entry means fewer errors, especially in critical processes like accounting."
-      icon: i-material-symbols-disabled-by-default-rounded
-      class: "col-span-4 row-span-3"
-    - title: Stronger control
-      description: With custom workflows, you validate information before it's added to Dokos, keeping your data consistently accurate.
-      icon: i-material-symbols-check-circle-outline-rounded
-      class: "col-span-4 row-span-3"
+install:
+  steps:
+    - title: On Dokos V5, install eTransactions
+      description: On Dokos V5, the eTransactions application takes over the basket, the pending invoices and the OCR settings. On installation, it retrieves the existing OCR data. Install it from the Dokos Cloud marketplace. It is included in every plan.
+    - title: On Dokos V4, from the Dokos Cloud marketplace
+      description: In your Dokos Cloud dashboard, open the marketplace and install OCR on your site.
+    - title: Self-hosted
+      description: "<code>bench get-app https://gitlab.com/dokos/ocr</code> then <code>bench --site your-site install-app ocr</code>."
+    - title: Enter your keys
+      description: In OCR Settings, enter the Amazon Textract key and secret, then choose the rules for creating purchase invoices.
+  prerequisites:
+    - An Amazon Web Services account with access to Textract
 
-plus_button:
-  label: Discover all our features
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: sky
-  to: /features/ocr
+faq:
+  items:
+    - label: Which files does OCR accept?
+      content: PDFs and images, dropped by hand into the basket or received as an e-mail attachment.
+    - label: Where do my documents go?
+      content: The file is sent to Amazon Textract for analysis, with your own access keys. It is deleted from Amazon storage once Dokos has retrieved the result. The extracted data stays in your site.
+    - label: Is there another engine than Amazon Textract?
+      content: The OCR Settings document offers a choice between Amazon Textract and Mistral OCR, with a Mistral API key.
+    - label: What happens if I move to Dokos V5?
+      content: eTransactions replaces the OCR application. On installation, it takes over the settings, the basket and the pending supplier invoices. Invoices received through an approved platform then arrive in the same basket.
+    - label: Is the purchase invoice created on its own?
+      content: Only if you asked for it. By default, you review the pending invoice, choose the order or the receipt, then click "Create purchase invoice". An option submits the created invoices automatically.
 
 bottom_cta:
-  title: With Dokos, transform your purchasing management through automation.
-  description: Stop wasting time on manual processes. Dokos gives you a flexible, ethical, transparent solution to automate your purchasing management. Take control today!
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Your supplier invoices and their volume
+  description: Tell us how your supplier invoices arrive today, and we will tell you what OCR already covers.
   links:
-    - label: Get started now
-      to: https://cloud.dokos.io
-      size: sm
-      color: orange
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

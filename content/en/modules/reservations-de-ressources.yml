@@ -1,99 +1,158 @@
+# English version of content/fr/modules/reservations-de-ressources.yml (sources and screenshot notes are there).
+
 navigation:
   title: Resource bookings
   icon: i-material-symbols-location-on-outline-rounded
-  description: Contract creation, subscription generation, booking credits, and events.
+  description: Bookable resources, contracts, credits and events for third places and space rental.
+
 title: Resource bookings
 icon: i-material-symbols-location-on-outline-rounded
-description: Manage and optimize the use of your resources with ease.
+description: Publish your spaces and equipment, let your members book online and invoice from Dokos.
 application: Bookings
 theme: vente-relation-client
 author: Dokos & Contributors
+logo:
+  light: /frappe/bookings_logo.svg
+  dark: /frappe/bookings_logo.svg
+
+publisher: dokos
+licence: AGPLv3
+version: v5
+marketplace: bookings
+docs: https://doc.dokos.io/v5/dokos/lieu
+related: [e-commerce, ventes, paiements, tribu, comptabilite]
+
 hero:
-  title: Simplify <span class="text-primary">resource management</span> with Dokos
-  description: Manage your spaces and equipment smoothly with the Dokos resource booking module
-  links:
-    - label: Get started
-      to: https://cloud.dokos.io
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: The Dokos ecosystem
-    color: sky
-    to: /en
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Your rooms, desks and machines, <span class="text-primary">booked online</span> and invoiced in Dokos.
+  description: >-
+    Bookings publishes your bookable resources on a portal, takes payment for bookings and generates the invoices,
+    contracts and subscriptions in your Dokos site.
+
+for_whom:
+  items:
+    - title: You run a third place or a coworking space
+      description: >-
+        Your members book a desk or a room from the portal, with their credits or their subscription. You follow the balances in a report.
+      icon: i-heroicons-building-office-2
+    - title: You rent rooms or equipment by the hour or by the day
+      description: >-
+        Each resource has its prices per unit of measure, its opening calendar and its minimum notice. The invoice follows the booking.
+      icon: i-heroicons-clock
+    - title: You sign fixed-desk or business address contracts
+      description: >-
+        The customer signs online. The contract creates the sales order, the subscription, the recurring invoices and the security deposit.
+      icon: i-heroicons-document-check
+    - title: You organise workshops or events
+      description: >-
+        You publish the event on the website, open registrations and take payment from the web form.
+      icon: i-heroicons-ticket
+
+fit:
+  description: >-
+    Bookings installs on your Dokos site and takes over the functions of the V4 Venue module, removed in V5.
+    Since V5, <strong>everything is a resource</strong>, bookable or not; the item is only used for invoicing.
+    A <strong>Bookable Resource</strong> carries the calendar, the prices per unit of measure and the required badges.<br>
+    Each <strong>Item Booking</strong> is linked to a billed party, and its invoice is generated and tracked
+    automatically. A signed contract creates a Sales Order, a Subscription and its recurring invoices in the Sales module.
+    Online payment goes through the gateways of the Payments application.
+  reads:
+    - Item, Item Group and Price List
+    - Customer and Contact
+    - Sales Order, Subscription and Sales Invoice
+    - Event
+    - Payment Gateway
+  adds:
+    - The Events & Resources workspace
+    - The Bookable Resource, Item Booking, Booking Calendar and Booking Availability documents
+    - The Booking Contract, Contract Type and Security Deposit documents
+    - Booking credits and badges
+    - The /bookings-ui portal, the Venue Settings and the Resource Booking Settings
+  depends:
+    - Dokos (Sales)
+    - Payments for online payment
+
 features:
-  - title: Book in a few clicks
-    description: The Dokos resource booking module lets your users easily book meeting rooms, machines, or equipment. <br><br>Get the most out of your resources and give your users full autonomy.</br>
-    image: image/reservation-ressource/article-reservable-site-web.png
-    image_bg_color: bg-teal-500
-    align: left
-    badge:
-      label: Booking
-      color: sky
-  - title: A solution for every need
-    description: Whether you run a coworking space, a third place, or an organization managing several resources, Dokos adapts to your needs with configurable, scalable features. Offer subscriptions, manage one-off booking tickets, and keep an overview of all your resources through a simple, intuitive interface.
-    video: /image/reservation-ressource/reservations-de-ressources.mp4
-    image_bg_color: bg-teal-500
-    align: right
-    badge:
-      label: Booking
-      color: sky
-bottom_section:
-  title: 'Key features:'
-  cards:
-    - title: Online room booking
-      description: Offer an intuitive system so your teams or your customers can book spaces suited to their needs.
-      icon: i-bi-person-workspace
-      class: col-span-4 row-span-3
-    - title: Equipment management
-      description: Simplify booking machines or specific equipment with transparent tracking.
-      icon: i-material-symbols-precision-manufacturing-outline-rounded
-      class: col-span-4 row-span-3
-    - title: Google Calendar integration
-      description: Sync your booking calendars for full real-time visibility.
-      icon: i-simple-icons-googlecalendar
-      class: col-span-4 row-span-3
-    - title: Custom user portal
-      description: Every user gets a dedicated space to manage their bookings, view invoices, or update their information.
-      icon: i-icon-park-outline-locking-web
-      class: col-span-4 row-span-3
-    - title: Subscription management
-      description: Offer your users the option to subscribe. Simplify setting up recurring events.
-      icon: i-tabler-file-rss
-      class: col-span-4 row-span-3
-    - title: Multi-site management
-      description: Centralize the management of several third places while keeping an overview and the flexibility each location needs.
-      icon: i-tabler-map-pins
-      class: col-span-4 row-span-3
-plus_button:
-  label: Discover all our features
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: sky
-  to: /en/features/reservations-de-ressources
+  - title: Describe your resources and their calendars
+    description: >-
+      A Bookable Resource sets the number of simultaneous bookings, the prices per unit of measure (hour, half day,
+      day, month) and the required badges. A Booking Calendar defines the slots per day of the week and its exceptions,
+      such as public holidays or maintenance. Booking Availability sets the minimum and maximum notice, also checked on the server.
+    badge: Resources
+  - title: Let your customers book from the portal
+    description: >-
+      On /bookings-ui, the customer chooses a slot. The booking goes from Not Confirmed to Confirmed after the order,
+      or after payment if you require it. An abandoned draft is deleted after the delay set in the Venue Settings.
+      The customer cancels from their portal if you allow it, within the minimum cancellation delay.
+    badge: Portal
+  - title: Sign contracts online
+    description: >-
+      A Contract Type carries the text template, the minimum duration, the notice period, the included resources, the recurring item,
+      the signing fees and the security deposit. You send the contract to the customer; they sign it with one click on their portal.
+      The contract becomes Active and creates the Sales Order, the Subscription and the Security Deposit. An amendment changes an active contract without rewriting it.
+    badge: Contracts
+  - title: Sell booking credits
+    description: >-
+      A credit type converts an invoiced item into credits, when a ticket is bought or at each period of a subscription.
+      When the invoice is submitted, the credits are allocated. When booking on the portal, the Deduct from booking credits
+      box uses them. Credits expire according to the duration of the type, and a report shows the allocated, used and remaining balances.
+    badge: Credits
+  - title: Publish your events and their registrations
+    description: >-
+      A public Event marked Published appears on the website. Each online registration creates an Event Registration document.
+      The event-registration-form web form takes payment, in one go or with automatic payments.
+      By default, registrations close automatically 24 hours before the event, and a badge can be given to attendees.
+    badge: Events
+
+install:
+  steps:
+    - title: From the Dokos Cloud marketplace
+      description: >-
+        In your Dokos Cloud dashboard, open the marketplace and install Bookings on your site.
+        The application is included in every plan.
+    - title: Self-hosted
+      description: "<code>bench get-app https://gitlab.com/dokos/bookings</code> then <code>bench --site your-site install-app bookings</code>."
+    - title: Set the Venue Settings
+      description: >-
+        In the Events & Resources workspace, open the Venue Settings: draft deletion delay,
+        confirmation after payment, units of measure (number of hours in a half day), customer portal. Then create a first Bookable Resource.
+  prerequisites:
+    - A Dokos V5 site
+    - The Payments application and a gateway for online payment
+    - A Google Calendar connection and one calendar per resource for synchronisation
+
+faq:
+  items:
+    - label: What happens to the Venue module?
+      content: >-
+        The V4 Venue module is removed in V5. Its functions (credits, event slots, badges, multiple venues) are taken over by Bookings.
+    - label: Can I manage several venues on the same site?
+      content: >-
+        Yes. In the Venue Settings, enable multi-venue mode and list the allowed companies with their price list.
+        Each published item states the companies where it appears. The visitor chooses the company at the bottom of the shop, and each company has its own cart.
+    - label: Do bookings sync with Google Calendar?
+      content: >-
+        Yes. Each resource is linked to its own calendar, and an option in the Venue Settings syncs online bookings automatically.
+        Deleting a single occurrence of a recurring event in Google Calendar is not yet carried over to Dokos.
+    - label: Can a subscription book a desk permanently?
+      content: >-
+        Yes. In the subscription plan line, the Booked Item field designates the resource. For the whole duration of the subscription,
+        the number of remaining places is reduced by the given quantity, and the subscription appears in the bookings Calendar view.
+    - label: How is this different from booking through the Webshop?
+      content: >-
+        Booking from the e-commerce site is deprecated in V5. The Bookings /bookings-ui portal replaces it: it carries bookings,
+        contracts, subscriptions and the member directory.
+
 bottom_cta:
-  title: Ready to optimize how you manage your resources?
-  description: From nonprofits and coworking spaces to more traditional organizations, teams use Dokos to manage their resources efficiently and offer a better experience to their users.
-  class: bg-amber-600/10 dark:bg-amber-800/10
+  title: Ask us your questions about Bookings.
+  description: Describe your venue and your resources, and we will tell you how to put them online.
   links:
-    - label: Get started
-      to: https://cloud.dokos.io
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

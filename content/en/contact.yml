@@ -1,5 +1,5 @@
 title: Contact
-description: Contact us
+description: Tell us how your company works. We reply within two working days.
 navigation.icon: i-ic-outline-contact-page
 
 hero:
@@ -9,7 +9,7 @@ hero:
 
 form:
   title: 'Contact us'
-  description: "Wondering whether Dokos fits your needs? Want to subscribe to a support plan? Have questions about our hosting offer? Send us a message."
+  description: "Tell us how your company works, what you manage today and what gets stuck. We reply within two working days."
   name:
     label: 'Name'
     placeholder: 'Martine Dupond'
@@ -18,7 +18,7 @@ form:
     placeholder: 'martine@dokos.io'
   company:
     label: 'Company'
-    placeholder: 'Your company/organization'
+    placeholder: 'Your company or non-profit'
   body:
     label: 'How can we help you?'
     placeholder: 'Tell us about your project or your need'
@@ -28,13 +28,13 @@ form:
     label: 'Send my message'
 
 contact_info:
-  - title: Prefer email?
-    description: Send us your message at hello@dokos.io
+  - title: By e-mail
+    description: Write to us at hello@dokos.io
     to: "mailto:hello@dokos.io"
     icon: i-material-symbols-attach-email-outline
-  - title: A question about our offers?
+  - title: By phone
     description: "06.33.47.58.69"
     icon: i-material-symbols-perm-phone-msg-outline
-  - title: Come meet us in Nancy!
-    description: 59 rue du vieil Aître 54000 Nancy, France
+  - title: In Nancy
+    description: 59 rue du Vieil Aître, 54000 Nancy, France
     icon: i-material-symbols-add-location-alt-outline

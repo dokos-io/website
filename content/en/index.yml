@@ -5,7 +5,7 @@ navigation: false
 announcement:
   label: The Dokos Certification Caisse module is certified by LNE.
   cta: See the certifications
-  to: /fr/certifications
+  to: /en/certifications
 
 hero:
   headline:
@@ -24,12 +24,11 @@ hero:
       title: Your teams and your AI agents
       description: In the browser or over MCP, with the same permissions and the same history.
   # The ecosystem drawn as a stack. Agents are never named by product: MCP only.
-  # Pages with no English version yet link to the French page.
   stack:
     teams:
       title: Your teams
       note: in the browser and on mobile
-      to: /fr/modules/dokos
+      to: /en/modules/dokos
     agents:
       title: Your AI agents
       note: MCP access, with the agent of your choice
@@ -56,19 +55,20 @@ hero:
       - { title: eTransactions, domain: finance, to: /en/modules/etransactions, publisher: dokos, note: "E-invoicing and supplier invoice reading." }
       - { title: Payments, domain: finance, to: /en/modules/paiements, publisher: dokos, note: "Card, SEPA direct debit, PayPal and SumUp terminal." }
       - { title: Telephony, domain: sales, to: /en/modules/telephony, publisher: frappe, note: "Exotel and Twilio calls from Helpdesk and the CRM." }
-      - { title: Newsletter, domain: web, to: /fr/modules/newsletter, publisher: frappe, note: "Bulk e-mails to your contact groups." }
-      - { title: Tribu, domain: people, to: /fr/modules/tribu, publisher: dokos, note: "Members, fees and donations, with online payment." }
+      - { title: Newsletter, domain: web, to: /en/modules/newsletter, publisher: frappe, note: "Bulk e-mails to your contact groups." }
+      - { title: Tribu, domain: people, to: /en/modules/tribu, publisher: dokos, note: "Members, fees and donations, with online payment." }
       - { title: Dokos AI, domain: ai, to: /en/modules/dokos-ai, publisher: dokos, note: "An assistant that reads your data and prepares entries that you approve." }
     core:
       title: Dokos
       note: Sales · Purchasing · Stock · Accounting · Manufacturing · Projects · HR
       tags: [LNE-certified POS, E-invoicing]
-      to: /fr/modules/dokos
+      to: /en/modules/dokos
     base:
       title: Dodock · Frappe Framework · ERPNext
       note: an open source base developed with a worldwide community
-      tag: GPLv3
-      to: /fr/modules/dodock
+      # source: licences on gitlab.com/dokos/dodock (MIT) and github.com/frappe/erpnext (GPLv3)
+      tag: MIT · GPLv3
+      to: /en/modules/dodock
   links:
     - label: Try Dokos
       to: https://cloud.dokos.io
@@ -149,14 +149,14 @@ core:
     - { title: Invoice, number: INV-0412 }
     - { title: Journal entry, number: JE-5530 }
     - { title: Payment, number: PAY-0198 }
-  # Product facts, verifiable on /fr/certifications.
+  # Product facts, verifiable on /en/certifications and content/fr/blog/2026/facturation-electronique.md.
   facts:
     - label: Point-of-sale systems
       value: LNE certified
       status: Available
       state: ok
       note: With the Certification Caisse module and a licence issued by Dokos SAS.
-      link: { label: The certifications (in French), to: /fr/certifications }
+      link: { label: The certifications, to: /en/certifications }
     - label: E-invoicing
       value: Receiving and PA link
       status: Sending in progress
@@ -168,15 +168,15 @@ core:
 base:
   label: The open source base
   title: Built on Frappe and ERPNext, with their community.
-  description: Dodock and Dokos follow every Frappe and ERPNext release, and add what France requires. All the code is published under GPLv3 on our GitLab.
+  description: Dodock and Dokos follow every Frappe and ERPNext release, and add what France requires. Dokos 5, released on 16 March 2026, runs on version 16 of Frappe and ERPNext. All the code is published on our GitLab, under GPLv3, AGPLv3 or MIT depending on the repository.
   link:
     label: Read the code
     to: https://gitlab.com/dokos
   layers:
-    - { title: Dokos, note: "management, French localisation, LNE", to: /fr/modules/dokos }
+    - { title: Dokos, note: "management, French localisation, LNE", to: /en/modules/dokos }
     - { title: ERPNext, note: the management modules }
-    - { title: Dodock, note: "the framework, Dokos's version of Frappe", to: /fr/modules/dodock }
-    - { title: GPLv3, note: "published code, tracked releases" }
+    - { title: Dodock, note: "the framework, Dokos's version of Frappe", to: /en/modules/dodock }
+    - { title: Free licences, note: "GPLv3, AGPLv3 or MIT, published code" }
 
 # The company behind the project, with the positioning sentence.
 team:
@@ -185,7 +185,7 @@ team:
   description: Dokos SAS is the team that writes, adapts and operates Dokos.
   items:
     - title: Open source publisher
-      description: Dodock, Dokos and a dozen applications, published under GPLv3.
+      description: Dodock, Dokos and a dozen applications, published on GitLab under free licences.
       to: /en/editeur
     - title: Frappe and ERPNext experts
       description: We port every release and also operate standard installations.

@@ -1,0 +1,160 @@
+# English version of content/fr/modules/dokos.yml (sources and screenshot notes are there).
+
+navigation:
+  title: Dokos
+  icon: i-heroicons-cube
+  description: Business management, from quotation to accounting.
+
+title: Dokos
+description: Open source business management software, based on ERPNext and adapted to France.
+icon: i-heroicons-cube
+application: Dokos
+theme: base
+author: Frappe Technologies, Dokos & Contributors
+logo:
+  light: /frappe/dokos_logo.svg
+  dark: /frappe/dokos_logo.svg
+
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: erpnext
+docs: https://doc.dokos.io
+related: [dodock, comptabilite, ventes, achats, stocks]
+
+hero:
+  title: Your quotations, invoices and accounts <span class="text-primary">in one database</span>.
+  description: Dokos is open source business management software, based on ERPNext and adapted to France. Version 5, released on 16 March 2026, runs on Frappe and ERPNext v16.
+  image: /modules/dokos/hero.webp
+
+for_whom:
+  items:
+    - title: Your quotations are in one spreadsheet and your invoices in another tool
+      description: In Dokos, the quotation becomes the order, then the invoice, then the journal entry. One set of customers and items.
+      icon: i-heroicons-document-duplicate
+    - title: Your accountant re-keys what you invoice
+      description: Each submitted invoice posts its entry to the general ledger. Your accountant reads the accounts and imports your history in FEC format.
+      icon: i-heroicons-calculator
+    - title: You take payments from consumers
+      description: With the Certification Caisse module and its licence, the Dokos point of sale is covered by the LNE certification. Payment data is kept in a tamper-proof log and can be exported for an audit.
+      icon: i-heroicons-receipt-percent
+    - title: Your teams and your AI agents need one source of truth
+      description: Each document is available through the interface, the REST API and Dokos CLI. Permissions apply the same way everywhere.
+      icon: i-heroicons-cpu-chip
+
+fit:
+  description: >-
+    Dokos is the management application installed on your site, on top of the Dodock framework. Its modules
+    share the same master data: a customer record is used for sales, invoices and the portal; an item is
+    used for quotations, stock and manufacturing. The other applications of the ecosystem install alongside
+    and read the same documents.
+  image: /modules/dokos/fit.webp
+  reads:
+    - Company, Fiscal Year and Chart of Accounts
+    - Customer, Supplier, Contact and Address
+    - Item, Price List and Warehouse
+    - User, Role and permissions (Dodock)
+  adds:
+    - The CRM, Sales, Purchasing, Accounting, Stock, Manufacturing, Quality, Projects and Support modules
+    - Dokos workspaces, separate from the ERPNext ones
+    - Invoice numbering at submission, and no deletion of accounting documents
+    - The French balance sheet, SEPA direct debit, OFX import, down-payment invoices and FEC import
+    - The LNE-certified point of sale (Certification Caisse module, under licence) and fiscal archive export
+  depends:
+    - Dodock
+
+features:
+  - title: Documents that follow on from each other
+    description: >-
+      A submitted quotation becomes a sales order with Create > Sales Order. The order creates the delivery
+      note, the sales invoice or a down-payment invoice. On the purchasing side, the material request becomes
+      a purchase order, then a purchase receipt and a purchase invoice. Each submitted document shows its
+      linked documents and its journal entry. A submitted document can no longer be changed: you cancel it
+      and amend it.
+    image: /modules/dokos/feature-documents.webp
+    badge: Documents
+  - title: Roles and permissions per document
+    description: >-
+      You give each user roles. Role permissions set, for each document type, who reads, creates, edits,
+      submits or cancels. User permissions restrict a user to certain documents, for example a single
+      company. You share a specific document with a colleague who has no access to it. The same rules apply
+      to the interface and to the API.
+    image: /modules/dokos/feature-autorisations.webp
+    badge: Permissions
+  - title: Approval workflows without code
+    description: >-
+      From Settings > Workflow, you define a document's states and the transitions between them, with the
+      role allowed at each step and a condition if needed. An expense claim goes from Submitted to Approved or
+      Rejected by the manager. One workflow is active per document type, and users receive an e-mail with the
+      actions waiting for them.
+    badge: Workflows
+  - title: Lists, filters and reports
+    description: >-
+      Each document type has its list, its filters that you save for yourself or for everyone, its report
+      view, its calendar or its kanban board. You export a filtered list. Accounting reports (General Ledger,
+      Balance Sheet, Profit and Loss, Trial Balance) and stock and sales reports are included. A prepared
+      report runs in the background and waits for you.
+    image: /modules/dokos/feature-rapports.webp
+    badge: Reports
+  - title: A REST API for each document
+    description: >-
+      Each document type exposes its REST endpoints: <code>/api/resource/Sales Invoice</code> to list, read,
+      create, edit or delete, and <code>/api/method/...</code> to call an allowed method. You generate an API
+      key and secret on the user record. A webhook sends a document to an external service at each creation
+      or submission. Dokos CLI and its MCP server give your AI agents the same capabilities.
+    badge: API and webhooks
+
+install:
+  steps:
+    - title: On Dokos Cloud
+      description: Create your site from your Dokos Cloud dashboard. Dokos and Dodock are installed on it. Included in every plan.
+    - title: Self-hosted
+      description: "<code>bench get-app https://gitlab.com/dokos/dokos</code> then <code>bench --site your-site install-app erpnext</code>, on a Dodock bench."
+    - title: Then the applications you need
+      description: From the marketplace, install the ecosystem's applications on the same site. They read the Dokos documents.
+  prerequisites:
+    - A Dodock bench (see the installation guide at doc.dokos.io/v5/dodock/installation)
+
+faq:
+  items:
+    - label: What is the difference between Dokos and ERPNext?
+      content: >-
+        Dokos is a version of ERPNext adapted to France. The French translation is kept up to date. Invoices
+        are numbered at submission in a continuous sequence, and invoicing and accounting documents cannot be
+        deleted. The balance sheet comes out in the French format. Dokos adds SEPA direct debit, OFX statement
+        import, straight-line depreciation, down-payment invoices and resource bookings, and it rewrote the
+        Stripe, Braintree and GoCardless payments.
+    - label: Which version is Dokos V5 based on?
+      content: >-
+        Dokos V5 was released on 16 March 2026. It runs on Frappe and ERPNext v16. Dodock is the framework
+        under Dokos. The Dokos Cloud marketplace serves v5.
+    - label: Is Dokos certified for taking payments?
+      content: >-
+        Yes, with the Certification Caisse module, certified by LNE, and a licence issued by Dokos SAS. The [Certifications page](/en/certifications) explains why the licence is needed. Payment data is written to a
+        tamper-proof log per company. From the Company record, you export a fiscal archive for a period of
+        up to one year and you check the log's cryptographic chain. You keep the archives for six years.
+    - label: Can I change Dokos?
+      content: >-
+        Yes. The code is published under GPLv3 at gitlab.com/dokos/dokos. You add fields, workflows,
+        notifications and print formats without code. Only the parts related to payments must stay intact for
+        the certification.
+    - label: How do I install other applications on my site?
+      content: >-
+        From the Dokos Cloud marketplace, you install an application on your site. Self-hosted:
+        <code>bench get-app</code> then <code>bench --site your-site install-app</code>. All applications are
+        included in every Dokos Cloud plan.
+
+bottom_cta:
+  title: Ask us your questions about Dokos.
+  description: Tell us how your company works, and we will show you the path of your documents.
+  links:
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

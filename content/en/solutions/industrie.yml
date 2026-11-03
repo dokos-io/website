@@ -1,0 +1,97 @@
+title: Dokos for manufacturing companies
+description: Bills of materials, work orders, stock and quality inspections in the same management software, with the actual cost of each batch you make.
+
+hero:
+  headline:
+    label: Industry and manufacturing
+    icon: i-heroicons-cog-6-tooth
+  title: From bill of materials to finished product, <span class="text-primary">every step leaves an entry</span>.
+  description: You make to stock or to order. Dokos links your bills of materials, your work orders, your stock movements and your quality inspections. You compare the actual cost of each order with the planned cost.
+  links:
+    - label: Try Dokos
+      to: https://cloud.dokos.io
+      target: _blank
+      size: xl
+      color: primary
+      icon: i-heroicons-rocket-launch
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: neutral
+      variant: outline
+
+colored_section:
+  title: Your production dashboard
+  description: "The Manufacturing module is part of Dokos, included in every Dokos Cloud plan. It reads your items and warehouses, then writes a stock entry at each step: materials transferred to the shop floor, then finished goods made into their warehouse. Dokos v5 runs on Frappe and ERPNext v16, and its code is published under GPLv3."
+  image: /modules/production/hero.webp
+  align: left
+
+sections:
+  - title: Describe your products in a bill of materials
+    description: You list the purchased components and the manufactured sub-assemblies, with their quantities. A bill of materials can contain other bills of materials. Its cost section adds up the cost of the components and of the operations.
+    image: /modules/production/feature-nomenclature.webp
+    align: right
+    links:
+      - label: The Manufacturing module
+        to: /en/modules/production
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Plan from your orders
+    description: The production plan brings together your sales orders, your forecasts and your reorder levels. You can also create it directly from a sales order. Dokos works out the work orders to start and the purchase requests for missing components.
+    image: /modules/production/fit.webp
+    align: left
+  - title: Start your work orders
+    description: When you submit a work order, Dokos reserves the raw materials in their source warehouses. The transfer to the shop floor creates a stock entry, and partial transfers add up. At the end of production, a Manufacture entry puts the finished goods in the target warehouse.
+    image: /modules/production/feature-ordre.webp
+    align: right
+  - title: The actual cost of each batch
+    description: Each operation in the bill of materials creates a job card, assigned to a workstation. The operator records their time and quantity on it. The recorded times, multiplied by the workstations' hourly costs, are added to the cost of the materials consumed. The work order shows the planned cost and the actual cost.
+    image: /modules/production/feature-carte.webp
+    align: left
+    features:
+      - title: Hourly costs per workstation
+        description: A workstation carries its labour, electricity, rent and consumables costs.
+        icon: i-heroicons-calculator
+      - title: The plant floor view
+        description: The operators' screen shows each workstation as available or busy.
+        icon: i-heroicons-squares-2x2
+  - title: Your stock follows production
+    description: Each receipt, delivery and transfer writes an entry in the stock ledger. You track an item by batch or by serial number. The Stock Projected Qty report includes the quantities planned for manufacturing. When an item falls below its reorder level, Dokos creates the material request.
+    image: /modules/stocks/feature-mouvements.webp
+    align: right
+    links:
+      - label: The Stock module
+        to: /en/modules/stocks
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Check quality at receipt and on the shop floor
+    description: An inspection template, attached to the item, sets the readings to take and their criteria. Until the inspection is done, the purchase receipt or the job card cannot be submitted. Since Dokos v5, an inspection can be required at each operation of a bill of materials. Non-conformities are tracked until their corrective action.
+    image: /modules/qualite/feature-inspection.webp
+    align: left
+    links:
+      - label: The Quality module
+        to: /en/modules/qualite
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+cta:
+  title: Tell us how your workshops work.
+  description: Open source publisher and Frappe and ERPNext experts, we build and stand behind your business applications. Create a trial site on Dokos Cloud, or describe your manufacturing flows to us.
+  links:
+    - label: Try Dokos
+      to: https://cloud.dokos.io
+      target: _blank
+      size: xl
+      color: primary
+      icon: i-heroicons-rocket-launch
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: neutral
+      variant: outline

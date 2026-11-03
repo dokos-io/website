@@ -1,108 +1,155 @@
-navigation:
-    title: Web Portal & E-commerce
-    icon: i-gg-website
-    description: Sell products and services, online resource bookings and a client/supplier portal.
+# English version of content/fr/modules/e-commerce.yml (sources and screenshot notes are there).
 
-title: Web Portal & E-commerce
+navigation:
+  title: Webshop
+  icon: i-gg-website
+  description: Online shop and customer portal on the catalogue of your Dokos site.
+
+title: Webshop
 icon: i-gg-website
-description: Build your online storefront with powerful web tools.
-author: Frappe Technologies, Dokos & Contributors
-application: Dokos / Webshop
+description: Publish your items on your website, take orders and open a portal for your customers, on the same catalogue and stock as Dokos.
+application: Webshop
 theme: vente-relation-client
+author: Dokos, Frappe Technologies & Contributors
 logo:
   light: /frappe/webshop_logo.svg
   dark: /frappe/webshop_logo.svg
 
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: webshop
+docs: https://doc.dokos.io/v5/dokos/e-commerce
+related: [ventes, stocks, paiements, reservations-de-ressources, builder]
+
 hero:
-  title: Turn your website into a <span class="text-primary">powerful sales tool</span> with the Dokos E-commerce module
-  description: Sell online with ease and grow your business effortlessly. With Dokos, manage everything from a single interface and give your customers a smooth, secure, unforgettable shopping experience.
-  links:
-    - label: Launch your online store today!
-      to: https://cloud.dokos.io
-      size: sm
-      color: orange
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: The Dokos ecosystem
-    color: sky
-    to: "/en"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Your online shop and your customer portal, <span class="text-primary">on the Dokos catalogue</span>.
+  description: >-
+    Webshop publishes your items on the website of your Dokos site. An order placed online becomes a Sales Order,
+    and your customers find their orders and invoices on their portal.
+  image: /modules/e-commerce/hero.webp
 
+for_whom:
+  items:
+    - title: You re-key your shop's orders into your management software
+      description: >-
+        Website orders are recorded automatically in Dokos, with the customer and the items of your catalogue.
+      icon: i-heroicons-shopping-cart
+    - title: Your customers ask for their invoices by e-mail
+      description: >-
+        On the portal, each customer sees the status of their orders, their invoices and their shipments.
+      icon: i-heroicons-document-text
+    - title: You invoice subscriptions
+      description: >-
+        Subscription invoices are generated automatically and can be paid online. The customer manages the subscription from the portal.
+      icon: i-heroicons-arrow-path
 
-
+fit:
+  description: >-
+    Webshop is the Dokos version of Frappe's Webshop application. It uses the <strong>Items</strong>,
+    item groups, price lists and stock of the Sales module. You tick Publish Item on the item record,
+    and it appears in the shop with its images, description and price.<br>
+    An order placed on the website creates a <strong>Sales Order</strong>. VAT comes from the tax rules marked
+    Use for Shopping Cart, shipping costs from the shipping rules marked Show on Website.
+    Online payment goes through the gateways of the Payments application.
+  image: /modules/e-commerce/fit.webp
+  reads:
+    - Item, Item Group and Item Price
+    - Customer, Contact and Address
+    - Sales Order, Sales Invoice and Delivery Note
+    - Tax Rule and Shipping Rule
+    - Payment Gateway
+  adds:
+    - The Webshop Settings document
+    - The Website Item document
+    - The shop, the cart and the checkout page
+    - The customer portal and its Portal Settings
+  depends:
+    - Dokos (Sales)
+    - Payments for online payment
 
 features:
-  - title: Attract customers with a dynamic product catalog
-    description: Publish and update your products in a few clicks. <br><br>With Dokos, manage your descriptions, prices, images, and specifications from a single place.<br><br> Every product gets its own dedicated page for a clear, professional presentation.</br>
-    image: "image/e-commerce/article-site-web.png"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Catalog
-      color: sky
-  - title: Give your customers a smooth, effortless shopping experience
-    description: Streamline the customer journey with a simplified checkout process. <br><br>The Dokos e-commerce module includes an intuitive shopping cart, letting your customers order your products online with ease.<br><br>Track orders in real time with secure payment options.</br>
-    image: "image/e-commerce/parametre-e-commerce.webp"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Orders
-      color: sky
-  - title: Strengthen customer interaction with our custom forms
-    description: Whether for quote requests, newsletter sign-ups, or specific questions, everything is built directly into Dokos. <br><br>Plus, your customers can log in via their social accounts (Google, Facebook) for fast, secure access.</br>
-    image: "image/e-commerce/article-de-blog.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Forms
-      color: sky
-  - title: Maximize your site's visibility with our SEO tools.
-    description: Create meta tags to improve your search engine ranking, and use our blog management to attract and retain your audience.
-    image: "image/e-commerce/SEO-site-web.webp"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: SEO
-      color: sky
-  - title: Make your site your own
-    description: Build a site that looks like you with Dokos. <br><br>Change the colors, fonts, logos, and overall theme of your online store so it perfectly reflects your brand.</br>
-    video: "/image/e-commerce/site-web-dokos.mp4"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Site
-      color: sky
+  - title: Publish your catalogue
+    description: >-
+      You publish an item from its record, with its images, description and specifications. Item groups
+      structure the shop navigation. Variants (size, colour) are built from the item's attributes.
+    image: /modules/e-commerce/feature-catalogue.webp
+    badge: Catalogue
+  - title: Take website orders
+    description: >-
+      The customer fills the cart and checks out. Dokos records the Sales Order, applies the cart's tax rule
+      and offers the published shipping methods. The customer finds the order history on their portal.
+    badge: Orders
+  - title: Offer online payment
+    description: >-
+      You enable checkout in the Webshop Settings and set the payment success URL. The PayPal, Stripe,
+      HelloAsso, GoCardless and Stancer gateways are built in. The customer pays by card, by direct debit
+      or by bank transfer.
+    badge: Payment
+  - title: Open a portal for your customers
+    description: >-
+      From the login page, a customer or a supplier creates an account and receives the password by e-mail.
+      They see the status of their orders, invoices and shipments. The status is updated when the invoice
+      and the payment are submitted. In the Portal Settings, you choose the visible documents, their route and the allowed role.
+    badge: Customer portal
+  - title: Adapt the cart to your terms of sale
+    description: >-
+      In the Cart tab of the Webshop Settings, you add web blocks to the cart or to the checkout page,
+      for example a link to your terms of sale or a checkbox. You also customise the address form by adding fields
+      or changing their labels.
+    image: /modules/e-commerce/feature-personnalisation.webp
+    badge: Customisation
 
+install:
+  steps:
+    - title: From the Dokos Cloud marketplace
+      description: >-
+        In your Dokos Cloud dashboard, open the marketplace and install Webshop on your site.
+        The application is included in every plan.
+    - title: Self-hosted
+      description: "<code>bench get-app https://gitlab.com/dokos/webshop</code> then <code>bench --site your-site install-app webshop</code>."
+    - title: Publish a first item
+      description: >-
+        Open an item record, click Publish Item, then set the Webshop Settings
+        (price list, cart tax rule, shipping methods, checkout).
+  prerequisites:
+    - A Dokos V5 site
+    - The Payments application and an account with a gateway for online payment
 
-plus_button:
-  label: Discover all our features
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: green
-  to: /en/features/e-commerce
+faq:
+  items:
+    - label: Do website orders go into my accounts?
+      content: >-
+        An online order creates a Sales Order in Dokos. You invoice it like an order entered at the office.
+        For subscriptions, invoices are generated automatically and can be paid online.
+    - label: Which payment methods can I offer?
+      content: >-
+        The PayPal, Stripe, HelloAsso, GoCardless and Stancer gateways are built in. The customer pays by card,
+        by direct debit or by bank transfer, with or without a gateway.
+    - label: Can my customers book a room from the shop?
+      content: >-
+        Resource booking from the e-commerce site is deprecated in V5 and will be removed in a later version.
+        For a new project, use the portal of the [Resource bookings](/en/modules/reservations-de-ressources) application.
+    - label: Can I sell for several companies on the same site?
+      content: >-
+        Yes, with the multi-venue mode of the Venue Settings (Bookings application). Each allowed company has its price list
+        and its cart. The visitor chooses the company at the bottom of the shop.
+    - label: How do I add pages to my website?
+      content: >-
+        The About page and the contact form are set in the website settings. Requests from the contact form
+        are recorded as Communication. For a home page, use Website > Web Page or the Builder application.
 
 bottom_cta:
-  title: "Grow your business right now with Dokos: don't let your sales wait!"
-  description: "Boost your sales with an all-in-one solution that gives you full control. Get rid of technical worries and focus on what matters most: your customers."
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Ask us your questions about Webshop.
+  description: Tell us what you sell and to whom, and we will tell you how to publish it from Dokos.
   links:
-    - label: Get started now
-      to: https://cloud.dokos.io
-      size: sm
-      color: yellow
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

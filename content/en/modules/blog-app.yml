@@ -1,0 +1,96 @@
+# English version of content/fr/modules/blog-app.yml (sources and screenshot notes are there).
+
+title: Blog
+description: Publish posts on your Dokos site, by author and by category, with comments and an RSS feed.
+icon: i-heroicons-newspaper
+application: Blog
+theme: site-web-outils-numeriques
+author: Frappe Technologies and contributors
+navigation:
+  title: Blog
+  icon: i-heroicons-newspaper
+  description: Posts, authors and categories on your website.
+
+publisher: frappe
+licence: MIT
+version: v5
+marketplace: blog
+related: [builder, newsletter, wiki, crm]
+
+hero:
+  title: Your news, <span class="text-primary">published</span> on your Dokos site.
+  description: You write a post in Markdown or rich text, link it to an author and a category, and publish it on the date you choose. The post appears on your site and in your RSS feed.
+
+for_whom:
+  items:
+    - title: You publish your news in a tool separate from your site
+      description: Posts live on your Dokos site, next to your pages. Each author writes with their own user account.
+      icon: i-heroicons-pencil-square
+    - title: Several people write for your company
+      description: Each author has a Blogger record, with their bio and photo. A post carries its author and category.
+      icon: i-heroicons-users
+    - title: You want your posts to be found
+      description: You fill in the title, description and sharing image, then check the Google preview before publishing.
+      icon: i-heroicons-magnifying-glass
+
+fit:
+  description: The application adds a <strong>Blog</strong> workspace to your site, with posts, authors and categories. An author is a user of your site linked to a Blogger record. Published posts are served by Dodock's website at /blog and included in the RSS feed.
+  reads:
+    - User, linked to each Blogger record
+    - Your Dodock instance's website, which serves the post pages
+  adds:
+    - The "Blog Post", "Blog Category", "Blogger" and "Blog Settings" DocTypes
+    - A "Blog" workspace in the desk
+    - The public blog pages and the RSS feed
+    - Comments and likes on posts
+  depends:
+    - Dodock
+
+features:
+  - title: Write the post
+    description: You enter the title and the introduction, then the content in Markdown, rich text or HTML. You choose the author and the category. The reading time is calculated for you.
+    badge: Writing
+  - title: Prepare search and sharing
+    description: You fill in the title and description for search engines, and the image shown when the post is shared. The Google preview shows the result before publishing. You can mark a post as featured.
+    badge: Search
+  - title: Publish and categorise
+    description: You tick "published" and set the publication date. The post joins the blog page, its category and the RSS feed. Readers browse posts by category if you allow it in the settings.
+    badge: Publishing
+  - title: Set how readers can respond
+    description: In Blog Settings, you allow visitor comments, limit their number and the number of likes, turn on social sharing and show a call to action at the end of each post. Each post can turn off its comments or likes.
+    badge: Settings
+
+install:
+  steps:
+    - title: From the Dokos Cloud marketplace
+      description: In your Dokos Cloud dashboard, open the marketplace and install "Blog" on your site. The application is included in every plan.
+    - title: Self-hosted
+      description: "<code>bench get-app https://github.com/frappe/blog</code> then <code>bench --site your-site install-app blog</code>."
+    - title: Create your first post
+      description: Open the Blog workspace, create your Blogger record and a category, then write the post and publish it.
+
+faq:
+  items:
+    - label: Who can write a post?
+      content: A user of your site linked to a Blogger record. The record holds their name, bio and photo, shown with their posts.
+    - label: Can visitors comment?
+      content: Yes, if you allow it in Blog Settings. You can limit the number of comments and turn off comments on a given post.
+    - label: Are my posts available as RSS?
+      content: Yes. The application publishes an RSS feed of published posts.
+    - label: Can I tell my readers about a new post?
+      content: A post has an e-mail notification option. For a newsletter, use the Newsletter application on the same site.
+
+bottom_cta:
+  title: Ask us your questions about Blog.
+  description: Tell us what you want to publish.
+  links:
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

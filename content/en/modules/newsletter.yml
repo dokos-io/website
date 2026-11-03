@@ -1,0 +1,99 @@
+# English version of content/fr/modules/newsletter.yml (sources and screenshot notes are there).
+
+title: Newsletter
+description: Send a newsletter to the e-mail groups of your Dokos site, schedule the sending and follow the views.
+icon: i-heroicons-envelope
+application: Newsletter
+theme: site-web-outils-numeriques
+author: Frappe Technologies and contributors
+navigation:
+  title: Newsletter
+  icon: i-heroicons-envelope
+  description: Bulk e-mails to your contact groups.
+
+publisher: frappe
+licence: AGPLv3
+version: v5
+marketplace: newsletter
+related: [crm, ventes, blog-app, builder]
+
+hero:
+  title: Your newsletter, <span class="text-primary">sent</span> from your Dokos site.
+  description: You write the message, choose the recipient groups and send, right away or at the planned date. Unsubscribes are applied from the next sending.
+
+for_whom:
+  items:
+    - title: You copy your contacts into an external mailing tool
+      description: Your contacts, leads and customers are already in Dokos. You import them into an e-mail group and send from the same site.
+      icon: i-heroicons-users
+    - title: You tell your customers about something new or a closure
+      description: You write the message in the editor, attach the document and send it to the relevant group.
+      icon: i-heroicons-megaphone
+    - title: You prepare your sendings in advance
+      description: You set the date and time. The sending goes out without you, and you receive a test e-mail first to check how it looks.
+      icon: i-heroicons-clock
+
+fit:
+  description: The application adds the <strong>Newsletter</strong> document to your site. It goes to Dodock's <strong>E-mail Groups</strong>, into which you import the addresses of your contacts, leads or customers. Sendings go through your site's e-mail accounts. A person who unsubscribes is recorded in the unsubscribe list and no longer receives the following sendings.
+  reads:
+    - E-mail Group and its members, imported from Contact, Lead or Customer
+    - Your site's e-mail account, for sending
+    - Email Unsubscribe, to leave out the removed addresses
+    - UTM Campaign, to link the sending to a campaign
+  adds:
+    - The "Newsletter" DocType, with its recipient groups and attachments
+    - A web page for each published newsletter
+    - The /unsubscribe page
+  depends:
+    - Dodock
+
+features:
+  - title: Write the message
+    description: You write the message in rich text, Markdown or HTML. You set the sender's name and address, and you add attachments. A button checks for broken links before sending.
+    badge: Writing
+  - title: Choose the recipients
+    description: You select one or more e-mail groups. Unsubscribed addresses are removed from the list automatically. The unsubscribe link is added at the bottom of the message if you tick the option.
+    badge: Recipients
+  - title: Test, then send or schedule
+    description: You first send a test e-mail to your own address. You then send right away, or tick "schedule sending" with a date and time. The application feeds your site's e-mail queue.
+    badge: Sending
+  - title: Follow the sending and publish the web version
+    description: Once the sending has gone out, the document shows the number of recipients and the number of views. If you publish the newsletter, it becomes a page of your site, and the message can contain the link to this web version.
+    badge: Tracking
+
+install:
+  steps:
+    - title: From the Dokos Cloud marketplace
+      description: In your Dokos Cloud dashboard, open the marketplace and install "Newsletter" on your site. The application is included in every plan.
+    - title: Self-hosted
+      description: "<code>bench get-app https://github.com/frappe/newsletter</code> then <code>bench --site your-site install-app newsletter</code>."
+    - title: Prepare an e-mail group
+      description: Create an E-mail Group and import the addresses of your contacts, leads or customers. Your first newsletter goes to this group.
+  prerequisites:
+    - An outgoing e-mail account set up on your site
+
+faq:
+  items:
+    - label: Where do the recipients come from?
+      content: From your site's E-mail Groups. You import addresses into them from your Contacts, Leads or Customers, or you add them by hand.
+    - label: What happens when someone unsubscribes?
+      content: They click the unsubscribe link in the message. Their address is recorded in the unsubscribe list and removed from the following sendings, for this newsletter or for all sendings, as they choose.
+    - label: Can I see who opened the message?
+      content: The document shows the total number of recipients and the total number of views after sending.
+    - label: Can I send the same newsletter twice?
+      content: No. A sent newsletter is marked as sent. You duplicate it for a new sending.
+
+bottom_cta:
+  title: Ask us your questions about Newsletter.
+  description: Tell us who you write to.
+  links:
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

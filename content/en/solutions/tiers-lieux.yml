@@ -1,0 +1,132 @@
+title: Dokos for third places and coworking spaces
+description: Resource bookings, contracts, subscriptions, memberships and online payment, invoiced in your Dokos accounts.
+
+hero:
+  headline:
+    label: Third places and coworking spaces
+    icon: i-heroicons-building-office-2
+  title: Your spaces <span class="text-primary">booked online</span>, your members invoiced in Dokos.
+  description: Your members book a room, a desk or a machine from the portal. They pay online, with their credits or their subscription. Dokos creates the invoices, contracts and subscriptions in your accounts.
+  links:
+    - label: Try Dokos
+      to: https://cloud.dokos.io
+      target: _blank
+      size: xl
+      color: primary
+      icon: i-heroicons-rocket-launch
+    - label: Documentation (in French)
+      to: https://doc.dokos.io/v5/dokos/lieu
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline
+
+logos:
+  title: They take part in developing Dokos
+  images:
+    - /image/tiers-lieux/anis.png
+    - /image/tiers-lieux/baraka.jpg
+    - /image/tiers-lieux/compagnie_tiers_lieux.svg
+    - /image/tiers-lieux/coroutine.png
+    - /image/tiers-lieux/Ecocentre_logo.png
+    - /image/tiers-lieux/logo_bil.png
+    - /image/tiers-lieux/logo_tropisme.png
+    - /image/tiers-lieux/logo-appel-a-commun-des-tiers-lieux.png
+    - /image/tiers-lieux/logo-fabrique-a-commun.png
+    - /image/tiers-lieux/logo-la-plume-a-loup.jpg
+    - /image/tiers-lieux/opteos.png
+
+colored_section:
+  title: Built with third places since 2018
+  description: "The project started in 2018 with the Compagnie des Tiers-Lieux, first on ERPNext, before it became Dokos. Third places built the tool with us and funded new features. The discussion continues on the Dokos community forum, open to everyone."
+  image: /image/dokos-communaute.webp
+  align: left
+
+sections:
+  - title: Your resources booked from the portal
+    description: Each room, desk or machine becomes a bookable resource, with its prices per hour, half-day, day or month, its opening calendar and its minimum notice. The customer picks a slot on the portal. The booking is confirmed after the order, or after payment if you require it.
+    image: /solutions/reservations.webp
+    align: right
+    features:
+      - title: Booking credits
+        description: A ticket or a subscription allocates credits, used up at each booking. A report shows the balances.
+        icon: i-heroicons-ticket
+      - title: Google Calendar synchronisation
+        description: Each resource is linked to its calendar, and an option synchronises online bookings.
+        icon: i-heroicons-calendar-days
+      - title: Several venues on one site
+        description: In multi-venue mode, each company has its own price list and cart.
+        icon: i-heroicons-map-pin
+    links:
+      - label: Resource bookings
+        to: /en/modules/reservations-de-ressources
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Contracts and subscriptions for your residents
+    description: For a dedicated desk or a business address, you send the contract to the customer, who signs it in one click on their portal. The active contract creates the sales order, the subscription and the deposit. The subscription creates its invoices each period and triggers payment if the customer has saved a payment method.
+    image: /solutions/abonnement.webp
+    align: left
+    links:
+      - label: The Sales module
+        to: /en/modules/ventes
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Online payment
+    description: You send a payment link from an order or an invoice. Your customer pays by card or by SEPA direct debit, and the request's status updates in Dokos. Stripe, GoCardless, Stancer, HelloAsso, SumUp and PayPal gateways are available. With Stripe or GoCardless, the payment method is kept for the subscription's instalments.
+    image: /modules/paiements/hero.webp
+    align: right
+    links:
+      - label: The Payments module
+        to: /en/modules/paiements
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Your members and their fees
+    description: With Tribu, members sign up and pay in a web form. Tribu creates their record, their membership and the sales invoice. The donations module records one-off contributions. Payments received are reconciled in the bank module.
+    image: /modules/comptabilite/hero.webp
+    align: left
+    links:
+      - label: Tribu
+        to: /en/modules/tribu
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Your website and your shop
+    description: You build your site's pages in the Frappe Builder visual editor and publish them in one click. With Webshop, your items are published on the site, an online order becomes a sales order, and your customers find their orders and invoices on their portal.
+    image: /modules/builder/hero.webp
+    align: right
+    links:
+      - label: Frappe Builder
+        to: /en/modules/builder
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+      - label: Webshop
+        to: /en/modules/e-commerce
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+cta:
+  title: Tell us about your venue.
+  description: Open source publisher and Frappe and ERPNext experts, we build and stand behind your business applications. Create a trial site on Dokos Cloud, or write to us about your spaces and your members.
+  links:
+    - label: Try Dokos
+      to: https://cloud.dokos.io
+      target: _blank
+      size: xl
+      color: primary
+      icon: i-heroicons-rocket-launch
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: neutral
+      variant: outline

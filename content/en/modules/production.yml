@@ -1,117 +1,116 @@
-navigation:
-    title: Production
-    icon: i-fluent-manufacturer-24-regular
-    description: Manufacturing planning and production tracking.
+# English version of content/fr/modules/production.yml (sources and screenshot notes are there).
 
-title: Production
+navigation:
+  title: Manufacturing
+  icon: i-fluent-manufacturer-24-regular
+  description: Bills of materials, work orders and job cards.
+
+title: Manufacturing
+description: Describes your products in bills of materials, starts work orders and calculates the actual cost of each batch produced.
 icon: i-fluent-manufacturer-24-regular
-description: Run your production with precision, for maximum efficiency.
 application: Dokos
 theme: achats-stocks-production
-author: Frappe Technologies & Contributors
+author: Frappe Technologies, Dokos & Contributors
+
+publisher: dokos
+licence: GPLv3
+version: v5
+marketplace: erpnext
+docs: https://doc.dokos.io/v5/dokos/production
+related: [stocks, achats, qualite, ventes]
 
 hero:
-  title: Run your <span class="text-primary">production</span> with precision, for maximum efficiency.
-  description: With Dokos, simplify your production operations, save valuable time, and maintain consistent quality at every step.
-  links:
-    - label: Get started
-      to: https://cloud.dokos.io
-      size: sm
-      color: amber
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-  headline:
-    label: The Dokos ecosystem
-    color: sky
-    to: "/en"
-    right_icon: i-heroicons-arrow-right-20-solid
+  title: Your <span class="text-primary">work orders</span>, from the bill of materials to the finished product in stock.
+  description: You describe what your products are made of in a bill of materials, you start work orders, and your operators enter their time on job cards. Dokos reserves the components, records the material transfers and compares the actual cost with the planned cost.
+  image: /modules/production/hero.webp
+
+for_whom:
+  items:
+    - title: You make to stock and restart production from a threshold
+      description: The production plan groups your forecasts and your reorder levels, then creates the work orders and the material requests for missing components.
+      icon: i-heroicons-cube
+    - title: You make to order
+      description: You create a production plan directly from a sales order. The work orders take the source warehouse set in the plan.
+      icon: i-heroicons-clipboard-document-check
+    - title: You assemble sub-assemblies on several levels
+      description: A bill of materials can contain other bills of materials. The update tool passes a change to a sub-assembly on to the parent bills of materials.
+      icon: i-heroicons-squares-2x2
+    - title: You want to know the actual cost of a batch
+      description: The time entered on job cards, multiplied by the workstations' hourly costs, is added to the cost of the materials consumed.
+      icon: i-heroicons-calculator
+
+fit:
+  description: "The Manufacturing module is part of Dokos. It reads your items and warehouses, and writes stock entries at each step: <strong>Material Transfer for Manufacture</strong> to the work-in-progress warehouse, then <strong>Manufacture</strong> to the finished goods warehouse. Missing components become material requests."
+  image: /modules/production/fit.webp
+  reads:
+    - Item, Warehouse and Unit of Measure
+    - Sales Order and Master Production Schedule (MPS), to feed the production plan
+    - Material Request and Purchase Receipt, for missing components
+    - Stock Entry, for material transfers and manufacture
+    - Quality Inspection, required on a job card when the item asks for it
+  adds:
+    - The BOM, Routing, Operation and Workstation documents
+    - The Production Plan, Work Order, Job Card and Downtime Entry documents
+    - The Plant Floor, the operators' screen
+    - The Work Order Summary report and the BOM stock analysis report
+    - Manufacturing Settings (default warehouses, planning rules)
+  depends:
+    - Stock
 
 features:
-  - title: Optimize your production
-    description: Gain visibility and control over your production processes. <br><br>With Dokos, quickly define the components you need and manage a smooth, error-free workflow. <br><br>The software's flexibility also lets you handle different product variants, adapting bills of materials and their costs to each version.</br>
-    image: "image/production/Nomenclature.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Item management and bill of materials
-      color: sky
-  - title: Plan production more efficiently
-    description: Plan your production runs with confidence. <br><br>Anticipate demand and support sustainable production practices for greater peace of mind.<br><br> Avoid surpluses and shortages while following responsible, sustainable production practices.</br>
-    image: "image/production/plannification_production.png"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Production requests and planning
-      color: sky
-  - title: Stay informed in real time
-    description: Tracking production operations is simplified with a live dashboard that gives you a complete view of the progress of every work order.<br><br> You can log time spent at each production step, which helps you maximize the efficiency of your processes and spot areas for improvement.</br>
-    video: "/image/production/tableau-de-bord-production.mp4"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Production tracking
-      color: sky
-  - title: Ensure quality at every step
-    description: Quality is at the core of our approach. <br><br>Dokos builds in quality checks at every production phase, so you can guarantee compliant products. <br><br>With built-in controls and detailed reports, earn your customers' trust by delivering compliant products every time.</br>
-    image: "image/production/qualite.webp"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Quality control
-      color: sky
-  - title: Optimize your stock management
-    description: Benefit from real-time tracking of raw material and finished goods levels. <br><br>You can organize your stock efficiently and optimize movements between warehouses. <br><br>You can also evaluate production costs by factoring in raw materials, labor, and overhead, supporting informed, responsible budget management.</br>
-    image: "image/stock/quatre-tableau-de-bord-stock.svg"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: Stock management
-      color: sky
-  - title: Make informed decisions
-    description: Generate custom reports with Dokos to make decisions based on accurate data.<br><br> By analyzing trends, you identify opportunities for improvement to stay competitive in your market.</br>
-    image: "image/production/tableau-de-bord-production-image-1800.svg"
-    image_bg_color: "bg-teal-500"
-    align: right
-    badge:
-      label: Reports
-      color: sky
-  - title: An ethical, transparent solution for optimized production.
-    description: By choosing Dokos, you join a committed community that shares your values. <br><br>Enjoy an innovative open source solution designed to guarantee transparency, performance, and ethics in your production management.</br>
-    image: "image/dokos-communaute.webp"
-    image_bg_color: "bg-teal-500"
-    align: left
-    badge:
-      label: An ethical choice
-      color: sky
+  - title: Describe your products in a bill of materials
+    description: You list the purchased components and the manufactured sub-assemblies, with their quantities. If a routing is attached, each component is linked to the operation that consumes it. The BOM cost section adds up the cost of the components and the cost of the operations. A submitted bill of materials is locked. A new version gets an incremented number, and only one bill of materials per item has the Active status.
+    image: /modules/production/feature-nomenclature.webp
+    badge: Bill of materials
+  - title: Plan the quantities to produce
+    description: The production plan groups sales orders, MPS forecasts and reorder levels. You can also create it directly from a sales order. Dokos works out the work orders to start and the material requests for missing components.
+    badge: Production plan
+  - title: Start a work order and track the materials
+    description: When the work order is submitted, Dokos reserves the raw materials in their source warehouses. The transfer button creates a stock entry to the workshop, and partial transfers add up. At the end of production, a Manufacture entry moves the finished products to the target warehouse. If you stop an order, the materials already transferred go back to stock.
+    image: /modules/production/feature-ordre.webp
+    badge: Work order
+  - title: Your operators enter their time on a job card
+    description: Each operation of the bill of materials generates a job card, assigned to a workstation. The operator opens the Plant Floor, records their time and confirms their quantity. When they click Complete, they split the total between completed quantity, pending quantity and process loss. Each submitted job card updates the progress and the actual cost of the order.
+    image: /modules/production/feature-carte.webp
+    badge: Job card
+  - title: Set the hourly costs of your workstations
+    description: "A workstation carries four hourly costs: labour, electricity, rent and consumables. A workstation type (manual or machine) applies these costs to all its workstations. A working hours calendar and a holiday list are used to check availability during planning. The Plant Floor shows each workstation as available or busy."
+    badge: Workstation
 
+install:
+  description: The Manufacturing module is part of Dokos. There is no separate application to install.
+  steps:
+    - title: On Dokos Cloud
+      description: The module is on your site from the day it is created, in every plan. Open the Manufacturing workspace from the home page.
+    - title: Self-hosted
+      description: "Install Dokos: <code>bench get-app https://gitlab.com/dokos/dokos</code> then <code>bench --site your-site install-app erpnext</code>."
+    - title: First settings
+      description: Enter the default warehouses in Manufacturing Settings, create your workstations and operations, then your first bills of materials.
+  prerequisites:
+    - Your items and warehouses are created in the Stock module
 
-plus_button:
-  label: Discover all our features
-  icon: i-heroicons-outline-plus-circle
-  size: lg
-  color: sky
-  to: /en/features/production
+faq:
+  items:
+    - label: How does Dokos calculate the cost of a work order?
+      content: The bill of materials gives the planned cost. The actual cost adds up the materials consumed and the time entered on job cards, multiplied by each workstation's hourly costs. The work order shows both values.
+    - label: Are the quantities consumed theoretical or actual?
+      content: The bill of materials field that sets how components are consumed chooses between the theoretical quantities of the bill of materials and the quantities actually transferred by stock entries. If it is empty, the global setting in Manufacturing Settings applies.
+    - label: Can I check quality during manufacturing?
+      content: Yes. A quality check can be set on each operation of a bill of materials. The job card then cannot be submitted before a quality inspection has been done.
+    - label: How do I create a variant of an existing product?
+      content: Duplicate the existing bill of materials from its form and adjust the components. A finished product can also be marked as a phantom item in the BOM creator.
 
 bottom_cta:
-  title: Transform your production management with Dokos today.
-  class: "bg-amber-600/10 dark:bg-amber-800/10"
+  title: Ask us your questions about the Manufacturing module.
+  description: Tell us what you make and how your workshops work today.
   links:
-    - label: Get started
-      to: https://cloud.dokos.io
-      size: sm
-      color: sky
-      variant: solid
-      icon: i-heroicons-rocket-launch
-    - label: Documentation
-      to: https://doc.dokos.io
-      size: sm
-      variant: ghost
-      color: gray
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: See the marketplace
+      to: https://cloud.dokos.io/marketplace
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

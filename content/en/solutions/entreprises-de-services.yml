@@ -1,0 +1,119 @@
+title: Dokos for service companies
+description: Projects, time spent, invoicing and accounting in the same management software, with the margin of each project.
+
+hero:
+  headline:
+    label: Service companies
+    icon: i-heroicons-briefcase
+  title: From time spent to invoice, <span class="text-primary">the margin of each project</span>.
+  description: You sell services, at a fixed price or on time spent. Your team records its hours on the project's tasks. Dokos creates the invoice from the timesheet and compares the sales amount with the project's cost.
+  links:
+    - label: Try Dokos
+      to: https://cloud.dokos.io
+      target: _blank
+      size: xl
+      color: primary
+      icon: i-heroicons-rocket-launch
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: neutral
+      variant: outline
+
+colored_section:
+  title: Your projects as tasks, on a board
+  description: "A project is linked to a sales order and split into tasks. Each task has a status and a priority, and a dependent task cannot be completed before the task it depends on. You follow progress in the list, the Gantt chart or the kanban board. Dokos v5 runs on Frappe and ERPNext v16, and its code is published under GPLv3."
+  image: /modules/projets/feature-taches.webp
+  align: left
+
+sections:
+  - title: Time spent becomes an invoice
+    description: A timesheet records, line by line, the hours, the activity type, the project and the task. The billable lines, multiplied by the billing rate, give the amount to invoice. From the submitted timesheet, you create the sales invoice.
+    image: /modules/ventes/feature-facture.webp
+    align: right
+    features:
+      - title: Project templates
+        description: A template's tasks are created and dated from their duration, skipping the company's holidays.
+        icon: i-heroicons-document-duplicate
+      - title: Your customers kept informed
+        description: You open the project to your customer on the portal and send them its progress at the frequency you choose.
+        icon: i-heroicons-user-group
+    links:
+      - label: The Projects module
+        to: /en/modules/projets
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: The margin of each project
+    description: The project adds up the costs of timesheets, expense claims and purchases. It compares them with the sales amount and shows the gross margin.
+    image: /modules/comptabilite/fit.webp
+    align: left
+  - title: From quotation to payment
+    description: You create the quotation from the customer record. The sales order takes over the accepted quotation, and the invoice takes over the order. A subscription creates its invoices each period. Invoices sent by e-mail carry a payment link.
+    image: /modules/ventes/feature-devis.webp
+    align: right
+    links:
+      - label: The Sales module
+        to: /en/modules/ventes
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Your accounts follow from your invoices
+    description: Each submitted sales or purchase invoice posts its entry to the general ledger. The balance sheet and the profit and loss statement come out with no re-keying. The Bank module imports your statements and suggests matches with your payments. Dokos already receives CII, Factur-X and UBL supplier e-invoices from an approved platform, and sending is in progress.
+    image: /modules/comptabilite/hero.webp
+    align: left
+    links:
+      - label: The Accounting module
+        to: /en/modules/comptabilite
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Your team's leave and expense claims
+    description: Employees request leave or enter their expenses from the mobile app, and their manager approves. The leave allocation is calculated from the employment contract. Each submitted expense claim creates its accounting entry.
+    image: /solutions/notes-de-frais.webp
+    align: right
+    links:
+      - label: The Human Resources module
+        to: /en/modules/ressources-humaines
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Connect your other tools
+    description: A webhook notifies an external tool when a document is created, changed or submitted. Each user generates an API key, with the same permissions as in the interface. The agent of your choice connects to your site over MCP, and every write still needs your confirmation.
+    image: /modules/integrations/hero.webp
+    align: left
+    links:
+      - label: Integrations
+        to: /en/modules/integrations
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+carousel:
+  - title: Customer support as tickets
+    description: With Helpdesk, each e-mail received becomes a ticket, with response times by priority and a portal where the customer follows their request.
+  - title: Permissions by role
+    description: You can limit a user to certain documents, for example those of a single company.
+  - title: Open code
+    description: The Dokos code is published under GPLv3. You add fields and approval workflows from the interface.
+
+cta:
+  title: Tell us how your team sells and invoices.
+  description: Open source publisher and Frappe and ERPNext experts, we build and stand behind your business applications. Create a trial site on Dokos Cloud, or write to us.
+  links:
+    - label: Try Dokos
+      to: https://cloud.dokos.io
+      target: _blank
+      size: xl
+      color: primary
+      icon: i-heroicons-rocket-launch
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: neutral
+      variant: outline
