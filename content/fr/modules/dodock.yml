@@ -117,7 +117,7 @@ features:
 install:
   steps:
     - title: Sur Dokos Cloud
-      description: Dodock est installé sur chaque site Dokos Cloud. Il n'y a rien à faire. Compris dans toutes les formules.
+      description: Dodock est installé sur chaque site Dokos Cloud. Il n'y a rien à faire, Dodock est le socle de Dokos.
     - title: En auto-hébergement
       description: "Créez votre bench avec <code>bench init --frappe-path https://gitlab.com/dokos/dodock --frappe-branch v5 votre-bench</code>, puis suivez le guide d'installation de la documentation, en mode standard ou Docker."
     - title: Pour développer une application

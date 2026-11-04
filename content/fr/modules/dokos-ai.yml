@@ -111,7 +111,7 @@ features:
 install:
   steps:
     - title: Depuis la marketplace Dokos Cloud
-      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Dokos AI sur votre site. L'application est comprise dans toutes les formules.
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Dokos AI sur votre site. Elle s'installe sans abonnement à part. Le prix de votre formule dépend des ressources du serveur (voir les <a href="/fr/tarifs">tarifs</a>).
     - title: En auto-hébergement
       description: "<code>bench get-app --branch v5 https://gitlab.com/dokos/dokos-ai</code> puis <code>bench --site votre-site install-app dokos_ai</code>."
     - title: Activez l'IA

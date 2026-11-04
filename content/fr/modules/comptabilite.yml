@@ -128,7 +128,7 @@ install:
   description: Le module Comptabilité fait partie de Dokos. Il n'y a rien à installer en plus.
   steps:
     - title: Sur Dokos Cloud
-      description: Créez votre site depuis votre tableau de bord Dokos Cloud. Dokos est installé avec le module Comptabilité. Compris dans toutes les formules.
+      description: Créez votre site depuis votre tableau de bord Dokos Cloud. Le module Comptabilité fait partie de Dokos, installé avec lui sur votre site.
     - title: En auto-hébergement
       description: "<code>bench get-app --branch v5 https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>, sur un bench Dodock v5."
     - title: Pour la facturation électronique

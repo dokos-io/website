@@ -76,7 +76,7 @@ install:
   description: The Quality module is part of Dokos. There is no separate application to install.
   steps:
     - title: On Dokos Cloud
-      description: The module is on your site from the day it is created, in every plan. Open Home > Quality.
+      description: The module is part of Dokos. It is on your site from the day it is created. Open Home > Quality.
     - title: Self-hosted
       description: "Install Dokos: <code>bench get-app https://gitlab.com/dokos/dokos</code> then <code>bench --site your-site install-app erpnext</code>."
     - title: First settings

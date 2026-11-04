@@ -69,7 +69,7 @@ features:
 install:
   steps:
     - title: From the Dokos Cloud marketplace
-      description: In your Dokos Cloud dashboard, open the marketplace and install "Frappe Learning" on your site. The application is included in every plan.
+      description: In your Dokos Cloud dashboard, open the marketplace and install "Frappe Learning" on your site. It needs no separate subscription.
     - title: Self-hosted
       description: "<code>bench get-app https://github.com/frappe/lms</code> then <code>bench --site your-site install-app lms</code>. The Payments application must be installed on the bench first."
     - title: Open your first course

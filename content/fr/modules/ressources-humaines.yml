@@ -101,7 +101,7 @@ features:
 install:
   steps:
     - title: Depuis la marketplace Dokos Cloud
-      description: Dokos HR est installée par défaut sur les sites Dokos Cloud et dans les images Docker. Si elle manque sur votre site, ouvrez la marketplace depuis votre tableau de bord Dokos Cloud et installez-la. Comprise dans toutes les formules.
+      description: Dokos HR est installée par défaut sur les sites Dokos Cloud et dans les images Docker. Si elle manque sur votre site, ouvrez la marketplace depuis votre tableau de bord Dokos Cloud et installez-la. Elle s'installe sans abonnement à part.
     - title: En auto-hébergement
       description: "<code>bench get-app https://gitlab.com/dokos/hrms</code> puis <code>bench --site votre-site install-app hrms</code>."
     - title: Premier paramétrage

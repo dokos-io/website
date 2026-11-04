@@ -84,7 +84,7 @@ features:
 install:
   steps:
     - title: From the Dokos Cloud marketplace
-      description: Dokos HR is installed by default on Dokos Cloud sites and in the Docker images. If it is missing on your site, open the marketplace from your Dokos Cloud dashboard and install it. Included in every plan.
+      description: Dokos HR is installed by default on Dokos Cloud sites and in the Docker images. If it is missing on your site, open the marketplace from your Dokos Cloud dashboard and install it. It needs no separate subscription.
     - title: Self-hosted
       description: "<code>bench get-app https://gitlab.com/dokos/hrms</code> then <code>bench --site your-site install-app hrms</code>."
     - title: First setup

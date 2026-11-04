@@ -99,7 +99,7 @@ install:
     - title: From the Dokos Cloud marketplace
       description: >-
         In your Dokos Cloud dashboard, open the marketplace and install CRM on your site.
-        The application is included in every plan.
+        It needs no separate subscription. The price of your plan depends on server resources (see <a href="/en/tarifs">pricing</a>).
     - title: Self-hosted
       description: "<code>bench get-app https://github.com/frappe/crm</code> then <code>bench --site your-site install-app crm</code>."
     - title: Enable the Dokos integration

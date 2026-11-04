@@ -125,7 +125,7 @@ install:
     - title: Depuis la marketplace Dokos Cloud
       description: >-
         Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Bookings sur votre site.
-        L'application est comprise dans toutes les formules.
+        La marketplace ne demande pas d'abonnement pour Bookings ; votre formule est calculée sur les ressources du serveur (voir les <a href="/fr/tarifs">tarifs</a>).
     - title: En auto-hébergement
       description: "Installez d'abord Payments, Webshop et Blog, puis <code>bench get-app https://gitlab.com/dokos/bookings --branch v5</code> et <code>bench --site votre-site install-app bookings</code>."
     - title: Réglez les Paramètres de réservation de ressources

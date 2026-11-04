@@ -71,7 +71,7 @@ features:
 install:
   steps:
     - title: From the Dokos Cloud marketplace
-      description: In your Dokos Cloud dashboard, open the marketplace and install Telephony on your site. The application is included in every plan.
+      description: In your Dokos Cloud dashboard, open the marketplace and install Telephony on your site. It needs no separate subscription.
     - title: Self-hosted
       description: "<code>bench get-app https://github.com/frappe/telephony</code> then <code>bench --site your-site install-app telephony</code>."
     - title: Link the provider

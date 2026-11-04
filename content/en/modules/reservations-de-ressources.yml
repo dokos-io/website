@@ -108,7 +108,7 @@ install:
     - title: From the Dokos Cloud marketplace
       description: >-
         In your Dokos Cloud dashboard, open the marketplace and install Bookings on your site.
-        The application is included in every plan.
+        The marketplace asks no subscription for Bookings; your plan is priced on server resources (see <a href="/en/tarifs">pricing</a>).
     - title: Self-hosted
       description: "<code>bench get-app https://gitlab.com/dokos/bookings</code> then <code>bench --site your-site install-app bookings</code>."
     - title: Set the Venue Settings

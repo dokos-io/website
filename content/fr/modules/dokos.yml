@@ -122,7 +122,7 @@ features:
 install:
   steps:
     - title: Sur Dokos Cloud
-      description: Créez votre site depuis votre tableau de bord Dokos Cloud. Dokos et Dodock y sont installés. Compris dans toutes les formules.
+      description: Créez votre site depuis votre tableau de bord Dokos Cloud. Dokos et Dodock y sont installés.
     - title: En auto-hébergement
       description: "Sur un bench Dodock de branche v5 : <code>bench get-app --branch v5 https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>. La documentation décrit aussi une installation Docker."
     - title: Puis les applications dont vous avez besoin
@@ -159,8 +159,9 @@ faq:
     - label: Comment installer d'autres applications sur mon site ?
       content: >-
         Depuis la marketplace Dokos Cloud, vous installez une application sur votre site. En auto-hébergement,
-        <code>bench get-app</code> puis <code>bench --site votre-site install-app</code>. Toutes les
-        applications sont comprises dans chaque formule Dokos Cloud.
+        <code>bench get-app</code> puis <code>bench --site votre-site install-app</code>. Les applications
+        de la marketplace s'installent sans abonnement à part ; le prix de votre formule dépend des ressources du
+        serveur (voir les <a href="/fr/tarifs">tarifs</a>). Le module Certification Caisse demande une licence, à obtenir auprès de Dokos SAS.
 
 bottom_cta:
   title: Posez-nous vos questions sur Dokos.

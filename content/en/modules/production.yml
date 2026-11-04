@@ -81,7 +81,7 @@ install:
   description: The Manufacturing module is part of Dokos. There is no separate application to install.
   steps:
     - title: On Dokos Cloud
-      description: The module is on your site from the day it is created, in every plan. Open the Manufacturing workspace from the home page.
+      description: The module is part of Dokos. It is on your site from the day it is created. Open the Manufacturing workspace from the home page.
     - title: Self-hosted
       description: "Install Dokos: <code>bench get-app https://gitlab.com/dokos/dokos</code> then <code>bench --site your-site install-app erpnext</code>."
     - title: First settings

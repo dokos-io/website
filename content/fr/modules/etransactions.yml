@@ -38,7 +38,7 @@ licence: AGPLv3
 version: v5
 marketplace: etransactions
 docs: https://doc.dokos.io/v5/integrations/etransaction
-related: [comptabilite, achats, ventes, ocr]
+related: [comptabilite, achats, ventes]
 
 hero:
   title: Vos factures électroniques, <span class="text-primary">reçues et traitées</span> dans Dokos.
@@ -95,7 +95,7 @@ features:
 install:
   steps:
     - title: Depuis la marketplace Dokos Cloud
-      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez eTransactions sur votre site. L'application est comprise dans toutes les formules et fait partie de l'image Docker standard de Dokos.
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez eTransactions sur votre site. Elle s'installe sans abonnement à part et fait partie de l'image Docker standard de Dokos.
     - title: En auto-hébergement
       description: "<code>bench get-app https://gitlab.com/dokos/etransactions</code> puis <code>bench --site votre-site install-app etransactions</code>."
     - title: Obtenez vos identifiants de plateforme

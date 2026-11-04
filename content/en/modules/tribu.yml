@@ -91,7 +91,7 @@ install:
     - title: From the Dokos Cloud marketplace
       description: >-
         In your Dokos Cloud dashboard, open the marketplace and install Tribu on your site.
-        The application is included in every plan.
+        No separate subscription is needed for Tribu.
     - title: Self-hosted
       description: "<code>bench get-app https://gitlab.com/dokos/tribu</code> then <code>bench --site your-site install-app tribu</code> and <code>bench --site your-site migrate</code>."
     - title: Set up a first membership

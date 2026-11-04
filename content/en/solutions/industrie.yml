@@ -22,7 +22,7 @@ hero:
 
 colored_section:
   title: Your production dashboard
-  description: "The Manufacturing module is part of Dokos, included in every Dokos Cloud plan. It reads your items and warehouses, then writes a stock entry at each step: materials transferred to the shop floor, then finished goods made into their warehouse. Dokos v5 runs on Frappe and ERPNext v16, and its code is published under GPLv3."
+  description: "The Manufacturing module is part of Dokos. It reads your items and warehouses, then writes a stock entry at each step: materials transferred to the shop floor, then finished goods made into their warehouse. Dokos v5 runs on Frappe and ERPNext v16, and its code is published under GPLv3."
   image: /modules/production/hero.webp
   align: left
 

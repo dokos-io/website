@@ -93,7 +93,7 @@ features:
 install:
   steps:
     - title: Depuis la marketplace Dokos Cloud
-      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Wiki sur votre site. L'application est comprise dans toutes les formules.
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Wiki sur votre site. La marketplace ne demande pas d'abonnement pour Wiki.
     - title: En auto-hébergement
       description: "<code>bench get-app https://github.com/frappe/wiki --branch version-3</code> puis <code>bench --site votre-site install-app wiki</code>. L'application s'ouvre à l'adresse /wiki-app du site."
     - title: Créez un premier espace

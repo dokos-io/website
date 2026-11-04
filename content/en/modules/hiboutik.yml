@@ -70,7 +70,7 @@ features:
 install:
   steps:
     - title: From the Dokos Cloud marketplace
-      description: In your Dokos Cloud dashboard, open the marketplace and install Hiboutik on your site. The application is included in every plan.
+      description: In your Dokos Cloud dashboard, open the marketplace and install Hiboutik on your site. No separate subscription is needed for the connector.
     - title: Self-hosted
       description: "<code>bench get-app https://gitlab.com/dokos/hiboutik</code> then <code>bench --site your-site install-app hiboutik</code>."
     - title: Link the till

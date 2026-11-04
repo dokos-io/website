@@ -128,6 +128,14 @@ faq:
     - label: Pourquoi facturer au CPU plutôt qu'à l'utilisateur ?
       # source: hostingconditions.md, §6.1 (bascule sur le forfait supérieur)
       content: Le coût d'une instance dépend de ce qu'elle calcule et de ce qu'elle stocke. Vous pouvez donc ouvrir l'outil à toute votre équipe sans changer de formule. Si votre consommation de CPU, de base de données ou de stockage dépasse celle de votre formule, vous passez à la formule supérieure qui correspond à votre consommation.
+    - label: Les applications de la marketplace sont-elles payantes ?
+      # source: marketplace cloud.dokos.io, 30 applications publiées sur 33 fiches, toutes de type d'abonnement « Free » (relevé du 4 novembre 2026) ; hostingconditions.md §6.1
+      content: >-
+        Non. Les applications publiées sur la marketplace de Dokos Cloud n'ont pas d'abonnement à part : vous les
+        installez sur votre site depuis votre tableau de bord. Le prix de votre formule ne dépend pas des applications
+        installées, mais des ressources qu'elles consomment. Une application qui calcule ou stocke beaucoup peut vous
+        faire passer à la formule supérieure. Le module Certification Caisse fait exception : il demande une licence à
+        Dokos SAS, qui porte les clés de signature de chaque société et l'accès au journal de signature externe.
     - label: Les tarifs peuvent-ils augmenter en cours de contrat ?
       content: Une révision est possible en cas d'évolution significative des conditions économiques ou réglementaires. Elle suppose un préavis écrit de soixante jours, et vous pouvez alors résilier sans pénalité en le notifiant dans les trente jours. Sans réponse de votre part, les nouveaux prix s'appliquent à la date indiquée.
     - label: Quel est le préavis de résiliation ?

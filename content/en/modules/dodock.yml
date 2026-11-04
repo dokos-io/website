@@ -99,7 +99,7 @@ features:
 install:
   steps:
     - title: On Dokos Cloud
-      description: Dodock is installed on every Dokos Cloud site. There is nothing to do. Included in every plan.
+      description: Dodock is installed on every Dokos Cloud site. There is nothing to do, Dodock is the base of Dokos.
     - title: Self-hosted
       description: "Create your bench with <code>bench init --frappe-path https://gitlab.com/dokos/dodock your-bench</code>, then follow the installation guide in the documentation."
     - title: To build an application

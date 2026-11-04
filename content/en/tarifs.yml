@@ -123,6 +123,14 @@ faq:
   items:
     - label: Why bill by CPU and not by user?
       content: Because the real cost of an instance depends on what it computes. Per-user billing penalises organisations that open the tool to many people, which is the use we want to encourage. If your consumption stays above your plan, we agree together on moving to the matching tier.
+    - label: Do marketplace apps cost extra?
+      # source: cloud.dokos.io marketplace, 30 published apps out of 33 listings, all with subscription type "Free" (checked 4 November 2026); hostingconditions.md §6.1
+      content: >-
+        No. The apps published on the Dokos Cloud marketplace have no separate subscription: you install them on your
+        site from your dashboard. The price of your plan does not depend on the apps you install but on the resources
+        they use. An app that computes or stores a lot can move you to the next plan up. The Certification Caisse module
+        is the exception: it needs a licence from Dokos SAS, which carries each company's signing keys and access to the
+        external signature journal.
     - label: Can prices increase during the contract?
       content: A revision is possible after a significant change in economic or regulatory conditions. It requires sixty days' written notice, and you can then terminate without penalty by telling us within thirty days. If you do not reply, the new prices apply on the stated date.
     - label: What is the notice period for termination?

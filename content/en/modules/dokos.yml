@@ -107,7 +107,7 @@ features:
 install:
   steps:
     - title: On Dokos Cloud
-      description: Create your site from your Dokos Cloud dashboard. Dokos and Dodock are installed on it. Included in every plan.
+      description: Create your site from your Dokos Cloud dashboard. Dokos and Dodock are installed on it.
     - title: Self-hosted
       description: "<code>bench get-app https://gitlab.com/dokos/dokos</code> then <code>bench --site your-site install-app erpnext</code>, on a Dodock bench."
     - title: Then the applications you need
@@ -141,8 +141,9 @@ faq:
     - label: How do I install other applications on my site?
       content: >-
         From the Dokos Cloud marketplace, you install an application on your site. Self-hosted:
-        <code>bench get-app</code> then <code>bench --site your-site install-app</code>. All applications are
-        included in every Dokos Cloud plan.
+        <code>bench get-app</code> then <code>bench --site your-site install-app</code>. Marketplace applications
+        need no separate subscription; the price of your plan depends on server resources (see <a href="/en/tarifs">pricing</a>). The
+        Certification Caisse module needs a licence, requested from Dokos SAS.
 
 bottom_cta:
   title: Ask us your questions about Dokos.

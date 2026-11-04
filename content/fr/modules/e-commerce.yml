@@ -116,7 +116,7 @@ install:
     - title: Depuis la marketplace Dokos Cloud
       description: >-
         Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Webshop sur votre site.
-        L'application est comprise dans toutes les formules.
+        Elle s'installe sans abonnement à part ; votre formule est calculée sur les ressources du serveur (voir les <a href="/fr/tarifs">tarifs</a>).
     - title: En auto-hébergement
       description: "<code>bench get-app https://gitlab.com/dokos/webshop</code> puis <code>bench --site votre-site install-app webshop</code>."
     - title: Publiez un premier article

@@ -86,7 +86,7 @@ install:
   description: Le module Intégrations fait partie de Dodock et de Dokos. Il n'y a pas d'application séparée à installer. Les connecteurs, eux, s'installent un par un.
   steps:
     - title: Sur Dokos Cloud
-      description: L'espace de travail Intégrations est présent dès la création de votre site, dans toutes les formules. Les connecteurs (Payments, WooCommerce, Hiboutik, E-transactions, eSignature, Dokos AI) s'installent depuis la marketplace de votre tableau de bord Dokos Cloud.
+      description: L'espace de travail Intégrations fait partie de Dokos. Il est présent dès la création de votre site. Les connecteurs (Payments, WooCommerce, Hiboutik, E-transactions, eSignature, Dokos AI) s'installent depuis la marketplace de votre tableau de bord Dokos Cloud.
     - title: En auto-hébergement
       description: "Installez Dokos : <code>bench get-app https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>. Chaque connecteur a son propre dépôt, indiqué sur sa page produit."
     - title: Premier usage

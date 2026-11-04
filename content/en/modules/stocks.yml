@@ -110,7 +110,7 @@ install:
   description: The Stock module is part of Dokos. There is nothing else to install.
   steps:
     - title: On Dokos Cloud
-      description: Create your site from your Dokos Cloud dashboard. Dokos is installed with the Stock module. Included in every plan.
+      description: Create your site from your Dokos Cloud dashboard. The Stock module is part of Dokos, installed with it on your site.
     - title: Self-hosted
       description: "<code>bench get-app https://gitlab.com/dokos/dokos</code> then <code>bench --site your-site install-app erpnext</code>."
     - title: First settings

@@ -1,0 +1,149 @@
+# Sources (vérifiées le 4 novembre 2026) :
+# - source: README https://github.com/frappe/suite (branche par défaut develop) : sept produits (Drive, Writer, Sheets,
+#   Slides, Meet, Mail, Calendar) dans une seule application, migration depuis les applications séparées
+#   (sauvegarde, désinstallation, installation de Suite, restauration : « Suite uses the same tables »),
+#   Mail et Calendar sur un serveur JMAP (clusters Stalwart gérés par l'application Suite Cloud), Meet sur un serveur SFU mediasoup séparé.
+# - source: description du dépôt frappe/suite « [WIP] Original, intentionally designed productivity tools » ; licence AGPL-3.0 (license.txt).
+# - source: pyproject.toml de frappe/suite : version 0.0.1, requires-python >=3.14,<3.15, frappe >=16.0.0,<18.0.0, paquet système ffmpeg.
+#   Aucune version publiée (pas de release ni de tag de version).
+# - source: suite/hooks.py : interface /suite ; les routes /drive et /slides mènent à Suite.
+# - source: dépôt frappe/drive, description « Drive is now archived and is a part of Frappe Suite now » et avis
+#   d'archivage en tête du README (commit « docs: add archival notice », 1er octobre 2026).
+# - Marketplace cloud.dokos.io, vérifiée le 4 novembre 2026 : aucune fiche Frappe Suite ; la fiche Drive existe encore.
+#   D'où l'absence de clé marketplace et de bouton d'installation.
+# Pas encore vérifié : l'installation de Suite sur un site Dokos V5 (Dodock v5, base Frappe v16) n'a pas été testée par Dokos.
+#
+# Captures à prendre (site de test avec Suite installée, interface /suite) :
+# - hero.webp : l'accueil de Frappe Suite avec l'accès aux sept produits
+# - fit.webp : la fenêtre de partage d'un dossier Drive avec un utilisateur et un groupe d'utilisateurs du site
+# - feature-fichiers.webp : un dossier Drive avec l'aperçu d'un PDF
+# - feature-documents.webp : un document Writer édité à deux
+# - feature-reunions.webp : une réunion Meet ou l'agenda Calendar
+
+navigation:
+  title: Frappe Suite
+  icon: i-heroicons-squares-2x2
+  description: Fichiers, documents, tableurs, présentations, réunions, e-mail et agenda sur votre site.
+
+title: Frappe Suite
+icon: i-heroicons-squares-2x2
+description: Réunit Drive, Writer, Sheets, Slides, Meet, Mail et Calendar dans une seule application Frappe, encore en développement.
+application: Frappe Suite
+theme: site-web-outils-numeriques
+author: Frappe Technologies et contributeurs
+
+publisher: frappe
+licence: AGPLv3
+version: v5
+related: [wiki, raven, support, builder]
+
+hero:
+  title: Vos fichiers, documents et réunions <span class="text-primary">dans une seule application</span> Frappe.
+  description: >-
+    Frappe Suite regroupe sept produits de Frappe : Drive, Writer, Sheets, Slides, Meet, Mail et Calendar.
+    Frappe la marque encore comme en développement, et elle n'est pas sur la marketplace Dokos Cloud. Écrivez-nous pour en parler.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+      icon: i-heroicons-envelope
+    - label: Voir le dépôt
+      to: https://github.com/frappe/suite
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline
+
+for_whom:
+  items:
+    - title: Votre site utilise Frappe Drive
+      description: >-
+        Frappe a archivé Drive en octobre 2026 et l'a intégré à Suite. Suite reprend les mêmes tables : vos fichiers passent dans Suite après une restauration de sauvegarde.
+      icon: i-heroicons-folder
+    - title: Vos équipes écrivent, calculent et présentent dans des outils séparés
+      description: >-
+        Writer, Sheets et Slides s'ouvrent depuis la même interface, avec les utilisateurs de votre site.
+      icon: i-heroicons-document-text
+    - title: Vous voulez vos réunions et votre agenda près de vos documents
+      description: >-
+        Meet lance des réunions vidéo et Calendar planifie les événements, dans la même application.
+      icon: i-heroicons-video-camera
+
+fit:
+  description: >-
+    Frappe Suite est une application Frappe. Elle utilise les <strong>Utilisateurs</strong> et les
+    <strong>Autorisations</strong> de votre site, et ouvre l'interface /suite. Les anciennes adresses /drive et /slides y mènent.<br>
+    Suite ne s'installe pas sur un site qui a encore une des applications séparées (Drive, Writer, Sheets, Slides, Meet, Mail, Calendar) :
+    l'installation s'arrête et liste les applications en conflit.
+  reads:
+    - Utilisateur
+    - Groupe d'utilisateurs
+  adds:
+    - L'interface /suite
+    - Les DocTypes de Drive, Writer, Sheets, Slides, Meet, Mail et Calendar
+    - Les réglages « Suite Settings » et « Mail Settings »
+  depends:
+    - Dodock
+
+features:
+  - title: Stockez et partagez vos fichiers avec Drive
+    description: >-
+      Vous rangez vos fichiers dans des dossiers, vous les partagez et vous les ouvrez en aperçu dans le navigateur.
+    badge: Fichiers
+  - title: Rédigez, calculez et présentez à plusieurs
+    description: >-
+      Writer édite des documents et Sheets des tableurs, à plusieurs et en temps réel. Slides crée et projette des présentations.
+    badge: Documents
+  - title: Tenez vos réunions avec Meet
+    description: >-
+      Meet lance des réunions vidéo de groupe. Il demande un serveur SFU mediasoup séparé, décrit dans le dépôt de Suite.
+    badge: Réunions
+  - title: Lisez vos e-mails et planifiez avec Mail et Calendar
+    description: >-
+      Mail est un client de messagerie et Calendar un agenda. Les deux se connectent à un serveur de messagerie JMAP :
+      Suite ne fait pas tourner de serveur de messagerie elle-même.
+    badge: Messagerie
+
+install:
+  steps:
+    - title: Parlez-nous de votre projet
+      description: >-
+        Frappe Suite n'a pas de fiche sur la marketplace Dokos Cloud. Écrivez-nous : nous regardons avec vous quels produits
+        vous utiliserez et comment installer Suite sur votre site.
+    - title: Si votre site utilise déjà Drive
+      description: >-
+        Le README de Suite décrit le passage : sauvegarde du site avec ses fichiers, désinstallation de Drive,
+        installation de Suite, puis restauration de la sauvegarde. Suite reprend les mêmes tables, vos fichiers restent disponibles.
+    - title: En auto-hébergement
+      description: "<code>bench get-app https://github.com/frappe/suite</code> puis <code>bench --site votre-site install-app suite</code>. L'application déclare Frappe v16 et v17, et Python 3.14."
+  prerequisites:
+    - Un site Dokos V5
+    - En auto-hébergement, le paquet système ffmpeg
+    - Pour Meet, un serveur SFU mediasoup ; pour Mail et Calendar, un serveur de messagerie JMAP
+
+faq:
+  items:
+    - label: Frappe Suite est-elle prête pour la production ?
+      content: >-
+        Frappe la marque « WIP », en développement, et n'a publié aucune version : le dépôt est en version 0.0.1.
+        Parlez-nous de votre usage avant de l'installer.
+    - label: Que deviennent mes fichiers Frappe Drive ?
+      content: >-
+        Suite utilise les mêmes tables que Drive. Le README de Suite indique de sauvegarder le site avec ses fichiers, de désinstaller Drive,
+        d'installer Suite et de restaurer la sauvegarde. La désinstallation de Drive efface ses données : la sauvegarde vient donc en premier.
+    - label: Puis-je installer Suite depuis Dokos Cloud ?
+      content: >-
+        Pas aujourd'hui : Frappe Suite n'a pas de fiche sur la marketplace Dokos Cloud. Écrivez-nous pour en discuter.
+    - label: Sous quelle licence est publiée Frappe Suite ?
+      content: >-
+        GNU Affero General Public License v3 (AGPLv3), selon le fichier license.txt du dépôt github.com/frappe/suite.
+
+bottom_cta:
+  title: Vous envisagez Frappe Suite pour votre site.
+  description: Décrivez-nous vos usages et les applications Frappe déjà installées sur votre site.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary

@@ -84,7 +84,7 @@ features:
 install:
   steps:
     - title: Depuis la marketplace Dokos Cloud
-      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez « Insights » sur votre site. La marketplace sert la version 3. L'application est comprise dans toutes les formules.
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez « Insights » sur votre site. La marketplace sert la version 3. Aucun abonnement à part n'est demandé.
     - title: En auto-hébergement
       description: "<code>bench get-app --branch version-3 https://github.com/frappe/insights</code> puis <code>bench --site votre-site install-app insights</code>."
     - title: Donnez les rôles

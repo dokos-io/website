@@ -1,0 +1,125 @@
+# English version of content/fr/modules/suite.yml (sources and screenshot notes are there).
+# source: README, pyproject.toml, hooks.py and license.txt of https://github.com/frappe/suite (develop), checked 4 November 2026.
+# source: https://github.com/frappe/drive, archival notice (1 October 2026).
+# Dokos Cloud marketplace, checked 4 November 2026: no Frappe Suite listing, so no marketplace key or install button.
+
+navigation:
+  title: Frappe Suite
+  icon: i-heroicons-squares-2x2
+  description: Files, documents, spreadsheets, presentations, meetings, email and calendar on your site.
+
+title: Frappe Suite
+icon: i-heroicons-squares-2x2
+description: Brings Drive, Writer, Sheets, Slides, Meet, Mail and Calendar together in one Frappe application, still in development.
+application: Frappe Suite
+theme: site-web-outils-numeriques
+author: Frappe Technologies and contributors
+
+publisher: frappe
+licence: AGPLv3
+version: v5
+related: [wiki, raven, support, builder]
+
+hero:
+  title: Your files, documents and meetings <span class="text-primary">in one application</span> from Frappe.
+  description: >-
+    Frappe Suite groups seven Frappe products: Drive, Writer, Sheets, Slides, Meet, Mail and Calendar.
+    Frappe still marks it as in development, and it is not on the Dokos Cloud marketplace. Write to us to discuss it.
+  links:
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+      icon: i-heroicons-envelope
+    - label: See the repository
+      to: https://github.com/frappe/suite
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline
+
+for_whom:
+  items:
+    - title: Your site uses Frappe Drive
+      description: >-
+        Frappe archived Drive in October 2026 and moved it into Suite. Suite uses the same tables: your files move into Suite when you restore a backup.
+      icon: i-heroicons-folder
+    - title: Your teams write, calculate and present in separate tools
+      description: Writer, Sheets and Slides open from the same interface, with your site's users.
+      icon: i-heroicons-document-text
+    - title: You want your meetings and calendar next to your documents
+      description: Meet runs video meetings and Calendar plans events, in the same application.
+      icon: i-heroicons-video-camera
+
+fit:
+  description: >-
+    Frappe Suite is a Frappe application. It uses your site's <strong>Users</strong> and
+    <strong>Permissions</strong>, and opens the /suite interface. The old /drive and /slides addresses lead to it.<br>
+    Suite does not install on a site that still has one of the standalone apps (Drive, Writer, Sheets, Slides, Meet, Mail, Calendar):
+    the installation stops and lists the conflicting apps.
+  reads:
+    - User
+    - User Group
+  adds:
+    - The /suite interface
+    - The DocTypes of Drive, Writer, Sheets, Slides, Meet, Mail and Calendar
+    - The Suite Settings and Mail Settings
+  depends:
+    - Dodock
+
+features:
+  - title: Store and share your files with Drive
+    description: You organise your files in folders, share them and preview them in the browser.
+    badge: Files
+  - title: Write, calculate and present together
+    description: Writer edits documents and Sheets edits spreadsheets, with several people in real time. Slides creates and presents slide decks.
+    badge: Documents
+  - title: Hold your meetings with Meet
+    description: Meet runs group video meetings. It needs a separate mediasoup SFU server, described in the Suite repository.
+    badge: Meetings
+  - title: Read your email and plan with Mail and Calendar
+    description: >-
+      Mail is an email client and Calendar is a calendar. Both connect to a JMAP mail server:
+      Suite does not run a mail server itself.
+    badge: Email
+
+install:
+  steps:
+    - title: Tell us about your project
+      description: >-
+        Frappe Suite has no listing on the Dokos Cloud marketplace. Write to us: we look with you at which products
+        you will use and how to install Suite on your site.
+    - title: If your site already uses Drive
+      description: >-
+        The Suite README describes the move: back up the site with its files, uninstall Drive,
+        install Suite, then restore the backup. Suite uses the same tables, so your files stay available.
+    - title: Self-hosted
+      description: "<code>bench get-app https://github.com/frappe/suite</code> then <code>bench --site your-site install-app suite</code>. The application declares Frappe v16 and v17, and Python 3.14."
+  prerequisites:
+    - A Dokos V5 site
+    - When self-hosting, the ffmpeg system package
+    - For Meet, a mediasoup SFU server; for Mail and Calendar, a JMAP mail server
+
+faq:
+  items:
+    - label: Is Frappe Suite ready for production?
+      content: >-
+        Frappe marks it "WIP", in development, and has published no release: the repository is at version 0.0.1.
+        Talk to us about your use before you install it.
+    - label: What happens to my Frappe Drive files?
+      content: >-
+        Suite uses the same tables as Drive. The Suite README says to back up the site with its files, uninstall Drive,
+        install Suite and restore the backup. Uninstalling Drive deletes its data, so the backup comes first.
+    - label: Can I install Suite from Dokos Cloud?
+      content: Not today. Frappe Suite has no listing on the Dokos Cloud marketplace. Write to us to discuss it.
+    - label: Under which licence is Frappe Suite published?
+      content: GNU Affero General Public License v3 (AGPLv3), according to the license.txt file of the github.com/frappe/suite repository.
+
+bottom_cta:
+  title: You are considering Frappe Suite for your site.
+  description: Describe your uses and the Frappe applications already installed on your site.
+  links:
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary

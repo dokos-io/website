@@ -105,7 +105,7 @@ install:
     - title: From the Dokos Cloud marketplace
       description: >-
         In your Dokos Cloud dashboard, open the marketplace and install Webshop on your site.
-        The application is included in every plan.
+        It needs no separate subscription; your plan is priced on server resources (see <a href="/en/tarifs">pricing</a>).
     - title: Self-hosted
       description: "<code>bench get-app https://gitlab.com/dokos/webshop</code> then <code>bench --site your-site install-app webshop</code>."
     - title: Publish a first item

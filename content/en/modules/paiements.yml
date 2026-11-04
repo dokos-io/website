@@ -80,7 +80,7 @@ features:
 install:
   steps:
     - title: From the Dokos Cloud marketplace
-      description: Payments is installed with Dokos on your site. If it is missing, open the marketplace from your Dokos Cloud dashboard and install it. Included in every plan.
+      description: Payments is installed with Dokos on your site. If it is missing, open the marketplace from your Dokos Cloud dashboard and install it. It needs no separate subscription.
     - title: Self-hosted
       description: "<code>bench get-app https://gitlab.com/dokos/payments</code> then <code>bench --site your-site install-app payments</code>."
     - title: First setup

@@ -53,7 +53,7 @@ for_whom:
       description: Les applications iOS et Android se connectent à votre site. Chaque canal y est, synchronisé avec la version web.
       icon: i-heroicons-device-phone-mobile
     - title: Vous payez un abonnement par utilisateur pour votre chat
-      description: Raven est compris dans votre site Dokos. Personne ne vous facture par utilisateur.
+      description: Raven s'installe sur votre site Dokos, sans abonnement par utilisateur. Le prix de Dokos Cloud dépend des ressources du serveur.
       icon: i-heroicons-users
 
 fit:
@@ -95,7 +95,7 @@ features:
 install:
   steps:
     - title: Depuis la marketplace Dokos Cloud
-      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Raven sur votre site. L'application est comprise dans toutes les formules.
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez Raven sur votre site. Elle s'installe sans abonnement à part.
     - title: En auto-hébergement
       description: "<code>bench get-app https://github.com/frappe/raven</code> puis <code>bench --site votre-site install-app raven</code>. Raven s'ouvre à l'adresse /raven du site."
     - title: Sur les téléphones
@@ -112,7 +112,7 @@ faq:
     - label: Raven inclut-il des agents IA ?
       content: Oui. Raven propose des bots qui postent et répondent, des webhooks entrants qui écrivent dans un canal, et des agents reliés à votre propre fournisseur OpenAI ou compatible. L'assistant de Dokos AI est joignable par message direct une fois le pont Raven activé.
     - label: Faut-il un abonnement par utilisateur ?
-      content: Non. Raven est une application de votre site. Elle est comprise dans toutes les formules Dokos Cloud et s'installe librement en auto-hébergement, sous licence AGPLv3.
+      content: Non. Raven est une application de votre site. Sur Dokos Cloud, elle s'installe sans abonnement à part, et le prix de votre formule dépend des ressources du serveur, pas du nombre d'utilisateurs (voir les <a href="/fr/tarifs">tarifs</a>). En auto-hébergement, elle s'installe librement, sous licence AGPLv3.
 
 bottom_cta:
   title: Montrez une commande client à votre équipe depuis un canal.

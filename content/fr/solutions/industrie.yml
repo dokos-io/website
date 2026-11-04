@@ -22,7 +22,7 @@ hero:
 
 colored_section:
   title: Le tableau de bord de votre production
-  description: "Le module Production fait partie de Dokos, compris dans toutes les formules de Dokos Cloud. Il lit vos articles et vos entrepôts, puis il écrit une entrée de stock à chaque étape : transfert des matières vers l'atelier, puis fabrication vers l'entrepôt des produits finis. Dokos v5 repose sur Frappe et ERPNext v16 ; son code est publié sous licence GPLv3."
+  description: "Le module Production fait partie de Dokos. Il lit vos articles et vos entrepôts, puis il écrit une entrée de stock à chaque étape : transfert des matières vers l'atelier, puis fabrication vers l'entrepôt des produits finis. Dokos v5 repose sur Frappe et ERPNext v16 ; son code est publié sous licence GPLv3."
   image: /modules/production/hero.webp
   align: left
 

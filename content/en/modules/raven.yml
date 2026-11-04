@@ -37,7 +37,7 @@ for_whom:
       description: The iOS and Android apps connect to your site. Every channel is there, in sync with the web version.
       icon: i-heroicons-device-phone-mobile
     - title: You pay a per-user subscription for your chat
-      description: Raven is included in your Dokos site. Nobody bills you per user.
+      description: Raven installs on your Dokos site, with no per-user subscription. The price of Dokos Cloud depends on server resources.
       icon: i-heroicons-users
 
 fit:
@@ -79,7 +79,7 @@ features:
 install:
   steps:
     - title: From the Dokos Cloud marketplace
-      description: In your Dokos Cloud dashboard, open the marketplace and install Raven on your site. The application is included in every plan.
+      description: In your Dokos Cloud dashboard, open the marketplace and install Raven on your site. It needs no separate subscription.
     - title: Self-hosted
       description: "<code>bench get-app https://github.com/frappe/raven</code> then <code>bench --site your-site install-app raven</code>. Raven opens at /raven on the site."
     - title: On phones
@@ -96,7 +96,7 @@ faq:
     - label: Does Raven include AI agents?
       content: Yes. Raven offers bots that post and reply, incoming webhooks that write to a channel, and agents connected to your own OpenAI or compatible provider. The Dokos AI assistant can be reached by direct message once the Raven bridge is enabled.
     - label: Is there a per-user subscription?
-      content: No. Raven is an application of your site. It is included in every Dokos Cloud plan and can be installed freely when self-hosting, under the AGPLv3 licence.
+      content: No. Raven is an application of your site. On Dokos Cloud it needs no separate subscription, and the price of your plan depends on server resources, not on the number of users (see <a href="/en/tarifs">pricing</a>). When self-hosting, it can be installed freely, under the AGPLv3 licence.
 
 bottom_cta:
   title: Show a sales order to your team from a channel.

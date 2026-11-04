@@ -82,7 +82,7 @@ features:
 install:
   steps:
     - title: Depuis la marketplace Dokos Cloud
-      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez « Newsletter » sur votre site. L'application est comprise dans toutes les formules.
+      description: Dans votre tableau de bord Dokos Cloud, ouvrez la marketplace et installez « Newsletter » sur votre site. Aucun abonnement à part n'est demandé.
     - title: En auto-hébergement
       description: "<code>bench get-app https://github.com/frappe/newsletter</code> puis <code>bench --site votre-site install-app newsletter</code>."
     - title: Préparez une liste de diffusion
