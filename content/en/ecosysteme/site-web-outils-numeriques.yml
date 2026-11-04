@@ -58,6 +58,9 @@ modules:
       description: Files, documents, spreadsheets, presentations and video calls in one Frappe application, which replaces Drive. Frappe still marks it as in development.
       icon: i-heroicons-squares-2x2
       to: /en/modules/suite
+      logo:
+        light: /frappe/suite.svg
+        dark: /frappe/suite.svg
 
 cta:
   title: Connect your external tools to Dokos

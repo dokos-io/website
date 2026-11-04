@@ -10,6 +10,10 @@ navigation:
 
 title: Frappe Suite
 icon: i-heroicons-squares-2x2
+# source: logo from github.com/frappe/suite, frontend/public/logo.svg (4 November 2026)
+logo:
+  light: /frappe/suite.svg
+  dark: /frappe/suite.svg
 description: Brings Drive, Writer, Sheets, Slides, Meet, Mail and Calendar together in one Frappe application, still in development.
 application: Frappe Suite
 theme: site-web-outils-numeriques

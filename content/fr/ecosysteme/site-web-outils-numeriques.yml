@@ -60,6 +60,9 @@ modules:
       description: Fichiers, documents, tableurs, présentations et visioconférence dans une seule application de Frappe, qui remplace Drive. Frappe la marque encore comme en développement.
       icon: i-heroicons-squares-2x2
       to: /fr/modules/suite
+      logo:
+        light: /frappe/suite.svg
+        dark: /frappe/suite.svg
 
 cta:
   title: Raccordez vos outils externes à Dokos
