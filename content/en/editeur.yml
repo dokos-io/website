@@ -81,11 +81,6 @@ scope:
       icon: i-heroicons-document-check
       badge: Application
       to: /en/modules/etransactions
-    - title: OCR
-      description: Data extraction from supplier invoices, with Amazon Textract.
-      icon: i-heroicons-document-magnifying-glass
-      badge: Application
-      to: /en/modules/ocr
     - title: Construction
       description: A quotation configurator for businesses that sell building work.
       icon: i-heroicons-calculator

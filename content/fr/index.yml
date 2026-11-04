@@ -47,7 +47,7 @@ hero:
       - { title: Insights, domain: finance, to: /fr/modules/insights, publisher: frappe, note: "Requêtes, graphiques et tableaux de bord sur vos données." }
       - { title: Raven, domain: collab, to: /fr/modules/raven, publisher: frappe, note: "Messagerie d'équipe, avec vos documents Dokos dans la conversation." }
       - { title: Builder, domain: web, to: /fr/modules/builder, publisher: frappe, note: "Création de pages web sans code, sur votre site Dokos." }
-      - { title: Suite, domain: collab, to: /fr/modules, publisher: frappe }
+      - { title: Suite, domain: collab, to: /fr/modules/suite, publisher: frappe }
       - { title: Wiki, domain: collab, to: /fr/modules/wiki, publisher: frappe, note: "Documentation et procédures, avec relecture avant publication." }
       - { title: Learning, domain: people, to: /fr/modules/learning, publisher: frappe, note: "Cours en ligne, sessions, quiz et certificats." }
       - { title: Webshop, domain: web, to: /fr/modules/e-commerce, publisher: dokos, note: "Boutique en ligne et portail client, sur le catalogue de Dokos." }

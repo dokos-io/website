@@ -36,7 +36,7 @@ scope:
       badge: Publiées par Frappe
     - title: Les applications éditées par Dokos SAS
       # source: champ publisher: dokos des pages content/fr/modules/*.yml ; dépôts gitlab.com/dokos
-      description: Bank, Bookings, eTransactions, OCR, Construction, Hiboutik, WooCommerce, Tribu, Dokos AI, Dokos CLI, ainsi que nos versions de Webshop et de Payments. Écrites pour les besoins des entreprises et associations françaises, publiées sur notre GitLab.
+      description: Bank, Bookings, eTransactions, Construction, Hiboutik, WooCommerce, Tribu, Dokos AI, Dokos CLI, ainsi que nos versions de Webshop et de Payments. Écrites pour les besoins des entreprises et associations françaises, publiées sur notre GitLab.
       icon: i-heroicons-puzzle-piece
       badge: Éditées par Dokos SAS
 

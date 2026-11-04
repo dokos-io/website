@@ -47,13 +47,6 @@ modules:
       description: Les paramètres des services connectés à votre site, avec les webhooks, les clés API et les clients OAuth que vos autres outils utilisent.
       icon: i-mdi-connection
       to: /fr/modules/integrations
-    - title: OCR
-      description: Lit vos factures fournisseur en PDF avec Amazon Textract et prépare la facture d'achat. Sur Dokos V5, ces fonctions sont reprises par eTransactions.
-      icon: i-mdi-ocr
-      to: /fr/modules/ocr
-      logo:
-        light: /frappe/ocr_logo.svg
-        dark: /frappe/ocr_logo.svg
     - title: Newsletter
       description: Vous envoyez une lettre d'information aux groupes d'e-mails de votre site, vous planifiez l'envoi et vous suivez les ouvertures.
       icon: i-heroicons-envelope
@@ -62,6 +55,11 @@ modules:
       description: Vous publiez des billets sur votre site, par auteur et par catégorie, avec commentaires et flux RSS.
       icon: i-heroicons-newspaper
       to: /fr/modules/blog-app
+    - title: Frappe Suite
+      # source: content/fr/modules/suite.yml (README frappe/suite, marqué « [WIP] » par Frappe)
+      description: Fichiers, documents, tableurs, présentations et visioconférence dans une seule application de Frappe, qui remplace Drive. Frappe la marque encore comme en développement.
+      icon: i-heroicons-squares-2x2
+      to: /fr/modules/suite
 
 cta:
   title: Raccordez vos outils externes à Dokos

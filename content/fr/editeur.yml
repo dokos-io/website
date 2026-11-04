@@ -81,12 +81,6 @@ scope:
       icon: i-heroicons-document-check
       badge: Application
       to: /fr/modules/etransactions
-    - title: OCR
-      # source: content/fr/modules/ocr.yml (Amazon Textract ou Mistral OCR)
-      description: Extraction des données des factures fournisseur, avec Amazon Textract ou Mistral OCR.
-      icon: i-heroicons-document-magnifying-glass
-      badge: Application
-      to: /fr/modules/ocr
     - title: Construction
       description: Un configurateur de devis pour les activités qui vendent des ouvrages.
       icon: i-heroicons-calculator

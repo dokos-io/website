@@ -108,7 +108,7 @@ faq:
       content: "Ils sont nommés dans notre politique de confidentialité, avec pour chacun la raison de son intervention et la nature des données partagées : OVHcloud et Hetzner pour l'hébergement, Stripe et GoCardless Ltd pour les paiements. Tout changement susceptible de toucher vos données vous est notifié au préalable, conformément à l'article 28 du RGPD."
     - label: Comment vérifier l'intégrité de la version installée ?
       content: Nous publions l'empreinte de chaque fichier du périmètre certifié, ainsi que la procédure pour recalculer cette empreinte sur votre propre installation. Le détail figure sur la page Certifications.
-    # source: content/fr/modules/ocr.yml (clés Textract ou Mistral du client) ; dokos-ai.yml (clé OpenRouter du client) ; etransactions.yml (plateforme agréée)
+    # source: content/fr/modules/etransactions.yml (clés Textract ou Mistral du client pour l'OCR) ; dokos-ai.yml (clé OpenRouter du client) ; etransactions.yml (plateforme agréée)
     - label: Des applications envoient-elles des données hors de l'hébergement ?
       content: "Oui, quand vous activez une application ou une intégration qui s'appuie sur un service tiers. OCR envoie chaque facture fournisseur déposée à Amazon Textract ou à Mistral OCR pour en lire les données. Dokos AI envoie vos questions et les données consultées au modèle choisi via OpenRouter. eTransactions échange vos factures avec la plateforme agréée que vous avez choisie. Pour OCR et Dokos AI, vous saisissez vos propres clés d'accès dans les paramètres de l'application, et le fournisseur vous facture directement."
     - label: Qui contacter pour une demande RGPD ?

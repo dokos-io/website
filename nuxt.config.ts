@@ -51,6 +51,17 @@ export default defineNuxtConfig({
     '/fr/service-companies': { redirect: { to: '/fr/solutions/entreprises-de-services', statusCode: 301 } },
     '/production-companies': { redirect: { to: '/fr/solutions/industrie', statusCode: 301 } },
     '/fr/production-companies': { redirect: { to: '/fr/solutions/industrie', statusCode: 301 } },
+    // Retired product pages (2026-11): OCR is part of eTransactions on V5,
+    // Drive moved into Frappe Suite, Print Designer is no longer maintained.
+    '/modules/ocr': { redirect: { to: '/fr/modules/etransactions', statusCode: 301 } },
+    '/fr/modules/ocr': { redirect: { to: '/fr/modules/etransactions', statusCode: 301 } },
+    '/en/modules/ocr': { redirect: { to: '/en/modules/etransactions', statusCode: 301 } },
+    '/modules/drive': { redirect: { to: '/fr/modules/suite', statusCode: 301 } },
+    '/fr/modules/drive': { redirect: { to: '/fr/modules/suite', statusCode: 301 } },
+    '/en/modules/drive': { redirect: { to: '/en/modules/suite', statusCode: 301 } },
+    '/modules/print-designer': { redirect: { to: '/fr/ecosysteme/site-web-outils-numeriques', statusCode: 301 } },
+    '/fr/modules/print-designer': { redirect: { to: '/fr/ecosysteme/site-web-outils-numeriques', statusCode: 301 } },
+    '/en/modules/print-designer': { redirect: { to: '/en/ecosysteme/site-web-outils-numeriques', statusCode: 301 } },
 
     '/**': { prerender: true },
     '/fr': { prerender: true },
