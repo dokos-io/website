@@ -35,11 +35,9 @@ Voici un aperçu de quelques nouveautés.
 
 ✨ **L'éditeur de formulaire graphique**
 
-![Editeur de formulaire](/images/blog/version-4/form_builder.png)
 
 ✨ **L'éditeur de flux de travail (Workflows) graphique**
 
-![Editeur de workflows](/images/blog/version-4/workflow_builder.png)
 
 ✨ **Intégration du design** [Espresso de Frappe](https://ui.frappe.io/)**, tout en gardant des couleurs.**
 
@@ -59,16 +57,16 @@ Si vous utilisez le panier du site web, vous devez installer cette application s
 
 ✨ **Il est désormais possible de proposer plusieurs modes de paiement différents lors des paiements de commandes passées en ligne.**
 
-✨ **La page de sélection de créneaux sur le site web a également été améliorée**![Editeur de workflows](/images/blog/version-4/item_booking.png)
+✨ **La page de sélection de créneaux sur le site web a également été améliorée**
 
-✨ **Une vue** **Gestion de projet** **permet de simplifier l'attribution de tâche et l'enregistrement de ses feuilles de temps**![Editeur de workflows](/images/blog/version-4/project_management.png)
+✨ **Une vue** **Gestion de projet** **permet de simplifier l'attribution de tâche et l'enregistrement de ses feuilles de temps**
 
 ✨ **Il est désormais possible d'imprimer une page de couverture à la suite de son format d'impression (devis, factures, etc...).**:br
 Cela permet, par exemple, de joindre systématiquement des conditions générales de vente à ses documents de vente sans avoir besoin de les inclure en HTML dans le format d'impression.
 
 ✨ **L'application RH gère désormais les congés exceptionnels sur jours ouvrables (Mariage, Décès, etc..)**
 
-✨ **Il est désormais possible de créer des notifications avec un éditeur visuel**![Editeur de notification](/images/blog/version-4/notification_builder.png)
+✨ **Il est désormais possible de créer des notifications avec un éditeur visuel**
 
 Le détail des changements des principales applications est disponible en cliquant sur les liens suivants:
 

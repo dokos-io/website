@@ -33,7 +33,6 @@ Cette étape technique permet également d'ajouter des données de démo dans d'
 Un nouveau type de vue "Carte" permet d'afficher vos adresses sur une carte du monde et d'appliquer tous les filtres que vous souhaitez comme avec n'importe quelle autre vue.  
 Ce nouveau type de vue nécessite l'activation de l'API Google Maps pour récupérer les données de géolocalisation de chaque adresse.
 
-![Vue en carte](/images/blog/version-1-4/map_view.png)
 
 ## Conservation des données de renommage de document
 

@@ -13,13 +13,10 @@ image:
   src: '/blog/digitalocean-marketplace/_main.webp'
 ---
 
+> **Mise à jour du 4 novembre 2026 :** cette image n'est plus proposée sur la marketplace de DigitalOcean. Pour installer Dokos sur votre serveur, suivez [le guide d'installation](https://doc.dokos.io/v5/dodock/installation), ou créez un site sur [Dokos Cloud](https://cloud.dokos.io).
+
 Dans l'optique de continuer à faciliter l'usage de _Dokos_ et notamment son installation, nous proposons désormais une image installable en 1 click sur la plateforme DigitalOcean.
 
-Il vous suffit désormais de cliquer sur le lien ci dessous pour installer _Dokos_ sur votre propre serveur facilement:
-
-<a class="outline-btn shadow-lg" href="https://marketplace.digitalocean.com/apps/dokos?refcode=92286dd99700" target="_blank" rel="noopener">
-  <img class="mx-auto w-48" src="/images/DO_Logo_horizontal_blue.svg" alt="DigitalOcean marketplace">
-</a>
 
 
 Cette image configure automatiquement un serveur de production que vous pouvez ensuite mettre à jour comme avec n'importe quelle autre type d'installation.  
