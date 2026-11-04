@@ -8,16 +8,16 @@ description: Nos engagements envers le RGPD et ePrivacy
 ### 1. Consentement explicite
 
 - Nous collectons et traitons vos données personnelles uniquement après avoir obtenu votre consentement clair et explicite lors de votre inscription.
-- Vous pouvez retirer votre consentement à tout moment en contactant <help@dokos.io>.
+- Vous pouvez retirer votre consentement à tout moment en contactant [dpo@dokos.io](mailto:dpo@dokos.io).
 
 ### 2. Transparence
 
 - Nous vous informons clairement sur la collecte, l'utilisation et le stockage de vos données au sein de Dokos.
-- Notre politique de confidentialité détaillée est accessible à l'adresse : dokos.io/privacy-policy.
+- Notre politique de confidentialité détaillée est accessible à l'adresse : [dokos.io/fr/securityandprivacy](/fr/securityandprivacy).
 
 ### 3. Vos droits
 
-Vous pouvez exercer vos droits en contactant <help@dokos.io>. Nous répondrons à toute demande concernant :
+Vous pouvez exercer vos droits en contactant [dpo@dokos.io](mailto:dpo@dokos.io). Nous répondrons à toute demande concernant :
 
 - L'accès à vos données
 - La rectification des données inexactes
@@ -37,7 +37,7 @@ La protection de vos données est notre priorité. Nous l'intégrons dès la con
 ### 6. Personne dédiée à la protection des données
 
 Pour toute question relative à la protection de vos données, vous pouvez contactez :
-Charles-Henri Decultot : <chdecultot@dokos.io>
+Charles-Henri Decultot : [dpo@dokos.io](mailto:dpo@dokos.io)
 
 ## Directive ePrivacy
 
@@ -53,4 +53,4 @@ Charles-Henri Decultot : <chdecultot@dokos.io>
 - Notre personnel est formé aux exigences en matière de protection des données.
 - Nous coopérons pleinement avec les autorités de protection des données.
 
-Pour plus de détails sur notre politique de confidentialité, visitez : dokos.io/privacy-policy
+Pour plus de détails sur notre politique de confidentialité, visitez : [dokos.io/fr/securityandprivacy](/fr/securityandprivacy)

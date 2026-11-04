@@ -96,7 +96,7 @@ L'hébergement mutualisé désigne l'attribution d'une portion des ressources d'
 
 L’hébergement dédié est destiné aux clients nécessitant des ressources exclusives pour leurs applications Dokos, garantissant des performances optimales, non affectées par le trafic ou la charge d’autres sites. Le client bénéficie de deux serveurs dédiés (un pour l’application et un pour la base de données) ainsi que de ressources illimitées pour la création de _benchs_ et de sites.
 
-Tous les forfaits d'hébergement dédiés incluent un support tecnhique standart et un support premium de niveau II ( nos garanties de niveau de service sont détaillés en annexe 1 ).
+Tous les forfaits d'hébergement dédiés incluent un support technique standard et un support premium de niveau II ( nos garanties de niveau de service sont détaillées en annexe 1 ).
 
 | **Tarif (HT/Mois)** | **vCPU** | **RAM(GB)** | **Stockage (GB)** |
 | ------------------- | -------- | ----------- | ----------------- |

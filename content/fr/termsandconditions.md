@@ -84,7 +84,7 @@ Si la correction d’une faille de sécurité est déployée, DOKOS SAS s’enga
 
 Pour la durée du présent Contrat, lorsque le Client choisit d’utiliser la Plate-forme Cloud, Dokos s’engage à fournir au minimum le service suivant :
 
-- Un hébergement de qualité localisé en Union Européeene: chez OVH SAS (France) et Hetzner Online GmbH (Allemagne)
+- Un hébergement de qualité localisé en Union Européenne: chez OVH SAS (France) et Hetzner Online GmbH (Allemagne)
 - Chiffrement des communications via HTTPS
 - Sauvegardes automatisées et vérifiées, répliquées dans plusieurs régions
 
@@ -120,7 +120,7 @@ Les tarifs en vigueur au 01 septembre 2024 (affichés hors TVA) :
 | **49€ HT/Mois**  | 1h de CPU   | 1 GB                | 5 GB         | Pas de support                                |
 | **99€ HT/Mois**  | 2h de CPU   | 2 GB                | 10 GB        | Support simple                                |
 | **199€ HT/Mois** | 3h de CPU   | 2 GB                | 15 GB        | Support simple                                |
-| **499€ HT/Mois** | 4h de CPU   | 3 GB                | 25 GB        | Support premium (SLA : Niveau 1               |
+| **499€ HT/Mois** | 4h de CPU   | 3 GB                | 25 GB        | Support premium (SLA : Niveau 1)              |
 | **999€ HT/Mois** | 6h de CPU   | 4 GB                | 50 GB        | Support premium (SLA : Niveau 2)              |
 
 ### 5.2 **Modification des prix en cours de contrat**

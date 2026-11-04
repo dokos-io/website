@@ -18,7 +18,7 @@ N° TVA Intracommunautaire : FR94824710776
 
 - Représentant légal : Charles-Henri Decultot, Président
 - Directeur de la publication du site web : Charles-Henri Decultot
-- Le prestataire assurant l'hébergement du site est : **Vercel Inc.** 
+- Le prestataire assurant l'hébergement du site est : **Vercel Inc.**, 440 N Barranca Avenue #4133, Covina, CA 91723, États-Unis
 
 Le contenu de ce site est régi par la législation en vigueur en France. L'utilisateur accepte la compétence exclusive des tribunaux français pour tout différend concernant le contenu ou l'utilisation du site, que ce soit en première instance ou en appel.
 
@@ -55,7 +55,7 @@ Les marques du site [www.dokos.io](http://www.dokos.io) et de ses partenaires, a
 
 Le site [www.dokos.io](http://www.dokos.io) ne saurait être responsable de l'accès par les utilisateurs via les liens hypertextes mis en place dans le cadre du site internet en direction d'autres ressources présentes sur le réseau. L’entreprise Dokos n’a aucun contrôle sur le contenu des sites externes, les utilisateurs doivent vérifier la politique de ses sites avant d'interagir.
 
-Tout litige en relation avec l'utilisation du site [www.dokos.io](http://www.dokos.io) est soumis au droit français. L'utilisateur reconnaît la compétence exclusive des tribunaux compétents de Paris.
+Tout litige en relation avec l'utilisation du site [www.dokos.io](http://www.dokos.io) est soumis au droit français. L'utilisateur reconnaît la compétence exclusive du tribunal de Nancy (France).
 
 ## 6. Informations personnelles
 
@@ -65,4 +65,4 @@ Il est possible en cas de non-respect d’ouvrir une réclamation auprès de la 
 
 Veuillez trouver tous les détails de la gestion des données personnelles dans [notre politique de confidentialité.](/fr/securityandprivacy) 
 
-Vous pouvez exercer ces droits en contactant notre personne en charge de la protection des Données Charles-henri Decultot par e-mail à l’adresse <chdecultot@dokos.io> ou par courrier postal à l’attention de Charles-Henri Decultot, 7 bis Allée Neuve, 54520 LAXOU, en fournissant une pièce d’identité pour justifier votre demande. Un délai de réponse peut être d’un mois à compter de la date de réception.
+Vous pouvez exercer ces droits en contactant notre personne en charge de la protection des Données Charles-Henri Decultot par e-mail à l’adresse [dpo@dokos.io](mailto:dpo@dokos.io) ou par courrier postal à l’attention de Charles-Henri Decultot, 7 bis Allée Neuve, 54520 LAXOU, en fournissant une pièce d’identité pour justifier votre demande. Un délai de réponse peut être d’un mois à compter de la date de réception.
