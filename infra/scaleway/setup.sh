@@ -146,6 +146,12 @@ step_container() {
     ns=$(scwj container namespace create name="$NAME" project-id="$PROJECT_ID" region="$REGION" | jq -r '.id')
   fi
   save CONTAINER_NAMESPACE_ID "$ns"
+  # A new namespace stays in "creating" for a while, and a container cannot be created in it until then.
+  local i
+  for i in $(seq 1 40); do
+    [[ "$(scwj container namespace get "$ns" region="$REGION" | jq -r '.status')" == "ready" ]] && break
+    echo "  namespace: not ready yet"; sleep 5
+  done
 
   id=$(scwj container container list namespace-id="$ns" region="$REGION" name="$NAME" | jq -r '.[0].id // empty')
   if [[ -z "$id" ]]; then
