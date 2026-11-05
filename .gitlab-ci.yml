@@ -4,13 +4,17 @@
 #   build            `yarn build`: the Nitro Node server and the prerendered pages, then the output
 #                    size check. On merge requests, the prerendered pages are kept for a day as an
 #                    artifact (there are no preview deployments; review with `yarn dev`).
-#   image:scaleway   on main: `.output/` packaged as a Docker image and pushed to the Scaleway
+#   image:scaleway   on the deploy branch: `.output/` packaged as a Docker image and pushed to the Scaleway
 #                    registry, tagged with the commit.
-#   release:scaleway on main: runs that image on the Serverless Container, checks it, and empties
+#   release:scaleway on the deploy branch: runs that image on the Serverless Container, checks it, and empties
 #                    the CDN cache. Rollback: "Rollback" on the production environment reruns an
 #                    older release job, without a rebuild. Both run only when the project variable
 #                    SCALEWAY_DEPLOY is "true". The release reads the resource IDs from the
 #                    variables SCW_SITE_CONTAINER_ID and SCW_SITE_PIPELINE_ID. See infra/scaleway/.
+#
+# The deploy branch is the variable SCALEWAY_DEPLOY_BRANCH, `main` by default. Until the revamp
+# is merged, the project variable sets it to `feat-dokos-ecosystem`. That branch must be
+# protected, or the jobs cannot read the protected Scaleway key.
 #
 # Node 24: nuxt-og-image 7 needs Node >= 24.15.
 
@@ -25,8 +29,10 @@ workflow:
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
     - if: $CI_COMMIT_BRANCH == "main"
+    - if: $CI_COMMIT_BRANCH == $SCALEWAY_DEPLOY_BRANCH
 
 variables:
+  SCALEWAY_DEPLOY_BRANCH: main
   YARN_CACHE_FOLDER: "$CI_PROJECT_DIR/.yarn-cache"
   NUXT_PUBLIC_SITE_URL: "https://www.dokos.io"
 
@@ -70,7 +76,7 @@ build:
 
 .scaleway:
   rules:
-    - if: $CI_COMMIT_BRANCH == "main" && $SCALEWAY_DEPLOY == "true"
+    - if: $CI_COMMIT_BRANCH == $SCALEWAY_DEPLOY_BRANCH && $SCALEWAY_DEPLOY == "true"
   variables:
     SCW_VERSION: "2.65.2"
     SCW_SHA256: "184e697e6ab8a8e825be1c5cf61d104341abe3598bb0e20b7a54618cb05231b3"

@@ -23,7 +23,9 @@ Content is in `content/fr/` and `content/en/`. The product page schema is in
 
 ## Deploy
 
-Merge requests build the site in GitLab CI. Each merge to `main` deploys to Scaleway (`.gitlab-ci.yml`):
+Merge requests build the site in GitLab CI. Each push to the deploy branch deploys to Scaleway
+(`.gitlab-ci.yml`). The deploy branch is the CI variable `SCALEWAY_DEPLOY_BRANCH`:
+`feat-dokos-ecosystem` until the revamp is merged, then `main`.
 
 1. `image:scaleway` builds the site and pushes a Docker image (`Dockerfile`) tagged with the commit.
 2. `release:scaleway` runs that image on the Serverless Container, checks a few pages and
