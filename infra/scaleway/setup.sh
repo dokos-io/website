@@ -126,6 +126,7 @@ step_iam() {
   echo "  glab variable set SCW_ACCESS_KEY \"\$SCW_ACCESS_KEY\" -R $GITLAB_PROJECT --masked --protected"
   echo "  glab variable set SCW_SECRET_KEY \"\$SCW_SECRET_KEY\" -R $GITLAB_PROJECT --masked --protected"
   echo "  glab variable set SCW_DEFAULT_PROJECT_ID $PROJECT_ID -R $GITLAB_PROJECT"
+  echo "  glab variable set SCW_DEFAULT_ORGANIZATION_ID $(scwj account project get project-id="$PROJECT_ID" | jq -r .organization_id) -R $GITLAB_PROJECT"
 }
 
 step_push() {
