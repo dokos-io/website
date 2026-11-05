@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     experimental: { sqliteConnector: 'native' },
   },
   site: {
-    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://dokos.io',
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.dokos.io',
   },
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)

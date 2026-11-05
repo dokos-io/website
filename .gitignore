@@ -30,3 +30,6 @@ logs
 .yarn
 .eslintcache
 static/sw.js
+
+# Scaleway resource IDs (see infra/scaleway/resources.env.example)
+infra/scaleway/resources.env

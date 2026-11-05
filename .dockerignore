@@ -1,0 +1,3 @@
+# The image only packages the build output (see Dockerfile). Send nothing else to the daemon.
+*
+!.output

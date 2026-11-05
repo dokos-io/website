@@ -1,176 +1,42 @@
-![nuxt-ui-saas-social-card](https://github.com/nuxt-ui-pro/saas/assets/739984/50bf4ddd-c4d5-47e5-a09e-0f699513dfb5)
+# dokos.io
 
-# Nuxt UI Pro - SaaS template
+The website of Dokos SAS, published at https://www.dokos.io. Built with Nuxt 4, Nuxt Content 3
+and Nuxt UI 4.
 
-[![Nuxt UI Pro](https://img.shields.io/badge/Made%20with-Nuxt%20UI%20Pro-00DC82?logo=nuxt.js&labelColor=020420)](https://ui.nuxt.com/pro)
+The repository lives at https://gitlab.com/dokos/website. The GitHub repository
+(`dokos-io/website`) is a read-only mirror: open issues and merge requests on GitLab.
 
-- [Live demo](https://saas-template.nuxt.dev/)
-- [Play on Stackblitz](https://stackblitz.com/github/nuxt-ui-pro/saas)
-- [Documentation](https://ui.nuxt.com/pro/getting-started)
+## Develop
 
-## Quick Start
-
-```bash [Terminal]
-npx nuxi init -t github:nuxt-ui-pro/saas
-```
-
-## Setup
-
-Make sure to install the dependencies:
+Node 24 (nuxt-og-image 7 needs Node >= 24.15) and the Yarn release that the repository includes.
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
 yarn install
-
-# bun
-bun install
+yarn dev          # http://localhost:3000
+yarn lint:copy    # the editorial rules of docs/editorial-guidelines.md
+yarn build        # the Node server and the prerendered pages, then the output size check
+node .output/server/index.mjs
 ```
 
-## Development Server
+Content is in `content/fr/` and `content/en/`. The product page schema is in
+`docs/product-page-schema.md`, and the editorial rules are in `docs/editorial-guidelines.md`.
 
-Start the development server on `http://localhost:3000`:
+## Deploy
 
-```bash
-# npm
-npm run dev
+Merge requests build the site in GitLab CI. Each merge to `main` deploys to Scaleway (`.gitlab-ci.yml`):
 
-# pnpm
-pnpm run dev
+1. `image:scaleway` builds the site and pushes a Docker image (`Dockerfile`) tagged with the commit.
+2. `release:scaleway` runs that image on the Serverless Container, checks a few pages and
+   redirects, and empties the Edge Services cache.
 
-# yarn
-yarn dev
+To roll back, use "Rollback" on an older deployment of the `production` environment in GitLab.
 
-# bun
-bun run dev
-```
+Hosting, the same as doc.dokos.io (Scaleway project "documentation", region fr-par):
 
-## Production
+- `www.dokos.io`: a CNAME to an Edge Services pipeline (CDN and Let's Encrypt certificate), in
+  front of a Serverless Container that runs the Nitro Node server.
+- `dokos.io`: an A record to a Load Balancer that redirects (301) to `https://www.dokos.io`.
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-## Nuxt Studio integration
-
-Add `@nuxthq/studio` dependency to your package.json:
-
-```bash
-# npm
-npm install --save-dev @nuxthq/studio
-
-# pnpm
-pnpm add -D @nuxthq/studio
-
-# yarn
-yarn add -D @nuxthq/studio
-
-# bun
-bun add -d @nuxthq/studio
-```
-
-Add this module to your `nuxt.config.ts`:
-
-```ts
-export default defineNuxtConfig({
-  ...
-  modules: [
-    ...
-    '@nuxthq/studio'
-  ]
-})
-```
-
-Read more on [Nuxt Studio docs](https://nuxt.studio/docs/projects/setup).
-
-## Renovate integration
-
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
-
-
-## Style
-
-Toutes les classes Tailwing CSS peuvent être utilisée.
-Par exemple pour mettre le texte en gras: https://tailwindcss.com/docs/font-weight
-
-
-## Syntaxe MDC
-
-**Exemples**
-
-1. Callout centré
-::div
-  ::callout
-  ---
-  color: "amber"
-  icon: "i-heroicons-light-bulb"
-  to: "https://nuxt.com"
-  target: "_blank"
-  class: max-w-52 mx-auto
-  ---
-  Hello world
-  ::
-::
-
-
-2. Tabs avec et sans HTML
-::tabs
-  ::div{label=Code icon=i-heroicons-code-bracket-square}
-  <span class="text-primary">Hello</span>
-  ::
-
-  ::div
-  ---
-  label: Preview
-  icon: i-heroicons-magnifying-glass-circle
-  ---
-  > World
-  ::
-::
-
-
-3. Bouton centré
-::div{class="text-center"}
-  <UButton color="primary" variant="solid">Button</UButton>
-::
-
-
-## Icônes
-
-Liste des familles installées:
-['heroicons', 'simple-icons', 'ic', 'mdi', 'icon-park-outline', 'octicon', 'carbon', 'ep', 'uil', 'eos-icons', 'vaadin', 'fluent', 'ri', 'material-symbols', 'gg', 'ic', 'circle-flags', 'iconoir', 'logos', 'cib', 'ph', 'map', 'hugeicons', 'oui', 'solar', 'tdesign']
+`infra/scaleway/setup.sh` creates and updates these resources, one step at a time.
+`infra/scaleway/deploy.sh` is the deploy script that CI runs. `scripts/compare-hosts.mjs`
+compares how two hosts answer every page and redirect.
