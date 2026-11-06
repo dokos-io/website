@@ -1,0 +1,86 @@
+# Sources : application Enterprise (gitlab.com/dokos/enterprise, AGPLv3 : flux de validation à périmètre, délégation,
+# portail fournisseur, portail d'approbation, analyse budgétaire), application Dokos Data Hub (gitlab.com/dokos/dokos-data-hub,
+# AGPLv3), content/fr/ingenierie.yml, content/fr/modules/projets.yml et stocks.yml.
+# Règle : aucun client nommé ni identifiable. La page décrit le produit et la façon de travailler, pas un projet.
+title: Dokos pour les opérateurs de réseaux
+description: Demandes reçues par l'API ou par fichiers, validations à plusieurs niveaux, sous-traitants, matériel suivi par numéro de série, et une application métier pour ce qui vous est propre.
+
+hero:
+  headline:
+    label: Réseaux et télécoms
+    icon: i-heroicons-signal
+  title: Des milliers de demandes, <span class="text-primary">un seul circuit de validation</span>.
+  description: Vous traitez des demandes en volume, avec des équipes internes, des sous-traitants et des règles de validation qui changent d'une région à l'autre. Dokos reçoit les demandes de votre système d'information, les fait valider par les bonnes personnes et garde l'historique de chaque décision.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Nos missions d'ingénierie
+      to: /fr/ingenierie
+      size: xl
+      color: neutral
+      variant: outline
+
+colored_section:
+  title: Une application métier sur la base de Dokos
+  description: "Le cœur de votre activité ne rentre pas dans un logiciel standard. Nos ingénieurs construisent l'application qui porte vos demandes sur Dodock, le cadre applicatif de Dokos, et la livrent dans vos dépôts sous licence libre. Elle hérite des droits, de l'historique, de l'API et de l'accès des agents IA. Elle partage les tiers, les articles et la comptabilité de Dokos."
+  image: /modules/dokos/feature-documents.webp
+  align: left
+
+sections:
+  - title: Les demandes arrivent de votre système d'information
+    description: Vos outils créent les demandes dans Dokos par l'API REST ou par webhook. Quand un partenaire dépose des fichiers, Dokos Data Hub relève un serveur SFTP, lit les formats CSV, XML, JSON ou à largeur fixe, et crée ou met à jour les documents selon une correspondance de champs et de listes de codes que vous définissez.
+    image: /modules/integrations/hero.webp
+    align: right
+    links:
+      - label: Les intégrations
+        to: /fr/modules/integrations
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Des validations qui suivent votre organisation
+    description: Avec l'application Enterprise, un flux de validation se déclenche selon la société, le centre de coût ou le projet. Un valideur absent délègue temporairement ses approbations. Le portail d'approbation regroupe toutes les demandes en attente, et chaque décision reste dans l'historique du document.
+    image: /modules/dokos/feature-autorisations.webp
+    align: left
+  - title: Vos sous-traitants dans un portail
+    description: Le portail fournisseur de l'application Enterprise vous permet de demander à un sous-traitant de mettre à jour ses informations et de déposer ses pièces, avec leur date d'expiration. Les commandes, les réceptions et les factures de sous-traitance suivent le circuit d'achat de Dokos.
+    image: /modules/achats/hero.webp
+    align: right
+    links:
+      - label: Le module Achats
+        to: /fr/modules/achats
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Le matériel suivi par numéro de série
+    description: Chaque équipement est suivi par lot ou par numéro de série, d'un entrepôt à l'autre. Les entrepôts s'organisent en arborescence, par région ou par dépôt. Le rapport Projections de stock signale ce qui va manquer.
+    image: /modules/stocks/feature-entrepots.webp
+    align: left
+    links:
+      - label: Le module Stocks
+        to: /fr/modules/stocks
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Le budget engagé, en temps réel
+    description: L'analyse budgétaire de l'application Enterprise compare le budget aux montants dépensés ou engagés, par centre de coût, par projet, par compte ou par toute autre dimension analytique.
+    image: /modules/comptabilite/hero.webp
+    align: right
+
+cta:
+  title: Décrivez-nous le circuit d'une demande.
+  description: De la réception à la clôture, dites-nous qui intervient et où cela bloque. Un premier échange d'une heure suffit pour cadrer.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: L'exploitation sous contrat
+      to: /fr/exploitation
+      size: xl
+      color: neutral
+      variant: outline

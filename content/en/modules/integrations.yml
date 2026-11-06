@@ -66,14 +66,14 @@ features:
     description: You create an OAuth Client with the redirect URI given by Zapier; Dokos generates the client ID and secret. A Social Login Key with the Dodock provider completes the authentication. In Zapier, the Document events trigger creates the webhooks for you, and the Create Document and Find Document actions create or look up documents.
     badge: OAuth client
   - title: Set up your business connectors in one place
-    description: "Each connector application installed from the marketplace adds its settings document to this workspace: Payments for payment gateways, Dokos WooCommerce for your shop, Dokos Hiboutik for your till, eTransactions for the approved e-invoicing platform and eSignature for electronic signatures."
+    description: "Each connector application installed from the marketplace adds its settings document to this workspace: Payments for payment gateways, Dokos WooCommerce for your shop, Dokos Hiboutik for your till, and eTransactions for the approved e-invoicing platform."
     badge: Connectors
 
 install:
   description: The Integrations module is part of Dodock and Dokos. There is no separate application to install. Connectors are installed one by one.
   steps:
     - title: On Dokos Cloud
-      description: The Integrations workspace is part of Dokos. It is on your site from its creation. Connectors (Payments, WooCommerce, Hiboutik, eTransactions, eSignature, Dokos AI) are installed from the marketplace in your Dokos Cloud dashboard.
+      description: The Integrations workspace is part of Dokos. It is on your site from its creation. Connectors (Payments, WooCommerce, Hiboutik, eTransactions, Dokos AI) are installed from the marketplace in your Dokos Cloud dashboard.
     - title: Self-hosted
       description: "Install Dokos: <code>bench get-app https://gitlab.com/dokos/dokos</code> then <code>bench --site your-site install-app erpnext</code>. Each connector has its own repository, given on its product page."
     - title: First use

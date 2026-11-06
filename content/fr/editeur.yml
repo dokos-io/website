@@ -77,7 +77,7 @@ scope:
       badge: Application
       to: /fr/modules/reservations-de-ressources
     - title: eTransactions
-      description: Réception des factures électroniques CII, Factur-X et UBL, et raccordement à une plateforme agréée. L'émission est en cours de finalisation.
+      description: Émission et réception des factures électroniques CII, Factur-X et UBL, par la plateforme agréée de votre choix.
       icon: i-heroicons-document-check
       badge: Application
       to: /fr/modules/etransactions
@@ -112,7 +112,7 @@ scope:
       badge: Outil
       to: /fr/modules/dokos-cli
     - title: Certification caisse
-      description: Le périmètre certifié LNE du système d'encaissement, avec les empreintes de chaque fichier publiées.
+      description: Le système d'encaissement des particuliers certifié par le LNE, avec les empreintes de chaque fichier publiées.
       icon: i-octicon-law
       badge: Application
       to: /fr/certifications

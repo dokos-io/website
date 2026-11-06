@@ -73,7 +73,7 @@ fit:
     - Les espaces de travail de Dokos, distincts de ceux d'ERPNext
     - La numérotation des factures à la validation et l'interdiction de supprimer les documents comptables
     - Le bilan au format français, le prélèvement SEPA, l'import OFX, les factures d'acompte et l'import FEC
-    - La caisse certifiée LNE (module Certification Caisse, sous licence) et l'export des archives fiscales
+    - L'encaissement des particuliers certifié LNE (module Certification Caisse, sous licence) et l'export des archives fiscales
   depends:
     - Dodock
 

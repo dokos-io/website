@@ -86,8 +86,8 @@ features:
       platform. Each invoice received appears in the e-invoice list of the Purchasing module with its status
       (Received, Pending Approval, Integrated, Rejected, Abandoned). Dokos creates the purchase invoice as a
       draft and notifies the accounting team, who check the amount and the due date before submitting it. An
-      indicator shows which platform the invoice came through. For sending, Dokos already generates the
-      Factur-X file when a sales invoice is submitted. Sending through the approved platform is in progress.
+      indicator shows which platform the invoice came through. For sending, Dokos generates the
+      Factur-X file when a sales invoice is submitted and sends it through the approved platform.
     badge: E-invoicing
   - title: The Banking module matches your statements
     description: >-

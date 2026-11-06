@@ -15,6 +15,7 @@ defineProps<{
         title: string;
         rules: { title: string; description: string }[];
         link?: { label: string; to: string };
+        assistants?: { title: string; description?: string; note?: string; items: { name: string; logo: string }[] };
         example: {
             title: string;
             status: string;
@@ -49,7 +50,8 @@ const AVATAR: Record<Entry['kind'], { icon: string; class: string }> = {
                         </span>
                     </li>
                 </ol>
-                <ULink v-if="block.link" :to="block.link.to" class="dk-link mt-8">{{ block.link.label }} →</ULink>
+                <AiAssistants v-if="block.assistants" :block="block.assistants" class="mt-8" />
+                <ULink v-if="block.link" :to="block.link.to" class="dk-link mt-8 inline-block">{{ block.link.label }} →</ULink>
             </div>
 
             <!-- Example document: one invoice, written by a person and by agents. -->

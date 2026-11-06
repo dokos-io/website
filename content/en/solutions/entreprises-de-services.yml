@@ -61,7 +61,7 @@ sections:
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
   - title: Your accounts follow from your invoices
-    description: Each submitted sales or purchase invoice posts its entry to the general ledger. The balance sheet and the profit and loss statement come out with no re-keying. The Bank module imports your statements and suggests matches with your payments. Dokos already receives CII, Factur-X and UBL supplier e-invoices from an approved platform, and sending is in progress.
+    description: Each submitted sales or purchase invoice posts its entry to the general ledger. The balance sheet and the profit and loss statement come out with no re-keying. The Bank module imports your statements and suggests matches with your payments. Dokos sends and receives CII, Factur-X and UBL e-invoices through your approved platform.
     image: /modules/comptabilite/hero.webp
     align: left
     links:

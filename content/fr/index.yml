@@ -3,7 +3,7 @@ description: "Ventes, comptabilité, stocks, RH, projets, support : une seule ba
 navigation: false
 
 announcement:
-  label: Le module Certification Caisse de Dokos est certifié par le LNE.
+  label: Le système d'encaissement des particuliers de Dokos est certifié par le LNE.
   cta: Voir les certifications
   to: /fr/certifications
 
@@ -37,7 +37,7 @@ hero:
       title: Dokos CLI
       note: MCP local
       to: /fr/modules/dokos-cli
-    label: L'écosystème Dokos
+    label: Le cerveau de l'entreprise
     shared: mêmes droits · même historique
     apps_label: Applications
     apps_note: chacune s'installe seule ou avec les autres
@@ -61,7 +61,7 @@ hero:
     core:
       title: Dokos
       note: Ventes · Achats · Stocks · Comptabilité · Production · Projets · RH
-      tags: [Caisse certifiée LNE, Facturation électronique]
+      tags: [Encaissement certifié LNE, Facturation électronique]
       to: /fr/modules/dokos
     base:
       title: Dodock · Frappe Framework · ERPNext
@@ -101,6 +101,18 @@ access:
   link:
     label: IA & agents
     to: /fr/ecosysteme/intelligence-artificielle
+  assistants:
+    title: Avec l'assistant que vous utilisez déjà
+    description: Dokos AI ouvre un serveur MCP protégé par OAuth. Vous le branchez dans votre assistant, qui agit ensuite avec votre compte et vos droits.
+    note: Les connecteurs MCP dépendent de l'offre de chaque assistant.
+    items:
+      - { name: Claude, logo: /ai/claude.svg }
+      - { name: ChatGPT, logo: /ai/chatgpt.svg }
+      - { name: Gemini, logo: /ai/gemini.svg }
+      - { name: Le Chat de Mistral, logo: /ai/mistral.svg }
+      - { name: Grok, logo: /ai/grok.svg }
+      - { name: Microsoft Copilot, logo: /ai/copilot.svg }
+      - { name: Perplexity, logo: /ai/perplexity.svg }
   example:
     title: Facture FA-2026-0412
     status: Validée
@@ -151,17 +163,17 @@ core:
     - { title: Paiement, number: PAY-0198 }
   # Product facts, verifiable on /fr/certifications.
   facts:
-    - label: Systèmes de caisse
+    - label: Encaissement des particuliers
       value: Certifié LNE
       status: Disponible
       state: ok
-      note: Avec le module Certification Caisse et une licence délivrée par Dokos SAS.
+      note: Référentiel de certification des systèmes de caisse du LNE. Avec le module Certification Caisse et une licence délivrée par Dokos SAS.
       link: { label: Les certifications, to: /fr/certifications }
     - label: Facturation électronique
-      value: Réception et PA
-      status: Émission en cours
-      state: wip
-      note: Lecture des factures CII, Factur-X et UBL, raccordement à une plateforme agréée.
+      value: Émission et réception
+      status: Disponible
+      state: ok
+      note: Factures CII, Factur-X et UBL, par la plateforme agréée de votre choix.
       link: { label: eTransactions, to: /fr/modules/etransactions }
 
 # Layer 4: the open source base, and the tools Dokos connects to.

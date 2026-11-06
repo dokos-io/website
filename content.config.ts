@@ -38,6 +38,7 @@ const landingSchema = z.object({
   contact_info: arr().optional(),
   cards: arr().optional(),
   logos: obj().optional(),
+  assistants: obj().optional(),
   colored_section: obj().optional(),
   carousel: arr().optional(),
   // Homepage, below the hero: one block per layer of the stack.

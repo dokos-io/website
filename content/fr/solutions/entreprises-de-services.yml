@@ -62,7 +62,7 @@ sections:
         trailing: true
   - title: Votre comptabilité se tient à partir de vos factures
     # source : content/fr/modules/comptabilite.yml (Banking, Trésorerie), billet rentree-2026.md
-    description: Chaque facture de vente ou d'achat validée passe son écriture au grand livre. Le bilan et le compte de résultat sortent sans ressaisie. Le module Banque, en bêta, importe vos relevés en OFX, CSV, XLSX ou PDF et propose les correspondances avec vos paiements. Le prévisionnel de trésorerie, en bêta, lit vos factures, vos abonnements, vos notes de frais et vos fiches de paie pour projeter votre solde jour par jour. Dokos reçoit déjà les factures fournisseurs électroniques CII, Factur-X et UBL depuis une plateforme agréée ; l'émission est en cours.
+    description: Chaque facture de vente ou d'achat validée passe son écriture au grand livre. Le bilan et le compte de résultat sortent sans ressaisie. Le module Banque, en bêta, importe vos relevés en OFX, CSV, XLSX ou PDF et propose les correspondances avec vos paiements. Le prévisionnel de trésorerie, en bêta, lit vos factures, vos abonnements, vos notes de frais et vos fiches de paie pour projeter votre solde jour par jour. Dokos émet et reçoit les factures électroniques CII, Factur-X et UBL par votre plateforme agréée.
     image: /modules/comptabilite/hero.webp
     align: left
     links:

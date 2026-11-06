@@ -1,0 +1,88 @@
+# Sources : content/fr/modules/construction.yml (application Construction, gitlab.com/dokos/construction, AGPLv3),
+# content/fr/modules/projets.yml, content/fr/modules/achats.yml, content/fr/solutions/entreprises-de-services.yml (notes de frais).
+# Aucune capture de l'application Construction n'existe encore : les images sont celles des modules Ventes, Projets et Achats.
+title: Dokos pour les entreprises du bâtiment
+description: Devis par lots avec sous-totaux, factures de situation, achats et temps rattachés au chantier, et la marge réelle comparée au devis.
+
+hero:
+  headline:
+    label: Construction et travaux
+    icon: i-heroicons-wrench-screwdriver
+  title: Du devis par lots à la facture de situation, <span class="text-primary">chaque chantier garde sa marge</span>.
+  description: Vous chiffrez vos ouvrages par lots, vous facturez à l'avancement et vous suivez ce que chaque chantier coûte vraiment. L'application Construction s'ajoute à Dokos. Les achats, les heures et les notes de frais se rattachent au projet du chantier.
+  links:
+    - label: Essayer Dokos
+      to: https://cloud.dokos.io
+      target: _blank
+      size: xl
+      color: primary
+      icon: i-heroicons-rocket-launch
+    - label: L'application Construction
+      to: /fr/modules/construction
+      size: xl
+      color: neutral
+      variant: outline
+
+colored_section:
+  title: Une application libre, publiée par Dokos
+  description: "Construction est publiée sous licence AGPLv3 sur gitlab.com/dokos/construction. Elle s'installe depuis la marketplace de Dokos Cloud, ou sur votre propre serveur. Elle remplace la table d'articles des devis, des commandes et des factures par un éditeur à titres, commentaires et sous-totaux, côté vente comme côté achat."
+  image: /modules/ventes/feature-devis.webp
+  align: left
+
+sections:
+  - title: Chiffrez vos ouvrages par lots
+    description: Dans le devis, vous ajoutez des titres, des commentaires et des articles, puis vous réordonnez les lignes par glisser-déposer. Chaque section calcule son sous-total. Vous choisissez les colonnes à afficher, par exemple le prix de revient unitaire ou le coefficient de charge. À l'impression, vous masquez une ligne, un prix ou les prix de toute une section.
+    image: /modules/ventes/feature-devis.webp
+    align: right
+    links:
+      - label: L'application Construction
+        to: /fr/modules/construction
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Facturez à l'avancement
+    description: Sur la commande client validée, vous créez une facture de situation. Dokos propose un pourcentage d'avancement, le plus élevé entre l'avancement du projet lié et ce qui est déjà facturé. Vous l'appliquez à toute la facture ou ligne par ligne. Les lots et les sous-totaux du devis se retrouvent dans la commande et dans chaque situation.
+    image: /modules/ventes/feature-facture.webp
+    align: left
+  - title: Un projet par chantier
+    description: Le chantier devient un projet rattaché à la commande client. Vous le découpez en tâches, avec leurs dépendances dans le Gantt. Vos équipes saisissent leurs heures dans des feuilles de temps, et les documents joints aux tâches se retrouvent dans un même onglet du projet.
+    image: /modules/projets/feature-taches.webp
+    align: right
+    links:
+      - label: Le module Projets
+        to: /fr/modules/projets
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Achats et sous-traitance rattachés au chantier
+    description: L'éditeur par lots fonctionne aussi dans le devis fournisseur, la commande fournisseur et le reçu d'achat. Chaque achat porte le projet du chantier. Les factures électroniques de vos fournisseurs arrivent de votre plateforme agréée en factures d'achat brouillon, à rapprocher de la commande.
+    image: /modules/achats/feature-demande.webp
+    align: left
+    links:
+      - label: Le module Achats
+        to: /fr/modules/achats
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: La marge réelle, comparée au devis
+    description: Le rapport « Récapitulatif de marque sur devis par projet » compare, pour chaque projet, le taux de marque du devis avec les ventes et les achats réels. Si l'application RH est installée, il compte aussi les notes de frais du projet. Le projet additionne les heures, les achats et les matières consommées, puis les compare aux ventes.
+    image: /solutions/notes-de-frais.webp
+    align: right
+
+cta:
+  title: Décrivez-nous comment vous chiffrez vos chantiers.
+  description: Dites-nous comment vous établissez vos devis et vos situations aujourd'hui. Nous vous dirons ce que Dokos et Construction couvrent déjà, et ce qu'il faudrait construire.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Essayer Dokos
+      to: https://cloud.dokos.io
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

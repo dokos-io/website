@@ -2,7 +2,7 @@
 # point-de-vente, facturx, rapports), doc.dokos.io/v5/dokos/comptabilite/acomptes,
 # doc.dokos.io/v5/dokos/comparaison-erpnext, doc.dokos.io/nouveautes (28 septembre 2026),
 # content/fr/blog/2026/facturation-electronique.md (mise à jour du 3 novembre 2026 : réception et raccordement
-# à une plateforme agréée en service, émission en cours de développement).
+# à une plateforme agréée en service, émission en production, confirmé le 2026-11-06).
 #
 # Captures à prendre (demo.dokos.cloud) :
 # - hero.webp : l'espace de travail Ventes (/app/selling), cartes et raccourcis
@@ -45,8 +45,8 @@ for_whom:
     - title: Vous facturez des abonnements chaque mois à la main
       description: Un abonnement génère ses factures à chaque période et déclenche le paiement si le client a enregistré un moyen de paiement.
       icon: i-heroicons-arrow-path
-    - title: Vous vendez en boutique et à distance
-      description: Le point de vente encaisse au comptoir, avec la certification LNE quand le module Certification Caisse est installé sous licence. Les factures envoyées par e-mail portent un lien de paiement.
+    - title: Vous facturez des particuliers
+      description: Vos encaissements auprès des particuliers sont enregistrés dans un système certifié par le LNE quand le module Certification Caisse est installé sous licence. Les factures envoyées par e-mail portent un lien de paiement.
       icon: i-heroicons-building-storefront
     - title: Vous ne savez pas ce qui reste à livrer
       description: Le statut de chaque commande indique ce qui reste à livrer et à facturer. Vous filtrez la liste sur ce statut.
@@ -149,16 +149,15 @@ faq:
       content: >-
         Non. La période et le moment de facturation ne se modifient plus une fois l'abonnement enregistré.
         Vous créez un nouvel abonnement.
-    - label: Le point de vente est-il certifié ?
+    - label: L'encaissement auprès des particuliers est-il certifié ?
       content: >-
         Oui, quand le module Certification Caisse est installé avec une licence délivrée par Dokos SAS. Ce module est certifié par le LNE. La [page Certifications](/fr/certifications) explique le rôle de la licence. Les
         données d'encaissement sont inscrites dans un journal inaltérable et exportables en archive fiscale.
 
     - label: Mes factures de vente partent-elles par une plateforme agréée ?
       content: >-
-        Pas encore. Dokos reçoit déjà les factures électroniques aux formats CII, Factur-X et UBL et se raccorde à une plateforme agréée
-        pour la réception. L'émission est en cours de développement. En attendant, eTransactions génère le fichier Factur-X de chaque
-        facture validée. Voir le module [eTransactions](/fr/modules/etransactions).
+        Oui. Avec eTransactions, Dokos émet vos factures de vente et reçoit celles de vos fournisseurs, aux formats CII, Factur-X
+        et UBL, par la plateforme agréée de votre choix. Voir le module [eTransactions](/fr/modules/etransactions).
 
 bottom_cta:
   title: Posez-nous vos questions sur les ventes dans Dokos.

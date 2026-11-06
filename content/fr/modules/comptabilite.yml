@@ -69,7 +69,7 @@ fit:
     - L'espace de travail Comptabilité, le plan comptable, les journaux et l'exercice fiscal
     - Le Grand livre, le Bilan, le Compte de résultat et la Balance générale
     - Le module Banque (/banking) et le prévisionnel de trésorerie
-    - Le journal SAS Ledger de la caisse certifiée et l'export des archives fiscales
+    - Le journal SAS Ledger de l'encaissement certifié et l'export des archives fiscales
     - Le Prélèvement SEPA, les Factures d'acompte et l'Import FEC
   depends:
     - Ventes
@@ -86,7 +86,7 @@ features:
       ne peuvent pas être supprimés. Le bilan sort au format attendu en France et les comptes de tiers se
       placent à l'actif ou au passif selon leur solde.
     badge: Grand livre
-  - title: Une caisse certifiée LNE
+  - title: Un encaissement des particuliers certifié LNE
     description: >-
       Le point de vente crée la facture et enregistre le paiement en une seule opération, avec plusieurs
       modes de paiement sur un même ticket. Chaque opération d'encaissement est inscrite dans un journal
@@ -101,8 +101,7 @@ features:
       statut (Réceptionnée, En attente de validation, Intégrée, Refusée, Abandonnée). Dokos crée la facture
       fournisseur en brouillon et notifie l'équipe comptable, qui vérifie le montant et l'échéance avant de
       valider. Un indicateur affiche par quelle plateforme la facture est arrivée. Côté émission, Dokos génère
-      déjà le fichier Factur-X à la validation d'une facture de vente ; l'envoi par la plateforme agréée est
-      en cours.
+      le fichier Factur-X à la validation d'une facture de vente et l'envoie par la plateforme agréée.
     badge: Facturation électronique
   - title: Le module Banque rapproche vos relevés
     description: >-
@@ -133,7 +132,7 @@ install:
       description: "<code>bench get-app --branch v5 https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>, sur un bench Dodock v5."
     - title: Pour la facturation électronique
       description: Installez l'application eTransactions depuis la marketplace, puis renseignez la connexion à votre plateforme agréée dans ses paramètres.
-    - title: Pour la caisse certifiée
+    - title: Pour l'encaissement certifié
       description: Installez le module Certification Caisse, puis demandez une licence à Dokos SAS en nous écrivant. La licence apporte les clés de signature de votre société et l'accès au journal de signature externe de Dokos SAS. Sans licence active, le module ne signe pas le journal.
 
 faq:

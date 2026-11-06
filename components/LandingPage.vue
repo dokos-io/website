@@ -62,6 +62,11 @@ const page = computed(() => props.page)
       </dl>
     </UPageSection>
 
+    <!-- AI assistants that connect to Dokos AI (IA & agents page). -->
+    <UPageSection v-if="page.assistants">
+      <AiAssistants :block="page.assistants" />
+    </UPageSection>
+
     <!-- Logo wall (used by the sector pages). -->
     <UPageSection v-if="page.logos">
       <UPageLogos :title="page.logos.title" class="justify-center">

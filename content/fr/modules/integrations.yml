@@ -1,4 +1,4 @@
-# Sources : https://doc.dokos.io/v5/integrations (connecteurs : Payments, eSignature, WooCommerce,
+# Sources : https://doc.dokos.io/v5/integrations (connecteurs : Payments, WooCommerce,
 # Hiboutik, Zapier, E-transactions, IA), https://doc.dokos.io/v5/integrations/zapier (Client OAuth,
 # Clé de connexion sociale, Webhooks et leurs événements), https://doc.dokos.io/v5/dokos/hrms/securite-api
 # (Clé API et Secret API sur le profil utilisateur, mêmes permissions que l'interface),
@@ -79,14 +79,14 @@ features:
     description: Vous créez un Client OAuth avec l'URI de redirection fournie par Zapier ; Dokos génère l'ID client et le secret. Une Clé de connexion sociale avec le fournisseur Dodock complète l'authentification. Dans Zapier, le déclencheur « Document events » crée les webhooks pour vous, et les actions Create Document et Find Document créent ou recherchent des documents.
     badge: Client OAuth
   - title: Paramétrez vos connecteurs métier au même endroit
-    description: "Chaque application de connexion installée depuis la marketplace ajoute son document de paramètres dans cet espace de travail : Payments pour les passerelles de paiement, Dokos WooCommerce pour votre boutique, Dokos Hiboutik pour votre caisse, E-transactions pour la plateforme agréée de facturation électronique et eSignature pour la signature électronique."
+    description: "Chaque application de connexion installée depuis la marketplace ajoute son document de paramètres dans cet espace de travail : Payments pour les passerelles de paiement, Dokos WooCommerce pour votre boutique, Dokos Hiboutik pour votre caisse et E-transactions pour la plateforme agréée de facturation électronique."
     badge: Connecteurs
 
 install:
   description: Le module Intégrations fait partie de Dodock et de Dokos. Il n'y a pas d'application séparée à installer. Les connecteurs, eux, s'installent un par un.
   steps:
     - title: Sur Dokos Cloud
-      description: L'espace de travail Intégrations fait partie de Dokos. Il est présent dès la création de votre site. Les connecteurs (Payments, WooCommerce, Hiboutik, E-transactions, eSignature, Dokos AI) s'installent depuis la marketplace de votre tableau de bord Dokos Cloud.
+      description: L'espace de travail Intégrations fait partie de Dokos. Il est présent dès la création de votre site. Les connecteurs (Payments, WooCommerce, Hiboutik, E-transactions, Dokos AI) s'installent depuis la marketplace de votre tableau de bord Dokos Cloud.
     - title: En auto-hébergement
       description: "Installez Dokos : <code>bench get-app https://gitlab.com/dokos/dokos</code> puis <code>bench --site votre-site install-app erpnext</code>. Chaque connecteur a son propre dépôt, indiqué sur sa page produit."
     - title: Premier usage

@@ -9,7 +9,7 @@ hero:
     label: L'écosystème Dokos
     icon: i-heroicons-cpu-chip
     to: /fr/modules
-  title: Le harnais de vos équipes<br>et de vos <span class="text-primary">agents IA</span>.
+  title: Le cerveau de l'entreprise,<br>pour vos équipes et vos <span class="text-primary">agents IA</span>.
   description: Un agent qui travaille dans Dokos lit les mêmes documents que vos équipes, avec les mêmes droits, et chaque action qu'il fait apparaît dans l'historique du document. Dokos AI est l'assistant intégré au site. Dokos CLI connecte l'agent de votre choix par son serveur MCP.
   links:
     - label: Dokos AI
@@ -23,6 +23,19 @@ hero:
       color: neutral
       variant: outline
       icon: i-heroicons-command-line
+
+assistants:
+  title: Avec l'assistant que vous utilisez déjà
+  description: Dokos AI ouvre un serveur MCP protégé par OAuth. Vous le branchez dans votre assistant, qui agit ensuite avec votre compte et vos droits.
+  note: Les connecteurs MCP dépendent de l'offre de chaque assistant.
+  items:
+    - { name: Claude, logo: /ai/claude.svg }
+    - { name: ChatGPT, logo: /ai/chatgpt.svg }
+    - { name: Gemini, logo: /ai/gemini.svg }
+    - { name: Le Chat de Mistral, logo: /ai/mistral.svg }
+    - { name: Grok, logo: /ai/grok.svg }
+    - { name: Microsoft Copilot, logo: /ai/copilot.svg }
+    - { name: Perplexity, logo: /ai/perplexity.svg }
 
 scope:
   title: Les règles, les mêmes pour tous

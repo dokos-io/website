@@ -31,8 +31,13 @@ const links = computed(() => {
             // pages are orphaned and `crawlLinks` never prerenders them.
             label: t('industries'),
             children: [
-                { label: t('service-companies'), to: localePath('/solutions/entreprises-de-services') },
                 { label: t('manufacturing'), to: localePath('/solutions/industrie') },
+                // Construction, networks and logistics exist in French only for now.
+                { label: t('construction'), to: '/fr/solutions/construction' },
+                { label: t('networks'), to: '/fr/solutions/reseaux' },
+                { label: t('logistics'), to: '/fr/solutions/logistique' },
+                { label: t('service-companies'), to: localePath('/solutions/entreprises-de-services') },
+                // Secondary audience: kept last on purpose.
                 { label: t('thirdplaces'), to: localePath('/solutions/tiers-lieux') },
             ],
         },
@@ -99,7 +104,10 @@ const links = computed(() => {
     industries: Industries
     service-companies: Service companies
     manufacturing: Manufacturing
-    thirdplaces: Third places
+    construction: Construction (in French)
+    networks: Networks and telecoms (in French)
+    logistics: Logistics and delivery (in French)
+    thirdplaces: Third places and associations
     resources: Resources
     documentation: Documentation
     forum: "Community Forum"
@@ -128,7 +136,10 @@ const links = computed(() => {
     industries: Secteurs d'activité
     service-companies: Entreprises de services
     manufacturing: Industrie
-    thirdplaces: Tiers-lieux
+    construction: Construction
+    networks: Réseaux et télécoms
+    logistics: Logistique et livraison
+    thirdplaces: Tiers-lieux et associations
     resources: Ressources
     documentation: Documentation
     forum: Forum communautaire

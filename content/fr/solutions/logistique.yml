@@ -1,0 +1,76 @@
+# Sources : ERPNext v16 / Dokos v5 (doctypes Delivery Trip, Delivery Stop, Shipment, Pick List, Packing Slip),
+# application Dokos Data Hub (gitlab.com/dokos/dokos-data-hub, AGPLv3 : connexion SFTP, formats XML/CSV/JSON/largeur fixe,
+# création, mise à jour ou saut des doublons, listes de codes), application Enterprise (gitlab.com/dokos/enterprise),
+# content/fr/modules/stocks.yml.
+# Règle : aucun client nommé ni identifiable.
+title: Dokos pour la logistique et la livraison
+description: Échanges EDI avec vos partenaires, entrepôts, préparation, expéditions et tournées de livraison, facturés et comptabilisés dans le même logiciel.
+
+hero:
+  headline:
+    label: Logistique et livraison
+    icon: i-heroicons-truck
+  title: Vos flux de vos partenaires <span class="text-primary">jusqu'à la facture</span>.
+  description: Vos partenaires vous envoient des fichiers, vos entrepôts préparent, vos chauffeurs livrent. Dokos lit les échanges, trace chaque mouvement de stock et relie la livraison à sa facture et à son écriture.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Le module Stocks
+      to: /fr/modules/stocks
+      size: xl
+      color: neutral
+      variant: outline
+
+colored_section:
+  title: Dokos Data Hub, pour vos échanges EDI
+  description: "Dokos Data Hub relève les fichiers déposés par vos partenaires sur un serveur SFTP, à intervalle régulier. Il lit les formats CSV, XML, JSON et à largeur fixe, dans l'encodage du fichier. Une correspondance que vous définissez associe chaque champ et chaque liste de codes à un document Dokos. Pour un doublon, vous choisissez de créer, de mettre à jour ou d'ignorer. L'application est publiée sous licence AGPLv3 sur gitlab.com/dokos/dokos-data-hub."
+  image: /modules/integrations/hero.webp
+  align: left
+
+sections:
+  - title: Des entrepôts et des emplacements
+    description: Les entrepôts s'organisent en arborescence, par site ou par zone. Chaque réception, transfert et livraison écrit une entrée dans le grand livre des stocks. Vous suivez un article par lot ou par numéro de série.
+    image: /modules/stocks/feature-entrepots.webp
+    align: right
+    links:
+      - label: Le module Stocks
+        to: /fr/modules/stocks
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Préparation et expédition
+    description: La liste de prélèvement guide la préparation, entrepôt par entrepôt. Le bordereau de colisage décrit le contenu de chaque colis. L'expédition regroupe les colis, l'adresse d'enlèvement et l'adresse de livraison.
+    image: /modules/stocks/feature-mouvements.webp
+    align: left
+  - title: Des tournées de livraison
+    description: La tournée de livraison affecte un chauffeur et un véhicule à une liste d'arrêts. Dokos calcule les heures d'arrivée estimées et optimise l'ordre des arrêts. Les clients peuvent être prévenus par e-mail au départ.
+    image: /modules/stocks/fit.webp
+    align: right
+  - title: Facturation et validations
+    description: Le bon de livraison devient une facture de vente, puis une écriture et un paiement, sans ressaisie. Avec l'application Enterprise, les achats de transport et de sous-traitance suivent des flux de validation selon la société, le centre de coût ou le projet, et l'analyse budgétaire compare le budget au réalisé.
+    image: /modules/ventes/feature-facture.webp
+    align: left
+    links:
+      - label: Le module Ventes
+        to: /fr/modules/ventes
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+cta:
+  title: Décrivez-nous vos flux.
+  description: Dites-nous quels fichiers vous recevez, de qui, et ce qu'il en advient. Nous vous dirons ce que Dokos et Data Hub couvrent déjà.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+      size: xl
+      color: primary
+    - label: Nos missions d'ingénierie
+      to: /fr/ingenierie
+      size: xl
+      color: neutral
+      variant: outline

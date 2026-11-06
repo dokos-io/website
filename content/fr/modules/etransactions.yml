@@ -2,7 +2,7 @@
 # inscription-annuaire, configuration-clients-fournisseurs, reception-factures-electroniques,
 # emission-factures-electroniques, etransactions), https://doc.dokos.io/nouveautes (septembre 2026),
 # README de https://gitlab.com/dokos/etransactions (branche v5), billet facturation-electronique.md.
-# Statut fixé par le client : réception et connexion à une plateforme agréée en production, émission en cours.
+# Statut fixé par le client : réception et connexion à une plateforme agréée en production, émission en production (confirmé le 2026-11-06).
 # source (3 novembre 2026) : branche v5 du dépôt, version 2.17.1 du 2 novembre 2026 ; eTransactions Settings
 # (ocr_service : Amazon Textract par défaut ou Mistral OCR ; envois automatiques des statuts de cycle de vie ;
 # rapprochement automatique avec les reçus d'achat), traductions locale/fr.po ; doc.dokos.io/nouveautes du
@@ -52,8 +52,8 @@ for_whom:
     - title: Vous ressaisissez les factures fournisseur reçues en PDF
       description: Vous déposez le PDF dans la banette ou vous le transférez par courriel. L'OCR extrait le fournisseur, les montants et les lignes.
       icon: i-heroicons-document-magnifying-glass
-    - title: Vous préparez l'émission de vos propres factures
-      description: Vous renseignez le SIREN et le profil de vos clients dès aujourd'hui. L'émission depuis la facture de vente est en cours de finalisation.
+    - title: Vous devez émettre vos factures par une plateforme agréée
+      description: Vous renseignez le SIREN et le profil de vos clients. À la validation, la facture de vente part par votre plateforme agréée.
       icon: i-heroicons-paper-airplane
 
 fit:
@@ -90,7 +90,7 @@ features:
     badge: En production
   - title: Émettez vos factures depuis la facture de vente
     description: À la validation d'une facture de vente, Dokos classe le client, entreprise, administration, particulier ou partenaire étranger, puis génère le format attendu, Factur-X par défaut ou UBL pour un destinataire Peppol. L'envoi part automatiquement ou à la main, et un panneau affiche le statut renvoyé par la plateforme. Une facture déjà transmise s'annule par « Annuler avec cycle de vie ». Cette partie est en cours de finalisation.
-    badge: En cours
+    badge: En production
 
 install:
   steps:
@@ -113,8 +113,8 @@ faq:
     - label: Dokos est-il lui-même une plateforme agréée ?
       content: Non. Dokos se connecte à la plateforme de votre choix. Dokos est par ailleurs membre fondateur de l'association [PDP Libre](https://pdplibre.org/), qui regroupe des éditeurs de logiciels libres autour de la facturation électronique.
     # source : billet rentree-2026.md (« Les premières factures électroniques sont déjà arrivées cet été »)
-    - label: Que puis-je faire aujourd'hui, et qu'est-ce qui reste en cours ?
-      content: La connexion à une plateforme agréée, la réception des factures aux formats Factur-X, CII et UBL, le renvoi des statuts au fournisseur et la lecture des PDF par OCR sont en production. Les premières factures électroniques sont arrivées chez des clients de Dokos SAS à l'été 2026. L'émission depuis la facture de vente est en cours de finalisation.
+    - label: Qu'est-ce qui est en production aujourd'hui ?
+      content: La connexion à une plateforme agréée, l'émission des factures de vente, la réception des factures aux formats Factur-X, CII et UBL, le renvoi des statuts au fournisseur et la lecture des PDF par OCR. Les premières factures électroniques sont arrivées chez des clients de Dokos SAS à l'été 2026.
     - label: Que deviennent mes réglages de l'application OCR ?
       content: Sur Dokos V5, eTransactions remplace l'application OCR. À l'installation, les réglages et les factures en attente de l'OCR sont repris dans eTransactions.
     - label: Comment un fournisseur reçu est-il reconnu ?

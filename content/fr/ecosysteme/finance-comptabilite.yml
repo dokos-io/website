@@ -32,10 +32,10 @@ scope:
       description: Plan de comptes, TVA, écritures, grand livre, balance, bilan et compte de résultat, avec export vers votre expert-comptable.
       icon: i-heroicons-book-open
     - title: Encaissement certifié LNE
-      description: Le module Certification Caisse est certifié par le LNE. Vous l'installez et vous demandez une licence à Dokos SAS. La licence porte les clés de signature de chaque société et l'accès au journal de signature externe de Dokos SAS. Les empreintes du périmètre certifié sont publiées sur la page Certifications.
+      description: Pour les entreprises qui facturent des particuliers, le module Certification Caisse est certifié par le LNE. Vous l'installez et vous demandez une licence à Dokos SAS. La licence porte les clés de signature de chaque société et l'accès au journal de signature externe de Dokos SAS. Les empreintes du périmètre certifié sont publiées sur la page Certifications.
       icon: i-octicon-law
     - title: Facturation électronique
-      description: Réception des factures CII, Factur-X et UBL, et raccordement à une plateforme agréée. L'émission est en cours de développement.
+      description: Émission et réception des factures CII, Factur-X et UBL, par la plateforme agréée de votre choix.
       icon: i-heroicons-document-check
     - title: Rapprochement bancaire
       description: Vos relevés arrivent chaque jour par Bank, ou vous les importez en OFX, CSV, XLSX ou PDF. Le module Banking, en bêta, propose les correspondances. Le prévisionnel de trésorerie, en bêta, lit vos factures, vos commandes et vos abonnements.

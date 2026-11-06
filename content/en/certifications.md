@@ -3,7 +3,9 @@ toc: true
 title: Certifications of Dokos and its modules
 ---
 
-## Point-of-sale system certification
+## Certified system for taking payments from individuals
+
+This certification is for companies that bill individuals from their invoicing and accounting software: they must record those payments in a certified system.
 
 The Dokos **Certification Caisse** module is certified by LNE (Laboratoire national de métrologie et d'essais, the French national metrology and testing laboratory). The certificate confirms that the point-of-sale system meets the conditions of inalterability, security, retention and archiving of data set by article 286 of the French General Tax Code, according to the certification standard for point-of-sale systems.
 

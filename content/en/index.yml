@@ -3,7 +3,7 @@ description: "Sales, accounting, stock, HR, projects, support: one database, a s
 navigation: false
 
 announcement:
-  label: The Dokos Certification Caisse module is certified by LNE.
+  label: The Dokos system for taking payments from individuals is certified by LNE.
   cta: See the certifications
   to: /en/certifications
 
@@ -37,7 +37,7 @@ hero:
       title: Dokos CLI
       note: local MCP
       to: /en/modules/dokos-cli
-    label: The Dokos ecosystem
+    label: The company brain
     shared: same permissions · same history
     apps_label: Applications
     apps_note: each one installs on its own or with the others
@@ -61,7 +61,7 @@ hero:
     core:
       title: Dokos
       note: Sales · Purchasing · Stock · Accounting · Manufacturing · Projects · HR
-      tags: [LNE-certified POS, E-invoicing]
+      tags: [LNE-certified payments, E-invoicing]
       to: /en/modules/dokos
     base:
       title: Dodock · Frappe Framework · ERPNext
@@ -101,6 +101,18 @@ access:
   link:
     label: AI & agents
     to: /en/ecosysteme/intelligence-artificielle
+  assistants:
+    title: With the assistant you already use
+    description: Dokos AI opens an MCP server protected by OAuth. You connect it to your assistant, which then acts with your account and your permissions.
+    note: MCP connectors depend on each assistant's plan.
+    items:
+      - { name: Claude, logo: /ai/claude.svg }
+      - { name: ChatGPT, logo: /ai/chatgpt.svg }
+      - { name: Gemini, logo: /ai/gemini.svg }
+      - { name: Mistral Le Chat, logo: /ai/mistral.svg }
+      - { name: Grok, logo: /ai/grok.svg }
+      - { name: Microsoft Copilot, logo: /ai/copilot.svg }
+      - { name: Perplexity, logo: /ai/perplexity.svg }
   example:
     title: Invoice INV-2026-0412
     status: Submitted
@@ -151,17 +163,17 @@ core:
     - { title: Payment, number: PAY-0198 }
   # Product facts, verifiable on /en/certifications and content/fr/blog/2026/facturation-electronique.md.
   facts:
-    - label: Point-of-sale systems
+    - label: Payments from individuals
       value: LNE certified
       status: Available
       state: ok
-      note: With the Certification Caisse module and a licence issued by Dokos SAS.
+      note: LNE certification standard for point-of-sale systems (« systèmes de caisse »). With the Certification Caisse module and a licence issued by Dokos SAS.
       link: { label: The certifications, to: /en/certifications }
     - label: E-invoicing
-      value: Receiving and PA link
-      status: Sending in progress
-      state: wip
-      note: Reads CII, Factur-X and UBL invoices, connected to an approved platform (PA).
+      value: Sending and receiving
+      status: Available
+      state: ok
+      note: CII, Factur-X and UBL invoices, through the approved platform (PA) of your choice.
       link: { label: eTransactions, to: /en/modules/etransactions }
 
 # Layer 4: the open source base, and the tools Dokos connects to.

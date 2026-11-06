@@ -1,5 +1,5 @@
 # English version of content/fr/modules/etransactions.yml (sources and screenshot notes are there).
-# Status set by Dokos: reception and connection to an approved platform in production, emission in progress.
+# Status set by Dokos: reception and connection to an approved platform in production, emission in production (confirmed 2026-11-06).
 
 title: eTransactions
 description: Receives your e-invoices, links them to your orders and prepares your purchase invoices in Dokos.
@@ -34,8 +34,8 @@ for_whom:
     - title: You re-key the supplier invoices you receive as PDF
       description: You drop the PDF into the basket or forward it by e-mail. OCR extracts the supplier, the amounts and the lines.
       icon: i-heroicons-document-magnifying-glass
-    - title: You are getting ready to issue your own e-invoices
-      description: You can fill in the SIREN number and the profile of your customers today. Sending from the sales invoice is being finalised.
+    - title: You must issue your invoices through an approved platform
+      description: You fill in the SIREN number and the profile of your customers. When you submit a sales invoice, it goes out through your approved platform.
       icon: i-heroicons-paper-airplane
 
 fit:
@@ -69,7 +69,7 @@ features:
     badge: In production
   - title: Send your invoices from the sales invoice
     description: When a sales invoice is submitted, Dokos classifies the customer as a company, a public body, an individual or a foreign partner, then generates the expected format, Factur-X by default or UBL for a Peppol recipient. Sending is automatic or manual, and a panel shows the status returned by the platform. An invoice already transmitted is cancelled with "Cancel with lifecycle". This part is being finalised.
-    badge: In progress
+    badge: In production
 
 install:
   steps:
@@ -91,8 +91,8 @@ faq:
       content: SuperPDP, Esalink (HUBTIMIZE) and any custom platform that follows the AFNOR XP Z12-013 standard. A company can activate several platforms, each with its own scope.
     - label: Is Dokos itself an approved platform?
       content: No. Dokos connects to the platform of your choice. Dokos SAS is also a founding member of the [PDP Libre](https://pdplibre.org/) association, which brings together free software publishers working on e-invoicing.
-    - label: What can I do today, and what is still in progress?
-      content: The connection to an approved platform, the reception of invoices in Factur-X, CII and UBL formats and the reading of PDFs by OCR are in production. Sending from the sales invoice is being finalised.
+    - label: What is in production today?
+      content: The connection to an approved platform, sending sales invoices, the reception of invoices in Factur-X, CII and UBL formats and the reading of PDFs by OCR.
     - label: What happens to my OCR application settings?
       content: On Dokos V5, eTransactions replaces the OCR application. On installation, the OCR settings and pending invoices are taken over by eTransactions.
     - label: How is a received supplier recognised?

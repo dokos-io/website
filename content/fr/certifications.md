@@ -5,6 +5,8 @@ title: Certifications de Dokos et ses modules
 
 ## Certification du système d'encaissement
 
+Cette certification s'adresse aux entreprises qui facturent des particuliers depuis leur logiciel de facturation et de comptabilité : elles doivent enregistrer leurs encaissements dans un système certifié.
+
 Le module **Certification Caisse** de Dokos est certifié par le LNE (Laboratoire national de métrologie et d'essais). Le certificat atteste que le système de caisse respecte les conditions d'inaltérabilité, de sécurisation, de conservation et d'archivage des données prévues à l'article 286 du code général des impôts, selon le référentiel de certification des systèmes de caisse.
 
 ### Ce qu'il faut pour encaisser avec un système certifié
@@ -182,6 +184,6 @@ Utilisez l'[outil de vérification d'archives fiscales](https://dokos.gitlab.io/
 <!-- source: blog/2026/facturation-electronique.md, blog/2026/rentree-2026.md, content/fr/modules/etransactions.yml -->
 ## Facturation électronique
 
-Dokos reçoit les factures électroniques aux formats CII, Factur-X et UBL, et se raccorde à une plateforme agréée (PA) pour la réception. L'émission depuis la facture de vente est en cours de finalisation. Le détail figure sur la page [eTransactions](/fr/modules/etransactions) et dans la [documentation](https://doc.dokos.io/v5/integrations/etransaction).
+Dokos lit les factures électroniques aux formats CII, Factur-X et UBL, et émet et reçoit les factures électroniques par la plateforme agréée (PA) de votre choix. Le détail figure sur la page [eTransactions](/fr/modules/etransactions) et dans la [documentation](https://doc.dokos.io/v5/integrations/etransaction).
 
 Dokos SAS est membre fondateur de l'association [PDP Libre](https://pdplibre.org/), qui réunit des éditeurs open source autour de la facturation électronique.
