@@ -1,6 +1,6 @@
 # English version of content/fr/ecosysteme/intelligence-artificielle.yml.
 title: For your teams and your AI agents
-description: "Dokos AI answers from your documents and asks for confirmation before writing. Dokos CLI and its MCP server connect your own agents to the site, with the same permissions as a user."
+description: "The company brain, for your teams and your AI agents. Dokos AI answers from your documents and asks for confirmation before writing. Its MCP server, like the one in Dokos CLI, connects Claude, ChatGPT, Gemini, Le Chat or the assistant of your choice, with the same permissions as a user."
 navigation:
   title: AI & agents
   icon: i-heroicons-cpu-chip
@@ -11,7 +11,7 @@ hero:
     icon: i-heroicons-cpu-chip
     to: /en/modules
   title: The company brain,<br>for your teams and your <span class="text-primary">AI agents</span>.
-  description: An agent that works in Dokos reads the same documents as your teams, with the same permissions, and each action it takes appears in the document history. Dokos AI is the assistant built into the site. Dokos CLI connects the agent of your choice through its MCP server.
+  description: An agent that works in Dokos reads the same documents as your teams, with the same permissions, and each action it takes appears in the document history. Dokos AI is the assistant built into the site. Dokos AI and Dokos CLI connect the assistant of your choice through their MCP server.
   links:
     - label: Dokos AI
       to: /en/modules/dokos-ai

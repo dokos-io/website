@@ -1,0 +1,86 @@
+# English version of content/fr/solutions/construction.yml (same sources and image notes).
+title: Dokos for construction companies
+description: Quotations in sections with subtotals, progress invoices, purchases and time linked to the job, and the actual margin compared with the quotation.
+
+hero:
+  headline:
+    label: Construction and building works
+    icon: i-heroicons-wrench-screwdriver
+  title: From the sectioned quotation to the progress invoice, <span class="text-primary">each job keeps its margin</span>.
+  description: You price your works in sections, you invoice as the job progresses and you track what each job really costs. The Construction application adds to Dokos. Purchases, hours and expense claims are linked to the job's project.
+  links:
+    - label: Try Dokos
+      to: https://cloud.dokos.io
+      target: _blank
+      size: xl
+      color: primary
+      icon: i-heroicons-rocket-launch
+    - label: The Construction application
+      to: /en/modules/construction
+      size: xl
+      color: neutral
+      variant: outline
+
+colored_section:
+  title: An open source application, published by Dokos
+  description: "Construction is published under the AGPLv3 licence on gitlab.com/dokos/construction. You install it from the Dokos Cloud marketplace, or on your own server. It replaces the item table of quotations, orders and invoices with an editor that has headings, comments and subtotals, on the sales side and on the purchasing side."
+  image: /modules/ventes/feature-devis.webp
+  align: left
+
+sections:
+  - title: Price your works in sections
+    description: In the quotation, you add headings, comments and items, then you reorder the lines by drag and drop. Each section calculates its subtotal. You choose the columns to show, for example the unit cost price or the overhead coefficient. When you print, you hide a line, a price or the prices of a whole section.
+    image: /modules/ventes/feature-devis.webp
+    align: right
+    links:
+      - label: The Construction application
+        to: /en/modules/construction
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Invoice as the job progresses
+    description: On the submitted sales order, you create a progress invoice. Dokos proposes a progress percentage, the higher of the linked project's progress and what is already invoiced. You apply it to the whole invoice or line by line. The sections and subtotals of the quotation carry over to the order and to each progress invoice.
+    image: /modules/ventes/feature-facture.webp
+    align: left
+  - title: One project per job
+    description: The job becomes a project linked to the sales order. You split it into tasks, with their dependencies in the Gantt chart. Your teams record their hours in timesheets, and the documents attached to the tasks appear together in one tab of the project.
+    image: /modules/projets/feature-taches.webp
+    align: right
+    links:
+      - label: The Projects module
+        to: /en/modules/projets
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Purchases and subcontracting linked to the job
+    description: The section editor also works in the supplier quotation, the purchase order and the purchase receipt. Each purchase carries the job's project. Your suppliers' e-invoices arrive from your approved platform as draft purchase invoices, to match with the order.
+    image: /modules/achats/feature-demande.webp
+    align: left
+    links:
+      - label: The Purchasing module
+        to: /en/modules/achats
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: The actual margin, compared with the quotation
+    description: The "Récapitulatif de marque sur devis par projet" report compares, for each project, the quotation's markup rate with actual sales and purchases. If the HR application is installed, it also counts the project's expense claims. The project adds up hours, purchases and consumed materials, then compares them with sales.
+    image: /solutions/notes-de-frais.webp
+    align: right
+
+cta:
+  title: Tell us how you price your jobs.
+  description: Tell us how you prepare your quotations and progress invoices today. We will tell you what Dokos and Construction already cover, and what would need to be built.
+  links:
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: Try Dokos
+      to: https://cloud.dokos.io
+      target: _blank
+      size: xl
+      color: neutral
+      variant: outline

@@ -32,10 +32,9 @@ const links = computed(() => {
             label: t('industries'),
             children: [
                 { label: t('manufacturing'), to: localePath('/solutions/industrie') },
-                // Construction, networks and logistics exist in French only for now.
-                { label: t('construction'), to: '/fr/solutions/construction' },
-                { label: t('networks'), to: '/fr/solutions/reseaux' },
-                { label: t('logistics'), to: '/fr/solutions/logistique' },
+                { label: t('construction'), to: localePath('/solutions/construction') },
+                { label: t('networks'), to: localePath('/solutions/reseaux') },
+                { label: t('logistics'), to: localePath('/solutions/logistique') },
                 { label: t('service-companies'), to: localePath('/solutions/entreprises-de-services') },
                 // Secondary audience: kept last on purpose.
                 { label: t('thirdplaces'), to: localePath('/solutions/tiers-lieux') },
@@ -104,9 +103,9 @@ const links = computed(() => {
     industries: Industries
     service-companies: Service companies
     manufacturing: Manufacturing
-    construction: Construction (in French)
-    networks: Networks and telecoms (in French)
-    logistics: Logistics and delivery (in French)
+    construction: Construction
+    networks: Networks and telecoms
+    logistics: Logistics and delivery
     thirdplaces: Third places and associations
     resources: Resources
     documentation: Documentation

@@ -1,0 +1,72 @@
+# English version of content/fr/solutions/logistique.yml (same sources). Rule: no client named or identifiable.
+title: Dokos for logistics and delivery
+description: EDI exchanges with your partners, warehouses, picking, shipments and delivery trips, invoiced and posted in the same software.
+
+hero:
+  headline:
+    label: Logistics and delivery
+    icon: i-heroicons-truck
+  title: Your flows, from your partners <span class="text-primary">to the invoice</span>.
+  description: Your partners send you files, your warehouses pick, your drivers deliver. Dokos reads the exchanges, records each stock movement and links the delivery to its invoice and its journal entry.
+  links:
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: The Stock module
+      to: /en/modules/stocks
+      size: xl
+      color: neutral
+      variant: outline
+
+colored_section:
+  title: Dokos Data Hub, for your EDI exchanges
+  description: "Dokos Data Hub picks up the files your partners drop on an SFTP server, at regular intervals. It reads CSV, XML, JSON and fixed-width formats, in the file's encoding. A mapping that you define links each field and each code list to a Dokos document. For a duplicate, you choose to create, update or skip. The application is published under the AGPLv3 licence on gitlab.com/dokos/dokos-data-hub."
+  image: /modules/integrations/hero.webp
+  align: left
+
+sections:
+  - title: Warehouses and locations
+    description: Warehouses are organised in a tree, by site or by zone. Each receipt, transfer and delivery writes an entry in the stock ledger. You track an item by batch or serial number.
+    image: /modules/stocks/feature-entrepots.webp
+    align: right
+    links:
+      - label: The Stock module
+        to: /en/modules/stocks
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Picking and shipping
+    description: The pick list guides picking, warehouse by warehouse. The packing slip describes the contents of each parcel. The shipment groups the parcels, the pickup address and the delivery address.
+    image: /modules/stocks/feature-mouvements.webp
+    align: left
+  - title: Delivery trips
+    description: The delivery trip assigns a driver and a vehicle to a list of stops. Dokos calculates the estimated arrival times and optimises the order of the stops. Customers can be notified by e-mail at departure.
+    image: /modules/stocks/fit.webp
+    align: right
+  - title: Invoicing and approvals
+    description: The delivery note becomes a sales invoice, then a journal entry and a payment, without re-entry. With the Enterprise application, transport and subcontracting purchases follow approval workflows according to the company, the cost centre or the project, and the budget analysis compares the budget with actuals.
+    image: /modules/ventes/feature-facture.webp
+    align: left
+    links:
+      - label: The Sales module
+        to: /en/modules/ventes
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+
+cta:
+  title: Describe your flows.
+  description: Tell us which files you receive, from whom, and what happens to them. We will tell you what Dokos and Data Hub already cover.
+  links:
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: Our engineering work
+      to: /en/ingenierie
+      size: xl
+      color: neutral
+      variant: outline

@@ -1,12 +1,12 @@
-title: Dokos for third places and coworking spaces
-description: Resource bookings, contracts, subscriptions, memberships and online payment, invoiced in your Dokos accounts.
+title: Dokos for third places and associations
+description: Memberships, fees and donations with Tribu, resource bookings, contracts, subscriptions and online payment, in your Dokos accounts.
 
 hero:
   headline:
-    label: Third places and coworking spaces
+    label: Third places and associations
     icon: i-heroicons-building-office-2
-  title: Your spaces <span class="text-primary">booked online</span>, your members invoiced in Dokos.
-  description: Your members book a room, a desk or a machine from the portal. They pay online, with their credits or their subscription. Dokos creates the invoices, contracts and subscriptions in your accounts.
+  title: Your members, your spaces and <span class="text-primary">your accounts</span> in one place.
+  description: Your members sign up and pay their fees online with Tribu. They book a room, a desk or a machine from the portal. Dokos creates the invoices, contracts and subscriptions in your accounts.
   links:
     - label: Try Dokos
       to: https://cloud.dokos.io
@@ -43,6 +43,17 @@ colored_section:
   align: left
 
 sections:
+  - title: Your members and their fees
+    description: With Tribu, members sign up and pay in a web form. Tribu creates their record, their membership and the sales invoice. The donations module records one-off contributions. Payments received are reconciled in the bank module.
+    image: /modules/comptabilite/hero.webp
+    align: left
+    links:
+      - label: Tribu
+        to: /en/modules/tribu
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
   - title: Your resources booked from the portal
     description: Each room, desk or machine becomes a bookable resource, with its prices per hour, half-day, day or month, its opening calendar and its minimum notice. The customer picks a slot on the portal. The booking is confirmed after the order, or after payment if you require it.
     image: /solutions/reservations.webp
@@ -86,17 +97,6 @@ sections:
         variant: outline
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
-  - title: Your members and their fees
-    description: With Tribu, members sign up and pay in a web form. Tribu creates their record, their membership and the sales invoice. The donations module records one-off contributions. Payments received are reconciled in the bank module.
-    image: /modules/comptabilite/hero.webp
-    align: left
-    links:
-      - label: Tribu
-        to: /en/modules/tribu
-        color: neutral
-        variant: outline
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
   - title: Your website and your shop
     description: You build your site's pages in the Frappe Builder visual editor and publish them in one click. With Webshop, your items are published on the site, an online order becomes a sales order, and your customers find their orders and invoices on their portal.
     image: /modules/builder/hero.webp
@@ -116,7 +116,7 @@ sections:
         trailing: true
 
 cta:
-  title: Tell us about your venue.
+  title: Tell us about your venue or your association.
   description: Open source publisher and Frappe and ERPNext experts, we build and stand behind your business applications. Create a trial site on Dokos Cloud, or write to us about your spaces and your members.
   links:
     - label: Try Dokos

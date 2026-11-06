@@ -1,0 +1,83 @@
+# English version of content/fr/solutions/reseaux.yml (same sources). Rule: no client named or identifiable.
+title: Dokos for network operators
+description: Requests received through the API or as files, multi-level approvals, subcontractors, equipment tracked by serial number, and a business application for what is specific to you.
+
+hero:
+  headline:
+    label: Networks and telecoms
+    icon: i-heroicons-signal
+  title: Thousands of requests, <span class="text-primary">one approval circuit</span>.
+  description: You handle requests in volume, with internal teams, subcontractors and approval rules that change from one region to another. Dokos receives the requests from your information system, has them approved by the right people and keeps the history of each decision.
+  links:
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: Our engineering work
+      to: /en/ingenierie
+      size: xl
+      color: neutral
+      variant: outline
+
+colored_section:
+  title: A business application on the Dokos base
+  description: "The core of your activity does not fit in standard software. Our engineers build the application that carries your requests on Dodock, the Dokos application framework, and deliver it to your repositories under an open source licence. It inherits the permissions, the history, the API and the AI agent access. It shares the parties, items and accounting of Dokos."
+  image: /modules/dokos/feature-documents.webp
+  align: left
+
+sections:
+  - title: Requests come from your information system
+    description: Your tools create the requests in Dokos through the REST API or a webhook. When a partner drops files, Dokos Data Hub polls an SFTP server, reads CSV, XML, JSON or fixed-width formats, and creates or updates documents according to a field and code-list mapping that you define.
+    image: /modules/integrations/hero.webp
+    align: right
+    links:
+      - label: Integrations
+        to: /en/modules/integrations
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Approvals that follow your organisation
+    description: With the Enterprise application, an approval workflow starts according to the company, the cost centre or the project. An absent approver delegates their approvals for a period. The approval portal shows all pending requests, and each decision stays in the document history.
+    image: /modules/dokos/feature-autorisations.webp
+    align: left
+  - title: Your subcontractors in a portal
+    description: The supplier portal of the Enterprise application lets you ask a subcontractor to update their information and upload their documents, with their expiry date. Subcontracting orders, receipts and invoices follow the Dokos purchasing circuit.
+    image: /modules/achats/hero.webp
+    align: right
+    links:
+      - label: The Purchasing module
+        to: /en/modules/achats
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: Equipment tracked by serial number
+    description: Each piece of equipment is tracked by batch or serial number, from one warehouse to another. Warehouses are organised in a tree, by region or by depot. The Stock Projected Qty report shows what will run short.
+    image: /modules/stocks/feature-entrepots.webp
+    align: left
+    links:
+      - label: The Stock module
+        to: /en/modules/stocks
+        color: neutral
+        variant: outline
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+  - title: The committed budget, in real time
+    description: The budget analysis of the Enterprise application compares the budget with the amounts spent or committed, by cost centre, project, account or any other accounting dimension.
+    image: /modules/comptabilite/hero.webp
+    align: right
+
+cta:
+  title: Describe the path of a request.
+  description: From reception to closure, tell us who is involved and where it gets stuck. A first one-hour conversation is enough to scope it.
+  links:
+    - label: Write to us
+      to: /en/contact
+      size: xl
+      color: primary
+    - label: Managed operations
+      to: /en/exploitation
+      size: xl
+      color: neutral
+      variant: outline

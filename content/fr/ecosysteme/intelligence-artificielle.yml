@@ -1,5 +1,5 @@
 title: Pour vos équipes et vos agents IA
-description: "Dokos AI répond à partir de vos documents et demande confirmation avant d'écrire. Dokos CLI et son serveur MCP connectent vos propres agents au site, avec les mêmes droits qu'un utilisateur."
+description: "Le cerveau de l'entreprise, pour vos équipes et vos agents IA. Dokos AI répond à partir de vos documents et demande confirmation avant d'écrire. Son serveur MCP, comme celui de Dokos CLI, connecte Claude, ChatGPT, Gemini, Le Chat ou l'assistant de votre choix, avec les mêmes droits qu'un utilisateur."
 navigation:
   title: IA & agents
   icon: i-heroicons-cpu-chip
@@ -10,7 +10,7 @@ hero:
     icon: i-heroicons-cpu-chip
     to: /fr/modules
   title: Le cerveau de l'entreprise,<br>pour vos équipes et vos <span class="text-primary">agents IA</span>.
-  description: Un agent qui travaille dans Dokos lit les mêmes documents que vos équipes, avec les mêmes droits, et chaque action qu'il fait apparaît dans l'historique du document. Dokos AI est l'assistant intégré au site. Dokos CLI connecte l'agent de votre choix par son serveur MCP.
+  description: Un agent qui travaille dans Dokos lit les mêmes documents que vos équipes, avec les mêmes droits, et chaque action qu'il fait apparaît dans l'historique du document. Dokos AI est l'assistant intégré au site. Dokos AI et Dokos CLI connectent l'assistant de votre choix par leur serveur MCP.
   links:
     - label: Dokos AI
       to: /fr/modules/dokos-ai
