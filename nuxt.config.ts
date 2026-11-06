@@ -20,8 +20,14 @@ export default defineNuxtConfig({
     url: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.dokos.io',
   },
   hooks: {
-    // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
     'components:extend': (components) => {
+      // The site has no rich-text editor. Nuxt UI's editor components import tiptap
+      // extensions whose peer dependencies (@tiptap/y-tiptap, yjs) are not installed.
+      for (let i = components.length - 1; i >= 0; i--) {
+        if (components[i].pascalName.startsWith('UEditor')) components.splice(i, 1)
+      }
+
+      // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
       const globals = components.filter((c) => ['UButton'].includes(c.pascalName))
 
       globals.forEach((c) => c.global = true)
