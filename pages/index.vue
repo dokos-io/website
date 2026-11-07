@@ -123,15 +123,16 @@ useSeoMeta({
             </template>
         </UPageHero>
 
-        <!-- Below the hero, one section per layer of the stack, top down.
-             Pages without these blocks (English for now) keep the layout below. -->
-        <HomeAccess v-if="page.access" :block="page.access" />
+        <!-- Below the hero: the brain (Dokos and its chain of documents), how it
+             adapts to a company, the apps, then the AI assistant at the user's side. -->
+        <HomeCore v-if="page.core" :block="page.core" />
+        <HomeExtend v-if="page.extend" :block="page.extend" />
         <HomeCatalogue
             v-if="page.apps && page.hero.stack"
             :block="page.apps"
             :apps="page.hero.stack.apps"
         />
-        <HomeCore v-if="page.core" :block="page.core" />
+        <HomeAccess v-if="page.access" :block="page.access" />
         <HomeBase v-if="page.base" :block="page.base" :integrations="page.integrations" />
         <HomeTeam v-if="page.team" :block="page.team" />
 

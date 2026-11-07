@@ -1,13 +1,14 @@
 <script setup lang="ts">
-// Homepage, layer 3 of the stack: Dokos itself. A chain of linked documents
-// (example numbers), then the two regulatory facts.
+// Homepage: Dokos itself. A chain of linked documents (example numbers), each
+// with what Dokos does at that step, then the two regulatory facts.
 
 defineProps<{
     block: {
         label: string;
         title: string;
         description?: string;
-        chain: { title: string; number: string }[];
+        chain: { title: string; number: string; does?: string }[];
+        does_label?: string;
         facts: {
             label: string;
             value: string;
@@ -27,7 +28,7 @@ defineProps<{
             <h2 class="mt-2 max-w-4xl text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight text-highlighted">{{ block.title }}</h2>
             <p v-if="block.description" class="mt-4 max-w-3xl text-lg text-muted">{{ block.description }}</p>
 
-            <ol class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:flex lg:items-center lg:gap-0">
+            <ol class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:flex lg:items-stretch lg:gap-0">
                 <template v-for="(doc, i) in block.chain" :key="doc.number">
                     <li
                         class="dk-slab lg:flex-1 px-3 py-3.5 text-center"
@@ -35,10 +36,14 @@ defineProps<{
                     >
                         <small class="block font-mono text-xs text-muted">{{ doc.number }}</small>
                         <b class="text-highlighted">{{ doc.title }}</b>
+                        <span v-if="doc.does" class="mt-2.5 block border-t-2 border-dashed border-sand-300 dark:border-stone-700 pt-2 text-left text-[13px] leading-snug text-muted">
+                            <span v-if="block.does_label" class="block text-[11px] font-semibold uppercase tracking-[0.12em] text-[#2F6F69] dark:text-[#A6D6D2]">{{ block.does_label }}</span>
+                            {{ doc.does }}
+                        </span>
                     </li>
                     <li
                         v-if="i < block.chain.length - 1"
-                        class="hidden lg:block relative h-1.5 w-8 shrink-0 bg-dokos-500 dark:bg-dokos-300 after:absolute after:inset-x-0 after:top-0.5 after:border-t-2 after:border-dashed after:border-sand-100 dark:after:border-stone-950"
+                        class="hidden lg:block relative self-center h-1.5 w-8 shrink-0 bg-dokos-500 dark:bg-dokos-300 after:absolute after:inset-x-0 after:top-0.5 after:border-t-2 after:border-dashed after:border-sand-100 dark:after:border-stone-950"
                         aria-hidden="true"
                     />
                 </template>

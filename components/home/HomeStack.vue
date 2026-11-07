@@ -21,6 +21,7 @@ interface Stack {
     label?: string;
     apps_note?: string;
     apps: (Block & { domain?: string })[];
+    custom?: Block;
     core: Block & { tags?: string[] };
     base: Block & { tag?: string };
 }
@@ -140,6 +141,16 @@ const strap =
                     </ULink>
                 </li>
             </ul>
+            <!-- The company's own applications: custom apps, and Studio apps soon. -->
+            <ULink
+                v-if="stack.custom"
+                :to="stack.custom.to"
+                class="mt-2.5 flex flex-wrap items-center justify-center gap-x-2 rounded-full border-2 border-dashed border-dokos-500 dark:border-dokos-300 px-3 py-1.5 text-xs sm:text-sm text-highlighted transition hover:bg-sand-200 dark:hover:bg-stone-800"
+            >
+                <UIcon name="i-heroicons-plus-20-solid" class="size-4" />
+                <b>{{ stack.custom.title }}</b>
+                <span class="text-muted">{{ stack.custom.note }}</span>
+            </ULink>
         </div>
 
         <!-- Dokos itself, on the open source base. -->

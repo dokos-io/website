@@ -45,6 +45,7 @@ const landingSchema = z.object({
   access: obj().optional(),
   apps: obj().optional(),
   core: obj().optional(),
+  extend: obj().optional(),
   base: obj().optional(),
   team: obj().optional(),
 })

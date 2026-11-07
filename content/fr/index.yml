@@ -1,5 +1,5 @@
-title: "Dokos, le logiciel de gestion open source pour toute l'entreprise"
-description: "Ventes, comptabilité, stocks, RH, projets, support : une seule base de données, une suite d'applications libres, et un accès pour vos équipes comme pour vos agents IA."
+title: "Dokos, le cerveau de votre entreprise, en logiciel libre"
+description: "Ventes, achats, stocks, comptabilité, production, projets et RH dans une seule base. Dokos fait le travail répétitif, s'adapte à vos processus avec vos propres applications, et vous donne un assistant IA qui demande votre accord."
 navigation: false
 
 announcement:
@@ -11,18 +11,18 @@ hero:
   headline:
     label: Version 5, sur Frappe et ERPNext v16
     icon: i-simple-icons-gitlab
-  title: Dokos. Toute votre entreprise<br>dans un seul <span class="text-primary">logiciel libre</span>.
+  title: Dokos, le <span class="text-primary">cerveau</span><br>de votre entreprise.
   # Three lines, one per layer of the stack on the right (components/home/HomeStack.vue).
   points:
     - layer: core
-      title: Une seule base de données
-      description: Ventes, achats, stocks, comptabilité, production, projets et RH.
+      title: Saisi une fois, utilisé partout
+      description: Ventes, achats, stocks, comptabilité, production, projets et RH partagent une seule base. Dokos fait le travail répétitif.
     - layer: apps
-      title: Des applications qui s'y branchent
-      description: CRM, support, rapports, messagerie, site web… Vous installez celles qu'il vous faut.
+      title: Des applications à votre mesure
+      description: Installez celles du catalogue, faites construire les vôtres, et bientôt créez-les sans code avec Studio.
     - layer: access
-      title: Vos équipes et vos agents IA
-      description: Dans le navigateur ou par MCP, avec les mêmes droits et le même historique.
+      title: Un assistant à vos côtés
+      description: Dokos AI prépare le travail et attend votre accord. Votre assistant habituel s'y connecte aussi, par MCP.
   # The ecosystem drawn as a stack. Agents are never named by product: MCP only.
   stack:
     teams:
@@ -41,6 +41,10 @@ hero:
     shared: mêmes droits · même historique
     apps_label: Applications
     apps_note: chacune s'installe seule ou avec les autres
+    custom:
+      title: Vos applications
+      note: "applications métier · Studio, bientôt"
+      to: /fr/ingenierie
     apps:
       - { title: Frappe CRM, domain: sales, to: /fr/modules/crm, publisher: frappe, note: "Prospection et suivi des affaires, du premier contact au devis Dokos." }
       - { title: Helpdesk, domain: collab, to: /fr/modules/support, publisher: frappe, note: "Tickets de support, délais de réponse et base de connaissances." }
@@ -61,7 +65,7 @@ hero:
     core:
       title: Dokos
       note: Ventes · Achats · Stocks · Comptabilité · Production · Projets · RH
-      tags: [Encaissement certifié LNE, Facturation électronique]
+      tags: [IA intégrée, Encaissement certifié LNE, Facturation électronique]
       to: /fr/modules/dokos
     base:
       title: Dodock · Frappe Framework · ERPNext
@@ -86,11 +90,10 @@ hero:
       icon: i-heroicons-squares-2x2
       class: dk-btn-outline
 
-# Below the hero, the page goes down the stack one layer at a time.
-# Layer 1: who works in Dokos. The invoice and its history are example data.
+# The AI assistant at the user's side. The invoice and its history are example data.
 access:
-  label: Équipes et agents IA
-  title: "Une personne ou un agent : les mêmes règles."
+  label: Dokos AI
+  title: Un assistant à vos côtés, sous vos règles.
   rules:
     - title: Les droits d'un utilisateur
       description: Un agent se connecte avec un compte et des rôles. Il ne voit que ce que ce compte voit.
@@ -129,6 +132,32 @@ access:
     confirm: Confirmer
     cancel: Annuler
 
+# How Dokos adapts to a company: three levels. Studio is in Dodock develop only
+# (doc.dokos.io/next/dodock/personnalisation/studio), so it is marked « Bientôt ».
+extend:
+  label: Sur mesure
+  title: Dokos s'adapte à votre entreprise.
+  description: Ce qui vous est propre s'ajoute à la même base. Vos applications héritent des documents, des droits, de l'historique, de l'API et de l'accès des agents IA.
+  levels:
+    - title: Personnaliser sans code
+      status: Disponible
+      state: ok
+      description: Depuis le navigateur, vous ajoutez des champs, vous adaptez les formulaires et vous définissez vos flux de validation, vos formats d'impression et vos rapports.
+      items: [Champs, Formulaires, Validations, Impressions, Rapports]
+      link: { label: La personnalisation, to: "https://doc.dokos.io/v5/dodock/personnalisation", target: _blank }
+    - title: Studio
+      status: Bientôt
+      state: soon
+      description: Un constructeur visuel d'applications web intégré à Dokos. Vous assemblez des pages, des composants et des sources de données, puis vous publiez l'application sur votre site. Studio est en préparation dans la prochaine version de Dodock.
+      items: [Pages, Composants, Données Dokos]
+      link: { label: Aperçu dans la documentation, to: "https://doc.dokos.io/next/dodock/personnalisation/studio", target: _blank }
+    - title: Applications métier
+      status: Disponible
+      state: ok
+      description: Nos ingénieurs, ou les vôtres, construisent les applications qui portent vos processus, sur Dodock, le cadre applicatif de Dokos. Elles sont livrées dans vos dépôts, sous licence libre, et peuvent être exploitées sous contrat.
+      items: [Processus métier, Connecteurs, Automatisations]
+      link: { label: Nos missions d'ingénierie, to: /fr/ingenierie }
+
 # Layer 2: the apps. The cards come from hero.stack.apps (one list for both).
 apps:
   label: Applications
@@ -151,16 +180,18 @@ apps:
 
 # Layer 3: Dokos itself. The document numbers are example data.
 core:
-  label: Dokos
-  title: Un devis accepté devient une facture, une écriture et un paiement, sans ressaisie.
-  description: "Chaque document est lié à celui qui le précède. Les droits sont définis une fois, par rôle, et s'appliquent partout : écrans, rapports, API et agents."
+  label: Le cerveau de l'entreprise
+  title: Saisi une fois, utilisé partout.
+  description: "Un devis accepté devient une commande, une livraison, une facture, une écriture et un paiement. Chaque document reprend le précédent, et Dokos fait le travail répétitif à chaque étape. Les droits sont définis une fois, par rôle, et s'appliquent partout : écrans, rapports, API et agents."
+  does_label: Dokos s'en charge
+  # Each « does » line is standard Dokos v5 behaviour (modules Ventes, Stocks, Comptabilité, eTransactions, Banque).
   chain:
-    - { title: Devis, number: DEV-0388 }
-    - { title: Commande, number: CMD-0291 }
-    - { title: Livraison, number: BL-0277 }
-    - { title: Facture, number: FA-0412 }
-    - { title: Écriture, number: ECR-5530 }
-    - { title: Paiement, number: PAY-0198 }
+    - { title: Devis, number: DEV-0388, does: "applique les prix de votre liste et les remises du client" }
+    - { title: Commande, number: CMD-0291, does: "réserve le stock et suit ce qui reste à livrer et à facturer" }
+    - { title: Livraison, number: BL-0277, does: "sort le stock et met à jour sa valeur" }
+    - { title: Facture, number: FA-0412, does: "passe l'écriture et part par votre plateforme agréée" }
+    - { title: Écriture, number: ECR-5530, does: "alimente le grand livre, la TVA et le bilan" }
+    - { title: Paiement, number: PAY-0198, does: "propose le rapprochement avec votre relevé bancaire" }
   # Product facts, verifiable on /fr/certifications.
   facts:
     - label: Encaissement des particuliers
