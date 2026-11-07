@@ -38,7 +38,6 @@ hero:
       note: MCP local
       to: /fr/modules/dokos-cli
     label: Le cerveau de l'entreprise
-    shared: mêmes droits · même historique
     apps_label: Applications
     apps_note: chacune s'installe seule ou avec les autres
     custom:
