@@ -6,7 +6,15 @@ Ce document fixe la voix du site. Il s'applique à toute page de `content/fr`, a
 
 > Éditeur open source, experts Frappe et ERPNext, nous bâtissons et garantissons vos applications métier.
 
-Le site parle d'abord de **Dokos, le projet, et de l'écosystème d'applications** autour. Dokos est la source de vérité de l'entreprise et le harnais de ses équipes et de ses agents IA. Le mot « harnais » est une image : il apparaît quelques fois sur le site, jamais comme slogan.
+Le site parle d'abord de **Dokos, le projet, et de l'écosystème d'applications** autour. Dokos est le cerveau de l'entreprise : la base que partagent ses équipes et leurs assistants IA. « Le cerveau de votre entreprise » est le titre de la page d'accueil, le libellé de la pile et le titre de la page IA ; ailleurs, on montre ce que fait ce cerveau plutôt que de répéter la formule. Le mot « harnais » n'est plus utilisé.
+
+### Ce que Dokos fait pour le lecteur
+
+- **Dokos aide au quotidien.** On décrit ce que Dokos fait pour chaque équipe, avec des verbes d'action : il prépare les achats, réserve le stock, calcule un coût, passe une écriture. On n'écrit pas que Dokos « retient » ou « se souvient » : le lecteur veut un logiciel qui lui simplifie la journée, pas une mémoire.
+- **L'IA accompagne, elle ne mène pas.** Dokos n'est pas un produit « IA d'abord ». Dokos AI fait partie du logiciel : il répond, prépare, et la personne valide. Sur un schéma, l'IA se place à côté des équipes, jamais au-dessus ni à leur place. Elle n'est jamais le titre d'une page produit, sauf la page IA & agents.
+- **Le bloc des assistants MCP reste.** La rangée Claude, ChatGPT, Gemini, Le Chat, Grok, Copilot et Perplexity parle aux lecteurs : elle montre qu'ils peuvent garder l'assistant qu'ils utilisent déjà. Elle s'accompagne toujours de la phrase « Les connecteurs MCP dépendent de l'offre de chaque assistant. »
+
+La démonstration Dokompany (demo.dokos.cloud) suit les mêmes règles : « Dokompany fabrique la Dokoboard. Dokos s'occupe du reste. »
 
 ## Lecteur
 
