@@ -13,7 +13,7 @@
 #                    variables SCW_SITE_CONTAINER_ID and SCW_SITE_PIPELINE_ID. See infra/scaleway/.
 #
 # The deploy branch is the variable SCALEWAY_DEPLOY_BRANCH, `main` by default. Until the revamp
-# is merged, the project variable sets it to `feat-dokos-ecosystem`. That branch must be
+# is merged, the project variable sets it to `v2026`. That branch must be
 # protected, or the jobs cannot read the protected Scaleway key.
 #
 # Node 24: nuxt-og-image 7 needs Node >= 24.15.
