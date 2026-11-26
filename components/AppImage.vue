@@ -44,6 +44,9 @@ const src = computed(() => {
 })
 </script>
 
+<!-- Lazy, asynchronously decoded and decorative unless the call site says
+     otherwise: attributes passed by the caller come after and win. Images in
+     the first screen pass loading="eager" (and fetchpriority="high"). -->
 <template>
-    <img :src="src" v-bind="$attrs">
+    <img :src="src" loading="lazy" decoding="async" alt="" v-bind="$attrs">
 </template>

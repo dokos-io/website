@@ -1,7 +1,7 @@
 <script setup lang="ts">
 /**
  * The content-driven pages (éditeur, ingénierie, souveraineté, exploitation,
- * écosystème, solutions) in the 2026 design. Same YAML as LandingPage: every
+ * écosystème, solutions) in the 2026 design. Same YAML as the former LandingPage: every
  * block is optional and rendered only when the content file declares it.
  * Cream paper, huge uppercase titles with a coral dot, ruled numbered lists,
  * Dokos blue and deep blue cards inset from the edges; icons are left out.
@@ -80,9 +80,7 @@ const NuxtLink = resolveComponent('NuxtLink')
                     </div>
                     <div v-if="page.colored_section.image || page.colored_section.video" class="h26-reveal min-w-0 flex-[1_1_420px]">
                         <AppImage v-if="page.colored_section.image" :src="page.colored_section.image" class="w-full rounded-xl" loading="lazy" />
-                        <video v-else class="w-full rounded-xl" autoplay loop muted playsinline>
-                            <source :src="page.colored_section.video" type="video/mp4">
-                        </video>
+                        <InViewVideo v-else class="w-full rounded-xl" :src="page.colored_section.video" />
                     </div>
                 </div>
             </div>
@@ -236,9 +234,7 @@ const NuxtLink = resolveComponent('NuxtLink')
             </div>
             <div v-if="section.image || section.video" class="h26-reveal min-w-0 flex-[1_1_480px]">
                 <AppImage v-if="section.image" :src="section.image" class="w-full rounded-xl shadow-[0_18px_40px_rgba(43,42,39,0.16)]" loading="lazy" />
-                <video v-else class="w-full rounded-xl shadow-[0_18px_40px_rgba(43,42,39,0.16)]" autoplay loop muted playsinline>
-                    <source :src="section.video" type="video/mp4">
-                </video>
+                <InViewVideo v-else class="w-full rounded-xl shadow-[0_18px_40px_rgba(43,42,39,0.16)]" :src="section.video" />
             </div>
         </section>
 

@@ -90,8 +90,8 @@ const links = computed(() => {
                 <UFooterColumns :columns="links" :ui="is2026 ? COLUMNS_UI_2026 : COLUMNS_UI">
                     <template v-if="is2026" #left>
                         <NuxtLink :to="localePath('/')" class="flex items-center gap-2.5">
-                            <img width="40" src="/dokos_logo_rect.svg" alt="Dokos">
-                            <img src="/dokos_wordmark.svg" alt="" aria-hidden="true" class="h-6 w-auto">
+                            <img width="40" height="39" src="/dokos_logo_rect.svg" alt="Dokos" loading="lazy">
+                            <img width="83" height="24" src="/dokos_wordmark.svg" alt="" aria-hidden="true" class="h-6 w-auto" loading="lazy">
                         </NuxtLink>
                     </template>
                 </UFooterColumns>

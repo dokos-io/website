@@ -1,6 +1,7 @@
 ---
 toc: true
 title: Certifications de Dokos et ses modules
+description: "Le système d'encaissement de Dokos est certifié par le LNE (article 286 du CGI). Ce qu'il faut pour encaisser avec un système certifié, et la facturation électronique."
 ---
 
 ## Certification du système d'encaissement

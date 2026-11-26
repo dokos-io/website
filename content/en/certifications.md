@@ -1,6 +1,7 @@
 ---
 toc: true
 title: Certifications of Dokos and its modules
+description: "The Dokos point-of-sale system is certified by LNE (article 286 of the French General Tax Code). What you need to take payments with a certified system, and e-invoicing."
 ---
 
 ## Certified system for taking payments from individuals

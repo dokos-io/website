@@ -1,4 +1,7 @@
 <script setup lang="ts">
+// French only: no /en/ copy of this page is generated (no hreflang to a
+// French text under lang="en").
+defineI18nRoute({ locales: ['fr'] })
 // 2026 design: cream header and footer, light only.
 definePageMeta({ design2026: true, colorMode: 'light' })
 

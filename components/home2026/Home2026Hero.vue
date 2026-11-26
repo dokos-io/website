@@ -57,6 +57,33 @@ const rest = computed(() => props.block.title.slice(shown.value))
 const done = computed(() => shown.value >= props.block.title.length)
 const hasVideo = computed(() => !!(props.block.video || props.block.poster))
 
+// The video (1.5 MB) must not compete with the first paint: it is not marked
+// `autoplay` and loads nothing until the page has finished loading. Phones and
+// visitors who ask to save data keep the poster, which is preloaded instead.
+const video = ref<HTMLVideoElement | null>(null)
+
+useHead(() => ({
+    link: props.block.poster
+        ? [{ key: 'hero-poster', rel: 'preload', as: 'image', href: props.block.poster, fetchpriority: 'high' }]
+        : [],
+}))
+
+function startVideo() {
+    const el = video.value
+    if (!el) return
+    el.preload = 'auto'
+    el.play().catch(() => { /* autoplay refused: the poster stays */ })
+}
+
+onMounted(() => {
+    const saveData = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData
+    if (!video.value || saveData || !window.matchMedia('(min-width: 640px)').matches) return
+    if (document.readyState === 'complete') startVideo()
+    else window.addEventListener('load', startVideo, { once: true })
+})
+
+onBeforeUnmount(() => window.removeEventListener('load', startVideo))
+
 // The button to "Dokos en deux minutes" opens it over the page, and waits for the video to exist.
 const NuxtLink = resolveComponent('NuxtLink')
 const presentation = usePresentation()
@@ -77,9 +104,10 @@ const links = computed(() => props.block.links.filter(link => link.to !== PRESEN
                 <div class="relative order-last aspect-[4/3] w-full sm:aspect-video xl:absolute xl:inset-0 xl:-z-10 xl:aspect-auto">
                     <video
                         v-if="block.video && !reduced"
+                        ref="video"
                         class="absolute inset-0 size-full object-cover object-right sm:object-center"
                         :poster="block.poster || undefined"
-                        autoplay
+                        preload="none"
                         muted
                         loop
                         playsinline
@@ -88,7 +116,7 @@ const links = computed(() => props.block.links.filter(link => link.to !== PRESEN
                         <source :src="block.video" :type="block.video.endsWith('.webm') ? 'video/webm' : 'video/mp4'">
                         <source v-if="block.video_mp4" :src="block.video_mp4" type="video/mp4">
                     </video>
-                    <img v-else-if="block.poster" :src="block.poster" alt="" class="absolute inset-0 size-full object-cover object-right sm:object-center">
+                    <img v-else-if="block.poster" :src="block.poster" alt="" fetchpriority="high" class="absolute inset-0 size-full object-cover object-right sm:object-center">
                     <!-- Blends the top of the frame into the card when the video sits under the text. -->
                     <div class="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-dokos-900 to-transparent xl:hidden" aria-hidden="true" />
                 </div>

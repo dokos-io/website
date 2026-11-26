@@ -1,4 +1,7 @@
 <script setup lang="ts">
+// French only: no /en/ copy of this page is generated (no hreflang to a
+// French text under lang="en").
+defineI18nRoute({ locales: ['fr'] })
 // « Comment nous travaillons ensemble » in the 2026 design: the relationship
 // with Dokos SAS, looking for allies rather than suppliers. French only, not
 // indexed and absent from the navigation until its texts are validated.

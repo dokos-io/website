@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { canonicalPath } from '#shared/canonical-path.mjs'
 // 2026 design: cream header and footer, light only.
 definePageMeta({ design2026: true, colorMode: 'light' })
 
@@ -47,7 +48,7 @@ await fetchList()
                 <NuxtLink
                     v-for="(agency, index) in Partners"
                     :key="index"
-                    :to="agency.path"
+                    :to="canonicalPath(agency.path)"
                     class="h26-lift group flex flex-col gap-4 bg-white p-6 shadow-[0_12px_30px_rgba(43,42,39,0.12)]"
                 >
                     <span class="flex items-center gap-4">

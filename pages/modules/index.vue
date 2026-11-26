@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { THEMES } from '~/utils/themes'
+import { canonicalPath } from '#shared/canonical-path.mjs'
 
 // 2026 design: cream header and footer, light only.
 definePageMeta({ design2026: true, colorMode: 'light' })
@@ -102,7 +103,7 @@ const sortedModules = computed(() => {
         <NuxtLink
           v-for="module in sortedModules"
           :key="module.path"
-          :to="module.path"
+          :to="canonicalPath(module.path)"
           class="h26-lift flex flex-col gap-3 bg-white p-6 shadow-[0_12px_30px_rgba(43,42,39,0.12)]"
         >
           <span class="flex items-center gap-3">

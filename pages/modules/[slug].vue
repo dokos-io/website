@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { joinURL } from 'ufo'
+import { canonicalPath } from '#shared/canonical-path.mjs'
 /**
  * Product page for one app of the ecosystem. Every app answers the same five
  * questions, in the same order: what is it, who is it for, how does it fit in
@@ -47,6 +49,24 @@ useSeoMeta({
 })
 
 defineOgImage('OgImageSaas' as any, { title, description })
+
+const site = useSiteConfig()
+useHead({
+  script: [{
+    key: 'ld-module',
+    type: 'application/ld+json',
+    innerHTML: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: title,
+      description,
+      url: joinURL(site.url, canonicalPath(path)),
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Web',
+      publisher: { '@id': `${site.url}/#organization` },
+    }),
+  }],
+})
 
 // The per-app route (/marketplace/apps/<app>) answers 417 on the Press
 // instance, so every button opens the listing; `marketplace:` keeps the app
@@ -114,7 +134,7 @@ const heroLinks = computed(() => {
 
     <!-- Hero screenshot, on its own under the facts. -->
     <section v-if="module.hero?.image" class="mx-auto max-w-[1360px] px-4 pt-16 sm:px-8">
-      <AppImage :src="module.hero.image" :alt="module.title" class="h26-reveal w-full rounded-xl shadow-[0_18px_40px_rgba(43,42,39,0.16)]" />
+      <AppImage :src="module.hero.image" :alt="module.title" loading="eager" fetchpriority="high" class="h26-reveal w-full rounded-xl shadow-[0_18px_40px_rgba(43,42,39,0.16)]" />
     </section>
 
     <!-- Who it is for: situations, not personas. -->
@@ -186,9 +206,7 @@ const heroLinks = computed(() => {
       </div>
       <div class="h26-reveal min-w-0 flex-[1_1_520px]">
         <AppImage v-if="feature.image" :src="feature.image" :alt="feature.title" class="w-full rounded-xl shadow-[0_18px_40px_rgba(43,42,39,0.16)]" loading="lazy" />
-        <video v-else class="w-full rounded-xl shadow-[0_18px_40px_rgba(43,42,39,0.16)]" autoplay loop muted playsinline>
-          <source :src="feature.video" type="video/mp4">
-        </video>
+        <InViewVideo v-else class="w-full rounded-xl shadow-[0_18px_40px_rgba(43,42,39,0.16)]" :src="feature.video" />
       </div>
     </section>
 
@@ -238,7 +256,7 @@ const heroLinks = computed(() => {
         <NuxtLink
           v-for="item in related"
           :key="item.path"
-          :to="item.path"
+          :to="canonicalPath(item.path)"
           class="h26-lift flex flex-col gap-3 bg-white p-6 shadow-[0_12px_30px_rgba(43,42,39,0.12)]"
         >
           <span class="flex items-center gap-3">

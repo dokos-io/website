@@ -1,4 +1,7 @@
 <script setup lang="ts">
+// French only: no /en/ copy of this page is generated (no hreflang to a
+// French text under lang="en").
+defineI18nRoute({ locales: ['fr'] })
 // The header and footer switch to their 2026 look on pages that ask for it.
 // French only (no language switch), light only (no dark version).
 definePageMeta({ design2026: true, frenchOnly: true, colorMode: 'light' })

@@ -1,4 +1,7 @@
 <script setup lang="ts">
+// French only: no /en/ copy of this page is generated (no hreflang to a
+// French text under lang="en").
+defineI18nRoute({ locales: ['fr'] })
 // The full-stack position published on 19 June 2026 is filled (see the
 // rentrée 2026 post: one permanent hire, one apprentice, two interns stayed).
 // This page now takes spontaneous applications until a new offer opens.
@@ -29,7 +32,7 @@ const facts = [
   {
     title: 'L\'équipe à la rentrée 2026',
     description: 'Un CDI, un apprenti et deux anciens stagiaires ont rejoint l\'équipe en 2026. Le billet de rentrée raconte ce que nous construisons.',
-    to: '/fr/blog/2026/rentree-2026',
+    to: '/blog/2026/rentree-2026',
   },
 ]
 </script>

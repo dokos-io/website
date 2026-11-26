@@ -17,7 +17,8 @@ const frenchOnly = computed(() =>
 
 const availableLocales = computed(() => {
   if (frenchOnly.value) return []
-  return locales.value.filter(i => i.code !== locale.value)
+  // Pages restricted with defineI18nRoute have no path in the other language.
+  return locales.value.filter(i => i.code !== locale.value && switchLocalePath(i.code))
 })
 </script>
 

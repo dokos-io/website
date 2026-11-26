@@ -3,7 +3,7 @@
 definePageMeta({ design2026: true, colorMode: 'light' })
 
 // Same pattern as pages/solutions/[slug].vue: content-driven landing pages,
-// one per business theme, sharing LandingPage's block renderer.
+// one per business theme, sharing Landing2026Page's block renderer.
 const route = useRoute()
 const { locale } = useI18n()
 

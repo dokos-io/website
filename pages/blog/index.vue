@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { canonicalPath } from '#shared/canonical-path.mjs'
+// French only: no /en/ copy of this page is generated (no hreflang to a
+// French text under lang="en").
+defineI18nRoute({ locales: ['fr'] })
 // 2026 design: cream header and footer, light only.
 definePageMeta({ design2026: true, colorMode: 'light' })
 
@@ -47,7 +51,7 @@ defineOgImage('OgImageSaas' as any, {
             <NuxtLink
                 v-for="(post, index) in posts"
                 :key="index"
-                :to="post.path"
+                :to="canonicalPath(post.path)"
                 class="h26-lift group flex flex-col bg-white shadow-[0_12px_30px_rgba(43,42,39,0.12)]"
                 :class="index === 0 ? 'sm:col-span-2 lg:col-span-3 lg:flex-row' : ''"
             >

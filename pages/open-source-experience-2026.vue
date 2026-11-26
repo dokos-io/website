@@ -1,4 +1,7 @@
 <script setup lang="ts">
+// French only: no /en/ copy of this page is generated (no hreflang to a
+// French text under lang="en").
+defineI18nRoute({ locales: ['fr'] })
 /**
  * Event page for Open Source Experience 2026 (Paris Expo Porte de Versailles,
  * Hall 5.2, 9–10 December 2026). Dokos is on Orange's stand and speaks in two
@@ -204,6 +207,7 @@ const demos = [
       </template>
       <div class="aspect-video rounded-lg overflow-hidden ring ring-default">
         <iframe
+                loading="lazy"
           class="w-full h-full"
           src="https://www.youtube-nocookie.com/embed/ooMT65Uxy5s"
           title="Qualéo, gestion de la qualité"

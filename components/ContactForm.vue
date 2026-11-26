@@ -30,6 +30,7 @@ const inputUi = computed(() => is2026.value ? { base: 'rounded-lg bg-paper text-
 const inputSize = computed(() => is2026.value ? 'xl' : undefined)
 
 const toast = useToast()
+const { t } = useI18n({ useScope: 'local' })
 
 const loading = ref<boolean>(false)
 const turnstile = ref()
@@ -47,25 +48,40 @@ const state = reactive<{
   body: undefined
 })
 
+// The Turnstile check (Cloudflare) only loads once the form is filled in, so
+// visitors who only read the page make no request to Cloudflare.
 const showTurnstile = computed(() => validate(state)?.length === 0)
 const canSend = computed(() => {
   return Boolean(state.name && state.email && state.company && state.body && token.value)
 })
 
+// Announced to screen readers, and shown under the form: why it is not sent yet.
+const status = ref('')
+watch(token, (value) => {
+  if (value && status.value === t('verify')) status.value = ''
+})
+
 const validate = (state: any): FormError[] => {
   const errors = []
-  if (!state.name) errors.push({ name: 'name', message: 'Obligatoire' })
-  if (!state.email) errors.push({ name: 'email', message: 'Obligatoire' })
-  if (!state.company) errors.push({ name: 'company', message: 'Obligatoire' })
-  if (!state.body) errors.push({ name: 'body', message: 'Obligatoire' })
+  if (!state.name) errors.push({ name: 'name', message: t('required') })
+  if (!state.email) errors.push({ name: 'email', message: t('required') })
+  if (!state.company) errors.push({ name: 'company', message: t('required') })
+  if (!state.body) errors.push({ name: 'body', message: t('required') })
   return errors
 }
 
 async function onSubmit(event: FormSubmitEvent<any>) {
   if (!event.data) return
-  if (loading.value || !canSend.value) return
+  if (loading.value) return
+  // The form is valid (UForm only submits then), but the anti-spam check has
+  // not answered yet: say so rather than leaving a dead button.
+  if (!canSend.value) {
+    status.value = t('verify')
+    return
+  }
 
   loading.value = true
+  status.value = t('sending')
 
   await $fetch('https://dashboard.dokos.io/api/method/new-website-contact-form', {
     method: 'POST',
@@ -79,11 +95,13 @@ async function onSubmit(event: FormSubmitEvent<any>) {
       state.name = ''
       state.email = ''
       state.body = ''
-      toast.add({ title: 'Email envoyé', description: 'Nous faisons notre possible pour vous répondre dans les meilleurs délais', color: 'success' })
+      status.value = t('sent_title')
+      toast.add({ title: t('sent_title'), description: t('sent_description'), color: 'success' })
     })
     .catch((e) => {
-      const description = e.data?.message || 'Un erreur a empêché l\'envoi de votre message. Veuilez réessayer dans quelques instants ou nous envoyer un email.'
-      toast.add({ title: 'Echec de l\'envoi du message', description, color: 'error' })
+      const description = e.data?.message || t('failed_description')
+      status.value = `${t('failed_title')}. ${description}`
+      toast.add({ title: t('failed_title'), description, color: 'error' })
     })
     .finally(() => {
       loading.value = false
@@ -102,15 +120,15 @@ async function onSubmit(event: FormSubmitEvent<any>) {
     >
       <UForm :validate="validate" :state="state" class="space-y-6" @submit="onSubmit">
         <UFormField :label="form.name.label" name="name" required :ui="fieldUi">
-          <UInput v-model="state.name" :placeholder="form.name.placeholder" class="w-full" :size="inputSize" :ui="inputUi" />
+          <UInput v-model="state.name" autocomplete="name" :placeholder="form.name.placeholder" class="w-full" :size="inputSize" :ui="inputUi" />
         </UFormField>
 
         <UFormField :label="form.email.label" name="email" required :ui="fieldUi">
-          <UInput v-model="state.email" type="email" :placeholder="form.email.placeholder" class="w-full" :size="inputSize" :ui="inputUi" />
+          <UInput v-model="state.email" type="email" autocomplete="email" :placeholder="form.email.placeholder" class="w-full" :size="inputSize" :ui="inputUi" />
         </UFormField>
 
         <UFormField :label="form.company.label" name="company" required :ui="fieldUi">
-          <UInput v-model="state.company" :placeholder="form.company.placeholder" class="w-full" :size="inputSize" :ui="inputUi" />
+          <UInput v-model="state.company" autocomplete="organization" :placeholder="form.company.placeholder" class="w-full" :size="inputSize" :ui="inputUi" />
         </UFormField>
 
         <UFormField :label="form.body.label" name="body" required :ui="fieldUi">
@@ -128,12 +146,33 @@ async function onSubmit(event: FormSubmitEvent<any>) {
           :size="inputSize"
           :class="is2026 ? 'w-fit rounded-lg px-6 py-3.5 font-bold' : 'w-fit pt-2'"
           :loading="loading"
-          :disabled="!canSend"
         />
+        <p role="status" aria-live="polite" class="text-sm" :class="is2026 ? 'font-typed text-stone-600' : 'text-muted'">
+          {{ status }}
+        </p>
       </UForm>
     </component>
   </div>
 </template>
+
+<i18n lang="yaml">
+en:
+  required: Required
+  verify: One moment, the anti-spam check above has not answered yet. Send again once it is ticked.
+  sending: Sending…
+  sent_title: Message sent
+  sent_description: We will answer you as soon as we can.
+  failed_title: The message could not be sent
+  failed_description: An error stopped your message. Try again in a few moments, or send us an email.
+fr:
+  required: Obligatoire
+  verify: Un instant, la vérification anti-spam ci-dessus n'a pas encore répondu. Renvoyez une fois qu'elle est cochée.
+  sending: Envoi en cours…
+  sent_title: Message envoyé
+  sent_description: Nous faisons notre possible pour vous répondre dans les meilleurs délais.
+  failed_title: Échec de l'envoi du message
+  failed_description: Une erreur a empêché l'envoi de votre message. Réessayez dans quelques instants, ou envoyez-nous un e-mail.
+</i18n>
 
 <style scoped lang="postcss">
 .dark .form-bg {

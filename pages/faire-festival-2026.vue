@@ -1,6 +1,9 @@
 <script setup>
 import ContactForm from '~/components/ContactForm.vue'
 
+// French only: no /en/ copy of this page is generated (no hreflang to a
+// French text under lang="en").
+defineI18nRoute({ locales: ['fr'] })
 const form = {
   title: 'Gardons le contact',
   description: 'Nous nous sommes croisés au Faire Festival, ou vous n\'avez pas pu venir. Présentez-nous votre fablab, votre tiers-lieu ou votre association, nous vous répondons.',
@@ -131,7 +134,7 @@ useSeoMeta({
           <UButton to="https://dokos.io" target="_blank" size="xl" class="btn-hero-primary">
             Découvrir dokos.io
           </UButton>
-          <UButton to="/fr/blog/2026/faire-festival-retour" size="xl" class="btn-hero-ghost">
+          <UButton to="/blog/2026/faire-festival-retour" size="xl" class="btn-hero-ghost">
             Lire notre retour du festival →
           </UButton>
         </div>
@@ -202,6 +205,7 @@ useSeoMeta({
         <!-- Vidéo — renseigner videoUrl dans le script pour remplacer le placeholder -->
         <div class="features-video">
           <iframe
+                loading="lazy"
             v-if="videoUrl"
             :src="videoUrl"
             class="features-video-frame"

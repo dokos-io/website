@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('pages'), { default: () => [] })
-const { data: files } = useLazyFetch('/api/search.json', { default: () => [], server: false })
+// The search index (~350 KB) is fetched the first time search is opened
+// (Cmd/Ctrl+K), not on every page load.
+const { files } = useDeferredSearchIndex()
 
 provide('navigation', navigation)
 </script>

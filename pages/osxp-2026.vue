@@ -1,4 +1,7 @@
 <script setup lang="ts">
+// French only: no /en/ copy of this page is generated (no hreflang to a
+// French text under lang="en").
+defineI18nRoute({ locales: ['fr'] })
 // Preview of the Open Source Experience 2026 page in the 2026 design (see the
 // homepage preview). French only, not indexed and absent from the navigation
 // until it replaces pages/open-source-experience-2026.vue.

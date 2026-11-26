@@ -1,6 +1,9 @@
 <script setup>
 import ContactForm from '~/components/ContactForm.vue'
 
+// French only: no /en/ copy of this page is generated (no hreflang to a
+// French text under lang="en").
+defineI18nRoute({ locales: ['fr'] })
 const form = {
   title: 'Contactez-nous',
   description: 'Vous vous demandez si Dokos est adapté à vos besoins ? Vous souhaitez souscrire à une offre d\'accompagnement ? Vous avez des questions sur l\'offre d\'hébergement ? Envoyez nous un message.',
@@ -177,7 +180,8 @@ useSeoMeta({
         <div id="qualeo" class="project-block">
           <div class="flex flex-col gap-4">
             <div class="project-video">
-              <iframe 
+              <iframe
+                loading="lazy" 
                 width="100%" 
                 height="100%" 
                 src="https://www.youtube-nocookie.com/embed/ooMT65Uxy5s?autoplay=1&loop=1&playlist=ooMT65Uxy5s" 
@@ -223,7 +227,8 @@ useSeoMeta({
           </div>
           <div class="flex flex-col gap-4">
             <div class="project-video">
-              <iframe 
+              <iframe
+                loading="lazy" 
                 width="100%" 
                 height="100%" 
                 src="https://www.youtube-nocookie.com/embed/tzY6ybHaX6U?autoplay=1&loop=1&playlist=tzY6ybHaX6U" 
@@ -368,7 +373,7 @@ useSeoMeta({
           <UButton
             size="xl"
             color="orange"
-            to="/fr/open-source-experience-2026"
+            to="/open-source-experience-2026"
             class="salon-cta"
           >
             Nous retrouver à l'édition 2026, les 9 et 10 décembre

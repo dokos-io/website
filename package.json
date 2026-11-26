@@ -29,6 +29,7 @@
     "@iconify-json/icon-park-outline": "^1.1.16",
     "@iconify-json/iconoir": "^1.1.46",
     "@iconify-json/logos": "^1.1.44",
+    "@iconify-json/lucide": "^1.2.160",
     "@iconify-json/map": "^1.2.1",
     "@iconify-json/material-symbols": "^1.1.86",
     "@iconify-json/mdi": "^1.1.68",
@@ -47,6 +48,8 @@
     "@nuxt/scripts": "^1.2.1",
     "@nuxt/ui": "^4.12.0",
     "@nuxtjs/i18n": "^10.6.0",
+    "@nuxtjs/robots": "^7.1.0",
+    "@nuxtjs/sitemap": "^9.2.0",
     "@vueuse/nuxt": "^15.0.0",
     "nuxt-og-image": "^7.0.7"
   },

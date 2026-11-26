@@ -1,6 +1,7 @@
 ---
 toc: true
 title: Mentions Légales
+description: "Mentions légales du site dokos.io : éditeur du site, responsabilités, cookies, propriété intellectuelle et données personnelles."
 ---
 
 ## **1. Présentation du site**
