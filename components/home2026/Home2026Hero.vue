@@ -5,7 +5,7 @@
 // not at all for visitors who ask for reduced motion.
 // The video is composed for this frame: the Dokos window on the right and the
 // typed request at the bottom left. From 1280px the card is 16:9 like the video
-// (up to 880px high) and the text sits above the request, in the empty top left corner; below that
+// (up to 720px high, and never taller than the screen under the header) and the text sits above the request, in the empty top left corner; below that
 // the video plays in its own frame under the text, cropped on the window. The
 // card is in the deepest Dokos blue, like the AI card; the video is to be shot
 // on that blue so its edges never show (the current file has a grey background).
@@ -96,8 +96,8 @@ const links = computed(() => props.block.links.filter(link => link.to !== PRESEN
         <div
             class="relative isolate flex flex-col overflow-hidden rounded-2xl text-white"
             :class="hasVideo
-                ? 'bg-dokos-900 xl:h-[min(calc((100vw-2rem)*0.5625),880px)] xl:justify-start'
-                : 'min-h-[clamp(440px,62vh,640px)] justify-end bg-dokos-900'"
+                ? 'bg-dokos-900 xl:h-[min(calc((100vw-2rem)*0.5625),calc(100svh-9rem),720px)] xl:justify-start'
+                : 'min-h-[clamp(400px,56vh,560px)] justify-end bg-dokos-900'"
         >
             <template v-if="hasVideo">
                 <!-- Under the text on small screens, behind it on large ones. -->
@@ -131,13 +131,13 @@ const links = computed(() => props.block.links.filter(link => link.to !== PRESEN
 
             <div
                 class="flex flex-col gap-5 px-6 sm:px-12"
-                :class="hasVideo ? 'pt-10 pb-8 sm:pt-14 xl:max-w-[42%] xl:pr-0 xl:pb-14' : 'pb-10 sm:pb-14'"
+                :class="hasVideo ? 'pt-8 pb-8 sm:pt-12 xl:max-w-[42%] xl:pr-0 xl:pb-12' : 'pb-10 sm:pb-12'"
             >
-                <p class="h26-fade text-xl font-semibold sm:text-3xl">{{ block.kicker }}</p>
+                <p class="h26-fade text-lg font-semibold sm:text-2xl">{{ block.kicker }}</p>
                 <h1
                     :aria-label="`${block.title}.`"
                     class="font-extrabold uppercase leading-[0.88] tracking-[-0.045em]"
-                    :class="hasVideo ? 'text-[clamp(3rem,9.5vw,8rem)] xl:text-[clamp(3.5rem,5.4vw,6rem)]' : 'max-w-6xl text-[clamp(3rem,9.5vw,8rem)]'"
+                    :class="hasVideo ? 'text-[clamp(2.5rem,8vw,5.5rem)] xl:text-[clamp(3rem,4.2vw,4.75rem)]' : 'max-w-6xl text-[clamp(2.5rem,8vw,5.5rem)]'"
                 >
                     <span aria-hidden="true">{{ typed }}<span v-if="typing" class="h26-cursor" /><span class="text-transparent">{{ rest }}</span><span :class="done ? 'text-accent' : 'text-transparent'">.</span></span>
                 </h1>
