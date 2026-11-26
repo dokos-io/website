@@ -118,7 +118,7 @@ chapters:
   label: SECOIA OI · Conectt
   title: Ce que ça donne chez Orange
   description: Avec le projet SECOIA OI, Orange remplace son outil historique de gestion des raccordements réseau par Conectt, construit sur ERPNext avec son équipe. Avant de se lancer, Orange s'est posé quatre questions. Voici ce que Conectt y répond.
-  # Vidéo de l'architecture de Conectt (2 min 39, muette, hébergée sur le site) : elle répond aux quatre
+  # Vidéo de l'architecture de Conectt (2 min 44, muette, hébergée sur le site) : elle répond aux quatre
   # questions, elle vient donc avant les chapitres, qui détaillent chaque réponse.
   video:
     src: /osxp/2026/conectt.mp4
