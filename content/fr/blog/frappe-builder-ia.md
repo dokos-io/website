@@ -17,7 +17,7 @@ On vous montre tout ça en image, configuration comprise, dans une vidéo tourn�
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 0.75rem;">
   <iframe
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://www.youtube.com/embed/0gJvf_AqKsc?start=7"
+    src="https://www.youtube-nocookie.com/embed/0gJvf_AqKsc?start=7"
     title="Frappe Builder et IA - Dokos"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

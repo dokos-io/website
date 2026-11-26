@@ -19,10 +19,10 @@ hero:
       description: Ventes, achats, stocks, comptabilité, production, projets et RH partagent une seule base. Dokos fait le travail répétitif.
     - layer: apps
       title: Des applications à votre mesure
-      description: Installez celles du catalogue, faites construire les vôtres, et bientôt créez-les sans code avec Studio.
+      description: Installez celles du catalogue, créez les vôtres sans code avec Studio, ou faites-les construire.
     - layer: access
       title: Un assistant à vos côtés
-      description: Dokos AI prépare le travail et attend votre accord. Votre assistant habituel s'y connecte aussi, par MCP.
+      description: Dokos AI prépare le travail, dans les limites du rôle que vous lui donnez. Votre assistant habituel s'y connecte aussi, par MCP.
   # The ecosystem drawn as a stack. Agents are never named by product: MCP only.
   stack:
     teams:
@@ -42,7 +42,7 @@ hero:
     apps_note: chacune s'installe seule ou avec les autres
     custom:
       title: Vos applications
-      note: "applications métier · Studio, bientôt"
+      note: "applications métier · Studio"
       to: /fr/ingenierie
     apps:
       - { title: Frappe CRM, domain: sales, to: /fr/modules/crm, publisher: frappe, note: "Prospection et suivi des affaires, du premier contact au devis Dokos." }
@@ -96,8 +96,8 @@ access:
   rules:
     - title: Les droits d'un utilisateur
       description: Un agent se connecte avec un compte et des rôles. Il ne voit que ce que ce compte voit.
-    - title: Une confirmation avant d'écrire
-      description: Dokos AI présente chaque création ou modification et attend votre accord.
+    - title: Lire ou écrire, vous choisissez
+      description: Un rôle IA (lecteur, rédacteur ou gestionnaire) fixe ce que l'assistant peut faire pour chaque personne. Des règles de contrôle encadrent les assistants branchés par MCP.
     - title: Chaque action dans l'historique
       description: Une écriture d'agent apparaît dans la chronologie du document, avec son auteur et son heure.
   link:
@@ -131,8 +131,8 @@ access:
     confirm: Confirmer
     cancel: Annuler
 
-# How Dokos adapts to a company: three levels. Studio is in Dodock develop only
-# (doc.dokos.io/next/dodock/personnalisation/studio), so it is marked « Bientôt ».
+# How Dokos adapts to a company: three levels. Studio is available; its documentation
+# only exists under doc.dokos.io/next for now, so the link points there.
 extend:
   label: Sur mesure
   title: Dokos s'adapte à votre entreprise.
@@ -145,11 +145,11 @@ extend:
       items: [Champs, Formulaires, Validations, Impressions, Rapports]
       link: { label: La personnalisation, to: "https://doc.dokos.io/v5/dodock/personnalisation", target: _blank }
     - title: Studio
-      status: Bientôt
-      state: soon
-      description: Un constructeur visuel d'applications web intégré à Dokos. Vous assemblez des pages, des composants et des sources de données, puis vous publiez l'application sur votre site. Studio est en préparation dans la prochaine version de Dodock.
+      status: Disponible
+      state: ok
+      description: Un constructeur visuel d'applications web intégré à Dokos. Vous assemblez des pages, des composants et des sources de données, puis vous publiez l'application sur votre site.
       items: [Pages, Composants, Données Dokos]
-      link: { label: Aperçu dans la documentation, to: "https://doc.dokos.io/next/dodock/personnalisation/studio", target: _blank }
+      link: { label: La documentation de Studio, to: "https://doc.dokos.io/next/dodock/personnalisation/studio", target: _blank }
     - title: Applications métier
       status: Disponible
       state: ok

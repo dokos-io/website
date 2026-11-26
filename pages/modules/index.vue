@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { THEMES } from '~/utils/themes'
 
+// 2026 design: cream header and footer, light only.
+definePageMeta({ design2026: true, colorMode: 'light' })
+
 const { t, locale } = useI18n({ useScope: 'local' })
 const localePath = useLocalePath()
 
@@ -52,98 +55,69 @@ const sortedModules = computed(() => {
 </script>
 
 <template>
-  <UPage>
-    <UPageHero
+  <div class="h26 overflow-x-clip bg-paper text-dokos-500">
+    <Landing2026Hero
+      :headline="page?.hero?.headline"
+      :title="page?.hero?.title || t('hero_title')"
+      :description="page?.hero?.description || t('hero_description')"
       :links="page?.hero?.links"
-      orientation="vertical"
-    >
-      <template v-if="page?.hero?.headline" #headline>
-        <UBadge variant="subtle" size="lg" class="font-medium">
-          <UIcon v-if="page.hero.headline.icon" :name="page.hero.headline.icon" class="mr-1.5 size-4" />
-          {{ page.hero.headline.label }}
-        </UBadge>
-      </template>
-      <template #title>
-        <span v-html="page?.hero?.title || t('hero_title')" />
-      </template>
-      <template #description>
-        <span v-html="page?.hero?.description || t('hero_description')" />
-      </template>
-    </UPageHero>
+    />
 
-    <UPageSection
-      v-if="page?.scope"
-      :title="page.scope.title"
-      :description="page.scope.description"
-      class="bg-sand-200/60 dark:bg-stone-900"
-    >
-      <UPageGrid class="sm:grid-cols-2 lg:grid-cols-3">
-        <UPageCard
-          v-for="(item, i) in page.scope.items"
-          :key="i"
-          :title="item.title"
-          :description="item.description"
-          :icon="item.icon"
-          variant="subtle"
-        >
-          <template v-if="item.badge" #footer>
-            <UBadge :label="item.badge" variant="subtle" size="sm" />
-          </template>
-        </UPageCard>
-      </UPageGrid>
-    </UPageSection>
+    <!-- The three app families, as a ruled numbered list. -->
+    <section v-if="page?.scope" class="mx-auto flex max-w-[1360px] flex-col gap-12 px-4 py-24 sm:px-8 sm:py-32">
+      <Landing2026Heading :title="page.scope.title" :description="page.scope.description" />
+      <ol class="h26-reveal grid gap-x-10 lg:grid-cols-3">
+        <li v-for="(item, i) in page.scope.items" :key="i" class="grid grid-cols-[2.5rem_1fr] gap-x-4 border-t-[1.5px] border-dokos-500 py-6">
+          <span class="font-typed text-lg text-accent">{{ String(i + 1).padStart(2, '0') }}</span>
+          <span class="flex flex-col gap-2">
+            <b class="text-2xl font-extrabold tracking-[-0.02em]">{{ item.title }}</b>
+            <span class="text-lg leading-relaxed text-stone-600">{{ item.description }}</span>
+            <span v-if="item.badge" class="font-typed text-sm">{{ item.badge }}</span>
+          </span>
+        </li>
+      </ol>
+    </section>
 
-    <UPageSection :title="t('themes_title')" :description="t('themes_description')">
-      <UPageGrid class="sm:grid-cols-2 lg:grid-cols-3">
-        <UPageCard
-          v-for="theme in themes"
-          :key="theme.slug"
-          :title="theme.title"
-          :description="theme.description"
-          :to="theme.to"
-          :icon="theme.icon"
-          variant="subtle"
-        />
-      </UPageGrid>
-    </UPageSection>
+    <!-- Business areas, in the deep blue card: one ruled link per area. -->
+    <section class="px-2 pb-10 sm:px-6 sm:pb-14 lg:px-14">
+      <div class="rounded-2xl bg-dokos-900 text-white">
+        <div class="mx-auto flex max-w-[1360px] flex-col gap-12 px-4 py-24 sm:px-8 sm:py-28">
+          <Landing2026Heading :title="t('themes_title')" :description="t('themes_description')" tone="dark" />
+          <ul class="h26-reveal grid gap-x-10 lg:grid-cols-2">
+            <li v-for="theme in themes" :key="theme.slug" class="border-t-[1.5px] border-white/40">
+              <NuxtLink :to="theme.to" class="group flex flex-col gap-2 py-6">
+                <b class="text-2xl font-extrabold tracking-[-0.02em] group-hover:underline">{{ theme.title }} →</b>
+                <span class="leading-relaxed text-dokos-100">{{ theme.description }}</span>
+              </NuxtLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <UPageSection :title="t('all_modules_title')" :description="t('all_modules_description')">
-      <UPageGrid class="sm:grid-cols-2 lg:grid-cols-3">
-        <UPageCard
+    <!-- Every app, each on a white sheet. -->
+    <section class="mx-auto flex max-w-[1360px] flex-col gap-12 px-4 py-24 sm:px-8 sm:py-32">
+      <Landing2026Heading :title="t('all_modules_title')" :description="t('all_modules_description')" />
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <NuxtLink
           v-for="module in sortedModules"
           :key="module.path"
-          :title="module.title"
-          :description="module.description"
           :to="module.path"
-          variant="outline"
+          class="h26-lift flex flex-col gap-3 bg-white p-6 shadow-[0_12px_30px_rgba(43,42,39,0.12)]"
         >
-          <template #leading>
-            <UColorModeAvatar
-              v-if="module.logo"
-              :light="module.logo.light"
-              :dark="module.logo.dark"
-              size="lg"
-              class="rounded-sm"
-            />
-            <UIcon v-else :name="module.icon || 'i-heroicons-cube'" class="size-8 text-primary" />
-          </template>
-          <template v-if="module.application" #footer>
-            <UBadge :label="module.application as string" color="neutral" variant="subtle" size="sm" />
-          </template>
-        </UPageCard>
-      </UPageGrid>
-    </UPageSection>
+          <span class="flex items-center gap-3">
+            <img v-if="module.logo" :src="module.logo.light" alt="" class="size-10 rounded-sm" loading="lazy">
+            <UIcon v-else :name="module.icon || 'i-heroicons-cube'" class="size-9 shrink-0" />
+            <b class="text-2xl font-extrabold tracking-[-0.02em]">{{ module.title }}</b>
+          </span>
+          <span class="leading-relaxed text-stone-600">{{ module.description }}</span>
+          <span v-if="module.application" class="mt-auto font-typed text-sm">{{ module.application }}</span>
+        </NuxtLink>
+      </div>
+    </section>
 
-    <UPageSection v-if="page?.cta">
-      <UPageCTA
-        :title="page.cta.title"
-        :description="page.cta.description"
-        :links="page.cta.links"
-        variant="subtle"
-        class="bg-sand-200 dark:bg-stone-900 ring ring-default"
-      />
-    </UPageSection>
-  </UPage>
+    <Landing2026Cta v-if="page?.cta" :title="page.cta.title" :description="page.cta.description" :links="page.cta.links" />
+  </div>
 </template>
 
 <i18n lang="yaml">

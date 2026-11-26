@@ -169,13 +169,15 @@ const demos = [
         Orange a choisi l'open source pour ses logiciels métier. Avec son équipe, nous co-construisons Conectt, la plateforme qui remplace l'outil historique de gestion des raccordements réseau. Dokos intervient comme intégrateur et expert d'ERPNext, du développement des modules métier à l'exploitation en production.
       </template>
       <div class="aspect-video rounded-lg overflow-hidden ring ring-default">
-        <iframe
-          class="w-full h-full"
-          src="https://www.youtube.com/embed/tzY6ybHaX6U"
-          title="Conectt, gestion des raccordements"
-          frameborder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+        <video
+          class="w-full h-full object-contain bg-white"
+          src="/osxp/2026/conectt.mp4"
+          poster="/osxp/2026/conectt-poster.jpg"
+          aria-label="Conectt, l'architecture de la gestion des raccordements réseau d'Orange"
+          controls
+          muted
+          playsinline
+          preload="none"
         />
       </div>
     </UPageSection>
@@ -203,7 +205,7 @@ const demos = [
       <div class="aspect-video rounded-lg overflow-hidden ring ring-default">
         <iframe
           class="w-full h-full"
-          src="https://www.youtube.com/embed/ooMT65Uxy5s"
+          src="https://www.youtube-nocookie.com/embed/ooMT65Uxy5s"
           title="Qualéo, gestion de la qualité"
           frameborder="0"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

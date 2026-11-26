@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { joinURL } from 'ufo'
 
+// 2026 design: cream header and footer, light only.
+definePageMeta({ design2026: true, colorMode: 'light' })
+
 const {
     params: { slug },
 } = useRoute()
@@ -58,56 +61,35 @@ if (image?.src) {
 </script>
 
 <template>
-    <UContainer v-if="post">
-        <UPageHeader :title="post.title" :description="post.description">
-            <template #headline>
-                <UBadge v-if="post.badge" v-bind="post.badge" variant="subtle" />
-                <span class="text-gray-500 dark:text-gray-400">&middot;</span>
-                <time v-if="post.date" class="text-gray-500 dark:text-gray-400">{{
-                    new Date(post.date).toLocaleDateString(language, {
-                        year: "numeric",
-                        month: "short",
-                        day: "numeric",
-                    })
-                }}</time>
+    <div v-if="post" class="h26 overflow-x-clip bg-paper text-dokos-500">
+        <Landing2026Header :title="post.title" :description="post.description" kicker-to="/fr/blog">
+            <template #kicker>
+                ← Blog<template v-if="post.badge?.label"> · {{ post.badge.label }}</template><template v-if="post.date"> · {{ new Date(post.date).toLocaleDateString(language, { year: 'numeric', month: 'long', day: 'numeric' }) }}</template>
             </template>
-
-            <div v-if="post.authors?.length" class="flex flex-wrap items-center gap-3 mt-4">
-                <UButton
+            <div v-if="post.authors?.length" class="flex flex-wrap items-center gap-4">
+                <component
+                    :is="author.to ? 'a' : 'span'"
                     v-for="(author, index) in (post.authors as any[])"
                     :key="index"
-                    :to="author.to"
-                    color="neutral"
-                    variant="outline"
+                    :href="author.to"
                     target="_blank"
-                    size="sm"
+                    class="flex items-center gap-2 font-bold"
                 >
-                    <UAvatar
-                        v-bind="author.avatar"
-                        :alt="author.name"
-                        size="2xs"
-                    />
-
+                    <UAvatar v-bind="author.avatar" :alt="author.name" size="sm" />
                     {{ author.name }}
-                </UButton>
+                </component>
             </div>
-        </UPageHeader>
+        </Landing2026Header>
 
-        <UPage>
-            <UPageBody prose>
-                <ContentRenderer v-if="post && post.body" :value="post" />
-
-                <USeparator v-if="surround?.length" />
-
+        <div class="mx-auto grid max-w-[1360px] gap-12 px-4 pb-24 sm:px-8 lg:grid-cols-[minmax(0,1fr)_16rem]">
+            <article class="h26-prose min-w-0 max-w-3xl">
+                <ContentRenderer v-if="post.body" :value="post" />
+                <USeparator v-if="surround?.length" class="my-12" />
                 <UContentSurround :surround="surround" />
-            </UPageBody>
-
-            <template #right>
-                <UContentToc
-                    v-if="post.body && post.body.toc"
-                    :links="post.body.toc.links"
-                />
-            </template>
-        </UPage>
-    </UContainer>
+            </article>
+            <aside v-if="post.body?.toc?.links?.length" class="h26-prose hidden lg:block">
+                <UContentToc :links="post.body.toc.links" class="sticky top-24" />
+            </aside>
+        </div>
+    </div>
 </template>

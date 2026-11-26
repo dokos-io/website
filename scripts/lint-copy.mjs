@@ -34,6 +34,9 @@ const BUDGET_MAX = 3
 
 const SKIP_DIRS = new Set(['blog'])
 const SKIP_FILES = new Set(['hostingconditions.md', 'termsandconditions.md', 'legal.md', 'securityandprivacy.md', 'rgpdandeprivacy.md'])
+// Pages allowed to name a client, with that client's agreement: only the
+// client_name rule is lifted for them, every other rule still applies.
+const CLIENT_NAME_AGREED = new Set(['content/fr/osxp-2026.yml'])
 
 function walk(dir, out = []) {
   for (const name of readdirSync(dir)) {
@@ -64,6 +67,7 @@ for (const file of files) {
     if (line.trim().startsWith('#')) return
     if (PROSE_SKIP_KEYS.test(line)) return
     for (const rule of rules) {
+      if (rule.id === 'client_name' && CLIENT_NAME_AGREED.has(rel)) continue
       const m = line.match(rule.re)
       if (m) hits.push({ rel, line: i + 1, id: rule.id, excerpt: m[0] })
     }

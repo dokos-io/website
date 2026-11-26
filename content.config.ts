@@ -48,6 +48,35 @@ const landingSchema = z.object({
   extend: obj().optional(),
   base: obj().optional(),
   team: obj().optional(),
+  // 2026 homepage preview (content/fr/accueil-2026.yml, components/home2026/).
+  marquee: obj().optional(),
+  ai: obj().optional(),
+  everywhere: obj().optional(),
+  software: obj().optional(),
+  story: obj().optional(),
+  editor: obj().optional(),
+  commitments: obj().optional(),
+  discretion: obj().optional(),
+  presentation: obj().optional(),
+  start: obj().optional(),
+  // Open Source Experience 2026 preview (content/fr/osxp-2026.yml, components/osxp2026/).
+  stack: obj().optional(),
+  mastery: obj().optional(),
+  framework: obj().optional(),
+  chapters: obj().optional(),
+  assist: obj().optional(),
+  event: obj().optional(),
+  // Pricing page: how to choose, before the tables.
+  guide: obj().optional(),
+  // « Comment nous travaillons ensemble » (content/fr/travailler-ensemble.yml, components/together2026/).
+  reciprocity: obj().optional(),
+  convictions: obj().optional(),
+  roles: obj().optional(),
+  autonomy: obj().optional(),
+  steps: obj().optional(),
+  fit: obj().optional(),
+  freedom: obj().optional(),
+  closing: obj().optional(),
 })
 
 const blogSchema = z.object({

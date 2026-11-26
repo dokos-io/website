@@ -60,6 +60,80 @@
 }
 
 /*
+ * Display weights for the 2026 homepage (very large uppercase titles), from the
+ * same @fontsource package as the weights above.
+ */
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/hanken-grotesk/hanken-grotesk-latin-700-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/hanken-grotesk/hanken-grotesk-latin-ext-700-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/hanken-grotesk/hanken-grotesk-latin-800-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/hanken-grotesk/hanken-grotesk-latin-ext-800-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/*
+ * Courier Prime (SIL Open Font License), self-hosted from @fontsource: the
+ * "typed" lines of the 2026 homepage (typewriter motif). Latin + latin-ext.
+ */
+@font-face {
+  font-family: "Courier Prime";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/courier-prime/courier-prime-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Courier Prime";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/courier-prime/courier-prime-latin-ext-400-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Courier Prime";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/courier-prime/courier-prime-latin-700-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Courier Prime";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/courier-prime/courier-prime-latin-ext-700-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/*
  * Design tokens aligned with the Dokos v5 desk identity.
  * Source of truth: dodock/scss/dodock/css_variables.scss (identical across v5,
  * v5-dev and develop). Colours are authored in OKLCH there; kept in OKLCH here
@@ -71,6 +145,11 @@
    colour resolves to nothing. */
 @theme static {
   --font-sans: "Hanken Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+  /* Typewriter lines of the 2026 homepage. */
+  --font-typed: "Courier Prime", ui-monospace, "Courier New", monospace;
+  /* Cream ground and ink of the 2026 homepage ("Nancy" direction). */
+  --color-paper: #f7f1e8;
+  --color-ink: #2b2a27;
 
   /* Brand — deep petrol blue. 500 is the exact desk `--primary` (#024a70);
      600/700 are its documented hover/active states. */
@@ -231,4 +310,67 @@
 .dk-btn-ghost-on-dark:focus-visible {
   background: #fff;
   color: #0f2a3a;
+}
+
+/*
+ * Shared by every block of the pages in the 2026 design (homepage, Open
+ * Source Experience 2026): titles slide in from the left and
+ * paragraphs rise as they enter the viewport. Scroll-driven, so no script; in
+ * browsers without animation-timeline, or with reduced motion, content is
+ * simply shown.
+ */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .h26 .h26-reveal {
+      animation: h26-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 45%;
+    }
+    .h26 .h26-reveal-x {
+      animation: h26-slide linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 55%;
+    }
+  }
+}
+@keyframes h26-rise { from { opacity: 0; transform: translateY(56px); } }
+@keyframes h26-slide { from { opacity: 0; transform: translateX(-80px); } }
+
+.h26 .h26-lift { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.h26 .h26-lift:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18); }
+
+.h26 .h26-pulse { animation: h26-pulse 1.8s ease-out infinite; }
+@keyframes h26-pulse {
+  from { box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.6); }
+  to { box-shadow: 0 0 0 10px rgba(255, 107, 107, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .h26 .h26-pulse { animation: none; }
+}
+
+/*
+ * Long-form text in the 2026 design (blog posts, legal pages, partner pages):
+ * Nuxt UI's prose components read these variables, so the Markdown keeps its
+ * components and takes the Dokos blue for titles and links on the cream paper.
+ */
+.h26-prose {
+  --ui-text-highlighted: var(--color-dokos-500);
+  --ui-text: var(--color-stone-700);
+  --ui-text-toned: var(--color-stone-700);
+  --ui-text-muted: var(--color-stone-600);
+  --ui-text-dimmed: var(--color-stone-500);
+  --ui-border: color-mix(in oklab, var(--color-dokos-500) 25%, transparent);
+  --ui-border-muted: color-mix(in oklab, var(--color-dokos-500) 15%, transparent);
+  --ui-bg-elevated: var(--color-white);
+  --ui-bg-muted: var(--color-white);
+  font-size: 1.125rem;
+}
+.h26-prose h2,
+.h26-prose h3 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.h26-prose h2 {
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
 }

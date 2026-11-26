@@ -20,7 +20,7 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Dokos Website',
+  titleTemplate: '%s — Dokos',
   ogImage: 'https://dokos.io/social-card.png',
   twitterImage: 'https://dokos.io/social-card.png',
   twitterCard: 'summary_large_image'

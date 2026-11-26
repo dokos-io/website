@@ -1,4 +1,7 @@
 <script setup lang="ts">
+// 2026 design: cream header and footer, light only (see components/landing2026/).
+definePageMeta({ design2026: true, colorMode: 'light' })
+
 // Same pattern as pages/solutions/[slug].vue: content-driven landing pages,
 // one per business theme, sharing LandingPage's block renderer.
 const route = useRoute()
@@ -32,5 +35,5 @@ defineOgImage('OgImageSaas' as any, {
 </script>
 
 <template>
-    <LandingPage :page="page" />
+    <Landing2026Page :page="page" />
 </template>

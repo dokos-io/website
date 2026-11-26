@@ -1,0 +1,324 @@
+# Nouvelle page d'accueil (direction « Nancy et la machine à écrire »), en aperçu sur
+# /fr/accueil-2026, non indexée et absente de la navigation. Elle remplacera content/fr/index.yml
+# une fois les textes validés. Rendu : pages/accueil-2026.vue et components/home2026/.
+# Les clés vides (video, poster, src) attendent leurs fichiers : chaque bloc s'affiche sans.
+# Titre et description pour Google et les partages : ils s'affichent sans le kicker ni la vidéo,
+# donc ils disent explicitement ce que le titre du hero (« Demandez. Il s'adapte. ») laisse deviner.
+title: "Dokos, le logiciel de gestion libre qui s'adapte à vous"
+description: "Toute la gestion d'une entreprise dans un logiciel libre, que votre assistant IA adapte à votre métier. Avec ou sans IA, à vous de choisir."
+navigation: false
+
+# Bandeau d'actualité, au-dessus de la page. À changer au fil des nouvelles.
+announcement:
+  label: Retrouvez-nous à l'Open Source Experience, les 9 et 10 décembre à Paris.
+  cta: Voir le programme
+  # Nouvelle page OSXP 2026 (aperçu) ; à remettre sur /fr/open-source-experience-2026 quand elle la remplacera.
+  to: /fr/osxp-2026
+
+hero:
+  kicker: Le logiciel de gestion libre
+  # Tapé à la machine au chargement ; le point final corail est ajouté par le composant.
+  title: Demandez. Il s'adapte
+  description: Dokos réunit déjà toute la gestion d'une entreprise. Votre assistant IA en fait le logiciel de votre métier. Et au quotidien, il prépare le travail avec vous.
+  links:
+    # Ouvre la présentation par-dessus la page (bloc presentation, plus bas). Masqué tant que la vidéo n'existe pas.
+    - label: Voir Dokos en 2 minutes
+      to: "#presentation"
+    - label: Explorer la démo en ligne
+      to: https://demo.dokos.cloud
+      target: _blank
+  note: Avec ou sans IA, à vous de choisir.
+  # Vidéo de fond (export-hero-jour, recompressée à 1,5 Mo), 22 s sans son : le logiciel en mode clair sur
+  # le bleu nuit de la carte (dokos-900, #001d33). Le bureau, une facture reprise d'un devis, « Combien mes
+  # clients me doivent-ils ? », « Est-ce que je peux payer demain ? », puis un tableur qui devient une application.
+  # Composée pour le hero : la fenêtre à droite, la demande en bas à gauche, le texte se pose au-dessus.
+  # Le WebM est servi en premier, le MP4 sert de repli. L'image fixe est la dernière vue de la vidéo.
+  video: /home/2026/hero/hero.webm
+  video_mp4: /home/2026/hero/hero.mp4
+  poster: /home/2026/hero/hero-poster.webp
+
+marquee:
+  label: Ce sur quoi vous pouvez compter
+  items:
+    - Conforme à la facturation électronique
+    - Logiciel de caisse certifié LNE
+    - Open source, licence GPLv3
+    - Hébergé en France et en Allemagne
+    - Éditeur français
+    - Vous récupérez vos données à tout moment
+    - Sans abonnement par utilisateur
+    - 14 jours d'essai gratuit
+
+# Le plan de votre gestion : Dokos au centre, chaque pièce reliée à lui. Les pièces font le tour
+# du centre dans l'ordre de la liste, la première en haut ; chacune à son tour, la question se tape,
+# le fil s'allume, puis la réponse apparaît, avec les applications concernées. Pas de capture d'écran :
+# elles surchargeaient le bloc sans mettre le logiciel en valeur.
+everywhere:
+  title: Tout au même endroit
+  description: Au centre, une seule base. Vos ventes, votre communication, vos finances et votre équipe s'y branchent.
+  sheet:
+    project: Votre gestion
+    drawn_by: L'équipe Dokos
+    scale: Votre entreprise
+    number: Feuille 001
+    foundations: ERPNext, logiciel de gestion libre utilisé dans le monde entier
+  core:
+    title: Dokos
+    note: Une seule base
+  rooms:
+    - key: metier
+      title: Votre métier
+      question: Dokos peut-il s'adapter à mon métier ?
+      answer: "Oui. Ajoutez les champs et les formulaires dont vous avez besoin, en quelques clics et sans développeur. Pour aller plus loin, assemblez une application complète à la souris dans Studio, ou décrivez-la à un assistant IA qui la construit pour vous. Elle s'appuie sur les mêmes données et les mêmes droits que le reste de Dokos."
+      apps: "Personnalisation sans code · Studio · Applications métier"
+    - key: communication
+      title: Votre communication
+      question: Mon site web est-il relié à ma gestion ?
+      answer: "Oui. Votre site, votre blog et vos lettres d'information fonctionnent directement avec Dokos, à partir de vos produits et de vos contacts. Un prix change, il est à jour en ligne. Quelqu'un s'inscrit, il rejoint vos contacts. Vos pages, vous les assemblez à la souris ou vous les décrivez à un assistant IA, qui les construit devant vous."
+      apps: "Site web · Constructeur de pages · Blog · Lettre d'information"
+    - key: ventes
+      title: Vos ventes
+      question: "Puis-je suivre mes clients du premier contact à la facture ?"
+      answer: "Oui. Prospection, devis, commandes et factures partagent la même fiche client : tout l'historique au même endroit, rien à ressaisir. Et de son côté, votre client commande sur votre boutique en ligne, puis suit ses commandes et ses demandes depuis son portail."
+      apps: "Prospection · Devis et commandes · Boutique en ligne · Support client · Portail client"
+    - key: finances
+      title: Vos finances
+      question: "Mes factures arrivent-elles directement en comptabilité ?"
+      answer: "Oui. Chaque facture validée crée son écriture comptable, et le rapprochement bancaire vous propose les correspondances : vous n'avez plus qu'à valider. Vos factures électroniques partent et arrivent par la plateforme agréée de votre choix. Et vos tableaux de bord sont à jour à l'instant où vous les ouvrez."
+      apps: "Comptabilité · Banque · Facturation électronique · Tableaux de bord · Caisse certifiée LNE (option)"
+      link: { label: Facturation électronique et caisse certifiée, to: /fr/certifications }
+    - key: equipe
+      title: Votre équipe
+      question: Mon équipe a-t-elle tout au même endroit ?
+      answer: "Oui. Chacun demande ses congés et saisit ses notes de frais depuis l'application mobile. Dans la messagerie d'équipe, on échange sur un devis ou une commande en l'ayant sous les yeux. Vos procédures et vos formations vivent dans le wiki interne, accessibles à tous."
+      apps: "Ressources humaines · Messagerie d'équipe · Documentation interne · Formation en ligne"
+    - key: operations
+      title: Vos opérations
+      question: "Quand je vends, la suite se prépare-t-elle ?"
+      answer: "Oui. Dès qu'une commande est enregistrée, le stock est réservé et les achats de ce qui manque sont préparés. Production, projets et contrôle qualité s'appuient sur les mêmes produits et les mêmes clients : chacun sait ce qui a été vendu, sans avoir à le demander."
+      apps: "Achats · Stocks · Production · Projets · Qualité"
+  hint: Choisissez une pièce du plan
+  # Les raccordements du plan : les outils auxquels Dokos se connecte (mêmes logos que l'accueil actuel).
+  connections:
+    label: Raccordements
+    title: Connecté à vos autres outils
+    icons:
+      - i-logos-woocommerce-icon
+      - i-logos-stripe
+      - i-logos-paypal
+      - i-logos-zapier
+      - i-logos-google-calendar
+      - i-logos-google-drive
+      - i-logos-google-maps
+      - i-logos-dropbox
+      - i-simple-icons-amazons3
+      - i-cib-nextcloud
+    images:
+      - /home/gocardless.png
+  soon: "Bientôt : une suite documentaire, avec agenda et visioconférence."
+  link:
+    label: Voir toutes les applications
+    to: /fr/modules
+
+software:
+  title: Saisi une fois. Utilisé partout
+  description: "Un devis accepté devient une commande, une livraison, une facture, une écriture et un paiement. Le client, les articles et les montants ne se saisissent qu'une fois : chaque document reprend le précédent. Et tout cela fonctionne sans IA."
+  # Affiché une seule fois, au-dessus de la première étape : il introduit toutes les lignes « does ».
+  does_label: Dokos s'en charge
+  # Chaque ligne est un comportement standard de Dokos v5 (Ventes, Stocks, Comptabilité, eTransactions, Banque).
+  steps:
+    - { title: Devis, number: DEV-2026-0388, does: "reprend vos prix et les remises du client" }
+    - { title: Commande, number: CMD-2026-0291, does: "réserve le stock et suit ce qui reste à livrer" }
+    - { title: Livraison, number: BL-2026-0277, does: "met votre stock à jour" }
+    - { title: Facture, number: FA-2026-0412, does: "part par votre plateforme agréée" }
+    - { title: Écriture, number: ECR-2026-5530, does: "remplit votre comptabilité et votre TVA" }
+    - { title: Paiement, number: PAY-2026-0198, does: "se rapproche seul de votre relevé bancaire" }
+
+# L'IA au travail : ce qu'il fait chaque jour, ce qu'il construit quand le métier le demande, les
+# règles qui laissent la main aux personnes, et une facture écrite par une personne et par des agents
+# (données d'exemple). Développe la fin du hero (« il prépare le travail avec vous »).
+ai:
+  title: Votre assistant IA prépare le travail
+  description: L'IA est intégrée au logiciel. Elle lit vos documents, exécute vos rapports et prépare vos écritures, avec les droits que vous lui donnez.
+  parts:
+    # example : la facture d'exemple s'affiche à côté ; video : la vidéo en boucle (export-studio-ia-jour : la
+    # demande se tape dans le panneau IA de Studio, logiciel en mode clair), posée comme la facture en feuille
+    # blanche sur la carte bleu nuit.
+    - title: Au quotidien
+      text: "Il retrouve un chiffre dans vos factures, prépare un devis à partir d'une phrase et rédige vos descriptions d'articles. Il vous demande votre accord avant d'écrire, et chaque action reste visible dans l'historique du document. Et quand vous ne savez plus comment faire, vous lui posez la question : il vous explique la marche à suivre."
+      # Vidéo : dans Flow, une question sur la facturation d'un client, puis un devis préparé et approuvé,
+      # ouvert dans Dokos et en aperçu d'impression (video-quotidien/export, prise réelle sur demo-develop).
+      video:
+        src: /home/2026/ai/quotidien.webm
+        src_mp4: /home/2026/ai/quotidien.mp4
+        poster: /home/2026/ai/quotidien-poster.webp
+    - title: Quand votre métier le demande
+      text: "Un tableur qui circule entre collègues, un suivi tenu à la main : décrivez à votre assistant ce dont vous avez besoin, et il prépare une application sur mesure dans Studio. Elle s'appuie sur vos données Dokos, vos salariés ou vos articles par exemple, et chacun n'y voit que ce que ses droits permettent. Vous pouvez ensuite la retoucher à la souris, ou demander à l'assistant de la faire évoluer."
+      # Vidéo : l'assistant crée un tableau de bord Insights à la demande (video-insights/export-flux-insights-jour).
+      video:
+        src: /home/2026/ai/flux-insights.webm
+        src_mp4: /home/2026/ai/flux-insights.mp4
+        poster: /home/2026/ai/flux-insights-poster.webp
+  rules_title: Les règles de l'assistant
+  rules:
+    - title: Les droits d'un utilisateur
+      description: Un agent se connecte avec un compte et des rôles. Il ne voit que ce que ce compte voit.
+    - title: Lire ou écrire, vous choisissez
+      description: Un rôle IA (lecteur, rédacteur ou gestionnaire) fixe ce que l'assistant peut faire pour chaque personne. Des règles de contrôle encadrent les assistants branchés par MCP.
+    - title: Chaque action dans l'historique
+      description: Une écriture d'agent apparaît dans la chronologie du document, avec son auteur et son heure.
+  example:
+    title: Facture FA-2026-0412
+    status: Validée
+    fields:
+      - { label: Client, value: Exemple SARL }
+      - { label: Format, value: Factur-X }
+      - { label: Total TTC, value: "4 860,00 €" }
+    history:
+      - { kind: person, who: Comptabilité, what: a créé la facture, time: "09:12" }
+      - { kind: ai, who: IA, what: a ajouté 3 lignes du devis, time: "09:14" }
+      - { kind: mcp, who: Agent via MCP, what: a contrôlé le Factur-X, time: "09:20" }
+      - { kind: person, who: Comptabilité, what: a validé la facture, time: "09:21" }
+    # Espace insécable avant le point d'interrogation : il ne passe jamais seul à la ligne.
+    ask: "J'ajoute ces trois lignes à la facture ?"
+    confirm: Confirmer
+    cancel: Annuler
+  assistants:
+    title: Avec l'assistant que vous utilisez déjà
+    description: Dokos ouvre un serveur MCP protégé par OAuth. Vous le branchez dans votre assistant, qui agit ensuite avec votre compte et vos droits.
+    note: Les connecteurs MCP dépendent de l'offre de chaque assistant.
+    items:
+      - { name: Claude, logo: /ai/claude.svg }
+      - { name: ChatGPT, logo: /ai/chatgpt.svg }
+      - { name: Gemini, logo: /ai/gemini.svg }
+      - { name: Le Chat de Mistral, logo: /ai/mistral.svg }
+      - { name: Grok, logo: /ai/grok.svg }
+      - { name: Microsoft Copilot, logo: /ai/copilot.svg }
+      - { name: Perplexity, logo: /ai/perplexity.svg }
+  links:
+    - label: L'IA dans Dokos
+      to: /fr/modules/dokos-ai
+    - label: IA et agents
+      to: /fr/ecosysteme/intelligence-artificielle
+
+# Ce qu'il y a dessous : la réponse à « et si cet éditeur disparaît ? ». Dokos repose sur ERPNext et
+# avance avec lui sans diverger (Dodock fait de même avec Frappe) : le général est proposé dans ERPNext,
+# le français est ajouté dans Dokos. Les couches disent qui écrit quoi. Faits datés repris de l'accueil
+# actuel (bloc « La base open source ») ; quatorze applications : bloc « L'équipe derrière Dokos ».
+editor:
+  title: Ce qu'il y a dessous
+  paragraphs:
+    - Dokos repose sur ERPNext, un logiciel de gestion libre développé par une communauté internationale et utilisé dans le monde entier.
+    - Dokos avance avec lui, version après version, sans s'en écarter. Quand une amélioration sert tout le monde, nous la proposons directement dans ERPNext. Ce qui est propre à la France, de la facturation électronique à la caisse certifiée LNE, nous l'ajoutons dans Dokos, avec quatorze applications à nous. Et derrière le logiciel, il y a une équipe en France, qui connaît vos obligations et vous accompagne.
+    - "Tout est publié sous licence libre : votre logiciel ne dépend pas de notre existence, et vous récupérez vos données quand vous le voulez."
+  facts:
+    - Dokos 5, publiée le 16 mars 2026
+    - Frappe et ERPNext 16
+  layers:
+    - { title: Dokos, by: Dokos SAS, note: La version française et nos applications, to: /fr/modules/dokos }
+    - { title: Dodock, by: Dokos SAS, note: "Notre version du framework Frappe, alignée sur chaque version", to: /fr/modules/dodock }
+    - { title: ERPNext, by: "Frappe et sa communauté, avec nos contributions", note: Les modules de gestion }
+    - { title: Licences libres, by: "GPLv3, AGPLv3 ou MIT", note: Code publié sur GitLab }
+  links:
+    - label: Lire le code
+      to: https://gitlab.com/dokos
+      target: _blank
+    - label: Comment nous travaillons ensemble
+      to: /fr/travailler-ensemble
+
+# Plus affiché sur l'accueil : la lettre, la photo d'atelier et la signature serviront à la page
+# « Comment nous travaillons ensemble ».
+story:
+  title: Nous écrivons Dokos
+  paragraphs:
+    - Nos clients avaient besoin de savoir quand les choses allaient changer pour eux. Le logiciel que nous utilisions avançait au rythme d'un autre. Alors nous l'avons pris en main, pour pouvoir tenir parole.
+    - Depuis, nous comprenons votre organisation avant de proposer quoi que ce soit, nous tenons la date annoncée, et nous vous rendons capables de faire seuls tout ce que vous pouvez faire seuls.
+  signature: Charles-Henri, fondateur, et Céline, directrice
+  photo:
+    src: /home/2026/atelier.webp
+    alt: L'équipe Dokos réunie autour d'une table pendant un atelier
+    caption: L'équipe, en atelier
+  link:
+    label: Lire notre histoire
+    to: /fr/editeur
+  # Lettre tapée à la machine quand elle arrive à l'écran.
+  letter:
+    date: Le 16 novembre 2026
+    subject: "Objet : votre gestion"
+    lines:
+      - Nous chiffrons ce que le travail demande.
+      - Nous tenons la date annoncée.
+      - Nous corrigeons le logiciel nous-mêmes.
+      - Vous pouvez partir quand vous voulez.
+    sign: L'équipe Dokos
+
+# À reprendre : « Un bouton coûte un bouton » parle peu à un dirigeant qui ne fait pas développer.
+# Plus affiché sur l'accueil : des engagements de prestataire, qui serviront à la page « Comment nous
+# travaillons ensemble » (chercher un allié). « Nous corrigeons le code » et « Vous pouvez partir » y
+# seront à reprendre : l'accueil les dit déjà dans « Ce qu'il y a dessous ».
+commitments:
+  label: Ce que vous pouvez attendre de nous
+  link:
+    label: Comment nous travaillons ensemble
+    to: /fr/ingenierie
+  items:
+    - title: Le prix avant de commencer
+      description: Nous chiffrons ce que le travail demande. Quand une demande est lourde, nous vous le disons avant de lancer.
+      image: /home/2026/cote-a-cote.webp
+    - title: La date est tenue
+      description: Quand le temps manque, nous réduisons le périmètre avec vous et nous vous prévenons tôt.
+      image: ""
+    - title: Nous corrigeons le code
+      description: Nous éditons Dokos. Personne ne se tient entre votre problème et le logiciel, et la correction profite à tous.
+      image: ""
+    - title: Vous pouvez partir
+      description: Le code est public, et vous exportez votre base et vos fichiers depuis votre interface d'administration.
+      image: ""
+
+# À l'endroit où le visiteur cherche des références : une ligne, avec un clin d'œil puis l'invitation à en parler.
+# Nous ne citons pas nos clients sur le site ; on ne parle pas de sécurité, la discrétion suffit.
+discretion:
+  text: Le secret des affaires vaut aussi pour notre site.
+  link:
+    label: Pour parler de nos références, écrivez-nous
+    to: /fr/contact
+
+# Dokos en deux minutes : l'histoire de Dokos et ce qu'il fait, à regarder au lieu de lire la page ou
+# à transmettre à un associé. S'ouvre par-dessus la page depuis le bouton du hero, depuis « Par où
+# commencer », ou depuis une adresse qui se termine par #presentation. Tant que src est vide, la vidéo
+# et les deux boutons qui l'ouvrent sont masqués. Fichiers dans public/home/2026/presentation/.
+presentation:
+  title: Dokos en deux minutes
+  meta: 2 min, sous-titrée
+  caption: Vidéo hébergée par nos soins, sans cookie de suivi.
+  src: ""
+  src_mp4: ""
+  poster: ""
+
+start:
+  title: Par où commencer
+  description: Seul ou accompagné, choisissez votre point de départ.
+  items:
+    - title: Regarder Dokos en deux minutes
+      description: L'histoire de Dokos et ce qu'il fait, à regarder seul ou à transmettre à votre associé ou à votre comptable.
+      label: Lancer la vidéo
+      to: "#presentation"
+    # Deux façons d'être autonome : l'auto-hébergement, gratuit, ou l'hébergement chez nous (libre-service, voir /fr/tarifs).
+    - title: Avancer par vous-même
+      description: Installez Dokos sur vos propres serveurs, ou faites-le héberger chez nous, avec 14 jours d'essai gratuit. Démonstration, documentation et son assistant, forum et vidéos sont là pour vous aider.
+      label: Essayer gratuitement
+      to: https://cloud.dokos.io
+    # Les packs d'accompagnement sont ouverts à tous, auto-hébergement compris (FAQ de /fr/tarifs).
+    - title: Être accompagné
+      description: Un partenaire près de chez vous, ou notre équipe, installe et paramètre Dokos avec vous. Nos packs d'accompagnement sont ouverts à tous, même si vous hébergez Dokos vous-même.
+      label: Trouver un partenaire
+      to: /fr/partners
+    - title: Travailler avec notre équipe
+      description: Vos besoins sont plus complexes, avec des particularités métier ou des connecteurs à développer ? Découvrez comment nous travaillons avec nos clients, du juste prix à votre autonomie.
+      label: Comment nous travaillons ensemble
+      to: /fr/travailler-ensemble
+      highlight: true
+  # Les autres faits sont déjà dans la bande qui défile sous le hero ; les tarifs, eux, se consultent ici.
+  link:
+    label: Voir les tarifs
+    to: /fr/tarifs

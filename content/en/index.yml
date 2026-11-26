@@ -19,7 +19,7 @@ hero:
       description: Sales, purchasing, stock, accounting, manufacturing, projects and HR share one database. Dokos does the repetitive work.
     - layer: apps
       title: Applications that fit your company
-      description: Install the ones in the catalogue, have your own built, and soon create them without code with Studio.
+      description: Install the ones in the catalogue, create your own without code in Studio, or have them built.
     - layer: access
       title: An assistant at your side
       description: Dokos AI prepares the work and waits for your approval. Your usual assistant can connect too, over MCP.
@@ -42,7 +42,7 @@ hero:
     apps_note: each one installs on its own or with the others
     custom:
       title: Your applications
-      note: "business applications · Studio, coming soon"
+      note: "business applications · Studio"
       to: /en/ingenierie
     apps:
       - { title: Frappe CRM, domain: sales, to: /en/modules/crm, publisher: frappe, note: "Prospecting and deal tracking, from first contact to the Dokos quotation." }
@@ -131,8 +131,8 @@ access:
     confirm: Confirm
     cancel: Cancel
 
-# How Dokos adapts to a company: three levels. Studio is in Dodock develop only,
-# so it is marked « coming soon ». Documentation links point to the French docs.
+# How Dokos adapts to a company: three levels. Studio is available; its documentation
+# only exists under doc.dokos.io/next for now. Documentation links point to the French docs.
 extend:
   label: Made to measure
   title: Dokos adapts to your company.
@@ -145,11 +145,11 @@ extend:
       items: [Fields, Forms, Approvals, Print formats, Reports]
       link: { label: Customisation (in French), to: "https://doc.dokos.io/v5/dodock/personnalisation", target: _blank }
     - title: Studio
-      status: Coming soon
-      state: soon
-      description: A visual web application builder built into Dokos. You put together pages, components and data sources, then publish the application on your site. Studio is being prepared in the next version of Dodock.
+      status: Available
+      state: ok
+      description: A visual web application builder built into Dokos. You put together pages, components and data sources, then publish the application on your site.
       items: [Pages, Components, Dokos data]
-      link: { label: Preview in the documentation (in French), to: "https://doc.dokos.io/next/dodock/personnalisation/studio", target: _blank }
+      link: { label: Studio documentation (in French), to: "https://doc.dokos.io/next/dodock/personnalisation/studio", target: _blank }
     - title: Business applications
       status: Available
       state: ok

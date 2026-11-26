@@ -1,7 +1,10 @@
 <script setup lang="ts">
+// 2026 design: cream header and footer, light only (see components/landing2026/).
+definePageMeta({ design2026: true, colorMode: 'light' })
+
 // Replaces the three near-identical sector SFCs (tiers-lieux,
 // service-companies, production-companies). All three were ~250 lines of the
-// same template; the shape now lives in LandingPage and the difference lives
+// same template; the shape now lives in Landing2026Page and the difference lives
 // entirely in content/fr/solutions/*.yml.
 const route = useRoute()
 const { locale } = useI18n()
@@ -34,5 +37,5 @@ defineOgImage('OgImageSaas' as any, {
 </script>
 
 <template>
-    <LandingPage :page="page" />
+    <Landing2026Page :page="page" />
 </template>

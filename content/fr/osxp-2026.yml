@@ -1,0 +1,210 @@
+# Page Open Source Experience 2026, nouvelle version dans les codes de l'accueil 2026, en aperçu sur
+# /fr/osxp-2026, non indexée. Elle remplacera pages/open-source-experience-2026.vue une fois validée ; la
+# page 2025 reste en ligne pour montrer que le partenariat avec Orange dure.
+# Rendu : pages/osxp-2026.vue et components/osxp2026/ (le hero et la bande viennent de l'accueil).
+# Écrite comme si Orange avait donné son accord pour nommer SECOIA OI (le projet) et Conectt (le produit),
+# et pour décrire l'intégration ; à réadapter avant publication en cas de refus.
+# Les passages « À compléter » attendent les éléments techniques de CH ; ils s'affichent en corail.
+title: "Dokos à Open Source Experience 2026, avec Orange"
+description: "Les 9 et 10 décembre 2026 à Paris, sur le stand d'Orange : comment le même framework libre, Frappe, fait tourner Dokos dans une PME et ERPNext chez Orange, avec Conectt."
+
+hero:
+  kicker: Open Source Experience · 9 et 10 décembre 2026 · Paris
+  # Orange utilise ERPNext et Frappe, pas Dokos : le point commun est le framework.
+  title: Un seul socle, de la PME à Orange
+  # Le « il » renvoie au socle du titre.
+  description: Chez Orange, il gère les raccordements réseau d'un opérateur national. Dans une PME, toute la gestion. Venez voir sur le stand ce qui rend ce framework libre si souple.
+  links:
+    # Pas de prise de rendez-vous : le bouton mène aux infos pratiques du stand.
+    - label: Nous retrouver sur le stand
+      to: "#stand"
+    - label: S'inscrire au salon
+      to: https://www.opensource-experience.com/fr/inscription
+      target: _blank
+  # Qui nous sommes, en note : le hero commence par le sujet, pas par nous. Le lieu est dans la bande.
+  note: Éditeur de Dokos, experts de Frappe et d'ERPNext · aux côtés d'Orange pour la troisième année
+  # Vidéo à venir (deuxième temps) ; sans fichier, le hero affiche un fond bleu nuit.
+  video: ""
+  poster: ""
+
+marquee:
+  label: L'essentiel
+  items:
+    - 9 et 10 décembre 2026
+    - Paris Expo Porte de Versailles, Hall 5.2
+    - Sur le stand d'Orange
+    - Deux conférences au programme
+    - Code publié sous GPLv3
+    - Hébergé en France et en Allemagne
+    - Dokos 5, publiée le 16 mars 2026
+
+# La clé de la page : qui est quoi, avant tout le reste. Orange utilise ERPNext, pas Dokos ; le point
+# commun est le framework. Dodock (notre version de Frappe) n'est pas nommé ici pour ne pas ajouter un nom.
+stack:
+  title: Qui fait quoi
+  description: Trois étages, du framework aux applications métier. Orange utilise ERPNext, et Dokos en est la version française.
+  # Libellés des étages, sur l'axe de gauche, de haut en bas.
+  tiers:
+    apps: Applications métier
+    software: Logiciels de gestion
+    framework: Framework
+  apps:
+    - name: Conectt
+      text: Les raccordements réseau d'Orange, construits directement sur ERPNext.
+      # Aux couleurs d'Orange (avec son accord, comme le nom) : son logo et un liseré dans son orange.
+      logo: /osxp/logo-orange.png
+      logo_alt: Orange
+      accent: "#ff7900"
+    - name: Vos applications
+      text: Ce qui manque à votre métier, sur ERPNext ou sur Dokos.
+  dokos:
+    name: Dokos
+    text: "La version française d'ERPNext, que nous éditons : facturation électronique, caisse certifiée LNE et quatorze applications en plus."
+  erpnext:
+    name: ERPNext
+    text: Le logiciel de gestion libre, utilisé dans le monde entier.
+  frappe:
+    name: Frappe
+    text: Le framework commun. Tout ce qui est construit dessus hérite de ce qu'il sait faire.
+  company:
+    name: Dokos SAS
+    text: Édite Dokos et intervient à chaque étage.
+
+# Le ticket d'entrée, traité vite et par des faits. Seule occurrence du mot « souveraineté » sur la page
+# (exception au guide éditorial, à valider).
+mastery:
+  title: La maîtrise d'abord
+  description: "Pour un grand groupe, la souveraineté des données se vérifie avec trois questions simples. Voici nos réponses."
+  items:
+    - title: Lire le code
+      text: Frappe, ERPNext et Dokos sont publiés sous licence libre (GPLv3, AGPLv3 ou MIT). Vos équipes sécurité peuvent les auditer ligne par ligne.
+    - title: Savoir où sont les données
+      text: "Frappe et ses applications s'installent là où vous le décidez : dans votre propre infrastructure, ou chez nous, en France et en Allemagne, chez OVHcloud et Hetzner."
+    # Exemple tiré de l'article de blog sur l'édition 2025 (Mautic, changement d'intégrateur).
+    - title: Pouvoir changer de prestataire
+      text: Le code est public et vous récupérez vos données à tout moment. Chez Orange, l'open source a déjà permis de changer d'intégrateur sur un autre logiciel, sans migration.
+  link:
+    label: Hébergement et données
+    to: /fr/souverainete
+
+# Le cœur de la page : ce que vous ajoutez hérite de ce que Frappe sait faire (le bénéfice, pas le mécanisme).
+framework:
+  title: Sa construction fait sa force
+  description: "Tout ce que vous ajoutez à ERPNext ou à Dokos profite d'emblée de ce que Frappe sait faire : les droits, l'API, l'historique, les rapports. Une nouvelle application ne part jamais de zéro, et l'IA peut s'y brancher comme sur le reste."
+  # Exemple générique (pas les champs réels de Conectt).
+  example:
+    label: Ce que vous ajoutez
+    title: Demande de raccordement
+    fields:
+      - Référence
+      - Client
+      - Adresse du site
+      - Type de raccordement
+      - Statut
+      - Technicien
+  outputs_label: Ce qu'elle reçoit d'emblée
+  outputs:
+    - Le formulaire de saisie
+    - La liste et ses filtres
+    - L'API REST
+    - Les droits par rôle et par champ
+    - L'historique de chaque modification
+    - Les rapports et les tableaux de bord
+    - Les flux de validation et les notifications
+    - L'accès pour l'IA, par l'API
+
+# Quatre chapitres, les quatre thèmes de la trame de CH. Même déroulé pour chacun.
+chapters:
+  label: SECOIA OI · Conectt
+  title: Ce que ça donne chez Orange
+  description: Avec le projet SECOIA OI, Orange remplace son outil historique de gestion des raccordements réseau par Conectt, construit sur ERPNext avec son équipe. Avant de se lancer, Orange s'est posé quatre questions. Voici ce que Conectt y répond.
+  # Vidéo de l'architecture de Conectt (2 min 39, muette, hébergée sur le site) : elle répond aux quatre
+  # questions, elle vient donc avant les chapitres, qui détaillent chaque réponse.
+  video:
+    src: /osxp/2026/conectt.mp4
+    poster: /osxp/2026/conectt-poster.jpg
+    title: Conectt, l'architecture de la gestion des raccordements réseau d'Orange
+  steps:
+    need: Le besoin
+    framework: Ce que permet le framework
+    done: Ce que nous avons fait
+    result: Le résultat
+  items:
+    - title: S'adapter au métier
+      need: Orange traite un volume important de demandes de raccordement réseau à l'échelle nationale. L'outil historique devait être remplacé.
+      framework: ERPNext fournissait déjà l'API, les flux de validation, l'attribution automatique et les notifications.
+      done: Des modules métier sur mesure, écrits avec le framework Frappe, en co-construction avec l'équipe d'Orange. Le code est livré dans les dépôts d'Orange.
+      result: Les équipes back-office pilotent les raccordements depuis un seul écran.
+    - title: S'intégrer dans un SI complexe
+      need: "À compléter : les contraintes du système d'information d'Orange."
+      framework: Tout passe par une API REST documentée et par la même couche de droits. ERPNext se raccorde ainsi aux annuaires d'entreprise et aux autres applications du SI.
+      done: "À compléter avec CH : le déploiement sur Azure et le raccordement au SoCaaS."
+      result: "À compléter."
+    - title: Des droits étanches
+      need: "À compléter : les exigences de cloisonnement d'Orange."
+      framework: Frappe gère les droits par rôle, par document et par champ. L'interface et l'API passent par la même couche de permissions.
+      done: "À compléter avec CH : l'interopérabilité avec Gward."
+      result: "À compléter."
+    # Faits confirmés : Orange voulait PostgreSQL, a financé la compatibilité, et la contribution est intégrée à Frappe.
+    - title: Un produit vivant, et partagé
+      need: Orange voulait faire tourner Frappe sur PostgreSQL, sa base de données de référence.
+      framework: "Le code de Frappe est ouvert : une amélioration peut être proposée directement dans le framework, et profiter à tous ses utilisateurs."
+      done: Orange a financé notre travail sur la compatibilité de Frappe avec PostgreSQL, et nous l'avons versé dans le code de Frappe.
+      result: Une amélioration financée par Orange profite aujourd'hui à toute la communauté internationale de Frappe.
+
+# Sur Conectt, l'IA a servi d'accélérateur au développement : c'est le message. Le fait qu'elle puisse aussi se
+# brancher sur ERPNext ou Dokos au quotidien vient en second.
+assist:
+  title: L'IA, un accélérateur
+  paragraphs:
+    - Sur Conectt, l'IA a servi de propulseur à notre équipe de développement. Elle nous a permis d'aller beaucoup plus loin dans la réponse aux besoins des utilisateurs d'Orange.
+    - Le framework s'y prête. Tout passe par la même couche de droits et d'API, si bien que ce que l'IA aide à construire hérite d'emblée des mêmes règles que le reste.
+    - Une fois l'application en service, l'IA peut aussi travailler au quotidien. Dans Dokos, un serveur MCP permet d'y brancher l'assistant de votre choix, avec les droits d'un utilisateur.
+  link:
+    label: L'IA dans Dokos
+    to: /fr/ecosysteme/intelligence-artificielle
+
+event:
+  title: Sur le stand et en conférence
+  info:
+    - { label: Dates, value: 9 et 10 décembre 2026 }
+    - { label: Lieu, value: "Paris Expo Porte de Versailles, Hall 5.2" }
+    - { label: Adresse, value: "1 place de la Porte de Versailles, entrée A1, 75015 Paris" }
+    - { label: Stand, value: Avec Orange, sur son stand }
+  talks_title: Nos deux conférences
+  # Repris du programme officiel (eventmaker.io), comme sur la page actuelle.
+  talks:
+    - title: "Facturation électronique : on est en prod ! Retour des communautés Dolibarr, Odoo OCA et Dokos"
+      when: Mercredi 9 décembre, 14 h 25 à 15 h 10
+      room: Salle Dennis Ritchie
+      format: Table ronde
+      description: "Animée par Walid Nouh (Projets Libres), avec Alexis de Lattre (Akretion), Maxime Kohlhaas (ATM Consulting) et Charles-Henri Decultot (Dokos)."
+      to: https://website-27805.eventmaker.io/fr/programme/6a96d852ac947f00e9590199
+    - title: Orange et ses partenaires dans l'écosystème open source
+      when: Jeudi 10 décembre, 14 h 00 à 14 h 20
+      room: Salle Kirk McKusick
+      format: Atelier
+      description: "Gilles Viton, responsable du programme communautés open source d'Orange France, avec Charles-Henri Decultot, directeur de Dokos."
+      to: https://website-27805.eventmaker.io/fr/programme/6abfa3348a2dc0e857955484
+  demos_title: Sur le stand d'Orange, en continu
+  demos:
+    - "Conectt : le parcours d'une demande de raccordement, de la réception à la clôture"
+    - "Dokos 5 : la caisse certifiée LNE, la réception des factures électroniques et le module bancaire"
+    - "L'IA dans Dokos : un assistant qui prépare une facture, avec les droits que vous lui donnez"
+  cta:
+    title: Venez nous voir sur le stand
+    text: "Passez sur le stand d'Orange les 9 et 10 décembre : nous vous montrons Conectt et Dokos 5 sur place. Vous avez une question précise ? Écrivez-nous avant le salon."
+    links:
+      - label: Nous écrire
+        to: /fr/contact
+      - label: S'inscrire au salon
+        to: https://www.opensource-experience.com/fr/inscription
+        target: _blank
+  # Les éditions précédentes, pour montrer les trois années aux côtés d'Orange.
+  previous:
+    label: Nos éditions précédentes
+    links:
+      - label: "2024"
+        to: /fr/blog/retour-open-source-experience-2024
+      - label: "2025"
+        to: /fr/open-source-experience-2025

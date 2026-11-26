@@ -68,6 +68,9 @@ sections:
 operations:
   title: Comment nous travaillons
   description: Notre manière d'intervenir compte autant que le périmètre.
+  links:
+    - label: En savoir plus
+      to: /fr/travailler-ensemble
   items:
     - title: À deux dès le début
       description: Chaque mission est suivie par deux ingénieurs. Si l'un est absent, l'autre connaît le projet et reprend le travail.

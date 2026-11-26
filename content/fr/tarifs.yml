@@ -1,5 +1,5 @@
 title: Tarifs
-description: Exploitation sous contrat avec délais écrits, packs d'heures d'accompagnement, et hébergement en libre-service sans support. Prix hors taxes de nos conditions générales.
+description: "Le prix de Dokos ne dépend pas du nombre d'utilisateurs. Hébergement suivi par notre équipe dès 99 € HT par mois, en autonomie dès 19 €, et 14 jours d'essai gratuit."
 navigation:
   title: Tarifs
   icon: i-heroicons-credit-card
@@ -9,54 +9,103 @@ hero:
     label: Tarifs publics, hors taxes
     icon: i-heroicons-document-text
   title: Tarifs
+  # L'argument fort d'abord. L'essai vaut pour tout hébergement chez nous, sans support : le support
+  # commence avec l'abonnement payant (dit sur la carte du guide et dans la FAQ, pas ici).
+  description: "Le prix ne dépend pas du nombre d'utilisateurs : ouvrez Dokos à toute votre équipe. Tout hébergement chez nous s'essaie gratuitement pendant 14 jours."
   # source: hostingconditions.md, §6.1 (tarifs au 01/09/2024, fondés sur le CPU, la base de données et le stockage)
-  description: Les prix ci-dessous sont ceux de nos conditions générales d'hébergement, en vigueur depuis le 1er septembre 2024. Chaque formule fixe un temps de calcul (CPU) mensuel, une taille de base de données et un espace de stockage. Le nombre de comptes utilisateurs n'entre pas dans le prix.
+  # Affichée en note, sous le guide.
+  note: Les prix ci-dessous sont ceux de nos conditions générales d'hébergement, en vigueur depuis le 1er septembre 2024. Chaque formule fixe un temps de calcul (CPU) mensuel, une taille de base de données et un espace de stockage.
+
+# Le guide, avant les tableaux : ce qui se choisit (l'hébergement) et ce qui s'ajoute (l'aide).
+# Seul le suivi par notre équipe est mis en avant ; les options autonomes disent ce qu'elles demandent.
+guide:
+  hosting_label: Héberger Dokos
+  hosting_hint: Un choix parmi trois.
+  hosting:
+    - name: Suivi par notre équipe
+      text: Nous hébergeons Dokos et répondons à vos questions d'usage. À partir de 499 € par mois, un engagement de niveau de service (SLA) s'applique.
+      from: À partir de
+      price: 99 € HT / mois
+      trial: 14 jours d'essai gratuit, support dès l'abonnement
+      to: "#exploitation"
+      highlight: true
+    - name: En autonomie, hébergé chez nous
+      text: Nous assurons l'hébergement, vous gérez le paramétrage et l'usage, sans support. Le forum communautaire, où notre équipe intervient, reste ouvert. Adapté aux petites structures à l'aise avec le paramétrage d'un logiciel.
+      from: À partir de
+      price: 19 € HT / mois
+      trial: 14 jours d'essai gratuit
+      to: "#decouverte"
+    - name: Chez vous
+      text: Le code est libre et gratuit. L'installation et la maintenance d'un logiciel de gestion demandent des compétences de développement en interne.
+      price: 0 €
+      to: https://gitlab.com/dokos
+      link_label: Le code sur GitLab
+  help_label: Se faire aider
+  help_hint: En plus, quel que soit votre choix.
+  help:
+    - name: Des heures d'accompagnement
+      text: "Paramétrage, reprise de données, formation : des heures utilisables à votre rythme, sur douze mois."
+      from: À partir de
+      price: 600 € HT les 5 heures
+      to: "#accompagnement"
+    - name: Un projet spécifique ou un grand groupe
+      text: Nous chiffrons après un cadrage court.
+      price: Sur devis
+      to: /fr/contact
+      link_label: Nous écrire
+  link_label: Voir le détail
 
 lanes:
   title: ""
   items:
+    # kicker : le terme précis, au-dessus du nom en français courant (le même que dans le guide).
     - id: exploitation
-      name: Exploitation sous contrat
-      tagline: Nous exploitons votre installation, avec des délais écrits.
+      kicker: Exploitation sous contrat
+      name: Suivi par notre équipe
+      tagline: Nous hébergeons et suivons votre installation.
       highlight: true
       caution: >-
-        À partir de 499 €, les garanties de niveau de service s'appliquent : délais de
-        prise en charge et de rétablissement contractuels, du lundi au vendredi de 8h à 20h.
-        En dessous, le support répond aux questions d'usage sans engagement de délai.
-        Ces quatre formules sont hébergées sur des serveurs mutualisés : l'activité des autres
-        sites du serveur peut influer sur les performances du vôtre.
+        À partir de 499 €, un engagement de niveau de service (SLA) s'applique : délais de
+        prise en charge et de rétablissement inscrits au contrat, du lundi au vendredi de 8h
+        à 20h. En dessous, le support répond aux questions d'usage du lundi au vendredi de 9h
+        à 18h, sans engagement de délai.
+        Ces quatre formules sont hébergées sur des serveurs mutualisés, partagés avec d'autres
+        sites. Pour des performances qui ne dépendent que de vous, l'hébergement dédié commence
+        à 1 199 € HT par mois.
+      # Conseil affiché au-dessus du tableau : c'est le service voulu qui fait monter de niveau, pas le calcul.
+      advice: "Choisissez la formule d'entrée qui correspond au service attendu : 99 € pour le support, 499 € pour un engagement de niveau de service (SLA). La puissance de base suffit à la plupart des équipes. En cas de dépassement, vous passez à la formule supérieure."
       columns:
         - Formule
+        - Pour qui
         - CPU / mois
         - Base de données
         - Stockage
-        - Engagement
       rows:
-        - ["99 € HT / mois", "2 h", "2 Go", "10 Go", "Support simple"]
-        - ["199 € HT / mois", "3 h", "2 Go", "15 Go", "Support simple"]
-        - ["499 € HT / mois", "4 h", "3 Go", "25 Go", "Garanties de niveau 1"]
-        - ["999 € HT / mois", "6 h", "4 Go", "50 Go", "Garanties de niveau 2"]
+        - ["99 € HT / mois", "Formule d'entrée avec support, suffisante pour la plupart des équipes.", "2 h", "2 Go", "10 Go"]
+        - ["199 € HT / mois", "Pour un usage plus soutenu.", "3 h", "2 Go", "15 Go"]
+        - ["499 € HT / mois", "Formule d'entrée avec SLA (niveau 1).", "4 h", "3 Go", "25 Go"]
+        - ["999 € HT / mois", "SLA de niveau 2 et ressources étendues.", "6 h", "4 Go", "50 Go"]
       footnote: >-
         Hébergement dédié à partir de 1 199 € HT par mois (2 vCPU, 8 Go de RAM, 100 Go
         de stockage), jusqu'à 9 999 € HT pour 16 vCPU, 128 Go et 1 To. Vous disposez de
         deux serveurs dédiés, un pour l'application et un pour la base de données, et
         vous créez autant de benchs et de sites que vous le souhaitez. Les formules
-        dédiées comprennent toutes le support technique standard et les garanties de
-        niveau 2.
+        dédiées comprennent toutes le support technique standard et le SLA de niveau 2.
       cta:
-        label: Voir les garanties en détail
+        label: Voir le SLA en détail
         to: /fr/exploitation
         color: primary
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
 
     - id: accompagnement
-      name: Accompagnement
-      tagline: Des heures d'expertise, à consommer quand vous en avez besoin.
+      kicker: Packs d'accompagnement
+      name: Des heures d'accompagnement
+      tagline: Des heures d'expertise, valables douze mois.
       caution: >-
         Analyse de besoin, paramétrage, reprise de données, formation, développement
-        spécifique. Les packs sont valables sans limite de durée et peuvent être
-        complétés à tout moment.
+        spécifique. Les heures sont valables douze mois, utilisables par fractions, et
+        chaque pack peut être complété à tout moment.
       columns:
         - Pack
         - Entreprises
@@ -76,21 +125,23 @@ lanes:
         trailing: true
 
     - id: decouverte
-      name: Libre-service, sans support
-      tagline: Vous démarrez seul, sur une instance mutualisée.
+      kicker: Libre-service, sans support
+      name: En autonomie, hébergé chez nous
+      tagline: Nous hébergeons, vous gérez le reste.
       caution: >-
-        Ces deux formules ne comprennent ni support ni délai de rétablissement.
-        Elles conviennent à un essai, à une maquette ou à un usage non critique. Si
-        votre activité dépend du site, choisissez une formule avec support.
+        Ces deux formules ne comprennent ni support ni délai de rétablissement. Elles
+        conviennent aux petites structures autonomes et aux usages non critiques, comme
+        un environnement de préproduction ou de test. Si votre activité dépend du site,
+        choisissez une formule avec support.
       columns:
         - Formule
+        - Pour qui
         - CPU / mois
         - Base de données
         - Stockage
-        - Support
       rows:
-        - ["19 € HT / mois", "0,5 h", "0,5 Go", "1 Go", "Aucun"]
-        - ["49 € HT / mois", "1 h", "1 Go", "5 Go", "Aucun"]
+        - ["19 € HT / mois", "Formule d'entrée, suffisante dans la plupart des cas.", "0,5 h", "0,5 Go", "1 Go"]
+        - ["49 € HT / mois", "Pour un usage plus soutenu.", "1 h", "1 Go", "5 Go"]
       cta:
         label: Créer un site
         to: https://cloud.dokos.io
@@ -113,7 +164,7 @@ scope:
       description: Applications spécifiques, automatisations, connecteurs. Livrés sous licence libre, dans vos dépôts.
       icon: i-heroicons-wrench-screwdriver
     - title: Ingénierie IA
-      description: Compétences Dokos AI et agents connectés par le serveur MCP, sur vos processus, avec confirmation avant toute écriture.
+      description: Des assistants IA et des agents connectés par MCP, adaptés à vos processus, avec des rôles IA qui fixent ce que chacun peut faire.
       icon: i-heroicons-cpu-chip
   links:
     - label: Voir les missions d'ingénierie
@@ -125,6 +176,9 @@ scope:
 faq:
   title: Questions sur la facturation
   items:
+    # L'essai : sans support (le support commence avec l'abonnement). La fin d'essai est à confirmer.
+    - label: Que comprend l'essai gratuit ?
+      content: "Pendant 14 jours, vous essayez gratuitement l'hébergement chez nous, sur la formule de votre choix. L'essai ne comprend pas de support : il commence avec l'abonnement. Le forum communautaire, où notre équipe est présente, reste ouvert pendant l'essai. À la fin de l'essai, vous choisissez une formule pour continuer."
     - label: Pourquoi facturer au CPU plutôt qu'à l'utilisateur ?
       # source: hostingconditions.md, §6.1 (bascule sur le forfait supérieur)
       content: Le coût d'une instance dépend de ce qu'elle calcule et de ce qu'elle stocke. Vous pouvez donc ouvrir l'outil à toute votre équipe sans changer de formule. Si votre consommation de CPU, de base de données ou de stockage dépasse celle de votre formule, vous passez à la formule supérieure qui correspond à votre consommation.
@@ -142,13 +196,14 @@ faq:
       # source: hostingconditions.md, §5
       content: Trente jours avant la fin de la période mensuelle en cours, par courrier recommandé avec accusé de réception ou par email à help@dokos.io. La résiliation prend effet à la fin du mois suivant la réception du préavis. Aucun remboursement partiel n'est effectué sur une période déjà facturée. Le contrat est mensuel et se renouvelle chaque mois ; le premier mois est facturé au prorata des jours restants.
     - label: Peut-on être accompagné en auto-hébergement ?
-      content: Oui. Les packs d'accompagnement sont ouverts à tous les utilisateurs, y compris ceux qui hébergent Dokos eux-mêmes. L'exploitation sous contrat, en revanche, suppose que nous ayons la main sur l'infrastructure ou un accès équivalent. C'est ce qui rend les délais tenables.
+      content: Oui. Les packs d'accompagnement sont ouverts à tous les utilisateurs, y compris ceux qui hébergent Dokos eux-mêmes. Le suivi par notre équipe, en revanche, suppose que nous ayons la main sur l'infrastructure ou un accès équivalent. C'est ce qui rend les délais tenables.
     - label: Les tarifs affichés sont-ils à jour ?
       content: Ils reprennent la grille en vigueur au 1er septembre 2024, telle qu'elle figure dans nos conditions générales d'hébergement, qui restent le document contractuel de référence. En cas d'écart entre cette page et les conditions générales, ces dernières font foi.
 
+# Pour un nouveau venu autant que pour un client : un conseil honnête, même vers une formule plus petite.
 cta:
-  title: Décrivez-nous votre installation
-  description: Vos contraintes de disponibilité nous disent quel niveau d'engagement est justifié, y compris s'il est plus bas que ce que vous envisagiez.
+  title: Besoin d'un conseil
+  description: "Décrivez-nous votre activité : nous vous orientons vers la formule adaptée, y compris si elle est plus modeste que prévu."
   links:
     - label: Nous écrire
       to: /fr/contact

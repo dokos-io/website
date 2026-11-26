@@ -30,11 +30,10 @@ form:
 contact_info:
   - title: By e-mail
     description: Write to us at hello@dokos.io
+    value: hello@dokos.io
     to: "mailto:hello@dokos.io"
     icon: i-material-symbols-attach-email-outline
-  - title: By phone
-    description: "06.33.47.58.69"
-    icon: i-material-symbols-perm-phone-msg-outline
   - title: In Nancy
     description: 59 rue du Vieil Aître, 54000 Nancy, France
+    value: 59 rue du Vieil Aître, 54000 Nancy, France
     icon: i-material-symbols-add-location-alt-outline

@@ -180,7 +180,7 @@ useSeoMeta({
               <iframe 
                 width="100%" 
                 height="100%" 
-                src="https://www.youtube.com/embed/ooMT65Uxy5s?autoplay=1&loop=1&playlist=ooMT65Uxy5s" 
+                src="https://www.youtube-nocookie.com/embed/ooMT65Uxy5s?autoplay=1&loop=1&playlist=ooMT65Uxy5s" 
                 title="Qualéo - Gestion de la qualité"
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -226,7 +226,7 @@ useSeoMeta({
               <iframe 
                 width="100%" 
                 height="100%" 
-                src="https://youtube.com/embed/tzY6ybHaX6U?autoplay=1&loop=1&playlist=tzY6ybHaX6U" 
+                src="https://www.youtube-nocookie.com/embed/tzY6ybHaX6U?autoplay=1&loop=1&playlist=tzY6ybHaX6U" 
                 title="Conectt - Gestion des raccordements"
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

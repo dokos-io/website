@@ -1,4 +1,7 @@
 <script setup lang="ts">
+// 2026 design: cream header and footer, light only (see components/landing2026/).
+definePageMeta({ design2026: true, colorMode: 'light' })
+
 const { locale } = useI18n()
 
 const { data: page } = await useAsyncData<any>('ingenierie', () =>
@@ -27,5 +30,5 @@ defineOgImage('OgImageSaas' as any, {
 </script>
 
 <template>
-    <LandingPage :page="page" />
+    <Landing2026Page :page="page" />
 </template>

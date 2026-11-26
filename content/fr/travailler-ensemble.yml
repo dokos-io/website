@@ -1,0 +1,153 @@
+# Page « Comment nous travaillons ensemble », dans les codes de l'accueil 2026, en aperçu sur
+# /fr/travailler-ensemble, non indexée. La relation avec Dokos SAS : chercher un allié plutôt qu'un
+# prestataire. Rendu : pages/travailler-ensemble.vue et components/together2026/ ; la lettre et les
+# engagements viennent de l'accueil (components/home2026/). Textes à valider à l'écran.
+title: Comment nous travaillons ensemble
+description: Vous cherchez un prestataire, vous trouverez des alliés. Notre façon de travailler avec vous, du juste prix à votre autonomie.
+
+hero:
+  # La question du visiteur en petit, la réponse en grand.
+  kicker: Vous cherchez un prestataire
+  # Tapé à la machine au chargement ; le point final corail est ajouté par le composant.
+  title: Vous trouverez des alliés
+  # Positif : ce que nous voulons être, sans partir d'une situation anxiogène.
+  description: Pour la gestion de votre entreprise, nous voulons être l'expert sur qui vous pouvez compter.
+  links:
+    - label: Décrivez-nous votre organisation
+      to: /fr/contact
+    - label: Voir les tarifs
+      to: /fr/tarifs
+  video: ""
+  poster: ""
+
+# Pourquoi des alliés : la confiance, qui tient aux engagements tenus. Dokos SAS existe depuis 2016 ; le
+# passage à éditeur date de 2018, à l'entrée en vigueur des règles d'inaltérabilité (loi de finances pour
+# 2016, art. 88, applicable au 1er janvier 2018). Récit d'équipe, volontairement court.
+# L'esprit du pitch OSXP 2026 : on nous expliquait que c'était la norme, nous avons fait d'autres choix.
+# Sans détail technique ni date : l'histoire complète ira sur une page dédiée.
+story:
+  title: Entrepreneurs, nous aussi
+  paragraphs:
+    - Nous dirigeons nous-mêmes des entreprises, et nous gérons la nôtre avec Dokos au quotidien. Nous savons l'importance des experts qui nous entourent.
+    # Qui nous sommes, sans en faire trop (raconté par Céline) : le choix d'ERPNext, puis le passage à
+    # éditeur (2018, non daté ici). L'histoire complète pourra aller sur une page dédiée.
+    - Il y a plus de dix ans, nous avons choisi ERPNext, un logiciel de gestion libre encore très peu connu en France. Nous admirions la philosophie open source de ses créateurs, et leur choix, rare à l'époque, de construire tout l'ERP sur son propre framework, une base commune dont chaque application hérite. C'est ce qui fait encore sa puissance aujourd'hui.
+    - Quand les règles françaises ont changé une fois de plus, nous sommes devenus éditeurs. Nous avons créé Dokos pour adapter ERPNext aux normes françaises et à la façon de travailler de ses utilisateurs, pour nous comme pour eux. Éditer Dokos nous a appris le logiciel dans ses moindres détails, et cette expertise profite aujourd'hui à nos clients, sur Dokos comme sur ERPNext.
+  # Pas de signature ici : la lettre est déjà signée.
+  # Lettre tapée à la machine quand elle arrive à l'écran.
+  letter:
+    date: Le 26 novembre 2026
+    subject: "Objet : votre gestion"
+    # Le résumé de la page, bloc par bloc : prix, métier, données, autonomie. Pas d'engagement de date.
+    lines:
+      - Nous facturons le juste prix.
+      - Nous partons de votre métier.
+      - Vos données restent les vôtres.
+      - Et nous travaillons à ce que vous ayez de moins en moins besoin de nous.
+    sign: Charles-Henri et toute l'équipe
+
+# La réciprocité de l'alliance, sans employer le mot.
+
+# Nos convictions, prouvées par des faits vécus (raconté par Céline). Formulées comme des pratiques, pas
+# comme des garanties.
+convictions:
+  title: Comment nous travaillons ensemble
+  description: Avec nos clients, nous appliquons ce que nous attendons de nos propres prestataires.
+  # La photo de travail de l'accueil : un visage sur une page qui parle de relation, sans photo de groupe.
+  image:
+    src: /home/2026/cote-a-cote.webp
+    alt: Deux personnes travaillent côte à côte devant un ordinateur portable
+  items:
+    - title: Le juste prix, dans les deux sens
+      text: Un changement qui prend dix minutes se facture dix minutes. Et quand un développement est vraiment lourd, nous le disons et nous le chiffrons à sa juste valeur.
+    # Tous les clients ne sont pas accompagnés : certains adaptent Dokos eux-mêmes.
+    - title: Au plus près de votre métier
+      text: Vous adaptez Dokos vous-même et vous avez besoin d'un coup de main, ou vous nous confiez votre projet. Dans les deux cas, nous prenons le temps de comprendre votre métier et ses particularités, pour proposer ce qui vous correspond vraiment.
+
+roles:
+  title: Ce que nous faisons pour vous
+  items:
+    - title: Héberger votre Dokos
+      text: Nous l'hébergeons, et nous nous occupons des mises à jour comme des sauvegardes.
+    - title: Faire évoluer l'outil avec vous
+      text: Nous partons de votre organisation, et nous adaptons Dokos à mesure que votre activité grandit.
+    - title: Vous accompagner dans l'usage de l'IA
+      text: L'IA change ce qu'un logiciel de gestion peut faire. Nous vous aidons à l'utiliser avec Dokos ou ERPNext, là où elle vous fait vraiment gagner du temps.
+
+# L'autonomie : une conviction, et une raison économique assumée.
+autonomy:
+  title: Votre autonomie, notre intérêt commun
+  paragraphs:
+    - "Notre objectif est que vous puissiez avancer sans nous. C'est une conviction : une entreprise doit rester maîtresse de son outil."
+    # Formulé en positif : une négation sur le modèle ferait douter de sa solidité.
+    - "C'est aussi ce qui fait la solidité de notre modèle : un client autonome revient vers nous pour faire grandir son outil, et c'est sur ces projets que repose notre activité. Nous formons vos équipes et documentons ce que nous faisons, pour que vous avanciez avec assurance."
+
+# Repris de la page Éditeur (« Ce que la licence vous donne »), sans le droit de forker ni « Le faire
+# évoluer » : sur un site hébergé chez nous, les évolutions passent par nous, et le point prêtait à confusion. Le mot
+# « souveraineté » est évité (guide éditorial) : « maîtrise de ses données ».
+freedom:
+  title: Vous restez libres
+  # Le contexte nommé plutôt que « dans le contexte actuel », pour que la phrase ne date pas.
+  description: "Un éditeur racheté qui change ses tarifs, un fournisseur soumis à une loi étrangère : garder la maîtrise de vos données vous protège des décisions prises ailleurs. Le code de Dokos est publié sous licence libre, et ces droits vous appartiennent quoi qu'il arrive entre nous."
+  items:
+    - title: Lire le code
+      text: Vos équipes ou un tiers peuvent l'auditer, sans accord de confidentialité.
+    - title: Reprendre l'installation ailleurs
+      text: Votre site reste exploitable par un autre prestataire, ou par vous, avec le même code. Vous récupérez vos données à tout moment.
+
+closing:
+  title: Décrivez-nous votre organisation
+  text: Dites-nous ce que vous gérez aujourd'hui et ce qui coince. Nous répondons par écrit sous deux jours ouvrés.
+  links:
+    - label: Nous écrire
+      to: /fr/contact
+    - label: Voir les tarifs
+      to: /fr/tarifs
+
+# Mis de côté (non affichés) : la réciprocité, les engagements et le déroulé d'un projet de la première version.
+# reciprocity:
+#   title: Une alliance, dans les deux sens
+#   description: Un projet de gestion réussit quand chacun fait sa part. Voici la nôtre, et celle que nous vous demandons.
+#   columns:
+#     - label: Ce que nous apportons
+#       items:
+#         - Nous écoutons pour comprendre, avant de proposer une solution.
+#         - Nous vous disons ce qui est lourd, même quand ce n'est pas la réponse espérée.
+#         - Nous transmettons ce que nous savons, pour que vous puissiez avancer sans nous.
+#     - label: Ce que nous vous demandons
+#       items:
+#         - Une personne disponible de votre côté, qui connaît le métier.
+#         - De la franchise sur ce qui coince, même quand c'est inconfortable.
+#         - Votre part du travail, des données de départ jusqu'aux tests.
+#
+# commitments:
+#   label: Nos engagements
+#   items:
+#     - title: Le prix avant de commencer
+#       description: Nous chiffrons ce que le travail demande. Quand une demande est lourde, nous vous le disons avant de lancer.
+#       image: /home/2026/cote-a-cote.webp
+#     # Une méthode rattachée à chaque proposition, pas une garantie générale (pas de SLA hors contrat).
+#     - title: Une date fixée ensemble
+#       description: Chaque proposition fixe une date de mise en service. Si le temps vient à manquer, nous ajustons le périmètre avec vous et nous vous prévenons tôt.
+#       image: ""
+#     - title: Le juste prix
+#       description: Un changement simple se facture comme un changement simple. Nous ne gonflons pas un devis pour compenser ailleurs.
+#       image: ""
+#     - title: Votre autonomie
+#       description: Nous formons vos équipes et documentons ce que nous faisons, pour que vous ayez de moins en moins besoin de nous.
+#       image: ""
+#
+# # Reconstitution à faire valider par CH, surtout les étapes 3 et 4.
+# steps:
+#   title: Comment se déroule un projet
+#   items:
+#     - title: Le diagnostic
+#       text: "Nous partons de votre organisation : ce que vous gérez, comment, et ce qui coince. Nous cherchons aussi ce qui ne se dit pas tout de suite."
+#     - title: La proposition chiffrée
+#       text: Un périmètre et un prix écrits, avec une date de mise en service.
+#     - title: La construction avec vous
+#       text: Nous paramétrons et développons par étapes courtes, que vous testez au fur et à mesure.
+#     - title: La mise en service
+#       text: Vos données sont reprises, vos équipes formées, et la bascule se fait à la date prévue.
+#     - title: Votre autonomie
+#       text: Vous reprenez la main au quotidien. Nous restons disponibles pour le support et la suite, à votre rythme.

@@ -6,6 +6,9 @@
  * content/<locale>/modules/<slug>.yml provides the blocks; a missing block is
  * simply not rendered.
  */
+// 2026 design: cream header and footer, light only.
+definePageMeta({ design2026: true, colorMode: 'light' })
+
 const { params: { slug } } = useRoute()
 const { t, locale } = useI18n({ useScope: 'local' })
 const localePath = useLocalePath()
@@ -87,269 +90,174 @@ const heroLinks = computed(() => {
 </script>
 
 <template>
-  <UPage v-if="module">
-    <UPageHero
+  <div v-if="module" class="h26 overflow-x-clip bg-paper text-dokos-500">
+    <Landing2026Hero
+      :headline="{ label: `← ${t('back_to_ecosystem')}`, to: localePath('/modules') }"
+      :title="module.hero?.title || module.title"
+      :description="module.hero?.description || module.description"
       :links="heroLinks"
-      :orientation="module.hero?.image ? 'horizontal' : 'vertical'"
-    >
-      <template #headline>
-        <NuxtLink :to="localePath('/modules')" class="inline-flex">
-          <UBadge variant="subtle" size="lg" class="font-medium" icon="i-heroicons-arrow-left-20-solid">
-            {{ t('back_to_ecosystem') }}
-          </UBadge>
-        </NuxtLink>
-      </template>
-      <template #title>
-        <span class="flex items-center gap-4" :class="{ 'justify-center': !module.hero?.image }">
-          <UColorModeAvatar
-            v-if="module.logo"
-            :light="module.logo.light"
-            :dark="module.logo.dark"
-            size="3xl"
-            class="rounded-md shrink-0"
-          />
-          <span v-html="module.hero?.title || module.title" />
-        </span>
-      </template>
-      <template #description>
-        <span v-html="module.hero?.description || module.description" />
-      </template>
-      <AppImage
-        v-if="module.hero?.image"
-        :src="module.hero.image"
-        :alt="module.title"
-        class="w-full rounded-lg ring ring-default"
-      />
-    </UPageHero>
+      :logo="module.logo?.light"
+    />
 
     <!-- Facts strip: publisher, licence, version, availability, docs. -->
-    <UPageSection v-if="facts.length" class="py-6 sm:py-8">
-      <dl class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-px bg-default/10 rounded-lg overflow-hidden ring ring-default">
-        <div v-for="(item, i) in facts" :key="i" class="bg-sand-100 dark:bg-stone-900 px-5 py-4">
-          <dt class="text-xs uppercase tracking-wide text-muted">{{ item.label }}</dt>
-          <dd class="mt-1 font-medium text-highlighted">
-            <NuxtLink v-if="item.to" :to="item.to" target="_blank" class="text-primary underline underline-offset-4">
-              {{ item.value }}
-            </NuxtLink>
+    <section v-if="facts.length" class="mx-auto max-w-[1360px] px-4 pt-16 sm:px-8">
+      <dl class="h26-reveal grid grid-cols-2 gap-x-8 sm:grid-cols-3 lg:grid-cols-5">
+        <div v-for="(item, i) in facts" :key="i" class="flex flex-col gap-1.5 border-t-[1.5px] border-dokos-500 py-5">
+          <dt class="font-typed text-sm text-stone-600">{{ item.label }}</dt>
+          <dd class="font-bold">
+            <NuxtLink v-if="item.to" :to="item.to" target="_blank" class="underline underline-offset-4">{{ item.value }}</NuxtLink>
             <template v-else>{{ item.value }}</template>
           </dd>
         </div>
       </dl>
-    </UPageSection>
+    </section>
+
+    <!-- Hero screenshot, on its own under the facts. -->
+    <section v-if="module.hero?.image" class="mx-auto max-w-[1360px] px-4 pt-16 sm:px-8">
+      <AppImage :src="module.hero.image" :alt="module.title" class="h26-reveal w-full rounded-xl shadow-[0_18px_40px_rgba(43,42,39,0.16)]" />
+    </section>
 
     <!-- Who it is for: situations, not personas. -->
-    <UPageSection
-      v-if="module.for_whom"
-      :title="module.for_whom.title || t('for_whom_title')"
-      :description="module.for_whom.description"
-    >
-      <UPageGrid class="sm:grid-cols-2 lg:grid-cols-3">
-        <UPageCard
-          v-for="(item, i) in module.for_whom.items"
-          :key="i"
-          :title="item.title"
-          :description="item.description"
-          :icon="item.icon || 'i-heroicons-user'"
-          variant="subtle"
-        />
-      </UPageGrid>
-    </UPageSection>
+    <section v-if="module.for_whom" class="mx-auto flex max-w-[1360px] flex-col gap-12 px-4 py-24 sm:px-8 sm:py-32">
+      <Landing2026Heading :title="module.for_whom.title || t('for_whom_title')" :description="module.for_whom.description" />
+      <ol class="h26-reveal grid gap-x-10 lg:grid-cols-3">
+        <li v-for="(item, i) in module.for_whom.items" :key="i" class="grid grid-cols-[2.5rem_1fr] gap-x-4 border-t-[1.5px] border-dokos-500 py-6">
+          <span class="font-typed text-lg text-accent">{{ String(i + 1).padStart(2, '0') }}</span>
+          <span class="flex flex-col gap-2">
+            <b class="text-2xl font-extrabold tracking-[-0.02em]">{{ item.title }}</b>
+            <span class="text-lg leading-relaxed text-stone-600">{{ item.description }}</span>
+          </span>
+        </li>
+      </ol>
+    </section>
 
-    <!-- How it fits in a Dokos site: the documents it reads and writes, what it adds. -->
-    <UPageSection
-      v-if="module.fit"
-      :orientation="module.fit.image ? 'horizontal' : 'vertical'"
-      :reverse="module.fit.align === 'left'"
-      class="bg-sand-200/60 dark:bg-stone-900"
-    >
-      <template #title>
-        <span v-html="module.fit.title || t('fit_title')" />
-      </template>
-      <template #description>
-        <span v-html="module.fit.description" />
-        <dl class="mt-6 grid gap-6 text-left sm:grid-cols-2">
-          <div v-if="module.fit.reads?.length">
-            <dt class="text-sm font-semibold text-highlighted">{{ t('fit_reads') }}</dt>
-            <dd>
-              <ul class="mt-2 space-y-1.5 text-sm text-muted">
-                <li v-for="(item, i) in module.fit.reads" :key="i" class="flex gap-2">
-                  <UIcon name="i-heroicons-arrow-right-circle" class="size-4 mt-0.5 shrink-0 text-primary" />
-                  <span v-html="item" />
-                </li>
-              </ul>
-            </dd>
+    <!-- How it fits in a Dokos site, in the deep blue card. -->
+    <section v-if="module.fit" class="px-2 pb-10 sm:px-6 sm:pb-14 lg:px-14">
+      <div class="rounded-2xl bg-dokos-900 text-white">
+        <div class="mx-auto flex max-w-[1360px] flex-wrap items-center gap-12 px-4 py-20 sm:px-8 sm:py-24" :class="{ 'flex-row-reverse': module.fit.align === 'left' }">
+          <div class="flex min-w-0 flex-col gap-6" :class="module.fit.image ? 'flex-[1_1_480px]' : 'flex-[1_1_100%]'">
+            <h2 class="h26-reveal-x text-[clamp(2.25rem,4.5vw,3.75rem)] font-extrabold uppercase leading-[0.95] tracking-[-0.04em] [&_.text-primary]:text-inherit">
+              <span v-html="module.fit.title || t('fit_title')" /><span class="text-accent">.</span>
+            </h2>
+            <p v-if="module.fit.description" class="h26-reveal text-lg leading-relaxed text-dokos-100" v-html="module.fit.description" />
+            <dl class="h26-reveal grid gap-8 sm:grid-cols-2">
+              <div v-if="module.fit.reads?.length" class="border-t-[1.5px] border-white/40 pt-4">
+                <dt class="font-typed text-sm text-dokos-100">{{ t('fit_reads') }}</dt>
+                <dd>
+                  <ul class="mt-3 flex flex-col gap-2">
+                    <li v-for="(item, i) in module.fit.reads" :key="i" v-html="item" />
+                  </ul>
+                </dd>
+              </div>
+              <div v-if="module.fit.adds?.length" class="border-t-[1.5px] border-white/40 pt-4">
+                <dt class="font-typed text-sm text-dokos-100">{{ t('fit_adds') }}</dt>
+                <dd>
+                  <ul class="mt-3 flex flex-col gap-2">
+                    <li v-for="(item, i) in module.fit.adds" :key="i" v-html="item" />
+                  </ul>
+                </dd>
+              </div>
+              <div v-if="module.fit.depends?.length" class="border-t-[1.5px] border-white/40 pt-4 sm:col-span-2">
+                <dt class="font-typed text-sm text-dokos-100">{{ t('fit_depends') }}</dt>
+                <dd class="mt-3">{{ module.fit.depends.join(' · ') }}</dd>
+              </div>
+            </dl>
           </div>
-          <div v-if="module.fit.adds?.length">
-            <dt class="text-sm font-semibold text-highlighted">{{ t('fit_adds') }}</dt>
-            <dd>
-              <ul class="mt-2 space-y-1.5 text-sm text-muted">
-                <li v-for="(item, i) in module.fit.adds" :key="i" class="flex gap-2">
-                  <UIcon name="i-heroicons-plus-circle" class="size-4 mt-0.5 shrink-0 text-primary" />
-                  <span v-html="item" />
-                </li>
-              </ul>
-            </dd>
+          <div v-if="module.fit.image" class="h26-reveal min-w-0 flex-[1_1_420px]">
+            <AppImage :src="module.fit.image" :alt="module.fit.title || ''" class="w-full rounded-xl" loading="lazy" />
           </div>
-          <div v-if="module.fit.depends?.length" class="sm:col-span-2">
-            <dt class="text-sm font-semibold text-highlighted">{{ t('fit_depends') }}</dt>
-            <dd>
-              <ul class="mt-2 flex flex-wrap gap-2">
-                <li v-for="(item, i) in module.fit.depends" :key="i">
-                  <UBadge :label="item" variant="subtle" color="neutral" />
-                </li>
-              </ul>
-            </dd>
-          </div>
-        </dl>
-      </template>
-      <AppImage
-        v-if="module.fit.image"
-        :src="module.fit.image"
-        :alt="module.fit.title || ''"
-        class="rounded-lg ring ring-default"
-        loading="lazy"
-      />
-    </UPageSection>
+        </div>
+      </div>
+    </section>
 
     <!-- What it does: one section per feature with a screenshot, alternating sides. -->
-    <UPageSection
+    <section
       v-for="(feature, i) in shownFeatures"
-      :key="i"
-      orientation="horizontal"
-      :reverse="feature.align ? feature.align === 'left' : i % 2 === 1"
+      :key="`feature-${i}`"
+      class="mx-auto flex max-w-[1360px] flex-wrap items-center gap-x-16 gap-y-12 px-4 py-20 sm:px-8 sm:py-24"
+      :class="{ 'flex-row-reverse': feature.align ? feature.align === 'left' : i % 2 === 1 }"
     >
-      <template v-if="feature.badge" #headline>
-        <UBadge :label="typeof feature.badge === 'string' ? feature.badge : feature.badge.label" variant="subtle" />
-      </template>
-      <template #title>
-        <span v-html="feature.title" />
-      </template>
-      <template #description>
-        <span v-html="feature.description" />
-      </template>
-      <AppImage
-        v-if="feature.image"
-        :src="feature.image"
-        :alt="feature.title"
-        class="rounded-lg ring ring-default"
-        loading="lazy"
-      />
-      <video
-        v-else
-        class="w-full rounded-lg ring ring-default"
-        autoplay
-        loop
-        muted
-        playsinline
-      >
-        <source :src="feature.video" type="video/mp4">
-      </video>
-    </UPageSection>
+      <div class="flex min-w-0 flex-[1_1_420px] flex-col gap-5">
+        <span v-if="feature.badge" class="h26-reveal font-typed text-sm">{{ typeof feature.badge === 'string' ? feature.badge : feature.badge.label }}</span>
+        <h2 class="h26-reveal-x text-[clamp(2rem,3.8vw,3.25rem)] font-extrabold uppercase leading-[0.95] tracking-[-0.04em] [&_.text-primary]:text-inherit">
+          <span v-html="feature.title" /><span class="text-accent">.</span>
+        </h2>
+        <p class="h26-reveal max-w-2xl text-lg leading-relaxed text-stone-600" v-html="feature.description" />
+      </div>
+      <div class="h26-reveal min-w-0 flex-[1_1_520px]">
+        <AppImage v-if="feature.image" :src="feature.image" :alt="feature.title" class="w-full rounded-xl shadow-[0_18px_40px_rgba(43,42,39,0.16)]" loading="lazy" />
+        <video v-else class="w-full rounded-xl shadow-[0_18px_40px_rgba(43,42,39,0.16)]" autoplay loop muted playsinline>
+          <source :src="feature.video" type="video/mp4">
+        </video>
+      </div>
+    </section>
 
-    <!-- Features without a screenshot, as cards. -->
-    <UPageSection
-      v-if="textFeatures.length"
-      :title="shownFeatures.length ? undefined : t('features_title')"
-    >
-      <UPageGrid class="sm:grid-cols-2 lg:grid-cols-3">
-        <UPageCard
-          v-for="(feature, i) in textFeatures"
-          :key="i"
-          variant="subtle"
-        >
-          <template v-if="feature.badge" #leading>
-            <UBadge :label="typeof feature.badge === 'string' ? feature.badge : feature.badge.label" variant="subtle" />
-          </template>
-          <template #title>
-            <span v-html="feature.title" />
-          </template>
-          <template #description>
-            <span v-html="feature.description" />
-          </template>
-        </UPageCard>
-      </UPageGrid>
-    </UPageSection>
+    <!-- Features without a screenshot, as a ruled list. -->
+    <section v-if="textFeatures.length" class="mx-auto flex max-w-[1360px] flex-col gap-12 px-4 py-24 sm:px-8">
+      <Landing2026Heading v-if="!shownFeatures.length" :title="t('features_title')" />
+      <ol class="h26-reveal grid gap-x-10 lg:grid-cols-3">
+        <li v-for="(feature, i) in textFeatures" :key="i" class="grid grid-cols-[2.5rem_1fr] gap-x-4 border-t-[1.5px] border-dokos-500 py-6">
+          <span class="font-typed text-lg text-accent">{{ String(i + 1).padStart(2, '0') }}</span>
+          <span class="flex flex-col gap-2">
+            <span v-if="feature.badge" class="font-typed text-sm">{{ typeof feature.badge === 'string' ? feature.badge : feature.badge.label }}</span>
+            <b class="text-2xl font-extrabold tracking-[-0.02em]" v-html="feature.title" />
+            <span class="text-lg leading-relaxed text-stone-600" v-html="feature.description" />
+          </span>
+        </li>
+      </ol>
+    </section>
 
-    <!-- How to get it. -->
-    <UPageSection
-      v-if="module.install"
-      :title="module.install.title || t('install_title')"
-      :description="module.install.description"
-      class="bg-sand-200/60 dark:bg-stone-900"
-    >
-      <div class="grid gap-10 lg:grid-cols-3">
-        <ol class="lg:col-span-2 grid gap-6 sm:grid-cols-2">
-          <li v-for="(step, i) in (module.install.steps as any[])" :key="i" class="flex gap-4">
-            <span class="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary text-inverted text-sm font-semibold">
-              {{ i + 1 }}
+    <!-- How to get it: numbered steps, prerequisites on a white sheet. -->
+    <section v-if="module.install" class="mx-auto flex max-w-[1360px] flex-col gap-12 px-4 py-24 sm:px-8 sm:py-32">
+      <Landing2026Heading :title="module.install.title || t('install_title')" :description="module.install.description" />
+      <div class="grid items-start gap-10 lg:grid-cols-3">
+        <ol class="h26-reveal grid gap-x-10 sm:grid-cols-2 lg:col-span-2">
+          <li v-for="(step, i) in (module.install.steps as any[])" :key="i" class="grid grid-cols-[2.5rem_1fr] gap-x-4 border-t-[1.5px] border-dokos-500 py-6">
+            <span class="font-typed text-lg text-accent">{{ String(i + 1).padStart(2, '0') }}</span>
+            <span class="flex flex-col gap-2">
+              <b class="text-xl font-extrabold">{{ step.title }}</b>
+              <span class="leading-relaxed text-stone-600" v-html="step.description" />
             </span>
-            <div>
-              <p class="font-medium text-highlighted">{{ step.title }}</p>
-              <p class="mt-1 text-sm text-muted" v-html="step.description" />
-            </div>
           </li>
         </ol>
-        <div v-if="module.install.prerequisites?.length" class="rounded-lg ring ring-default bg-default p-5">
-          <p class="text-sm font-semibold text-highlighted">{{ t('prerequisites') }}</p>
-          <ul class="mt-3 space-y-2 text-sm text-muted">
-            <li v-for="(item, i) in module.install.prerequisites" :key="i" class="flex gap-2">
-              <UIcon name="i-heroicons-check-circle" class="size-4 mt-0.5 shrink-0 text-primary" />
-              <span v-html="item" />
-            </li>
+        <div v-if="module.install.prerequisites?.length" class="h26-reveal bg-white px-7 py-7 shadow-[0_18px_40px_rgba(43,42,39,0.16)]">
+          <p class="font-typed text-sm">{{ t('prerequisites') }}</p>
+          <ul class="mt-4 flex flex-col gap-3 text-stone-600">
+            <li v-for="(item, i) in module.install.prerequisites" :key="i" class="border-t border-dokos-500/20 pt-3" v-html="item" />
           </ul>
         </div>
       </div>
-    </UPageSection>
+    </section>
 
-    <UPageSection v-if="module.faq" :title="module.faq.title || t('faq_title')" :description="module.faq.description">
-      <UAccordion
-        :items="module.faq.items"
-        type="multiple"
-        :unmount-on-hide="false"
-        class="max-w-4xl mx-auto"
-        :ui="{ trigger: 'text-base text-highlighted py-4', body: 'text-base text-muted pb-4' }"
-      >
-        <template #body="{ item }">
-          <MDC :value="(item as any).content || ''" class="prose prose-primary dark:prose-invert max-w-none text-muted" />
-        </template>
-      </UAccordion>
-    </UPageSection>
+    <Landing2026Faq v-if="module.faq" :title="module.faq.title || t('faq_title')" :description="module.faq.description" :items="module.faq.items" />
 
-    <!-- Apps this one works with. -->
-    <UPageSection v-if="related?.length" :title="t('related_title')">
-      <UPageGrid class="sm:grid-cols-2 lg:grid-cols-3">
-        <UPageCard
+    <!-- Apps this one works with, each on a white sheet. -->
+    <section v-if="related?.length" class="mx-auto flex max-w-[1360px] flex-col gap-12 px-4 py-24 sm:px-8">
+      <Landing2026Heading :title="t('related_title')" />
+      <div class="h26-reveal grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <NuxtLink
           v-for="item in related"
           :key="item.path"
-          :title="item.title"
-          :description="item.description"
           :to="item.path"
-          variant="subtle"
+          class="h26-lift flex flex-col gap-3 bg-white p-6 shadow-[0_12px_30px_rgba(43,42,39,0.12)]"
         >
-          <template #leading>
-            <UColorModeAvatar
-              v-if="item.logo"
-              :light="item.logo.light"
-              :dark="item.logo.dark"
-              size="lg"
-              class="rounded-sm"
-            />
-            <UIcon v-else :name="item.icon || 'i-heroicons-cube'" class="size-8 text-primary" />
-          </template>
-        </UPageCard>
-      </UPageGrid>
-    </UPageSection>
+          <span class="flex items-center gap-3">
+            <img v-if="item.logo" :src="item.logo.light" alt="" class="size-10 rounded-sm" loading="lazy">
+            <UIcon v-else :name="item.icon || 'i-heroicons-cube'" class="size-9 shrink-0" />
+            <b class="text-2xl font-extrabold tracking-[-0.02em]">{{ item.title }}</b>
+          </span>
+          <span class="leading-relaxed text-stone-600">{{ item.description }}</span>
+        </NuxtLink>
+      </div>
+    </section>
 
-    <UPageSection v-if="module.bottom_cta">
-      <UPageCTA
-        :title="module.bottom_cta.title"
-        :description="module.bottom_cta.description"
-        :links="module.bottom_cta.links"
-        variant="subtle"
-        class="bg-sand-200 dark:bg-stone-900 ring ring-default"
-      />
-    </UPageSection>
-  </UPage>
+    <Landing2026Cta
+      v-if="module.bottom_cta"
+      :title="module.bottom_cta.title"
+      :description="module.bottom_cta.description"
+      :links="module.bottom_cta.links"
+    />
+  </div>
 </template>
 
 <i18n lang="yaml">

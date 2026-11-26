@@ -48,11 +48,11 @@ lanes:
 
     - id: accompagnement
       name: Support packs
-      tagline: Hours of expertise, used when you need them.
+      tagline: Hours of expertise, used at your own pace within a year.
       caution: >-
         Needs analysis, configuration, data migration, training, custom
-        development. Packs have no expiry date and can be topped up at any
-        time.
+        development. Hours are used at your own pace within one year, one hour
+        at a time if you like, and a pack can be topped up at any time.
       columns:
         - Pack
         - Businesses
@@ -109,7 +109,7 @@ scope:
       description: Specific applications, automations, connectors. Delivered under a free licence, in your repositories.
       icon: i-heroicons-wrench-screwdriver
     - title: AI engineering
-      description: Dokos AI skills and agents connected through the MCP server, on your processes, with a confirmation before any write.
+      description: AI assistants and agents connected through MCP, fitted to your processes, with AI roles that set what each of them can do.
       icon: i-heroicons-cpu-chip
   links:
     - label: See the engineering engagements

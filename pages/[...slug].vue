@@ -1,4 +1,7 @@
 <script setup lang="ts">
+// Markdown pages (legal notices, terms, certifications) in the 2026 design.
+definePageMeta({ design2026: true, colorMode: 'light' })
+
 const route = useRoute()
 const {
     params: { slug },
@@ -44,30 +47,20 @@ defineOgImage('OgImageSaas' as any, {
 </script>
 
 <template>
-    <UContainer>
-        <UPage v-if="page">
-            <UPageHeader
-                v-if="page.title"
-                :title="page.title"
-                :links="(page as any).links"
-            >
-                <template #description>
-                    <span v-html="page.description" />
-                </template>
-            </UPageHeader>
-            <UPageBody prose>
+    <div v-if="page" class="h26 overflow-x-clip bg-paper text-dokos-500">
+        <Landing2026Header :title="page.title" :description="page.description" />
+
+        <div class="mx-auto grid max-w-[1360px] gap-12 px-4 pb-24 sm:px-8 lg:grid-cols-[minmax(0,1fr)_16rem]">
+            <article class="h26-prose min-w-0 max-w-3xl">
                 <ContentRenderer v-if="page.body" :value="page" />
-
-                <USeparator v-if="surround?.length" />
-
+                <USeparator v-if="surround?.length" class="my-12" />
                 <UContentSurround :surround="surround" />
-            </UPageBody>
-
-            <template v-if="page.body?.toc?.links?.length" #right>
-                <UContentToc :title="t('toc')" :links="page.body.toc.links" />
-            </template>
-        </UPage>
-    </UContainer>
+            </article>
+            <aside v-if="page.body?.toc?.links?.length" class="h26-prose hidden lg:block">
+                <UContentToc :title="t('toc')" :links="page.body.toc.links" class="sticky top-24" />
+            </aside>
+        </div>
+    </div>
 </template>
 
 <i18n lang="yaml">

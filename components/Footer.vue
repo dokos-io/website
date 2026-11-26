@@ -4,6 +4,26 @@ const { t } = useI18n({
 })
 
 const localePath = useLocalePath()
+const route = useRoute()
+
+// Pages in the 2026 design (definePageMeta({ design2026: true })) get the 2026 footer: cream like the page, the logo
+// and its name, column titles in the typewriter face, links in Dokos blue.
+// Every other page keeps the current footer until the site moves over.
+const is2026 = computed(() => !!route.meta.design2026)
+
+// The columns take the whole width and long labels wrap: by default the library
+// keeps a third of the row for a side slot we do not use, and truncates labels
+// ("Conditions général…" twice) while the room is there.
+const COLUMNS_UI = {
+    root: 'xl:block',
+    linkLabel: 'overflow-visible whitespace-normal',
+}
+const COLUMNS_UI_2026 = {
+    ...COLUMNS_UI,
+    root: 'xl:grid xl:grid-cols-[16rem_1fr] xl:gap-16',
+    label: 'font-typed text-sm font-normal text-dokos-500',
+    link: 'text-[15px] text-dokos-500/80 hover:text-dokos-500',
+}
 
 const links = computed(() => {
     return [
@@ -64,21 +84,28 @@ const links = computed(() => {
 </script>
 
 <template>
-    <UFooter>
+    <UFooter :ui="is2026 ? { root: 'bg-paper border-t border-dokos-500/10' } : undefined">
         <template #top>
             <UContainer>
-                <UFooterColumns :columns="links" />
+                <UFooterColumns :columns="links" :ui="is2026 ? COLUMNS_UI_2026 : COLUMNS_UI">
+                    <template v-if="is2026" #left>
+                        <NuxtLink :to="localePath('/')" class="flex items-center gap-2.5">
+                            <img width="40" src="/dokos_logo_rect.svg" alt="Dokos">
+                            <img src="/dokos_wordmark.svg" alt="" aria-hidden="true" class="h-6 w-auto">
+                        </NuxtLink>
+                    </template>
+                </UFooterColumns>
             </UContainer>
         </template>
 
         <template #left>
-            <p class="text-gray-500 dark:text-gray-400 text-sm">
+            <p class="text-sm" :class="is2026 ? 'text-stone-600' : 'text-stone-500 dark:text-stone-400'">
                 Dokos SAS © {{ new Date().getFullYear() }}.
                 {{ t("all_rights_reserved") }}.
             </p>
         </template>
         <template #right>
-            <p class="text-gray-500 dark:text-gray-400 text-sm">
+            <p class="text-sm" :class="is2026 ? 'font-typed text-stone-600' : 'text-stone-500 dark:text-stone-400'">
                 {{ t("gplv3") }}
             </p>
         </template>
